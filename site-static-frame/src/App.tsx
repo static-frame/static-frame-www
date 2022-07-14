@@ -15,7 +15,7 @@ function App() {
           href="https://github.com/InvestmentSystems/static-frame"
           target="_blank"
           rel="noopener noreferrer"
-        >GitHub</a>
+        >Code</a>
         <a
           className="App-link"
           href="https://static-frame.readthedocs.io/en/latest/"
