@@ -6,18 +6,28 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
           <code>static-frame</code>
         </p>
-        {/* <a
+        <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/InvestmentSystems/static-frame"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+        >GitHub</a>
+        <a
+          className="App-link"
+          href="https://static-frame.readthedocs.io/en/latest/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Documentation</a>
+        <a
+          className="App-link"
+          href="https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Try it now</a>
       </header>
     </div>
   );
