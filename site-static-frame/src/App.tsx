@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>static-frame</code>
+
+        <p>StaticFrame: A library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
         </p>
         <a
           className="App-link"
