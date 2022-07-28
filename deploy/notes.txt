@@ -20,3 +20,10 @@ sudo apt-get install -y nodejs
 
 
 
+Installing tailwind
+
+https://tailwindcss.com/docs/guides/create-react-app
+
+
+
+
