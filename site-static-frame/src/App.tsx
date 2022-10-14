@@ -25,7 +25,7 @@ function Title() {
 function Description() {
     return (
         <div>
-        <p className="text-1xl text-zinc-600 font-sans">StaticFrame: A library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
+        <p className="text-1xl text-zinc-600 font-sans">A library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
         </p>
         </div>
     )
@@ -52,27 +52,33 @@ function App() {
   return (
 
     <div>
-    <div className="p-8 py-4 mt-16 max-w-sm mx-auto bg-black rounded-xl shadow-md flex items-center space-x-4">
-        <div className='grid grid-cols-2 gap-4'>
-            <div><SFLogo />
+    <div className="p-8 py-8 mt-16 max-w-lg mx-auto bg-black rounded-md shadow-md flex">
+        <div className='grid grid-cols-2 gap-2'>
+            <div>
+                <SFLogo />
             </div>
-            <div><Title />
+            <div>
+                <Title />
             </div>
             <div>
             </div>
-            <div><Description />
+            <div>
+                <Description />
             </div>
         </div>
     </div>
 
-    <div className="p-8 py-4 mt-4 max-w-sm mx-auto bg-black rounded-xl shadow-md flex items-center space-x-4">
-        <div className='grid grid-cols-3 gap-x-3 items-stretch'>
+    <div className="p-8 py-4 mt-4 max-w-lg mx-auto bg-black rounded-md shadow-md flex">
+        <div className='grid grid-cols-3 gap-2'>
 
-            <div><Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
+            <div>
+                <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
             </div>
-            <div><Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
+            <div>
+                <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
             </div>
-            <div><Link label='Try it now' url='https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb' />
+            <div>
+                <Link label='Try it now' url='https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb' />
             </div>
         </div>
     </div>
