@@ -1,3 +1,4 @@
+
 import React from 'react';
 import logo from './logo.svg';
 // import './App.css';
@@ -8,7 +9,15 @@ import logo from './logo.svg';
 function SFLogo() {
     return (
         <div>
-        <img src={logo} style={{height: '40vmin'}}alt="flexatone logo" />
+        <img src={logo} style={{height: '20vmin'}}alt="flexatone logo" />
+        </div>
+    )
+}
+
+function Title() {
+    return (
+        <div>
+        <p className="text-gray-500">StaticFrame</p>
         </div>
     )
 }
@@ -27,7 +36,7 @@ interface LinkProps {
     url: string;
 }
 
-function Link({label, url}:LinkProps) {
+function Link({label, url}: LinkProps) {
     return (
         <a
         className="text-1xl font-sans text-slate-500"
@@ -41,38 +50,35 @@ function Link({label, url}:LinkProps) {
 function App() {
 
   return (
-    <div className="p-8 max-w-sm mx-auto bg-black rounded-xl shadow-md flex items-center space-x-4">
-        <Description />
-        <div>
-            <p className="text-gray-500">StaticFrame</p>
+
+    <div>
+    <div className="p-8 py-4 mt-16 max-w-sm mx-auto bg-black rounded-xl shadow-md flex items-center space-x-4">
+        <div className='grid grid-cols-2 gap-4'>
+            <div><SFLogo />
+            </div>
+            <div><Title />
+            </div>
+            <div>
+            </div>
+            <div><Description />
+            </div>
         </div>
-        <SFLogo />
-        <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
     </div>
 
+    <div className="p-8 py-4 mt-4 max-w-sm mx-auto bg-black rounded-xl shadow-md flex items-center space-x-4">
+        <div className='grid grid-cols-3 gap-x-3 items-stretch'>
+
+            <div><Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
+            </div>
+            <div><Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
+            </div>
+            <div><Link label='Try it now' url='https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb' />
+            </div>
+        </div>
+    </div>
+    </div>
   );
 }
 
 export default App;
 
-
-
-
-//   <a
-//     className="text-1xl font-sans text-slate-500"
-//     href="https://github.com/InvestmentSystems/static-frame"
-//     target="_blank"
-//     rel="noopener noreferrer"
-//   >Code</a>
-//   <a
-//     className="text-1xl font-sans text-slate-500"
-//     href="https://static-frame.readthedocs.io/en/latest/"
-//     target="_blank"
-//     rel="noopener noreferrer"
-//   >Documentation</a>
-//   <a
-//     className="text-1xl font-sans text-slate-500"
-//     href="https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb"
-//     target="_blank"
-//     rel="noopener noreferrer"
-//   >Try it now</a>
