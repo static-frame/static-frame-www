@@ -25,7 +25,7 @@ function Title() {
 function Description() {
     return (
         <div>
-        <p className="text-1xl text-zinc-600 font-sans">A library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
+        <p className="text-1xl text-zinc-400 font-sans">A library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
         </p>
         </div>
     )
@@ -38,12 +38,14 @@ interface LinkProps {
 
 function Link({label, url}: LinkProps) {
     return (
+        <div className='p-2 rounded-md bg-zinc-800'>
         <a
-        className="text-1xl font-sans text-slate-500"
+        className="text-1xl font-sans text-slate-400"
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-      >{label}</a>
+        >{label}</a>
+        </div>
     )
 }
 
@@ -69,15 +71,15 @@ function App() {
     </div>
 
     <div className="p-8 py-4 mt-4 max-w-lg mx-auto bg-black rounded-md shadow-md flex">
-        <div className='grid grid-cols-3 gap-2'>
+        <div className='grid grid-cols-3 gap-3'>
 
-            <div>
+            <div className=''>
                 <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
             </div>
-            <div>
+            <div className=''>
                 <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
             </div>
-            <div>
+            <div className=''>
                 <Link label='Try it now' url='https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb' />
             </div>
         </div>
