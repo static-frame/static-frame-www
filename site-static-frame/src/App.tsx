@@ -54,32 +54,29 @@ function App() {
   return (
 
     <div>
-    <div className="p-8 py-8 mt-16 max-w-lg mx-auto bg-black rounded-md shadow-md flex">
-        <div className='grid grid-cols-2 gap-2'>
-            <div>
+    <div className="p-4 mt-16 max-w-lg mx-auto bg-black rounded-md shadow-md">
+        <div className='columns-2'>
+            <div className='w-full'>
                 <SFLogo />
             </div>
-            <div>
+            <br />
+            <div className='w-full'>
                 <Title />
-            </div>
-            <div>
-            </div>
-            <div>
                 <Description />
             </div>
         </div>
     </div>
 
-    <div className="p-8 py-4 mt-4 max-w-lg mx-auto bg-black rounded-md shadow-md flex">
-        <div className='grid grid-cols-3 gap-3'>
+    <div className="p-4 mt-4 max-w-lg mx-auto bg-black rounded-md shadow-md ">
+        <div className='columns-3 gap-3'>
 
-            <div className=''>
+            <div className='w-full '>
                 <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
             </div>
-            <div className=''>
+            <div className='w-full '>
                 <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
             </div>
-            <div className=''>
+            <div className='w-full'>
                 <Link label='Try it now' url='https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb' />
             </div>
         </div>
