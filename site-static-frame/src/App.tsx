@@ -56,8 +56,8 @@ function App() {
   return (
 
     <div>
-        <div className="max-w-xl mx-auto px-8">
-        <div className="-mx-4 flex flex-wrap">
+        <div className="max-w-xl mx-auto px-8 pt-8">
+        <div className="-mx-4 flex flex-wrap px-2 bg-black ">
 
             <div className="w-full flex flex-col py-4 px-2 sm:w-1/2 lg:w-1/2">
               <div className="flex-1 px-4 py-4 bg-zinc-800 rounded-md shadow-md">
@@ -77,7 +77,7 @@ function App() {
 
 
         <div className="max-w-xl mx-auto px-8">
-        <div className="-mx-4 flex flex-wrap">
+        <div className="-mx-4 flex flex-wrap my-4 py-4 px-2 bg-black">
 
             <div className="w-full flex flex-col py-0 px-2 sm:w-1/3 lg:w-1/3">
               <div className="flex-1 px-4 py-0 bg-zinc-800 rounded-md shadow-md">
