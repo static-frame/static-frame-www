@@ -1,9 +1,8 @@
 
+// import { url } from 'inspector';
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 // import './App.css';
-
-{/* <defs><style>.cls-1,.cls-2{fill:#9fc9eb;}.cls-1,.cls-3{fill-rule:evenodd;}.cls-3{fill:#016699;}</style></defs><title>StaticFrame</title> */}
 
 interface SFSVGProps {
     ring: string;
@@ -19,23 +18,20 @@ function SFSVG({ring, infinity, frame}: SFSVGProps) {
         </svg>
     )
 }
-
 function SFLogo() {
     return (
         <div>
-        <SFSVG ring='#013366' infinity='#016699' frame='#9fc9eb' />
+        <SFSVG ring='#27272a' infinity='#3f3f46' frame='#fdba74' />
         </div>
     )
 }
-
 function Title() {
     return (
         <div className='p-2'>
-        <h1 className="text-3xl text-gray-500 text-bold">StaticFrame</h1>
+        <h1 className="text-3xl text-slate-400 text-bold">StaticFrame</h1>
         </div>
     )
 }
-
 function Description() {
     return (
         <div className='p-2'>
@@ -44,7 +40,6 @@ function Description() {
         </div>
     )
 }
-
 interface LinkProps {
     label: string;
     url: string;
@@ -67,13 +62,15 @@ function Link({label, url}: LinkProps) {
 function App() {
   const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
   const cnCol3FlexCol = "w-full flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
-  const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-gradient-to-r from-zinc-800 to-zinc-900"
+  const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
+
+  // const svgBkg = SFSVG({ring: '#013366', infinity:'#016699', frame:'#9fc9eb'});
 
   return (
 
     <div>
         <div className="max-w-xl mx-auto px-8 pt-8">
-        <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black ">
+        <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
 
             <div className={cnCol2FlexCol}>
               <div className={cnColField}>
@@ -92,7 +89,7 @@ function App() {
 
 
         <div className="max-w-xl mx-auto px-8">
-        <div className="-mx-4 flex flex-wrap my-4 px-2 py-2 bg-black">
+        <div className="-mx-4 flex flex-wrap my-4 px-2 py-2 bg-black rounded-md">
             <div className={cnCol3FlexCol}>
               <div className={cnColField}>
               <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />

@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 document.body.classList.add('bg-zinc-900');
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
