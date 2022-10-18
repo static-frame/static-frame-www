@@ -3,6 +3,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
+// import './sf-api/sig_to_example.json';
 
 interface SFSVGProps {
     ring: string;
