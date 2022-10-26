@@ -63,18 +63,19 @@ function Link({label, url}: LinkProps) {
 function App() {
   const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
   const cnCol3FlexCol = "w-full flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
-  const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
+  const cnColFieldGradient = "flex-1 px-4 py-4 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
+  const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
 
   // const svgBkg = SFSVG({ring: '#013366', infinity:'#016699', frame:'#9fc9eb'});
 
   return (
 
     <div>
-        <div className="max-w-xl mx-auto px-8 pt-8">
+        <div className="max-w-xxl mx-auto px-8 pt-8">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
 
             <div className={cnCol2FlexCol}>
-              <div className={cnColField}>
+              <div className={cnColFieldGradient}>
                   <SFLogo />
               </div>
             </div>
@@ -89,20 +90,20 @@ function App() {
         </div>
 
 
-        <div className="max-w-xl mx-auto px-8">
+        <div className="max-w-xxl mx-auto px-8">
         <div className="-mx-4 flex flex-wrap my-4 px-2 py-2 bg-black rounded-md">
             <div className={cnCol3FlexCol}>
-              <div className={cnColField}>
+              <div className={cnColFieldGradient}>
               <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
               </div>
             </div>
             <div className={cnCol3FlexCol}>
-              <div className={cnColField}>
+              <div className={cnColFieldGradient}>
               <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
               </div>
             </div>
             <div className={cnCol3FlexCol}>
-              <div className={cnColField}>
+              <div className={cnColFieldGradient}>
               <Link label='Try it now' url='https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb' />
               </div>
             </div>
