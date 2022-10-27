@@ -71,7 +71,21 @@ function App() {
   return (
 
     <div>
-        <div className="max-w-xxl mx-auto px-8 pt-8">
+        <div className="max-w-xxl mx-auto">
+        <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black">
+            <div className={cnCol2FlexCol}>
+              {/* <div className={cnColFieldGradient}>
+              </div> */}
+            </div>
+            <div className={cnCol2FlexCol}>
+              {/* <div className={cnColField}>
+              </div> */}
+            </div>
+        </div>
+        </div>
+
+
+        <div className="max-w-xl mx-auto pr-8 pl-8 pt-4">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
 
             <div className={cnCol2FlexCol}>
@@ -90,7 +104,7 @@ function App() {
         </div>
 
 
-        <div className="max-w-xxl mx-auto px-8">
+        <div className="max-w-xl mx-auto pr-8 pl-8">
         <div className="-mx-4 flex flex-wrap my-4 px-2 py-2 bg-black rounded-md">
             <div className={cnCol3FlexCol}>
               <div className={cnColFieldGradient}>
@@ -109,6 +123,21 @@ function App() {
             </div>
         </div>
         </div>
+
+        <div className="max-w-xxl mx-auto">
+        <div className="-mx-4 flex flex-wrap px-2 py-2 h-screen bg-black">
+            <div className={cnCol2FlexCol}>
+              {/* <div className={cnColFieldGradient}>
+              </div> */}
+            </div>
+            <div className={cnCol2FlexCol}>
+              {/* <div className={cnColField}>
+              </div> */}
+            </div>
+
+        </div>
+        </div>
+
 
     </div>
   );
