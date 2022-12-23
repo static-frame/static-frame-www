@@ -3,7 +3,8 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
-// import './sf-api/sig_to_example.json';
+// import sig_to_ex from './sf-api/1.0.0/sig_to_example.json';
+import sigs from './sf-api/1.0.0/sigs.json';
 
 interface SFSVGProps {
     ring: string;
@@ -57,6 +58,22 @@ function Link({label, url}: LinkProps) {
         </div>
     )
 }
+
+
+function APIList() {
+    // console.log(sig_to_ex);
+    // console.log(sigs);
+
+    var items = sigs.map((row, idx) => (
+        <li key={idx}>{row}</li>
+    ));
+    return (<div>
+        <ul className="text-1xl font-sans text-slate-400 ">
+            {items}
+        </ul>
+    </div>)
+}
+
 
 // https://laravel-news.com/tailwind-css-tips-and-tricks
 
@@ -124,6 +141,11 @@ function App() {
         </div>
         </div>
 
+        {/* <div className="max-w-5xl mx-auto pr-8 pl-8">
+        <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
+        <APIList />
+        </div>
+        </div> */}
 
     </div>
   );
