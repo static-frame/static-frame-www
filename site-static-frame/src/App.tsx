@@ -4,7 +4,7 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 // import sig_to_ex from './sf-api/1.0.0/sig_to_example.json';
-import sigs from './sf-api/1.0.0/sigs.json';
+import sigs_initial from './sf-api/1.0.0/sigs.json';
 
 interface SFSVGProps {
     ring: string;
@@ -60,32 +60,69 @@ function Link({label, url}: LinkProps) {
 }
 
 
+
+
+function SignatureItem(value: string, index: number) {
+    // note: mb-2 means we have extra padding at the bottom
+    return (<div className=' mb-2 px-4 py-1 bg-zinc-900'>
+        <li key={index}>{value}</li>
+    </div>)
+}
+
 function APIList() {
     // console.log(sig_to_ex);
     // console.log(sigs);
 
-    var items = sigs.map((row, idx) => (
-        <li key={idx}>{row}</li>
-    ));
-    return (<div>
-        <ul className="text-1xl font-sans text-slate-400 ">
+    // function search(e) {
+    //     const needle = e.target.value.toLowerCase();
+
+    //     if (!needle) {
+    //         setData(preSearchData);
+    //         return;
+    //     }
+    //     const idx = e.target.dataset.idx; //what is dataset?
+
+    //     const searchData = data.filter((row) => {
+    //         return row[idx].toString().toLowerCase().indexOf(needle) > -1;
+    //     });
+    //     setData(searchData);
+    // };
+
+
+
+    var items = sigs_initial.map(SignatureItem);
+
+    return (
+    <div>
+    <div className='pb-4 pl-2'>
+        <h1 className="text-3xl text-slate-400 text-bold">API Search</h1>
+    </div>
+    <input type='text'  className="bg-zinc-800 mb-4 py-1 px-4 text-1xl font-mono text-slate-400" />
+    <div>
+        <ul className="text-1xl font-mono text-slate-400">
             {items}
         </ul>
-    </div>)
+    </div>
+    </div>
+    )
 }
 
 
 // https://laravel-news.com/tailwind-css-tips-and-tricks
 
 function App() {
-  const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
-  const cnCol3FlexCol = "w-full flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
-  const cnColFieldGradient = "flex-1 px-4 py-4 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
-  const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
+    const cnCol1FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/1 lg:w-1/1'
+    const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
+    const cnCol3FlexCol = "w-full flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
+    const cnColFieldGradient = "flex-1 px-4 py-4 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
+    const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
 
-  // const svgBkg = SFSVG({ring: '#013366', infinity:'#016699', frame:'#9fc9eb'});
+    // const svgBkg = SFSVG({ring: '#013366', infinity:'#016699', frame:'#9fc9eb'});
 
-  return (
+    const [data, setSigs] = React.useState(sigs_initial);
+
+
+    return (
 
     <div>
         <div className="max-w-full mx-auto">
@@ -141,14 +178,16 @@ function App() {
         </div>
         </div>
 
-        {/* <div className="max-w-5xl mx-auto pr-8 pl-8">
+        <div className="max-w-5xl mx-auto pr-8 pl-8">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
-        <APIList />
+            <div className={cnCol1FlexCol}>
+                <APIList />
+            </div>
         </div>
-        </div> */}
+        </div>
 
     </div>
-  );
+    );
 }
 
 export default App;
