@@ -6,6 +6,12 @@ import React from 'react';
 // import sig_to_ex from './sf-api/1.0.0/sig_to_example.json';
 import sigs_initial from './sf-api/1.0.0/sigs.json';
 
+// NOTE: if creating a map, better to write out json just as a list of pairs
+import sig_to_doc_raw from './sf-api/1.0.0/sig_to_doc.json';
+let sig_to_doc = new Map<string, string>(Object.entries(sig_to_doc_raw));
+
+
+
 interface SFSVGProps {
     ring: string;
     infinity: string;
@@ -63,13 +69,27 @@ function Link({label, url}: LinkProps) {
 
 
 function SignatureItem(value: string, index: number) {
-    // onClick={toggleSearch}
+
+    // NOTE not working
+    // const [showDoc, setShowDoc] = React.useState(false)
+    // const onClickDoc = () => setShowDoc(true)
+
+    const showDoc = false;
+    function onClickDoc() {
+        return true;
+    }
+
     const label = <span className="font-mono text-slate-400">{value}</span>
-    const button_doc = <button className=" bg-zinc-800 font-mono text-slate-400 rounded-md ml-2 p-1">Docs</button>
-    const button_ex = <button className=" bg-zinc-800 font-mono text-slate-400 rounded-md ml-2 p-1">Example</button>
+
+    // replce Docs/Example with unicode or SVG
+    const buttonDoc = <button onClick={onClickDoc} className=" bg-zinc-800 font-mono text-slate-400 rounded-md ml-2 p-1">Docs</button>
+    const buttonEx = <button className=" bg-zinc-800 font-mono text-slate-400 rounded-md ml-2 p-1">Example</button>
+
+    const doc: string | undefined = sig_to_doc.get(value);
+
 
     return (<div className='px-4 py-1 bg-zinc-900'>
-        <li key={index}>{label}{button_doc}{button_ex}</li>
+        <li key={index}>{label}{buttonDoc}{buttonEx}{showDoc ? doc : null}</li>
     </div>)
 }
 
