@@ -100,7 +100,7 @@ function APISearch() {
     const [exDisplay, setExDisplay] = React.useState(new Map<string, boolean>());
 
     // const [sigsDisplay, setSigsDisplay] = React.useState(sigsEmpty);
-    const classNameButton = "bg-zinc-800 font-mono text-slate-400 rounded-md p-2 w-8 h-8";
+    const classNameButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 font-mono text-slate-400 rounded-md";
 
     function SignatureItem(value: string, index: number) {
 
@@ -113,7 +113,6 @@ function APISearch() {
             }
             setDocDisplay(new Map<string, boolean>(docDisplay));
         }
-
         function onClickEx() {
             if (exDisplay.has(value)) {
                 exDisplay.set(value, !exDisplay.get(value));
@@ -124,7 +123,7 @@ function APISearch() {
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
 
-        const label = <span className="font-mono text-slate-400">{value}</span>
+        const label = <div className="py-1"><span className="font-mono text-slate-400">{value}</span></div>
 
         // replce Docs/Example with unicode or SVG
         const buttonDoc = <button onClick={onClickDoc} className={classNameButton}><IconDocument fill="#fdba74"></IconDocument></button>
@@ -137,11 +136,9 @@ function APISearch() {
             <li className='px-4 py-2 bg-zinc-900' key={index}>
                 <div className="flex">
                     <span className="w-5/6">
-                    {/* <div className="h-8"></div> */}
-
                     {label}
                     </span>
-                    <span className="w-1/6">
+                    <span className="w-1/6 text-right">
                     {buttonDoc}
                     {buttonEx}
                     </span>
@@ -191,7 +188,6 @@ function APISearch() {
     )
 }
 
-
 // https://laravel-news.com/tailwind-css-tips-and-tricks
 
 function App() {
@@ -202,10 +198,7 @@ function App() {
     const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
 
     // const svgBkg = SFSVG({ring: '#013366', infinity:'#016699', frame:'#9fc9eb'});
-
-
     return (
-
     <div>
         <div className="max-w-full mx-auto">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black">
@@ -219,7 +212,6 @@ function App() {
             </div>
         </div>
         </div>
-
 
         <div className="max-w-5xl mx-auto pr-8 pl-8 pt-4">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
@@ -238,7 +230,6 @@ function App() {
 
         </div>
         </div>
-
 
         <div className="max-w-5xl mx-auto pr-8 pl-8">
         <div className="-mx-4 flex flex-wrap my-4 px-2 py-2 bg-black rounded-md">
