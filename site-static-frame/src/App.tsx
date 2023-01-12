@@ -94,14 +94,13 @@ function APISearch() {
 
     const sigsEmpty: string[] = [];
     const [sigsDisplay, setSigsDisplay] = React.useState(sigsEmpty);
-    const [sigsPreFilter, ] = React.useState(sigsInitial);
-
     const [docDisplay, setDocDisplay] = React.useState(new Map<string, boolean>());
     const [exDisplay, setExDisplay] = React.useState(new Map<string, boolean>());
 
-    // const [sigsDisplay, setSigsDisplay] = React.useState(sigsEmpty);
-    const classNameButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 font-mono text-slate-400 rounded-md";
+    const CNButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 rounded-md";
+    const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
 
+    // Return an li element for each value. Called once for each row after filtering.
     function SignatureItem(value: string, index: number) {
 
         function onClickDoc() {
@@ -123,16 +122,21 @@ function APISearch() {
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
 
-        const label = <div className="py-1"><span className="font-mono text-slate-400">{value}</span></div>
+        const label = <div className="py-1"><span className="font-mono text-slate-400">{value}</span></div>;
 
-        // replce Docs/Example with unicode or SVG
-        const buttonDoc = <button onClick={onClickDoc} className={classNameButton}><IconDocument fill="#fdba74"></IconDocument></button>
-        const buttonEx = <button onClick={onClickEx} className={classNameButton}><IconCode fill="#fdba74"></IconCode></button>
+        const buttonDoc = <button onClick={onClickDoc}
+                className={docDisplay.get(value) ? CNButtonActive : CNButton}>
+                <IconDocument fill="#fdba74" />
+                </button>;
+        const buttonEx = <button onClick={onClickEx}
+                className={exDisplay.get(value) ? CNButtonActive : CNButton}>
+                <IconCode fill="#fdba74" />
+                </button>;
 
         const getDoc = () => <div className="pt-4 font-sans text-slate-300">{sigToDoc.get(value)}</div>;
         const getEx = () => <div className="pt-4 font-mono text-slate-300">{sigToDoc.get(value)}</div>;
 
-        return (<div className=''>
+        return (<div>
             <li className='px-4 py-2 bg-zinc-900' key={index}>
                 <div className="flex">
                     <span className="w-5/6">
@@ -144,23 +148,22 @@ function APISearch() {
                     </span>
                 </div>
                 <div className="w-full">
-                {docDisplay.get(value) ? getDoc() : null}
-                {exDisplay.get(value) ? getEx() : null}
+                    {docDisplay.get(value) ? getDoc() : null}
+                    {exDisplay.get(value) ? getEx() : null}
                 </div>
             </li>
-        </div>)
+            </div>)
     }
 
+    // Given a target, filter all signatures and update the sigsDisplay state
     function searchSigs(e: React.FormEvent<HTMLInputElement>) {
         const target = e.currentTarget.value.toLowerCase();
-
         if (!target) {
             setSigsDisplay(sigsEmpty);
             return;
         }
-
         // NOTE: we always filter the entire list, not the subset of what was previously filtered
-        const sigs_filtered = sigsPreFilter.filter((row) => {
+        const sigs_filtered = sigsInitial.filter((row) => {
             return row.toLowerCase().indexOf(target) > -1;
         });
         setSigsDisplay(sigs_filtered);
@@ -179,7 +182,7 @@ function APISearch() {
             <input type='text' onChange={searchSigs} className="bg-zinc-800 py-2 px-4 mb-4 w-full rounded-full text-1xl font-mono text-slate-200" />
         </div>
         <div>
-            {/* NOTE: space-y adds space between */}
+            {/* NOTE: space-y adds space between each li row entry */}
             <ul className="space-y-2 text-1xl font-mono text-slate-400">
                 {sigsDisplay.map(SignatureItem)}
             </ul>
