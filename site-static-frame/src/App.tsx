@@ -4,11 +4,11 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 // import sig_to_ex from './sf-api/1.0.0/sig_to_example.json';
-import sigs_initial from './sf-api/1.0.0/sigs.json';
+import sigsInitial from './sf-api/1.0.0/sigs.json';
 
 // NOTE: if creating a map, better to write out json just as a list of pairs
 import sig_to_doc_raw from './sf-api/1.0.0/sig_to_doc.json';
-let sig_to_doc = new Map<string, string>(Object.entries(sig_to_doc_raw));
+let sigToDoc = new Map<string, string>(Object.entries(sig_to_doc_raw));
 
 
 
@@ -26,6 +26,28 @@ function SFSVG({ring, infinity, frame}: SFSVGProps) {
         </svg>
     )
 }
+
+interface IconProps {
+    fill: string;
+}
+// https://icons.getbootstrap.com/icons/file-earmark-text/
+function IconDocument({fill, }: IconProps) {
+    return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
+    </svg>
+    )
+}
+
+// https://icons.getbootstrap.com/icons/code/
+function IconCode({fill, }: IconProps) {
+    return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+    </svg>
+    )
+}
+
 function SFLogo() {
     return (
         <div>
@@ -66,51 +88,82 @@ function Link({label, url}: LinkProps) {
 }
 
 
-
-
-function SignatureItem(value: string, index: number) {
-
-    // NOTE not working
-    // const [showDoc, setShowDoc] = React.useState(false)
-    // const onClickDoc = () => setShowDoc(true)
-
-    const showDoc = false;
-    function onClickDoc() {
-        return true;
-    }
-
-    const label = <span className="font-mono text-slate-400">{value}</span>
-
-    // replce Docs/Example with unicode or SVG
-    const buttonDoc = <button onClick={onClickDoc} className=" bg-zinc-800 font-mono text-slate-400 rounded-md ml-2 p-1">Docs</button>
-    const buttonEx = <button className=" bg-zinc-800 font-mono text-slate-400 rounded-md ml-2 p-1">Example</button>
-
-    const doc: string | undefined = sig_to_doc.get(value);
-
-
-    return (<div className='px-4 py-1 bg-zinc-900'>
-        <li key={index}>{label}{buttonDoc}{buttonEx}{showDoc ? doc : null}</li>
-    </div>)
-}
-
 function APISearch() {
     // console.log(sig_to_ex);
     // console.log(sigs);
 
-    const sigs_empty: string[] = [];
-    const [sigs_display, setSigsDisplay] = React.useState(sigs_empty);
-    const [sigs_pre_filter, ] = React.useState(sigs_initial);
+    const sigsEmpty: string[] = [];
+    const [sigsDisplay, setSigsDisplay] = React.useState(sigsEmpty);
+    const [sigsPreFilter, ] = React.useState(sigsInitial);
 
-    function search_sigs(e: React.FormEvent<HTMLInputElement>) {
+    const [docDisplay, setDocDisplay] = React.useState(new Map<string, boolean>());
+    const [exDisplay, setExDisplay] = React.useState(new Map<string, boolean>());
+
+    // const [sigsDisplay, setSigsDisplay] = React.useState(sigsEmpty);
+    const classNameButton = "bg-zinc-800 font-mono text-slate-400 rounded-md p-2 w-8 h-8";
+
+    function SignatureItem(value: string, index: number) {
+
+        function onClickDoc() {
+            if (docDisplay.has(value)) {
+                docDisplay.set(value, !docDisplay.get(value));
+            }
+            else {
+                docDisplay.set(value, true);
+            }
+            setDocDisplay(new Map<string, boolean>(docDisplay));
+        }
+
+        function onClickEx() {
+            if (exDisplay.has(value)) {
+                exDisplay.set(value, !exDisplay.get(value));
+            }
+            else {
+                exDisplay.set(value, true);
+            }
+            setExDisplay(new Map<string, boolean>(exDisplay));
+        }
+
+        const label = <span className="font-mono text-slate-400">{value}</span>
+
+        // replce Docs/Example with unicode or SVG
+        const buttonDoc = <button onClick={onClickDoc} className={classNameButton}><IconDocument fill="#fdba74"></IconDocument></button>
+        const buttonEx = <button onClick={onClickEx} className={classNameButton}><IconCode fill="#fdba74"></IconCode></button>
+
+        const getDoc = () => <div className="pt-4 font-sans text-slate-300">{sigToDoc.get(value)}</div>;
+        const getEx = () => <div className="pt-4 font-mono text-slate-300">{sigToDoc.get(value)}</div>;
+
+        return (<div className=''>
+            <li className='px-4 py-2 bg-zinc-900' key={index}>
+                <div className="flex">
+                    <span className="w-5/6">
+                    {/* <div className="h-8"></div> */}
+
+                    {label}
+                    </span>
+                    <span className="w-1/6">
+                    {buttonDoc}
+                    {buttonEx}
+                    </span>
+                </div>
+                <div className="w-full">
+                {docDisplay.get(value) ? getDoc() : null}
+                {exDisplay.get(value) ? getEx() : null}
+                </div>
+            </li>
+        </div>)
+    }
+
+    function searchSigs(e: React.FormEvent<HTMLInputElement>) {
         const target = e.currentTarget.value.toLowerCase();
 
         if (!target) {
-            setSigsDisplay(sigs_empty);
+            setSigsDisplay(sigsEmpty);
             return;
         }
 
         // NOTE: we always filter the entire list, not the subset of what was previously filtered
-        const sigs_filtered = sigs_pre_filter.filter((row) => {
+        const sigs_filtered = sigsPreFilter.filter((row) => {
             return row.toLowerCase().indexOf(target) > -1;
         });
         setSigsDisplay(sigs_filtered);
@@ -126,12 +179,12 @@ function APISearch() {
             </p>
         </div>
         <div>
-            <input type='text' onChange={search_sigs} className="bg-zinc-800 py-2 px-4 w-full rounded-full text-1xl font-mono text-slate-200" />
+            <input type='text' onChange={searchSigs} className="bg-zinc-800 py-2 px-4 mb-4 w-full rounded-full text-1xl font-mono text-slate-200" />
         </div>
         <div>
             {/* NOTE: space-y adds space between */}
             <ul className="space-y-2 text-1xl font-mono text-slate-400">
-                {sigs_display.map(SignatureItem)}
+                {sigsDisplay.map(SignatureItem)}
             </ul>
         </div>
     </div>
