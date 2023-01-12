@@ -63,46 +63,57 @@ function Link({label, url}: LinkProps) {
 
 
 function SignatureItem(value: string, index: number) {
-    // note: mb-2 means we have extra padding at the bottom
-    return (<div className=' mb-2 px-4 py-1 bg-zinc-900'>
-        <li key={index}>{value}</li>
+    // onClick={toggleSearch}
+    const label = <span className="font-mono text-slate-400">{value}</span>
+    const button_doc = <button className=" bg-zinc-800 font-mono text-slate-400 rounded-md ml-2 p-1">Docs</button>
+    const button_ex = <button className=" bg-zinc-800 font-mono text-slate-400 rounded-md ml-2 p-1">Example</button>
+
+    return (<div className='px-4 py-1 bg-zinc-900'>
+        <li key={index}>{label}{button_doc}{button_ex}</li>
     </div>)
 }
 
-function APIList() {
+function APISearch() {
     // console.log(sig_to_ex);
     // console.log(sigs);
 
-    // function search(e) {
-    //     const needle = e.target.value.toLowerCase();
+    const sigs_empty: string[] = [];
+    const [sigs_display, setSigsDisplay] = React.useState(sigs_empty);
+    const [sigs_pre_filter, ] = React.useState(sigs_initial);
 
-    //     if (!needle) {
-    //         setData(preSearchData);
-    //         return;
-    //     }
-    //     const idx = e.target.dataset.idx; //what is dataset?
+    function search_sigs(e: React.FormEvent<HTMLInputElement>) {
+        const target = e.currentTarget.value.toLowerCase();
 
-    //     const searchData = data.filter((row) => {
-    //         return row[idx].toString().toLowerCase().indexOf(needle) > -1;
-    //     });
-    //     setData(searchData);
-    // };
+        if (!target) {
+            setSigsDisplay(sigs_empty);
+            return;
+        }
 
-
-
-    var items = sigs_initial.map(SignatureItem);
+        // NOTE: we always filter the entire list, not the subset of what was previously filtered
+        const sigs_filtered = sigs_pre_filter.filter((row) => {
+            return row.toLowerCase().indexOf(target) > -1;
+        });
+        setSigsDisplay(sigs_filtered);
+    };
 
     return (
-    <div>
-    <div className='pb-4 pl-2'>
-        <h1 className="text-3xl text-slate-400 text-bold">API Search</h1>
-    </div>
-    <input type='text'  className="bg-zinc-800 mb-4 py-1 px-4 text-1xl font-mono text-slate-400" />
-    <div>
-        <ul className="text-1xl font-mono text-slate-400">
-            {items}
-        </ul>
-    </div>
+    <div className="space-y-4">
+        <div className='px-2'>
+            <h2 className="text-2xl text-slate-400 text-bold">API Search</h2>
+        </div>
+        <div className="px-2">
+            <p className="text-1xl text-zinc-400 font-sans">Search the StaticFrame API.
+            </p>
+        </div>
+        <div>
+            <input type='text' onChange={search_sigs} className="bg-zinc-800 py-2 px-4 w-full rounded-full text-1xl font-mono text-slate-200" />
+        </div>
+        <div>
+            {/* NOTE: space-y adds space between */}
+            <ul className="space-y-2 text-1xl font-mono text-slate-400">
+                {sigs_display.map(SignatureItem)}
+            </ul>
+        </div>
     </div>
     )
 }
@@ -118,8 +129,6 @@ function App() {
     const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
 
     // const svgBkg = SFSVG({ring: '#013366', infinity:'#016699', frame:'#9fc9eb'});
-
-    const [data, setSigs] = React.useState(sigs_initial);
 
 
     return (
@@ -181,7 +190,7 @@ function App() {
         <div className="max-w-5xl mx-auto pr-8 pl-8">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
             <div className={cnCol1FlexCol}>
-                <APIList />
+                <APISearch />
             </div>
         </div>
         </div>
