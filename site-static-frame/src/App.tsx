@@ -26,8 +26,6 @@ sigFullToSig.forEach((v, k) => {
 
 // console.log(sig_to_doc_json);
 
-
-
 interface SFSVGProps {
     ring: string;
     infinity: string;
@@ -105,18 +103,23 @@ function Link({label, url}: LinkProps) {
 
 
 function APISearch() {
-    // console.log(sigs);
-
     const sigsEmpty: string[] = [];
     const [sigsDisplay, setSigsDisplay] = React.useState(sigsEmpty);
     const [docDisplay, setDocDisplay] = React.useState(new Map<string, boolean>());
     const [exDisplay, setExDisplay] = React.useState(new Map<string, boolean>());
-
     const [fullSigSearch, setFullSigSearch] = React.useState(false);
+
+    const [query, setQuery] = React.useState("");
 
 
     const CNButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 rounded-md";
     const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
+
+    const CNFullSigSearch = "ml-4 p-2 w-2/6 h-min bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
+    const CNFullSigSearchActive = "ml-4 p-2 w-2/6 h-min bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
+
+    const CNRandomMethod = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
+    const CNToolTip = "pointer-events-none absolute opacity-0 bg-black rounded-md w-max p-2 -top-10 left-0 font-sans text-slate-200 transition-opacity delay-700 group-hover:opacity-60"
 
     // Return an li element for each value. Called once for each row after filtering.
     function SignatureItem(value: string, index: number) {
@@ -142,23 +145,30 @@ function APISearch() {
 
         const label = <div className="py-1"><span className="font-mono text-slate-400">{sigToSigFull.get(value)}</span></div>;
 
-        const buttonDoc = <button onClick={onClickDoc}
+        const buttonDoc = <span className="group relative">
+                <button onClick={onClickDoc}
                 className={docDisplay.get(value) ? CNButtonActive : CNButton}>
                 <IconDocument fill="#fdba74" />
-                </button>;
-        const buttonEx = <button onClick={onClickEx}
+                </button>
+                <span className={CNToolTip}>Documentation</span>
+                </span>;
+        const buttonEx = <span className="group relative">
+                <button onClick={onClickEx}
                 className={exDisplay.get(value) ? CNButtonActive : CNButton}>
                 <IconCode fill="#fdba74" />
-                </button>;
+                </button>
+                <span className={CNToolTip}>Code Example</span>
+                </span>;
 
         const getDoc = () => <div className="pt-4 font-sans text-slate-300">{sigToDoc.get(value)}</div>;
         function getEx() {
-            return (<div>
+            return (<div className="overflow-x-auto">
                 <pre className="pt-4 font-mono text-slate-300">
                 {sigToEx.get(value)?.join('\n')}
                 </pre>
                 </div>);
         }
+        // Return a single li for e ach row
         return (<div>
             <li className='px-4 py-2 bg-zinc-900' key={index}>
                 <div className="flex">
@@ -187,7 +197,6 @@ function APISearch() {
         }
         let sigsFiltered: string[] = [];
 
-
         if (fullSigSearch) {
             sigFullToSig.forEach((value, key) => {
                 if (key.toLowerCase().indexOf(target) > -1) {
@@ -195,8 +204,7 @@ function APISearch() {
                 }
             });
         }
-        else {
-            // NOTE: we always filter the entire list, not the subset of what was previously filtered
+        else { // NOTE: we always filter the entire list, not the subset of what was previously filtered
             sigsFiltered = sigsInitial.filter((row) => {
                 return row.toLowerCase().indexOf(target) > -1;
             });
@@ -206,6 +214,8 @@ function APISearch() {
 
     function onClickFullSigSearch() {
         setFullSigSearch(!fullSigSearch);
+        // TODO: need to redo search
+        // searchSigs(sigsFiltered);
     }
     function onClickRandomMethod() {
         // setFullSigSearch(!fullSigSearch);
@@ -217,8 +227,13 @@ function APISearch() {
         }
     }
 
-    const CNFullSigSearch = "ml-2 p-2 bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
-    const CNFullSigSearchActive = "ml-2 p-2 bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
+    function ReportResults() {
+        const len = sigsDisplay.length;
+        if (len > 0) {
+            return <div><p className="pl-2 text-1xl text-zinc-400 font-sans">{len} {len === 1 ? "Result" : "Results"}</p></div>
+        }
+        return <div/>
+    }
 
     return (
     <div className="space-y-4">
@@ -226,19 +241,21 @@ function APISearch() {
             <h2 className="text-2xl text-slate-400 text-bold">API Search</h2>
         </div>
         <div className="px-2">
-            <p className="text-1xl text-zinc-400 font-sans">Search the StaticFrame API.</p>
+            <p className="text-1xl text-zinc-400 font-sans">Search {sigsInitial.length} StaticFrame API endpoints. View {sigToEx.size} code examples.</p>
         </div>
         <div>
+            <button onClick={onClickRandomMethod} className={CNRandomMethod}>
+                Random Method
+            </button>
+        </div>
+        <div className="flex">
+            <input type='text' onChange={searchSigs} className="bg-zinc-800 py-2 px-4 mb-4 w-4/6 rounded-full text-1xl font-mono text-slate-200">
+            </input>
             <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
                 Full Signature Search
             </button>
-            <button onClick={onClickRandomMethod} className={CNFullSigSearch}>
-                Select a Random Method
-            </button>
         </div>
-        <div>
-            <input type='text' onChange={searchSigs} className="bg-zinc-800 py-2 px-4 mb-4 w-full rounded-full text-1xl font-mono text-slate-200" />
-        </div>
+        <ReportResults />
         <div>
             {/* NOTE: space-y adds space between each li row entry */}
             <ul className="space-y-2 text-1xl font-mono text-slate-400">
