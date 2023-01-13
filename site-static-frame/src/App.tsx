@@ -13,6 +13,12 @@ const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
 const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
 const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
 
+const sigToSigFull = new Map();
+sigFullToSig.forEach((v, k) => {
+  sigToSigFull.set(v, k);
+});
+
+
 // console.log(sig_to_doc_json);
 
 
@@ -129,7 +135,7 @@ function APISearch() {
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
 
-        const label = <div className="py-1"><span className="font-mono text-slate-400">{value}</span></div>;
+        const label = <div className="py-1"><span className="font-mono text-slate-400">{sigToSigFull.get(value)}</span></div>;
 
         const buttonDoc = <button onClick={onClickDoc}
                 className={docDisplay.get(value) ? CNButtonActive : CNButton}>
@@ -174,11 +180,31 @@ function APISearch() {
             setSigsDisplay(sigsEmpty);
             return;
         }
-        // NOTE: we always filter the entire list, not the subset of what was previously filtered
-        const sigs_filtered = sigsInitial.filter((row) => {
-            return row.toLowerCase().indexOf(target) > -1;
-        });
-        setSigsDisplay(sigs_filtered);
+        let sigsFiltered: string[] = [];
+
+
+        if (fullSigSearch) {
+            sigFullToSig.forEach((value, key) => {
+                // console.log(key, value);
+                if (key.toLowerCase().indexOf(target) > -1) {
+                    sigsFiltered.push(value);
+                }
+            });
+            // console.log(sigsFiltered);
+            // for (const [key, value] of sigFullToSig) {
+            //     console.log(key, value);
+            //     if (key.toLowerCase().indexOf(target) > -1) {
+            //         sigsFiltered.push(value);
+            //     }
+            // }
+        }
+        else {
+            // NOTE: we always filter the entire list, not the subset of what was previously filtered
+            sigsFiltered = sigsInitial.filter((row) => {
+                return row.toLowerCase().indexOf(target) > -1;
+            });
+        }
+        setSigsDisplay(sigsFiltered);
     };
 
     function onClickFullSigSearch() {
@@ -187,7 +213,6 @@ function APISearch() {
     const CNFullSigSearch = "ml-2 p-2 bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
     const CNFullSigSearchActive = "ml-2 p-2 bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
 
-    // const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
 
     return (
     <div className="space-y-4">
@@ -200,6 +225,9 @@ function APISearch() {
         <div>
             <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
                 Full Signature Search
+            </button>
+            <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
+                Select a Random Method
             </button>
         </div>
         <div>
