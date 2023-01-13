@@ -34,10 +34,10 @@ interface SFSVGProps {
 function SFSVG({ring, infinity, frame}: SFSVGProps) {
     return (
     <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 228 228">
-        <path d="M113.39,0A113.39,113.39,0,1,1,33.21,33.21,113,113,0,0,1,113.39,0m0,17.19a96.21,96.21,0,1,0,68,28.18A95.84,95.84,0,0,0,113.39,17.19Z" fill={ring}/>
-        <path d="M156.74,91.41l3.08-.91h0l14.11-4.15v.31h0v17.57l-2.17.64h0l-15,4.41Z" fill={frame}/>
-        <path d="M104.79,107.3v-.57l0-.07h0V78.26a34.64,34.64,0,0,1,69-4.23l-16.95,5c0-.25,0-.5,0-.75a17.45,17.45,0,1,0-34.89,0h0v23.33L137.76,97l7-2.06v.31h0v17.57l-2.18.64h0l-15,4.41h0L122,119.47V120l0,.08h0v28.39A34.61,34.61,0,1,1,77.6,115.3h0Zm25.84,10.2,0,.07h0Zm-25.84,31h0V125.18l-22.36,6.57h0a17.46,17.46,0,1,0,22.36,16.76Z" fill={infinity}/>
-        </svg>
+    <path d="M113.39,0A113.39,113.39,0,1,1,33.21,33.21,113,113,0,0,1,113.39,0m0,17.19a96.21,96.21,0,1,0,68,28.18A95.84,95.84,0,0,0,113.39,17.19Z" fill={ring}/>
+    <path d="M156.74,91.41l3.08-.91h0l14.11-4.15v.31h0v17.57l-2.17.64h0l-15,4.41Z" fill={frame}/>
+    <path d="M104.79,107.3v-.57l0-.07h0V78.26a34.64,34.64,0,0,1,69-4.23l-16.95,5c0-.25,0-.5,0-.75a17.45,17.45,0,1,0-34.89,0h0v23.33L137.76,97l7-2.06v.31h0v17.57l-2.18.64h0l-15,4.41h0L122,119.47V120l0,.08h0v28.39A34.61,34.61,0,1,1,77.6,115.3h0Zm25.84,10.2,0,.07h0Zm-25.84,31h0V125.18l-22.36,6.57h0a17.46,17.46,0,1,0,22.36,16.76Z" fill={infinity}/>
+    </svg>
     )
 }
 
@@ -111,7 +111,6 @@ function APISearch() {
 
     const [query, setQuery] = React.useState("");
 
-
     const CNButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 rounded-md";
     const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
 
@@ -143,7 +142,7 @@ function APISearch() {
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
 
-        const label = <div className="py-1"><span className="font-mono text-slate-400">{sigToSigFull.get(value)}</span></div>;
+        const label = <div className="py-1"><span className="font-mono text-slate-400 font-bold">{sigToSigFull.get(value)}</span></div>;
 
         const buttonDoc = <span className="group relative">
                 <button onClick={onClickDoc}
@@ -189,8 +188,8 @@ function APISearch() {
     }
 
     // Given a target, filter all signatures and update the sigsDisplay state
-    function searchSigs(e: React.FormEvent<HTMLInputElement>) {
-        const target = e.currentTarget.value.toLowerCase();
+    function searchSigs(target: string) {
+        target = target.toLowerCase();
         if (!target) {
             setSigsDisplay(sigsEmpty);
             return;
@@ -214,19 +213,24 @@ function APISearch() {
 
     function onClickFullSigSearch() {
         setFullSigSearch(!fullSigSearch);
-        // TODO: need to redo search
-        // searchSigs(sigsFiltered);
+        // on change need to redo search, handled by effect below
     }
     function onClickRandomMethod() {
-        // setFullSigSearch(!fullSigSearch);
         const keys = Array.from(methodToSig.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
         const sigsFiltered = methodToSig.get(key);
         if (sigsFiltered) {
             setSigsDisplay(sigsFiltered);
         }
+        setQuery(key);
     }
-
+    function onClickRandomExample() {
+        const keys = Array.from(sigToEx.keys());
+        const key = keys[Math.floor(Math.random() * keys.length)];
+        setSigsDisplay([key]);
+        setQuery(key);
+        exDisplay.set(key, true);
+    }
     function ReportResults() {
         const len = sigsDisplay.length;
         if (len > 0) {
@@ -234,6 +238,19 @@ function APISearch() {
         }
         return <div/>
     }
+
+    // On fullSigSearch update, redo searchSigs, calling setSigsDisplay
+    React.useEffect(() => searchSigs(query),
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+            [fullSigSearch]
+            );
+
+    // On query updates, set a timeout before calling searchSigs
+    React.useEffect(() => {
+        const timeOutId = setTimeout(() => searchSigs(query), 500);
+        return () => clearTimeout(timeOutId);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        }, [query]);
 
     return (
     <div className="space-y-4">
@@ -247,10 +264,15 @@ function APISearch() {
             <button onClick={onClickRandomMethod} className={CNRandomMethod}>
                 Random Method
             </button>
+            <button onClick={onClickRandomExample} className={CNRandomMethod}>
+                Random Example
+            </button>
         </div>
         <div className="flex">
-            <input type='text' onChange={searchSigs} className="bg-zinc-800 py-2 px-4 mb-4 w-4/6 rounded-full text-1xl font-mono text-slate-200">
-            </input>
+            <input type='text'
+                value={query}
+                onChange={e => setQuery(e.currentTarget.value)}
+                className="bg-zinc-800 py-2 px-4 mb-4 w-4/6 rounded-full text-1xl font-mono text-slate-200" />
             <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
                 Full Signature Search
             </button>
