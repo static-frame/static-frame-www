@@ -7,10 +7,15 @@ import React from 'react';
 import sigsInitial from './sf-api/sigs.json';
 import sigToDocJSON from './sf-api/sig_to_doc.json';
 import sigToExJSON from './sf-api/sig_to_example.json';
+import methodToSigJSON from './sf-api/method_to_sig.json';
 import sigFullToSigJSON from './sf-api/sig_full_to_sig.json';
 
 const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
+
 const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
+const methodToSig = new Map<string, string[]>(Object.entries(methodToSigJSON));
+
+
 const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
 
 const sigToSigFull = new Map();
@@ -185,18 +190,10 @@ function APISearch() {
 
         if (fullSigSearch) {
             sigFullToSig.forEach((value, key) => {
-                // console.log(key, value);
                 if (key.toLowerCase().indexOf(target) > -1) {
                     sigsFiltered.push(value);
                 }
             });
-            // console.log(sigsFiltered);
-            // for (const [key, value] of sigFullToSig) {
-            //     console.log(key, value);
-            //     if (key.toLowerCase().indexOf(target) > -1) {
-            //         sigsFiltered.push(value);
-            //     }
-            // }
         }
         else {
             // NOTE: we always filter the entire list, not the subset of what was previously filtered
@@ -210,9 +207,18 @@ function APISearch() {
     function onClickFullSigSearch() {
         setFullSigSearch(!fullSigSearch);
     }
+    function onClickRandomMethod() {
+        // setFullSigSearch(!fullSigSearch);
+        const keys = Array.from(methodToSig.keys());
+        const key = keys[Math.floor(Math.random() * keys.length)];
+        const sigsFiltered = methodToSig.get(key);
+        if (sigsFiltered) {
+            setSigsDisplay(sigsFiltered);
+        }
+    }
+
     const CNFullSigSearch = "ml-2 p-2 bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
     const CNFullSigSearchActive = "ml-2 p-2 bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
-
 
     return (
     <div className="space-y-4">
@@ -226,7 +232,7 @@ function APISearch() {
             <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
                 Full Signature Search
             </button>
-            <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
+            <button onClick={onClickRandomMethod} className={CNFullSigSearch}>
                 Select a Random Method
             </button>
         </div>
