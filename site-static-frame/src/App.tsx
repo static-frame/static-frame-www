@@ -216,6 +216,7 @@ function APISearch() {
         // on change need to redo search, handled by effect below
     }
     function onClickRandomMethod() {
+        setFullSigSearch(false); // key will be a sig w/o parameters
         const keys = Array.from(methodToSig.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
         const sigsFiltered = methodToSig.get(key);
@@ -225,6 +226,7 @@ function APISearch() {
         setQuery(key);
     }
     function onClickRandomExample() {
+        setFullSigSearch(false); // key will be a sig w/o parameters
         const keys = Array.from(sigToEx.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
         setSigsDisplay([key]);
