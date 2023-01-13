@@ -3,12 +3,17 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
-// import sig_to_ex from './sf-api/1.0.0/sig_to_example.json';
-import sigsInitial from './sf-api/1.0.0/sigs.json';
 
-// NOTE: if creating a map, better to write out json just as a list of pairs
-import sig_to_doc_raw from './sf-api/1.0.0/sig_to_doc.json';
-let sigToDoc = new Map<string, string>(Object.entries(sig_to_doc_raw));
+import sigsInitial from './sf-api/sigs.json';
+import sigToDocJSON from './sf-api/sig_to_doc.json';
+import sigToExJSON from './sf-api/sig_to_example.json';
+import sigFullToSigJSON from './sf-api/sig_full_to_sig.json';
+
+const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
+const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
+const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
+
+// console.log(sig_to_doc_json);
 
 
 
@@ -89,13 +94,15 @@ function Link({label, url}: LinkProps) {
 
 
 function APISearch() {
-    // console.log(sig_to_ex);
     // console.log(sigs);
 
     const sigsEmpty: string[] = [];
     const [sigsDisplay, setSigsDisplay] = React.useState(sigsEmpty);
     const [docDisplay, setDocDisplay] = React.useState(new Map<string, boolean>());
     const [exDisplay, setExDisplay] = React.useState(new Map<string, boolean>());
+
+    const [fullSigSearch, setFullSigSearch] = React.useState(false);
+
 
     const CNButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 rounded-md";
     const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
@@ -134,8 +141,13 @@ function APISearch() {
                 </button>;
 
         const getDoc = () => <div className="pt-4 font-sans text-slate-300">{sigToDoc.get(value)}</div>;
-        const getEx = () => <div className="pt-4 font-mono text-slate-300">{sigToDoc.get(value)}</div>;
-
+        function getEx() {
+            return (<div>
+                <pre className="pt-4 font-mono text-slate-300">
+                {sigToEx.get(value)?.join('\n')}
+                </pre>
+                </div>);
+        }
         return (<div>
             <li className='px-4 py-2 bg-zinc-900' key={index}>
                 <div className="flex">
@@ -169,14 +181,26 @@ function APISearch() {
         setSigsDisplay(sigs_filtered);
     };
 
+    function onClickFullSigSearch() {
+        setFullSigSearch(!fullSigSearch);
+    }
+    const CNFullSigSearch = "ml-2 p-2 bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
+    const CNFullSigSearchActive = "ml-2 p-2 bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
+
+    // const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
+
     return (
     <div className="space-y-4">
         <div className='px-2'>
             <h2 className="text-2xl text-slate-400 text-bold">API Search</h2>
         </div>
         <div className="px-2">
-            <p className="text-1xl text-zinc-400 font-sans">Search the StaticFrame API.
-            </p>
+            <p className="text-1xl text-zinc-400 font-sans">Search the StaticFrame API.</p>
+        </div>
+        <div>
+            <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
+                Full Signature Search
+            </button>
         </div>
         <div>
             <input type='text' onChange={searchSigs} className="bg-zinc-800 py-2 px-4 mb-4 w-full rounded-full text-1xl font-mono text-slate-200" />
