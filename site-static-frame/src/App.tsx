@@ -158,7 +158,7 @@ function APISearch() {
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
 
-        const label = <div className="py-1"><span className="font-mono text-slate-400 font-bold">{sigToSigFull.get(value)}</span></div>;
+        const label = <div className="py-1 break-words"><span className="font-mono text-slate-400 font-bold">{sigToSigFull.get(value)}</span></div>;
 
         const buttonDoc = <span className="group relative">
                 <button onClick={onClickDoc}
