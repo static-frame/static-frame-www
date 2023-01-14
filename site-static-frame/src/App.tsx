@@ -65,7 +65,7 @@ function IconCode({fill, }: IconProps) {
 
 function SFLogo() {
     return (
-        <div>
+        <div className="float-right">
         <SFSVG ring='#27272a' infinity='#3f3f46' frame='#fdba74' />
         </div>
     )
@@ -202,10 +202,10 @@ function APISearch() {
         return (<div>
             <li className='px-4 py-2 bg-zinc-900' key={value}>
                 <div className="flex">
-                    <span className="w-5/6">
+                    <span className="w-4/6">
                     {label}
                     </span>
-                    <span className="w-1/6 text-right">
+                    <span className="w-2/6 text-right">
                     {buttonDoc}
                     {buttonEx}
                     </span>
@@ -365,7 +365,7 @@ function APISearch() {
                 onChange={e => setQuery(e.currentTarget.value)}
                 className="bg-zinc-800 py-2 px-4 mb-4 w-4/6 rounded-full text-1xl font-mono text-slate-200" />
             <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
-                Full Signature Search
+                Full Signature
             </button>
         </div>
         <div className="flex">
@@ -389,36 +389,27 @@ function APISearch() {
 // https://laravel-news.com/tailwind-css-tips-and-tricks
 function App() {
     const cnCol1FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/1 lg:w-1/1'
-    const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
-    const cnCol3FlexCol = "w-full flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
+    // const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
+    const cnCol3FlexColShrinkable = "w-1/3 flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
     const cnColFieldGradient = "flex-1 px-4 py-4 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
-    const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
+    // const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
 
     return (
     <div>
         <div className="max-w-full mx-auto">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black">
-            <div className={cnCol2FlexCol}>
-              {/* <div className={cnColFieldGradient}>
-              </div> */}
-            </div>
-            <div className={cnCol2FlexCol}>
-              {/* <div className={cnColField}>
-              </div> */}
-            </div>
+        <div className="max-w-5xl mx-auto pr-8 pl-8 pt-4">
+            {/* <p className={CNTextSmall}>test</p> */}
+        </div>
         </div>
         </div>
 
         <div className="max-w-5xl mx-auto pr-8 pl-8 pt-4">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
 
-            <div className={cnCol2FlexCol}>
+            <div className={cnCol1FlexCol}>
               <div className={cnColFieldGradient}>
-                  <SFLogo />
-              </div>
-            </div>
-            <div className={cnCol2FlexCol}>
-              <div className={cnColField}>
+                <SFLogo />
                 <Title />
                 <Description />
               </div>
@@ -429,17 +420,17 @@ function App() {
 
         <div className="max-w-5xl mx-auto pr-8 pl-8">
         <div className="-mx-4 flex flex-wrap my-4 px-2 py-2 bg-black rounded-md">
-            <div className={cnCol3FlexCol}>
+            <div className={cnCol3FlexColShrinkable}>
               <div className={cnColFieldGradient}>
               <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
               </div>
             </div>
-            <div className={cnCol3FlexCol}>
+            <div className={cnCol3FlexColShrinkable}>
               <div className={cnColFieldGradient}>
               <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
               </div>
             </div>
-            <div className={cnCol3FlexCol}>
+            <div className={cnCol3FlexColShrinkable}>
               <div className={cnColFieldGradient}>
               <Link label='Try it now' url='https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb' />
               </div>
