@@ -106,7 +106,7 @@ function CodeBlock({code}: CodeBlockProps) {
     React.useEffect(() => {
         Prism.highlightAll();
     }, []);
-
+    const foo = 'foo';
     return (
       <pre className="language-javascript">
         <code>{code}</code>
@@ -173,7 +173,7 @@ function APISearch() {
                 <span className={CNToolTip}>Code Example</span>
                 </span>;
 
-        const getDoc = () => <div className="pt-4 font-sans text-slate-300">{sigToDoc.get(value)}</div>;
+        const getDoc = () => <div className="py-2 font-sans text-slate-300">{sigToDoc.get(value)}</div>;
 
         function getEx() {
             const ex = sigToEx.get(value)?.join('\n');
@@ -310,7 +310,6 @@ function APISearch() {
 }
 
 // https://laravel-news.com/tailwind-css-tips-and-tricks
-
 function App() {
     const cnCol1FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/1 lg:w-1/1'
     const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
