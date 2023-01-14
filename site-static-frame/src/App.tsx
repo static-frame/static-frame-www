@@ -1,7 +1,6 @@
-
-// import { url } from 'inspector';
 import React from 'react';
-// import logo from './logo.svg';
+import Prism from "prismjs";
+import "./prism.css";
 // import './App.css';
 
 import sigsInitial from './sf-api/sigs.json';
@@ -23,8 +22,6 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-
-// console.log(sig_to_doc_json);
 
 interface SFSVGProps {
     ring: string;
@@ -79,7 +76,7 @@ function Title() {
 function Description() {
     return (
         <div className='p-2'>
-        <p className="text-1xl text-zinc-400 font-sans">A library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
+        <p className="text-1xl text-zinc-400 font-sans">A Python library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
         </p>
         </div>
     )
@@ -102,6 +99,23 @@ function Link({label, url}: LinkProps) {
 }
 
 
+interface CodeBlockProps {
+    code: string;
+}
+function CodeBlock({code}: CodeBlockProps) {
+    React.useEffect(() => {
+        Prism.highlightAll();
+    }, []);
+
+    return (
+      <pre className="language-javascript">
+        <code>{code}</code>
+      </pre>
+    );
+  };
+
+
+
 function APISearch() {
     const sigsEmpty: string[] = [];
     const [sigsDisplay, setSigsDisplay] = React.useState(sigsEmpty);
@@ -120,8 +134,8 @@ function APISearch() {
     const CNRandomMethod = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
     const CNToolTip = "pointer-events-none absolute opacity-0 bg-black rounded-md w-max p-2 -top-10 left-0 font-sans text-slate-200 transition-opacity delay-700 group-hover:opacity-60"
 
-    // Return an li element for each value. Called once for each row after filtering.
-    function SignatureItem(value: string, index: number) {
+    // Return an li element for each value. Called once for each row after filtering. `value` is the sig
+    function SignatureItem(value: string) {
 
         function onClickDoc() {
             if (docDisplay.has(value)) {
@@ -160,16 +174,21 @@ function APISearch() {
                 </span>;
 
         const getDoc = () => <div className="pt-4 font-sans text-slate-300">{sigToDoc.get(value)}</div>;
+
         function getEx() {
-            return (<div className="overflow-x-auto">
-                <pre className="pt-4 font-mono text-slate-300">
-                {sigToEx.get(value)?.join('\n')}
-                </pre>
-                </div>);
+            const ex = sigToEx.get(value)?.join('\n');
+            if (ex) {
+                return (<div className="overflow-x-auto">
+                    {/* <pre className="pt-4 font-mono text-slate-300">
+                    </pre> */}
+                    <CodeBlock code={ex}/>
+                    </div>);
+            }
+            return <div/>
         }
         // Return a single li for e ach row
         return (<div>
-            <li className='px-4 py-2 bg-zinc-900' key={index}>
+            <li className='px-4 py-2 bg-zinc-900' key={value}>
                 <div className="flex">
                     <span className="w-5/6">
                     {label}
