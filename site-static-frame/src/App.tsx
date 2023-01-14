@@ -1,9 +1,8 @@
 import React from 'react';
 import Prism from "prismjs";
-// import "./prism.css";
 import 'prismjs/components/prism-python.min.js'
-import 'prismjs/themes/prism-okaidia.css'
-
+// import 'prismjs/themes/prism-twilight.css'
+import 'prismjs/themes/prism-tomorrow.css'
 // import './App.css';
 
 import sigsInitial from './sf-api/sigs.json';
@@ -13,16 +12,19 @@ import methodToSigJSON from './sf-api/method_to_sig.json';
 import sigFullToSigJSON from './sf-api/sig_full_to_sig.json';
 
 const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
+const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
+
 const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
 const methodToSig = new Map<string, string[]>(Object.entries(methodToSigJSON));
 
-
-const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
-
+// create reverse mapping
 const sigToSigFull = new Map();
 sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
+
+
+const CNTextSmall = "text-1xl text-zinc-400 font-sans"
 
 
 interface SFSVGProps {
@@ -68,6 +70,7 @@ function SFLogo() {
         </div>
     )
 }
+
 function Title() {
     return (
         <div className='p-2'>
@@ -78,11 +81,12 @@ function Title() {
 function Description() {
     return (
         <div className='p-2'>
-        <p className="text-1xl text-zinc-400 font-sans">A Python library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
+        <p className={CNTextSmall}>A Python library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
         </p>
         </div>
     )
 }
+
 interface LinkProps {
     label: string;
     url: string;
@@ -100,7 +104,6 @@ function Link({label, url}: LinkProps) {
     )
 }
 
-
 interface CodeBlockProps {
     code: string;
 }
@@ -114,8 +117,6 @@ function CodeBlock({code}: CodeBlockProps) {
       </pre>
     );
   };
-
-
 
 function APISearch() {
     const sigsEmpty: string[] = [];
@@ -132,8 +133,8 @@ function APISearch() {
     const CNFullSigSearch = "ml-4 p-2 w-2/6 h-min bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
     const CNFullSigSearchActive = "ml-4 p-2 w-2/6 h-min bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
 
-    const CNRandomMethod = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
-    const CNToolTip = "pointer-events-none absolute opacity-0 bg-black rounded-md w-max p-2 -top-10 left-0 font-sans text-slate-200 transition-opacity delay-700 group-hover:opacity-60"
+    const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
+    const CNToolTip = "pointer-events-none absolute opacity-0 bg-zinc-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
 
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
     function SignatureItem(value: string) {
@@ -174,20 +175,30 @@ function APISearch() {
                 <span className={CNToolTip}>Code Example</span>
                 </span>;
 
-        const getDoc = () => <div className="py-2 font-sans text-slate-300">{sigToDoc.get(value)}</div>;
-
-        function getEx() {
-            const ex = sigToEx.get(value)?.join('\n');
-            if (ex) {
-                return (<div className="overflow-x-auto">
-                    {/* <pre className="pt-4 font-mono text-slate-300">
-                    </pre> */}
-                    <CodeBlock code={ex}/>
-                    </div>);
+        function DocIfActive() {
+            if (docDisplay.get(value)) {
+                const doc = sigToDoc.get(value);
+                if (doc) {
+                    return <div className="py-2 font-sans text-slate-300">{doc}</div>;
+                }
             }
             return <div/>
         }
-        // Return a single li for e ach row
+        function ExIfActive() {
+            if (exDisplay.get(value)) {
+                const ex = sigToEx.get(value)?.join('\n');
+                if (ex) {
+                    return (<div className="overflow-x-auto">
+                        {/* <pre className="pt-4 font-mono text-slate-300">
+                        </pre> */}
+                        <CodeBlock code={ex}/>
+                        </div>);
+                }
+            }
+            return <div/>
+        }
+
+        // Return a single li for each row
         return (<div>
             <li className='px-4 py-2 bg-zinc-900' key={value}>
                 <div className="flex">
@@ -200,8 +211,8 @@ function APISearch() {
                     </span>
                 </div>
                 <div className="w-full">
-                    {docDisplay.get(value) ? getDoc() : null}
-                    {exDisplay.get(value) ? getEx() : null}
+                    <DocIfActive />
+                    <ExIfActive />
                 </div>
             </li>
             </div>)
@@ -233,7 +244,7 @@ function APISearch() {
 
     function onClickFullSigSearch() {
         setFullSigSearch(!fullSigSearch);
-        // on change need to redo search, handled by effect below
+        // when this changes need to redo search, handled by useEffect below
     }
     function onClickRandomMethod() {
         setFullSigSearch(false); // key will be a sig w/o parameters
@@ -245,7 +256,7 @@ function APISearch() {
         }
         setQuery(key);
     }
-    function onClickRandomExample() {
+    function onClickExampleRandom() {
         setFullSigSearch(false); // key will be a sig w/o parameters
         const keys = Array.from(sigToEx.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
@@ -253,12 +264,70 @@ function APISearch() {
         setQuery(key);
         exDisplay.set(key, true);
     }
+
+    function onClickExampleShowAll() {
+        sigsDisplay.forEach(e => exDisplay.set(e, true));
+        setExDisplay(new Map<string, boolean>(exDisplay));
+    }
+    function onClickExampleHideAll() {
+        sigsDisplay.forEach(e => exDisplay.set(e, false));
+        setExDisplay(new Map<string, boolean>(exDisplay));
+    }
+
+    function onClickDocShowAll() {
+        // TODO: if sigsDisplay is large (over 500) this can crash the tab...
+        sigsDisplay.forEach(e => docDisplay.set(e, true));
+        setDocDisplay(new Map<string, boolean>(docDisplay));
+    }
+    function onClickDocHideAll() {
+        sigsDisplay.forEach(e => docDisplay.set(e, false));
+        setDocDisplay(new Map<string, boolean>(docDisplay));
+    }
+
     function ReportResults() {
         const len = sigsDisplay.length;
         if (len > 0) {
-            return <div><p className="pl-2 text-1xl text-zinc-400 font-sans">{len} {len === 1 ? "Result" : "Results"}</p></div>
+            return <span className="pl-2"><span className={CNTextSmall}>{len} {len === 1 ? "Result" : "Results"}</span></span>
         }
-        return <div/>
+        return <span/>
+    }
+
+    function ShowHideAll() {
+        const colorIconShowAll = "#4ade80";
+        const colorIconHideAll = "#f87171";
+
+        return (
+        <span>
+            <span className="pr-2">
+                <span className="group relative">
+                    <button onClick={onClickDocShowAll} className={CNButtonHover}>
+                    <IconDocument fill={colorIconShowAll} />
+                    </button>
+                    <span className={CNToolTip}>Show all documentation</span>
+                </span>
+                <span className="group relative">
+                    <button onClick={onClickDocHideAll} className={CNButtonHover}>
+                    <IconDocument fill={colorIconHideAll} />
+                    </button>
+                    <span className={CNToolTip}>Hide all documentation</span>
+                </span>
+            </span>
+            <span className="pr-4">
+                <span className="group relative">
+                    <button onClick={onClickExampleShowAll} className={CNButtonHover}>
+                    <IconCode fill={colorIconShowAll} />
+                    </button>
+                    <span className={CNToolTip}>Show all examples</span>
+                </span>
+                <span className="group relative">
+                    <button onClick={onClickExampleHideAll} className={CNButtonHover}>
+                    <IconCode fill={colorIconHideAll} />
+                    </button>
+                    <span className={CNToolTip}>Hide all examples</span>
+                </span>
+            </span>
+        </span>
+        )
     }
 
     // On fullSigSearch update, redo searchSigs, calling setSigsDisplay
@@ -280,13 +349,13 @@ function APISearch() {
             <h2 className="text-2xl text-slate-400 text-bold">API Search</h2>
         </div>
         <div className="px-2">
-            <p className="text-1xl text-zinc-400 font-sans">Search {sigsInitial.length} StaticFrame API endpoints. View {sigToEx.size} code examples.</p>
+            <p className={CNTextSmall}>Search {sigsInitial.length} StaticFrame API endpoints. View {sigToEx.size} code examples.</p>
         </div>
         <div>
-            <button onClick={onClickRandomMethod} className={CNRandomMethod}>
+            <button onClick={onClickRandomMethod} className={CNButtonHover}>
                 Random Method
             </button>
-            <button onClick={onClickRandomExample} className={CNRandomMethod}>
+            <button onClick={onClickExampleRandom} className={CNButtonHover}>
                 Random Example
             </button>
         </div>
@@ -299,7 +368,14 @@ function APISearch() {
                 Full Signature Search
             </button>
         </div>
-        <ReportResults />
+        <div className="flex">
+            <span className="w-2/6">
+                <ReportResults />
+            </span>
+            <span className="w-4/6 text-right float-right">
+                <ShowHideAll />
+            </span>
+        </div>
         <div>
             {/* NOTE: space-y adds space between each li row entry */}
             <ul className="space-y-2 text-1xl font-mono text-slate-400">
@@ -318,7 +394,6 @@ function App() {
     const cnColFieldGradient = "flex-1 px-4 py-4 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
     const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
 
-    // const svgBkg = SFSVG({ring: '#013366', infinity:'#016699', frame:'#9fc9eb'});
     return (
     <div>
         <div className="max-w-full mx-auto">
