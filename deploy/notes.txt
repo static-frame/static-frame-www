@@ -27,4 +27,16 @@ https://tailwindcss.com/docs/guides/create-react-app
 
 
 
+Installing prism JSs
 
+npm install prismjs
+npm i -D babel-plugin-prismjs
+npm install -D @types/prismjs
+
+NOTE cannot use babelrc as shown here:
+https://www.npmjs.com/package/babel-plugin-prismjs
+
+https://stackoverflow.com/questions/47966285/how-to-find-babelrc
+
+Why it does not work with CRA
+https://stackoverflow.com/questions/67528070/prismjs-babel-config-not-working-in-react
