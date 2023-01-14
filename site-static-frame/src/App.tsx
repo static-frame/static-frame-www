@@ -1,6 +1,9 @@
 import React from 'react';
 import Prism from "prismjs";
-import "./prism.css";
+// import "./prism.css";
+import 'prismjs/components/prism-python.min.js'
+import 'prismjs/themes/prism-okaidia.css'
+
 // import './App.css';
 
 import sigsInitial from './sf-api/sigs.json';
@@ -10,7 +13,6 @@ import methodToSigJSON from './sf-api/method_to_sig.json';
 import sigFullToSigJSON from './sf-api/sig_full_to_sig.json';
 
 const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
-
 const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
 const methodToSig = new Map<string, string[]>(Object.entries(methodToSigJSON));
 
@@ -106,9 +108,8 @@ function CodeBlock({code}: CodeBlockProps) {
     React.useEffect(() => {
         Prism.highlightAll();
     }, []);
-    const foo = 'foo';
     return (
-      <pre className="language-javascript">
+      <pre className="language-python">
         <code>{code}</code>
       </pre>
     );
