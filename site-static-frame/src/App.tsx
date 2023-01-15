@@ -176,10 +176,7 @@ function APISearch() {
     //--------------------------------------------------------------------------
     const CNButtonCommon = "ml-2 p-2 w-8 h-8 rounded-md";
     const CNButton = CNButtonCommon + " bg-gradient-to-b from-zinc-700 to-zinc-900";
-    const CNButtonActive = CNButtonCommon + " bg-gradient-to-b from-zinc-600 to-zinc-700";
-
-    // const CNFullSigSearch = "mr-2 p-2 w-8 h-min bg-zinc-800 rounded-md";
-    // const CNFullSigSearchActive = "mr-2 p-2 w-8 h-min bg-zinc-600 rounded-md";
+    const CNButtonActive = CNButtonCommon + " bg-gradient-to-b from-zinc-800 to-zinc-600";
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
 
@@ -303,6 +300,8 @@ function APISearch() {
 
     function onClickRandomMethod() {
         setFullSigSearch(false); // key will be a sig w/o parameters
+        setRESearch(false);
+
         const keys = Array.from(methodToSig.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
         // NOTE: setting sigsFiltered is faster than just calling setQuery, which alone will work
@@ -315,6 +314,8 @@ function APISearch() {
 
     function onClickExampleRandom() {
         setFullSigSearch(false); // key will be a sig w/o parameters
+        setRESearch(false);
+
         const keys = Array.from(sigToEx.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
         // NOTE: setting sigsFiltered is faster than just calling setQuery, which alone will work
