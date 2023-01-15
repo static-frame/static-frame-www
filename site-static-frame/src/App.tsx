@@ -73,6 +73,14 @@ function IconClear({fill, }: IconProps) {
     )
 }
 
+function IconParameters({fill, }: IconProps) {
+    return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
+    </svg>
+    )
+}
+
 function SFLogo() {
     return (
         <div className="float-right">
@@ -141,8 +149,8 @@ function APISearch() {
     const CNButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 rounded-md";
     const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
 
-    const CNFullSigSearch = "ml-2 p-2 w-2/6 h-min bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
-    const CNFullSigSearchActive = "ml-2 p-2 w-2/6 h-min bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
+    const CNFullSigSearch = "mr-2 p-2 w-8 h-min bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
+    const CNFullSigSearchActive = "mr-2 p-2 w-8 h-min bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
     const CNToolTip = "pointer-events-none absolute opacity-0 bg-zinc-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
@@ -364,7 +372,9 @@ function APISearch() {
             <h2 className="text-2xl text-slate-400 text-bold">API Search</h2>
         </div>
         <div className="px-2">
-            <p className={CNTextSmall}>Search {sigsInitial.length} StaticFrame API endpoints. View {sigToEx.size} code examples.</p>
+            <p className={CNTextSmall}>
+                Search {sigsInitial.length.toLocaleString()} StaticFrame API endpoints.
+                View {sigToEx.size.toLocaleString()} code examples.</p>
         </div>
         <div>
             <button onClick={onClickRandomMethod} className={CNButtonHover}>
@@ -381,13 +391,15 @@ function APISearch() {
                 <IconClear fill={"#64748b"}/>
                 </button>
             </div>
+            <div>
+                <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
+                <IconParameters fill={"#64748b"}/>
+                </button>
+            </div>
             <input type='text'
                 value={query}
                 onChange={e => setQuery(e.currentTarget.value)}
-                className="bg-zinc-800 py-2 px-4 mb-4 w-4/6 rounded-full text-1xl font-mono text-slate-200" />
-            <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
-                Full Signature
-            </button>
+                className="bg-zinc-800 py-2 px-4 mb-4 w-full rounded-full text-1xl font-mono text-slate-200" />
         </div>
         <div className="flex">
             <span className="w-2/6">
