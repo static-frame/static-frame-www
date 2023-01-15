@@ -23,20 +23,23 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-
 const CNTextSmall = "text-1xl text-zinc-400 font-sans"
 
 const colorIconShowAll = "#4ade80";
-const colorIconHideAll = "#f87171";
+const colorIconHideAll = "#ef4444";
+
+//------------------------------------------------------------------------------
+// SVG
 
 interface SFSVGProps {
     ring: string;
     infinity: string;
     frame: string;
+    size: number;
 }
-function SFSVG({ring, infinity, frame}: SFSVGProps) {
+function SFSVG({ring, infinity, frame, size}: SFSVGProps) {
     return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 228 228">
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 228 228">
     <path d="M113.39,0A113.39,113.39,0,1,1,33.21,33.21,113,113,0,0,1,113.39,0m0,17.19a96.21,96.21,0,1,0,68,28.18A95.84,95.84,0,0,0,113.39,17.19Z" fill={ring}/>
     <path d="M156.74,91.41l3.08-.91h0l14.11-4.15v.31h0v17.57l-2.17.64h0l-15,4.41Z" fill={frame}/>
     <path d="M104.79,107.3v-.57l0-.07h0V78.26a34.64,34.64,0,0,1,69-4.23l-16.95,5c0-.25,0-.5,0-.75a17.45,17.45,0,1,0-34.89,0h0v23.33L137.76,97l7-2.06v.31h0v17.57l-2.18.64h0l-15,4.41h0L122,119.47V120l0,.08h0v28.39A34.61,34.61,0,1,1,77.6,115.3h0Zm25.84,10.2,0,.07h0Zm-25.84,31h0V125.18l-22.36,6.57h0a17.46,17.46,0,1,0,22.36,16.76Z" fill={infinity}/>
@@ -47,7 +50,6 @@ function SFSVG({ring, infinity, frame}: SFSVGProps) {
 interface IconProps {
     fill: string;
 }
-
 function IconDocument({fill, }: IconProps) {
     return (
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
@@ -81,10 +83,13 @@ function IconParameters({fill, }: IconProps) {
     )
 }
 
+//------------------------------------------------------------------------------
+// general
+
 function SFLogo() {
     return (
         <div className="float-right">
-        <SFSVG ring='#27272a' infinity='#3f3f46' frame='#fdba74' />
+        <SFSVG ring='#27272a' infinity='#3f3f46' frame='#fdba74' size={140} />
         </div>
     )
 }
@@ -109,6 +114,7 @@ interface LinkProps {
     label: string;
     url: string;
 }
+
 function Link({label, url}: LinkProps) {
     return (
         <div className=''>
@@ -124,7 +130,6 @@ function Link({label, url}: LinkProps) {
 
 interface CodeBlockProps {
     code: string;
-
 }
 function CodeBlock({code}: CodeBlockProps) {
     React.useEffect(() => {
@@ -137,15 +142,27 @@ function CodeBlock({code}: CodeBlockProps) {
     );
   };
 
+//------------------------------------------------------------------------------
 function APISearch() {
     const sigsEmpty: string[] = [];
+
+    //--------------------------------------------------------------------------
+    // application state
+
+    // sigsDisplay is used to populate the main list of signatures. Setting this updates the listed signatures.
     const [sigsDisplay, setSigsDisplay] = React.useState(sigsEmpty);
+
+    // docDisplay, exDisplay, are Boolean mappings by signature used to indicate of docs / examples are displayed for a signature.
     const [docDisplay, setDocDisplay] = React.useState(new Map<string, boolean>());
     const [exDisplay, setExDisplay] = React.useState(new Map<string, boolean>());
+
+    // Boolean flag to determine if the search is just on function names or full signatures (with paameters)
     const [fullSigSearch, setFullSigSearch] = React.useState(false);
 
+    // String used to store input from the user; asynchronously read from to conduct a search and populates sigsDisplay
     const [query, setQuery] = React.useState("");
 
+    //--------------------------------------------------------------------------
     const CNButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 rounded-md";
     const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
 
@@ -154,7 +171,7 @@ function APISearch() {
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
     const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
-    const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
+    // const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
 
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
     function SignatureItem(value: string) {
@@ -199,7 +216,7 @@ function APISearch() {
             if (docDisplay.get(value)) {
                 const doc = sigToDoc.get(value);
                 if (doc) {
-                    return <div className="py-2 font-sans text-slate-300">{doc}</div>;
+                    return <div className="py-2 font-sans text-slate-400">{doc}</div>;
                 }
             }
             return <div/>
@@ -217,7 +234,6 @@ function APISearch() {
             }
             return <div/>
         }
-
         // Return a single li for each row
         return (<div>
             <li className='px-4 py-2 bg-zinc-900' key={value}>
@@ -271,6 +287,7 @@ function APISearch() {
         setFullSigSearch(false); // key will be a sig w/o parameters
         const keys = Array.from(methodToSig.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
+        // NOTE: setting sigsFiltered is faster than just calling setQuery, which alone will work
         const sigsFiltered = methodToSig.get(key);
         if (sigsFiltered) {
             setSigsDisplay(sigsFiltered);
@@ -282,12 +299,14 @@ function APISearch() {
         setFullSigSearch(false); // key will be a sig w/o parameters
         const keys = Array.from(sigToEx.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
+        // NOTE: setting sigsFiltered is faster than just calling setQuery, which alone will work
         setSigsDisplay([key]);
         setQuery(key);
         exDisplay.set(key, true);
     }
 
     function onClickQueryClear() {
+        setSigsDisplay(sigsEmpty);
         setQuery("");
     }
 
@@ -297,8 +316,7 @@ function APISearch() {
     }
 
     function onClickExampleHideAll() {
-        sigsDisplay.forEach(e => exDisplay.set(e, false));
-        setExDisplay(new Map<string, boolean>(exDisplay));
+        setExDisplay(new Map<string, boolean>());
     }
 
     function onClickDocShowAll() {
@@ -307,10 +325,11 @@ function APISearch() {
         setDocDisplay(new Map<string, boolean>(docDisplay));
     }
     function onClickDocHideAll() {
-        sigsDisplay.forEach(e => docDisplay.set(e, false));
-        setDocDisplay(new Map<string, boolean>(docDisplay));
+        setDocDisplay(new Map<string, boolean>());
     }
 
+    //--------------------------------------------------------------------------
+    // status and general selection controls
     function ReportResults() {
         const len = sigsDisplay.length;
         if (len > 0) {
@@ -322,7 +341,7 @@ function APISearch() {
     function ShowHideAll() {
         return (
         <span>
-            <span className="pr-2">
+            <span>
                 <span className="group relative">
                     <button onClick={onClickDocShowAll} className={CNButtonHover}>
                     <IconDocument fill={colorIconShowAll} />
@@ -354,19 +373,21 @@ function APISearch() {
         )
     }
 
-    // On fullSigSearch update, redo searchSigs, calling setSigsDisplay
+    //--------------------------------------------------------------------------
+    // On fullSigSearch update, call searchSigs, which calls setSigsDisplay
     React.useEffect(() => searchSigs(query),
             // eslint-disable-next-line react-hooks/exhaustive-deps
             [fullSigSearch]
             );
 
-    // On query updates, set a timeout before calling searchSigs
+    // On query updates, set a timeout before calling searchSigs. This means that any update to query will call searchSigs and update the display.
     React.useEffect(() => {
         const timeOutId = setTimeout(() => searchSigs(query), 500);
         return () => clearTimeout(timeOutId);
         // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [query]);
 
+    //--------------------------------------------------------------------------
     // Return the complete API search app
     return (
     <div className="space-y-4">
@@ -376,7 +397,8 @@ function APISearch() {
         <div className="px-2">
             <p className={CNTextSmall}>
                 Search {sigsInitial.length.toLocaleString()} StaticFrame API endpoints.
-                View {sigToEx.size.toLocaleString()} code examples.</p>
+                View {sigToEx.size.toLocaleString()} code examples.
+            </p>
         </div>
         <div>
             <button onClick={onClickRandomMethod} className={CNButtonHover}>
@@ -386,25 +408,27 @@ function APISearch() {
                 Random Example
             </button>
         </div>
-        {/* text imput region */}
+        {/*------------------------------------------------------------------*/}
         <div className="flex">
+            <input type='text'
+                value={query}
+                onChange={e => setQuery(e.currentTarget.value)}
+                className="bg-zinc-800 py-2 px-4 w-full rounded-full text-1xl font-mono text-slate-200"
+            />
             <div className="pr-2 group relative">
                 <button onClick={onClickQueryClear} className={CNButtonHover}>
                 <IconClear fill={"#64748b"}/>
                 </button>
-                <span className={CNToolTipRight}>Clear query</span>
+                <span className={CNToolTipLeft}>Clear query</span>
             </div>
-            <div className="group relative">
+            <div className="pr-2 group relative">
                 <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
                 <IconParameters fill={"#64748b"}/>
                 </button>
-                <span className={CNToolTipRight}>Search parameters</span>
+                <span className={CNToolTipLeft}>Search parameters</span>
             </div>
-            <input type='text'
-                value={query}
-                onChange={e => setQuery(e.currentTarget.value)}
-                className="bg-zinc-800 py-2 px-4 mb-4 w-full rounded-full text-1xl font-mono text-slate-200" />
         </div>
+        {/*------------------------------------------------------------------*/}
         <div className="flex">
             <span className="w-2/6">
                 <ReportResults />
@@ -413,6 +437,7 @@ function APISearch() {
                 <ShowHideAll />
             </span>
         </div>
+        {/*------------------------------------------------------------------*/}
         <div>
             {/* NOTE: space-y adds space between each li row entry */}
             <ul className="space-y-2 text-1xl font-mono text-slate-400">
