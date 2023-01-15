@@ -83,6 +83,14 @@ function IconParameters({fill, }: IconProps) {
     )
 }
 
+// https://icons.getbootstrap.com/icons/regex/
+function IconRE({fill, }: IconProps) {
+    return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 1 1 .707.707Zm9.9-.707a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.314.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707ZM6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm5-6.5a.5.5 0 0 0-1 0v2.117L8.257 5.57a.5.5 0 0 0-.514.858L9.528 7.5 7.743 8.571a.5.5 0 1 0 .514.858L10 8.383V10.5a.5.5 0 1 0 1 0V8.383l1.743 1.046a.5.5 0 0 0 .514-.858L11.472 7.5l1.785-1.071a.5.5 0 1 0-.514-.858L11 6.617V4.5Z"/>
+    </svg>
+    )
+}
 //------------------------------------------------------------------------------
 // general
 
@@ -159,17 +167,22 @@ function APISearch() {
     // Boolean flag to determine if the search is just on function names or full signatures (with paameters)
     const [fullSigSearch, setFullSigSearch] = React.useState(false);
 
+
+    const [reSearch, setRESearch] = React.useState(false);
+
     // String used to store input from the user; asynchronously read from to conduct a search and populates sigsDisplay
     const [query, setQuery] = React.useState("");
 
     //--------------------------------------------------------------------------
-    const CNButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 rounded-md";
-    const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
+    const CNButtonCommon = "ml-2 p-2 w-8 h-8 rounded-md";
+    const CNButton = CNButtonCommon + " bg-gradient-to-b from-zinc-700 to-zinc-900";
+    const CNButtonActive = CNButtonCommon + " bg-gradient-to-b from-zinc-600 to-zinc-700";
 
-    const CNFullSigSearch = "mr-2 p-2 w-8 h-min bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
-    const CNFullSigSearchActive = "mr-2 p-2 w-8 h-min bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
+    // const CNFullSigSearch = "mr-2 p-2 w-8 h-min bg-zinc-800 rounded-md";
+    // const CNFullSigSearchActive = "mr-2 p-2 w-8 h-min bg-zinc-600 rounded-md";
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
+
     const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
     // const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
 
@@ -280,6 +293,11 @@ function APISearch() {
 
     function onClickFullSigSearch() {
         setFullSigSearch(!fullSigSearch);
+        // when this changes need to redo search, handled by useEffect below
+    }
+
+    function onClickRESearch() {
+        setRESearch(!reSearch);
         // when this changes need to redo search, handled by useEffect below
     }
 
@@ -409,23 +427,30 @@ function APISearch() {
             </button>
         </div>
         {/*------------------------------------------------------------------*/}
+        {/* TODO: Make this a component */}
         <div className="flex">
             <input type='text'
                 value={query}
                 onChange={e => setQuery(e.currentTarget.value)}
                 className="bg-zinc-800 py-2 px-4 w-full rounded-full text-1xl font-mono text-slate-200"
             />
-            <div className="pr-2 group relative">
+            <div className="group relative">
                 <button onClick={onClickQueryClear} className={CNButtonHover}>
                 <IconClear fill={"#64748b"}/>
                 </button>
                 <span className={CNToolTipLeft}>Clear query</span>
             </div>
-            <div className="pr-2 group relative">
-                <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
+            <div className="group relative">
+                <button onClick={onClickRESearch} className={reSearch ? CNButtonActive : CNButton}>
+                <IconRE fill={"#64748b"}/>
+                </button>
+                <span className={CNToolTipLeft}>Use regular expression</span>
+            </div>
+            <div className="pr-4 group relative">
+                <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNButtonActive : CNButton}>
                 <IconParameters fill={"#64748b"}/>
                 </button>
-                <span className={CNToolTipLeft}>Search parameters</span>
+                <span className={CNToolTipLeft}>Include parameter names</span>
             </div>
         </div>
         {/*------------------------------------------------------------------*/}
