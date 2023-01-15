@@ -153,7 +153,8 @@ function APISearch() {
     const CNFullSigSearchActive = "mr-2 p-2 w-8 h-min bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
-    const CNToolTip = "pointer-events-none absolute opacity-0 bg-zinc-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
+    const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
+    const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
 
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
     function SignatureItem(value: string) {
@@ -184,14 +185,14 @@ function APISearch() {
                 className={docDisplay.get(value) ? CNButtonActive : CNButton}>
                 <IconDocument fill="#fdba74" />
                 </button>
-                <span className={CNToolTip}>Documentation</span>
+                <span className={CNToolTipLeft}>Show documentation</span>
                 </span>;
         const buttonEx = <span className="group relative">
                 <button onClick={onClickEx}
                 className={exDisplay.get(value) ? CNButtonActive : CNButton}>
                 <IconCode fill="#fdba74" />
                 </button>
-                <span className={CNToolTip}>Code Example</span>
+                <span className={CNToolTipLeft}>Show example</span>
                 </span>;
 
         function DocIfActive() {
@@ -315,7 +316,7 @@ function APISearch() {
         if (len > 0) {
             return <span className="pl-2"><span className={CNTextSmall}>{len} {len === 1 ? "Result" : "Results"}</span></span>
         }
-        return <span/>
+        return <span className={CNTextSmall}>{"No Results"}</span>
     }
 
     function ShowHideAll() {
@@ -326,13 +327,13 @@ function APISearch() {
                     <button onClick={onClickDocShowAll} className={CNButtonHover}>
                     <IconDocument fill={colorIconShowAll} />
                     </button>
-                    <span className={CNToolTip}>Show all documentation</span>
+                    <span className={CNToolTipLeft}>Show all documentation</span>
                 </span>
                 <span className="group relative">
                     <button onClick={onClickDocHideAll} className={CNButtonHover}>
                     <IconDocument fill={colorIconHideAll} />
                     </button>
-                    <span className={CNToolTip}>Hide all documentation</span>
+                    <span className={CNToolTipLeft}>Hide all documentation</span>
                 </span>
             </span>
             <span className="pr-4">
@@ -340,13 +341,13 @@ function APISearch() {
                     <button onClick={onClickExampleShowAll} className={CNButtonHover}>
                     <IconCode fill={colorIconShowAll} />
                     </button>
-                    <span className={CNToolTip}>Show all examples</span>
+                    <span className={CNToolTipLeft}>Show all examples</span>
                 </span>
                 <span className="group relative">
                     <button onClick={onClickExampleHideAll} className={CNButtonHover}>
                     <IconCode fill={colorIconHideAll} />
                     </button>
-                    <span className={CNToolTip}>Hide all examples</span>
+                    <span className={CNToolTipLeft}>Hide all examples</span>
                 </span>
             </span>
         </span>
@@ -366,6 +367,7 @@ function APISearch() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [query]);
 
+    // Return the complete API search app
     return (
     <div className="space-y-4">
         <div className='px-2'>
@@ -386,15 +388,17 @@ function APISearch() {
         </div>
         {/* text imput region */}
         <div className="flex">
-            <div className="pr-2">
+            <div className="pr-2 group relative">
                 <button onClick={onClickQueryClear} className={CNButtonHover}>
                 <IconClear fill={"#64748b"}/>
                 </button>
+                <span className={CNToolTipRight}>Clear query</span>
             </div>
-            <div>
+            <div className="group relative">
                 <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNFullSigSearchActive : CNFullSigSearch}>
                 <IconParameters fill={"#64748b"}/>
                 </button>
+                <span className={CNToolTipRight}>Search parameters</span>
             </div>
             <input type='text'
                 value={query}
