@@ -26,6 +26,8 @@ sigFullToSig.forEach((v, k) => {
 
 const CNTextSmall = "text-1xl text-zinc-400 font-sans"
 
+const colorIconShowAll = "#4ade80";
+const colorIconHideAll = "#f87171";
 
 interface SFSVGProps {
     ring: string;
@@ -45,7 +47,7 @@ function SFSVG({ring, infinity, frame}: SFSVGProps) {
 interface IconProps {
     fill: string;
 }
-// https://icons.getbootstrap.com/icons/file-earmark-text/
+
 function IconDocument({fill, }: IconProps) {
     return (
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
@@ -59,6 +61,14 @@ function IconCode({fill, }: IconProps) {
     return (
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
     <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+    </svg>
+    )
+}
+// https://icons.getbootstrap.com/icons/x-circle/
+function IconClear({fill, }: IconProps) {
+    return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
     </svg>
     )
 }
@@ -106,6 +116,7 @@ function Link({label, url}: LinkProps) {
 
 interface CodeBlockProps {
     code: string;
+
 }
 function CodeBlock({code}: CodeBlockProps) {
     React.useEffect(() => {
@@ -130,8 +141,8 @@ function APISearch() {
     const CNButton = "ml-2 p-2 w-8 h-8 bg-zinc-800 rounded-md";
     const CNButtonActive = "ml-2 p-2 w-8 h-8 bg-zinc-600 rounded-md";
 
-    const CNFullSigSearch = "ml-4 p-2 w-2/6 h-min bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
-    const CNFullSigSearchActive = "ml-4 p-2 w-2/6 h-min bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
+    const CNFullSigSearch = "ml-2 p-2 w-2/6 h-min bg-zinc-800 rounded-md text-1xl text-zinc-400 font-sans";
+    const CNFullSigSearchActive = "ml-2 p-2 w-2/6 h-min bg-zinc-600 rounded-md text-1xl text-zinc-200 font-sans";
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
     const CNToolTip = "pointer-events-none absolute opacity-0 bg-zinc-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
@@ -246,6 +257,7 @@ function APISearch() {
         setFullSigSearch(!fullSigSearch);
         // when this changes need to redo search, handled by useEffect below
     }
+
     function onClickRandomMethod() {
         setFullSigSearch(false); // key will be a sig w/o parameters
         const keys = Array.from(methodToSig.keys());
@@ -256,6 +268,7 @@ function APISearch() {
         }
         setQuery(key);
     }
+
     function onClickExampleRandom() {
         setFullSigSearch(false); // key will be a sig w/o parameters
         const keys = Array.from(sigToEx.keys());
@@ -265,10 +278,15 @@ function APISearch() {
         exDisplay.set(key, true);
     }
 
+    function onClickQueryClear() {
+        setQuery("");
+    }
+
     function onClickExampleShowAll() {
         sigsDisplay.forEach(e => exDisplay.set(e, true));
         setExDisplay(new Map<string, boolean>(exDisplay));
     }
+
     function onClickExampleHideAll() {
         sigsDisplay.forEach(e => exDisplay.set(e, false));
         setExDisplay(new Map<string, boolean>(exDisplay));
@@ -293,9 +311,6 @@ function APISearch() {
     }
 
     function ShowHideAll() {
-        const colorIconShowAll = "#4ade80";
-        const colorIconHideAll = "#f87171";
-
         return (
         <span>
             <span className="pr-2">
@@ -359,7 +374,13 @@ function APISearch() {
                 Random Example
             </button>
         </div>
+        {/* text imput region */}
         <div className="flex">
+            <div className="pr-2">
+                <button onClick={onClickQueryClear} className={CNButtonHover}>
+                <IconClear fill={"#64748b"}/>
+                </button>
+            </div>
             <input type='text'
                 value={query}
                 onChange={e => setQuery(e.currentTarget.value)}
