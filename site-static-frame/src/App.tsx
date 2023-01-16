@@ -34,10 +34,10 @@ const highlightColors = new Map<string, string>([
     [',', "text-slate-500"],
     ['.', "text-slate-300"],
     ['*', "text-indigo-400"],
-    ['(', "text-indigo-400"],
-    [')', "text-indigo-400"],
-    ['[', "text-indigo-400"],
-    [']', "text-indigo-400"],
+    ['(', "text-slate-300"],
+    [')', "text-slate-300"],
+    ['[', "text-slate-300"],
+    [']', "text-slate-300"],
 ])
 
 //------------------------------------------------------------------------------
