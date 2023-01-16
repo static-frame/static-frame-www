@@ -176,7 +176,7 @@ function APISearch() {
     //--------------------------------------------------------------------------
     const CNButtonCommon = "ml-2 p-2 w-8 h-8 rounded-md";
     const CNButton = CNButtonCommon + " bg-gradient-to-b from-zinc-700 to-zinc-900";
-    const CNButtonActive = CNButtonCommon + " bg-gradient-to-b from-zinc-800 to-zinc-600";
+    const CNButtonActive = CNButtonCommon + " bg-gradient-to-b from-zinc-700 to-zinc-600";
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
 
@@ -272,18 +272,37 @@ function APISearch() {
             return;
         }
         let sigsFiltered: string[] = [];
+        // NOTE: we always filter the entire list, not the subset of what was previously filtered
 
         if (fullSigSearch) {
-            sigFullToSig.forEach((value, key) => {
-                if (key.toLowerCase().indexOf(target) > -1) {
-                    sigsFiltered.push(value);
-                }
-            });
+            if (reSearch) {
+                const re = new RegExp(target);
+                sigFullToSig.forEach((value, key) => {
+                    if (re.test(key.toLowerCase())) {
+                        sigsFiltered.push(value);
+                    }
+                });
+            }
+            else {
+                sigFullToSig.forEach((value, key) => {
+                    if (key.toLowerCase().indexOf(target) > -1) {
+                        sigsFiltered.push(value);
+                    }
+                });
+            }
         }
-        else { // NOTE: we always filter the entire list, not the subset of what was previously filtered
-            sigsFiltered = sigsInitial.filter((row) => {
-                return row.toLowerCase().indexOf(target) > -1;
-            });
+        else {
+            if (reSearch) {
+                const re = new RegExp(target);
+                sigsFiltered = sigsInitial.filter((row) => {
+                    return re.test(row.toLowerCase());
+                });
+            }
+            else {
+                sigsFiltered = sigsInitial.filter((row) => {
+                    return row.toLowerCase().indexOf(target) > -1;
+                });
+            }
         }
         setSigsDisplay(sigsFiltered);
     };
@@ -393,10 +412,10 @@ function APISearch() {
     }
 
     //--------------------------------------------------------------------------
-    // On fullSigSearch update, call searchSigs, which calls setSigsDisplay
+    // On fullSigSearch, reSearch update, call searchSigs, which calls setSigsDisplay
     React.useEffect(() => searchSigs(query),
             // eslint-disable-next-line react-hooks/exhaustive-deps
-            [fullSigSearch]
+            [fullSigSearch, reSearch]
             );
 
     // On query updates, set a timeout before calling searchSigs. This means that any update to query will call searchSigs and update the display.
