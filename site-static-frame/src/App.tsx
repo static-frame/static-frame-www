@@ -28,6 +28,18 @@ const CNTextSmall = "text-1xl text-zinc-400 font-sans"
 const colorIconShowAll = "#4ade80";
 const colorIconHideAll = "#ef4444";
 
+const sigsEmpty: string[] = [];
+const highlightColors = new Map<string, string>([
+    ['',  "text-slate-400"], // default text colors
+    [',', "text-slate-500"],
+    ['.', "text-slate-300"],
+    ['*', "text-indigo-400"],
+    ['(', "text-indigo-400"],
+    [')', "text-indigo-400"],
+    ['[', "text-indigo-400"],
+    [']', "text-indigo-400"],
+])
+
 //------------------------------------------------------------------------------
 // SVG
 
@@ -152,18 +164,6 @@ function CodeBlock({code}: CodeBlockProps) {
 
 //------------------------------------------------------------------------------
 function APISearch() {
-    const sigsEmpty: string[] = [];
-    const highlightColors = new Map<string, string>([
-        ['',  "text-slate-400"], // default text colors
-        [',', "text-slate-500"],
-        ['.', "text-slate-300"],
-        ['*', "text-indigo-400"],
-        ['(', "text-indigo-400"],
-        [')', "text-indigo-400"],
-        ['[', "text-indigo-400"],
-        [']', "text-indigo-400"],
-    ])
-
     //--------------------------------------------------------------------------
     // application state
 
