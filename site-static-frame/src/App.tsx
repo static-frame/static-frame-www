@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Prism from "prismjs";
 import 'prismjs/components/prism-python.min.js'
 // import 'prismjs/themes/prism-twilight.css'
@@ -153,6 +153,16 @@ function CodeBlock({code}: CodeBlockProps) {
 //------------------------------------------------------------------------------
 function APISearch() {
     const sigsEmpty: string[] = [];
+    const highlightColors = new Map<string, string>([
+        ['',  "text-slate-400"], // default text colors
+        [',', "text-slate-500"],
+        ['.', "text-slate-300"],
+        ['*', "text-indigo-400"],
+        ['(', "text-indigo-400"],
+        [')', "text-indigo-400"],
+        ['[', "text-indigo-400"],
+        [']', "text-indigo-400"],
+    ])
 
     //--------------------------------------------------------------------------
     // application state
@@ -164,10 +174,8 @@ function APISearch() {
     const [docDisplay, setDocDisplay] = React.useState(new Map<string, boolean>());
     const [exDisplay, setExDisplay] = React.useState(new Map<string, boolean>());
 
-    // Boolean flag to determine if the search is just on function names or full signatures (with paameters)
+    // Boolean flag sto determine search configuration
     const [fullSigSearch, setFullSigSearch] = React.useState(false);
-
-
     const [reSearch, setRESearch] = React.useState(false);
 
     // String used to store input from the user; asynchronously read from to conduct a search and populates sigsDisplay
@@ -186,6 +194,30 @@ function APISearch() {
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
     function SignatureItem(value: string) {
 
+        function SigLabel() {
+            const sig = sigToSigFull.get(value);
+            let sigSpans: ReactNode[] = [];
+            let buffer: string[] = [];
+
+            const bufToSpan = () => {
+                if (buffer.length) {
+                    sigSpans.push(<span className={highlightColors.get('')}>{buffer.join('')}</span>);
+                    buffer.length = 0;
+                }
+            }
+            [...sig].forEach(e => {
+                if (highlightColors.has(e)) {
+                    bufToSpan();
+                    sigSpans.push(<span className={highlightColors.get(e)}>{e}</span>);
+                }
+                else {
+                    buffer.push(e);
+                }
+            });
+            bufToSpan();
+            return <div className="py-1 break-words"><span className="font-mono font-bold">{sigSpans}</span></div>;
+        }
+
         function onClickDoc() {
             if (docDisplay.has(value)) {
                 docDisplay.set(value, !docDisplay.get(value));
@@ -195,6 +227,7 @@ function APISearch() {
             }
             setDocDisplay(new Map<string, boolean>(docDisplay));
         }
+
         function onClickEx() {
             if (exDisplay.has(value)) {
                 exDisplay.set(value, !exDisplay.get(value));
@@ -204,8 +237,6 @@ function APISearch() {
             }
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
-
-        const label = <div className="py-1 break-words"><span className="font-mono text-slate-400 font-bold">{sigToSigFull.get(value)}</span></div>;
 
         const buttonDoc = <span className="group relative">
                 <button onClick={onClickDoc}
@@ -231,6 +262,7 @@ function APISearch() {
             }
             return <div/>
         }
+
         function ExIfActive() {
             if (exDisplay.get(value)) {
                 const ex = sigToEx.get(value)?.join('\n');
@@ -244,12 +276,13 @@ function APISearch() {
             }
             return <div/>
         }
+
         // Return a single li for each row
         return (<div>
             <li className='px-4 py-2 bg-zinc-900' key={value}>
                 <div className="flex">
                     <span className="w-4/6">
-                    {label}
+                    <SigLabel />
                     </span>
                     <span className="w-2/6 text-right">
                     {buttonDoc}
