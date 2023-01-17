@@ -103,6 +103,16 @@ function IconRE({fill, }: IconProps) {
     </svg>
     )
 }
+
+function IconWarning({fill, }: IconProps) {
+    return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill={fill} viewBox="0 0 16 16">
+    <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+    <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+    </svg>
+    )
+}
+
 //------------------------------------------------------------------------------
 // general
 
@@ -177,6 +187,9 @@ function APISearch() {
     // Boolean flag sto determine search configuration
     const [fullSigSearch, setFullSigSearch] = React.useState(false);
     const [reSearch, setRESearch] = React.useState(false);
+
+    // Optional warning display
+    const [warningMsg, setWarningMsg] = React.useState("");
 
     // String used to store input from the user; asynchronously read from to conduct a search and populates sigsDisplay
     const [query, setQuery] = React.useState("");
@@ -377,13 +390,18 @@ function APISearch() {
     }
 
     function onClickQueryClear() {
-        setSigsDisplay(sigsEmpty);
+        setSigsDisplay(sigsEmpty); // always faster
         setQuery("");
     }
 
     function onClickExampleShowAll() {
-        sigsDisplay.forEach(e => exDisplay.set(e, true));
-        setExDisplay(new Map<string, boolean>(exDisplay));
+        if (sigsDisplay.length > 100) {
+            setWarningMsg("Too many results to display all examples. Narrow your search.");
+        }
+        else {
+            sigsDisplay.forEach(e => exDisplay.set(e, true));
+            setExDisplay(new Map<string, boolean>(exDisplay));
+        }
     }
 
     function onClickExampleHideAll() {
@@ -391,9 +409,13 @@ function APISearch() {
     }
 
     function onClickDocShowAll() {
-        // TODO: if sigsDisplay is large (over 500) this can crash the tab...
-        sigsDisplay.forEach(e => docDisplay.set(e, true));
-        setDocDisplay(new Map<string, boolean>(docDisplay));
+        if (sigsDisplay.length > 100) {
+            setWarningMsg("Too many results to display all documentation. Narrow your search.");
+        }
+        else {
+            sigsDisplay.forEach(e => docDisplay.set(e, true));
+            setDocDisplay(new Map<string, boolean>(docDisplay));
+        }
     }
     function onClickDocHideAll() {
         setDocDisplay(new Map<string, boolean>());
@@ -444,6 +466,16 @@ function APISearch() {
         )
     }
 
+    function Warning() {
+        // msg will be removed with timeout and useEffect, below
+        if (warningMsg) {
+            return (<div className="bg-zinc-700 py-8 px-4 mx-4 my-8 float rounded-xl text-zinc-300 text-2xl text-left">
+            <span><IconWarning fill="#fdba74" /></span>
+            <span>{warningMsg}</span>
+            </div>);
+        }
+        return <div />
+    }
     //--------------------------------------------------------------------------
     // On fullSigSearch, reSearch update, call searchSigs, which calls setSigsDisplay
     React.useEffect(() => searchSigs(query),
@@ -453,17 +485,22 @@ function APISearch() {
 
     // On query updates, set a timeout before calling searchSigs. This means that any update to query will call searchSigs and update the display.
     React.useEffect(() => {
-        const timeOutId = setTimeout(() => searchSigs(query), 500);
+        const timeOutId = setTimeout(() => searchSigs(query), 700);
         return () => clearTimeout(timeOutId);
         // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [query]);
 
+    React.useEffect(() => {
+        const timeOutId = setTimeout(() => setWarningMsg(""), 4000);
+        return () => clearTimeout(timeOutId);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        }, [warningMsg]);
     //--------------------------------------------------------------------------
     // Return the complete API search app
     return (
     <div className="space-y-4">
         <div className='px-2'>
-            <h2 className="text-2xl text-slate-400 text-bold">API Search</h2>
+            <h2 className="text-2xl text-slate-400 text-bold">API Search foo</h2>
         </div>
         <div className="px-2">
             <p className={CNTextSmall}>
@@ -517,6 +554,10 @@ function APISearch() {
         </div>
         {/*------------------------------------------------------------------*/}
         <div>
+            <Warning />
+        </div>
+        {/*------------------------------------------------------------------*/}
+        <div>
             {/* NOTE: space-y adds space between each li row entry */}
             <ul className="space-y-2 text-1xl font-mono text-slate-400">
                 {sigsDisplay.map(SignatureItem)}
@@ -536,15 +577,14 @@ function App() {
 
     return (
     <div>
-        <div className="max-w-full mx-auto">
+        {/* <div className="max-w-full mx-auto">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black">
         <div className="max-w-5xl mx-auto pr-8 pl-8 pt-4">
-            {/* <p className={CNTextSmall}>test</p> */}
         </div>
         </div>
-        </div>
+        </div> */}
 
-        <div className="max-w-5xl mx-auto pr-8 pl-8 pt-4">
+        <div className="max-w-5xl mx-auto px-8 pt-8">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
 
             <div className={cnCol1FlexCol}>
