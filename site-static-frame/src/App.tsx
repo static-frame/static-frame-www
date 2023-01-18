@@ -5,16 +5,20 @@ import 'prismjs/components/prism-python.min.js'
 import 'prismjs/themes/prism-tomorrow.css'
 
 import sigsInitial from './sf-api/sigs.json';
+
 import sigToDocJSON from './sf-api/sig_to_doc.json';
 import sigToExJSON from './sf-api/sig_to_example.json';
+import sigToGroupJSON from './sf-api/sig_to_group.json';
+
 import methodToSigJSON from './sf-api/method_to_sig.json';
 import sigFullToSigJSON from './sf-api/sig_full_to_sig.json';
 
 const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
-const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
-
 const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
+const sigToGroup = new Map<string, string>(Object.entries(sigToGroupJSON))
+
 const methodToSig = new Map<string, string[]>(Object.entries(methodToSigJSON));
+const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
 
 // create reverse mapping
 const sigToSigFull = new Map();
@@ -141,7 +145,7 @@ function SFBanner() {
             <div className="justify-right items-right">
             <SFIconSVG ring='#27272a' infinity='#3f3f46' frame='#fdba74' size={80} />
             </div>
-            <div className="px-2 h-20">
+            <div className="px-2 pt-1 h-20">
             <SFTitleSVG />
             </div>
         </div>
@@ -179,35 +183,38 @@ function Link({label, url}: LinkProps) {
 interface CodeBlockProps {
     code: string;
 }
-function CodeBlock({code}: CodeBlockProps) {
-    React.useEffect(() => {
-        Prism.highlightAll();
-    }, []); // NOTE: might have this dependent on docDisplay
-    return (
-    <pre className="language-python">
-    <code>{code}</code>
-    </pre>
-    );
-};
+// function CodeBlock({code}: CodeBlockProps) {
+//     React.useEffect(() => {
+//         Prism.highlightAll();
+//     }, []); // NOTE: might have this dependent on docDisplay
+//     return (
+//     <pre className="language-python">
+//     <code>{code}</code>
+//     </pre>
+//     );
+// };
 
 // alternate approach that tries to limit scope of prism application
-// function CodeBlock({ code }: CodeBlockProps) {
-//     const ref = React.useRef<HTMLPreElement>(null);
-//     React.useEffect(() => {
-//         if (ref.current) {
-//             Prism.highlightElement(ref.current);
-//         }
-//     }, []);
-//     return (
-//         <pre className="language-python" ref={ref}>
-//             <code>{code}</code>
-//         </pre>
-//     );
-// }
+function CodeBlock({ code }: CodeBlockProps) {
+    const ref = React.useRef<HTMLPreElement>(null);
+    React.useEffect(() => {
+        if (ref.current) {
+            Prism.highlightElement(ref.current);
+        }
+    }, []);
+    return (
+        <pre className="language-python" ref={ref}>
+            <code>{code}</code>
+        </pre>
+    );
+}
 
 
 //------------------------------------------------------------------------------
 function APISearch() {
+    // console.log("calling APISearch")
+
+    const version = '1.1.0'
     //--------------------------------------------------------------------------
     // application state
 
@@ -226,7 +233,13 @@ function APISearch() {
     const [warningMsg, setWarningMsg] = React.useState("");
 
     // String used to store input from the user; asynchronously read from to conduct a search and populates sigsDisplay
-    const [query, setQuery] = React.useState("");
+
+    interface Query {
+        target: string;
+        runSearch: boolean;
+    }
+    const [query, setQuery] = React.useState<Query>({target: "", runSearch: false});
+
 
     //--------------------------------------------------------------------------
     const CNButtonCommon = "ml-2 p-2 w-8 h-8 rounded-md";
@@ -235,7 +248,7 @@ function APISearch() {
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
 
-    const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
+    const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-300 group-hover:opacity-80"
     // const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
 
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
@@ -345,7 +358,12 @@ function APISearch() {
     }
 
     // Given a target, filter all signatures and update the sigsDisplay state
-    function searchSigs(target: string) {
+    // On fullSigSearch, reSearch update, this is called, updating setSigsDisplay
+    const searchSigs = React.useCallback(
+        ({target, runSearch}: Query) => {
+        if (!runSearch) {
+            return;
+        }
         target = target.toLowerCase();
         if (!target) {
             setSigsDisplay(sigsEmpty);
@@ -385,7 +403,7 @@ function APISearch() {
             }
         }
         setSigsDisplay(sigsFiltered);
-    };
+    }, [reSearch, fullSigSearch]);
 
     function onClickFullSigSearch() {
         setFullSigSearch(!fullSigSearch);
@@ -408,7 +426,7 @@ function APISearch() {
         if (sigsFiltered) {
             setSigsDisplay(sigsFiltered);
         }
-        setQuery(key);
+        setQuery({target:key, runSearch:false});
     }
 
     function onClickExampleRandom() {
@@ -419,13 +437,13 @@ function APISearch() {
         const key = keys[Math.floor(Math.random() * keys.length)];
         // NOTE: setting sigsFiltered is faster than just calling setQuery, which alone will work
         setSigsDisplay([key]);
-        setQuery(key);
+        setQuery({target:key, runSearch:false});
         exDisplay.set(key, true);
     }
 
     function onClickQueryClear() {
         setSigsDisplay(sigsEmpty); // always faster
-        setQuery("");
+        setQuery({target:"", runSearch:false});
     }
 
     function onClickExampleShowAll() {
@@ -514,23 +532,15 @@ function APISearch() {
         return <div />
     }
     //--------------------------------------------------------------------------
-    // On fullSigSearch, reSearch update, call searchSigs, which calls setSigsDisplay
-    React.useEffect(() => searchSigs(query),
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-            [fullSigSearch, reSearch]
-            );
-
     // On query updates, set a timeout before calling searchSigs. This means that any update to query will call searchSigs and update the display.
     React.useEffect(() => {
         const timeOutId = setTimeout(() => searchSigs(query), 700);
         return () => clearTimeout(timeOutId);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        }, [query]);
+        }, [query, searchSigs]);
 
     React.useEffect(() => {
         const timeOutId = setTimeout(() => setWarningMsg(""), 3000);
         return () => clearTimeout(timeOutId);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [warningMsg]);
 
     //--------------------------------------------------------------------------
@@ -538,11 +548,12 @@ function APISearch() {
     return (
     <div className="space-y-4">
         <div className='px-2'>
-            <h2 className="text-2xl text-slate-400 text-bold">API Search</h2>
+            <span className="text-2xl text-slate-400 text-bold">StaticFrame API Search</span>
+            <span className="ml-4 px-2 py-1 bg-zinc-900 rounded-md text-right text-1xl text-zinc-600 font-sans">{version}</span>
         </div>
         <div className="px-2">
             <p className={CNTextSmall}>
-                Search {sigsInitial.length.toLocaleString()} StaticFrame API endpoints.
+                Search {sigsInitial.length.toLocaleString()} API endpoints.
                 View {sigToEx.size.toLocaleString()} code examples.
             </p>
         </div>
@@ -558,8 +569,8 @@ function APISearch() {
         {/* TODO: Make this a component */}
         <div className="flex">
             <input type='text'
-                value={query}
-                onChange={e => setQuery(e.currentTarget.value)}
+                value={query.target}
+                onChange={e => setQuery({target: e.currentTarget.value, runSearch: true})}
                 className="bg-zinc-800 py-2 px-4 w-full rounded-full text-1xl font-mono text-slate-200"
             />
             <div className="group relative">
