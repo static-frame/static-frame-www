@@ -182,13 +182,29 @@ interface CodeBlockProps {
 function CodeBlock({code}: CodeBlockProps) {
     React.useEffect(() => {
         Prism.highlightAll();
-    }, []);
+    }, []); // NOTE: might have this dependent on docDisplay
     return (
-      <pre className="language-python">
-        <code>{code}</code>
-      </pre>
+    <pre className="language-python">
+    <code>{code}</code>
+    </pre>
     );
-  };
+};
+
+// alternate approach that tries to limit scope of prism application
+// function CodeBlock({ code }: CodeBlockProps) {
+//     const ref = React.useRef<HTMLPreElement>(null);
+//     React.useEffect(() => {
+//         if (ref.current) {
+//             Prism.highlightElement(ref.current);
+//         }
+//     }, []);
+//     return (
+//         <pre className="language-python" ref={ref}>
+//             <code>{code}</code>
+//         </pre>
+//     );
+// }
+
 
 //------------------------------------------------------------------------------
 function APISearch() {
@@ -214,8 +230,8 @@ function APISearch() {
 
     //--------------------------------------------------------------------------
     const CNButtonCommon = "ml-2 p-2 w-8 h-8 rounded-md";
-    const CNButton = CNButtonCommon + " bg-gradient-to-b from-zinc-700 to-zinc-900";
-    const CNButtonActive = CNButtonCommon + " bg-gradient-to-b from-zinc-700 to-zinc-600";
+    const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-900`;
+    const CNButtonActive = `${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-600`;
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
 
@@ -414,7 +430,7 @@ function APISearch() {
 
     function onClickExampleShowAll() {
         if (sigsDisplay.length > 100) {
-            setWarningMsg("Too many results to display all examples. Narrow your search.");
+            setWarningMsg("Too many results to display all examples. Please narrow your search.");
         }
         else {
             sigsDisplay.forEach(e => exDisplay.set(e, true));
@@ -428,7 +444,7 @@ function APISearch() {
 
     function onClickDocShowAll() {
         if (sigsDisplay.length > 100) {
-            setWarningMsg("Too many results to display all documentation. Narrow your search.");
+            setWarningMsg("Too many results to display all documentation. Please narrow your search.");
         }
         else {
             sigsDisplay.forEach(e => docDisplay.set(e, true));
@@ -487,9 +503,12 @@ function APISearch() {
     function Warning() {
         // msg will be removed with timeout and useEffect, below
         if (warningMsg) {
-            return (<div className="bg-zinc-700 py-8 px-4 mx-4 my-8 float rounded-xl text-zinc-300 text-2xl text-left">
-            <span><IconWarning fill="#fdba74" /></span>
-            <span>{warningMsg}</span>
+            return (
+                <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 py-4 px-8 my-2 mx-8 rounded-xl">
+                <div className="w-full flex justify-center items-center pb-2">
+                    <IconWarning fill="#fdba74" />
+                </div>
+                <div className="text-zinc-200 text-l text-center">{warningMsg}</div>
             </div>);
         }
         return <div />
@@ -509,10 +528,11 @@ function APISearch() {
         }, [query]);
 
     React.useEffect(() => {
-        const timeOutId = setTimeout(() => setWarningMsg(""), 4000);
+        const timeOutId = setTimeout(() => setWarningMsg(""), 3000);
         return () => clearTimeout(timeOutId);
         // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [warningMsg]);
+
     //--------------------------------------------------------------------------
     // Return the complete API search app
     return (
@@ -608,7 +628,6 @@ function App() {
             <div className={cnCol1FlexCol}>
               <div className={cnColFieldGradient}>
                 <SFBanner />
-                {/* <Title /> */}
                 <Description />
               </div>
             </div>
