@@ -26,7 +26,7 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-const CNTextSmall = "text-1xl text-zinc-400 font-sans"
+const CNTextSmall = "text-base text-zinc-400 font-sans"
 
 const colorIconShowAll = "#4ade80";
 const colorIconHideAll = "#ef4444";
@@ -171,7 +171,7 @@ function Link({label, url}: LinkProps) {
     return (
         <div className=''>
         <a
-        className="text-1xl font-sans text-slate-400 "
+        className="text-base font-sans text-slate-400 "
         href={url}
         target="_blank"
         rel="noopener noreferrer"
@@ -246,13 +246,15 @@ function APISearch() {
     const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-900`;
     const CNButtonActive = `${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-600`;
 
-    const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
+    const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-base text-zinc-400 font-sans";
 
     const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-300 group-hover:opacity-80"
     // const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
 
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
     function SignatureItem(value: string) {
+        const className = value.split(".")[0];
+        const groupName = sigToGroup.get(value);
 
         function SigLabel() {
             const sig = sigToSigFull.get(value);
@@ -275,7 +277,27 @@ function APISearch() {
                 }
             });
             bufToSpan();
-            return <div className="py-1 break-words"><span className="font-mono font-bold">{sigSpans}</span></div>;
+            return (<span className="break-words">
+                <span className="font-mono font-bold">
+                {sigSpans}
+                </span>
+                </span>);
+        }
+
+        function onClickTagGroup() {
+            setFullSigSearch(false);
+            setRESearch(false);
+            const sigsFiltered: string[] = [];
+            sigToGroup.forEach((value, key) => {
+                if (key.split('.')[0] === className &&
+                    value === groupName) {
+                        sigsFiltered.push(key);
+                    }
+                }
+            )
+            setSigsDisplay(sigsFiltered);
+            // setQuery({target:`${className} ${groupName}`, runSearch:false});
+            setQuery({target: "", runSearch: false});
         }
 
         function onClickDoc() {
@@ -297,6 +319,14 @@ function APISearch() {
             }
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
+
+        const buttonGroup = <span className="group relative">
+                <button onClick={onClickTagGroup}
+                className={CNButton}>
+                <IconDocument fill="#fdba74" />
+                </button>
+                <span className={CNToolTipLeft}>Display {className} {groupName}</span>
+                </span>;
 
         const buttonDoc = <span className="group relative">
                 <button onClick={onClickDoc}
@@ -327,24 +357,26 @@ function APISearch() {
             if (exDisplay.get(value)) {
                 const ex = sigToEx.get(value)?.join('\n');
                 if (ex) {
-                    return (<div className="overflow-x-auto">
-                        {/* <pre className="pt-4 font-mono text-slate-300">
-                        </pre> */}
+                    return (
+                        <div className="overflow-x-auto">
                         <CodeBlock code={ex}/>
-                        </div>);
+                        </div>
+                    );
                 }
             }
             return <div/>
         }
 
+        // const CNTagLink = "px-2 py-1 ml-2 bg-zinc-800 hover:bg-zinc-700 rounded-md text-right text-xs text-zinc-600 font-mono font-bold";
         // Return a single li for each row
         return (<div>
-            <li className='px-4 py-2 bg-zinc-900' key={value}>
+            <li className='px-4 pt-2 pb-1 bg-zinc-900' key={value}>
                 <div className="flex">
-                    <span className="w-4/6">
+                    <span className="w-4/6 mt-1">
                     <SigLabel />
                     </span>
                     <span className="w-2/6 text-right">
+                    {buttonGroup}
                     {buttonDoc}
                     {buttonEx}
                     </span>
@@ -407,12 +439,10 @@ function APISearch() {
 
     function onClickFullSigSearch() {
         setFullSigSearch(!fullSigSearch);
-        // when this changes need to redo search, handled by useEffect below
     }
 
     function onClickRESearch() {
         setRESearch(!reSearch);
-        // when this changes need to redo search, handled by useEffect below
     }
 
     function onClickRandomMethod() {
@@ -534,7 +564,7 @@ function APISearch() {
     //--------------------------------------------------------------------------
     // On query updates, set a timeout before calling searchSigs. This means that any update to query will call searchSigs and update the display.
     React.useEffect(() => {
-        const timeOutId = setTimeout(() => searchSigs(query), 700);
+        const timeOutId = setTimeout(() => searchSigs(query), 800);
         return () => clearTimeout(timeOutId);
         }, [query, searchSigs]);
 
@@ -549,7 +579,7 @@ function APISearch() {
     <div className="space-y-4">
         <div className='px-2'>
             <span className="text-2xl text-slate-400 text-bold">StaticFrame API Search</span>
-            <span className="ml-4 px-2 py-1 bg-zinc-900 rounded-md text-right text-1xl text-zinc-600 font-sans">{version}</span>
+            <span className="ml-4 px-2 py-1 bg-zinc-900 rounded-md text-right text-xs text-zinc-600 font-sans">{version}</span>
         </div>
         <div className="px-2">
             <p className={CNTextSmall}>
@@ -566,12 +596,12 @@ function APISearch() {
             </button>
         </div>
         {/*------------------------------------------------------------------*/}
-        {/* TODO: Make this a component */}
+        {/* NOTE: might make this a component, but trying to do so made text input unusable */}
         <div className="flex">
             <input type='text'
                 value={query.target}
                 onChange={e => setQuery({target: e.currentTarget.value, runSearch: true})}
-                className="bg-zinc-800 py-2 px-4 w-full rounded-full text-1xl font-mono text-slate-200"
+                className="bg-zinc-800 py-2 px-4 w-full rounded-full text-base font-mono text-slate-200"
             />
             <div className="group relative">
                 <button onClick={onClickQueryClear} className={CNButtonHover}>
@@ -608,7 +638,7 @@ function APISearch() {
         {/*------------------------------------------------------------------*/}
         <div>
             {/* NOTE: space-y adds space between each li row entry */}
-            <ul className="space-y-2 text-1xl font-mono text-slate-400">
+            <ul className="space-y-2 text-base font-mono text-slate-400">
                 {sigsDisplay.map(SignatureItem)}
             </ul>
         </div>
@@ -633,16 +663,14 @@ function App() {
         </div>
         </div> */}
 
-        <div className="max-w-5xl mx-auto px-8 pt-8">
+        <div className="max-w-5xl mx-auto px-8 pt-4">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
-
             <div className={cnCol1FlexCol}>
               <div className={cnColFieldGradient}>
                 <SFBanner />
                 <Description />
               </div>
             </div>
-
         </div>
         </div>
 
