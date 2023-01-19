@@ -30,6 +30,7 @@ const CNTextSmall = "text-base text-zinc-400 font-sans"
 
 const colorIconShowAll = "#4ade80";
 const colorIconHideAll = "#ef4444";
+const colorSearchButton = "#64748b";
 
 const sigsEmpty: string[] = [];
 const highlightColors = new Map<string, string>([
@@ -125,6 +126,22 @@ function IconRE({fill, }: IconProps) {
     <path fill-rule="evenodd" d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 1 1 .707.707Zm9.9-.707a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.314.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707ZM6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm5-6.5a.5.5 0 0 0-1 0v2.117L8.257 5.57a.5.5 0 0 0-.514.858L9.528 7.5 7.743 8.571a.5.5 0 1 0 .514.858L10 8.383V10.5a.5.5 0 1 0 1 0V8.383l1.743 1.046a.5.5 0 0 0 .514-.858L11.472 7.5l1.785-1.071a.5.5 0 1 0-.514-.858L11 6.617V4.5Z"/>
     </svg>
     )
+}
+
+function IconGroup({fill, }: IconProps) {
+    return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+    </svg>
+    )
+}
+
+function IconClass({fill, }: IconProps) {
+    return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+)
 }
 
 function IconWarning({fill, }: IconProps) {
@@ -248,7 +265,7 @@ function APISearch() {
 
     const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-base text-zinc-400 font-sans";
 
-    const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-300 group-hover:opacity-80"
+    const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-500 group-hover:opacity-80"
     // const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
 
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
@@ -282,6 +299,20 @@ function APISearch() {
                 {sigSpans}
                 </span>
                 </span>);
+        }
+
+        function onClickTagClass() {
+            setFullSigSearch(false);
+            setRESearch(false);
+            const sigsFiltered: string[] = [];
+            sigToGroup.forEach((value, key) => {
+                if (key.split('.')[0] === className) {
+                        sigsFiltered.push(key);
+                    }
+                }
+            )
+            setSigsDisplay(sigsFiltered);
+            setQuery({target: "", runSearch: false});
         }
 
         function onClickTagGroup() {
@@ -320,12 +351,20 @@ function APISearch() {
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
 
+        const buttonClass = <span className="group relative">
+                <button onClick={onClickTagClass}
+                className={CNButtonHover}>
+                <IconClass fill={colorSearchButton} />
+                </button>
+                <span className={CNToolTipLeft}>Display all {className} methods</span>
+                </span>;
+
         const buttonGroup = <span className="group relative">
                 <button onClick={onClickTagGroup}
-                className={CNButton}>
-                <IconDocument fill="#fdba74" />
+                className={CNButtonHover}>
+                <IconGroup fill={colorSearchButton} />
                 </button>
-                <span className={CNToolTipLeft}>Display {className} {groupName}</span>
+                <span className={CNToolTipLeft}>Display all {className} {groupName} methods</span>
                 </span>;
 
         const buttonDoc = <span className="group relative">
@@ -376,6 +415,7 @@ function APISearch() {
                     <SigLabel />
                     </span>
                     <span className="w-2/6 text-right">
+                    {buttonClass}
                     {buttonGroup}
                     {buttonDoc}
                     {buttonEx}
@@ -605,19 +645,19 @@ function APISearch() {
             />
             <div className="group relative">
                 <button onClick={onClickQueryClear} className={CNButtonHover}>
-                <IconClear fill={"#64748b"}/>
+                <IconClear fill={colorSearchButton}/>
                 </button>
                 <span className={CNToolTipLeft}>Clear query</span>
             </div>
             <div className="group relative">
                 <button onClick={onClickRESearch} className={reSearch ? CNButtonActive : CNButton}>
-                <IconRE fill={"#64748b"}/>
+                <IconRE fill={colorSearchButton}/>
                 </button>
                 <span className={CNToolTipLeft}>Use regular expression</span>
             </div>
             <div className="pr-4 group relative">
                 <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNButtonActive : CNButton}>
-                <IconParameters fill={"#64748b"}/>
+                <IconParameters fill={colorSearchButton}/>
                 </button>
                 <span className={CNToolTipLeft}>Include parameter names</span>
             </div>
@@ -636,12 +676,13 @@ function APISearch() {
             <Warning />
         </div>
         {/*------------------------------------------------------------------*/}
-        <div>
+        <div className="pb-2">
             {/* NOTE: space-y adds space between each li row entry */}
             <ul className="space-y-2 text-base font-mono text-slate-400">
                 {sigsDisplay.map(SignatureItem)}
             </ul>
         </div>
+
     </div>
     )
 }
@@ -695,10 +736,12 @@ function App() {
         </div>
 
         <div className="max-w-5xl mx-auto pr-8 pl-8">
-        <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
+        <div className="-mx-4 flex flex-wrap px-2 pt-2 bg-black rounded-md">
             <div className={cnCol1FlexCol}>
                 <APISearch />
             </div>
+        </div>
+        <div className="-mx-4 flex flex-wrap h-20">
         </div>
         </div>
 
