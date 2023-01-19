@@ -30,6 +30,15 @@ const version = '1.1.0'
 
 const CNTextSmall = "text-base text-zinc-400 font-sans"
 
+const CNButtonCommon = "ml-1 my-1 p-2 w-8 h-8 rounded-md"; // my-2 permits buttons to wrap in narrow views
+const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-800`;
+const CNButtonActive = `${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-600`;
+
+const CNButtonHover = "ml-1 my-1 p-2 bg-zinc-800 hover:bg-zinc-700 rounded-md text-base text-zinc-400 font-sans";
+
+const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-500 group-hover:opacity-80"
+// const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
+
 const colorIconShowAll = "#4ade80";
 const colorIconHideAll = "#ef4444";
 const colorSearchButton = "#64748b";
@@ -171,7 +180,6 @@ function SFBanner() {
     )
 }
 
-
 function Description() {
     return (
         <div className='p-2'>
@@ -188,7 +196,7 @@ interface LinkProps {
 
 function Link({label, url}: LinkProps) {
     return (
-        <div className=''>
+        <div>
         <a
         className="text-base font-sans text-slate-400 "
         href={url}
@@ -228,7 +236,6 @@ function CodeBlock({ code }: CodeBlockProps) {
     );
 }
 
-
 //------------------------------------------------------------------------------
 function APISearch() {
     // console.log("calling APISearch")
@@ -260,14 +267,6 @@ function APISearch() {
 
 
     //--------------------------------------------------------------------------
-    const CNButtonCommon = "ml-2 p-2 w-8 h-8 rounded-md";
-    const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-900`;
-    const CNButtonActive = `${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-600`;
-
-    const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-base text-zinc-400 font-sans";
-
-    const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-500 group-hover:opacity-80"
-    // const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
 
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
     function SignatureItem(value: string) {
@@ -407,12 +406,11 @@ function APISearch() {
             return <div/>
         }
 
-        // const CNTagLink = "px-2 py-1 ml-2 bg-zinc-800 hover:bg-zinc-700 rounded-md text-right text-xs text-zinc-600 font-mono font-bold";
         // Return a single li for each row
         return (<div>
-            <li className='px-4 pt-2 pb-1 bg-zinc-900' key={value}>
+            <li className='px-2 pt-1 bg-zinc-900' key={value}>
                 <div className="flex">
-                    <span className="w-4/6 mt-1">
+                    <span className="w-4/6 my-1">
                     <SigLabel />
                     </span>
                     <span className="w-2/6 text-right">
@@ -570,8 +568,6 @@ function APISearch() {
                     </button>
                     <span className={CNToolTipLeft}>Hide all documentation</span>
                 </span>
-            </span>
-            <span className="pr-4">
                 <span className="group relative">
                     <button onClick={onClickExampleShowAll} className={CNButtonHover}>
                     <IconCode fill={colorIconShowAll} />
@@ -617,7 +613,7 @@ function APISearch() {
     //--------------------------------------------------------------------------
     // Return the complete API search app
     return (
-    <div className="space-y-4">
+    <div className="space-y-2">
         <div className='px-2'>
             <span className="text-2xl text-slate-400 text-bold">StaticFrame API Search</span>
         </div>
@@ -641,7 +637,7 @@ function APISearch() {
             <input type='text'
                 value={query.target}
                 onChange={e => setQuery({target: e.currentTarget.value, runSearch: true})}
-                className="bg-zinc-800 py-2 px-4 w-full rounded-full text-base font-mono text-slate-200"
+                className="px-4 bg-zinc-800 w-full rounded-full text-base font-mono text-slate-200"
             />
             <div className="group relative">
                 <button onClick={onClickQueryClear} className={CNButtonHover}>
@@ -655,7 +651,7 @@ function APISearch() {
                 </button>
                 <span className={CNToolTipLeft}>Use regular expression</span>
             </div>
-            <div className="pr-4 group relative">
+            <div className="pr-2 group relative">
                 <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNButtonActive : CNButton}>
                 <IconParameters fill={colorSearchButton}/>
                 </button>
@@ -663,11 +659,11 @@ function APISearch() {
             </div>
         </div>
         {/*------------------------------------------------------------------*/}
-        <div className="flex">
-            <span className="w-2/6">
+        <div className="flex pr-2">
+            <span className="w-4/6">
                 <ReportResults />
             </span>
-            <span className="w-4/6 text-right float-right">
+            <span className="w-2/6 text-right float-right">
                 <ShowHideAll />
             </span>
         </div>
