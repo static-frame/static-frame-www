@@ -5,16 +5,20 @@ import 'prismjs/components/prism-python.min.js'
 import 'prismjs/themes/prism-tomorrow.css'
 
 import sigsInitial from './sf-api/sigs.json';
+
 import sigToDocJSON from './sf-api/sig_to_doc.json';
 import sigToExJSON from './sf-api/sig_to_example.json';
+import sigToGroupJSON from './sf-api/sig_to_group.json';
+
 import methodToSigJSON from './sf-api/method_to_sig.json';
 import sigFullToSigJSON from './sf-api/sig_full_to_sig.json';
 
 const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
-const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
-
 const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
+const sigToGroup = new Map<string, string>(Object.entries(sigToGroupJSON))
+
 const methodToSig = new Map<string, string[]>(Object.entries(methodToSigJSON));
+const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
 
 // create reverse mapping
 const sigToSigFull = new Map();
@@ -22,10 +26,13 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-const CNTextSmall = "text-1xl text-zinc-400 font-sans"
+const version = '1.1.0'
+
+const CNTextSmall = "text-base text-zinc-400 font-sans"
 
 const colorIconShowAll = "#4ade80";
 const colorIconHideAll = "#ef4444";
+const colorSearchButton = "#64748b";
 
 const sigsEmpty: string[] = [];
 const highlightColors = new Map<string, string>([
@@ -123,6 +130,22 @@ function IconRE({fill, }: IconProps) {
     )
 }
 
+function IconGroup({fill, }: IconProps) {
+    return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+    </svg>
+    )
+}
+
+function IconClass({fill, }: IconProps) {
+    return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+)
+}
+
 function IconWarning({fill, }: IconProps) {
     return(
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill={fill} viewBox="0 0 16 16">
@@ -141,7 +164,7 @@ function SFBanner() {
             <div className="justify-right items-right">
             <SFIconSVG ring='#27272a' infinity='#3f3f46' frame='#fdba74' size={80} />
             </div>
-            <div className="px-2 h-20">
+            <div className="px-2 pt-1 h-20">
             <SFTitleSVG />
             </div>
         </div>
@@ -167,7 +190,7 @@ function Link({label, url}: LinkProps) {
     return (
         <div className=''>
         <a
-        className="text-1xl font-sans text-slate-400 "
+        className="text-base font-sans text-slate-400 "
         href={url}
         target="_blank"
         rel="noopener noreferrer"
@@ -179,35 +202,37 @@ function Link({label, url}: LinkProps) {
 interface CodeBlockProps {
     code: string;
 }
-function CodeBlock({code}: CodeBlockProps) {
-    React.useEffect(() => {
-        Prism.highlightAll();
-    }, []); // NOTE: might have this dependent on docDisplay
-    return (
-    <pre className="language-python">
-    <code>{code}</code>
-    </pre>
-    );
-};
+// function CodeBlock({code}: CodeBlockProps) {
+//     React.useEffect(() => {
+//         Prism.highlightAll();
+//     }, []); // NOTE: might have this dependent on docDisplay
+//     return (
+//     <pre className="language-python">
+//     <code>{code}</code>
+//     </pre>
+//     );
+// };
 
 // alternate approach that tries to limit scope of prism application
-// function CodeBlock({ code }: CodeBlockProps) {
-//     const ref = React.useRef<HTMLPreElement>(null);
-//     React.useEffect(() => {
-//         if (ref.current) {
-//             Prism.highlightElement(ref.current);
-//         }
-//     }, []);
-//     return (
-//         <pre className="language-python" ref={ref}>
-//             <code>{code}</code>
-//         </pre>
-//     );
-// }
+function CodeBlock({ code }: CodeBlockProps) {
+    const ref = React.useRef<HTMLPreElement>(null);
+    React.useEffect(() => {
+        if (ref.current) {
+            Prism.highlightElement(ref.current);
+        }
+    }, []);
+    return (
+        <pre className="language-python" ref={ref}>
+            <code>{code}</code>
+        </pre>
+    );
+}
 
 
 //------------------------------------------------------------------------------
 function APISearch() {
+    // console.log("calling APISearch")
+
     //--------------------------------------------------------------------------
     // application state
 
@@ -226,20 +251,28 @@ function APISearch() {
     const [warningMsg, setWarningMsg] = React.useState("");
 
     // String used to store input from the user; asynchronously read from to conduct a search and populates sigsDisplay
-    const [query, setQuery] = React.useState("");
+
+    interface Query {
+        target: string;
+        runSearch: boolean;
+    }
+    const [query, setQuery] = React.useState<Query>({target: "", runSearch: false});
+
 
     //--------------------------------------------------------------------------
     const CNButtonCommon = "ml-2 p-2 w-8 h-8 rounded-md";
     const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-900`;
     const CNButtonActive = `${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-600`;
 
-    const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-1xl text-zinc-400 font-sans";
+    const CNButtonHover = "ml-2 p-2 bg-zinc-800 hover:bg-zinc-600 rounded-md text-base text-zinc-400 font-sans";
 
-    const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
+    const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-500 group-hover:opacity-80"
     // const CNToolTipRight = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-12 left-0 font-sans text-slate-100 text-right transition-opacity delay-700 group-hover:opacity-80"
 
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
     function SignatureItem(value: string) {
+        const className = value.split(".")[0];
+        const groupName = sigToGroup.get(value);
 
         function SigLabel() {
             const sig = sigToSigFull.get(value);
@@ -262,7 +295,41 @@ function APISearch() {
                 }
             });
             bufToSpan();
-            return <div className="py-1 break-words"><span className="font-mono font-bold">{sigSpans}</span></div>;
+            return (<span className="break-words">
+                <span className="font-mono font-bold">
+                {sigSpans}
+                </span>
+                </span>);
+        }
+
+        function onClickTagClass() {
+            setFullSigSearch(false);
+            setRESearch(false);
+            const sigsFiltered: string[] = [];
+            sigToGroup.forEach((value, key) => {
+                if (key.split('.')[0] === className) {
+                        sigsFiltered.push(key);
+                    }
+                }
+            )
+            setSigsDisplay(sigsFiltered);
+            setQuery({target: "", runSearch: false});
+        }
+
+        function onClickTagGroup() {
+            setFullSigSearch(false);
+            setRESearch(false);
+            const sigsFiltered: string[] = [];
+            sigToGroup.forEach((value, key) => {
+                if (key.split('.')[0] === className &&
+                    value === groupName) {
+                        sigsFiltered.push(key);
+                    }
+                }
+            )
+            setSigsDisplay(sigsFiltered);
+            // setQuery({target:`${className} ${groupName}`, runSearch:false});
+            setQuery({target: "", runSearch: false});
         }
 
         function onClickDoc() {
@@ -284,6 +351,22 @@ function APISearch() {
             }
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
+
+        const buttonClass = <span className="group relative">
+                <button onClick={onClickTagClass}
+                className={CNButtonHover}>
+                <IconClass fill={colorSearchButton} />
+                </button>
+                <span className={CNToolTipLeft}>Display all {className} methods</span>
+                </span>;
+
+        const buttonGroup = <span className="group relative">
+                <button onClick={onClickTagGroup}
+                className={CNButtonHover}>
+                <IconGroup fill={colorSearchButton} />
+                </button>
+                <span className={CNToolTipLeft}>Display all {className} {groupName} methods</span>
+                </span>;
 
         const buttonDoc = <span className="group relative">
                 <button onClick={onClickDoc}
@@ -314,24 +397,27 @@ function APISearch() {
             if (exDisplay.get(value)) {
                 const ex = sigToEx.get(value)?.join('\n');
                 if (ex) {
-                    return (<div className="overflow-x-auto">
-                        {/* <pre className="pt-4 font-mono text-slate-300">
-                        </pre> */}
+                    return (
+                        <div className="overflow-x-auto">
                         <CodeBlock code={ex}/>
-                        </div>);
+                        </div>
+                    );
                 }
             }
             return <div/>
         }
 
+        // const CNTagLink = "px-2 py-1 ml-2 bg-zinc-800 hover:bg-zinc-700 rounded-md text-right text-xs text-zinc-600 font-mono font-bold";
         // Return a single li for each row
         return (<div>
-            <li className='px-4 py-2 bg-zinc-900' key={value}>
+            <li className='px-4 pt-2 pb-1 bg-zinc-900' key={value}>
                 <div className="flex">
-                    <span className="w-4/6">
+                    <span className="w-4/6 mt-1">
                     <SigLabel />
                     </span>
                     <span className="w-2/6 text-right">
+                    {buttonClass}
+                    {buttonGroup}
                     {buttonDoc}
                     {buttonEx}
                     </span>
@@ -345,7 +431,12 @@ function APISearch() {
     }
 
     // Given a target, filter all signatures and update the sigsDisplay state
-    function searchSigs(target: string) {
+    // On fullSigSearch, reSearch update, this is called, updating setSigsDisplay
+    const searchSigs = React.useCallback(
+        ({target, runSearch}: Query) => {
+        if (!runSearch) {
+            return;
+        }
         target = target.toLowerCase();
         if (!target) {
             setSigsDisplay(sigsEmpty);
@@ -385,16 +476,14 @@ function APISearch() {
             }
         }
         setSigsDisplay(sigsFiltered);
-    };
+    }, [reSearch, fullSigSearch]);
 
     function onClickFullSigSearch() {
         setFullSigSearch(!fullSigSearch);
-        // when this changes need to redo search, handled by useEffect below
     }
 
     function onClickRESearch() {
         setRESearch(!reSearch);
-        // when this changes need to redo search, handled by useEffect below
     }
 
     function onClickRandomMethod() {
@@ -408,7 +497,7 @@ function APISearch() {
         if (sigsFiltered) {
             setSigsDisplay(sigsFiltered);
         }
-        setQuery(key);
+        setQuery({target:key, runSearch:false});
     }
 
     function onClickExampleRandom() {
@@ -419,13 +508,13 @@ function APISearch() {
         const key = keys[Math.floor(Math.random() * keys.length)];
         // NOTE: setting sigsFiltered is faster than just calling setQuery, which alone will work
         setSigsDisplay([key]);
-        setQuery(key);
+        setQuery({target:key, runSearch:false});
         exDisplay.set(key, true);
     }
 
     function onClickQueryClear() {
         setSigsDisplay(sigsEmpty); // always faster
-        setQuery("");
+        setQuery({target:"", runSearch:false});
     }
 
     function onClickExampleShowAll() {
@@ -514,23 +603,15 @@ function APISearch() {
         return <div />
     }
     //--------------------------------------------------------------------------
-    // On fullSigSearch, reSearch update, call searchSigs, which calls setSigsDisplay
-    React.useEffect(() => searchSigs(query),
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-            [fullSigSearch, reSearch]
-            );
-
     // On query updates, set a timeout before calling searchSigs. This means that any update to query will call searchSigs and update the display.
     React.useEffect(() => {
-        const timeOutId = setTimeout(() => searchSigs(query), 700);
+        const timeOutId = setTimeout(() => searchSigs(query), 800);
         return () => clearTimeout(timeOutId);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        }, [query]);
+        }, [query, searchSigs]);
 
     React.useEffect(() => {
         const timeOutId = setTimeout(() => setWarningMsg(""), 3000);
         return () => clearTimeout(timeOutId);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [warningMsg]);
 
     //--------------------------------------------------------------------------
@@ -538,11 +619,11 @@ function APISearch() {
     return (
     <div className="space-y-4">
         <div className='px-2'>
-            <h2 className="text-2xl text-slate-400 text-bold">API Search</h2>
+            <span className="text-2xl text-slate-400 text-bold">StaticFrame API Search</span>
         </div>
         <div className="px-2">
             <p className={CNTextSmall}>
-                Search {sigsInitial.length.toLocaleString()} StaticFrame API endpoints.
+                Search {sigsInitial.length.toLocaleString()} API endpoints.
                 View {sigToEx.size.toLocaleString()} code examples.
             </p>
         </div>
@@ -555,28 +636,28 @@ function APISearch() {
             </button>
         </div>
         {/*------------------------------------------------------------------*/}
-        {/* TODO: Make this a component */}
+        {/* NOTE: might make this a component, but trying to do so made text input unusable */}
         <div className="flex">
             <input type='text'
-                value={query}
-                onChange={e => setQuery(e.currentTarget.value)}
-                className="bg-zinc-800 py-2 px-4 w-full rounded-full text-1xl font-mono text-slate-200"
+                value={query.target}
+                onChange={e => setQuery({target: e.currentTarget.value, runSearch: true})}
+                className="bg-zinc-800 py-2 px-4 w-full rounded-full text-base font-mono text-slate-200"
             />
             <div className="group relative">
                 <button onClick={onClickQueryClear} className={CNButtonHover}>
-                <IconClear fill={"#64748b"}/>
+                <IconClear fill={colorSearchButton}/>
                 </button>
                 <span className={CNToolTipLeft}>Clear query</span>
             </div>
             <div className="group relative">
                 <button onClick={onClickRESearch} className={reSearch ? CNButtonActive : CNButton}>
-                <IconRE fill={"#64748b"}/>
+                <IconRE fill={colorSearchButton}/>
                 </button>
                 <span className={CNToolTipLeft}>Use regular expression</span>
             </div>
             <div className="pr-4 group relative">
                 <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNButtonActive : CNButton}>
-                <IconParameters fill={"#64748b"}/>
+                <IconParameters fill={colorSearchButton}/>
                 </button>
                 <span className={CNToolTipLeft}>Include parameter names</span>
             </div>
@@ -595,12 +676,13 @@ function APISearch() {
             <Warning />
         </div>
         {/*------------------------------------------------------------------*/}
-        <div>
+        <div className="pb-2">
             {/* NOTE: space-y adds space between each li row entry */}
-            <ul className="space-y-2 text-1xl font-mono text-slate-400">
+            <ul className="space-y-2 text-base font-mono text-slate-400">
                 {sigsDisplay.map(SignatureItem)}
             </ul>
         </div>
+
     </div>
     )
 }
@@ -622,16 +704,14 @@ function App() {
         </div>
         </div> */}
 
-        <div className="max-w-5xl mx-auto px-8 pt-8">
+        <div className="max-w-5xl mx-auto px-8 pt-4">
         <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
-
             <div className={cnCol1FlexCol}>
               <div className={cnColFieldGradient}>
                 <SFBanner />
                 <Description />
               </div>
             </div>
-
         </div>
         </div>
 
@@ -656,9 +736,20 @@ function App() {
         </div>
 
         <div className="max-w-5xl mx-auto pr-8 pl-8">
-        <div className="-mx-4 flex flex-wrap px-2 py-2 bg-black rounded-md">
+        <div className="-mx-4 flex flex-wrap px-2 pt-2 bg-black rounded-md">
             <div className={cnCol1FlexCol}>
                 <APISearch />
+            </div>
+        </div>
+        <div className="-mx-4 flex flex-wrap h-20">
+            <div className="mx-4 my-2">
+            <span className="text-right text-xs text-zinc-700 font-sans">StaticFrame site v{version}. Report issues or feature requests <a
+        className="text-slate-600 "
+        href={"https://github.com/static-frame/static-frame-www/issues"}
+        target="_blank"
+        rel="noopener noreferrer"
+        >here</a>.
+            </span>
             </div>
         </div>
         </div>
