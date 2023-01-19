@@ -26,7 +26,7 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-const version = '1.1.0'
+const version = '1.1.1'
 
 const CNTextSmall = "text-base text-zinc-400 font-sans"
 
@@ -407,17 +407,21 @@ function APISearch() {
         }
 
         // Return a single li for each row
+        // NOTE: nowrap here to keep 2 over 2 in button minimal width display
+
         return (<div>
             <li className='px-2 pt-1 bg-zinc-900' key={value}>
                 <div className="flex">
                     <span className="w-4/6 my-1">
-                    <SigLabel />
+                        <SigLabel />
                     </span>
                     <span className="w-2/6 text-right">
-                    {buttonClass}
-                    {buttonGroup}
-                    {buttonDoc}
-                    {buttonEx}
+                        {buttonClass}
+                        {buttonGroup}
+                        <span className="flex flex-nowrap float-right">
+                            {buttonDoc}
+                            {buttonEx}
+                        </span>
                     </span>
                 </div>
                 <div className="w-full">
@@ -553,33 +557,40 @@ function APISearch() {
     }
 
     function ShowHideAll() {
+        const buttonDocShowAll = <span className="group relative">
+                <button onClick={onClickDocShowAll} className={CNButtonHover}>
+                <IconDocument fill={colorIconShowAll} />
+                </button>
+                <span className={CNToolTipLeft}>Show all documentation</span>
+                </span>
+        const buttonDocHideAll = <span className="group relative">
+                <button onClick={onClickDocHideAll} className={CNButtonHover}>
+                <IconDocument fill={colorIconHideAll} />
+                </button>
+                <span className={CNToolTipLeft}>Hide all documentation</span>
+                </span>
+
+        const buttonExShowAll = <span className="group relative">
+                <button onClick={onClickExampleShowAll} className={CNButtonHover}>
+                <IconCode fill={colorIconShowAll} />
+                </button>
+                <span className={CNToolTipLeft}>Show all examples</span>
+                </span>
+        const buttonExHideAll = <span className="group relative">
+                <button onClick={onClickExampleHideAll} className={CNButtonHover}>
+                <IconCode fill={colorIconHideAll} />
+                </button>
+                <span className={CNToolTipLeft}>Hide all examples</span>
+                </span>
+
+        // NOTE: nowrap here to keep 2 over 2 in minimal width display
         return (
         <span>
-            <span>
-                <span className="group relative">
-                    <button onClick={onClickDocShowAll} className={CNButtonHover}>
-                    <IconDocument fill={colorIconShowAll} />
-                    </button>
-                    <span className={CNToolTipLeft}>Show all documentation</span>
-                </span>
-                <span className="group relative">
-                    <button onClick={onClickDocHideAll} className={CNButtonHover}>
-                    <IconDocument fill={colorIconHideAll} />
-                    </button>
-                    <span className={CNToolTipLeft}>Hide all documentation</span>
-                </span>
-                <span className="group relative">
-                    <button onClick={onClickExampleShowAll} className={CNButtonHover}>
-                    <IconCode fill={colorIconShowAll} />
-                    </button>
-                    <span className={CNToolTipLeft}>Show all examples</span>
-                </span>
-                <span className="group relative">
-                    <button onClick={onClickExampleHideAll} className={CNButtonHover}>
-                    <IconCode fill={colorIconHideAll} />
-                    </button>
-                    <span className={CNToolTipLeft}>Hide all examples</span>
-                </span>
+            {buttonDocShowAll}
+            {buttonDocHideAll}
+            <span className="flex flex-nowrap float-right">
+                {buttonExShowAll}
+                {buttonExHideAll}
             </span>
         </span>
         )
