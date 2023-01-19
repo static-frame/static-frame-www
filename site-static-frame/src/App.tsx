@@ -26,6 +26,8 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
+const version = '1.1.0'
+
 const CNTextSmall = "text-base text-zinc-400 font-sans"
 
 const colorIconShowAll = "#4ade80";
@@ -231,7 +233,6 @@ function CodeBlock({ code }: CodeBlockProps) {
 function APISearch() {
     // console.log("calling APISearch")
 
-    const version = '1.1.0'
     //--------------------------------------------------------------------------
     // application state
 
@@ -619,7 +620,6 @@ function APISearch() {
     <div className="space-y-4">
         <div className='px-2'>
             <span className="text-2xl text-slate-400 text-bold">StaticFrame API Search</span>
-            <span className="ml-4 px-2 py-1 bg-zinc-900 rounded-md text-right text-xs text-zinc-600 font-sans">{version}</span>
         </div>
         <div className="px-2">
             <p className={CNTextSmall}>
@@ -742,6 +742,15 @@ function App() {
             </div>
         </div>
         <div className="-mx-4 flex flex-wrap h-20">
+            <div className="mx-4 my-2">
+            <span className="text-right text-xs text-zinc-700 font-sans">StaticFrame site v{version}. Report issues or feature requests <a
+        className="text-slate-600 "
+        href={"https://github.com/static-frame/static-frame-www/issues"}
+        target="_blank"
+        rel="noopener noreferrer"
+        >here</a>.
+            </span>
+            </div>
         </div>
         </div>
 
