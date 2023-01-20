@@ -135,7 +135,7 @@ function IconParameters({fill, }: IconProps) {
 function IconRE({fill, }: IconProps) {
     return(
     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" fill={fill} viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 1 1 .707.707Zm9.9-.707a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.314.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707ZM6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm5-6.5a.5.5 0 0 0-1 0v2.117L8.257 5.57a.5.5 0 0 0-.514.858L9.528 7.5 7.743 8.571a.5.5 0 1 0 .514.858L10 8.383V10.5a.5.5 0 1 0 1 0V8.383l1.743 1.046a.5.5 0 0 0 .514-.858L11.472 7.5l1.785-1.071a.5.5 0 1 0-.514-.858L11 6.617V4.5Z"/>
+    <path fillRule="evenodd" d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 1 1 .707.707Zm9.9-.707a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.314.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707ZM6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm5-6.5a.5.5 0 0 0-1 0v2.117L8.257 5.57a.5.5 0 0 0-.514.858L9.528 7.5 7.743 8.571a.5.5 0 1 0 .514.858L10 8.383V10.5a.5.5 0 1 0 1 0V8.383l1.743 1.046a.5.5 0 0 0 .514-.858L11.472 7.5l1.785-1.071a.5.5 0 1 0-.514-.858L11 6.617V4.5Z"/>
     </svg>
     )
 }
@@ -151,7 +151,7 @@ function IconGroup({fill, }: IconProps) {
 function IconClass({fill, }: IconProps) {
     return(
     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" fill={fill} viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+    <path fillRule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
     </svg>
 )
 }
@@ -295,19 +295,22 @@ function APISearch() {
 
         function SigLabel() {
             const sig = sigToSigFull.get(value);
-            let sigSpans: ReactNode[] = [];
-            let buffer: string[] = [];
+            const sigSpans: ReactNode[] = [];
+            const buffer: string[] = [];
+            let key = 0;
 
             const bufToSpan = () => {
                 if (buffer.length) {
-                    sigSpans.push(<span className={highlightColors.get('')}>{buffer.join('')}</span>);
+                    sigSpans.push(<span className={highlightColors.get('')} key={key}>{buffer.join('')}</span>);
                     buffer.length = 0;
+                    key++;
                 }
             }
             [...sig].forEach(e => {
                 if (highlightColors.has(e)) {
                     bufToSpan();
-                    sigSpans.push(<span className={highlightColors.get(e)}>{e}</span>);
+                    sigSpans.push(<span className={highlightColors.get(e)} key={key}>{e}</span>);
+                    key++;
                 }
                 else {
                     buffer.push(e);
@@ -429,8 +432,8 @@ function APISearch() {
 
         // Return a single li for each row
         // NOTE: nowrap here to keep 2 over 2 in button minimal width display
-        return (<div>
-            <li className='px-2 pt-1 bg-zinc-900' key={value}>
+        return (<div key={value}>
+            <li className='px-2 pt-1 bg-zinc-900'>
                 <div className="flex">
                     <span className="w-4/6 my-1">
                         <SigLabel />
