@@ -26,11 +26,11 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-const version = '1.1.1'
+const version = '1.1.2'
 
 const CNTextSmall = "text-base text-zinc-400 font-sans"
 
-const CNButtonCommon = "ml-1 my-1 p-2 w-8 h-8 rounded-md"; // my-2 permits buttons to wrap in narrow views
+const CNButtonCommon = "ml-1 my-1 p-2 w-8 rounded-md"; // my-2 permits buttons to wrap in narrow views
 const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-800`;
 const CNButtonActive = `${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-600`;
 
@@ -42,6 +42,7 @@ const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 round
 const colorIconShowAll = "#4ade80";
 const colorIconHideAll = "#ef4444";
 const colorSearchButton = "#64748b";
+const colorAccentOrange = "#fdba74";
 
 const sigsEmpty: string[] = [];
 const highlightColors = new Map<string, string>([
@@ -171,7 +172,7 @@ function SFBanner() {
     return (
         <div className="flex ">
             <div className="justify-right items-right">
-            <SFIconSVG ring='#27272a' infinity='#3f3f46' frame='#fdba74' size={80} />
+            <SFIconSVG ring='#27272a' infinity='#3f3f46' frame={colorAccentOrange} size={80} />
             </div>
             <div className="px-2 pt-1 h-20">
             <SFTitleSVG />
@@ -236,10 +237,28 @@ function CodeBlock({ code }: CodeBlockProps) {
     );
 }
 
+function renderIconButton(
+    toolTip: string,
+    Icon: React.FC<IconProps>,
+    iconFill: string,
+    onClick: () => void,
+    className: () => string,
+) {
+    return (
+        <span className="group relative">
+            <button
+                onClick={onClick}
+                className={className()}
+            >
+                <Icon fill={iconFill} />
+            </button>
+            <span className={CNToolTipLeft}>{toolTip}</span>
+        </span>
+    );
+}
+
 //------------------------------------------------------------------------------
 function APISearch() {
-    // console.log("calling APISearch")
-
     //--------------------------------------------------------------------------
     // application state
 
@@ -331,7 +350,7 @@ function APISearch() {
             setQuery({target: "", runSearch: false});
         }
 
-        function onClickDoc() {
+        function onClickToggleDoc() {
             if (docDisplay.has(value)) {
                 docDisplay.set(value, !docDisplay.get(value));
             }
@@ -341,7 +360,7 @@ function APISearch() {
             setDocDisplay(new Map<string, boolean>(docDisplay));
         }
 
-        function onClickEx() {
+        function onClickToggleEx() {
             if (exDisplay.has(value)) {
                 exDisplay.set(value, !exDisplay.get(value));
             }
@@ -351,36 +370,37 @@ function APISearch() {
             setExDisplay(new Map<string, boolean>(exDisplay));
         }
 
-        const buttonClass = <span className="group relative">
-                <button onClick={onClickTagClass}
-                className={CNButtonHover}>
-                <IconClass fill={colorSearchButton} />
-                </button>
-                <span className={CNToolTipLeft}>Display all {className} methods</span>
-                </span>;
+        const buttonClass = renderIconButton(
+            `Display all ${className} methods`,
+            IconClass,
+            colorSearchButton,
+            onClickTagClass,
+            () => CNButtonHover
+            )
 
-        const buttonGroup = <span className="group relative">
-                <button onClick={onClickTagGroup}
-                className={CNButtonHover}>
-                <IconGroup fill={colorSearchButton} />
-                </button>
-                <span className={CNToolTipLeft}>Display all {className} {groupName} methods</span>
-                </span>;
+        const buttonGroup = renderIconButton(
+            `Display all ${className} ${groupName} methods`,
+            IconGroup,
+            colorSearchButton,
+            onClickTagGroup,
+            () => CNButtonHover
+            )
 
-        const buttonDoc = <span className="group relative">
-                <button onClick={onClickDoc}
-                className={docDisplay.get(value) ? CNButtonActive : CNButton}>
-                <IconDocument fill="#fdba74" />
-                </button>
-                <span className={CNToolTipLeft}>Show documentation</span>
-                </span>;
-        const buttonEx = <span className="group relative">
-                <button onClick={onClickEx}
-                className={exDisplay.get(value) ? CNButtonActive : CNButton}>
-                <IconCode fill="#fdba74" />
-                </button>
-                <span className={CNToolTipLeft}>Show example</span>
-                </span>;
+        const buttonDoc = renderIconButton(
+            "Show documentation",
+            IconDocument,
+            colorAccentOrange,
+            onClickToggleDoc,
+            () => docDisplay.get(value) ? CNButtonActive : CNButton
+            )
+
+        const buttonEx = renderIconButton(
+            "Show example",
+            IconCode,
+            colorAccentOrange,
+            onClickToggleEx,
+            () => exDisplay.get(value) ? CNButtonActive : CNButton
+            )
 
         function DocIfActive() {
             if (docDisplay.get(value)) {
@@ -408,7 +428,6 @@ function APISearch() {
 
         // Return a single li for each row
         // NOTE: nowrap here to keep 2 over 2 in button minimal width display
-
         return (<div>
             <li className='px-2 pt-1 bg-zinc-900' key={value}>
                 <div className="flex">
@@ -520,8 +539,11 @@ function APISearch() {
     }
 
     function onClickExampleShowAll() {
-        if (sigsDisplay.length > 100) {
-            setWarningMsg("Too many results to display all examples. Please narrow your search.");
+        if (sigsDisplay.length === 0) {
+            setWarningMsg("No signatures for which to display examples. Please enter a query.");
+        }
+        else if (sigsDisplay.length > 100) {
+            setWarningMsg("Too many signatures to display all examples. Please narrow your search.");
         }
         else {
             sigsDisplay.forEach(e => exDisplay.set(e, true));
@@ -534,8 +556,11 @@ function APISearch() {
     }
 
     function onClickDocShowAll() {
-        if (sigsDisplay.length > 100) {
-            setWarningMsg("Too many results to display all documentation. Please narrow your search.");
+        if (sigsDisplay.length === 0) {
+            setWarningMsg("No signatures for which to display documentation. Please enter a query.");
+        }
+        else if (sigsDisplay.length > 100) {
+            setWarningMsg("Too many signatures to display all documentation. Please narrow your search.");
         }
         else {
             sigsDisplay.forEach(e => docDisplay.set(e, true));
@@ -557,31 +582,37 @@ function APISearch() {
     }
 
     function ShowHideAll() {
-        const buttonDocShowAll = <span className="group relative">
-                <button onClick={onClickDocShowAll} className={CNButtonHover}>
-                <IconDocument fill={colorIconShowAll} />
-                </button>
-                <span className={CNToolTipLeft}>Show all documentation</span>
-                </span>
-        const buttonDocHideAll = <span className="group relative">
-                <button onClick={onClickDocHideAll} className={CNButtonHover}>
-                <IconDocument fill={colorIconHideAll} />
-                </button>
-                <span className={CNToolTipLeft}>Hide all documentation</span>
-                </span>
+        const buttonDocShowAll = renderIconButton(
+            "Show all documentation",
+            IconDocument,
+            colorIconShowAll,
+            onClickDocShowAll,
+            () => CNButtonHover,
+            );
 
-        const buttonExShowAll = <span className="group relative">
-                <button onClick={onClickExampleShowAll} className={CNButtonHover}>
-                <IconCode fill={colorIconShowAll} />
-                </button>
-                <span className={CNToolTipLeft}>Show all examples</span>
-                </span>
-        const buttonExHideAll = <span className="group relative">
-                <button onClick={onClickExampleHideAll} className={CNButtonHover}>
-                <IconCode fill={colorIconHideAll} />
-                </button>
-                <span className={CNToolTipLeft}>Hide all examples</span>
-                </span>
+        const buttonDocHideAll = renderIconButton(
+            "Hide all documentation",
+            IconDocument,
+            colorIconHideAll,
+            onClickDocHideAll,
+            () => CNButtonHover,
+            );
+
+        const buttonExShowAll = renderIconButton(
+            "Show all examples",
+            IconCode,
+            colorIconShowAll,
+            onClickExampleShowAll,
+            () => CNButtonHover,
+            );
+
+        const buttonExHideAll = renderIconButton(
+            "Hide all examples",
+            IconCode,
+            colorIconHideAll,
+            onClickExampleHideAll,
+            () => CNButtonHover,
+            );
 
         // NOTE: nowrap here to keep 2 over 2 in minimal width display
         return (
@@ -600,9 +631,9 @@ function APISearch() {
         // msg will be removed with timeout and useEffect, below
         if (warningMsg) {
             return (
-                <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 py-4 px-8 my-2 mx-8 rounded-xl">
+                <div className="bg-gradient-to-r from-zinc-800 to-zinc-900 py-8 px-8 my-2 mx-8 rounded-xl">
                 <div className="w-full flex justify-center items-center pb-2">
-                    <IconWarning fill="#fdba74" />
+                    <IconWarning fill={colorAccentOrange} />
                 </div>
                 <div className="text-zinc-200 text-l text-center">{warningMsg}</div>
             </div>);
@@ -623,6 +654,25 @@ function APISearch() {
 
     //--------------------------------------------------------------------------
     // Return the complete API search app
+    const buttonClear = renderIconButton("Clear query",
+            IconClear,
+            colorSearchButton,
+            onClickQueryClear,
+            () => CNButtonHover);
+
+    const buttonRe = renderIconButton("Use regular expression",
+            IconRE,
+            colorSearchButton,
+            onClickRESearch,
+            () => reSearch ? CNButtonActive : CNButton);
+
+    const buttonFullSig = renderIconButton("Include parameter names",
+            IconParameters,
+            colorSearchButton,
+            onClickFullSigSearch,
+            () => fullSigSearch ? CNButtonActive : CNButton);
+
+
     return (
     <div className="space-y-2">
         <div className='px-2'>
@@ -644,30 +694,15 @@ function APISearch() {
         </div>
         {/*------------------------------------------------------------------*/}
         {/* NOTE: might make this a component, but trying to do so made text input unusable */}
-        <div className="flex">
+        <div className="flex pr-2">
             <input type='text'
                 value={query.target}
                 onChange={e => setQuery({target: e.currentTarget.value, runSearch: true})}
                 className="px-4 bg-zinc-800 w-full rounded-full text-base font-mono text-slate-200"
             />
-            <div className="group relative">
-                <button onClick={onClickQueryClear} className={CNButtonHover}>
-                <IconClear fill={colorSearchButton}/>
-                </button>
-                <span className={CNToolTipLeft}>Clear query</span>
-            </div>
-            <div className="group relative">
-                <button onClick={onClickRESearch} className={reSearch ? CNButtonActive : CNButton}>
-                <IconRE fill={colorSearchButton}/>
-                </button>
-                <span className={CNToolTipLeft}>Use regular expression</span>
-            </div>
-            <div className="pr-2 group relative">
-                <button onClick={onClickFullSigSearch} className={fullSigSearch ? CNButtonActive : CNButton}>
-                <IconParameters fill={colorSearchButton}/>
-                </button>
-                <span className={CNToolTipLeft}>Include parameter names</span>
-            </div>
+            {buttonClear}
+            {buttonRe}
+            {buttonFullSig}
         </div>
         {/*------------------------------------------------------------------*/}
         <div className="flex pr-2">
@@ -699,7 +734,7 @@ function App() {
     const cnCol1FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/1 lg:w-1/1'
     // const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
     const cnCol3FlexColShrinkable = "w-1/3 flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
-    const cnColFieldGradient = "flex-1 px-4 py-4 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
+    const cnColFieldGradient = "flex-1 px-4 py-2 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
     // const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
 
     return (
