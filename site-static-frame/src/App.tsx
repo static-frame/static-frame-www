@@ -432,8 +432,8 @@ function APISearch() {
 
         // Return a single li for each row
         // NOTE: nowrap here to keep 2 over 2 in button minimal width display
-        return (<div key={value}>
-            <li className='px-2 pt-1 bg-zinc-900'>
+        return (
+            <li className='px-2 py-1 bg-zinc-900' key={value}>
                 <div className="flex">
                     <span className="w-4/6 my-1">
                         <SigLabel />
@@ -452,7 +452,7 @@ function APISearch() {
                     <ExIfActive />
                 </div>
             </li>
-            </div>)
+            )
     }
 
     // Given a target, filter all signatures and update the sigsDisplay state
