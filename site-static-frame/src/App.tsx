@@ -26,7 +26,7 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-const version = '1.1.2'
+const version = '1.1.3'
 
 const CNTextSmall = "text-base text-zinc-400 font-sans"
 
@@ -67,7 +67,7 @@ interface SFIconSVGProps {
 }
 function SFIconSVG({ring, infinity, frame, size}: SFIconSVGProps) {
     return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 228 228">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width={size} height={size} viewBox="0 0 228 228">
     <path d="M113.39,0A113.39,113.39,0,1,1,33.21,33.21,113,113,0,0,1,113.39,0m0,17.19a96.21,96.21,0,1,0,68,28.18A95.84,95.84,0,0,0,113.39,17.19Z" fill={ring}/>
     <path d="M156.74,91.41l3.08-.91h0l14.11-4.15v.31h0v17.57l-2.17.64h0l-15,4.41Z" fill={frame}/>
     <path d="M104.79,107.3v-.57l0-.07h0V78.26a34.64,34.64,0,0,1,69-4.23l-16.95,5c0-.25,0-.5,0-.75a17.45,17.45,0,1,0-34.89,0h0v23.33L137.76,97l7-2.06v.31h0v17.57l-2.18.64h0l-15,4.41h0L122,119.47V120l0,.08h0v28.39A34.61,34.61,0,1,1,77.6,115.3h0Zm25.84,10.2,0,.07h0Zm-25.84,31h0V125.18l-22.36,6.57h0a17.46,17.46,0,1,0,22.36,16.76Z" fill={infinity}/>
@@ -79,7 +79,7 @@ function SFTitleSVG() {
     const fill = "#52525b";
     const size = 160;
     return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 328 325">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width={size} height={size} viewBox="0 0 328 325">
     <path fill={fill} d="M46.65,21a9.91,9.91,0,0,0-2.06-1.47,38.65,38.65,0,0,0-4.41-2.25,42,42,0,0,0-5.78-2.06,23,23,0,0,0-6.27-.88q-8.62,0-8.63,5.78A4.58,4.58,0,0,0,20.43,23a8.28,8.28,0,0,0,2.75,2.11,25.14,25.14,0,0,0,4.55,1.71c1.83.53,4,1.11,6.37,1.77a83.69,83.69,0,0,1,9,3,24.23,24.23,0,0,1,6.81,4,16.31,16.31,0,0,1,4.31,5.83,20.17,20.17,0,0,1,1.52,8.24,20.6,20.6,0,0,1-2.2,9.94,18.72,18.72,0,0,1-5.83,6.57,25,25,0,0,1-8.33,3.63A41.61,41.61,0,0,1,29.69,71a53.11,53.11,0,0,1-7.84-.59A56.64,56.64,0,0,1,14,68.65,61.35,61.35,0,0,1,6.62,66,40.71,40.71,0,0,1,0,62.33l7.06-14A13.79,13.79,0,0,0,9.6,50.18,38.12,38.12,0,0,0,15,52.92a53.88,53.88,0,0,0,7.1,2.45A29.74,29.74,0,0,0,30,56.45q8.52,0,8.52-5.2A4.38,4.38,0,0,0,37.24,48a11.92,11.92,0,0,0-3.53-2.3,36.6,36.6,0,0,0-5.34-1.91q-3.09-.89-6.71-2a58.36,58.36,0,0,1-8.33-3.19,21.7,21.7,0,0,1-5.83-4A14.3,14.3,0,0,1,4.07,29.5a19.15,19.15,0,0,1-1.13-6.86A21.86,21.86,0,0,1,5,12.94a21,21,0,0,1,5.58-7.11,24.31,24.31,0,0,1,8.19-4.36A32.47,32.47,0,0,1,28.62,0a37.18,37.18,0,0,1,7.15.69,52.23,52.23,0,0,1,6.76,1.76,48.9,48.9,0,0,1,6,2.45c1.86.92,3.58,1.83,5.14,2.74Z"/>
     <path fill={fill} d="M117.7,14.7H96.53V70.17H80.46V14.7H59.19V.59H117.7Z"/>
     <path fill={fill} d="M137.59.59h14.5l25.39,69.58H161l-5.39-15.58H134l-5.29,15.58H112.21ZM153,43.51l-8.14-24.6-8.33,24.6Z"/>
@@ -100,7 +100,7 @@ interface IconProps {
 }
 function IconDocument({fill, }: IconProps) {
     return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" fill={fill} viewBox="0 0 16 16">
     <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
     </svg>
     )
@@ -109,7 +109,7 @@ function IconDocument({fill, }: IconProps) {
 // https://icons.getbootstrap.com/icons/code/
 function IconCode({fill, }: IconProps) {
     return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" fill={fill} viewBox="0 0 16 16">
     <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
     </svg>
     )
@@ -117,7 +117,7 @@ function IconCode({fill, }: IconProps) {
 // https://icons.getbootstrap.com/icons/x-circle/
 function IconClear({fill, }: IconProps) {
     return(
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" fill={fill} viewBox="0 0 16 16">
     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
     </svg>
     )
@@ -125,7 +125,7 @@ function IconClear({fill, }: IconProps) {
 
 function IconParameters({fill, }: IconProps) {
     return(
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" fill={fill} viewBox="0 0 16 16">
     <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
     </svg>
     )
@@ -134,7 +134,7 @@ function IconParameters({fill, }: IconProps) {
 // https://icons.getbootstrap.com/icons/regex/
 function IconRE({fill, }: IconProps) {
     return(
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" fill={fill} viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 1 1 .707.707Zm9.9-.707a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.314.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707ZM6 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm5-6.5a.5.5 0 0 0-1 0v2.117L8.257 5.57a.5.5 0 0 0-.514.858L9.528 7.5 7.743 8.571a.5.5 0 1 0 .514.858L10 8.383V10.5a.5.5 0 1 0 1 0V8.383l1.743 1.046a.5.5 0 0 0 .514-.858L11.472 7.5l1.785-1.071a.5.5 0 1 0-.514-.858L11 6.617V4.5Z"/>
     </svg>
     )
@@ -142,7 +142,7 @@ function IconRE({fill, }: IconProps) {
 
 function IconGroup({fill, }: IconProps) {
     return(
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" fill={fill} viewBox="0 0 16 16">
     <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
     </svg>
     )
@@ -150,7 +150,7 @@ function IconGroup({fill, }: IconProps) {
 
 function IconClass({fill, }: IconProps) {
     return(
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill={fill} viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="16" fill={fill} viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
     </svg>
 )
@@ -158,7 +158,7 @@ function IconClass({fill, }: IconProps) {
 
 function IconWarning({fill, }: IconProps) {
     return(
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill={fill} viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="32" height="32" fill={fill} viewBox="0 0 16 16">
     <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
     <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
     </svg>
@@ -247,6 +247,7 @@ function renderIconButton(
     return (
         <span className="group relative">
             <button
+                aria-label={toolTip}
                 onClick={onClick}
                 className={className()}
             >
@@ -685,10 +686,14 @@ function APISearch() {
             </p>
         </div>
         <div>
-            <button onClick={onClickRandomMethod} className={CNButtonHover}>
+            <button onClick={onClickRandomMethod}
+                aria-label="Random Method"
+                className={CNButtonHover}>
                 Random Method
             </button>
-            <button onClick={onClickExampleRandom} className={CNButtonHover}>
+            <button onClick={onClickExampleRandom}
+                aria-label="RandomExample"
+                className={CNButtonHover}>
                 Random Example
             </button>
         </div>
@@ -696,6 +701,8 @@ function APISearch() {
         {/* NOTE: might make this a component, but trying to do so made text input unusable */}
         <div className="flex pr-2">
             <input type='text'
+                aria-label="Search query"
+                aria-required="true"
                 value={query.target}
                 onChange={e => setQuery({target: e.currentTarget.value, runSearch: true})}
                 className="px-4 bg-zinc-800 w-full rounded-full text-base font-mono text-slate-200"
@@ -785,12 +792,12 @@ function App() {
         </div>
         <div className="-mx-4 flex flex-wrap h-20">
             <div className="mx-4 my-2">
-            <span className="text-right text-xs text-zinc-700 font-sans">StaticFrame site v{version}. Report issues or feature requests <a
+            <span className="text-right text-xs text-zinc-700 font-sans">StaticFrame site v{version}. Report issues or feature requests at the <a
         className="text-slate-600 "
         href={"https://github.com/static-frame/static-frame-www/issues"}
         target="_blank"
         rel="noopener noreferrer"
-        >here</a>.
+        >static-frame-www</a> GitHub repository.
             </span>
             </div>
         </div>
