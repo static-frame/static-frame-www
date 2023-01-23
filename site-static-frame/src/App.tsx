@@ -692,7 +692,7 @@ function APISearch() {
         </div>
         <div className="px-2">
             <p className={CNTextSmall}>
-                Search {sigsInitial.length.toLocaleString()} API endpoints and view {sigToEx.size.toLocaleString()} code examples of the {versionLink} API.
+                Search {sigsInitial.length.toLocaleString()} endpoints and view {sigToEx.size.toLocaleString()} code examples of the {versionLink} API.
             </p>
         </div>
         <div>
