@@ -12,6 +12,7 @@ import sigToGroupJSON from './sf-api/sig_to_group.json';
 
 import methodToSigJSON from './sf-api/method_to_sig.json';
 import sigFullToSigJSON from './sf-api/sig_full_to_sig.json';
+import metadataJSON from './sf-api/metadata.json';
 
 const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
 const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
@@ -26,7 +27,8 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-const version = '1.1.3'
+const versionSite = '1.1.4'
+const versionAPI = metadataJSON.version
 
 const CNTextSmall = "text-base text-zinc-400 font-sans"
 
@@ -676,6 +678,12 @@ function APISearch() {
             onClickFullSigSearch,
             () => fullSigSearch ? CNButtonActive : CNButton);
 
+    const versionLink = <a
+        className='text-zinc-500'
+        href={`https://pypi.org/project/static-frame/${versionAPI}/`}
+        target="_blank"
+        rel="noopener noreferrer"
+        >{versionAPI}</a>
 
     return (
     <div className="space-y-2">
@@ -684,8 +692,7 @@ function APISearch() {
         </div>
         <div className="px-2">
             <p className={CNTextSmall}>
-                Search {sigsInitial.length.toLocaleString()} API endpoints.
-                View {sigToEx.size.toLocaleString()} code examples.
+                Search {sigsInitial.length.toLocaleString()} API endpoints and view {sigToEx.size.toLocaleString()} code examples of the {versionLink} API.
             </p>
         </div>
         <div>
@@ -794,14 +801,14 @@ function App() {
             </div>
         </div>
         <div className="-mx-4 flex flex-wrap h-20">
-            <div className="mx-4 my-2">
-            <span className="text-right text-xs text-zinc-700 font-sans">StaticFrame site v{version}. Report issues or feature requests at the <a
+            <div className="mx-4 my-4">
+            <p className="text-left text-xs text-zinc-700 leading-4 font-sans">StaticFrame site v{versionSite}. Report issues or feature requests at the <a
         className="text-slate-600 "
         href={"https://github.com/static-frame/static-frame-www/issues"}
         target="_blank"
         rel="noopener noreferrer"
         >static-frame-www</a> GitHub repository.
-            </span>
+            </p>
             </div>
         </div>
         </div>
