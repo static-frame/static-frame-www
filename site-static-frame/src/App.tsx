@@ -27,7 +27,7 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-const versionSite = '1.1.5'
+const versionSite = '1.1.6'
 const versionAPI = metadataJSON.version
 
 const CNTextSmall = "text-base text-zinc-400 font-sans"
