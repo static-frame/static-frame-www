@@ -1,4 +1,8 @@
 import React, { ReactNode } from 'react';
+import {
+    // useSearchParams,
+    useParams,
+  } from "react-router-dom";
 import Prism from "prismjs";
 import 'prismjs/components/prism-python.min.js'
 // import 'prismjs/themes/prism-twilight.css'
@@ -680,6 +684,12 @@ function APISearch() {
 }
 
 export default function App() {
+
+    // const [searchParams, setSearchParams] = useSearchParams();
+    // console.log("j", searchParams.get("j"));
+
+    // const params = useParams();
+    // console.log(params);
 
     return (
     <div>

@@ -16,7 +16,18 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <RouteError />,
   },
+  {
+    path: "/search/:id",
+    element: <App />,
+    errorElement: <RouteError />,
+  },
 ]);
+
+// NOTE: might have paths for
+// search
+// signature
+// class
+
 
 // document.body.classList.add('bg-zinc-900');
 const root = ReactDOM.createRoot(
@@ -25,7 +36,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
     <RouterProvider router={router} />
   </React.StrictMode>
 );
