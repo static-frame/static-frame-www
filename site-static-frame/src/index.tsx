@@ -3,6 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+import RouteError from './components/RouteError';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <RouteError />,
+  },
+]);
 
 // document.body.classList.add('bg-zinc-900');
 const root = ReactDOM.createRoot(
@@ -11,7 +25,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
