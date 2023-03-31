@@ -213,16 +213,6 @@ function Link({label, url}: LinkProps) {
 interface CodeBlockProps {
     code: string;
 }
-// function CodeBlock({code}: CodeBlockProps) {
-//     React.useEffect(() => {
-//         Prism.highlightAll();
-//     }, []); // NOTE: might have this dependent on docDisplay
-//     return (
-//     <pre className="language-python">
-//     <code>{code}</code>
-//     </pre>
-//     );
-// };
 
 // alternate approach that tries to limit scope of prism application
 function CodeBlock({ code }: CodeBlockProps) {
@@ -750,44 +740,29 @@ function APISearch() {
 function App() {
     const cnCol1FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/1 lg:w-1/1'
     // const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
-    const cnCol3FlexColShrinkable = "w-1/3 flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
+    // const cnCol3FlexColShrinkable = "w-1/3 flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
+
     const cnColFieldGradient = "px-4 py-2 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
     // const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
 
     return (
     <div>
-        {/* <div className="max-w-full mx-auto">
-        <div className="flex flex-wrap px-2 py-2 bg-black">
-        <div className="max-w-5xl mx-auto px-4 pt-4">
+        <div className="absolute left-0 right-0 float h-10 w-full bg-black px-8 pt-2">
+                <button className="">
+                  <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
+                </button>
+                <button className="float-right">
+                  <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
+                </button>
         </div>
-        </div>
-        </div> */}
 
+        <div className="h-10"></div>
         <div className="max-w-5xl mx-auto px-4 pt-4">
 
             <div className="flex flex-wrap px-2 py-2 bg-black rounded-md">
                 <div className={cnCol1FlexCol}>
                   <div className={cnColFieldGradient}>
                     <SFBanner />
-                    <Description />
-                  </div>
-                </div>
-            </div>
-
-            <div className="flex flex-wrap my-4 px-2 py-2 bg-black rounded-md">
-                <div className={cnCol3FlexColShrinkable}>
-                  <div className={cnColFieldGradient}>
-                  <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
-                  </div>
-                </div>
-                <div className={cnCol3FlexColShrinkable}>
-                  <div className={cnColFieldGradient}>
-                  <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
-                  </div>
-                </div>
-                <div className={cnCol3FlexColShrinkable}>
-                  <div className={cnColFieldGradient}>
-                  <Link label='Try it now' url='https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb' />
                   </div>
                 </div>
             </div>
