@@ -296,7 +296,7 @@ function APISearch() {
     //--------------------------------------------------------------------------
 
     // Return an li element for each value. Called once for each row after filtering. `value` is the sig
-    function SignatureItem(value: string) {
+    function SignatureItem(value: string, index: number) {
         const className = value.split(".")[0];
         const groupName = sigToGroup.get(value);
 
@@ -437,10 +437,11 @@ function APISearch() {
             return <div/>
         }
 
+        const cnRow = index % 2 ? 'px-2 py-1 bg-zinc-800 rounded-sm': 'px-2 py-1 bg-zinc-800/80 rounded-sm';
         // Return a single li for each row
         // NOTE: nowrap here to keep 2 over 2 in button minimal width display
         return (
-            <li className='px-2 py-1 bg-zinc-800 rounded-sm' key={value}>
+            <li className={cnRow} key={value}>
                 <div className="flex">
                     <span className="w-4/6 my-1">
                         <SigLabel />
