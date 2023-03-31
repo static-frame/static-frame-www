@@ -4,8 +4,10 @@ import 'prismjs/components/prism-python.min.js'
 // import 'prismjs/themes/prism-twilight.css'
 import 'prismjs/themes/prism-tomorrow.css'
 
-import sigsInitial from './sf-api/sigs.json';
+// NOTE: to update JSON from SF directory, use the following
+// python3 doc/build_json.py --write --output ../static-frame-www/site-static-frame/src/sf-api
 
+import sigsInitial from './sf-api/sigs.json';
 import sigToDocJSON from './sf-api/sig_to_doc.json';
 import sigToExJSON from './sf-api/sig_to_example.json';
 import sigToGroupJSON from './sf-api/sig_to_group.json';
