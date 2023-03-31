@@ -27,13 +27,13 @@ sigFullToSig.forEach((v, k) => {
   sigToSigFull.set(v, k);
 });
 
-const versionSite = '1.1.6'
+const versionSite = '1.1.7'
 const versionAPI = metadataJSON.version
 
 const CNTextSmall = "text-base text-zinc-400 font-sans"
 
 const CNButtonCommon = "ml-1 my-1 p-2 w-8 rounded-md"; // my-2 permits buttons to wrap in narrow views
-const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-800`;
+const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-600 to-zinc-700`;
 const CNButtonActive = `${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-600`;
 
 const CNButtonHover = "ml-1 my-1 p-2 bg-zinc-800 hover:bg-zinc-700 rounded-md text-base text-zinc-400 font-sans";
@@ -183,14 +183,14 @@ function SFBanner() {
     )
 }
 
-function Description() {
-    return (
-        <div className='p-2'>
-        <p className={CNTextSmall}>StaticFrame: A Python library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
-        </p>
-        </div>
-    )
-}
+// function Description() {
+//     return (
+//         <div className='p-2'>
+//         <p className={CNTextSmall}>StaticFrame: A Python library of immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface.
+//         </p>
+//         </div>
+//     )
+// }
 
 interface LinkProps {
     label: string;
@@ -202,6 +202,19 @@ function Link({label, url}: LinkProps) {
         <div>
         <a
         className="text-base font-sans text-slate-400 "
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        >{label}</a>
+        </div>
+    )
+}
+
+function LinkHeader({label, url}: LinkProps) {
+    return (
+        <div>
+        <a
+        className="text-xs font-sans text-slate-400/60 "
         href={url}
         target="_blank"
         rel="noopener noreferrer"
@@ -425,7 +438,7 @@ function APISearch() {
         // Return a single li for each row
         // NOTE: nowrap here to keep 2 over 2 in button minimal width display
         return (
-            <li className='px-2 py-1 bg-zinc-900' key={value}>
+            <li className='px-2 py-1 bg-zinc-800 rounded-sm' key={value}>
                 <div className="flex">
                     <span className="w-4/6 my-1">
                         <SigLabel />
@@ -742,50 +755,57 @@ function App() {
     // const cnCol2FlexCol = 'w-full flex flex-col py-2 px-2 sm:w-1/2 lg:w-1/2'
     // const cnCol3FlexColShrinkable = "w-1/3 flex flex-col py-2 px-2 sm:w-1/3 lg:w-1/3"
 
-    const cnColFieldGradient = "px-4 py-2 rounded-md shadow-md bg-gradient-to-b from-zinc-800 to-zinc-900"
+    const cnColFieldGradient = "px-4 py-2 rounded-md shadow-md bg-gradient-to-b from-zinc-700 to-zinc-900"
     // const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
+    const cnHeaderButton = "bg-zinc-800/50 rounded-sm px-6";
 
     return (
     <div>
-        <div className="absolute left-0 right-0 float h-10 w-full bg-black px-8 pt-2">
-            <button className="">
-              <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
-            </button>
-            <button className="float-right">
-              <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
-            </button>
-        </div>
-
-        <div className="h-10"></div>
-        <div className="max-w-5xl mx-auto px-4 pt-4">
-
-            <div className="flex flex-wrap px-2 py-2 bg-black rounded-md">
-                <div className={cnCol1FlexCol}>
-                  <div className={cnColFieldGradient}>
-                    <SFBanner />
-                  </div>
-                </div>
-            </div>
-
-            <div className="flex flex-wrap px-2 pt-2 bg-black rounded-md">
-                <div className={cnCol1FlexCol}>
-                    <APISearch />
-                </div>
-            </div>
-
-            <div className="flex flex-wrap h-20">
-                <div className="mx-4 my-4">
-                <p className="text-left text-xs text-zinc-700 leading-4 font-sans">StaticFrame site v{versionSite}. Report issues or feature requests at the <a
-            className="text-slate-600 "
-            href={"https://github.com/static-frame/static-frame-www/issues"}
-            target="_blank"
-            rel="noopener noreferrer"
-            >static-frame-www</a> GitHub repository.
-                </p>
+        <div className="absolute z-50 left-0 right-0 flex h-10 w-full bg-black/80">
+            {/* not sure why this is not centered, but need to shift more to left */}
+            <div className="max-w-5xl mx-auto pr-5 pl-3 flex-1">
+                <div className="pt-2 space-x-1 flex justify-end">
+                    <button className={cnHeaderButton}>
+                      <LinkHeader label='Code' url='https://github.com/InvestmentSystems/static-frame' />
+                    </button>
+                    <button className={cnHeaderButton}>
+                      <LinkHeader label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
+                    </button>
                 </div>
             </div>
         </div>
 
+        <div className="h-screen overflow-x-auto">
+            <div className="h-6"></div>
+            <div className="max-w-5xl mx-auto px-4 pt-4">
+
+                <div className="flex flex-wrap px-2 py-2 my-4 bg-black rounded-md">
+                    <div className={cnCol1FlexCol}>
+                      <div className={cnColFieldGradient}>
+                        <SFBanner />
+                      </div>
+                    </div>
+                </div>
+
+                <div className="flex flex-wrap px-2 pt-2 bg-black rounded-md">
+                    <div className={cnCol1FlexCol}>
+                        <APISearch />
+                    </div>
+                </div>
+
+                <div className="flex flex-wrap h-20">
+                    <div className="mx-4 my-4">
+                    <p className="text-left text-xs text-zinc-700 leading-4 font-sans">StaticFrame site v{versionSite}. Report issues or feature requests at the <a
+                className="text-slate-600 "
+                href={"https://github.com/static-frame/static-frame-www/issues"}
+                target="_blank"
+                rel="noopener noreferrer"
+                >static-frame-www</a> GitHub repository.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     );
 }
