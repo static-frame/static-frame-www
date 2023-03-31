@@ -748,12 +748,12 @@ function App() {
     return (
     <div>
         <div className="absolute left-0 right-0 float h-10 w-full bg-black px-8 pt-2">
-                <button className="">
-                  <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
-                </button>
-                <button className="float-right">
-                  <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
-                </button>
+            <button className="">
+              <Link label='Code' url='https://github.com/InvestmentSystems/static-frame' />
+            </button>
+            <button className="float-right">
+              <Link label='Docs' url='https://static-frame.readthedocs.io/en/latest/' />
+            </button>
         </div>
 
         <div className="h-10"></div>
