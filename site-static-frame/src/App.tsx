@@ -701,9 +701,9 @@ export default function App() {
                         <APISearch />
                     </div>
                 </div>
+                <Footer />
 
             </div>
-            <Footer />
         </div>
     </div>
     );

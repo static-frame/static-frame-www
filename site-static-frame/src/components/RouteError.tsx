@@ -16,7 +16,7 @@ import {
 export default function RouteError() {
     const error = useRouteError();
     console.error(error);
-    let msg = "";
+    let msg = "Error";
     if (isRouteErrorResponse(error)) {
         msg = `${error.status} ${error.data}`;
     }
@@ -36,12 +36,12 @@ export default function RouteError() {
             </div>
 
             <div className="flex flex-wrap px-4 py-2 bg-black rounded-md">
-            <span className="text-2xl text-slate-400 text-bold">Error! {msg}</span>
+            <span className="text-2xl text-slate-400 text-bold">{msg}</span>
 
             </div>
+            <Footer />
 
         </div>
-        <Footer />
     </div>
     </div>
 
