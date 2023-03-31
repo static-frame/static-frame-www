@@ -1,3 +1,4 @@
+export const versionSite = '1.1.8'
 
 export const colorIconShowAll = "#4ade80";
 export const colorIconHideAll = "#ef4444";
@@ -13,7 +14,6 @@ export const cnColFieldGradient = "px-4 py-2 rounded-md shadow-md bg-gradient-to
 // export const cnColField = "flex-1 px-4 py-4 rounded-md shadow-md bg-zinc-800"
 export const cnHeaderButton = "bg-zinc-800/50 rounded-sm px-6";
 
-export const versionSite = '1.1.7'
 
 
 export const cnMaxWidthCentered = "max-w-5xl mx-auto px-4 pt-4";
