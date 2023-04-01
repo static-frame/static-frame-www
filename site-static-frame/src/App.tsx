@@ -197,7 +197,12 @@ function renderIconButton(
 }
 
 //------------------------------------------------------------------------------
-function APISearch() {
+interface APISearchProps {
+    url_query_type: string | undefined;
+    url_query: string | undefined;
+}
+
+function APISearch({url_query_type, url_query}: APISearchProps) {
     //--------------------------------------------------------------------------
     // application state
 
@@ -208,7 +213,7 @@ function APISearch() {
     const [docDisplay, setDocDisplay] = React.useState(new Map<string, boolean>());
     const [exDisplay, setExDisplay] = React.useState(new Map<string, boolean>());
 
-    // Boolean flag sto determine search configuration
+    // Boolean flag to determine search configuration
     const [fullSigSearch, setFullSigSearch] = React.useState(false);
     const [reSearch, setRESearch] = React.useState(false);
 
@@ -221,7 +226,16 @@ function APISearch() {
         target: string;
         runSearch: boolean;
     }
-    const [query, setQuery] = React.useState<Query>({target: "", runSearch: false});
+    const [query, _setQuery] = React.useState<Query>({target: "", runSearch: false});
+
+    // Wrap _setQuery to always set the search url
+    function setQuery(q: Query) {
+        window.history.replaceState(
+            null,
+            "StaticFrame API Search",
+            `/search/${encodeURIComponent(q.target)}`);
+        _setQuery(q);
+    }
 
 
     //--------------------------------------------------------------------------
@@ -288,7 +302,6 @@ function APISearch() {
                 }
             )
             setSigsDisplay(sigsFiltered);
-            // setQuery({target:`${className} ${groupName}`, runSearch:false});
             setQuery({target: "", runSearch: false});
         }
 
@@ -595,6 +608,12 @@ function APISearch() {
         return () => clearTimeout(timeOutId);
         }, [warningMsg]);
 
+
+    // if (url_query_type == "search" && url_query) {
+    //     // searchSigs({target: url_query, runSearch: false});
+    //     setQuery({target: url_query, runSearch: false});
+    // }
+
     //--------------------------------------------------------------------------
     // Return the complete API search app
     const buttonClear = renderIconButton("Clear query",
@@ -684,11 +703,10 @@ function APISearch() {
 }
 
 export default function App() {
-
     // const [searchParams, setSearchParams] = useSearchParams();
     // console.log("j", searchParams.get("j"));
 
-    // const params = useParams();
+    const params = useParams();
     // console.log(params);
 
     return (
@@ -708,7 +726,10 @@ export default function App() {
 
                 <div className="flex flex-wrap px-2 pt-2 bg-black rounded-md">
                     <div className={cnCol1FlexCol}>
-                        <APISearch />
+                        <APISearch
+                            url_query_type={params.query_type}
+                            url_query={params.query}
+                        />
                     </div>
                 </div>
                 <Footer />

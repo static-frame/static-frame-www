@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     errorElement: <RouteError />,
   },
   {
-    path: "/search/:id",
+    path: "/:query_type/:query",
     element: <App />,
     errorElement: <RouteError />,
   },
