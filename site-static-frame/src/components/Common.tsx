@@ -1,4 +1,4 @@
-export const versionSite = '1.1.8'
+export const versionSite = '1.1.9'
 
 export const colorIconShowAll = "#4ade80";
 export const colorIconHideAll = "#ef4444";
