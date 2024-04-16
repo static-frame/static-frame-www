@@ -6,7 +6,7 @@ on:
 jobs:
 
   check-for-update:
-    name Check for Update
+    name: Check for Update
     runs-on: ubuntu-22.04
     steps:
       - name: Get PyPI version
@@ -25,7 +25,7 @@ jobs:
           export VERSION_SF_CURRENT=$(jq -r '.version' site-static-frame/src/sf-api/metadata.json)
           echo $VERSION_SF_CURRENT
 
-      - name: Evaluate
+      - name: Fail if no updated needed
         run: |
           if [ "$VERSION_SF_PYPI" == "$VERSION_SF_CURRENT" ]; then
             echo "No update needed."
