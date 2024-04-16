@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: 'static-frame/static-frame'
-          path: '../static-frame'
+          path: 'static-frame' # this is inside the static-frame-www repo
 
       - uses: actions/setup-python@master
         with:
@@ -28,5 +28,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-test-3_11.txt
           export PYTHONPATH="${PYTHONPATH}:."
-          python3 doc/build_json.py --write --output ../static-frame-www/site-static-frame/src/sf-api
-        working-directory: ../static-frame
+          python3 doc/build_json.py --write --output ../site-static-frame/src/sf-api
+        working-directory: static-frame
