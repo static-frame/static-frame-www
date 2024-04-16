@@ -38,4 +38,28 @@ jobs:
 
       - name: Commit to Git
         run: |
-          git diff --stat
+          git diff
+          git config user.name "Content Auto Update"
+        #   git config user.email "your-email@example.com"
+          git checkout -b content-auto-update-${GITHUB_RUN_ID}
+          git commit -m "content-auto-update-${GITHUB_RUN_ID}" -a
+          git push origin content-auto-update-${GITHUB_RUN_ID}
+
+
+      - name: Create Pull Request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_DATA=$(jq -n \
+            --arg title "Content Auto Update ${GITHUB_RUN_ID}" \
+            --arg body "--" \
+            --arg head "content-auto-update-${GITHUB_RUN_ID}" \
+            --arg base "main" \
+            '{"title": $title, "body": $body, "head": $head, "base": $base}')
+
+          curl --location --request POST "https://api.github.com/repos/${GITHUB_REPOSITORY}/pulls" \
+            --header "Authorization: token ${GITHUB_TOKEN}" \
+            --header "Content-Type: application/json" \
+            --data "$PR_DATA"
+
+
