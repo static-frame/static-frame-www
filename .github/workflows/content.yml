@@ -24,9 +24,18 @@ jobs:
         with:
           python-version: '3.11'
 
-      - run: |
+
+      - name: Build JSON files
+        run: |
           python -m pip install --upgrade pip
           pip install -r requirements-test-3_11.txt
           export PYTHONPATH="${PYTHONPATH}:."
           python3 doc/build_json.py --write --output ../site-static-frame/src/sf-api
         working-directory: static-frame
+
+      - name: Remove static-frame
+        run: rm -rf static-frame
+
+      - name: Commit to Git
+        run: |
+          git diff --stat
