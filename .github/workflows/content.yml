@@ -75,7 +75,7 @@ jobs:
         run: |
           git diff --stat
           git config user.email "bot@staticframe.dev"
-          git config user.name "Content Auto Update"
+          git config user.name "Content Update Bot"
           git checkout -b ${NAME_BRANCH}
           git commit -m "${NAME_BRANCH}" -a
           git push origin ${NAME_BRANCH}
