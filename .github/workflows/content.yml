@@ -63,8 +63,10 @@ jobs:
       - name: Extract New Version
         run: |
           export VERSION_SF_SOURCED=$(jq -r '.version' site-static-frame/src/sf-api/metadata.json)
+          echo "VERSION_SF_SOURCED=$VERSION_SF_SOURCED" >> $GITHUB_ENV
           export NAME_BRANCH="content-update-${VERSION_SF_SOURCED}-${GITHUB_RUN_ID}"
           echo "branch name: $NAME_BRANCH"
+          echo "NAME_BRANCH=$NAME_BRANCH" >> $GITHUB_ENV
 
       - name: Commit to Git
         run: |
