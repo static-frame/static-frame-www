@@ -67,8 +67,9 @@ jobs:
         run: rm -rf static-frame
 
       - name: Extract New Version
-        run: export VERSION_SF_SOURCED=$(jq -r '.version' site-static-frame/src/sf-api/metadata.json)
-        run: export NAME_BRANCH="content-update-${VERSION_SF_SOURCED}-${GITHUB_RUN_ID}"
+        run: |
+          export VERSION_SF_SOURCED=$(jq -r '.version' site-static-frame/src/sf-api/metadata.json)
+          export NAME_BRANCH="content-update-${VERSION_SF_SOURCED}-${GITHUB_RUN_ID}"
 
       - name: Commit to Git
         run: |
