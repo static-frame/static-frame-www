@@ -40,11 +40,9 @@ jobs:
         run: |
           git diff
           git config user.name "Content Auto Update"
-        #   git config user.email "your-email@example.com"
           git checkout -b content-auto-update-${GITHUB_RUN_ID}
           git commit -m "content-auto-update-${GITHUB_RUN_ID}" -a
           git push origin content-auto-update-${GITHUB_RUN_ID}
-
 
       - name: Create Pull Request
         env:
