@@ -8,17 +8,17 @@ jobs:
     name: Update Content
     runs-on: ubuntu-22.04
     steps:
-      - name: Checkout the main repo
+      - name: Checkout static-frame-www
         uses: actions/checkout@v3
         with:
           repository: ${{ github.repository }}
           fetch-depth: 0
 
-      - name: Checkout the secondary repo
+      - name: Checkout static-frame
         uses: actions/checkout@v3
         with:
           repository: 'static-frame/static-frame'
-          path: 'static-frame'
+          path: '../static-frame'
 
       - uses: actions/setup-python@master
         with:
@@ -29,4 +29,4 @@ jobs:
           pip install -r requirements-test-3_11.txt
           export PYTHONPATH="${PYTHONPATH}:."
           python3 doc/build_json.py --write --output ../static-frame-www/site-static-frame/src/sf-api
-        working-directory: static-frame
+        working-directory: ../static-frame
