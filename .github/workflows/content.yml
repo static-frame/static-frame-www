@@ -82,7 +82,7 @@ jobs:
         run: |
           PR_DATA=$(jq -n \
             --arg title "Content Update ${VERSION_SF_SOURCED} (${GITHUB_RUN_ID})" \
-            --arg body "\u1F60A" \
+            --arg body "--" \
             --arg head "${NAME_BRANCH}" \
             --arg base "main" \
             --argjson assignees '["flexatone"]' \
