@@ -1,8 +1,10 @@
-name: Content
+name: Content Updater
 
 on:
   workflow_dispatch:
-
+  schedule:
+    # every day, 4 AM PST
+    - cron: "0 12 * * *"
 jobs:
 
   check-for-update:
@@ -30,7 +32,7 @@ jobs:
 
   update-rtd:
     name: Update Read the Docs
-    # needs: [check-for-update]
+    needs: [check-for-update]
     runs-on: ubuntu-22.04
     steps:
       - name: Trigger RTD Latest Builds
