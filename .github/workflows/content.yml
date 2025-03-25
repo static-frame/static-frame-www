@@ -62,7 +62,7 @@ jobs:
         with:
           repository: 'static-frame/static-frame'
           path: 'static-frame' # this is inside the static-frame-www repo
-          ref: ${{ needs.check-for-update.outputs.version-sf-pypi }}
+          ref: v${{ needs.check-for-update.outputs.version-sf-pypi }}
 
       - uses: actions/setup-python@v4
         with:
