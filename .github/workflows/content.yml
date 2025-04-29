@@ -28,12 +28,12 @@ jobs:
           export VERSION_SF_CURRENT=$(jq -r '.version' site-static-frame/src/sf-api/metadata.json)
           echo "version current: $VERSION_SF_CURRENT"
 
-          # if [ "$VERSION_SF_PYPI" == "$VERSION_SF_CURRENT" ]; then
-          #   echo "update needed: no"
-          #   exit 1
-          # else
-          #   echo "update needed: yes"
-          # fi
+          if [ "$VERSION_SF_PYPI" == "$VERSION_SF_CURRENT" ]; then
+            echo "update needed: no"
+            exit 1
+          else
+            echo "update needed: yes"
+          fi
 
   update-rtd:
     name: Update Read the Docs
