@@ -1,10 +1,10 @@
-from markitdown import MarkItDown
 import argparse
 import os
 from pathlib import Path
 import shutil
 import re
 
+from markitdown import MarkItDown
 
 def fix_links(text: str) -> str:
     """Replace .html links with .md links."""
@@ -58,8 +58,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-# if __name__ == "__main__":
-#     # Example usage
 #     input_html_dir = Path("/Users/ariza/_x/src/static-frame/doc/build/html/")
 #     output_md_dir = Path("path/to/output_dir")
 #     convert_directory(input_html_dir, output_md_dir)
