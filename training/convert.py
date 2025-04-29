@@ -3,6 +3,15 @@ import argparse
 import os
 from pathlib import Path
 import shutil
+import re
+
+def fix_links(text: str) -> str:
+    """Replace .html links with .md links."""
+    # Simple: replace all '.html' with '.md'
+    # return text.replace('.html', '.md')
+
+    # More precise: (optional)
+    return re.sub(r'(\]\([^\)]+?)\.html(\))', r'\1.md\2', text)
 
 def convert_directory(input_dir: Path, output_dir: Path):
     input_dir = input_dir.resolve()
@@ -14,6 +23,8 @@ def convert_directory(input_dir: Path, output_dir: Path):
     md = MarkItDown()
 
     for root, dirs, files in os.walk(input_dir):
+        dirs[:] = [d for d in dirs if d != "_modules"]
+
         for file in files:
             input_fp = Path(root) / file
             if file.endswith(".html"):
@@ -25,7 +36,9 @@ def convert_directory(input_dir: Path, output_dir: Path):
                 output_fp.parent.mkdir(parents=True, exist_ok=True)
 
                 result = md.convert(str(input_fp))
-                output_fp.write_text(result.text_content, encoding="utf-8")
+                fixed_text = fix_links(result.text_content)
+                output_fp.write_text(fixed_text, encoding="utf-8")
+
             else:
                 print(f"skipping: {input_fp}")
 
