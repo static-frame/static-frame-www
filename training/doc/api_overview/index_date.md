@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,38 +135,38 @@ API Detail
 * Overview: IndexDate
 * [View page source](../_sources/api_overview/index_date.rst.txt)
 
-[Previous](index_year_month_go.html "Overview: IndexYearMonthGO")
-[Next](index_date_go.html "Overview: IndexDateGO")
+[Previous](index_year_month_go.md "Overview: IndexYearMonthGO")
+[Next](index_date_go.md "Overview: IndexDateGO")
 
 ---
 
 # Overview: IndexDate[](#overview-indexdate "Link to this heading")
 
-[Detail: IndexDate](../api_detail/index_date.html#api-detail-indexdate)
+[Detail: IndexDate](../api_detail/index_date.md#api-detail-indexdate)
 
 |  |  |
 | --- | --- |
-| [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | Alternative constructors for creating instances. |
-| [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](index_date-method.html#api-overview-indexdate-method) | Methods for general functionality. |
-| [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](index_date-display.html#api-overview-indexdate-display) | Methods for providing a text representation of the object. |
-| [Selector](index_date-selector.html#api-overview-indexdate-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](index_date-iterator.html#api-overview-indexdate-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Operator Binary](index_date-operator_binary.html#api-overview-indexdate-operator-binary) | Underlying (magic) methods for binary operator implementation. |
-| [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | Underlying (magic) methods for unary operator implementation. |
-| [Accessor Values](index_date-accessor_values.html#api-overview-indexdate-accessor-values) | Interface for using NumPy functions on conatainers. |
-| [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
-| [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | Interface for employing string methods on container elements. |
-| [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-overview-indexdate-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
-| [Accessor Hashlib](index_date-accessor_hashlib.html#api-overview-indexdate-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | Alternative constructors for creating instances. |
+| [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](index_date-method.md#api-overview-indexdate-method) | Methods for general functionality. |
+| [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](index_date-display.md#api-overview-indexdate-display) | Methods for providing a text representation of the object. |
+| [Selector](index_date-selector.md#api-overview-indexdate-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](index_date-iterator.md#api-overview-indexdate-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Operator Binary](index_date-operator_binary.md#api-overview-indexdate-operator-binary) | Underlying (magic) methods for binary operator implementation. |
+| [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | Underlying (magic) methods for unary operator implementation. |
+| [Accessor Values](index_date-accessor_values.md#api-overview-indexdate-accessor-values) | Interface for using NumPy functions on conatainers. |
+| [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
+| [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | Interface for employing string methods on container elements. |
+| [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-overview-indexdate-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
+| [Accessor Hashlib](index_date-accessor_hashlib.md#api-overview-indexdate-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 
-[IndexDate](#api-overview-indexdate): [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | [Method](index_date-method.html#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | [Display](index_date-display.html#api-overview-indexdate-display) | [Selector](index_date-selector.html#api-overview-indexdate-selector) | [Iterator](index_date-iterator.html#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic)
+[IndexDate](#api-overview-indexdate): [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | [Method](index_date-method.md#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | [Display](index_date-display.md#api-overview-indexdate-display) | [Selector](index_date-selector.md#api-overview-indexdate-selector) | [Iterator](index_date-iterator.md#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic)
 
-[Previous](index_year_month_go.html "Overview: IndexYearMonthGO")
-[Next](index_date_go.html "Overview: IndexDateGO")
+[Previous](index_year_month_go.md "Overview: IndexYearMonthGO")
+[Next](index_date_go.md "Overview: IndexDateGO")
 
 ---
 

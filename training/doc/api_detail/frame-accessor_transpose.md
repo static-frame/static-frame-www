@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Frame: Accessor Transpose
 * [View page source](../_sources/api_detail/frame-accessor_transpose.rst.txt)
 
-[Previous](frame-accessor_string.html "Detail: Frame: Accessor String")
-[Next](frame-accessor_fill_value.html "Detail: Frame: Accessor Fill Value")
+[Previous](frame-accessor_string.md "Detail: Frame: Accessor String")
+[Next](frame-accessor_fill_value.md "Detail: Frame: Accessor Fill Value")
 
 ---
 
 # Detail: Frame: Accessor Transpose[](#detail-frame-accessor-transpose "Link to this heading")
 
-[Overview: Frame: Accessor Transpose](../api_overview/frame-accessor_transpose.html#api-overview-frame-accessor-transpose)
+[Overview: Frame: Accessor Transpose](../api_overview/frame-accessor_transpose.md#api-overview-frame-accessor-transpose)
 
 Frame.via\_T.via\_fill\_value(*fill\_value*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.via\_fill\_value(*fill\_value*, */*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.via_fill_value)
+    InterfaceTranspose.via\_fill\_value(*fill\_value*, */*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.via_fill_value)
     :   Interface for using binary operators and methods with a pre-defined fill value.
 
     ```
@@ -160,7 +160,7 @@ Frame.via\_T.\_\_add\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__add__)
+    InterfaceTranspose.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__add__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -198,7 +198,7 @@ Frame.via\_T.\_\_sub\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__sub__)
+    InterfaceTranspose.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__sub__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -236,7 +236,7 @@ Frame.via\_T.\_\_mul\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__mul__)
+    InterfaceTranspose.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__mul__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -274,7 +274,7 @@ Frame.via\_T.\_\_truediv\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__truediv__)
+    InterfaceTranspose.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__truediv__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -312,7 +312,7 @@ Frame.via\_T.\_\_floordiv\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__floordiv__)
+    InterfaceTranspose.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__floordiv__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -350,7 +350,7 @@ Frame.via\_T.\_\_mod\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__mod__)
+    InterfaceTranspose.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__mod__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -388,7 +388,7 @@ Frame.via\_T.\_\_pow\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__pow__)
+    InterfaceTranspose.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__pow__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -426,7 +426,7 @@ Frame.via\_T.\_\_lshift\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__lshift__)
+    InterfaceTranspose.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__lshift__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -464,7 +464,7 @@ Frame.via\_T.\_\_rshift\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rshift__)
+    InterfaceTranspose.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rshift__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -502,7 +502,7 @@ Frame.via\_T.\_\_and\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__and__)
+    InterfaceTranspose.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__and__)
 
     ```
     >>> f = sf.Frame.from_fields(((False, True, True), (True, True, False)), columns=('a', 'b'), index=('p', 'q', 'r'), name='x')
@@ -537,7 +537,7 @@ Frame.via\_T.\_\_xor\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__xor__)
+    InterfaceTranspose.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__xor__)
 
     ```
     >>> f = sf.Frame.from_fields(((False, True, True), (True, True, False)), columns=('a', 'b'), index=('p', 'q', 'r'), name='x')
@@ -572,7 +572,7 @@ Frame.via\_T.\_\_or\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__or__)
+    InterfaceTranspose.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__or__)
     :   Return self|value.
 
     ```
@@ -608,7 +608,7 @@ Frame.via\_T.\_\_lt\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__lt__)
+    InterfaceTranspose.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__lt__)
     :   Return self<value.
 
     ```
@@ -647,7 +647,7 @@ Frame.via\_T.\_\_le\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__le__)
+    InterfaceTranspose.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__le__)
     :   Return self<=value.
 
     ```
@@ -686,7 +686,7 @@ Frame.via\_T.\_\_eq\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__eq__)
+    InterfaceTranspose.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__eq__)
     :   Return self==value.
 
     ```
@@ -725,7 +725,7 @@ Frame.via\_T.\_\_ne\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__ne__)
+    InterfaceTranspose.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__ne__)
     :   Return self!=value.
 
     ```
@@ -764,7 +764,7 @@ Frame.via\_T.\_\_gt\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__gt__)
+    InterfaceTranspose.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__gt__)
     :   Return self>value.
 
     ```
@@ -803,7 +803,7 @@ Frame.via\_T.\_\_ge\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__ge__)
+    InterfaceTranspose.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__ge__)
     :   Return self>=value.
 
     ```
@@ -842,7 +842,7 @@ Frame.via\_T.\_\_radd\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__radd__)
+    InterfaceTranspose.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__radd__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -880,7 +880,7 @@ Frame.via\_T.\_\_rsub\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rsub__)
+    InterfaceTranspose.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rsub__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -918,7 +918,7 @@ Frame.via\_T.\_\_rmul\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rmul__)
+    InterfaceTranspose.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rmul__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -956,7 +956,7 @@ Frame.via\_T.\_\_rtruediv\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rtruediv__)
+    InterfaceTranspose.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rtruediv__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -994,7 +994,7 @@ Frame.via\_T.\_\_rfloordiv\_\_(*other*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rfloordiv__)
+    InterfaceTranspose.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rfloordiv__)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -1028,10 +1028,10 @@ Frame.via\_T.\_\_rfloordiv\_\_(*other*)
 
     ```
 
-[Frame](frame.html#api-detail-frame): [Constructor](frame-constructor.html#api-detail-frame-constructor) | [Exporter](frame-exporter.html#api-detail-frame-exporter) | [Attribute](frame-attribute.html#api-detail-frame-attribute) | [Method](frame-method.html#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-detail-frame-dictionary-like) | [Display](frame-display.html#api-detail-frame-display) | [Assignment](frame-assignment.html#api-detail-frame-assignment) | [Selector](frame-selector.html#api-detail-frame-selector) | [Iterator](frame-iterator.html#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-detail-frame-accessor-string) | [Accessor Transpose](#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-detail-frame-accessor-reduce)
+[Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)
 
-[Previous](frame-accessor_string.html "Detail: Frame: Accessor String")
-[Next](frame-accessor_fill_value.html "Detail: Frame: Accessor Fill Value")
+[Previous](frame-accessor_string.md "Detail: Frame: Accessor String")
+[Next](frame-accessor_fill_value.md "Detail: Frame: Accessor Fill Value")
 
 ---
 

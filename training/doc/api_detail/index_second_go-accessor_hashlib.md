@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexSecondGO: Accessor Hashlib
 * [View page source](../_sources/api_detail/index_second_go-accessor_hashlib.rst.txt)
 
-[Previous](index_second_go-accessor_regular_expression.html "Detail: IndexSecondGO: Accessor Regular Expression")
-[Next](index_second_go-accessor_type_clinic.html "Detail: IndexSecondGO: Accessor Type Clinic")
+[Previous](index_second_go-accessor_regular_expression.md "Detail: IndexSecondGO: Accessor Regular Expression")
+[Next](index_second_go-accessor_type_clinic.md "Detail: IndexSecondGO: Accessor Type Clinic")
 
 ---
 
 # Detail: IndexSecondGO: Accessor Hashlib[](#detail-indexsecondgo-accessor-hashlib "Link to this heading")
 
-[Overview: IndexSecondGO: Accessor Hashlib](../api_overview/index_second_go-accessor_hashlib.html#api-overview-indexsecondgo-accessor-hashlib)
+[Overview: IndexSecondGO: Accessor Hashlib](../api_overview/index_second_go-accessor_hashlib.md#api-overview-indexsecondgo-accessor-hashlib)
 
 IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.to_bytes)
+    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.to_bytes)
     :   Return the byte signature for this container, suitable for passing to a cryptographic hash function.
 
     ```
@@ -168,7 +168,7 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).m
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.md5)
+    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.md5)
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -187,7 +187,7 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha256)
+    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha256)
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -206,7 +206,7 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha512)
+    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha512)
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -225,7 +225,7 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_256)
+    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_256)
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -244,7 +244,7 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_512)
+    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_512)
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -263,7 +263,7 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_128)
+    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_128)
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -282,7 +282,7 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_256)
+    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_256)
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -301,7 +301,7 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).b
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2b)
+    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2b)
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -320,7 +320,7 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).b
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2s)
+    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2s)
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -335,10 +335,10 @@ IndexSecondGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).b
 
     ```
 
-[IndexSecondGO](index_second_go.html#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.html#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-detail-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.md#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-detail-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-accessor_regular_expression.html "Detail: IndexSecondGO: Accessor Regular Expression")
-[Next](index_second_go-accessor_type_clinic.html "Detail: IndexSecondGO: Accessor Type Clinic")
+[Previous](index_second_go-accessor_regular_expression.md "Detail: IndexSecondGO: Accessor Regular Expression")
+[Next](index_second_go-accessor_type_clinic.md "Detail: IndexSecondGO: Accessor Type Clinic")
 
 ---
 

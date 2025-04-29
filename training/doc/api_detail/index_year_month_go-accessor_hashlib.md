@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexYearMonthGO: Accessor Hashlib
 * [View page source](../_sources/api_detail/index_year_month_go-accessor_hashlib.rst.txt)
 
-[Previous](index_year_month_go-accessor_regular_expression.html "Detail: IndexYearMonthGO: Accessor Regular Expression")
-[Next](index_year_month_go-accessor_type_clinic.html "Detail: IndexYearMonthGO: Accessor Type Clinic")
+[Previous](index_year_month_go-accessor_regular_expression.md "Detail: IndexYearMonthGO: Accessor Regular Expression")
+[Next](index_year_month_go-accessor_type_clinic.md "Detail: IndexYearMonthGO: Accessor Type Clinic")
 
 ---
 
 # Detail: IndexYearMonthGO: Accessor Hashlib[](#detail-indexyearmonthgo-accessor-hashlib "Link to this heading")
 
-[Overview: IndexYearMonthGO: Accessor Hashlib](../api_overview/index_year_month_go-accessor_hashlib.html#api-overview-indexyearmonthgo-accessor-hashlib)
+[Overview: IndexYearMonthGO: Accessor Hashlib](../api_overview/index_year_month_go-accessor_hashlib.md#api-overview-indexyearmonthgo-accessor-hashlib)
 
 IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.to_bytes)
+    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.to_bytes)
     :   Return the byte signature for this container, suitable for passing to a cryptographic hash function.
 
     ```
@@ -168,7 +168,7 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.md5)
+    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.md5)
 
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
@@ -187,7 +187,7 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha256)
+    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha256)
 
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
@@ -206,7 +206,7 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha512)
+    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha512)
 
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
@@ -225,7 +225,7 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_256)
+    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_256)
 
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
@@ -244,7 +244,7 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_512)
+    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_512)
 
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
@@ -263,7 +263,7 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_128)
+    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_128)
 
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
@@ -282,7 +282,7 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_256)
+    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_256)
 
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
@@ -301,7 +301,7 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2b)
+    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2b)
 
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
@@ -320,7 +320,7 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2s)
+    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2s)
 
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
@@ -335,10 +335,10 @@ IndexYearMonthGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 
     ```
 
-[IndexYearMonthGO](index_year_month_go.html#api-detail-indexyearmonthgo): [Constructor](index_year_month_go-constructor.html#api-detail-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.html#api-detail-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.html#api-detail-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.html#api-detail-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.html#api-detail-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.html#api-detail-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.html#api-detail-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.html#api-detail-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.html#api-detail-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.html#api-detail-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.html#api-detail-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.html#api-detail-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.html#api-detail-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.html#api-detail-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.html#api-detail-indexyearmonthgo-accessor-type-clinic)
+[IndexYearMonthGO](index_year_month_go.md#api-detail-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-detail-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.md#api-detail-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.md#api-detail-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-detail-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-detail-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.md#api-detail-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.md#api-detail-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.md#api-detail-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-detail-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.md#api-detail-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-detail-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-detail-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.md#api-detail-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-detail-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.md#api-detail-indexyearmonthgo-accessor-type-clinic)
 
-[Previous](index_year_month_go-accessor_regular_expression.html "Detail: IndexYearMonthGO: Accessor Regular Expression")
-[Next](index_year_month_go-accessor_type_clinic.html "Detail: IndexYearMonthGO: Accessor Type Clinic")
+[Previous](index_year_month_go-accessor_regular_expression.md "Detail: IndexYearMonthGO: Accessor Regular Expression")
+[Next](index_year_month_go-accessor_type_clinic.md "Detail: IndexYearMonthGO: Accessor Type Clinic")
 
 ---
 

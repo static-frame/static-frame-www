@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,36 +135,36 @@ API Detail
 * Overview: Yarn: Attribute
 * [View page source](../_sources/api_overview/yarn-attribute.rst.txt)
 
-[Previous](yarn-exporter.html "Overview: Yarn: Exporter")
-[Next](yarn-method.html "Overview: Yarn: Method")
+[Previous](yarn-exporter.md "Overview: Yarn: Exporter")
+[Next](yarn-method.md "Overview: Yarn: Method")
 
 ---
 
 # Overview: Yarn: Attribute[](#overview-yarn-attribute "Link to this heading")
 
-[Detail: Yarn: Attribute](../api_detail/yarn-attribute.html#api-detail-yarn-attribute)
+[Detail: Yarn: Attribute](../api_detail/yarn-attribute.md#api-detail-yarn-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-static) | `Yarn.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-dtype) | `Yarn.dtype` | Return the dtype of the realized NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-dtypes) | `Yarn.dtypes` | Returns a Frame of dtypes for all loaded Frames. |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-index) | `Yarn.index` | The index instance assigned to this container. Returns: Index |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-inventory) | `Yarn.inventory` | Return a Frame indicating file\_path, last-modified time, and size of underlying… |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-memory) | `Yarn.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-mloc) | `Yarn.mloc` | Returns a Series showing a tuple of memory locations within each loaded Frame. |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-name) | `Yarn.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-nbytes) | `Yarn.nbytes` | Total bytes of data currently loaded in Frame contained in this Yarn. |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-ndim) | `Yarn.ndim` | Return the number of dimensions, which for a Yarn is always 1. Returns: int |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-shape) | `Yarn.shape` | Return a tuple describing the shape of the realized NumPy array. Returns: Tuple[… |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-shapes) | `Yarn.shapes` | A Series describing the shape of each loaded Frame. Unloaded Frame will have a s… |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-size) | `Yarn.size` | Return the size. Returns: int |
-| [Detail](../api_detail/yarn-attribute.html#api-sig-yarn-status) | `Yarn.status` | Return a Frame indicating loaded status, size, bytes, and shape of all loaded Fr… |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-static) | `Yarn.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-dtype) | `Yarn.dtype` | Return the dtype of the realized NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-dtypes) | `Yarn.dtypes` | Returns a Frame of dtypes for all loaded Frames. |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-index) | `Yarn.index` | The index instance assigned to this container. Returns: Index |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-inventory) | `Yarn.inventory` | Return a Frame indicating file\_path, last-modified time, and size of underlying… |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-memory) | `Yarn.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-mloc) | `Yarn.mloc` | Returns a Series showing a tuple of memory locations within each loaded Frame. |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-name) | `Yarn.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-nbytes) | `Yarn.nbytes` | Total bytes of data currently loaded in Frame contained in this Yarn. |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-ndim) | `Yarn.ndim` | Return the number of dimensions, which for a Yarn is always 1. Returns: int |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-shape) | `Yarn.shape` | Return a tuple describing the shape of the realized NumPy array. Returns: Tuple[… |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-shapes) | `Yarn.shapes` | A Series describing the shape of each loaded Frame. Unloaded Frame will have a s… |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-size) | `Yarn.size` | Return the size. Returns: int |
+| [Detail](../api_detail/yarn-attribute.md#api-sig-yarn-status) | `Yarn.status` | Return a Frame indicating loaded status, size, bytes, and shape of all loaded Fr… |
 
-[Yarn](yarn.html#api-overview-yarn): [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | [Attribute](#api-overview-yarn-attribute) | [Method](yarn-method.html#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](yarn-display.html#api-overview-yarn-display) | [Selector](yarn-selector.html#api-overview-yarn-selector) | [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-overview-yarn): [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | [Attribute](#api-overview-yarn-attribute) | [Method](yarn-method.md#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](yarn-display.md#api-overview-yarn-display) | [Selector](yarn-selector.md#api-overview-yarn-selector) | [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
-[Previous](yarn-exporter.html "Overview: Yarn: Exporter")
-[Next](yarn-method.html "Overview: Yarn: Method")
+[Previous](yarn-exporter.md "Overview: Yarn: Exporter")
+[Next](yarn-method.md "Overview: Yarn: Method")
 
 ---
 

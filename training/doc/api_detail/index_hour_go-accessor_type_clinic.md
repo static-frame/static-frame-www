@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexHourGO: Accessor Type Clinic
 * [View page source](../_sources/api_detail/index_hour_go-accessor_type_clinic.rst.txt)
 
-[Previous](index_hour_go-accessor_hashlib.html "Detail: IndexHourGO: Accessor Hashlib")
-[Next](index_second-constructor.html "Detail: IndexSecond: Constructor")
+[Previous](index_hour_go-accessor_hashlib.md "Detail: IndexHourGO: Accessor Hashlib")
+[Next](index_second-constructor.md "Detail: IndexSecond: Constructor")
 
 ---
 
 # Detail: IndexHourGO: Accessor Type Clinic[](#detail-indexhourgo-accessor-type-clinic "Link to this heading")
 
-[Overview: IndexHourGO: Accessor Type Clinic](../api_overview/index_hour_go-accessor_type_clinic.html#api-overview-indexhourgo-accessor-type-clinic)
+[Overview: IndexHourGO: Accessor Type Clinic](../api_overview/index_hour_go-accessor_type_clinic.md#api-overview-indexhourgo-accessor-type-clinic)
 
 IndexHourGO.via\_type\_clinic.to\_hint
 :   IndexHourGO.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -166,7 +166,7 @@ IndexHourGO.via\_type\_clinic.to\_hint
 IndexHourGO.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   IndexHourGO.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -188,7 +188,7 @@ IndexHourGO.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 IndexHourGO.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   IndexHourGO.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -198,7 +198,7 @@ IndexHourGO.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 IndexHourGO.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   IndexHourGO.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -227,7 +227,7 @@ IndexHourGO.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 IndexHourGO.via\_type\_clinic.\_\_repr\_\_
 :   IndexHourGO.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -243,10 +243,10 @@ IndexHourGO.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[IndexHourGO](index_hour_go.html#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.html#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-accessor_hashlib.html "Detail: IndexHourGO: Accessor Hashlib")
-[Next](index_second-constructor.html "Detail: IndexSecond: Constructor")
+[Previous](index_hour_go-accessor_hashlib.md "Detail: IndexHourGO: Accessor Hashlib")
+[Next](index_second-constructor.md "Detail: IndexSecond: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexMinute: Accessor Type Clinic
 * [View page source](../_sources/api_detail/index_minute-accessor_type_clinic.rst.txt)
 
-[Previous](index_minute-accessor_hashlib.html "Detail: IndexMinute: Accessor Hashlib")
-[Next](index_minute_go-constructor.html "Detail: IndexMinuteGO: Constructor")
+[Previous](index_minute-accessor_hashlib.md "Detail: IndexMinute: Accessor Hashlib")
+[Next](index_minute_go-constructor.md "Detail: IndexMinuteGO: Constructor")
 
 ---
 
 # Detail: IndexMinute: Accessor Type Clinic[](#detail-indexminute-accessor-type-clinic "Link to this heading")
 
-[Overview: IndexMinute: Accessor Type Clinic](../api_overview/index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[Overview: IndexMinute: Accessor Type Clinic](../api_overview/index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
 IndexMinute.via\_type\_clinic.to\_hint
 :   IndexMinute.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -166,7 +166,7 @@ IndexMinute.via\_type\_clinic.to\_hint
 IndexMinute.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   IndexMinute.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -188,7 +188,7 @@ IndexMinute.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 IndexMinute.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   IndexMinute.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -198,7 +198,7 @@ IndexMinute.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 IndexMinute.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   IndexMinute.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -227,7 +227,7 @@ IndexMinute.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 IndexMinute.via\_type\_clinic.\_\_repr\_\_
 :   IndexMinute.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -243,10 +243,10 @@ IndexMinute.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[IndexMinute](index_minute.html#api-detail-indexminute): [Constructor](index_minute-constructor.html#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-detail-indexminute-attribute) | [Method](index_minute-method.html#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.html#api-detail-indexminute-display) | [Selector](index_minute-selector.html#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.html#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](index_minute-method.md#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.md#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-accessor_hashlib.html "Detail: IndexMinute: Accessor Hashlib")
-[Next](index_minute_go-constructor.html "Detail: IndexMinuteGO: Constructor")
+[Previous](index_minute-accessor_hashlib.md "Detail: IndexMinute: Accessor Hashlib")
+[Next](index_minute_go-constructor.md "Detail: IndexMinuteGO: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,34 +135,34 @@ API Detail
 * Overview: FrameHE: Attribute
 * [View page source](../_sources/api_overview/frame_he-attribute.rst.txt)
 
-[Previous](frame_he-exporter.html "Overview: FrameHE: Exporter")
-[Next](frame_he-method.html "Overview: FrameHE: Method")
+[Previous](frame_he-exporter.md "Overview: FrameHE: Exporter")
+[Next](frame_he-method.md "Overview: FrameHE: Method")
 
 ---
 
 # Overview: FrameHE: Attribute[](#overview-framehe-attribute "Link to this heading")
 
-[Detail: FrameHE: Attribute](../api_detail/frame_he-attribute.html#api-detail-framehe-attribute)
+[Detail: FrameHE: Attribute](../api_detail/frame_he-attribute.md#api-detail-framehe-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-static) | `FrameHE.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-t) | `FrameHE.T` | Transpose. Return a Frame with index as columns and vice versa. |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-columns) | `FrameHE.columns` | The IndexBase instance assigned for column labels. |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-dtypes) | `FrameHE.dtypes` | Return a Series of dytpes for each realizable column. Returns: Series |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-index) | `FrameHE.index` | The IndexBase instance assigned for row labels. |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-memory) | `FrameHE.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-mloc) | `FrameHE.mloc` | The memory locations, represented as an array of integers, of the underlying Num… |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-name) | `FrameHE.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-nbytes) | `FrameHE.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-ndim) | `FrameHE.ndim` | Return the number of dimensions, which for a Frame is always 2. Returns: int |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-shape) | `FrameHE.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/frame_he-attribute.html#api-sig-framehe-size) | `FrameHE.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-static) | `FrameHE.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-t) | `FrameHE.T` | Transpose. Return a Frame with index as columns and vice versa. |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-columns) | `FrameHE.columns` | The IndexBase instance assigned for column labels. |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-dtypes) | `FrameHE.dtypes` | Return a Series of dytpes for each realizable column. Returns: Series |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-index) | `FrameHE.index` | The IndexBase instance assigned for row labels. |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-memory) | `FrameHE.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-mloc) | `FrameHE.mloc` | The memory locations, represented as an array of integers, of the underlying Num… |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-name) | `FrameHE.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-nbytes) | `FrameHE.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-ndim) | `FrameHE.ndim` | Return the number of dimensions, which for a Frame is always 2. Returns: int |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-shape) | `FrameHE.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/frame_he-attribute.md#api-sig-framehe-size) | `FrameHE.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[FrameHE](frame_he.html#api-overview-framehe): [Constructor](frame_he-constructor.html#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.html#api-overview-framehe-exporter) | [Attribute](#api-overview-framehe-attribute) | [Method](frame_he-method.html#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-overview-framehe-dictionary-like) | [Display](frame_he-display.html#api-overview-framehe-display) | [Assignment](frame_he-assignment.html#api-overview-framehe-assignment) | [Selector](frame_he-selector.html#api-overview-framehe-selector) | [Iterator](frame_he-iterator.html#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-overview-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-overview-framehe): [Constructor](frame_he-constructor.md#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.md#api-overview-framehe-exporter) | [Attribute](#api-overview-framehe-attribute) | [Method](frame_he-method.md#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-overview-framehe-dictionary-like) | [Display](frame_he-display.md#api-overview-framehe-display) | [Assignment](frame_he-assignment.md#api-overview-framehe-assignment) | [Selector](frame_he-selector.md#api-overview-framehe-selector) | [Iterator](frame_he-iterator.md#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-overview-framehe-accessor-reduce)
 
-[Previous](frame_he-exporter.html "Overview: FrameHE: Exporter")
-[Next](frame_he-method.html "Overview: FrameHE: Method")
+[Previous](frame_he-exporter.md "Overview: FrameHE: Exporter")
+[Next](frame_he-method.md "Overview: FrameHE: Method")
 
 ---
 

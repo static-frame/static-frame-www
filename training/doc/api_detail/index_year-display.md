@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexYear: Display
 * [View page source](../_sources/api_detail/index_year-display.rst.txt)
 
-[Previous](index_year-dictionary_like.html "Detail: IndexYear: Dictionary-Like")
-[Next](index_year-selector.html "Detail: IndexYear: Selector")
+[Previous](index_year-dictionary_like.md "Detail: IndexYear: Dictionary-Like")
+[Next](index_year-selector.md "Detail: IndexYear: Selector")
 
 ---
 
 # Detail: IndexYear: Display[](#detail-indexyear-display "Link to this heading")
 
-[Overview: IndexYear: Display](../api_overview/index_year-display.html#api-overview-indexyear-display)
+[Overview: IndexYear: Display](../api_overview/index_year-display.md#api-overview-indexyear-display)
 
 IndexYear.interface[](#IndexYear.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -230,7 +230,7 @@ IndexYear.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_f
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexYear(('1620', 'NaT', '1619'))
@@ -251,7 +251,7 @@ IndexYear.display\_tall(*config=None*, */*)[](#static_frame.IndexYear.display
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexYear(('1620', 'NaT', '1619'))
@@ -268,7 +268,7 @@ IndexYear.display\_wide(*config=None*, */*)[](#static_frame.IndexYear.display
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexYear(('1620', 'NaT', '1619'))
@@ -281,10 +281,10 @@ IndexYear.display\_wide(*config=None*, */*)[](#static_frame.IndexYear.display
 
     ```
 
-[IndexYear](index_year.html#api-detail-indexyear): [Constructor](index_year-constructor.html#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.html#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.html#api-detail-indexyear-attribute) | [Method](index_year-method.html#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-detail-indexyear-dictionary-like) | [Display](#api-detail-indexyear-display) | [Selector](index_year-selector.html#api-detail-indexyear-selector) | [Iterator](index_year-iterator.html#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-detail-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-detail-indexyear): [Constructor](index_year-constructor.md#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.md#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.md#api-detail-indexyear-attribute) | [Method](index_year-method.md#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-detail-indexyear-dictionary-like) | [Display](#api-detail-indexyear-display) | [Selector](index_year-selector.md#api-detail-indexyear-selector) | [Iterator](index_year-iterator.md#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-detail-indexyear-accessor-type-clinic)
 
-[Previous](index_year-dictionary_like.html "Detail: IndexYear: Dictionary-Like")
-[Next](index_year-selector.html "Detail: IndexYear: Selector")
+[Previous](index_year-dictionary_like.md "Detail: IndexYear: Dictionary-Like")
+[Next](index_year-selector.md "Detail: IndexYear: Selector")
 
 ---
 

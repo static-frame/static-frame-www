@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,29 +136,29 @@ API Detail
 * Detail: ClinicResult
 * [View page source](../_sources/api_detail/clinic_result.rst.txt)
 
-[Previous](call_guard.html "Detail: CallGuard")
-[Next](require.html "Detail: Require")
+[Previous](call_guard.md "Detail: CallGuard")
+[Next](require.md "Detail: Require")
 
 ---
 
 # Detail: ClinicResult[](#detail-clinicresult "Link to this heading")
 
-[Overview: ClinicResult](../api_overview/clinic_result.html#api-overview-clinicresult)
+[Overview: ClinicResult](../api_overview/clinic_result.md#api-overview-clinicresult)
 
-*class* ClinicResult(*log*)[[source]](../_modules/static_frame/core/type_clinic.html#ClinicResult)[](#static_frame.ClinicResult "Link to this definition")
+*class* ClinicResult(*log*)[[source]](../_modules/static_frame/core/type_clinic.md#ClinicResult)[](#static_frame.ClinicResult "Link to this definition")
 :   A `ClinicResult` instance stores zero or more error messages resulting from a check.
 
-* [Constructor](clinic_result-constructor.html#api-detail-clinicresult-constructor): Alternative constructors for creating instances.
-* [Exporter](clinic_result-exporter.html#api-detail-clinicresult-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](clinic_result-attribute.html#api-detail-clinicresult-attribute): Attributes for retrieving basic characteristics.
-* [Method](clinic_result-method.html#api-detail-clinicresult-method): Methods for general functionality.
-* [Dictionary-Like](clinic_result-dictionary_like.html#api-detail-clinicresult-dictionary-like): All dictionary-like methods and iterators.
-* [Display](clinic_result-display.html#api-detail-clinicresult-display): Methods for providing a text representation of the object.
+* [Constructor](clinic_result-constructor.md#api-detail-clinicresult-constructor): Alternative constructors for creating instances.
+* [Exporter](clinic_result-exporter.md#api-detail-clinicresult-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](clinic_result-attribute.md#api-detail-clinicresult-attribute): Attributes for retrieving basic characteristics.
+* [Method](clinic_result-method.md#api-detail-clinicresult-method): Methods for general functionality.
+* [Dictionary-Like](clinic_result-dictionary_like.md#api-detail-clinicresult-dictionary-like): All dictionary-like methods and iterators.
+* [Display](clinic_result-display.md#api-detail-clinicresult-display): Methods for providing a text representation of the object.
 
-[ClinicResult](#api-detail-clinicresult): [Constructor](clinic_result-constructor.html#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-detail-clinicresult-attribute) | [Method](clinic_result-method.html#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-detail-clinicresult-display)
+[ClinicResult](#api-detail-clinicresult): [Constructor](clinic_result-constructor.md#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-detail-clinicresult-attribute) | [Method](clinic_result-method.md#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-detail-clinicresult-display)
 
-[Previous](call_guard.html "Detail: CallGuard")
-[Next](require.html "Detail: Require")
+[Previous](call_guard.md "Detail: CallGuard")
+[Next](require.md "Detail: Require")
 
 ---
 

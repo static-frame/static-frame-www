@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,28 +136,28 @@ API Detail
 * Detail: DisplayActive
 * [View page source](../_sources/api_detail/display_active.rst.txt)
 
-[Previous](fill_value_auto.html "Detail: FillValueAuto")
-[Next](display_config.html "Detail: DisplayConfig")
+[Previous](fill_value_auto.md "Detail: FillValueAuto")
+[Next](display_config.md "Detail: DisplayConfig")
 
 ---
 
 # Detail: DisplayActive[](#detail-displayactive "Link to this heading")
 
-[Overview: DisplayActive](../api_overview/display_active.html#api-overview-displayactive)
+[Overview: DisplayActive](../api_overview/display_active.md#api-overview-displayactive)
 
-*class* DisplayActive[[source]](../_modules/static_frame/core/display.html#DisplayActive)[](#static_frame.DisplayActive "Link to this definition")
+*class* DisplayActive[[source]](../_modules/static_frame/core/display.md#DisplayActive)[](#static_frame.DisplayActive "Link to this definition")
 :   Utility interface for setting and storing default display configurations.
 
-* [Constructor](display_active-constructor.html#api-detail-displayactive-constructor): Alternative constructors for creating instances.
-* [Attribute](display_active-attribute.html#api-detail-displayactive-attribute): Attributes for retrieving basic characteristics.
-* [Method](display_active-method.html#api-detail-displayactive-method): Methods for general functionality.
-* [Dictionary-Like](display_active-dictionary_like.html#api-detail-displayactive-dictionary-like): All dictionary-like methods and iterators.
-* [Display](display_active-display.html#api-detail-displayactive-display): Methods for providing a text representation of the object.
+* [Constructor](display_active-constructor.md#api-detail-displayactive-constructor): Alternative constructors for creating instances.
+* [Attribute](display_active-attribute.md#api-detail-displayactive-attribute): Attributes for retrieving basic characteristics.
+* [Method](display_active-method.md#api-detail-displayactive-method): Methods for general functionality.
+* [Dictionary-Like](display_active-dictionary_like.md#api-detail-displayactive-dictionary-like): All dictionary-like methods and iterators.
+* [Display](display_active-display.md#api-detail-displayactive-display): Methods for providing a text representation of the object.
 
-[DisplayActive](#api-detail-displayactive): [Constructor](display_active-constructor.html#api-detail-displayactive-constructor) | [Attribute](display_active-attribute.html#api-detail-displayactive-attribute) | [Method](display_active-method.html#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.html#api-detail-displayactive-dictionary-like) | [Display](display_active-display.html#api-detail-displayactive-display)
+[DisplayActive](#api-detail-displayactive): [Constructor](display_active-constructor.md#api-detail-displayactive-constructor) | [Attribute](display_active-attribute.md#api-detail-displayactive-attribute) | [Method](display_active-method.md#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.md#api-detail-displayactive-dictionary-like) | [Display](display_active-display.md#api-detail-displayactive-display)
 
-[Previous](fill_value_auto.html "Detail: FillValueAuto")
-[Next](display_config.html "Detail: DisplayConfig")
+[Previous](fill_value_auto.md "Detail: FillValueAuto")
+[Next](display_config.md "Detail: DisplayConfig")
 
 ---
 

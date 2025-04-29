@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: ClinicResult: Exporter
 * [View page source](../_sources/api_detail/clinic_result-exporter.rst.txt)
 
-[Previous](clinic_result-constructor.html "Detail: ClinicResult: Constructor")
-[Next](clinic_result-attribute.html "Detail: ClinicResult: Attribute")
+[Previous](clinic_result-constructor.md "Detail: ClinicResult: Constructor")
+[Next](clinic_result-attribute.md "Detail: ClinicResult: Attribute")
 
 ---
 
 # Detail: ClinicResult: Exporter[](#detail-clinicresult-exporter "Link to this heading")
 
-[Overview: ClinicResult: Exporter](../api_overview/clinic_result-exporter.html#api-overview-clinicresult-exporter)
+[Overview: ClinicResult: Exporter](../api_overview/clinic_result-exporter.md#api-overview-clinicresult-exporter)
 
-ClinicResult.to\_str()[[source]](../_modules/static_frame/core/type_clinic.html#ClinicResult.to_str)[](#static_frame.ClinicResult.to_str "Link to this definition")
+ClinicResult.to\_str()[[source]](../_modules/static_frame/core/type_clinic.md#ClinicResult.to_str)[](#static_frame.ClinicResult.to_str "Link to this definition")
 :   Return error messages as a formatted string with line breaks and indentation.
 
     ```
@@ -169,10 +169,10 @@ ClinicResult.to\_str()[[source]](../_modules/static_frame/core/type_clinic.html#
 
     ```
 
-[ClinicResult](clinic_result.html#api-detail-clinicresult): [Constructor](clinic_result-constructor.html#api-detail-clinicresult-constructor) | [Exporter](#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-detail-clinicresult-attribute) | [Method](clinic_result-method.html#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-detail-clinicresult-display)
+[ClinicResult](clinic_result.md#api-detail-clinicresult): [Constructor](clinic_result-constructor.md#api-detail-clinicresult-constructor) | [Exporter](#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-detail-clinicresult-attribute) | [Method](clinic_result-method.md#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-detail-clinicresult-display)
 
-[Previous](clinic_result-constructor.html "Detail: ClinicResult: Constructor")
-[Next](clinic_result-attribute.html "Detail: ClinicResult: Attribute")
+[Previous](clinic_result-constructor.md "Detail: ClinicResult: Constructor")
+[Next](clinic_result-attribute.md "Detail: ClinicResult: Attribute")
 
 ---
 

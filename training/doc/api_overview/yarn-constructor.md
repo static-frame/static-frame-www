@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: Yarn: Constructor
 * [View page source](../_sources/api_overview/yarn-constructor.rst.txt)
 
-[Previous](batch-accessor_reduce.html "Overview: Batch: Accessor Reduce")
-[Next](yarn-exporter.html "Overview: Yarn: Exporter")
+[Previous](batch-accessor_reduce.md "Overview: Batch: Accessor Reduce")
+[Next](yarn-exporter.md "Overview: Yarn: Exporter")
 
 ---
 
 # Overview: Yarn: Constructor[](#overview-yarn-constructor "Link to this heading")
 
-[Detail: Yarn: Constructor](../api_detail/yarn-constructor.html#api-detail-yarn-constructor)
+[Detail: Yarn: Constructor](../api_detail/yarn-constructor.md#api-detail-yarn-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/yarn-constructor.html#api-sig-yarn-init) | `Yarn.__init__(series, *, index, index_constructor, deepcopy_from_bus, indexer, hierarchy, name, own_index)` | Args: series: An iterable (or Series) of Bus. The length of this container may n… |
-| [Detail](../api_detail/yarn-constructor.html#api-sig-yarn-from-buses) | `Yarn.from_buses(buses, *, name, retain_labels, deepcopy_from_bus)` | Return a Yarn from an iterable of Bus; labels will be drawn from Bus.name. |
-| [Detail](../api_detail/yarn-constructor.html#api-sig-yarn-from-concat) | `Yarn.from_concat(containers, *, index, name, deepcopy_from_bus)` | Concatenate multiple Yarn into a new Yarn. Loaded status of Frame within each Bu… |
+| [Detail](../api_detail/yarn-constructor.md#api-sig-yarn-init) | `Yarn.__init__(series, *, index, index_constructor, deepcopy_from_bus, indexer, hierarchy, name, own_index)` | Args: series: An iterable (or Series) of Bus. The length of this container may n… |
+| [Detail](../api_detail/yarn-constructor.md#api-sig-yarn-from-buses) | `Yarn.from_buses(buses, *, name, retain_labels, deepcopy_from_bus)` | Return a Yarn from an iterable of Bus; labels will be drawn from Bus.name. |
+| [Detail](../api_detail/yarn-constructor.md#api-sig-yarn-from-concat) | `Yarn.from_concat(containers, *, index, name, deepcopy_from_bus)` | Concatenate multiple Yarn into a new Yarn. Loaded status of Frame within each Bu… |
 
-[Yarn](yarn.html#api-overview-yarn): [Constructor](#api-overview-yarn-constructor) | [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | [Method](yarn-method.html#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](yarn-display.html#api-overview-yarn-display) | [Selector](yarn-selector.html#api-overview-yarn-selector) | [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-overview-yarn): [Constructor](#api-overview-yarn-constructor) | [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | [Method](yarn-method.md#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](yarn-display.md#api-overview-yarn-display) | [Selector](yarn-selector.md#api-overview-yarn-selector) | [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
-[Previous](batch-accessor_reduce.html "Overview: Batch: Accessor Reduce")
-[Next](yarn-exporter.html "Overview: Yarn: Exporter")
+[Previous](batch-accessor_reduce.md "Overview: Batch: Accessor Reduce")
+[Next](yarn-exporter.md "Overview: Yarn: Exporter")
 
 ---
 

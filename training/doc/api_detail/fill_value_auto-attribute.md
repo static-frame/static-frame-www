@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: FillValueAuto: Attribute
 * [View page source](../_sources/api_detail/fill_value_auto-attribute.rst.txt)
 
-[Previous](fill_value_auto-constructor.html "Detail: FillValueAuto: Constructor")
-[Next](fill_value_auto-display.html "Detail: FillValueAuto: Display")
+[Previous](fill_value_auto-constructor.md "Detail: FillValueAuto: Constructor")
+[Next](fill_value_auto-display.md "Detail: FillValueAuto: Display")
 
 ---
 
 # Detail: FillValueAuto: Attribute[](#detail-fillvalueauto-attribute "Link to this heading")
 
-[Overview: FillValueAuto: Attribute](../api_overview/fill_value_auto-attribute.html#api-overview-fillvalueauto-attribute)
+[Overview: FillValueAuto: Attribute](../api_overview/fill_value_auto-attribute.md#api-overview-fillvalueauto-attribute)
 
 FillValueAuto.M[](#static_frame.FillValueAuto.M "Link to this definition")
 :   ```
@@ -219,10 +219,10 @@ FillValueAuto.u[](#static_frame.FillValueAuto.u "Link to this definition")
 
     ```
 
-[FillValueAuto](fill_value_auto.html#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.html#api-detail-fillvalueauto-constructor) | [Attribute](#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.html#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.html#api-detail-fillvalueauto-selector)
+[FillValueAuto](fill_value_auto.md#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-detail-fillvalueauto-constructor) | [Attribute](#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-detail-fillvalueauto-selector)
 
-[Previous](fill_value_auto-constructor.html "Detail: FillValueAuto: Constructor")
-[Next](fill_value_auto-display.html "Detail: FillValueAuto: Display")
+[Previous](fill_value_auto-constructor.md "Detail: FillValueAuto: Constructor")
+[Next](fill_value_auto-display.md "Detail: FillValueAuto: Display")
 
 ---
 

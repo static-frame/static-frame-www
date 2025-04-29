@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexDate: Iterator
 * [View page source](../_sources/api_overview/index_date-iterator.rst.txt)
 
-[Previous](index_date-selector.html "Overview: IndexDate: Selector")
-[Next](index_date-operator_binary.html "Overview: IndexDate: Operator Binary")
+[Previous](index_date-selector.md "Overview: IndexDate: Selector")
+[Next](index_date-operator_binary.md "Overview: IndexDate: Operator Binary")
 
 ---
 
 # Overview: IndexDate: Iterator[](#overview-indexdate-iterator "Link to this heading")
 
-[Detail: IndexDate: Iterator](../api_detail/index_date-iterator.html#api-detail-indexdate-iterator)
+[Detail: IndexDate: Iterator](../api_detail/index_date-iterator.md#api-detail-indexdate-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date-iterator.html#api-sig-indexdate-iter-label) | `IndexDate.iter_label(depth_level)` |  |
-| [Detail](../api_detail/index_date-iterator.html#api-sig-indexdate-iter-label-apply) | `IndexDate.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/index_date-iterator.html#api-sig-indexdate-iter-label-apply-iter) | `IndexDate.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/index_date-iterator.html#api-sig-indexdate-iter-label-apply-iter-items) | `IndexDate.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/index_date-iterator.html#api-sig-indexdate-iter-label-apply-pool) | `IndexDate.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/index_date-iterator.md#api-sig-indexdate-iter-label) | `IndexDate.iter_label(depth_level)` |  |
+| [Detail](../api_detail/index_date-iterator.md#api-sig-indexdate-iter-label-apply) | `IndexDate.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/index_date-iterator.md#api-sig-indexdate-iter-label-apply-iter) | `IndexDate.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/index_date-iterator.md#api-sig-indexdate-iter-label-apply-iter-items) | `IndexDate.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/index_date-iterator.md#api-sig-indexdate-iter-label-apply-pool) | `IndexDate.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[IndexDate](index_date.html#api-overview-indexdate): [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | [Method](index_date-method.html#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | [Display](index_date-display.html#api-overview-indexdate-display) | [Selector](index_date-selector.html#api-overview-indexdate-selector) | [Iterator](#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-overview-indexdate): [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | [Method](index_date-method.md#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | [Display](index_date-display.md#api-overview-indexdate-display) | [Selector](index_date-selector.md#api-overview-indexdate-selector) | [Iterator](#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic)
 
-[Previous](index_date-selector.html "Overview: IndexDate: Selector")
-[Next](index_date-operator_binary.html "Overview: IndexDate: Operator Binary")
+[Previous](index_date-selector.md "Overview: IndexDate: Selector")
+[Next](index_date-operator_binary.md "Overview: IndexDate: Operator Binary")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: Bus: Constructor
 * [View page source](../_sources/api_detail/bus-constructor.rst.txt)
 
-[Previous](frame_he-accessor_reduce.html "Detail: FrameHE: Accessor Reduce")
-[Next](bus-exporter.html "Detail: Bus: Exporter")
+[Previous](frame_he-accessor_reduce.md "Detail: FrameHE: Accessor Reduce")
+[Next](bus-exporter.md "Detail: Bus: Exporter")
 
 ---
 
 # Detail: Bus: Constructor[](#detail-bus-constructor "Link to this heading")
 
-[Overview: Bus: Constructor](../api_overview/bus-constructor.html#api-overview-bus-constructor)
+[Overview: Bus: Constructor](../api_overview/bus-constructor.md#api-overview-bus-constructor)
 
-Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=<object object>*, *store=None*, *config=None*, *max\_persist=None*, *own\_index=False*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.html#Bus.__init__)[](#static_frame.Bus.__init__ "Link to this definition")
+Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=<object object>*, *store=None*, *config=None*, *max\_persist=None*, *own\_index=False*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.__init__)[](#static_frame.Bus.__init__ "Link to this definition")
 :   Default Bus constructor.
 
     {args}
@@ -159,8 +159,8 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_concat(*containers*, */*, *\**, *index=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_concat)[](#static_frame.Bus.from_concat "Link to this definition")
-:   Concatenate multiple [`Bus`](bus-selector.html#Bus "Bus") into a new [`Bus`](bus-selector.html#Bus "Bus"). All [`Bus`](bus-selector.html#Bus "Bus") will load all [`Frame`](frame-selector.html#Frame "Frame") into memory if any are deferred.
+*classmethod* Bus.from\_concat(*containers*, */*, *\**, *index=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_concat)[](#static_frame.Bus.from_concat "Link to this definition")
+:   Concatenate multiple [`Bus`](bus-selector.md#Bus "Bus") into a new [`Bus`](bus-selector.md#Bus "Bus"). All [`Bus`](bus-selector.md#Bus "Bus") will load all [`Frame`](frame-selector.md#Frame "Frame") into memory if any are deferred.
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -188,14 +188,14 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_dict(*mapping*, */*, *\**, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_dict)[](#static_frame.Bus.from_dict "Link to this definition")
-:   Bus construction from a mapping of labels and [`Frame`](frame-selector.html#Frame "Frame").
+*classmethod* Bus.from\_dict(*mapping*, */*, *\**, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_dict)[](#static_frame.Bus.from_dict "Link to this definition")
+:   Bus construction from a mapping of labels and [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
     :   **mapping** – a dictionary or similar mapping interface.
 
     Returns:
-    :   [`Bus`](bus-selector.html#Bus "Bus")
+    :   [`Bus`](bus-selector.md#Bus "Bus")
 
     ```
     >>> sf.Bus.from_dict(dict(j=sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), k=sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')))
@@ -207,8 +207,8 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_frames(*frames*, */*, *\**, *index\_constructor=None*, *config=None*, *name=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_frames)[](#static_frame.Bus.from_frames "Link to this definition")
-:   Return a [`Bus`](bus-selector.html#Bus "Bus") from an iterable of [`Frame`](frame-selector.html#Frame "Frame"); labels will be drawn from [`Frame.name`](frame-attribute.html#static_frame.Frame.name "static_frame.Frame.name").
+*classmethod* Bus.from\_frames(*frames*, */*, *\**, *index\_constructor=None*, *config=None*, *name=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_frames)[](#static_frame.Bus.from_frames "Link to this definition")
+:   Return a [`Bus`](bus-selector.md#Bus "Bus") from an iterable of [`Frame`](frame-selector.md#Frame "Frame"); labels will be drawn from [`Frame.name`](frame-attribute.md#static_frame.Frame.name "static_frame.Frame.name").
 
     ```
     >>> sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -220,11 +220,11 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_items(*pairs*, */*, *\**, *config=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_items)[](#static_frame.Bus.from_items "Link to this definition")
-:   Return a [`Bus`](bus-selector.html#Bus "Bus") from an iterable of pairs of label, [`Frame`](frame-selector.html#Frame "Frame").
+*classmethod* Bus.from\_items(*pairs*, */*, *\**, *config=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_items)[](#static_frame.Bus.from_items "Link to this definition")
+:   Return a [`Bus`](bus-selector.md#Bus "Bus") from an iterable of pairs of label, [`Frame`](frame-selector.md#Frame "Frame").
 
     Returns:
-    :   [`Bus`](bus-selector.html#Bus "Bus")
+    :   [`Bus`](bus-selector.md#Bus "Bus")
 
     ```
     >>> sf.Bus.from_items((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'))))
@@ -236,8 +236,8 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_series(*series*, */*, *\**, *store=None*, *config=None*, *max\_persist=None*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_series)[](#static_frame.Bus.from_series "Link to this definition")
-:   Create a [`Bus`](bus-selector.html#Bus "Bus") from a [`Series`](series-selector.html#Series "Series") of [`Frame`](frame-selector.html#Frame "Frame").
+*classmethod* Bus.from\_series(*series*, */*, *\**, *store=None*, *config=None*, *max\_persist=None*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_series)[](#static_frame.Bus.from_series "Link to this definition")
+:   Create a [`Bus`](bus-selector.md#Bus "Bus") from a [`Series`](series-selector.md#Series "Series") of [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -252,13 +252,13 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_sqlite(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_sqlite)[](#static_frame.Bus.from_sqlite "Link to this definition")
-:   Given a file path to an SQLite [`Bus`](bus-selector.html#Bus "Bus") store, return a [`Bus`](bus-selector.html#Bus "Bus") instance.
+*classmethod* Bus.from\_sqlite(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_sqlite)[](#static_frame.Bus.from_sqlite "Link to this definition")
+:   Given a file path to an SQLite [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
-    >     max\_persist: When loading [`Frame`](frame-selector.html#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.html#Frame "Frame") to remain in the [`Bus`](bus-selector.html#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.html#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.html#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.html#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.html#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.html#Frame "Frame").
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -278,13 +278,13 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_xlsx(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_xlsx)[](#static_frame.Bus.from_xlsx "Link to this definition")
-:   Given a file path to an XLSX [`Bus`](bus-selector.html#Bus "Bus") store, return a [`Bus`](bus-selector.html#Bus "Bus") instance.
+*classmethod* Bus.from\_xlsx(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_xlsx)[](#static_frame.Bus.from_xlsx "Link to this definition")
+:   Given a file path to an XLSX [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
-    >     max\_persist: When loading [`Frame`](frame-selector.html#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.html#Frame "Frame") to remain in the [`Bus`](bus-selector.html#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.html#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.html#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.html#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.html#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.html#Frame "Frame").
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -304,13 +304,13 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_csv(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_zip_csv)[](#static_frame.Bus.from_zip_csv "Link to this definition")
-:   Given a file path to zipped CSV [`Bus`](bus-selector.html#Bus "Bus") store, return a [`Bus`](bus-selector.html#Bus "Bus") instance.
+*classmethod* Bus.from\_zip\_csv(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_csv)[](#static_frame.Bus.from_zip_csv "Link to this definition")
+:   Given a file path to zipped CSV [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
-    >     max\_persist: When loading [`Frame`](frame-selector.html#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.html#Frame "Frame") to remain in the [`Bus`](bus-selector.html#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.html#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.html#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.html#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.html#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.html#Frame "Frame").
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -330,13 +330,13 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_npy(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_zip_npy)[](#static_frame.Bus.from_zip_npy "Link to this definition")
-:   Given a file path to zipped NPY [`Bus`](bus-selector.html#Bus "Bus") store, return a [`Bus`](bus-selector.html#Bus "Bus") instance.
+*classmethod* Bus.from\_zip\_npy(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_npy)[](#static_frame.Bus.from_zip_npy "Link to this definition")
+:   Given a file path to zipped NPY [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
-    >     max\_persist: When loading [`Frame`](frame-selector.html#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.html#Frame "Frame") to remain in the [`Bus`](bus-selector.html#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.html#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.html#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.html#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.html#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.html#Frame "Frame").
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -356,13 +356,13 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_npz(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_zip_npz)[](#static_frame.Bus.from_zip_npz "Link to this definition")
-:   Given a file path to zipped NPZ [`Bus`](bus-selector.html#Bus "Bus") store, return a [`Bus`](bus-selector.html#Bus "Bus") instance.
+*classmethod* Bus.from\_zip\_npz(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_npz)[](#static_frame.Bus.from_zip_npz "Link to this definition")
+:   Given a file path to zipped NPZ [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
-    >     max\_persist: When loading [`Frame`](frame-selector.html#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.html#Frame "Frame") to remain in the [`Bus`](bus-selector.html#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.html#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.html#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.html#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.html#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.html#Frame "Frame").
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -382,13 +382,13 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_parquet(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_zip_parquet)[](#static_frame.Bus.from_zip_parquet "Link to this definition")
-:   Given a file path to zipped parquet [`Bus`](bus-selector.html#Bus "Bus") store, return a [`Bus`](bus-selector.html#Bus "Bus") instance.
+*classmethod* Bus.from\_zip\_parquet(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_parquet)[](#static_frame.Bus.from_zip_parquet "Link to this definition")
+:   Given a file path to zipped parquet [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
-    >     max\_persist: When loading [`Frame`](frame-selector.html#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.html#Frame "Frame") to remain in the [`Bus`](bus-selector.html#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.html#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.html#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.html#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.html#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.html#Frame "Frame").
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -408,13 +408,13 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_pickle(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_zip_pickle)[](#static_frame.Bus.from_zip_pickle "Link to this definition")
-:   Given a file path to zipped pickle [`Bus`](bus-selector.html#Bus "Bus") store, return a [`Bus`](bus-selector.html#Bus "Bus") instance.
+*classmethod* Bus.from\_zip\_pickle(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_pickle)[](#static_frame.Bus.from_zip_pickle "Link to this definition")
+:   Given a file path to zipped pickle [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
-    >     max\_persist: When loading [`Frame`](frame-selector.html#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.html#Frame "Frame") to remain in the [`Bus`](bus-selector.html#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.html#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.html#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.html#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.html#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.html#Frame "Frame").
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -434,13 +434,13 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_tsv(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.from_zip_tsv)[](#static_frame.Bus.from_zip_tsv "Link to this definition")
-:   Given a file path to zipped TSV [`Bus`](bus-selector.html#Bus "Bus") store, return a [`Bus`](bus-selector.html#Bus "Bus") instance.
+*classmethod* Bus.from\_zip\_tsv(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_tsv)[](#static_frame.Bus.from_zip_tsv "Link to this definition")
+:   Given a file path to zipped TSV [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
-    >     max\_persist: When loading [`Frame`](frame-selector.html#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.html#Frame "Frame") to remain in the [`Bus`](bus-selector.html#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.html#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.html#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.html#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.html#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.html#Frame "Frame").
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -460,10 +460,10 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-[Bus](bus.html#api-detail-bus): [Constructor](#api-detail-bus-constructor) | [Exporter](bus-exporter.html#api-detail-bus-exporter) | [Attribute](bus-attribute.html#api-detail-bus-attribute) | [Method](bus-method.html#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-detail-bus-dictionary-like) | [Display](bus-display.html#api-detail-bus-display) | [Selector](bus-selector.html#api-detail-bus-selector) | [Iterator](bus-iterator.html#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
 
-[Previous](frame_he-accessor_reduce.html "Detail: FrameHE: Accessor Reduce")
-[Next](bus-exporter.html "Detail: Bus: Exporter")
+[Previous](frame_he-accessor_reduce.md "Detail: FrameHE: Accessor Reduce")
+[Next](bus-exporter.md "Detail: Bus: Exporter")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,69 +135,69 @@ API Detail
 * Overview: IndexMillisecond: Method
 * [View page source](../_sources/api_overview/index_millisecond-method.rst.txt)
 
-[Previous](index_millisecond-attribute.html "Overview: IndexMillisecond: Attribute")
-[Next](index_millisecond-dictionary_like.html "Overview: IndexMillisecond: Dictionary-Like")
+[Previous](index_millisecond-attribute.md "Overview: IndexMillisecond: Attribute")
+[Next](index_millisecond-dictionary_like.md "Overview: IndexMillisecond: Dictionary-Like")
 
 ---
 
 # Overview: IndexMillisecond: Method[](#overview-indexmillisecond-method "Link to this heading")
 
-[Detail: IndexMillisecond: Method](../api_detail/index_millisecond-method.html#api-detail-indexmillisecond-method)
+[Detail: IndexMillisecond: Method](../api_detail/index_millisecond-method.md#api-detail-indexmillisecond-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-array) | `IndexMillisecond.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-array-ufunc) | `IndexMillisecond.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-bool) | `IndexMillisecond.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-copy) | `IndexMillisecond.__copy__()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-deepcopy) | `IndexMillisecond.__deepcopy__(memo)` |  |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-len) | `IndexMillisecond.__len__()` |  |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-all) | `IndexMillisecond.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-any) | `IndexMillisecond.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-astype) | `IndexMillisecond.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
-| [Detail](../api_detail/index_millisecond-method.html#id1) | `IndexMillisecond.copy()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-cumprod) | `IndexMillisecond.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-cumsum) | `IndexMillisecond.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-difference) | `IndexMillisecond.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-dropfalsy) | `IndexMillisecond.dropfalsy()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-dropna) | `IndexMillisecond.dropna()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-equals) | `IndexMillisecond.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-fillfalsy) | `IndexMillisecond.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-fillna) | `IndexMillisecond.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-head) | `IndexMillisecond.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-iloc-searchsorted) | `IndexMillisecond.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-intersection) | `IndexMillisecond.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-isfalsy) | `IndexMillisecond.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-isin) | `IndexMillisecond.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-isna) | `IndexMillisecond.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-label-widths-at-depth) | `IndexMillisecond.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-level-add) | `IndexMillisecond.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-loc-searchsorted) | `IndexMillisecond.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-loc-to-iloc) | `IndexMillisecond.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-max) | `IndexMillisecond.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-mean) | `IndexMillisecond.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-median) | `IndexMillisecond.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-min) | `IndexMillisecond.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-notfalsy) | `IndexMillisecond.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-notna) | `IndexMillisecond.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-prod) | `IndexMillisecond.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-relabel) | `IndexMillisecond.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-rename) | `IndexMillisecond.rename(name)` | Return a new Frame with an updated name attribute. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-roll) | `IndexMillisecond.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-sample) | `IndexMillisecond.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-sort) | `IndexMillisecond.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-std) | `IndexMillisecond.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-sum) | `IndexMillisecond.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-tail) | `IndexMillisecond.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-union) | `IndexMillisecond.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-unique) | `IndexMillisecond.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-values-at-depth) | `IndexMillisecond.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
-| [Detail](../api_detail/index_millisecond-method.html#api-sig-indexmillisecond-var) | `IndexMillisecond.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-array) | `IndexMillisecond.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-array-ufunc) | `IndexMillisecond.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-bool) | `IndexMillisecond.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-copy) | `IndexMillisecond.__copy__()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-deepcopy) | `IndexMillisecond.__deepcopy__(memo)` |  |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-len) | `IndexMillisecond.__len__()` |  |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-all) | `IndexMillisecond.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-any) | `IndexMillisecond.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-astype) | `IndexMillisecond.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
+| [Detail](../api_detail/index_millisecond-method.md#id1) | `IndexMillisecond.copy()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-cumprod) | `IndexMillisecond.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-cumsum) | `IndexMillisecond.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-difference) | `IndexMillisecond.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-dropfalsy) | `IndexMillisecond.dropfalsy()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-dropna) | `IndexMillisecond.dropna()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-equals) | `IndexMillisecond.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-fillfalsy) | `IndexMillisecond.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-fillna) | `IndexMillisecond.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-head) | `IndexMillisecond.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-iloc-searchsorted) | `IndexMillisecond.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-intersection) | `IndexMillisecond.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-isfalsy) | `IndexMillisecond.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-isin) | `IndexMillisecond.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-isna) | `IndexMillisecond.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-label-widths-at-depth) | `IndexMillisecond.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-level-add) | `IndexMillisecond.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-loc-searchsorted) | `IndexMillisecond.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-loc-to-iloc) | `IndexMillisecond.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-max) | `IndexMillisecond.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-mean) | `IndexMillisecond.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-median) | `IndexMillisecond.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-min) | `IndexMillisecond.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-notfalsy) | `IndexMillisecond.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-notna) | `IndexMillisecond.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-prod) | `IndexMillisecond.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-relabel) | `IndexMillisecond.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-rename) | `IndexMillisecond.rename(name)` | Return a new Frame with an updated name attribute. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-roll) | `IndexMillisecond.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-sample) | `IndexMillisecond.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-sort) | `IndexMillisecond.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-std) | `IndexMillisecond.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-sum) | `IndexMillisecond.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-tail) | `IndexMillisecond.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-union) | `IndexMillisecond.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-unique) | `IndexMillisecond.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-values-at-depth) | `IndexMillisecond.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
+| [Detail](../api_detail/index_millisecond-method.md#api-sig-indexmillisecond-var) | `IndexMillisecond.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
-[IndexMillisecond](index_millisecond.html#api-overview-indexmillisecond): [Constructor](index_millisecond-constructor.html#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.html#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.html#api-overview-indexmillisecond-attribute) | [Method](#api-overview-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.html#api-overview-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.html#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.html#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.html#api-overview-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.html#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.html#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.html#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.html#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.html#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.html#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.html#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.html#api-overview-indexmillisecond-accessor-type-clinic)
+[IndexMillisecond](index_millisecond.md#api-overview-indexmillisecond): [Constructor](index_millisecond-constructor.md#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.md#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.md#api-overview-indexmillisecond-attribute) | [Method](#api-overview-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.md#api-overview-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.md#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.md#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.md#api-overview-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.md#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.md#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.md#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.md#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.md#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.md#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.md#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.md#api-overview-indexmillisecond-accessor-type-clinic)
 
-[Previous](index_millisecond-attribute.html "Overview: IndexMillisecond: Attribute")
-[Next](index_millisecond-dictionary_like.html "Overview: IndexMillisecond: Dictionary-Like")
+[Previous](index_millisecond-attribute.md "Overview: IndexMillisecond: Attribute")
+[Next](index_millisecond-dictionary_like.md "Overview: IndexMillisecond: Dictionary-Like")
 
 ---
 

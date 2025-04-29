@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexMicrosecond: Iterator
 * [View page source](../_sources/api_overview/index_microsecond-iterator.rst.txt)
 
-[Previous](index_microsecond-selector.html "Overview: IndexMicrosecond: Selector")
-[Next](index_microsecond-operator_binary.html "Overview: IndexMicrosecond: Operator Binary")
+[Previous](index_microsecond-selector.md "Overview: IndexMicrosecond: Selector")
+[Next](index_microsecond-operator_binary.md "Overview: IndexMicrosecond: Operator Binary")
 
 ---
 
 # Overview: IndexMicrosecond: Iterator[](#overview-indexmicrosecond-iterator "Link to this heading")
 
-[Detail: IndexMicrosecond: Iterator](../api_detail/index_microsecond-iterator.html#api-detail-indexmicrosecond-iterator)
+[Detail: IndexMicrosecond: Iterator](../api_detail/index_microsecond-iterator.md#api-detail-indexmicrosecond-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_microsecond-iterator.html#api-sig-indexmicrosecond-iter-label) | `IndexMicrosecond.iter_label(depth_level)` |  |
-| [Detail](../api_detail/index_microsecond-iterator.html#api-sig-indexmicrosecond-iter-label-apply) | `IndexMicrosecond.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/index_microsecond-iterator.html#api-sig-indexmicrosecond-iter-label-apply-iter) | `IndexMicrosecond.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/index_microsecond-iterator.html#api-sig-indexmicrosecond-iter-label-apply-iter-items) | `IndexMicrosecond.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/index_microsecond-iterator.html#api-sig-indexmicrosecond-iter-label-apply-pool) | `IndexMicrosecond.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/index_microsecond-iterator.md#api-sig-indexmicrosecond-iter-label) | `IndexMicrosecond.iter_label(depth_level)` |  |
+| [Detail](../api_detail/index_microsecond-iterator.md#api-sig-indexmicrosecond-iter-label-apply) | `IndexMicrosecond.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/index_microsecond-iterator.md#api-sig-indexmicrosecond-iter-label-apply-iter) | `IndexMicrosecond.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/index_microsecond-iterator.md#api-sig-indexmicrosecond-iter-label-apply-iter-items) | `IndexMicrosecond.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/index_microsecond-iterator.md#api-sig-indexmicrosecond-iter-label-apply-pool) | `IndexMicrosecond.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[IndexMicrosecond](index_microsecond.html#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-overview-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.html#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.html#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-overview-indexmicrosecond-display) | [Selector](index_microsecond-selector.html#api-overview-indexmicrosecond-selector) | [Iterator](#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.html#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.html#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.html#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-overview-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](index_microsecond.md#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-overview-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-overview-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-overview-indexmicrosecond-selector) | [Iterator](#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-overview-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_microsecond-selector.html "Overview: IndexMicrosecond: Selector")
-[Next](index_microsecond-operator_binary.html "Overview: IndexMicrosecond: Operator Binary")
+[Previous](index_microsecond-selector.md "Overview: IndexMicrosecond: Selector")
+[Next](index_microsecond-operator_binary.md "Overview: IndexMicrosecond: Operator Binary")
 
 ---
 

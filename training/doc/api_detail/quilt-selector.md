@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: Quilt: Selector
 * [View page source](../_sources/api_detail/quilt-selector.rst.txt)
 
-[Previous](quilt-display.html "Detail: Quilt: Display")
-[Next](quilt-iterator.html "Detail: Quilt: Iterator")
+[Previous](quilt-display.md "Detail: Quilt: Display")
+[Next](quilt-iterator.md "Detail: Quilt: Iterator")
 
 ---
 
 # Detail: Quilt: Selector[](#detail-quilt-selector "Link to this heading")
 
-[Overview: Quilt: Selector](../api_overview/quilt-selector.html#api-overview-quilt-selector)
+[Overview: Quilt: Selector](../api_overview/quilt-selector.md#api-overview-quilt-selector)
 
 Quilt[*key*]()[](#Quilt "Link to this definition")
-:   Quilt.\_\_getitem\_\_ *= <function Quilt.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/quilt.html#Quilt.__getitem__)
+:   Quilt.\_\_getitem\_\_ *= <function Quilt.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/quilt.md#Quilt.__getitem__)
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
@@ -253,10 +253,10 @@ Quilt.loc[*key*]
 
     ```
 
-[Quilt](quilt.html#api-detail-quilt): [Constructor](quilt-constructor.html#api-detail-quilt-constructor) | [Exporter](quilt-exporter.html#api-detail-quilt-exporter) | [Attribute](quilt-attribute.html#api-detail-quilt-attribute) | [Method](quilt-method.html#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-detail-quilt-dictionary-like) | [Display](quilt-display.html#api-detail-quilt-display) | [Selector](#api-detail-quilt-selector) | [Iterator](quilt-iterator.html#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-detail-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)
 
-[Previous](quilt-display.html "Detail: Quilt: Display")
-[Next](quilt-iterator.html "Detail: Quilt: Iterator")
+[Previous](quilt-display.md "Detail: Quilt: Display")
+[Next](quilt-iterator.md "Detail: Quilt: Iterator")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexDate: Operator Binary
 * [View page source](../_sources/api_overview/index_date-operator_binary.rst.txt)
 
-[Previous](index_date-iterator.html "Overview: IndexDate: Iterator")
-[Next](index_date-operator_unary.html "Overview: IndexDate: Operator Unary")
+[Previous](index_date-iterator.md "Overview: IndexDate: Iterator")
+[Next](index_date-operator_unary.md "Overview: IndexDate: Operator Unary")
 
 ---
 
 # Overview: IndexDate: Operator Binary[](#overview-indexdate-operator-binary "Link to this heading")
 
-[Detail: IndexDate: Operator Binary](../api_detail/index_date-operator_binary.html#api-detail-indexdate-operator-binary)
+[Detail: IndexDate: Operator Binary](../api_detail/index_date-operator_binary.md#api-detail-indexdate-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-add) | `IndexDate.__add__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-and) | `IndexDate.__and__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-eq) | `IndexDate.__eq__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-floordiv) | `IndexDate.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-ge) | `IndexDate.__ge__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-gt) | `IndexDate.__gt__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-le) | `IndexDate.__le__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-lt) | `IndexDate.__lt__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-matmul) | `IndexDate.__matmul__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-mod) | `IndexDate.__mod__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-mul) | `IndexDate.__mul__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-ne) | `IndexDate.__ne__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-or) | `IndexDate.__or__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-pow) | `IndexDate.__pow__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-radd) | `IndexDate.__radd__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-rfloordiv) | `IndexDate.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-rmatmul) | `IndexDate.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-rmul) | `IndexDate.__rmul__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-rshift) | `IndexDate.__rshift__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-rsub) | `IndexDate.__rsub__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-rtruediv) | `IndexDate.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-sub) | `IndexDate.__sub__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-truediv) | `IndexDate.__truediv__(other)` |  |
-| [Detail](../api_detail/index_date-operator_binary.html#api-sig-indexdate-xor) | `IndexDate.__xor__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-add) | `IndexDate.__add__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-and) | `IndexDate.__and__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-eq) | `IndexDate.__eq__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-floordiv) | `IndexDate.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-ge) | `IndexDate.__ge__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-gt) | `IndexDate.__gt__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-le) | `IndexDate.__le__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-lt) | `IndexDate.__lt__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-matmul) | `IndexDate.__matmul__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-mod) | `IndexDate.__mod__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-mul) | `IndexDate.__mul__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-ne) | `IndexDate.__ne__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-or) | `IndexDate.__or__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-pow) | `IndexDate.__pow__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-radd) | `IndexDate.__radd__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-rfloordiv) | `IndexDate.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-rmatmul) | `IndexDate.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-rmul) | `IndexDate.__rmul__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-rshift) | `IndexDate.__rshift__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-rsub) | `IndexDate.__rsub__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-rtruediv) | `IndexDate.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-sub) | `IndexDate.__sub__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-truediv) | `IndexDate.__truediv__(other)` |  |
+| [Detail](../api_detail/index_date-operator_binary.md#api-sig-indexdate-xor) | `IndexDate.__xor__(other)` |  |
 
-[IndexDate](index_date.html#api-overview-indexdate): [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | [Method](index_date-method.html#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | [Display](index_date-display.html#api-overview-indexdate-display) | [Selector](index_date-selector.html#api-overview-indexdate-selector) | [Iterator](index_date-iterator.html#api-overview-indexdate-iterator) | [Operator Binary](#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-overview-indexdate): [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | [Method](index_date-method.md#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | [Display](index_date-display.md#api-overview-indexdate-display) | [Selector](index_date-selector.md#api-overview-indexdate-selector) | [Iterator](index_date-iterator.md#api-overview-indexdate-iterator) | [Operator Binary](#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic)
 
-[Previous](index_date-iterator.html "Overview: IndexDate: Iterator")
-[Next](index_date-operator_unary.html "Overview: IndexDate: Operator Unary")
+[Previous](index_date-iterator.md "Overview: IndexDate: Iterator")
+[Next](index_date-operator_unary.md "Overview: IndexDate: Operator Unary")
 
 ---
 

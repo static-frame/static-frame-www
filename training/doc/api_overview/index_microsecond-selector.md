@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexMicrosecond: Selector
 * [View page source](../_sources/api_overview/index_microsecond-selector.rst.txt)
 
-[Previous](index_microsecond-display.html "Overview: IndexMicrosecond: Display")
-[Next](index_microsecond-iterator.html "Overview: IndexMicrosecond: Iterator")
+[Previous](index_microsecond-display.md "Overview: IndexMicrosecond: Display")
+[Next](index_microsecond-iterator.md "Overview: IndexMicrosecond: Iterator")
 
 ---
 
 # Overview: IndexMicrosecond: Selector[](#overview-indexmicrosecond-selector "Link to this heading")
 
-[Detail: IndexMicrosecond: Selector](../api_detail/index_microsecond-selector.html#api-detail-indexmicrosecond-selector)
+[Detail: IndexMicrosecond: Selector](../api_detail/index_microsecond-selector.md#api-detail-indexmicrosecond-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_microsecond-selector.html#api-sig-indexmicrosecond-drop-iloc) | `IndexMicrosecond.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
-| [Detail](../api_detail/index_microsecond-selector.html#api-sig-indexmicrosecond-drop-loc) | `IndexMicrosecond.drop.loc[key]` |  |
-| [Detail](../api_detail/index_microsecond-selector.html#api-sig-indexmicrosecond) | `IndexMicrosecond[key]` | Extract a new index given an iloc key. |
-| [Detail](../api_detail/index_microsecond-selector.html#api-sig-indexmicrosecond-iloc) | `IndexMicrosecond.iloc[key]` |  |
-| [Detail](../api_detail/index_microsecond-selector.html#api-sig-indexmicrosecond-loc) | `IndexMicrosecond.loc[key]` |  |
+| [Detail](../api_detail/index_microsecond-selector.md#api-sig-indexmicrosecond-drop-iloc) | `IndexMicrosecond.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
+| [Detail](../api_detail/index_microsecond-selector.md#api-sig-indexmicrosecond-drop-loc) | `IndexMicrosecond.drop.loc[key]` |  |
+| [Detail](../api_detail/index_microsecond-selector.md#api-sig-indexmicrosecond) | `IndexMicrosecond[key]` | Extract a new index given an iloc key. |
+| [Detail](../api_detail/index_microsecond-selector.md#api-sig-indexmicrosecond-iloc) | `IndexMicrosecond.iloc[key]` |  |
+| [Detail](../api_detail/index_microsecond-selector.md#api-sig-indexmicrosecond-loc) | `IndexMicrosecond.loc[key]` |  |
 
-[IndexMicrosecond](index_microsecond.html#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-overview-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.html#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.html#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-overview-indexmicrosecond-display) | [Selector](#api-overview-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.html#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.html#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.html#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.html#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-overview-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](index_microsecond.md#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-overview-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-overview-indexmicrosecond-display) | [Selector](#api-overview-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-overview-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_microsecond-display.html "Overview: IndexMicrosecond: Display")
-[Next](index_microsecond-iterator.html "Overview: IndexMicrosecond: Iterator")
+[Previous](index_microsecond-display.md "Overview: IndexMicrosecond: Display")
+[Next](index_microsecond-iterator.md "Overview: IndexMicrosecond: Iterator")
 
 ---
 

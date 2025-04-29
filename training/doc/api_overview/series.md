@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,41 +135,41 @@ API Detail
 * Overview: Series
 * [View page source](../_sources/api_overview/series.rst.txt)
 
-[Previous](../articles/aiii.html "Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame")
-[Next](series_he.html "Overview: SeriesHE")
+[Previous](../articles/aiii.md "Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame")
+[Next](series_he.md "Overview: SeriesHE")
 
 ---
 
 # Overview: Series[](#overview-series "Link to this heading")
 
-[Detail: Series](../api_detail/series.html#api-detail-series)
+[Detail: Series](../api_detail/series.md#api-detail-series)
 
 |  |  |
 | --- | --- |
-| [Constructor](series-constructor.html#api-overview-series-constructor) | Alternative constructors for creating instances. |
-| [Exporter](series-exporter.html#api-overview-series-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](series-attribute.html#api-overview-series-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](series-method.html#api-overview-series-method) | Methods for general functionality. |
-| [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](series-display.html#api-overview-series-display) | Methods for providing a text representation of the object. |
-| [Assignment](series-assignment.html#api-overview-series-assignment) | Interfaces for creating new containers with assignment-like specification. |
-| [Selector](series-selector.html#api-overview-series-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](series-iterator.html#api-overview-series-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | Underlying (magic) methods for binary operator implementation. |
-| [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | Underlying (magic) methods for unary operator implementation. |
-| [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | Interface for using NumPy functions on conatainers. |
-| [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
-| [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | Interface for employing string methods on container elements. |
-| [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | Interface that permits supplying a fill value to be used when binary operator application forces reindexing. |
-| [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
-| [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](series-constructor.md#api-overview-series-constructor) | Alternative constructors for creating instances. |
+| [Exporter](series-exporter.md#api-overview-series-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](series-attribute.md#api-overview-series-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](series-method.md#api-overview-series-method) | Methods for general functionality. |
+| [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](series-display.md#api-overview-series-display) | Methods for providing a text representation of the object. |
+| [Assignment](series-assignment.md#api-overview-series-assignment) | Interfaces for creating new containers with assignment-like specification. |
+| [Selector](series-selector.md#api-overview-series-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](series-iterator.md#api-overview-series-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | Underlying (magic) methods for binary operator implementation. |
+| [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | Underlying (magic) methods for unary operator implementation. |
+| [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | Interface for using NumPy functions on conatainers. |
+| [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
+| [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | Interface for employing string methods on container elements. |
+| [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | Interface that permits supplying a fill value to be used when binary operator application forces reindexing. |
+| [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
+| [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 | Accessor Mapping |  |
 
-[Series](#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](../articles/aiii.html "Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame")
-[Next](series_he.html "Overview: SeriesHE")
+[Previous](../articles/aiii.md "Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame")
+[Next](series_he.md "Overview: SeriesHE")
 
 ---
 

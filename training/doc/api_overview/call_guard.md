@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: CallGuard
 * [View page source](../_sources/api_overview/call_guard.rst.txt)
 
-[Previous](type_clinic.html "Overview: TypeClinic")
-[Next](clinic_result.html "Overview: ClinicResult")
+[Previous](type_clinic.md "Overview: TypeClinic")
+[Next](clinic_result.md "Overview: ClinicResult")
 
 ---
 
 # Overview: CallGuard[](#overview-callguard "Link to this heading")
 
-[Detail: CallGuard](../api_detail/call_guard.html#api-detail-callguard)
+[Detail: CallGuard](../api_detail/call_guard.md#api-detail-callguard)
 
 |  |  |
 | --- | --- |
-| [Method](call_guard-method.html#api-overview-callguard-method) | Methods for general functionality. |
+| [Method](call_guard-method.md#api-overview-callguard-method) | Methods for general functionality. |
 
-[CallGuard](#api-overview-callguard): [Method](call_guard-method.html#api-overview-callguard-method)
+[CallGuard](#api-overview-callguard): [Method](call_guard-method.md#api-overview-callguard-method)
 
-[Previous](type_clinic.html "Overview: TypeClinic")
-[Next](clinic_result.html "Overview: ClinicResult")
+[Previous](type_clinic.md "Overview: TypeClinic")
+[Next](clinic_result.md "Overview: ClinicResult")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -138,8 +138,8 @@ API Detail
 * The Performance Advantage of No-Copy DataFrame Operations
 * [View page source](../_sources/articles/no_copy.rst.txt)
 
-[Previous](serialize.html "Faster DataFrame Serialization")
-[Next](hash.html "Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations")
+[Previous](serialize.md "Faster DataFrame Serialization")
+[Next](hash.md "Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations")
 
 ---
 
@@ -368,8 +368,8 @@ It is common to concatenate two or more DataFrames. If they have the same index,
 
 NumPy is designed to take advantage of sharing views of data. Because Pandas permits in-place mutation, it cannot make optimal use of NumPy array views. As StaticFrame is built on an immutable data model, side-effect mutation risk is eliminated and no-copy operations are embraced, providing a significant performance advantage.
 
-[Previous](serialize.html "Faster DataFrame Serialization")
-[Next](hash.html "Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations")
+[Previous](serialize.md "Faster DataFrame Serialization")
+[Next](hash.md "Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations")
 
 ---
 

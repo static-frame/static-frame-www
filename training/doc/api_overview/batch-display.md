@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Batch: Display
 * [View page source](../_sources/api_overview/batch-display.rst.txt)
 
-[Previous](batch-dictionary_like.html "Overview: Batch: Dictionary-Like")
-[Next](batch-selector.html "Overview: Batch: Selector")
+[Previous](batch-dictionary_like.md "Overview: Batch: Dictionary-Like")
+[Next](batch-selector.md "Overview: Batch: Selector")
 
 ---
 
 # Overview: Batch: Display[](#overview-batch-display "Link to this heading")
 
-[Detail: Batch: Display](../api_detail/batch-display.html#api-detail-batch-display)
+[Detail: Batch: Display](../api_detail/batch-display.md#api-detail-batch-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-display.html#api-sig-batch-interface) | [`Batch.interface`](../api_detail/batch-display.html#Batch.interface "Batch.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/batch-display.html#api-sig-batch-repr) | `Batch.__repr__()` | Provide a display of the Batch that does not exhaust the generator. |
-| [Detail](../api_detail/batch-display.html#api-sig-batch-str) | `Batch.__str__()` | Return str(self). |
-| [Detail](../api_detail/batch-display.html#api-sig-batch-display) | `Batch.display(config, *, style_config)` | Provide a Series-style display of the Batch. Note that if the held iterator is a… |
-| [Detail](../api_detail/batch-display.html#api-sig-batch-display-tall) | `Batch.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/batch-display.html#api-sig-batch-display-wide) | `Batch.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/batch-display.md#api-sig-batch-interface) | [`Batch.interface`](../api_detail/batch-display.md#Batch.interface "Batch.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/batch-display.md#api-sig-batch-repr) | `Batch.__repr__()` | Provide a display of the Batch that does not exhaust the generator. |
+| [Detail](../api_detail/batch-display.md#api-sig-batch-str) | `Batch.__str__()` | Return str(self). |
+| [Detail](../api_detail/batch-display.md#api-sig-batch-display) | `Batch.display(config, *, style_config)` | Provide a Series-style display of the Batch. Note that if the held iterator is a… |
+| [Detail](../api_detail/batch-display.md#api-sig-batch-display-tall) | `Batch.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/batch-display.md#api-sig-batch-display-wide) | `Batch.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[Batch](batch.html#api-overview-batch): [Constructor](batch-constructor.html#api-overview-batch-constructor) | [Exporter](batch-exporter.html#api-overview-batch-exporter) | [Attribute](batch-attribute.html#api-overview-batch-attribute) | [Method](batch-method.html#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-overview-batch-dictionary-like) | [Display](#api-overview-batch-display) | [Selector](batch-selector.html#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.html#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-overview-batch-accessor-reduce)
+[Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](batch-attribute.md#api-overview-batch-attribute) | [Method](batch-method.md#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-overview-batch-dictionary-like) | [Display](#api-overview-batch-display) | [Selector](batch-selector.md#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.md#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 
-[Previous](batch-dictionary_like.html "Overview: Batch: Dictionary-Like")
-[Next](batch-selector.html "Overview: Batch: Selector")
+[Previous](batch-dictionary_like.md "Overview: Batch: Dictionary-Like")
+[Next](batch-selector.md "Overview: Batch: Selector")
 
 ---
 

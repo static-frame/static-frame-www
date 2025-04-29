@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexDate: Accessor Type Clinic
 * [View page source](../_sources/api_detail/index_date-accessor_type_clinic.rst.txt)
 
-[Previous](index_date-accessor_hashlib.html "Detail: IndexDate: Accessor Hashlib")
-[Next](index_date_go-constructor.html "Detail: IndexDateGO: Constructor")
+[Previous](index_date-accessor_hashlib.md "Detail: IndexDate: Accessor Hashlib")
+[Next](index_date_go-constructor.md "Detail: IndexDateGO: Constructor")
 
 ---
 
 # Detail: IndexDate: Accessor Type Clinic[](#detail-indexdate-accessor-type-clinic "Link to this heading")
 
-[Overview: IndexDate: Accessor Type Clinic](../api_overview/index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic)
+[Overview: IndexDate: Accessor Type Clinic](../api_overview/index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic)
 
 IndexDate.via\_type\_clinic.to\_hint
 :   IndexDate.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -166,7 +166,7 @@ IndexDate.via\_type\_clinic.to\_hint
 IndexDate.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   IndexDate.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -188,7 +188,7 @@ IndexDate.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 IndexDate.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   IndexDate.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -198,7 +198,7 @@ IndexDate.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 IndexDate.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   IndexDate.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -227,7 +227,7 @@ IndexDate.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 IndexDate.via\_type\_clinic.\_\_repr\_\_
 :   IndexDate.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -243,10 +243,10 @@ IndexDate.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[IndexDate](index_date.html#api-detail-indexdate): [Constructor](index_date-constructor.html#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.html#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.html#api-detail-indexdate-attribute) | [Method](index_date-method.html#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-detail-indexdate-dictionary-like) | [Display](index_date-display.html#api-detail-indexdate-display) | [Selector](index_date-selector.html#api-detail-indexdate-selector) | [Iterator](index_date-iterator.html#api-detail-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-detail-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-detail-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-detail-indexdate): [Constructor](index_date-constructor.md#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.md#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.md#api-detail-indexdate-attribute) | [Method](index_date-method.md#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-detail-indexdate-dictionary-like) | [Display](index_date-display.md#api-detail-indexdate-display) | [Selector](index_date-selector.md#api-detail-indexdate-selector) | [Iterator](index_date-iterator.md#api-detail-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-detail-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-detail-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexdate-accessor-type-clinic)
 
-[Previous](index_date-accessor_hashlib.html "Detail: IndexDate: Accessor Hashlib")
-[Next](index_date_go-constructor.html "Detail: IndexDateGO: Constructor")
+[Previous](index_date-accessor_hashlib.md "Detail: IndexDate: Accessor Hashlib")
+[Next](index_date_go-constructor.md "Detail: IndexDateGO: Constructor")
 
 ---
 

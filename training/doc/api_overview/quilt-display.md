@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Quilt: Display
 * [View page source](../_sources/api_overview/quilt-display.rst.txt)
 
-[Previous](quilt-dictionary_like.html "Overview: Quilt: Dictionary-Like")
-[Next](quilt-selector.html "Overview: Quilt: Selector")
+[Previous](quilt-dictionary_like.md "Overview: Quilt: Dictionary-Like")
+[Next](quilt-selector.md "Overview: Quilt: Selector")
 
 ---
 
 # Overview: Quilt: Display[](#overview-quilt-display "Link to this heading")
 
-[Detail: Quilt: Display](../api_detail/quilt-display.html#api-detail-quilt-display)
+[Detail: Quilt: Display](../api_detail/quilt-display.md#api-detail-quilt-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/quilt-display.html#api-sig-quilt-interface) | [`Quilt.interface`](../api_detail/quilt-display.html#Quilt.interface "Quilt.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/quilt-display.html#api-sig-quilt-repr) | `Quilt.__repr__()` |  |
-| [Detail](../api_detail/quilt-display.html#api-sig-quilt-str) | `Quilt.__str__()` | Return str(self). |
-| [Detail](../api_detail/quilt-display.html#api-sig-quilt-display) | `Quilt.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/quilt-display.html#api-sig-quilt-display-tall) | `Quilt.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/quilt-display.html#api-sig-quilt-display-wide) | `Quilt.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/quilt-display.md#api-sig-quilt-interface) | [`Quilt.interface`](../api_detail/quilt-display.md#Quilt.interface "Quilt.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/quilt-display.md#api-sig-quilt-repr) | `Quilt.__repr__()` |  |
+| [Detail](../api_detail/quilt-display.md#api-sig-quilt-str) | `Quilt.__str__()` | Return str(self). |
+| [Detail](../api_detail/quilt-display.md#api-sig-quilt-display) | `Quilt.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/quilt-display.md#api-sig-quilt-display-tall) | `Quilt.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/quilt-display.md#api-sig-quilt-display-wide) | `Quilt.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[Quilt](quilt.html#api-overview-quilt): [Constructor](quilt-constructor.html#api-overview-quilt-constructor) | [Exporter](quilt-exporter.html#api-overview-quilt-exporter) | [Attribute](quilt-attribute.html#api-overview-quilt-attribute) | [Method](quilt-method.html#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-overview-quilt-dictionary-like) | [Display](#api-overview-quilt-display) | [Selector](quilt-selector.html#api-overview-quilt-selector) | [Iterator](quilt-iterator.html#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-overview-quilt): [Constructor](quilt-constructor.md#api-overview-quilt-constructor) | [Exporter](quilt-exporter.md#api-overview-quilt-exporter) | [Attribute](quilt-attribute.md#api-overview-quilt-attribute) | [Method](quilt-method.md#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-overview-quilt-dictionary-like) | [Display](#api-overview-quilt-display) | [Selector](quilt-selector.md#api-overview-quilt-selector) | [Iterator](quilt-iterator.md#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic)
 
-[Previous](quilt-dictionary_like.html "Overview: Quilt: Dictionary-Like")
-[Next](quilt-selector.html "Overview: Quilt: Selector")
+[Previous](quilt-dictionary_like.md "Overview: Quilt: Dictionary-Like")
+[Next](quilt-selector.md "Overview: Quilt: Selector")
 
 ---
 

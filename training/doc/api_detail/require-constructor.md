@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: Require: Constructor
 * [View page source](../_sources/api_detail/require-constructor.rst.txt)
 
-[Previous](clinic_result-display.html "Detail: ClinicResult: Display")
-[Next](www-constructor.html "Detail: WWW: Constructor")
+[Previous](clinic_result-display.md "Detail: ClinicResult: Display")
+[Next](www-constructor.md "Detail: WWW: Constructor")
 
 ---
 
 # Detail: Require: Constructor[](#detail-require-constructor "Link to this heading")
 
-[Overview: Require: Constructor](../api_overview/require-constructor.html#api-overview-require-constructor)
+[Overview: Require: Constructor](../api_overview/require-constructor.md#api-overview-require-constructor)
 
 Require.Apply(*func*)[](#Require.Apply "Link to this definition")
-:   Apply()[[source]](../_modules/static_frame/core/type_clinic.html#Require.Apply)
+:   Apply()[[source]](../_modules/static_frame/core/type_clinic.md#Require.Apply)
     :   Apply a function to a container with an arbitrary function. The validation passes if the function returns True (or a truthy value).
 
         Parameters:
@@ -178,7 +178,7 @@ Require.Apply(*func*)[](#Require.Apply "Link to this definition")
     ```
 
 Require.LabelsMatch(*\*labels*)[](#Require.LabelsMatch "Link to this definition")
-:   LabelsMatch()[[source]](../_modules/static_frame/core/type_clinic.html#Require.LabelsMatch)
+:   LabelsMatch()[[source]](../_modules/static_frame/core/type_clinic.md#Require.LabelsMatch)
     :   Validate the presence of one or more labels, specified with the value, a pattern, or set of values. Order of labels is not relevant.
 
         Parameters:
@@ -214,7 +214,7 @@ Require.LabelsMatch(*\*labels*)[](#Require.LabelsMatch "Link to this definiti
     ```
 
 Require.LabelsOrder(*\*labels*)[](#Require.LabelsOrder "Link to this definition")
-:   LabelsOrder()[[source]](../_modules/static_frame/core/type_clinic.html#Require.LabelsOrder)
+:   LabelsOrder()[[source]](../_modules/static_frame/core/type_clinic.md#Require.LabelsOrder)
     :   Validate the ordering of labels.
 
         Parameters:
@@ -247,7 +247,7 @@ Require.LabelsOrder(*\*labels*)[](#Require.LabelsOrder "Link to this definiti
     ```
 
 Require.Len(*len*)[](#Require.Len "Link to this definition")
-:   Len()[[source]](../_modules/static_frame/core/type_clinic.html#Require.Len)
+:   Len()[[source]](../_modules/static_frame/core/type_clinic.md#Require.Len)
     :   Validate the length of a container.
 
         Parameters:
@@ -281,7 +281,7 @@ Require.Len(*len*)[](#Require.Len "Link to this definition")
     ```
 
 Require.Name(*name*)[](#Require.Name "Link to this definition")
-:   Name()[[source]](../_modules/static_frame/core/type_clinic.html#Require.Name)
+:   Name()[[source]](../_modules/static_frame/core/type_clinic.md#Require.Name)
     :   Validate the name of a container.
 
         Parameters:
@@ -315,7 +315,7 @@ Require.Name(*name*)[](#Require.Name "Link to this definition")
     ```
 
 Require.Shape(*\*shape*)[](#Require.Shape "Link to this definition")
-:   Shape()[[source]](../_modules/static_frame/core/type_clinic.html#Require.Shape)
+:   Shape()[[source]](../_modules/static_frame/core/type_clinic.md#Require.Shape)
     :   Validate the length of a container.
 
         Parameters:
@@ -350,10 +350,10 @@ Require.Shape(*\*shape*)[](#Require.Shape "Link to this definition")
 
     ```
 
-[Require](require.html#api-detail-require): [Constructor](#api-detail-require-constructor)
+[Require](require.md#api-detail-require): [Constructor](#api-detail-require-constructor)
 
-[Previous](clinic_result-display.html "Detail: ClinicResult: Display")
-[Next](www-constructor.html "Detail: WWW: Constructor")
+[Previous](clinic_result-display.md "Detail: ClinicResult: Display")
+[Next](www-constructor.md "Detail: WWW: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,39 +136,39 @@ API Detail
 * Detail: Index
 * [View page source](../_sources/api_detail/index.rst.txt)
 
-[Previous](quilt.html "Detail: Quilt")
-[Next](index_go.html "Detail: IndexGO")
+[Previous](quilt.md "Detail: Quilt")
+[Next](index_go.md "Detail: IndexGO")
 
 ---
 
 # Detail: Index[](#detail-index "Link to this heading")
 
-[Overview: Index](../api_overview/index.html#api-overview-index)
+[Overview: Index](../api_overview/index.md#api-overview-index)
 
-*class* Index(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.html#Index)[](#static_frame.Index "Link to this definition")
-:   A mapping of labels to positions, immutable and of fixed size. Used by default in [`Series`](series-selector.html#Series "Series") and as index and columns in [`Frame`](frame-selector.html#Frame "Frame"). Base class of all 1D indices.
+*class* Index(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.md#Index)[](#static_frame.Index "Link to this definition")
+:   A mapping of labels to positions, immutable and of fixed size. Used by default in [`Series`](series-selector.md#Series "Series") and as index and columns in [`Frame`](frame-selector.md#Frame "Frame"). Base class of all 1D indices.
 
-* [Constructor](index-constructor.html#api-detail-index-constructor): Alternative constructors for creating instances.
-* [Exporter](index-exporter.html#api-detail-index-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](index-attribute.html#api-detail-index-attribute): Attributes for retrieving basic characteristics.
-* [Method](index-method.html#api-detail-index-method): Methods for general functionality.
-* [Dictionary-Like](index-dictionary_like.html#api-detail-index-dictionary-like): All dictionary-like methods and iterators.
-* [Display](index-display.html#api-detail-index-display): Methods for providing a text representation of the object.
-* [Selector](index-selector.html#api-detail-index-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](index-iterator.html#api-detail-index-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Operator Binary](index-operator_binary.html#api-detail-index-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](index-operator_unary.html#api-detail-index-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](index-accessor_values.html#api-detail-index-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](index-accessor_datetime.html#api-detail-index-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](index-accessor_string.html#api-detail-index-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Regular Expression](index-accessor_regular_expression.html#api-detail-index-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](index-accessor_hashlib.html#api-detail-index-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](index-accessor_type_clinic.html#api-detail-index-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](index-constructor.md#api-detail-index-constructor): Alternative constructors for creating instances.
+* [Exporter](index-exporter.md#api-detail-index-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](index-attribute.md#api-detail-index-attribute): Attributes for retrieving basic characteristics.
+* [Method](index-method.md#api-detail-index-method): Methods for general functionality.
+* [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like): All dictionary-like methods and iterators.
+* [Display](index-display.md#api-detail-index-display): Methods for providing a text representation of the object.
+* [Selector](index-selector.md#api-detail-index-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](index-iterator.md#api-detail-index-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](index-accessor_string.md#api-detail-index-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[Index](#api-detail-index): [Constructor](index-constructor.html#api-detail-index-constructor) | [Exporter](index-exporter.html#api-detail-index-exporter) | [Attribute](index-attribute.html#api-detail-index-attribute) | [Method](index-method.html#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.html#api-detail-index-dictionary-like) | [Display](index-display.html#api-detail-index-display) | [Selector](index-selector.html#api-detail-index-selector) | [Iterator](index-iterator.html#api-detail-index-iterator) | [Operator Binary](index-operator_binary.html#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-detail-index-accessor-type-clinic)
+[Index](#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](index-attribute.md#api-detail-index-attribute) | [Method](index-method.md#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)
 
-[Previous](quilt.html "Detail: Quilt")
-[Next](index_go.html "Detail: IndexGO")
+[Previous](quilt.md "Detail: Quilt")
+[Next](index_go.md "Detail: IndexGO")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexYearMonthGO: Display
 * [View page source](../_sources/api_overview/index_year_month_go-display.rst.txt)
 
-[Previous](index_year_month_go-dictionary_like.html "Overview: IndexYearMonthGO: Dictionary-Like")
-[Next](index_year_month_go-selector.html "Overview: IndexYearMonthGO: Selector")
+[Previous](index_year_month_go-dictionary_like.md "Overview: IndexYearMonthGO: Dictionary-Like")
+[Next](index_year_month_go-selector.md "Overview: IndexYearMonthGO: Selector")
 
 ---
 
 # Overview: IndexYearMonthGO: Display[](#overview-indexyearmonthgo-display "Link to this heading")
 
-[Detail: IndexYearMonthGO: Display](../api_detail/index_year_month_go-display.html#api-detail-indexyearmonthgo-display)
+[Detail: IndexYearMonthGO: Display](../api_detail/index_year_month_go-display.md#api-detail-indexyearmonthgo-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month_go-display.html#api-sig-indexyearmonthgo-interface) | [`IndexYearMonthGO.interface`](../api_detail/index_year_month_go-display.html#IndexYearMonthGO.interface "IndexYearMonthGO.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_year_month_go-display.html#api-sig-indexyearmonthgo-repr) | `IndexYearMonthGO.__repr__()` |  |
-| [Detail](../api_detail/index_year_month_go-display.html#api-sig-indexyearmonthgo-str) | `IndexYearMonthGO.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_year_month_go-display.html#api-sig-indexyearmonthgo-display) | `IndexYearMonthGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_year_month_go-display.html#api-sig-indexyearmonthgo-display-tall) | `IndexYearMonthGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_year_month_go-display.html#api-sig-indexyearmonthgo-display-wide) | `IndexYearMonthGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_year_month_go-display.md#api-sig-indexyearmonthgo-interface) | [`IndexYearMonthGO.interface`](../api_detail/index_year_month_go-display.md#IndexYearMonthGO.interface "IndexYearMonthGO.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_year_month_go-display.md#api-sig-indexyearmonthgo-repr) | `IndexYearMonthGO.__repr__()` |  |
+| [Detail](../api_detail/index_year_month_go-display.md#api-sig-indexyearmonthgo-str) | `IndexYearMonthGO.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_year_month_go-display.md#api-sig-indexyearmonthgo-display) | `IndexYearMonthGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_year_month_go-display.md#api-sig-indexyearmonthgo-display-tall) | `IndexYearMonthGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_year_month_go-display.md#api-sig-indexyearmonthgo-display-wide) | `IndexYearMonthGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexYearMonthGO](index_year_month_go.html#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.html#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.html#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.html#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.html#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.html#api-overview-indexyearmonthgo-dictionary-like) | [Display](#api-overview-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.html#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.html#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.html#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.html#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.html#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.html#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.html#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.html#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.html#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.html#api-overview-indexyearmonthgo-accessor-type-clinic)
+[IndexYearMonthGO](index_year_month_go.md#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.md#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.md#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-overview-indexyearmonthgo-dictionary-like) | [Display](#api-overview-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.md#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.md#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.md#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.md#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.md#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.md#api-overview-indexyearmonthgo-accessor-type-clinic)
 
-[Previous](index_year_month_go-dictionary_like.html "Overview: IndexYearMonthGO: Dictionary-Like")
-[Next](index_year_month_go-selector.html "Overview: IndexYearMonthGO: Selector")
+[Previous](index_year_month_go-dictionary_like.md "Overview: IndexYearMonthGO: Dictionary-Like")
+[Next](index_year_month_go-selector.md "Overview: IndexYearMonthGO: Selector")
 
 ---
 

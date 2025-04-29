@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,8 +135,8 @@ API Detail
 * One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames
 * [View page source](../_sources/articles/fill_value.rst.txt)
 
-[Previous](uhoc.html "Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames")
-[Next](upgrade.html "Ten Reasons to Use StaticFrame Instead of Pandas")
+[Previous](uhoc.md "Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames")
+[Next](upgrade.md "Ten Reasons to Use StaticFrame Instead of Pandas")
 
 ---
 
@@ -388,8 +388,8 @@ Examples with just a few columns, as used above, do not fully demonstrate the po
 
 The cost of inadvertent type coercion caused by reindexing or other transformations can lead to bugs or degraded performance. StaticFrame’s flexible fill value types, as well as the new `FillValueAuto`, provide solutions to these practical problems.
 
-[Previous](uhoc.html "Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames")
-[Next](upgrade.html "Ten Reasons to Use StaticFrame Instead of Pandas")
+[Previous](uhoc.md "Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames")
+[Next](upgrade.md "Ten Reasons to Use StaticFrame Instead of Pandas")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: Series: Accessor Regular Expression
 * [View page source](../_sources/api_detail/series-accessor_regular_expression.rst.txt)
 
-[Previous](series-accessor_fill_value.html "Detail: Series: Accessor Fill Value")
-[Next](series-accessor_hashlib.html "Detail: Series: Accessor Hashlib")
+[Previous](series-accessor_fill_value.md "Detail: Series: Accessor Fill Value")
+[Next](series-accessor_hashlib.md "Detail: Series: Accessor Hashlib")
 
 ---
 
 # Detail: Series: Accessor Regular Expression[](#detail-series-accessor-regular-expression "Link to this heading")
 
-[Overview: Series: Accessor Regular Expression](../api_overview/series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression)
+[Overview: Series: Accessor Regular Expression](../api_overview/series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression)
 
 Series.via\_re(*pattern*, *flags).search(pos*, *endpos*)
-:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.html#Series.via_re)
+:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.md#Series.via_re)
 
-    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.search)
+    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.search)
     :   Scan through string looking for the first location where this regular expression produces a match and return True, else False. Note that this is different from finding a zero-length match at some point in the string.
 
         Parameters:
@@ -174,9 +174,9 @@ Series.via\_re(*pattern*, *flags).search(pos*, *endpos*)
     ```
 
 Series.via\_re(*pattern*, *flags).match(pos*, *endpos*)
-:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.html#Series.via_re)
+:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.md#Series.via_re)
 
-    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.match)
+    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.match)
     :   If zero or more characters at the beginning of string match this regular expression return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -203,9 +203,9 @@ Series.via\_re(*pattern*, *flags).match(pos*, *endpos*)
     ```
 
 Series.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
-:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.html#Series.via_re)
+:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.md#Series.via_re)
 
-    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.fullmatch)
+    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.fullmatch)
     :   If the whole string matches this regular expression, return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -232,9 +232,9 @@ Series.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
     ```
 
 Series.via\_re(*pattern*, *flags).split(maxsplit*)
-:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.html#Series.via_re)
+:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.md#Series.via_re)
 
-    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.split)
+    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.split)
     :   Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting tuple.
 
         Parameters:
@@ -260,9 +260,9 @@ Series.via\_re(*pattern*, *flags).split(maxsplit*)
     ```
 
 Series.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
-:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.html#Series.via_re)
+:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.md#Series.via_re)
 
-    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.findall)
+    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.findall)
     :   Return all non-overlapping matches of pattern in string, as a tuple of strings. The string is scanned left-to-right, and matches are returned in the order found. If one or more groups are present in the pattern, return a tuple of groups; this will be a tuple of tuples if the pattern has more than one group. Empty matches are included in the result.
 
         Parameters:
@@ -289,9 +289,9 @@ Series.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
     ```
 
 Series.via\_re(*pattern*, *flags).sub(repl*, *count*)
-:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.html#Series.via_re)
+:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.md#Series.via_re)
 
-    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.sub)
+    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.sub)
     :   Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement `repl`. If the pattern is not found, the string is returned unchanged.
 
         Parameters:
@@ -318,9 +318,9 @@ Series.via\_re(*pattern*, *flags).sub(repl*, *count*)
     ```
 
 Series.via\_re(*pattern*, *flags).subn(repl*, *count*)
-:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.html#Series.via_re)
+:   via\_re *= <function Series.via\_re>*[[source]](../_modules/static_frame/core/series.md#Series.via_re)
 
-    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.subn)
+    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.subn)
     :   Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_subs\_made).
 
         Parameters:
@@ -346,10 +346,10 @@ Series.via\_re(*pattern*, *flags).subn(repl*, *count*)
 
     ```
 
-[Series](series.html#api-detail-series): [Constructor](series-constructor.html#api-detail-series-constructor) | [Exporter](series-exporter.html#api-detail-series-exporter) | [Attribute](series-attribute.html#api-detail-series-attribute) | [Method](series-method.html#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.html#api-detail-series-dictionary-like) | [Display](series-display.html#api-detail-series-display) | [Assignment](series-assignment.html#api-detail-series-assignment) | [Selector](series-selector.html#api-detail-series-selector) | [Iterator](series-iterator.html#api-detail-series-iterator) | [Operator Binary](series-operator_binary.html#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-detail-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-accessor_fill_value.html "Detail: Series: Accessor Fill Value")
-[Next](series-accessor_hashlib.html "Detail: Series: Accessor Hashlib")
+[Previous](series-accessor_fill_value.md "Detail: Series: Accessor Fill Value")
+[Next](series-accessor_hashlib.md "Detail: Series: Accessor Hashlib")
 
 ---
 

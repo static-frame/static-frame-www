@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: IndexYearMonthGO: Accessor String
 * [View page source](../_sources/api_overview/index_year_month_go-accessor_string.rst.txt)
 
-[Previous](index_year_month_go-accessor_datetime.html "Overview: IndexYearMonthGO: Accessor Datetime")
-[Next](index_year_month_go-accessor_regular_expression.html "Overview: IndexYearMonthGO: Accessor Regular Expression")
+[Previous](index_year_month_go-accessor_datetime.md "Overview: IndexYearMonthGO: Accessor Datetime")
+[Next](index_year_month_go-accessor_regular_expression.md "Overview: IndexYearMonthGO: Accessor Regular Expression")
 
 ---
 
 # Overview: IndexYearMonthGO: Accessor String[](#overview-indexyearmonthgo-accessor-string "Link to this heading")
 
-[Detail: IndexYearMonthGO: Accessor String](../api_detail/index_year_month_go-accessor_string.html#api-detail-indexyearmonthgo-accessor-string)
+[Detail: IndexYearMonthGO: Accessor String](../api_detail/index_year_month_go-accessor_string.md#api-detail-indexyearmonthgo-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-getitem) | `IndexYearMonthGO.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-capitalize) | `IndexYearMonthGO.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-center) | `IndexYearMonthGO.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-contains) | `IndexYearMonthGO.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-count) | `IndexYearMonthGO.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-decode) | `IndexYearMonthGO.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-encode) | `IndexYearMonthGO.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-endswith) | `IndexYearMonthGO.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-find) | `IndexYearMonthGO.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-format) | `IndexYearMonthGO.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-index) | `IndexYearMonthGO.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-isalnum) | `IndexYearMonthGO.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-isalpha) | `IndexYearMonthGO.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-isdecimal) | `IndexYearMonthGO.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-isdigit) | `IndexYearMonthGO.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-islower) | `IndexYearMonthGO.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-isnumeric) | `IndexYearMonthGO.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-isspace) | `IndexYearMonthGO.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-istitle) | `IndexYearMonthGO.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-isupper) | `IndexYearMonthGO.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-ljust) | `IndexYearMonthGO.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-len) | `IndexYearMonthGO.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-lower) | `IndexYearMonthGO.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-lstrip) | `IndexYearMonthGO.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-partition) | `IndexYearMonthGO.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-replace) | `IndexYearMonthGO.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-rfind) | `IndexYearMonthGO.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-rindex) | `IndexYearMonthGO.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-rjust) | `IndexYearMonthGO.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-rpartition) | `IndexYearMonthGO.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-rsplit) | `IndexYearMonthGO.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-rstrip) | `IndexYearMonthGO.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-split) | `IndexYearMonthGO.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-startswith) | `IndexYearMonthGO.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-strip) | `IndexYearMonthGO.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-swapcase) | `IndexYearMonthGO.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-title) | `IndexYearMonthGO.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-upper) | `IndexYearMonthGO.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_year_month_go-accessor_string.html#api-sig-indexyearmonthgo-via-str-zfill) | `IndexYearMonthGO.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-getitem) | `IndexYearMonthGO.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-capitalize) | `IndexYearMonthGO.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-center) | `IndexYearMonthGO.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-contains) | `IndexYearMonthGO.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-count) | `IndexYearMonthGO.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-decode) | `IndexYearMonthGO.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-encode) | `IndexYearMonthGO.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-endswith) | `IndexYearMonthGO.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-find) | `IndexYearMonthGO.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-format) | `IndexYearMonthGO.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-index) | `IndexYearMonthGO.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-isalnum) | `IndexYearMonthGO.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-isalpha) | `IndexYearMonthGO.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-isdecimal) | `IndexYearMonthGO.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-isdigit) | `IndexYearMonthGO.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-islower) | `IndexYearMonthGO.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-isnumeric) | `IndexYearMonthGO.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-isspace) | `IndexYearMonthGO.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-istitle) | `IndexYearMonthGO.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-isupper) | `IndexYearMonthGO.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-ljust) | `IndexYearMonthGO.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-len) | `IndexYearMonthGO.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-lower) | `IndexYearMonthGO.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-lstrip) | `IndexYearMonthGO.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-partition) | `IndexYearMonthGO.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-replace) | `IndexYearMonthGO.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-rfind) | `IndexYearMonthGO.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-rindex) | `IndexYearMonthGO.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-rjust) | `IndexYearMonthGO.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-rpartition) | `IndexYearMonthGO.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-rsplit) | `IndexYearMonthGO.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-rstrip) | `IndexYearMonthGO.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-split) | `IndexYearMonthGO.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-startswith) | `IndexYearMonthGO.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-strip) | `IndexYearMonthGO.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-swapcase) | `IndexYearMonthGO.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-title) | `IndexYearMonthGO.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-upper) | `IndexYearMonthGO.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_year_month_go-accessor_string.md#api-sig-indexyearmonthgo-via-str-zfill) | `IndexYearMonthGO.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[IndexYearMonthGO](index_year_month_go.html#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.html#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.html#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.html#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.html#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.html#api-overview-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.html#api-overview-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.html#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.html#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.html#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.html#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.html#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.html#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.html#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.html#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.html#api-overview-indexyearmonthgo-accessor-type-clinic)
+[IndexYearMonthGO](index_year_month_go.md#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.md#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.md#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-overview-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.md#api-overview-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.md#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.md#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.md#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.md#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.md#api-overview-indexyearmonthgo-accessor-type-clinic)
 
-[Previous](index_year_month_go-accessor_datetime.html "Overview: IndexYearMonthGO: Accessor Datetime")
-[Next](index_year_month_go-accessor_regular_expression.html "Overview: IndexYearMonthGO: Accessor Regular Expression")
+[Previous](index_year_month_go-accessor_datetime.md "Overview: IndexYearMonthGO: Accessor Datetime")
+[Next](index_year_month_go-accessor_regular_expression.md "Overview: IndexYearMonthGO: Accessor Regular Expression")
 
 ---
 

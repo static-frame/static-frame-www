@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,34 +135,34 @@ API Detail
 * Overview: Quilt: Attribute
 * [View page source](../_sources/api_overview/quilt-attribute.rst.txt)
 
-[Previous](quilt-exporter.html "Overview: Quilt: Exporter")
-[Next](quilt-method.html "Overview: Quilt: Method")
+[Previous](quilt-exporter.md "Overview: Quilt: Exporter")
+[Next](quilt-method.md "Overview: Quilt: Method")
 
 ---
 
 # Overview: Quilt: Attribute[](#overview-quilt-attribute "Link to this heading")
 
-[Detail: Quilt: Attribute](../api_detail/quilt-attribute.html#api-detail-quilt-attribute)
+[Detail: Quilt: Attribute](../api_detail/quilt-attribute.md#api-detail-quilt-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-static) | `Quilt.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-bus) | `Quilt.bus` | The Bus instance assigned to this Quilt. |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-columns) | `Quilt.columns` | The IndexBase instance assigned for column labels. |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-index) | `Quilt.index` | The IndexBase instance assigned for row labels. |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-inventory) | `Quilt.inventory` | Return a Frame indicating file\_path, last-modified time, and size of underlying… |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-memory) | `Quilt.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-name) | `Quilt.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-nbytes) | `Quilt.nbytes` | Return the total bytes of the underlying NumPy arrays. Returns: int |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-ndim) | `Quilt.ndim` | Return the number of dimensions, which for a Frame is always 2. Returns: int |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-shape) | `Quilt.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-size) | `Quilt.size` | Return the size of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/quilt-attribute.html#api-sig-quilt-status) | `Quilt.status` | Return a Frame indicating loaded status, size, bytes, and shape of all loaded Fr… |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-static) | `Quilt.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-bus) | `Quilt.bus` | The Bus instance assigned to this Quilt. |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-columns) | `Quilt.columns` | The IndexBase instance assigned for column labels. |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-index) | `Quilt.index` | The IndexBase instance assigned for row labels. |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-inventory) | `Quilt.inventory` | Return a Frame indicating file\_path, last-modified time, and size of underlying… |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-memory) | `Quilt.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-name) | `Quilt.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-nbytes) | `Quilt.nbytes` | Return the total bytes of the underlying NumPy arrays. Returns: int |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-ndim) | `Quilt.ndim` | Return the number of dimensions, which for a Frame is always 2. Returns: int |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-shape) | `Quilt.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-size) | `Quilt.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-status) | `Quilt.status` | Return a Frame indicating loaded status, size, bytes, and shape of all loaded Fr… |
 
-[Quilt](quilt.html#api-overview-quilt): [Constructor](quilt-constructor.html#api-overview-quilt-constructor) | [Exporter](quilt-exporter.html#api-overview-quilt-exporter) | [Attribute](#api-overview-quilt-attribute) | [Method](quilt-method.html#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-overview-quilt-dictionary-like) | [Display](quilt-display.html#api-overview-quilt-display) | [Selector](quilt-selector.html#api-overview-quilt-selector) | [Iterator](quilt-iterator.html#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-overview-quilt): [Constructor](quilt-constructor.md#api-overview-quilt-constructor) | [Exporter](quilt-exporter.md#api-overview-quilt-exporter) | [Attribute](#api-overview-quilt-attribute) | [Method](quilt-method.md#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-overview-quilt-dictionary-like) | [Display](quilt-display.md#api-overview-quilt-display) | [Selector](quilt-selector.md#api-overview-quilt-selector) | [Iterator](quilt-iterator.md#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic)
 
-[Previous](quilt-exporter.html "Overview: Quilt: Exporter")
-[Next](quilt-method.html "Overview: Quilt: Method")
+[Previous](quilt-exporter.md "Overview: Quilt: Exporter")
+[Next](quilt-method.md "Overview: Quilt: Method")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Bus: Display
 * [View page source](../_sources/api_detail/bus-display.rst.txt)
 
-[Previous](bus-dictionary_like.html "Detail: Bus: Dictionary-Like")
-[Next](bus-selector.html "Detail: Bus: Selector")
+[Previous](bus-dictionary_like.md "Detail: Bus: Dictionary-Like")
+[Next](bus-selector.md "Detail: Bus: Selector")
 
 ---
 
 # Detail: Bus: Display[](#detail-bus-display "Link to this heading")
 
-[Overview: Bus: Display](../api_overview/bus-display.html#api-overview-bus-display)
+[Overview: Bus: Display](../api_overview/bus-display.md#api-overview-bus-display)
 
 Bus.interface[](#Bus.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -226,11 +226,11 @@ Bus.\_\_str\_\_()[](#static_frame.Bus.__str__ "Link to this definition")
 
     ```
 
-Bus.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.display)[](#static_frame.Bus.display "Link to this definition")
+Bus.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.display)[](#static_frame.Bus.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -250,7 +250,7 @@ Bus.display\_tall(*config=None*, */*)[](#static_frame.Bus.display_tall "Link 
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -267,7 +267,7 @@ Bus.display\_wide(*config=None*, */*)[](#static_frame.Bus.display_wide "Link 
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -280,10 +280,10 @@ Bus.display\_wide(*config=None*, */*)[](#static_frame.Bus.display_wide "Link 
 
     ```
 
-[Bus](bus.html#api-detail-bus): [Constructor](bus-constructor.html#api-detail-bus-constructor) | [Exporter](bus-exporter.html#api-detail-bus-exporter) | [Attribute](bus-attribute.html#api-detail-bus-attribute) | [Method](bus-method.html#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-detail-bus-dictionary-like) | [Display](#api-detail-bus-display) | [Selector](bus-selector.html#api-detail-bus-selector) | [Iterator](bus-iterator.html#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
 
-[Previous](bus-dictionary_like.html "Detail: Bus: Dictionary-Like")
-[Next](bus-selector.html "Detail: Bus: Selector")
+[Previous](bus-dictionary_like.md "Detail: Bus: Dictionary-Like")
+[Next](bus-selector.md "Detail: Bus: Selector")
 
 ---
 

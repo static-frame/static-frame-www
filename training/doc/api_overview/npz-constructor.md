@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: NPZ: Constructor
 * [View page source](../_sources/api_overview/npz-constructor.rst.txt)
 
-[Previous](index_auto_constructor_factory-display.html "Overview: IndexAutoConstructorFactory: Display")
-[Next](npz-attribute.html "Overview: NPZ: Attribute")
+[Previous](index_auto_constructor_factory-display.md "Overview: IndexAutoConstructorFactory: Display")
+[Next](npz-attribute.md "Overview: NPZ: Attribute")
 
 ---
 
 # Overview: NPZ: Constructor[](#overview-npz-constructor "Link to this heading")
 
-[Detail: NPZ: Constructor](../api_detail/npz-constructor.html#api-detail-npz-constructor)
+[Detail: NPZ: Constructor](../api_detail/npz-constructor.md#api-detail-npz-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/npz-constructor.html#api-sig-npz-init) | `NPZ.__init__(fp, mode)` |  |
-| [Detail](../api_detail/npz-constructor.html#api-sig-npz-from-arrays) | `NPZ.from_arrays(blocks, *, index, columns, name, axis)` | Given an iterable of arrays, write out an NPZ or NPY directly, without building… |
-| [Detail](../api_detail/npz-constructor.html#api-sig-npz-from-frames) | `NPZ.from_frames(frames, *, include_index, include_columns, axis, union, name, fill_value)` | Given an iterable of Frames, write out an NPZ or NPY directly, without building… |
+| [Detail](../api_detail/npz-constructor.md#api-sig-npz-init) | `NPZ.__init__(fp, mode)` |  |
+| [Detail](../api_detail/npz-constructor.md#api-sig-npz-from-arrays) | `NPZ.from_arrays(blocks, *, index, columns, name, axis)` | Given an iterable of arrays, write out an NPZ or NPY directly, without building… |
+| [Detail](../api_detail/npz-constructor.md#api-sig-npz-from-frames) | `NPZ.from_frames(frames, *, include_index, include_columns, axis, union, name, fill_value)` | Given an iterable of Frames, write out an NPZ or NPY directly, without building… |
 
-[NPZ](npz.html#api-overview-npz): [Constructor](#api-overview-npz-constructor) | [Attribute](npz-attribute.html#api-overview-npz-attribute) | [Method](npz-method.html#api-overview-npz-method) | [Display](npz-display.html#api-overview-npz-display)
+[NPZ](npz.md#api-overview-npz): [Constructor](#api-overview-npz-constructor) | [Attribute](npz-attribute.md#api-overview-npz-attribute) | [Method](npz-method.md#api-overview-npz-method) | [Display](npz-display.md#api-overview-npz-display)
 
-[Previous](index_auto_constructor_factory-display.html "Overview: IndexAutoConstructorFactory: Display")
-[Next](npz-attribute.html "Overview: NPZ: Attribute")
+[Previous](index_auto_constructor_factory-display.md "Overview: IndexAutoConstructorFactory: Display")
+[Next](npz-attribute.md "Overview: NPZ: Attribute")
 
 ---
 

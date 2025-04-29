@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexDateGO: Operator Unary
 * [View page source](../_sources/api_detail/index_date_go-operator_unary.rst.txt)
 
-[Previous](index_date_go-operator_binary.html "Detail: IndexDateGO: Operator Binary")
-[Next](index_date_go-accessor_values.html "Detail: IndexDateGO: Accessor Values")
+[Previous](index_date_go-operator_binary.md "Detail: IndexDateGO: Operator Binary")
+[Next](index_date_go-accessor_values.md "Detail: IndexDateGO: Accessor Values")
 
 ---
 
 # Detail: IndexDateGO: Operator Unary[](#detail-indexdatego-operator-unary "Link to this heading")
 
-[Overview: IndexDateGO: Operator Unary](../api_overview/index_date_go-operator_unary.html#api-overview-indexdatego-operator-unary)
+[Overview: IndexDateGO: Operator Unary](../api_overview/index_date_go-operator_unary.md#api-overview-indexdatego-operator-unary)
 
 IndexDateGO.\_\_abs\_\_()[](#static_frame.IndexDateGO.__abs__ "Link to this definition")
 :   ```
@@ -200,10 +200,10 @@ IndexDateGO.\_\_pos\_\_()[](#static_frame.IndexDateGO.__pos__ "Link to this d
 
     ```
 
-[IndexDateGO](index_date_go.html#api-detail-indexdatego): [Constructor](index_date_go-constructor.html#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.html#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-detail-indexdatego-attribute) | [Method](index_date_go-method.html#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.html#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.html#api-detail-indexdatego-display) | [Selector](index_date_go-selector.html#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.html#api-detail-indexdatego-operator-binary) | [Operator Unary](#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.html#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.html#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.html#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-detail-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-detail-indexdatego): [Constructor](index_date_go-constructor.md#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-detail-indexdatego-attribute) | [Method](index_date_go-method.md#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-detail-indexdatego-display) | [Selector](index_date_go-selector.md#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-detail-indexdatego-operator-binary) | [Operator Unary](#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-detail-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-operator_binary.html "Detail: IndexDateGO: Operator Binary")
-[Next](index_date_go-accessor_values.html "Detail: IndexDateGO: Accessor Values")
+[Previous](index_date_go-operator_binary.md "Detail: IndexDateGO: Operator Binary")
+[Next](index_date_go-accessor_values.md "Detail: IndexDateGO: Accessor Values")
 
 ---
 

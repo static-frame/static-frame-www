@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Frame: Accessor Datetime
 * [View page source](../_sources/api_detail/frame-accessor_datetime.rst.txt)
 
-[Previous](frame-accessor_values.html "Detail: Frame: Accessor Values")
-[Next](frame-accessor_string.html "Detail: Frame: Accessor String")
+[Previous](frame-accessor_values.md "Detail: Frame: Accessor Values")
+[Next](frame-accessor_string.md "Detail: Frame: Accessor String")
 
 ---
 
 # Detail: Frame: Accessor Datetime[](#detail-frame-accessor-datetime "Link to this heading")
 
-[Overview: Frame: Accessor Datetime](../api_overview/frame-accessor_datetime.html#api-overview-frame-accessor-datetime)
+[Overview: Frame: Accessor Datetime](../api_overview/frame-accessor_datetime.md#api-overview-frame-accessor-datetime)
 
 Frame.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.__call__)
+    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.__call__)
     :   Parameters:
         :   **fill\_value** – If NAT are encountered, use this value.
 
@@ -401,7 +401,7 @@ Frame.via\_dt.weekday
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.weekday)
+    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.weekday)
     :   Return the day of the week as an integer, where Monday is 0 and Sunday is 6.
 
     ```
@@ -429,7 +429,7 @@ Frame.via\_dt.quarter
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.quarter)
+    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.quarter)
     :   Return the quarter of the year as an integer, where January through March is quarter 1.
 
     ```
@@ -457,7 +457,7 @@ Frame.via\_dt.is\_month\_end
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_end)
+    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_end)
     :   Return Boolean indicators if the day is the month end.
 
     ```
@@ -485,7 +485,7 @@ Frame.via\_dt.is\_month\_start
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_start)
+    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_start)
     :   Return Boolean indicators if the day is the month start.
 
     ```
@@ -513,7 +513,7 @@ Frame.via\_dt.is\_year\_end
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_end)
+    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_end)
     :   Return Boolean indicators if the day is the year end.
 
     ```
@@ -541,7 +541,7 @@ Frame.via\_dt.is\_year\_start
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_start)
+    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_start)
     :   Return Boolean indicators if the day is the year start.
 
     ```
@@ -569,7 +569,7 @@ Frame.via\_dt.is\_quarter\_end
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_end)
+    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_end)
     :   Return Boolean indicators if the day is the quarter end.
 
     ```
@@ -597,7 +597,7 @@ Frame.via\_dt.is\_quarter\_start
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_start)
+    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_start)
     :   Return Boolean indicators if the day is the quarter start.
 
     ```
@@ -625,7 +625,7 @@ Frame.via\_dt.timetuple
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.timetuple)
+    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.timetuple)
     :   Return a `time.struct_time` such as returned by time.localtime().
 
     ```
@@ -653,7 +653,7 @@ Frame.via\_dt.isoformat(*\**, *sep*, *timespec*)
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.isoformat)
+    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.isoformat)
     :   Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
 
     ```
@@ -681,7 +681,7 @@ Frame.via\_dt.fromisoformat
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.fromisoformat)
+    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.fromisoformat)
     :   Return a `datetime.date` object from an ISO 8601 format.
 
     ```
@@ -709,7 +709,7 @@ Frame.via\_dt.strftime(*format*)
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strftime)
+    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strftime)
     :   Return a string representing the date, controlled by an explicit `format` string.
 
     ```
@@ -737,7 +737,7 @@ Frame.via\_dt.strptime(*format*)
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strptime)
+    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strptime)
     :   Return a Python datetime object from parsing a string defined with `format`.
 
     ```
@@ -765,7 +765,7 @@ Frame.via\_dt.strpdate(*format*)
 :   Frame.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strpdate)
+    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strpdate)
     :   Return a Python date object from parsing a string defined with `format`.
 
     ```
@@ -789,10 +789,10 @@ Frame.via\_dt.strpdate(*format*)
 
     ```
 
-[Frame](frame.html#api-detail-frame): [Constructor](frame-constructor.html#api-detail-frame-constructor) | [Exporter](frame-exporter.html#api-detail-frame-exporter) | [Attribute](frame-attribute.html#api-detail-frame-attribute) | [Method](frame-method.html#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-detail-frame-dictionary-like) | [Display](frame-display.html#api-detail-frame-display) | [Assignment](frame-assignment.html#api-detail-frame-assignment) | [Selector](frame-selector.html#api-detail-frame-selector) | [Iterator](frame-iterator.html#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-detail-frame-accessor-values) | [Accessor Datetime](#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-detail-frame-accessor-reduce)
+[Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)
 
-[Previous](frame-accessor_values.html "Detail: Frame: Accessor Values")
-[Next](frame-accessor_string.html "Detail: Frame: Accessor String")
+[Previous](frame-accessor_values.md "Detail: Frame: Accessor Values")
+[Next](frame-accessor_string.md "Detail: Frame: Accessor String")
 
 ---
 

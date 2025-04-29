@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: SeriesHE: Accessor String
 * [View page source](../_sources/api_overview/series_he-accessor_string.rst.txt)
 
-[Previous](series_he-accessor_datetime.html "Overview: SeriesHE: Accessor Datetime")
-[Next](series_he-accessor_fill_value.html "Overview: SeriesHE: Accessor Fill Value")
+[Previous](series_he-accessor_datetime.md "Overview: SeriesHE: Accessor Datetime")
+[Next](series_he-accessor_fill_value.md "Overview: SeriesHE: Accessor Fill Value")
 
 ---
 
 # Overview: SeriesHE: Accessor String[](#overview-serieshe-accessor-string "Link to this heading")
 
-[Detail: SeriesHE: Accessor String](../api_detail/series_he-accessor_string.html#api-detail-serieshe-accessor-string)
+[Detail: SeriesHE: Accessor String](../api_detail/series_he-accessor_string.md#api-detail-serieshe-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-getitem) | `SeriesHE.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-capitalize) | `SeriesHE.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-center) | `SeriesHE.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-contains) | `SeriesHE.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-count) | `SeriesHE.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-decode) | `SeriesHE.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-encode) | `SeriesHE.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-endswith) | `SeriesHE.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-find) | `SeriesHE.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-format) | `SeriesHE.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-index) | `SeriesHE.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-isalnum) | `SeriesHE.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-isalpha) | `SeriesHE.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-isdecimal) | `SeriesHE.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-isdigit) | `SeriesHE.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-islower) | `SeriesHE.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-isnumeric) | `SeriesHE.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-isspace) | `SeriesHE.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-istitle) | `SeriesHE.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-isupper) | `SeriesHE.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-ljust) | `SeriesHE.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-len) | `SeriesHE.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-lower) | `SeriesHE.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-lstrip) | `SeriesHE.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-partition) | `SeriesHE.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-replace) | `SeriesHE.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-rfind) | `SeriesHE.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-rindex) | `SeriesHE.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-rjust) | `SeriesHE.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-rpartition) | `SeriesHE.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-rsplit) | `SeriesHE.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-rstrip) | `SeriesHE.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-split) | `SeriesHE.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-startswith) | `SeriesHE.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-strip) | `SeriesHE.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-swapcase) | `SeriesHE.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-title) | `SeriesHE.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-upper) | `SeriesHE.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/series_he-accessor_string.html#api-sig-serieshe-via-str-zfill) | `SeriesHE.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-getitem) | `SeriesHE.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-capitalize) | `SeriesHE.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-center) | `SeriesHE.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-contains) | `SeriesHE.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-count) | `SeriesHE.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-decode) | `SeriesHE.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-encode) | `SeriesHE.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-endswith) | `SeriesHE.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-find) | `SeriesHE.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-format) | `SeriesHE.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-index) | `SeriesHE.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-isalnum) | `SeriesHE.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-isalpha) | `SeriesHE.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-isdecimal) | `SeriesHE.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-isdigit) | `SeriesHE.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-islower) | `SeriesHE.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-isnumeric) | `SeriesHE.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-isspace) | `SeriesHE.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-istitle) | `SeriesHE.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-isupper) | `SeriesHE.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-ljust) | `SeriesHE.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-len) | `SeriesHE.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-lower) | `SeriesHE.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-lstrip) | `SeriesHE.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-partition) | `SeriesHE.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-replace) | `SeriesHE.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-rfind) | `SeriesHE.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-rindex) | `SeriesHE.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-rjust) | `SeriesHE.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-rpartition) | `SeriesHE.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-rsplit) | `SeriesHE.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-rstrip) | `SeriesHE.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-split) | `SeriesHE.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-startswith) | `SeriesHE.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-strip) | `SeriesHE.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-swapcase) | `SeriesHE.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-title) | `SeriesHE.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-upper) | `SeriesHE.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/series_he-accessor_string.md#api-sig-serieshe-via-str-zfill) | `SeriesHE.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[SeriesHE](series_he.html#api-overview-serieshe): [Constructor](series_he-constructor.html#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | [Method](series_he-method.html#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-overview-serieshe-dictionary-like) | [Display](series_he-display.html#api-overview-serieshe-display) | [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | [Selector](series_he-selector.html#api-overview-serieshe-selector) | [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime) | [Accessor String](#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-overview-serieshe): [Constructor](series_he-constructor.md#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | [Method](series_he-method.md#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-overview-serieshe-dictionary-like) | [Display](series_he-display.md#api-overview-serieshe-display) | [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | [Selector](series_he-selector.md#api-overview-serieshe-selector) | [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime) | [Accessor String](#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-accessor_datetime.html "Overview: SeriesHE: Accessor Datetime")
-[Next](series_he-accessor_fill_value.html "Overview: SeriesHE: Accessor Fill Value")
+[Previous](series_he-accessor_datetime.md "Overview: SeriesHE: Accessor Datetime")
+[Next](series_he-accessor_fill_value.md "Overview: SeriesHE: Accessor Fill Value")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexYearGO: Method
 * [View page source](../_sources/api_detail/index_year_go-method.rst.txt)
 
-[Previous](index_year_go-attribute.html "Detail: IndexYearGO: Attribute")
-[Next](index_year_go-dictionary_like.html "Detail: IndexYearGO: Dictionary-Like")
+[Previous](index_year_go-attribute.md "Detail: IndexYearGO: Attribute")
+[Next](index_year_go-dictionary_like.md "Detail: IndexYearGO: Dictionary-Like")
 
 ---
 
 # Detail: IndexYearGO: Method[](#detail-indexyeargo-method "Link to this heading")
 
-[Overview: IndexYearGO: Method](../api_overview/index_year_go-method.html#api-overview-indexyeargo-method)
+[Overview: IndexYearGO: Method](../api_overview/index_year_go-method.md#api-overview-indexyeargo-method)
 
 IndexYearGO.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexYearGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -419,7 +419,7 @@ IndexYearGO.difference(*\*others*)[](#static_frame.IndexYearGO.difference "Li
     ```
 
 IndexYearGO.dropfalsy()[](#static_frame.IndexYearGO.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexYearGO(('1620', 'NaT', '1619'))
@@ -438,7 +438,7 @@ IndexYearGO.dropfalsy()[](#static_frame.IndexYearGO.dropfalsy "Link to this d
     ```
 
 IndexYearGO.dropna()[](#static_frame.IndexYearGO.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexYearGO(('1620', 'NaT', '1619'))
@@ -518,7 +518,7 @@ IndexYearGO.extend(*values*, */*)[](#static_frame.IndexYearGO.extend "Link to
     ```
 
 IndexYearGO.fillfalsy(*value*, */*)[](#static_frame.IndexYearGO.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -537,7 +537,7 @@ IndexYearGO.fillfalsy(*value*, */*)[](#static_frame.IndexYearGO.fillfalsy "Li
     ```
 
 IndexYearGO.fillna(*value*, */*)[](#static_frame.IndexYearGO.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -560,10 +560,10 @@ IndexYearGO.fillna(*value*, */*)[](#static_frame.IndexYearGO.fillna "Link to 
     ```
 
 IndexYearGO.head(*count=5*, */*)[](#static_frame.IndexYearGO.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -582,7 +582,7 @@ IndexYearGO.head(*count=5*, */*)[](#static_frame.IndexYearGO.head "Link to th
     ```
 
 IndexYearGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexYearGO.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -706,7 +706,7 @@ IndexYearGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#stat
     ```
 
 IndexYearGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexYearGO.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1020,10 +1020,10 @@ IndexYearGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#stat
     ```
 
 IndexYearGO.tail(*count=5*, */*)[](#static_frame.IndexYearGO.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -1130,10 +1130,10 @@ IndexYearGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#stati
 
     ```
 
-[IndexYearGO](index_year_go.html#api-detail-indexyeargo): [Constructor](index_year_go-constructor.html#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-detail-indexyeargo-attribute) | [Method](#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.html#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-detail-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-detail-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-detail-indexyeargo): [Constructor](index_year_go-constructor.md#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-detail-indexyeargo-attribute) | [Method](#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.md#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-detail-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-detail-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-attribute.html "Detail: IndexYearGO: Attribute")
-[Next](index_year_go-dictionary_like.html "Detail: IndexYearGO: Dictionary-Like")
+[Previous](index_year_go-attribute.md "Detail: IndexYearGO: Attribute")
+[Next](index_year_go-dictionary_like.md "Detail: IndexYearGO: Dictionary-Like")
 
 ---
 

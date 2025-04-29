@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,69 +135,69 @@ API Detail
 * Overview: Index: Method
 * [View page source](../_sources/api_overview/index-method.rst.txt)
 
-[Previous](index-attribute.html "Overview: Index: Attribute")
-[Next](index-dictionary_like.html "Overview: Index: Dictionary-Like")
+[Previous](index-attribute.md "Overview: Index: Attribute")
+[Next](index-dictionary_like.md "Overview: Index: Dictionary-Like")
 
 ---
 
 # Overview: Index: Method[](#overview-index-method "Link to this heading")
 
-[Detail: Index: Method](../api_detail/index-method.html#api-detail-index-method)
+[Detail: Index: Method](../api_detail/index-method.md#api-detail-index-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-method.html#api-sig-index-array) | `Index.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
-| [Detail](../api_detail/index-method.html#api-sig-index-array-ufunc) | `Index.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
-| [Detail](../api_detail/index-method.html#api-sig-index-bool) | `Index.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/index-method.html#api-sig-index-copy) | `Index.__copy__()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index-method.html#api-sig-index-deepcopy) | `Index.__deepcopy__(memo)` |  |
-| [Detail](../api_detail/index-method.html#api-sig-index-len) | `Index.__len__()` |  |
-| [Detail](../api_detail/index-method.html#api-sig-index-all) | `Index.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/index-method.html#api-sig-index-any) | `Index.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
-| [Detail](../api_detail/index-method.html#api-sig-index-astype) | `Index.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
-| [Detail](../api_detail/index-method.html#id1) | `Index.copy()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index-method.html#api-sig-index-cumprod) | `Index.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index-method.html#api-sig-index-cumsum) | `Index.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
-| [Detail](../api_detail/index-method.html#api-sig-index-difference) | `Index.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
-| [Detail](../api_detail/index-method.html#api-sig-index-dropfalsy) | `Index.dropfalsy()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index-method.html#api-sig-index-dropna) | `Index.dropna()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index-method.html#api-sig-index-equals) | `Index.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
-| [Detail](../api_detail/index-method.html#api-sig-index-fillfalsy) | `Index.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
-| [Detail](../api_detail/index-method.html#api-sig-index-fillna) | `Index.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
-| [Detail](../api_detail/index-method.html#api-sig-index-head) | `Index.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
-| [Detail](../api_detail/index-method.html#api-sig-index-iloc-searchsorted) | `Index.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
-| [Detail](../api_detail/index-method.html#api-sig-index-intersection) | `Index.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
-| [Detail](../api_detail/index-method.html#api-sig-index-isfalsy) | `Index.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index-method.html#api-sig-index-isin) | `Index.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
-| [Detail](../api_detail/index-method.html#api-sig-index-isna) | `Index.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index-method.html#api-sig-index-label-widths-at-depth) | `Index.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
-| [Detail](../api_detail/index-method.html#api-sig-index-level-add) | `Index.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
-| [Detail](../api_detail/index-method.html#api-sig-index-loc-searchsorted) | `Index.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
-| [Detail](../api_detail/index-method.html#api-sig-index-loc-to-iloc) | `Index.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
-| [Detail](../api_detail/index-method.html#api-sig-index-max) | `Index.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index-method.html#api-sig-index-mean) | `Index.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/index-method.html#api-sig-index-median) | `Index.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/index-method.html#api-sig-index-min) | `Index.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index-method.html#api-sig-index-notfalsy) | `Index.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index-method.html#api-sig-index-notna) | `Index.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index-method.html#api-sig-index-prod) | `Index.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index-method.html#api-sig-index-relabel) | `Index.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
-| [Detail](../api_detail/index-method.html#api-sig-index-rename) | `Index.rename(name)` | Return a new Frame with an updated name attribute. |
-| [Detail](../api_detail/index-method.html#api-sig-index-roll) | `Index.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
-| [Detail](../api_detail/index-method.html#api-sig-index-sample) | `Index.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/index-method.html#api-sig-index-sort) | `Index.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
-| [Detail](../api_detail/index-method.html#api-sig-index-std) | `Index.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index-method.html#api-sig-index-sum) | `Index.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
-| [Detail](../api_detail/index-method.html#api-sig-index-tail) | `Index.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
-| [Detail](../api_detail/index-method.html#api-sig-index-union) | `Index.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
-| [Detail](../api_detail/index-method.html#api-sig-index-unique) | `Index.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
-| [Detail](../api_detail/index-method.html#api-sig-index-values-at-depth) | `Index.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
-| [Detail](../api_detail/index-method.html#api-sig-index-var) | `Index.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/index-method.md#api-sig-index-array) | `Index.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
+| [Detail](../api_detail/index-method.md#api-sig-index-array-ufunc) | `Index.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
+| [Detail](../api_detail/index-method.md#api-sig-index-bool) | `Index.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/index-method.md#api-sig-index-copy) | `Index.__copy__()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index-method.md#api-sig-index-deepcopy) | `Index.__deepcopy__(memo)` |  |
+| [Detail](../api_detail/index-method.md#api-sig-index-len) | `Index.__len__()` |  |
+| [Detail](../api_detail/index-method.md#api-sig-index-all) | `Index.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/index-method.md#api-sig-index-any) | `Index.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/index-method.md#api-sig-index-astype) | `Index.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
+| [Detail](../api_detail/index-method.md#id1) | `Index.copy()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index-method.md#api-sig-index-cumprod) | `Index.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index-method.md#api-sig-index-cumsum) | `Index.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/index-method.md#api-sig-index-difference) | `Index.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
+| [Detail](../api_detail/index-method.md#api-sig-index-dropfalsy) | `Index.dropfalsy()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index-method.md#api-sig-index-dropna) | `Index.dropna()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index-method.md#api-sig-index-equals) | `Index.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
+| [Detail](../api_detail/index-method.md#api-sig-index-fillfalsy) | `Index.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
+| [Detail](../api_detail/index-method.md#api-sig-index-fillna) | `Index.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
+| [Detail](../api_detail/index-method.md#api-sig-index-head) | `Index.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
+| [Detail](../api_detail/index-method.md#api-sig-index-iloc-searchsorted) | `Index.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index-method.md#api-sig-index-intersection) | `Index.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
+| [Detail](../api_detail/index-method.md#api-sig-index-isfalsy) | `Index.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index-method.md#api-sig-index-isin) | `Index.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
+| [Detail](../api_detail/index-method.md#api-sig-index-isna) | `Index.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index-method.md#api-sig-index-label-widths-at-depth) | `Index.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
+| [Detail](../api_detail/index-method.md#api-sig-index-level-add) | `Index.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
+| [Detail](../api_detail/index-method.md#api-sig-index-loc-searchsorted) | `Index.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
+| [Detail](../api_detail/index-method.md#api-sig-index-loc-to-iloc) | `Index.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
+| [Detail](../api_detail/index-method.md#api-sig-index-max) | `Index.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index-method.md#api-sig-index-mean) | `Index.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/index-method.md#api-sig-index-median) | `Index.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/index-method.md#api-sig-index-min) | `Index.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index-method.md#api-sig-index-notfalsy) | `Index.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index-method.md#api-sig-index-notna) | `Index.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index-method.md#api-sig-index-prod) | `Index.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index-method.md#api-sig-index-relabel) | `Index.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
+| [Detail](../api_detail/index-method.md#api-sig-index-rename) | `Index.rename(name)` | Return a new Frame with an updated name attribute. |
+| [Detail](../api_detail/index-method.md#api-sig-index-roll) | `Index.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
+| [Detail](../api_detail/index-method.md#api-sig-index-sample) | `Index.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
+| [Detail](../api_detail/index-method.md#api-sig-index-sort) | `Index.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
+| [Detail](../api_detail/index-method.md#api-sig-index-std) | `Index.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index-method.md#api-sig-index-sum) | `Index.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/index-method.md#api-sig-index-tail) | `Index.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
+| [Detail](../api_detail/index-method.md#api-sig-index-union) | `Index.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
+| [Detail](../api_detail/index-method.md#api-sig-index-unique) | `Index.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
+| [Detail](../api_detail/index-method.md#api-sig-index-values-at-depth) | `Index.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
+| [Detail](../api_detail/index-method.md#api-sig-index-var) | `Index.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
-[Index](index.html#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](index-exporter.html#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | [Display](index-display.html#api-overview-index-display) | [Selector](index-selector.html#api-overview-index-selector) | [Iterator](index-iterator.html#api-overview-index-iterator) | [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](index.md#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](index-exporter.md#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | [Display](index-display.md#api-overview-index-display) | [Selector](index-selector.md#api-overview-index-selector) | [Iterator](index-iterator.md#api-overview-index-iterator) | [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](index-attribute.html "Overview: Index: Attribute")
-[Next](index-dictionary_like.html "Overview: Index: Dictionary-Like")
+[Previous](index-attribute.md "Overview: Index: Attribute")
+[Next](index-dictionary_like.md "Overview: Index: Dictionary-Like")
 
 ---
 

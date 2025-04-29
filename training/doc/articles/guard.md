@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -141,8 +141,8 @@ API Detail
 * Improving Code Quality with Array and DataFrame Type Hints
 * [View page source](../_sources/articles/guard.rst.txt)
 
-[Previous](../contributing.html "Contributing")
-[Next](ftyping.html "Type-Hinting DataFrames for Static Analysis and Runtime Validation")
+[Previous](../contributing.md "Contributing")
+[Next](ftyping.md "Type-Hinting DataFrames for Static Analysis and Runtime Validation")
 
 ---
 
@@ -430,8 +430,8 @@ Python type annotations can make static analysis of types a valuable check of co
 
 Providing correct type annotations is an investment. Reusing those annotations for runtime checks provides the best of both worlds. StaticFrame’s `CallGuard` runtime type checker is specialized to correctly evaluate fully specified generic NumPy types, as well as all generic StaticFrame containers.
 
-[Previous](../contributing.html "Contributing")
-[Next](ftyping.html "Type-Hinting DataFrames for Static Analysis and Runtime Validation")
+[Previous](../contributing.md "Contributing")
+[Next](ftyping.md "Type-Hinting DataFrames for Static Analysis and Runtime Validation")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexSecond: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_second-accessor_regular_expression.rst.txt)
 
-[Previous](index_second-accessor_string.html "Overview: IndexSecond: Accessor String")
-[Next](index_second-accessor_hashlib.html "Overview: IndexSecond: Accessor Hashlib")
+[Previous](index_second-accessor_string.md "Overview: IndexSecond: Accessor String")
+[Next](index_second-accessor_hashlib.md "Overview: IndexSecond: Accessor Hashlib")
 
 ---
 
 # Overview: IndexSecond: Accessor Regular Expression[](#overview-indexsecond-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexSecond: Accessor Regular Expression](../api_detail/index_second-accessor_regular_expression.html#api-detail-indexsecond-accessor-regular-expression)
+[Detail: IndexSecond: Accessor Regular Expression](../api_detail/index_second-accessor_regular_expression.md#api-detail-indexsecond-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second-accessor_regular_expression.html#api-sig-indexsecond-via-re-search) | `IndexSecond.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_second-accessor_regular_expression.html#api-sig-indexsecond-via-re-match) | `IndexSecond.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_second-accessor_regular_expression.html#api-sig-indexsecond-via-re-fullmatch) | `IndexSecond.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_second-accessor_regular_expression.html#api-sig-indexsecond-via-re-split) | `IndexSecond.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_second-accessor_regular_expression.html#api-sig-indexsecond-via-re-findall) | `IndexSecond.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_second-accessor_regular_expression.html#api-sig-indexsecond-via-re-sub) | `IndexSecond.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_second-accessor_regular_expression.html#api-sig-indexsecond-via-re-subn) | `IndexSecond.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_second-accessor_regular_expression.md#api-sig-indexsecond-via-re-search) | `IndexSecond.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_second-accessor_regular_expression.md#api-sig-indexsecond-via-re-match) | `IndexSecond.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_second-accessor_regular_expression.md#api-sig-indexsecond-via-re-fullmatch) | `IndexSecond.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_second-accessor_regular_expression.md#api-sig-indexsecond-via-re-split) | `IndexSecond.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_second-accessor_regular_expression.md#api-sig-indexsecond-via-re-findall) | `IndexSecond.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_second-accessor_regular_expression.md#api-sig-indexsecond-via-re-sub) | `IndexSecond.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_second-accessor_regular_expression.md#api-sig-indexsecond-via-re-subn) | `IndexSecond.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexSecond](index_second.html#api-overview-indexsecond): [Constructor](index_second-constructor.html#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.html#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-overview-indexsecond-attribute) | [Method](index_second-method.html#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.html#api-overview-indexsecond-display) | [Selector](index_second-selector.html#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.html#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-overview-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-overview-indexsecond): [Constructor](index_second-constructor.md#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-overview-indexsecond-attribute) | [Method](index_second-method.md#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.md#api-overview-indexsecond-display) | [Selector](index_second-selector.md#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.md#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-overview-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-accessor_string.html "Overview: IndexSecond: Accessor String")
-[Next](index_second-accessor_hashlib.html "Overview: IndexSecond: Accessor Hashlib")
+[Previous](index_second-accessor_string.md "Overview: IndexSecond: Accessor String")
+[Next](index_second-accessor_hashlib.md "Overview: IndexSecond: Accessor Hashlib")
 
 ---
 

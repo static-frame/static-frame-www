@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: StoreConfig: Attribute
 * [View page source](../_sources/api_overview/store_config-attribute.rst.txt)
 
-[Previous](store_config-exporter.html "Overview: StoreConfig: Exporter")
-[Next](store_config-method.html "Overview: StoreConfig: Method")
+[Previous](store_config-exporter.md "Overview: StoreConfig: Exporter")
+[Next](store_config-method.md "Overview: StoreConfig: Method")
 
 ---
 
 # Overview: StoreConfig: Attribute[](#overview-storeconfig-attribute "Link to this heading")
 
-[Detail: StoreConfig: Attribute](../api_detail/store_config-attribute.html#api-detail-storeconfig-attribute)
+[Detail: StoreConfig: Attribute](../api_detail/store_config-attribute.md#api-detail-storeconfig-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-columns-constructors) | `StoreConfig.columns_constructors` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-columns-depth) | `StoreConfig.columns_depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-columns-name-depth-level) | `StoreConfig.columns_name_depth_level` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-columns-select) | `StoreConfig.columns_select` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-consolidate-blocks) | `StoreConfig.consolidate_blocks` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-dtypes) | `StoreConfig.dtypes` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-include-columns) | `StoreConfig.include_columns` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-include-columns-name) | `StoreConfig.include_columns_name` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-include-index) | `StoreConfig.include_index` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-include-index-name) | `StoreConfig.include_index_name` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-index-constructors) | `StoreConfig.index_constructors` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-index-depth) | `StoreConfig.index_depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-index-name-depth-level) | `StoreConfig.index_name_depth_level` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-label-decoder) | `StoreConfig.label_decoder` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-label-encoder) | `StoreConfig.label_encoder` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-merge-hierarchical-labels) | `StoreConfig.merge_hierarchical_labels` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-mp-context) | `StoreConfig.mp_context` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-read-chunksize) | `StoreConfig.read_chunksize` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-read-max-workers) | `StoreConfig.read_max_workers` | The type of the None singleton. |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-skip-footer) | `StoreConfig.skip_footer` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-skip-header) | `StoreConfig.skip_header` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-trim-nadir) | `StoreConfig.trim_nadir` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-write-chunksize) | `StoreConfig.write_chunksize` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/store_config-attribute.html#api-sig-storeconfig-write-max-workers) | `StoreConfig.write_max_workers` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-columns-constructors) | `StoreConfig.columns_constructors` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-columns-depth) | `StoreConfig.columns_depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-columns-name-depth-level) | `StoreConfig.columns_name_depth_level` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-columns-select) | `StoreConfig.columns_select` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-consolidate-blocks) | `StoreConfig.consolidate_blocks` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-dtypes) | `StoreConfig.dtypes` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-include-columns) | `StoreConfig.include_columns` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-include-columns-name) | `StoreConfig.include_columns_name` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-include-index) | `StoreConfig.include_index` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-include-index-name) | `StoreConfig.include_index_name` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-index-constructors) | `StoreConfig.index_constructors` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-index-depth) | `StoreConfig.index_depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-index-name-depth-level) | `StoreConfig.index_name_depth_level` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-label-decoder) | `StoreConfig.label_decoder` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-label-encoder) | `StoreConfig.label_encoder` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-merge-hierarchical-labels) | `StoreConfig.merge_hierarchical_labels` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-mp-context) | `StoreConfig.mp_context` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-read-chunksize) | `StoreConfig.read_chunksize` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-read-max-workers) | `StoreConfig.read_max_workers` | The type of the None singleton. |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-skip-footer) | `StoreConfig.skip_footer` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-skip-header) | `StoreConfig.skip_header` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-trim-nadir) | `StoreConfig.trim_nadir` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-write-chunksize) | `StoreConfig.write_chunksize` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-write-max-workers) | `StoreConfig.write_max_workers` | The type of the None singleton. |
 
-[StoreConfig](store_config.html#api-overview-storeconfig): [Constructor](store_config-constructor.html#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.html#api-overview-storeconfig-exporter) | [Attribute](#api-overview-storeconfig-attribute) | [Method](store_config-method.html#api-overview-storeconfig-method) | [Display](store_config-display.html#api-overview-storeconfig-display)
+[StoreConfig](store_config.md#api-overview-storeconfig): [Constructor](store_config-constructor.md#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-overview-storeconfig-exporter) | [Attribute](#api-overview-storeconfig-attribute) | [Method](store_config-method.md#api-overview-storeconfig-method) | [Display](store_config-display.md#api-overview-storeconfig-display)
 
-[Previous](store_config-exporter.html "Overview: StoreConfig: Exporter")
-[Next](store_config-method.html "Overview: StoreConfig: Method")
+[Previous](store_config-exporter.md "Overview: StoreConfig: Exporter")
+[Next](store_config-method.md "Overview: StoreConfig: Method")
 
 ---
 

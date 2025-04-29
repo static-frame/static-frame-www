@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexAutoConstructorFactory
 * [View page source](../_sources/api_overview/index_auto_constructor_factory.rst.txt)
 
-[Previous](index_default_constructor_factory.html "Overview: IndexDefaultConstructorFactory")
-[Next](npz.html "Overview: NPZ")
+[Previous](index_default_constructor_factory.md "Overview: IndexDefaultConstructorFactory")
+[Next](npz.md "Overview: NPZ")
 
 ---
 
 # Overview: IndexAutoConstructorFactory[](#overview-indexautoconstructorfactory "Link to this heading")
 
-[Detail: IndexAutoConstructorFactory](../api_detail/index_auto_constructor_factory.html#api-detail-indexautoconstructorfactory)
+[Detail: IndexAutoConstructorFactory](../api_detail/index_auto_constructor_factory.md#api-detail-indexautoconstructorfactory)
 
 |  |  |
 | --- | --- |
-| [Constructor](index_auto_constructor_factory-constructor.html#api-overview-indexautoconstructorfactory-constructor) | Alternative constructors for creating instances. |
-| [Exporter](index_auto_constructor_factory-exporter.html#api-overview-indexautoconstructorfactory-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Method](index_auto_constructor_factory-method.html#api-overview-indexautoconstructorfactory-method) | Methods for general functionality. |
-| [Display](index_auto_constructor_factory-display.html#api-overview-indexautoconstructorfactory-display) | Methods for providing a text representation of the object. |
+| [Constructor](index_auto_constructor_factory-constructor.md#api-overview-indexautoconstructorfactory-constructor) | Alternative constructors for creating instances. |
+| [Exporter](index_auto_constructor_factory-exporter.md#api-overview-indexautoconstructorfactory-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Method](index_auto_constructor_factory-method.md#api-overview-indexautoconstructorfactory-method) | Methods for general functionality. |
+| [Display](index_auto_constructor_factory-display.md#api-overview-indexautoconstructorfactory-display) | Methods for providing a text representation of the object. |
 
-[IndexAutoConstructorFactory](#api-overview-indexautoconstructorfactory): [Constructor](index_auto_constructor_factory-constructor.html#api-overview-indexautoconstructorfactory-constructor) | [Exporter](index_auto_constructor_factory-exporter.html#api-overview-indexautoconstructorfactory-exporter) | [Method](index_auto_constructor_factory-method.html#api-overview-indexautoconstructorfactory-method) | [Display](index_auto_constructor_factory-display.html#api-overview-indexautoconstructorfactory-display)
+[IndexAutoConstructorFactory](#api-overview-indexautoconstructorfactory): [Constructor](index_auto_constructor_factory-constructor.md#api-overview-indexautoconstructorfactory-constructor) | [Exporter](index_auto_constructor_factory-exporter.md#api-overview-indexautoconstructorfactory-exporter) | [Method](index_auto_constructor_factory-method.md#api-overview-indexautoconstructorfactory-method) | [Display](index_auto_constructor_factory-display.md#api-overview-indexautoconstructorfactory-display)
 
-[Previous](index_default_constructor_factory.html "Overview: IndexDefaultConstructorFactory")
-[Next](npz.html "Overview: NPZ")
+[Previous](index_default_constructor_factory.md "Overview: IndexDefaultConstructorFactory")
+[Next](npz.md "Overview: NPZ")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexSecondGO: Attribute
 * [View page source](../_sources/api_overview/index_second_go-attribute.rst.txt)
 
-[Previous](index_second_go-exporter.html "Overview: IndexSecondGO: Exporter")
-[Next](index_second_go-method.html "Overview: IndexSecondGO: Method")
+[Previous](index_second_go-exporter.md "Overview: IndexSecondGO: Exporter")
+[Next](index_second_go-method.md "Overview: IndexSecondGO: Method")
 
 ---
 
 # Overview: IndexSecondGO: Attribute[](#overview-indexsecondgo-attribute "Link to this heading")
 
-[Detail: IndexSecondGO: Attribute](../api_detail/index_second_go-attribute.html#api-detail-indexsecondgo-attribute)
+[Detail: IndexSecondGO: Attribute](../api_detail/index_second_go-attribute.md#api-detail-indexsecondgo-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-static) | `IndexSecondGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-depth) | `IndexSecondGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-dtype) | `IndexSecondGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-index-types) | `IndexSecondGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-memory) | `IndexSecondGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-mloc) | `IndexSecondGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-name) | `IndexSecondGO.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-names) | `IndexSecondGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-nbytes) | `IndexSecondGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-ndim) | `IndexSecondGO.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-positions) | `IndexSecondGO.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-shape) | `IndexSecondGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_second_go-attribute.html#api-sig-indexsecondgo-size) | `IndexSecondGO.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-static) | `IndexSecondGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-depth) | `IndexSecondGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-dtype) | `IndexSecondGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-index-types) | `IndexSecondGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-memory) | `IndexSecondGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-mloc) | `IndexSecondGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-name) | `IndexSecondGO.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-names) | `IndexSecondGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-nbytes) | `IndexSecondGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-ndim) | `IndexSecondGO.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-positions) | `IndexSecondGO.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-shape) | `IndexSecondGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_second_go-attribute.md#api-sig-indexsecondgo-size) | `IndexSecondGO.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexSecondGO](index_second_go.html#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.html#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-overview-indexsecondgo-exporter) | [Attribute](#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-overview-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.md#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-overview-indexsecondgo-exporter) | [Attribute](#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-overview-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-exporter.html "Overview: IndexSecondGO: Exporter")
-[Next](index_second_go-method.html "Overview: IndexSecondGO: Method")
+[Previous](index_second_go-exporter.md "Overview: IndexSecondGO: Exporter")
+[Next](index_second_go-method.md "Overview: IndexSecondGO: Method")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: Series: Accessor Regular Expression
 * [View page source](../_sources/api_overview/series-accessor_regular_expression.rst.txt)
 
-[Previous](series-accessor_fill_value.html "Overview: Series: Accessor Fill Value")
-[Next](series-accessor_hashlib.html "Overview: Series: Accessor Hashlib")
+[Previous](series-accessor_fill_value.md "Overview: Series: Accessor Fill Value")
+[Next](series-accessor_hashlib.md "Overview: Series: Accessor Hashlib")
 
 ---
 
 # Overview: Series: Accessor Regular Expression[](#overview-series-accessor-regular-expression "Link to this heading")
 
-[Detail: Series: Accessor Regular Expression](../api_detail/series-accessor_regular_expression.html#api-detail-series-accessor-regular-expression)
+[Detail: Series: Accessor Regular Expression](../api_detail/series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-accessor_regular_expression.html#api-sig-series-via-re-search) | `Series.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/series-accessor_regular_expression.html#api-sig-series-via-re-match) | `Series.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/series-accessor_regular_expression.html#api-sig-series-via-re-fullmatch) | `Series.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/series-accessor_regular_expression.html#api-sig-series-via-re-split) | `Series.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/series-accessor_regular_expression.html#api-sig-series-via-re-findall) | `Series.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/series-accessor_regular_expression.html#api-sig-series-via-re-sub) | `Series.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/series-accessor_regular_expression.html#api-sig-series-via-re-subn) | `Series.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/series-accessor_regular_expression.md#api-sig-series-via-re-search) | `Series.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/series-accessor_regular_expression.md#api-sig-series-via-re-match) | `Series.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/series-accessor_regular_expression.md#api-sig-series-via-re-fullmatch) | `Series.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/series-accessor_regular_expression.md#api-sig-series-via-re-split) | `Series.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/series-accessor_regular_expression.md#api-sig-series-via-re-findall) | `Series.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/series-accessor_regular_expression.md#api-sig-series-via-re-sub) | `Series.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/series-accessor_regular_expression.md#api-sig-series-via-re-subn) | `Series.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-accessor_fill_value.html "Overview: Series: Accessor Fill Value")
-[Next](series-accessor_hashlib.html "Overview: Series: Accessor Hashlib")
+[Previous](series-accessor_fill_value.md "Overview: Series: Accessor Fill Value")
+[Next](series-accessor_hashlib.md "Overview: Series: Accessor Hashlib")
 
 ---
 

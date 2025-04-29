@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: NPY
 * [View page source](../_sources/api_overview/npy.rst.txt)
 
-[Previous](npz.html "Overview: NPZ")
-[Next](memory_display.html "Overview: MemoryDisplay")
+[Previous](npz.md "Overview: NPZ")
+[Next](memory_display.md "Overview: MemoryDisplay")
 
 ---
 
 # Overview: NPY[](#overview-npy "Link to this heading")
 
-[Detail: NPY](../api_detail/npy.html#api-detail-npy)
+[Detail: NPY](../api_detail/npy.md#api-detail-npy)
 
 |  |  |
 | --- | --- |
-| [Constructor](npy-constructor.html#api-overview-npy-constructor) | Alternative constructors for creating instances. |
-| [Attribute](npy-attribute.html#api-overview-npy-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](npy-method.html#api-overview-npy-method) | Methods for general functionality. |
-| [Display](npy-display.html#api-overview-npy-display) | Methods for providing a text representation of the object. |
+| [Constructor](npy-constructor.md#api-overview-npy-constructor) | Alternative constructors for creating instances. |
+| [Attribute](npy-attribute.md#api-overview-npy-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](npy-method.md#api-overview-npy-method) | Methods for general functionality. |
+| [Display](npy-display.md#api-overview-npy-display) | Methods for providing a text representation of the object. |
 
-[NPY](#api-overview-npy): [Constructor](npy-constructor.html#api-overview-npy-constructor) | [Attribute](npy-attribute.html#api-overview-npy-attribute) | [Method](npy-method.html#api-overview-npy-method) | [Display](npy-display.html#api-overview-npy-display)
+[NPY](#api-overview-npy): [Constructor](npy-constructor.md#api-overview-npy-constructor) | [Attribute](npy-attribute.md#api-overview-npy-attribute) | [Method](npy-method.md#api-overview-npy-method) | [Display](npy-display.md#api-overview-npy-display)
 
-[Previous](npz.html "Overview: NPZ")
-[Next](memory_display.html "Overview: MemoryDisplay")
+[Previous](npz.md "Overview: NPZ")
+[Next](memory_display.md "Overview: MemoryDisplay")
 
 ---
 

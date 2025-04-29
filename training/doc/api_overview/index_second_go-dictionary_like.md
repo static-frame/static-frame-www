@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexSecondGO: Dictionary-Like
 * [View page source](../_sources/api_overview/index_second_go-dictionary_like.rst.txt)
 
-[Previous](index_second_go-method.html "Overview: IndexSecondGO: Method")
-[Next](index_second_go-display.html "Overview: IndexSecondGO: Display")
+[Previous](index_second_go-method.md "Overview: IndexSecondGO: Method")
+[Next](index_second_go-display.md "Overview: IndexSecondGO: Display")
 
 ---
 
 # Overview: IndexSecondGO: Dictionary-Like[](#overview-indexsecondgo-dictionary-like "Link to this heading")
 
-[Detail: IndexSecondGO: Dictionary-Like](../api_detail/index_second_go-dictionary_like.html#api-detail-indexsecondgo-dictionary-like)
+[Detail: IndexSecondGO: Dictionary-Like](../api_detail/index_second_go-dictionary_like.md#api-detail-indexsecondgo-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second_go-dictionary_like.html#api-sig-indexsecondgo-contains) | `IndexSecondGO.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
-| [Detail](../api_detail/index_second_go-dictionary_like.html#api-sig-indexsecondgo-iter) | `IndexSecondGO.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index_second_go-dictionary_like.html#api-sig-indexsecondgo-reversed) | `IndexSecondGO.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index_second_go-dictionary_like.html#api-sig-indexsecondgo-values) | `IndexSecondGO.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
+| [Detail](../api_detail/index_second_go-dictionary_like.md#api-sig-indexsecondgo-contains) | `IndexSecondGO.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
+| [Detail](../api_detail/index_second_go-dictionary_like.md#api-sig-indexsecondgo-iter) | `IndexSecondGO.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index_second_go-dictionary_like.md#api-sig-indexsecondgo-reversed) | `IndexSecondGO.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index_second_go-dictionary_like.md#api-sig-indexsecondgo-values) | `IndexSecondGO.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
 
-[IndexSecondGO](index_second_go.html#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.html#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-overview-indexsecondgo-method) | [Dictionary-Like](#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-overview-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.md#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-overview-indexsecondgo-method) | [Dictionary-Like](#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-overview-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-method.html "Overview: IndexSecondGO: Method")
-[Next](index_second_go-display.html "Overview: IndexSecondGO: Display")
+[Previous](index_second_go-method.md "Overview: IndexSecondGO: Method")
+[Next](index_second_go-display.md "Overview: IndexSecondGO: Display")
 
 ---
 

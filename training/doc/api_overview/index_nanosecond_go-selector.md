@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexNanosecondGO: Selector
 * [View page source](../_sources/api_overview/index_nanosecond_go-selector.rst.txt)
 
-[Previous](index_nanosecond_go-display.html "Overview: IndexNanosecondGO: Display")
-[Next](index_nanosecond_go-iterator.html "Overview: IndexNanosecondGO: Iterator")
+[Previous](index_nanosecond_go-display.md "Overview: IndexNanosecondGO: Display")
+[Next](index_nanosecond_go-iterator.md "Overview: IndexNanosecondGO: Iterator")
 
 ---
 
 # Overview: IndexNanosecondGO: Selector[](#overview-indexnanosecondgo-selector "Link to this heading")
 
-[Detail: IndexNanosecondGO: Selector](../api_detail/index_nanosecond_go-selector.html#api-detail-indexnanosecondgo-selector)
+[Detail: IndexNanosecondGO: Selector](../api_detail/index_nanosecond_go-selector.md#api-detail-indexnanosecondgo-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond_go-selector.html#api-sig-indexnanosecondgo-drop-iloc) | `IndexNanosecondGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
-| [Detail](../api_detail/index_nanosecond_go-selector.html#api-sig-indexnanosecondgo-drop-loc) | `IndexNanosecondGO.drop.loc[key]` |  |
-| [Detail](../api_detail/index_nanosecond_go-selector.html#api-sig-indexnanosecondgo) | `IndexNanosecondGO[key]` | Extract a new index given an iloc key. |
-| [Detail](../api_detail/index_nanosecond_go-selector.html#api-sig-indexnanosecondgo-iloc) | `IndexNanosecondGO.iloc[key]` |  |
-| [Detail](../api_detail/index_nanosecond_go-selector.html#api-sig-indexnanosecondgo-loc) | `IndexNanosecondGO.loc[key]` |  |
+| [Detail](../api_detail/index_nanosecond_go-selector.md#api-sig-indexnanosecondgo-drop-iloc) | `IndexNanosecondGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
+| [Detail](../api_detail/index_nanosecond_go-selector.md#api-sig-indexnanosecondgo-drop-loc) | `IndexNanosecondGO.drop.loc[key]` |  |
+| [Detail](../api_detail/index_nanosecond_go-selector.md#api-sig-indexnanosecondgo) | `IndexNanosecondGO[key]` | Extract a new index given an iloc key. |
+| [Detail](../api_detail/index_nanosecond_go-selector.md#api-sig-indexnanosecondgo-iloc) | `IndexNanosecondGO.iloc[key]` |  |
+| [Detail](../api_detail/index_nanosecond_go-selector.md#api-sig-indexnanosecondgo-loc) | `IndexNanosecondGO.loc[key]` |  |
 
-[IndexNanosecondGO](index_nanosecond_go.html#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.html#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.html#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.html#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.html#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.html#api-overview-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.html#api-overview-indexnanosecondgo-display) | [Selector](#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.html#api-overview-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.html#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.html#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.html#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.html#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.html#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.html#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.html#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.html#api-overview-indexnanosecondgo-accessor-type-clinic)
+[IndexNanosecondGO](index_nanosecond_go.md#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.md#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.md#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.md#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.md#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.md#api-overview-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.md#api-overview-indexnanosecondgo-display) | [Selector](#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.md#api-overview-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.md#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.md#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.md#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.md#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.md#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.md#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.md#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.md#api-overview-indexnanosecondgo-accessor-type-clinic)
 
-[Previous](index_nanosecond_go-display.html "Overview: IndexNanosecondGO: Display")
-[Next](index_nanosecond_go-iterator.html "Overview: IndexNanosecondGO: Iterator")
+[Previous](index_nanosecond_go-display.md "Overview: IndexNanosecondGO: Display")
+[Next](index_nanosecond_go-iterator.md "Overview: IndexNanosecondGO: Iterator")
 
 ---
 

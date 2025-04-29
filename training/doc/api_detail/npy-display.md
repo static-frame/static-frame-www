@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: NPY: Display
 * [View page source](../_sources/api_detail/npy-display.rst.txt)
 
-[Previous](npy-method.html "Detail: NPY: Method")
-[Next](memory_display-constructor.html "Detail: MemoryDisplay: Constructor")
+[Previous](npy-method.md "Detail: NPY: Method")
+[Next](memory_display-constructor.md "Detail: MemoryDisplay: Constructor")
 
 ---
 
 # Detail: NPY: Display[](#detail-npy-display "Link to this heading")
 
-[Overview: NPY: Display](../api_overview/npy-display.html#api-overview-npy-display)
+[Overview: NPY: Display](../api_overview/npy-display.md#api-overview-npy-display)
 
 NPY.interface[](#NPY.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -153,10 +153,10 @@ NPY.\_\_repr\_\_()[](#static_frame.NPY.__repr__ "Link to this definition")
 NPY.\_\_str\_\_()[](#static_frame.NPY.__str__ "Link to this definition")
 :   Return str(self).
 
-[NPY](npy.html#api-detail-npy): [Constructor](npy-constructor.html#api-detail-npy-constructor) | [Attribute](npy-attribute.html#api-detail-npy-attribute) | [Method](npy-method.html#api-detail-npy-method) | [Display](#api-detail-npy-display)
+[NPY](npy.md#api-detail-npy): [Constructor](npy-constructor.md#api-detail-npy-constructor) | [Attribute](npy-attribute.md#api-detail-npy-attribute) | [Method](npy-method.md#api-detail-npy-method) | [Display](#api-detail-npy-display)
 
-[Previous](npy-method.html "Detail: NPY: Method")
-[Next](memory_display-constructor.html "Detail: MemoryDisplay: Constructor")
+[Previous](npy-method.md "Detail: NPY: Method")
+[Next](memory_display-constructor.md "Detail: MemoryDisplay: Constructor")
 
 ---
 

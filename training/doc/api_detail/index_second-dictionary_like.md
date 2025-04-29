@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexSecond: Dictionary-Like
 * [View page source](../_sources/api_detail/index_second-dictionary_like.rst.txt)
 
-[Previous](index_second-method.html "Detail: IndexSecond: Method")
-[Next](index_second-display.html "Detail: IndexSecond: Display")
+[Previous](index_second-method.md "Detail: IndexSecond: Method")
+[Next](index_second-display.md "Detail: IndexSecond: Display")
 
 ---
 
 # Detail: IndexSecond: Dictionary-Like[](#detail-indexsecond-dictionary-like "Link to this heading")
 
-[Overview: IndexSecond: Dictionary-Like](../api_overview/index_second-dictionary_like.html#api-overview-indexsecond-dictionary-like)
+[Overview: IndexSecond: Dictionary-Like](../api_overview/index_second-dictionary_like.md#api-overview-indexsecond-dictionary-like)
 
 IndexSecond.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexSecond.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
@@ -220,7 +220,7 @@ IndexSecond.\_\_reversed\_\_()[](#static_frame.IndexSecond.__reversed__ "Link
     ```
 
 IndexSecond.values[](#static_frame.IndexSecond.values "Link to this definition")
-:   A 1D NumPy array of the values in the [`Index`](index-selector.html#Index "Index"). This array will have the same dtype as the container.
+:   A 1D NumPy array of the values in the [`Index`](index-selector.md#Index "Index"). This array will have the same dtype as the container.
 
     ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -235,10 +235,10 @@ IndexSecond.values[](#static_frame.IndexSecond.values "Link to this definitio
 
     ```
 
-[IndexSecond](index_second.html#api-detail-indexsecond): [Constructor](index_second-constructor.html#api-detail-indexsecond-constructor) | [Exporter](index_second-exporter.html#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-detail-indexsecond-attribute) | [Method](index_second-method.html#api-detail-indexsecond-method) | [Dictionary-Like](#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.html#api-detail-indexsecond-display) | [Selector](index_second-selector.html#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.html#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-detail-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-detail-indexsecond): [Constructor](index_second-constructor.md#api-detail-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-detail-indexsecond-attribute) | [Method](index_second-method.md#api-detail-indexsecond-method) | [Dictionary-Like](#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.md#api-detail-indexsecond-display) | [Selector](index_second-selector.md#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.md#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-detail-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-method.html "Detail: IndexSecond: Method")
-[Next](index_second-display.html "Detail: IndexSecond: Display")
+[Previous](index_second-method.md "Detail: IndexSecond: Method")
+[Next](index_second-display.md "Detail: IndexSecond: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: DisplayActive
 * [View page source](../_sources/api_overview/display_active.rst.txt)
 
-[Previous](fill_value_auto.html "Overview: FillValueAuto")
-[Next](display_config.html "Overview: DisplayConfig")
+[Previous](fill_value_auto.md "Overview: FillValueAuto")
+[Next](display_config.md "Overview: DisplayConfig")
 
 ---
 
 # Overview: DisplayActive[](#overview-displayactive "Link to this heading")
 
-[Detail: DisplayActive](../api_detail/display_active.html#api-detail-displayactive)
+[Detail: DisplayActive](../api_detail/display_active.md#api-detail-displayactive)
 
 |  |  |
 | --- | --- |
-| [Constructor](display_active-constructor.html#api-overview-displayactive-constructor) | Alternative constructors for creating instances. |
-| [Attribute](display_active-attribute.html#api-overview-displayactive-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](display_active-method.html#api-overview-displayactive-method) | Methods for general functionality. |
-| [Dictionary-Like](display_active-dictionary_like.html#api-overview-displayactive-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](display_active-display.html#api-overview-displayactive-display) | Methods for providing a text representation of the object. |
+| [Constructor](display_active-constructor.md#api-overview-displayactive-constructor) | Alternative constructors for creating instances. |
+| [Attribute](display_active-attribute.md#api-overview-displayactive-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](display_active-method.md#api-overview-displayactive-method) | Methods for general functionality. |
+| [Dictionary-Like](display_active-dictionary_like.md#api-overview-displayactive-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](display_active-display.md#api-overview-displayactive-display) | Methods for providing a text representation of the object. |
 
-[DisplayActive](#api-overview-displayactive): [Constructor](display_active-constructor.html#api-overview-displayactive-constructor) | [Attribute](display_active-attribute.html#api-overview-displayactive-attribute) | [Method](display_active-method.html#api-overview-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.html#api-overview-displayactive-dictionary-like) | [Display](display_active-display.html#api-overview-displayactive-display)
+[DisplayActive](#api-overview-displayactive): [Constructor](display_active-constructor.md#api-overview-displayactive-constructor) | [Attribute](display_active-attribute.md#api-overview-displayactive-attribute) | [Method](display_active-method.md#api-overview-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.md#api-overview-displayactive-dictionary-like) | [Display](display_active-display.md#api-overview-displayactive-display)
 
-[Previous](fill_value_auto.html "Overview: FillValueAuto")
-[Next](display_config.html "Overview: DisplayConfig")
+[Previous](fill_value_auto.md "Overview: FillValueAuto")
+[Next](display_config.md "Overview: DisplayConfig")
 
 ---
 

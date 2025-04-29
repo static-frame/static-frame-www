@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: FrameGO: Accessor Type Clinic
 * [View page source](../_sources/api_detail/frame_go-accessor_type_clinic.rst.txt)
 
-[Previous](frame_go-accessor_hashlib.html "Detail: FrameGO: Accessor Hashlib")
-[Next](frame_go-accessor_reduce.html "Detail: FrameGO: Accessor Reduce")
+[Previous](frame_go-accessor_hashlib.md "Detail: FrameGO: Accessor Hashlib")
+[Next](frame_go-accessor_reduce.md "Detail: FrameGO: Accessor Reduce")
 
 ---
 
 # Detail: FrameGO: Accessor Type Clinic[](#detail-framego-accessor-type-clinic "Link to this heading")
 
-[Overview: FrameGO: Accessor Type Clinic](../api_overview/frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic)
+[Overview: FrameGO: Accessor Type Clinic](../api_overview/frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic)
 
 FrameGO.via\_type\_clinic.to\_hint
 :   FrameGO.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -169,7 +169,7 @@ FrameGO.via\_type\_clinic.to\_hint
 FrameGO.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   FrameGO.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -194,7 +194,7 @@ FrameGO.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 FrameGO.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   FrameGO.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -204,7 +204,7 @@ FrameGO.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 FrameGO.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   FrameGO.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -239,7 +239,7 @@ FrameGO.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 FrameGO.via\_type\_clinic.\_\_repr\_\_
 :   FrameGO.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -258,10 +258,10 @@ FrameGO.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[FrameGO](frame_go.html#api-detail-framego): [Constructor](frame_go-constructor.html#api-detail-framego-constructor) | [Exporter](frame_go-exporter.html#api-detail-framego-exporter) | [Attribute](frame_go-attribute.html#api-detail-framego-attribute) | [Method](frame_go-method.html#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-detail-framego-dictionary-like) | [Display](frame_go-display.html#api-detail-framego-display) | [Assignment](frame_go-assignment.html#api-detail-framego-assignment) | [Selector](frame_go-selector.html#api-detail-framego-selector) | [Iterator](frame_go-iterator.html#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-detail-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)
 
-[Previous](frame_go-accessor_hashlib.html "Detail: FrameGO: Accessor Hashlib")
-[Next](frame_go-accessor_reduce.html "Detail: FrameGO: Accessor Reduce")
+[Previous](frame_go-accessor_hashlib.md "Detail: FrameGO: Accessor Hashlib")
+[Next](frame_go-accessor_reduce.md "Detail: FrameGO: Accessor Reduce")
 
 ---
 

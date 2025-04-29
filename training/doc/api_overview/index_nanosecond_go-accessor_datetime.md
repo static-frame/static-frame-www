@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexNanosecondGO: Accessor Datetime
 * [View page source](../_sources/api_overview/index_nanosecond_go-accessor_datetime.rst.txt)
 
-[Previous](index_nanosecond_go-accessor_values.html "Overview: IndexNanosecondGO: Accessor Values")
-[Next](index_nanosecond_go-accessor_string.html "Overview: IndexNanosecondGO: Accessor String")
+[Previous](index_nanosecond_go-accessor_values.md "Overview: IndexNanosecondGO: Accessor Values")
+[Next](index_nanosecond_go-accessor_string.md "Overview: IndexNanosecondGO: Accessor String")
 
 ---
 
 # Overview: IndexNanosecondGO: Accessor Datetime[](#overview-indexnanosecondgo-accessor-datetime "Link to this heading")
 
-[Detail: IndexNanosecondGO: Accessor Datetime](../api_detail/index_nanosecond_go-accessor_datetime.html#api-detail-indexnanosecondgo-accessor-datetime)
+[Detail: IndexNanosecondGO: Accessor Datetime](../api_detail/index_nanosecond_go-accessor_datetime.md#api-detail-indexnanosecondgo-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-call) | `IndexNanosecondGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-year) | `IndexNanosecondGO.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-year-month) | `IndexNanosecondGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-year-quarter) | `IndexNanosecondGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-month) | `IndexNanosecondGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-day) | `IndexNanosecondGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-hour) | `IndexNanosecondGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-minute) | `IndexNanosecondGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-second) | `IndexNanosecondGO.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-weekday) | `IndexNanosecondGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-quarter) | `IndexNanosecondGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-is-month-end) | `IndexNanosecondGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-is-month-start) | `IndexNanosecondGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-is-year-end) | `IndexNanosecondGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-is-year-start) | `IndexNanosecondGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-is-quarter-end) | `IndexNanosecondGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-is-quarter-start) | `IndexNanosecondGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-timetuple) | `IndexNanosecondGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-isoformat) | `IndexNanosecondGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-fromisoformat) | `IndexNanosecondGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-strftime) | `IndexNanosecondGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-strptime) | `IndexNanosecondGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.html#api-sig-indexnanosecondgo-via-dt-strpdate) | `IndexNanosecondGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-call) | `IndexNanosecondGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-year) | `IndexNanosecondGO.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-year-month) | `IndexNanosecondGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-year-quarter) | `IndexNanosecondGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-month) | `IndexNanosecondGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-day) | `IndexNanosecondGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-hour) | `IndexNanosecondGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-minute) | `IndexNanosecondGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-second) | `IndexNanosecondGO.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-weekday) | `IndexNanosecondGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-quarter) | `IndexNanosecondGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-is-month-end) | `IndexNanosecondGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-is-month-start) | `IndexNanosecondGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-is-year-end) | `IndexNanosecondGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-is-year-start) | `IndexNanosecondGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-is-quarter-end) | `IndexNanosecondGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-is-quarter-start) | `IndexNanosecondGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-timetuple) | `IndexNanosecondGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-isoformat) | `IndexNanosecondGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-fromisoformat) | `IndexNanosecondGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-strftime) | `IndexNanosecondGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-strptime) | `IndexNanosecondGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_nanosecond_go-accessor_datetime.md#api-sig-indexnanosecondgo-via-dt-strpdate) | `IndexNanosecondGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexNanosecondGO](index_nanosecond_go.html#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.html#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.html#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.html#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.html#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.html#api-overview-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.html#api-overview-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.html#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.html#api-overview-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.html#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.html#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.html#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.html#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.html#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.html#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.html#api-overview-indexnanosecondgo-accessor-type-clinic)
+[IndexNanosecondGO](index_nanosecond_go.md#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.md#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.md#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.md#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.md#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.md#api-overview-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.md#api-overview-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.md#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.md#api-overview-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.md#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.md#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.md#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.md#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.md#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.md#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.md#api-overview-indexnanosecondgo-accessor-type-clinic)
 
-[Previous](index_nanosecond_go-accessor_values.html "Overview: IndexNanosecondGO: Accessor Values")
-[Next](index_nanosecond_go-accessor_string.html "Overview: IndexNanosecondGO: Accessor String")
+[Previous](index_nanosecond_go-accessor_values.md "Overview: IndexNanosecondGO: Accessor Values")
+[Next](index_nanosecond_go-accessor_string.md "Overview: IndexNanosecondGO: Accessor String")
 
 ---
 

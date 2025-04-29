@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMillisecondGO: Method
 * [View page source](../_sources/api_detail/index_millisecond_go-method.rst.txt)
 
-[Previous](index_millisecond_go-attribute.html "Detail: IndexMillisecondGO: Attribute")
-[Next](index_millisecond_go-dictionary_like.html "Detail: IndexMillisecondGO: Dictionary-Like")
+[Previous](index_millisecond_go-attribute.md "Detail: IndexMillisecondGO: Attribute")
+[Next](index_millisecond_go-dictionary_like.md "Detail: IndexMillisecondGO: Dictionary-Like")
 
 ---
 
 # Detail: IndexMillisecondGO: Method[](#detail-indexmillisecondgo-method "Link to this heading")
 
-[Overview: IndexMillisecondGO: Method](../api_overview/index_millisecond_go-method.html#api-overview-indexmillisecondgo-method)
+[Overview: IndexMillisecondGO: Method](../api_overview/index_millisecond_go-method.md#api-overview-indexmillisecondgo-method)
 
 IndexMillisecondGO.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexMillisecondGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -420,7 +420,7 @@ IndexMillisecondGO.difference(*\*others*)[](#static_frame.IndexMillisecondGO.
     ```
 
 IndexMillisecondGO.dropfalsy()[](#static_frame.IndexMillisecondGO.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexMillisecondGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -439,7 +439,7 @@ IndexMillisecondGO.dropfalsy()[](#static_frame.IndexMillisecondGO.dropfalsy "
     ```
 
 IndexMillisecondGO.dropna()[](#static_frame.IndexMillisecondGO.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexMillisecondGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -519,7 +519,7 @@ IndexMillisecondGO.extend(*values*, */*)[](#static_frame.IndexMillisecondGO.e
     ```
 
 IndexMillisecondGO.fillfalsy(*value*, */*)[](#static_frame.IndexMillisecondGO.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -538,7 +538,7 @@ IndexMillisecondGO.fillfalsy(*value*, */*)[](#static_frame.IndexMillisecondGO
     ```
 
 IndexMillisecondGO.fillna(*value*, */*)[](#static_frame.IndexMillisecondGO.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -561,10 +561,10 @@ IndexMillisecondGO.fillna(*value*, */*)[](#static_frame.IndexMillisecondGO.fi
     ```
 
 IndexMillisecondGO.head(*count=5*, */*)[](#static_frame.IndexMillisecondGO.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexMillisecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -583,7 +583,7 @@ IndexMillisecondGO.head(*count=5*, */*)[](#static_frame.IndexMillisecondGO.he
     ```
 
 IndexMillisecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexMillisecondGO.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -707,7 +707,7 @@ IndexMillisecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[
     ```
 
 IndexMillisecondGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexMillisecondGO.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1025,10 +1025,10 @@ IndexMillisecondGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[
     ```
 
 IndexMillisecondGO.tail(*count=5*, */*)[](#static_frame.IndexMillisecondGO.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexMillisecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -1137,10 +1137,10 @@ IndexMillisecondGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[]
 
     ```
 
-[IndexMillisecondGO](index_millisecond_go.html#api-detail-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.html#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.html#api-detail-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.html#api-detail-indexmillisecondgo-attribute) | [Method](#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.html#api-detail-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.html#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.html#api-detail-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.html#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.html#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.html#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.html#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.html#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.html#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.html#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.html#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.html#api-detail-indexmillisecondgo-accessor-type-clinic)
+[IndexMillisecondGO](index_millisecond_go.md#api-detail-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.md#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-detail-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-detail-indexmillisecondgo-attribute) | [Method](#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-detail-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.md#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-detail-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-detail-indexmillisecondgo-accessor-type-clinic)
 
-[Previous](index_millisecond_go-attribute.html "Detail: IndexMillisecondGO: Attribute")
-[Next](index_millisecond_go-dictionary_like.html "Detail: IndexMillisecondGO: Dictionary-Like")
+[Previous](index_millisecond_go-attribute.md "Detail: IndexMillisecondGO: Attribute")
+[Next](index_millisecond_go-dictionary_like.md "Detail: IndexMillisecondGO: Dictionary-Like")
 
 ---
 

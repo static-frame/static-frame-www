@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,30 +136,30 @@ API Detail
 * Detail: HLoc
 * [View page source](../_sources/api_detail/hloc.rst.txt)
 
-[Previous](index_nanosecond_go.html "Detail: IndexNanosecondGO")
-[Next](iloc.html "Detail: ILoc")
+[Previous](index_nanosecond_go.md "Detail: IndexNanosecondGO")
+[Next](iloc.md "Detail: ILoc")
 
 ---
 
 # Detail: HLoc[](#detail-hloc "Link to this heading")
 
-[Overview: HLoc](../api_overview/hloc.html#api-overview-hloc)
+[Overview: HLoc](../api_overview/hloc.md#api-overview-hloc)
 
-*class* HLoc(*key*)[[source]](../_modules/static_frame/core/hloc.html#HLoc)[](#static_frame.HLoc "Link to this definition")
-:   A simple wrapper for embedding hierarchical specifications for [`static_frame.IndexHierarchy`](index_hierarchy.html#static_frame.IndexHierarchy "static_frame.IndexHierarchy") within a single axis argument of a `loc` selection.
+*class* HLoc(*key*)[[source]](../_modules/static_frame/core/hloc.md#HLoc)[](#static_frame.HLoc "Link to this definition")
+:   A simple wrapper for embedding hierarchical specifications for [`static_frame.IndexHierarchy`](index_hierarchy.md#static_frame.IndexHierarchy "static_frame.IndexHierarchy") within a single axis argument of a `loc` selection.
 
     Implemented as a container of hierarchical keys that defines NULL slices for all lower dimensions that are not defined at construction.
 
-* [Constructor](hloc-constructor.html#api-detail-hloc-constructor): Alternative constructors for creating instances.
-* [Attribute](hloc-attribute.html#api-detail-hloc-attribute): Attributes for retrieving basic characteristics.
-* [Method](hloc-method.html#api-detail-hloc-method): Methods for general functionality.
-* [Dictionary-Like](hloc-dictionary_like.html#api-detail-hloc-dictionary-like): All dictionary-like methods and iterators.
-* [Display](hloc-display.html#api-detail-hloc-display): Methods for providing a text representation of the object.
+* [Constructor](hloc-constructor.md#api-detail-hloc-constructor): Alternative constructors for creating instances.
+* [Attribute](hloc-attribute.md#api-detail-hloc-attribute): Attributes for retrieving basic characteristics.
+* [Method](hloc-method.md#api-detail-hloc-method): Methods for general functionality.
+* [Dictionary-Like](hloc-dictionary_like.md#api-detail-hloc-dictionary-like): All dictionary-like methods and iterators.
+* [Display](hloc-display.md#api-detail-hloc-display): Methods for providing a text representation of the object.
 
-[HLoc](#api-detail-hloc): [Constructor](hloc-constructor.html#api-detail-hloc-constructor) | [Attribute](hloc-attribute.html#api-detail-hloc-attribute) | [Method](hloc-method.html#api-detail-hloc-method) | [Dictionary-Like](hloc-dictionary_like.html#api-detail-hloc-dictionary-like) | [Display](hloc-display.html#api-detail-hloc-display)
+[HLoc](#api-detail-hloc): [Constructor](hloc-constructor.md#api-detail-hloc-constructor) | [Attribute](hloc-attribute.md#api-detail-hloc-attribute) | [Method](hloc-method.md#api-detail-hloc-method) | [Dictionary-Like](hloc-dictionary_like.md#api-detail-hloc-dictionary-like) | [Display](hloc-display.md#api-detail-hloc-display)
 
-[Previous](index_nanosecond_go.html "Detail: IndexNanosecondGO")
-[Next](iloc.html "Detail: ILoc")
+[Previous](index_nanosecond_go.md "Detail: IndexNanosecondGO")
+[Next](iloc.md "Detail: ILoc")
 
 ---
 

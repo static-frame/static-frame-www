@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexDateGO: Dictionary-Like
 * [View page source](../_sources/api_overview/index_date_go-dictionary_like.rst.txt)
 
-[Previous](index_date_go-method.html "Overview: IndexDateGO: Method")
-[Next](index_date_go-display.html "Overview: IndexDateGO: Display")
+[Previous](index_date_go-method.md "Overview: IndexDateGO: Method")
+[Next](index_date_go-display.md "Overview: IndexDateGO: Display")
 
 ---
 
 # Overview: IndexDateGO: Dictionary-Like[](#overview-indexdatego-dictionary-like "Link to this heading")
 
-[Detail: IndexDateGO: Dictionary-Like](../api_detail/index_date_go-dictionary_like.html#api-detail-indexdatego-dictionary-like)
+[Detail: IndexDateGO: Dictionary-Like](../api_detail/index_date_go-dictionary_like.md#api-detail-indexdatego-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date_go-dictionary_like.html#api-sig-indexdatego-contains) | `IndexDateGO.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
-| [Detail](../api_detail/index_date_go-dictionary_like.html#api-sig-indexdatego-iter) | `IndexDateGO.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index_date_go-dictionary_like.html#api-sig-indexdatego-reversed) | `IndexDateGO.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index_date_go-dictionary_like.html#api-sig-indexdatego-values) | `IndexDateGO.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
+| [Detail](../api_detail/index_date_go-dictionary_like.md#api-sig-indexdatego-contains) | `IndexDateGO.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
+| [Detail](../api_detail/index_date_go-dictionary_like.md#api-sig-indexdatego-iter) | `IndexDateGO.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index_date_go-dictionary_like.md#api-sig-indexdatego-reversed) | `IndexDateGO.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index_date_go-dictionary_like.md#api-sig-indexdatego-values) | `IndexDateGO.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
 
-[IndexDateGO](index_date_go.html#api-overview-indexdatego): [Constructor](index_date_go-constructor.html#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.html#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-overview-indexdatego-attribute) | [Method](index_date_go-method.html#api-overview-indexdatego-method) | [Dictionary-Like](#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.html#api-overview-indexdatego-display) | [Selector](index_date_go-selector.html#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-overview-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.html#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.html#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.html#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.html#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.html#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-overview-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-overview-indexdatego): [Constructor](index_date_go-constructor.md#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-overview-indexdatego-attribute) | [Method](index_date_go-method.md#api-overview-indexdatego-method) | [Dictionary-Like](#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-overview-indexdatego-display) | [Selector](index_date_go-selector.md#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-overview-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-overview-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-method.html "Overview: IndexDateGO: Method")
-[Next](index_date_go-display.html "Overview: IndexDateGO: Display")
+[Previous](index_date_go-method.md "Overview: IndexDateGO: Method")
+[Next](index_date_go-display.md "Overview: IndexDateGO: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexYearMonth: Accessor Regular Expression
 * [View page source](../_sources/api_detail/index_year_month-accessor_regular_expression.rst.txt)
 
-[Previous](index_year_month-accessor_string.html "Detail: IndexYearMonth: Accessor String")
-[Next](index_year_month-accessor_hashlib.html "Detail: IndexYearMonth: Accessor Hashlib")
+[Previous](index_year_month-accessor_string.md "Detail: IndexYearMonth: Accessor String")
+[Next](index_year_month-accessor_hashlib.md "Detail: IndexYearMonth: Accessor Hashlib")
 
 ---
 
 # Detail: IndexYearMonth: Accessor Regular Expression[](#detail-indexyearmonth-accessor-regular-expression "Link to this heading")
 
-[Overview: IndexYearMonth: Accessor Regular Expression](../api_overview/index_year_month-accessor_regular_expression.html#api-overview-indexyearmonth-accessor-regular-expression)
+[Overview: IndexYearMonth: Accessor Regular Expression](../api_overview/index_year_month-accessor_regular_expression.md#api-overview-indexyearmonth-accessor-regular-expression)
 
 IndexYearMonth.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.search)
+    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.search)
     :   Scan through string looking for the first location where this regular expression produces a match and return True, else False. Note that this is different from finding a zero-length match at some point in the string.
 
         Parameters:
@@ -170,7 +170,7 @@ IndexYearMonth.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 IndexYearMonth.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.match)
+    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.match)
     :   If zero or more characters at the beginning of string match this regular expression return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -193,7 +193,7 @@ IndexYearMonth.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 IndexYearMonth.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.fullmatch)
+    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.fullmatch)
     :   If the whole string matches this regular expression, return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -216,7 +216,7 @@ IndexYearMonth.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 IndexYearMonth.via\_re(*pattern*, *flags).split(maxsplit*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.split)
+    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.split)
     :   Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting tuple.
 
         Parameters:
@@ -238,7 +238,7 @@ IndexYearMonth.via\_re(*pattern*, *flags).split(maxsplit*)
 IndexYearMonth.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.findall)
+    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.findall)
     :   Return all non-overlapping matches of pattern in string, as a tuple of strings. The string is scanned left-to-right, and matches are returned in the order found. If one or more groups are present in the pattern, return a tuple of groups; this will be a tuple of tuples if the pattern has more than one group. Empty matches are included in the result.
 
         Parameters:
@@ -261,7 +261,7 @@ IndexYearMonth.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 IndexYearMonth.via\_re(*pattern*, *flags).sub(repl*, *count*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.sub)
+    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.sub)
     :   Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement `repl`. If the pattern is not found, the string is returned unchanged.
 
         Parameters:
@@ -284,7 +284,7 @@ IndexYearMonth.via\_re(*pattern*, *flags).sub(repl*, *count*)
 IndexYearMonth.via\_re(*pattern*, *flags).subn(repl*, *count*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.subn)
+    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.subn)
     :   Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_subs\_made).
 
         Parameters:
@@ -304,10 +304,10 @@ IndexYearMonth.via\_re(*pattern*, *flags).subn(repl*, *count*)
 
     ```
 
-[IndexYearMonth](index_year_month.html#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.html#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-detail-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-detail-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-accessor_string.html "Detail: IndexYearMonth: Accessor String")
-[Next](index_year_month-accessor_hashlib.html "Detail: IndexYearMonth: Accessor Hashlib")
+[Previous](index_year_month-accessor_string.md "Detail: IndexYearMonth: Accessor String")
+[Next](index_year_month-accessor_hashlib.md "Detail: IndexYearMonth: Accessor Hashlib")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: Yarn: Exporter
 * [View page source](../_sources/api_detail/yarn-exporter.rst.txt)
 
-[Previous](yarn-constructor.html "Detail: Yarn: Constructor")
-[Next](yarn-attribute.html "Detail: Yarn: Attribute")
+[Previous](yarn-constructor.md "Detail: Yarn: Constructor")
+[Next](yarn-attribute.md "Detail: Yarn: Attribute")
 
 ---
 
 # Detail: Yarn: Exporter[](#detail-yarn-exporter "Link to this heading")
 
-[Overview: Yarn: Exporter](../api_overview/yarn-exporter.html#api-overview-yarn-exporter)
+[Overview: Yarn: Exporter](../api_overview/yarn-exporter.md#api-overview-yarn-exporter)
 
-Yarn.to\_series()[[source]](../_modules/static_frame/core/yarn.html#Yarn.to_series)[](#static_frame.Yarn.to_series "Link to this definition")
-:   Return a [`Series`](series-selector.html#Series "Series") with the [`Frame`](frame-selector.html#Frame "Frame") contained in all contained [`Bus`](bus-selector.html#Bus "Bus").
+Yarn.to\_series()[[source]](../_modules/static_frame/core/yarn.md#Yarn.to_series)[](#static_frame.Yarn.to_series "Link to this definition")
+:   Return a [`Series`](series-selector.md#Series "Series") with the [`Frame`](frame-selector.md#Frame "Frame") contained in all contained [`Bus`](bus-selector.md#Bus "Bus").
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -171,11 +171,11 @@ Yarn.to\_series()[[source]](../_modules/static_frame/core/yarn.html#Yarn.to_seri
     ```
 
 Yarn.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Yarn.to_sqlite "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as an SQLite database file.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -198,11 +198,11 @@ Yarn.to\_visidata()[](#static_frame.Yarn.to_visidata "Link to this definition
 :   Open an interactive VisiData session.
 
 Yarn.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Yarn.to_xlsx "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a XLSX workbook.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a XLSX workbook.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -222,11 +222,11 @@ Yarn.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Yarn.to_xlsx "L
     ```
 
 Yarn.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_csv "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of CSV files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of CSV files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -246,11 +246,11 @@ Yarn.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_
     ```
 
 Yarn.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_npy "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of NPY files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPY files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -270,11 +270,11 @@ Yarn.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_
     ```
 
 Yarn.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_npz "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of NPZ files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPZ files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -294,11 +294,11 @@ Yarn.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_
     ```
 
 Yarn.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_parquet "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of parquet files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of parquet files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -318,11 +318,11 @@ Yarn.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#sta
     ```
 
 Yarn.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_pickle "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of pickles.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of pickles.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -342,11 +342,11 @@ Yarn.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#stat
     ```
 
 Yarn.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_tsv "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of TSV files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of TSV files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -365,10 +365,10 @@ Yarn.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_
 
     ```
 
-[Yarn](yarn.html#api-detail-yarn): [Constructor](yarn-constructor.html#api-detail-yarn-constructor) | [Exporter](#api-detail-yarn-exporter) | [Attribute](yarn-attribute.html#api-detail-yarn-attribute) | [Method](yarn-method.html#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like) | [Display](yarn-display.html#api-detail-yarn-display) | [Selector](yarn-selector.html#api-detail-yarn-selector) | [Iterator](yarn-iterator.html#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
-[Previous](yarn-constructor.html "Detail: Yarn: Constructor")
-[Next](yarn-attribute.html "Detail: Yarn: Attribute")
+[Previous](yarn-constructor.md "Detail: Yarn: Constructor")
+[Next](yarn-attribute.md "Detail: Yarn: Attribute")
 
 ---
 

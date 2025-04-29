@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexHour: Accessor Values
 * [View page source](../_sources/api_detail/index_hour-accessor_values.rst.txt)
 
-[Previous](index_hour-operator_unary.html "Detail: IndexHour: Operator Unary")
-[Next](index_hour-accessor_datetime.html "Detail: IndexHour: Accessor Datetime")
+[Previous](index_hour-operator_unary.md "Detail: IndexHour: Operator Unary")
+[Next](index_hour-accessor_datetime.md "Detail: IndexHour: Accessor Datetime")
 
 ---
 
 # Detail: IndexHour: Accessor Values[](#detail-indexhour-accessor-values "Link to this heading")
 
-[Overview: IndexHour: Accessor Values](../api_overview/index_hour-accessor_values.html#api-overview-indexhour-accessor-values)
+[Overview: IndexHour: Accessor Values](../api_overview/index_hour-accessor_values.md#api-overview-indexhour-accessor-values)
 
 IndexHour.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
 :   IndexHour.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.apply)
+    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.apply)
 
     ```
     >>> ix = sf.IndexHour(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -167,7 +167,7 @@ IndexHour.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwa
 :   IndexHour.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__array_ufunc__)
+    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__array_ufunc__)
     :   Support for applying NumPy functions directly on containers.
 
     ```
@@ -187,7 +187,7 @@ IndexHour.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*,
 :   IndexHour.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__call__)
+    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__call__)
     :   Parameters:
         :   * **consolidate\_blocks** – Group adjacent same-typed arrays into 2D arrays.
             * **unify\_blocks** – Group all arrays into single array, re-typing to an appropriate dtype.
@@ -206,10 +206,10 @@ IndexHour.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*,
 
     ```
 
-[IndexHour](index_hour.html#api-detail-indexhour): [Constructor](index_hour-constructor.html#api-detail-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-detail-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-detail-indexhour-attribute) | [Method](index_hour-method.html#api-detail-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.html#api-detail-indexhour-dictionary-like) | [Display](index_hour-display.html#api-detail-indexhour-display) | [Selector](index_hour-selector.html#api-detail-indexhour-selector) | [Iterator](index_hour-iterator.html#api-detail-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.html#api-detail-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-detail-indexhour-operator-unary) | [Accessor Values](#api-detail-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.html#api-detail-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.html#api-detail-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.html#api-detail-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-detail-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.html#api-detail-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-detail-indexhour): [Constructor](index_hour-constructor.md#api-detail-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-detail-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-detail-indexhour-attribute) | [Method](index_hour-method.md#api-detail-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-detail-indexhour-dictionary-like) | [Display](index_hour-display.md#api-detail-indexhour-display) | [Selector](index_hour-selector.md#api-detail-indexhour-selector) | [Iterator](index_hour-iterator.md#api-detail-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-detail-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-detail-indexhour-operator-unary) | [Accessor Values](#api-detail-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-detail-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-detail-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-detail-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-detail-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-detail-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-operator_unary.html "Detail: IndexHour: Operator Unary")
-[Next](index_hour-accessor_datetime.html "Detail: IndexHour: Accessor Datetime")
+[Previous](index_hour-operator_unary.md "Detail: IndexHour: Operator Unary")
+[Next](index_hour-accessor_datetime.md "Detail: IndexHour: Accessor Datetime")
 
 ---
 

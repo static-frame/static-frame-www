@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: HLoc: Display
 * [View page source](../_sources/api_detail/hloc-display.rst.txt)
 
-[Previous](hloc-dictionary_like.html "Detail: HLoc: Dictionary-Like")
-[Next](iloc-constructor.html "Detail: ILoc: Constructor")
+[Previous](hloc-dictionary_like.md "Detail: HLoc: Dictionary-Like")
+[Next](iloc-constructor.md "Detail: ILoc: Constructor")
 
 ---
 
 # Detail: HLoc: Display[](#detail-hloc-display "Link to this heading")
 
-[Overview: HLoc: Display](../api_overview/hloc-display.html#api-overview-hloc-display)
+[Overview: HLoc: Display](../api_overview/hloc-display.md#api-overview-hloc-display)
 
-HLoc.\_\_repr\_\_()[[source]](../_modules/static_frame/core/hloc.html#HLoc.__repr__)[](#static_frame.HLoc.__repr__ "Link to this definition")
+HLoc.\_\_repr\_\_()[[source]](../_modules/static_frame/core/hloc.md#HLoc.__repr__)[](#static_frame.HLoc.__repr__ "Link to this definition")
 :   Return repr(self).
 
     ```
@@ -164,10 +164,10 @@ HLoc.\_\_str\_\_()[](#static_frame.HLoc.__str__ "Link to this definition")
 
     ```
 
-[HLoc](hloc.html#api-detail-hloc): [Constructor](hloc-constructor.html#api-detail-hloc-constructor) | [Attribute](hloc-attribute.html#api-detail-hloc-attribute) | [Method](hloc-method.html#api-detail-hloc-method) | [Dictionary-Like](hloc-dictionary_like.html#api-detail-hloc-dictionary-like) | [Display](#api-detail-hloc-display)
+[HLoc](hloc.md#api-detail-hloc): [Constructor](hloc-constructor.md#api-detail-hloc-constructor) | [Attribute](hloc-attribute.md#api-detail-hloc-attribute) | [Method](hloc-method.md#api-detail-hloc-method) | [Dictionary-Like](hloc-dictionary_like.md#api-detail-hloc-dictionary-like) | [Display](#api-detail-hloc-display)
 
-[Previous](hloc-dictionary_like.html "Detail: HLoc: Dictionary-Like")
-[Next](iloc-constructor.html "Detail: ILoc: Constructor")
+[Previous](hloc-dictionary_like.md "Detail: HLoc: Dictionary-Like")
+[Next](iloc-constructor.md "Detail: ILoc: Constructor")
 
 ---
 

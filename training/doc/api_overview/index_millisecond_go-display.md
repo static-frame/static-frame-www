@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexMillisecondGO: Display
 * [View page source](../_sources/api_overview/index_millisecond_go-display.rst.txt)
 
-[Previous](index_millisecond_go-dictionary_like.html "Overview: IndexMillisecondGO: Dictionary-Like")
-[Next](index_millisecond_go-selector.html "Overview: IndexMillisecondGO: Selector")
+[Previous](index_millisecond_go-dictionary_like.md "Overview: IndexMillisecondGO: Dictionary-Like")
+[Next](index_millisecond_go-selector.md "Overview: IndexMillisecondGO: Selector")
 
 ---
 
 # Overview: IndexMillisecondGO: Display[](#overview-indexmillisecondgo-display "Link to this heading")
 
-[Detail: IndexMillisecondGO: Display](../api_detail/index_millisecond_go-display.html#api-detail-indexmillisecondgo-display)
+[Detail: IndexMillisecondGO: Display](../api_detail/index_millisecond_go-display.md#api-detail-indexmillisecondgo-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond_go-display.html#api-sig-indexmillisecondgo-interface) | [`IndexMillisecondGO.interface`](../api_detail/index_millisecond_go-display.html#IndexMillisecondGO.interface "IndexMillisecondGO.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_millisecond_go-display.html#api-sig-indexmillisecondgo-repr) | `IndexMillisecondGO.__repr__()` |  |
-| [Detail](../api_detail/index_millisecond_go-display.html#api-sig-indexmillisecondgo-str) | `IndexMillisecondGO.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_millisecond_go-display.html#api-sig-indexmillisecondgo-display) | `IndexMillisecondGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_millisecond_go-display.html#api-sig-indexmillisecondgo-display-tall) | `IndexMillisecondGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_millisecond_go-display.html#api-sig-indexmillisecondgo-display-wide) | `IndexMillisecondGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_millisecond_go-display.md#api-sig-indexmillisecondgo-interface) | [`IndexMillisecondGO.interface`](../api_detail/index_millisecond_go-display.md#IndexMillisecondGO.interface "IndexMillisecondGO.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_millisecond_go-display.md#api-sig-indexmillisecondgo-repr) | `IndexMillisecondGO.__repr__()` |  |
+| [Detail](../api_detail/index_millisecond_go-display.md#api-sig-indexmillisecondgo-str) | `IndexMillisecondGO.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_millisecond_go-display.md#api-sig-indexmillisecondgo-display) | `IndexMillisecondGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_millisecond_go-display.md#api-sig-indexmillisecondgo-display-tall) | `IndexMillisecondGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_millisecond_go-display.md#api-sig-indexmillisecondgo-display-wide) | `IndexMillisecondGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexMillisecondGO](index_millisecond_go.html#api-overview-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.html#api-overview-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.html#api-overview-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.html#api-overview-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.html#api-overview-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.html#api-overview-indexmillisecondgo-dictionary-like) | [Display](#api-overview-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.html#api-overview-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.html#api-overview-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.html#api-overview-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.html#api-overview-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.html#api-overview-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.html#api-overview-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.html#api-overview-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.html#api-overview-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.html#api-overview-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.html#api-overview-indexmillisecondgo-accessor-type-clinic)
+[IndexMillisecondGO](index_millisecond_go.md#api-overview-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.md#api-overview-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-overview-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-overview-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.md#api-overview-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-overview-indexmillisecondgo-dictionary-like) | [Display](#api-overview-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-overview-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-overview-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-overview-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-overview-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-overview-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-overview-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-overview-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-overview-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-overview-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-overview-indexmillisecondgo-accessor-type-clinic)
 
-[Previous](index_millisecond_go-dictionary_like.html "Overview: IndexMillisecondGO: Dictionary-Like")
-[Next](index_millisecond_go-selector.html "Overview: IndexMillisecondGO: Selector")
+[Previous](index_millisecond_go-dictionary_like.md "Overview: IndexMillisecondGO: Dictionary-Like")
+[Next](index_millisecond_go-selector.md "Overview: IndexMillisecondGO: Selector")
 
 ---
 

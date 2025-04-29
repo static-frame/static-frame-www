@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexYearMonth: Accessor Type Clinic
 * [View page source](../_sources/api_detail/index_year_month-accessor_type_clinic.rst.txt)
 
-[Previous](index_year_month-accessor_hashlib.html "Detail: IndexYearMonth: Accessor Hashlib")
-[Next](index_year_month_go-constructor.html "Detail: IndexYearMonthGO: Constructor")
+[Previous](index_year_month-accessor_hashlib.md "Detail: IndexYearMonth: Accessor Hashlib")
+[Next](index_year_month_go-constructor.md "Detail: IndexYearMonthGO: Constructor")
 
 ---
 
 # Detail: IndexYearMonth: Accessor Type Clinic[](#detail-indexyearmonth-accessor-type-clinic "Link to this heading")
 
-[Overview: IndexYearMonth: Accessor Type Clinic](../api_overview/index_year_month-accessor_type_clinic.html#api-overview-indexyearmonth-accessor-type-clinic)
+[Overview: IndexYearMonth: Accessor Type Clinic](../api_overview/index_year_month-accessor_type_clinic.md#api-overview-indexyearmonth-accessor-type-clinic)
 
 IndexYearMonth.via\_type\_clinic.to\_hint
 :   IndexYearMonth.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -166,7 +166,7 @@ IndexYearMonth.via\_type\_clinic.to\_hint
 IndexYearMonth.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   IndexYearMonth.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -188,7 +188,7 @@ IndexYearMonth.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 IndexYearMonth.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   IndexYearMonth.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -198,7 +198,7 @@ IndexYearMonth.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 IndexYearMonth.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   IndexYearMonth.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -227,7 +227,7 @@ IndexYearMonth.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 IndexYearMonth.via\_type\_clinic.\_\_repr\_\_
 :   IndexYearMonth.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -243,10 +243,10 @@ IndexYearMonth.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[IndexYearMonth](index_year_month.html#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.html#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-accessor_hashlib.html "Detail: IndexYearMonth: Accessor Hashlib")
-[Next](index_year_month_go-constructor.html "Detail: IndexYearMonthGO: Constructor")
+[Previous](index_year_month-accessor_hashlib.md "Detail: IndexYearMonth: Accessor Hashlib")
+[Next](index_year_month_go-constructor.md "Detail: IndexYearMonthGO: Constructor")
 
 ---
 

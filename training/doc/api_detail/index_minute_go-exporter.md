@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Detail: IndexMinuteGO: Exporter
 * [View page source](../_sources/api_detail/index_minute_go-exporter.rst.txt)
 
-[Previous](index_minute_go-constructor.html "Detail: IndexMinuteGO: Constructor")
-[Next](index_minute_go-attribute.html "Detail: IndexMinuteGO: Attribute")
+[Previous](index_minute_go-constructor.md "Detail: IndexMinuteGO: Constructor")
+[Next](index_minute_go-attribute.md "Detail: IndexMinuteGO: Attribute")
 
 ---
 
 # Detail: IndexMinuteGO: Exporter[](#detail-indexminutego-exporter "Link to this heading")
 
-[Overview: IndexMinuteGO: Exporter](../api_overview/index_minute_go-exporter.html#api-overview-indexminutego-exporter)
+[Overview: IndexMinuteGO: Exporter](../api_overview/index_minute_go-exporter.md#api-overview-indexminutego-exporter)
 
 IndexMinuteGO.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexMinuteGO.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Index`](index-selector.html#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 IndexMinuteGO.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexMinuteGO.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Index`](index-selector.html#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
@@ -204,10 +204,10 @@ IndexMinuteGO.to\_series()[](#static_frame.IndexMinuteGO.to_series "Link to t
 IndexMinuteGO.to\_visidata()[](#static_frame.IndexMinuteGO.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[IndexMinuteGO](index_minute_go.html#api-detail-indexminutego): [Constructor](index_minute_go-constructor.html#api-detail-indexminutego-constructor) | [Exporter](#api-detail-indexminutego-exporter) | [Attribute](index_minute_go-attribute.html#api-detail-indexminutego-attribute) | [Method](index_minute_go-method.html#api-detail-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.html#api-detail-indexminutego-dictionary-like) | [Display](index_minute_go-display.html#api-detail-indexminutego-display) | [Selector](index_minute_go-selector.html#api-detail-indexminutego-selector) | [Iterator](index_minute_go-iterator.html#api-detail-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.html#api-detail-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.html#api-detail-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.html#api-detail-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.html#api-detail-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.html#api-detail-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.html#api-detail-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.html#api-detail-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.html#api-detail-indexminutego-accessor-type-clinic)
+[IndexMinuteGO](index_minute_go.md#api-detail-indexminutego): [Constructor](index_minute_go-constructor.md#api-detail-indexminutego-constructor) | [Exporter](#api-detail-indexminutego-exporter) | [Attribute](index_minute_go-attribute.md#api-detail-indexminutego-attribute) | [Method](index_minute_go-method.md#api-detail-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-detail-indexminutego-dictionary-like) | [Display](index_minute_go-display.md#api-detail-indexminutego-display) | [Selector](index_minute_go-selector.md#api-detail-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-detail-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.md#api-detail-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-detail-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.md#api-detail-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.md#api-detail-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-detail-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-detail-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.md#api-detail-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-detail-indexminutego-accessor-type-clinic)
 
-[Previous](index_minute_go-constructor.html "Detail: IndexMinuteGO: Constructor")
-[Next](index_minute_go-attribute.html "Detail: IndexMinuteGO: Attribute")
+[Previous](index_minute_go-constructor.md "Detail: IndexMinuteGO: Constructor")
+[Next](index_minute_go-attribute.md "Detail: IndexMinuteGO: Attribute")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Quilt: Dictionary-Like
 * [View page source](../_sources/api_overview/quilt-dictionary_like.rst.txt)
 
-[Previous](quilt-method.html "Overview: Quilt: Method")
-[Next](quilt-display.html "Overview: Quilt: Display")
+[Previous](quilt-method.md "Overview: Quilt: Method")
+[Next](quilt-display.md "Overview: Quilt: Display")
 
 ---
 
 # Overview: Quilt: Dictionary-Like[](#overview-quilt-dictionary-like "Link to this heading")
 
-[Detail: Quilt: Dictionary-Like](../api_detail/quilt-dictionary_like.html#api-detail-quilt-dictionary-like)
+[Detail: Quilt: Dictionary-Like](../api_detail/quilt-dictionary_like.md#api-detail-quilt-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/quilt-dictionary_like.html#api-sig-quilt-contains) | `Quilt.__contains__(value)` | Inclusion of value in column labels. |
-| [Detail](../api_detail/quilt-dictionary_like.html#api-sig-quilt-iter) | `Quilt.__iter__()` | Iterator of column labels, same as Frame.keys. |
-| [Detail](../api_detail/quilt-dictionary_like.html#api-sig-quilt-get) | `Quilt.get(key, default)` | Return the value found at the columns key, else the default if the key is not fo… |
-| [Detail](../api_detail/quilt-dictionary_like.html#api-sig-quilt-items) | `Quilt.items()` | Iterator of pairs of column label and corresponding column Series. |
-| [Detail](../api_detail/quilt-dictionary_like.html#api-sig-quilt-keys) | `Quilt.keys()` | Iterator of column labels. |
-| [Detail](../api_detail/quilt-dictionary_like.html#api-sig-quilt-values) | `Quilt.values` | A 2D NumPy array of all values in the Quilt. As this is a single array, heteroge… |
+| [Detail](../api_detail/quilt-dictionary_like.md#api-sig-quilt-contains) | `Quilt.__contains__(value)` | Inclusion of value in column labels. |
+| [Detail](../api_detail/quilt-dictionary_like.md#api-sig-quilt-iter) | `Quilt.__iter__()` | Iterator of column labels, same as Frame.keys. |
+| [Detail](../api_detail/quilt-dictionary_like.md#api-sig-quilt-get) | `Quilt.get(key, default)` | Return the value found at the columns key, else the default if the key is not fo… |
+| [Detail](../api_detail/quilt-dictionary_like.md#api-sig-quilt-items) | `Quilt.items()` | Iterator of pairs of column label and corresponding column Series. |
+| [Detail](../api_detail/quilt-dictionary_like.md#api-sig-quilt-keys) | `Quilt.keys()` | Iterator of column labels. |
+| [Detail](../api_detail/quilt-dictionary_like.md#api-sig-quilt-values) | `Quilt.values` | A 2D NumPy array of all values in the Quilt. As this is a single array, heteroge… |
 
-[Quilt](quilt.html#api-overview-quilt): [Constructor](quilt-constructor.html#api-overview-quilt-constructor) | [Exporter](quilt-exporter.html#api-overview-quilt-exporter) | [Attribute](quilt-attribute.html#api-overview-quilt-attribute) | [Method](quilt-method.html#api-overview-quilt-method) | [Dictionary-Like](#api-overview-quilt-dictionary-like) | [Display](quilt-display.html#api-overview-quilt-display) | [Selector](quilt-selector.html#api-overview-quilt-selector) | [Iterator](quilt-iterator.html#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-overview-quilt): [Constructor](quilt-constructor.md#api-overview-quilt-constructor) | [Exporter](quilt-exporter.md#api-overview-quilt-exporter) | [Attribute](quilt-attribute.md#api-overview-quilt-attribute) | [Method](quilt-method.md#api-overview-quilt-method) | [Dictionary-Like](#api-overview-quilt-dictionary-like) | [Display](quilt-display.md#api-overview-quilt-display) | [Selector](quilt-selector.md#api-overview-quilt-selector) | [Iterator](quilt-iterator.md#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic)
 
-[Previous](quilt-method.html "Overview: Quilt: Method")
-[Next](quilt-display.html "Overview: Quilt: Display")
+[Previous](quilt-method.md "Overview: Quilt: Method")
+[Next](quilt-display.md "Overview: Quilt: Display")
 
 ---
 

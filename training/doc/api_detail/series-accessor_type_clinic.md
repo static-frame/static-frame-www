@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: Series: Accessor Type Clinic
 * [View page source](../_sources/api_detail/series-accessor_type_clinic.rst.txt)
 
-[Previous](series-accessor_hashlib.html "Detail: Series: Accessor Hashlib")
-[Next](series_he-constructor.html "Detail: SeriesHE: Constructor")
+[Previous](series-accessor_hashlib.md "Detail: Series: Accessor Hashlib")
+[Next](series_he-constructor.md "Detail: SeriesHE: Constructor")
 
 ---
 
 # Detail: Series: Accessor Type Clinic[](#detail-series-accessor-type-clinic "Link to this heading")
 
-[Overview: Series: Accessor Type Clinic](../api_overview/series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic)
+[Overview: Series: Accessor Type Clinic](../api_overview/series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic)
 
 Series.via\_type\_clinic.to\_hint
 :   Series.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -167,7 +167,7 @@ Series.via\_type\_clinic.to\_hint
 Series.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   Series.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -190,7 +190,7 @@ Series.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 Series.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   Series.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -200,7 +200,7 @@ Series.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 Series.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   Series.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -230,7 +230,7 @@ Series.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 Series.via\_type\_clinic.\_\_repr\_\_
 :   Series.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -247,10 +247,10 @@ Series.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[Series](series.html#api-detail-series): [Constructor](series-constructor.html#api-detail-series-constructor) | [Exporter](series-exporter.html#api-detail-series-exporter) | [Attribute](series-attribute.html#api-detail-series-attribute) | [Method](series-method.html#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.html#api-detail-series-dictionary-like) | [Display](series-display.html#api-detail-series-display) | [Assignment](series-assignment.html#api-detail-series-assignment) | [Selector](series-selector.html#api-detail-series-selector) | [Iterator](series-iterator.html#api-detail-series-iterator) | [Operator Binary](series-operator_binary.html#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](#api-detail-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](#api-detail-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-accessor_hashlib.html "Detail: Series: Accessor Hashlib")
-[Next](series_he-constructor.html "Detail: SeriesHE: Constructor")
+[Previous](series-accessor_hashlib.md "Detail: Series: Accessor Hashlib")
+[Next](series_he-constructor.md "Detail: SeriesHE: Constructor")
 
 ---
 

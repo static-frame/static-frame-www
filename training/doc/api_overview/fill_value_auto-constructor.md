@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: FillValueAuto: Constructor
 * [View page source](../_sources/api_overview/fill_value_auto-constructor.rst.txt)
 
-[Previous](www-constructor.html "Overview: WWW: Constructor")
-[Next](fill_value_auto-attribute.html "Overview: FillValueAuto: Attribute")
+[Previous](www-constructor.md "Overview: WWW: Constructor")
+[Next](fill_value_auto-attribute.md "Overview: FillValueAuto: Attribute")
 
 ---
 
 # Overview: FillValueAuto: Constructor[](#overview-fillvalueauto-constructor "Link to this heading")
 
-[Detail: FillValueAuto: Constructor](../api_detail/fill_value_auto-constructor.html#api-detail-fillvalueauto-constructor)
+[Detail: FillValueAuto: Constructor](../api_detail/fill_value_auto-constructor.md#api-detail-fillvalueauto-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/fill_value_auto-constructor.html#api-sig-fillvalueauto-init) | `FillValueAuto.__init__(b, i, u, f, c, m, M, O, S, U, V)` | Args: b: fill value for bool kind i: fill value for integer kind u: fill value f… |
-| [Detail](../api_detail/fill_value_auto-constructor.html#api-sig-fillvalueauto-from-default) | `FillValueAuto.from_default(b, i, u, f, c, m, M, O, S, U, V)` | Create a FileValueAuto instance based on a default selected to prohibit type coe… |
+| [Detail](../api_detail/fill_value_auto-constructor.md#api-sig-fillvalueauto-init) | `FillValueAuto.__init__(b, i, u, f, c, m, M, O, S, U, V)` | Args: b: fill value for bool kind i: fill value for integer kind u: fill value f… |
+| [Detail](../api_detail/fill_value_auto-constructor.md#api-sig-fillvalueauto-from-default) | `FillValueAuto.from_default(b, i, u, f, c, m, M, O, S, U, V)` | Create a FileValueAuto instance based on a default selected to prohibit type coe… |
 
-[FillValueAuto](fill_value_auto.html#api-overview-fillvalueauto): [Constructor](#api-overview-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.html#api-overview-fillvalueauto-attribute) | [Display](fill_value_auto-display.html#api-overview-fillvalueauto-display) | [Selector](fill_value_auto-selector.html#api-overview-fillvalueauto-selector)
+[FillValueAuto](fill_value_auto.md#api-overview-fillvalueauto): [Constructor](#api-overview-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-overview-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-overview-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-overview-fillvalueauto-selector)
 
-[Previous](www-constructor.html "Overview: WWW: Constructor")
-[Next](fill_value_auto-attribute.html "Overview: FillValueAuto: Attribute")
+[Previous](www-constructor.md "Overview: WWW: Constructor")
+[Next](fill_value_auto-attribute.md "Overview: FillValueAuto: Attribute")
 
 ---
 

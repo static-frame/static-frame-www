@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,27 +136,27 @@ API Detail
 * Detail: StoreFilter
 * [View page source](../_sources/api_detail/store_filter.rst.txt)
 
-[Previous](store_config.html "Detail: StoreConfig")
-[Next](index_auto_factory.html "Detail: IndexAutoFactory")
+[Previous](store_config.md "Detail: StoreConfig")
+[Next](index_auto_factory.md "Detail: IndexAutoFactory")
 
 ---
 
 # Detail: StoreFilter[](#detail-storefilter "Link to this heading")
 
-[Overview: StoreFilter](../api_overview/store_filter.html#api-overview-storefilter)
+[Overview: StoreFilter](../api_overview/store_filter.md#api-overview-storefilter)
 
-*class* StoreFilter(*\**, *from\_nan=''*, *from\_nat=''*, *from\_none='None'*, *from\_posinf='inf'*, *from\_neginf='-inf'*, *to\_nan=frozenset({'', '#N/A', 'NAN', 'NULL', 'NaN', 'nan'})*, *to\_nat=frozenset({})*, *to\_none=frozenset({'None'})*, *to\_posinf=frozenset({'inf'})*, *to\_neginf=frozenset({'-inf'})*, *value\_format\_float\_positional=None*, *value\_format\_float\_scientific=None*, *value\_format\_complex\_positional=None*, *value\_format\_complex\_scientific=None*)[[source]](../_modules/static_frame/core/store_filter.html#StoreFilter)[](#static_frame.StoreFilter "Link to this definition")
+*class* StoreFilter(*\**, *from\_nan=''*, *from\_nat=''*, *from\_none='None'*, *from\_posinf='inf'*, *from\_neginf='-inf'*, *to\_nan=frozenset({'', '#N/A', 'NAN', 'NULL', 'NaN', 'nan'})*, *to\_nat=frozenset({})*, *to\_none=frozenset({'None'})*, *to\_posinf=frozenset({'inf'})*, *to\_neginf=frozenset({'-inf'})*, *value\_format\_float\_positional=None*, *value\_format\_float\_scientific=None*, *value\_format\_complex\_positional=None*, *value\_format\_complex\_scientific=None*)[[source]](../_modules/static_frame/core/store_filter.md#StoreFilter)[](#static_frame.StoreFilter "Link to this definition")
 :   Utility for defining and applying translation of values going to and from a data store, as needed for XLSX and other writers.
 
-* [Constructor](store_filter-constructor.html#api-detail-storefilter-constructor): Alternative constructors for creating instances.
-* [Exporter](store_filter-exporter.html#api-detail-storefilter-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](store_filter-attribute.html#api-detail-storefilter-attribute): Attributes for retrieving basic characteristics.
-* [Display](store_filter-display.html#api-detail-storefilter-display): Methods for providing a text representation of the object.
+* [Constructor](store_filter-constructor.md#api-detail-storefilter-constructor): Alternative constructors for creating instances.
+* [Exporter](store_filter-exporter.md#api-detail-storefilter-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](store_filter-attribute.md#api-detail-storefilter-attribute): Attributes for retrieving basic characteristics.
+* [Display](store_filter-display.md#api-detail-storefilter-display): Methods for providing a text representation of the object.
 
-[StoreFilter](#api-detail-storefilter): [Constructor](store_filter-constructor.html#api-detail-storefilter-constructor) | [Exporter](store_filter-exporter.html#api-detail-storefilter-exporter) | [Attribute](store_filter-attribute.html#api-detail-storefilter-attribute) | [Display](store_filter-display.html#api-detail-storefilter-display)
+[StoreFilter](#api-detail-storefilter): [Constructor](store_filter-constructor.md#api-detail-storefilter-constructor) | [Exporter](store_filter-exporter.md#api-detail-storefilter-exporter) | [Attribute](store_filter-attribute.md#api-detail-storefilter-attribute) | [Display](store_filter-display.md#api-detail-storefilter-display)
 
-[Previous](store_config.html "Detail: StoreConfig")
-[Next](index_auto_factory.html "Detail: IndexAutoFactory")
+[Previous](store_config.md "Detail: StoreConfig")
+[Next](index_auto_factory.md "Detail: IndexAutoFactory")
 
 ---
 

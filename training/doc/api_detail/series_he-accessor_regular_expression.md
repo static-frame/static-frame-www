@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: SeriesHE: Accessor Regular Expression
 * [View page source](../_sources/api_detail/series_he-accessor_regular_expression.rst.txt)
 
-[Previous](series_he-accessor_fill_value.html "Detail: SeriesHE: Accessor Fill Value")
-[Next](series_he-accessor_hashlib.html "Detail: SeriesHE: Accessor Hashlib")
+[Previous](series_he-accessor_fill_value.md "Detail: SeriesHE: Accessor Fill Value")
+[Next](series_he-accessor_hashlib.md "Detail: SeriesHE: Accessor Hashlib")
 
 ---
 
 # Detail: SeriesHE: Accessor Regular Expression[](#detail-serieshe-accessor-regular-expression "Link to this heading")
 
-[Overview: SeriesHE: Accessor Regular Expression](../api_overview/series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression)
+[Overview: SeriesHE: Accessor Regular Expression](../api_overview/series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression)
 
 SeriesHE.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 :   via\_re *= <function Series.via\_re>*
 
-    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.search)
+    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.search)
     :   Scan through string looking for the first location where this regular expression produces a match and return True, else False. Note that this is different from finding a zero-length match at some point in the string.
 
         Parameters:
@@ -176,7 +176,7 @@ SeriesHE.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 SeriesHE.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 :   via\_re *= <function Series.via\_re>*
 
-    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.match)
+    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.match)
     :   If zero or more characters at the beginning of string match this regular expression return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -205,7 +205,7 @@ SeriesHE.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 SeriesHE.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 :   via\_re *= <function Series.via\_re>*
 
-    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.fullmatch)
+    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.fullmatch)
     :   If the whole string matches this regular expression, return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -234,7 +234,7 @@ SeriesHE.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 SeriesHE.via\_re(*pattern*, *flags).split(maxsplit*)
 :   via\_re *= <function Series.via\_re>*
 
-    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.split)
+    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.split)
     :   Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting tuple.
 
         Parameters:
@@ -262,7 +262,7 @@ SeriesHE.via\_re(*pattern*, *flags).split(maxsplit*)
 SeriesHE.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 :   via\_re *= <function Series.via\_re>*
 
-    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.findall)
+    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.findall)
     :   Return all non-overlapping matches of pattern in string, as a tuple of strings. The string is scanned left-to-right, and matches are returned in the order found. If one or more groups are present in the pattern, return a tuple of groups; this will be a tuple of tuples if the pattern has more than one group. Empty matches are included in the result.
 
         Parameters:
@@ -291,7 +291,7 @@ SeriesHE.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 SeriesHE.via\_re(*pattern*, *flags).sub(repl*, *count*)
 :   via\_re *= <function Series.via\_re>*
 
-    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.sub)
+    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.sub)
     :   Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement `repl`. If the pattern is not found, the string is returned unchanged.
 
         Parameters:
@@ -320,7 +320,7 @@ SeriesHE.via\_re(*pattern*, *flags).sub(repl*, *count*)
 SeriesHE.via\_re(*pattern*, *flags).subn(repl*, *count*)
 :   via\_re *= <function Series.via\_re>*
 
-    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.subn)
+    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.subn)
     :   Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_subs\_made).
 
         Parameters:
@@ -346,10 +346,10 @@ SeriesHE.via\_re(*pattern*, *flags).subn(repl*, *count*)
 
     ```
 
-[SeriesHE](series_he.html#api-detail-serieshe): [Constructor](series_he-constructor.html#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.html#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.html#api-detail-serieshe-attribute) | [Method](series_he-method.html#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-detail-serieshe-dictionary-like) | [Display](series_he-display.html#api-detail-serieshe-display) | [Assignment](series_he-assignment.html#api-detail-serieshe-assignment) | [Selector](series_he-selector.html#api-detail-serieshe-selector) | [Iterator](series_he-iterator.html#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-accessor_fill_value.html "Detail: SeriesHE: Accessor Fill Value")
-[Next](series_he-accessor_hashlib.html "Detail: SeriesHE: Accessor Hashlib")
+[Previous](series_he-accessor_fill_value.md "Detail: SeriesHE: Accessor Fill Value")
+[Next](series_he-accessor_hashlib.md "Detail: SeriesHE: Accessor Hashlib")
 
 ---
 

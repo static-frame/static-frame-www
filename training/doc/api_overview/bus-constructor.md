@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,36 +135,36 @@ API Detail
 * Overview: Bus: Constructor
 * [View page source](../_sources/api_overview/bus-constructor.rst.txt)
 
-[Previous](frame_he-accessor_reduce.html "Overview: FrameHE: Accessor Reduce")
-[Next](bus-exporter.html "Overview: Bus: Exporter")
+[Previous](frame_he-accessor_reduce.md "Overview: FrameHE: Accessor Reduce")
+[Next](bus-exporter.md "Overview: Bus: Exporter")
 
 ---
 
 # Overview: Bus: Constructor[](#overview-bus-constructor "Link to this heading")
 
-[Detail: Bus: Constructor](../api_detail/bus-constructor.html#api-detail-bus-constructor)
+[Detail: Bus: Constructor](../api_detail/bus-constructor.md#api-detail-bus-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-init) | `Bus.__init__(frames, *, index, index_constructor, name, store, config, max_persist, own_index, own_data)` | Default Bus constructor. {args} |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-concat) | `Bus.from_concat(containers, *, index, name)` | Concatenate multiple Bus into a new Bus. All Bus will load all Frame into memory… |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-dict) | `Bus.from_dict(mapping, *, name, index_constructor)` | Bus construction from a mapping of labels and Frame. Args: mapping: a dictionary… |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-frames) | `Bus.from_frames(frames, *, index_constructor, config, name)` | Return a Bus from an iterable of Frame; labels will be drawn from Frame.name. |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-items) | `Bus.from_items(pairs, *, config, name, index_constructor)` | Return a Bus from an iterable of pairs of label, Frame. Returns: Bus |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-series) | `Bus.from_series(series, *, store, config, max_persist, own_data)` | Create a Bus from a Series of Frame. |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-sqlite) | `Bus.from_sqlite(fp, *, config, max_persist, index_constructor)` | Given a file path to an SQLite Bus store, return a Bus instance. Args: fp: A str… |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-xlsx) | `Bus.from_xlsx(fp, *, config, max_persist, index_constructor)` | Given a file path to an XLSX Bus store, return a Bus instance. Args: fp: A strin… |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-zip-csv) | `Bus.from_zip_csv(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped CSV Bus store, return a Bus instance. Args: fp: A st… |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-zip-npy) | `Bus.from_zip_npy(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped NPY Bus store, return a Bus instance. Args: fp: A st… |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-zip-npz) | `Bus.from_zip_npz(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped NPZ Bus store, return a Bus instance. Args: fp: A st… |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-zip-parquet) | `Bus.from_zip_parquet(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped parquet Bus store, return a Bus instance. Args: fp:… |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-zip-pickle) | `Bus.from_zip_pickle(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped pickle Bus store, return a Bus instance. Args: fp: A… |
-| [Detail](../api_detail/bus-constructor.html#api-sig-bus-from-zip-tsv) | `Bus.from_zip_tsv(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped TSV Bus store, return a Bus instance. Args: fp: A st… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-init) | `Bus.__init__(frames, *, index, index_constructor, name, store, config, max_persist, own_index, own_data)` | Default Bus constructor. {args} |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-concat) | `Bus.from_concat(containers, *, index, name)` | Concatenate multiple Bus into a new Bus. All Bus will load all Frame into memory… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-dict) | `Bus.from_dict(mapping, *, name, index_constructor)` | Bus construction from a mapping of labels and Frame. Args: mapping: a dictionary… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-frames) | `Bus.from_frames(frames, *, index_constructor, config, name)` | Return a Bus from an iterable of Frame; labels will be drawn from Frame.name. |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-items) | `Bus.from_items(pairs, *, config, name, index_constructor)` | Return a Bus from an iterable of pairs of label, Frame. Returns: Bus |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-series) | `Bus.from_series(series, *, store, config, max_persist, own_data)` | Create a Bus from a Series of Frame. |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-sqlite) | `Bus.from_sqlite(fp, *, config, max_persist, index_constructor)` | Given a file path to an SQLite Bus store, return a Bus instance. Args: fp: A str… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-xlsx) | `Bus.from_xlsx(fp, *, config, max_persist, index_constructor)` | Given a file path to an XLSX Bus store, return a Bus instance. Args: fp: A strin… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-zip-csv) | `Bus.from_zip_csv(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped CSV Bus store, return a Bus instance. Args: fp: A st… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-zip-npy) | `Bus.from_zip_npy(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped NPY Bus store, return a Bus instance. Args: fp: A st… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-zip-npz) | `Bus.from_zip_npz(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped NPZ Bus store, return a Bus instance. Args: fp: A st… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-zip-parquet) | `Bus.from_zip_parquet(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped parquet Bus store, return a Bus instance. Args: fp:… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-zip-pickle) | `Bus.from_zip_pickle(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped pickle Bus store, return a Bus instance. Args: fp: A… |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-zip-tsv) | `Bus.from_zip_tsv(fp, *, config, max_persist, index_constructor)` | Given a file path to zipped TSV Bus store, return a Bus instance. Args: fp: A st… |
 
-[Bus](bus.html#api-overview-bus): [Constructor](#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](frame_he-accessor_reduce.html "Overview: FrameHE: Accessor Reduce")
-[Next](bus-exporter.html "Overview: Bus: Exporter")
+[Previous](frame_he-accessor_reduce.md "Overview: FrameHE: Accessor Reduce")
+[Next](bus-exporter.md "Overview: Bus: Exporter")
 
 ---
 

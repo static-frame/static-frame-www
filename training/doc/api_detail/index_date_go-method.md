@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexDateGO: Method
 * [View page source](../_sources/api_detail/index_date_go-method.rst.txt)
 
-[Previous](index_date_go-attribute.html "Detail: IndexDateGO: Attribute")
-[Next](index_date_go-dictionary_like.html "Detail: IndexDateGO: Dictionary-Like")
+[Previous](index_date_go-attribute.md "Detail: IndexDateGO: Attribute")
+[Next](index_date_go-dictionary_like.md "Detail: IndexDateGO: Dictionary-Like")
 
 ---
 
 # Detail: IndexDateGO: Method[](#detail-indexdatego-method "Link to this heading")
 
-[Overview: IndexDateGO: Method](../api_overview/index_date_go-method.html#api-overview-indexdatego-method)
+[Overview: IndexDateGO: Method](../api_overview/index_date_go-method.md#api-overview-indexdatego-method)
 
 IndexDateGO.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexDateGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -419,7 +419,7 @@ IndexDateGO.difference(*\*others*)[](#static_frame.IndexDateGO.difference "Li
     ```
 
 IndexDateGO.dropfalsy()[](#static_frame.IndexDateGO.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexDateGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -438,7 +438,7 @@ IndexDateGO.dropfalsy()[](#static_frame.IndexDateGO.dropfalsy "Link to this d
     ```
 
 IndexDateGO.dropna()[](#static_frame.IndexDateGO.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexDateGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -518,7 +518,7 @@ IndexDateGO.extend(*values*, */*)[](#static_frame.IndexDateGO.extend "Link to
     ```
 
 IndexDateGO.fillfalsy(*value*, */*)[](#static_frame.IndexDateGO.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -537,7 +537,7 @@ IndexDateGO.fillfalsy(*value*, */*)[](#static_frame.IndexDateGO.fillfalsy "Li
     ```
 
 IndexDateGO.fillna(*value*, */*)[](#static_frame.IndexDateGO.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -560,10 +560,10 @@ IndexDateGO.fillna(*value*, */*)[](#static_frame.IndexDateGO.fillna "Link to 
     ```
 
 IndexDateGO.head(*count=5*, */*)[](#static_frame.IndexDateGO.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
@@ -582,7 +582,7 @@ IndexDateGO.head(*count=5*, */*)[](#static_frame.IndexDateGO.head "Link to th
     ```
 
 IndexDateGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexDateGO.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -706,7 +706,7 @@ IndexDateGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#stat
     ```
 
 IndexDateGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexDateGO.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1020,10 +1020,10 @@ IndexDateGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#stat
     ```
 
 IndexDateGO.tail(*count=5*, */*)[](#static_frame.IndexDateGO.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
@@ -1130,10 +1130,10 @@ IndexDateGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#stati
 
     ```
 
-[IndexDateGO](index_date_go.html#api-detail-indexdatego): [Constructor](index_date_go-constructor.html#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.html#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-detail-indexdatego-attribute) | [Method](#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.html#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.html#api-detail-indexdatego-display) | [Selector](index_date_go-selector.html#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.html#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.html#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.html#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.html#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.html#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-detail-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-detail-indexdatego): [Constructor](index_date_go-constructor.md#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-detail-indexdatego-attribute) | [Method](#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-detail-indexdatego-display) | [Selector](index_date_go-selector.md#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-detail-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-attribute.html "Detail: IndexDateGO: Attribute")
-[Next](index_date_go-dictionary_like.html "Detail: IndexDateGO: Dictionary-Like")
+[Previous](index_date_go-attribute.md "Detail: IndexDateGO: Attribute")
+[Next](index_date_go-dictionary_like.md "Detail: IndexDateGO: Dictionary-Like")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexHierarchy: Dictionary-Like
 * [View page source](../_sources/api_overview/index_hierarchy-dictionary_like.rst.txt)
 
-[Previous](index_hierarchy-method.html "Overview: IndexHierarchy: Method")
-[Next](index_hierarchy-display.html "Overview: IndexHierarchy: Display")
+[Previous](index_hierarchy-method.md "Overview: IndexHierarchy: Method")
+[Next](index_hierarchy-display.md "Overview: IndexHierarchy: Display")
 
 ---
 
 # Overview: IndexHierarchy: Dictionary-Like[](#overview-indexhierarchy-dictionary-like "Link to this heading")
 
-[Detail: IndexHierarchy: Dictionary-Like](../api_detail/index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like)
+[Detail: IndexHierarchy: Dictionary-Like](../api_detail/index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy-dictionary_like.html#api-sig-indexhierarchy-contains) | `IndexHierarchy.__contains__(value)` | Determine if a label value is contained in this Index. |
-| [Detail](../api_detail/index_hierarchy-dictionary_like.html#api-sig-indexhierarchy-iter) | `IndexHierarchy.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index_hierarchy-dictionary_like.html#api-sig-indexhierarchy-reversed) | `IndexHierarchy.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index_hierarchy-dictionary_like.html#api-sig-indexhierarchy-values) | `IndexHierarchy.values` | A 2D NumPy array of all values in the IndexHierarchy. As this is a single array,… |
+| [Detail](../api_detail/index_hierarchy-dictionary_like.md#api-sig-indexhierarchy-contains) | `IndexHierarchy.__contains__(value)` | Determine if a label value is contained in this Index. |
+| [Detail](../api_detail/index_hierarchy-dictionary_like.md#api-sig-indexhierarchy-iter) | `IndexHierarchy.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index_hierarchy-dictionary_like.md#api-sig-indexhierarchy-reversed) | `IndexHierarchy.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index_hierarchy-dictionary_like.md#api-sig-indexhierarchy-values) | `IndexHierarchy.values` | A 2D NumPy array of all values in the IndexHierarchy. As this is a single array,… |
 
-[IndexHierarchy](index_hierarchy.html#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-overview-indexhierarchy-method) | [Dictionary-Like](#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-overview-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-overview-indexhierarchy-method) | [Dictionary-Like](#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-overview-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-method.html "Overview: IndexHierarchy: Method")
-[Next](index_hierarchy-display.html "Overview: IndexHierarchy: Display")
+[Previous](index_hierarchy-method.md "Overview: IndexHierarchy: Method")
+[Next](index_hierarchy-display.md "Overview: IndexHierarchy: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: StoreFilter: Exporter
 * [View page source](../_sources/api_overview/store_filter-exporter.rst.txt)
 
-[Previous](store_filter-constructor.html "Overview: StoreFilter: Constructor")
-[Next](store_filter-attribute.html "Overview: StoreFilter: Attribute")
+[Previous](store_filter-constructor.md "Overview: StoreFilter: Constructor")
+[Next](store_filter-attribute.md "Overview: StoreFilter: Attribute")
 
 ---
 
 # Overview: StoreFilter: Exporter[](#overview-storefilter-exporter "Link to this heading")
 
-[Detail: StoreFilter: Exporter](../api_detail/store_filter-exporter.html#api-detail-storefilter-exporter)
+[Detail: StoreFilter: Exporter](../api_detail/store_filter-exporter.md#api-detail-storefilter-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/store_filter-exporter.html#api-sig-storefilter-to-type-filter-array) | `StoreFilter.to_type_filter_array(array)` | Given an array, replace strings with types. |
-| [Detail](../api_detail/store_filter-exporter.html#api-sig-storefilter-to-type-filter-element) | `StoreFilter.to_type_filter_element(value)` | Given a value wich may be an encoded string, decode into a type. |
+| [Detail](../api_detail/store_filter-exporter.md#api-sig-storefilter-to-type-filter-array) | `StoreFilter.to_type_filter_array(array)` | Given an array, replace strings with types. |
+| [Detail](../api_detail/store_filter-exporter.md#api-sig-storefilter-to-type-filter-element) | `StoreFilter.to_type_filter_element(value)` | Given a value wich may be an encoded string, decode into a type. |
 
-[StoreFilter](store_filter.html#api-overview-storefilter): [Constructor](store_filter-constructor.html#api-overview-storefilter-constructor) | [Exporter](#api-overview-storefilter-exporter) | [Attribute](store_filter-attribute.html#api-overview-storefilter-attribute) | [Display](store_filter-display.html#api-overview-storefilter-display)
+[StoreFilter](store_filter.md#api-overview-storefilter): [Constructor](store_filter-constructor.md#api-overview-storefilter-constructor) | [Exporter](#api-overview-storefilter-exporter) | [Attribute](store_filter-attribute.md#api-overview-storefilter-attribute) | [Display](store_filter-display.md#api-overview-storefilter-display)
 
-[Previous](store_filter-constructor.html "Overview: StoreFilter: Constructor")
-[Next](store_filter-attribute.html "Overview: StoreFilter: Attribute")
+[Previous](store_filter-constructor.md "Overview: StoreFilter: Constructor")
+[Next](store_filter-attribute.md "Overview: StoreFilter: Attribute")
 
 ---
 

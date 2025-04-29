@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Series: Accessor Hashlib
 * [View page source](../_sources/api_overview/series-accessor_hashlib.rst.txt)
 
-[Previous](series-accessor_regular_expression.html "Overview: Series: Accessor Regular Expression")
-[Next](series-accessor_type_clinic.html "Overview: Series: Accessor Type Clinic")
+[Previous](series-accessor_regular_expression.md "Overview: Series: Accessor Regular Expression")
+[Next](series-accessor_type_clinic.md "Overview: Series: Accessor Type Clinic")
 
 ---
 
 # Overview: Series: Accessor Hashlib[](#overview-series-accessor-hashlib "Link to this heading")
 
-[Detail: Series: Accessor Hashlib](../api_detail/series-accessor_hashlib.html#api-detail-series-accessor-hashlib)
+[Detail: Series: Accessor Hashlib](../api_detail/series-accessor_hashlib.md#api-detail-series-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-to-bytes) | `Series.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-md5) | `Series.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-sha256) | `Series.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-sha512) | `Series.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-sha3-256) | `Series.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-sha3-512) | `Series.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-shake-128) | `Series.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-shake-256) | `Series.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-blake2b) | `Series.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/series-accessor_hashlib.html#api-sig-series-via-hashlib-blake2s) | `Series.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-to-bytes) | `Series.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-md5) | `Series.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-sha256) | `Series.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-sha512) | `Series.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-sha3-256) | `Series.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-sha3-512) | `Series.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-shake-128) | `Series.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-shake-256) | `Series.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-blake2b) | `Series.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/series-accessor_hashlib.md#api-sig-series-via-hashlib-blake2s) | `Series.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-accessor_regular_expression.html "Overview: Series: Accessor Regular Expression")
-[Next](series-accessor_type_clinic.html "Overview: Series: Accessor Type Clinic")
+[Previous](series-accessor_regular_expression.md "Overview: Series: Accessor Regular Expression")
+[Next](series-accessor_type_clinic.md "Overview: Series: Accessor Type Clinic")
 
 ---
 

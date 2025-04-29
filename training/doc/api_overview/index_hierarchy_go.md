@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,39 +135,39 @@ API Detail
 * Overview: IndexHierarchyGO
 * [View page source](../_sources/api_overview/index_hierarchy_go.rst.txt)
 
-[Previous](index_hierarchy.html "Overview: IndexHierarchy")
-[Next](index_year.html "Overview: IndexYear")
+[Previous](index_hierarchy.md "Overview: IndexHierarchy")
+[Next](index_year.md "Overview: IndexYear")
 
 ---
 
 # Overview: IndexHierarchyGO[](#overview-indexhierarchygo "Link to this heading")
 
-[Detail: IndexHierarchyGO](../api_detail/index_hierarchy_go.html#api-detail-indexhierarchygo)
+[Detail: IndexHierarchyGO](../api_detail/index_hierarchy_go.md#api-detail-indexhierarchygo)
 
 |  |  |
 | --- | --- |
-| [Constructor](index_hierarchy_go-constructor.html#api-overview-indexhierarchygo-constructor) | Alternative constructors for creating instances. |
-| [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | Methods for general functionality. |
-| [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-overview-indexhierarchygo-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](index_hierarchy_go-display.html#api-overview-indexhierarchygo-display) | Methods for providing a text representation of the object. |
-| [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | Underlying (magic) methods for binary operator implementation. |
-| [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | Underlying (magic) methods for unary operator implementation. |
-| [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | Interface for using NumPy functions on conatainers. |
-| [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-overview-indexhierarchygo-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
-| [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | Interface for employing string methods on container elements. |
-| [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-overview-indexhierarchygo-accessor-transpose) | Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows. |
-| [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-overview-indexhierarchygo-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
-| [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-overview-indexhierarchygo-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](index_hierarchy_go-constructor.md#api-overview-indexhierarchygo-constructor) | Alternative constructors for creating instances. |
+| [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | Methods for general functionality. |
+| [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](index_hierarchy_go-display.md#api-overview-indexhierarchygo-display) | Methods for providing a text representation of the object. |
+| [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | Underlying (magic) methods for binary operator implementation. |
+| [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | Underlying (magic) methods for unary operator implementation. |
+| [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | Interface for using NumPy functions on conatainers. |
+| [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-overview-indexhierarchygo-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
+| [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | Interface for employing string methods on container elements. |
+| [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-overview-indexhierarchygo-accessor-transpose) | Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows. |
+| [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-overview-indexhierarchygo-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
+| [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-overview-indexhierarchygo-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 
-[IndexHierarchyGO](#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-overview-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-overview-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy.html "Overview: IndexHierarchy")
-[Next](index_year.html "Overview: IndexYear")
+[Previous](index_hierarchy.md "Overview: IndexHierarchy")
+[Next](index_year.md "Overview: IndexYear")
 
 ---
 

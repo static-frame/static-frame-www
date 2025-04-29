@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexHierarchyGO: Selector
 * [View page source](../_sources/api_detail/index_hierarchy_go-selector.rst.txt)
 
-[Previous](index_hierarchy_go-display.html "Detail: IndexHierarchyGO: Display")
-[Next](index_hierarchy_go-iterator.html "Detail: IndexHierarchyGO: Iterator")
+[Previous](index_hierarchy_go-display.md "Detail: IndexHierarchyGO: Display")
+[Next](index_hierarchy_go-iterator.md "Detail: IndexHierarchyGO: Iterator")
 
 ---
 
 # Detail: IndexHierarchyGO: Selector[](#detail-indexhierarchygo-selector "Link to this heading")
 
-[Overview: IndexHierarchyGO: Selector](../api_overview/index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector)
+[Overview: IndexHierarchyGO: Selector](../api_overview/index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector)
 
 IndexHierarchyGO[*key*]()[](#IndexHierarchyGO "Link to this definition")
 :   IndexHierarchyGO.\_\_getitem\_\_ *= <function IndexHierarchy.\_\_getitem\_\_>*
@@ -226,10 +226,10 @@ IndexHierarchyGO.loc[*key*]
 
     ```
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-detail-indexhierarchygo-display) | [Selector](#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-detail-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-display.html "Detail: IndexHierarchyGO: Display")
-[Next](index_hierarchy_go-iterator.html "Detail: IndexHierarchyGO: Iterator")
+[Previous](index_hierarchy_go-display.md "Detail: IndexHierarchyGO: Display")
+[Next](index_hierarchy_go-iterator.md "Detail: IndexHierarchyGO: Iterator")
 
 ---
 

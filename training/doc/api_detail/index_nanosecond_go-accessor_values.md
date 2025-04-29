@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexNanosecondGO: Accessor Values
 * [View page source](../_sources/api_detail/index_nanosecond_go-accessor_values.rst.txt)
 
-[Previous](index_nanosecond_go-operator_unary.html "Detail: IndexNanosecondGO: Operator Unary")
-[Next](index_nanosecond_go-accessor_datetime.html "Detail: IndexNanosecondGO: Accessor Datetime")
+[Previous](index_nanosecond_go-operator_unary.md "Detail: IndexNanosecondGO: Operator Unary")
+[Next](index_nanosecond_go-accessor_datetime.md "Detail: IndexNanosecondGO: Accessor Datetime")
 
 ---
 
 # Detail: IndexNanosecondGO: Accessor Values[](#detail-indexnanosecondgo-accessor-values "Link to this heading")
 
-[Overview: IndexNanosecondGO: Accessor Values](../api_overview/index_nanosecond_go-accessor_values.html#api-overview-indexnanosecondgo-accessor-values)
+[Overview: IndexNanosecondGO: Accessor Values](../api_overview/index_nanosecond_go-accessor_values.md#api-overview-indexnanosecondgo-accessor-values)
 
 IndexNanosecondGO.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
 :   IndexNanosecondGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.apply)
+    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.apply)
 
     ```
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
@@ -167,7 +167,7 @@ IndexNanosecondGO.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, 
 :   IndexNanosecondGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__array_ufunc__)
+    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__array_ufunc__)
     :   Support for applying NumPy functions directly on containers.
 
     ```
@@ -187,7 +187,7 @@ IndexNanosecondGO.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_
 :   IndexNanosecondGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__call__)
+    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__call__)
     :   Parameters:
         :   * **consolidate\_blocks** – Group adjacent same-typed arrays into 2D arrays.
             * **unify\_blocks** – Group all arrays into single array, re-typing to an appropriate dtype.
@@ -206,10 +206,10 @@ IndexNanosecondGO.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_
 
     ```
 
-[IndexNanosecondGO](index_nanosecond_go.html#api-detail-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.html#api-detail-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.html#api-detail-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.html#api-detail-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.html#api-detail-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.html#api-detail-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.html#api-detail-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.html#api-detail-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.html#api-detail-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.html#api-detail-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.html#api-detail-indexnanosecondgo-operator-unary) | [Accessor Values](#api-detail-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.html#api-detail-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.html#api-detail-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.html#api-detail-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.html#api-detail-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.html#api-detail-indexnanosecondgo-accessor-type-clinic)
+[IndexNanosecondGO](index_nanosecond_go.md#api-detail-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.md#api-detail-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.md#api-detail-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.md#api-detail-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.md#api-detail-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.md#api-detail-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.md#api-detail-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.md#api-detail-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.md#api-detail-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.md#api-detail-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.md#api-detail-indexnanosecondgo-operator-unary) | [Accessor Values](#api-detail-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.md#api-detail-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.md#api-detail-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.md#api-detail-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.md#api-detail-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.md#api-detail-indexnanosecondgo-accessor-type-clinic)
 
-[Previous](index_nanosecond_go-operator_unary.html "Detail: IndexNanosecondGO: Operator Unary")
-[Next](index_nanosecond_go-accessor_datetime.html "Detail: IndexNanosecondGO: Accessor Datetime")
+[Previous](index_nanosecond_go-operator_unary.md "Detail: IndexNanosecondGO: Operator Unary")
+[Next](index_nanosecond_go-accessor_datetime.md "Detail: IndexNanosecondGO: Accessor Datetime")
 
 ---
 

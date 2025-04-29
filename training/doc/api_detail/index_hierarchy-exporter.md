@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: IndexHierarchy: Exporter
 * [View page source](../_sources/api_detail/index_hierarchy-exporter.rst.txt)
 
-[Previous](index_hierarchy-constructor.html "Detail: IndexHierarchy: Constructor")
-[Next](index_hierarchy-attribute.html "Detail: IndexHierarchy: Attribute")
+[Previous](index_hierarchy-constructor.md "Detail: IndexHierarchy: Constructor")
+[Next](index_hierarchy-attribute.md "Detail: IndexHierarchy: Attribute")
 
 ---
 
 # Detail: IndexHierarchy: Exporter[](#detail-indexhierarchy-exporter "Link to this heading")
 
-[Overview: IndexHierarchy: Exporter](../api_overview/index_hierarchy-exporter.html#api-overview-indexhierarchy-exporter)
+[Overview: IndexHierarchy: Exporter](../api_overview/index_hierarchy-exporter.md#api-overview-indexhierarchy-exporter)
 
-IndexHierarchy.to\_frame()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.to_frame)[](#static_frame.IndexHierarchy.to_frame "Link to this definition")
-:   Return [`Frame`](frame-selector.html#Frame "Frame") version of this [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+IndexHierarchy.to\_frame()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.to_frame)[](#static_frame.IndexHierarchy.to_frame "Link to this definition")
+:   Return [`Frame`](frame-selector.md#Frame "Frame") version of this [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('a', 1024, True), ('a', 2048, True), ('a', 2048, False), ('b', 1024, True)), name='x')
@@ -168,8 +168,8 @@ IndexHierarchy.to\_frame()[[source]](../_modules/static_frame/core/index_hierarc
 
     ```
 
-IndexHierarchy.to\_frame\_go()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.to_frame_go)[](#static_frame.IndexHierarchy.to_frame_go "Link to this definition")
-:   Return a [`FrameGO`](frame_go-selector.html#FrameGO "FrameGO") version of this [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+IndexHierarchy.to\_frame\_go()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.to_frame_go)[](#static_frame.IndexHierarchy.to_frame_go "Link to this definition")
+:   Return a [`FrameGO`](frame_go-selector.md#FrameGO "FrameGO") version of this [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('a', 1024, True), ('a', 2048, True), ('a', 2048, False), ('b', 1024, True)), name='x')
@@ -193,26 +193,26 @@ IndexHierarchy.to\_frame\_go()[[source]](../_modules/static_frame/core/index_hie
     ```
 
 IndexHierarchy.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexHierarchy.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Index`](index-selector.html#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 IndexHierarchy.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexHierarchy.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Index`](index-selector.html#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
 
-IndexHierarchy.to\_pandas()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.to_pandas)[](#static_frame.IndexHierarchy.to_pandas "Link to this definition")
+IndexHierarchy.to\_pandas()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.to_pandas)[](#static_frame.IndexHierarchy.to_pandas "Link to this definition")
 :   Return a Pandas MultiIndex.
 
     ```
@@ -233,7 +233,7 @@ IndexHierarchy.to\_pandas()[[source]](../_modules/static_frame/core/index_hierar
 
     ```
 
-IndexHierarchy.to\_tree()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.to_tree)[](#static_frame.IndexHierarchy.to_tree "Link to this definition")
+IndexHierarchy.to\_tree()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.to_tree)[](#static_frame.IndexHierarchy.to_tree "Link to this definition")
 :   Returns the tree representation of an IndexHierarchy
 
     ```
@@ -260,10 +260,10 @@ IndexHierarchy.to\_tree()[[source]](../_modules/static_frame/core/index_hierarch
 IndexHierarchy.to\_visidata()[](#static_frame.IndexHierarchy.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[IndexHierarchy](index_hierarchy.html#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor) | [Exporter](#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-constructor.html "Detail: IndexHierarchy: Constructor")
-[Next](index_hierarchy-attribute.html "Detail: IndexHierarchy: Attribute")
+[Previous](index_hierarchy-constructor.md "Detail: IndexHierarchy: Constructor")
+[Next](index_hierarchy-attribute.md "Detail: IndexHierarchy: Attribute")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: ClinicResult: Dictionary-Like
 * [View page source](../_sources/api_detail/clinic_result-dictionary_like.rst.txt)
 
-[Previous](clinic_result-method.html "Detail: ClinicResult: Method")
-[Next](clinic_result-display.html "Detail: ClinicResult: Display")
+[Previous](clinic_result-method.md "Detail: ClinicResult: Method")
+[Next](clinic_result-display.md "Detail: ClinicResult: Display")
 
 ---
 
 # Detail: ClinicResult: Dictionary-Like[](#detail-clinicresult-dictionary-like "Link to this heading")
 
-[Overview: ClinicResult: Dictionary-Like](../api_overview/clinic_result-dictionary_like.html#api-overview-clinicresult-dictionary-like)
+[Overview: ClinicResult: Dictionary-Like](../api_overview/clinic_result-dictionary_like.md#api-overview-clinicresult-dictionary-like)
 
-ClinicResult.\_\_iter\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#ClinicResult.__iter__)[](#static_frame.ClinicResult.__iter__ "Link to this definition")
+ClinicResult.\_\_iter\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#ClinicResult.__iter__)[](#static_frame.ClinicResult.__iter__ "Link to this definition")
 :   ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f
@@ -184,10 +184,10 @@ ClinicResult.\_\_iter\_\_()[[source]](../_modules/static_frame/core/type_clinic.
 
     ```
 
-[ClinicResult](clinic_result.html#api-detail-clinicresult): [Constructor](clinic_result-constructor.html#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-detail-clinicresult-attribute) | [Method](clinic_result-method.html#api-detail-clinicresult-method) | [Dictionary-Like](#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-detail-clinicresult-display)
+[ClinicResult](clinic_result.md#api-detail-clinicresult): [Constructor](clinic_result-constructor.md#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-detail-clinicresult-attribute) | [Method](clinic_result-method.md#api-detail-clinicresult-method) | [Dictionary-Like](#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-detail-clinicresult-display)
 
-[Previous](clinic_result-method.html "Detail: ClinicResult: Method")
-[Next](clinic_result-display.html "Detail: ClinicResult: Display")
+[Previous](clinic_result-method.md "Detail: ClinicResult: Method")
+[Next](clinic_result-display.md "Detail: ClinicResult: Display")
 
 ---
 

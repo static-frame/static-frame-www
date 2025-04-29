@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexHour: Accessor Regular Expression
 * [View page source](../_sources/api_detail/index_hour-accessor_regular_expression.rst.txt)
 
-[Previous](index_hour-accessor_string.html "Detail: IndexHour: Accessor String")
-[Next](index_hour-accessor_hashlib.html "Detail: IndexHour: Accessor Hashlib")
+[Previous](index_hour-accessor_string.md "Detail: IndexHour: Accessor String")
+[Next](index_hour-accessor_hashlib.md "Detail: IndexHour: Accessor Hashlib")
 
 ---
 
 # Detail: IndexHour: Accessor Regular Expression[](#detail-indexhour-accessor-regular-expression "Link to this heading")
 
-[Overview: IndexHour: Accessor Regular Expression](../api_overview/index_hour-accessor_regular_expression.html#api-overview-indexhour-accessor-regular-expression)
+[Overview: IndexHour: Accessor Regular Expression](../api_overview/index_hour-accessor_regular_expression.md#api-overview-indexhour-accessor-regular-expression)
 
 IndexHour.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.search)
+    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.search)
     :   Scan through string looking for the first location where this regular expression produces a match and return True, else False. Note that this is different from finding a zero-length match at some point in the string.
 
         Parameters:
@@ -170,7 +170,7 @@ IndexHour.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 IndexHour.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.match)
+    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.match)
     :   If zero or more characters at the beginning of string match this regular expression return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -193,7 +193,7 @@ IndexHour.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 IndexHour.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.fullmatch)
+    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.fullmatch)
     :   If the whole string matches this regular expression, return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -216,7 +216,7 @@ IndexHour.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 IndexHour.via\_re(*pattern*, *flags).split(maxsplit*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.split)
+    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.split)
     :   Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting tuple.
 
         Parameters:
@@ -239,7 +239,7 @@ IndexHour.via\_re(*pattern*, *flags).split(maxsplit*)
 IndexHour.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.findall)
+    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.findall)
     :   Return all non-overlapping matches of pattern in string, as a tuple of strings. The string is scanned left-to-right, and matches are returned in the order found. If one or more groups are present in the pattern, return a tuple of groups; this will be a tuple of tuples if the pattern has more than one group. Empty matches are included in the result.
 
         Parameters:
@@ -262,7 +262,7 @@ IndexHour.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 IndexHour.via\_re(*pattern*, *flags).sub(repl*, *count*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.sub)
+    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.sub)
     :   Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement `repl`. If the pattern is not found, the string is returned unchanged.
 
         Parameters:
@@ -285,7 +285,7 @@ IndexHour.via\_re(*pattern*, *flags).sub(repl*, *count*)
 IndexHour.via\_re(*pattern*, *flags).subn(repl*, *count*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.subn)
+    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.subn)
     :   Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_subs\_made).
 
         Parameters:
@@ -305,10 +305,10 @@ IndexHour.via\_re(*pattern*, *flags).subn(repl*, *count*)
 
     ```
 
-[IndexHour](index_hour.html#api-detail-indexhour): [Constructor](index_hour-constructor.html#api-detail-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-detail-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-detail-indexhour-attribute) | [Method](index_hour-method.html#api-detail-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.html#api-detail-indexhour-dictionary-like) | [Display](index_hour-display.html#api-detail-indexhour-display) | [Selector](index_hour-selector.html#api-detail-indexhour-selector) | [Iterator](index_hour-iterator.html#api-detail-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.html#api-detail-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-detail-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.html#api-detail-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.html#api-detail-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.html#api-detail-indexhour-accessor-string) | [Accessor Regular Expression](#api-detail-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-detail-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.html#api-detail-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-detail-indexhour): [Constructor](index_hour-constructor.md#api-detail-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-detail-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-detail-indexhour-attribute) | [Method](index_hour-method.md#api-detail-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-detail-indexhour-dictionary-like) | [Display](index_hour-display.md#api-detail-indexhour-display) | [Selector](index_hour-selector.md#api-detail-indexhour-selector) | [Iterator](index_hour-iterator.md#api-detail-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-detail-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-detail-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-detail-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-detail-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-detail-indexhour-accessor-string) | [Accessor Regular Expression](#api-detail-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-detail-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-detail-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-accessor_string.html "Detail: IndexHour: Accessor String")
-[Next](index_hour-accessor_hashlib.html "Detail: IndexHour: Accessor Hashlib")
+[Previous](index_hour-accessor_string.md "Detail: IndexHour: Accessor String")
+[Next](index_hour-accessor_hashlib.md "Detail: IndexHour: Accessor Hashlib")
 
 ---
 

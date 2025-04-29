@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexHierarchy: Accessor Datetime
 * [View page source](../_sources/api_detail/index_hierarchy-accessor_datetime.rst.txt)
 
-[Previous](index_hierarchy-accessor_values.html "Detail: IndexHierarchy: Accessor Values")
-[Next](index_hierarchy-accessor_string.html "Detail: IndexHierarchy: Accessor String")
+[Previous](index_hierarchy-accessor_values.md "Detail: IndexHierarchy: Accessor Values")
+[Next](index_hierarchy-accessor_string.md "Detail: IndexHierarchy: Accessor String")
 
 ---
 
 # Detail: IndexHierarchy: Accessor Datetime[](#detail-indexhierarchy-accessor-datetime "Link to this heading")
 
-[Overview: IndexHierarchy: Accessor Datetime](../api_overview/index_hierarchy-accessor_datetime.html#api-overview-indexhierarchy-accessor-datetime)
+[Overview: IndexHierarchy: Accessor Datetime](../api_overview/index_hierarchy-accessor_datetime.md#api-overview-indexhierarchy-accessor-datetime)
 
 IndexHierarchy.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.__call__)
+    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.__call__)
     :   Parameters:
         :   **fill\_value** – If NAT are encountered, use this value.
 
@@ -355,7 +355,7 @@ IndexHierarchy.via\_dt.weekday
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.weekday)
+    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.weekday)
     :   Return the day of the week as an integer, where Monday is 0 and Sunday is 6.
 
     ```
@@ -378,7 +378,7 @@ IndexHierarchy.via\_dt.quarter
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.quarter)
+    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.quarter)
     :   Return the quarter of the year as an integer, where January through March is quarter 1.
 
     ```
@@ -401,7 +401,7 @@ IndexHierarchy.via\_dt.is\_month\_end
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_end)
+    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_end)
     :   Return Boolean indicators if the day is the month end.
 
     ```
@@ -424,7 +424,7 @@ IndexHierarchy.via\_dt.is\_month\_start
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_start)
+    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_start)
     :   Return Boolean indicators if the day is the month start.
 
     ```
@@ -447,7 +447,7 @@ IndexHierarchy.via\_dt.is\_year\_end
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_end)
+    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_end)
     :   Return Boolean indicators if the day is the year end.
 
     ```
@@ -470,7 +470,7 @@ IndexHierarchy.via\_dt.is\_year\_start
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_start)
+    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_start)
     :   Return Boolean indicators if the day is the year start.
 
     ```
@@ -493,7 +493,7 @@ IndexHierarchy.via\_dt.is\_quarter\_end
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_end)
+    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_end)
     :   Return Boolean indicators if the day is the quarter end.
 
     ```
@@ -516,7 +516,7 @@ IndexHierarchy.via\_dt.is\_quarter\_start
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_start)
+    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_start)
     :   Return Boolean indicators if the day is the quarter start.
 
     ```
@@ -539,7 +539,7 @@ IndexHierarchy.via\_dt.timetuple
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.timetuple)
+    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.timetuple)
     :   Return a `time.struct_time` such as returned by time.localtime().
 
     ```
@@ -565,7 +565,7 @@ IndexHierarchy.via\_dt.isoformat(*\**, *sep*, *timespec*)
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.isoformat)
+    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.isoformat)
     :   Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
 
     ```
@@ -588,7 +588,7 @@ IndexHierarchy.via\_dt.fromisoformat
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.fromisoformat)
+    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.fromisoformat)
     :   Return a `datetime.date` object from an ISO 8601 format.
 
     ```
@@ -610,7 +610,7 @@ IndexHierarchy.via\_dt.strftime(*format*)
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strftime)
+    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strftime)
     :   Return a string representing the date, controlled by an explicit `format` string.
 
     ```
@@ -631,7 +631,7 @@ IndexHierarchy.via\_dt.strptime(*format*)
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strptime)
+    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strptime)
     :   Return a Python datetime object from parsing a string defined with `format`.
 
     ```
@@ -655,7 +655,7 @@ IndexHierarchy.via\_dt.strpdate(*format*)
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strpdate)
+    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strpdate)
     :   Return a Python date object from parsing a string defined with `format`.
 
     ```
@@ -673,10 +673,10 @@ IndexHierarchy.via\_dt.strpdate(*format*)
 
     ```
 
-[IndexHierarchy](index_hierarchy.html#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-accessor_values.html "Detail: IndexHierarchy: Accessor Values")
-[Next](index_hierarchy-accessor_string.html "Detail: IndexHierarchy: Accessor String")
+[Previous](index_hierarchy-accessor_values.md "Detail: IndexHierarchy: Accessor Values")
+[Next](index_hierarchy-accessor_string.md "Detail: IndexHierarchy: Accessor String")
 
 ---
 

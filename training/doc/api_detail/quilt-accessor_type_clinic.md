@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: Quilt: Accessor Type Clinic
 * [View page source](../_sources/api_detail/quilt-accessor_type_clinic.rst.txt)
 
-[Previous](quilt-accessor_hashlib.html "Detail: Quilt: Accessor Hashlib")
-[Next](index-constructor.html "Detail: Index: Constructor")
+[Previous](quilt-accessor_hashlib.md "Detail: Quilt: Accessor Hashlib")
+[Next](index-constructor.md "Detail: Index: Constructor")
 
 ---
 
 # Detail: Quilt: Accessor Type Clinic[](#detail-quilt-accessor-type-clinic "Link to this heading")
 
-[Overview: Quilt: Accessor Type Clinic](../api_overview/quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic)
+[Overview: Quilt: Accessor Type Clinic](../api_overview/quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic)
 
 Quilt.via\_type\_clinic.to\_hint
 :   Quilt.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -167,7 +167,7 @@ Quilt.via\_type\_clinic.to\_hint
 Quilt.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   Quilt.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -190,7 +190,7 @@ Quilt.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 Quilt.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   Quilt.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -200,7 +200,7 @@ Quilt.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 Quilt.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   Quilt.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -229,7 +229,7 @@ Quilt.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 Quilt.via\_type\_clinic.\_\_repr\_\_
 :   Quilt.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -246,10 +246,10 @@ Quilt.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[Quilt](quilt.html#api-detail-quilt): [Constructor](quilt-constructor.html#api-detail-quilt-constructor) | [Exporter](quilt-exporter.html#api-detail-quilt-exporter) | [Attribute](quilt-attribute.html#api-detail-quilt-attribute) | [Method](quilt-method.html#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-detail-quilt-dictionary-like) | [Display](quilt-display.html#api-detail-quilt-display) | [Selector](quilt-selector.html#api-detail-quilt-selector) | [Iterator](quilt-iterator.html#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](#api-detail-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](#api-detail-quilt-accessor-type-clinic)
 
-[Previous](quilt-accessor_hashlib.html "Detail: Quilt: Accessor Hashlib")
-[Next](index-constructor.html "Detail: Index: Constructor")
+[Previous](quilt-accessor_hashlib.md "Detail: Quilt: Accessor Hashlib")
+[Next](index-constructor.md "Detail: Index: Constructor")
 
 ---
 

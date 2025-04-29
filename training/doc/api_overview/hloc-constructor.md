@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: HLoc: Constructor
 * [View page source](../_sources/api_overview/hloc-constructor.rst.txt)
 
-[Previous](index_nanosecond_go-accessor_type_clinic.html "Overview: IndexNanosecondGO: Accessor Type Clinic")
-[Next](hloc-attribute.html "Overview: HLoc: Attribute")
+[Previous](index_nanosecond_go-accessor_type_clinic.md "Overview: IndexNanosecondGO: Accessor Type Clinic")
+[Next](hloc-attribute.md "Overview: HLoc: Attribute")
 
 ---
 
 # Overview: HLoc: Constructor[](#overview-hloc-constructor "Link to this heading")
 
-[Detail: HLoc: Constructor](../api_detail/hloc-constructor.html#api-detail-hloc-constructor)
+[Detail: HLoc: Constructor](../api_detail/hloc-constructor.md#api-detail-hloc-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/hloc-constructor.html#api-sig-hloc-init) | `HLoc.__init__(key)` |  |
+| [Detail](../api_detail/hloc-constructor.md#api-sig-hloc-init) | `HLoc.__init__(key)` |  |
 
-[HLoc](hloc.html#api-overview-hloc): [Constructor](#api-overview-hloc-constructor) | [Attribute](hloc-attribute.html#api-overview-hloc-attribute) | [Method](hloc-method.html#api-overview-hloc-method) | [Dictionary-Like](hloc-dictionary_like.html#api-overview-hloc-dictionary-like) | [Display](hloc-display.html#api-overview-hloc-display)
+[HLoc](hloc.md#api-overview-hloc): [Constructor](#api-overview-hloc-constructor) | [Attribute](hloc-attribute.md#api-overview-hloc-attribute) | [Method](hloc-method.md#api-overview-hloc-method) | [Dictionary-Like](hloc-dictionary_like.md#api-overview-hloc-dictionary-like) | [Display](hloc-display.md#api-overview-hloc-display)
 
-[Previous](index_nanosecond_go-accessor_type_clinic.html "Overview: IndexNanosecondGO: Accessor Type Clinic")
-[Next](hloc-attribute.html "Overview: HLoc: Attribute")
+[Previous](index_nanosecond_go-accessor_type_clinic.md "Overview: IndexNanosecondGO: Accessor Type Clinic")
+[Next](hloc-attribute.md "Overview: HLoc: Attribute")
 
 ---
 

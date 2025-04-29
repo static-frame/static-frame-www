@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: SeriesHE: Display
 * [View page source](../_sources/api_overview/series_he-display.rst.txt)
 
-[Previous](series_he-dictionary_like.html "Overview: SeriesHE: Dictionary-Like")
-[Next](series_he-assignment.html "Overview: SeriesHE: Assignment")
+[Previous](series_he-dictionary_like.md "Overview: SeriesHE: Dictionary-Like")
+[Next](series_he-assignment.md "Overview: SeriesHE: Assignment")
 
 ---
 
 # Overview: SeriesHE: Display[](#overview-serieshe-display "Link to this heading")
 
-[Detail: SeriesHE: Display](../api_detail/series_he-display.html#api-detail-serieshe-display)
+[Detail: SeriesHE: Display](../api_detail/series_he-display.md#api-detail-serieshe-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series_he-display.html#api-sig-serieshe-interface) | [`SeriesHE.interface`](../api_detail/series_he-display.html#SeriesHE.interface "SeriesHE.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/series_he-display.html#api-sig-serieshe-repr) | `SeriesHE.__repr__()` |  |
-| [Detail](../api_detail/series_he-display.html#api-sig-serieshe-str) | `SeriesHE.__str__()` | Return str(self). |
-| [Detail](../api_detail/series_he-display.html#api-sig-serieshe-display) | `SeriesHE.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/series_he-display.html#api-sig-serieshe-display-tall) | `SeriesHE.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/series_he-display.html#api-sig-serieshe-display-wide) | `SeriesHE.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/series_he-display.md#api-sig-serieshe-interface) | [`SeriesHE.interface`](../api_detail/series_he-display.md#SeriesHE.interface "SeriesHE.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/series_he-display.md#api-sig-serieshe-repr) | `SeriesHE.__repr__()` |  |
+| [Detail](../api_detail/series_he-display.md#api-sig-serieshe-str) | `SeriesHE.__str__()` | Return str(self). |
+| [Detail](../api_detail/series_he-display.md#api-sig-serieshe-display) | `SeriesHE.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/series_he-display.md#api-sig-serieshe-display-tall) | `SeriesHE.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/series_he-display.md#api-sig-serieshe-display-wide) | `SeriesHE.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[SeriesHE](series_he.html#api-overview-serieshe): [Constructor](series_he-constructor.html#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | [Method](series_he-method.html#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-overview-serieshe-dictionary-like) | [Display](#api-overview-serieshe-display) | [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | [Selector](series_he-selector.html#api-overview-serieshe-selector) | [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-overview-serieshe): [Constructor](series_he-constructor.md#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | [Method](series_he-method.md#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-overview-serieshe-dictionary-like) | [Display](#api-overview-serieshe-display) | [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | [Selector](series_he-selector.md#api-overview-serieshe-selector) | [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-dictionary_like.html "Overview: SeriesHE: Dictionary-Like")
-[Next](series_he-assignment.html "Overview: SeriesHE: Assignment")
+[Previous](series_he-dictionary_like.md "Overview: SeriesHE: Dictionary-Like")
+[Next](series_he-assignment.md "Overview: SeriesHE: Assignment")
 
 ---
 

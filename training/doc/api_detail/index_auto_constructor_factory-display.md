@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexAutoConstructorFactory: Display
 * [View page source](../_sources/api_detail/index_auto_constructor_factory-display.rst.txt)
 
-[Previous](index_auto_constructor_factory-method.html "Detail: IndexAutoConstructorFactory: Method")
-[Next](npz-constructor.html "Detail: NPZ: Constructor")
+[Previous](index_auto_constructor_factory-method.md "Detail: IndexAutoConstructorFactory: Method")
+[Next](npz-constructor.md "Detail: NPZ: Constructor")
 
 ---
 
 # Detail: IndexAutoConstructorFactory: Display[](#detail-indexautoconstructorfactory-display "Link to this heading")
 
-[Overview: IndexAutoConstructorFactory: Display](../api_overview/index_auto_constructor_factory-display.html#api-overview-indexautoconstructorfactory-display)
+[Overview: IndexAutoConstructorFactory: Display](../api_overview/index_auto_constructor_factory-display.md#api-overview-indexautoconstructorfactory-display)
 
 IndexAutoConstructorFactory.\_\_repr\_\_()[](#static_frame.IndexAutoConstructorFactory.__repr__ "Link to this definition")
 :   Return repr(self).
@@ -150,10 +150,10 @@ IndexAutoConstructorFactory.\_\_repr\_\_()[](#static_frame.IndexAutoConstruct
 IndexAutoConstructorFactory.\_\_str\_\_()[](#static_frame.IndexAutoConstructorFactory.__str__ "Link to this definition")
 :   Return str(self).
 
-[IndexAutoConstructorFactory](index_auto_constructor_factory.html#api-detail-indexautoconstructorfactory): [Constructor](index_auto_constructor_factory-constructor.html#api-detail-indexautoconstructorfactory-constructor) | [Exporter](index_auto_constructor_factory-exporter.html#api-detail-indexautoconstructorfactory-exporter) | [Method](index_auto_constructor_factory-method.html#api-detail-indexautoconstructorfactory-method) | [Display](#api-detail-indexautoconstructorfactory-display)
+[IndexAutoConstructorFactory](index_auto_constructor_factory.md#api-detail-indexautoconstructorfactory): [Constructor](index_auto_constructor_factory-constructor.md#api-detail-indexautoconstructorfactory-constructor) | [Exporter](index_auto_constructor_factory-exporter.md#api-detail-indexautoconstructorfactory-exporter) | [Method](index_auto_constructor_factory-method.md#api-detail-indexautoconstructorfactory-method) | [Display](#api-detail-indexautoconstructorfactory-display)
 
-[Previous](index_auto_constructor_factory-method.html "Detail: IndexAutoConstructorFactory: Method")
-[Next](npz-constructor.html "Detail: NPZ: Constructor")
+[Previous](index_auto_constructor_factory-method.md "Detail: IndexAutoConstructorFactory: Method")
+[Next](npz-constructor.md "Detail: NPZ: Constructor")
 
 ---
 

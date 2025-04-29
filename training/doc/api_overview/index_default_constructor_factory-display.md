@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: IndexDefaultConstructorFactory: Display
 * [View page source](../_sources/api_overview/index_default_constructor_factory-display.rst.txt)
 
-[Previous](index_default_constructor_factory-method.html "Overview: IndexDefaultConstructorFactory: Method")
-[Next](index_auto_constructor_factory-constructor.html "Overview: IndexAutoConstructorFactory: Constructor")
+[Previous](index_default_constructor_factory-method.md "Overview: IndexDefaultConstructorFactory: Method")
+[Next](index_auto_constructor_factory-constructor.md "Overview: IndexAutoConstructorFactory: Constructor")
 
 ---
 
 # Overview: IndexDefaultConstructorFactory: Display[](#overview-indexdefaultconstructorfactory-display "Link to this heading")
 
-[Detail: IndexDefaultConstructorFactory: Display](../api_detail/index_default_constructor_factory-display.html#api-detail-indexdefaultconstructorfactory-display)
+[Detail: IndexDefaultConstructorFactory: Display](../api_detail/index_default_constructor_factory-display.md#api-detail-indexdefaultconstructorfactory-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_default_constructor_factory-display.html#api-sig-indexdefaultconstructorfactory-repr) | `IndexDefaultConstructorFactory.__repr__()` | Return repr(self). |
-| [Detail](../api_detail/index_default_constructor_factory-display.html#api-sig-indexdefaultconstructorfactory-str) | `IndexDefaultConstructorFactory.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_default_constructor_factory-display.md#api-sig-indexdefaultconstructorfactory-repr) | `IndexDefaultConstructorFactory.__repr__()` | Return repr(self). |
+| [Detail](../api_detail/index_default_constructor_factory-display.md#api-sig-indexdefaultconstructorfactory-str) | `IndexDefaultConstructorFactory.__str__()` | Return str(self). |
 
-[IndexDefaultConstructorFactory](index_default_constructor_factory.html#api-overview-indexdefaultconstructorfactory): [Constructor](index_default_constructor_factory-constructor.html#api-overview-indexdefaultconstructorfactory-constructor) | [Method](index_default_constructor_factory-method.html#api-overview-indexdefaultconstructorfactory-method) | [Display](#api-overview-indexdefaultconstructorfactory-display)
+[IndexDefaultConstructorFactory](index_default_constructor_factory.md#api-overview-indexdefaultconstructorfactory): [Constructor](index_default_constructor_factory-constructor.md#api-overview-indexdefaultconstructorfactory-constructor) | [Method](index_default_constructor_factory-method.md#api-overview-indexdefaultconstructorfactory-method) | [Display](#api-overview-indexdefaultconstructorfactory-display)
 
-[Previous](index_default_constructor_factory-method.html "Overview: IndexDefaultConstructorFactory: Method")
-[Next](index_auto_constructor_factory-constructor.html "Overview: IndexAutoConstructorFactory: Constructor")
+[Previous](index_default_constructor_factory-method.md "Overview: IndexDefaultConstructorFactory: Method")
+[Next](index_auto_constructor_factory-constructor.md "Overview: IndexAutoConstructorFactory: Constructor")
 
 ---
 

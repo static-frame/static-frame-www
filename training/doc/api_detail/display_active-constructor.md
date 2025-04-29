@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,21 +135,21 @@ API Detail
 * Detail: DisplayActive: Constructor
 * [View page source](../_sources/api_detail/display_active-constructor.rst.txt)
 
-[Previous](fill_value_auto-selector.html "Detail: FillValueAuto: Selector")
-[Next](display_active-attribute.html "Detail: DisplayActive: Attribute")
+[Previous](fill_value_auto-selector.md "Detail: FillValueAuto: Selector")
+[Next](display_active-attribute.md "Detail: DisplayActive: Attribute")
 
 ---
 
 # Detail: DisplayActive: Constructor[](#detail-displayactive-constructor "Link to this heading")
 
-[Overview: DisplayActive: Constructor](../api_overview/display_active-constructor.html#api-overview-displayactive-constructor)
+[Overview: DisplayActive: Constructor](../api_overview/display_active-constructor.md#api-overview-displayactive-constructor)
 
 DisplayActive.\_\_init\_\_()[](#static_frame.DisplayActive.__init__ "Link to this definition")
 
-[DisplayActive](display_active.html#api-detail-displayactive): [Constructor](#api-detail-displayactive-constructor) | [Attribute](display_active-attribute.html#api-detail-displayactive-attribute) | [Method](display_active-method.html#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.html#api-detail-displayactive-dictionary-like) | [Display](display_active-display.html#api-detail-displayactive-display)
+[DisplayActive](display_active.md#api-detail-displayactive): [Constructor](#api-detail-displayactive-constructor) | [Attribute](display_active-attribute.md#api-detail-displayactive-attribute) | [Method](display_active-method.md#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.md#api-detail-displayactive-dictionary-like) | [Display](display_active-display.md#api-detail-displayactive-display)
 
-[Previous](fill_value_auto-selector.html "Detail: FillValueAuto: Selector")
-[Next](display_active-attribute.html "Detail: DisplayActive: Attribute")
+[Previous](fill_value_auto-selector.md "Detail: FillValueAuto: Selector")
+[Next](display_active-attribute.md "Detail: DisplayActive: Attribute")
 
 ---
 

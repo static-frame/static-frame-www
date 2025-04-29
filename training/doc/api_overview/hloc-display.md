@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: HLoc: Display
 * [View page source](../_sources/api_overview/hloc-display.rst.txt)
 
-[Previous](hloc-dictionary_like.html "Overview: HLoc: Dictionary-Like")
-[Next](iloc-constructor.html "Overview: ILoc: Constructor")
+[Previous](hloc-dictionary_like.md "Overview: HLoc: Dictionary-Like")
+[Next](iloc-constructor.md "Overview: ILoc: Constructor")
 
 ---
 
 # Overview: HLoc: Display[](#overview-hloc-display "Link to this heading")
 
-[Detail: HLoc: Display](../api_detail/hloc-display.html#api-detail-hloc-display)
+[Detail: HLoc: Display](../api_detail/hloc-display.md#api-detail-hloc-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/hloc-display.html#api-sig-hloc-repr) | `HLoc.__repr__()` |  |
-| [Detail](../api_detail/hloc-display.html#api-sig-hloc-str) | `HLoc.__str__()` | Return str(self). |
+| [Detail](../api_detail/hloc-display.md#api-sig-hloc-repr) | `HLoc.__repr__()` |  |
+| [Detail](../api_detail/hloc-display.md#api-sig-hloc-str) | `HLoc.__str__()` | Return str(self). |
 
-[HLoc](hloc.html#api-overview-hloc): [Constructor](hloc-constructor.html#api-overview-hloc-constructor) | [Attribute](hloc-attribute.html#api-overview-hloc-attribute) | [Method](hloc-method.html#api-overview-hloc-method) | [Dictionary-Like](hloc-dictionary_like.html#api-overview-hloc-dictionary-like) | [Display](#api-overview-hloc-display)
+[HLoc](hloc.md#api-overview-hloc): [Constructor](hloc-constructor.md#api-overview-hloc-constructor) | [Attribute](hloc-attribute.md#api-overview-hloc-attribute) | [Method](hloc-method.md#api-overview-hloc-method) | [Dictionary-Like](hloc-dictionary_like.md#api-overview-hloc-dictionary-like) | [Display](#api-overview-hloc-display)
 
-[Previous](hloc-dictionary_like.html "Overview: HLoc: Dictionary-Like")
-[Next](iloc-constructor.html "Overview: ILoc: Constructor")
+[Previous](hloc-dictionary_like.md "Overview: HLoc: Dictionary-Like")
+[Next](iloc-constructor.md "Overview: ILoc: Constructor")
 
 ---
 

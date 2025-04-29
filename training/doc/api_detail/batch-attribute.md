@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Batch: Attribute
 * [View page source](../_sources/api_detail/batch-attribute.rst.txt)
 
-[Previous](batch-exporter.html "Detail: Batch: Exporter")
-[Next](batch-method.html "Detail: Batch: Method")
+[Previous](batch-exporter.md "Detail: Batch: Exporter")
+[Next](batch-method.md "Detail: Batch: Method")
 
 ---
 
 # Detail: Batch: Attribute[](#detail-batch-attribute "Link to this heading")
 
-[Overview: Batch: Attribute](../api_overview/batch-attribute.html#api-overview-batch-attribute)
+[Overview: Batch: Attribute](../api_overview/batch-attribute.md#api-overview-batch-attribute)
 
 Batch.STATIC *= True*[](#static_frame.Batch.STATIC "Link to this definition")
 :   ```
@@ -153,7 +153,7 @@ Batch.STATIC *= True*[](#static_frame.Batch.STATIC "Link to this definition")
     ```
 
 Batch.T[](#static_frame.Batch.T "Link to this definition")
-:   Transpose. Return a [`Frame`](frame-selector.html#Frame "Frame") with `index` as `columns` and vice versa.
+:   Transpose. Return a [`Frame`](frame-selector.md#Frame "Frame") with `index` as `columns` and vice versa.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -163,7 +163,7 @@ Batch.T[](#static_frame.Batch.T "Link to this definition")
     ```
 
 Batch.memory[](#static_frame.Batch.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -194,7 +194,7 @@ Batch.name[](#static_frame.Batch.name "Link to this definition")
     ```
 
 Batch.shapes[](#static_frame.Batch.shapes "Link to this definition")
-:   A [`Series`](series-selector.html#Series "Series") describing the shape of each iterated [`Frame`](frame-selector.html#Frame "Frame").
+:   A [`Series`](series-selector.md#Series "Series") describing the shape of each iterated [`Frame`](frame-selector.md#Frame "Frame").
 
     Returns:
     :   `tp.Tuple[int]`
@@ -211,7 +211,7 @@ Batch.shapes[](#static_frame.Batch.shapes "Link to this definition")
     ```
 
 Batch.via\_container[](#static_frame.Batch.via_container "Link to this definition")
-:   Return a new Batch with all values wrapped in either a [`Frame`](frame-selector.html#Frame "Frame") or [`Series`](series-selector.html#Series "Series").
+:   Return a new Batch with all values wrapped in either a [`Frame`](frame-selector.md#Frame "Frame") or [`Series`](series-selector.md#Series "Series").
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -220,10 +220,10 @@ Batch.via\_container[](#static_frame.Batch.via_container "Link to this defini
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-exporter.html "Detail: Batch: Exporter")
-[Next](batch-method.html "Detail: Batch: Method")
+[Previous](batch-exporter.md "Detail: Batch: Exporter")
+[Next](batch-method.md "Detail: Batch: Method")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Batch: Attribute
 * [View page source](../_sources/api_overview/batch-attribute.rst.txt)
 
-[Previous](batch-exporter.html "Overview: Batch: Exporter")
-[Next](batch-method.html "Overview: Batch: Method")
+[Previous](batch-exporter.md "Overview: Batch: Exporter")
+[Next](batch-method.md "Overview: Batch: Method")
 
 ---
 
 # Overview: Batch: Attribute[](#overview-batch-attribute "Link to this heading")
 
-[Detail: Batch: Attribute](../api_detail/batch-attribute.html#api-detail-batch-attribute)
+[Detail: Batch: Attribute](../api_detail/batch-attribute.md#api-detail-batch-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-attribute.html#api-sig-batch-static) | `Batch.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/batch-attribute.html#api-sig-batch-t) | `Batch.T` | Transpose. Return a Frame with index as columns and vice versa. |
-| [Detail](../api_detail/batch-attribute.html#api-sig-batch-memory) | `Batch.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/batch-attribute.html#api-sig-batch-name) | `Batch.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/batch-attribute.html#api-sig-batch-shapes) | `Batch.shapes` | A Series describing the shape of each iterated Frame. Returns: tp.Tuple[int] |
-| [Detail](../api_detail/batch-attribute.html#api-sig-batch-via-container) | `Batch.via_container` | Return a new Batch with all values wrapped in either a Frame or Series. |
+| [Detail](../api_detail/batch-attribute.md#api-sig-batch-static) | `Batch.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/batch-attribute.md#api-sig-batch-t) | `Batch.T` | Transpose. Return a Frame with index as columns and vice versa. |
+| [Detail](../api_detail/batch-attribute.md#api-sig-batch-memory) | `Batch.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/batch-attribute.md#api-sig-batch-name) | `Batch.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/batch-attribute.md#api-sig-batch-shapes) | `Batch.shapes` | A Series describing the shape of each iterated Frame. Returns: tp.Tuple[int] |
+| [Detail](../api_detail/batch-attribute.md#api-sig-batch-via-container) | `Batch.via_container` | Return a new Batch with all values wrapped in either a Frame or Series. |
 
-[Batch](batch.html#api-overview-batch): [Constructor](batch-constructor.html#api-overview-batch-constructor) | [Exporter](batch-exporter.html#api-overview-batch-exporter) | [Attribute](#api-overview-batch-attribute) | [Method](batch-method.html#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-overview-batch-dictionary-like) | [Display](batch-display.html#api-overview-batch-display) | [Selector](batch-selector.html#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.html#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-overview-batch-accessor-reduce)
+[Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](#api-overview-batch-attribute) | [Method](batch-method.md#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-overview-batch-dictionary-like) | [Display](batch-display.md#api-overview-batch-display) | [Selector](batch-selector.md#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.md#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 
-[Previous](batch-exporter.html "Overview: Batch: Exporter")
-[Next](batch-method.html "Overview: Batch: Method")
+[Previous](batch-exporter.md "Overview: Batch: Exporter")
+[Next](batch-method.md "Overview: Batch: Method")
 
 ---
 

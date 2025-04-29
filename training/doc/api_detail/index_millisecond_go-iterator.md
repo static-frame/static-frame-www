@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMillisecondGO: Iterator
 * [View page source](../_sources/api_detail/index_millisecond_go-iterator.rst.txt)
 
-[Previous](index_millisecond_go-selector.html "Detail: IndexMillisecondGO: Selector")
-[Next](index_millisecond_go-operator_binary.html "Detail: IndexMillisecondGO: Operator Binary")
+[Previous](index_millisecond_go-selector.md "Detail: IndexMillisecondGO: Selector")
+[Next](index_millisecond_go-operator_binary.md "Detail: IndexMillisecondGO: Operator Binary")
 
 ---
 
 # Detail: IndexMillisecondGO: Iterator[](#detail-indexmillisecondgo-iterator "Link to this heading")
 
-[Overview: IndexMillisecondGO: Iterator](../api_overview/index_millisecond_go-iterator.html#api-overview-indexmillisecondgo-iterator)
+[Overview: IndexMillisecondGO: Iterator](../api_overview/index_millisecond_go-iterator.md#api-overview-indexmillisecondgo-iterator)
 
 IndexMillisecondGO.iter\_label(*depth\_level*)
 :   iter\_label
@@ -163,7 +163,7 @@ IndexMillisecondGO.iter\_label(*depth\_level*)
 IndexMillisecondGO.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_label
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -186,7 +186,7 @@ IndexMillisecondGO.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*
 IndexMillisecondGO.iter\_label(*depth\_level).apply\_iter(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -211,7 +211,7 @@ IndexMillisecondGO.iter\_label(*depth\_level).apply\_iter(func*)
 IndexMillisecondGO.iter\_label(*depth\_level).apply\_iter\_items(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -236,7 +236,7 @@ IndexMillisecondGO.iter\_label(*depth\_level).apply\_iter\_items(func*)
 IndexMillisecondGO.iter\_label(*depth\_level).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -261,10 +261,10 @@ IndexMillisecondGO.iter\_label(*depth\_level).apply\_pool(func*, *\**, *dtype*, 
 
     ```
 
-[IndexMillisecondGO](index_millisecond_go.html#api-detail-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.html#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.html#api-detail-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.html#api-detail-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.html#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.html#api-detail-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.html#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.html#api-detail-indexmillisecondgo-selector) | [Iterator](#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.html#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.html#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.html#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.html#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.html#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.html#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.html#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.html#api-detail-indexmillisecondgo-accessor-type-clinic)
+[IndexMillisecondGO](index_millisecond_go.md#api-detail-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.md#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-detail-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-detail-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.md#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-detail-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.md#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-detail-indexmillisecondgo-selector) | [Iterator](#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-detail-indexmillisecondgo-accessor-type-clinic)
 
-[Previous](index_millisecond_go-selector.html "Detail: IndexMillisecondGO: Selector")
-[Next](index_millisecond_go-operator_binary.html "Detail: IndexMillisecondGO: Operator Binary")
+[Previous](index_millisecond_go-selector.md "Detail: IndexMillisecondGO: Selector")
+[Next](index_millisecond_go-operator_binary.md "Detail: IndexMillisecondGO: Operator Binary")
 
 ---
 

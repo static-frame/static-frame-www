@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexDateGO: Accessor Datetime
 * [View page source](../_sources/api_detail/index_date_go-accessor_datetime.rst.txt)
 
-[Previous](index_date_go-accessor_values.html "Detail: IndexDateGO: Accessor Values")
-[Next](index_date_go-accessor_string.html "Detail: IndexDateGO: Accessor String")
+[Previous](index_date_go-accessor_values.md "Detail: IndexDateGO: Accessor Values")
+[Next](index_date_go-accessor_string.md "Detail: IndexDateGO: Accessor String")
 
 ---
 
 # Detail: IndexDateGO: Accessor Datetime[](#detail-indexdatego-accessor-datetime "Link to this heading")
 
-[Overview: IndexDateGO: Accessor Datetime](../api_overview/index_date_go-accessor_datetime.html#api-overview-indexdatego-accessor-datetime)
+[Overview: IndexDateGO: Accessor Datetime](../api_overview/index_date_go-accessor_datetime.md#api-overview-indexdatego-accessor-datetime)
 
 IndexDateGO.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.__call__)
+    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.__call__)
     :   Parameters:
         :   **fill\_value** – If NAT are encountered, use this value.
 
@@ -329,7 +329,7 @@ IndexDateGO.via\_dt.weekday
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.weekday)
+    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.weekday)
     :   Return the day of the week as an integer, where Monday is 0 and Sunday is 6.
 
     ```
@@ -349,7 +349,7 @@ IndexDateGO.via\_dt.quarter
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.quarter)
+    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.quarter)
     :   Return the quarter of the year as an integer, where January through March is quarter 1.
 
     ```
@@ -369,7 +369,7 @@ IndexDateGO.via\_dt.is\_month\_end
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_end)
+    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_end)
     :   Return Boolean indicators if the day is the month end.
 
     ```
@@ -389,7 +389,7 @@ IndexDateGO.via\_dt.is\_month\_start
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_start)
+    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_start)
     :   Return Boolean indicators if the day is the month start.
 
     ```
@@ -409,7 +409,7 @@ IndexDateGO.via\_dt.is\_year\_end
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_end)
+    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_end)
     :   Return Boolean indicators if the day is the year end.
 
     ```
@@ -429,7 +429,7 @@ IndexDateGO.via\_dt.is\_year\_start
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_start)
+    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_start)
     :   Return Boolean indicators if the day is the year start.
 
     ```
@@ -449,7 +449,7 @@ IndexDateGO.via\_dt.is\_quarter\_end
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_end)
+    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_end)
     :   Return Boolean indicators if the day is the quarter end.
 
     ```
@@ -469,7 +469,7 @@ IndexDateGO.via\_dt.is\_quarter\_start
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_start)
+    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_start)
     :   Return Boolean indicators if the day is the quarter start.
 
     ```
@@ -489,7 +489,7 @@ IndexDateGO.via\_dt.timetuple
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.timetuple)
+    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.timetuple)
     :   Return a `time.struct_time` such as returned by time.localtime().
 
     ```
@@ -511,7 +511,7 @@ IndexDateGO.via\_dt.isoformat(*\**, *sep*, *timespec*)
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.isoformat)
+    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.isoformat)
     :   Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
 
     ```
@@ -531,7 +531,7 @@ IndexDateGO.via\_dt.fromisoformat
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.fromisoformat)
+    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.fromisoformat)
     :   Return a `datetime.date` object from an ISO 8601 format.
 
     ```
@@ -551,7 +551,7 @@ IndexDateGO.via\_dt.strftime(*format*)
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strftime)
+    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strftime)
     :   Return a string representing the date, controlled by an explicit `format` string.
 
     ```
@@ -571,7 +571,7 @@ IndexDateGO.via\_dt.strptime(*format*)
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strptime)
+    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strptime)
     :   Return a Python datetime object from parsing a string defined with `format`.
 
     ```
@@ -591,7 +591,7 @@ IndexDateGO.via\_dt.strpdate(*format*)
 :   IndexDateGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strpdate)
+    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strpdate)
     :   Return a Python date object from parsing a string defined with `format`.
 
     ```
@@ -607,10 +607,10 @@ IndexDateGO.via\_dt.strpdate(*format*)
 
     ```
 
-[IndexDateGO](index_date_go.html#api-detail-indexdatego): [Constructor](index_date_go-constructor.html#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.html#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-detail-indexdatego-attribute) | [Method](index_date_go-method.html#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.html#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.html#api-detail-indexdatego-display) | [Selector](index_date_go-selector.html#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.html#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.html#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-detail-indexdatego-accessor-values) | [Accessor Datetime](#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.html#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.html#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-detail-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-detail-indexdatego): [Constructor](index_date_go-constructor.md#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-detail-indexdatego-attribute) | [Method](index_date_go-method.md#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-detail-indexdatego-display) | [Selector](index_date_go-selector.md#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-detail-indexdatego-accessor-values) | [Accessor Datetime](#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-detail-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-accessor_values.html "Detail: IndexDateGO: Accessor Values")
-[Next](index_date_go-accessor_string.html "Detail: IndexDateGO: Accessor String")
+[Previous](index_date_go-accessor_values.md "Detail: IndexDateGO: Accessor Values")
+[Next](index_date_go-accessor_string.md "Detail: IndexDateGO: Accessor String")
 
 ---
 

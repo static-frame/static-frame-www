@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexHierarchy: Accessor Values
 * [View page source](../_sources/api_detail/index_hierarchy-accessor_values.rst.txt)
 
-[Previous](index_hierarchy-operator_unary.html "Detail: IndexHierarchy: Operator Unary")
-[Next](index_hierarchy-accessor_datetime.html "Detail: IndexHierarchy: Accessor Datetime")
+[Previous](index_hierarchy-operator_unary.md "Detail: IndexHierarchy: Operator Unary")
+[Next](index_hierarchy-accessor_datetime.md "Detail: IndexHierarchy: Accessor Datetime")
 
 ---
 
 # Detail: IndexHierarchy: Accessor Values[](#detail-indexhierarchy-accessor-values "Link to this heading")
 
-[Overview: IndexHierarchy: Accessor Values](../api_overview/index_hierarchy-accessor_values.html#api-overview-indexhierarchy-accessor-values)
+[Overview: IndexHierarchy: Accessor Values](../api_overview/index_hierarchy-accessor_values.md#api-overview-indexhierarchy-accessor-values)
 
 IndexHierarchy.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
 :   IndexHierarchy.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.apply)
+    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.apply)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
@@ -171,7 +171,7 @@ IndexHierarchy.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*
 :   IndexHierarchy.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__array_ufunc__)
+    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__array_ufunc__)
     :   Support for applying NumPy functions directly on containers.
 
     ```
@@ -195,7 +195,7 @@ IndexHierarchy.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blo
 :   IndexHierarchy.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__call__)
+    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__call__)
     :   Parameters:
         :   * **consolidate\_blocks** – Group adjacent same-typed arrays into 2D arrays.
             * **unify\_blocks** – Group all arrays into single array, re-typing to an appropriate dtype.
@@ -218,10 +218,10 @@ IndexHierarchy.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blo
 
     ```
 
-[IndexHierarchy](index_hierarchy.html#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-operator_unary.html "Detail: IndexHierarchy: Operator Unary")
-[Next](index_hierarchy-accessor_datetime.html "Detail: IndexHierarchy: Accessor Datetime")
+[Previous](index_hierarchy-operator_unary.md "Detail: IndexHierarchy: Operator Unary")
+[Next](index_hierarchy-accessor_datetime.md "Detail: IndexHierarchy: Accessor Datetime")
 
 ---
 

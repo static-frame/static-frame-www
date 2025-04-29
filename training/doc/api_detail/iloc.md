@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,26 +136,26 @@ API Detail
 * Detail: ILoc
 * [View page source](../_sources/api_detail/iloc.rst.txt)
 
-[Previous](hloc.html "Detail: HLoc")
-[Next](type_clinic.html "Detail: TypeClinic")
+[Previous](hloc.md "Detail: HLoc")
+[Next](type_clinic.md "Detail: TypeClinic")
 
 ---
 
 # Detail: ILoc[](#detail-iloc "Link to this heading")
 
-[Overview: ILoc](../api_overview/iloc.html#api-overview-iloc)
+[Overview: ILoc](../api_overview/iloc.md#api-overview-iloc)
 
-*class* ILoc(*key*, */*)[[source]](../_modules/static_frame/core/index.html#ILoc)[](#static_frame.ILoc "Link to this definition")
+*class* ILoc(*key*, */*)[[source]](../_modules/static_frame/core/index.md#ILoc)[](#static_frame.ILoc "Link to this definition")
 :   A wrapper for embedding `iloc` specifications within a single axis argument of a `loc` selection.
 
-* [Constructor](iloc-constructor.html#api-detail-iloc-constructor): Alternative constructors for creating instances.
-* [Attribute](iloc-attribute.html#api-detail-iloc-attribute): Attributes for retrieving basic characteristics.
-* [Display](iloc-display.html#api-detail-iloc-display): Methods for providing a text representation of the object.
+* [Constructor](iloc-constructor.md#api-detail-iloc-constructor): Alternative constructors for creating instances.
+* [Attribute](iloc-attribute.md#api-detail-iloc-attribute): Attributes for retrieving basic characteristics.
+* [Display](iloc-display.md#api-detail-iloc-display): Methods for providing a text representation of the object.
 
-[ILoc](#api-detail-iloc): [Constructor](iloc-constructor.html#api-detail-iloc-constructor) | [Attribute](iloc-attribute.html#api-detail-iloc-attribute) | [Display](iloc-display.html#api-detail-iloc-display)
+[ILoc](#api-detail-iloc): [Constructor](iloc-constructor.md#api-detail-iloc-constructor) | [Attribute](iloc-attribute.md#api-detail-iloc-attribute) | [Display](iloc-display.md#api-detail-iloc-display)
 
-[Previous](hloc.html "Detail: HLoc")
-[Next](type_clinic.html "Detail: TypeClinic")
+[Previous](hloc.md "Detail: HLoc")
+[Next](type_clinic.md "Detail: TypeClinic")
 
 ---
 

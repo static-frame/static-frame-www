@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: SeriesHE: Accessor Datetime
 * [View page source](../_sources/api_detail/series_he-accessor_datetime.rst.txt)
 
-[Previous](series_he-accessor_values.html "Detail: SeriesHE: Accessor Values")
-[Next](series_he-accessor_string.html "Detail: SeriesHE: Accessor String")
+[Previous](series_he-accessor_values.md "Detail: SeriesHE: Accessor Values")
+[Next](series_he-accessor_string.md "Detail: SeriesHE: Accessor String")
 
 ---
 
 # Detail: SeriesHE: Accessor Datetime[](#detail-serieshe-accessor-datetime "Link to this heading")
 
-[Overview: SeriesHE: Accessor Datetime](../api_overview/series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime)
+[Overview: SeriesHE: Accessor Datetime](../api_overview/series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime)
 
 SeriesHE.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.__call__)
+    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.__call__)
     :   Parameters:
         :   **fill\_value** – If NAT are encountered, use this value.
 
@@ -419,7 +419,7 @@ SeriesHE.via\_dt.weekday
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.weekday)
+    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.weekday)
     :   Return the day of the week as an integer, where Monday is 0 and Sunday is 6.
 
     ```
@@ -449,7 +449,7 @@ SeriesHE.via\_dt.quarter
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.quarter)
+    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.quarter)
     :   Return the quarter of the year as an integer, where January through March is quarter 1.
 
     ```
@@ -479,7 +479,7 @@ SeriesHE.via\_dt.is\_month\_end
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_end)
+    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_end)
     :   Return Boolean indicators if the day is the month end.
 
     ```
@@ -509,7 +509,7 @@ SeriesHE.via\_dt.is\_month\_start
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_start)
+    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_start)
     :   Return Boolean indicators if the day is the month start.
 
     ```
@@ -539,7 +539,7 @@ SeriesHE.via\_dt.is\_year\_end
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_end)
+    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_end)
     :   Return Boolean indicators if the day is the year end.
 
     ```
@@ -569,7 +569,7 @@ SeriesHE.via\_dt.is\_year\_start
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_start)
+    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_start)
     :   Return Boolean indicators if the day is the year start.
 
     ```
@@ -599,7 +599,7 @@ SeriesHE.via\_dt.is\_quarter\_end
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_end)
+    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_end)
     :   Return Boolean indicators if the day is the quarter end.
 
     ```
@@ -629,7 +629,7 @@ SeriesHE.via\_dt.is\_quarter\_start
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_start)
+    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_start)
     :   Return Boolean indicators if the day is the quarter start.
 
     ```
@@ -659,7 +659,7 @@ SeriesHE.via\_dt.timetuple
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.timetuple)
+    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.timetuple)
     :   Return a `time.struct_time` such as returned by time.localtime().
 
     ```
@@ -689,7 +689,7 @@ SeriesHE.via\_dt.isoformat(*\**, *sep*, *timespec*)
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.isoformat)
+    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.isoformat)
     :   Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
 
     ```
@@ -719,7 +719,7 @@ SeriesHE.via\_dt.fromisoformat
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.fromisoformat)
+    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.fromisoformat)
     :   Return a `datetime.date` object from an ISO 8601 format.
 
     ```
@@ -749,7 +749,7 @@ SeriesHE.via\_dt.strftime(*format*)
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strftime)
+    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strftime)
     :   Return a string representing the date, controlled by an explicit `format` string.
 
     ```
@@ -779,7 +779,7 @@ SeriesHE.via\_dt.strptime(*format*)
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strptime)
+    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strptime)
     :   Return a Python datetime object from parsing a string defined with `format`.
 
     ```
@@ -805,7 +805,7 @@ SeriesHE.via\_dt.strpdate(*format*)
 :   SeriesHE.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strpdate)
+    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strpdate)
     :   Return a Python date object from parsing a string defined with `format`.
 
     ```
@@ -827,10 +827,10 @@ SeriesHE.via\_dt.strpdate(*format*)
 
     ```
 
-[SeriesHE](series_he.html#api-detail-serieshe): [Constructor](series_he-constructor.html#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.html#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.html#api-detail-serieshe-attribute) | [Method](series_he-method.html#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-detail-serieshe-dictionary-like) | [Display](series_he-display.html#api-detail-serieshe-display) | [Assignment](series_he-assignment.html#api-detail-serieshe-assignment) | [Selector](series_he-selector.html#api-detail-serieshe-selector) | [Iterator](series_he-iterator.html#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-detail-serieshe-accessor-values) | [Accessor Datetime](#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-accessor_values.html "Detail: SeriesHE: Accessor Values")
-[Next](series_he-accessor_string.html "Detail: SeriesHE: Accessor String")
+[Previous](series_he-accessor_values.md "Detail: SeriesHE: Accessor Values")
+[Next](series_he-accessor_string.md "Detail: SeriesHE: Accessor String")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: Frame: Dictionary-Like
 * [View page source](../_sources/api_detail/frame-dictionary_like.rst.txt)
 
-[Previous](frame-method.html "Detail: Frame: Method")
-[Next](frame-display.html "Detail: Frame: Display")
+[Previous](frame-method.md "Detail: Frame: Method")
+[Next](frame-display.md "Detail: Frame: Display")
 
 ---
 
 # Detail: Frame: Dictionary-Like[](#detail-frame-dictionary-like "Link to this heading")
 
-[Overview: Frame: Dictionary-Like](../api_overview/frame-dictionary_like.html#api-overview-frame-dictionary-like)
+[Overview: Frame: Dictionary-Like](../api_overview/frame-dictionary_like.md#api-overview-frame-dictionary-like)
 
-Frame.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.__contains__)[](#static_frame.Frame.__contains__ "Link to this definition")
+Frame.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.__contains__)[](#static_frame.Frame.__contains__ "Link to this definition")
 :   Inclusion of value in column labels.
 
     ```
@@ -163,7 +163,7 @@ Frame.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/fra
 
     ```
 
-Frame.\_\_iter\_\_()[[source]](../_modules/static_frame/core/frame.html#Frame.__iter__)[](#static_frame.Frame.__iter__ "Link to this definition")
+Frame.\_\_iter\_\_()[[source]](../_modules/static_frame/core/frame.md#Frame.__iter__)[](#static_frame.Frame.__iter__ "Link to this definition")
 :   Iterator of column labels, same as [`Frame.keys()`](#static_frame.Frame.keys "static_frame.Frame.keys").
 
     ```
@@ -182,7 +182,7 @@ Frame.\_\_iter\_\_()[[source]](../_modules/static_frame/core/frame.html#Frame.__
 
     ```
 
-Frame.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/frame.html#Frame.__reversed__)[](#static_frame.Frame.__reversed__ "Link to this definition")
+Frame.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/frame.md#Frame.__reversed__)[](#static_frame.Frame.__reversed__ "Link to this definition")
 :   Returns a reverse iterator on the frame’s columns.
 
     ```
@@ -201,7 +201,7 @@ Frame.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/frame.html#Fram
 
     ```
 
-Frame.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.get)[](#static_frame.Frame.get "Link to this definition")
+Frame.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.get)[](#static_frame.Frame.get "Link to this definition")
 :   Return the value found at the columns key, else the default if the key is not found. This method is implemented to complete the dictionary-like interface.
 
     ```
@@ -228,8 +228,8 @@ Frame.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/frame.h
 
     ```
 
-Frame.items()[[source]](../_modules/static_frame/core/frame.html#Frame.items)[](#static_frame.Frame.items "Link to this definition")
-:   Iterator of pairs of column label and corresponding column [`Series`](series-selector.html#Series "Series").
+Frame.items()[[source]](../_modules/static_frame/core/frame.md#Frame.items)[](#static_frame.Frame.items "Link to this definition")
+:   Iterator of pairs of column label and corresponding column [`Series`](series-selector.md#Series "Series").
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -265,7 +265,7 @@ Frame.items()[[source]](../_modules/static_frame/core/frame.html#Frame.items)[�
 
     ```
 
-Frame.keys()[[source]](../_modules/static_frame/core/frame.html#Frame.keys)[](#static_frame.Frame.keys "Link to this definition")
+Frame.keys()[[source]](../_modules/static_frame/core/frame.md#Frame.keys)[](#static_frame.Frame.keys "Link to this definition")
 :   Iterator of column labels.
 
     ```
@@ -289,7 +289,7 @@ Frame.keys()[[source]](../_modules/static_frame/core/frame.html#Frame.keys)[]
     ```
 
 Frame.values[](#static_frame.Frame.values "Link to this definition")
-:   A 2D NumPy array of all values in the [`Frame`](frame-selector.html#Frame "Frame"). As this is a single array, heterogenous columnar types might be coerced to a compatible type.
+:   A 2D NumPy array of all values in the [`Frame`](frame-selector.md#Frame "Frame"). As this is a single array, heterogenous columnar types might be coerced to a compatible type.
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -310,10 +310,10 @@ Frame.values[](#static_frame.Frame.values "Link to this definition")
 
     ```
 
-[Frame](frame.html#api-detail-frame): [Constructor](frame-constructor.html#api-detail-frame-constructor) | [Exporter](frame-exporter.html#api-detail-frame-exporter) | [Attribute](frame-attribute.html#api-detail-frame-attribute) | [Method](frame-method.html#api-detail-frame-method) | [Dictionary-Like](#api-detail-frame-dictionary-like) | [Display](frame-display.html#api-detail-frame-display) | [Assignment](frame-assignment.html#api-detail-frame-assignment) | [Selector](frame-selector.html#api-detail-frame-selector) | [Iterator](frame-iterator.html#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-detail-frame-accessor-reduce)
+[Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)
 
-[Previous](frame-method.html "Detail: Frame: Method")
-[Next](frame-display.html "Detail: Frame: Display")
+[Previous](frame-method.md "Detail: Frame: Method")
+[Next](frame-display.md "Detail: Frame: Display")
 
 ---
 

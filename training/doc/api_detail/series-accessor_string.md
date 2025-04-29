@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Series: Accessor String
 * [View page source](../_sources/api_detail/series-accessor_string.rst.txt)
 
-[Previous](series-accessor_datetime.html "Detail: Series: Accessor Datetime")
-[Next](series-accessor_fill_value.html "Detail: Series: Accessor Fill Value")
+[Previous](series-accessor_datetime.md "Detail: Series: Accessor Datetime")
+[Next](series-accessor_fill_value.md "Detail: Series: Accessor Fill Value")
 
 ---
 
 # Detail: Series: Accessor String[](#detail-series-accessor-string "Link to this heading")
 
-[Overview: Series: Accessor String](../api_overview/series-accessor_string.html#api-overview-series-accessor-string)
+[Overview: Series: Accessor String](../api_overview/series-accessor_string.md#api-overview-series-accessor-string)
 
 Series.via\_str.\_\_getitem\_\_(*key*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.__getitem__)
+    InterfaceString.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.__getitem__)
     :   Return a container with the provided selection or slice of each element.
 
     ```
@@ -176,7 +176,7 @@ Series.via\_str.capitalize
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.capitalize()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.capitalize)
+    InterfaceString.capitalize()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.capitalize)
     :   Return a container with only the first character of each element capitalized.
 
     ```
@@ -204,7 +204,7 @@ Series.via\_str.center(*width*, *fillchar*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.center(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.center)
+    InterfaceString.center(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.center)
     :   Return a container with its elements centered in a string of length `width`.
 
     ```
@@ -232,7 +232,7 @@ Series.via\_str.contains(*item*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.contains(*item*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.contains)
+    InterfaceString.contains(*item*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.contains)
     :   Return a Boolean container showing True of item is a substring of elements.
 
     ```
@@ -260,7 +260,7 @@ Series.via\_str.count(*sub*, *start*, *end*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.count(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.count)
+    InterfaceString.count(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.count)
     :   Returns a container with the number of non-overlapping occurrences of substring sub in the optional range `start`, `end`.
 
     ```
@@ -288,7 +288,7 @@ Series.via\_str.decode(*encoding*, *errors*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.decode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.decode)
+    InterfaceString.decode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.decode)
     :   Apply str.decode() to each element. Elements must be bytes.
 
     ```
@@ -316,7 +316,7 @@ Series.via\_str.encode(*encoding*, *errors*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.encode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.encode)
+    InterfaceString.encode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.encode)
     :   Apply str.encode() to each element. Elements must be strings.
 
     ```
@@ -344,7 +344,7 @@ Series.via\_str.endswith(*suffix*, *start*, *end*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.endswith(*suffix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.endswith)
+    InterfaceString.endswith(*suffix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.endswith)
     :   Returns a container with the number of non-overlapping occurrences of substring `suffix` (or an iterable of suffixes) in the optional range `start`, `end`.
 
     ```
@@ -372,7 +372,7 @@ Series.via\_str.find(*sub*, *start*, *end*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.find(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.find)
+    InterfaceString.find(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.find)
     :   For each element, return the lowest index in the string where substring `sub` is found.
 
     ```
@@ -400,8 +400,8 @@ Series.via\_str.format(*format*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.format(*format*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.format)
-    :   For each element, return a string resulting from calling the string `format` argument’s `format` method with the the element. Format strings (given within curly braces) can use Python’s format mini language: <https://docs.python.org/3/library/string.html#formatspec>
+    InterfaceString.format(*format*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.format)
+    :   For each element, return a string resulting from calling the string `format` argument’s `format` method with the the element. Format strings (given within curly braces) can use Python’s format mini language: <https://docs.python.org/3/library/string.md#formatspec>
 
         Parameters:
         :   **format** – A string, an iterable of strings, or a mapping of labels to strings. For 1D containers, an iterable of strings must be of length equal to the container; a mapping can use Index labels (for a Series) or positions (for an Index). For 2D containers, an iterable of strings must be of length equal to the columns (for a Frame) or the depth (for an Index Hierarchy); a mapping can use column labels (for a Frame) or depths (for an IndexHierarchy).
@@ -431,7 +431,7 @@ Series.via\_str.index(*sub*, *start*, *end*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.index(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.index)
+    InterfaceString.index(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.index)
     :   Like `find`, but raises `ValueError` when the substring is not found.
 
     ```
@@ -453,7 +453,7 @@ Series.via\_str.isalnum
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isalnum()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isalnum)
+    InterfaceString.isalnum()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isalnum)
     :   Returns true for each element if all characters in the string are alphanumeric and there is at least one character, false otherwise.
 
     ```
@@ -481,7 +481,7 @@ Series.via\_str.isalpha
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isalpha()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isalpha)
+    InterfaceString.isalpha()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isalpha)
     :   Returns true for each element if all characters in the string are alphabetic and there is at least one character, false otherwise.
 
     ```
@@ -509,7 +509,7 @@ Series.via\_str.isdecimal
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isdecimal()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isdecimal)
+    InterfaceString.isdecimal()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isdecimal)
     :   For each element, return True if there are only decimal characters in the element.
 
     ```
@@ -537,7 +537,7 @@ Series.via\_str.isdigit
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isdigit()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isdigit)
+    InterfaceString.isdigit()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isdigit)
     :   Returns true for each element if all characters in the string are digits and there is at least one character, false otherwise.
 
     ```
@@ -565,7 +565,7 @@ Series.via\_str.islower
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.islower()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.islower)
+    InterfaceString.islower()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.islower)
     :   Returns true for each element if all cased characters in the string are lowercase and there is at least one cased character, false otherwise.
 
     ```
@@ -593,7 +593,7 @@ Series.via\_str.isnumeric
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isnumeric()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isnumeric)
+    InterfaceString.isnumeric()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isnumeric)
     :   For each element in self, return True if there are only numeric characters in the element.
 
     ```
@@ -621,7 +621,7 @@ Series.via\_str.isspace
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isspace()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isspace)
+    InterfaceString.isspace()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isspace)
     :   Returns true for each element if there are only whitespace characters in the string and there is at least one character, false otherwise.
 
     ```
@@ -649,7 +649,7 @@ Series.via\_str.istitle
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.istitle()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.istitle)
+    InterfaceString.istitle()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.istitle)
     :   Returns true for each element if the element is a titlecased string and there is at least one character, false otherwise.
 
     ```
@@ -677,7 +677,7 @@ Series.via\_str.isupper
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isupper()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isupper)
+    InterfaceString.isupper()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isupper)
     :   Returns true for each element if all cased characters in the string are uppercase and there is at least one character, false otherwise.
 
     ```
@@ -705,7 +705,7 @@ Series.via\_str.ljust(*width*, *fillchar*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.ljust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.ljust)
+    InterfaceString.ljust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.ljust)
     :   Return a container with its elements ljusted in a string of length `width`.
 
     ```
@@ -733,7 +733,7 @@ Series.via\_str.len
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.len()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.len)
+    InterfaceString.len()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.len)
     :   Return the length of the string.
 
     ```
@@ -761,7 +761,7 @@ Series.via\_str.lower
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.lower()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.lower)
+    InterfaceString.lower()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.lower)
     :   Return an array with the elements of self converted to lowercase.
 
     ```
@@ -789,7 +789,7 @@ Series.via\_str.lstrip(*chars*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.lstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.lstrip)
+    InterfaceString.lstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.lstrip)
     :   For each element, return a copy with the leading characters removed.
 
     ```
@@ -817,7 +817,7 @@ Series.via\_str.partition(*sep*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.partition(*sep*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.partition)
+    InterfaceString.partition(*sep*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.partition)
     :   Partition each element around `sep`.
 
     ```
@@ -845,7 +845,7 @@ Series.via\_str.replace(*old*, *new*, *count*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.replace(*old*, *new*, *count=-1*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.replace)
+    InterfaceString.replace(*old*, *new*, *count=-1*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.replace)
     :   Return a container with its elements replaced in a string of length `width`.
 
     ```
@@ -873,7 +873,7 @@ Series.via\_str.rfind(*sub*, *start*, *end*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rfind(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rfind)
+    InterfaceString.rfind(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rfind)
     :   For each element, return the highest index in the string where substring `sub` is found, such that sub is contained within `start`, `end`.
 
     ```
@@ -901,7 +901,7 @@ Series.via\_str.rindex(*sub*, *start*, *end*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rindex(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rindex)
+    InterfaceString.rindex(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rindex)
     :   Like `rfind`, but raises `ValueError` when the substring `sub` is not found.
 
     ```
@@ -923,7 +923,7 @@ Series.via\_str.rjust(*width*, *fillchar*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rjust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rjust)
+    InterfaceString.rjust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rjust)
     :   Return a container with its elements rjusted in a string of length `width`.
 
     ```
@@ -951,7 +951,7 @@ Series.via\_str.rpartition(*sep*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rpartition(*sep*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rpartition)
+    InterfaceString.rpartition(*sep*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rpartition)
     :   Partition (split) each element around the right-most separator.
 
     ```
@@ -979,7 +979,7 @@ Series.via\_str.rsplit(*sep*, *maxsplit*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rsplit(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rsplit)
+    InterfaceString.rsplit(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rsplit)
     :   For each element, return a tuple of the words in the string, using sep as the delimiter string.
 
     ```
@@ -1007,7 +1007,7 @@ Series.via\_str.rstrip(*chars*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rstrip)
+    InterfaceString.rstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rstrip)
     :   For each element, return a copy with the trailing characters removed.
 
     ```
@@ -1035,7 +1035,7 @@ Series.via\_str.split(*sep*, *maxsplit*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.split(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.split)
+    InterfaceString.split(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.split)
     :   For each element, return a tuple of the words in the string, using sep as the delimiter string.
 
     ```
@@ -1063,7 +1063,7 @@ Series.via\_str.startswith(*prefix*, *start*, *end*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.startswith(*prefix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.startswith)
+    InterfaceString.startswith(*prefix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.startswith)
     :   Returns a container with the number of non-overlapping occurrences of substring prefix (or an iterable of prefixes) in the optional range `start`, `end`.
 
     ```
@@ -1091,7 +1091,7 @@ Series.via\_str.strip(*chars*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.strip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.strip)
+    InterfaceString.strip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.strip)
     :   For each element, return a copy with the leading and trailing characters removed.
 
     ```
@@ -1119,7 +1119,7 @@ Series.via\_str.swapcase
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.swapcase()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.swapcase)
+    InterfaceString.swapcase()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.swapcase)
     :   Return a container with uppercase characters converted to lowercase and vice versa.
 
     ```
@@ -1147,7 +1147,7 @@ Series.via\_str.title
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.title()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.title)
+    InterfaceString.title()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.title)
     :   Return a container with uppercase characters converted to lowercase and vice versa.
 
     ```
@@ -1175,7 +1175,7 @@ Series.via\_str.upper
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.upper()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.upper)
+    InterfaceString.upper()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.upper)
     :   Return a container with uppercase characters converted to lowercase and vice versa.
 
     ```
@@ -1203,7 +1203,7 @@ Series.via\_str.zfill(*width*)
 :   Series.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.zfill(*width*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.zfill)
+    InterfaceString.zfill(*width*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.zfill)
     :   Return the string left-filled with zeros.
 
     ```
@@ -1227,10 +1227,10 @@ Series.via\_str.zfill(*width*)
 
     ```
 
-[Series](series.html#api-detail-series): [Constructor](series-constructor.html#api-detail-series-constructor) | [Exporter](series-exporter.html#api-detail-series-exporter) | [Attribute](series-attribute.html#api-detail-series-attribute) | [Method](series-method.html#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.html#api-detail-series-dictionary-like) | [Display](series-display.html#api-detail-series-display) | [Assignment](series-assignment.html#api-detail-series-assignment) | [Selector](series-selector.html#api-detail-series-selector) | [Iterator](series-iterator.html#api-detail-series-iterator) | [Operator Binary](series-operator_binary.html#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-detail-series-accessor-datetime) | [Accessor String](#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-detail-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-accessor_datetime.html "Detail: Series: Accessor Datetime")
-[Next](series-accessor_fill_value.html "Detail: Series: Accessor Fill Value")
+[Previous](series-accessor_datetime.md "Detail: Series: Accessor Datetime")
+[Next](series-accessor_fill_value.md "Detail: Series: Accessor Fill Value")
 
 ---
 

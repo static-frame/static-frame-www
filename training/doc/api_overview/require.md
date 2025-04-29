@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: Require
 * [View page source](../_sources/api_overview/require.rst.txt)
 
-[Previous](clinic_result.html "Overview: ClinicResult")
-[Next](www.html "Overview: WWW")
+[Previous](clinic_result.md "Overview: ClinicResult")
+[Next](www.md "Overview: WWW")
 
 ---
 
 # Overview: Require[](#overview-require "Link to this heading")
 
-[Detail: Require](../api_detail/require.html#api-detail-require)
+[Detail: Require](../api_detail/require.md#api-detail-require)
 
 |  |  |
 | --- | --- |
-| [Constructor](require-constructor.html#api-overview-require-constructor) | Alternative constructors for creating instances. |
+| [Constructor](require-constructor.md#api-overview-require-constructor) | Alternative constructors for creating instances. |
 
-[Require](#api-overview-require): [Constructor](require-constructor.html#api-overview-require-constructor)
+[Require](#api-overview-require): [Constructor](require-constructor.md#api-overview-require-constructor)
 
-[Previous](clinic_result.html "Overview: ClinicResult")
-[Next](www.html "Overview: WWW")
+[Previous](clinic_result.md "Overview: ClinicResult")
+[Next](www.md "Overview: WWW")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](intro.md)
-* [Media](intro.html#media)
+* [Media](intro.md#media)
 * [What is New in StaticFrame](new.md)
 * [Contributing](contributing.md)
 
@@ -135,8 +135,8 @@ API Detail
 * License
 * [View page source](_sources/license.rst.txt)
 
-[Previous](readme.html "static-frame")
-[Next](intro.html "About StaticFrame")
+[Previous](readme.md "static-frame")
+[Next](intro.md "About StaticFrame")
 
 ---
 
@@ -175,8 +175,8 @@ SOFTWARE AND ACCOMPANYING DOCUMENTATION OR TEXT, IF ANY, PROVIDED HEREUNDER IS
 PROVIDED “AS IS”. RA HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
 ENHANCEMENTS, OR MODIFICATIONS.
 
-[Previous](readme.html "static-frame")
-[Next](intro.html "About StaticFrame")
+[Previous](readme.md "static-frame")
+[Next](intro.md "About StaticFrame")
 
 ---
 

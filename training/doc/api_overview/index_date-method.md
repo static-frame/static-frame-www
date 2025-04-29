@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,69 +135,69 @@ API Detail
 * Overview: IndexDate: Method
 * [View page source](../_sources/api_overview/index_date-method.rst.txt)
 
-[Previous](index_date-attribute.html "Overview: IndexDate: Attribute")
-[Next](index_date-dictionary_like.html "Overview: IndexDate: Dictionary-Like")
+[Previous](index_date-attribute.md "Overview: IndexDate: Attribute")
+[Next](index_date-dictionary_like.md "Overview: IndexDate: Dictionary-Like")
 
 ---
 
 # Overview: IndexDate: Method[](#overview-indexdate-method "Link to this heading")
 
-[Detail: IndexDate: Method](../api_detail/index_date-method.html#api-detail-indexdate-method)
+[Detail: IndexDate: Method](../api_detail/index_date-method.md#api-detail-indexdate-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-array) | `IndexDate.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-array-ufunc) | `IndexDate.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-bool) | `IndexDate.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-copy) | `IndexDate.__copy__()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-deepcopy) | `IndexDate.__deepcopy__(memo)` |  |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-len) | `IndexDate.__len__()` |  |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-all) | `IndexDate.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-any) | `IndexDate.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-astype) | `IndexDate.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
-| [Detail](../api_detail/index_date-method.html#id1) | `IndexDate.copy()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-cumprod) | `IndexDate.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-cumsum) | `IndexDate.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-difference) | `IndexDate.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-dropfalsy) | `IndexDate.dropfalsy()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-dropna) | `IndexDate.dropna()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-equals) | `IndexDate.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-fillfalsy) | `IndexDate.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-fillna) | `IndexDate.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-head) | `IndexDate.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-iloc-searchsorted) | `IndexDate.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-intersection) | `IndexDate.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-isfalsy) | `IndexDate.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-isin) | `IndexDate.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-isna) | `IndexDate.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-label-widths-at-depth) | `IndexDate.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-level-add) | `IndexDate.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-loc-searchsorted) | `IndexDate.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-loc-to-iloc) | `IndexDate.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-max) | `IndexDate.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-mean) | `IndexDate.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-median) | `IndexDate.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-min) | `IndexDate.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-notfalsy) | `IndexDate.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-notna) | `IndexDate.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-prod) | `IndexDate.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-relabel) | `IndexDate.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-rename) | `IndexDate.rename(name)` | Return a new Frame with an updated name attribute. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-roll) | `IndexDate.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-sample) | `IndexDate.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-sort) | `IndexDate.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-std) | `IndexDate.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-sum) | `IndexDate.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-tail) | `IndexDate.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-union) | `IndexDate.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-unique) | `IndexDate.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-values-at-depth) | `IndexDate.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
-| [Detail](../api_detail/index_date-method.html#api-sig-indexdate-var) | `IndexDate.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-array) | `IndexDate.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-array-ufunc) | `IndexDate.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-bool) | `IndexDate.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-copy) | `IndexDate.__copy__()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-deepcopy) | `IndexDate.__deepcopy__(memo)` |  |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-len) | `IndexDate.__len__()` |  |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-all) | `IndexDate.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-any) | `IndexDate.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-astype) | `IndexDate.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
+| [Detail](../api_detail/index_date-method.md#id1) | `IndexDate.copy()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-cumprod) | `IndexDate.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-cumsum) | `IndexDate.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-difference) | `IndexDate.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-dropfalsy) | `IndexDate.dropfalsy()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-dropna) | `IndexDate.dropna()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-equals) | `IndexDate.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-fillfalsy) | `IndexDate.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-fillna) | `IndexDate.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-head) | `IndexDate.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-iloc-searchsorted) | `IndexDate.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-intersection) | `IndexDate.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-isfalsy) | `IndexDate.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-isin) | `IndexDate.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-isna) | `IndexDate.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-label-widths-at-depth) | `IndexDate.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-level-add) | `IndexDate.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-loc-searchsorted) | `IndexDate.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-loc-to-iloc) | `IndexDate.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-max) | `IndexDate.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-mean) | `IndexDate.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-median) | `IndexDate.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-min) | `IndexDate.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-notfalsy) | `IndexDate.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-notna) | `IndexDate.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-prod) | `IndexDate.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-relabel) | `IndexDate.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-rename) | `IndexDate.rename(name)` | Return a new Frame with an updated name attribute. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-roll) | `IndexDate.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-sample) | `IndexDate.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-sort) | `IndexDate.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-std) | `IndexDate.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-sum) | `IndexDate.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-tail) | `IndexDate.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-union) | `IndexDate.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-unique) | `IndexDate.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-values-at-depth) | `IndexDate.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
+| [Detail](../api_detail/index_date-method.md#api-sig-indexdate-var) | `IndexDate.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
-[IndexDate](index_date.html#api-overview-indexdate): [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | [Method](#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | [Display](index_date-display.html#api-overview-indexdate-display) | [Selector](index_date-selector.html#api-overview-indexdate-selector) | [Iterator](index_date-iterator.html#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-overview-indexdate): [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | [Method](#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | [Display](index_date-display.md#api-overview-indexdate-display) | [Selector](index_date-selector.md#api-overview-indexdate-selector) | [Iterator](index_date-iterator.md#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic)
 
-[Previous](index_date-attribute.html "Overview: IndexDate: Attribute")
-[Next](index_date-dictionary_like.html "Overview: IndexDate: Dictionary-Like")
+[Previous](index_date-attribute.md "Overview: IndexDate: Attribute")
+[Next](index_date-dictionary_like.md "Overview: IndexDate: Dictionary-Like")
 
 ---
 

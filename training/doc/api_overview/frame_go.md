@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,42 +135,42 @@ API Detail
 * Overview: FrameGO
 * [View page source](../_sources/api_overview/frame_go.rst.txt)
 
-[Previous](frame.html "Overview: Frame")
-[Next](frame_he.html "Overview: FrameHE")
+[Previous](frame.md "Overview: Frame")
+[Next](frame_he.md "Overview: FrameHE")
 
 ---
 
 # Overview: FrameGO[](#overview-framego "Link to this heading")
 
-[Detail: FrameGO](../api_detail/frame_go.html#api-detail-framego)
+[Detail: FrameGO](../api_detail/frame_go.md#api-detail-framego)
 
 |  |  |
 | --- | --- |
-| [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | Alternative constructors for creating instances. |
-| [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](frame_go-method.html#api-overview-framego-method) | Methods for general functionality. |
-| [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](frame_go-display.html#api-overview-framego-display) | Methods for providing a text representation of the object. |
-| [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | Interfaces for creating new containers with assignment-like specification. |
-| [Selector](frame_go-selector.html#api-overview-framego-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | Underlying (magic) methods for binary operator implementation. |
-| [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | Underlying (magic) methods for unary operator implementation. |
-| [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | Interface for using NumPy functions on conatainers. |
-| [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
-| [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | Interface for employing string methods on container elements. |
-| [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows. |
-| [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | Interface that permits supplying a fill value to be used when binary operator application forces reindexing. |
-| [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
-| [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
-| [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce) | Interface for providing function application to columns or containers that result in new Frame. |
+| [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | Alternative constructors for creating instances. |
+| [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](frame_go-method.md#api-overview-framego-method) | Methods for general functionality. |
+| [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](frame_go-display.md#api-overview-framego-display) | Methods for providing a text representation of the object. |
+| [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | Interfaces for creating new containers with assignment-like specification. |
+| [Selector](frame_go-selector.md#api-overview-framego-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | Underlying (magic) methods for binary operator implementation. |
+| [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | Underlying (magic) methods for unary operator implementation. |
+| [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | Interface for using NumPy functions on conatainers. |
+| [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
+| [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | Interface for employing string methods on container elements. |
+| [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows. |
+| [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | Interface that permits supplying a fill value to be used when binary operator application forces reindexing. |
+| [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
+| [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce) | Interface for providing function application to columns or containers that result in new Frame. |
 
-[FrameGO](#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame.html "Overview: Frame")
-[Next](frame_he.html "Overview: FrameHE")
+[Previous](frame.md "Overview: Frame")
+[Next](frame_he.md "Overview: FrameHE")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: Batch: Accessor Regular Expression
 * [View page source](../_sources/api_detail/batch-accessor_regular_expression.rst.txt)
 
-[Previous](batch-accessor_fill_value.html "Detail: Batch: Accessor Fill Value")
-[Next](batch-accessor_hashlib.html "Detail: Batch: Accessor Hashlib")
+[Previous](batch-accessor_fill_value.md "Detail: Batch: Accessor Fill Value")
+[Next](batch-accessor_hashlib.md "Detail: Batch: Accessor Hashlib")
 
 ---
 
 # Detail: Batch: Accessor Regular Expression[](#detail-batch-accessor-regular-expression "Link to this heading")
 
-[Overview: Batch: Accessor Regular Expression](../api_overview/batch-accessor_regular_expression.html#api-overview-batch-accessor-regular-expression)
+[Overview: Batch: Accessor Regular Expression](../api_overview/batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression)
 
 Batch.via\_re(*pattern*, *flags).search(pos*, *endpos*)
-:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_re)
+:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_re)
 
-    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.search)
+    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.search)
     :   Scan through string looking for the first location where this regular expression produces a match and return True, else False. Note that this is different from finding a zero-length match at some point in the string.
 
         Parameters:
@@ -174,9 +174,9 @@ Batch.via\_re(*pattern*, *flags).search(pos*, *endpos*)
     ```
 
 Batch.via\_re(*pattern*, *flags).match(pos*, *endpos*)
-:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_re)
+:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_re)
 
-    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.match)
+    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.match)
     :   If zero or more characters at the beginning of string match this regular expression return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -203,9 +203,9 @@ Batch.via\_re(*pattern*, *flags).match(pos*, *endpos*)
     ```
 
 Batch.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
-:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_re)
+:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_re)
 
-    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.fullmatch)
+    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.fullmatch)
     :   If the whole string matches this regular expression, return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -232,9 +232,9 @@ Batch.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
     ```
 
 Batch.via\_re(*pattern*, *flags).split(maxsplit*)
-:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_re)
+:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_re)
 
-    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.split)
+    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.split)
     :   Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting tuple.
 
         Parameters:
@@ -260,9 +260,9 @@ Batch.via\_re(*pattern*, *flags).split(maxsplit*)
     ```
 
 Batch.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
-:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_re)
+:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_re)
 
-    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.findall)
+    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.findall)
     :   Return all non-overlapping matches of pattern in string, as a tuple of strings. The string is scanned left-to-right, and matches are returned in the order found. If one or more groups are present in the pattern, return a tuple of groups; this will be a tuple of tuples if the pattern has more than one group. Empty matches are included in the result.
 
         Parameters:
@@ -289,9 +289,9 @@ Batch.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
     ```
 
 Batch.via\_re(*pattern*, *flags).sub(repl*, *count*)
-:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_re)
+:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_re)
 
-    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.sub)
+    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.sub)
     :   Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement `repl`. If the pattern is not found, the string is returned unchanged.
 
         Parameters:
@@ -318,9 +318,9 @@ Batch.via\_re(*pattern*, *flags).sub(repl*, *count*)
     ```
 
 Batch.via\_re(*pattern*, *flags).subn(repl*, *count*)
-:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_re)
+:   via\_re *= <function Batch.via\_re>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_re)
 
-    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.subn)
+    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.subn)
     :   Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_subs\_made).
 
         Parameters:
@@ -346,10 +346,10 @@ Batch.via\_re(*pattern*, *flags).subn(repl*, *count*)
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-accessor_fill_value.html "Detail: Batch: Accessor Fill Value")
-[Next](batch-accessor_hashlib.html "Detail: Batch: Accessor Hashlib")
+[Previous](batch-accessor_fill_value.md "Detail: Batch: Accessor Fill Value")
+[Next](batch-accessor_hashlib.md "Detail: Batch: Accessor Hashlib")
 
 ---
 

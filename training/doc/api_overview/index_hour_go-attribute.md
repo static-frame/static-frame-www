@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexHourGO: Attribute
 * [View page source](../_sources/api_overview/index_hour_go-attribute.rst.txt)
 
-[Previous](index_hour_go-exporter.html "Overview: IndexHourGO: Exporter")
-[Next](index_hour_go-method.html "Overview: IndexHourGO: Method")
+[Previous](index_hour_go-exporter.md "Overview: IndexHourGO: Exporter")
+[Next](index_hour_go-method.md "Overview: IndexHourGO: Method")
 
 ---
 
 # Overview: IndexHourGO: Attribute[](#overview-indexhourgo-attribute "Link to this heading")
 
-[Detail: IndexHourGO: Attribute](../api_detail/index_hour_go-attribute.html#api-detail-indexhourgo-attribute)
+[Detail: IndexHourGO: Attribute](../api_detail/index_hour_go-attribute.md#api-detail-indexhourgo-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-static) | `IndexHourGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-depth) | `IndexHourGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-dtype) | `IndexHourGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-index-types) | `IndexHourGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-memory) | `IndexHourGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-mloc) | `IndexHourGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-name) | `IndexHourGO.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-names) | `IndexHourGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-nbytes) | `IndexHourGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-ndim) | `IndexHourGO.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-positions) | `IndexHourGO.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-shape) | `IndexHourGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_hour_go-attribute.html#api-sig-indexhourgo-size) | `IndexHourGO.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-static) | `IndexHourGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-depth) | `IndexHourGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-dtype) | `IndexHourGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-index-types) | `IndexHourGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-memory) | `IndexHourGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-mloc) | `IndexHourGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-name) | `IndexHourGO.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-names) | `IndexHourGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-nbytes) | `IndexHourGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-ndim) | `IndexHourGO.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-positions) | `IndexHourGO.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-shape) | `IndexHourGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-size) | `IndexHourGO.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexHourGO](index_hour_go.html#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.html#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-overview-indexhourgo-exporter) | [Attribute](#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-overview-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.md#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-overview-indexhourgo-exporter) | [Attribute](#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-overview-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-exporter.html "Overview: IndexHourGO: Exporter")
-[Next](index_hour_go-method.html "Overview: IndexHourGO: Method")
+[Previous](index_hour_go-exporter.md "Overview: IndexHourGO: Exporter")
+[Next](index_hour_go-method.md "Overview: IndexHourGO: Method")
 
 ---
 

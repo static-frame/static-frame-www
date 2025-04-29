@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: SeriesHE: Operator Binary
 * [View page source](../_sources/api_overview/series_he-operator_binary.rst.txt)
 
-[Previous](series_he-iterator.html "Overview: SeriesHE: Iterator")
-[Next](series_he-operator_unary.html "Overview: SeriesHE: Operator Unary")
+[Previous](series_he-iterator.md "Overview: SeriesHE: Iterator")
+[Next](series_he-operator_unary.md "Overview: SeriesHE: Operator Unary")
 
 ---
 
 # Overview: SeriesHE: Operator Binary[](#overview-serieshe-operator-binary "Link to this heading")
 
-[Detail: SeriesHE: Operator Binary](../api_detail/series_he-operator_binary.html#api-detail-serieshe-operator-binary)
+[Detail: SeriesHE: Operator Binary](../api_detail/series_he-operator_binary.md#api-detail-serieshe-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-add) | `SeriesHE.__add__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-and) | `SeriesHE.__and__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-eq) | `SeriesHE.__eq__(other)` | Return True if other is a Series with the same labels, values, and name. Contain… |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-floordiv) | `SeriesHE.__floordiv__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-ge) | `SeriesHE.__ge__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-gt) | `SeriesHE.__gt__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-le) | `SeriesHE.__le__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-lt) | `SeriesHE.__lt__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-matmul) | `SeriesHE.__matmul__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-mod) | `SeriesHE.__mod__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-mul) | `SeriesHE.__mul__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-ne) | `SeriesHE.__ne__(other)` | Return False if other is a Series with the same labels, values, and name. Contai… |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-or) | `SeriesHE.__or__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-pow) | `SeriesHE.__pow__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-radd) | `SeriesHE.__radd__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-rfloordiv) | `SeriesHE.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-rmatmul) | `SeriesHE.__rmatmul__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-rmul) | `SeriesHE.__rmul__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-rshift) | `SeriesHE.__rshift__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-rsub) | `SeriesHE.__rsub__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-rtruediv) | `SeriesHE.__rtruediv__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-sub) | `SeriesHE.__sub__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-truediv) | `SeriesHE.__truediv__(other)` |  |
-| [Detail](../api_detail/series_he-operator_binary.html#api-sig-serieshe-xor) | `SeriesHE.__xor__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-add) | `SeriesHE.__add__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-and) | `SeriesHE.__and__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-eq) | `SeriesHE.__eq__(other)` | Return True if other is a Series with the same labels, values, and name. Contain… |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-floordiv) | `SeriesHE.__floordiv__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-ge) | `SeriesHE.__ge__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-gt) | `SeriesHE.__gt__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-le) | `SeriesHE.__le__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-lt) | `SeriesHE.__lt__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-matmul) | `SeriesHE.__matmul__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-mod) | `SeriesHE.__mod__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-mul) | `SeriesHE.__mul__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-ne) | `SeriesHE.__ne__(other)` | Return False if other is a Series with the same labels, values, and name. Contai… |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-or) | `SeriesHE.__or__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-pow) | `SeriesHE.__pow__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-radd) | `SeriesHE.__radd__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-rfloordiv) | `SeriesHE.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-rmatmul) | `SeriesHE.__rmatmul__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-rmul) | `SeriesHE.__rmul__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-rshift) | `SeriesHE.__rshift__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-rsub) | `SeriesHE.__rsub__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-rtruediv) | `SeriesHE.__rtruediv__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-sub) | `SeriesHE.__sub__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-truediv) | `SeriesHE.__truediv__(other)` |  |
+| [Detail](../api_detail/series_he-operator_binary.md#api-sig-serieshe-xor) | `SeriesHE.__xor__(other)` |  |
 
-[SeriesHE](series_he.html#api-overview-serieshe): [Constructor](series_he-constructor.html#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | [Method](series_he-method.html#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-overview-serieshe-dictionary-like) | [Display](series_he-display.html#api-overview-serieshe-display) | [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | [Selector](series_he-selector.html#api-overview-serieshe-selector) | [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | [Operator Binary](#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-overview-serieshe): [Constructor](series_he-constructor.md#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | [Method](series_he-method.md#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-overview-serieshe-dictionary-like) | [Display](series_he-display.md#api-overview-serieshe-display) | [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | [Selector](series_he-selector.md#api-overview-serieshe-selector) | [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | [Operator Binary](#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-iterator.html "Overview: SeriesHE: Iterator")
-[Next](series_he-operator_unary.html "Overview: SeriesHE: Operator Unary")
+[Previous](series_he-iterator.md "Overview: SeriesHE: Iterator")
+[Next](series_he-operator_unary.md "Overview: SeriesHE: Operator Unary")
 
 ---
 

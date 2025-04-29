@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexAutoFactory
 * [View page source](../_sources/api_overview/index_auto_factory.rst.txt)
 
-[Previous](store_filter.html "Overview: StoreFilter")
-[Next](index_default_constructor_factory.html "Overview: IndexDefaultConstructorFactory")
+[Previous](store_filter.md "Overview: StoreFilter")
+[Next](index_default_constructor_factory.md "Overview: IndexDefaultConstructorFactory")
 
 ---
 
 # Overview: IndexAutoFactory[](#overview-indexautofactory "Link to this heading")
 
-[Detail: IndexAutoFactory](../api_detail/index_auto_factory.html#api-detail-indexautofactory)
+[Detail: IndexAutoFactory](../api_detail/index_auto_factory.md#api-detail-indexautofactory)
 
 |  |  |
 | --- | --- |
-| [Constructor](index_auto_factory-constructor.html#api-overview-indexautofactory-constructor) | Alternative constructors for creating instances. |
-| [Exporter](index_auto_factory-exporter.html#api-overview-indexautofactory-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Display](index_auto_factory-display.html#api-overview-indexautofactory-display) | Methods for providing a text representation of the object. |
+| [Constructor](index_auto_factory-constructor.md#api-overview-indexautofactory-constructor) | Alternative constructors for creating instances. |
+| [Exporter](index_auto_factory-exporter.md#api-overview-indexautofactory-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Display](index_auto_factory-display.md#api-overview-indexautofactory-display) | Methods for providing a text representation of the object. |
 
-[IndexAutoFactory](#api-overview-indexautofactory): [Constructor](index_auto_factory-constructor.html#api-overview-indexautofactory-constructor) | [Exporter](index_auto_factory-exporter.html#api-overview-indexautofactory-exporter) | [Display](index_auto_factory-display.html#api-overview-indexautofactory-display)
+[IndexAutoFactory](#api-overview-indexautofactory): [Constructor](index_auto_factory-constructor.md#api-overview-indexautofactory-constructor) | [Exporter](index_auto_factory-exporter.md#api-overview-indexautofactory-exporter) | [Display](index_auto_factory-display.md#api-overview-indexautofactory-display)
 
-[Previous](store_filter.html "Overview: StoreFilter")
-[Next](index_default_constructor_factory.html "Overview: IndexDefaultConstructorFactory")
+[Previous](store_filter.md "Overview: StoreFilter")
+[Next](index_default_constructor_factory.md "Overview: IndexDefaultConstructorFactory")
 
 ---
 

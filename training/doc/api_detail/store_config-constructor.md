@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Detail: StoreConfig: Constructor
 * [View page source](../_sources/api_detail/store_config-constructor.rst.txt)
 
-[Previous](display_config-display.html "Detail: DisplayConfig: Display")
-[Next](store_config-exporter.html "Detail: StoreConfig: Exporter")
+[Previous](display_config-display.md "Detail: DisplayConfig: Display")
+[Next](store_config-exporter.md "Detail: StoreConfig: Exporter")
 
 ---
 
 # Detail: StoreConfig: Constructor[](#detail-storeconfig-constructor "Link to this heading")
 
-[Overview: StoreConfig: Constructor](../api_overview/store_config-constructor.html#api-overview-storeconfig-constructor)
+[Overview: StoreConfig: Constructor](../api_overview/store_config-constructor.md#api-overview-storeconfig-constructor)
 
-StoreConfig.\_\_init\_\_(*\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_select=None*, *dtypes=None*, *consolidate\_blocks=False*, *skip\_header=0*, *skip\_footer=0*, *trim\_nadir=False*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *merge\_hierarchical\_labels=True*, *label\_encoder=None*, *label\_decoder=None*, *read\_max\_workers=None*, *read\_chunksize=1*, *write\_max\_workers=None*, *write\_chunksize=1*, *mp\_context=None*)[[source]](../_modules/static_frame/core/store_config.html#StoreConfig.__init__)[](#static_frame.StoreConfig.__init__ "Link to this definition")
+StoreConfig.\_\_init\_\_(*\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_select=None*, *dtypes=None*, *consolidate\_blocks=False*, *skip\_header=0*, *skip\_footer=0*, *trim\_nadir=False*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *merge\_hierarchical\_labels=True*, *label\_encoder=None*, *label\_decoder=None*, *read\_max\_workers=None*, *read\_chunksize=1*, *write\_max\_workers=None*, *write\_chunksize=1*, *mp\_context=None*)[[source]](../_modules/static_frame/core/store_config.md#StoreConfig.__init__)[](#static_frame.StoreConfig.__init__ "Link to this definition")
 :   Parameters:
     :   * **include\_index** – Boolean to determine if the `index` is included in output.
         * **include\_columns** – Boolean to determine if the `columns` is included in output.
 
-*classmethod* StoreConfig.from\_frame(*frame*)[[source]](../_modules/static_frame/core/store_config.html#StoreConfig.from_frame)[](#static_frame.StoreConfig.from_frame "Link to this definition")
+*classmethod* StoreConfig.from\_frame(*frame*)[[source]](../_modules/static_frame/core/store_config.md#StoreConfig.from_frame)[](#static_frame.StoreConfig.from_frame "Link to this definition")
 :   Derive a config from a Frame.
 
-[StoreConfig](store_config.html#api-detail-storeconfig): [Constructor](#api-detail-storeconfig-constructor) | [Exporter](store_config-exporter.html#api-detail-storeconfig-exporter) | [Attribute](store_config-attribute.html#api-detail-storeconfig-attribute) | [Method](store_config-method.html#api-detail-storeconfig-method) | [Display](store_config-display.html#api-detail-storeconfig-display)
+[StoreConfig](store_config.md#api-detail-storeconfig): [Constructor](#api-detail-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-detail-storeconfig-exporter) | [Attribute](store_config-attribute.md#api-detail-storeconfig-attribute) | [Method](store_config-method.md#api-detail-storeconfig-method) | [Display](store_config-display.md#api-detail-storeconfig-display)
 
-[Previous](display_config-display.html "Detail: DisplayConfig: Display")
-[Next](store_config-exporter.html "Detail: StoreConfig: Exporter")
+[Previous](display_config-display.md "Detail: DisplayConfig: Display")
+[Next](store_config-exporter.md "Detail: StoreConfig: Exporter")
 
 ---
 

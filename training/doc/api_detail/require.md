@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,24 +136,24 @@ API Detail
 * Detail: Require
 * [View page source](../_sources/api_detail/require.rst.txt)
 
-[Previous](clinic_result.html "Detail: ClinicResult")
-[Next](www.html "Detail: WWW")
+[Previous](clinic_result.md "Detail: ClinicResult")
+[Next](www.md "Detail: WWW")
 
 ---
 
 # Detail: Require[](#detail-require "Link to this heading")
 
-[Overview: Require](../api_overview/require.html#api-overview-require)
+[Overview: Require](../api_overview/require.md#api-overview-require)
 
-*class* Require[[source]](../_modules/static_frame/core/type_clinic.html#Require)[](#static_frame.Require "Link to this definition")
+*class* Require[[source]](../_modules/static_frame/core/type_clinic.md#Require)[](#static_frame.Require "Link to this definition")
 :   A collection of classes to be used in `Annotated` generics to perform run-time data validations.
 
-* [Constructor](require-constructor.html#api-detail-require-constructor): Alternative constructors for creating instances.
+* [Constructor](require-constructor.md#api-detail-require-constructor): Alternative constructors for creating instances.
 
-[Require](#api-detail-require): [Constructor](require-constructor.html#api-detail-require-constructor)
+[Require](#api-detail-require): [Constructor](require-constructor.md#api-detail-require-constructor)
 
-[Previous](clinic_result.html "Detail: ClinicResult")
-[Next](www.html "Detail: WWW")
+[Previous](clinic_result.md "Detail: ClinicResult")
+[Next](www.md "Detail: WWW")
 
 ---
 

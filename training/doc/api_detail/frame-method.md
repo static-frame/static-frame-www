@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Frame: Method
 * [View page source](../_sources/api_detail/frame-method.rst.txt)
 
-[Previous](frame-attribute.html "Detail: Frame: Attribute")
-[Next](frame-dictionary_like.html "Detail: Frame: Dictionary-Like")
+[Previous](frame-attribute.md "Detail: Frame: Attribute")
+[Next](frame-dictionary_like.md "Detail: Frame: Dictionary-Like")
 
 ---
 
 # Detail: Frame: Method[](#detail-frame-method "Link to this heading")
 
-[Overview: Frame: Method](../api_overview/frame-method.html#api-overview-frame-method)
+[Overview: Frame: Method](../api_overview/frame-method.md#api-overview-frame-method)
 
 Frame.\_\_array\_\_(*dtype=None*)[](#static_frame.Frame.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -206,7 +206,7 @@ Frame.\_\_bool\_\_()[](#static_frame.Frame.__bool__ "Link to this definition"
 
     ```
 
-Frame.\_\_dataframe\_\_(*nan\_as\_null=False*, *allow\_copy=True*)[[source]](../_modules/static_frame/core/frame.html#Frame.__dataframe__)[](#static_frame.Frame.__dataframe__ "Link to this definition")
+Frame.\_\_dataframe\_\_(*nan\_as\_null=False*, *allow\_copy=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.__dataframe__)[](#static_frame.Frame.__dataframe__ "Link to this definition")
 :   Return a data-frame interchange protocol compliant object. See <https://data-apis.org/dataframe-protocol/latest> for more information.
 
     ```
@@ -225,7 +225,7 @@ Frame.\_\_dataframe\_\_(*nan\_as\_null=False*, *allow\_copy=True*)[[source]](../
 
     ```
 
-Frame.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/frame.html#Frame.__deepcopy__)[](#static_frame.Frame.__deepcopy__ "Link to this definition")
+Frame.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/frame.md#Frame.__deepcopy__)[](#static_frame.Frame.__deepcopy__ "Link to this definition")
 :   ```
     >>> import copy
     >>> f = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -248,7 +248,7 @@ Frame.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/frame.htm
 
     ```
 
-Frame.\_\_len\_\_()[[source]](../_modules/static_frame/core/frame.html#Frame.__len__)[](#static_frame.Frame.__len__ "Link to this definition")
+Frame.\_\_len\_\_()[[source]](../_modules/static_frame/core/frame.md#Frame.__len__)[](#static_frame.Frame.__len__ "Link to this definition")
 :   Length of rows in values.
 
     ```
@@ -266,14 +266,14 @@ Frame.\_\_len\_\_()[[source]](../_modules/static_frame/core/frame.html#Frame.__l
 
     ```
 
-Frame.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.__round__)[](#static_frame.Frame.__round__ "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") rounded to the given decimals. Negative decimals round to the left of the decimal point.
+Frame.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.__round__)[](#static_frame.Frame.__round__ "Link to this definition")
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") rounded to the given decimals. Negative decimals round to the left of the decimal point.
 
     Parameters:
     :   **decimals** – number of decimals to round to.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame((np.arange(6).reshape(3,2) * 4/3), index=('p', 'q', 'r'), columns=('a', 'b'), name='y')
@@ -355,7 +355,7 @@ Frame.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
         Parameters:
         :   **dtype** – A value suitable for specyfying a NumPy dtype, such as a Python type (float), NumPy array protocol strings (‘f8’), or a dtype instance.
 
-    InterfaceFrameAsType.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceFrameAsType.__getitem__)
+    InterfaceFrameAsType.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceFrameAsType.__getitem__)
     :   Selector of columns by label.
 
         Parameters:
@@ -391,7 +391,7 @@ Frame.astype(*dtype*, *\**, *consolidate\_blocks*)
         Parameters:
         :   **dtype** – A value suitable for specyfying a NumPy dtype, such as a Python type (float), NumPy array protocol strings (‘f8’), or a dtype instance.
 
-    InterfaceFrameAsType.\_\_call\_\_(*dtype*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceFrameAsType.__call__)
+    InterfaceFrameAsType.\_\_call\_\_(*dtype*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceFrameAsType.__call__)
     :   Apply a single `dtype` to all columns.
 
     ```
@@ -415,13 +415,13 @@ Frame.astype(*dtype*, *\**, *consolidate\_blocks*)
 
     ```
 
-Frame.clip(*\**, *lower=None*, *upper=None*, *axis=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.clip)[](#static_frame.Frame.clip "Link to this definition")
-:   Apply a clip operation to this [`Frame`](frame-selector.html#Frame "Frame"). Note that clip operations can be applied to object types, but cannot be applied to non-numerical objects (e.g., strings, None)
+Frame.clip(*\**, *lower=None*, *upper=None*, *axis=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.clip)[](#static_frame.Frame.clip "Link to this definition")
+:   Apply a clip operation to this [`Frame`](frame-selector.md#Frame "Frame"). Note that clip operations can be applied to object types, but cannot be applied to non-numerical objects (e.g., strings, None)
 
     Parameters:
-    :   * **lower** – value, [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame")
-        * **upper** – value, [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame")
-        * **axis** – required if `lower` or `upper` are given as a [`Series`](series-selector.html#Series "Series").
+    :   * **lower** – value, [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame")
+        * **upper** – value, [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame")
+        * **axis** – required if `lower` or `upper` are given as a [`Series`](series-selector.md#Series "Series").
 
     ```
     >>> f = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -448,7 +448,7 @@ Frame.consolidate[*key*]
 :   consolidate
     :   Consolidate one or more columns. When used as a function, can be used to retype the entire `Frame`. Alternatively, when used as a `__getitem__` interface, loc-style column selection can be used to consolidate one or more coloumns.
 
-    InterfaceConsolidate.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceConsolidate.__getitem__)
+    InterfaceConsolidate.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceConsolidate.__getitem__)
     :   Return the full `Frame`, selecting with `key` a subset of columns for consolidation.
 
         Parameters:
@@ -491,7 +491,7 @@ Frame.consolidate
 :   consolidate
     :   Consolidate one or more columns. When used as a function, can be used to retype the entire `Frame`. Alternatively, when used as a `__getitem__` interface, loc-style column selection can be used to consolidate one or more coloumns.
 
-    InterfaceConsolidate.\_\_call\_\_()[[source]](../_modules/static_frame/core/node_selector.html#InterfaceConsolidate.__call__)
+    InterfaceConsolidate.\_\_call\_\_()[[source]](../_modules/static_frame/core/node_selector.md#InterfaceConsolidate.__call__)
     :   Apply consolidation to all columns.
 
     ```
@@ -565,7 +565,7 @@ Frame.consolidate.status
 
     ```
 
-Frame.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/frame.html#Frame.corr)[](#static_frame.Frame.corr "Link to this definition")
+Frame.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/frame.md#Frame.corr)[](#static_frame.Frame.corr "Link to this definition")
 :   Compute a correlation matrix.
 
     Parameters:
@@ -594,7 +594,7 @@ Frame.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/frame.html#Fr
 
     ```
 
-Frame.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.count)[](#static_frame.Frame.count "Link to this definition")
+Frame.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.count)[](#static_frame.Frame.count "Link to this definition")
 :   Return the count of non-NA values along the provided `axis`, where 0 provides counts per column, 1 provides counts per row.
 
     Parameters:
@@ -626,7 +626,7 @@ Frame.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[s
 
     ```
 
-Frame.cov(*\**, *axis=1*, *ddof=1*)[[source]](../_modules/static_frame/core/frame.html#Frame.cov)[](#static_frame.Frame.cov "Link to this definition")
+Frame.cov(*\**, *axis=1*, *ddof=1*)[[source]](../_modules/static_frame/core/frame.md#Frame.cov)[](#static_frame.Frame.cov "Link to this definition")
 :   Compute a covariance matrix.
 
     Parameters:
@@ -712,8 +712,8 @@ Frame.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.Frame.cumsum "Lin
 
     ```
 
-Frame.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.drop_duplicated)[](#static_frame.Frame.drop_duplicated "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") with duplicated rows (axis 0) or columns (axis 1) removed. All values in the row or column are compared to determine duplication.
+Frame.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.drop_duplicated)[](#static_frame.Frame.drop_duplicated "Link to this definition")
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") with duplicated rows (axis 0) or columns (axis 1) removed. All values in the row or column are compared to determine duplication.
 
     Parameters:
     :   * **axis** – Integer specifying axis, where 0 is rows and 1 is columns. Axis 0 is set by default.
@@ -741,7 +741,7 @@ Frame.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=Fa
 
     ```
 
-Frame.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/frame.html#Frame.dropfalsy)[](#static_frame.Frame.dropfalsy "Link to this definition")
+Frame.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/frame.md#Frame.dropfalsy)[](#static_frame.Frame.dropfalsy "Link to this definition")
 :   Return a new Frame after removing rows (axis 0) or columns (axis 1) where any or all values are falsy. The condition is determined by a NumPy ufunc that process the Boolean array returned by `isfalsy()`; the default is `np.all`.
 
     Parameters:
@@ -770,8 +770,8 @@ Frame.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_module
 
     ```
 
-Frame.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/frame.html#Frame.dropna)[](#static_frame.Frame.dropna "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") after removing rows (axis 0) or columns (axis 1) where any or all values are NA (NaN or None). The condition is determined by a NumPy ufunc that process the Boolean array returned by `isna()`; the default is `np.all`.
+Frame.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/frame.md#Frame.dropna)[](#static_frame.Frame.dropna "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") after removing rows (axis 0) or columns (axis 1) where any or all values are NA (NaN or None). The condition is determined by a NumPy ufunc that process the Boolean array returned by `isna()`; the default is `np.all`.
 
     Parameters:
     :   * **axis** –
@@ -799,8 +799,8 @@ Frame.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/s
 
     ```
 
-Frame.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.duplicated)[](#static_frame.Frame.duplicated "Link to this definition")
-:   Return an axis-sized Boolean [`Series`](series-selector.html#Series "Series") that shows True for all rows (axis 0) or columns (axis 1) duplicated.
+Frame.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.duplicated)[](#static_frame.Frame.duplicated "Link to this definition")
+:   Return an axis-sized Boolean [`Series`](series-selector.md#Series "Series") that shows True for all rows (axis 0) or columns (axis 1) duplicated.
 
     Parameters:
     :   * **axis** – Integer specifying axis, where 0 is rows and 1 is columns. Axis 0 is set by default.
@@ -829,7 +829,7 @@ Frame.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[
 
     ```
 
-Frame.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/frame.html#Frame.equals)[](#static_frame.Frame.equals "Link to this definition")
+Frame.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.equals)[](#static_frame.Frame.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -862,7 +862,7 @@ Frame.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
 
     ```
 
-Frame.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillfalsy)[](#static_frame.Frame.fillfalsy "Link to this definition")
+Frame.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy)[](#static_frame.Frame.fillfalsy "Link to this definition")
 :   Return a new `Frame` after replacing falsy values with the supplied value.
 
     Parameters:
@@ -891,7 +891,7 @@ Frame.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/frame.html
 
     ```
 
-Frame.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillfalsy_backward)[](#static_frame.Frame.fillfalsy_backward "Link to this definition")
+Frame.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy_backward)[](#static_frame.Frame.fillfalsy_backward "Link to this definition")
 :   Return a new `Frame` after filling backward falsy values with the first observed value.
 
     Parameters:
@@ -921,7 +921,7 @@ Frame.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/
 
     ```
 
-Frame.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillfalsy_forward)[](#static_frame.Frame.fillfalsy_forward "Link to this definition")
+Frame.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy_forward)[](#static_frame.Frame.fillfalsy_forward "Link to this definition")
 :   Return a new `Frame` after filling forward falsy values with the last observed value.
 
     Parameters:
@@ -951,7 +951,7 @@ Frame.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/s
 
     ```
 
-Frame.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillfalsy_leading)[](#static_frame.Frame.fillfalsy_leading "Link to this definition")
+Frame.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy_leading)[](#static_frame.Frame.fillfalsy_leading "Link to this definition")
 :   Return a new `Frame` after filling leading (and only leading) falsy values with the provided `value`.
 
     Parameters:
@@ -981,7 +981,7 @@ Frame.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/sta
 
     ```
 
-Frame.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillfalsy_trailing)[](#static_frame.Frame.fillfalsy_trailing "Link to this definition")
+Frame.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy_trailing)[](#static_frame.Frame.fillfalsy_trailing "Link to this definition")
 :   Return a new `Frame` after filling trailing (and only trailing) falsy values with the provided `value`.
 
     Parameters:
@@ -1011,7 +1011,7 @@ Frame.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/st
 
     ```
 
-Frame.fillna(*value*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillna)[](#static_frame.Frame.fillna "Link to this definition")
+Frame.fillna(*value*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna)[](#static_frame.Frame.fillna "Link to this definition")
 :   Return a new `Frame` after replacing null (NaN or None) values with the supplied value.
 
     Parameters:
@@ -1040,7 +1040,7 @@ Frame.fillna(*value*, */*)[[source]](../_modules/static_frame/core/frame.html#Fr
 
     ```
 
-Frame.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillna_backward)[](#static_frame.Frame.fillna_backward "Link to this definition")
+Frame.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna_backward)[](#static_frame.Frame.fillna_backward "Link to this definition")
 :   Return a new `Frame` after filling backward null (NaN or None) with the first observed value.
 
     Parameters:
@@ -1070,7 +1070,7 @@ Frame.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/sta
 
     ```
 
-Frame.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillna_forward)[](#static_frame.Frame.fillna_forward "Link to this definition")
+Frame.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna_forward)[](#static_frame.Frame.fillna_forward "Link to this definition")
 :   Return a new `Frame` after filling forward null (NaN or None) with the last observed value.
 
     Parameters:
@@ -1100,7 +1100,7 @@ Frame.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/stat
 
     ```
 
-Frame.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillna_leading)[](#static_frame.Frame.fillna_leading "Link to this definition")
+Frame.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna_leading)[](#static_frame.Frame.fillna_leading "Link to this definition")
 :   Return a new `Frame` after filling leading (and only leading) null (NaN or None) with the provided `value`.
 
     Parameters:
@@ -1130,7 +1130,7 @@ Frame.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static
 
     ```
 
-Frame.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.fillna_trailing)[](#static_frame.Frame.fillna_trailing "Link to this definition")
+Frame.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna_trailing)[](#static_frame.Frame.fillna_trailing "Link to this definition")
 :   Return a new `Frame` after filling trailing (and only trailing) null (NaN or None) with the provided `value`.
 
     Parameters:
@@ -1160,11 +1160,11 @@ Frame.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/stati
 
     ```
 
-Frame.head(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.head)[](#static_frame.Frame.head "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") consisting only of the top elements as specified by `count`.
+Frame.head(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.head)[](#static_frame.Frame.head "Link to this definition")
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Frame`](frame-selector.html#Frame "Frame")
+    :   **count** – Number of elements to be returned from the top of the [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1187,7 +1187,7 @@ Frame.head(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.html#Fr
 
     ```
 
-Frame.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.iloc_max)[](#static_frame.Frame.iloc_max "Link to this definition")
+Frame.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_max)[](#static_frame.Frame.iloc_max "Link to this definition")
 :   Return the integer indices corresponding to the maximum values found.
 
     Parameters:
@@ -1215,7 +1215,7 @@ Frame.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_fram
 
     ```
 
-Frame.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.iloc_min)[](#static_frame.Frame.iloc_min "Link to this definition")
+Frame.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_min)[](#static_frame.Frame.iloc_min "Link to this definition")
 :   Return the integer indices corresponding to the minimum values found.
 
     Parameters:
@@ -1243,7 +1243,7 @@ Frame.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_fram
 
     ```
 
-Frame.iloc\_notfalsy\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.iloc_notfalsy_first)[](#static_frame.Frame.iloc_notfalsy_first "Link to this definition")
+Frame.iloc\_notfalsy\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_notfalsy_first)[](#static_frame.Frame.iloc_notfalsy_first "Link to this definition")
 :   Return the position corresponding to the first non-falsy (including nan) values along the selected axis.
 
     Parameters:
@@ -1279,7 +1279,7 @@ Frame.iloc\_notfalsy\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modu
 
     ```
 
-Frame.iloc\_notfalsy\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.iloc_notfalsy_last)[](#static_frame.Frame.iloc_notfalsy_last "Link to this definition")
+Frame.iloc\_notfalsy\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_notfalsy_last)[](#static_frame.Frame.iloc_notfalsy_last "Link to this definition")
 :   Return the position corresponding to the last non-falsy (including nan) values along the selected axis.
 
     Parameters:
@@ -1315,7 +1315,7 @@ Frame.iloc\_notfalsy\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modul
 
     ```
 
-Frame.iloc\_notna\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.iloc_notna_first)[](#static_frame.Frame.iloc_notna_first "Link to this definition")
+Frame.iloc\_notna\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_notna_first)[](#static_frame.Frame.iloc_notna_first "Link to this definition")
 :   Return the position corresponding to the first non-missing values along the selected axis.
 
     Parameters:
@@ -1351,7 +1351,7 @@ Frame.iloc\_notna\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules
 
     ```
 
-Frame.iloc\_notna\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.iloc_notna_last)[](#static_frame.Frame.iloc_notna_last "Link to this definition")
+Frame.iloc\_notna\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_notna_last)[](#static_frame.Frame.iloc_notna_last "Link to this definition")
 :   Return the position corresponding to the last non-missing values along the selected axis.
 
     Parameters:
@@ -1387,8 +1387,8 @@ Frame.iloc\_notna\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/
 
     ```
 
-Frame.insert\_after(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.insert_after)[](#static_frame.Frame.insert_after "Link to this definition")
-:   Create a new [`Frame`](frame-selector.html#Frame "Frame") by inserting a named [`Series`](series-selector.html#Series "Series") or [`Frame`](frame-selector.html#Frame "Frame") at the position after the label specified by `key`.
+Frame.insert\_after(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.insert_after)[](#static_frame.Frame.insert_after "Link to this definition")
+:   Create a new [`Frame`](frame-selector.md#Frame "Frame") by inserting a named [`Series`](series-selector.md#Series "Series") or [`Frame`](frame-selector.md#Frame "Frame") at the position after the label specified by `key`.
 
     Parameters:
     :   * **key** – Label after which the new container will be inserted.
@@ -1396,7 +1396,7 @@ Frame.insert\_after(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]](
         * **fill\_value** – A value to be used to fill space after reindexing the new container.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -1428,8 +1428,8 @@ Frame.insert\_after(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]](
 
     ```
 
-Frame.insert\_before(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.insert_before)[](#static_frame.Frame.insert_before "Link to this definition")
-:   Create a new [`Frame`](frame-selector.html#Frame "Frame") by inserting a named [`Series`](series-selector.html#Series "Series") or [`Frame`](frame-selector.html#Frame "Frame") at the position before the label specified by `key`.
+Frame.insert\_before(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.insert_before)[](#static_frame.Frame.insert_before "Link to this definition")
+:   Create a new [`Frame`](frame-selector.md#Frame "Frame") by inserting a named [`Series`](series-selector.md#Series "Series") or [`Frame`](frame-selector.md#Frame "Frame") at the position before the label specified by `key`.
 
     Parameters:
     :   * **key** – Label before which the new container will be inserted.
@@ -1437,7 +1437,7 @@ Frame.insert\_before(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]]
         * **fill\_value** – A value to be used to fill space after reindexing the new container.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -1469,7 +1469,7 @@ Frame.insert\_before(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]]
 
     ```
 
-Frame.isfalsy()[[source]](../_modules/static_frame/core/frame.html#Frame.isfalsy)[](#static_frame.Frame.isfalsy "Link to this definition")
+Frame.isfalsy()[[source]](../_modules/static_frame/core/frame.md#Frame.isfalsy)[](#static_frame.Frame.isfalsy "Link to this definition")
 :   Return a same-indexed, Boolean Frame indicating True which values are falsy.
 
     ```
@@ -1495,8 +1495,8 @@ Frame.isfalsy()[[source]](../_modules/static_frame/core/frame.html#Frame.isfalsy
 
     ```
 
-Frame.isin(*other*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.isin)[](#static_frame.Frame.isin "Link to this definition")
-:   Return a same-sized Boolean [`Frame`](frame-selector.html#Frame "Frame") that shows if the same-positioned element is in the passed iterable.
+Frame.isin(*other*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.isin)[](#static_frame.Frame.isin "Link to this definition")
+:   Return a same-sized Boolean [`Frame`](frame-selector.md#Frame "Frame") that shows if the same-positioned element is in the passed iterable.
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 0, 0), (8, 3, 8, 0), (1, 0, 0, 0)), columns=('a', 'b', 'c'), name='x')
@@ -1521,7 +1521,7 @@ Frame.isin(*other*, */*)[[source]](../_modules/static_frame/core/frame.html#Fram
 
     ```
 
-Frame.isna()[[source]](../_modules/static_frame/core/frame.html#Frame.isna)[](#static_frame.Frame.isna "Link to this definition")
+Frame.isna()[[source]](../_modules/static_frame/core/frame.md#Frame.isna)[](#static_frame.Frame.isna "Link to this definition")
 :   Return a same-indexed, Boolean Frame indicating True which values are NaN or None.
 
     ```
@@ -1547,7 +1547,7 @@ Frame.isna()[[source]](../_modules/static_frame/core/frame.html#Frame.isna)[]
 
     ```
 
-Frame.join\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.join_inner)[](#static_frame.Frame.join_inner "Link to this definition")
+Frame.join\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.join_inner)[](#static_frame.Frame.join_inner "Link to this definition")
 :   Perform an inner join.
 
     Parameters:
@@ -1562,7 +1562,7 @@ Frame.join\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
         * **Frame.** (*and appropriate index will be returned in the resultant*) –
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1595,7 +1595,7 @@ Frame.join\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
 
     ```
 
-Frame.join\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.join_left)[](#static_frame.Frame.join_left "Link to this definition")
+Frame.join\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.join_left)[](#static_frame.Frame.join_left "Link to this definition")
 :   Perform a left outer join.
 
     Parameters:
@@ -1610,7 +1610,7 @@ Frame.join\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=N
         * **Frame.** (*and appropriate index will be returned in the resultant*) –
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1643,7 +1643,7 @@ Frame.join\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=N
 
     ```
 
-Frame.join\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.join_outer)[](#static_frame.Frame.join_outer "Link to this definition")
+Frame.join\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.join_outer)[](#static_frame.Frame.join_outer "Link to this definition")
 :   Perform an outer join.
 
     Parameters:
@@ -1658,7 +1658,7 @@ Frame.join\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
         * **Frame.** (*and appropriate index will be returned in the resultant*) –
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1691,7 +1691,7 @@ Frame.join\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
 
     ```
 
-Frame.join\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.join_right)[](#static_frame.Frame.join_right "Link to this definition")
+Frame.join\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.join_right)[](#static_frame.Frame.join_right "Link to this definition")
 :   Perform a right outer join.
 
     Parameters:
@@ -1706,7 +1706,7 @@ Frame.join\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
         * **Frame.** (*and appropriate index will be returned in the resultant*) –
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1739,7 +1739,7 @@ Frame.join\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
 
     ```
 
-Frame.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.loc_max)[](#static_frame.Frame.loc_max "Link to this definition")
+Frame.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_max)[](#static_frame.Frame.loc_max "Link to this definition")
 :   Return the labels corresponding to the maximum values found.
 
     Parameters:
@@ -1767,7 +1767,7 @@ Frame.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame
 
     ```
 
-Frame.loc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.loc_min)[](#static_frame.Frame.loc_min "Link to this definition")
+Frame.loc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_min)[](#static_frame.Frame.loc_min "Link to this definition")
 :   Return the labels corresponding to the minimum value found.
 
     Parameters:
@@ -1795,7 +1795,7 @@ Frame.loc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame
 
     ```
 
-Frame.loc\_notfalsy\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.loc_notfalsy_first)[](#static_frame.Frame.loc_notfalsy_first "Link to this definition")
+Frame.loc\_notfalsy\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_notfalsy_first)[](#static_frame.Frame.loc_notfalsy_first "Link to this definition")
 :   Return the labels corresponding to the first non-falsy (including nan) values along the selected axis.
 
     Parameters:
@@ -1831,7 +1831,7 @@ Frame.loc\_notfalsy\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modu
 
     ```
 
-Frame.loc\_notfalsy\_last(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.loc_notfalsy_last)[](#static_frame.Frame.loc_notfalsy_last "Link to this definition")
+Frame.loc\_notfalsy\_last(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_notfalsy_last)[](#static_frame.Frame.loc_notfalsy_last "Link to this definition")
 :   Return the labels corresponding to the last non-falsy (including nan) values along the selected axis.
 
     Parameters:
@@ -1867,7 +1867,7 @@ Frame.loc\_notfalsy\_last(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modul
 
     ```
 
-Frame.loc\_notna\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.loc_notna_first)[](#static_frame.Frame.loc_notna_first "Link to this definition")
+Frame.loc\_notna\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_notna_first)[](#static_frame.Frame.loc_notna_first "Link to this definition")
 :   Return the labels corresponding to the first non-missing values along the selected axis.
 
     Parameters:
@@ -1903,7 +1903,7 @@ Frame.loc\_notna\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules
 
     ```
 
-Frame.loc\_notna\_last(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.loc_notna_last)[](#static_frame.Frame.loc_notna_last "Link to this definition")
+Frame.loc\_notna\_last(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_notna_last)[](#static_frame.Frame.loc_notna_last "Link to this definition")
 :   Return the labels corresponding to the last non-missing values along the selected axis.
 
     Parameters:
@@ -2017,7 +2017,7 @@ Frame.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Frame
 
     ```
 
-Frame.merge\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.merge_inner)[](#static_frame.Frame.merge_inner "Link to this definition")
+Frame.merge\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.merge_inner)[](#static_frame.Frame.merge_inner "Link to this definition")
 :   Perform an inner merge, an inner join where matched columns are coalesced.
 
     Parameters:
@@ -2034,7 +2034,7 @@ Frame.merge\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns
         * **Frame.** (*and appropriate index will be returned in the resultant*) –
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2067,7 +2067,7 @@ Frame.merge\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns
 
     ```
 
-Frame.merge\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.merge_left)[](#static_frame.Frame.merge_left "Link to this definition")
+Frame.merge\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.merge_left)[](#static_frame.Frame.merge_left "Link to this definition")
 :   Perform a left merge, a left join where matched columns are coalesced.
 
     Parameters:
@@ -2084,7 +2084,7 @@ Frame.merge\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
         * **Frame.** (*and appropriate index will be returned in the resultant*) –
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2117,7 +2117,7 @@ Frame.merge\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
 
     ```
 
-Frame.merge\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.merge_outer)[](#static_frame.Frame.merge_outer "Link to this definition")
+Frame.merge\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.merge_outer)[](#static_frame.Frame.merge_outer "Link to this definition")
 :   Perform an outer merge, an outer join where matched columns are coalesced.
 
     Parameters:
@@ -2134,7 +2134,7 @@ Frame.merge\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns
         * **Frame.** (*and appropriate index will be returned in the resultant*) –
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2167,7 +2167,7 @@ Frame.merge\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns
 
     ```
 
-Frame.merge\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.merge_right)[](#static_frame.Frame.merge_right "Link to this definition")
+Frame.merge\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.merge_right)[](#static_frame.Frame.merge_right "Link to this definition")
 :   Perform a right merge, a right join where matched columns are coalesced.
 
     Parameters:
@@ -2184,7 +2184,7 @@ Frame.merge\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns
         * **Frame.** (*and appropriate index will be returned in the resultant*) –
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2243,7 +2243,7 @@ Frame.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Frame.mi
 
     ```
 
-Frame.notfalsy()[[source]](../_modules/static_frame/core/frame.html#Frame.notfalsy)[](#static_frame.Frame.notfalsy "Link to this definition")
+Frame.notfalsy()[[source]](../_modules/static_frame/core/frame.md#Frame.notfalsy)[](#static_frame.Frame.notfalsy "Link to this definition")
 :   Return a same-indexed, Boolean Frame indicating True which values are not falsy.
 
     ```
@@ -2269,7 +2269,7 @@ Frame.notfalsy()[[source]](../_modules/static_frame/core/frame.html#Frame.notfal
 
     ```
 
-Frame.notna()[[source]](../_modules/static_frame/core/frame.html#Frame.notna)[](#static_frame.Frame.notna "Link to this definition")
+Frame.notna()[[source]](../_modules/static_frame/core/frame.md#Frame.notna)[](#static_frame.Frame.notna "Link to this definition")
 :   Return a same-indexed, Boolean Frame indicating True which values are not NaN or None.
 
     ```
@@ -2295,7 +2295,7 @@ Frame.notna()[[source]](../_modules/static_frame/core/frame.html#Frame.notna)[�
 
     ```
 
-Frame.pivot(*index\_fields*, *columns\_fields=()*, *data\_fields=()*, *\**, *func=<function nansum>*, *fill\_value=nan*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.pivot)[](#static_frame.Frame.pivot "Link to this definition")
+Frame.pivot(*index\_fields*, *columns\_fields=()*, *data\_fields=()*, *\**, *func=<function nansum>*, *fill\_value=nan*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.pivot)[](#static_frame.Frame.pivot "Link to this definition")
 :   Produce a pivot table, where one or more columns is selected for each of index\_fields, columns\_fields, and data\_fields. Unique values from the provided `index_fields` will be used to create a new index; unique values from the provided `columns_fields` will be used to create a new columns; if one `data_fields` value is selected, that is the value that will be displayed; if more than one values is given, those values will be presented with a hierarchical index on the columns; if `data_fields` is not provided, all unused fields will be displayed.
 
     Parameters:
@@ -2329,8 +2329,8 @@ Frame.pivot(*index\_fields*, *columns\_fields=()*, *data\_fields=()*, *\**, *fun
 
     ```
 
-Frame.pivot\_stack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.pivot_stack)[](#static_frame.Frame.pivot_stack "Link to this definition")
-:   Move labels from the columns to the index, creating or extending an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") on the index.
+Frame.pivot\_stack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.pivot_stack)[](#static_frame.Frame.pivot_stack "Link to this definition")
+:   Move labels from the columns to the index, creating or extending an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") on the index.
 
     Parameters:
     :   **depth\_level** – selection of columns depth or depth to move onto the index.
@@ -2366,8 +2366,8 @@ Frame.pivot\_stack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[[source]](..
 
     ```
 
-Frame.pivot\_unstack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.pivot_unstack)[](#static_frame.Frame.pivot_unstack "Link to this definition")
-:   Move labels from the index to the columns, creating or extending an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") on the columns.
+Frame.pivot\_unstack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.pivot_unstack)[](#static_frame.Frame.pivot_unstack "Link to this definition")
+:   Move labels from the index to the columns, creating or extending an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") on the columns.
 
     Parameters:
     :   **depth\_level** – selection of index depth or depth to move onto the columns.
@@ -2440,7 +2440,7 @@ Frame.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_fr
 
     ```
 
-Frame.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.rank_dense)[](#static_frame.Frame.rank_dense "Link to this definition")
+Frame.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_dense)[](#static_frame.Frame.rank_dense "Link to this definition")
 :   Rank values as compactly as possible, where ties get the same value, and ranks are contiguous (potentially non-unique) integers.
 
     Parameters:
@@ -2451,7 +2451,7 @@ Frame.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *f
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2476,7 +2476,7 @@ Frame.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *f
 
     ```
 
-Frame.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.rank_max)[](#static_frame.Frame.rank_max "Link to this definition")
+Frame.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_max)[](#static_frame.Frame.rank_max "Link to this definition")
 :   Rank values where tied values are assigned the maximum ordinal rank; ranks are potentially non-contiguous and non-unique integers.
 
     Parameters:
@@ -2487,7 +2487,7 @@ Frame.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2512,7 +2512,7 @@ Frame.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
 
     ```
 
-Frame.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.rank_mean)[](#static_frame.Frame.rank_mean "Link to this definition")
+Frame.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_mean)[](#static_frame.Frame.rank_mean "Link to this definition")
 :   Rank values where tied values are assigned the mean of the ordinal ranks; ranks are potentially non-contiguous and non-unique floats.
 
     Parameters:
@@ -2523,7 +2523,7 @@ Frame.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fi
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2548,7 +2548,7 @@ Frame.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fi
 
     ```
 
-Frame.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.rank_min)[](#static_frame.Frame.rank_min "Link to this definition")
+Frame.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_min)[](#static_frame.Frame.rank_min "Link to this definition")
 :   Rank values where tied values are assigned the minimum ordinal rank; ranks are potentially non-contiguous and non-unique integers.
 
     Parameters:
@@ -2559,7 +2559,7 @@ Frame.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2584,7 +2584,7 @@ Frame.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
 
     ```
 
-Frame.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.rank_ordinal)[](#static_frame.Frame.rank_ordinal "Link to this definition")
+Frame.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_ordinal)[](#static_frame.Frame.rank_ordinal "Link to this definition")
 :   Rank values distinctly, where ties get distinct values that maintain their ordering, and ranks are contiguous unique integers.
 
     Parameters:
@@ -2595,7 +2595,7 @@ Frame.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, 
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2620,7 +2620,7 @@ Frame.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, 
 
     ```
 
-Frame.rehierarch(*index=None*, *columns=None*, *\**, *index\_constructors=None*, *columns\_constructors=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.rehierarch)[](#static_frame.Frame.rehierarch "Link to this definition")
+Frame.rehierarch(*index=None*, *columns=None*, *\**, *index\_constructors=None*, *columns\_constructors=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.rehierarch)[](#static_frame.Frame.rehierarch "Link to this definition")
 :   Produce a new Frame with index and/or columns constructed with a transformed hierarchy.
 
     Parameters:
@@ -2650,15 +2650,15 @@ Frame.rehierarch(*index=None*, *columns=None*, *\**, *index\_constructors=None*,
 
     ```
 
-Frame.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index=False*, *own\_columns=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/frame.html#Frame.reindex)[](#static_frame.Frame.reindex "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") with labels defined by the provided index. The size and ordering of the data is determined by the newly provided index, where data will continue to be aligned under labels found in both the new and the old index. Labels found only in the new index will be filled with `fill_value`.
+Frame.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index=False*, *own\_columns=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.reindex)[](#static_frame.Frame.reindex "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") with labels defined by the provided index. The size and ordering of the data is determined by the newly provided index, where data will continue to be aligned under labels found in both the new and the old index. Labels found only in the new index will be filled with `fill_value`.
 
     Parameters:
     :   * **index** – An iterable of unique, hashable values, or another `Index` or `IndexHierarchy`, to be used as the labels of the index.
         * **columns** – An iterable of unique, hashable values, or another `Index` or `IndexHierarchy`, to be used as the labels of the index.
         * **fill\_value** – A value to be used to fill space created by a new index that has values not found in the previous index.
-        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
-        * **own\_columns** – Flag the passed columns as ownable by this [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
+        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
+        * **own\_columns** – Flag the passed columns as ownable by this [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
         * **check\_equals** –
 
     ```
@@ -2684,8 +2684,8 @@ Frame.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index
 
     ```
 
-Frame.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.relabel)[](#static_frame.Frame.relabel "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") with transformed labels on the index. The size and ordering of the data is never changed in a relabeling operation. The resulting index must be unique.
+Frame.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel)[](#static_frame.Frame.relabel "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") with transformed labels on the index. The size and ordering of the data is never changed in a relabeling operation. The resulting index must be unique.
 
     Parameters:
     :   * **index** – One of the following types, used to create new index labels with the same size as the previous index. (a) A mapping (as a dictionary or `Series`), used to lookup and transform the labels in the previous index. Labels not found in the mapping will be reused. (b) A function, returning a hashable, that is applied to each label in the previous index. (c) The `IndexAutoFactory` type, to apply auto-incremented integer labels. (d) An `Index` initializer, i.e., either an iterable of hashables or an `Index` instance.
@@ -2724,8 +2724,8 @@ Frame.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *co
 
     ```
 
-Frame.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.relabel_flat)[](#static_frame.Frame.relabel_flat "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame"), where an `IndexHierarchy` (if defined) is replaced with a flat, one-dimension index of tuples.
+Frame.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_flat)[](#static_frame.Frame.relabel_flat "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame"), where an `IndexHierarchy` (if defined) is replaced with a flat, one-dimension index of tuples.
 
     Parameters:
     :   * **index** – Boolean to flag flatening on the index.
@@ -2754,8 +2754,8 @@ Frame.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static
 
     ```
 
-Frame.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.relabel_level_add)[](#static_frame.Frame.relabel_level_add "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
+Frame.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_level_add)[](#static_frame.Frame.relabel_level_add "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
 
     Parameters:
     :   * **index** – A hashable value to be used as a new root level, extending or creating an `IndexHierarchy`
@@ -2787,8 +2787,8 @@ Frame.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructo
 
     ```
 
-Frame.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.relabel_level_drop)[](#static_frame.Frame.relabel_level_drop "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
+Frame.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_level_drop)[](#static_frame.Frame.relabel_level_drop "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
 
     Parameters:
     :   * **index** – A positive integer drops that many outer-most (root) levels; a negative integer drops that many inner-most (leaf)levels. Default is zero.
@@ -2815,8 +2815,8 @@ Frame.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_
 
     ```
 
-Frame.relabel\_shift\_in(*key*, */*, *\**, *axis=0*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.relabel_shift_in)[](#static_frame.Frame.relabel_shift_in "Link to this definition")
-:   Create, or augment, an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") by providing one or more selections from the Frame (via axis-appropriate `loc` selections) to move into the [`Index`](index-selector.html#Index "Index").
+Frame.relabel\_shift\_in(*key*, */*, *\**, *axis=0*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_shift_in)[](#static_frame.Frame.relabel_shift_in "Link to this definition")
+:   Create, or augment, an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") by providing one or more selections from the Frame (via axis-appropriate `loc` selections) to move into the [`Index`](index-selector.md#Index "Index").
 
     Parameters:
     :   * **key** – a loc-style selection on the opposite axis.
@@ -2845,11 +2845,11 @@ Frame.relabel\_shift\_in(*key*, */*, *\**, *axis=0*, *index\_constructors=None*)
 
     ```
 
-Frame.relabel\_shift\_out(*depth\_level*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.html#Frame.relabel_shift_out)[](#static_frame.Frame.relabel_shift_out "Link to this definition")
+Frame.relabel\_shift\_out(*depth\_level*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_shift_out)[](#static_frame.Frame.relabel_shift_out "Link to this definition")
 :   Shift values from an index on an axis to the Frame by providing one or more depth level selections.
 
     Parameters:
-    :   * **dpeth\_level** – an iloc-style selection on the [`Index`](index-selector.html#Index "Index") of the specified axis.
+    :   * **dpeth\_level** – an iloc-style selection on the [`Index`](index-selector.md#Index "Index") of the specified axis.
         * **axis** – 0 modifies the index by selecting columns with `depth_level`; 1 modifies the columns by selecting rows with `depth_level`.
 
     ```
@@ -2875,7 +2875,7 @@ Frame.relabel\_shift\_out(*depth\_level*, */*, *\**, *axis=0*)[[source]](../_mod
 
     ```
 
-Frame.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *columns=<object object>*)[[source]](../_modules/static_frame/core/frame.html#Frame.rename)[](#static_frame.Frame.rename "Link to this definition")
+Frame.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *columns=<object object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.rename)[](#static_frame.Frame.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute. Optionally update the name attribute of `index` and `columns`.
 
     ```
@@ -2901,7 +2901,7 @@ Frame.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *column
 
     ```
 
-Frame.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_columns=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.roll)[](#static_frame.Frame.roll "Link to this definition")
+Frame.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.roll)[](#static_frame.Frame.roll "Link to this definition")
 :   Roll columns and/or rows by positive or negative integer counts, where columns and/or rows roll around the axis.
 
     Parameters:
@@ -2931,7 +2931,7 @@ Frame.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_colum
 
     ```
 
-Frame.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.sample)[](#static_frame.Frame.sample "Link to this definition")
+Frame.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.sample)[](#static_frame.Frame.sample "Link to this definition")
 :   Randomly (optionally made deterministic with a fixed seed) extract items from the container to return a subset of the container.
 
     Parameters:
@@ -2960,8 +2960,8 @@ Frame.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modu
 
     ```
 
-Frame.set\_columns(*index*, */*, *\**, *drop=False*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.set_columns)[](#static_frame.Frame.set_columns "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") produced by setting the given row as the columns, optionally removing that row from the new [`Frame`](frame-selector.html#Frame "Frame").
+Frame.set\_columns(*index*, */*, *\**, *drop=False*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.set_columns)[](#static_frame.Frame.set_columns "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") produced by setting the given row as the columns, optionally removing that row from the new [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
     :   * **index** –
@@ -2991,7 +2991,7 @@ Frame.set\_columns(*index*, */*, *\**, *drop=False*, *columns\_constructor=None*
 
     ```
 
-Frame.set\_columns\_hierarchy(*index*, */*, *\**, *drop=False*, *columns\_constructors=None*, *reorder\_for\_hierarchy=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.set_columns_hierarchy)[](#static_frame.Frame.set_columns_hierarchy "Link to this definition")
+Frame.set\_columns\_hierarchy(*index*, */*, *\**, *drop=False*, *columns\_constructors=None*, *reorder\_for\_hierarchy=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.set_columns_hierarchy)[](#static_frame.Frame.set_columns_hierarchy "Link to this definition")
 :   Given an iterable of index labels, return a new `Frame` with those rows as an `IndexHierarchy` on the columns.
 
     Parameters:
@@ -3001,7 +3001,7 @@ Frame.set\_columns\_hierarchy(*index*, */*, *\**, *drop=False*, *columns\_constr
         * **reorder\_for\_hierarchy** – reorder the columns to produce a hierarchible Index from the selected columns.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -3025,8 +3025,8 @@ Frame.set\_columns\_hierarchy(*index*, */*, *\**, *drop=False*, *columns\_constr
 
     ```
 
-Frame.set\_index(*column*, */*, *\**, *drop=False*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.set_index)[](#static_frame.Frame.set_index "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") produced by setting the given column as the index, optionally removing that column from the new [`Frame`](frame-selector.html#Frame "Frame").
+Frame.set\_index(*column*, */*, *\**, *drop=False*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.set_index)[](#static_frame.Frame.set_index "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") produced by setting the given column as the index, optionally removing that column from the new [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
     :   * **column** –
@@ -3057,7 +3057,7 @@ Frame.set\_index(*column*, */*, *\**, *drop=False*, *index\_constructor=None*)[[
 
     ```
 
-Frame.set\_index\_hierarchy(*columns*, */*, *\**, *drop=False*, *index\_constructors=None*, *reorder\_for\_hierarchy=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.set_index_hierarchy)[](#static_frame.Frame.set_index_hierarchy "Link to this definition")
+Frame.set\_index\_hierarchy(*columns*, */*, *\**, *drop=False*, *index\_constructors=None*, *reorder\_for\_hierarchy=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.set_index_hierarchy)[](#static_frame.Frame.set_index_hierarchy "Link to this definition")
 :   Given an iterable of column labels, return a new `Frame` with those columns as an `IndexHierarchy` on the index.
 
     Parameters:
@@ -3067,7 +3067,7 @@ Frame.set\_index\_hierarchy(*columns*, */*, *\**, *drop=False*, *index\_construc
         * **reorder\_for\_hierarchy** – reorder the rows to produce a hierarchible Index from the selected columns, assuming hierarchability is possible.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -3092,7 +3092,7 @@ Frame.set\_index\_hierarchy(*columns*, */*, *\**, *drop=False*, *index\_construc
 
     ```
 
-Frame.shift(*index=0*, *columns=0*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#Frame.shift)[](#static_frame.Frame.shift "Link to this definition")
+Frame.shift(*index=0*, *columns=0*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.shift)[](#static_frame.Frame.shift "Link to this definition")
 :   Shift columns and/or rows by positive or negative integer counts, where columns and/or rows fall of the axis and introduce missing values, filled by fill\_value.
 
     ```
@@ -3118,8 +3118,8 @@ Frame.shift(*index=0*, *columns=0*, *\**, *fill\_value=nan*)[[source]](../_modul
 
     ```
 
-Frame.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.sort_columns)[](#static_frame.Frame.sort_columns "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") ordered by the sorted `columns`.
+Frame.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.sort_columns)[](#static_frame.Frame.sort_columns "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") ordered by the sorted `columns`.
 
     Parameters:
     :   * **ascendings** – Boolean, or iterable of Booleans; if `True`, the lowest ranks correspond to the lowest values; if an iterable, apply per column or row. The default is `True`.
@@ -3149,8 +3149,8 @@ Frame.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[sou
 
     ```
 
-Frame.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.sort_index)[](#static_frame.Frame.sort_index "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") ordered by the sorted Index.
+Frame.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.sort_index)[](#static_frame.Frame.sort_index "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") ordered by the sorted Index.
 
     Parameters:
     :   * **ascendings** – Boolean, or iterable of Booleans; if `True`, the lowest ranks correspond to the lowest values; if an iterable, apply per column or row. The default is `True`.
@@ -3180,8 +3180,8 @@ Frame.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[sourc
 
     ```
 
-Frame.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.sort_values)[](#static_frame.Frame.sort_values "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") ordered by the sorted values, where values are given by single column or iterable of columns.
+Frame.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.sort_values)[](#static_frame.Frame.sort_values "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") ordered by the sorted values, where values are given by single column or iterable of columns.
 
     Parameters:
     :   * **label** – A label or iterable of labels to select the columns (for axis 1) or rows (for axis 0) to sort.
@@ -3275,11 +3275,11 @@ Frame.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_fra
 
     ```
 
-Frame.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.tail)[](#static_frame.Frame.tail "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") consisting only of the bottom elements as specified by `count`.
+Frame.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.tail)[](#static_frame.Frame.tail "Link to this definition")
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Frame`](frame-selector.html#Frame "Frame")
+    :   **count** – Number of elements to be returned from the bottom of the [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -3302,8 +3302,8 @@ Frame.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.html#Fr
 
     ```
 
-Frame.transpose()[[source]](../_modules/static_frame/core/frame.html#Frame.transpose)[](#static_frame.Frame.transpose "Link to this definition")
-:   Transpose. Return a [`Frame`](frame-selector.html#Frame "Frame") with `index` as `columns` and vice versa.
+Frame.transpose()[[source]](../_modules/static_frame/core/frame.md#Frame.transpose)[](#static_frame.Frame.transpose "Link to this definition")
+:   Transpose. Return a [`Frame`](frame-selector.md#Frame "Frame") with `index` as `columns` and vice versa.
 
     ```
     >>> f = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -3325,7 +3325,7 @@ Frame.transpose()[[source]](../_modules/static_frame/core/frame.html#Frame.trans
 
     ```
 
-Frame.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.unique)[](#static_frame.Frame.unique "Link to this definition")
+Frame.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.unique)[](#static_frame.Frame.unique "Link to this definition")
 :   Return a NumPy array of unqiue values. If the axis argument is provided, uniqueness is determined by columns or row.
 
     ```
@@ -3345,7 +3345,7 @@ Frame.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/frame.ht
 
     ```
 
-Frame.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.unique_enumerated)[](#static_frame.Frame.unique_enumerated "Link to this definition")
+Frame.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.unique_enumerated)[](#static_frame.Frame.unique_enumerated "Link to this definition")
 :   {doc}
     {args}
 
@@ -3369,8 +3369,8 @@ Frame.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[[source]](../
 
     ```
 
-Frame.unset\_columns(*names=()*, */*, *\**, *drop=False*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.unset_columns)[](#static_frame.Frame.unset_columns "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") where columns are added to the top of the data, and an [`IndexAutoFactory`](index_auto_factory.html#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is used to populate new columns. This operation potentially forces a complete copy of all data.
+Frame.unset\_columns(*names=()*, */*, *\**, *drop=False*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.unset_columns)[](#static_frame.Frame.unset_columns "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") where columns are added to the top of the data, and an [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is used to populate new columns. This operation potentially forces a complete copy of all data.
 
     Parameters:
     :   * **names** – An sequence of hashables to be used to name the unset columns. If an `Index`, a single hashable should be provided; if an `IndexHierarchy`, as many hashables as the depth must be provided.
@@ -3398,8 +3398,8 @@ Frame.unset\_columns(*names=()*, */*, *\**, *drop=False*, *index\_constructors=N
 
     ```
 
-Frame.unset\_index(*\**, *names=()*, *drop=False*, *consolidate\_blocks=False*, *columns\_constructors=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.unset_index)[](#static_frame.Frame.unset_index "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") where the index is added to the front of the data, and an [`IndexAutoFactory`](index_auto_factory.html#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is used to populate a new index. If the [`Index`](index-selector.html#Index "Index") has a `name`, that name will be used for the column name, otherwise a suitable default will be used. As underlying NumPy arrays are immutable, data is not copied.
+Frame.unset\_index(*\**, *names=()*, *drop=False*, *consolidate\_blocks=False*, *columns\_constructors=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.unset_index)[](#static_frame.Frame.unset_index "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") where the index is added to the front of the data, and an [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is used to populate a new index. If the [`Index`](index-selector.md#Index "Index") has a `name`, that name will be used for the column name, otherwise a suitable default will be used. As underlying NumPy arrays are immutable, data is not copied.
 
     Parameters:
     :   * **names** – An iterable of hashables to be used to name the unset index. If an `Index`, a single hashable should be provided; if an `IndexHierarchy`, as many hashables as the depth must be provided.
@@ -3455,10 +3455,10 @@ Frame.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_fram
 
     ```
 
-[Frame](frame.html#api-detail-frame): [Constructor](frame-constructor.html#api-detail-frame-constructor) | [Exporter](frame-exporter.html#api-detail-frame-exporter) | [Attribute](frame-attribute.html#api-detail-frame-attribute) | [Method](#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-detail-frame-dictionary-like) | [Display](frame-display.html#api-detail-frame-display) | [Assignment](frame-assignment.html#api-detail-frame-assignment) | [Selector](frame-selector.html#api-detail-frame-selector) | [Iterator](frame-iterator.html#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-detail-frame-accessor-reduce)
+[Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)
 
-[Previous](frame-attribute.html "Detail: Frame: Attribute")
-[Next](frame-dictionary_like.html "Detail: Frame: Dictionary-Like")
+[Previous](frame-attribute.md "Detail: Frame: Attribute")
+[Next](frame-dictionary_like.md "Detail: Frame: Dictionary-Like")
 
 ---
 

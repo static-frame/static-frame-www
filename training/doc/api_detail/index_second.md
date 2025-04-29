@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,39 +136,39 @@ API Detail
 * Detail: IndexSecond
 * [View page source](../_sources/api_detail/index_second.rst.txt)
 
-[Previous](index_hour_go.html "Detail: IndexHourGO")
-[Next](index_second_go.html "Detail: IndexSecondGO")
+[Previous](index_hour_go.md "Detail: IndexHourGO")
+[Next](index_second_go.md "Detail: IndexSecondGO")
 
 ---
 
 # Detail: IndexSecond[](#detail-indexsecond "Link to this heading")
 
-[Overview: IndexSecond](../api_overview/index_second.html#api-overview-indexsecond)
+[Overview: IndexSecond](../api_overview/index_second.md#api-overview-indexsecond)
 
-*class* IndexSecond(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.html#IndexSecond)[](#static_frame.IndexSecond "Link to this definition")
+*class* IndexSecond(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexSecond)[](#static_frame.IndexSecond "Link to this definition")
 :   A mapping of seconds (NumPy `datetime64[s]`) to positions, immutable and of fixed size.
 
-* [Constructor](index_second-constructor.html#api-detail-indexsecond-constructor): Alternative constructors for creating instances.
-* [Exporter](index_second-exporter.html#api-detail-indexsecond-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](index_second-attribute.html#api-detail-indexsecond-attribute): Attributes for retrieving basic characteristics.
-* [Method](index_second-method.html#api-detail-indexsecond-method): Methods for general functionality.
-* [Dictionary-Like](index_second-dictionary_like.html#api-detail-indexsecond-dictionary-like): All dictionary-like methods and iterators.
-* [Display](index_second-display.html#api-detail-indexsecond-display): Methods for providing a text representation of the object.
-* [Selector](index_second-selector.html#api-detail-indexsecond-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](index_second-iterator.html#api-detail-indexsecond-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Operator Binary](index_second-operator_binary.html#api-detail-indexsecond-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](index_second-operator_unary.html#api-detail-indexsecond-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](index_second-accessor_values.html#api-detail-indexsecond-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](index_second-accessor_datetime.html#api-detail-indexsecond-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](index_second-accessor_string.html#api-detail-indexsecond-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-detail-indexsecond-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](index_second-accessor_hashlib.html#api-detail-indexsecond-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-detail-indexsecond-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](index_second-constructor.md#api-detail-indexsecond-constructor): Alternative constructors for creating instances.
+* [Exporter](index_second-exporter.md#api-detail-indexsecond-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](index_second-attribute.md#api-detail-indexsecond-attribute): Attributes for retrieving basic characteristics.
+* [Method](index_second-method.md#api-detail-indexsecond-method): Methods for general functionality.
+* [Dictionary-Like](index_second-dictionary_like.md#api-detail-indexsecond-dictionary-like): All dictionary-like methods and iterators.
+* [Display](index_second-display.md#api-detail-indexsecond-display): Methods for providing a text representation of the object.
+* [Selector](index_second-selector.md#api-detail-indexsecond-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](index_second-iterator.md#api-detail-indexsecond-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Operator Binary](index_second-operator_binary.md#api-detail-indexsecond-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](index_second-operator_unary.md#api-detail-indexsecond-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](index_second-accessor_values.md#api-detail-indexsecond-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](index_second-accessor_datetime.md#api-detail-indexsecond-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](index_second-accessor_string.md#api-detail-indexsecond-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-detail-indexsecond-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](index_second-accessor_hashlib.md#api-detail-indexsecond-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-detail-indexsecond-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[IndexSecond](#api-detail-indexsecond): [Constructor](index_second-constructor.html#api-detail-indexsecond-constructor) | [Exporter](index_second-exporter.html#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-detail-indexsecond-attribute) | [Method](index_second-method.html#api-detail-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.html#api-detail-indexsecond-display) | [Selector](index_second-selector.html#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.html#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-detail-indexsecond-accessor-type-clinic)
+[IndexSecond](#api-detail-indexsecond): [Constructor](index_second-constructor.md#api-detail-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-detail-indexsecond-attribute) | [Method](index_second-method.md#api-detail-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.md#api-detail-indexsecond-display) | [Selector](index_second-selector.md#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.md#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-detail-indexsecond-accessor-type-clinic)
 
-[Previous](index_hour_go.html "Detail: IndexHourGO")
-[Next](index_second_go.html "Detail: IndexSecondGO")
+[Previous](index_hour_go.md "Detail: IndexHourGO")
+[Next](index_second_go.md "Detail: IndexSecondGO")
 
 ---
 

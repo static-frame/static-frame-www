@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: MemoryDisplay: Constructor
 * [View page source](../_sources/api_detail/memory_display-constructor.rst.txt)
 
-[Previous](npy-display.html "Detail: NPY: Display")
-[Next](memory_display-exporter.html "Detail: MemoryDisplay: Exporter")
+[Previous](npy-display.md "Detail: NPY: Display")
+[Next](memory_display-exporter.md "Detail: MemoryDisplay: Exporter")
 
 ---
 
 # Detail: MemoryDisplay: Constructor[](#detail-memorydisplay-constructor "Link to this heading")
 
-[Overview: MemoryDisplay: Constructor](../api_overview/memory_display-constructor.html#api-overview-memorydisplay-constructor)
+[Overview: MemoryDisplay: Constructor](../api_overview/memory_display-constructor.md#api-overview-memorydisplay-constructor)
 
-MemoryDisplay.\_\_init\_\_(*frame*)[[source]](../_modules/static_frame/core/memory_measure.html#MemoryDisplay.__init__)[](#static_frame.MemoryDisplay.__init__ "Link to this definition")
+MemoryDisplay.\_\_init\_\_(*frame*)[[source]](../_modules/static_frame/core/memory_measure.md#MemoryDisplay.__init__)[](#static_frame.MemoryDisplay.__init__ "Link to this definition")
 :   Initialize an instance with a `Frame` of byte counts.
 
     ```
@@ -168,8 +168,8 @@ MemoryDisplay.\_\_init\_\_(*frame*)[[source]](../_modules/static_frame/core/memo
 
     ```
 
-*classmethod* MemoryDisplay.from\_any(*obj*, *label\_component\_pairs=()*)[[source]](../_modules/static_frame/core/memory_measure.html#MemoryDisplay.from_any)[](#static_frame.MemoryDisplay.from_any "Link to this definition")
-:   Given any slotted object, return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay") instance.
+*classmethod* MemoryDisplay.from\_any(*obj*, *label\_component\_pairs=()*)[[source]](../_modules/static_frame/core/memory_measure.md#MemoryDisplay.from_any)[](#static_frame.MemoryDisplay.from_any "Link to this definition")
+:   Given any slotted object, return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay") instance.
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -188,10 +188,10 @@ MemoryDisplay.\_\_init\_\_(*frame*)[[source]](../_modules/static_frame/core/memo
 
     ```
 
-[MemoryDisplay](memory_display.html#api-detail-memorydisplay): [Constructor](#api-detail-memorydisplay-constructor) | [Exporter](memory_display-exporter.html#api-detail-memorydisplay-exporter) | [Display](memory_display-display.html#api-detail-memorydisplay-display)
+[MemoryDisplay](memory_display.md#api-detail-memorydisplay): [Constructor](#api-detail-memorydisplay-constructor) | [Exporter](memory_display-exporter.md#api-detail-memorydisplay-exporter) | [Display](memory_display-display.md#api-detail-memorydisplay-display)
 
-[Previous](npy-display.html "Detail: NPY: Display")
-[Next](memory_display-exporter.html "Detail: MemoryDisplay: Exporter")
+[Previous](npy-display.md "Detail: NPY: Display")
+[Next](memory_display-exporter.md "Detail: MemoryDisplay: Exporter")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: Series: Dictionary-Like
 * [View page source](../_sources/api_detail/series-dictionary_like.rst.txt)
 
-[Previous](series-method.html "Detail: Series: Method")
-[Next](series-display.html "Detail: Series: Display")
+[Previous](series-method.md "Detail: Series: Method")
+[Next](series-display.md "Detail: Series: Display")
 
 ---
 
 # Detail: Series: Dictionary-Like[](#detail-series-dictionary-like "Link to this heading")
 
-[Overview: Series: Dictionary-Like](../api_overview/series-dictionary_like.html#api-overview-series-dictionary-like)
+[Overview: Series: Dictionary-Like](../api_overview/series-dictionary_like.md#api-overview-series-dictionary-like)
 
-Series.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/series.html#Series.__contains__)[](#static_frame.Series.__contains__ "Link to this definition")
+Series.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/series.md#Series.__contains__)[](#static_frame.Series.__contains__ "Link to this definition")
 :   Inclusion of value in index labels.
 
     Returns:
@@ -164,7 +164,7 @@ Series.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/se
 
     ```
 
-Series.\_\_iter\_\_()[[source]](../_modules/static_frame/core/series.html#Series.__iter__)[](#static_frame.Series.__iter__ "Link to this definition")
+Series.\_\_iter\_\_()[[source]](../_modules/static_frame/core/series.md#Series.__iter__)[](#static_frame.Series.__iter__ "Link to this definition")
 :   Iterator of index labels, same as [`static_frame.Series.keys`](#static_frame.Series.keys "static_frame.Series.keys").
 
     Returns:
@@ -184,11 +184,11 @@ Series.\_\_iter\_\_()[[source]](../_modules/static_frame/core/series.html#Series
 
     ```
 
-Series.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/series.html#Series.__reversed__)[](#static_frame.Series.__reversed__ "Link to this definition")
+Series.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/series.md#Series.__reversed__)[](#static_frame.Series.__reversed__ "Link to this definition")
 :   Returns a reverse iterator on the series’ index.
 
     Returns:
-    :   [`Index`](index-selector.html#Index "Index")
+    :   [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -204,7 +204,7 @@ Series.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/series.html#Se
 
     ```
 
-Series.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/series.html#Series.get)[](#static_frame.Series.get "Link to this definition")
+Series.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/series.md#Series.get)[](#static_frame.Series.get "Link to this definition")
 :   Return the value found at the index key, else the default if the key is not found.
 
     Returns:
@@ -226,7 +226,7 @@ Series.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/series
 
     ```
 
-Series.items()[[source]](../_modules/static_frame/core/series.html#Series.items)[](#static_frame.Series.items "Link to this definition")
+Series.items()[[source]](../_modules/static_frame/core/series.md#Series.items)[](#static_frame.Series.items "Link to this definition")
 :   Iterator of pairs of index label and value.
 
     Returns:
@@ -246,7 +246,7 @@ Series.items()[[source]](../_modules/static_frame/core/series.html#Series.items)
 
     ```
 
-Series.keys()[[source]](../_modules/static_frame/core/series.html#Series.keys)[](#static_frame.Series.keys "Link to this definition")
+Series.keys()[[source]](../_modules/static_frame/core/series.md#Series.keys)[](#static_frame.Series.keys "Link to this definition")
 :   Iterator of index labels.
 
     Returns:
@@ -285,10 +285,10 @@ Series.values[](#static_frame.Series.values "Link to this definition")
 
     ```
 
-[Series](series.html#api-detail-series): [Constructor](series-constructor.html#api-detail-series-constructor) | [Exporter](series-exporter.html#api-detail-series-exporter) | [Attribute](series-attribute.html#api-detail-series-attribute) | [Method](series-method.html#api-detail-series-method) | [Dictionary-Like](#api-detail-series-dictionary-like) | [Display](series-display.html#api-detail-series-display) | [Assignment](series-assignment.html#api-detail-series-assignment) | [Selector](series-selector.html#api-detail-series-selector) | [Iterator](series-iterator.html#api-detail-series-iterator) | [Operator Binary](series-operator_binary.html#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-detail-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-method.html "Detail: Series: Method")
-[Next](series-display.html "Detail: Series: Display")
+[Previous](series-method.md "Detail: Series: Method")
+[Next](series-display.md "Detail: Series: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexHierarchyGO: Method
 * [View page source](../_sources/api_detail/index_hierarchy_go-method.rst.txt)
 
-[Previous](index_hierarchy_go-attribute.html "Detail: IndexHierarchyGO: Attribute")
-[Next](index_hierarchy_go-dictionary_like.html "Detail: IndexHierarchyGO: Dictionary-Like")
+[Previous](index_hierarchy_go-attribute.md "Detail: IndexHierarchyGO: Attribute")
+[Next](index_hierarchy_go-dictionary_like.md "Detail: IndexHierarchyGO: Dictionary-Like")
 
 ---
 
 # Detail: IndexHierarchyGO: Method[](#detail-indexhierarchygo-method "Link to this heading")
 
-[Overview: IndexHierarchyGO: Method](../api_overview/index_hierarchy_go-method.html#api-overview-indexhierarchygo-method)
+[Overview: IndexHierarchyGO: Method](../api_overview/index_hierarchy_go-method.md#api-overview-indexhierarchygo-method)
 
 IndexHierarchyGO.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexHierarchyGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -292,7 +292,7 @@ IndexHierarchyGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fra
 
     ```
 
-IndexHierarchyGO.append(*value*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchyGO.append)[](#static_frame.IndexHierarchyGO.append "Link to this definition")
+IndexHierarchyGO.append(*value*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchyGO.append)[](#static_frame.IndexHierarchyGO.append "Link to this definition")
 :   Append a single label to this IndexHierarchyGO in-place
 
     ```
@@ -323,7 +323,7 @@ IndexHierarchyGO.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
         Parameters:
         :   **dtype** – A value suitable for specyfying a NumPy dtype, such as a Python type (float), NumPy array protocol strings (‘f8’), or a dtype instance.
 
-    InterfaceIndexHierarchyAsType.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceIndexHierarchyAsType.__getitem__)
+    InterfaceIndexHierarchyAsType.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceIndexHierarchyAsType.__getitem__)
     :   Selector of columns by label.
 
         Parameters:
@@ -353,7 +353,7 @@ IndexHierarchyGO.astype(*dtype*, *\**, *consolidate\_blocks*)
         Parameters:
         :   **dtype** – A value suitable for specyfying a NumPy dtype, such as a Python type (float), NumPy array protocol strings (‘f8’), or a dtype instance.
 
-    InterfaceIndexHierarchyAsType.\_\_call\_\_(*dtype*, */*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceIndexHierarchyAsType.__call__)
+    InterfaceIndexHierarchyAsType.\_\_call\_\_(*dtype*, */*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceIndexHierarchyAsType.__call__)
     :   Apply a single `dtype` to all columns.
 
     ```
@@ -532,7 +532,7 @@ IndexHierarchyGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dty
 
     ```
 
-IndexHierarchyGO.extend(*other*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchyGO.extend)[](#static_frame.IndexHierarchyGO.extend "Link to this definition")
+IndexHierarchyGO.extend(*other*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchyGO.extend)[](#static_frame.IndexHierarchyGO.extend "Link to this definition")
 :   Extend this IndexHierarchyGO in-place
 
     ```
@@ -566,7 +566,7 @@ IndexHierarchyGO.extend(*other*)[[source]](../_modules/static_frame/core/index_h
     ```
 
 IndexHierarchyGO.fillfalsy(*value*, */*)[](#static_frame.IndexHierarchyGO.fillfalsy "Link to this definition")
-:   Return an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") after replacing falsy values with the supplied value.
+:   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -589,7 +589,7 @@ IndexHierarchyGO.fillfalsy(*value*, */*)[](#static_frame.IndexHierarchyGO.fil
     ```
 
 IndexHierarchyGO.fillna(*value*, */*)[](#static_frame.IndexHierarchyGO.fillna "Link to this definition")
-:   Return an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") after replacing NA (NaN or None) with the supplied value.
+:   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after replacing NA (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -632,10 +632,10 @@ IndexHierarchyGO.flat()[](#static_frame.IndexHierarchyGO.flat "Link to this d
     ```
 
 IndexHierarchyGO.head(*count=5*, */*)[](#static_frame.IndexHierarchyGO.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_product(('a', 'b', 'c'), ('1517-04-01', '1620-11-21'), name='x', index_constructors=(sf.Index, sf.IndexDate))
@@ -657,7 +657,7 @@ IndexHierarchyGO.head(*count=5*, */*)[](#static_frame.IndexHierarchyGO.head "
     ```
 
 IndexHierarchyGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexHierarchyGO.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -868,7 +868,7 @@ IndexHierarchyGO.level\_drop(*count=1*, */*)[](#static_frame.IndexHierarchyGO
     ```
 
 IndexHierarchyGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexHierarchyGO.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1040,7 +1040,7 @@ IndexHierarchyGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[]
     ```
 
 IndexHierarchyGO.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[](#static_frame.IndexHierarchyGO.rehierarch "Link to this definition")
-:   Return a new [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") that conforms to the new depth assignments given be depth\_map.
+:   Return a new [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") that conforms to the new depth assignments given be depth\_map.
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('b', 1024, True), ('a', 1024, True), ('a', 2048, True), ('a', 2048, False)), name='x')
@@ -1084,7 +1084,7 @@ IndexHierarchyGO.relabel(*mapper*)[](#static_frame.IndexHierarchyGO.relabel "
     ```
 
 IndexHierarchyGO.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[](#static_frame.IndexHierarchyGO.relabel_at_depth "Link to this definition")
-:   Return a new [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") after applying mapper to a level or each individual level specified by depth\_level.
+:   Return a new [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after applying mapper to a level or each individual level specified by depth\_level.
 
     mapper can be a callable, mapping, or iterable.
     :   * If a callable, it must accept a single hashable, and return a single hashable.
@@ -1150,7 +1150,7 @@ IndexHierarchyGO.rename(*name*, */*)[](#static_frame.IndexHierarchyGO.rename 
     ```
 
 IndexHierarchyGO.roll(*shift*)[](#static_frame.IndexHierarchyGO.roll "Link to this definition")
-:   Return an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") with values rotated forward and wrapped around (with a positive shift) or backward and wrapped around (with a negative shift).
+:   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") with values rotated forward and wrapped around (with a positive shift) or backward and wrapped around (with a negative shift).
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_product(('a', 'b', 'c'), ('1517-04-01', '1620-11-21'), name='x', index_constructors=(sf.Index, sf.IndexDate))
@@ -1276,10 +1276,10 @@ IndexHierarchyGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](
     ```
 
 IndexHierarchyGO.tail(*count=5*, */*)[](#static_frame.IndexHierarchyGO.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_product(('a', 'b', 'c'), ('1517-04-01', '1620-11-21'), name='x', index_constructors=(sf.Index, sf.IndexDate))
@@ -1391,10 +1391,10 @@ IndexHierarchyGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#
 
     ```
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-detail-indexhierarchygo-attribute) | [Method](#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-detail-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-attribute.html "Detail: IndexHierarchyGO: Attribute")
-[Next](index_hierarchy_go-dictionary_like.html "Detail: IndexHierarchyGO: Dictionary-Like")
+[Previous](index_hierarchy_go-attribute.md "Detail: IndexHierarchyGO: Attribute")
+[Next](index_hierarchy_go-dictionary_like.md "Detail: IndexHierarchyGO: Dictionary-Like")
 
 ---
 

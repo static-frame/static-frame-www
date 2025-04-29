@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexDate: Display
 * [View page source](../_sources/api_detail/index_date-display.rst.txt)
 
-[Previous](index_date-dictionary_like.html "Detail: IndexDate: Dictionary-Like")
-[Next](index_date-selector.html "Detail: IndexDate: Selector")
+[Previous](index_date-dictionary_like.md "Detail: IndexDate: Dictionary-Like")
+[Next](index_date-selector.md "Detail: IndexDate: Selector")
 
 ---
 
 # Detail: IndexDate: Display[](#detail-indexdate-display "Link to this heading")
 
-[Overview: IndexDate: Display](../api_overview/index_date-display.html#api-overview-indexdate-display)
+[Overview: IndexDate: Display](../api_overview/index_date-display.md#api-overview-indexdate-display)
 
 IndexDate.interface[](#IndexDate.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -230,7 +230,7 @@ IndexDate.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_f
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexDate(('1620-09-16', 'NaT', '1620-11-21'))
@@ -251,7 +251,7 @@ IndexDate.display\_tall(*config=None*, */*)[](#static_frame.IndexDate.display
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexDate(('1620-09-16', 'NaT', '1620-11-21'))
@@ -268,7 +268,7 @@ IndexDate.display\_wide(*config=None*, */*)[](#static_frame.IndexDate.display
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexDate(('1620-09-16', 'NaT', '1620-11-21'))
@@ -281,10 +281,10 @@ IndexDate.display\_wide(*config=None*, */*)[](#static_frame.IndexDate.display
 
     ```
 
-[IndexDate](index_date.html#api-detail-indexdate): [Constructor](index_date-constructor.html#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.html#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.html#api-detail-indexdate-attribute) | [Method](index_date-method.html#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-detail-indexdate-dictionary-like) | [Display](#api-detail-indexdate-display) | [Selector](index_date-selector.html#api-detail-indexdate-selector) | [Iterator](index_date-iterator.html#api-detail-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-detail-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-detail-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-detail-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-detail-indexdate): [Constructor](index_date-constructor.md#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.md#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.md#api-detail-indexdate-attribute) | [Method](index_date-method.md#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-detail-indexdate-dictionary-like) | [Display](#api-detail-indexdate-display) | [Selector](index_date-selector.md#api-detail-indexdate-selector) | [Iterator](index_date-iterator.md#api-detail-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-detail-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-detail-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-detail-indexdate-accessor-type-clinic)
 
-[Previous](index_date-dictionary_like.html "Detail: IndexDate: Dictionary-Like")
-[Next](index_date-selector.html "Detail: IndexDate: Selector")
+[Previous](index_date-dictionary_like.md "Detail: IndexDate: Dictionary-Like")
+[Next](index_date-selector.md "Detail: IndexDate: Selector")
 
 ---
 

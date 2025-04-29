@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: DisplayActive: Constructor
 * [View page source](../_sources/api_overview/display_active-constructor.rst.txt)
 
-[Previous](fill_value_auto-selector.html "Overview: FillValueAuto: Selector")
-[Next](display_active-attribute.html "Overview: DisplayActive: Attribute")
+[Previous](fill_value_auto-selector.md "Overview: FillValueAuto: Selector")
+[Next](display_active-attribute.md "Overview: DisplayActive: Attribute")
 
 ---
 
 # Overview: DisplayActive: Constructor[](#overview-displayactive-constructor "Link to this heading")
 
-[Detail: DisplayActive: Constructor](../api_detail/display_active-constructor.html#api-detail-displayactive-constructor)
+[Detail: DisplayActive: Constructor](../api_detail/display_active-constructor.md#api-detail-displayactive-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/display_active-constructor.html#api-sig-displayactive-init) | `DisplayActive.__init__(*args, **kwargs)` | Initialize self. See help(type(self)) for accurate signature. |
+| [Detail](../api_detail/display_active-constructor.md#api-sig-displayactive-init) | `DisplayActive.__init__(*args, **kwargs)` | Initialize self. See help(type(self)) for accurate signature. |
 
-[DisplayActive](display_active.html#api-overview-displayactive): [Constructor](#api-overview-displayactive-constructor) | [Attribute](display_active-attribute.html#api-overview-displayactive-attribute) | [Method](display_active-method.html#api-overview-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.html#api-overview-displayactive-dictionary-like) | [Display](display_active-display.html#api-overview-displayactive-display)
+[DisplayActive](display_active.md#api-overview-displayactive): [Constructor](#api-overview-displayactive-constructor) | [Attribute](display_active-attribute.md#api-overview-displayactive-attribute) | [Method](display_active-method.md#api-overview-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.md#api-overview-displayactive-dictionary-like) | [Display](display_active-display.md#api-overview-displayactive-display)
 
-[Previous](fill_value_auto-selector.html "Overview: FillValueAuto: Selector")
-[Next](display_active-attribute.html "Overview: DisplayActive: Attribute")
+[Previous](fill_value_auto-selector.md "Overview: FillValueAuto: Selector")
+[Next](display_active-attribute.md "Overview: DisplayActive: Attribute")
 
 ---
 

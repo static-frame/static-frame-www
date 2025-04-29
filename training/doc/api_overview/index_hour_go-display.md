@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexHourGO: Display
 * [View page source](../_sources/api_overview/index_hour_go-display.rst.txt)
 
-[Previous](index_hour_go-dictionary_like.html "Overview: IndexHourGO: Dictionary-Like")
-[Next](index_hour_go-selector.html "Overview: IndexHourGO: Selector")
+[Previous](index_hour_go-dictionary_like.md "Overview: IndexHourGO: Dictionary-Like")
+[Next](index_hour_go-selector.md "Overview: IndexHourGO: Selector")
 
 ---
 
 # Overview: IndexHourGO: Display[](#overview-indexhourgo-display "Link to this heading")
 
-[Detail: IndexHourGO: Display](../api_detail/index_hour_go-display.html#api-detail-indexhourgo-display)
+[Detail: IndexHourGO: Display](../api_detail/index_hour_go-display.md#api-detail-indexhourgo-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour_go-display.html#api-sig-indexhourgo-interface) | [`IndexHourGO.interface`](../api_detail/index_hour_go-display.html#IndexHourGO.interface "IndexHourGO.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_hour_go-display.html#api-sig-indexhourgo-repr) | `IndexHourGO.__repr__()` |  |
-| [Detail](../api_detail/index_hour_go-display.html#api-sig-indexhourgo-str) | `IndexHourGO.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_hour_go-display.html#api-sig-indexhourgo-display) | `IndexHourGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_hour_go-display.html#api-sig-indexhourgo-display-tall) | `IndexHourGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_hour_go-display.html#api-sig-indexhourgo-display-wide) | `IndexHourGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_hour_go-display.md#api-sig-indexhourgo-interface) | [`IndexHourGO.interface`](../api_detail/index_hour_go-display.md#IndexHourGO.interface "IndexHourGO.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_hour_go-display.md#api-sig-indexhourgo-repr) | `IndexHourGO.__repr__()` |  |
+| [Detail](../api_detail/index_hour_go-display.md#api-sig-indexhourgo-str) | `IndexHourGO.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_hour_go-display.md#api-sig-indexhourgo-display) | `IndexHourGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_hour_go-display.md#api-sig-indexhourgo-display-tall) | `IndexHourGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_hour_go-display.md#api-sig-indexhourgo-display-wide) | `IndexHourGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexHourGO](index_hour_go.html#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.html#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-overview-indexhourgo-dictionary-like) | [Display](#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-overview-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.md#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-overview-indexhourgo-dictionary-like) | [Display](#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-overview-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-dictionary_like.html "Overview: IndexHourGO: Dictionary-Like")
-[Next](index_hour_go-selector.html "Overview: IndexHourGO: Selector")
+[Previous](index_hour_go-dictionary_like.md "Overview: IndexHourGO: Dictionary-Like")
+[Next](index_hour_go-selector.md "Overview: IndexHourGO: Selector")
 
 ---
 

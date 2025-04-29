@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexDateGO: Selector
 * [View page source](../_sources/api_overview/index_date_go-selector.rst.txt)
 
-[Previous](index_date_go-display.html "Overview: IndexDateGO: Display")
-[Next](index_date_go-iterator.html "Overview: IndexDateGO: Iterator")
+[Previous](index_date_go-display.md "Overview: IndexDateGO: Display")
+[Next](index_date_go-iterator.md "Overview: IndexDateGO: Iterator")
 
 ---
 
 # Overview: IndexDateGO: Selector[](#overview-indexdatego-selector "Link to this heading")
 
-[Detail: IndexDateGO: Selector](../api_detail/index_date_go-selector.html#api-detail-indexdatego-selector)
+[Detail: IndexDateGO: Selector](../api_detail/index_date_go-selector.md#api-detail-indexdatego-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date_go-selector.html#api-sig-indexdatego-drop-iloc) | `IndexDateGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
-| [Detail](../api_detail/index_date_go-selector.html#api-sig-indexdatego-drop-loc) | `IndexDateGO.drop.loc[key]` |  |
-| [Detail](../api_detail/index_date_go-selector.html#api-sig-indexdatego) | `IndexDateGO[key]` | Extract a new index given an iloc key. |
-| [Detail](../api_detail/index_date_go-selector.html#api-sig-indexdatego-iloc) | `IndexDateGO.iloc[key]` |  |
-| [Detail](../api_detail/index_date_go-selector.html#api-sig-indexdatego-loc) | `IndexDateGO.loc[key]` |  |
+| [Detail](../api_detail/index_date_go-selector.md#api-sig-indexdatego-drop-iloc) | `IndexDateGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
+| [Detail](../api_detail/index_date_go-selector.md#api-sig-indexdatego-drop-loc) | `IndexDateGO.drop.loc[key]` |  |
+| [Detail](../api_detail/index_date_go-selector.md#api-sig-indexdatego) | `IndexDateGO[key]` | Extract a new index given an iloc key. |
+| [Detail](../api_detail/index_date_go-selector.md#api-sig-indexdatego-iloc) | `IndexDateGO.iloc[key]` |  |
+| [Detail](../api_detail/index_date_go-selector.md#api-sig-indexdatego-loc) | `IndexDateGO.loc[key]` |  |
 
-[IndexDateGO](index_date_go.html#api-overview-indexdatego): [Constructor](index_date_go-constructor.html#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.html#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-overview-indexdatego-attribute) | [Method](index_date_go-method.html#api-overview-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.html#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.html#api-overview-indexdatego-display) | [Selector](#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-overview-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.html#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.html#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.html#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.html#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.html#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-overview-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-overview-indexdatego): [Constructor](index_date_go-constructor.md#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-overview-indexdatego-attribute) | [Method](index_date_go-method.md#api-overview-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-overview-indexdatego-display) | [Selector](#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-overview-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-overview-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-display.html "Overview: IndexDateGO: Display")
-[Next](index_date_go-iterator.html "Overview: IndexDateGO: Iterator")
+[Previous](index_date_go-display.md "Overview: IndexDateGO: Display")
+[Next](index_date_go-iterator.md "Overview: IndexDateGO: Iterator")
 
 ---
 

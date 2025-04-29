@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexHierarchy: Attribute
 * [View page source](../_sources/api_overview/index_hierarchy-attribute.rst.txt)
 
-[Previous](index_hierarchy-exporter.html "Overview: IndexHierarchy: Exporter")
-[Next](index_hierarchy-method.html "Overview: IndexHierarchy: Method")
+[Previous](index_hierarchy-exporter.md "Overview: IndexHierarchy: Exporter")
+[Next](index_hierarchy-method.md "Overview: IndexHierarchy: Method")
 
 ---
 
 # Overview: IndexHierarchy: Attribute[](#overview-indexhierarchy-attribute "Link to this heading")
 
-[Detail: IndexHierarchy: Attribute](../api_detail/index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute)
+[Detail: IndexHierarchy: Attribute](../api_detail/index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-static) | `IndexHierarchy.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-depth) | `IndexHierarchy.depth` | Return the depth of the index hierarchy. |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-dtypes) | `IndexHierarchy.dtypes` | Return a Series of dytpes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-index-types) | `IndexHierarchy.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-memory) | `IndexHierarchy.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-mloc) | `IndexHierarchy.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-name) | `IndexHierarchy.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-names) | `IndexHierarchy.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-nbytes) | `IndexHierarchy.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-ndim) | `IndexHierarchy.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-positions) | `IndexHierarchy.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-shape) | `IndexHierarchy.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_hierarchy-attribute.html#api-sig-indexhierarchy-size) | `IndexHierarchy.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-static) | `IndexHierarchy.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-depth) | `IndexHierarchy.depth` | Return the depth of the index hierarchy. |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-dtypes) | `IndexHierarchy.dtypes` | Return a Series of dytpes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-index-types) | `IndexHierarchy.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-memory) | `IndexHierarchy.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-mloc) | `IndexHierarchy.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-name) | `IndexHierarchy.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-names) | `IndexHierarchy.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-nbytes) | `IndexHierarchy.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-ndim) | `IndexHierarchy.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-positions) | `IndexHierarchy.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-shape) | `IndexHierarchy.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_hierarchy-attribute.md#api-sig-indexhierarchy-size) | `IndexHierarchy.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexHierarchy](index_hierarchy.html#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-overview-indexhierarchy-exporter) | [Attribute](#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-overview-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-overview-indexhierarchy-exporter) | [Attribute](#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-overview-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-exporter.html "Overview: IndexHierarchy: Exporter")
-[Next](index_hierarchy-method.html "Overview: IndexHierarchy: Method")
+[Previous](index_hierarchy-exporter.md "Overview: IndexHierarchy: Exporter")
+[Next](index_hierarchy-method.md "Overview: IndexHierarchy: Method")
 
 ---
 

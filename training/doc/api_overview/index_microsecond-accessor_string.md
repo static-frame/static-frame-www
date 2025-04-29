@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: IndexMicrosecond: Accessor String
 * [View page source](../_sources/api_overview/index_microsecond-accessor_string.rst.txt)
 
-[Previous](index_microsecond-accessor_datetime.html "Overview: IndexMicrosecond: Accessor Datetime")
-[Next](index_microsecond-accessor_regular_expression.html "Overview: IndexMicrosecond: Accessor Regular Expression")
+[Previous](index_microsecond-accessor_datetime.md "Overview: IndexMicrosecond: Accessor Datetime")
+[Next](index_microsecond-accessor_regular_expression.md "Overview: IndexMicrosecond: Accessor Regular Expression")
 
 ---
 
 # Overview: IndexMicrosecond: Accessor String[](#overview-indexmicrosecond-accessor-string "Link to this heading")
 
-[Detail: IndexMicrosecond: Accessor String](../api_detail/index_microsecond-accessor_string.html#api-detail-indexmicrosecond-accessor-string)
+[Detail: IndexMicrosecond: Accessor String](../api_detail/index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-getitem) | `IndexMicrosecond.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-capitalize) | `IndexMicrosecond.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-center) | `IndexMicrosecond.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-contains) | `IndexMicrosecond.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-count) | `IndexMicrosecond.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-decode) | `IndexMicrosecond.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-encode) | `IndexMicrosecond.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-endswith) | `IndexMicrosecond.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-find) | `IndexMicrosecond.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-format) | `IndexMicrosecond.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-index) | `IndexMicrosecond.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-isalnum) | `IndexMicrosecond.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-isalpha) | `IndexMicrosecond.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-isdecimal) | `IndexMicrosecond.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-isdigit) | `IndexMicrosecond.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-islower) | `IndexMicrosecond.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-isnumeric) | `IndexMicrosecond.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-isspace) | `IndexMicrosecond.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-istitle) | `IndexMicrosecond.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-isupper) | `IndexMicrosecond.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-ljust) | `IndexMicrosecond.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-len) | `IndexMicrosecond.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-lower) | `IndexMicrosecond.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-lstrip) | `IndexMicrosecond.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-partition) | `IndexMicrosecond.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-replace) | `IndexMicrosecond.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-rfind) | `IndexMicrosecond.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-rindex) | `IndexMicrosecond.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-rjust) | `IndexMicrosecond.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-rpartition) | `IndexMicrosecond.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-rsplit) | `IndexMicrosecond.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-rstrip) | `IndexMicrosecond.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-split) | `IndexMicrosecond.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-startswith) | `IndexMicrosecond.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-strip) | `IndexMicrosecond.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-swapcase) | `IndexMicrosecond.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-title) | `IndexMicrosecond.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-upper) | `IndexMicrosecond.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_microsecond-accessor_string.html#api-sig-indexmicrosecond-via-str-zfill) | `IndexMicrosecond.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-getitem) | `IndexMicrosecond.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-capitalize) | `IndexMicrosecond.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-center) | `IndexMicrosecond.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-contains) | `IndexMicrosecond.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-count) | `IndexMicrosecond.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-decode) | `IndexMicrosecond.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-encode) | `IndexMicrosecond.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-endswith) | `IndexMicrosecond.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-find) | `IndexMicrosecond.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-format) | `IndexMicrosecond.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-index) | `IndexMicrosecond.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-isalnum) | `IndexMicrosecond.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-isalpha) | `IndexMicrosecond.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-isdecimal) | `IndexMicrosecond.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-isdigit) | `IndexMicrosecond.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-islower) | `IndexMicrosecond.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-isnumeric) | `IndexMicrosecond.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-isspace) | `IndexMicrosecond.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-istitle) | `IndexMicrosecond.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-isupper) | `IndexMicrosecond.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-ljust) | `IndexMicrosecond.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-len) | `IndexMicrosecond.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-lower) | `IndexMicrosecond.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-lstrip) | `IndexMicrosecond.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-partition) | `IndexMicrosecond.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-replace) | `IndexMicrosecond.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-rfind) | `IndexMicrosecond.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-rindex) | `IndexMicrosecond.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-rjust) | `IndexMicrosecond.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-rpartition) | `IndexMicrosecond.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-rsplit) | `IndexMicrosecond.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-rstrip) | `IndexMicrosecond.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-split) | `IndexMicrosecond.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-startswith) | `IndexMicrosecond.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-strip) | `IndexMicrosecond.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-swapcase) | `IndexMicrosecond.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-title) | `IndexMicrosecond.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-upper) | `IndexMicrosecond.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_microsecond-accessor_string.md#api-sig-indexmicrosecond-via-str-zfill) | `IndexMicrosecond.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[IndexMicrosecond](index_microsecond.html#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-overview-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.html#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.html#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-overview-indexmicrosecond-display) | [Selector](index_microsecond-selector.html#api-overview-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.html#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.html#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.html#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-overview-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](index_microsecond.md#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-overview-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-overview-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-overview-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-overview-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_microsecond-accessor_datetime.html "Overview: IndexMicrosecond: Accessor Datetime")
-[Next](index_microsecond-accessor_regular_expression.html "Overview: IndexMicrosecond: Accessor Regular Expression")
+[Previous](index_microsecond-accessor_datetime.md "Overview: IndexMicrosecond: Accessor Datetime")
+[Next](index_microsecond-accessor_regular_expression.md "Overview: IndexMicrosecond: Accessor Regular Expression")
 
 ---
 

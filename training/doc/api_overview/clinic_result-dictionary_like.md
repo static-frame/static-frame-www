@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: ClinicResult: Dictionary-Like
 * [View page source](../_sources/api_overview/clinic_result-dictionary_like.rst.txt)
 
-[Previous](clinic_result-method.html "Overview: ClinicResult: Method")
-[Next](clinic_result-display.html "Overview: ClinicResult: Display")
+[Previous](clinic_result-method.md "Overview: ClinicResult: Method")
+[Next](clinic_result-display.md "Overview: ClinicResult: Display")
 
 ---
 
 # Overview: ClinicResult: Dictionary-Like[](#overview-clinicresult-dictionary-like "Link to this heading")
 
-[Detail: ClinicResult: Dictionary-Like](../api_detail/clinic_result-dictionary_like.html#api-detail-clinicresult-dictionary-like)
+[Detail: ClinicResult: Dictionary-Like](../api_detail/clinic_result-dictionary_like.md#api-detail-clinicresult-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/clinic_result-dictionary_like.html#api-sig-clinicresult-iter) | `ClinicResult.__iter__()` |  |
+| [Detail](../api_detail/clinic_result-dictionary_like.md#api-sig-clinicresult-iter) | `ClinicResult.__iter__()` |  |
 
-[ClinicResult](clinic_result.html#api-overview-clinicresult): [Constructor](clinic_result-constructor.html#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-overview-clinicresult-attribute) | [Method](clinic_result-method.html#api-overview-clinicresult-method) | [Dictionary-Like](#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-overview-clinicresult-display)
+[ClinicResult](clinic_result.md#api-overview-clinicresult): [Constructor](clinic_result-constructor.md#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-overview-clinicresult-attribute) | [Method](clinic_result-method.md#api-overview-clinicresult-method) | [Dictionary-Like](#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-overview-clinicresult-display)
 
-[Previous](clinic_result-method.html "Overview: ClinicResult: Method")
-[Next](clinic_result-display.html "Overview: ClinicResult: Display")
+[Previous](clinic_result-method.md "Overview: ClinicResult: Method")
+[Next](clinic_result-display.md "Overview: ClinicResult: Display")
 
 ---
 

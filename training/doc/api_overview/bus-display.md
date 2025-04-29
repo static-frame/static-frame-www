@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Bus: Display
 * [View page source](../_sources/api_overview/bus-display.rst.txt)
 
-[Previous](bus-dictionary_like.html "Overview: Bus: Dictionary-Like")
-[Next](bus-selector.html "Overview: Bus: Selector")
+[Previous](bus-dictionary_like.md "Overview: Bus: Dictionary-Like")
+[Next](bus-selector.md "Overview: Bus: Selector")
 
 ---
 
 # Overview: Bus: Display[](#overview-bus-display "Link to this heading")
 
-[Detail: Bus: Display](../api_detail/bus-display.html#api-detail-bus-display)
+[Detail: Bus: Display](../api_detail/bus-display.md#api-detail-bus-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-display.html#api-sig-bus-interface) | [`Bus.interface`](../api_detail/bus-display.html#Bus.interface "Bus.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/bus-display.html#api-sig-bus-repr) | `Bus.__repr__()` |  |
-| [Detail](../api_detail/bus-display.html#api-sig-bus-str) | `Bus.__str__()` | Return str(self). |
-| [Detail](../api_detail/bus-display.html#api-sig-bus-display) | `Bus.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/bus-display.html#api-sig-bus-display-tall) | `Bus.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/bus-display.html#api-sig-bus-display-wide) | `Bus.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/bus-display.md#api-sig-bus-interface) | [`Bus.interface`](../api_detail/bus-display.md#Bus.interface "Bus.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/bus-display.md#api-sig-bus-repr) | `Bus.__repr__()` |  |
+| [Detail](../api_detail/bus-display.md#api-sig-bus-str) | `Bus.__str__()` | Return str(self). |
+| [Detail](../api_detail/bus-display.md#api-sig-bus-display) | `Bus.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/bus-display.md#api-sig-bus-display-tall) | `Bus.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/bus-display.md#api-sig-bus-display-wide) | `Bus.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[Bus](bus.html#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](bus-dictionary_like.html "Overview: Bus: Dictionary-Like")
-[Next](bus-selector.html "Overview: Bus: Selector")
+[Previous](bus-dictionary_like.md "Overview: Bus: Dictionary-Like")
+[Next](bus-selector.md "Overview: Bus: Selector")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: ILoc: Display
 * [View page source](../_sources/api_overview/iloc-display.rst.txt)
 
-[Previous](iloc-attribute.html "Overview: ILoc: Attribute")
-[Next](type_clinic-constructor.html "Overview: TypeClinic: Constructor")
+[Previous](iloc-attribute.md "Overview: ILoc: Attribute")
+[Next](type_clinic-constructor.md "Overview: TypeClinic: Constructor")
 
 ---
 
 # Overview: ILoc: Display[](#overview-iloc-display "Link to this heading")
 
-[Detail: ILoc: Display](../api_detail/iloc-display.html#api-detail-iloc-display)
+[Detail: ILoc: Display](../api_detail/iloc-display.md#api-detail-iloc-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/iloc-display.html#api-sig-iloc-repr) | `ILoc.__repr__()` |  |
-| [Detail](../api_detail/iloc-display.html#api-sig-iloc-str) | `ILoc.__str__()` | Return str(self). |
+| [Detail](../api_detail/iloc-display.md#api-sig-iloc-repr) | `ILoc.__repr__()` |  |
+| [Detail](../api_detail/iloc-display.md#api-sig-iloc-str) | `ILoc.__str__()` | Return str(self). |
 
-[ILoc](iloc.html#api-overview-iloc): [Constructor](iloc-constructor.html#api-overview-iloc-constructor) | [Attribute](iloc-attribute.html#api-overview-iloc-attribute) | [Display](#api-overview-iloc-display)
+[ILoc](iloc.md#api-overview-iloc): [Constructor](iloc-constructor.md#api-overview-iloc-constructor) | [Attribute](iloc-attribute.md#api-overview-iloc-attribute) | [Display](#api-overview-iloc-display)
 
-[Previous](iloc-attribute.html "Overview: ILoc: Attribute")
-[Next](type_clinic-constructor.html "Overview: TypeClinic: Constructor")
+[Previous](iloc-attribute.md "Overview: ILoc: Attribute")
+[Next](type_clinic-constructor.md "Overview: TypeClinic: Constructor")
 
 ---
 

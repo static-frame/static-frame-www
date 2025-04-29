@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,39 +136,39 @@ API Detail
 * Detail: IndexGO
 * [View page source](../_sources/api_detail/index_go.rst.txt)
 
-[Previous](index.html "Detail: Index")
-[Next](index_hierarchy.html "Detail: IndexHierarchy")
+[Previous](index.md "Detail: Index")
+[Next](index_hierarchy.md "Detail: IndexHierarchy")
 
 ---
 
 # Detail: IndexGO[](#detail-indexgo "Link to this heading")
 
-[Overview: IndexGO](../api_overview/index_go.html#api-overview-indexgo)
+[Overview: IndexGO](../api_overview/index_go.md#api-overview-indexgo)
 
-*class* IndexGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.html#IndexGO)[](#static_frame.IndexGO "Link to this definition")
-:   A mapping of labels to positions, immutable with grow-only size. Used as columns in [`FrameGO`](frame_go-selector.html#FrameGO "FrameGO").
+*class* IndexGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.md#IndexGO)[](#static_frame.IndexGO "Link to this definition")
+:   A mapping of labels to positions, immutable with grow-only size. Used as columns in [`FrameGO`](frame_go-selector.md#FrameGO "FrameGO").
 
-* [Constructor](index_go-constructor.html#api-detail-indexgo-constructor): Alternative constructors for creating instances.
-* [Exporter](index_go-exporter.html#api-detail-indexgo-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](index_go-attribute.html#api-detail-indexgo-attribute): Attributes for retrieving basic characteristics.
-* [Method](index_go-method.html#api-detail-indexgo-method): Methods for general functionality.
-* [Dictionary-Like](index_go-dictionary_like.html#api-detail-indexgo-dictionary-like): All dictionary-like methods and iterators.
-* [Display](index_go-display.html#api-detail-indexgo-display): Methods for providing a text representation of the object.
-* [Selector](index_go-selector.html#api-detail-indexgo-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](index_go-iterator.html#api-detail-indexgo-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Operator Binary](index_go-operator_binary.html#api-detail-indexgo-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](index_go-operator_unary.html#api-detail-indexgo-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](index_go-accessor_values.html#api-detail-indexgo-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](index_go-accessor_string.html#api-detail-indexgo-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-detail-indexgo-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-detail-indexgo-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](index_go-constructor.md#api-detail-indexgo-constructor): Alternative constructors for creating instances.
+* [Exporter](index_go-exporter.md#api-detail-indexgo-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](index_go-attribute.md#api-detail-indexgo-attribute): Attributes for retrieving basic characteristics.
+* [Method](index_go-method.md#api-detail-indexgo-method): Methods for general functionality.
+* [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like): All dictionary-like methods and iterators.
+* [Display](index_go-display.md#api-detail-indexgo-display): Methods for providing a text representation of the object.
+* [Selector](index_go-selector.md#api-detail-indexgo-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](index_go-iterator.md#api-detail-indexgo-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[IndexGO](#api-detail-indexgo): [Constructor](index_go-constructor.html#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.html#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.html#api-detail-indexgo-attribute) | [Method](index_go-method.html#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-detail-indexgo-dictionary-like) | [Display](index_go-display.html#api-detail-indexgo-display) | [Selector](index_go-selector.html#api-detail-indexgo-selector) | [Iterator](index_go-iterator.html#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-detail-indexgo-accessor-type-clinic)
+[IndexGO](#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)
 
-[Previous](index.html "Detail: Index")
-[Next](index_hierarchy.html "Detail: IndexHierarchy")
+[Previous](index.md "Detail: Index")
+[Next](index_hierarchy.md "Detail: IndexHierarchy")
 
 ---
 

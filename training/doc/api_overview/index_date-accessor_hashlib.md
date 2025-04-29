@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: IndexDate: Accessor Hashlib
 * [View page source](../_sources/api_overview/index_date-accessor_hashlib.rst.txt)
 
-[Previous](index_date-accessor_regular_expression.html "Overview: IndexDate: Accessor Regular Expression")
-[Next](index_date-accessor_type_clinic.html "Overview: IndexDate: Accessor Type Clinic")
+[Previous](index_date-accessor_regular_expression.md "Overview: IndexDate: Accessor Regular Expression")
+[Next](index_date-accessor_type_clinic.md "Overview: IndexDate: Accessor Type Clinic")
 
 ---
 
 # Overview: IndexDate: Accessor Hashlib[](#overview-indexdate-accessor-hashlib "Link to this heading")
 
-[Detail: IndexDate: Accessor Hashlib](../api_detail/index_date-accessor_hashlib.html#api-detail-indexdate-accessor-hashlib)
+[Detail: IndexDate: Accessor Hashlib](../api_detail/index_date-accessor_hashlib.md#api-detail-indexdate-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-to-bytes) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-md5) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-sha256) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-sha512) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-sha3-256) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-sha3-512) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-shake-128) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-shake-256) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-blake2b) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/index_date-accessor_hashlib.html#api-sig-indexdate-via-hashlib-blake2s) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-to-bytes) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-md5) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-sha256) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-sha512) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-sha3-256) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-sha3-512) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-shake-128) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-shake-256) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-blake2b) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_date-accessor_hashlib.md#api-sig-indexdate-via-hashlib-blake2s) | `IndexDate.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[IndexDate](index_date.html#api-overview-indexdate): [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | [Method](index_date-method.html#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | [Display](index_date-display.html#api-overview-indexdate-display) | [Selector](index_date-selector.html#api-overview-indexdate-selector) | [Iterator](index_date-iterator.html#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-overview-indexdate): [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | [Method](index_date-method.md#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | [Display](index_date-display.md#api-overview-indexdate-display) | [Selector](index_date-selector.md#api-overview-indexdate-selector) | [Iterator](index_date-iterator.md#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic)
 
-[Previous](index_date-accessor_regular_expression.html "Overview: IndexDate: Accessor Regular Expression")
-[Next](index_date-accessor_type_clinic.html "Overview: IndexDate: Accessor Type Clinic")
+[Previous](index_date-accessor_regular_expression.md "Overview: IndexDate: Accessor Regular Expression")
+[Next](index_date-accessor_type_clinic.md "Overview: IndexDate: Accessor Type Clinic")
 
 ---
 

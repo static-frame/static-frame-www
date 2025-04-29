@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: Quilt: Dictionary-Like
 * [View page source](../_sources/api_detail/quilt-dictionary_like.rst.txt)
 
-[Previous](quilt-method.html "Detail: Quilt: Method")
-[Next](quilt-display.html "Detail: Quilt: Display")
+[Previous](quilt-method.md "Detail: Quilt: Method")
+[Next](quilt-display.md "Detail: Quilt: Display")
 
 ---
 
 # Detail: Quilt: Dictionary-Like[](#detail-quilt-dictionary-like "Link to this heading")
 
-[Overview: Quilt: Dictionary-Like](../api_overview/quilt-dictionary_like.html#api-overview-quilt-dictionary-like)
+[Overview: Quilt: Dictionary-Like](../api_overview/quilt-dictionary_like.md#api-overview-quilt-dictionary-like)
 
-Quilt.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/quilt.html#Quilt.__contains__)[](#static_frame.Quilt.__contains__ "Link to this definition")
+Quilt.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.__contains__)[](#static_frame.Quilt.__contains__ "Link to this definition")
 :   Inclusion of value in column labels.
 
     ```
@@ -162,8 +162,8 @@ Quilt.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/qui
 
     ```
 
-Quilt.\_\_iter\_\_()[[source]](../_modules/static_frame/core/quilt.html#Quilt.__iter__)[](#static_frame.Quilt.__iter__ "Link to this definition")
-:   Iterator of column labels, same as [`Frame.keys()`](frame-dictionary_like.html#static_frame.Frame.keys "static_frame.Frame.keys").
+Quilt.\_\_iter\_\_()[[source]](../_modules/static_frame/core/quilt.md#Quilt.__iter__)[](#static_frame.Quilt.__iter__ "Link to this definition")
+:   Iterator of column labels, same as [`Frame.keys()`](frame-dictionary_like.md#static_frame.Frame.keys "static_frame.Frame.keys").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
@@ -180,7 +180,7 @@ Quilt.\_\_iter\_\_()[[source]](../_modules/static_frame/core/quilt.html#Quilt.__
 
     ```
 
-Quilt.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/quilt.html#Quilt.get)[](#static_frame.Quilt.get "Link to this definition")
+Quilt.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.get)[](#static_frame.Quilt.get "Link to this definition")
 :   Return the value found at the columns key, else the default if the key is not found. This method is implemented to complete the dictionary-like interface.
 
     ```
@@ -208,8 +208,8 @@ Quilt.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/quilt.h
 
     ```
 
-Quilt.items()[[source]](../_modules/static_frame/core/quilt.html#Quilt.items)[](#static_frame.Quilt.items "Link to this definition")
-:   Iterator of pairs of column label and corresponding column [`Series`](series-selector.html#Series "Series").
+Quilt.items()[[source]](../_modules/static_frame/core/quilt.md#Quilt.items)[](#static_frame.Quilt.items "Link to this definition")
+:   Iterator of pairs of column label and corresponding column [`Series`](series-selector.md#Series "Series").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
@@ -226,7 +226,7 @@ Quilt.items()[[source]](../_modules/static_frame/core/quilt.html#Quilt.items)[�
 
     ```
 
-Quilt.keys()[[source]](../_modules/static_frame/core/quilt.html#Quilt.keys)[](#static_frame.Quilt.keys "Link to this definition")
+Quilt.keys()[[source]](../_modules/static_frame/core/quilt.md#Quilt.keys)[](#static_frame.Quilt.keys "Link to this definition")
 :   Iterator of column labels.
 
     ```
@@ -245,7 +245,7 @@ Quilt.keys()[[source]](../_modules/static_frame/core/quilt.html#Quilt.keys)[]
     ```
 
 Quilt.values[](#static_frame.Quilt.values "Link to this definition")
-:   A 2D NumPy array of all values in the [`Quilt`](quilt-selector.html#Quilt "Quilt"). As this is a single array, heterogenous columnar types might be coerced to a compatible type.
+:   A 2D NumPy array of all values in the [`Quilt`](quilt-selector.md#Quilt "Quilt"). As this is a single array, heterogenous columnar types might be coerced to a compatible type.
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
@@ -267,10 +267,10 @@ Quilt.values[](#static_frame.Quilt.values "Link to this definition")
 
     ```
 
-[Quilt](quilt.html#api-detail-quilt): [Constructor](quilt-constructor.html#api-detail-quilt-constructor) | [Exporter](quilt-exporter.html#api-detail-quilt-exporter) | [Attribute](quilt-attribute.html#api-detail-quilt-attribute) | [Method](quilt-method.html#api-detail-quilt-method) | [Dictionary-Like](#api-detail-quilt-dictionary-like) | [Display](quilt-display.html#api-detail-quilt-display) | [Selector](quilt-selector.html#api-detail-quilt-selector) | [Iterator](quilt-iterator.html#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-detail-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)
 
-[Previous](quilt-method.html "Detail: Quilt: Method")
-[Next](quilt-display.html "Detail: Quilt: Display")
+[Previous](quilt-method.md "Detail: Quilt: Method")
+[Next](quilt-display.md "Detail: Quilt: Display")
 
 ---
 

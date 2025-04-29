@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: SeriesHE: Dictionary-Like
 * [View page source](../_sources/api_overview/series_he-dictionary_like.rst.txt)
 
-[Previous](series_he-method.html "Overview: SeriesHE: Method")
-[Next](series_he-display.html "Overview: SeriesHE: Display")
+[Previous](series_he-method.md "Overview: SeriesHE: Method")
+[Next](series_he-display.md "Overview: SeriesHE: Display")
 
 ---
 
 # Overview: SeriesHE: Dictionary-Like[](#overview-serieshe-dictionary-like "Link to this heading")
 
-[Detail: SeriesHE: Dictionary-Like](../api_detail/series_he-dictionary_like.html#api-detail-serieshe-dictionary-like)
+[Detail: SeriesHE: Dictionary-Like](../api_detail/series_he-dictionary_like.md#api-detail-serieshe-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series_he-dictionary_like.html#api-sig-serieshe-contains) | `SeriesHE.__contains__(value)` | Inclusion of value in index labels. Returns: bool |
-| [Detail](../api_detail/series_he-dictionary_like.html#api-sig-serieshe-iter) | `SeriesHE.__iter__()` | Iterator of index labels, same as Series.keys. Returns: Iterator[Hashasble] |
-| [Detail](../api_detail/series_he-dictionary_like.html#api-sig-serieshe-reversed) | `SeriesHE.__reversed__()` | Returns a reverse iterator on the series’ index. Returns: Index |
-| [Detail](../api_detail/series_he-dictionary_like.html#api-sig-serieshe-get) | `SeriesHE.get(key, default)` | Return the value found at the index key, else the default if the key is not foun… |
-| [Detail](../api_detail/series_he-dictionary_like.html#api-sig-serieshe-items) | `SeriesHE.items()` | Iterator of pairs of index label and value. Returns: Iterator[Tuple[Hashable, An… |
-| [Detail](../api_detail/series_he-dictionary_like.html#api-sig-serieshe-keys) | `SeriesHE.keys()` | Iterator of index labels. Returns: Iterator[TLabel] |
-| [Detail](../api_detail/series_he-dictionary_like.html#api-sig-serieshe-values) | `SeriesHE.values` | ndarray(shape, dtype=float, buffer=None, offset=0, strides=None, order=None) An… |
+| [Detail](../api_detail/series_he-dictionary_like.md#api-sig-serieshe-contains) | `SeriesHE.__contains__(value)` | Inclusion of value in index labels. Returns: bool |
+| [Detail](../api_detail/series_he-dictionary_like.md#api-sig-serieshe-iter) | `SeriesHE.__iter__()` | Iterator of index labels, same as Series.keys. Returns: Iterator[Hashasble] |
+| [Detail](../api_detail/series_he-dictionary_like.md#api-sig-serieshe-reversed) | `SeriesHE.__reversed__()` | Returns a reverse iterator on the series’ index. Returns: Index |
+| [Detail](../api_detail/series_he-dictionary_like.md#api-sig-serieshe-get) | `SeriesHE.get(key, default)` | Return the value found at the index key, else the default if the key is not foun… |
+| [Detail](../api_detail/series_he-dictionary_like.md#api-sig-serieshe-items) | `SeriesHE.items()` | Iterator of pairs of index label and value. Returns: Iterator[Tuple[Hashable, An… |
+| [Detail](../api_detail/series_he-dictionary_like.md#api-sig-serieshe-keys) | `SeriesHE.keys()` | Iterator of index labels. Returns: Iterator[TLabel] |
+| [Detail](../api_detail/series_he-dictionary_like.md#api-sig-serieshe-values) | `SeriesHE.values` | ndarray(shape, dtype=float, buffer=None, offset=0, strides=None, order=None) An… |
 
-[SeriesHE](series_he.html#api-overview-serieshe): [Constructor](series_he-constructor.html#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | [Method](series_he-method.html#api-overview-serieshe-method) | [Dictionary-Like](#api-overview-serieshe-dictionary-like) | [Display](series_he-display.html#api-overview-serieshe-display) | [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | [Selector](series_he-selector.html#api-overview-serieshe-selector) | [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-overview-serieshe): [Constructor](series_he-constructor.md#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | [Method](series_he-method.md#api-overview-serieshe-method) | [Dictionary-Like](#api-overview-serieshe-dictionary-like) | [Display](series_he-display.md#api-overview-serieshe-display) | [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | [Selector](series_he-selector.md#api-overview-serieshe-selector) | [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-method.html "Overview: SeriesHE: Method")
-[Next](series_he-display.html "Overview: SeriesHE: Display")
+[Previous](series_he-method.md "Overview: SeriesHE: Method")
+[Next](series_he-display.md "Overview: SeriesHE: Display")
 
 ---
 

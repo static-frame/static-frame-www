@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexMicrosecond: Accessor Hashlib
 * [View page source](../_sources/api_detail/index_microsecond-accessor_hashlib.rst.txt)
 
-[Previous](index_microsecond-accessor_regular_expression.html "Detail: IndexMicrosecond: Accessor Regular Expression")
-[Next](index_microsecond-accessor_type_clinic.html "Detail: IndexMicrosecond: Accessor Type Clinic")
+[Previous](index_microsecond-accessor_regular_expression.md "Detail: IndexMicrosecond: Accessor Regular Expression")
+[Next](index_microsecond-accessor_type_clinic.md "Detail: IndexMicrosecond: Accessor Type Clinic")
 
 ---
 
 # Detail: IndexMicrosecond: Accessor Hashlib[](#detail-indexmicrosecond-accessor-hashlib "Link to this heading")
 
-[Overview: IndexMicrosecond: Accessor Hashlib](../api_overview/index_microsecond-accessor_hashlib.html#api-overview-indexmicrosecond-accessor-hashlib)
+[Overview: IndexMicrosecond: Accessor Hashlib](../api_overview/index_microsecond-accessor_hashlib.md#api-overview-indexmicrosecond-accessor-hashlib)
 
 IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.to_bytes)
+    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.to_bytes)
     :   Return the byte signature for this container, suitable for passing to a cryptographic hash function.
 
     ```
@@ -168,7 +168,7 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.md5)
+    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.md5)
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -187,7 +187,7 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha256)
+    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha256)
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -206,7 +206,7 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha512)
+    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha512)
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -225,7 +225,7 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_256)
+    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_256)
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -244,7 +244,7 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_512)
+    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_512)
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -263,7 +263,7 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_128)
+    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_128)
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -282,7 +282,7 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_256)
+    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_256)
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -301,7 +301,7 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2b)
+    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2b)
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -320,7 +320,7 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2s)
+    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2s)
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -335,10 +335,10 @@ IndexMicrosecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 
     ```
 
-[IndexMicrosecond](index_microsecond.html#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.html#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.html#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.html#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.html#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.html#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.html#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.html#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-detail-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](index_microsecond.md#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-detail-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_microsecond-accessor_regular_expression.html "Detail: IndexMicrosecond: Accessor Regular Expression")
-[Next](index_microsecond-accessor_type_clinic.html "Detail: IndexMicrosecond: Accessor Type Clinic")
+[Previous](index_microsecond-accessor_regular_expression.md "Detail: IndexMicrosecond: Accessor Regular Expression")
+[Next](index_microsecond-accessor_type_clinic.md "Detail: IndexMicrosecond: Accessor Type Clinic")
 
 ---
 

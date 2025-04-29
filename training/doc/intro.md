@@ -137,8 +137,8 @@ API Detail
 * About StaticFrame
 * [View page source](_sources/intro.rst.txt)
 
-[Previous](license.html "License")
-[Next](new.html "What is New in StaticFrame")
+[Previous](license.md "License")
+[Next](new.md "What is New in StaticFrame")
 
 ---
 
@@ -150,9 +150,9 @@ StaticFrame is not a drop-in replacement for Pandas. While some conventions and 
 
 An interactive Jupyter notebook, with a guided introduction to using StaticFrame, is available [here](https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb).
 
-StaticFrame’s API documentation features thousands of code examples, covering nearly every end-point in the API. For each component, an “overview” and a “detail” section is provided. The overview lists one interface and its signature per line. (See the overview of `Series` constructors [here](https://static-frame.readthedocs.io/en/latest/api_overview/series-constructor.html#api-overview-series-constructor).) The detail section provides full documentation as well as extensive code examples. (See the detail of `Frame` methods [here](https://static-frame.readthedocs.io/en/latest/api_detail/frame-method.html#api-detail-frame-method).)
+StaticFrame’s API documentation features thousands of code examples, covering nearly every end-point in the API. For each component, an “overview” and a “detail” section is provided. The overview lists one interface and its signature per line. (See the overview of `Series` constructors [here](https://static-frame.readthedocs.io/en/latest/api_overview/series-constructor.md#api-overview-series-constructor).) The detail section provides full documentation as well as extensive code examples. (See the detail of `Frame` methods [here](https://static-frame.readthedocs.io/en/latest/api_detail/frame-method.md#api-detail-frame-method).)
 
-Please assist in development by reporting bugs or requesting features. We are a welcoming community and appreciate all feedback! Visit [GitHub Issues](https://github.com/static-frame/static-frame/issues). To get started contributing to StaticFrame, see [Contributing](contributing.html#contributing).
+Please assist in development by reporting bugs or requesting features. We are a welcoming community and appreciate all feedback! Visit [GitHub Issues](https://github.com/static-frame/static-frame/issues). To get started contributing to StaticFrame, see [Contributing](contributing.md#contributing).
 
 The ideas behind StaticFrame developed out of years of work with Pandas and related tabular data structures by the Investment Systems team at Research Affiliates, LLC. In May of 2017 Christopher Ariza proposed the basic model to the Investment Systems team and began implementation. The first public release was in May 2018.
 
@@ -176,12 +176,12 @@ The ideas behind StaticFrame developed out of years of work with Pandas and rela
 * PyData Global 2021: “Why Datetimes Need Units: Avoiding a Y2262 Problem & Harnessing the Power of NumPy’s datetime64”: <https://www.youtube.com/watch?v=jdnr7sgxCQI>
 * PyData LA 2019: “The Best Defense is not a Defensive Copy” (lightning talk starting at 18:25): <https://youtu.be/_WXMs8o9Gdw?t=1105>
 * PyData LA 2019: “Fitting Many Dimensions into One The Promise of Hierarchical Indices for Data Beyond Two Dimensions”: <https://youtu.be/xX8tXSNDpmE>
-* PyCon US 2019: “A Less Kind, Less Gentle DataFrame” (lightning talk starting at 53:00): <https://pyvideo.org/pycon-us-2019/friday-lightning-talksbreak-pycon-2019.html>
+* PyCon US 2019: “A Less Kind, Less Gentle DataFrame” (lightning talk starting at 53:00): <https://pyvideo.org/pycon-us-2019/friday-lightning-talksbreak-pycon-2019.md>
 * Talk Python to Me, interview: <https://talkpython.fm/episodes/show/204/staticframe-like-pandas-but-safer>
-* PyData LA 2018: “StaticFrame: An Immutable Alternative to Pandas”: <https://pyvideo.org/pydata-la-2018/staticframe-an-immutable-alternative-to-pandas.html>
+* PyData LA 2018: “StaticFrame: An Immutable Alternative to Pandas”: <https://pyvideo.org/pydata-la-2018/staticframe-an-immutable-alternative-to-pandas.md>
 
-[Previous](license.html "License")
-[Next](new.html "What is New in StaticFrame")
+[Previous](license.md "License")
+[Next](new.md "What is New in StaticFrame")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,38 +136,38 @@ API Detail
 * Detail: IndexYearGO
 * [View page source](../_sources/api_detail/index_year_go.rst.txt)
 
-[Previous](index_year.html "Detail: IndexYear")
-[Next](index_year_month.html "Detail: IndexYearMonth")
+[Previous](index_year.md "Detail: IndexYear")
+[Next](index_year_month.md "Detail: IndexYearMonth")
 
 ---
 
 # Detail: IndexYearGO[](#detail-indexyeargo "Link to this heading")
 
-[Overview: IndexYearGO](../api_overview/index_year_go.html#api-overview-indexyeargo)
+[Overview: IndexYearGO](../api_overview/index_year_go.md#api-overview-indexyeargo)
 
-*class* IndexYearGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.html#IndexYearGO)[](#static_frame.IndexYearGO "Link to this definition")
+*class* IndexYearGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYearGO)[](#static_frame.IndexYearGO "Link to this definition")
 
-* [Constructor](index_year_go-constructor.html#api-detail-indexyeargo-constructor): Alternative constructors for creating instances.
-* [Exporter](index_year_go-exporter.html#api-detail-indexyeargo-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](index_year_go-attribute.html#api-detail-indexyeargo-attribute): Attributes for retrieving basic characteristics.
-* [Method](index_year_go-method.html#api-detail-indexyeargo-method): Methods for general functionality.
-* [Dictionary-Like](index_year_go-dictionary_like.html#api-detail-indexyeargo-dictionary-like): All dictionary-like methods and iterators.
-* [Display](index_year_go-display.html#api-detail-indexyeargo-display): Methods for providing a text representation of the object.
-* [Selector](index_year_go-selector.html#api-detail-indexyeargo-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](index_year_go-iterator.html#api-detail-indexyeargo-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Operator Binary](index_year_go-operator_binary.html#api-detail-indexyeargo-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](index_year_go-operator_unary.html#api-detail-indexyeargo-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](index_year_go-accessor_values.html#api-detail-indexyeargo-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](index_year_go-accessor_datetime.html#api-detail-indexyeargo-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](index_year_go-accessor_string.html#api-detail-indexyeargo-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-detail-indexyeargo-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-detail-indexyeargo-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-detail-indexyeargo-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](index_year_go-constructor.md#api-detail-indexyeargo-constructor): Alternative constructors for creating instances.
+* [Exporter](index_year_go-exporter.md#api-detail-indexyeargo-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](index_year_go-attribute.md#api-detail-indexyeargo-attribute): Attributes for retrieving basic characteristics.
+* [Method](index_year_go-method.md#api-detail-indexyeargo-method): Methods for general functionality.
+* [Dictionary-Like](index_year_go-dictionary_like.md#api-detail-indexyeargo-dictionary-like): All dictionary-like methods and iterators.
+* [Display](index_year_go-display.md#api-detail-indexyeargo-display): Methods for providing a text representation of the object.
+* [Selector](index_year_go-selector.md#api-detail-indexyeargo-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](index_year_go-iterator.md#api-detail-indexyeargo-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Operator Binary](index_year_go-operator_binary.md#api-detail-indexyeargo-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](index_year_go-operator_unary.md#api-detail-indexyeargo-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](index_year_go-accessor_values.md#api-detail-indexyeargo-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](index_year_go-accessor_datetime.md#api-detail-indexyeargo-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](index_year_go-accessor_string.md#api-detail-indexyeargo-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-detail-indexyeargo-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-detail-indexyeargo-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-detail-indexyeargo-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[IndexYearGO](#api-detail-indexyeargo): [Constructor](index_year_go-constructor.html#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-detail-indexyeargo-attribute) | [Method](index_year_go-method.html#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.html#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-detail-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-detail-indexyeargo-accessor-type-clinic)
+[IndexYearGO](#api-detail-indexyeargo): [Constructor](index_year_go-constructor.md#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-detail-indexyeargo-attribute) | [Method](index_year_go-method.md#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.md#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-detail-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-detail-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year.html "Detail: IndexYear")
-[Next](index_year_month.html "Detail: IndexYearMonth")
+[Previous](index_year.md "Detail: IndexYear")
+[Next](index_year_month.md "Detail: IndexYearMonth")
 
 ---
 

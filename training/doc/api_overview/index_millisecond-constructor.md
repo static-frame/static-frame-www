@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexMillisecond: Constructor
 * [View page source](../_sources/api_overview/index_millisecond-constructor.rst.txt)
 
-[Previous](index_second_go-accessor_type_clinic.html "Overview: IndexSecondGO: Accessor Type Clinic")
-[Next](index_millisecond-exporter.html "Overview: IndexMillisecond: Exporter")
+[Previous](index_second_go-accessor_type_clinic.md "Overview: IndexSecondGO: Accessor Type Clinic")
+[Next](index_millisecond-exporter.md "Overview: IndexMillisecond: Exporter")
 
 ---
 
 # Overview: IndexMillisecond: Constructor[](#overview-indexmillisecond-constructor "Link to this heading")
 
-[Detail: IndexMillisecond: Constructor](../api_detail/index_millisecond-constructor.html#api-detail-indexmillisecond-constructor)
+[Detail: IndexMillisecond: Constructor](../api_detail/index_millisecond-constructor.md#api-detail-indexmillisecond-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond-constructor.html#api-sig-indexmillisecond-init) | `IndexMillisecond.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
-| [Detail](../api_detail/index_millisecond-constructor.html#api-sig-indexmillisecond-from-labels) | `IndexMillisecond.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
-| [Detail](../api_detail/index_millisecond-constructor.html#api-sig-indexmillisecond-from-pandas) | `IndexMillisecond.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_millisecond-constructor.md#api-sig-indexmillisecond-init) | `IndexMillisecond.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_millisecond-constructor.md#api-sig-indexmillisecond-from-labels) | `IndexMillisecond.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
+| [Detail](../api_detail/index_millisecond-constructor.md#api-sig-indexmillisecond-from-pandas) | `IndexMillisecond.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
 
-[IndexMillisecond](index_millisecond.html#api-overview-indexmillisecond): [Constructor](#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.html#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.html#api-overview-indexmillisecond-attribute) | [Method](index_millisecond-method.html#api-overview-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.html#api-overview-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.html#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.html#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.html#api-overview-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.html#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.html#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.html#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.html#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.html#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.html#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.html#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.html#api-overview-indexmillisecond-accessor-type-clinic)
+[IndexMillisecond](index_millisecond.md#api-overview-indexmillisecond): [Constructor](#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.md#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.md#api-overview-indexmillisecond-attribute) | [Method](index_millisecond-method.md#api-overview-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.md#api-overview-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.md#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.md#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.md#api-overview-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.md#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.md#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.md#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.md#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.md#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.md#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.md#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.md#api-overview-indexmillisecond-accessor-type-clinic)
 
-[Previous](index_second_go-accessor_type_clinic.html "Overview: IndexSecondGO: Accessor Type Clinic")
-[Next](index_millisecond-exporter.html "Overview: IndexMillisecond: Exporter")
+[Previous](index_second_go-accessor_type_clinic.md "Overview: IndexSecondGO: Accessor Type Clinic")
+[Next](index_millisecond-exporter.md "Overview: IndexMillisecond: Exporter")
 
 ---
 

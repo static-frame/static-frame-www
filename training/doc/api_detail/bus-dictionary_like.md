@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: Bus: Dictionary-Like
 * [View page source](../_sources/api_detail/bus-dictionary_like.rst.txt)
 
-[Previous](bus-method.html "Detail: Bus: Method")
-[Next](bus-display.html "Detail: Bus: Display")
+[Previous](bus-method.md "Detail: Bus: Method")
+[Next](bus-display.md "Detail: Bus: Display")
 
 ---
 
 # Detail: Bus: Dictionary-Like[](#detail-bus-dictionary-like "Link to this heading")
 
-[Overview: Bus: Dictionary-Like](../api_overview/bus-dictionary_like.html#api-overview-bus-dictionary-like)
+[Overview: Bus: Dictionary-Like](../api_overview/bus-dictionary_like.md#api-overview-bus-dictionary-like)
 
-Bus.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/bus.html#Bus.__contains__)[](#static_frame.Bus.__contains__ "Link to this definition")
+Bus.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.__contains__)[](#static_frame.Bus.__contains__ "Link to this definition")
 :   Inclusion of value in index labels.
 
     Returns:
@@ -163,8 +163,8 @@ Bus.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/bus.h
 
     ```
 
-Bus.\_\_iter\_\_()[[source]](../_modules/static_frame/core/bus.html#Bus.__iter__)[](#static_frame.Bus.__iter__ "Link to this definition")
-:   Iterator of index labels, same as [`static_frame.Series.keys`](series-dictionary_like.html#static_frame.Series.keys "static_frame.Series.keys").
+Bus.\_\_iter\_\_()[[source]](../_modules/static_frame/core/bus.md#Bus.__iter__)[](#static_frame.Bus.__iter__ "Link to this definition")
+:   Iterator of index labels, same as [`static_frame.Series.keys`](series-dictionary_like.md#static_frame.Series.keys "static_frame.Series.keys").
 
     Returns:
     :   `Iterator[Hashasble]`
@@ -182,11 +182,11 @@ Bus.\_\_iter\_\_()[[source]](../_modules/static_frame/core/bus.html#Bus.__iter__
 
     ```
 
-Bus.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/bus.html#Bus.__reversed__)[](#static_frame.Bus.__reversed__ "Link to this definition")
-:   Returns a reverse iterator on the [`Bus`](bus-selector.html#Bus "Bus") index.
+Bus.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/bus.md#Bus.__reversed__)[](#static_frame.Bus.__reversed__ "Link to this definition")
+:   Returns a reverse iterator on the [`Bus`](bus-selector.md#Bus "Bus") index.
 
     Returns:
-    :   [`Index`](index-selector.html#Index "Index")
+    :   [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -201,7 +201,7 @@ Bus.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/bus.html#Bus.__re
 
     ```
 
-Bus.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.get)[](#static_frame.Bus.get "Link to this definition")
+Bus.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.get)[](#static_frame.Bus.get "Link to this definition")
 :   Return the value found at the index key, else the default if the key is not found.
 
     Returns:
@@ -221,8 +221,8 @@ Bus.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/bus.html#
 
     ```
 
-Bus.items()[[source]](../_modules/static_frame/core/bus.html#Bus.items)[](#static_frame.Bus.items "Link to this definition")
-:   Iterator of pairs of [`Bus`](bus-selector.html#Bus "Bus") label and contained [`Frame`](frame-selector.html#Frame "Frame").
+Bus.items()[[source]](../_modules/static_frame/core/bus.md#Bus.items)[](#static_frame.Bus.items "Link to this definition")
+:   Iterator of pairs of [`Bus`](bus-selector.md#Bus "Bus") label and contained [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -249,7 +249,7 @@ Bus.items()[[source]](../_modules/static_frame/core/bus.html#Bus.items)[](#st
 
     ```
 
-Bus.keys()[[source]](../_modules/static_frame/core/bus.html#Bus.keys)[](#static_frame.Bus.keys "Link to this definition")
+Bus.keys()[[source]](../_modules/static_frame/core/bus.md#Bus.keys)[](#static_frame.Bus.keys "Link to this definition")
 :   Iterator of index labels.
 
     Returns:
@@ -272,7 +272,7 @@ Bus.keys()[[source]](../_modules/static_frame/core/bus.html#Bus.keys)[](#stat
     ```
 
 Bus.values[](#static_frame.Bus.values "Link to this definition")
-:   A 1D object array of all [`Frame`](frame-selector.html#Frame "Frame") contained in the [`Bus`](bus-selector.html#Bus "Bus"). The returned `np.ndarray` will have `Frame`; this will never return an array with `FrameDeferred`, but `max_persist` will be observed in reading from the Store.
+:   A 1D object array of all [`Frame`](frame-selector.md#Frame "Frame") contained in the [`Bus`](bus-selector.md#Bus "Bus"). The returned `np.ndarray` will have `Frame`; this will never return an array with `FrameDeferred`, but `max_persist` will be observed in reading from the Store.
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -299,10 +299,10 @@ Bus.values[](#static_frame.Bus.values "Link to this definition")
 
     ```
 
-[Bus](bus.html#api-detail-bus): [Constructor](bus-constructor.html#api-detail-bus-constructor) | [Exporter](bus-exporter.html#api-detail-bus-exporter) | [Attribute](bus-attribute.html#api-detail-bus-attribute) | [Method](bus-method.html#api-detail-bus-method) | [Dictionary-Like](#api-detail-bus-dictionary-like) | [Display](bus-display.html#api-detail-bus-display) | [Selector](bus-selector.html#api-detail-bus-selector) | [Iterator](bus-iterator.html#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
 
-[Previous](bus-method.html "Detail: Bus: Method")
-[Next](bus-display.html "Detail: Bus: Display")
+[Previous](bus-method.md "Detail: Bus: Method")
+[Next](bus-display.md "Detail: Bus: Display")
 
 ---
 

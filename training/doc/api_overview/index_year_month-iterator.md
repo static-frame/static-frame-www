@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexYearMonth: Iterator
 * [View page source](../_sources/api_overview/index_year_month-iterator.rst.txt)
 
-[Previous](index_year_month-selector.html "Overview: IndexYearMonth: Selector")
-[Next](index_year_month-operator_binary.html "Overview: IndexYearMonth: Operator Binary")
+[Previous](index_year_month-selector.md "Overview: IndexYearMonth: Selector")
+[Next](index_year_month-operator_binary.md "Overview: IndexYearMonth: Operator Binary")
 
 ---
 
 # Overview: IndexYearMonth: Iterator[](#overview-indexyearmonth-iterator "Link to this heading")
 
-[Detail: IndexYearMonth: Iterator](../api_detail/index_year_month-iterator.html#api-detail-indexyearmonth-iterator)
+[Detail: IndexYearMonth: Iterator](../api_detail/index_year_month-iterator.md#api-detail-indexyearmonth-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month-iterator.html#api-sig-indexyearmonth-iter-label) | `IndexYearMonth.iter_label(depth_level)` |  |
-| [Detail](../api_detail/index_year_month-iterator.html#api-sig-indexyearmonth-iter-label-apply) | `IndexYearMonth.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/index_year_month-iterator.html#api-sig-indexyearmonth-iter-label-apply-iter) | `IndexYearMonth.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/index_year_month-iterator.html#api-sig-indexyearmonth-iter-label-apply-iter-items) | `IndexYearMonth.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/index_year_month-iterator.html#api-sig-indexyearmonth-iter-label-apply-pool) | `IndexYearMonth.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/index_year_month-iterator.md#api-sig-indexyearmonth-iter-label) | `IndexYearMonth.iter_label(depth_level)` |  |
+| [Detail](../api_detail/index_year_month-iterator.md#api-sig-indexyearmonth-iter-label-apply) | `IndexYearMonth.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/index_year_month-iterator.md#api-sig-indexyearmonth-iter-label-apply-iter) | `IndexYearMonth.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/index_year_month-iterator.md#api-sig-indexyearmonth-iter-label-apply-iter-items) | `IndexYearMonth.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/index_year_month-iterator.md#api-sig-indexyearmonth-iter-label-apply-pool) | `IndexYearMonth.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[IndexYearMonth](index_year_month.html#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.html#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-overview-indexyearmonth-selector) | [Iterator](#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-overview-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.md#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-overview-indexyearmonth-selector) | [Iterator](#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-overview-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-selector.html "Overview: IndexYearMonth: Selector")
-[Next](index_year_month-operator_binary.html "Overview: IndexYearMonth: Operator Binary")
+[Previous](index_year_month-selector.md "Overview: IndexYearMonth: Selector")
+[Next](index_year_month-operator_binary.md "Overview: IndexYearMonth: Operator Binary")
 
 ---
 

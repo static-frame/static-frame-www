@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexMinute: Exporter
 * [View page source](../_sources/api_overview/index_minute-exporter.rst.txt)
 
-[Previous](index_minute-constructor.html "Overview: IndexMinute: Constructor")
-[Next](index_minute-attribute.html "Overview: IndexMinute: Attribute")
+[Previous](index_minute-constructor.md "Overview: IndexMinute: Constructor")
+[Next](index_minute-attribute.md "Overview: IndexMinute: Attribute")
 
 ---
 
 # Overview: IndexMinute: Exporter[](#overview-indexminute-exporter "Link to this heading")
 
-[Detail: IndexMinute: Exporter](../api_detail/index_minute-exporter.html#api-detail-indexminute-exporter)
+[Detail: IndexMinute: Exporter](../api_detail/index_minute-exporter.md#api-detail-indexminute-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-exporter.html#api-sig-indexminute-to-html) | `IndexMinute.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
-| [Detail](../api_detail/index_minute-exporter.html#api-sig-indexminute-to-html-datatables) | `IndexMinute.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
-| [Detail](../api_detail/index_minute-exporter.html#api-sig-indexminute-to-pandas) | `IndexMinute.to_pandas()` | Return a Pandas Index. |
-| [Detail](../api_detail/index_minute-exporter.html#api-sig-indexminute-to-series) | `IndexMinute.to_series()` | Return a Series with values from this Index’s labels. |
-| [Detail](../api_detail/index_minute-exporter.html#api-sig-indexminute-to-visidata) | `IndexMinute.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/index_minute-exporter.md#api-sig-indexminute-to-html) | `IndexMinute.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
+| [Detail](../api_detail/index_minute-exporter.md#api-sig-indexminute-to-html-datatables) | `IndexMinute.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
+| [Detail](../api_detail/index_minute-exporter.md#api-sig-indexminute-to-pandas) | `IndexMinute.to_pandas()` | Return a Pandas Index. |
+| [Detail](../api_detail/index_minute-exporter.md#api-sig-indexminute-to-series) | `IndexMinute.to_series()` | Return a Series with values from this Index’s labels. |
+| [Detail](../api_detail/index_minute-exporter.md#api-sig-indexminute-to-visidata) | `IndexMinute.to_visidata()` | Open an interactive VisiData session. |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-constructor.html "Overview: IndexMinute: Constructor")
-[Next](index_minute-attribute.html "Overview: IndexMinute: Attribute")
+[Previous](index_minute-constructor.md "Overview: IndexMinute: Constructor")
+[Next](index_minute-attribute.md "Overview: IndexMinute: Attribute")
 
 ---
 

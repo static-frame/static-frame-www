@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,53 +135,53 @@ API Detail
 * Overview: FrameHE: Exporter
 * [View page source](../_sources/api_overview/frame_he-exporter.rst.txt)
 
-[Previous](frame_he-constructor.html "Overview: FrameHE: Constructor")
-[Next](frame_he-attribute.html "Overview: FrameHE: Attribute")
+[Previous](frame_he-constructor.md "Overview: FrameHE: Constructor")
+[Next](frame_he-attribute.md "Overview: FrameHE: Attribute")
 
 ---
 
 # Overview: FrameHE: Exporter[](#overview-framehe-exporter "Link to this heading")
 
-[Detail: FrameHE: Exporter](../api_detail/frame_he-exporter.html#api-detail-framehe-exporter)
+[Detail: FrameHE: Exporter](../api_detail/frame_he-exporter.md#api-detail-framehe-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-arrow) | `FrameHE.to_arrow(*, include_index, include_index_name, include_columns, include_columns_name)` | Return a pyarrow.Table from this Frame. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-clipboard) | `FrameHE.to_clipboard(*, delimiter, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quote_char, quote_double, escape_char, quoting, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. The de… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-csv) | `FrameHE.to_csv(fp, *, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quoting, quote_char, quote_double, escape_char, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. The de… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-delimited) | `FrameHE.to_delimited(fp, *, delimiter, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quote_char, quote_double, escape_char, quoting, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. A deli… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-frame) | `FrameHE.to_frame(*, name)` | Return Frame instance from this Frame. If this Frame is immutable the same insta… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-frame-go) | `FrameHE.to_frame_go(*, name)` | Return a FrameGO instance from this Frame. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-frame-he) | `FrameHE.to_frame_he(*, name)` | Return a FrameHE instance from this Frame. If this Frame is immutable the same i… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-html) | `FrameHE.to_html(config, *, style_config)` | Return an HTML table representation of this Frame using standard TABLE, TR, and… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-html-datatables) | `FrameHE.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Frame using the DataTables JS libr… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-json-columns) | `FrameHE.to_json_columns(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object keyed by c… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-json-index) | `FrameHE.to_json_index(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object keyed by i… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-json-records) | `FrameHE.to_json_records(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON array of row obje… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-json-split) | `FrameHE.to_json_split(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object with a key… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-json-typed) | `FrameHE.to_json_typed(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object with a key… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-json-values) | `FrameHE.to_json_values(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON array of arrays o… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-latex) | `FrameHE.to_latex(config)` | Display the Frame as a LaTeX formatted table. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-markdown) | `FrameHE.to_markdown(config)` | Display the Frame as a Markdown formatted table. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-npy) | `FrameHE.to_npy(fp, *, include_index, include_columns, consolidate_blocks)` | Write a Frame as a directory of npy file. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-npz) | `FrameHE.to_npz(fp, *, include_index, include_columns, consolidate_blocks)` | Write a Frame as an npz file. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-pairs) | `FrameHE.to_pairs(*, axis)` | Return a tuple of major axis key, minor axis key vlaue pairs, where major axis i… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-pandas) | `FrameHE.to_pandas()` | Return a Pandas DataFrame. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-parquet) | `FrameHE.to_parquet(fp, *, include_index, include_index_name, include_columns, include_columns_name)` | Write an Arrow Parquet binary file. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-pickle) | `FrameHE.to_pickle(fp, *, protocol)` | Write a Frame as a Python pickle. The pickle module is not secure. Only unpickle… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-rst) | `FrameHE.to_rst(config)` | Display the Frame as an RST formatted table. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-series) | `FrameHE.to_series(*, index_constructor, name)` | Return a Series representation of this Frame, where the index is extended with c… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-sql) | `FrameHE.to_sql(connection, *, label, include_index, schema, placeholder, dtype_to_type_decl)` | Write Frame to the database provided by connection. Connections to SQLite, Postg… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-sqlite) | `FrameHE.to_sqlite(fp, *, label, include_index, include_columns)` | Write the Frame as single-table SQLite file. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-tsv) | `FrameHE.to_tsv(fp, *, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quote_char, quote_double, escape_char, quoting, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. The de… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-visidata) | `FrameHE.to_visidata()` | Open an interactive VisiData session. |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-xarray) | `FrameHE.to_xarray()` | Return an xarray Dataset. In order to preserve columnar types, and following the… |
-| [Detail](../api_detail/frame_he-exporter.html#api-sig-framehe-to-xlsx) | `FrameHE.to_xlsx(fp, *, label, include_index, include_index_name, include_columns, include_columns_name, merge_hierarchical_labels, store_filter)` | Write the Frame as single-sheet XLSX file. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-arrow) | `FrameHE.to_arrow(*, include_index, include_index_name, include_columns, include_columns_name)` | Return a pyarrow.Table from this Frame. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-clipboard) | `FrameHE.to_clipboard(*, delimiter, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quote_char, quote_double, escape_char, quoting, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. The de… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-csv) | `FrameHE.to_csv(fp, *, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quoting, quote_char, quote_double, escape_char, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. The de… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-delimited) | `FrameHE.to_delimited(fp, *, delimiter, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quote_char, quote_double, escape_char, quoting, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. A deli… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-frame) | `FrameHE.to_frame(*, name)` | Return Frame instance from this Frame. If this Frame is immutable the same insta… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-frame-go) | `FrameHE.to_frame_go(*, name)` | Return a FrameGO instance from this Frame. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-frame-he) | `FrameHE.to_frame_he(*, name)` | Return a FrameHE instance from this Frame. If this Frame is immutable the same i… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-html) | `FrameHE.to_html(config, *, style_config)` | Return an HTML table representation of this Frame using standard TABLE, TR, and… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-html-datatables) | `FrameHE.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Frame using the DataTables JS libr… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-json-columns) | `FrameHE.to_json_columns(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object keyed by c… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-json-index) | `FrameHE.to_json_index(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object keyed by i… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-json-records) | `FrameHE.to_json_records(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON array of row obje… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-json-split) | `FrameHE.to_json_split(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object with a key… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-json-typed) | `FrameHE.to_json_typed(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object with a key… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-json-values) | `FrameHE.to_json_values(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON array of arrays o… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-latex) | `FrameHE.to_latex(config)` | Display the Frame as a LaTeX formatted table. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-markdown) | `FrameHE.to_markdown(config)` | Display the Frame as a Markdown formatted table. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-npy) | `FrameHE.to_npy(fp, *, include_index, include_columns, consolidate_blocks)` | Write a Frame as a directory of npy file. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-npz) | `FrameHE.to_npz(fp, *, include_index, include_columns, consolidate_blocks)` | Write a Frame as an npz file. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-pairs) | `FrameHE.to_pairs(*, axis)` | Return a tuple of major axis key, minor axis key vlaue pairs, where major axis i… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-pandas) | `FrameHE.to_pandas()` | Return a Pandas DataFrame. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-parquet) | `FrameHE.to_parquet(fp, *, include_index, include_index_name, include_columns, include_columns_name)` | Write an Arrow Parquet binary file. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-pickle) | `FrameHE.to_pickle(fp, *, protocol)` | Write a Frame as a Python pickle. The pickle module is not secure. Only unpickle… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-rst) | `FrameHE.to_rst(config)` | Display the Frame as an RST formatted table. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-series) | `FrameHE.to_series(*, index_constructor, name)` | Return a Series representation of this Frame, where the index is extended with c… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-sql) | `FrameHE.to_sql(connection, *, label, include_index, schema, placeholder, dtype_to_type_decl)` | Write Frame to the database provided by connection. Connections to SQLite, Postg… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-sqlite) | `FrameHE.to_sqlite(fp, *, label, include_index, include_columns)` | Write the Frame as single-table SQLite file. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-tsv) | `FrameHE.to_tsv(fp, *, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quote_char, quote_double, escape_char, quoting, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. The de… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-visidata) | `FrameHE.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-xarray) | `FrameHE.to_xarray()` | Return an xarray Dataset. In order to preserve columnar types, and following the… |
+| [Detail](../api_detail/frame_he-exporter.md#api-sig-framehe-to-xlsx) | `FrameHE.to_xlsx(fp, *, label, include_index, include_index_name, include_columns, include_columns_name, merge_hierarchical_labels, store_filter)` | Write the Frame as single-sheet XLSX file. |
 
-[FrameHE](frame_he.html#api-overview-framehe): [Constructor](frame_he-constructor.html#api-overview-framehe-constructor) | [Exporter](#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.html#api-overview-framehe-attribute) | [Method](frame_he-method.html#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-overview-framehe-dictionary-like) | [Display](frame_he-display.html#api-overview-framehe-display) | [Assignment](frame_he-assignment.html#api-overview-framehe-assignment) | [Selector](frame_he-selector.html#api-overview-framehe-selector) | [Iterator](frame_he-iterator.html#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-overview-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-overview-framehe): [Constructor](frame_he-constructor.md#api-overview-framehe-constructor) | [Exporter](#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.md#api-overview-framehe-attribute) | [Method](frame_he-method.md#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-overview-framehe-dictionary-like) | [Display](frame_he-display.md#api-overview-framehe-display) | [Assignment](frame_he-assignment.md#api-overview-framehe-assignment) | [Selector](frame_he-selector.md#api-overview-framehe-selector) | [Iterator](frame_he-iterator.md#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-overview-framehe-accessor-reduce)
 
-[Previous](frame_he-constructor.html "Overview: FrameHE: Constructor")
-[Next](frame_he-attribute.html "Overview: FrameHE: Attribute")
+[Previous](frame_he-constructor.md "Overview: FrameHE: Constructor")
+[Next](frame_he-attribute.md "Overview: FrameHE: Attribute")
 
 ---
 

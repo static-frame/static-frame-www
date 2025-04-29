@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Batch: Accessor Values
 * [View page source](../_sources/api_detail/batch-accessor_values.rst.txt)
 
-[Previous](batch-operator_unary.html "Detail: Batch: Operator Unary")
-[Next](batch-accessor_datetime.html "Detail: Batch: Accessor Datetime")
+[Previous](batch-operator_unary.md "Detail: Batch: Operator Unary")
+[Next](batch-accessor_datetime.md "Detail: Batch: Accessor Datetime")
 
 ---
 
 # Detail: Batch: Accessor Values[](#detail-batch-accessor-values "Link to this heading")
 
-[Overview: Batch: Accessor Values](../api_overview/batch-accessor_values.html#api-overview-batch-accessor-values)
+[Overview: Batch: Accessor Values](../api_overview/batch-accessor_values.md#api-overview-batch-accessor-values)
 
 Batch.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
 :   Batch.via\_values
     :   Interface for applying a function to values in this container.
 
-    InterfaceBatchValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceBatchValues.apply)
+    InterfaceBatchValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceBatchValues.apply)
     :   Interface for using binary operators and methods with a pre-defined fill value.
 
     ```
@@ -173,7 +173,7 @@ Batch.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*
 :   Batch.via\_values
     :   Interface for applying a function to values in this container.
 
-    InterfaceBatchValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceBatchValues.__array_ufunc__)
+    InterfaceBatchValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceBatchValues.__array_ufunc__)
     :   Support for applying NumPy functions directly on containers, returning NumPy arrays.
 
     ```
@@ -198,7 +198,7 @@ Batch.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*, *dt
 :   Batch.via\_values
     :   Interface for applying a function to values in this container.
 
-    InterfaceBatchValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceBatchValues.__call__)
+    InterfaceBatchValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceBatchValues.__call__)
     :   Parameters:
         :   * **consolidate\_blocks** – Group adjacent same-typed arrays into 2D arrays.
             * **unify\_blocks** – Group all arrays into single array, re-typing to an appropriate dtype.
@@ -222,10 +222,10 @@ Batch.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*, *dt
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-operator_unary.html "Detail: Batch: Operator Unary")
-[Next](batch-accessor_datetime.html "Detail: Batch: Accessor Datetime")
+[Previous](batch-operator_unary.md "Detail: Batch: Operator Unary")
+[Next](batch-accessor_datetime.md "Detail: Batch: Accessor Datetime")
 
 ---
 

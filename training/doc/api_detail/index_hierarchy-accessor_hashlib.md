@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexHierarchy: Accessor Hashlib
 * [View page source](../_sources/api_detail/index_hierarchy-accessor_hashlib.rst.txt)
 
-[Previous](index_hierarchy-accessor_regular_expression.html "Detail: IndexHierarchy: Accessor Regular Expression")
-[Next](index_hierarchy-accessor_type_clinic.html "Detail: IndexHierarchy: Accessor Type Clinic")
+[Previous](index_hierarchy-accessor_regular_expression.md "Detail: IndexHierarchy: Accessor Regular Expression")
+[Next](index_hierarchy-accessor_type_clinic.md "Detail: IndexHierarchy: Accessor Type Clinic")
 
 ---
 
 # Detail: IndexHierarchy: Accessor Hashlib[](#detail-indexhierarchy-accessor-hashlib "Link to this heading")
 
-[Overview: IndexHierarchy: Accessor Hashlib](../api_overview/index_hierarchy-accessor_hashlib.html#api-overview-indexhierarchy-accessor-hashlib)
+[Overview: IndexHierarchy: Accessor Hashlib](../api_overview/index_hierarchy-accessor_hashlib.md#api-overview-indexhierarchy-accessor-hashlib)
 
 IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.to_bytes)
+    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.to_bytes)
     :   Return the byte signature for this container, suitable for passing to a cryptographic hash function.
 
     ```
@@ -169,7 +169,7 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.md5)
+    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.md5)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -189,7 +189,7 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha256)
+    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha256)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -209,7 +209,7 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha512)
+    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha512)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -229,7 +229,7 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_256)
+    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_256)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -249,7 +249,7 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_512)
+    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_512)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -269,7 +269,7 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_128)
+    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_128)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -289,7 +289,7 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_256)
+    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_256)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -309,7 +309,7 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2b)
+    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2b)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -329,7 +329,7 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2s)
+    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2s)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -345,10 +345,10 @@ IndexHierarchy.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
 
     ```
 
-[IndexHierarchy](index_hierarchy.html#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-accessor_regular_expression.html "Detail: IndexHierarchy: Accessor Regular Expression")
-[Next](index_hierarchy-accessor_type_clinic.html "Detail: IndexHierarchy: Accessor Type Clinic")
+[Previous](index_hierarchy-accessor_regular_expression.md "Detail: IndexHierarchy: Accessor Regular Expression")
+[Next](index_hierarchy-accessor_type_clinic.md "Detail: IndexHierarchy: Accessor Type Clinic")
 
 ---
 

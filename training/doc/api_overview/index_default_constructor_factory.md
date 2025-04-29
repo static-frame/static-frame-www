@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexDefaultConstructorFactory
 * [View page source](../_sources/api_overview/index_default_constructor_factory.rst.txt)
 
-[Previous](index_auto_factory.html "Overview: IndexAutoFactory")
-[Next](index_auto_constructor_factory.html "Overview: IndexAutoConstructorFactory")
+[Previous](index_auto_factory.md "Overview: IndexAutoFactory")
+[Next](index_auto_constructor_factory.md "Overview: IndexAutoConstructorFactory")
 
 ---
 
 # Overview: IndexDefaultConstructorFactory[](#overview-indexdefaultconstructorfactory "Link to this heading")
 
-[Detail: IndexDefaultConstructorFactory](../api_detail/index_default_constructor_factory.html#api-detail-indexdefaultconstructorfactory)
+[Detail: IndexDefaultConstructorFactory](../api_detail/index_default_constructor_factory.md#api-detail-indexdefaultconstructorfactory)
 
 |  |  |
 | --- | --- |
-| [Constructor](index_default_constructor_factory-constructor.html#api-overview-indexdefaultconstructorfactory-constructor) | Alternative constructors for creating instances. |
-| [Method](index_default_constructor_factory-method.html#api-overview-indexdefaultconstructorfactory-method) | Methods for general functionality. |
-| [Display](index_default_constructor_factory-display.html#api-overview-indexdefaultconstructorfactory-display) | Methods for providing a text representation of the object. |
+| [Constructor](index_default_constructor_factory-constructor.md#api-overview-indexdefaultconstructorfactory-constructor) | Alternative constructors for creating instances. |
+| [Method](index_default_constructor_factory-method.md#api-overview-indexdefaultconstructorfactory-method) | Methods for general functionality. |
+| [Display](index_default_constructor_factory-display.md#api-overview-indexdefaultconstructorfactory-display) | Methods for providing a text representation of the object. |
 
-[IndexDefaultConstructorFactory](#api-overview-indexdefaultconstructorfactory): [Constructor](index_default_constructor_factory-constructor.html#api-overview-indexdefaultconstructorfactory-constructor) | [Method](index_default_constructor_factory-method.html#api-overview-indexdefaultconstructorfactory-method) | [Display](index_default_constructor_factory-display.html#api-overview-indexdefaultconstructorfactory-display)
+[IndexDefaultConstructorFactory](#api-overview-indexdefaultconstructorfactory): [Constructor](index_default_constructor_factory-constructor.md#api-overview-indexdefaultconstructorfactory-constructor) | [Method](index_default_constructor_factory-method.md#api-overview-indexdefaultconstructorfactory-method) | [Display](index_default_constructor_factory-display.md#api-overview-indexdefaultconstructorfactory-display)
 
-[Previous](index_auto_factory.html "Overview: IndexAutoFactory")
-[Next](index_auto_constructor_factory.html "Overview: IndexAutoConstructorFactory")
+[Previous](index_auto_factory.md "Overview: IndexAutoFactory")
+[Next](index_auto_constructor_factory.md "Overview: IndexAutoConstructorFactory")
 
 ---
 

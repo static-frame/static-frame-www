@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,26 +136,26 @@ API Detail
 * Detail: IndexDefaultConstructorFactory
 * [View page source](../_sources/api_detail/index_default_constructor_factory.rst.txt)
 
-[Previous](index_auto_factory.html "Detail: IndexAutoFactory")
-[Next](index_auto_constructor_factory.html "Detail: IndexAutoConstructorFactory")
+[Previous](index_auto_factory.md "Detail: IndexAutoFactory")
+[Next](index_auto_constructor_factory.md "Detail: IndexAutoConstructorFactory")
 
 ---
 
 # Detail: IndexDefaultConstructorFactory[](#detail-indexdefaultconstructorfactory "Link to this heading")
 
-[Overview: IndexDefaultConstructorFactory](../api_overview/index_default_constructor_factory.html#api-overview-indexdefaultconstructorfactory)
+[Overview: IndexDefaultConstructorFactory](../api_overview/index_default_constructor_factory.md#api-overview-indexdefaultconstructorfactory)
 
-*class* IndexDefaultConstructorFactory(*name*)[[source]](../_modules/static_frame/core/index_auto.html#IndexDefaultConstructorFactory)[](#static_frame.IndexDefaultConstructorFactory "Link to this definition")
+*class* IndexDefaultConstructorFactory(*name*)[[source]](../_modules/static_frame/core/index_auto.md#IndexDefaultConstructorFactory)[](#static_frame.IndexDefaultConstructorFactory "Link to this definition")
 :   Token class to be used to provide a `name` to a default constructor of an Index. To be used as an index constructor argument. An instance must be created.
 
-* [Constructor](index_default_constructor_factory-constructor.html#api-detail-indexdefaultconstructorfactory-constructor): Alternative constructors for creating instances.
-* [Method](index_default_constructor_factory-method.html#api-detail-indexdefaultconstructorfactory-method): Methods for general functionality.
-* [Display](index_default_constructor_factory-display.html#api-detail-indexdefaultconstructorfactory-display): Methods for providing a text representation of the object.
+* [Constructor](index_default_constructor_factory-constructor.md#api-detail-indexdefaultconstructorfactory-constructor): Alternative constructors for creating instances.
+* [Method](index_default_constructor_factory-method.md#api-detail-indexdefaultconstructorfactory-method): Methods for general functionality.
+* [Display](index_default_constructor_factory-display.md#api-detail-indexdefaultconstructorfactory-display): Methods for providing a text representation of the object.
 
-[IndexDefaultConstructorFactory](#api-detail-indexdefaultconstructorfactory): [Constructor](index_default_constructor_factory-constructor.html#api-detail-indexdefaultconstructorfactory-constructor) | [Method](index_default_constructor_factory-method.html#api-detail-indexdefaultconstructorfactory-method) | [Display](index_default_constructor_factory-display.html#api-detail-indexdefaultconstructorfactory-display)
+[IndexDefaultConstructorFactory](#api-detail-indexdefaultconstructorfactory): [Constructor](index_default_constructor_factory-constructor.md#api-detail-indexdefaultconstructorfactory-constructor) | [Method](index_default_constructor_factory-method.md#api-detail-indexdefaultconstructorfactory-method) | [Display](index_default_constructor_factory-display.md#api-detail-indexdefaultconstructorfactory-display)
 
-[Previous](index_auto_factory.html "Detail: IndexAutoFactory")
-[Next](index_auto_constructor_factory.html "Detail: IndexAutoConstructorFactory")
+[Previous](index_auto_factory.md "Detail: IndexAutoFactory")
+[Next](index_auto_constructor_factory.md "Detail: IndexAutoConstructorFactory")
 
 ---
 

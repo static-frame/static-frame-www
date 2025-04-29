@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: FrameHE: Display
 * [View page source](../_sources/api_overview/frame_he-display.rst.txt)
 
-[Previous](frame_he-dictionary_like.html "Overview: FrameHE: Dictionary-Like")
-[Next](frame_he-assignment.html "Overview: FrameHE: Assignment")
+[Previous](frame_he-dictionary_like.md "Overview: FrameHE: Dictionary-Like")
+[Next](frame_he-assignment.md "Overview: FrameHE: Assignment")
 
 ---
 
 # Overview: FrameHE: Display[](#overview-framehe-display "Link to this heading")
 
-[Detail: FrameHE: Display](../api_detail/frame_he-display.html#api-detail-framehe-display)
+[Detail: FrameHE: Display](../api_detail/frame_he-display.md#api-detail-framehe-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_he-display.html#api-sig-framehe-interface) | [`FrameHE.interface`](../api_detail/frame_he-display.html#FrameHE.interface "FrameHE.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/frame_he-display.html#api-sig-framehe-repr) | `FrameHE.__repr__()` |  |
-| [Detail](../api_detail/frame_he-display.html#api-sig-framehe-str) | `FrameHE.__str__()` | Return str(self). |
-| [Detail](../api_detail/frame_he-display.html#api-sig-framehe-display) | `FrameHE.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/frame_he-display.html#api-sig-framehe-display-tall) | `FrameHE.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/frame_he-display.html#api-sig-framehe-display-wide) | `FrameHE.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/frame_he-display.md#api-sig-framehe-interface) | [`FrameHE.interface`](../api_detail/frame_he-display.md#FrameHE.interface "FrameHE.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/frame_he-display.md#api-sig-framehe-repr) | `FrameHE.__repr__()` |  |
+| [Detail](../api_detail/frame_he-display.md#api-sig-framehe-str) | `FrameHE.__str__()` | Return str(self). |
+| [Detail](../api_detail/frame_he-display.md#api-sig-framehe-display) | `FrameHE.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/frame_he-display.md#api-sig-framehe-display-tall) | `FrameHE.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/frame_he-display.md#api-sig-framehe-display-wide) | `FrameHE.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[FrameHE](frame_he.html#api-overview-framehe): [Constructor](frame_he-constructor.html#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.html#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.html#api-overview-framehe-attribute) | [Method](frame_he-method.html#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-overview-framehe-dictionary-like) | [Display](#api-overview-framehe-display) | [Assignment](frame_he-assignment.html#api-overview-framehe-assignment) | [Selector](frame_he-selector.html#api-overview-framehe-selector) | [Iterator](frame_he-iterator.html#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-overview-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-overview-framehe): [Constructor](frame_he-constructor.md#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.md#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.md#api-overview-framehe-attribute) | [Method](frame_he-method.md#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-overview-framehe-dictionary-like) | [Display](#api-overview-framehe-display) | [Assignment](frame_he-assignment.md#api-overview-framehe-assignment) | [Selector](frame_he-selector.md#api-overview-framehe-selector) | [Iterator](frame_he-iterator.md#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-overview-framehe-accessor-reduce)
 
-[Previous](frame_he-dictionary_like.html "Overview: FrameHE: Dictionary-Like")
-[Next](frame_he-assignment.html "Overview: FrameHE: Assignment")
+[Previous](frame_he-dictionary_like.md "Overview: FrameHE: Dictionary-Like")
+[Next](frame_he-assignment.md "Overview: FrameHE: Assignment")
 
 ---
 

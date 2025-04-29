@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Detail: StoreFilter: Constructor
 * [View page source](../_sources/api_detail/store_filter-constructor.rst.txt)
 
-[Previous](store_config-display.html "Detail: StoreConfig: Display")
-[Next](store_filter-exporter.html "Detail: StoreFilter: Exporter")
+[Previous](store_config-display.md "Detail: StoreConfig: Display")
+[Next](store_filter-exporter.md "Detail: StoreFilter: Exporter")
 
 ---
 
 # Detail: StoreFilter: Constructor[](#detail-storefilter-constructor "Link to this heading")
 
-[Overview: StoreFilter: Constructor](../api_overview/store_filter-constructor.html#api-overview-storefilter-constructor)
+[Overview: StoreFilter: Constructor](../api_overview/store_filter-constructor.md#api-overview-storefilter-constructor)
 
-StoreFilter.\_\_init\_\_(*\**, *from\_nan=''*, *from\_nat=''*, *from\_none='None'*, *from\_posinf='inf'*, *from\_neginf='-inf'*, *to\_nan=frozenset({'', '#N/A', 'NAN', 'NULL', 'NaN', 'nan'})*, *to\_nat=frozenset({})*, *to\_none=frozenset({'None'})*, *to\_posinf=frozenset({'inf'})*, *to\_neginf=frozenset({'-inf'})*, *value\_format\_float\_positional=None*, *value\_format\_float\_scientific=None*, *value\_format\_complex\_positional=None*, *value\_format\_complex\_scientific=None*)[[source]](../_modules/static_frame/core/store_filter.html#StoreFilter.__init__)[](#static_frame.StoreFilter.__init__ "Link to this definition")
+StoreFilter.\_\_init\_\_(*\**, *from\_nan=''*, *from\_nat=''*, *from\_none='None'*, *from\_posinf='inf'*, *from\_neginf='-inf'*, *to\_nan=frozenset({'', '#N/A', 'NAN', 'NULL', 'NaN', 'nan'})*, *to\_nat=frozenset({})*, *to\_none=frozenset({'None'})*, *to\_posinf=frozenset({'inf'})*, *to\_neginf=frozenset({'-inf'})*, *value\_format\_float\_positional=None*, *value\_format\_float\_scientific=None*, *value\_format\_complex\_positional=None*, *value\_format\_complex\_scientific=None*)[[source]](../_modules/static_frame/core/store_filter.md#StoreFilter.__init__)[](#static_frame.StoreFilter.__init__ "Link to this definition")
 
-StoreFilter.from\_type\_filter\_array(*array*)[[source]](../_modules/static_frame/core/store_filter.html#StoreFilter.from_type_filter_array)[](#static_frame.StoreFilter.from_type_filter_array "Link to this definition")
+StoreFilter.from\_type\_filter\_array(*array*)[[source]](../_modules/static_frame/core/store_filter.md#StoreFilter.from_type_filter_array)[](#static_frame.StoreFilter.from_type_filter_array "Link to this definition")
 :   Given an array, replace types with strings
 
-StoreFilter.from\_type\_filter\_element(*value*)[[source]](../_modules/static_frame/core/store_filter.html#StoreFilter.from_type_filter_element)[](#static_frame.StoreFilter.from_type_filter_element "Link to this definition")
+StoreFilter.from\_type\_filter\_element(*value*)[[source]](../_modules/static_frame/core/store_filter.md#StoreFilter.from_type_filter_element)[](#static_frame.StoreFilter.from_type_filter_element "Link to this definition")
 :   Filter single values to string.
 
-[StoreFilter](store_filter.html#api-detail-storefilter): [Constructor](#api-detail-storefilter-constructor) | [Exporter](store_filter-exporter.html#api-detail-storefilter-exporter) | [Attribute](store_filter-attribute.html#api-detail-storefilter-attribute) | [Display](store_filter-display.html#api-detail-storefilter-display)
+[StoreFilter](store_filter.md#api-detail-storefilter): [Constructor](#api-detail-storefilter-constructor) | [Exporter](store_filter-exporter.md#api-detail-storefilter-exporter) | [Attribute](store_filter-attribute.md#api-detail-storefilter-attribute) | [Display](store_filter-display.md#api-detail-storefilter-display)
 
-[Previous](store_config-display.html "Detail: StoreConfig: Display")
-[Next](store_filter-exporter.html "Detail: StoreFilter: Exporter")
+[Previous](store_config-display.md "Detail: StoreConfig: Display")
+[Next](store_filter-exporter.md "Detail: StoreFilter: Exporter")
 
 ---
 

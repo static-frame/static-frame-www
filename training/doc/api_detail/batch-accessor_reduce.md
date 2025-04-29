@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Batch: Accessor Reduce
 * [View page source](../_sources/api_detail/batch-accessor_reduce.rst.txt)
 
-[Previous](batch-accessor_type_clinic.html "Detail: Batch: Accessor Type Clinic")
-[Next](yarn-constructor.html "Detail: Yarn: Constructor")
+[Previous](batch-accessor_type_clinic.md "Detail: Batch: Accessor Type Clinic")
+[Next](yarn-constructor.md "Detail: Yarn: Constructor")
 
 ---
 
 # Detail: Batch: Accessor Reduce[](#detail-batch-accessor-reduce "Link to this heading")
 
-[Overview: Batch: Accessor Reduce](../api_overview/batch-accessor_reduce.html#api-overview-batch-accessor-reduce)
+[Overview: Batch: Accessor Reduce](../api_overview/batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 
 Batch.reduce.from\_func(*func*, *\**, *fill\_value*)
 :   Batch.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    InterfaceBatchReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#InterfaceBatchReduceDispatch.from_func)
+    InterfaceBatchReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#InterfaceBatchReduceDispatch.from_func)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -170,7 +170,7 @@ Batch.reduce.from\_map\_func(*func*, *\**, *fill\_value*)
 :   Batch.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    InterfaceBatchReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#InterfaceBatchReduceDispatch.from_map_func)
+    InterfaceBatchReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#InterfaceBatchReduceDispatch.from_map_func)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -190,7 +190,7 @@ Batch.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value*)
 :   Batch.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    InterfaceBatchReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#InterfaceBatchReduceDispatch.from_label_map)
+    InterfaceBatchReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#InterfaceBatchReduceDispatch.from_label_map)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -210,7 +210,7 @@ Batch.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value*)
 :   Batch.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    InterfaceBatchReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#InterfaceBatchReduceDispatch.from_label_pair_map)
+    InterfaceBatchReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#InterfaceBatchReduceDispatch.from_label_pair_map)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -226,10 +226,10 @@ Batch.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value*)
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](#api-detail-batch-accessor-reduce)
 
-[Previous](batch-accessor_type_clinic.html "Detail: Batch: Accessor Type Clinic")
-[Next](yarn-constructor.html "Detail: Yarn: Constructor")
+[Previous](batch-accessor_type_clinic.md "Detail: Batch: Accessor Type Clinic")
+[Next](yarn-constructor.md "Detail: Yarn: Constructor")
 
 ---
 

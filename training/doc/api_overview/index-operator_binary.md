@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: Index: Operator Binary
 * [View page source](../_sources/api_overview/index-operator_binary.rst.txt)
 
-[Previous](index-iterator.html "Overview: Index: Iterator")
-[Next](index-operator_unary.html "Overview: Index: Operator Unary")
+[Previous](index-iterator.md "Overview: Index: Iterator")
+[Next](index-operator_unary.md "Overview: Index: Operator Unary")
 
 ---
 
 # Overview: Index: Operator Binary[](#overview-index-operator-binary "Link to this heading")
 
-[Detail: Index: Operator Binary](../api_detail/index-operator_binary.html#api-detail-index-operator-binary)
+[Detail: Index: Operator Binary](../api_detail/index-operator_binary.md#api-detail-index-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-add) | `Index.__add__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-and) | `Index.__and__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-eq) | `Index.__eq__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-floordiv) | `Index.__floordiv__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-ge) | `Index.__ge__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-gt) | `Index.__gt__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-le) | `Index.__le__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-lt) | `Index.__lt__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-matmul) | `Index.__matmul__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-mod) | `Index.__mod__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-mul) | `Index.__mul__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-ne) | `Index.__ne__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-or) | `Index.__or__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-pow) | `Index.__pow__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-radd) | `Index.__radd__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-rfloordiv) | `Index.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-rmatmul) | `Index.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-rmul) | `Index.__rmul__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-rshift) | `Index.__rshift__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-rsub) | `Index.__rsub__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-rtruediv) | `Index.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-sub) | `Index.__sub__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-truediv) | `Index.__truediv__(other)` |  |
-| [Detail](../api_detail/index-operator_binary.html#api-sig-index-xor) | `Index.__xor__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-add) | `Index.__add__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-and) | `Index.__and__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-eq) | `Index.__eq__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-floordiv) | `Index.__floordiv__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-ge) | `Index.__ge__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-gt) | `Index.__gt__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-le) | `Index.__le__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-lt) | `Index.__lt__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-matmul) | `Index.__matmul__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-mod) | `Index.__mod__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-mul) | `Index.__mul__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-ne) | `Index.__ne__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-or) | `Index.__or__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-pow) | `Index.__pow__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-radd) | `Index.__radd__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-rfloordiv) | `Index.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-rmatmul) | `Index.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-rmul) | `Index.__rmul__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-rshift) | `Index.__rshift__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-rsub) | `Index.__rsub__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-rtruediv) | `Index.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-sub) | `Index.__sub__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-truediv) | `Index.__truediv__(other)` |  |
+| [Detail](../api_detail/index-operator_binary.md#api-sig-index-xor) | `Index.__xor__(other)` |  |
 
-[Index](index.html#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](index-exporter.html#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](index-method.html#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | [Display](index-display.html#api-overview-index-display) | [Selector](index-selector.html#api-overview-index-selector) | [Iterator](index-iterator.html#api-overview-index-iterator) | [Operator Binary](#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](index.md#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](index-exporter.md#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](index-method.md#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | [Display](index-display.md#api-overview-index-display) | [Selector](index-selector.md#api-overview-index-selector) | [Iterator](index-iterator.md#api-overview-index-iterator) | [Operator Binary](#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](index-iterator.html "Overview: Index: Iterator")
-[Next](index-operator_unary.html "Overview: Index: Operator Unary")
+[Previous](index-iterator.md "Overview: Index: Iterator")
+[Next](index-operator_unary.md "Overview: Index: Operator Unary")
 
 ---
 

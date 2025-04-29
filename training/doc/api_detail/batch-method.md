@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Batch: Method
 * [View page source](../_sources/api_detail/batch-method.rst.txt)
 
-[Previous](batch-attribute.html "Detail: Batch: Attribute")
-[Next](batch-dictionary_like.html "Detail: Batch: Dictionary-Like")
+[Previous](batch-attribute.md "Detail: Batch: Attribute")
+[Next](batch-dictionary_like.md "Detail: Batch: Dictionary-Like")
 
 ---
 
 # Detail: Batch: Method[](#detail-batch-method "Link to this heading")
 
-[Overview: Batch: Method](../api_overview/batch-method.html#api-overview-batch-method)
+[Overview: Batch: Method](../api_overview/batch-method.md#api-overview-batch-method)
 
 Batch.\_\_array\_\_(*dtype=None*)[](#static_frame.Batch.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -195,8 +195,8 @@ Batch.\_\_bool\_\_()[](#static_frame.Batch.__bool__ "Link to this definition"
 
     ```
 
-Batch.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/batch.html#Batch.__round__)[](#static_frame.Batch.__round__ "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") rounded to the given decimals. Negative decimals round to the left of the decimal point.
+Batch.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.__round__)[](#static_frame.Batch.__round__ "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") rounded to the given decimals. Negative decimals round to the left of the decimal point.
 
     Parameters:
     :   **decimals** – number of decimals to round to.
@@ -255,8 +255,8 @@ Batch.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Batch.an
 
     ```
 
-Batch.apply(*func*, */*)[[source]](../_modules/static_frame/core/batch.html#Batch.apply)[](#static_frame.Batch.apply "Link to this definition")
-:   Apply a function to each [`Frame`](frame-selector.html#Frame "Frame") contained in this [`Frame`](frame-selector.html#Frame "Frame"), where a function is given the [`Frame`](frame-selector.html#Frame "Frame") as an argument.
+Batch.apply(*func*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.apply)[](#static_frame.Batch.apply "Link to this definition")
+:   Apply a function to each [`Frame`](frame-selector.md#Frame "Frame") contained in this [`Frame`](frame-selector.md#Frame "Frame"), where a function is given the [`Frame`](frame-selector.md#Frame "Frame") as an argument.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), ('j', sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w'))))
@@ -274,8 +274,8 @@ Batch.apply(*func*, */*)[[source]](../_modules/static_frame/core/batch.html#Batc
 
     ```
 
-Batch.apply\_except(*func*, *exception*, */*)[[source]](../_modules/static_frame/core/batch.html#Batch.apply_except)[](#static_frame.Batch.apply_except "Link to this definition")
-:   Apply a function to each [`Frame`](frame-selector.html#Frame "Frame") contained in this [`Frame`](frame-selector.html#Frame "Frame"), where a function is given the [`Frame`](frame-selector.html#Frame "Frame") as an argument. Exceptions raised that matching the except argument will be silenced.
+Batch.apply\_except(*func*, *exception*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.apply_except)[](#static_frame.Batch.apply_except "Link to this definition")
+:   Apply a function to each [`Frame`](frame-selector.md#Frame "Frame") contained in this [`Frame`](frame-selector.md#Frame "Frame"), where a function is given the [`Frame`](frame-selector.md#Frame "Frame") as an argument. Exceptions raised that matching the except argument will be silenced.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame.from_fields(((10, 2, np.nan, 2), ('qrs ', 'XYZ', '', '123'), ('1517-01-01', '1517-04-01', 'NaT', '1517-04-01')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
@@ -290,8 +290,8 @@ Batch.apply\_except(*func*, *exception*, */*)[[source]](../_modules/static_frame
 
     ```
 
-Batch.apply\_items(*func*, */*)[[source]](../_modules/static_frame/core/batch.html#Batch.apply_items)[](#static_frame.Batch.apply_items "Link to this definition")
-:   Apply a function to each [`Frame`](frame-selector.html#Frame "Frame") contained in this [`Frame`](frame-selector.html#Frame "Frame"), where a function is given the pair of label, [`Frame`](frame-selector.html#Frame "Frame") as an argument.
+Batch.apply\_items(*func*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.apply_items)[](#static_frame.Batch.apply_items "Link to this definition")
+:   Apply a function to each [`Frame`](frame-selector.md#Frame "Frame") contained in this [`Frame`](frame-selector.md#Frame "Frame"), where a function is given the pair of label, [`Frame`](frame-selector.md#Frame "Frame") as an argument.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -309,8 +309,8 @@ Batch.apply\_items(*func*, */*)[[source]](../_modules/static_frame/core/batch.ht
 
     ```
 
-Batch.apply\_items\_except(*func*, */*, *\**, *exception*)[[source]](../_modules/static_frame/core/batch.html#Batch.apply_items_except)[](#static_frame.Batch.apply_items_except "Link to this definition")
-:   Apply a function to each [`Frame`](frame-selector.html#Frame "Frame") contained in this [`Frame`](frame-selector.html#Frame "Frame"), where a function is given the pair of label, [`Frame`](frame-selector.html#Frame "Frame") as an argument. Exceptions raised that matching the except argument will be silenced.
+Batch.apply\_items\_except(*func*, */*, *\**, *exception*)[[source]](../_modules/static_frame/core/batch.md#Batch.apply_items_except)[](#static_frame.Batch.apply_items_except "Link to this definition")
+:   Apply a function to each [`Frame`](frame-selector.md#Frame "Frame") contained in this [`Frame`](frame-selector.md#Frame "Frame"), where a function is given the pair of label, [`Frame`](frame-selector.md#Frame "Frame") as an argument. Exceptions raised that matching the except argument will be silenced.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame.from_fields(((10, 2, np.nan, 2), ('qrs ', 'XYZ', '', '123'), ('1517-01-01', '1517-04-01', 'NaT', '1517-04-01')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
@@ -329,7 +329,7 @@ Batch.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
 :   astype
     :   Return a new Batch with astype transformed.
 
-    InterfaceBatchAsType.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceBatchAsType.__getitem__)
+    InterfaceBatchAsType.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceBatchAsType.__getitem__)
     :   Selector of columns by label.
 
         Parameters:
@@ -355,7 +355,7 @@ Batch.astype(*dtype*)
 :   astype
     :   Return a new Batch with astype transformed.
 
-    InterfaceBatchAsType.\_\_call\_\_(*dtype*, */*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceBatchAsType.__call__)
+    InterfaceBatchAsType.\_\_call\_\_(*dtype*, */*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceBatchAsType.__call__)
     :   Apply a single `dtype` to all columns.
 
     ```
@@ -374,13 +374,13 @@ Batch.astype(*dtype*)
 
     ```
 
-Batch.clip(*\**, *lower=None*, *upper=None*, *axis=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.clip)[](#static_frame.Batch.clip "Link to this definition")
-:   Apply a clip operation to this [`Batch`](batch-selector.html#Batch "Batch"). Note that clip operations can be applied to object types, but cannot be applied to non-numerical objects (e.g., strings, None)
+Batch.clip(*\**, *lower=None*, *upper=None*, *axis=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.clip)[](#static_frame.Batch.clip "Link to this definition")
+:   Apply a clip operation to this [`Batch`](batch-selector.md#Batch "Batch"). Note that clip operations can be applied to object types, but cannot be applied to non-numerical objects (e.g., strings, None)
 
     Parameters:
-    :   * **lower** – value, [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame")
-        * **upper** – value, [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame")
-        * **axis** – required if `lower` or `upper` are given as a [`Series`](series-selector.html#Series "Series").
+    :   * **lower** – value, [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame")
+        * **upper** – value, [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame")
+        * **axis** – required if `lower` or `upper` are given as a [`Series`](series-selector.md#Series "Series").
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -398,7 +398,7 @@ Batch.clip(*\**, *lower=None*, *upper=None*, *axis=None*)[[source]](../_modules/
 
     ```
 
-Batch.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/batch.html#Batch.corr)[](#static_frame.Batch.corr "Link to this definition")
+Batch.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/batch.md#Batch.corr)[](#static_frame.Batch.corr "Link to this definition")
 :   Compute a correlation matrix.
 
     Parameters:
@@ -418,7 +418,7 @@ Batch.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/batch.html#Ba
 
     ```
 
-Batch.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.count)[](#static_frame.Batch.count "Link to this definition")
+Batch.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.count)[](#static_frame.Batch.count "Link to this definition")
 :   Apply count on contained Frames.
 
     ```
@@ -440,7 +440,7 @@ Batch.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[s
 
     ```
 
-Batch.cov(*\**, *axis=1*, *ddof=1*)[[source]](../_modules/static_frame/core/batch.html#Batch.cov)[](#static_frame.Batch.cov "Link to this definition")
+Batch.cov(*\**, *axis=1*, *ddof=1*)[[source]](../_modules/static_frame/core/batch.md#Batch.cov)[](#static_frame.Batch.cov "Link to this definition")
 :   Compute a covariance matrix.
 
     Parameters:
@@ -507,8 +507,8 @@ Batch.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.Batch.cumsum "Lin
 
     ```
 
-Batch.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/batch.html#Batch.drop_duplicated)[](#static_frame.Batch.drop_duplicated "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") with duplicated rows (axis 0) or columns (axis 1) removed. All values in the row or column are compared to determine duplication.
+Batch.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/batch.md#Batch.drop_duplicated)[](#static_frame.Batch.drop_duplicated "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") with duplicated rows (axis 0) or columns (axis 1) removed. All values in the row or column are compared to determine duplication.
 
     Parameters:
     :   * **axis** – Integer specifying axis, where 0 is rows and 1 is columns. Axis 0 is set by default.
@@ -528,8 +528,8 @@ Batch.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=Fa
 
     ```
 
-Batch.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/batch.html#Batch.dropfalsy)[](#static_frame.Batch.dropfalsy "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after removing rows (axis 0) or columns (axis 1) where any or all values are NA (NaN or None). The condition is determined by a NumPy ufunc that process the Boolean array returned by `isna()`; the default is `np.all`.
+Batch.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/batch.md#Batch.dropfalsy)[](#static_frame.Batch.dropfalsy "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after removing rows (axis 0) or columns (axis 1) where any or all values are NA (NaN or None). The condition is determined by a NumPy ufunc that process the Boolean array returned by `isna()`; the default is `np.all`.
 
     Parameters:
     :   * **axis** –
@@ -550,8 +550,8 @@ Batch.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_module
 
     ```
 
-Batch.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/batch.html#Batch.dropna)[](#static_frame.Batch.dropna "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after removing rows (axis 0) or columns (axis 1) where any or all values are NA (NaN or None). The condition is determined by a NumPy ufunc that process the Boolean array returned by `isna()`; the default is `np.all`.
+Batch.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/batch.md#Batch.dropna)[](#static_frame.Batch.dropna "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after removing rows (axis 0) or columns (axis 1) where any or all values are NA (NaN or None). The condition is determined by a NumPy ufunc that process the Boolean array returned by `isna()`; the default is `np.all`.
 
     Parameters:
     :   * **axis** –
@@ -573,8 +573,8 @@ Batch.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/s
 
     ```
 
-Batch.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/batch.html#Batch.duplicated)[](#static_frame.Batch.duplicated "Link to this definition")
-:   Return an axis-sized Boolean [`Series`](series-selector.html#Series "Series") that shows True for all rows (axis 0) or columns (axis 1) duplicated.
+Batch.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/batch.md#Batch.duplicated)[](#static_frame.Batch.duplicated "Link to this definition")
+:   Return an axis-sized Boolean [`Series`](series-selector.md#Series "Series") that shows True for all rows (axis 0) or columns (axis 1) duplicated.
 
     Parameters:
     :   * **axis** – Integer specifying axis, where 0 is rows and 1 is columns. Axis 0 is set by default.
@@ -602,8 +602,8 @@ Batch.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
 
     ```
 
-Batch.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillfalsy)[](#static_frame.Batch.fillfalsy "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling falsy values with the provided `value`.
+Batch.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy)[](#static_frame.Batch.fillfalsy "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling falsy values with the provided `value`.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame.from_fields(((10, 2, np.nan, 2), ('qrs ', 'XYZ', '', '123'), ('1517-01-01', '1517-04-01', 'NaT', '1517-04-01')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
@@ -622,8 +622,8 @@ Batch.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/batch.html
 
     ```
 
-Batch.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillfalsy_backward)[](#static_frame.Batch.fillfalsy_backward "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling backward falsy values with the first observed value.
+Batch.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy_backward)[](#static_frame.Batch.fillfalsy_backward "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling backward falsy values with the first observed value.
 
     Parameters:
     :   * **{limit}** –
@@ -647,8 +647,8 @@ Batch.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/
 
     ```
 
-Batch.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillfalsy_forward)[](#static_frame.Batch.fillfalsy_forward "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling forward falsy values with the last observed value.
+Batch.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy_forward)[](#static_frame.Batch.fillfalsy_forward "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling forward falsy values with the last observed value.
 
     Parameters:
     :   * **{limit}** –
@@ -672,8 +672,8 @@ Batch.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/s
 
     ```
 
-Batch.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillfalsy_leading)[](#static_frame.Batch.fillfalsy_leading "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling leading (and only leading) falsy values with the provided `value`.
+Batch.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy_leading)[](#static_frame.Batch.fillfalsy_leading "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling leading (and only leading) falsy values with the provided `value`.
 
     Parameters:
     :   * **{value}** –
@@ -697,8 +697,8 @@ Batch.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/sta
 
     ```
 
-Batch.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillfalsy_trailing)[](#static_frame.Batch.fillfalsy_trailing "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling trailing (and only trailing) falsy values with the provided `value`.
+Batch.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy_trailing)[](#static_frame.Batch.fillfalsy_trailing "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling trailing (and only trailing) falsy values with the provided `value`.
 
     Parameters:
     :   * **{value}** –
@@ -722,8 +722,8 @@ Batch.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/st
 
     ```
 
-Batch.fillna(*value*, */*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillna)[](#static_frame.Batch.fillna "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling null (NaN or None) with the provided `value`.
+Batch.fillna(*value*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna)[](#static_frame.Batch.fillna "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling null (NaN or None) with the provided `value`.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame.from_fields(((10, 2, np.nan, 2), ('qrs ', 'XYZ', '', '123'), ('1517-01-01', '1517-04-01', 'NaT', '1517-04-01')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
@@ -742,8 +742,8 @@ Batch.fillna(*value*, */*)[[source]](../_modules/static_frame/core/batch.html#Ba
 
     ```
 
-Batch.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillna_backward)[](#static_frame.Batch.fillna_backward "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling backward null (NaN or None) with the first observed value.
+Batch.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna_backward)[](#static_frame.Batch.fillna_backward "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling backward null (NaN or None) with the first observed value.
 
     Parameters:
     :   * **{limit}** –
@@ -767,8 +767,8 @@ Batch.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/sta
 
     ```
 
-Batch.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillna_forward)[](#static_frame.Batch.fillna_forward "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling forward null (NaN or None) with the last observed value.
+Batch.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna_forward)[](#static_frame.Batch.fillna_forward "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling forward null (NaN or None) with the last observed value.
 
     Parameters:
     :   * **{limit}** –
@@ -792,8 +792,8 @@ Batch.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/stat
 
     ```
 
-Batch.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillna_leading)[](#static_frame.Batch.fillna_leading "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling leading (and only leading) null (NaN or None) with the provided `value`.
+Batch.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna_leading)[](#static_frame.Batch.fillna_leading "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling leading (and only leading) null (NaN or None) with the provided `value`.
 
     Parameters:
     :   * **{value}** –
@@ -817,8 +817,8 @@ Batch.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static
 
     ```
 
-Batch.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.fillna_trailing)[](#static_frame.Batch.fillna_trailing "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") after filling trailing (and only trailing) null (NaN or None) with the provided `value`.
+Batch.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna_trailing)[](#static_frame.Batch.fillna_trailing "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") after filling trailing (and only trailing) null (NaN or None) with the provided `value`.
 
     Parameters:
     :   * **{value}** –
@@ -842,11 +842,11 @@ Batch.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/stati
 
     ```
 
-Batch.head(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.html#Batch.head)[](#static_frame.Batch.head "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") consisting only of the top elements as specified by `count`.
+Batch.head(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.head)[](#static_frame.Batch.head "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Batch`](batch-selector.html#Batch "Batch")
+    :   **count** – Number of elements to be returned from the top of the [`Batch`](batch-selector.md#Batch "Batch")
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -862,7 +862,7 @@ Batch.head(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.html#Ba
 
     ```
 
-Batch.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.iloc_max)[](#static_frame.Batch.iloc_max "Link to this definition")
+Batch.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.iloc_max)[](#static_frame.Batch.iloc_max "Link to this definition")
 :   Return the integer indices corresponding to the maximum values found.
 
     Parameters:
@@ -881,7 +881,7 @@ Batch.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_fram
 
     ```
 
-Batch.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.iloc_min)[](#static_frame.Batch.iloc_min "Link to this definition")
+Batch.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.iloc_min)[](#static_frame.Batch.iloc_min "Link to this definition")
 :   Return the integer indices corresponding to the minimum values found.
 
     Parameters:
@@ -900,8 +900,8 @@ Batch.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_fram
 
     ```
 
-Batch.isfalsy()[[source]](../_modules/static_frame/core/batch.html#Batch.isfalsy)[](#static_frame.Batch.isfalsy "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") with contained, same-indexed [`Frame`](frame-selector.html#Frame "Frame") indicating True which values are Falsy.
+Batch.isfalsy()[[source]](../_modules/static_frame/core/batch.md#Batch.isfalsy)[](#static_frame.Batch.isfalsy "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") with contained, same-indexed [`Frame`](frame-selector.md#Frame "Frame") indicating True which values are Falsy.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame.from_fields(((10, 2, np.nan, 2), ('qrs ', 'XYZ', '', '123'), ('1517-01-01', '1517-04-01', 'NaT', '1517-04-01')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
@@ -920,8 +920,8 @@ Batch.isfalsy()[[source]](../_modules/static_frame/core/batch.html#Batch.isfalsy
 
     ```
 
-Batch.isin(*other*, */*)[[source]](../_modules/static_frame/core/batch.html#Batch.isin)[](#static_frame.Batch.isin "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") as a same-sized Boolean [`Frame`](frame-selector.html#Frame "Frame") that shows if the same-positioned element is in the passed iterable.
+Batch.isin(*other*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.isin)[](#static_frame.Batch.isin "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") as a same-sized Boolean [`Frame`](frame-selector.md#Frame "Frame") that shows if the same-positioned element is in the passed iterable.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, 2, np.nan, np.nan), (8, 3, 8, np.nan), (1, np.nan, np.nan, np.nan)), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((np.nan, np.nan, 10, 2), (np.nan, 8, 3, 8), (np.nan, np.nan, np.nan, 1)), columns=('a', 'b', 'c'), name='y'))))
@@ -941,8 +941,8 @@ Batch.isin(*other*, */*)[[source]](../_modules/static_frame/core/batch.html#Batc
 
     ```
 
-Batch.isna()[[source]](../_modules/static_frame/core/batch.html#Batch.isna)[](#static_frame.Batch.isna "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") with contained, same-indexed [`Frame`](frame-selector.html#Frame "Frame") indicating True which values are NaN or None.
+Batch.isna()[[source]](../_modules/static_frame/core/batch.md#Batch.isna)[](#static_frame.Batch.isna "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") with contained, same-indexed [`Frame`](frame-selector.md#Frame "Frame") indicating True which values are NaN or None.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, 2, np.nan, np.nan), (8, 3, 8, np.nan), (1, np.nan, np.nan, np.nan)), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((np.nan, np.nan, 10, 2), (np.nan, 8, 3, 8), (np.nan, np.nan, np.nan, 1)), columns=('a', 'b', 'c'), name='y'))))
@@ -962,7 +962,7 @@ Batch.isna()[[source]](../_modules/static_frame/core/batch.html#Batch.isna)[]
 
     ```
 
-Batch.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.loc_max)[](#static_frame.Batch.loc_max "Link to this definition")
+Batch.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.loc_max)[](#static_frame.Batch.loc_max "Link to this definition")
 :   Return the labels corresponding to the maximum values found.
 
     Parameters:
@@ -981,7 +981,7 @@ Batch.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame
 
     ```
 
-Batch.loc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.loc_min)[](#static_frame.Batch.loc_min "Link to this definition")
+Batch.loc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.loc_min)[](#static_frame.Batch.loc_min "Link to this definition")
 :   Return the labels corresponding to the minimum value found.
 
     Parameters:
@@ -1076,8 +1076,8 @@ Batch.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Batch.mi
 
     ```
 
-Batch.notfalsy()[[source]](../_modules/static_frame/core/batch.html#Batch.notfalsy)[](#static_frame.Batch.notfalsy "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") with contained, same-indexed [`Frame`](frame-selector.html#Frame "Frame") indicating True which values are not Falsy.
+Batch.notfalsy()[[source]](../_modules/static_frame/core/batch.md#Batch.notfalsy)[](#static_frame.Batch.notfalsy "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") with contained, same-indexed [`Frame`](frame-selector.md#Frame "Frame") indicating True which values are not Falsy.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame.from_fields(((10, 2, np.nan, 2), ('qrs ', 'XYZ', '', '123'), ('1517-01-01', '1517-04-01', 'NaT', '1517-04-01')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
@@ -1096,8 +1096,8 @@ Batch.notfalsy()[[source]](../_modules/static_frame/core/batch.html#Batch.notfal
 
     ```
 
-Batch.notna()[[source]](../_modules/static_frame/core/batch.html#Batch.notna)[](#static_frame.Batch.notna "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") with contained, same-indexed [`Frame`](frame-selector.html#Frame "Frame") indicating True which values are not NaN or None.
+Batch.notna()[[source]](../_modules/static_frame/core/batch.md#Batch.notna)[](#static_frame.Batch.notna "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") with contained, same-indexed [`Frame`](frame-selector.md#Frame "Frame") indicating True which values are not NaN or None.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, 2, np.nan, np.nan), (8, 3, 8, np.nan), (1, np.nan, np.nan, np.nan)), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((np.nan, np.nan, 10, 2), (np.nan, 8, 3, 8), (np.nan, np.nan, np.nan, 1)), columns=('a', 'b', 'c'), name='y'))))
@@ -1136,7 +1136,7 @@ Batch.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_fr
 
     ```
 
-Batch.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.html#Batch.rank_dense)[](#static_frame.Batch.rank_dense "Link to this definition")
+Batch.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_dense)[](#static_frame.Batch.rank_dense "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((0, 0, 10, 2), (20, 18, -3, 18), (0, 0, 0, 1)), columns=('a', 'b', 'c'), name='x'))))
     >>> bt.rank_dense().to_frame()
@@ -1155,7 +1155,7 @@ Batch.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *f
 
     ```
 
-Batch.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.html#Batch.rank_max)[](#static_frame.Batch.rank_max "Link to this definition")
+Batch.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_max)[](#static_frame.Batch.rank_max "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((0, 0, 10, 2), (20, 18, -3, 18), (0, 0, 0, 1)), columns=('a', 'b', 'c'), name='x'))))
     >>> bt.rank_max().to_frame()
@@ -1174,7 +1174,7 @@ Batch.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
 
     ```
 
-Batch.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.html#Batch.rank_mean)[](#static_frame.Batch.rank_mean "Link to this definition")
+Batch.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_mean)[](#static_frame.Batch.rank_mean "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((0, 0, 10, 2), (20, 18, -3, 18), (0, 0, 0, 1)), columns=('a', 'b', 'c'), name='x'))))
     >>> bt.rank_mean().to_frame()
@@ -1193,7 +1193,7 @@ Batch.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fi
 
     ```
 
-Batch.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.html#Batch.rank_min)[](#static_frame.Batch.rank_min "Link to this definition")
+Batch.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_min)[](#static_frame.Batch.rank_min "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((0, 0, 10, 2), (20, 18, -3, 18), (0, 0, 0, 1)), columns=('a', 'b', 'c'), name='x'))))
     >>> bt.rank_min().to_frame()
@@ -1212,7 +1212,7 @@ Batch.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
 
     ```
 
-Batch.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.html#Batch.rank_ordinal)[](#static_frame.Batch.rank_ordinal "Link to this definition")
+Batch.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_ordinal)[](#static_frame.Batch.rank_ordinal "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((0, 0, 10, 2), (20, 18, -3, 18), (0, 0, 0, 1)), columns=('a', 'b', 'c'), name='x'))))
     >>> bt.rank_ordinal().to_frame()
@@ -1231,7 +1231,7 @@ Batch.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, 
 
     ```
 
-Batch.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index=False*, *own\_columns=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/batch.html#Batch.reindex)[](#static_frame.Batch.reindex "Link to this definition")
+Batch.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index=False*, *own\_columns=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/batch.md#Batch.reindex)[](#static_frame.Batch.reindex "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> bt.reindex(('q', 'p', 'a'), fill_value=sf.FillValueAuto).to_frame()
@@ -1248,7 +1248,7 @@ Batch.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index
 
     ```
 
-Batch.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.relabel)[](#static_frame.Batch.relabel "Link to this definition")
+Batch.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel)[](#static_frame.Batch.relabel "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame.from_fields(((10, 2, np.nan, 2), ('qrs ', 'XYZ', '', '123'), ('1517-01-01', '1517-04-01', 'NaT', '1517-04-01')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
     >>> bt.relabel({'q':'x', 'p':'y', 0:'x', 1:'y'}).to_frame()
@@ -1279,7 +1279,7 @@ Batch.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *co
 
     ```
 
-Batch.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static_frame/core/batch.html#Batch.relabel_flat)[](#static_frame.Batch.relabel_flat "Link to this definition")
+Batch.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel_flat)[](#static_frame.Batch.relabel_flat "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')), ('j', sf.Frame.from_fields(((23, 83, 19, 87), (True, True, False, False), ('2022-01-01', '2023-04-01', '2022-12-31', '2024-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
     >>> bt.relabel_flat(index=True).to_frame()
@@ -1298,7 +1298,7 @@ Batch.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static
 
     ```
 
-Batch.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.relabel_level_add)[](#static_frame.Batch.relabel_level_add "Link to this definition")
+Batch.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel_level_add)[](#static_frame.Batch.relabel_level_add "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> tuple(bt.relabel_level_add('I').values)
@@ -1318,7 +1318,7 @@ Batch.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructo
 
     ```
 
-Batch.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.relabel_level_drop)[](#static_frame.Batch.relabel_level_drop "Link to this definition")
+Batch.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel_level_drop)[](#static_frame.Batch.relabel_level_drop "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')), ('j', sf.Frame.from_fields(((23, 83, 19, 87), (True, True, False, False), ('2022-01-01', '2023-04-01', '2022-12-31', '2024-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
     >>> bt.iloc[:2].relabel_level_drop(1).to_frame()
@@ -1333,7 +1333,7 @@ Batch.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_
 
     ```
 
-Batch.relabel\_shift\_in(*key*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.html#Batch.relabel_shift_in)[](#static_frame.Batch.relabel_shift_in "Link to this definition")
+Batch.relabel\_shift\_in(*key*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel_shift_in)[](#static_frame.Batch.relabel_shift_in "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')), ('j', sf.Frame.from_fields(((23, 83, 19, 87), (True, True, False, False), ('2022-01-01', '2023-04-01', '2022-12-31', '2024-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
     >>> tuple(bt.relabel_shift_in('a').values)
@@ -1355,7 +1355,7 @@ Batch.relabel\_shift\_in(*key*, */*, *\**, *axis=0*)[[source]](../_modules/stati
 
     ```
 
-Batch.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *columns=<object object>*)[[source]](../_modules/static_frame/core/batch.html#Batch.rename)[](#static_frame.Batch.rename "Link to this definition")
+Batch.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *columns=<object object>*)[[source]](../_modules/static_frame/core/batch.md#Batch.rename)[](#static_frame.Batch.rename "Link to this definition")
 :   Return a new Batch with an updated name attribute.
 
     ```
@@ -1369,7 +1369,7 @@ Batch.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *column
 
     ```
 
-Batch.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_columns=False*)[[source]](../_modules/static_frame/core/batch.html#Batch.roll)[](#static_frame.Batch.roll "Link to this definition")
+Batch.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_columns=False*)[[source]](../_modules/static_frame/core/batch.md#Batch.roll)[](#static_frame.Batch.roll "Link to this definition")
 :   Roll columns and/or rows by positive or negative integer counts, where columns and/or rows roll around the axis.
 
     Parameters:
@@ -1392,7 +1392,7 @@ Batch.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_colum
 
     ```
 
-Batch.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.sample)[](#static_frame.Batch.sample "Link to this definition")
+Batch.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.sample)[](#static_frame.Batch.sample "Link to this definition")
 :   Apply sample on contained Frames.
 
     Parameters:
@@ -1414,7 +1414,7 @@ Batch.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modu
 
     ```
 
-Batch.shift(*index=0*, *columns=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.html#Batch.shift)[](#static_frame.Batch.shift "Link to this definition")
+Batch.shift(*index=0*, *columns=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.shift)[](#static_frame.Batch.shift "Link to this definition")
 :   Shift columns and/or rows by positive or negative integer counts, where columns and/or rows fall of the axis and introduce missing values, filled by fill\_value.
 
     ```
@@ -1433,8 +1433,8 @@ Batch.shift(*index=0*, *columns=0*, *fill\_value=nan*)[[source]](../_modules/sta
 
     ```
 
-Batch.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_modules/static_frame/core/batch.html#Batch.sort_columns)[](#static_frame.Batch.sort_columns "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") ordered by the sorted `columns`.
+Batch.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_modules/static_frame/core/batch.md#Batch.sort_columns)[](#static_frame.Batch.sort_columns "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") ordered by the sorted `columns`.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -1452,8 +1452,8 @@ Batch.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_mo
 
     ```
 
-Batch.sort\_index(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_modules/static_frame/core/batch.html#Batch.sort_index)[](#static_frame.Batch.sort_index "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained :obj;`Frame` ordered by the sorted `index`.
+Batch.sort\_index(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_modules/static_frame/core/batch.md#Batch.sort_index)[](#static_frame.Batch.sort_index "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained :obj;`Frame` ordered by the sorted `index`.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -1471,8 +1471,8 @@ Batch.sort\_index(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_modu
 
     ```
 
-Batch.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='mergesort'*)[[source]](../_modules/static_frame/core/batch.html#Batch.sort_values)[](#static_frame.Batch.sort_values "Link to this definition")
-:   Return a new [`Batch`](batch-selector.html#Batch "Batch") with contained [`Frame`](frame-selector.html#Frame "Frame") ordered by the sorted values, where values are given by single column or iterable of columns.
+Batch.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='mergesort'*)[[source]](../_modules/static_frame/core/batch.md#Batch.sort_values)[](#static_frame.Batch.sort_values "Link to this definition")
+:   Return a new [`Batch`](batch-selector.md#Batch "Batch") with contained [`Frame`](frame-selector.md#Frame "Frame") ordered by the sorted values, where values are given by single column or iterable of columns.
 
     Parameters:
     :   **label** – a label or iterable of keys.
@@ -1531,11 +1531,11 @@ Batch.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_fra
 
     ```
 
-Batch.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.html#Batch.tail)[](#static_frame.Batch.tail "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") consisting only of the bottom elements as specified by `count`.
+Batch.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.tail)[](#static_frame.Batch.tail "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Batch`](batch-selector.html#Batch "Batch")
+    :   **count** – Number of elements to be returned from the bottom of the [`Batch`](batch-selector.md#Batch "Batch")
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -1551,8 +1551,8 @@ Batch.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.html#Ba
 
     ```
 
-Batch.transpose()[[source]](../_modules/static_frame/core/batch.html#Batch.transpose)[](#static_frame.Batch.transpose "Link to this definition")
-:   Transpose. Return a [`Frame`](frame-selector.html#Frame "Frame") with `index` as `columns` and vice versa.
+Batch.transpose()[[source]](../_modules/static_frame/core/batch.md#Batch.transpose)[](#static_frame.Batch.transpose "Link to this definition")
+:   Transpose. Return a [`Frame`](frame-selector.md#Frame "Frame") with `index` as `columns` and vice versa.
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -1568,7 +1568,7 @@ Batch.transpose()[[source]](../_modules/static_frame/core/batch.html#Batch.trans
 
     ```
 
-Batch.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.unique)[](#static_frame.Batch.unique "Link to this definition")
+Batch.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.unique)[](#static_frame.Batch.unique "Link to this definition")
 :   Return a NumPy array of unqiue values. If the axis argument is provied, uniqueness is determined by columns or row.
 
     ```
@@ -1583,7 +1583,7 @@ Batch.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/batch.ht
 
     ```
 
-Batch.unset\_index(*\**, *names=()*, *consolidate\_blocks=False*, *columns\_constructors=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.unset_index)[](#static_frame.Batch.unset_index "Link to this definition")
+Batch.unset\_index(*\**, *names=()*, *consolidate\_blocks=False*, *columns\_constructors=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.unset_index)[](#static_frame.Batch.unset_index "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')), ('j', sf.Frame.from_fields(((23, 83, 19, 87), (True, True, False, False), ('2022-01-01', '2023-04-01', '2022-12-31', '2024-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'))))
     >>> bt.rename(index=('d', 'e')).unset_index().to_frame()
@@ -1621,10 +1621,10 @@ Batch.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_fram
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-attribute.html "Detail: Batch: Attribute")
-[Next](batch-dictionary_like.html "Detail: Batch: Dictionary-Like")
+[Previous](batch-attribute.md "Detail: Batch: Attribute")
+[Next](batch-dictionary_like.md "Detail: Batch: Dictionary-Like")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: StoreFilter: Display
 * [View page source](../_sources/api_overview/store_filter-display.rst.txt)
 
-[Previous](store_filter-attribute.html "Overview: StoreFilter: Attribute")
-[Next](index_auto_factory-constructor.html "Overview: IndexAutoFactory: Constructor")
+[Previous](store_filter-attribute.md "Overview: StoreFilter: Attribute")
+[Next](index_auto_factory-constructor.md "Overview: IndexAutoFactory: Constructor")
 
 ---
 
 # Overview: StoreFilter: Display[](#overview-storefilter-display "Link to this heading")
 
-[Detail: StoreFilter: Display](../api_detail/store_filter-display.html#api-detail-storefilter-display)
+[Detail: StoreFilter: Display](../api_detail/store_filter-display.md#api-detail-storefilter-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/store_filter-display.html#api-sig-storefilter-interface) | [`StoreFilter.interface`](../api_detail/store_filter-display.html#StoreFilter.interface "StoreFilter.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/store_filter-display.html#api-sig-storefilter-repr) | `StoreFilter.__repr__()` | Return repr(self). |
-| [Detail](../api_detail/store_filter-display.html#api-sig-storefilter-str) | `StoreFilter.__str__()` | Return str(self). |
+| [Detail](../api_detail/store_filter-display.md#api-sig-storefilter-interface) | [`StoreFilter.interface`](../api_detail/store_filter-display.md#StoreFilter.interface "StoreFilter.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/store_filter-display.md#api-sig-storefilter-repr) | `StoreFilter.__repr__()` | Return repr(self). |
+| [Detail](../api_detail/store_filter-display.md#api-sig-storefilter-str) | `StoreFilter.__str__()` | Return str(self). |
 
-[StoreFilter](store_filter.html#api-overview-storefilter): [Constructor](store_filter-constructor.html#api-overview-storefilter-constructor) | [Exporter](store_filter-exporter.html#api-overview-storefilter-exporter) | [Attribute](store_filter-attribute.html#api-overview-storefilter-attribute) | [Display](#api-overview-storefilter-display)
+[StoreFilter](store_filter.md#api-overview-storefilter): [Constructor](store_filter-constructor.md#api-overview-storefilter-constructor) | [Exporter](store_filter-exporter.md#api-overview-storefilter-exporter) | [Attribute](store_filter-attribute.md#api-overview-storefilter-attribute) | [Display](#api-overview-storefilter-display)
 
-[Previous](store_filter-attribute.html "Overview: StoreFilter: Attribute")
-[Next](index_auto_factory-constructor.html "Overview: IndexAutoFactory: Constructor")
+[Previous](store_filter-attribute.md "Overview: StoreFilter: Attribute")
+[Next](index_auto_factory-constructor.md "Overview: IndexAutoFactory: Constructor")
 
 ---
 

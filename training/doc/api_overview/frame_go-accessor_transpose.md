@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: FrameGO: Accessor Transpose
 * [View page source](../_sources/api_overview/frame_go-accessor_transpose.rst.txt)
 
-[Previous](frame_go-accessor_string.html "Overview: FrameGO: Accessor String")
-[Next](frame_go-accessor_fill_value.html "Overview: FrameGO: Accessor Fill Value")
+[Previous](frame_go-accessor_string.md "Overview: FrameGO: Accessor String")
+[Next](frame_go-accessor_fill_value.md "Overview: FrameGO: Accessor Fill Value")
 
 ---
 
 # Overview: FrameGO: Accessor Transpose[](#overview-framego-accessor-transpose "Link to this heading")
 
-[Detail: FrameGO: Accessor Transpose](../api_detail/frame_go-accessor_transpose.html#api-detail-framego-accessor-transpose)
+[Detail: FrameGO: Accessor Transpose](../api_detail/frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-via-fill-value) | `FrameGO.via_T.via_fill_value(fill_value)` | Interface for using binary operators and methods with a pre-defined fill value. |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-add) | `FrameGO.via_T.__add__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-sub) | `FrameGO.via_T.__sub__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-mul) | `FrameGO.via_T.__mul__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-truediv) | `FrameGO.via_T.__truediv__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-floordiv) | `FrameGO.via_T.__floordiv__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-mod) | `FrameGO.via_T.__mod__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-pow) | `FrameGO.via_T.__pow__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-lshift) | `FrameGO.via_T.__lshift__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-rshift) | `FrameGO.via_T.__rshift__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-and) | `FrameGO.via_T.__and__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-xor) | `FrameGO.via_T.__xor__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-or) | `FrameGO.via_T.__or__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-lt) | `FrameGO.via_T.__lt__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-le) | `FrameGO.via_T.__le__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-eq) | `FrameGO.via_T.__eq__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-ne) | `FrameGO.via_T.__ne__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-gt) | `FrameGO.via_T.__gt__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-ge) | `FrameGO.via_T.__ge__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-radd) | `FrameGO.via_T.__radd__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-rsub) | `FrameGO.via_T.__rsub__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-rmul) | `FrameGO.via_T.__rmul__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-rtruediv) | `FrameGO.via_T.__rtruediv__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_transpose.html#api-sig-framego-via-t-rfloordiv) | `FrameGO.via_T.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-via-fill-value) | `FrameGO.via_T.via_fill_value(fill_value)` | Interface for using binary operators and methods with a pre-defined fill value. |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-add) | `FrameGO.via_T.__add__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-sub) | `FrameGO.via_T.__sub__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-mul) | `FrameGO.via_T.__mul__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-truediv) | `FrameGO.via_T.__truediv__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-floordiv) | `FrameGO.via_T.__floordiv__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-mod) | `FrameGO.via_T.__mod__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-pow) | `FrameGO.via_T.__pow__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-lshift) | `FrameGO.via_T.__lshift__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-rshift) | `FrameGO.via_T.__rshift__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-and) | `FrameGO.via_T.__and__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-xor) | `FrameGO.via_T.__xor__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-or) | `FrameGO.via_T.__or__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-lt) | `FrameGO.via_T.__lt__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-le) | `FrameGO.via_T.__le__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-eq) | `FrameGO.via_T.__eq__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-ne) | `FrameGO.via_T.__ne__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-gt) | `FrameGO.via_T.__gt__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-ge) | `FrameGO.via_T.__ge__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-radd) | `FrameGO.via_T.__radd__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-rsub) | `FrameGO.via_T.__rsub__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-rmul) | `FrameGO.via_T.__rmul__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-rtruediv) | `FrameGO.via_T.__rtruediv__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_transpose.md#api-sig-framego-via-t-rfloordiv) | `FrameGO.via_T.__rfloordiv__(other)` |  |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-accessor_string.html "Overview: FrameGO: Accessor String")
-[Next](frame_go-accessor_fill_value.html "Overview: FrameGO: Accessor Fill Value")
+[Previous](frame_go-accessor_string.md "Overview: FrameGO: Accessor String")
+[Next](frame_go-accessor_fill_value.md "Overview: FrameGO: Accessor Fill Value")
 
 ---
 

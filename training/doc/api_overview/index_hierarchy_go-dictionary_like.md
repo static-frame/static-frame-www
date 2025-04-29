@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexHierarchyGO: Dictionary-Like
 * [View page source](../_sources/api_overview/index_hierarchy_go-dictionary_like.rst.txt)
 
-[Previous](index_hierarchy_go-method.html "Overview: IndexHierarchyGO: Method")
-[Next](index_hierarchy_go-display.html "Overview: IndexHierarchyGO: Display")
+[Previous](index_hierarchy_go-method.md "Overview: IndexHierarchyGO: Method")
+[Next](index_hierarchy_go-display.md "Overview: IndexHierarchyGO: Display")
 
 ---
 
 # Overview: IndexHierarchyGO: Dictionary-Like[](#overview-indexhierarchygo-dictionary-like "Link to this heading")
 
-[Detail: IndexHierarchyGO: Dictionary-Like](../api_detail/index_hierarchy_go-dictionary_like.html#api-detail-indexhierarchygo-dictionary-like)
+[Detail: IndexHierarchyGO: Dictionary-Like](../api_detail/index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy_go-dictionary_like.html#api-sig-indexhierarchygo-contains) | `IndexHierarchyGO.__contains__(value)` | Determine if a label value is contained in this Index. |
-| [Detail](../api_detail/index_hierarchy_go-dictionary_like.html#api-sig-indexhierarchygo-iter) | `IndexHierarchyGO.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index_hierarchy_go-dictionary_like.html#api-sig-indexhierarchygo-reversed) | `IndexHierarchyGO.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index_hierarchy_go-dictionary_like.html#api-sig-indexhierarchygo-values) | `IndexHierarchyGO.values` | A 2D NumPy array of all values in the IndexHierarchy. As this is a single array,… |
+| [Detail](../api_detail/index_hierarchy_go-dictionary_like.md#api-sig-indexhierarchygo-contains) | `IndexHierarchyGO.__contains__(value)` | Determine if a label value is contained in this Index. |
+| [Detail](../api_detail/index_hierarchy_go-dictionary_like.md#api-sig-indexhierarchygo-iter) | `IndexHierarchyGO.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index_hierarchy_go-dictionary_like.md#api-sig-indexhierarchygo-reversed) | `IndexHierarchyGO.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index_hierarchy_go-dictionary_like.md#api-sig-indexhierarchygo-values) | `IndexHierarchyGO.values` | A 2D NumPy array of all values in the IndexHierarchy. As this is a single array,… |
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | [Dictionary-Like](#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-overview-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | [Dictionary-Like](#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-overview-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-method.html "Overview: IndexHierarchyGO: Method")
-[Next](index_hierarchy_go-display.html "Overview: IndexHierarchyGO: Display")
+[Previous](index_hierarchy_go-method.md "Overview: IndexHierarchyGO: Method")
+[Next](index_hierarchy_go-display.md "Overview: IndexHierarchyGO: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexGO: Accessor Values
 * [View page source](../_sources/api_detail/index_go-accessor_values.rst.txt)
 
-[Previous](index_go-operator_unary.html "Detail: IndexGO: Operator Unary")
-[Next](index_go-accessor_datetime.html "Detail: IndexGO: Accessor Datetime")
+[Previous](index_go-operator_unary.md "Detail: IndexGO: Operator Unary")
+[Next](index_go-accessor_datetime.md "Detail: IndexGO: Accessor Datetime")
 
 ---
 
 # Detail: IndexGO: Accessor Values[](#detail-indexgo-accessor-values "Link to this heading")
 
-[Overview: IndexGO: Accessor Values](../api_overview/index_go-accessor_values.html#api-overview-indexgo-accessor-values)
+[Overview: IndexGO: Accessor Values](../api_overview/index_go-accessor_values.md#api-overview-indexgo-accessor-values)
 
 IndexGO.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
 :   IndexGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.apply)
+    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.apply)
 
     ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
@@ -173,7 +173,7 @@ IndexGO.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwarg
 :   IndexGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__array_ufunc__)
+    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__array_ufunc__)
     :   Support for applying NumPy functions directly on containers.
 
     ```
@@ -199,7 +199,7 @@ IndexGO.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*, *
 :   IndexGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__call__)
+    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__call__)
     :   Parameters:
         :   * **consolidate\_blocks** – Group adjacent same-typed arrays into 2D arrays.
             * **unify\_blocks** – Group all arrays into single array, re-typing to an appropriate dtype.
@@ -224,10 +224,10 @@ IndexGO.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*, *
 
     ```
 
-[IndexGO](index_go.html#api-detail-indexgo): [Constructor](index_go-constructor.html#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.html#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.html#api-detail-indexgo-attribute) | [Method](index_go-method.html#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-detail-indexgo-dictionary-like) | [Display](index_go-display.html#api-detail-indexgo-display) | [Selector](index_go-selector.html#api-detail-indexgo-selector) | [Iterator](index_go-iterator.html#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-detail-indexgo-operator-unary) | [Accessor Values](#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-detail-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)
 
-[Previous](index_go-operator_unary.html "Detail: IndexGO: Operator Unary")
-[Next](index_go-accessor_datetime.html "Detail: IndexGO: Accessor Datetime")
+[Previous](index_go-operator_unary.md "Detail: IndexGO: Operator Unary")
+[Next](index_go-accessor_datetime.md "Detail: IndexGO: Accessor Datetime")
 
 ---
 

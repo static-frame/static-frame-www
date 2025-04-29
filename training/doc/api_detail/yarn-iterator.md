@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Yarn: Iterator
 * [View page source](../_sources/api_detail/yarn-iterator.rst.txt)
 
-[Previous](yarn-selector.html "Detail: Yarn: Selector")
-[Next](yarn-accessor_hashlib.html "Detail: Yarn: Accessor Hashlib")
+[Previous](yarn-selector.md "Detail: Yarn: Selector")
+[Next](yarn-accessor_hashlib.md "Detail: Yarn: Accessor Hashlib")
 
 ---
 
 # Detail: Yarn: Iterator[](#detail-yarn-iterator "Link to this heading")
 
-[Overview: Yarn: Iterator](../api_overview/yarn-iterator.html#api-overview-yarn-iterator)
+[Overview: Yarn: Iterator](../api_overview/yarn-iterator.md#api-overview-yarn-iterator)
 
 Yarn.iter\_element
 :   iter\_element
@@ -193,7 +193,7 @@ Yarn.iter\_element(*).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, 
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -227,7 +227,7 @@ Yarn.iter\_element(*).apply\_iter(func*)
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -257,7 +257,7 @@ Yarn.iter\_element(*).apply\_iter\_items(func*)
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -287,7 +287,7 @@ Yarn.iter\_element(*).apply\_pool(func*, *\**, *dtype*, *name*, *index\_construc
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -372,7 +372,7 @@ Yarn.iter\_element\_items(*).apply(func*, *\**, *dtype*, *name*, *index\_constru
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -406,7 +406,7 @@ Yarn.iter\_element\_items(*).apply\_iter(func*)
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -436,7 +436,7 @@ Yarn.iter\_element\_items(*).apply\_iter\_items(func*)
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -466,7 +466,7 @@ Yarn.iter\_element\_items(*).apply\_pool(func*, *\**, *dtype*, *name*, *index\_c
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -502,10 +502,10 @@ Yarn.iter\_element\_items(*).apply\_pool(func*, *\**, *dtype*, *name*, *index\_c
 
     ```
 
-[Yarn](yarn.html#api-detail-yarn): [Constructor](yarn-constructor.html#api-detail-yarn-constructor) | [Exporter](yarn-exporter.html#api-detail-yarn-exporter) | [Attribute](yarn-attribute.html#api-detail-yarn-attribute) | [Method](yarn-method.html#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like) | [Display](yarn-display.html#api-detail-yarn-display) | [Selector](yarn-selector.html#api-detail-yarn-selector) | [Iterator](#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
-[Previous](yarn-selector.html "Detail: Yarn: Selector")
-[Next](yarn-accessor_hashlib.html "Detail: Yarn: Accessor Hashlib")
+[Previous](yarn-selector.md "Detail: Yarn: Selector")
+[Next](yarn-accessor_hashlib.md "Detail: Yarn: Accessor Hashlib")
 
 ---
 

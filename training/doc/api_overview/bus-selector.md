@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Bus: Selector
 * [View page source](../_sources/api_overview/bus-selector.rst.txt)
 
-[Previous](bus-display.html "Overview: Bus: Display")
-[Next](bus-iterator.html "Overview: Bus: Iterator")
+[Previous](bus-display.md "Overview: Bus: Display")
+[Next](bus-iterator.md "Overview: Bus: Iterator")
 
 ---
 
 # Overview: Bus: Selector[](#overview-bus-selector "Link to this heading")
 
-[Detail: Bus: Selector](../api_detail/bus-selector.html#api-detail-bus-selector)
+[Detail: Bus: Selector](../api_detail/bus-selector.md#api-detail-bus-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-selector.html#api-sig-bus-drop) | `Bus.drop[key]` | Label-based selection. |
-| [Detail](../api_detail/bus-selector.html#api-sig-bus-drop-iloc) | `Bus.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/bus-selector.html#api-sig-bus-drop-loc) | `Bus.drop.loc[key]` |  |
-| [Detail](../api_detail/bus-selector.html#api-sig-bus) | `Bus[key]` | Selector of values by label. Args: key: A loc selector, either a label, a list o… |
-| [Detail](../api_detail/bus-selector.html#api-sig-bus-iloc) | `Bus.iloc[key]` |  |
-| [Detail](../api_detail/bus-selector.html#api-sig-bus-loc) | `Bus.loc[key]` |  |
+| [Detail](../api_detail/bus-selector.md#api-sig-bus-drop) | `Bus.drop[key]` | Label-based selection. |
+| [Detail](../api_detail/bus-selector.md#api-sig-bus-drop-iloc) | `Bus.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/bus-selector.md#api-sig-bus-drop-loc) | `Bus.drop.loc[key]` |  |
+| [Detail](../api_detail/bus-selector.md#api-sig-bus) | `Bus[key]` | Selector of values by label. Args: key: A loc selector, either a label, a list o… |
+| [Detail](../api_detail/bus-selector.md#api-sig-bus-iloc) | `Bus.iloc[key]` |  |
+| [Detail](../api_detail/bus-selector.md#api-sig-bus-loc) | `Bus.loc[key]` |  |
 
-[Bus](bus.html#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](bus-display.html "Overview: Bus: Display")
-[Next](bus-iterator.html "Overview: Bus: Iterator")
+[Previous](bus-display.md "Overview: Bus: Display")
+[Next](bus-iterator.md "Overview: Bus: Iterator")
 
 ---
 

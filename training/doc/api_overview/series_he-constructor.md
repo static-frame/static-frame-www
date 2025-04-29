@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Overview: SeriesHE: Constructor
 * [View page source](../_sources/api_overview/series_he-constructor.rst.txt)
 
-[Previous](series-accessor_type_clinic.html "Overview: Series: Accessor Type Clinic")
-[Next](series_he-exporter.html "Overview: SeriesHE: Exporter")
+[Previous](series-accessor_type_clinic.md "Overview: Series: Accessor Type Clinic")
+[Next](series_he-exporter.md "Overview: SeriesHE: Exporter")
 
 ---
 
 # Overview: SeriesHE: Constructor[](#overview-serieshe-constructor "Link to this heading")
 
-[Detail: SeriesHE: Constructor](../api_detail/series_he-constructor.html#api-detail-serieshe-constructor)
+[Detail: SeriesHE: Constructor](../api_detail/series_he-constructor.md#api-detail-serieshe-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series_he-constructor.html#api-sig-serieshe-init) | `SeriesHE.__init__(values, *, index, name, dtype, index_constructor, own_index)` | Initializer. Args: values: An iterable of values to be aligned with the supplied… |
-| [Detail](../api_detail/series_he-constructor.html#api-sig-serieshe-from-concat) | `SeriesHE.from_concat(containers, *, index, index_constructor, name)` | Concatenate multiple Series into a new Series. Args: containers: Iterable of Ser… |
-| [Detail](../api_detail/series_he-constructor.html#api-sig-serieshe-from-concat-items) | `SeriesHE.from_concat_items(items, *, name, index_constructor)` | Produce a Series with a hierarchical index from an iterable of pairs of labels,… |
-| [Detail](../api_detail/series_he-constructor.html#api-sig-serieshe-from-delimited) | `SeriesHE.from_delimited(delimited, *, delimiter, index, dtype, name, index_constructor, skip_initial_space, quoting, quote_char, quote_double, escape_char, thousands_char, decimal_char, own_index)` | Series construction from a delimited string. Args: dtype: if None, dtype will be… |
-| [Detail](../api_detail/series_he-constructor.html#api-sig-serieshe-from-dict) | `SeriesHE.from_dict(mapping, *, dtype, name, index_constructor)` | Series construction from a dictionary, where the first pair value is the index a… |
-| [Detail](../api_detail/series_he-constructor.html#api-sig-serieshe-from-element) | `SeriesHE.from_element(element, *, index, dtype, name, index_constructor, own_index)` | Create a Series from a single element. The size of the resultant container will… |
-| [Detail](../api_detail/series_he-constructor.html#api-sig-serieshe-from-items) | `SeriesHE.from_items(pairs, *, dtype, name, index_constructor)` | Series construction from an iterator or generator of pairs, where the first pair… |
-| [Detail](../api_detail/series_he-constructor.html#api-sig-serieshe-from-overlay) | `SeriesHE.from_overlay(containers, *, index, union, name, func, fill_value)` | Return a new Series made by overlaying containers, aligned values are filled wit… |
-| [Detail](../api_detail/series_he-constructor.html#api-sig-serieshe-from-pandas) | `SeriesHE.from_pandas(value, *, index, index_constructor, name, own_data)` | Given a Pandas Series, return a Series. Args: value: Pandas Series. \* index\_cons… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-init) | `SeriesHE.__init__(values, *, index, name, dtype, index_constructor, own_index)` | Initializer. Args: values: An iterable of values to be aligned with the supplied… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-concat) | `SeriesHE.from_concat(containers, *, index, index_constructor, name)` | Concatenate multiple Series into a new Series. Args: containers: Iterable of Ser… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-concat-items) | `SeriesHE.from_concat_items(items, *, name, index_constructor)` | Produce a Series with a hierarchical index from an iterable of pairs of labels,… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-delimited) | `SeriesHE.from_delimited(delimited, *, delimiter, index, dtype, name, index_constructor, skip_initial_space, quoting, quote_char, quote_double, escape_char, thousands_char, decimal_char, own_index)` | Series construction from a delimited string. Args: dtype: if None, dtype will be… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-dict) | `SeriesHE.from_dict(mapping, *, dtype, name, index_constructor)` | Series construction from a dictionary, where the first pair value is the index a… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-element) | `SeriesHE.from_element(element, *, index, dtype, name, index_constructor, own_index)` | Create a Series from a single element. The size of the resultant container will… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-items) | `SeriesHE.from_items(pairs, *, dtype, name, index_constructor)` | Series construction from an iterator or generator of pairs, where the first pair… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-overlay) | `SeriesHE.from_overlay(containers, *, index, union, name, func, fill_value)` | Return a new Series made by overlaying containers, aligned values are filled wit… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-pandas) | `SeriesHE.from_pandas(value, *, index, index_constructor, name, own_data)` | Given a Pandas Series, return a Series. Args: value: Pandas Series. \* index\_cons… |
 
-[SeriesHE](series_he.html#api-overview-serieshe): [Constructor](#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | [Method](series_he-method.html#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-overview-serieshe-dictionary-like) | [Display](series_he-display.html#api-overview-serieshe-display) | [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | [Selector](series_he-selector.html#api-overview-serieshe-selector) | [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-overview-serieshe): [Constructor](#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | [Method](series_he-method.md#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-overview-serieshe-dictionary-like) | [Display](series_he-display.md#api-overview-serieshe-display) | [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | [Selector](series_he-selector.md#api-overview-serieshe-selector) | [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-accessor_type_clinic.html "Overview: Series: Accessor Type Clinic")
-[Next](series_he-exporter.html "Overview: SeriesHE: Exporter")
+[Previous](series-accessor_type_clinic.md "Overview: Series: Accessor Type Clinic")
+[Next](series_he-exporter.md "Overview: SeriesHE: Exporter")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: TypeClinic: Method
 * [View page source](../_sources/api_overview/type_clinic-method.rst.txt)
 
-[Previous](type_clinic-exporter.html "Overview: TypeClinic: Exporter")
-[Next](type_clinic-display.html "Overview: TypeClinic: Display")
+[Previous](type_clinic-exporter.md "Overview: TypeClinic: Exporter")
+[Next](type_clinic-display.md "Overview: TypeClinic: Display")
 
 ---
 
 # Overview: TypeClinic: Method[](#overview-typeclinic-method "Link to this heading")
 
-[Detail: TypeClinic: Method](../api_detail/type_clinic-method.html#api-detail-typeclinic-method)
+[Detail: TypeClinic: Method](../api_detail/type_clinic-method.md#api-detail-typeclinic-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/type_clinic-method.html#api-sig-typeclinic-call) | `TypeClinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/type_clinic-method.html#api-sig-typeclinic-check) | `TypeClinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/type_clinic-method.html#api-sig-typeclinic-warn) | `TypeClinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/type_clinic-method.md#api-sig-typeclinic-call) | `TypeClinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/type_clinic-method.md#api-sig-typeclinic-check) | `TypeClinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/type_clinic-method.md#api-sig-typeclinic-warn) | `TypeClinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
 
-[TypeClinic](type_clinic.html#api-overview-typeclinic): [Constructor](type_clinic-constructor.html#api-overview-typeclinic-constructor) | [Exporter](type_clinic-exporter.html#api-overview-typeclinic-exporter) | [Method](#api-overview-typeclinic-method) | [Display](type_clinic-display.html#api-overview-typeclinic-display)
+[TypeClinic](type_clinic.md#api-overview-typeclinic): [Constructor](type_clinic-constructor.md#api-overview-typeclinic-constructor) | [Exporter](type_clinic-exporter.md#api-overview-typeclinic-exporter) | [Method](#api-overview-typeclinic-method) | [Display](type_clinic-display.md#api-overview-typeclinic-display)
 
-[Previous](type_clinic-exporter.html "Overview: TypeClinic: Exporter")
-[Next](type_clinic-display.html "Overview: TypeClinic: Display")
+[Previous](type_clinic-exporter.md "Overview: TypeClinic: Exporter")
+[Next](type_clinic-display.md "Overview: TypeClinic: Display")
 
 ---
 

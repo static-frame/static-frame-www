@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexYearGO: Operator Binary
 * [View page source](../_sources/api_overview/index_year_go-operator_binary.rst.txt)
 
-[Previous](index_year_go-iterator.html "Overview: IndexYearGO: Iterator")
-[Next](index_year_go-operator_unary.html "Overview: IndexYearGO: Operator Unary")
+[Previous](index_year_go-iterator.md "Overview: IndexYearGO: Iterator")
+[Next](index_year_go-operator_unary.md "Overview: IndexYearGO: Operator Unary")
 
 ---
 
 # Overview: IndexYearGO: Operator Binary[](#overview-indexyeargo-operator-binary "Link to this heading")
 
-[Detail: IndexYearGO: Operator Binary](../api_detail/index_year_go-operator_binary.html#api-detail-indexyeargo-operator-binary)
+[Detail: IndexYearGO: Operator Binary](../api_detail/index_year_go-operator_binary.md#api-detail-indexyeargo-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-add) | `IndexYearGO.__add__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-and) | `IndexYearGO.__and__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-eq) | `IndexYearGO.__eq__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-floordiv) | `IndexYearGO.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-ge) | `IndexYearGO.__ge__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-gt) | `IndexYearGO.__gt__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-le) | `IndexYearGO.__le__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-lt) | `IndexYearGO.__lt__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-matmul) | `IndexYearGO.__matmul__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-mod) | `IndexYearGO.__mod__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-mul) | `IndexYearGO.__mul__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-ne) | `IndexYearGO.__ne__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-or) | `IndexYearGO.__or__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-pow) | `IndexYearGO.__pow__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-radd) | `IndexYearGO.__radd__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-rfloordiv) | `IndexYearGO.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-rmatmul) | `IndexYearGO.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-rmul) | `IndexYearGO.__rmul__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-rshift) | `IndexYearGO.__rshift__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-rsub) | `IndexYearGO.__rsub__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-rtruediv) | `IndexYearGO.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-sub) | `IndexYearGO.__sub__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-truediv) | `IndexYearGO.__truediv__(other)` |  |
-| [Detail](../api_detail/index_year_go-operator_binary.html#api-sig-indexyeargo-xor) | `IndexYearGO.__xor__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-add) | `IndexYearGO.__add__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-and) | `IndexYearGO.__and__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-eq) | `IndexYearGO.__eq__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-floordiv) | `IndexYearGO.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-ge) | `IndexYearGO.__ge__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-gt) | `IndexYearGO.__gt__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-le) | `IndexYearGO.__le__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-lt) | `IndexYearGO.__lt__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-matmul) | `IndexYearGO.__matmul__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-mod) | `IndexYearGO.__mod__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-mul) | `IndexYearGO.__mul__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-ne) | `IndexYearGO.__ne__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-or) | `IndexYearGO.__or__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-pow) | `IndexYearGO.__pow__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-radd) | `IndexYearGO.__radd__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-rfloordiv) | `IndexYearGO.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-rmatmul) | `IndexYearGO.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-rmul) | `IndexYearGO.__rmul__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-rshift) | `IndexYearGO.__rshift__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-rsub) | `IndexYearGO.__rsub__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-rtruediv) | `IndexYearGO.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-sub) | `IndexYearGO.__sub__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-truediv) | `IndexYearGO.__truediv__(other)` |  |
+| [Detail](../api_detail/index_year_go-operator_binary.md#api-sig-indexyeargo-xor) | `IndexYearGO.__xor__(other)` |  |
 
-[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](index_year_go-constructor.html#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.html#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-overview-indexyeargo-iterator) | [Operator Binary](#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-overview-indexyeargo): [Constructor](index_year_go-constructor.md#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.md#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.md#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-overview-indexyeargo-iterator) | [Operator Binary](#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-overview-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-iterator.html "Overview: IndexYearGO: Iterator")
-[Next](index_year_go-operator_unary.html "Overview: IndexYearGO: Operator Unary")
+[Previous](index_year_go-iterator.md "Overview: IndexYearGO: Iterator")
+[Next](index_year_go-operator_unary.md "Overview: IndexYearGO: Operator Unary")
 
 ---
 

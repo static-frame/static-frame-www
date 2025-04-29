@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: NPZ: Attribute
 * [View page source](../_sources/api_overview/npz-attribute.rst.txt)
 
-[Previous](npz-constructor.html "Overview: NPZ: Constructor")
-[Next](npz-method.html "Overview: NPZ: Method")
+[Previous](npz-constructor.md "Overview: NPZ: Constructor")
+[Next](npz-method.md "Overview: NPZ: Method")
 
 ---
 
 # Overview: NPZ: Attribute[](#overview-npz-attribute "Link to this heading")
 
-[Detail: NPZ: Attribute](../api_detail/npz-attribute.html#api-detail-npz-attribute)
+[Detail: NPZ: Attribute](../api_detail/npz-attribute.md#api-detail-npz-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/npz-attribute.html#api-sig-npz-contents) | `NPZ.contents` | Return a Frame indicating name, dtype, shape, and bytes, of Archive components. |
-| [Detail](../api_detail/npz-attribute.html#api-sig-npz-nbytes) | `NPZ.nbytes` | Return numer of bytes stored in this archive. |
+| [Detail](../api_detail/npz-attribute.md#api-sig-npz-contents) | `NPZ.contents` | Return a Frame indicating name, dtype, shape, and bytes, of Archive components. |
+| [Detail](../api_detail/npz-attribute.md#api-sig-npz-nbytes) | `NPZ.nbytes` | Return numer of bytes stored in this archive. |
 
-[NPZ](npz.html#api-overview-npz): [Constructor](npz-constructor.html#api-overview-npz-constructor) | [Attribute](#api-overview-npz-attribute) | [Method](npz-method.html#api-overview-npz-method) | [Display](npz-display.html#api-overview-npz-display)
+[NPZ](npz.md#api-overview-npz): [Constructor](npz-constructor.md#api-overview-npz-constructor) | [Attribute](#api-overview-npz-attribute) | [Method](npz-method.md#api-overview-npz-method) | [Display](npz-display.md#api-overview-npz-display)
 
-[Previous](npz-constructor.html "Overview: NPZ: Constructor")
-[Next](npz-method.html "Overview: NPZ: Method")
+[Previous](npz-constructor.md "Overview: NPZ: Constructor")
+[Next](npz-method.md "Overview: NPZ: Method")
 
 ---
 

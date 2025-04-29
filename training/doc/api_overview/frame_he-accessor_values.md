@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: FrameHE: Accessor Values
 * [View page source](../_sources/api_overview/frame_he-accessor_values.rst.txt)
 
-[Previous](frame_he-operator_unary.html "Overview: FrameHE: Operator Unary")
-[Next](frame_he-accessor_datetime.html "Overview: FrameHE: Accessor Datetime")
+[Previous](frame_he-operator_unary.md "Overview: FrameHE: Operator Unary")
+[Next](frame_he-accessor_datetime.md "Overview: FrameHE: Accessor Datetime")
 
 ---
 
 # Overview: FrameHE: Accessor Values[](#overview-framehe-accessor-values "Link to this heading")
 
-[Detail: FrameHE: Accessor Values](../api_detail/frame_he-accessor_values.html#api-detail-framehe-accessor-values)
+[Detail: FrameHE: Accessor Values](../api_detail/frame_he-accessor_values.md#api-detail-framehe-accessor-values)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_he-accessor_values.html#api-sig-framehe-via-values-apply) | `FrameHE.via_values.apply(func, *args, **kwargs)` |  |
-| [Detail](../api_detail/frame_he-accessor_values.html#api-sig-framehe-via-values-array-ufunc) | `FrameHE.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
-| [Detail](../api_detail/frame_he-accessor_values.html#api-sig-framehe-via-values-call) | `FrameHE.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
+| [Detail](../api_detail/frame_he-accessor_values.md#api-sig-framehe-via-values-apply) | `FrameHE.via_values.apply(func, *args, **kwargs)` |  |
+| [Detail](../api_detail/frame_he-accessor_values.md#api-sig-framehe-via-values-array-ufunc) | `FrameHE.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
+| [Detail](../api_detail/frame_he-accessor_values.md#api-sig-framehe-via-values-call) | `FrameHE.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
 
-[FrameHE](frame_he.html#api-overview-framehe): [Constructor](frame_he-constructor.html#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.html#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.html#api-overview-framehe-attribute) | [Method](frame_he-method.html#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-overview-framehe-dictionary-like) | [Display](frame_he-display.html#api-overview-framehe-display) | [Assignment](frame_he-assignment.html#api-overview-framehe-assignment) | [Selector](frame_he-selector.html#api-overview-framehe-selector) | [Iterator](frame_he-iterator.html#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-overview-framehe-operator-unary) | [Accessor Values](#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-overview-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-overview-framehe): [Constructor](frame_he-constructor.md#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.md#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.md#api-overview-framehe-attribute) | [Method](frame_he-method.md#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-overview-framehe-dictionary-like) | [Display](frame_he-display.md#api-overview-framehe-display) | [Assignment](frame_he-assignment.md#api-overview-framehe-assignment) | [Selector](frame_he-selector.md#api-overview-framehe-selector) | [Iterator](frame_he-iterator.md#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-overview-framehe-operator-unary) | [Accessor Values](#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-overview-framehe-accessor-reduce)
 
-[Previous](frame_he-operator_unary.html "Overview: FrameHE: Operator Unary")
-[Next](frame_he-accessor_datetime.html "Overview: FrameHE: Accessor Datetime")
+[Previous](frame_he-operator_unary.md "Overview: FrameHE: Operator Unary")
+[Next](frame_he-accessor_datetime.md "Overview: FrameHE: Accessor Datetime")
 
 ---
 

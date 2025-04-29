@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexYearMonth: Method
 * [View page source](../_sources/api_detail/index_year_month-method.rst.txt)
 
-[Previous](index_year_month-attribute.html "Detail: IndexYearMonth: Attribute")
-[Next](index_year_month-dictionary_like.html "Detail: IndexYearMonth: Dictionary-Like")
+[Previous](index_year_month-attribute.md "Detail: IndexYearMonth: Attribute")
+[Next](index_year_month-dictionary_like.md "Detail: IndexYearMonth: Dictionary-Like")
 
 ---
 
 # Detail: IndexYearMonth: Method[](#detail-indexyearmonth-method "Link to this heading")
 
-[Overview: IndexYearMonth: Method](../api_overview/index_year_month-method.html#api-overview-indexyearmonth-method)
+[Overview: IndexYearMonth: Method](../api_overview/index_year_month-method.md#api-overview-indexyearmonth-method)
 
 IndexYearMonth.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexYearMonth.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -397,7 +397,7 @@ IndexYearMonth.difference(*\*others*)[](#static_frame.IndexYearMonth.differen
     ```
 
 IndexYearMonth.dropfalsy()[](#static_frame.IndexYearMonth.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexYearMonth(('1620-09', 'NaT', '1620-11'))
@@ -416,7 +416,7 @@ IndexYearMonth.dropfalsy()[](#static_frame.IndexYearMonth.dropfalsy "Link to 
     ```
 
 IndexYearMonth.dropna()[](#static_frame.IndexYearMonth.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexYearMonth(('1620-09', 'NaT', '1620-11'))
@@ -464,7 +464,7 @@ IndexYearMonth.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype
     ```
 
 IndexYearMonth.fillfalsy(*value*, */*)[](#static_frame.IndexYearMonth.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -483,7 +483,7 @@ IndexYearMonth.fillfalsy(*value*, */*)[](#static_frame.IndexYearMonth.fillfal
     ```
 
 IndexYearMonth.fillna(*value*, */*)[](#static_frame.IndexYearMonth.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -506,10 +506,10 @@ IndexYearMonth.fillna(*value*, */*)[](#static_frame.IndexYearMonth.fillna "Li
     ```
 
 IndexYearMonth.head(*count=5*, */*)[](#static_frame.IndexYearMonth.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
@@ -528,7 +528,7 @@ IndexYearMonth.head(*count=5*, */*)[](#static_frame.IndexYearMonth.head "Link
     ```
 
 IndexYearMonth.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexYearMonth.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -652,7 +652,7 @@ IndexYearMonth.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#s
     ```
 
 IndexYearMonth.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexYearMonth.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -966,10 +966,10 @@ IndexYearMonth.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#s
     ```
 
 IndexYearMonth.tail(*count=5*, */*)[](#static_frame.IndexYearMonth.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
@@ -1076,10 +1076,10 @@ IndexYearMonth.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#st
 
     ```
 
-[IndexYearMonth](index_year_month.html#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.html#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-detail-indexyearmonth-attribute) | [Method](#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-detail-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-detail-indexyearmonth-attribute) | [Method](#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-detail-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-attribute.html "Detail: IndexYearMonth: Attribute")
-[Next](index_year_month-dictionary_like.html "Detail: IndexYearMonth: Dictionary-Like")
+[Previous](index_year_month-attribute.md "Detail: IndexYearMonth: Attribute")
+[Next](index_year_month-dictionary_like.md "Detail: IndexYearMonth: Dictionary-Like")
 
 ---
 

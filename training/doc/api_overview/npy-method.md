@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: NPY: Method
 * [View page source](../_sources/api_overview/npy-method.rst.txt)
 
-[Previous](npy-attribute.html "Overview: NPY: Attribute")
-[Next](npy-display.html "Overview: NPY: Display")
+[Previous](npy-attribute.md "Overview: NPY: Attribute")
+[Next](npy-display.md "Overview: NPY: Display")
 
 ---
 
 # Overview: NPY: Method[](#overview-npy-method "Link to this heading")
 
-[Detail: NPY: Method](../api_detail/npy-method.html#api-detail-npy-method)
+[Detail: NPY: Method](../api_detail/npy-method.md#api-detail-npy-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/npy-method.html#api-sig-npy-enter) | `NPY.__enter__()` | When entering a context manager, a handle to this instance is returned. |
-| [Detail](../api_detail/npy-method.html#api-sig-npy-exit) | `NPY.__exit__(type, value, traceback)` | When exiting a context manager, resources are closed as necessary. |
+| [Detail](../api_detail/npy-method.md#api-sig-npy-enter) | `NPY.__enter__()` | When entering a context manager, a handle to this instance is returned. |
+| [Detail](../api_detail/npy-method.md#api-sig-npy-exit) | `NPY.__exit__(type, value, traceback)` | When exiting a context manager, resources are closed as necessary. |
 
-[NPY](npy.html#api-overview-npy): [Constructor](npy-constructor.html#api-overview-npy-constructor) | [Attribute](npy-attribute.html#api-overview-npy-attribute) | [Method](#api-overview-npy-method) | [Display](npy-display.html#api-overview-npy-display)
+[NPY](npy.md#api-overview-npy): [Constructor](npy-constructor.md#api-overview-npy-constructor) | [Attribute](npy-attribute.md#api-overview-npy-attribute) | [Method](#api-overview-npy-method) | [Display](npy-display.md#api-overview-npy-display)
 
-[Previous](npy-attribute.html "Overview: NPY: Attribute")
-[Next](npy-display.html "Overview: NPY: Display")
+[Previous](npy-attribute.md "Overview: NPY: Attribute")
+[Next](npy-display.md "Overview: NPY: Display")
 
 ---
 

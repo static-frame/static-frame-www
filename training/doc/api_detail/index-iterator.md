@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Index: Iterator
 * [View page source](../_sources/api_detail/index-iterator.rst.txt)
 
-[Previous](index-selector.html "Detail: Index: Selector")
-[Next](index-operator_binary.html "Detail: Index: Operator Binary")
+[Previous](index-selector.md "Detail: Index: Selector")
+[Next](index-operator_binary.md "Detail: Index: Operator Binary")
 
 ---
 
 # Detail: Index: Iterator[](#detail-index-iterator "Link to this heading")
 
-[Overview: Index: Iterator](../api_overview/index-iterator.html#api-overview-index-iterator)
+[Overview: Index: Iterator](../api_overview/index-iterator.md#api-overview-index-iterator)
 
 Index.iter\_label(*depth\_level*)
 :   iter\_label
@@ -165,7 +165,7 @@ Index.iter\_label(*depth\_level*)
 Index.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_label
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -190,7 +190,7 @@ Index.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*, *index\_con
 Index.iter\_label(*depth\_level).apply\_iter(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -217,7 +217,7 @@ Index.iter\_label(*depth\_level).apply\_iter(func*)
 Index.iter\_label(*depth\_level).apply\_iter\_items(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -244,7 +244,7 @@ Index.iter\_label(*depth\_level).apply\_iter\_items(func*)
 Index.iter\_label(*depth\_level).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -271,10 +271,10 @@ Index.iter\_label(*depth\_level).apply\_pool(func*, *\**, *dtype*, *name*, *inde
 
     ```
 
-[Index](index.html#api-detail-index): [Constructor](index-constructor.html#api-detail-index-constructor) | [Exporter](index-exporter.html#api-detail-index-exporter) | [Attribute](index-attribute.html#api-detail-index-attribute) | [Method](index-method.html#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.html#api-detail-index-dictionary-like) | [Display](index-display.html#api-detail-index-display) | [Selector](index-selector.html#api-detail-index-selector) | [Iterator](#api-detail-index-iterator) | [Operator Binary](index-operator_binary.html#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-detail-index-accessor-type-clinic)
+[Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](index-attribute.md#api-detail-index-attribute) | [Method](index-method.md#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)
 
-[Previous](index-selector.html "Detail: Index: Selector")
-[Next](index-operator_binary.html "Detail: Index: Operator Binary")
+[Previous](index-selector.md "Detail: Index: Selector")
+[Next](index-operator_binary.md "Detail: Index: Operator Binary")
 
 ---
 

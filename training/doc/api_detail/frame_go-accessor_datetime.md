@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: FrameGO: Accessor Datetime
 * [View page source](../_sources/api_detail/frame_go-accessor_datetime.rst.txt)
 
-[Previous](frame_go-accessor_values.html "Detail: FrameGO: Accessor Values")
-[Next](frame_go-accessor_string.html "Detail: FrameGO: Accessor String")
+[Previous](frame_go-accessor_values.md "Detail: FrameGO: Accessor Values")
+[Next](frame_go-accessor_string.md "Detail: FrameGO: Accessor String")
 
 ---
 
 # Detail: FrameGO: Accessor Datetime[](#detail-framego-accessor-datetime "Link to this heading")
 
-[Overview: FrameGO: Accessor Datetime](../api_overview/frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime)
+[Overview: FrameGO: Accessor Datetime](../api_overview/frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime)
 
 FrameGO.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.__call__)
+    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.__call__)
     :   Parameters:
         :   **fill\_value** – If NAT are encountered, use this value.
 
@@ -401,7 +401,7 @@ FrameGO.via\_dt.weekday
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.weekday)
+    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.weekday)
     :   Return the day of the week as an integer, where Monday is 0 and Sunday is 6.
 
     ```
@@ -429,7 +429,7 @@ FrameGO.via\_dt.quarter
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.quarter)
+    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.quarter)
     :   Return the quarter of the year as an integer, where January through March is quarter 1.
 
     ```
@@ -457,7 +457,7 @@ FrameGO.via\_dt.is\_month\_end
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_end)
+    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_end)
     :   Return Boolean indicators if the day is the month end.
 
     ```
@@ -485,7 +485,7 @@ FrameGO.via\_dt.is\_month\_start
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_start)
+    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_start)
     :   Return Boolean indicators if the day is the month start.
 
     ```
@@ -513,7 +513,7 @@ FrameGO.via\_dt.is\_year\_end
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_end)
+    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_end)
     :   Return Boolean indicators if the day is the year end.
 
     ```
@@ -541,7 +541,7 @@ FrameGO.via\_dt.is\_year\_start
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_start)
+    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_start)
     :   Return Boolean indicators if the day is the year start.
 
     ```
@@ -569,7 +569,7 @@ FrameGO.via\_dt.is\_quarter\_end
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_end)
+    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_end)
     :   Return Boolean indicators if the day is the quarter end.
 
     ```
@@ -597,7 +597,7 @@ FrameGO.via\_dt.is\_quarter\_start
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_start)
+    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_start)
     :   Return Boolean indicators if the day is the quarter start.
 
     ```
@@ -625,7 +625,7 @@ FrameGO.via\_dt.timetuple
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.timetuple)
+    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.timetuple)
     :   Return a `time.struct_time` such as returned by time.localtime().
 
     ```
@@ -653,7 +653,7 @@ FrameGO.via\_dt.isoformat(*\**, *sep*, *timespec*)
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.isoformat)
+    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.isoformat)
     :   Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
 
     ```
@@ -681,7 +681,7 @@ FrameGO.via\_dt.fromisoformat
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.fromisoformat)
+    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.fromisoformat)
     :   Return a `datetime.date` object from an ISO 8601 format.
 
     ```
@@ -709,7 +709,7 @@ FrameGO.via\_dt.strftime(*format*)
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strftime)
+    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strftime)
     :   Return a string representing the date, controlled by an explicit `format` string.
 
     ```
@@ -737,7 +737,7 @@ FrameGO.via\_dt.strptime(*format*)
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strptime)
+    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strptime)
     :   Return a Python datetime object from parsing a string defined with `format`.
 
     ```
@@ -765,7 +765,7 @@ FrameGO.via\_dt.strpdate(*format*)
 :   FrameGO.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strpdate)
+    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strpdate)
     :   Return a Python date object from parsing a string defined with `format`.
 
     ```
@@ -789,10 +789,10 @@ FrameGO.via\_dt.strpdate(*format*)
 
     ```
 
-[FrameGO](frame_go.html#api-detail-framego): [Constructor](frame_go-constructor.html#api-detail-framego-constructor) | [Exporter](frame_go-exporter.html#api-detail-framego-exporter) | [Attribute](frame_go-attribute.html#api-detail-framego-attribute) | [Method](frame_go-method.html#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-detail-framego-dictionary-like) | [Display](frame_go-display.html#api-detail-framego-display) | [Assignment](frame_go-assignment.html#api-detail-framego-assignment) | [Selector](frame_go-selector.html#api-detail-framego-selector) | [Iterator](frame_go-iterator.html#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-detail-framego-accessor-values) | [Accessor Datetime](#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-detail-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)
 
-[Previous](frame_go-accessor_values.html "Detail: FrameGO: Accessor Values")
-[Next](frame_go-accessor_string.html "Detail: FrameGO: Accessor String")
+[Previous](frame_go-accessor_values.md "Detail: FrameGO: Accessor Values")
+[Next](frame_go-accessor_string.md "Detail: FrameGO: Accessor String")
 
 ---
 

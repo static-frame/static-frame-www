@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: NPY: Attribute
 * [View page source](../_sources/api_overview/npy-attribute.rst.txt)
 
-[Previous](npy-constructor.html "Overview: NPY: Constructor")
-[Next](npy-method.html "Overview: NPY: Method")
+[Previous](npy-constructor.md "Overview: NPY: Constructor")
+[Next](npy-method.md "Overview: NPY: Method")
 
 ---
 
 # Overview: NPY: Attribute[](#overview-npy-attribute "Link to this heading")
 
-[Detail: NPY: Attribute](../api_detail/npy-attribute.html#api-detail-npy-attribute)
+[Detail: NPY: Attribute](../api_detail/npy-attribute.md#api-detail-npy-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/npy-attribute.html#api-sig-npy-contents) | `NPY.contents` | Return a Frame indicating name, dtype, shape, and bytes, of Archive components. |
-| [Detail](../api_detail/npy-attribute.html#api-sig-npy-nbytes) | `NPY.nbytes` | Return numer of bytes stored in this archive. |
+| [Detail](../api_detail/npy-attribute.md#api-sig-npy-contents) | `NPY.contents` | Return a Frame indicating name, dtype, shape, and bytes, of Archive components. |
+| [Detail](../api_detail/npy-attribute.md#api-sig-npy-nbytes) | `NPY.nbytes` | Return numer of bytes stored in this archive. |
 
-[NPY](npy.html#api-overview-npy): [Constructor](npy-constructor.html#api-overview-npy-constructor) | [Attribute](#api-overview-npy-attribute) | [Method](npy-method.html#api-overview-npy-method) | [Display](npy-display.html#api-overview-npy-display)
+[NPY](npy.md#api-overview-npy): [Constructor](npy-constructor.md#api-overview-npy-constructor) | [Attribute](#api-overview-npy-attribute) | [Method](npy-method.md#api-overview-npy-method) | [Display](npy-display.md#api-overview-npy-display)
 
-[Previous](npy-constructor.html "Overview: NPY: Constructor")
-[Next](npy-method.html "Overview: NPY: Method")
+[Previous](npy-constructor.md "Overview: NPY: Constructor")
+[Next](npy-method.md "Overview: NPY: Method")
 
 ---
 

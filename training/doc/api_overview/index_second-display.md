@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexSecond: Display
 * [View page source](../_sources/api_overview/index_second-display.rst.txt)
 
-[Previous](index_second-dictionary_like.html "Overview: IndexSecond: Dictionary-Like")
-[Next](index_second-selector.html "Overview: IndexSecond: Selector")
+[Previous](index_second-dictionary_like.md "Overview: IndexSecond: Dictionary-Like")
+[Next](index_second-selector.md "Overview: IndexSecond: Selector")
 
 ---
 
 # Overview: IndexSecond: Display[](#overview-indexsecond-display "Link to this heading")
 
-[Detail: IndexSecond: Display](../api_detail/index_second-display.html#api-detail-indexsecond-display)
+[Detail: IndexSecond: Display](../api_detail/index_second-display.md#api-detail-indexsecond-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second-display.html#api-sig-indexsecond-interface) | [`IndexSecond.interface`](../api_detail/index_second-display.html#IndexSecond.interface "IndexSecond.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_second-display.html#api-sig-indexsecond-repr) | `IndexSecond.__repr__()` |  |
-| [Detail](../api_detail/index_second-display.html#api-sig-indexsecond-str) | `IndexSecond.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_second-display.html#api-sig-indexsecond-display) | `IndexSecond.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_second-display.html#api-sig-indexsecond-display-tall) | `IndexSecond.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_second-display.html#api-sig-indexsecond-display-wide) | `IndexSecond.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_second-display.md#api-sig-indexsecond-interface) | [`IndexSecond.interface`](../api_detail/index_second-display.md#IndexSecond.interface "IndexSecond.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_second-display.md#api-sig-indexsecond-repr) | `IndexSecond.__repr__()` |  |
+| [Detail](../api_detail/index_second-display.md#api-sig-indexsecond-str) | `IndexSecond.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_second-display.md#api-sig-indexsecond-display) | `IndexSecond.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_second-display.md#api-sig-indexsecond-display-tall) | `IndexSecond.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_second-display.md#api-sig-indexsecond-display-wide) | `IndexSecond.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexSecond](index_second.html#api-overview-indexsecond): [Constructor](index_second-constructor.html#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.html#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-overview-indexsecond-attribute) | [Method](index_second-method.html#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-overview-indexsecond-dictionary-like) | [Display](#api-overview-indexsecond-display) | [Selector](index_second-selector.html#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.html#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-overview-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-overview-indexsecond): [Constructor](index_second-constructor.md#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-overview-indexsecond-attribute) | [Method](index_second-method.md#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-overview-indexsecond-dictionary-like) | [Display](#api-overview-indexsecond-display) | [Selector](index_second-selector.md#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.md#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-overview-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-dictionary_like.html "Overview: IndexSecond: Dictionary-Like")
-[Next](index_second-selector.html "Overview: IndexSecond: Selector")
+[Previous](index_second-dictionary_like.md "Overview: IndexSecond: Dictionary-Like")
+[Next](index_second-selector.md "Overview: IndexSecond: Selector")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexSecondGO: Accessor Datetime
 * [View page source](../_sources/api_overview/index_second_go-accessor_datetime.rst.txt)
 
-[Previous](index_second_go-accessor_values.html "Overview: IndexSecondGO: Accessor Values")
-[Next](index_second_go-accessor_string.html "Overview: IndexSecondGO: Accessor String")
+[Previous](index_second_go-accessor_values.md "Overview: IndexSecondGO: Accessor Values")
+[Next](index_second_go-accessor_string.md "Overview: IndexSecondGO: Accessor String")
 
 ---
 
 # Overview: IndexSecondGO: Accessor Datetime[](#overview-indexsecondgo-accessor-datetime "Link to this heading")
 
-[Detail: IndexSecondGO: Accessor Datetime](../api_detail/index_second_go-accessor_datetime.html#api-detail-indexsecondgo-accessor-datetime)
+[Detail: IndexSecondGO: Accessor Datetime](../api_detail/index_second_go-accessor_datetime.md#api-detail-indexsecondgo-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-call) | `IndexSecondGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-year) | `IndexSecondGO.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-year-month) | `IndexSecondGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-year-quarter) | `IndexSecondGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-month) | `IndexSecondGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-day) | `IndexSecondGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-hour) | `IndexSecondGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-minute) | `IndexSecondGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-second) | `IndexSecondGO.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-weekday) | `IndexSecondGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-quarter) | `IndexSecondGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-is-month-end) | `IndexSecondGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-is-month-start) | `IndexSecondGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-is-year-end) | `IndexSecondGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-is-year-start) | `IndexSecondGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-is-quarter-end) | `IndexSecondGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-is-quarter-start) | `IndexSecondGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-timetuple) | `IndexSecondGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-isoformat) | `IndexSecondGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-fromisoformat) | `IndexSecondGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-strftime) | `IndexSecondGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-strptime) | `IndexSecondGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_second_go-accessor_datetime.html#api-sig-indexsecondgo-via-dt-strpdate) | `IndexSecondGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-call) | `IndexSecondGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-year) | `IndexSecondGO.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-year-month) | `IndexSecondGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-year-quarter) | `IndexSecondGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-month) | `IndexSecondGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-day) | `IndexSecondGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-hour) | `IndexSecondGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-minute) | `IndexSecondGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-second) | `IndexSecondGO.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-weekday) | `IndexSecondGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-quarter) | `IndexSecondGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-is-month-end) | `IndexSecondGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-is-month-start) | `IndexSecondGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-is-year-end) | `IndexSecondGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-is-year-start) | `IndexSecondGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-is-quarter-end) | `IndexSecondGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-is-quarter-start) | `IndexSecondGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-timetuple) | `IndexSecondGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-isoformat) | `IndexSecondGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-fromisoformat) | `IndexSecondGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-strftime) | `IndexSecondGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-strptime) | `IndexSecondGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_second_go-accessor_datetime.md#api-sig-indexsecondgo-via-dt-strpdate) | `IndexSecondGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexSecondGO](index_second_go.html#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.html#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-overview-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.md#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-overview-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-accessor_values.html "Overview: IndexSecondGO: Accessor Values")
-[Next](index_second_go-accessor_string.html "Overview: IndexSecondGO: Accessor String")
+[Previous](index_second_go-accessor_values.md "Overview: IndexSecondGO: Accessor Values")
+[Next](index_second_go-accessor_string.md "Overview: IndexSecondGO: Accessor String")
 
 ---
 

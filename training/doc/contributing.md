@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](intro.md)
-* [Media](intro.html#media)
+* [Media](intro.md#media)
 * [What is New in StaticFrame](new.md)
 * Contributing
   + [Preparing an Environment](#preparing-an-environment)
@@ -138,8 +138,8 @@ API Detail
 * Contributing
 * [View page source](_sources/contributing.rst.txt)
 
-[Previous](new.html "What is New in StaticFrame")
-[Next](articles/guard.html "Improving Code Quality with Array and DataFrame Type Hints")
+[Previous](new.md "What is New in StaticFrame")
+[Next](articles/guard.md "Improving Code Quality with Array and DataFrame Type Hints")
 
 ---
 
@@ -224,8 +224,8 @@ Thanks to former and current Research Affiliates staff who have contributed grea
 * Yu Tomita
 * Quang Vu
 
-[Previous](new.html "What is New in StaticFrame")
-[Next](articles/guard.html "Improving Code Quality with Array and DataFrame Type Hints")
+[Previous](new.md "What is New in StaticFrame")
+[Next](articles/guard.md "Improving Code Quality with Array and DataFrame Type Hints")
 
 ---
 

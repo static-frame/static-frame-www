@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexYearMonth: Display
 * [View page source](../_sources/api_overview/index_year_month-display.rst.txt)
 
-[Previous](index_year_month-dictionary_like.html "Overview: IndexYearMonth: Dictionary-Like")
-[Next](index_year_month-selector.html "Overview: IndexYearMonth: Selector")
+[Previous](index_year_month-dictionary_like.md "Overview: IndexYearMonth: Dictionary-Like")
+[Next](index_year_month-selector.md "Overview: IndexYearMonth: Selector")
 
 ---
 
 # Overview: IndexYearMonth: Display[](#overview-indexyearmonth-display "Link to this heading")
 
-[Detail: IndexYearMonth: Display](../api_detail/index_year_month-display.html#api-detail-indexyearmonth-display)
+[Detail: IndexYearMonth: Display](../api_detail/index_year_month-display.md#api-detail-indexyearmonth-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month-display.html#api-sig-indexyearmonth-interface) | [`IndexYearMonth.interface`](../api_detail/index_year_month-display.html#IndexYearMonth.interface "IndexYearMonth.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_year_month-display.html#api-sig-indexyearmonth-repr) | `IndexYearMonth.__repr__()` |  |
-| [Detail](../api_detail/index_year_month-display.html#api-sig-indexyearmonth-str) | `IndexYearMonth.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_year_month-display.html#api-sig-indexyearmonth-display) | `IndexYearMonth.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_year_month-display.html#api-sig-indexyearmonth-display-tall) | `IndexYearMonth.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_year_month-display.html#api-sig-indexyearmonth-display-wide) | `IndexYearMonth.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_year_month-display.md#api-sig-indexyearmonth-interface) | [`IndexYearMonth.interface`](../api_detail/index_year_month-display.md#IndexYearMonth.interface "IndexYearMonth.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_year_month-display.md#api-sig-indexyearmonth-repr) | `IndexYearMonth.__repr__()` |  |
+| [Detail](../api_detail/index_year_month-display.md#api-sig-indexyearmonth-str) | `IndexYearMonth.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_year_month-display.md#api-sig-indexyearmonth-display) | `IndexYearMonth.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_year_month-display.md#api-sig-indexyearmonth-display-tall) | `IndexYearMonth.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_year_month-display.md#api-sig-indexyearmonth-display-wide) | `IndexYearMonth.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexYearMonth](index_year_month.html#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.html#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-overview-indexyearmonth-dictionary-like) | [Display](#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-overview-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.md#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-overview-indexyearmonth-dictionary-like) | [Display](#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-overview-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-dictionary_like.html "Overview: IndexYearMonth: Dictionary-Like")
-[Next](index_year_month-selector.html "Overview: IndexYearMonth: Selector")
+[Previous](index_year_month-dictionary_like.md "Overview: IndexYearMonth: Dictionary-Like")
+[Next](index_year_month-selector.md "Overview: IndexYearMonth: Selector")
 
 ---
 

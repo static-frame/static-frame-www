@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Quilt
 * [View page source](../_sources/api_overview/quilt.rst.txt)
 
-[Previous](yarn.html "Overview: Yarn")
-[Next](index.html "Overview: Index")
+[Previous](yarn.md "Overview: Yarn")
+[Next](index.md "Overview: Index")
 
 ---
 
 # Overview: Quilt[](#overview-quilt "Link to this heading")
 
-[Detail: Quilt](../api_detail/quilt.html#api-detail-quilt)
+[Detail: Quilt](../api_detail/quilt.md#api-detail-quilt)
 
 |  |  |
 | --- | --- |
-| [Constructor](quilt-constructor.html#api-overview-quilt-constructor) | Alternative constructors for creating instances. |
-| [Exporter](quilt-exporter.html#api-overview-quilt-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](quilt-attribute.html#api-overview-quilt-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](quilt-method.html#api-overview-quilt-method) | Methods for general functionality. |
-| [Dictionary-Like](quilt-dictionary_like.html#api-overview-quilt-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](quilt-display.html#api-overview-quilt-display) | Methods for providing a text representation of the object. |
-| [Selector](quilt-selector.html#api-overview-quilt-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](quilt-iterator.html#api-overview-quilt-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Accessor Hashlib](quilt-accessor_hashlib.html#api-overview-quilt-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](quilt-constructor.md#api-overview-quilt-constructor) | Alternative constructors for creating instances. |
+| [Exporter](quilt-exporter.md#api-overview-quilt-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](quilt-attribute.md#api-overview-quilt-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](quilt-method.md#api-overview-quilt-method) | Methods for general functionality. |
+| [Dictionary-Like](quilt-dictionary_like.md#api-overview-quilt-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](quilt-display.md#api-overview-quilt-display) | Methods for providing a text representation of the object. |
+| [Selector](quilt-selector.md#api-overview-quilt-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](quilt-iterator.md#api-overview-quilt-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Accessor Hashlib](quilt-accessor_hashlib.md#api-overview-quilt-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 
-[Quilt](#api-overview-quilt): [Constructor](quilt-constructor.html#api-overview-quilt-constructor) | [Exporter](quilt-exporter.html#api-overview-quilt-exporter) | [Attribute](quilt-attribute.html#api-overview-quilt-attribute) | [Method](quilt-method.html#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-overview-quilt-dictionary-like) | [Display](quilt-display.html#api-overview-quilt-display) | [Selector](quilt-selector.html#api-overview-quilt-selector) | [Iterator](quilt-iterator.html#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic)
+[Quilt](#api-overview-quilt): [Constructor](quilt-constructor.md#api-overview-quilt-constructor) | [Exporter](quilt-exporter.md#api-overview-quilt-exporter) | [Attribute](quilt-attribute.md#api-overview-quilt-attribute) | [Method](quilt-method.md#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-overview-quilt-dictionary-like) | [Display](quilt-display.md#api-overview-quilt-display) | [Selector](quilt-selector.md#api-overview-quilt-selector) | [Iterator](quilt-iterator.md#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic)
 
-[Previous](yarn.html "Overview: Yarn")
-[Next](index.html "Overview: Index")
+[Previous](yarn.md "Overview: Yarn")
+[Next](index.md "Overview: Index")
 
 ---
 

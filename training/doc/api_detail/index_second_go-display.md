@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexSecondGO: Display
 * [View page source](../_sources/api_detail/index_second_go-display.rst.txt)
 
-[Previous](index_second_go-dictionary_like.html "Detail: IndexSecondGO: Dictionary-Like")
-[Next](index_second_go-selector.html "Detail: IndexSecondGO: Selector")
+[Previous](index_second_go-dictionary_like.md "Detail: IndexSecondGO: Dictionary-Like")
+[Next](index_second_go-selector.md "Detail: IndexSecondGO: Selector")
 
 ---
 
 # Detail: IndexSecondGO: Display[](#detail-indexsecondgo-display "Link to this heading")
 
-[Overview: IndexSecondGO: Display](../api_overview/index_second_go-display.html#api-overview-indexsecondgo-display)
+[Overview: IndexSecondGO: Display](../api_overview/index_second_go-display.md#api-overview-indexsecondgo-display)
 
 IndexSecondGO.interface[](#IndexSecondGO.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -230,7 +230,7 @@ IndexSecondGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#stat
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexSecondGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -251,7 +251,7 @@ IndexSecondGO.display\_tall(*config=None*, */*)[](#static_frame.IndexSecondGO
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexSecondGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -268,7 +268,7 @@ IndexSecondGO.display\_wide(*config=None*, */*)[](#static_frame.IndexSecondGO
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexSecondGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -281,10 +281,10 @@ IndexSecondGO.display\_wide(*config=None*, */*)[](#static_frame.IndexSecondGO
 
     ```
 
-[IndexSecondGO](index_second_go.html#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.html#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-detail-indexsecondgo-dictionary-like) | [Display](#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-detail-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.md#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-detail-indexsecondgo-dictionary-like) | [Display](#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-detail-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-dictionary_like.html "Detail: IndexSecondGO: Dictionary-Like")
-[Next](index_second_go-selector.html "Detail: IndexSecondGO: Selector")
+[Previous](index_second_go-dictionary_like.md "Detail: IndexSecondGO: Dictionary-Like")
+[Next](index_second_go-selector.md "Detail: IndexSecondGO: Selector")
 
 ---
 

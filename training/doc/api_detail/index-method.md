@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Index: Method
 * [View page source](../_sources/api_detail/index-method.rst.txt)
 
-[Previous](index-attribute.html "Detail: Index: Attribute")
-[Next](index-dictionary_like.html "Detail: Index: Dictionary-Like")
+[Previous](index-attribute.md "Detail: Index: Attribute")
+[Next](index-dictionary_like.md "Detail: Index: Dictionary-Like")
 
 ---
 
 # Detail: Index: Method[](#detail-index-method "Link to this heading")
 
-[Overview: Index: Method](../api_overview/index-method.html#api-overview-index-method)
+[Overview: Index: Method](../api_overview/index-method.md#api-overview-index-method)
 
 Index.\_\_array\_\_(*dtype=None*)[](#static_frame.Index.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -192,7 +192,7 @@ Index.\_\_bool\_\_()[](#static_frame.Index.__bool__ "Link to this definition"
 
     ```
 
-Index.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index.html#Index.__copy__)[](#static_frame.Index.__copy__ "Link to this definition")
+Index.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index.md#Index.__copy__)[](#static_frame.Index.__copy__ "Link to this definition")
 :   Return shallow copy of this Index.
 
     ```
@@ -217,7 +217,7 @@ Index.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index.html#Index.__
 
     ```
 
-Index.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/index.html#Index.__deepcopy__)[](#static_frame.Index.__deepcopy__ "Link to this definition")
+Index.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/index.md#Index.__deepcopy__)[](#static_frame.Index.__deepcopy__ "Link to this definition")
 :   ```
     >>> import copy
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
@@ -240,7 +240,7 @@ Index.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/index.htm
 
     ```
 
-Index.\_\_len\_\_()[[source]](../_modules/static_frame/core/index.html#Index.__len__)[](#static_frame.Index.__len__ "Link to this definition")
+Index.\_\_len\_\_()[[source]](../_modules/static_frame/core/index.md#Index.__len__)[](#static_frame.Index.__len__ "Link to this definition")
 :   ```
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix
@@ -298,7 +298,7 @@ Index.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.an
 
     ```
 
-Index.astype(*dtype*, */*)[[source]](../_modules/static_frame/core/index.html#Index.astype)[](#static_frame.Index.astype "Link to this definition")
+Index.astype(*dtype*, */*)[[source]](../_modules/static_frame/core/index.md#Index.astype)[](#static_frame.Index.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -321,7 +321,7 @@ Index.astype(*dtype*, */*)[[source]](../_modules/static_frame/core/index.html#In
 
     ```
 
-Index.copy()[[source]](../_modules/static_frame/core/index.html#Index.copy)[](#static_frame.Index.copy "Link to this definition")
+Index.copy()[[source]](../_modules/static_frame/core/index.md#Index.copy)[](#static_frame.Index.copy "Link to this definition")
 :   Return shallow copy of this Index.
 
     ```
@@ -410,8 +410,8 @@ Index.difference(*\*others*)[](#static_frame.Index.difference "Link to this d
 
     ```
 
-Index.dropfalsy()[[source]](../_modules/static_frame/core/index.html#Index.dropfalsy)[](#static_frame.Index.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+Index.dropfalsy()[[source]](../_modules/static_frame/core/index.md#Index.dropfalsy)[](#static_frame.Index.dropfalsy "Link to this definition")
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.Index(('', 'b', 'c', 'd'))
@@ -431,8 +431,8 @@ Index.dropfalsy()[[source]](../_modules/static_frame/core/index.html#Index.dropf
 
     ```
 
-Index.dropna()[[source]](../_modules/static_frame/core/index.html#Index.dropna)[](#static_frame.Index.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+Index.dropna()[[source]](../_modules/static_frame/core/index.md#Index.dropna)[](#static_frame.Index.dropna "Link to this definition")
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.Index((None, 'A', 1024, True), name='x')
@@ -452,7 +452,7 @@ Index.dropna()[[source]](../_modules/static_frame/core/index.html#Index.dropna)[
 
     ```
 
-Index.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index.html#Index.equals)[](#static_frame.Index.equals "Link to this definition")
+Index.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index.md#Index.equals)[](#static_frame.Index.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -483,8 +483,8 @@ Index.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
 
     ```
 
-Index.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index.html#Index.fillfalsy)[](#static_frame.Index.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+Index.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Index.fillfalsy)[](#static_frame.Index.fillfalsy "Link to this definition")
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -508,8 +508,8 @@ Index.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index.html
 
     ```
 
-Index.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index.html#Index.fillna)[](#static_frame.Index.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+Index.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Index.fillna)[](#static_frame.Index.fillna "Link to this definition")
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -534,10 +534,10 @@ Index.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index.html#In
     ```
 
 Index.head(*count=5*, */*)[](#static_frame.Index.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
@@ -557,8 +557,8 @@ Index.head(*count=5*, */*)[](#static_frame.Index.head "Link to this definitio
 
     ```
 
-Index.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index.html#Index.iloc_searchsorted)[](#static_frame.Index.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+Index.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index.md#Index.iloc_searchsorted)[](#static_frame.Index.iloc_searchsorted "Link to this definition")
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -619,7 +619,7 @@ Index.isfalsy()[](#static_frame.Index.isfalsy "Link to this definition")
 
     ```
 
-Index.isin(*other*, */*)[[source]](../_modules/static_frame/core/index.html#Index.isin)[](#static_frame.Index.isin "Link to this definition")
+Index.isin(*other*, */*)[[source]](../_modules/static_frame/core/index.md#Index.isin)[](#static_frame.Index.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -647,7 +647,7 @@ Index.isna()[](#static_frame.Index.isna "Link to this definition")
 
     ```
 
-Index.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index.html#Index.label_widths_at_depth)[](#static_frame.Index.label_widths_at_depth "Link to this definition")
+Index.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index.md#Index.label_widths_at_depth)[](#static_frame.Index.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -668,7 +668,7 @@ Index.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/stat
 
     ```
 
-Index.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index.html#Index.level_add)[](#static_frame.Index.level_add "Link to this definition")
+Index.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index.md#Index.level_add)[](#static_frame.Index.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -693,8 +693,8 @@ Index.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_mo
 
     ```
 
-Index.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index.html#Index.loc_searchsorted)[](#static_frame.Index.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+Index.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index.md#Index.loc_searchsorted)[](#static_frame.Index.loc_searchsorted "Link to this definition")
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -716,7 +716,7 @@ Index.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan
 
     ```
 
-Index.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index.html#Index.loc_to_iloc)[](#static_frame.Index.loc_to_iloc "Link to this definition")
+Index.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index.md#Index.loc_to_iloc)[](#static_frame.Index.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -861,7 +861,7 @@ Index.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_fr
 
     ```
 
-Index.relabel(*mapper*, */*)[[source]](../_modules/static_frame/core/index.html#Index.relabel)[](#static_frame.Index.relabel "Link to this definition")
+Index.relabel(*mapper*, */*)[[source]](../_modules/static_frame/core/index.md#Index.relabel)[](#static_frame.Index.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -887,7 +887,7 @@ Index.relabel(*mapper*, */*)[[source]](../_modules/static_frame/core/index.html#
 
     ```
 
-Index.rename(*name*, */*)[[source]](../_modules/static_frame/core/index.html#Index.rename)[](#static_frame.Index.rename "Link to this definition")
+Index.rename(*name*, */*)[[source]](../_modules/static_frame/core/index.md#Index.rename)[](#static_frame.Index.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -911,7 +911,7 @@ Index.rename(*name*, */*)[[source]](../_modules/static_frame/core/index.html#Ind
 
     ```
 
-Index.roll(*shift*)[[source]](../_modules/static_frame/core/index.html#Index.roll)[](#static_frame.Index.roll "Link to this definition")
+Index.roll(*shift*)[[source]](../_modules/static_frame/core/index.md#Index.roll)[](#static_frame.Index.roll "Link to this definition")
 :   Return an Index with values rotated forward and wrapped around (with a postive shift) or backward and wrapped around (with a negative shift).
 
     ```
@@ -960,7 +960,7 @@ Index.sample(*count=1*, *\**, *seed=None*)[](#static_frame.Index.sample "Link
 
     ```
 
-Index.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/index.html#Index.sort)[](#static_frame.Index.sort "Link to this definition")
+Index.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/index.md#Index.sort)[](#static_frame.Index.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -1038,10 +1038,10 @@ Index.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_fra
     ```
 
 Index.tail(*count=5*, */*)[](#static_frame.Index.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
@@ -1094,7 +1094,7 @@ Index.union(*\*others*)[](#static_frame.Index.union "Link to this definition"
 
     ```
 
-Index.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index.html#Index.unique)[](#static_frame.Index.unique "Link to this definition")
+Index.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index.md#Index.unique)[](#static_frame.Index.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1118,7 +1118,7 @@ Index.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source
 
     ```
 
-Index.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index.html#Index.values_at_depth)[](#static_frame.Index.values_at_depth "Link to this definition")
+Index.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index.md#Index.values_at_depth)[](#static_frame.Index.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1156,10 +1156,10 @@ Index.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_fram
 
     ```
 
-[Index](index.html#api-detail-index): [Constructor](index-constructor.html#api-detail-index-constructor) | [Exporter](index-exporter.html#api-detail-index-exporter) | [Attribute](index-attribute.html#api-detail-index-attribute) | [Method](#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.html#api-detail-index-dictionary-like) | [Display](index-display.html#api-detail-index-display) | [Selector](index-selector.html#api-detail-index-selector) | [Iterator](index-iterator.html#api-detail-index-iterator) | [Operator Binary](index-operator_binary.html#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-detail-index-accessor-type-clinic)
+[Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](index-attribute.md#api-detail-index-attribute) | [Method](#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)
 
-[Previous](index-attribute.html "Detail: Index: Attribute")
-[Next](index-dictionary_like.html "Detail: Index: Dictionary-Like")
+[Previous](index-attribute.md "Detail: Index: Attribute")
+[Next](index-dictionary_like.md "Detail: Index: Dictionary-Like")
 
 ---
 

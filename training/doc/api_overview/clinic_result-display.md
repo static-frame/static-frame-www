@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: ClinicResult: Display
 * [View page source](../_sources/api_overview/clinic_result-display.rst.txt)
 
-[Previous](clinic_result-dictionary_like.html "Overview: ClinicResult: Dictionary-Like")
-[Next](require-constructor.html "Overview: Require: Constructor")
+[Previous](clinic_result-dictionary_like.md "Overview: ClinicResult: Dictionary-Like")
+[Next](require-constructor.md "Overview: Require: Constructor")
 
 ---
 
 # Overview: ClinicResult: Display[](#overview-clinicresult-display "Link to this heading")
 
-[Detail: ClinicResult: Display](../api_detail/clinic_result-display.html#api-detail-clinicresult-display)
+[Detail: ClinicResult: Display](../api_detail/clinic_result-display.md#api-detail-clinicresult-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/clinic_result-display.html#api-sig-clinicresult-repr) | `ClinicResult.__repr__()` |  |
-| [Detail](../api_detail/clinic_result-display.html#api-sig-clinicresult-str) | `ClinicResult.__str__()` | Return str(self). |
+| [Detail](../api_detail/clinic_result-display.md#api-sig-clinicresult-repr) | `ClinicResult.__repr__()` |  |
+| [Detail](../api_detail/clinic_result-display.md#api-sig-clinicresult-str) | `ClinicResult.__str__()` | Return str(self). |
 
-[ClinicResult](clinic_result.html#api-overview-clinicresult): [Constructor](clinic_result-constructor.html#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-overview-clinicresult-attribute) | [Method](clinic_result-method.html#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-overview-clinicresult-dictionary-like) | [Display](#api-overview-clinicresult-display)
+[ClinicResult](clinic_result.md#api-overview-clinicresult): [Constructor](clinic_result-constructor.md#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-overview-clinicresult-attribute) | [Method](clinic_result-method.md#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-overview-clinicresult-dictionary-like) | [Display](#api-overview-clinicresult-display)
 
-[Previous](clinic_result-dictionary_like.html "Overview: ClinicResult: Dictionary-Like")
-[Next](require-constructor.html "Overview: Require: Constructor")
+[Previous](clinic_result-dictionary_like.md "Overview: ClinicResult: Dictionary-Like")
+[Next](require-constructor.md "Overview: Require: Constructor")
 
 ---
 

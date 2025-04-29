@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Bus: Accessor Hashlib
 * [View page source](../_sources/api_overview/bus-accessor_hashlib.rst.txt)
 
-[Previous](bus-iterator.html "Overview: Bus: Iterator")
-[Next](bus-accessor_type_clinic.html "Overview: Bus: Accessor Type Clinic")
+[Previous](bus-iterator.md "Overview: Bus: Iterator")
+[Next](bus-accessor_type_clinic.md "Overview: Bus: Accessor Type Clinic")
 
 ---
 
 # Overview: Bus: Accessor Hashlib[](#overview-bus-accessor-hashlib "Link to this heading")
 
-[Detail: Bus: Accessor Hashlib](../api_detail/bus-accessor_hashlib.html#api-detail-bus-accessor-hashlib)
+[Detail: Bus: Accessor Hashlib](../api_detail/bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-to-bytes) | `Bus.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-md5) | `Bus.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-sha256) | `Bus.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-sha512) | `Bus.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-sha3-256) | `Bus.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-sha3-512) | `Bus.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-shake-128) | `Bus.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-shake-256) | `Bus.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-blake2b) | `Bus.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/bus-accessor_hashlib.html#api-sig-bus-via-hashlib-blake2s) | `Bus.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-to-bytes) | `Bus.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-md5) | `Bus.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-sha256) | `Bus.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-sha512) | `Bus.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-sha3-256) | `Bus.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-sha3-512) | `Bus.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-shake-128) | `Bus.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-shake-256) | `Bus.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-blake2b) | `Bus.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/bus-accessor_hashlib.md#api-sig-bus-via-hashlib-blake2s) | `Bus.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[Bus](bus.html#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](bus-iterator.html "Overview: Bus: Iterator")
-[Next](bus-accessor_type_clinic.html "Overview: Bus: Accessor Type Clinic")
+[Previous](bus-iterator.md "Overview: Bus: Iterator")
+[Next](bus-accessor_type_clinic.md "Overview: Bus: Accessor Type Clinic")
 
 ---
 

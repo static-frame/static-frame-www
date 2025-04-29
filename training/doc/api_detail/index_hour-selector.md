@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexHour: Selector
 * [View page source](../_sources/api_detail/index_hour-selector.rst.txt)
 
-[Previous](index_hour-display.html "Detail: IndexHour: Display")
-[Next](index_hour-iterator.html "Detail: IndexHour: Iterator")
+[Previous](index_hour-display.md "Detail: IndexHour: Display")
+[Next](index_hour-iterator.md "Detail: IndexHour: Iterator")
 
 ---
 
 # Detail: IndexHour: Selector[](#detail-indexhour-selector "Link to this heading")
 
-[Overview: IndexHour: Selector](../api_overview/index_hour-selector.html#api-overview-indexhour-selector)
+[Overview: IndexHour: Selector](../api_overview/index_hour-selector.md#api-overview-indexhour-selector)
 
 IndexHour.drop.iloc[*key*]
 :   IndexHour.drop
@@ -273,10 +273,10 @@ IndexHour.loc[*key*]
 
     ```
 
-[IndexHour](index_hour.html#api-detail-indexhour): [Constructor](index_hour-constructor.html#api-detail-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-detail-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-detail-indexhour-attribute) | [Method](index_hour-method.html#api-detail-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.html#api-detail-indexhour-dictionary-like) | [Display](index_hour-display.html#api-detail-indexhour-display) | [Selector](#api-detail-indexhour-selector) | [Iterator](index_hour-iterator.html#api-detail-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.html#api-detail-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-detail-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.html#api-detail-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.html#api-detail-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.html#api-detail-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.html#api-detail-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-detail-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.html#api-detail-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-detail-indexhour): [Constructor](index_hour-constructor.md#api-detail-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-detail-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-detail-indexhour-attribute) | [Method](index_hour-method.md#api-detail-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-detail-indexhour-dictionary-like) | [Display](index_hour-display.md#api-detail-indexhour-display) | [Selector](#api-detail-indexhour-selector) | [Iterator](index_hour-iterator.md#api-detail-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-detail-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-detail-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-detail-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-detail-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-detail-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-detail-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-detail-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-detail-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-display.html "Detail: IndexHour: Display")
-[Next](index_hour-iterator.html "Detail: IndexHour: Iterator")
+[Previous](index_hour-display.md "Detail: IndexHour: Display")
+[Next](index_hour-iterator.md "Detail: IndexHour: Iterator")
 
 ---
 

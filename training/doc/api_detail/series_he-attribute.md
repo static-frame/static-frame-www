@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: SeriesHE: Attribute
 * [View page source](../_sources/api_detail/series_he-attribute.rst.txt)
 
-[Previous](series_he-exporter.html "Detail: SeriesHE: Exporter")
-[Next](series_he-method.html "Detail: SeriesHE: Method")
+[Previous](series_he-exporter.md "Detail: SeriesHE: Exporter")
+[Next](series_he-method.md "Detail: SeriesHE: Method")
 
 ---
 
 # Detail: SeriesHE: Attribute[](#detail-serieshe-attribute "Link to this heading")
 
-[Overview: SeriesHE: Attribute](../api_overview/series_he-attribute.html#api-overview-serieshe-attribute)
+[Overview: SeriesHE: Attribute](../api_overview/series_he-attribute.md#api-overview-serieshe-attribute)
 
 SeriesHE.STATIC *= True*[](#static_frame.SeriesHE.STATIC "Link to this definition")
 :   ```
@@ -156,7 +156,7 @@ SeriesHE.T[](#static_frame.SeriesHE.T "Link to this definition")
 :   Transpose. For a 1D immutable container, this returns a reference to self.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -187,7 +187,7 @@ SeriesHE.index[](#static_frame.SeriesHE.index "Link to this definition")
 :   The index instance assigned to this container.
 
     Returns:
-    :   [`static_frame.Index`](index.html#static_frame.Index "static_frame.Index")
+    :   [`static_frame.Index`](index.md#static_frame.Index "static_frame.Index")
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -201,7 +201,7 @@ SeriesHE.index[](#static_frame.SeriesHE.index "Link to this definition")
     ```
 
 SeriesHE.memory[](#static_frame.SeriesHE.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -289,10 +289,10 @@ SeriesHE.size[](#static_frame.SeriesHE.size "Link to this definition")
 
     ```
 
-[SeriesHE](series_he.html#api-detail-serieshe): [Constructor](series_he-constructor.html#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.html#api-detail-serieshe-exporter) | [Attribute](#api-detail-serieshe-attribute) | [Method](series_he-method.html#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-detail-serieshe-dictionary-like) | [Display](series_he-display.html#api-detail-serieshe-display) | [Assignment](series_he-assignment.html#api-detail-serieshe-assignment) | [Selector](series_he-selector.html#api-detail-serieshe-selector) | [Iterator](series_he-iterator.html#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-exporter.html "Detail: SeriesHE: Exporter")
-[Next](series_he-method.html "Detail: SeriesHE: Method")
+[Previous](series_he-exporter.md "Detail: SeriesHE: Exporter")
+[Next](series_he-method.md "Detail: SeriesHE: Method")
 
 ---
 

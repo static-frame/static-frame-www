@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Yarn: Selector
 * [View page source](../_sources/api_detail/yarn-selector.rst.txt)
 
-[Previous](yarn-display.html "Detail: Yarn: Display")
-[Next](yarn-iterator.html "Detail: Yarn: Iterator")
+[Previous](yarn-display.md "Detail: Yarn: Display")
+[Next](yarn-iterator.md "Detail: Yarn: Iterator")
 
 ---
 
 # Detail: Yarn: Selector[](#detail-yarn-selector "Link to this heading")
 
-[Overview: Yarn: Selector](../api_overview/yarn-selector.html#api-overview-yarn-selector)
+[Overview: Yarn: Selector](../api_overview/yarn-selector.md#api-overview-yarn-selector)
 
 Yarn.drop[*key*]
 :   drop
     :   Interface for dropping elements from [`Yarn`](#Yarn "Yarn").
 
-    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceSelectTrio.__getitem__)
+    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceSelectTrio.__getitem__)
     :   Label-based selection.
 
     ```
@@ -267,7 +267,7 @@ Yarn.drop.loc[*key*]
     ```
 
 Yarn[*key*]()[](#Yarn "Link to this definition")
-:   Yarn.\_\_getitem\_\_ *= <function Yarn.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/yarn.html#Yarn.__getitem__)
+:   Yarn.\_\_getitem\_\_ *= <function Yarn.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/yarn.md#Yarn.__getitem__)
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -381,10 +381,10 @@ Yarn.loc[*key*]
 
     ```
 
-[Yarn](yarn.html#api-detail-yarn): [Constructor](yarn-constructor.html#api-detail-yarn-constructor) | [Exporter](yarn-exporter.html#api-detail-yarn-exporter) | [Attribute](yarn-attribute.html#api-detail-yarn-attribute) | [Method](yarn-method.html#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like) | [Display](yarn-display.html#api-detail-yarn-display) | [Selector](#api-detail-yarn-selector) | [Iterator](yarn-iterator.html#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
-[Previous](yarn-display.html "Detail: Yarn: Display")
-[Next](yarn-iterator.html "Detail: Yarn: Iterator")
+[Previous](yarn-display.md "Detail: Yarn: Display")
+[Next](yarn-iterator.md "Detail: Yarn: Iterator")
 
 ---
 

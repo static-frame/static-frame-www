@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: HLoc: Constructor
 * [View page source](../_sources/api_detail/hloc-constructor.rst.txt)
 
-[Previous](index_nanosecond_go-accessor_type_clinic.html "Detail: IndexNanosecondGO: Accessor Type Clinic")
-[Next](hloc-attribute.html "Detail: HLoc: Attribute")
+[Previous](index_nanosecond_go-accessor_type_clinic.md "Detail: IndexNanosecondGO: Accessor Type Clinic")
+[Next](hloc-attribute.md "Detail: HLoc: Attribute")
 
 ---
 
 # Detail: HLoc: Constructor[](#detail-hloc-constructor "Link to this heading")
 
-[Overview: HLoc: Constructor](../api_overview/hloc-constructor.html#api-overview-hloc-constructor)
+[Overview: HLoc: Constructor](../api_overview/hloc-constructor.md#api-overview-hloc-constructor)
 
-HLoc.\_\_init\_\_(*key*)[[source]](../_modules/static_frame/core/hloc.html#HLoc.__init__)[](#static_frame.HLoc.__init__ "Link to this definition")
+HLoc.\_\_init\_\_(*key*)[[source]](../_modules/static_frame/core/hloc.md#HLoc.__init__)[](#static_frame.HLoc.__init__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_product(('a', 'b', 'c'), (1024, 4096, 2048), name='x')
     >>> ih
@@ -192,10 +192,10 @@ HLoc.\_\_init\_\_(*key*)[[source]](../_modules/static_frame/core/hloc.html#HLoc.
 
     ```
 
-[HLoc](hloc.html#api-detail-hloc): [Constructor](#api-detail-hloc-constructor) | [Attribute](hloc-attribute.html#api-detail-hloc-attribute) | [Method](hloc-method.html#api-detail-hloc-method) | [Dictionary-Like](hloc-dictionary_like.html#api-detail-hloc-dictionary-like) | [Display](hloc-display.html#api-detail-hloc-display)
+[HLoc](hloc.md#api-detail-hloc): [Constructor](#api-detail-hloc-constructor) | [Attribute](hloc-attribute.md#api-detail-hloc-attribute) | [Method](hloc-method.md#api-detail-hloc-method) | [Dictionary-Like](hloc-dictionary_like.md#api-detail-hloc-dictionary-like) | [Display](hloc-display.md#api-detail-hloc-display)
 
-[Previous](index_nanosecond_go-accessor_type_clinic.html "Detail: IndexNanosecondGO: Accessor Type Clinic")
-[Next](hloc-attribute.html "Detail: HLoc: Attribute")
+[Previous](index_nanosecond_go-accessor_type_clinic.md "Detail: IndexNanosecondGO: Accessor Type Clinic")
+[Next](hloc-attribute.md "Detail: HLoc: Attribute")
 
 ---
 

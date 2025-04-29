@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: Batch: Accessor Datetime
 * [View page source](../_sources/api_overview/batch-accessor_datetime.rst.txt)
 
-[Previous](batch-accessor_values.html "Overview: Batch: Accessor Values")
-[Next](batch-accessor_string.html "Overview: Batch: Accessor String")
+[Previous](batch-accessor_values.md "Overview: Batch: Accessor Values")
+[Next](batch-accessor_string.md "Overview: Batch: Accessor String")
 
 ---
 
 # Overview: Batch: Accessor Datetime[](#overview-batch-accessor-datetime "Link to this heading")
 
-[Detail: Batch: Accessor Datetime](../api_detail/batch-accessor_datetime.html#api-detail-batch-accessor-datetime)
+[Detail: Batch: Accessor Datetime](../api_detail/batch-accessor_datetime.md#api-detail-batch-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-call) | `Batch.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-year) | `Batch.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-year-month) | `Batch.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-year-quarter) | `Batch.via_dt.year_quarter` | Return the year and quarter of each element as string formatted YYYY-QQ. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-month) | `Batch.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-day) | `Batch.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-hour) | `Batch.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-minute) | `Batch.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-second) | `Batch.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-weekday) | `Batch.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-quarter) | `Batch.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-is-month-end) | `Batch.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-is-month-start) | `Batch.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-is-year-end) | `Batch.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-is-year-start) | `Batch.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-is-quarter-end) | `Batch.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-is-quarter-start) | `Batch.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-timetuple) | `Batch.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-isoformat) | `Batch.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-fromisoformat) | `Batch.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-strftime) | `Batch.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-strptime) | `Batch.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/batch-accessor_datetime.html#api-sig-batch-via-dt-strpdate) | `Batch.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-call) | `Batch.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-year) | `Batch.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-year-month) | `Batch.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-year-quarter) | `Batch.via_dt.year_quarter` | Return the year and quarter of each element as string formatted YYYY-QQ. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-month) | `Batch.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-day) | `Batch.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-hour) | `Batch.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-minute) | `Batch.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-second) | `Batch.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-weekday) | `Batch.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-quarter) | `Batch.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-is-month-end) | `Batch.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-is-month-start) | `Batch.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-is-year-end) | `Batch.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-is-year-start) | `Batch.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-is-quarter-end) | `Batch.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-is-quarter-start) | `Batch.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-timetuple) | `Batch.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-isoformat) | `Batch.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-fromisoformat) | `Batch.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-strftime) | `Batch.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-strptime) | `Batch.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/batch-accessor_datetime.md#api-sig-batch-via-dt-strpdate) | `Batch.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[Batch](batch.html#api-overview-batch): [Constructor](batch-constructor.html#api-overview-batch-constructor) | [Exporter](batch-exporter.html#api-overview-batch-exporter) | [Attribute](batch-attribute.html#api-overview-batch-attribute) | [Method](batch-method.html#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-overview-batch-dictionary-like) | [Display](batch-display.html#api-overview-batch-display) | [Selector](batch-selector.html#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.html#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-overview-batch-accessor-values) | [Accessor Datetime](#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-overview-batch-accessor-reduce)
+[Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](batch-attribute.md#api-overview-batch-attribute) | [Method](batch-method.md#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-overview-batch-dictionary-like) | [Display](batch-display.md#api-overview-batch-display) | [Selector](batch-selector.md#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.md#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 
-[Previous](batch-accessor_values.html "Overview: Batch: Accessor Values")
-[Next](batch-accessor_string.html "Overview: Batch: Accessor String")
+[Previous](batch-accessor_values.md "Overview: Batch: Accessor Values")
+[Next](batch-accessor_string.md "Overview: Batch: Accessor String")
 
 ---
 

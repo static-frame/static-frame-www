@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: IndexAutoConstructorFactory: Constructor
 * [View page source](../_sources/api_overview/index_auto_constructor_factory-constructor.rst.txt)
 
-[Previous](index_default_constructor_factory-display.html "Overview: IndexDefaultConstructorFactory: Display")
-[Next](index_auto_constructor_factory-exporter.html "Overview: IndexAutoConstructorFactory: Exporter")
+[Previous](index_default_constructor_factory-display.md "Overview: IndexDefaultConstructorFactory: Display")
+[Next](index_auto_constructor_factory-exporter.md "Overview: IndexAutoConstructorFactory: Exporter")
 
 ---
 
 # Overview: IndexAutoConstructorFactory: Constructor[](#overview-indexautoconstructorfactory-constructor "Link to this heading")
 
-[Detail: IndexAutoConstructorFactory: Constructor](../api_detail/index_auto_constructor_factory-constructor.html#api-detail-indexautoconstructorfactory-constructor)
+[Detail: IndexAutoConstructorFactory: Constructor](../api_detail/index_auto_constructor_factory-constructor.md#api-detail-indexautoconstructorfactory-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_auto_constructor_factory-constructor.html#api-sig-indexautoconstructorfactory-init) | `IndexAutoConstructorFactory.__init__(name)` |  |
+| [Detail](../api_detail/index_auto_constructor_factory-constructor.md#api-sig-indexautoconstructorfactory-init) | `IndexAutoConstructorFactory.__init__(name)` |  |
 
-[IndexAutoConstructorFactory](index_auto_constructor_factory.html#api-overview-indexautoconstructorfactory): [Constructor](#api-overview-indexautoconstructorfactory-constructor) | [Exporter](index_auto_constructor_factory-exporter.html#api-overview-indexautoconstructorfactory-exporter) | [Method](index_auto_constructor_factory-method.html#api-overview-indexautoconstructorfactory-method) | [Display](index_auto_constructor_factory-display.html#api-overview-indexautoconstructorfactory-display)
+[IndexAutoConstructorFactory](index_auto_constructor_factory.md#api-overview-indexautoconstructorfactory): [Constructor](#api-overview-indexautoconstructorfactory-constructor) | [Exporter](index_auto_constructor_factory-exporter.md#api-overview-indexautoconstructorfactory-exporter) | [Method](index_auto_constructor_factory-method.md#api-overview-indexautoconstructorfactory-method) | [Display](index_auto_constructor_factory-display.md#api-overview-indexautoconstructorfactory-display)
 
-[Previous](index_default_constructor_factory-display.html "Overview: IndexDefaultConstructorFactory: Display")
-[Next](index_auto_constructor_factory-exporter.html "Overview: IndexAutoConstructorFactory: Exporter")
+[Previous](index_default_constructor_factory-display.md "Overview: IndexDefaultConstructorFactory: Display")
+[Next](index_auto_constructor_factory-exporter.md "Overview: IndexAutoConstructorFactory: Exporter")
 
 ---
 

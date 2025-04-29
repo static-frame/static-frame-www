@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Bus
 * [View page source](../_sources/api_overview/bus.rst.txt)
 
-[Previous](frame_he.html "Overview: FrameHE")
-[Next](batch.html "Overview: Batch")
+[Previous](frame_he.md "Overview: FrameHE")
+[Next](batch.md "Overview: Batch")
 
 ---
 
 # Overview: Bus[](#overview-bus "Link to this heading")
 
-[Detail: Bus](../api_detail/bus.html#api-detail-bus)
+[Detail: Bus](../api_detail/bus.md#api-detail-bus)
 
 |  |  |
 | --- | --- |
-| [Constructor](bus-constructor.html#api-overview-bus-constructor) | Alternative constructors for creating instances. |
-| [Exporter](bus-exporter.html#api-overview-bus-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](bus-attribute.html#api-overview-bus-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](bus-method.html#api-overview-bus-method) | Methods for general functionality. |
-| [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](bus-display.html#api-overview-bus-display) | Methods for providing a text representation of the object. |
-| [Selector](bus-selector.html#api-overview-bus-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](bus-iterator.html#api-overview-bus-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](bus-constructor.md#api-overview-bus-constructor) | Alternative constructors for creating instances. |
+| [Exporter](bus-exporter.md#api-overview-bus-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](bus-attribute.md#api-overview-bus-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](bus-method.md#api-overview-bus-method) | Methods for general functionality. |
+| [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](bus-display.md#api-overview-bus-display) | Methods for providing a text representation of the object. |
+| [Selector](bus-selector.md#api-overview-bus-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](bus-iterator.md#api-overview-bus-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 
-[Bus](#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](frame_he.html "Overview: FrameHE")
-[Next](batch.html "Overview: Batch")
+[Previous](frame_he.md "Overview: FrameHE")
+[Next](batch.md "Overview: Batch")
 
 ---
 

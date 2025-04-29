@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMinute: Display
 * [View page source](../_sources/api_detail/index_minute-display.rst.txt)
 
-[Previous](index_minute-dictionary_like.html "Detail: IndexMinute: Dictionary-Like")
-[Next](index_minute-selector.html "Detail: IndexMinute: Selector")
+[Previous](index_minute-dictionary_like.md "Detail: IndexMinute: Dictionary-Like")
+[Next](index_minute-selector.md "Detail: IndexMinute: Selector")
 
 ---
 
 # Detail: IndexMinute: Display[](#detail-indexminute-display "Link to this heading")
 
-[Overview: IndexMinute: Display](../api_overview/index_minute-display.html#api-overview-indexminute-display)
+[Overview: IndexMinute: Display](../api_overview/index_minute-display.md#api-overview-indexminute-display)
 
 IndexMinute.interface[](#IndexMinute.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -230,7 +230,7 @@ IndexMinute.display(*config=None*, */*, *\**, *style\_config=None*)[](#static
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexMinute(('1620-09-16', 'NaT', '1620-11-21'))
@@ -251,7 +251,7 @@ IndexMinute.display\_tall(*config=None*, */*)[](#static_frame.IndexMinute.dis
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexMinute(('1620-09-16', 'NaT', '1620-11-21'))
@@ -268,7 +268,7 @@ IndexMinute.display\_wide(*config=None*, */*)[](#static_frame.IndexMinute.dis
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexMinute(('1620-09-16', 'NaT', '1620-11-21'))
@@ -281,10 +281,10 @@ IndexMinute.display\_wide(*config=None*, */*)[](#static_frame.IndexMinute.dis
 
     ```
 
-[IndexMinute](index_minute.html#api-detail-indexminute): [Constructor](index_minute-constructor.html#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-detail-indexminute-attribute) | [Method](index_minute-method.html#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-detail-indexminute-dictionary-like) | [Display](#api-detail-indexminute-display) | [Selector](index_minute-selector.html#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.html#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-detail-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](index_minute-method.md#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-detail-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-dictionary_like.html "Detail: IndexMinute: Dictionary-Like")
-[Next](index_minute-selector.html "Detail: IndexMinute: Selector")
+[Previous](index_minute-dictionary_like.md "Detail: IndexMinute: Dictionary-Like")
+[Next](index_minute-selector.md "Detail: IndexMinute: Selector")
 
 ---
 

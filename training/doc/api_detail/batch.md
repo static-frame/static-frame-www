@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,41 +136,41 @@ API Detail
 * Detail: Batch
 * [View page source](../_sources/api_detail/batch.rst.txt)
 
-[Previous](bus.html "Detail: Bus")
-[Next](yarn.html "Detail: Yarn")
+[Previous](bus.md "Detail: Bus")
+[Next](yarn.md "Detail: Yarn")
 
 ---
 
 # Detail: Batch[](#detail-batch "Link to this heading")
 
-[Overview: Batch](../api_overview/batch.html#api-overview-batch)
+[Overview: Batch](../api_overview/batch.md#api-overview-batch)
 
-*class* Batch(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch)[](#static_frame.Batch "Link to this definition")
-:   A lazy, sequentially evaluated container of [`Frame`](frame-selector.html#Frame "Frame") that broadcasts operations on contained [`Frame`](frame-selector.html#Frame "Frame") by return new [`Batch`](batch-selector.html#Batch "Batch") instances. Full evaluation of operations only occurs when iterating or calling an exporter, such as `to_frame()` or `to_series()`.
+*class* Batch(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch)[](#static_frame.Batch "Link to this definition")
+:   A lazy, sequentially evaluated container of [`Frame`](frame-selector.md#Frame "Frame") that broadcasts operations on contained [`Frame`](frame-selector.md#Frame "Frame") by return new [`Batch`](batch-selector.md#Batch "Batch") instances. Full evaluation of operations only occurs when iterating or calling an exporter, such as `to_frame()` or `to_series()`.
 
-* [Constructor](batch-constructor.html#api-detail-batch-constructor): Alternative constructors for creating instances.
-* [Exporter](batch-exporter.html#api-detail-batch-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](batch-attribute.html#api-detail-batch-attribute): Attributes for retrieving basic characteristics.
-* [Method](batch-method.html#api-detail-batch-method): Methods for general functionality.
-* [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like): All dictionary-like methods and iterators.
-* [Display](batch-display.html#api-detail-batch-display): Methods for providing a text representation of the object.
-* [Selector](batch-selector.html#api-detail-batch-selector): Interfaces for selecting by position, label or Boolean.
-* [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose): Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows.
-* [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value): Interface that permits supplying a fill value to be used when binary operator application forces reindexing.
-* [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
-* [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce): Interface for providing function application to columns or containers that result in new Frame.
+* [Constructor](batch-constructor.md#api-detail-batch-constructor): Alternative constructors for creating instances.
+* [Exporter](batch-exporter.md#api-detail-batch-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](batch-attribute.md#api-detail-batch-attribute): Attributes for retrieving basic characteristics.
+* [Method](batch-method.md#api-detail-batch-method): Methods for general functionality.
+* [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like): All dictionary-like methods and iterators.
+* [Display](batch-display.md#api-detail-batch-display): Methods for providing a text representation of the object.
+* [Selector](batch-selector.md#api-detail-batch-selector): Interfaces for selecting by position, label or Boolean.
+* [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose): Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows.
+* [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value): Interface that permits supplying a fill value to be used when binary operator application forces reindexing.
+* [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce): Interface for providing function application to columns or containers that result in new Frame.
 
-[Batch](#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](bus.html "Detail: Bus")
-[Next](yarn.html "Detail: Yarn")
+[Previous](bus.md "Detail: Bus")
+[Next](yarn.md "Detail: Yarn")
 
 ---
 

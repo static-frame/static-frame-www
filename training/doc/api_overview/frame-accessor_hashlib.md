@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Frame: Accessor Hashlib
 * [View page source](../_sources/api_overview/frame-accessor_hashlib.rst.txt)
 
-[Previous](frame-accessor_regular_expression.html "Overview: Frame: Accessor Regular Expression")
-[Next](frame-accessor_type_clinic.html "Overview: Frame: Accessor Type Clinic")
+[Previous](frame-accessor_regular_expression.md "Overview: Frame: Accessor Regular Expression")
+[Next](frame-accessor_type_clinic.md "Overview: Frame: Accessor Type Clinic")
 
 ---
 
 # Overview: Frame: Accessor Hashlib[](#overview-frame-accessor-hashlib "Link to this heading")
 
-[Detail: Frame: Accessor Hashlib](../api_detail/frame-accessor_hashlib.html#api-detail-frame-accessor-hashlib)
+[Detail: Frame: Accessor Hashlib](../api_detail/frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-to-bytes) | `Frame.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-md5) | `Frame.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-sha256) | `Frame.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-sha512) | `Frame.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-sha3-256) | `Frame.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-sha3-512) | `Frame.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-shake-128) | `Frame.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-shake-256) | `Frame.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-blake2b) | `Frame.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/frame-accessor_hashlib.html#api-sig-frame-via-hashlib-blake2s) | `Frame.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-to-bytes) | `Frame.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-md5) | `Frame.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-sha256) | `Frame.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-sha512) | `Frame.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-sha3-256) | `Frame.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-sha3-512) | `Frame.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-shake-128) | `Frame.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-shake-256) | `Frame.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-blake2b) | `Frame.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/frame-accessor_hashlib.md#api-sig-frame-via-hashlib-blake2s) | `Frame.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[Frame](frame.html#api-overview-frame): [Constructor](frame-constructor.html#api-overview-frame-constructor) | [Exporter](frame-exporter.html#api-overview-frame-exporter) | [Attribute](frame-attribute.html#api-overview-frame-attribute) | [Method](frame-method.html#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-overview-frame-dictionary-like) | [Display](frame-display.html#api-overview-frame-display) | [Assignment](frame-assignment.html#api-overview-frame-assignment) | [Selector](frame-selector.html#api-overview-frame-selector) | [Iterator](frame-iterator.html#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-overview-frame-accessor-reduce)
+[Frame](frame.md#api-overview-frame): [Constructor](frame-constructor.md#api-overview-frame-constructor) | [Exporter](frame-exporter.md#api-overview-frame-exporter) | [Attribute](frame-attribute.md#api-overview-frame-attribute) | [Method](frame-method.md#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-overview-frame-dictionary-like) | [Display](frame-display.md#api-overview-frame-display) | [Assignment](frame-assignment.md#api-overview-frame-assignment) | [Selector](frame-selector.md#api-overview-frame-selector) | [Iterator](frame-iterator.md#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-overview-frame-accessor-reduce)
 
-[Previous](frame-accessor_regular_expression.html "Overview: Frame: Accessor Regular Expression")
-[Next](frame-accessor_type_clinic.html "Overview: Frame: Accessor Type Clinic")
+[Previous](frame-accessor_regular_expression.md "Overview: Frame: Accessor Regular Expression")
+[Next](frame-accessor_type_clinic.md "Overview: Frame: Accessor Type Clinic")
 
 ---
 

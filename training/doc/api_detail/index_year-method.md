@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexYear: Method
 * [View page source](../_sources/api_detail/index_year-method.rst.txt)
 
-[Previous](index_year-attribute.html "Detail: IndexYear: Attribute")
-[Next](index_year-dictionary_like.html "Detail: IndexYear: Dictionary-Like")
+[Previous](index_year-attribute.md "Detail: IndexYear: Attribute")
+[Next](index_year-dictionary_like.md "Detail: IndexYear: Dictionary-Like")
 
 ---
 
 # Detail: IndexYear: Method[](#detail-indexyear-method "Link to this heading")
 
-[Overview: IndexYear: Method](../api_overview/index_year-method.html#api-overview-indexyear-method)
+[Overview: IndexYear: Method](../api_overview/index_year-method.md#api-overview-indexyear-method)
 
 IndexYear.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexYear.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -397,7 +397,7 @@ IndexYear.difference(*\*others*)[](#static_frame.IndexYear.difference "Link t
     ```
 
 IndexYear.dropfalsy()[](#static_frame.IndexYear.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexYear(('1620', 'NaT', '1619'))
@@ -416,7 +416,7 @@ IndexYear.dropfalsy()[](#static_frame.IndexYear.dropfalsy "Link to this defin
     ```
 
 IndexYear.dropna()[](#static_frame.IndexYear.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexYear(('1620', 'NaT', '1619'))
@@ -464,7 +464,7 @@ IndexYear.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fals
     ```
 
 IndexYear.fillfalsy(*value*, */*)[](#static_frame.IndexYear.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -483,7 +483,7 @@ IndexYear.fillfalsy(*value*, */*)[](#static_frame.IndexYear.fillfalsy "Link t
     ```
 
 IndexYear.fillna(*value*, */*)[](#static_frame.IndexYear.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -506,10 +506,10 @@ IndexYear.fillna(*value*, */*)[](#static_frame.IndexYear.fillna "Link to this
     ```
 
 IndexYear.head(*count=5*, */*)[](#static_frame.IndexYear.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -528,7 +528,7 @@ IndexYear.head(*count=5*, */*)[](#static_frame.IndexYear.head "Link to this d
     ```
 
 IndexYear.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexYear.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -652,7 +652,7 @@ IndexYear.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static
     ```
 
 IndexYear.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexYear.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -966,10 +966,10 @@ IndexYear.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static
     ```
 
 IndexYear.tail(*count=5*, */*)[](#static_frame.IndexYear.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -1076,10 +1076,10 @@ IndexYear.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_
 
     ```
 
-[IndexYear](index_year.html#api-detail-indexyear): [Constructor](index_year-constructor.html#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.html#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.html#api-detail-indexyear-attribute) | [Method](#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-detail-indexyear-dictionary-like) | [Display](index_year-display.html#api-detail-indexyear-display) | [Selector](index_year-selector.html#api-detail-indexyear-selector) | [Iterator](index_year-iterator.html#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-detail-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-detail-indexyear): [Constructor](index_year-constructor.md#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.md#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.md#api-detail-indexyear-attribute) | [Method](#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-detail-indexyear-dictionary-like) | [Display](index_year-display.md#api-detail-indexyear-display) | [Selector](index_year-selector.md#api-detail-indexyear-selector) | [Iterator](index_year-iterator.md#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-detail-indexyear-accessor-type-clinic)
 
-[Previous](index_year-attribute.html "Detail: IndexYear: Attribute")
-[Next](index_year-dictionary_like.html "Detail: IndexYear: Dictionary-Like")
+[Previous](index_year-attribute.md "Detail: IndexYear: Attribute")
+[Next](index_year-dictionary_like.md "Detail: IndexYear: Dictionary-Like")
 
 ---
 

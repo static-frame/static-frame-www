@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: Series: Operator Binary
 * [View page source](../_sources/api_overview/series-operator_binary.rst.txt)
 
-[Previous](series-iterator.html "Overview: Series: Iterator")
-[Next](series-operator_unary.html "Overview: Series: Operator Unary")
+[Previous](series-iterator.md "Overview: Series: Iterator")
+[Next](series-operator_unary.md "Overview: Series: Operator Unary")
 
 ---
 
 # Overview: Series: Operator Binary[](#overview-series-operator-binary "Link to this heading")
 
-[Detail: Series: Operator Binary](../api_detail/series-operator_binary.html#api-detail-series-operator-binary)
+[Detail: Series: Operator Binary](../api_detail/series-operator_binary.md#api-detail-series-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-add) | `Series.__add__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-and) | `Series.__and__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-eq) | `Series.__eq__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-floordiv) | `Series.__floordiv__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-ge) | `Series.__ge__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-gt) | `Series.__gt__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-le) | `Series.__le__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-lt) | `Series.__lt__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-matmul) | `Series.__matmul__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-mod) | `Series.__mod__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-mul) | `Series.__mul__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-ne) | `Series.__ne__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-or) | `Series.__or__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-pow) | `Series.__pow__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-radd) | `Series.__radd__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-rfloordiv) | `Series.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-rmatmul) | `Series.__rmatmul__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-rmul) | `Series.__rmul__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-rshift) | `Series.__rshift__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-rsub) | `Series.__rsub__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-rtruediv) | `Series.__rtruediv__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-sub) | `Series.__sub__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-truediv) | `Series.__truediv__(other)` |  |
-| [Detail](../api_detail/series-operator_binary.html#api-sig-series-xor) | `Series.__xor__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-add) | `Series.__add__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-and) | `Series.__and__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-eq) | `Series.__eq__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-floordiv) | `Series.__floordiv__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-ge) | `Series.__ge__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-gt) | `Series.__gt__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-le) | `Series.__le__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-lt) | `Series.__lt__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-matmul) | `Series.__matmul__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-mod) | `Series.__mod__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-mul) | `Series.__mul__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-ne) | `Series.__ne__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-or) | `Series.__or__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-pow) | `Series.__pow__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-radd) | `Series.__radd__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-rfloordiv) | `Series.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-rmatmul) | `Series.__rmatmul__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-rmul) | `Series.__rmul__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-rshift) | `Series.__rshift__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-rsub) | `Series.__rsub__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-rtruediv) | `Series.__rtruediv__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-sub) | `Series.__sub__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-truediv) | `Series.__truediv__(other)` |  |
+| [Detail](../api_detail/series-operator_binary.md#api-sig-series-xor) | `Series.__xor__(other)` |  |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-iterator.html "Overview: Series: Iterator")
-[Next](series-operator_unary.html "Overview: Series: Operator Unary")
+[Previous](series-iterator.md "Overview: Series: Iterator")
+[Next](series-operator_unary.md "Overview: Series: Operator Unary")
 
 ---
 

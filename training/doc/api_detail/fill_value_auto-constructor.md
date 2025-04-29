@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: FillValueAuto: Constructor
 * [View page source](../_sources/api_detail/fill_value_auto-constructor.rst.txt)
 
-[Previous](www-constructor.html "Detail: WWW: Constructor")
-[Next](fill_value_auto-attribute.html "Detail: FillValueAuto: Attribute")
+[Previous](www-constructor.md "Detail: WWW: Constructor")
+[Next](fill_value_auto-attribute.md "Detail: FillValueAuto: Attribute")
 
 ---
 
 # Detail: FillValueAuto: Constructor[](#detail-fillvalueauto-constructor "Link to this heading")
 
-[Overview: FillValueAuto: Constructor](../api_overview/fill_value_auto-constructor.html#api-overview-fillvalueauto-constructor)
+[Overview: FillValueAuto: Constructor](../api_overview/fill_value_auto-constructor.md#api-overview-fillvalueauto-constructor)
 
-FillValueAuto.\_\_init\_\_(*b=<object object>*, *i=<object object>*, *u=<object object>*, *f=<object object>*, *c=<object object>*, *m=<object object>*, *M=<object object>*, *O=<object object>*, *S=<object object>*, *U=<object object>*, *V=<object object>*)[[source]](../_modules/static_frame/core/fill_value_auto.html#FillValueAuto.__init__)[](#static_frame.FillValueAuto.__init__ "Link to this definition")
+FillValueAuto.\_\_init\_\_(*b=<object object>*, *i=<object object>*, *u=<object object>*, *f=<object object>*, *c=<object object>*, *m=<object object>*, *M=<object object>*, *O=<object object>*, *S=<object object>*, *U=<object object>*, *V=<object object>*)[[source]](../_modules/static_frame/core/fill_value_auto.md#FillValueAuto.__init__)[](#static_frame.FillValueAuto.__init__ "Link to this definition")
 :   Parameters:
     :   * **b** – fill value for bool kind
         * **i** – fill value for integer kind
@@ -190,7 +190,7 @@ FillValueAuto.\_\_init\_\_(*b=<object object>*, *i=<object object>*, *u=<object 
 
     ```
 
-*classmethod* FillValueAuto.from\_default(*b=False*, *i=0*, *u=0*, *f=nan*, *c=nan + nanj*, *m=np.timedelta64('NaT')*, *M=np.datetime64('NaT')*, *O=None*, *S=b''*, *U=''*, *V=b'\x00'*)[[source]](../_modules/static_frame/core/fill_value_auto.html#FillValueAuto.from_default)[](#static_frame.FillValueAuto.from_default "Link to this definition")
+*classmethod* FillValueAuto.from\_default(*b=False*, *i=0*, *u=0*, *f=nan*, *c=nan + nanj*, *m=np.timedelta64('NaT')*, *M=np.datetime64('NaT')*, *O=None*, *S=b''*, *U=''*, *V=b'\x00'*)[[source]](../_modules/static_frame/core/fill_value_auto.md#FillValueAuto.from_default)[](#static_frame.FillValueAuto.from_default "Link to this definition")
 :   Create a `FileValueAuto` instance based on a default selected to prohibit type coercions.
 
     Parameters:
@@ -212,10 +212,10 @@ FillValueAuto.\_\_init\_\_(*b=<object object>*, *i=<object object>*, *u=<object 
 
     ```
 
-[FillValueAuto](fill_value_auto.html#api-detail-fillvalueauto): [Constructor](#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.html#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.html#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.html#api-detail-fillvalueauto-selector)
+[FillValueAuto](fill_value_auto.md#api-detail-fillvalueauto): [Constructor](#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-detail-fillvalueauto-selector)
 
-[Previous](www-constructor.html "Detail: WWW: Constructor")
-[Next](fill_value_auto-attribute.html "Detail: FillValueAuto: Attribute")
+[Previous](www-constructor.md "Detail: WWW: Constructor")
+[Next](fill_value_auto-attribute.md "Detail: FillValueAuto: Attribute")
 
 ---
 

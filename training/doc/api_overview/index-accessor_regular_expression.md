@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: Index: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index-accessor_regular_expression.rst.txt)
 
-[Previous](index-accessor_string.html "Overview: Index: Accessor String")
-[Next](index-accessor_hashlib.html "Overview: Index: Accessor Hashlib")
+[Previous](index-accessor_string.md "Overview: Index: Accessor String")
+[Next](index-accessor_hashlib.md "Overview: Index: Accessor Hashlib")
 
 ---
 
 # Overview: Index: Accessor Regular Expression[](#overview-index-accessor-regular-expression "Link to this heading")
 
-[Detail: Index: Accessor Regular Expression](../api_detail/index-accessor_regular_expression.html#api-detail-index-accessor-regular-expression)
+[Detail: Index: Accessor Regular Expression](../api_detail/index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-accessor_regular_expression.html#api-sig-index-via-re-search) | `Index.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index-accessor_regular_expression.html#api-sig-index-via-re-match) | `Index.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index-accessor_regular_expression.html#api-sig-index-via-re-fullmatch) | `Index.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index-accessor_regular_expression.html#api-sig-index-via-re-split) | `Index.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index-accessor_regular_expression.html#api-sig-index-via-re-findall) | `Index.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index-accessor_regular_expression.html#api-sig-index-via-re-sub) | `Index.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index-accessor_regular_expression.html#api-sig-index-via-re-subn) | `Index.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index-accessor_regular_expression.md#api-sig-index-via-re-search) | `Index.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index-accessor_regular_expression.md#api-sig-index-via-re-match) | `Index.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index-accessor_regular_expression.md#api-sig-index-via-re-fullmatch) | `Index.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index-accessor_regular_expression.md#api-sig-index-via-re-split) | `Index.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index-accessor_regular_expression.md#api-sig-index-via-re-findall) | `Index.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index-accessor_regular_expression.md#api-sig-index-via-re-sub) | `Index.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index-accessor_regular_expression.md#api-sig-index-via-re-subn) | `Index.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[Index](index.html#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](index-exporter.html#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](index-method.html#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | [Display](index-display.html#api-overview-index-display) | [Selector](index-selector.html#api-overview-index-selector) | [Iterator](index-iterator.html#api-overview-index-iterator) | [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](index.md#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](index-exporter.md#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](index-method.md#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | [Display](index-display.md#api-overview-index-display) | [Selector](index-selector.md#api-overview-index-selector) | [Iterator](index-iterator.md#api-overview-index-iterator) | [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](index-accessor_string.html "Overview: Index: Accessor String")
-[Next](index-accessor_hashlib.html "Overview: Index: Accessor Hashlib")
+[Previous](index-accessor_string.md "Overview: Index: Accessor String")
+[Next](index-accessor_hashlib.md "Overview: Index: Accessor Hashlib")
 
 ---
 

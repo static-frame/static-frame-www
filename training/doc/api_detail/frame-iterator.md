@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Frame: Iterator
 * [View page source](../_sources/api_detail/frame-iterator.rst.txt)
 
-[Previous](frame-selector.html "Detail: Frame: Selector")
-[Next](frame-operator_binary.html "Detail: Frame: Operator Binary")
+[Previous](frame-selector.md "Detail: Frame: Selector")
+[Next](frame-operator_binary.md "Detail: Frame: Operator Binary")
 
 ---
 
 # Detail: Frame: Iterator[](#detail-frame-iterator "Link to this heading")
 
-[Overview: Frame: Iterator](../api_overview/frame-iterator.html#api-overview-frame-iterator)
+[Overview: Frame: Iterator](../api_overview/frame-iterator.md#api-overview-frame-iterator)
 
 Frame.iter\_array(*\**, *axis*)
 :   iter\_array
@@ -168,7 +168,7 @@ Frame.iter\_array(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_const
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -200,7 +200,7 @@ Frame.iter\_array(*\**, *axis).apply\_iter(func*)
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -229,7 +229,7 @@ Frame.iter\_array(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -258,7 +258,7 @@ Frame.iter\_array(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -315,7 +315,7 @@ Frame.iter\_array\_items(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -347,7 +347,7 @@ Frame.iter\_array\_items(*\**, *axis).apply\_iter(func*)
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -376,7 +376,7 @@ Frame.iter\_array\_items(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -405,7 +405,7 @@ Frame.iter\_array\_items(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, 
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -593,7 +593,7 @@ Frame.iter\_element(*\**, *axis).map\_all(mapping*, *\**, *dtype*, *name*, *inde
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -627,7 +627,7 @@ Frame.iter\_element(*\**, *axis).map\_all\_iter(mapping*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -653,7 +653,7 @@ Frame.iter\_element(*\**, *axis).map\_all\_iter\_items(mapping*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -679,7 +679,7 @@ Frame.iter\_element(*\**, *axis).map\_any(mapping*, *\**, *dtype*, *name*, *inde
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -713,7 +713,7 @@ Frame.iter\_element(*\**, *axis).map\_any\_iter(mapping*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -739,7 +739,7 @@ Frame.iter\_element(*\**, *axis).map\_any\_iter\_items(mapping*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -765,7 +765,7 @@ Frame.iter\_element(*\**, *axis).map\_fill(mapping*, *\**, *fill\_value*, *dtype
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -800,7 +800,7 @@ Frame.iter\_element(*\**, *axis).map\_fill\_iter(mapping*, *\**, *fill\_value*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -827,7 +827,7 @@ Frame.iter\_element(*\**, *axis).map\_fill\_iter\_items(mapping*, *\**, *fill\_v
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1006,7 +1006,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_all(mapping*, *\**, *dtype*, *name*
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -1036,7 +1036,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_all\_iter(mapping*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -1060,7 +1060,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_all\_iter\_items(mapping*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1084,7 +1084,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_any(mapping*, *\**, *dtype*, *name*
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -1114,7 +1114,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_any\_iter(mapping*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -1138,7 +1138,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_any\_iter\_items(mapping*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1162,7 +1162,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_fill(mapping*, *\**, *fill\_value*,
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -1193,7 +1193,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_fill\_iter(mapping*, *\**, *fill\_v
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -1218,7 +1218,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_fill\_iter\_items(mapping*, *\**, *
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1241,7 +1241,7 @@ Frame.iter\_element\_items(*\**, *axis).map\_fill\_iter\_items(mapping*, *\**, *
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1271,7 +1271,7 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop*)
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
@@ -1302,7 +1302,7 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).apply(func*, *\**, *dtype*, *name*
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).apply\_iter(func*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     IterNodeDelegateReducible.apply\_iter(*func*, */*)
     :   Apply a function to each value. A generator of resulting values.
@@ -1331,7 +1331,7 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).apply\_iter(func*)
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).apply\_iter\_items(func*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
@@ -1360,7 +1360,7 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).apply\_iter\_items(func*)
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
@@ -1397,9 +1397,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).apply\_pool(func*, *\**, *dtype*, 
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -1420,9 +1420,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fi
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -1443,9 +1443,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fi
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -1474,9 +1474,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fi
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -1505,9 +1505,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fi
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -1533,9 +1533,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fi
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1555,9 +1555,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1577,9 +1577,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1609,9 +1609,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1641,9 +1641,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1668,9 +1668,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1690,9 +1690,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1712,9 +1712,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1742,9 +1742,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1772,9 +1772,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1799,9 +1799,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1821,9 +1821,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1843,9 +1843,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1873,9 +1873,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -1903,9 +1903,9 @@ Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func
 
 Frame.iter\_group(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2080,7 +2080,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2103,7 +2103,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2126,7 +2126,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2149,7 +2149,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2172,7 +2172,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2204,7 +2204,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2226,7 +2226,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2248,7 +2248,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2270,7 +2270,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2292,7 +2292,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2319,7 +2319,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2341,7 +2341,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2363,7 +2363,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2385,7 +2385,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2407,7 +2407,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2434,7 +2434,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2456,7 +2456,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2478,7 +2478,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2500,7 +2500,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2522,7 +2522,7 @@ Frame.iter\_group\_array(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2676,7 +2676,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2699,7 +2699,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2722,7 +2722,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2745,7 +2745,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2768,7 +2768,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -2800,7 +2800,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2822,7 +2822,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2844,7 +2844,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2866,7 +2866,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2888,7 +2888,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_fu
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2915,7 +2915,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2937,7 +2937,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2959,7 +2959,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -2981,7 +2981,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3003,7 +3003,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3030,7 +3030,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3052,7 +3052,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3074,7 +3074,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3096,7 +3096,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3118,7 +3118,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3143,7 +3143,7 @@ Frame.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3173,7 +3173,7 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop*)
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
@@ -3204,7 +3204,7 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).apply(func*, *\**, *dtype*,
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).apply\_iter(func*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     IterNodeDelegateReducible.apply\_iter(*func*, */*)
     :   Apply a function to each value. A generator of resulting values.
@@ -3233,7 +3233,7 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).apply\_iter(func*)
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).apply\_iter\_items(func*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
@@ -3262,7 +3262,7 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).apply\_iter\_items(func*)
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
     IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
@@ -3278,9 +3278,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).apply\_pool(func*, *\**, *d
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -3301,9 +3301,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -3324,9 +3324,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -3355,9 +3355,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -3386,9 +3386,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -3414,9 +3414,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3436,9 +3436,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3458,9 +3458,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3490,9 +3490,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3522,9 +3522,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3549,9 +3549,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_map\_func(func
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3571,9 +3571,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3593,9 +3593,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3623,9 +3623,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3653,9 +3653,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3680,9 +3680,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3702,9 +3702,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3724,9 +3724,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3754,9 +3754,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3784,9 +3784,9 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 
 Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -3811,7 +3811,7 @@ Frame.iter\_group\_items(*key*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
 
 Frame.iter\_group\_labels(*depth\_level*, *\**, *axis*)
 :   iter\_group\_labels
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -3841,9 +3841,9 @@ Frame.iter\_group\_labels(*depth\_level*, *\**, *axis*)
 
 Frame.iter\_group\_labels(*depth\_level*, *\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_group\_labels
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -3872,9 +3872,9 @@ Frame.iter\_group\_labels(*depth\_level*, *\**, *axis).apply(func*, *\**, *dtype
 
 Frame.iter\_group\_labels(*depth\_level*, *\**, *axis).apply\_iter(func*)
 :   iter\_group\_labels
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -3901,9 +3901,9 @@ Frame.iter\_group\_labels(*depth\_level*, *\**, *axis).apply\_iter(func*)
 
 Frame.iter\_group\_labels(*depth\_level*, *\**, *axis).apply\_iter\_items(func*)
 :   iter\_group\_labels
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -3930,9 +3930,9 @@ Frame.iter\_group\_labels(*depth\_level*, *\**, *axis).apply\_iter\_items(func*)
 
 Frame.iter\_group\_labels(*depth\_level*, *\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_group\_labels
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -3970,7 +3970,7 @@ Frame.iter\_group\_labels\_array(*depth\_level*, *\**, *axis).apply(func*, *\**,
 :   iter\_group\_labels\_array
     :   Iterator of `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -4001,7 +4001,7 @@ Frame.iter\_group\_labels\_array(*depth\_level*, *\**, *axis).apply\_iter(func*)
 :   iter\_group\_labels\_array
     :   Iterator of `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -4030,7 +4030,7 @@ Frame.iter\_group\_labels\_array(*depth\_level*, *\**, *axis).apply\_iter\_items
 :   iter\_group\_labels\_array
     :   Iterator of `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -4059,7 +4059,7 @@ Frame.iter\_group\_labels\_array(*depth\_level*, *\**, *axis).apply\_pool(func*,
 :   iter\_group\_labels\_array
     :   Iterator of `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -4097,7 +4097,7 @@ Frame.iter\_group\_labels\_array\_items(*depth\_level*, *\**, *axis).apply(func*
 :   iter\_group\_labels\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -4128,7 +4128,7 @@ Frame.iter\_group\_labels\_array\_items(*depth\_level*, *\**, *axis).apply\_iter
 :   iter\_group\_labels\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -4157,7 +4157,7 @@ Frame.iter\_group\_labels\_array\_items(*depth\_level*, *\**, *axis).apply\_iter
 :   iter\_group\_labels\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -4186,7 +4186,7 @@ Frame.iter\_group\_labels\_array\_items(*depth\_level*, *\**, *axis).apply\_pool
 :   iter\_group\_labels\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -4200,7 +4200,7 @@ Frame.iter\_group\_labels\_array\_items(*depth\_level*, *\**, *axis).apply\_pool
 
 Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis*)
 :   iter\_group\_labels\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -4230,9 +4230,9 @@ Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis*)
 
 Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_group\_labels\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -4261,9 +4261,9 @@ Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply(func*, *\**,
 
 Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply\_iter(func*)
 :   iter\_group\_labels\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -4290,9 +4290,9 @@ Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply\_iter(func*)
 
 Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply\_iter\_items(func*)
 :   iter\_group\_labels\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -4319,9 +4319,9 @@ Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply\_iter\_items
 
 Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_group\_labels\_items
-    :   Iterator of pairs of label, [`Frame`](frame-selector.html#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
+    :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -4335,7 +4335,7 @@ Frame.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply\_pool(func*,
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4365,7 +4365,7 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis*)
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
@@ -4396,7 +4396,7 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply(func*, *\**,
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply\_iter(func*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_iter(*func*, */*)
     :   Apply a function to each value. A generator of resulting values.
@@ -4425,7 +4425,7 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply\_iter(func*)
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
@@ -4454,7 +4454,7 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply\_iter\_items
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
@@ -4470,9 +4470,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply\_pool(func*,
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -4493,9 +4493,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -4516,9 +4516,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -4549,9 +4549,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -4582,9 +4582,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -4609,9 +4609,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4631,9 +4631,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4653,9 +4653,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4690,9 +4690,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4727,9 +4727,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4755,9 +4755,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4777,9 +4777,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4799,9 +4799,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4833,9 +4833,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4867,9 +4867,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4895,9 +4895,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4917,9 +4917,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4939,9 +4939,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -4973,9 +4973,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5007,9 +5007,9 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5035,7 +5035,7 @@ Frame.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).reduce.from\_label
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5057,7 +5057,7 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis*)
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
@@ -5088,7 +5088,7 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply(func*
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply\_iter(func*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_iter(*func*, */*)
     :   Apply a function to each value. A generator of resulting values.
@@ -5117,7 +5117,7 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply\_iter
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
@@ -5146,7 +5146,7 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply\_iter
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
@@ -5162,9 +5162,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply\_pool
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5185,9 +5185,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5208,9 +5208,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5231,9 +5231,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5254,9 +5254,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5289,9 +5289,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5311,9 +5311,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5333,9 +5333,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5355,9 +5355,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5377,9 +5377,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5405,9 +5405,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5427,9 +5427,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5449,9 +5449,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5471,9 +5471,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5493,9 +5493,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5521,9 +5521,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5543,9 +5543,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5565,9 +5565,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5587,9 +5587,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5609,9 +5609,9 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_array
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5637,7 +5637,7 @@ Frame.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5659,7 +5659,7 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis*)
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
@@ -5690,7 +5690,7 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).appl
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).apply\_iter(func*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_iter(*func*, */*)
     :   Apply a function to each value. A generator of resulting values.
@@ -5719,7 +5719,7 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).appl
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
@@ -5748,7 +5748,7 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).appl
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
@@ -5764,9 +5764,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).appl
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5787,9 +5787,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5810,9 +5810,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5833,9 +5833,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5856,9 +5856,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -5891,9 +5891,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5913,9 +5913,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5935,9 +5935,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5957,9 +5957,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -5979,9 +5979,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6007,9 +6007,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6029,9 +6029,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6051,9 +6051,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6073,9 +6073,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6095,9 +6095,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6123,9 +6123,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6145,9 +6145,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6167,9 +6167,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6189,9 +6189,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6211,9 +6211,9 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_array\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6239,7 +6239,7 @@ Frame.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).redu
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6269,7 +6269,7 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis*)
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
@@ -6300,7 +6300,7 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply(func*
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply\_iter(func*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_iter(*func*, */*)
     :   Apply a function to each value. A generator of resulting values.
@@ -6329,7 +6329,7 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply\_iter
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
@@ -6358,7 +6358,7 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply\_iter
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
     IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
@@ -6374,9 +6374,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply\_pool
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -6397,9 +6397,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -6420,9 +6420,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -6453,9 +6453,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -6486,9 +6486,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -6513,9 +6513,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6535,9 +6535,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6557,9 +6557,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6594,9 +6594,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6631,9 +6631,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6659,9 +6659,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6681,9 +6681,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6703,9 +6703,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6737,9 +6737,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6771,9 +6771,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6799,9 +6799,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6821,9 +6821,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6843,9 +6843,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6877,9 +6877,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6911,9 +6911,9 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_group\_other\_items
-    :   Iterator of [`Frame`](frame-selector.html#Frame "Frame") grouped by unique values found in a supplied container.
+    :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -6939,7 +6939,7 @@ Frame.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).reduce.from
 
 Frame.iter\_series(*\**, *axis*)
 :   iter\_series
-    :   Iterator of [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -6977,9 +6977,9 @@ Frame.iter\_series(*\**, *axis*)
 
 Frame.iter\_series(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_series
-    :   Iterator of [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -7009,9 +7009,9 @@ Frame.iter\_series(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_cons
 
 Frame.iter\_series(*\**, *axis).apply\_iter(func*)
 :   iter\_series
-    :   Iterator of [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -7038,9 +7038,9 @@ Frame.iter\_series(*\**, *axis).apply\_iter(func*)
 
 Frame.iter\_series(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_series
-    :   Iterator of [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7067,9 +7067,9 @@ Frame.iter\_series(*\**, *axis).apply\_iter\_items(func*)
 
 Frame.iter\_series(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_series
-    :   Iterator of [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -7104,7 +7104,7 @@ Frame.iter\_series(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index
 
 Frame.iter\_series\_items(*\**, *axis*)
 :   iter\_series\_items
-    :   Iterator of pairs of label, [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
     ```
     >>> f = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
@@ -7142,9 +7142,9 @@ Frame.iter\_series\_items(*\**, *axis*)
 
 Frame.iter\_series\_items(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_series\_items
-    :   Iterator of pairs of label, [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -7174,9 +7174,9 @@ Frame.iter\_series\_items(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *inde
 
 Frame.iter\_series\_items(*\**, *axis).apply\_iter(func*)
 :   iter\_series\_items
-    :   Iterator of pairs of label, [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -7203,9 +7203,9 @@ Frame.iter\_series\_items(*\**, *axis).apply\_iter(func*)
 
 Frame.iter\_series\_items(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_series\_items
-    :   Iterator of pairs of label, [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7232,9 +7232,9 @@ Frame.iter\_series\_items(*\**, *axis).apply\_iter\_items(func*)
 
 Frame.iter\_series\_items(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_series\_items
-    :   Iterator of pairs of label, [`Series`](series-selector.html#Series "Series"), where [`Series`](series-selector.html#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
+    :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -7397,7 +7397,7 @@ Frame.iter\_tuple(*\**, *axis*, *constructor).map\_all(mapping*, *\**, *dtype*, 
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -7426,7 +7426,7 @@ Frame.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -7450,7 +7450,7 @@ Frame.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter\_items(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7474,7 +7474,7 @@ Frame.iter\_tuple(*\**, *axis*, *constructor).map\_any(mapping*, *\**, *dtype*, 
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -7499,7 +7499,7 @@ Frame.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -7523,7 +7523,7 @@ Frame.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter\_items(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7547,7 +7547,7 @@ Frame.iter\_tuple(*\**, *axis*, *constructor).map\_fill(mapping*, *\**, *fill\_v
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -7577,7 +7577,7 @@ Frame.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, *\**, *f
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -7602,7 +7602,7 @@ Frame.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapping*, *
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7735,7 +7735,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all(mapping*, *\**, *d
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -7764,7 +7764,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter(mapping*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -7788,7 +7788,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter\_items(mappi
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7812,7 +7812,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any(mapping*, *\**, *d
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -7841,7 +7841,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter(mapping*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -7865,7 +7865,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter\_items(mappi
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7889,7 +7889,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill(mapping*, *\**, *
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -7919,7 +7919,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, *
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -7944,7 +7944,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapp
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7967,7 +7967,7 @@ Frame.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapp
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8015,7 +8015,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8060,7 +8060,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8102,7 +8102,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8144,7 +8144,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8173,7 +8173,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8188,7 +8188,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -8209,7 +8209,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8224,7 +8224,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -8245,7 +8245,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8260,7 +8260,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -8293,7 +8293,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8308,7 +8308,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -8341,7 +8341,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8356,7 +8356,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -8383,7 +8383,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8398,7 +8398,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8418,7 +8418,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8433,7 +8433,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8453,7 +8453,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8468,7 +8468,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8503,7 +8503,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8518,7 +8518,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8553,7 +8553,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8568,7 +8568,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8594,7 +8594,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8609,7 +8609,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8629,7 +8629,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8644,7 +8644,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8664,7 +8664,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8679,7 +8679,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8711,7 +8711,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8726,7 +8726,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8758,7 +8758,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8773,7 +8773,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8799,7 +8799,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8814,7 +8814,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8834,7 +8834,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8849,7 +8849,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8869,7 +8869,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8884,7 +8884,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8916,7 +8916,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8931,7 +8931,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -8963,7 +8963,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
 
 Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_window
-    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -8978,7 +8978,7 @@ Frame.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9213,7 +9213,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -9249,7 +9249,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -9285,7 +9285,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -9321,7 +9321,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -9357,7 +9357,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -9405,7 +9405,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9440,7 +9440,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9475,7 +9475,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9510,7 +9510,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9545,7 +9545,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9586,7 +9586,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9621,7 +9621,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9656,7 +9656,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9691,7 +9691,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9726,7 +9726,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9767,7 +9767,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9802,7 +9802,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9837,7 +9837,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9872,7 +9872,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -9907,7 +9907,7 @@ Frame.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10142,7 +10142,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -10178,7 +10178,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -10214,7 +10214,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -10250,7 +10250,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -10286,7 +10286,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -10334,7 +10334,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10369,7 +10369,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10404,7 +10404,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10439,7 +10439,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10474,7 +10474,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10515,7 +10515,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10550,7 +10550,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10585,7 +10585,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10620,7 +10620,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10655,7 +10655,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10696,7 +10696,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10731,7 +10731,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10766,7 +10766,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10801,7 +10801,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10836,7 +10836,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -10862,7 +10862,7 @@ Frame.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -10910,7 +10910,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -10955,7 +10955,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -10997,7 +10997,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11039,7 +11039,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11068,7 +11068,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11083,7 +11083,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -11104,7 +11104,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11119,7 +11119,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -11140,7 +11140,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11155,7 +11155,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -11188,7 +11188,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11203,7 +11203,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -11236,7 +11236,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11251,7 +11251,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_func)
+    ReduceDispatch.from\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_func)
     :   For each Frame, and given a function func that returns either a Series or a Frame, call that function on each Frame.
 
     ```
@@ -11278,7 +11278,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11293,7 +11293,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11313,7 +11313,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11328,7 +11328,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11348,7 +11348,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11363,7 +11363,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11398,7 +11398,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11413,7 +11413,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11448,7 +11448,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11463,7 +11463,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_map_func)
+    ReduceDispatch.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_map_func)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11489,7 +11489,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11504,7 +11504,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11524,7 +11524,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11539,7 +11539,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11559,7 +11559,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11574,7 +11574,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11606,7 +11606,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11621,7 +11621,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11653,7 +11653,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11668,7 +11668,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_map)
+    ReduceDispatch.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11694,7 +11694,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11709,7 +11709,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11729,7 +11729,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11744,7 +11744,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11764,7 +11764,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11779,7 +11779,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11811,7 +11811,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11826,7 +11826,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11858,7 +11858,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
 Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
 :   iter\_window\_items
-    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.html#Frame "Frame").
+    :   Iterator of pairs of label, windowed values, where values are given as a [`Frame`](frame-selector.md#Frame "Frame").
 
         Parameters:
         :   * **size** – Elements per window, given as an integer greater than 0.
@@ -11873,7 +11873,7 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatch.from_label_pair_map)
+    ReduceDispatch.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatch.from_label_pair_map)
 
     ```
     >>> f = sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')
@@ -11897,10 +11897,10 @@ Frame.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
 
     ```
 
-[Frame](frame.html#api-detail-frame): [Constructor](frame-constructor.html#api-detail-frame-constructor) | [Exporter](frame-exporter.html#api-detail-frame-exporter) | [Attribute](frame-attribute.html#api-detail-frame-attribute) | [Method](frame-method.html#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-detail-frame-dictionary-like) | [Display](frame-display.html#api-detail-frame-display) | [Assignment](frame-assignment.html#api-detail-frame-assignment) | [Selector](frame-selector.html#api-detail-frame-selector) | [Iterator](#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-detail-frame-accessor-reduce)
+[Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)
 
-[Previous](frame-selector.html "Detail: Frame: Selector")
-[Next](frame-operator_binary.html "Detail: Frame: Operator Binary")
+[Previous](frame-selector.md "Detail: Frame: Selector")
+[Next](frame-operator_binary.md "Detail: Frame: Operator Binary")
 
 ---
 

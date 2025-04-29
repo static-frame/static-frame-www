@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexHour: Method
 * [View page source](../_sources/api_detail/index_hour-method.rst.txt)
 
-[Previous](index_hour-attribute.html "Detail: IndexHour: Attribute")
-[Next](index_hour-dictionary_like.html "Detail: IndexHour: Dictionary-Like")
+[Previous](index_hour-attribute.md "Detail: IndexHour: Attribute")
+[Next](index_hour-dictionary_like.md "Detail: IndexHour: Dictionary-Like")
 
 ---
 
 # Detail: IndexHour: Method[](#detail-indexhour-method "Link to this heading")
 
-[Overview: IndexHour: Method](../api_overview/index_hour-method.html#api-overview-indexhour-method)
+[Overview: IndexHour: Method](../api_overview/index_hour-method.md#api-overview-indexhour-method)
 
 IndexHour.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexHour.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -397,7 +397,7 @@ IndexHour.difference(*\*others*)[](#static_frame.IndexHour.difference "Link t
     ```
 
 IndexHour.dropfalsy()[](#static_frame.IndexHour.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexHour(('1620-09-16', 'NaT', '1620-11-21'))
@@ -416,7 +416,7 @@ IndexHour.dropfalsy()[](#static_frame.IndexHour.dropfalsy "Link to this defin
     ```
 
 IndexHour.dropna()[](#static_frame.IndexHour.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexHour(('1620-09-16', 'NaT', '1620-11-21'))
@@ -464,7 +464,7 @@ IndexHour.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fals
     ```
 
 IndexHour.fillfalsy(*value*, */*)[](#static_frame.IndexHour.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -483,7 +483,7 @@ IndexHour.fillfalsy(*value*, */*)[](#static_frame.IndexHour.fillfalsy "Link t
     ```
 
 IndexHour.fillna(*value*, */*)[](#static_frame.IndexHour.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -506,10 +506,10 @@ IndexHour.fillna(*value*, */*)[](#static_frame.IndexHour.fillna "Link to this
     ```
 
 IndexHour.head(*count=5*, */*)[](#static_frame.IndexHour.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexHour(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -528,7 +528,7 @@ IndexHour.head(*count=5*, */*)[](#static_frame.IndexHour.head "Link to this d
     ```
 
 IndexHour.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexHour.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -652,7 +652,7 @@ IndexHour.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static
     ```
 
 IndexHour.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexHour.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -970,10 +970,10 @@ IndexHour.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static
     ```
 
 IndexHour.tail(*count=5*, */*)[](#static_frame.IndexHour.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexHour(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -1080,10 +1080,10 @@ IndexHour.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_
 
     ```
 
-[IndexHour](index_hour.html#api-detail-indexhour): [Constructor](index_hour-constructor.html#api-detail-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-detail-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-detail-indexhour-attribute) | [Method](#api-detail-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.html#api-detail-indexhour-dictionary-like) | [Display](index_hour-display.html#api-detail-indexhour-display) | [Selector](index_hour-selector.html#api-detail-indexhour-selector) | [Iterator](index_hour-iterator.html#api-detail-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.html#api-detail-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-detail-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.html#api-detail-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.html#api-detail-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.html#api-detail-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.html#api-detail-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-detail-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.html#api-detail-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-detail-indexhour): [Constructor](index_hour-constructor.md#api-detail-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-detail-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-detail-indexhour-attribute) | [Method](#api-detail-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-detail-indexhour-dictionary-like) | [Display](index_hour-display.md#api-detail-indexhour-display) | [Selector](index_hour-selector.md#api-detail-indexhour-selector) | [Iterator](index_hour-iterator.md#api-detail-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-detail-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-detail-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-detail-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-detail-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-detail-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-detail-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-detail-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-detail-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-attribute.html "Detail: IndexHour: Attribute")
-[Next](index_hour-dictionary_like.html "Detail: IndexHour: Dictionary-Like")
+[Previous](index_hour-attribute.md "Detail: IndexHour: Attribute")
+[Next](index_hour-dictionary_like.md "Detail: IndexHour: Dictionary-Like")
 
 ---
 

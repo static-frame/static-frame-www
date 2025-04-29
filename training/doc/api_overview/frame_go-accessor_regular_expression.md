@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: FrameGO: Accessor Regular Expression
 * [View page source](../_sources/api_overview/frame_go-accessor_regular_expression.rst.txt)
 
-[Previous](frame_go-accessor_fill_value.html "Overview: FrameGO: Accessor Fill Value")
-[Next](frame_go-accessor_hashlib.html "Overview: FrameGO: Accessor Hashlib")
+[Previous](frame_go-accessor_fill_value.md "Overview: FrameGO: Accessor Fill Value")
+[Next](frame_go-accessor_hashlib.md "Overview: FrameGO: Accessor Hashlib")
 
 ---
 
 # Overview: FrameGO: Accessor Regular Expression[](#overview-framego-accessor-regular-expression "Link to this heading")
 
-[Detail: FrameGO: Accessor Regular Expression](../api_detail/frame_go-accessor_regular_expression.html#api-detail-framego-accessor-regular-expression)
+[Detail: FrameGO: Accessor Regular Expression](../api_detail/frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-accessor_regular_expression.html#api-sig-framego-via-re-search) | `FrameGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/frame_go-accessor_regular_expression.html#api-sig-framego-via-re-match) | `FrameGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/frame_go-accessor_regular_expression.html#api-sig-framego-via-re-fullmatch) | `FrameGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/frame_go-accessor_regular_expression.html#api-sig-framego-via-re-split) | `FrameGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/frame_go-accessor_regular_expression.html#api-sig-framego-via-re-findall) | `FrameGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/frame_go-accessor_regular_expression.html#api-sig-framego-via-re-sub) | `FrameGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/frame_go-accessor_regular_expression.html#api-sig-framego-via-re-subn) | `FrameGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/frame_go-accessor_regular_expression.md#api-sig-framego-via-re-search) | `FrameGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/frame_go-accessor_regular_expression.md#api-sig-framego-via-re-match) | `FrameGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/frame_go-accessor_regular_expression.md#api-sig-framego-via-re-fullmatch) | `FrameGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/frame_go-accessor_regular_expression.md#api-sig-framego-via-re-split) | `FrameGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/frame_go-accessor_regular_expression.md#api-sig-framego-via-re-findall) | `FrameGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/frame_go-accessor_regular_expression.md#api-sig-framego-via-re-sub) | `FrameGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/frame_go-accessor_regular_expression.md#api-sig-framego-via-re-subn) | `FrameGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-accessor_fill_value.html "Overview: FrameGO: Accessor Fill Value")
-[Next](frame_go-accessor_hashlib.html "Overview: FrameGO: Accessor Hashlib")
+[Previous](frame_go-accessor_fill_value.md "Overview: FrameGO: Accessor Fill Value")
+[Next](frame_go-accessor_hashlib.md "Overview: FrameGO: Accessor Hashlib")
 
 ---
 

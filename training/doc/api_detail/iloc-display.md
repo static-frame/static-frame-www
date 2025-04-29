@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: ILoc: Display
 * [View page source](../_sources/api_detail/iloc-display.rst.txt)
 
-[Previous](iloc-attribute.html "Detail: ILoc: Attribute")
-[Next](type_clinic-constructor.html "Detail: TypeClinic: Constructor")
+[Previous](iloc-attribute.md "Detail: ILoc: Attribute")
+[Next](type_clinic-constructor.md "Detail: TypeClinic: Constructor")
 
 ---
 
 # Detail: ILoc: Display[](#detail-iloc-display "Link to this heading")
 
-[Overview: ILoc: Display](../api_overview/iloc-display.html#api-overview-iloc-display)
+[Overview: ILoc: Display](../api_overview/iloc-display.md#api-overview-iloc-display)
 
-ILoc.\_\_repr\_\_()[[source]](../_modules/static_frame/core/index.html#ILoc.__repr__)[](#static_frame.ILoc.__repr__ "Link to this definition")
+ILoc.\_\_repr\_\_()[[source]](../_modules/static_frame/core/index.md#ILoc.__repr__)[](#static_frame.ILoc.__repr__ "Link to this definition")
 :   Return repr(self).
 
     ```
@@ -164,10 +164,10 @@ ILoc.\_\_str\_\_()[](#static_frame.ILoc.__str__ "Link to this definition")
 
     ```
 
-[ILoc](iloc.html#api-detail-iloc): [Constructor](iloc-constructor.html#api-detail-iloc-constructor) | [Attribute](iloc-attribute.html#api-detail-iloc-attribute) | [Display](#api-detail-iloc-display)
+[ILoc](iloc.md#api-detail-iloc): [Constructor](iloc-constructor.md#api-detail-iloc-constructor) | [Attribute](iloc-attribute.md#api-detail-iloc-attribute) | [Display](#api-detail-iloc-display)
 
-[Previous](iloc-attribute.html "Detail: ILoc: Attribute")
-[Next](type_clinic-constructor.html "Detail: TypeClinic: Constructor")
+[Previous](iloc-attribute.md "Detail: ILoc: Attribute")
+[Next](type_clinic-constructor.md "Detail: TypeClinic: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexYear: Operator Unary
 * [View page source](../_sources/api_detail/index_year-operator_unary.rst.txt)
 
-[Previous](index_year-operator_binary.html "Detail: IndexYear: Operator Binary")
-[Next](index_year-accessor_values.html "Detail: IndexYear: Accessor Values")
+[Previous](index_year-operator_binary.md "Detail: IndexYear: Operator Binary")
+[Next](index_year-accessor_values.md "Detail: IndexYear: Accessor Values")
 
 ---
 
 # Detail: IndexYear: Operator Unary[](#detail-indexyear-operator-unary "Link to this heading")
 
-[Overview: IndexYear: Operator Unary](../api_overview/index_year-operator_unary.html#api-overview-indexyear-operator-unary)
+[Overview: IndexYear: Operator Unary](../api_overview/index_year-operator_unary.md#api-overview-indexyear-operator-unary)
 
 IndexYear.\_\_abs\_\_()[](#static_frame.IndexYear.__abs__ "Link to this definition")
 :   ```
@@ -200,10 +200,10 @@ IndexYear.\_\_pos\_\_()[](#static_frame.IndexYear.__pos__ "Link to this defin
 
     ```
 
-[IndexYear](index_year.html#api-detail-indexyear): [Constructor](index_year-constructor.html#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.html#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.html#api-detail-indexyear-attribute) | [Method](index_year-method.html#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-detail-indexyear-dictionary-like) | [Display](index_year-display.html#api-detail-indexyear-display) | [Selector](index_year-selector.html#api-detail-indexyear-selector) | [Iterator](index_year-iterator.html#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-detail-indexyear-operator-binary) | [Operator Unary](#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-detail-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-detail-indexyear): [Constructor](index_year-constructor.md#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.md#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.md#api-detail-indexyear-attribute) | [Method](index_year-method.md#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-detail-indexyear-dictionary-like) | [Display](index_year-display.md#api-detail-indexyear-display) | [Selector](index_year-selector.md#api-detail-indexyear-selector) | [Iterator](index_year-iterator.md#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-detail-indexyear-operator-binary) | [Operator Unary](#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-detail-indexyear-accessor-type-clinic)
 
-[Previous](index_year-operator_binary.html "Detail: IndexYear: Operator Binary")
-[Next](index_year-accessor_values.html "Detail: IndexYear: Accessor Values")
+[Previous](index_year-operator_binary.md "Detail: IndexYear: Operator Binary")
+[Next](index_year-accessor_values.md "Detail: IndexYear: Accessor Values")
 
 ---
 

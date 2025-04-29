@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Quilt: Attribute
 * [View page source](../_sources/api_detail/quilt-attribute.rst.txt)
 
-[Previous](quilt-exporter.html "Detail: Quilt: Exporter")
-[Next](quilt-method.html "Detail: Quilt: Method")
+[Previous](quilt-exporter.md "Detail: Quilt: Exporter")
+[Next](quilt-method.md "Detail: Quilt: Method")
 
 ---
 
 # Detail: Quilt: Attribute[](#detail-quilt-attribute "Link to this heading")
 
-[Overview: Quilt: Attribute](../api_overview/quilt-attribute.html#api-overview-quilt-attribute)
+[Overview: Quilt: Attribute](../api_overview/quilt-attribute.md#api-overview-quilt-attribute)
 
 Quilt.STATIC *= True*[](#static_frame.Quilt.STATIC "Link to this definition")
 :   ```
@@ -196,7 +196,7 @@ Quilt.index[](#static_frame.Quilt.index "Link to this definition")
     ```
 
 Quilt.inventory[](#static_frame.Quilt.inventory "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") indicating file\_path, last-modified time, and size of underlying disk-based data stores if used for this [`Quilt`](quilt-selector.html#Quilt "Quilt").
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") indicating file\_path, last-modified time, and size of underlying disk-based data stores if used for this [`Quilt`](quilt-selector.md#Quilt "Quilt").
 
     ```
     >>> q1 = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
@@ -212,7 +212,7 @@ Quilt.inventory[](#static_frame.Quilt.inventory "Link to this definition")
     ```
 
 Quilt.memory[](#static_frame.Quilt.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -296,7 +296,7 @@ Quilt.size[](#static_frame.Quilt.size "Link to this definition")
     ```
 
 Quilt.status[](#static_frame.Quilt.status "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") indicating loaded status, size, bytes, and shape of all loaded [`Frame`](frame-selector.html#Frame "Frame") in the contained [`Quilt`](quilt-selector.html#Quilt "Quilt").
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") indicating loaded status, size, bytes, and shape of all loaded [`Frame`](frame-selector.md#Frame "Frame") in the contained [`Quilt`](quilt-selector.md#Quilt "Quilt").
 
     ```
     >>> q1 = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
@@ -312,10 +312,10 @@ Quilt.status[](#static_frame.Quilt.status "Link to this definition")
 
     ```
 
-[Quilt](quilt.html#api-detail-quilt): [Constructor](quilt-constructor.html#api-detail-quilt-constructor) | [Exporter](quilt-exporter.html#api-detail-quilt-exporter) | [Attribute](#api-detail-quilt-attribute) | [Method](quilt-method.html#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-detail-quilt-dictionary-like) | [Display](quilt-display.html#api-detail-quilt-display) | [Selector](quilt-selector.html#api-detail-quilt-selector) | [Iterator](quilt-iterator.html#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-detail-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)
 
-[Previous](quilt-exporter.html "Detail: Quilt: Exporter")
-[Next](quilt-method.html "Detail: Quilt: Method")
+[Previous](quilt-exporter.md "Detail: Quilt: Exporter")
+[Next](quilt-method.md "Detail: Quilt: Method")
 
 ---
 

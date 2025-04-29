@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Quilt: Display
 * [View page source](../_sources/api_detail/quilt-display.rst.txt)
 
-[Previous](quilt-dictionary_like.html "Detail: Quilt: Dictionary-Like")
-[Next](quilt-selector.html "Detail: Quilt: Selector")
+[Previous](quilt-dictionary_like.md "Detail: Quilt: Dictionary-Like")
+[Next](quilt-selector.md "Detail: Quilt: Selector")
 
 ---
 
 # Detail: Quilt: Display[](#detail-quilt-display "Link to this heading")
 
-[Overview: Quilt: Display](../api_overview/quilt-display.html#api-overview-quilt-display)
+[Overview: Quilt: Display](../api_overview/quilt-display.md#api-overview-quilt-display)
 
 Quilt.interface[](#Quilt.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -229,11 +229,11 @@ Quilt.\_\_str\_\_()[](#static_frame.Quilt.__str__ "Link to this definition")
 
     ```
 
-Quilt.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/quilt.html#Quilt.display)[](#static_frame.Quilt.display "Link to this definition")
+Quilt.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.display)[](#static_frame.Quilt.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
@@ -255,7 +255,7 @@ Quilt.display\_tall(*config=None*, */*)[](#static_frame.Quilt.display_tall "L
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
@@ -273,7 +273,7 @@ Quilt.display\_wide(*config=None*, */*)[](#static_frame.Quilt.display_wide "L
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
@@ -287,10 +287,10 @@ Quilt.display\_wide(*config=None*, */*)[](#static_frame.Quilt.display_wide "L
 
     ```
 
-[Quilt](quilt.html#api-detail-quilt): [Constructor](quilt-constructor.html#api-detail-quilt-constructor) | [Exporter](quilt-exporter.html#api-detail-quilt-exporter) | [Attribute](quilt-attribute.html#api-detail-quilt-attribute) | [Method](quilt-method.html#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-detail-quilt-dictionary-like) | [Display](#api-detail-quilt-display) | [Selector](quilt-selector.html#api-detail-quilt-selector) | [Iterator](quilt-iterator.html#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-detail-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)
 
-[Previous](quilt-dictionary_like.html "Detail: Quilt: Dictionary-Like")
-[Next](quilt-selector.html "Detail: Quilt: Selector")
+[Previous](quilt-dictionary_like.md "Detail: Quilt: Dictionary-Like")
+[Next](quilt-selector.md "Detail: Quilt: Selector")
 
 ---
 

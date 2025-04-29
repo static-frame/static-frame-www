@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexNanosecondGO: Operator Binary
 * [View page source](../_sources/api_overview/index_nanosecond_go-operator_binary.rst.txt)
 
-[Previous](index_nanosecond_go-iterator.html "Overview: IndexNanosecondGO: Iterator")
-[Next](index_nanosecond_go-operator_unary.html "Overview: IndexNanosecondGO: Operator Unary")
+[Previous](index_nanosecond_go-iterator.md "Overview: IndexNanosecondGO: Iterator")
+[Next](index_nanosecond_go-operator_unary.md "Overview: IndexNanosecondGO: Operator Unary")
 
 ---
 
 # Overview: IndexNanosecondGO: Operator Binary[](#overview-indexnanosecondgo-operator-binary "Link to this heading")
 
-[Detail: IndexNanosecondGO: Operator Binary](../api_detail/index_nanosecond_go-operator_binary.html#api-detail-indexnanosecondgo-operator-binary)
+[Detail: IndexNanosecondGO: Operator Binary](../api_detail/index_nanosecond_go-operator_binary.md#api-detail-indexnanosecondgo-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-add) | `IndexNanosecondGO.__add__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-and) | `IndexNanosecondGO.__and__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-eq) | `IndexNanosecondGO.__eq__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-floordiv) | `IndexNanosecondGO.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-ge) | `IndexNanosecondGO.__ge__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-gt) | `IndexNanosecondGO.__gt__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-le) | `IndexNanosecondGO.__le__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-lt) | `IndexNanosecondGO.__lt__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-matmul) | `IndexNanosecondGO.__matmul__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-mod) | `IndexNanosecondGO.__mod__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-mul) | `IndexNanosecondGO.__mul__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-ne) | `IndexNanosecondGO.__ne__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-or) | `IndexNanosecondGO.__or__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-pow) | `IndexNanosecondGO.__pow__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-radd) | `IndexNanosecondGO.__radd__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-rfloordiv) | `IndexNanosecondGO.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-rmatmul) | `IndexNanosecondGO.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-rmul) | `IndexNanosecondGO.__rmul__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-rshift) | `IndexNanosecondGO.__rshift__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-rsub) | `IndexNanosecondGO.__rsub__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-rtruediv) | `IndexNanosecondGO.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-sub) | `IndexNanosecondGO.__sub__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-truediv) | `IndexNanosecondGO.__truediv__(other)` |  |
-| [Detail](../api_detail/index_nanosecond_go-operator_binary.html#api-sig-indexnanosecondgo-xor) | `IndexNanosecondGO.__xor__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-add) | `IndexNanosecondGO.__add__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-and) | `IndexNanosecondGO.__and__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-eq) | `IndexNanosecondGO.__eq__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-floordiv) | `IndexNanosecondGO.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-ge) | `IndexNanosecondGO.__ge__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-gt) | `IndexNanosecondGO.__gt__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-le) | `IndexNanosecondGO.__le__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-lt) | `IndexNanosecondGO.__lt__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-matmul) | `IndexNanosecondGO.__matmul__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-mod) | `IndexNanosecondGO.__mod__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-mul) | `IndexNanosecondGO.__mul__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-ne) | `IndexNanosecondGO.__ne__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-or) | `IndexNanosecondGO.__or__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-pow) | `IndexNanosecondGO.__pow__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-radd) | `IndexNanosecondGO.__radd__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-rfloordiv) | `IndexNanosecondGO.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-rmatmul) | `IndexNanosecondGO.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-rmul) | `IndexNanosecondGO.__rmul__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-rshift) | `IndexNanosecondGO.__rshift__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-rsub) | `IndexNanosecondGO.__rsub__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-rtruediv) | `IndexNanosecondGO.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-sub) | `IndexNanosecondGO.__sub__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-truediv) | `IndexNanosecondGO.__truediv__(other)` |  |
+| [Detail](../api_detail/index_nanosecond_go-operator_binary.md#api-sig-indexnanosecondgo-xor) | `IndexNanosecondGO.__xor__(other)` |  |
 
-[IndexNanosecondGO](index_nanosecond_go.html#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.html#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.html#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.html#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.html#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.html#api-overview-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.html#api-overview-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.html#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.html#api-overview-indexnanosecondgo-iterator) | [Operator Binary](#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.html#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.html#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.html#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.html#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.html#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.html#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.html#api-overview-indexnanosecondgo-accessor-type-clinic)
+[IndexNanosecondGO](index_nanosecond_go.md#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.md#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.md#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.md#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.md#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.md#api-overview-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.md#api-overview-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.md#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.md#api-overview-indexnanosecondgo-iterator) | [Operator Binary](#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.md#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.md#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.md#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.md#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.md#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.md#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.md#api-overview-indexnanosecondgo-accessor-type-clinic)
 
-[Previous](index_nanosecond_go-iterator.html "Overview: IndexNanosecondGO: Iterator")
-[Next](index_nanosecond_go-operator_unary.html "Overview: IndexNanosecondGO: Operator Unary")
+[Previous](index_nanosecond_go-iterator.md "Overview: IndexNanosecondGO: Iterator")
+[Next](index_nanosecond_go-operator_unary.md "Overview: IndexNanosecondGO: Operator Unary")
 
 ---
 

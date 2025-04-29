@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,71 +135,71 @@ API Detail
 * Overview: IndexYearGO: Method
 * [View page source](../_sources/api_overview/index_year_go-method.rst.txt)
 
-[Previous](index_year_go-attribute.html "Overview: IndexYearGO: Attribute")
-[Next](index_year_go-dictionary_like.html "Overview: IndexYearGO: Dictionary-Like")
+[Previous](index_year_go-attribute.md "Overview: IndexYearGO: Attribute")
+[Next](index_year_go-dictionary_like.md "Overview: IndexYearGO: Dictionary-Like")
 
 ---
 
 # Overview: IndexYearGO: Method[](#overview-indexyeargo-method "Link to this heading")
 
-[Detail: IndexYearGO: Method](../api_detail/index_year_go-method.html#api-detail-indexyeargo-method)
+[Detail: IndexYearGO: Method](../api_detail/index_year_go-method.md#api-detail-indexyeargo-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-array) | `IndexYearGO.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-array-ufunc) | `IndexYearGO.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-bool) | `IndexYearGO.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-copy) | `IndexYearGO.__copy__()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-deepcopy) | `IndexYearGO.__deepcopy__(memo)` |  |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-len) | `IndexYearGO.__len__()` |  |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-all) | `IndexYearGO.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-any) | `IndexYearGO.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-append) | `IndexYearGO.append(value)` | Specialize for fixed-typed indices: convert value argument; do not need to resol… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-astype) | `IndexYearGO.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
-| [Detail](../api_detail/index_year_go-method.html#id1) | `IndexYearGO.copy()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-cumprod) | `IndexYearGO.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-cumsum) | `IndexYearGO.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-difference) | `IndexYearGO.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-dropfalsy) | `IndexYearGO.dropfalsy()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-dropna) | `IndexYearGO.dropna()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-equals) | `IndexYearGO.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-extend) | `IndexYearGO.extend(values)` | Append multiple values Args: values: can be a generator. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-fillfalsy) | `IndexYearGO.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-fillna) | `IndexYearGO.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-head) | `IndexYearGO.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-iloc-searchsorted) | `IndexYearGO.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-intersection) | `IndexYearGO.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-isfalsy) | `IndexYearGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-isin) | `IndexYearGO.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-isna) | `IndexYearGO.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-label-widths-at-depth) | `IndexYearGO.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-level-add) | `IndexYearGO.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-loc-searchsorted) | `IndexYearGO.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-loc-to-iloc) | `IndexYearGO.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-max) | `IndexYearGO.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-mean) | `IndexYearGO.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-median) | `IndexYearGO.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-min) | `IndexYearGO.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-notfalsy) | `IndexYearGO.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-notna) | `IndexYearGO.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-prod) | `IndexYearGO.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-relabel) | `IndexYearGO.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-rename) | `IndexYearGO.rename(name)` | Return a new Frame with an updated name attribute. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-roll) | `IndexYearGO.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-sample) | `IndexYearGO.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-sort) | `IndexYearGO.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-std) | `IndexYearGO.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-sum) | `IndexYearGO.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-tail) | `IndexYearGO.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-union) | `IndexYearGO.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-unique) | `IndexYearGO.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-values-at-depth) | `IndexYearGO.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
-| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-var) | `IndexYearGO.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-array) | `IndexYearGO.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-array-ufunc) | `IndexYearGO.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-bool) | `IndexYearGO.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-copy) | `IndexYearGO.__copy__()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-deepcopy) | `IndexYearGO.__deepcopy__(memo)` |  |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-len) | `IndexYearGO.__len__()` |  |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-all) | `IndexYearGO.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-any) | `IndexYearGO.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-append) | `IndexYearGO.append(value)` | Specialize for fixed-typed indices: convert value argument; do not need to resol… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-astype) | `IndexYearGO.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
+| [Detail](../api_detail/index_year_go-method.md#id1) | `IndexYearGO.copy()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-cumprod) | `IndexYearGO.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-cumsum) | `IndexYearGO.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-difference) | `IndexYearGO.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-dropfalsy) | `IndexYearGO.dropfalsy()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-dropna) | `IndexYearGO.dropna()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-equals) | `IndexYearGO.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-extend) | `IndexYearGO.extend(values)` | Append multiple values Args: values: can be a generator. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-fillfalsy) | `IndexYearGO.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-fillna) | `IndexYearGO.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-head) | `IndexYearGO.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-iloc-searchsorted) | `IndexYearGO.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-intersection) | `IndexYearGO.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-isfalsy) | `IndexYearGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-isin) | `IndexYearGO.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-isna) | `IndexYearGO.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-label-widths-at-depth) | `IndexYearGO.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-level-add) | `IndexYearGO.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-loc-searchsorted) | `IndexYearGO.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-loc-to-iloc) | `IndexYearGO.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-max) | `IndexYearGO.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-mean) | `IndexYearGO.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-median) | `IndexYearGO.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-min) | `IndexYearGO.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-notfalsy) | `IndexYearGO.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-notna) | `IndexYearGO.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-prod) | `IndexYearGO.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-relabel) | `IndexYearGO.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-rename) | `IndexYearGO.rename(name)` | Return a new Frame with an updated name attribute. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-roll) | `IndexYearGO.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-sample) | `IndexYearGO.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-sort) | `IndexYearGO.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-std) | `IndexYearGO.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-sum) | `IndexYearGO.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-tail) | `IndexYearGO.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-union) | `IndexYearGO.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-unique) | `IndexYearGO.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-values-at-depth) | `IndexYearGO.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
+| [Detail](../api_detail/index_year_go-method.md#api-sig-indexyeargo-var) | `IndexYearGO.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
-[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](index_year_go-constructor.html#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-overview-indexyeargo-attribute) | [Method](#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-overview-indexyeargo): [Constructor](index_year_go-constructor.md#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-overview-indexyeargo-attribute) | [Method](#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.md#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-overview-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-attribute.html "Overview: IndexYearGO: Attribute")
-[Next](index_year_go-dictionary_like.html "Overview: IndexYearGO: Dictionary-Like")
+[Previous](index_year_go-attribute.md "Overview: IndexYearGO: Attribute")
+[Next](index_year_go-dictionary_like.md "Overview: IndexYearGO: Dictionary-Like")
 
 ---
 

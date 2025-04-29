@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: FillValueAuto: Selector
 * [View page source](../_sources/api_detail/fill_value_auto-selector.rst.txt)
 
-[Previous](fill_value_auto-display.html "Detail: FillValueAuto: Display")
-[Next](display_active-constructor.html "Detail: DisplayActive: Constructor")
+[Previous](fill_value_auto-display.md "Detail: FillValueAuto: Display")
+[Next](display_active-constructor.md "Detail: DisplayActive: Constructor")
 
 ---
 
 # Detail: FillValueAuto: Selector[](#detail-fillvalueauto-selector "Link to this heading")
 
-[Overview: FillValueAuto: Selector](../api_overview/fill_value_auto-selector.html#api-overview-fillvalueauto-selector)
+[Overview: FillValueAuto: Selector](../api_overview/fill_value_auto-selector.md#api-overview-fillvalueauto-selector)
 
 FillValueAuto[*dtype*]()[](#FillValueAuto "Link to this definition")
-:   FillValueAuto.\_\_getitem\_\_ *= <function FillValueAuto.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/fill_value_auto.html#FillValueAuto.__getitem__)
+:   FillValueAuto.\_\_getitem\_\_ *= <function FillValueAuto.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/fill_value_auto.md#FillValueAuto.__getitem__)
 
     ```
     >>> fva = sf.FillValueAuto.from_default()
@@ -158,10 +158,10 @@ FillValueAuto[*dtype*]()[](#FillValueAuto "Link to this definition")
 
     ```
 
-[FillValueAuto](fill_value_auto.html#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.html#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.html#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.html#api-detail-fillvalueauto-display) | [Selector](#api-detail-fillvalueauto-selector)
+[FillValueAuto](fill_value_auto.md#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-detail-fillvalueauto-display) | [Selector](#api-detail-fillvalueauto-selector)
 
-[Previous](fill_value_auto-display.html "Detail: FillValueAuto: Display")
-[Next](display_active-constructor.html "Detail: DisplayActive: Constructor")
+[Previous](fill_value_auto-display.md "Detail: FillValueAuto: Display")
+[Next](display_active-constructor.md "Detail: DisplayActive: Constructor")
 
 ---
 

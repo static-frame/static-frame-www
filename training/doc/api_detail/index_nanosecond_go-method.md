@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexNanosecondGO: Method
 * [View page source](../_sources/api_detail/index_nanosecond_go-method.rst.txt)
 
-[Previous](index_nanosecond_go-attribute.html "Detail: IndexNanosecondGO: Attribute")
-[Next](index_nanosecond_go-dictionary_like.html "Detail: IndexNanosecondGO: Dictionary-Like")
+[Previous](index_nanosecond_go-attribute.md "Detail: IndexNanosecondGO: Attribute")
+[Next](index_nanosecond_go-dictionary_like.md "Detail: IndexNanosecondGO: Dictionary-Like")
 
 ---
 
 # Detail: IndexNanosecondGO: Method[](#detail-indexnanosecondgo-method "Link to this heading")
 
-[Overview: IndexNanosecondGO: Method](../api_overview/index_nanosecond_go-method.html#api-overview-indexnanosecondgo-method)
+[Overview: IndexNanosecondGO: Method](../api_overview/index_nanosecond_go-method.md#api-overview-indexnanosecondgo-method)
 
 IndexNanosecondGO.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexNanosecondGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -420,7 +420,7 @@ IndexNanosecondGO.difference(*\*others*)[](#static_frame.IndexNanosecondGO.di
     ```
 
 IndexNanosecondGO.dropfalsy()[](#static_frame.IndexNanosecondGO.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', 'NaT', '1799-11-09'))
@@ -439,7 +439,7 @@ IndexNanosecondGO.dropfalsy()[](#static_frame.IndexNanosecondGO.dropfalsy "Li
     ```
 
 IndexNanosecondGO.dropna()[](#static_frame.IndexNanosecondGO.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', 'NaT', '1799-11-09'))
@@ -519,7 +519,7 @@ IndexNanosecondGO.extend(*values*, */*)[](#static_frame.IndexNanosecondGO.ext
     ```
 
 IndexNanosecondGO.fillfalsy(*value*, */*)[](#static_frame.IndexNanosecondGO.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -538,7 +538,7 @@ IndexNanosecondGO.fillfalsy(*value*, */*)[](#static_frame.IndexNanosecondGO.f
     ```
 
 IndexNanosecondGO.fillna(*value*, */*)[](#static_frame.IndexNanosecondGO.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -561,10 +561,10 @@ IndexNanosecondGO.fillna(*value*, */*)[](#static_frame.IndexNanosecondGO.fill
     ```
 
 IndexNanosecondGO.head(*count=5*, */*)[](#static_frame.IndexNanosecondGO.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
@@ -583,7 +583,7 @@ IndexNanosecondGO.head(*count=5*, */*)[](#static_frame.IndexNanosecondGO.head
     ```
 
 IndexNanosecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexNanosecondGO.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -707,7 +707,7 @@ IndexNanosecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[]
     ```
 
 IndexNanosecondGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexNanosecondGO.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1025,10 +1025,10 @@ IndexNanosecondGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[]
     ```
 
 IndexNanosecondGO.tail(*count=5*, */*)[](#static_frame.IndexNanosecondGO.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
@@ -1137,10 +1137,10 @@ IndexNanosecondGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](
 
     ```
 
-[IndexNanosecondGO](index_nanosecond_go.html#api-detail-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.html#api-detail-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.html#api-detail-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.html#api-detail-indexnanosecondgo-attribute) | [Method](#api-detail-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.html#api-detail-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.html#api-detail-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.html#api-detail-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.html#api-detail-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.html#api-detail-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.html#api-detail-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.html#api-detail-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.html#api-detail-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.html#api-detail-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.html#api-detail-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.html#api-detail-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.html#api-detail-indexnanosecondgo-accessor-type-clinic)
+[IndexNanosecondGO](index_nanosecond_go.md#api-detail-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.md#api-detail-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.md#api-detail-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.md#api-detail-indexnanosecondgo-attribute) | [Method](#api-detail-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.md#api-detail-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.md#api-detail-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.md#api-detail-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.md#api-detail-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.md#api-detail-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.md#api-detail-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.md#api-detail-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.md#api-detail-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.md#api-detail-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.md#api-detail-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.md#api-detail-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.md#api-detail-indexnanosecondgo-accessor-type-clinic)
 
-[Previous](index_nanosecond_go-attribute.html "Detail: IndexNanosecondGO: Attribute")
-[Next](index_nanosecond_go-dictionary_like.html "Detail: IndexNanosecondGO: Dictionary-Like")
+[Previous](index_nanosecond_go-attribute.md "Detail: IndexNanosecondGO: Attribute")
+[Next](index_nanosecond_go-dictionary_like.md "Detail: IndexNanosecondGO: Dictionary-Like")
 
 ---
 

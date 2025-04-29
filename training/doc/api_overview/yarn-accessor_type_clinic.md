@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: Yarn: Accessor Type Clinic
 * [View page source](../_sources/api_overview/yarn-accessor_type_clinic.rst.txt)
 
-[Previous](yarn-accessor_hashlib.html "Overview: Yarn: Accessor Hashlib")
-[Next](quilt-constructor.html "Overview: Quilt: Constructor")
+[Previous](yarn-accessor_hashlib.md "Overview: Yarn: Accessor Hashlib")
+[Next](quilt-constructor.md "Overview: Quilt: Constructor")
 
 ---
 
 # Overview: Yarn: Accessor Type Clinic[](#overview-yarn-accessor-type-clinic "Link to this heading")
 
-[Detail: Yarn: Accessor Type Clinic](../api_detail/yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Detail: Yarn: Accessor Type Clinic](../api_detail/yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/yarn-accessor_type_clinic.html#api-sig-yarn-via-type-clinic-to-hint) | `Yarn.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/yarn-accessor_type_clinic.html#api-sig-yarn-via-type-clinic-check) | `Yarn.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/yarn-accessor_type_clinic.html#api-sig-yarn-via-type-clinic-warn) | `Yarn.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/yarn-accessor_type_clinic.html#api-sig-yarn-via-type-clinic-call) | `Yarn.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/yarn-accessor_type_clinic.html#api-sig-yarn-via-type-clinic-repr) | `Yarn.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/yarn-accessor_type_clinic.md#api-sig-yarn-via-type-clinic-to-hint) | `Yarn.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/yarn-accessor_type_clinic.md#api-sig-yarn-via-type-clinic-check) | `Yarn.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/yarn-accessor_type_clinic.md#api-sig-yarn-via-type-clinic-warn) | `Yarn.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/yarn-accessor_type_clinic.md#api-sig-yarn-via-type-clinic-call) | `Yarn.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/yarn-accessor_type_clinic.md#api-sig-yarn-via-type-clinic-repr) | `Yarn.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[Yarn](yarn.html#api-overview-yarn): [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | [Method](yarn-method.html#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](yarn-display.html#api-overview-yarn-display) | [Selector](yarn-selector.html#api-overview-yarn-selector) | [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](#api-overview-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-overview-yarn): [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | [Method](yarn-method.md#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](yarn-display.md#api-overview-yarn-display) | [Selector](yarn-selector.md#api-overview-yarn-selector) | [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](#api-overview-yarn-accessor-type-clinic)
 
-[Previous](yarn-accessor_hashlib.html "Overview: Yarn: Accessor Hashlib")
-[Next](quilt-constructor.html "Overview: Quilt: Constructor")
+[Previous](yarn-accessor_hashlib.md "Overview: Yarn: Accessor Hashlib")
+[Next](quilt-constructor.md "Overview: Quilt: Constructor")
 
 ---
 

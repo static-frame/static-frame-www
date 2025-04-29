@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,27 +136,27 @@ API Detail
 * Detail: NPZ
 * [View page source](../_sources/api_detail/npz.rst.txt)
 
-[Previous](index_auto_constructor_factory.html "Detail: IndexAutoConstructorFactory")
-[Next](npy.html "Detail: NPY")
+[Previous](index_auto_constructor_factory.md "Detail: IndexAutoConstructorFactory")
+[Next](npy.md "Detail: NPY")
 
 ---
 
 # Detail: NPZ[](#detail-npz "Link to this heading")
 
-[Overview: NPZ](../api_overview/npz.html#api-overview-npz)
+[Overview: NPZ](../api_overview/npz.md#api-overview-npz)
 
-*class* NPZ(*fp*, *mode='r'*)[[source]](../_modules/static_frame/core/archive_npy.html#NPZ)[](#static_frame.NPZ "Link to this definition")
-:   Utility object for reading characteristics from, or writing new, NPZ files from arrays or [`Frame`](frame-selector.html#Frame "Frame").
+*class* NPZ(*fp*, *mode='r'*)[[source]](../_modules/static_frame/core/archive_npy.md#NPZ)[](#static_frame.NPZ "Link to this definition")
+:   Utility object for reading characteristics from, or writing new, NPZ files from arrays or [`Frame`](frame-selector.md#Frame "Frame").
 
-* [Constructor](npz-constructor.html#api-detail-npz-constructor): Alternative constructors for creating instances.
-* [Attribute](npz-attribute.html#api-detail-npz-attribute): Attributes for retrieving basic characteristics.
-* [Method](npz-method.html#api-detail-npz-method): Methods for general functionality.
-* [Display](npz-display.html#api-detail-npz-display): Methods for providing a text representation of the object.
+* [Constructor](npz-constructor.md#api-detail-npz-constructor): Alternative constructors for creating instances.
+* [Attribute](npz-attribute.md#api-detail-npz-attribute): Attributes for retrieving basic characteristics.
+* [Method](npz-method.md#api-detail-npz-method): Methods for general functionality.
+* [Display](npz-display.md#api-detail-npz-display): Methods for providing a text representation of the object.
 
-[NPZ](#api-detail-npz): [Constructor](npz-constructor.html#api-detail-npz-constructor) | [Attribute](npz-attribute.html#api-detail-npz-attribute) | [Method](npz-method.html#api-detail-npz-method) | [Display](npz-display.html#api-detail-npz-display)
+[NPZ](#api-detail-npz): [Constructor](npz-constructor.md#api-detail-npz-constructor) | [Attribute](npz-attribute.md#api-detail-npz-attribute) | [Method](npz-method.md#api-detail-npz-method) | [Display](npz-display.md#api-detail-npz-display)
 
-[Previous](index_auto_constructor_factory.html "Detail: IndexAutoConstructorFactory")
-[Next](npy.html "Detail: NPY")
+[Previous](index_auto_constructor_factory.md "Detail: IndexAutoConstructorFactory")
+[Next](npy.md "Detail: NPY")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,27 +136,27 @@ API Detail
 * Detail: TypeClinic
 * [View page source](../_sources/api_detail/type_clinic.rst.txt)
 
-[Previous](iloc.html "Detail: ILoc")
-[Next](call_guard.html "Detail: CallGuard")
+[Previous](iloc.md "Detail: ILoc")
+[Next](call_guard.md "Detail: CallGuard")
 
 ---
 
 # Detail: TypeClinic[](#detail-typeclinic "Link to this heading")
 
-[Overview: TypeClinic](../api_overview/type_clinic.html#api-overview-typeclinic)
+[Overview: TypeClinic](../api_overview/type_clinic.md#api-overview-typeclinic)
 
-*class* TypeClinic(*value*, */*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic)[](#static_frame.TypeClinic "Link to this definition")
+*class* TypeClinic(*value*, */*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic)[](#static_frame.TypeClinic "Link to this definition")
 :   A `TypeClinic` instance, created from (almost) any object, can be used to derive a type hint (or type hint string), or test the object against a provided hint.
 
-* [Constructor](type_clinic-constructor.html#api-detail-typeclinic-constructor): Alternative constructors for creating instances.
-* [Exporter](type_clinic-exporter.html#api-detail-typeclinic-exporter): Methods for transforming, exporting, or serializing objects.
-* [Method](type_clinic-method.html#api-detail-typeclinic-method): Methods for general functionality.
-* [Display](type_clinic-display.html#api-detail-typeclinic-display): Methods for providing a text representation of the object.
+* [Constructor](type_clinic-constructor.md#api-detail-typeclinic-constructor): Alternative constructors for creating instances.
+* [Exporter](type_clinic-exporter.md#api-detail-typeclinic-exporter): Methods for transforming, exporting, or serializing objects.
+* [Method](type_clinic-method.md#api-detail-typeclinic-method): Methods for general functionality.
+* [Display](type_clinic-display.md#api-detail-typeclinic-display): Methods for providing a text representation of the object.
 
-[TypeClinic](#api-detail-typeclinic): [Constructor](type_clinic-constructor.html#api-detail-typeclinic-constructor) | [Exporter](type_clinic-exporter.html#api-detail-typeclinic-exporter) | [Method](type_clinic-method.html#api-detail-typeclinic-method) | [Display](type_clinic-display.html#api-detail-typeclinic-display)
+[TypeClinic](#api-detail-typeclinic): [Constructor](type_clinic-constructor.md#api-detail-typeclinic-constructor) | [Exporter](type_clinic-exporter.md#api-detail-typeclinic-exporter) | [Method](type_clinic-method.md#api-detail-typeclinic-method) | [Display](type_clinic-display.md#api-detail-typeclinic-display)
 
-[Previous](iloc.html "Detail: ILoc")
-[Next](call_guard.html "Detail: CallGuard")
+[Previous](iloc.md "Detail: ILoc")
+[Next](call_guard.md "Detail: CallGuard")
 
 ---
 

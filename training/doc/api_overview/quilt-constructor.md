@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,34 +135,34 @@ API Detail
 * Overview: Quilt: Constructor
 * [View page source](../_sources/api_overview/quilt-constructor.rst.txt)
 
-[Previous](yarn-accessor_type_clinic.html "Overview: Yarn: Accessor Type Clinic")
-[Next](quilt-exporter.html "Overview: Quilt: Exporter")
+[Previous](yarn-accessor_type_clinic.md "Overview: Yarn: Accessor Type Clinic")
+[Next](quilt-exporter.md "Overview: Quilt: Exporter")
 
 ---
 
 # Overview: Quilt: Constructor[](#overview-quilt-constructor "Link to this heading")
 
-[Detail: Quilt: Constructor](../api_detail/quilt-constructor.html#api-detail-quilt-constructor)
+[Detail: Quilt: Constructor](../api_detail/quilt-constructor.md#api-detail-quilt-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-init) | `Quilt.__init__(bus, *, axis, retain_labels, axis_hierarchy, axis_opposite, deepcopy_from_bus)` | Args: bus: Bus of Frame to be used for virtual concatenation. axis: Integer spec… |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-frame) | `Quilt.from_frame(frame, *, chunksize, retain_labels, axis, name, label_extractor, config, deepcopy_from_bus)` | Given a Frame, create a Quilt by partitioning it along the specified axis in uni… |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-frames) | `Quilt.from_frames(frames, *, axis, name, retain_labels, deepcopy_from_bus)` | Return a Quilt from an iterable of Frame; labels will be drawn from Frame.name. |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-items) | `Quilt.from_items(items, *, axis, name, retain_labels, deepcopy_from_bus)` | Given an iterable of pairs of label, Frame, create a Quilt. |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-sqlite) | `Quilt.from_sqlite(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to an SQLite Quilt store, return a Quilt instance. Args: fp: A… |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-xlsx) | `Quilt.from_xlsx(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to an XLSX Quilt store, return a Quilt instance. Args: fp: A s… |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-zip-csv) | `Quilt.from_zip_csv(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped CSV Quilt store, return a Quilt instance. Args: fp:… |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-zip-npy) | `Quilt.from_zip_npy(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped NPY Quilt store, return a Quilt instance. Args: fp:… |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-zip-npz) | `Quilt.from_zip_npz(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped NPZ Quilt store, return a Quilt instance. Args: fp:… |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-zip-parquet) | `Quilt.from_zip_parquet(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped parquet Quilt store, return a Quilt instance. Args:… |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-zip-pickle) | `Quilt.from_zip_pickle(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped pickle Quilt store, return a Quilt instance. Args: f… |
-| [Detail](../api_detail/quilt-constructor.html#api-sig-quilt-from-zip-tsv) | `Quilt.from_zip_tsv(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped TSV Quilt store, return a Quilt instance. Args: fp:… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-init) | `Quilt.__init__(bus, *, axis, retain_labels, axis_hierarchy, axis_opposite, deepcopy_from_bus)` | Args: bus: Bus of Frame to be used for virtual concatenation. axis: Integer spec… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-frame) | `Quilt.from_frame(frame, *, chunksize, retain_labels, axis, name, label_extractor, config, deepcopy_from_bus)` | Given a Frame, create a Quilt by partitioning it along the specified axis in uni… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-frames) | `Quilt.from_frames(frames, *, axis, name, retain_labels, deepcopy_from_bus)` | Return a Quilt from an iterable of Frame; labels will be drawn from Frame.name. |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-items) | `Quilt.from_items(items, *, axis, name, retain_labels, deepcopy_from_bus)` | Given an iterable of pairs of label, Frame, create a Quilt. |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-sqlite) | `Quilt.from_sqlite(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to an SQLite Quilt store, return a Quilt instance. Args: fp: A… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-xlsx) | `Quilt.from_xlsx(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to an XLSX Quilt store, return a Quilt instance. Args: fp: A s… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-zip-csv) | `Quilt.from_zip_csv(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped CSV Quilt store, return a Quilt instance. Args: fp:… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-zip-npy) | `Quilt.from_zip_npy(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped NPY Quilt store, return a Quilt instance. Args: fp:… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-zip-npz) | `Quilt.from_zip_npz(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped NPZ Quilt store, return a Quilt instance. Args: fp:… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-zip-parquet) | `Quilt.from_zip_parquet(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped parquet Quilt store, return a Quilt instance. Args:… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-zip-pickle) | `Quilt.from_zip_pickle(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped pickle Quilt store, return a Quilt instance. Args: f… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-zip-tsv) | `Quilt.from_zip_tsv(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to zipped TSV Quilt store, return a Quilt instance. Args: fp:… |
 
-[Quilt](quilt.html#api-overview-quilt): [Constructor](#api-overview-quilt-constructor) | [Exporter](quilt-exporter.html#api-overview-quilt-exporter) | [Attribute](quilt-attribute.html#api-overview-quilt-attribute) | [Method](quilt-method.html#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-overview-quilt-dictionary-like) | [Display](quilt-display.html#api-overview-quilt-display) | [Selector](quilt-selector.html#api-overview-quilt-selector) | [Iterator](quilt-iterator.html#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-overview-quilt): [Constructor](#api-overview-quilt-constructor) | [Exporter](quilt-exporter.md#api-overview-quilt-exporter) | [Attribute](quilt-attribute.md#api-overview-quilt-attribute) | [Method](quilt-method.md#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-overview-quilt-dictionary-like) | [Display](quilt-display.md#api-overview-quilt-display) | [Selector](quilt-selector.md#api-overview-quilt-selector) | [Iterator](quilt-iterator.md#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic)
 
-[Previous](yarn-accessor_type_clinic.html "Overview: Yarn: Accessor Type Clinic")
-[Next](quilt-exporter.html "Overview: Quilt: Exporter")
+[Previous](yarn-accessor_type_clinic.md "Overview: Yarn: Accessor Type Clinic")
+[Next](quilt-exporter.md "Overview: Quilt: Exporter")
 
 ---
 

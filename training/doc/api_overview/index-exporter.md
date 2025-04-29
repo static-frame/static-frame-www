@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: Index: Exporter
 * [View page source](../_sources/api_overview/index-exporter.rst.txt)
 
-[Previous](index-constructor.html "Overview: Index: Constructor")
-[Next](index-attribute.html "Overview: Index: Attribute")
+[Previous](index-constructor.md "Overview: Index: Constructor")
+[Next](index-attribute.md "Overview: Index: Attribute")
 
 ---
 
 # Overview: Index: Exporter[](#overview-index-exporter "Link to this heading")
 
-[Detail: Index: Exporter](../api_detail/index-exporter.html#api-detail-index-exporter)
+[Detail: Index: Exporter](../api_detail/index-exporter.md#api-detail-index-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-exporter.html#api-sig-index-to-html) | `Index.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
-| [Detail](../api_detail/index-exporter.html#api-sig-index-to-html-datatables) | `Index.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
-| [Detail](../api_detail/index-exporter.html#api-sig-index-to-pandas) | `Index.to_pandas()` | Return a Pandas Index. |
-| [Detail](../api_detail/index-exporter.html#api-sig-index-to-series) | `Index.to_series()` | Return a Series with values from this Index’s labels. |
-| [Detail](../api_detail/index-exporter.html#api-sig-index-to-visidata) | `Index.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/index-exporter.md#api-sig-index-to-html) | `Index.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
+| [Detail](../api_detail/index-exporter.md#api-sig-index-to-html-datatables) | `Index.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
+| [Detail](../api_detail/index-exporter.md#api-sig-index-to-pandas) | `Index.to_pandas()` | Return a Pandas Index. |
+| [Detail](../api_detail/index-exporter.md#api-sig-index-to-series) | `Index.to_series()` | Return a Series with values from this Index’s labels. |
+| [Detail](../api_detail/index-exporter.md#api-sig-index-to-visidata) | `Index.to_visidata()` | Open an interactive VisiData session. |
 
-[Index](index.html#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](index-method.html#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | [Display](index-display.html#api-overview-index-display) | [Selector](index-selector.html#api-overview-index-selector) | [Iterator](index-iterator.html#api-overview-index-iterator) | [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](index.md#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](index-method.md#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | [Display](index-display.md#api-overview-index-display) | [Selector](index-selector.md#api-overview-index-selector) | [Iterator](index-iterator.md#api-overview-index-iterator) | [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](index-constructor.html "Overview: Index: Constructor")
-[Next](index-attribute.html "Overview: Index: Attribute")
+[Previous](index-constructor.md "Overview: Index: Constructor")
+[Next](index-attribute.md "Overview: Index: Attribute")
 
 ---
 

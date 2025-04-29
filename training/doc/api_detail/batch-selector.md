@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Batch: Selector
 * [View page source](../_sources/api_detail/batch-selector.rst.txt)
 
-[Previous](batch-display.html "Detail: Batch: Display")
-[Next](batch-operator_binary.html "Detail: Batch: Operator Binary")
+[Previous](batch-display.md "Detail: Batch: Display")
+[Next](batch-operator_binary.md "Detail: Batch: Operator Binary")
 
 ---
 
 # Detail: Batch: Selector[](#detail-batch-selector "Link to this heading")
 
-[Overview: Batch: Selector](../api_overview/batch-selector.html#api-overview-batch-selector)
+[Overview: Batch: Selector](../api_overview/batch-selector.md#api-overview-batch-selector)
 
 Batch.bloc[*key*]
 :   bloc
@@ -163,7 +163,7 @@ Batch.bloc[*key*]
 Batch.drop[*key*]
 :   drop
 
-    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceSelectTrio.__getitem__)
+    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceSelectTrio.__getitem__)
     :   Label-based selection.
 
     ```
@@ -285,7 +285,7 @@ Batch.drop.loc[*key*]
     ```
 
 Batch[*key*]()[](#Batch "Link to this definition")
-:   Batch.\_\_getitem\_\_ *= <function Batch.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/batch.html#Batch.__getitem__)
+:   Batch.\_\_getitem\_\_ *= <function Batch.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/batch.md#Batch.__getitem__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((11, 4, 10, 2), (0, 8, 3, 8), (0, 1, 0, 1)), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((0, 0, 10, 2), (20, 18, -3, 18), (0, 0, 0, 1)), columns=('a', 'b', 'c'), name='x'))))
@@ -389,10 +389,10 @@ Batch.loc[*key*]
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-display.html "Detail: Batch: Display")
-[Next](batch-operator_binary.html "Detail: Batch: Operator Binary")
+[Previous](batch-display.md "Detail: Batch: Display")
+[Next](batch-operator_binary.md "Detail: Batch: Operator Binary")
 
 ---
 

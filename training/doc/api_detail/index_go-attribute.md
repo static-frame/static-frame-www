@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexGO: Attribute
 * [View page source](../_sources/api_detail/index_go-attribute.rst.txt)
 
-[Previous](index_go-exporter.html "Detail: IndexGO: Exporter")
-[Next](index_go-method.html "Detail: IndexGO: Method")
+[Previous](index_go-exporter.md "Detail: IndexGO: Exporter")
+[Next](index_go-method.md "Detail: IndexGO: Method")
 
 ---
 
 # Detail: IndexGO: Attribute[](#detail-indexgo-attribute "Link to this heading")
 
-[Overview: IndexGO: Attribute](../api_overview/index_go-attribute.html#api-overview-indexgo-attribute)
+[Overview: IndexGO: Attribute](../api_overview/index_go-attribute.md#api-overview-indexgo-attribute)
 
 IndexGO.STATIC *= False*[](#static_frame.IndexGO.STATIC "Link to this definition")
 :   ```
@@ -177,7 +177,7 @@ IndexGO.index\_types[](#static_frame.IndexGO.index_types "Link to this defini
 :   Return a Series of Index classes for each index depth.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
@@ -190,7 +190,7 @@ IndexGO.index\_types[](#static_frame.IndexGO.index_types "Link to this defini
     ```
 
 IndexGO.memory[](#static_frame.IndexGO.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -300,10 +300,10 @@ IndexGO.size[](#static_frame.IndexGO.size "Link to this definition")
 
     ```
 
-[IndexGO](index_go.html#api-detail-indexgo): [Constructor](index_go-constructor.html#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.html#api-detail-indexgo-exporter) | [Attribute](#api-detail-indexgo-attribute) | [Method](index_go-method.html#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-detail-indexgo-dictionary-like) | [Display](index_go-display.html#api-detail-indexgo-display) | [Selector](index_go-selector.html#api-detail-indexgo-selector) | [Iterator](index_go-iterator.html#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-detail-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)
 
-[Previous](index_go-exporter.html "Detail: IndexGO: Exporter")
-[Next](index_go-method.html "Detail: IndexGO: Method")
+[Previous](index_go-exporter.md "Detail: IndexGO: Exporter")
+[Next](index_go-method.md "Detail: IndexGO: Method")
 
 ---
 

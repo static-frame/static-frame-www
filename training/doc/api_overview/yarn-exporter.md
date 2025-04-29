@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Yarn: Exporter
 * [View page source](../_sources/api_overview/yarn-exporter.rst.txt)
 
-[Previous](yarn-constructor.html "Overview: Yarn: Constructor")
-[Next](yarn-attribute.html "Overview: Yarn: Attribute")
+[Previous](yarn-constructor.md "Overview: Yarn: Constructor")
+[Next](yarn-attribute.md "Overview: Yarn: Attribute")
 
 ---
 
 # Overview: Yarn: Exporter[](#overview-yarn-exporter "Link to this heading")
 
-[Detail: Yarn: Exporter](../api_detail/yarn-exporter.html#api-detail-yarn-exporter)
+[Detail: Yarn: Exporter](../api_detail/yarn-exporter.md#api-detail-yarn-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-series) | `Yarn.to_series()` | Return a Series with the Frame contained in all contained Bus. |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-sqlite) | `Yarn.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-visidata) | `Yarn.to_visidata()` | Open an interactive VisiData session. |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-xlsx) | `Yarn.to_xlsx(fp, *, config)` | Write the complete Bus as a XLSX workbook. Args: fp: A string file path or Path… |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-zip-csv) | `Yarn.to_zip_csv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of CSV files. Args: fp: A string file… |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-zip-npy) | `Yarn.to_zip_npy(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPY files. Args: fp: A string file… |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-zip-npz) | `Yarn.to_zip_npz(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPZ files. Args: fp: A string file… |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-zip-parquet) | `Yarn.to_zip_parquet(fp, *, config, compression)` | Write the complete Bus as a zipped archive of parquet files. Args: fp: A string… |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-zip-pickle) | `Yarn.to_zip_pickle(fp, *, config, compression)` | Write the complete Bus as a zipped archive of pickles. Args: fp: A string file p… |
-| [Detail](../api_detail/yarn-exporter.html#api-sig-yarn-to-zip-tsv) | `Yarn.to_zip_tsv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of TSV files. Args: fp: A string file… |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-series) | `Yarn.to_series()` | Return a Series with the Frame contained in all contained Bus. |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-sqlite) | `Yarn.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-visidata) | `Yarn.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-xlsx) | `Yarn.to_xlsx(fp, *, config)` | Write the complete Bus as a XLSX workbook. Args: fp: A string file path or Path… |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-zip-csv) | `Yarn.to_zip_csv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of CSV files. Args: fp: A string file… |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-zip-npy) | `Yarn.to_zip_npy(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPY files. Args: fp: A string file… |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-zip-npz) | `Yarn.to_zip_npz(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPZ files. Args: fp: A string file… |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-zip-parquet) | `Yarn.to_zip_parquet(fp, *, config, compression)` | Write the complete Bus as a zipped archive of parquet files. Args: fp: A string… |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-zip-pickle) | `Yarn.to_zip_pickle(fp, *, config, compression)` | Write the complete Bus as a zipped archive of pickles. Args: fp: A string file p… |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-zip-tsv) | `Yarn.to_zip_tsv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of TSV files. Args: fp: A string file… |
 
-[Yarn](yarn.html#api-overview-yarn): [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | [Exporter](#api-overview-yarn-exporter) | [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | [Method](yarn-method.html#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](yarn-display.html#api-overview-yarn-display) | [Selector](yarn-selector.html#api-overview-yarn-selector) | [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-overview-yarn): [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | [Exporter](#api-overview-yarn-exporter) | [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | [Method](yarn-method.md#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](yarn-display.md#api-overview-yarn-display) | [Selector](yarn-selector.md#api-overview-yarn-selector) | [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
-[Previous](yarn-constructor.html "Overview: Yarn: Constructor")
-[Next](yarn-attribute.html "Overview: Yarn: Attribute")
+[Previous](yarn-constructor.md "Overview: Yarn: Constructor")
+[Next](yarn-attribute.md "Overview: Yarn: Attribute")
 
 ---
 

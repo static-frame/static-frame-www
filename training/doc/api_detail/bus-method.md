@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Bus: Method
 * [View page source](../_sources/api_detail/bus-method.rst.txt)
 
-[Previous](bus-attribute.html "Detail: Bus: Attribute")
-[Next](bus-dictionary_like.html "Detail: Bus: Dictionary-Like")
+[Previous](bus-attribute.md "Detail: Bus: Attribute")
+[Next](bus-dictionary_like.md "Detail: Bus: Dictionary-Like")
 
 ---
 
 # Detail: Bus: Method[](#detail-bus-method "Link to this heading")
 
-[Overview: Bus: Method](../api_overview/bus-method.html#api-overview-bus-method)
+[Overview: Bus: Method](../api_overview/bus-method.md#api-overview-bus-method)
 
 Bus.\_\_bool\_\_()[](#static_frame.Bus.__bool__ "Link to this definition")
 :   Raises ValueError to prohibit ambiguous use of truthy evaluation.
@@ -160,7 +160,7 @@ Bus.\_\_bool\_\_()[](#static_frame.Bus.__bool__ "Link to this definition")
 
     ```
 
-Bus.\_\_len\_\_()[[source]](../_modules/static_frame/core/bus.html#Bus.__len__)[](#static_frame.Bus.__len__ "Link to this definition")
+Bus.\_\_len\_\_()[[source]](../_modules/static_frame/core/bus.md#Bus.__len__)[](#static_frame.Bus.__len__ "Link to this definition")
 :   Length of values.
 
     ```
@@ -176,7 +176,7 @@ Bus.\_\_len\_\_()[[source]](../_modules/static_frame/core/bus.html#Bus.__len__)[
 
     ```
 
-Bus.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/bus.html#Bus.equals)[](#static_frame.Bus.equals "Link to this definition")
+Bus.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/bus.md#Bus.equals)[](#static_frame.Bus.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Note: this will attempt to load and compare all Frame managed by the Bus.
@@ -207,14 +207,14 @@ Bus.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *c
 
     ```
 
-Bus.head(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.html#Bus.head)[](#static_frame.Bus.head "Link to this definition")
-:   Return a [`Bus`](bus-selector.html#Bus "Bus") consisting only of the top elements as specified by `count`.
+Bus.head(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.head)[](#static_frame.Bus.head "Link to this definition")
+:   Return a [`Bus`](bus-selector.md#Bus "Bus") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Bus`](bus-selector.html#Bus "Bus")
+    :   **count** – Number of elements to be returned from the top of the [`Bus`](bus-selector.md#Bus "Bus")
 
     Returns:
-    :   [`Bus`](bus-selector.html#Bus "Bus")
+    :   [`Bus`](bus-selector.md#Bus "Bus")
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='k')
@@ -239,7 +239,7 @@ Bus.persist[*key*]
 :   persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
 
-    InterfacePersist.\_\_getitem\_\_ *= <function InterfacePersist.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/node_selector.html#InterfacePersist.__getitem__)
+    InterfacePersist.\_\_getitem\_\_ *= <function InterfacePersist.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/node_selector.md#InterfacePersist.__getitem__)
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -343,7 +343,7 @@ Bus.persist
 :   persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
 
-    InterfacePersist.\_\_call\_\_()[[source]](../_modules/static_frame/core/node_selector.html#InterfacePersist.__call__)
+    InterfacePersist.\_\_call\_\_()[[source]](../_modules/static_frame/core/node_selector.md#InterfacePersist.__call__)
     :   Persist all Frame.
 
     ```
@@ -374,8 +374,8 @@ Bus.persist
 
     ```
 
-Bus.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.rehierarch)[](#static_frame.Bus.rehierarch "Link to this definition")
-:   Return a new [`Bus`](bus-selector.html#Bus "Bus") with new a hierarchy based on the supplied `depth_map`.
+Bus.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.rehierarch)[](#static_frame.Bus.rehierarch "Link to this definition")
+:   Return a new [`Bus`](bus-selector.md#Bus "Bus") with new a hierarchy based on the supplied `depth_map`.
 
     ```
     >>> b = sf.Bus.from_items(((('i', 1024), sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), (('j', 4096), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), (('j', 2048), sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'))), index_constructor=sf.IndexHierarchy.from_labels)
@@ -396,14 +396,14 @@ Bus.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_mod
 
     ```
 
-Bus.reindex(*index*, *\**, *fill\_value*, *own\_index=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/bus.html#Bus.reindex)[](#static_frame.Bus.reindex "Link to this definition")
-:   Return a new [`Bus`](bus-selector.html#Bus "Bus") with labels defined by the provided index. The size and ordering of the data is determined by the newly provided index, where data will continue to be aligned under labels found in both the new and the old index. Labels found only in the new index will be filled with `fill_value`.
+Bus.reindex(*index*, *\**, *fill\_value*, *own\_index=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/bus.md#Bus.reindex)[](#static_frame.Bus.reindex "Link to this definition")
+:   Return a new [`Bus`](bus-selector.md#Bus "Bus") with labels defined by the provided index. The size and ordering of the data is determined by the newly provided index, where data will continue to be aligned under labels found in both the new and the old index. Labels found only in the new index will be filled with `fill_value`.
 
     Parameters:
     :   * **index** – An iterable of unique, hashable values, or another `Index` or `IndexHierarchy`, to be used as the labels of the index.
         * **columns** – An iterable of unique, hashable values, or another `Index` or `IndexHierarchy`, to be used as the labels of the index.
         * **fill\_value** – A value to be used to fill space created by a new index that has values not found in the previous index.
-        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Bus`](bus.html#static_frame.Bus "static_frame.Bus"). Primarily used by internal clients.
+        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Bus`](bus.md#static_frame.Bus "static_frame.Bus"). Primarily used by internal clients.
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -423,8 +423,8 @@ Bus.reindex(*index*, *\**, *fill\_value*, *own\_index=False*, *check\_equals=Tru
 
     ```
 
-Bus.relabel(*index*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.relabel)[](#static_frame.Bus.relabel "Link to this definition")
-:   Return a new [`Bus`](bus-selector.html#Bus "Bus") with transformed labels on the index. The size and ordering of the data is never changed in a relabeling operation. The resulting index must be unique.
+Bus.relabel(*index*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.relabel)[](#static_frame.Bus.relabel "Link to this definition")
+:   Return a new [`Bus`](bus-selector.md#Bus "Bus") with transformed labels on the index. The size and ordering of the data is never changed in a relabeling operation. The resulting index must be unique.
 
     Parameters:
     :   **index** – One of the following types, used to create new index labels with the same size as the previous index. (a) A mapping (as a dictionary or `Series`), used to lookup and transform the labels in the previous index. Labels not found in the mapping will be reused. (b) A function, returning a hashable, that is applied to each label in the previous index. (c) The `IndexAutoFactory` type, to apply auto-incremented integer labels. (d) An `Index` initializer, i.e., either an iterable of hashables or an `Index` instance.
@@ -458,8 +458,8 @@ Bus.relabel(*index*, *\**, *index\_constructor=None*)[[source]](../_modules/stat
 
     ```
 
-Bus.relabel\_flat()[[source]](../_modules/static_frame/core/bus.html#Bus.relabel_flat)[](#static_frame.Bus.relabel_flat "Link to this definition")
-:   Return a new [`Bus`](bus-selector.html#Bus "Bus"), where an `IndexHierarchy` (if defined) is replaced with a flat, one-dimension index of tuples.
+Bus.relabel\_flat()[[source]](../_modules/static_frame/core/bus.md#Bus.relabel_flat)[](#static_frame.Bus.relabel_flat "Link to this definition")
+:   Return a new [`Bus`](bus-selector.md#Bus "Bus"), where an `IndexHierarchy` (if defined) is replaced with a flat, one-dimension index of tuples.
 
     ```
     >>> b = sf.Bus.from_items(((('i', 1024), sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), (('j', 4096), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), (('j', 2048), sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'))), index_constructor=sf.IndexHierarchy.from_labels)
@@ -480,8 +480,8 @@ Bus.relabel\_flat()[[source]](../_modules/static_frame/core/bus.html#Bus.relabel
 
     ```
 
-Bus.relabel\_level\_add(*level*)[[source]](../_modules/static_frame/core/bus.html#Bus.relabel_level_add)[](#static_frame.Bus.relabel_level_add "Link to this definition")
-:   Return a new [`Bus`](bus-selector.html#Bus "Bus"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
+Bus.relabel\_level\_add(*level*)[[source]](../_modules/static_frame/core/bus.md#Bus.relabel_level_add)[](#static_frame.Bus.relabel_level_add "Link to this definition")
+:   Return a new [`Bus`](bus-selector.md#Bus "Bus"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
 
     Parameters:
     :   **level** – A hashable value to be used as a new root level, extending or creating an `IndexHierarchy`
@@ -503,8 +503,8 @@ Bus.relabel\_level\_add(*level*)[[source]](../_modules/static_frame/core/bus.htm
 
     ```
 
-Bus.relabel\_level\_drop(*count=1*)[[source]](../_modules/static_frame/core/bus.html#Bus.relabel_level_drop)[](#static_frame.Bus.relabel_level_drop "Link to this definition")
-:   Return a new [`Bus`](bus-selector.html#Bus "Bus"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
+Bus.relabel\_level\_drop(*count=1*)[[source]](../_modules/static_frame/core/bus.md#Bus.relabel_level_drop)[](#static_frame.Bus.relabel_level_drop "Link to this definition")
+:   Return a new [`Bus`](bus-selector.md#Bus "Bus"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
 
     Parameters:
     :   **count** – A positive integer drops that many outer-most (root) levels; a negative integer drops that many inner-most (leaf)levels.
@@ -528,8 +528,8 @@ Bus.relabel\_level\_drop(*count=1*)[[source]](../_modules/static_frame/core/bus.
 
     ```
 
-Bus.rename(*name*, */*)[[source]](../_modules/static_frame/core/bus.html#Bus.rename)[](#static_frame.Bus.rename "Link to this definition")
-:   Return a new [`Bus`](bus-selector.html#Bus "Bus") with an updated name attribute.
+Bus.rename(*name*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.rename)[](#static_frame.Bus.rename "Link to this definition")
+:   Return a new [`Bus`](bus-selector.md#Bus "Bus") with an updated name attribute.
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -548,7 +548,7 @@ Bus.rename(*name*, */*)[[source]](../_modules/static_frame/core/bus.html#Bus.ren
 
     ```
 
-Bus.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/bus.html#Bus.roll)[](#static_frame.Bus.roll "Link to this definition")
+Bus.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.roll)[](#static_frame.Bus.roll "Link to this definition")
 :   Return a Bus with values rotated forward and wrapped around the index (with a positive shift) or backward and wrapped around the index (with a negative shift).
 
     Parameters:
@@ -556,7 +556,7 @@ Bus.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/stati
         * **include\_index** – Determine if the Index is shifted with the underlying data.
 
     Returns:
-    :   [`Bus`](bus-selector.html#Bus "Bus")
+    :   [`Bus`](bus-selector.md#Bus "Bus")
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='k')
@@ -579,15 +579,15 @@ Bus.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/stati
 
     ```
 
-Bus.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/bus.html#Bus.shift)[](#static_frame.Bus.shift "Link to this definition")
-:   Return a [`Bus`](bus-selector.html#Bus "Bus") with values shifted forward on the index (with a positive shift) or backward on the index (with a negative shift).
+Bus.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/bus.md#Bus.shift)[](#static_frame.Bus.shift "Link to this definition")
+:   Return a [`Bus`](bus-selector.md#Bus "Bus") with values shifted forward on the index (with a positive shift) or backward on the index (with a negative shift).
 
     Parameters:
     :   * **shift** – Positive or negative integer shift.
         * **fill\_value** – Value to be used to fill data missing after the shift.
 
     Returns:
-    :   [`Bus`](bus-selector.html#Bus "Bus")
+    :   [`Bus`](bus-selector.md#Bus "Bus")
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='k')
@@ -611,7 +611,7 @@ Bus.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/
 
     ```
 
-Bus.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/bus.html#Bus.sort_index)[](#static_frame.Bus.sort_index "Link to this definition")
+Bus.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.sort_index)[](#static_frame.Bus.sort_index "Link to this definition")
 :   Return a new Bus ordered by the sorted Index.
 
     Parameters:
@@ -621,7 +621,7 @@ Bus.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]
         * **key** – A function that is used to pre-process the selected columns or rows and derive new values to sort by.
 
     Returns:
-    :   [`Bus`](bus-selector.html#Bus "Bus")
+    :   [`Bus`](bus-selector.md#Bus "Bus")
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='k')
@@ -652,8 +652,8 @@ Bus.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]
 
     ```
 
-Bus.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](../_modules/static_frame/core/bus.html#Bus.sort_values)[](#static_frame.Bus.sort_values "Link to this definition")
-:   Return a new Bus ordered by the sorted values. Note that as a Bus contains Frames, a key argument must be provided to extract a sortable value, and this key function will process a [`Series`](series-selector.html#Series "Series") of [`Frame`](frame-selector.html#Frame "Frame").
+Bus.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](../_modules/static_frame/core/bus.md#Bus.sort_values)[](#static_frame.Bus.sort_values "Link to this definition")
+:   Return a new Bus ordered by the sorted values. Note that as a Bus contains Frames, a key argument must be provided to extract a sortable value, and this key function will process a [`Series`](series-selector.md#Series "Series") of [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
     :   * **\*** –
@@ -662,7 +662,7 @@ Bus.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](..
         * **key** – A function that is used to pre-process the selected columns or rows and derive new values to sort by.
 
     Returns:
-    :   [`Bus`](bus-selector.html#Bus "Bus")
+    :   [`Bus`](bus-selector.md#Bus "Bus")
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='k')
@@ -693,15 +693,15 @@ Bus.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](..
 
     ```
 
-Bus.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.html#Bus.tail)[](#static_frame.Bus.tail "Link to this definition")
-:   Return a [`Bus`](bus-selector.html#Bus "Bus") consisting only of the bottom elements as specified by `count`.
+Bus.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.tail)[](#static_frame.Bus.tail "Link to this definition")
+:   Return a [`Bus`](bus-selector.md#Bus "Bus") consisting only of the bottom elements as specified by `count`.
     :   s
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Bus`](bus-selector.html#Bus "Bus")
+    :   **count** – Number of elements to be returned from the bottom of the [`Bus`](bus-selector.md#Bus "Bus")
 
     Returns:
-    :   [`Bus`](bus-selector.html#Bus "Bus")
+    :   [`Bus`](bus-selector.md#Bus "Bus")
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='k')
@@ -722,8 +722,8 @@ Bus.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.html#Bus.ta
 
     ```
 
-Bus.unpersist()[[source]](../_modules/static_frame/core/bus.html#Bus.unpersist)[](#static_frame.Bus.unpersist "Link to this definition")
-:   Replace all loaded [`Frame`](frame-selector.html#Frame "Frame") with `FrameDeferred`.
+Bus.unpersist()[[source]](../_modules/static_frame/core/bus.md#Bus.unpersist)[](#static_frame.Bus.unpersist "Link to this definition")
+:   Replace all loaded [`Frame`](frame-selector.md#Frame "Frame") with `FrameDeferred`.
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -771,10 +771,10 @@ Bus.unpersist()[[source]](../_modules/static_frame/core/bus.html#Bus.unpersist)[
 
     ```
 
-[Bus](bus.html#api-detail-bus): [Constructor](bus-constructor.html#api-detail-bus-constructor) | [Exporter](bus-exporter.html#api-detail-bus-exporter) | [Attribute](bus-attribute.html#api-detail-bus-attribute) | [Method](#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-detail-bus-dictionary-like) | [Display](bus-display.html#api-detail-bus-display) | [Selector](bus-selector.html#api-detail-bus-selector) | [Iterator](bus-iterator.html#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
 
-[Previous](bus-attribute.html "Detail: Bus: Attribute")
-[Next](bus-dictionary_like.html "Detail: Bus: Dictionary-Like")
+[Previous](bus-attribute.md "Detail: Bus: Attribute")
+[Next](bus-dictionary_like.md "Detail: Bus: Dictionary-Like")
 
 ---
 

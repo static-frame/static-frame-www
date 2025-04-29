@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Yarn: Accessor Hashlib
 * [View page source](../_sources/api_overview/yarn-accessor_hashlib.rst.txt)
 
-[Previous](yarn-iterator.html "Overview: Yarn: Iterator")
-[Next](yarn-accessor_type_clinic.html "Overview: Yarn: Accessor Type Clinic")
+[Previous](yarn-iterator.md "Overview: Yarn: Iterator")
+[Next](yarn-accessor_type_clinic.md "Overview: Yarn: Accessor Type Clinic")
 
 ---
 
 # Overview: Yarn: Accessor Hashlib[](#overview-yarn-accessor-hashlib "Link to this heading")
 
-[Detail: Yarn: Accessor Hashlib](../api_detail/yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib)
+[Detail: Yarn: Accessor Hashlib](../api_detail/yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-to-bytes) | `Yarn.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-md5) | `Yarn.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-sha256) | `Yarn.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-sha512) | `Yarn.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-sha3-256) | `Yarn.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-sha3-512) | `Yarn.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-shake-128) | `Yarn.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-shake-256) | `Yarn.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-blake2b) | `Yarn.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/yarn-accessor_hashlib.html#api-sig-yarn-via-hashlib-blake2s) | `Yarn.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-to-bytes) | `Yarn.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-md5) | `Yarn.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-sha256) | `Yarn.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-sha512) | `Yarn.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-sha3-256) | `Yarn.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-sha3-512) | `Yarn.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-shake-128) | `Yarn.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-shake-256) | `Yarn.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-blake2b) | `Yarn.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/yarn-accessor_hashlib.md#api-sig-yarn-via-hashlib-blake2s) | `Yarn.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[Yarn](yarn.html#api-overview-yarn): [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | [Method](yarn-method.html#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](yarn-display.html#api-overview-yarn-display) | [Selector](yarn-selector.html#api-overview-yarn-selector) | [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | [Accessor Hashlib](#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-overview-yarn): [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | [Method](yarn-method.md#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](yarn-display.md#api-overview-yarn-display) | [Selector](yarn-selector.md#api-overview-yarn-selector) | [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | [Accessor Hashlib](#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
-[Previous](yarn-iterator.html "Overview: Yarn: Iterator")
-[Next](yarn-accessor_type_clinic.html "Overview: Yarn: Accessor Type Clinic")
+[Previous](yarn-iterator.md "Overview: Yarn: Iterator")
+[Next](yarn-accessor_type_clinic.md "Overview: Yarn: Accessor Type Clinic")
 
 ---
 

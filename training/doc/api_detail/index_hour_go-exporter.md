@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Detail: IndexHourGO: Exporter
 * [View page source](../_sources/api_detail/index_hour_go-exporter.rst.txt)
 
-[Previous](index_hour_go-constructor.html "Detail: IndexHourGO: Constructor")
-[Next](index_hour_go-attribute.html "Detail: IndexHourGO: Attribute")
+[Previous](index_hour_go-constructor.md "Detail: IndexHourGO: Constructor")
+[Next](index_hour_go-attribute.md "Detail: IndexHourGO: Attribute")
 
 ---
 
 # Detail: IndexHourGO: Exporter[](#detail-indexhourgo-exporter "Link to this heading")
 
-[Overview: IndexHourGO: Exporter](../api_overview/index_hour_go-exporter.html#api-overview-indexhourgo-exporter)
+[Overview: IndexHourGO: Exporter](../api_overview/index_hour_go-exporter.md#api-overview-indexhourgo-exporter)
 
 IndexHourGO.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexHourGO.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Index`](index-selector.html#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 IndexHourGO.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexHourGO.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Index`](index-selector.html#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
@@ -204,10 +204,10 @@ IndexHourGO.to\_series()[](#static_frame.IndexHourGO.to_series "Link to this 
 IndexHourGO.to\_visidata()[](#static_frame.IndexHourGO.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[IndexHourGO](index_hour_go.html#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.html#api-detail-indexhourgo-constructor) | [Exporter](#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-detail-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor) | [Exporter](#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-detail-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-constructor.html "Detail: IndexHourGO: Constructor")
-[Next](index_hour_go-attribute.html "Detail: IndexHourGO: Attribute")
+[Previous](index_hour_go-constructor.md "Detail: IndexHourGO: Constructor")
+[Next](index_hour_go-attribute.md "Detail: IndexHourGO: Attribute")
 
 ---
 

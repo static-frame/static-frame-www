@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Detail: DisplayActive: Method
 * [View page source](../_sources/api_detail/display_active-method.rst.txt)
 
-[Previous](display_active-attribute.html "Detail: DisplayActive: Attribute")
-[Next](display_active-dictionary_like.html "Detail: DisplayActive: Dictionary-Like")
+[Previous](display_active-attribute.md "Detail: DisplayActive: Attribute")
+[Next](display_active-dictionary_like.md "Detail: DisplayActive: Dictionary-Like")
 
 ---
 
 # Detail: DisplayActive: Method[](#detail-displayactive-method "Link to this heading")
 
-[Overview: DisplayActive: Method](../api_overview/display_active-method.html#api-overview-displayactive-method)
+[Overview: DisplayActive: Method](../api_overview/display_active-method.md#api-overview-displayactive-method)
 
-*classmethod* DisplayActive.read(*fp=None*)[[source]](../_modules/static_frame/core/display.html#DisplayActive.read)[](#static_frame.DisplayActive.read "Link to this definition")
+*classmethod* DisplayActive.read(*fp=None*)[[source]](../_modules/static_frame/core/display.md#DisplayActive.read)[](#static_frame.DisplayActive.read "Link to this definition")
 
-*static* DisplayActive.set(*dc*)[[source]](../_modules/static_frame/core/display.html#DisplayActive.set)[](#static_frame.DisplayActive.set "Link to this definition")
+*static* DisplayActive.set(*dc*)[[source]](../_modules/static_frame/core/display.md#DisplayActive.set)[](#static_frame.DisplayActive.set "Link to this definition")
 
-*classmethod* DisplayActive.update(*\*\*kwargs*)[[source]](../_modules/static_frame/core/display.html#DisplayActive.update)[](#static_frame.DisplayActive.update "Link to this definition")
+*classmethod* DisplayActive.update(*\*\*kwargs*)[[source]](../_modules/static_frame/core/display.md#DisplayActive.update)[](#static_frame.DisplayActive.update "Link to this definition")
 
-*classmethod* DisplayActive.write(*fp=None*)[[source]](../_modules/static_frame/core/display.html#DisplayActive.write)[](#static_frame.DisplayActive.write "Link to this definition")
+*classmethod* DisplayActive.write(*fp=None*)[[source]](../_modules/static_frame/core/display.md#DisplayActive.write)[](#static_frame.DisplayActive.write "Link to this definition")
 
-[DisplayActive](display_active.html#api-detail-displayactive): [Constructor](display_active-constructor.html#api-detail-displayactive-constructor) | [Attribute](display_active-attribute.html#api-detail-displayactive-attribute) | [Method](#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.html#api-detail-displayactive-dictionary-like) | [Display](display_active-display.html#api-detail-displayactive-display)
+[DisplayActive](display_active.md#api-detail-displayactive): [Constructor](display_active-constructor.md#api-detail-displayactive-constructor) | [Attribute](display_active-attribute.md#api-detail-displayactive-attribute) | [Method](#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.md#api-detail-displayactive-dictionary-like) | [Display](display_active-display.md#api-detail-displayactive-display)
 
-[Previous](display_active-attribute.html "Detail: DisplayActive: Attribute")
-[Next](display_active-dictionary_like.html "Detail: DisplayActive: Dictionary-Like")
+[Previous](display_active-attribute.md "Detail: DisplayActive: Attribute")
+[Next](display_active-dictionary_like.md "Detail: DisplayActive: Dictionary-Like")
 
 ---
 

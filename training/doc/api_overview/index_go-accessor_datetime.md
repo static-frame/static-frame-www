@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexGO: Accessor Datetime
 * [View page source](../_sources/api_overview/index_go-accessor_datetime.rst.txt)
 
-[Previous](index_go-accessor_values.html "Overview: IndexGO: Accessor Values")
-[Next](index_go-accessor_string.html "Overview: IndexGO: Accessor String")
+[Previous](index_go-accessor_values.md "Overview: IndexGO: Accessor Values")
+[Next](index_go-accessor_string.md "Overview: IndexGO: Accessor String")
 
 ---
 
 # Overview: IndexGO: Accessor Datetime[](#overview-indexgo-accessor-datetime "Link to this heading")
 
-[Detail: IndexGO: Accessor Datetime](../api_detail/index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime)
+[Detail: IndexGO: Accessor Datetime](../api_detail/index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-call) | `IndexGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-year) | `IndexGO.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-year-month) | `IndexGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-year-quarter) | `IndexGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-month) | `IndexGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-day) | `IndexGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-hour) | `IndexGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-minute) | `IndexGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-second) | `IndexGO.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-weekday) | `IndexGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-quarter) | `IndexGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-is-month-end) | `IndexGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-is-month-start) | `IndexGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-is-year-end) | `IndexGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-is-year-start) | `IndexGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-is-quarter-end) | `IndexGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-is-quarter-start) | `IndexGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-timetuple) | `IndexGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-isoformat) | `IndexGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-fromisoformat) | `IndexGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-strftime) | `IndexGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-strptime) | `IndexGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_go-accessor_datetime.html#api-sig-indexgo-via-dt-strpdate) | `IndexGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-call) | `IndexGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-year) | `IndexGO.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-year-month) | `IndexGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-year-quarter) | `IndexGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-month) | `IndexGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-day) | `IndexGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-hour) | `IndexGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-minute) | `IndexGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-second) | `IndexGO.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-weekday) | `IndexGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-quarter) | `IndexGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-is-month-end) | `IndexGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-is-month-start) | `IndexGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-is-year-end) | `IndexGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-is-year-start) | `IndexGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-is-quarter-end) | `IndexGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-is-quarter-start) | `IndexGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-timetuple) | `IndexGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-isoformat) | `IndexGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-fromisoformat) | `IndexGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-strftime) | `IndexGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-strptime) | `IndexGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_go-accessor_datetime.md#api-sig-indexgo-via-dt-strpdate) | `IndexGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexGO](index_go.html#api-overview-indexgo): [Constructor](index_go-constructor.html#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.html#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.html#api-overview-indexgo-attribute) | [Method](index_go-method.html#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-overview-indexgo-dictionary-like) | [Display](index_go-display.html#api-overview-indexgo-display) | [Selector](index_go-selector.html#api-overview-indexgo-selector) | [Iterator](index_go-iterator.html#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-overview-indexgo-accessor-values) | [Accessor Datetime](#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-overview-indexgo): [Constructor](index_go-constructor.md#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | [Method](index_go-method.md#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 
-[Previous](index_go-accessor_values.html "Overview: IndexGO: Accessor Values")
-[Next](index_go-accessor_string.html "Overview: IndexGO: Accessor String")
+[Previous](index_go-accessor_values.md "Overview: IndexGO: Accessor Values")
+[Next](index_go-accessor_string.md "Overview: IndexGO: Accessor String")
 
 ---
 

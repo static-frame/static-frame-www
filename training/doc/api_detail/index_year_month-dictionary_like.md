@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexYearMonth: Dictionary-Like
 * [View page source](../_sources/api_detail/index_year_month-dictionary_like.rst.txt)
 
-[Previous](index_year_month-method.html "Detail: IndexYearMonth: Method")
-[Next](index_year_month-display.html "Detail: IndexYearMonth: Display")
+[Previous](index_year_month-method.md "Detail: IndexYearMonth: Method")
+[Next](index_year_month-display.md "Detail: IndexYearMonth: Display")
 
 ---
 
 # Detail: IndexYearMonth: Dictionary-Like[](#detail-indexyearmonth-dictionary-like "Link to this heading")
 
-[Overview: IndexYearMonth: Dictionary-Like](../api_overview/index_year_month-dictionary_like.html#api-overview-indexyearmonth-dictionary-like)
+[Overview: IndexYearMonth: Dictionary-Like](../api_overview/index_year_month-dictionary_like.md#api-overview-indexyearmonth-dictionary-like)
 
 IndexYearMonth.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexYearMonth.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
@@ -220,7 +220,7 @@ IndexYearMonth.\_\_reversed\_\_()[](#static_frame.IndexYearMonth.__reversed__
     ```
 
 IndexYearMonth.values[](#static_frame.IndexYearMonth.values "Link to this definition")
-:   A 1D NumPy array of the values in the [`Index`](index-selector.html#Index "Index"). This array will have the same dtype as the container.
+:   A 1D NumPy array of the values in the [`Index`](index-selector.md#Index "Index"). This array will have the same dtype as the container.
 
     ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
@@ -235,10 +235,10 @@ IndexYearMonth.values[](#static_frame.IndexYearMonth.values "Link to this def
 
     ```
 
-[IndexYearMonth](index_year_month.html#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.html#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-detail-indexyearmonth-method) | [Dictionary-Like](#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-detail-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-detail-indexyearmonth-method) | [Dictionary-Like](#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-detail-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-method.html "Detail: IndexYearMonth: Method")
-[Next](index_year_month-display.html "Detail: IndexYearMonth: Display")
+[Previous](index_year_month-method.md "Detail: IndexYearMonth: Method")
+[Next](index_year_month-display.md "Detail: IndexYearMonth: Display")
 
 ---
 

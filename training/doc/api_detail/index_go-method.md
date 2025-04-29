@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexGO: Method
 * [View page source](../_sources/api_detail/index_go-method.rst.txt)
 
-[Previous](index_go-attribute.html "Detail: IndexGO: Attribute")
-[Next](index_go-dictionary_like.html "Detail: IndexGO: Dictionary-Like")
+[Previous](index_go-attribute.md "Detail: IndexGO: Attribute")
+[Next](index_go-dictionary_like.md "Detail: IndexGO: Dictionary-Like")
 
 ---
 
 # Detail: IndexGO: Method[](#detail-indexgo-method "Link to this heading")
 
-[Overview: IndexGO: Method](../api_overview/index_go-method.html#api-overview-indexgo-method)
+[Overview: IndexGO: Method](../api_overview/index_go-method.md#api-overview-indexgo-method)
 
 IndexGO.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -437,7 +437,7 @@ IndexGO.difference(*\*others*)[](#static_frame.IndexGO.difference "Link to th
     ```
 
 IndexGO.dropfalsy()[](#static_frame.IndexGO.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexGO(('', 'b', 'c', 'd'))
@@ -458,7 +458,7 @@ IndexGO.dropfalsy()[](#static_frame.IndexGO.dropfalsy "Link to this definitio
     ```
 
 IndexGO.dropna()[](#static_frame.IndexGO.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexGO((None, 'A', 1024, True), name='x')
@@ -542,7 +542,7 @@ IndexGO.extend(*values*, */*)[](#static_frame.IndexGO.extend "Link to this de
     ```
 
 IndexGO.fillfalsy(*value*, */*)[](#static_frame.IndexGO.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -567,7 +567,7 @@ IndexGO.fillfalsy(*value*, */*)[](#static_frame.IndexGO.fillfalsy "Link to th
     ```
 
 IndexGO.fillna(*value*, */*)[](#static_frame.IndexGO.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -592,10 +592,10 @@ IndexGO.fillna(*value*, */*)[](#static_frame.IndexGO.fillna "Link to this def
     ```
 
 IndexGO.head(*count=5*, */*)[](#static_frame.IndexGO.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
@@ -616,7 +616,7 @@ IndexGO.head(*count=5*, */*)[](#static_frame.IndexGO.head "Link to this defin
     ```
 
 IndexGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexGO.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -752,7 +752,7 @@ IndexGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_f
     ```
 
 IndexGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexGO.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1096,10 +1096,10 @@ IndexGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_f
     ```
 
 IndexGO.tail(*count=5*, */*)[](#static_frame.IndexGO.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
@@ -1214,10 +1214,10 @@ IndexGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_fr
 
     ```
 
-[IndexGO](index_go.html#api-detail-indexgo): [Constructor](index_go-constructor.html#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.html#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.html#api-detail-indexgo-attribute) | [Method](#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-detail-indexgo-dictionary-like) | [Display](index_go-display.html#api-detail-indexgo-display) | [Selector](index_go-selector.html#api-detail-indexgo-selector) | [Iterator](index_go-iterator.html#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-detail-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)
 
-[Previous](index_go-attribute.html "Detail: IndexGO: Attribute")
-[Next](index_go-dictionary_like.html "Detail: IndexGO: Dictionary-Like")
+[Previous](index_go-attribute.md "Detail: IndexGO: Attribute")
+[Next](index_go-dictionary_like.md "Detail: IndexGO: Dictionary-Like")
 
 ---
 

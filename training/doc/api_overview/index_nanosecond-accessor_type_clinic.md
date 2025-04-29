@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexNanosecond: Accessor Type Clinic
 * [View page source](../_sources/api_overview/index_nanosecond-accessor_type_clinic.rst.txt)
 
-[Previous](index_nanosecond-accessor_hashlib.html "Overview: IndexNanosecond: Accessor Hashlib")
-[Next](index_nanosecond_go-constructor.html "Overview: IndexNanosecondGO: Constructor")
+[Previous](index_nanosecond-accessor_hashlib.md "Overview: IndexNanosecond: Accessor Hashlib")
+[Next](index_nanosecond_go-constructor.md "Overview: IndexNanosecondGO: Constructor")
 
 ---
 
 # Overview: IndexNanosecond: Accessor Type Clinic[](#overview-indexnanosecond-accessor-type-clinic "Link to this heading")
 
-[Detail: IndexNanosecond: Accessor Type Clinic](../api_detail/index_nanosecond-accessor_type_clinic.html#api-detail-indexnanosecond-accessor-type-clinic)
+[Detail: IndexNanosecond: Accessor Type Clinic](../api_detail/index_nanosecond-accessor_type_clinic.md#api-detail-indexnanosecond-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.html#api-sig-indexnanosecond-via-type-clinic-to-hint) | `IndexNanosecond.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.html#api-sig-indexnanosecond-via-type-clinic-check) | `IndexNanosecond.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.html#api-sig-indexnanosecond-via-type-clinic-warn) | `IndexNanosecond.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.html#api-sig-indexnanosecond-via-type-clinic-call) | `IndexNanosecond.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.html#api-sig-indexnanosecond-via-type-clinic-repr) | `IndexNanosecond.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.md#api-sig-indexnanosecond-via-type-clinic-to-hint) | `IndexNanosecond.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.md#api-sig-indexnanosecond-via-type-clinic-check) | `IndexNanosecond.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.md#api-sig-indexnanosecond-via-type-clinic-warn) | `IndexNanosecond.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.md#api-sig-indexnanosecond-via-type-clinic-call) | `IndexNanosecond.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/index_nanosecond-accessor_type_clinic.md#api-sig-indexnanosecond-via-type-clinic-repr) | `IndexNanosecond.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[IndexNanosecond](index_nanosecond.html#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.html#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.html#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.html#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.html#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.html#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.html#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.html#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.html#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.html#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.html#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.html#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.html#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.html#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.html#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexnanosecond-accessor-type-clinic)
+[IndexNanosecond](index_nanosecond.md#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexnanosecond-accessor-type-clinic)
 
-[Previous](index_nanosecond-accessor_hashlib.html "Overview: IndexNanosecond: Accessor Hashlib")
-[Next](index_nanosecond_go-constructor.html "Overview: IndexNanosecondGO: Constructor")
+[Previous](index_nanosecond-accessor_hashlib.md "Overview: IndexNanosecond: Accessor Hashlib")
+[Next](index_nanosecond_go-constructor.md "Overview: IndexNanosecondGO: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: Index: Dictionary-Like
 * [View page source](../_sources/api_detail/index-dictionary_like.rst.txt)
 
-[Previous](index-method.html "Detail: Index: Method")
-[Next](index-display.html "Detail: Index: Display")
+[Previous](index-method.md "Detail: Index: Method")
+[Next](index-display.md "Detail: Index: Display")
 
 ---
 
 # Detail: Index: Dictionary-Like[](#detail-index-dictionary-like "Link to this heading")
 
-[Overview: Index: Dictionary-Like](../api_overview/index-dictionary_like.html#api-overview-index-dictionary-like)
+[Overview: Index: Dictionary-Like](../api_overview/index-dictionary_like.md#api-overview-index-dictionary-like)
 
-Index.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/index.html#Index.__contains__)[](#static_frame.Index.__contains__ "Link to this definition")
+Index.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Index.__contains__)[](#static_frame.Index.__contains__ "Link to this definition")
 :   Return True if value in the labels.
 
     ```
@@ -162,7 +162,7 @@ Index.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/ind
 
     ```
 
-Index.\_\_iter\_\_()[[source]](../_modules/static_frame/core/index.html#Index.__iter__)[](#static_frame.Index.__iter__ "Link to this definition")
+Index.\_\_iter\_\_()[[source]](../_modules/static_frame/core/index.md#Index.__iter__)[](#static_frame.Index.__iter__ "Link to this definition")
 :   Iterate over labels.
 
     ```
@@ -180,7 +180,7 @@ Index.\_\_iter\_\_()[[source]](../_modules/static_frame/core/index.html#Index.__
 
     ```
 
-Index.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/index.html#Index.__reversed__)[](#static_frame.Index.__reversed__ "Link to this definition")
+Index.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/index.md#Index.__reversed__)[](#static_frame.Index.__reversed__ "Link to this definition")
 :   Returns a reverse iterator on the index labels.
 
     ```
@@ -199,7 +199,7 @@ Index.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/index.html#Inde
     ```
 
 Index.values[](#static_frame.Index.values "Link to this definition")
-:   A 1D NumPy array of the values in the [`Index`](index-selector.html#Index "Index"). This array will have the same dtype as the container.
+:   A 1D NumPy array of the values in the [`Index`](index-selector.md#Index "Index"). This array will have the same dtype as the container.
 
     ```
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
@@ -216,10 +216,10 @@ Index.values[](#static_frame.Index.values "Link to this definition")
 
     ```
 
-[Index](index.html#api-detail-index): [Constructor](index-constructor.html#api-detail-index-constructor) | [Exporter](index-exporter.html#api-detail-index-exporter) | [Attribute](index-attribute.html#api-detail-index-attribute) | [Method](index-method.html#api-detail-index-method) | [Dictionary-Like](#api-detail-index-dictionary-like) | [Display](index-display.html#api-detail-index-display) | [Selector](index-selector.html#api-detail-index-selector) | [Iterator](index-iterator.html#api-detail-index-iterator) | [Operator Binary](index-operator_binary.html#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-detail-index-accessor-type-clinic)
+[Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](index-attribute.md#api-detail-index-attribute) | [Method](index-method.md#api-detail-index-method) | [Dictionary-Like](#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)
 
-[Previous](index-method.html "Detail: Index: Method")
-[Next](index-display.html "Detail: Index: Display")
+[Previous](index-method.md "Detail: Index: Method")
+[Next](index-display.md "Detail: Index: Display")
 
 ---
 

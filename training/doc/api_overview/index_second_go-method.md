@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,71 +135,71 @@ API Detail
 * Overview: IndexSecondGO: Method
 * [View page source](../_sources/api_overview/index_second_go-method.rst.txt)
 
-[Previous](index_second_go-attribute.html "Overview: IndexSecondGO: Attribute")
-[Next](index_second_go-dictionary_like.html "Overview: IndexSecondGO: Dictionary-Like")
+[Previous](index_second_go-attribute.md "Overview: IndexSecondGO: Attribute")
+[Next](index_second_go-dictionary_like.md "Overview: IndexSecondGO: Dictionary-Like")
 
 ---
 
 # Overview: IndexSecondGO: Method[](#overview-indexsecondgo-method "Link to this heading")
 
-[Detail: IndexSecondGO: Method](../api_detail/index_second_go-method.html#api-detail-indexsecondgo-method)
+[Detail: IndexSecondGO: Method](../api_detail/index_second_go-method.md#api-detail-indexsecondgo-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-array) | `IndexSecondGO.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-array-ufunc) | `IndexSecondGO.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-bool) | `IndexSecondGO.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-copy) | `IndexSecondGO.__copy__()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-deepcopy) | `IndexSecondGO.__deepcopy__(memo)` |  |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-len) | `IndexSecondGO.__len__()` |  |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-all) | `IndexSecondGO.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-any) | `IndexSecondGO.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-append) | `IndexSecondGO.append(value)` | Specialize for fixed-typed indices: convert value argument; do not need to resol… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-astype) | `IndexSecondGO.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
-| [Detail](../api_detail/index_second_go-method.html#id1) | `IndexSecondGO.copy()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-cumprod) | `IndexSecondGO.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-cumsum) | `IndexSecondGO.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-difference) | `IndexSecondGO.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-dropfalsy) | `IndexSecondGO.dropfalsy()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-dropna) | `IndexSecondGO.dropna()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-equals) | `IndexSecondGO.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-extend) | `IndexSecondGO.extend(values)` | Append multiple values Args: values: can be a generator. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-fillfalsy) | `IndexSecondGO.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-fillna) | `IndexSecondGO.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-head) | `IndexSecondGO.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-iloc-searchsorted) | `IndexSecondGO.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-intersection) | `IndexSecondGO.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-isfalsy) | `IndexSecondGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-isin) | `IndexSecondGO.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-isna) | `IndexSecondGO.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-label-widths-at-depth) | `IndexSecondGO.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-level-add) | `IndexSecondGO.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-loc-searchsorted) | `IndexSecondGO.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-loc-to-iloc) | `IndexSecondGO.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-max) | `IndexSecondGO.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-mean) | `IndexSecondGO.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-median) | `IndexSecondGO.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-min) | `IndexSecondGO.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-notfalsy) | `IndexSecondGO.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-notna) | `IndexSecondGO.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-prod) | `IndexSecondGO.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-relabel) | `IndexSecondGO.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-rename) | `IndexSecondGO.rename(name)` | Return a new Frame with an updated name attribute. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-roll) | `IndexSecondGO.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-sample) | `IndexSecondGO.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-sort) | `IndexSecondGO.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-std) | `IndexSecondGO.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-sum) | `IndexSecondGO.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-tail) | `IndexSecondGO.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-union) | `IndexSecondGO.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-unique) | `IndexSecondGO.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-values-at-depth) | `IndexSecondGO.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
-| [Detail](../api_detail/index_second_go-method.html#api-sig-indexsecondgo-var) | `IndexSecondGO.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-array) | `IndexSecondGO.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-array-ufunc) | `IndexSecondGO.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-bool) | `IndexSecondGO.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-copy) | `IndexSecondGO.__copy__()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-deepcopy) | `IndexSecondGO.__deepcopy__(memo)` |  |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-len) | `IndexSecondGO.__len__()` |  |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-all) | `IndexSecondGO.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-any) | `IndexSecondGO.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-append) | `IndexSecondGO.append(value)` | Specialize for fixed-typed indices: convert value argument; do not need to resol… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-astype) | `IndexSecondGO.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
+| [Detail](../api_detail/index_second_go-method.md#id1) | `IndexSecondGO.copy()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-cumprod) | `IndexSecondGO.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-cumsum) | `IndexSecondGO.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-difference) | `IndexSecondGO.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-dropfalsy) | `IndexSecondGO.dropfalsy()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-dropna) | `IndexSecondGO.dropna()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-equals) | `IndexSecondGO.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-extend) | `IndexSecondGO.extend(values)` | Append multiple values Args: values: can be a generator. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-fillfalsy) | `IndexSecondGO.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-fillna) | `IndexSecondGO.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-head) | `IndexSecondGO.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-iloc-searchsorted) | `IndexSecondGO.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-intersection) | `IndexSecondGO.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-isfalsy) | `IndexSecondGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-isin) | `IndexSecondGO.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-isna) | `IndexSecondGO.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-label-widths-at-depth) | `IndexSecondGO.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-level-add) | `IndexSecondGO.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-loc-searchsorted) | `IndexSecondGO.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-loc-to-iloc) | `IndexSecondGO.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-max) | `IndexSecondGO.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-mean) | `IndexSecondGO.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-median) | `IndexSecondGO.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-min) | `IndexSecondGO.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-notfalsy) | `IndexSecondGO.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-notna) | `IndexSecondGO.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-prod) | `IndexSecondGO.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-relabel) | `IndexSecondGO.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-rename) | `IndexSecondGO.rename(name)` | Return a new Frame with an updated name attribute. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-roll) | `IndexSecondGO.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-sample) | `IndexSecondGO.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-sort) | `IndexSecondGO.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-std) | `IndexSecondGO.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-sum) | `IndexSecondGO.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-tail) | `IndexSecondGO.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-union) | `IndexSecondGO.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-unique) | `IndexSecondGO.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-values-at-depth) | `IndexSecondGO.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
+| [Detail](../api_detail/index_second_go-method.md#api-sig-indexsecondgo-var) | `IndexSecondGO.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
-[IndexSecondGO](index_second_go.html#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.html#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-overview-indexsecondgo-attribute) | [Method](#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-overview-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.md#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-overview-indexsecondgo-attribute) | [Method](#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-overview-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-attribute.html "Overview: IndexSecondGO: Attribute")
-[Next](index_second_go-dictionary_like.html "Overview: IndexSecondGO: Dictionary-Like")
+[Previous](index_second_go-attribute.md "Overview: IndexSecondGO: Attribute")
+[Next](index_second_go-dictionary_like.md "Overview: IndexSecondGO: Dictionary-Like")
 
 ---
 

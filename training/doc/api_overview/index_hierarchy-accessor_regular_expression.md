@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexHierarchy: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_hierarchy-accessor_regular_expression.rst.txt)
 
-[Previous](index_hierarchy-accessor_transpose.html "Overview: IndexHierarchy: Accessor Transpose")
-[Next](index_hierarchy-accessor_hashlib.html "Overview: IndexHierarchy: Accessor Hashlib")
+[Previous](index_hierarchy-accessor_transpose.md "Overview: IndexHierarchy: Accessor Transpose")
+[Next](index_hierarchy-accessor_hashlib.md "Overview: IndexHierarchy: Accessor Hashlib")
 
 ---
 
 # Overview: IndexHierarchy: Accessor Regular Expression[](#overview-indexhierarchy-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexHierarchy: Accessor Regular Expression](../api_detail/index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression)
+[Detail: IndexHierarchy: Accessor Regular Expression](../api_detail/index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.html#api-sig-indexhierarchy-via-re-search) | `IndexHierarchy.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.html#api-sig-indexhierarchy-via-re-match) | `IndexHierarchy.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.html#api-sig-indexhierarchy-via-re-fullmatch) | `IndexHierarchy.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.html#api-sig-indexhierarchy-via-re-split) | `IndexHierarchy.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.html#api-sig-indexhierarchy-via-re-findall) | `IndexHierarchy.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.html#api-sig-indexhierarchy-via-re-sub) | `IndexHierarchy.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.html#api-sig-indexhierarchy-via-re-subn) | `IndexHierarchy.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.md#api-sig-indexhierarchy-via-re-search) | `IndexHierarchy.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.md#api-sig-indexhierarchy-via-re-match) | `IndexHierarchy.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.md#api-sig-indexhierarchy-via-re-fullmatch) | `IndexHierarchy.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.md#api-sig-indexhierarchy-via-re-split) | `IndexHierarchy.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.md#api-sig-indexhierarchy-via-re-findall) | `IndexHierarchy.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.md#api-sig-indexhierarchy-via-re-sub) | `IndexHierarchy.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_hierarchy-accessor_regular_expression.md#api-sig-indexhierarchy-via-re-subn) | `IndexHierarchy.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexHierarchy](index_hierarchy.html#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-overview-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-overview-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-accessor_transpose.html "Overview: IndexHierarchy: Accessor Transpose")
-[Next](index_hierarchy-accessor_hashlib.html "Overview: IndexHierarchy: Accessor Hashlib")
+[Previous](index_hierarchy-accessor_transpose.md "Overview: IndexHierarchy: Accessor Transpose")
+[Next](index_hierarchy-accessor_hashlib.md "Overview: IndexHierarchy: Accessor Hashlib")
 
 ---
 

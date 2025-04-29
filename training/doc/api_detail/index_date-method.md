@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexDate: Method
 * [View page source](../_sources/api_detail/index_date-method.rst.txt)
 
-[Previous](index_date-attribute.html "Detail: IndexDate: Attribute")
-[Next](index_date-dictionary_like.html "Detail: IndexDate: Dictionary-Like")
+[Previous](index_date-attribute.md "Detail: IndexDate: Attribute")
+[Next](index_date-dictionary_like.md "Detail: IndexDate: Dictionary-Like")
 
 ---
 
 # Detail: IndexDate: Method[](#detail-indexdate-method "Link to this heading")
 
-[Overview: IndexDate: Method](../api_overview/index_date-method.html#api-overview-indexdate-method)
+[Overview: IndexDate: Method](../api_overview/index_date-method.md#api-overview-indexdate-method)
 
 IndexDate.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexDate.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -397,7 +397,7 @@ IndexDate.difference(*\*others*)[](#static_frame.IndexDate.difference "Link t
     ```
 
 IndexDate.dropfalsy()[](#static_frame.IndexDate.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexDate(('1620-09-16', 'NaT', '1620-11-21'))
@@ -416,7 +416,7 @@ IndexDate.dropfalsy()[](#static_frame.IndexDate.dropfalsy "Link to this defin
     ```
 
 IndexDate.dropna()[](#static_frame.IndexDate.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexDate(('1620-09-16', 'NaT', '1620-11-21'))
@@ -464,7 +464,7 @@ IndexDate.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fals
     ```
 
 IndexDate.fillfalsy(*value*, */*)[](#static_frame.IndexDate.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -483,7 +483,7 @@ IndexDate.fillfalsy(*value*, */*)[](#static_frame.IndexDate.fillfalsy "Link t
     ```
 
 IndexDate.fillna(*value*, */*)[](#static_frame.IndexDate.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -506,10 +506,10 @@ IndexDate.fillna(*value*, */*)[](#static_frame.IndexDate.fillna "Link to this
     ```
 
 IndexDate.head(*count=5*, */*)[](#static_frame.IndexDate.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexDate(('1517-04-01', '1517-12', '1517-06-30'))
@@ -528,7 +528,7 @@ IndexDate.head(*count=5*, */*)[](#static_frame.IndexDate.head "Link to this d
     ```
 
 IndexDate.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexDate.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -652,7 +652,7 @@ IndexDate.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static
     ```
 
 IndexDate.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexDate.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -966,10 +966,10 @@ IndexDate.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static
     ```
 
 IndexDate.tail(*count=5*, */*)[](#static_frame.IndexDate.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexDate(('1517-04-01', '1517-12', '1517-06-30'))
@@ -1076,10 +1076,10 @@ IndexDate.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_
 
     ```
 
-[IndexDate](index_date.html#api-detail-indexdate): [Constructor](index_date-constructor.html#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.html#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.html#api-detail-indexdate-attribute) | [Method](#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-detail-indexdate-dictionary-like) | [Display](index_date-display.html#api-detail-indexdate-display) | [Selector](index_date-selector.html#api-detail-indexdate-selector) | [Iterator](index_date-iterator.html#api-detail-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-detail-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-detail-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-detail-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-detail-indexdate): [Constructor](index_date-constructor.md#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.md#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.md#api-detail-indexdate-attribute) | [Method](#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-detail-indexdate-dictionary-like) | [Display](index_date-display.md#api-detail-indexdate-display) | [Selector](index_date-selector.md#api-detail-indexdate-selector) | [Iterator](index_date-iterator.md#api-detail-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-detail-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-detail-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-detail-indexdate-accessor-type-clinic)
 
-[Previous](index_date-attribute.html "Detail: IndexDate: Attribute")
-[Next](index_date-dictionary_like.html "Detail: IndexDate: Dictionary-Like")
+[Previous](index_date-attribute.md "Detail: IndexDate: Attribute")
+[Next](index_date-dictionary_like.md "Detail: IndexDate: Dictionary-Like")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: FrameGO: Dictionary-Like
 * [View page source](../_sources/api_overview/frame_go-dictionary_like.rst.txt)
 
-[Previous](frame_go-method.html "Overview: FrameGO: Method")
-[Next](frame_go-display.html "Overview: FrameGO: Display")
+[Previous](frame_go-method.md "Overview: FrameGO: Method")
+[Next](frame_go-display.md "Overview: FrameGO: Display")
 
 ---
 
 # Overview: FrameGO: Dictionary-Like[](#overview-framego-dictionary-like "Link to this heading")
 
-[Detail: FrameGO: Dictionary-Like](../api_detail/frame_go-dictionary_like.html#api-detail-framego-dictionary-like)
+[Detail: FrameGO: Dictionary-Like](../api_detail/frame_go-dictionary_like.md#api-detail-framego-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-dictionary_like.html#api-sig-framego-contains) | `FrameGO.__contains__(value)` | Inclusion of value in column labels. |
-| [Detail](../api_detail/frame_go-dictionary_like.html#api-sig-framego-iter) | `FrameGO.__iter__()` | Iterator of column labels, same as Frame.keys. |
-| [Detail](../api_detail/frame_go-dictionary_like.html#api-sig-framego-reversed) | `FrameGO.__reversed__()` | Returns a reverse iterator on the frame’s columns. |
-| [Detail](../api_detail/frame_go-dictionary_like.html#api-sig-framego-get) | `FrameGO.get(key, default)` | Return the value found at the columns key, else the default if the key is not fo… |
-| [Detail](../api_detail/frame_go-dictionary_like.html#api-sig-framego-items) | `FrameGO.items()` | Iterator of pairs of column label and corresponding column Series. |
-| [Detail](../api_detail/frame_go-dictionary_like.html#api-sig-framego-keys) | `FrameGO.keys()` | Iterator of column labels. |
-| [Detail](../api_detail/frame_go-dictionary_like.html#api-sig-framego-values) | `FrameGO.values` | A 2D NumPy array of all values in the Frame. As this is a single array, heteroge… |
+| [Detail](../api_detail/frame_go-dictionary_like.md#api-sig-framego-contains) | `FrameGO.__contains__(value)` | Inclusion of value in column labels. |
+| [Detail](../api_detail/frame_go-dictionary_like.md#api-sig-framego-iter) | `FrameGO.__iter__()` | Iterator of column labels, same as Frame.keys. |
+| [Detail](../api_detail/frame_go-dictionary_like.md#api-sig-framego-reversed) | `FrameGO.__reversed__()` | Returns a reverse iterator on the frame’s columns. |
+| [Detail](../api_detail/frame_go-dictionary_like.md#api-sig-framego-get) | `FrameGO.get(key, default)` | Return the value found at the columns key, else the default if the key is not fo… |
+| [Detail](../api_detail/frame_go-dictionary_like.md#api-sig-framego-items) | `FrameGO.items()` | Iterator of pairs of column label and corresponding column Series. |
+| [Detail](../api_detail/frame_go-dictionary_like.md#api-sig-framego-keys) | `FrameGO.keys()` | Iterator of column labels. |
+| [Detail](../api_detail/frame_go-dictionary_like.md#api-sig-framego-values) | `FrameGO.values` | A 2D NumPy array of all values in the Frame. As this is a single array, heteroge… |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-method.html "Overview: FrameGO: Method")
-[Next](frame_go-display.html "Overview: FrameGO: Display")
+[Previous](frame_go-method.md "Overview: FrameGO: Method")
+[Next](frame_go-display.md "Overview: FrameGO: Display")
 
 ---
 

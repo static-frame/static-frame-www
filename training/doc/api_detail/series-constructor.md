@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: Series: Constructor
 * [View page source](../_sources/api_detail/series-constructor.rst.txt)
 
-[Previous](../api_overview/platform-display.html "Overview: Platform: Display")
-[Next](series-exporter.html "Detail: Series: Exporter")
+[Previous](../api_overview/platform-display.md "Overview: Platform: Display")
+[Next](series-exporter.md "Detail: Series: Exporter")
 
 ---
 
 # Detail: Series: Constructor[](#detail-series-constructor "Link to this heading")
 
-[Overview: Series: Constructor](../api_overview/series-constructor.html#api-overview-series-constructor)
+[Overview: Series: Constructor](../api_overview/series-constructor.md#api-overview-series-constructor)
 
-Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *dtype=None*, *index\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.html#Series.__init__)[](#static_frame.Series.__init__ "Link to this definition")
+Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *dtype=None*, *index\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.md#Series.__init__)[](#static_frame.Series.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -153,7 +153,7 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
         * **name** –
         * **dtype** –
         * **index\_constructor** –
-        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series"). Primarily used by internal clients.
+        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series"). Primarily used by internal clients.
 
     ```
     >>> sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -166,8 +166,8 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
 
     ```
 
-*classmethod* Series.from\_concat(*containers*, */*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/series.html#Series.from_concat)[](#static_frame.Series.from_concat "Link to this definition")
-:   Concatenate multiple [`Series`](series-selector.html#Series "Series") into a new [`Series`](series-selector.html#Series "Series").
+*classmethod* Series.from\_concat(*containers*, */*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/series.md#Series.from_concat)[](#static_frame.Series.from_concat "Link to this definition")
+:   Concatenate multiple [`Series`](series-selector.md#Series "Series") into a new [`Series`](series-selector.md#Series "Series").
 
     Parameters:
     :   * **containers** – Iterable of `Series` from which values in the new `Series` are drawn.
@@ -176,7 +176,7 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
         * **name** –
 
     Returns:
-    :   [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series")
+    :   [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series")
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -208,14 +208,14 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
 
     ```
 
-*classmethod* Series.from\_concat\_items(*items*, */*, *\**, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/series.html#Series.from_concat_items)[](#static_frame.Series.from_concat_items "Link to this definition")
-:   Produce a [`Series`](series-selector.html#Series "Series") with a hierarchical index from an iterable of pairs of labels, [`Series`](series-selector.html#Series "Series"). The [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") is formed from the provided labels and the [`Index`](index-selector.html#Index "Index") if each [`Series`](series-selector.html#Series "Series").
+*classmethod* Series.from\_concat\_items(*items*, */*, *\**, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/series.md#Series.from_concat_items)[](#static_frame.Series.from_concat_items "Link to this definition")
+:   Produce a [`Series`](series-selector.md#Series "Series") with a hierarchical index from an iterable of pairs of labels, [`Series`](series-selector.md#Series "Series"). The [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") is formed from the provided labels and the [`Index`](index-selector.md#Index "Index") if each [`Series`](series-selector.md#Series "Series").
 
     Parameters:
-    :   **items** – Iterable of pairs of label, [`Series`](series-selector.html#Series "Series")
+    :   **items** – Iterable of pairs of label, [`Series`](series-selector.md#Series "Series")
 
     Returns:
-    :   [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series")
+    :   [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series")
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -247,7 +247,7 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
 
     ```
 
-*classmethod* Series.from\_delimited(*delimited*, */*, *\**, *delimiter*, *index=None*, *dtype=None*, *name=None*, *index\_constructor=None*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.html#Series.from_delimited)[](#static_frame.Series.from_delimited "Link to this definition")
+*classmethod* Series.from\_delimited(*delimited*, */*, *\**, *delimiter*, *index=None*, *dtype=None*, *name=None*, *index\_constructor=None*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.md#Series.from_delimited)[](#static_frame.Series.from_delimited "Link to this definition")
 :   Series construction from a delimited string.
 
     Parameters:
@@ -272,7 +272,7 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
 
     ```
 
-*classmethod* Series.from\_dict(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/series.html#Series.from_dict)[](#static_frame.Series.from_dict "Link to this definition")
+*classmethod* Series.from\_dict(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/series.md#Series.from_dict)[](#static_frame.Series.from_dict "Link to this definition")
 :   Series construction from a dictionary, where the first pair value is the index and the second is the value.
 
     Parameters:
@@ -280,7 +280,7 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
         * **dtype** – dtype or valid dtype specifier.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> sf.Series.from_dict(dict(a=10, b=2, c=8))
@@ -293,11 +293,11 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
 
     ```
 
-*classmethod* Series.from\_element(*element*, */*, *\**, *index*, *dtype=None*, *name=None*, *index\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.html#Series.from_element)[](#static_frame.Series.from_element "Link to this definition")
-:   Create a [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series") from a single element. The size of the resultant container will be determined by the `index` argument.
+*classmethod* Series.from\_element(*element*, */*, *\**, *index*, *dtype=None*, *name=None*, *index\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.md#Series.from_element)[](#static_frame.Series.from_element "Link to this definition")
+:   Create a [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series") from a single element. The size of the resultant container will be determined by the `index` argument.
 
     Returns:
-    :   [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series")
+    :   [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series")
 
     ```
     >>> sf.Series.from_element(-1, index=('a', 'b', 'c'), name='x')
@@ -310,7 +310,7 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
 
     ```
 
-*classmethod* Series.from\_items(*pairs*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/series.html#Series.from_items)[](#static_frame.Series.from_items "Link to this definition")
+*classmethod* Series.from\_items(*pairs*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/series.md#Series.from_items)[](#static_frame.Series.from_items "Link to this definition")
 :   Series construction from an iterator or generator of pairs, where the first pair value is the index and the second is the value.
 
     Parameters:
@@ -320,7 +320,7 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
         * **index\_constructor** –
 
     Returns:
-    :   [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series")
+    :   [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series")
 
     ```
     >>> sf.Series.from_items(((np.str_('a'), 10), (np.str_('b'), 2), (np.str_('c'), 8)), name='x')
@@ -333,13 +333,13 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
 
     ```
 
-*classmethod* Series.from\_overlay(*containers*, */*, *\**, *index=None*, *union=True*, *name=None*, *func=<function isna\_array>*, *fill\_value=<object object>*)[[source]](../_modules/static_frame/core/series.html#Series.from_overlay)[](#static_frame.Series.from_overlay "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") made by overlaying containers, aligned values are filled with values from subsequent containers with left-to-right precedence. Values are filled based on a passed function that must return a Boolean array. By default, that function is isna\_array, returning True for missing values (NaN and None).
+*classmethod* Series.from\_overlay(*containers*, */*, *\**, *index=None*, *union=True*, *name=None*, *func=<function isna\_array>*, *fill\_value=<object object>*)[[source]](../_modules/static_frame/core/series.md#Series.from_overlay)[](#static_frame.Series.from_overlay "Link to this definition")
+:   Return a new [`Series`](series-selector.md#Series "Series") made by overlaying containers, aligned values are filled with values from subsequent containers with left-to-right precedence. Values are filled based on a passed function that must return a Boolean array. By default, that function is isna\_array, returning True for missing values (NaN and None).
 
     Parameters:
-    :   * **containers** – Iterable of [`Series`](series-selector.html#Series "Series").
+    :   * **containers** – Iterable of [`Series`](series-selector.md#Series "Series").
         * **\*** –
-        * **index** – An [`Index`](index-selector.html#Index "Index") or [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy"), or index initializer, to be used as the index upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.html#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
+        * **index** – An [`Index`](index-selector.md#Index "Index") or [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"), or index initializer, to be used as the index upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
         * **union** – If True, and no `index` argument is supplied, a union index from `containers` will be used; if False, the intersection index will be used.
         * **name** –
         * **func** –
@@ -373,7 +373,7 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
 
     ```
 
-*classmethod* Series.from\_pandas(*value*, */*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*, *own\_data=False*)[[source]](../_modules/static_frame/core/series.html#Series.from_pandas)[](#static_frame.Series.from_pandas "Link to this definition")
+*classmethod* Series.from\_pandas(*value*, */*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*, *own\_data=False*)[[source]](../_modules/static_frame/core/series.md#Series.from_pandas)[](#static_frame.Series.from_pandas "Link to this definition")
 :   Given a Pandas Series, return a Series.
 
     Parameters:
@@ -384,7 +384,7 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
         * **own\_data** – If True, the underlying NumPy data array will be made immutable and used without a copy.
 
     Returns:
-    :   [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series")
+    :   [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series")
 
     ```
     >>> df = pd.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -398,10 +398,10 @@ Series.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *
 
     ```
 
-[Series](series.html#api-detail-series): [Constructor](#api-detail-series-constructor) | [Exporter](series-exporter.html#api-detail-series-exporter) | [Attribute](series-attribute.html#api-detail-series-attribute) | [Method](series-method.html#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.html#api-detail-series-dictionary-like) | [Display](series-display.html#api-detail-series-display) | [Assignment](series-assignment.html#api-detail-series-assignment) | [Selector](series-selector.html#api-detail-series-selector) | [Iterator](series-iterator.html#api-detail-series-iterator) | [Operator Binary](series-operator_binary.html#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-detail-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-detail-series): [Constructor](#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](../api_overview/platform-display.html "Overview: Platform: Display")
-[Next](series-exporter.html "Detail: Series: Exporter")
+[Previous](../api_overview/platform-display.md "Overview: Platform: Display")
+[Next](series-exporter.md "Detail: Series: Exporter")
 
 ---
 

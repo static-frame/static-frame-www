@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: IndexDateGO: Accessor Hashlib
 * [View page source](../_sources/api_overview/index_date_go-accessor_hashlib.rst.txt)
 
-[Previous](index_date_go-accessor_regular_expression.html "Overview: IndexDateGO: Accessor Regular Expression")
-[Next](index_date_go-accessor_type_clinic.html "Overview: IndexDateGO: Accessor Type Clinic")
+[Previous](index_date_go-accessor_regular_expression.md "Overview: IndexDateGO: Accessor Regular Expression")
+[Next](index_date_go-accessor_type_clinic.md "Overview: IndexDateGO: Accessor Type Clinic")
 
 ---
 
 # Overview: IndexDateGO: Accessor Hashlib[](#overview-indexdatego-accessor-hashlib "Link to this heading")
 
-[Detail: IndexDateGO: Accessor Hashlib](../api_detail/index_date_go-accessor_hashlib.html#api-detail-indexdatego-accessor-hashlib)
+[Detail: IndexDateGO: Accessor Hashlib](../api_detail/index_date_go-accessor_hashlib.md#api-detail-indexdatego-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-to-bytes) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-md5) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-sha256) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-sha512) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-sha3-256) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-sha3-512) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-shake-128) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-shake-256) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-blake2b) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/index_date_go-accessor_hashlib.html#api-sig-indexdatego-via-hashlib-blake2s) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-to-bytes) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-md5) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-sha256) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-sha512) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-sha3-256) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-sha3-512) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-shake-128) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-shake-256) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-blake2b) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_date_go-accessor_hashlib.md#api-sig-indexdatego-via-hashlib-blake2s) | `IndexDateGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[IndexDateGO](index_date_go.html#api-overview-indexdatego): [Constructor](index_date_go-constructor.html#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.html#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-overview-indexdatego-attribute) | [Method](index_date_go-method.html#api-overview-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.html#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.html#api-overview-indexdatego-display) | [Selector](index_date_go-selector.html#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-overview-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.html#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.html#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.html#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.html#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-overview-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-overview-indexdatego): [Constructor](index_date_go-constructor.md#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-overview-indexdatego-attribute) | [Method](index_date_go-method.md#api-overview-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-overview-indexdatego-display) | [Selector](index_date_go-selector.md#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-overview-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-overview-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-accessor_regular_expression.html "Overview: IndexDateGO: Accessor Regular Expression")
-[Next](index_date_go-accessor_type_clinic.html "Overview: IndexDateGO: Accessor Type Clinic")
+[Previous](index_date_go-accessor_regular_expression.md "Overview: IndexDateGO: Accessor Regular Expression")
+[Next](index_date_go-accessor_type_clinic.md "Overview: IndexDateGO: Accessor Type Clinic")
 
 ---
 

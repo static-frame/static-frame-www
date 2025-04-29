@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexGO: Operator Binary
 * [View page source](../_sources/api_overview/index_go-operator_binary.rst.txt)
 
-[Previous](index_go-iterator.html "Overview: IndexGO: Iterator")
-[Next](index_go-operator_unary.html "Overview: IndexGO: Operator Unary")
+[Previous](index_go-iterator.md "Overview: IndexGO: Iterator")
+[Next](index_go-operator_unary.md "Overview: IndexGO: Operator Unary")
 
 ---
 
 # Overview: IndexGO: Operator Binary[](#overview-indexgo-operator-binary "Link to this heading")
 
-[Detail: IndexGO: Operator Binary](../api_detail/index_go-operator_binary.html#api-detail-indexgo-operator-binary)
+[Detail: IndexGO: Operator Binary](../api_detail/index_go-operator_binary.md#api-detail-indexgo-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-add) | `IndexGO.__add__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-and) | `IndexGO.__and__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-eq) | `IndexGO.__eq__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-floordiv) | `IndexGO.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-ge) | `IndexGO.__ge__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-gt) | `IndexGO.__gt__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-le) | `IndexGO.__le__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-lt) | `IndexGO.__lt__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-matmul) | `IndexGO.__matmul__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-mod) | `IndexGO.__mod__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-mul) | `IndexGO.__mul__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-ne) | `IndexGO.__ne__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-or) | `IndexGO.__or__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-pow) | `IndexGO.__pow__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-radd) | `IndexGO.__radd__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-rfloordiv) | `IndexGO.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-rmatmul) | `IndexGO.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-rmul) | `IndexGO.__rmul__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-rshift) | `IndexGO.__rshift__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-rsub) | `IndexGO.__rsub__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-rtruediv) | `IndexGO.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-sub) | `IndexGO.__sub__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-truediv) | `IndexGO.__truediv__(other)` |  |
-| [Detail](../api_detail/index_go-operator_binary.html#api-sig-indexgo-xor) | `IndexGO.__xor__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-add) | `IndexGO.__add__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-and) | `IndexGO.__and__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-eq) | `IndexGO.__eq__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-floordiv) | `IndexGO.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-ge) | `IndexGO.__ge__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-gt) | `IndexGO.__gt__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-le) | `IndexGO.__le__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-lt) | `IndexGO.__lt__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-matmul) | `IndexGO.__matmul__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-mod) | `IndexGO.__mod__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-mul) | `IndexGO.__mul__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-ne) | `IndexGO.__ne__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-or) | `IndexGO.__or__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-pow) | `IndexGO.__pow__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-radd) | `IndexGO.__radd__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-rfloordiv) | `IndexGO.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-rmatmul) | `IndexGO.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-rmul) | `IndexGO.__rmul__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-rshift) | `IndexGO.__rshift__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-rsub) | `IndexGO.__rsub__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-rtruediv) | `IndexGO.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-sub) | `IndexGO.__sub__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-truediv) | `IndexGO.__truediv__(other)` |  |
+| [Detail](../api_detail/index_go-operator_binary.md#api-sig-indexgo-xor) | `IndexGO.__xor__(other)` |  |
 
-[IndexGO](index_go.html#api-overview-indexgo): [Constructor](index_go-constructor.html#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.html#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.html#api-overview-indexgo-attribute) | [Method](index_go-method.html#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-overview-indexgo-dictionary-like) | [Display](index_go-display.html#api-overview-indexgo-display) | [Selector](index_go-selector.html#api-overview-indexgo-selector) | [Iterator](index_go-iterator.html#api-overview-indexgo-iterator) | [Operator Binary](#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-overview-indexgo): [Constructor](index_go-constructor.md#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | [Method](index_go-method.md#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 
-[Previous](index_go-iterator.html "Overview: IndexGO: Iterator")
-[Next](index_go-operator_unary.html "Overview: IndexGO: Operator Unary")
+[Previous](index_go-iterator.md "Overview: IndexGO: Iterator")
+[Next](index_go-operator_unary.md "Overview: IndexGO: Operator Unary")
 
 ---
 

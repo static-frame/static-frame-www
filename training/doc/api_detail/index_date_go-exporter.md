@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Detail: IndexDateGO: Exporter
 * [View page source](../_sources/api_detail/index_date_go-exporter.rst.txt)
 
-[Previous](index_date_go-constructor.html "Detail: IndexDateGO: Constructor")
-[Next](index_date_go-attribute.html "Detail: IndexDateGO: Attribute")
+[Previous](index_date_go-constructor.md "Detail: IndexDateGO: Constructor")
+[Next](index_date_go-attribute.md "Detail: IndexDateGO: Attribute")
 
 ---
 
 # Detail: IndexDateGO: Exporter[](#detail-indexdatego-exporter "Link to this heading")
 
-[Overview: IndexDateGO: Exporter](../api_overview/index_date_go-exporter.html#api-overview-indexdatego-exporter)
+[Overview: IndexDateGO: Exporter](../api_overview/index_date_go-exporter.md#api-overview-indexdatego-exporter)
 
 IndexDateGO.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexDateGO.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Index`](index-selector.html#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 IndexDateGO.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexDateGO.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Index`](index-selector.html#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
@@ -204,10 +204,10 @@ IndexDateGO.to\_series()[](#static_frame.IndexDateGO.to_series "Link to this 
 IndexDateGO.to\_visidata()[](#static_frame.IndexDateGO.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[IndexDateGO](index_date_go.html#api-detail-indexdatego): [Constructor](index_date_go-constructor.html#api-detail-indexdatego-constructor) | [Exporter](#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-detail-indexdatego-attribute) | [Method](index_date_go-method.html#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.html#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.html#api-detail-indexdatego-display) | [Selector](index_date_go-selector.html#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.html#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.html#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.html#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.html#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.html#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-detail-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-detail-indexdatego): [Constructor](index_date_go-constructor.md#api-detail-indexdatego-constructor) | [Exporter](#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-detail-indexdatego-attribute) | [Method](index_date_go-method.md#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-detail-indexdatego-display) | [Selector](index_date_go-selector.md#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-detail-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-constructor.html "Detail: IndexDateGO: Constructor")
-[Next](index_date_go-attribute.html "Detail: IndexDateGO: Attribute")
+[Previous](index_date_go-constructor.md "Detail: IndexDateGO: Constructor")
+[Next](index_date_go-attribute.md "Detail: IndexDateGO: Attribute")
 
 ---
 

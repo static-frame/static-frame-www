@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,41 +135,41 @@ API Detail
 * Overview: SeriesHE
 * [View page source](../_sources/api_overview/series_he.rst.txt)
 
-[Previous](series.html "Overview: Series")
-[Next](frame.html "Overview: Frame")
+[Previous](series.md "Overview: Series")
+[Next](frame.md "Overview: Frame")
 
 ---
 
 # Overview: SeriesHE[](#overview-serieshe "Link to this heading")
 
-[Detail: SeriesHE](../api_detail/series_he.html#api-detail-serieshe)
+[Detail: SeriesHE](../api_detail/series_he.md#api-detail-serieshe)
 
 |  |  |
 | --- | --- |
-| [Constructor](series_he-constructor.html#api-overview-serieshe-constructor) | Alternative constructors for creating instances. |
-| [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](series_he-method.html#api-overview-serieshe-method) | Methods for general functionality. |
-| [Dictionary-Like](series_he-dictionary_like.html#api-overview-serieshe-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](series_he-display.html#api-overview-serieshe-display) | Methods for providing a text representation of the object. |
-| [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | Interfaces for creating new containers with assignment-like specification. |
-| [Selector](series_he-selector.html#api-overview-serieshe-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Operator Binary](series_he-operator_binary.html#api-overview-serieshe-operator-binary) | Underlying (magic) methods for binary operator implementation. |
-| [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | Underlying (magic) methods for unary operator implementation. |
-| [Accessor Values](series_he-accessor_values.html#api-overview-serieshe-accessor-values) | Interface for using NumPy functions on conatainers. |
-| [Accessor Datetime](series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
-| [Accessor String](series_he-accessor_string.html#api-overview-serieshe-accessor-string) | Interface for employing string methods on container elements. |
-| [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | Interface that permits supplying a fill value to be used when binary operator application forces reindexing. |
-| [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
-| [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](series_he-constructor.md#api-overview-serieshe-constructor) | Alternative constructors for creating instances. |
+| [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](series_he-method.md#api-overview-serieshe-method) | Methods for general functionality. |
+| [Dictionary-Like](series_he-dictionary_like.md#api-overview-serieshe-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](series_he-display.md#api-overview-serieshe-display) | Methods for providing a text representation of the object. |
+| [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | Interfaces for creating new containers with assignment-like specification. |
+| [Selector](series_he-selector.md#api-overview-serieshe-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Operator Binary](series_he-operator_binary.md#api-overview-serieshe-operator-binary) | Underlying (magic) methods for binary operator implementation. |
+| [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | Underlying (magic) methods for unary operator implementation. |
+| [Accessor Values](series_he-accessor_values.md#api-overview-serieshe-accessor-values) | Interface for using NumPy functions on conatainers. |
+| [Accessor Datetime](series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
+| [Accessor String](series_he-accessor_string.md#api-overview-serieshe-accessor-string) | Interface for employing string methods on container elements. |
+| [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | Interface that permits supplying a fill value to be used when binary operator application forces reindexing. |
+| [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
+| [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 | Accessor Mapping |  |
 
-[SeriesHE](#api-overview-serieshe): [Constructor](series_he-constructor.html#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | [Method](series_he-method.html#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-overview-serieshe-dictionary-like) | [Display](series_he-display.html#api-overview-serieshe-display) | [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | [Selector](series_he-selector.html#api-overview-serieshe-selector) | [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](#api-overview-serieshe): [Constructor](series_he-constructor.md#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | [Method](series_he-method.md#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-overview-serieshe-dictionary-like) | [Display](series_he-display.md#api-overview-serieshe-display) | [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | [Selector](series_he-selector.md#api-overview-serieshe-selector) | [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series.html "Overview: Series")
-[Next](frame.html "Overview: Frame")
+[Previous](series.md "Overview: Series")
+[Next](frame.md "Overview: Frame")
 
 ---
 

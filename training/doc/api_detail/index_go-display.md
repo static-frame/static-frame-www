@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexGO: Display
 * [View page source](../_sources/api_detail/index_go-display.rst.txt)
 
-[Previous](index_go-dictionary_like.html "Detail: IndexGO: Dictionary-Like")
-[Next](index_go-selector.html "Detail: IndexGO: Selector")
+[Previous](index_go-dictionary_like.md "Detail: IndexGO: Dictionary-Like")
+[Next](index_go-selector.md "Detail: IndexGO: Selector")
 
 ---
 
 # Detail: IndexGO: Display[](#detail-indexgo-display "Link to this heading")
 
-[Overview: IndexGO: Display](../api_overview/index_go-display.html#api-overview-indexgo-display)
+[Overview: IndexGO: Display](../api_overview/index_go-display.md#api-overview-indexgo-display)
 
 IndexGO.interface[](#IndexGO.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -233,7 +233,7 @@ IndexGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_fra
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexGO((None, 'A', 1024, True), name='x')
@@ -256,7 +256,7 @@ IndexGO.display\_tall(*config=None*, */*)[](#static_frame.IndexGO.display_tal
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexGO((None, 'A', 1024, True), name='x')
@@ -274,7 +274,7 @@ IndexGO.display\_wide(*config=None*, */*)[](#static_frame.IndexGO.display_wid
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexGO((None, 'A', 1024, True), name='x')
@@ -288,10 +288,10 @@ IndexGO.display\_wide(*config=None*, */*)[](#static_frame.IndexGO.display_wid
 
     ```
 
-[IndexGO](index_go.html#api-detail-indexgo): [Constructor](index_go-constructor.html#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.html#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.html#api-detail-indexgo-attribute) | [Method](index_go-method.html#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-detail-indexgo-dictionary-like) | [Display](#api-detail-indexgo-display) | [Selector](index_go-selector.html#api-detail-indexgo-selector) | [Iterator](index_go-iterator.html#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-detail-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)
 
-[Previous](index_go-dictionary_like.html "Detail: IndexGO: Dictionary-Like")
-[Next](index_go-selector.html "Detail: IndexGO: Selector")
+[Previous](index_go-dictionary_like.md "Detail: IndexGO: Dictionary-Like")
+[Next](index_go-selector.md "Detail: IndexGO: Selector")
 
 ---
 

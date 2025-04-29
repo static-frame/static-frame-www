@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](intro.md)
-* [Media](intro.html#media)
+* [Media](intro.md#media)
 * [What is New in StaticFrame](new.md)
 * [Contributing](contributing.md)
 
@@ -135,7 +135,7 @@ StaticFrame
 * StaticFrame
 * [View page source](_sources/index.rst.txt)
 
-[Next](readme.html "static-frame")
+[Next](readme.md "static-frame")
 
 ---
 
@@ -153,17 +153,17 @@ Immutable and statically-typeable DataFrames with runtime type and data validati
 Quick Start
 
 * [static-frame](readme.md)
-  + [Installation via `pip`](readme.html#installation-via-pip)
-  + [Installation via `conda`](readme.html#installation-via-conda)
-  + [Installation via Pyodide](readme.html#installation-via-pyodide)
-  + [Dependencies](readme.html#dependencies)
-  + [Quick-Start Guide](readme.html#quick-start-guide)
+  + [Installation via `pip`](readme.md#installation-via-pip)
+  + [Installation via `conda`](readme.md#installation-via-conda)
+  + [Installation via Pyodide](readme.md#installation-via-pyodide)
+  + [Dependencies](readme.md#dependencies)
+  + [Quick-Start Guide](readme.md#quick-start-guide)
 * [License](license.md)
 
 Introduction
 
 * [About StaticFrame](intro.md)
-* [Media](intro.html#media)
+* [Media](intro.md#media)
 * [What is New in StaticFrame](new.md)
 * [Contributing](contributing.md)
 
@@ -287,7 +287,7 @@ API Detail
 
 [Index](genindex.md)
 
-[Next](readme.html "static-frame")
+[Next](readme.md "static-frame")
 
 ---
 

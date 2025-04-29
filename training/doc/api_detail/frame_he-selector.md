@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: FrameHE: Selector
 * [View page source](../_sources/api_detail/frame_he-selector.rst.txt)
 
-[Previous](frame_he-assignment.html "Detail: FrameHE: Assignment")
-[Next](frame_he-iterator.html "Detail: FrameHE: Iterator")
+[Previous](frame_he-assignment.md "Detail: FrameHE: Assignment")
+[Next](frame_he-iterator.md "Detail: FrameHE: Iterator")
 
 ---
 
 # Detail: FrameHE: Selector[](#detail-framehe-selector "Link to this heading")
 
-[Overview: FrameHE: Selector](../api_overview/frame_he-selector.html#api-overview-framehe-selector)
+[Overview: FrameHE: Selector](../api_overview/frame_he-selector.md#api-overview-framehe-selector)
 
 FrameHE.bloc[*key*]
 :   bloc
@@ -173,7 +173,7 @@ FrameHE.bloc[*key*]
 FrameHE.drop[*key*]
 :   drop
 
-    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceSelectTrio.__getitem__)
+    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceSelectTrio.__getitem__)
     :   Label-based selection.
 
     ```
@@ -303,7 +303,7 @@ FrameHE.drop.loc[*key*]
 FrameHE.mask[*key*]
 :   mask
 
-    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceSelectTrio.__getitem__)
+    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceSelectTrio.__getitem__)
     :   Label-based selection.
 
     ```
@@ -444,7 +444,7 @@ FrameHE.mask.loc[*key*]
 FrameHE.masked\_array[*key*]
 :   masked\_array
 
-    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceSelectTrio.__getitem__)
+    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceSelectTrio.__getitem__)
     :   Label-based selection.
 
     ```
@@ -665,10 +665,10 @@ FrameHE.loc[*key*]
 
     ```
 
-[FrameHE](frame_he.html#api-detail-framehe): [Constructor](frame_he-constructor.html#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.html#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.html#api-detail-framehe-attribute) | [Method](frame_he-method.html#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-detail-framehe-dictionary-like) | [Display](frame_he-display.html#api-detail-framehe-display) | [Assignment](frame_he-assignment.html#api-detail-framehe-assignment) | [Selector](#api-detail-framehe-selector) | [Iterator](frame_he-iterator.html#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-detail-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.md#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.md#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](frame_he-assignment.md#api-detail-framehe-assignment) | [Selector](#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)
 
-[Previous](frame_he-assignment.html "Detail: FrameHE: Assignment")
-[Next](frame_he-iterator.html "Detail: FrameHE: Iterator")
+[Previous](frame_he-assignment.md "Detail: FrameHE: Assignment")
+[Next](frame_he-iterator.md "Detail: FrameHE: Iterator")
 
 ---
 

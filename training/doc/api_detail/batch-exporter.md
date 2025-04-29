@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: Batch: Exporter
 * [View page source](../_sources/api_detail/batch-exporter.rst.txt)
 
-[Previous](batch-constructor.html "Detail: Batch: Constructor")
-[Next](batch-attribute.html "Detail: Batch: Attribute")
+[Previous](batch-constructor.md "Detail: Batch: Constructor")
+[Next](batch-attribute.md "Detail: Batch: Attribute")
 
 ---
 
 # Detail: Batch: Exporter[](#detail-batch-exporter "Link to this heading")
 
-[Overview: Batch: Exporter](../api_overview/batch-exporter.html#api-overview-batch-exporter)
+[Overview: Batch: Exporter](../api_overview/batch-exporter.md#api-overview-batch-exporter)
 
-Batch.to\_bus(*\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.to_bus)[](#static_frame.Batch.to_bus "Link to this definition")
-:   Realize the [`Batch`](batch-selector.html#Batch "Batch") as an [`Bus`](bus-selector.html#Bus "Bus"). Note that, as a [`Bus`](bus-selector.html#Bus "Bus") must have all labels (even if [`Frame`](frame-selector.html#Frame "Frame") are loaded lazily), this [`Batch`](batch-selector.html#Batch "Batch") will be exhausted.
+Batch.to\_bus(*\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.to_bus)[](#static_frame.Batch.to_bus "Link to this definition")
+:   Realize the [`Batch`](batch-selector.md#Batch "Batch") as an [`Bus`](bus-selector.md#Bus "Bus"). Note that, as a [`Bus`](bus-selector.md#Bus "Bus") must have all labels (even if [`Frame`](frame-selector.md#Frame "Frame") are loaded lazily), this [`Batch`](batch-selector.md#Batch "Batch") will be exhausted.
 
     ```
     >>> bt1 = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -158,8 +158,8 @@ Batch.to\_bus(*\**, *index\_constructor=None*)[[source]](../_modules/static_fram
 
     ```
 
-Batch.to\_frame(*\**, *axis=0*, *union=True*, *index=None*, *columns=None*, *index\_constructor=None*, *columns\_constructor=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/batch.html#Batch.to_frame)[](#static_frame.Batch.to_frame "Link to this definition")
-:   Consolidate stored [`Frame`](frame-selector.html#Frame "Frame") into a new [`Frame`](frame-selector.html#Frame "Frame") using the stored labels as the index on the provided `axis` using [`Frame.from_concat`](frame-constructor.html#static_frame.Frame.from_concat "static_frame.Frame.from_concat"). This assumes that that the contained [`Frame`](frame-selector.html#Frame "Frame") have been reduced to a single dimension along the provided axis.
+Batch.to\_frame(*\**, *axis=0*, *union=True*, *index=None*, *columns=None*, *index\_constructor=None*, *columns\_constructor=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/batch.md#Batch.to_frame)[](#static_frame.Batch.to_frame "Link to this definition")
+:   Consolidate stored [`Frame`](frame-selector.md#Frame "Frame") into a new [`Frame`](frame-selector.md#Frame "Frame") using the stored labels as the index on the provided `axis` using [`Frame.from_concat`](frame-constructor.md#static_frame.Frame.from_concat "static_frame.Frame.from_concat"). This assumes that that the contained [`Frame`](frame-selector.md#Frame "Frame") have been reduced to a single dimension along the provided axis.
 
     ```
     >>> bt1 = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -177,8 +177,8 @@ Batch.to\_frame(*\**, *axis=0*, *union=True*, *index=None*, *columns=None*, *ind
 
     ```
 
-Batch.to\_series(*\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.to_series)[](#static_frame.Batch.to_series "Link to this definition")
-:   Consolidate stored values into a new [`Series`](series-selector.html#Series "Series") using the stored labels as the index.
+Batch.to\_series(*\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.to_series)[](#static_frame.Batch.to_series "Link to this definition")
+:   Consolidate stored values into a new [`Series`](series-selector.md#Series "Series") using the stored labels as the index.
 
     ```
     >>> bt1 = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
@@ -192,11 +192,11 @@ Batch.to\_series(*\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[so
     ```
 
 Batch.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Batch.to_sqlite "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as an SQLite database file.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -209,11 +209,11 @@ Batch.to\_visidata()[](#static_frame.Batch.to_visidata "Link to this definiti
 :   Open an interactive VisiData session.
 
 Batch.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Batch.to_xlsx "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a XLSX workbook.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a XLSX workbook.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -223,11 +223,11 @@ Batch.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Batch.to_xlsx 
     ```
 
 Batch.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Batch.to_zip_csv "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of CSV files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of CSV files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -237,11 +237,11 @@ Batch.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
     ```
 
 Batch.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Batch.to_zip_npy "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of NPY files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPY files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -251,11 +251,11 @@ Batch.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
     ```
 
 Batch.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Batch.to_zip_npz "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of NPZ files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPZ files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -265,11 +265,11 @@ Batch.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
     ```
 
 Batch.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Batch.to_zip_parquet "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of parquet files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of parquet files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -279,11 +279,11 @@ Batch.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#st
     ```
 
 Batch.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Batch.to_zip_pickle "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of pickles.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of pickles.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -293,11 +293,11 @@ Batch.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#sta
     ```
 
 Batch.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Batch.to_zip_tsv "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of TSV files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of TSV files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -306,10 +306,10 @@ Batch.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-constructor.html "Detail: Batch: Constructor")
-[Next](batch-attribute.html "Detail: Batch: Attribute")
+[Previous](batch-constructor.md "Detail: Batch: Constructor")
+[Next](batch-attribute.md "Detail: Batch: Attribute")
 
 ---
 

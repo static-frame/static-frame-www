@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: Index: Accessor Values
 * [View page source](../_sources/api_overview/index-accessor_values.rst.txt)
 
-[Previous](index-operator_unary.html "Overview: Index: Operator Unary")
-[Next](index-accessor_datetime.html "Overview: Index: Accessor Datetime")
+[Previous](index-operator_unary.md "Overview: Index: Operator Unary")
+[Next](index-accessor_datetime.md "Overview: Index: Accessor Datetime")
 
 ---
 
 # Overview: Index: Accessor Values[](#overview-index-accessor-values "Link to this heading")
 
-[Detail: Index: Accessor Values](../api_detail/index-accessor_values.html#api-detail-index-accessor-values)
+[Detail: Index: Accessor Values](../api_detail/index-accessor_values.md#api-detail-index-accessor-values)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-accessor_values.html#api-sig-index-via-values-apply) | `Index.via_values.apply(func, *args, **kwargs)` |  |
-| [Detail](../api_detail/index-accessor_values.html#api-sig-index-via-values-array-ufunc) | `Index.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
-| [Detail](../api_detail/index-accessor_values.html#api-sig-index-via-values-call) | `Index.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
+| [Detail](../api_detail/index-accessor_values.md#api-sig-index-via-values-apply) | `Index.via_values.apply(func, *args, **kwargs)` |  |
+| [Detail](../api_detail/index-accessor_values.md#api-sig-index-via-values-array-ufunc) | `Index.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
+| [Detail](../api_detail/index-accessor_values.md#api-sig-index-via-values-call) | `Index.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
 
-[Index](index.html#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](index-exporter.html#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](index-method.html#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | [Display](index-display.html#api-overview-index-display) | [Selector](index-selector.html#api-overview-index-selector) | [Iterator](index-iterator.html#api-overview-index-iterator) | [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](index.md#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](index-exporter.md#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](index-method.md#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | [Display](index-display.md#api-overview-index-display) | [Selector](index-selector.md#api-overview-index-selector) | [Iterator](index-iterator.md#api-overview-index-iterator) | [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](index-operator_unary.html "Overview: Index: Operator Unary")
-[Next](index-accessor_datetime.html "Overview: Index: Accessor Datetime")
+[Previous](index-operator_unary.md "Overview: Index: Operator Unary")
+[Next](index-accessor_datetime.md "Overview: Index: Accessor Datetime")
 
 ---
 

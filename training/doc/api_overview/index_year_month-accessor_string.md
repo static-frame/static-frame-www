@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: IndexYearMonth: Accessor String
 * [View page source](../_sources/api_overview/index_year_month-accessor_string.rst.txt)
 
-[Previous](index_year_month-accessor_datetime.html "Overview: IndexYearMonth: Accessor Datetime")
-[Next](index_year_month-accessor_regular_expression.html "Overview: IndexYearMonth: Accessor Regular Expression")
+[Previous](index_year_month-accessor_datetime.md "Overview: IndexYearMonth: Accessor Datetime")
+[Next](index_year_month-accessor_regular_expression.md "Overview: IndexYearMonth: Accessor Regular Expression")
 
 ---
 
 # Overview: IndexYearMonth: Accessor String[](#overview-indexyearmonth-accessor-string "Link to this heading")
 
-[Detail: IndexYearMonth: Accessor String](../api_detail/index_year_month-accessor_string.html#api-detail-indexyearmonth-accessor-string)
+[Detail: IndexYearMonth: Accessor String](../api_detail/index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-getitem) | `IndexYearMonth.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-capitalize) | `IndexYearMonth.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-center) | `IndexYearMonth.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-contains) | `IndexYearMonth.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-count) | `IndexYearMonth.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-decode) | `IndexYearMonth.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-encode) | `IndexYearMonth.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-endswith) | `IndexYearMonth.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-find) | `IndexYearMonth.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-format) | `IndexYearMonth.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-index) | `IndexYearMonth.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-isalnum) | `IndexYearMonth.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-isalpha) | `IndexYearMonth.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-isdecimal) | `IndexYearMonth.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-isdigit) | `IndexYearMonth.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-islower) | `IndexYearMonth.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-isnumeric) | `IndexYearMonth.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-isspace) | `IndexYearMonth.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-istitle) | `IndexYearMonth.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-isupper) | `IndexYearMonth.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-ljust) | `IndexYearMonth.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-len) | `IndexYearMonth.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-lower) | `IndexYearMonth.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-lstrip) | `IndexYearMonth.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-partition) | `IndexYearMonth.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-replace) | `IndexYearMonth.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-rfind) | `IndexYearMonth.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-rindex) | `IndexYearMonth.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-rjust) | `IndexYearMonth.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-rpartition) | `IndexYearMonth.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-rsplit) | `IndexYearMonth.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-rstrip) | `IndexYearMonth.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-split) | `IndexYearMonth.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-startswith) | `IndexYearMonth.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-strip) | `IndexYearMonth.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-swapcase) | `IndexYearMonth.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-title) | `IndexYearMonth.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-upper) | `IndexYearMonth.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_year_month-accessor_string.html#api-sig-indexyearmonth-via-str-zfill) | `IndexYearMonth.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-getitem) | `IndexYearMonth.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-capitalize) | `IndexYearMonth.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-center) | `IndexYearMonth.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-contains) | `IndexYearMonth.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-count) | `IndexYearMonth.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-decode) | `IndexYearMonth.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-encode) | `IndexYearMonth.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-endswith) | `IndexYearMonth.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-find) | `IndexYearMonth.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-format) | `IndexYearMonth.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-index) | `IndexYearMonth.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-isalnum) | `IndexYearMonth.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-isalpha) | `IndexYearMonth.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-isdecimal) | `IndexYearMonth.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-isdigit) | `IndexYearMonth.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-islower) | `IndexYearMonth.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-isnumeric) | `IndexYearMonth.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-isspace) | `IndexYearMonth.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-istitle) | `IndexYearMonth.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-isupper) | `IndexYearMonth.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-ljust) | `IndexYearMonth.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-len) | `IndexYearMonth.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-lower) | `IndexYearMonth.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-lstrip) | `IndexYearMonth.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-partition) | `IndexYearMonth.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-replace) | `IndexYearMonth.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-rfind) | `IndexYearMonth.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-rindex) | `IndexYearMonth.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-rjust) | `IndexYearMonth.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-rpartition) | `IndexYearMonth.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-rsplit) | `IndexYearMonth.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-rstrip) | `IndexYearMonth.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-split) | `IndexYearMonth.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-startswith) | `IndexYearMonth.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-strip) | `IndexYearMonth.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-swapcase) | `IndexYearMonth.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-title) | `IndexYearMonth.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-upper) | `IndexYearMonth.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_year_month-accessor_string.md#api-sig-indexyearmonth-via-str-zfill) | `IndexYearMonth.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[IndexYearMonth](index_year_month.html#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.html#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-overview-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.md#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-overview-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-accessor_datetime.html "Overview: IndexYearMonth: Accessor Datetime")
-[Next](index_year_month-accessor_regular_expression.html "Overview: IndexYearMonth: Accessor Regular Expression")
+[Previous](index_year_month-accessor_datetime.md "Overview: IndexYearMonth: Accessor Datetime")
+[Next](index_year_month-accessor_regular_expression.md "Overview: IndexYearMonth: Accessor Regular Expression")
 
 ---
 

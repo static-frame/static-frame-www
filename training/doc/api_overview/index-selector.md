@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: Index: Selector
 * [View page source](../_sources/api_overview/index-selector.rst.txt)
 
-[Previous](index-display.html "Overview: Index: Display")
-[Next](index-iterator.html "Overview: Index: Iterator")
+[Previous](index-display.md "Overview: Index: Display")
+[Next](index-iterator.md "Overview: Index: Iterator")
 
 ---
 
 # Overview: Index: Selector[](#overview-index-selector "Link to this heading")
 
-[Detail: Index: Selector](../api_detail/index-selector.html#api-detail-index-selector)
+[Detail: Index: Selector](../api_detail/index-selector.md#api-detail-index-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-selector.html#api-sig-index-drop-iloc) | `Index.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
-| [Detail](../api_detail/index-selector.html#api-sig-index-drop-loc) | `Index.drop.loc[key]` |  |
-| [Detail](../api_detail/index-selector.html#api-sig-index) | `Index[key]` | Extract a new index given an iloc key. |
-| [Detail](../api_detail/index-selector.html#api-sig-index-iloc) | `Index.iloc[key]` |  |
-| [Detail](../api_detail/index-selector.html#api-sig-index-loc) | `Index.loc[key]` |  |
+| [Detail](../api_detail/index-selector.md#api-sig-index-drop-iloc) | `Index.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
+| [Detail](../api_detail/index-selector.md#api-sig-index-drop-loc) | `Index.drop.loc[key]` |  |
+| [Detail](../api_detail/index-selector.md#api-sig-index) | `Index[key]` | Extract a new index given an iloc key. |
+| [Detail](../api_detail/index-selector.md#api-sig-index-iloc) | `Index.iloc[key]` |  |
+| [Detail](../api_detail/index-selector.md#api-sig-index-loc) | `Index.loc[key]` |  |
 
-[Index](index.html#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](index-exporter.html#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](index-method.html#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | [Display](index-display.html#api-overview-index-display) | [Selector](#api-overview-index-selector) | [Iterator](index-iterator.html#api-overview-index-iterator) | [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](index.md#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](index-exporter.md#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](index-method.md#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | [Display](index-display.md#api-overview-index-display) | [Selector](#api-overview-index-selector) | [Iterator](index-iterator.md#api-overview-index-iterator) | [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](index-display.html "Overview: Index: Display")
-[Next](index-iterator.html "Overview: Index: Iterator")
+[Previous](index-display.md "Overview: Index: Display")
+[Next](index-iterator.md "Overview: Index: Iterator")
 
 ---
 

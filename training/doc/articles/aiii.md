@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -141,8 +141,8 @@ API Detail
 * Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame
 * [View page source](../_sources/articles/aiii.rst.txt)
 
-[Previous](upgrade.html "Ten Reasons to Use StaticFrame Instead of Pandas")
-[Next](../api_overview/series.html "Overview: Series")
+[Previous](upgrade.md "Ten Reasons to Use StaticFrame Instead of Pandas")
+[Next](../api_overview/series.md "Overview: Series")
 
 ---
 
@@ -355,8 +355,8 @@ Resetting an index is not a complex operation. However, how to provide the optio
 
 For more information about StaticFrame, see the documentation (<http://static-frame.readthedocs.io>) or project site (<https://github.com/static-frame/static-frame>).
 
-[Previous](upgrade.html "Ten Reasons to Use StaticFrame Instead of Pandas")
-[Next](../api_overview/series.html "Overview: Series")
+[Previous](upgrade.md "Ten Reasons to Use StaticFrame Instead of Pandas")
+[Next](../api_overview/series.md "Overview: Series")
 
 ---
 

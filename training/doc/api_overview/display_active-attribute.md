@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: DisplayActive: Attribute
 * [View page source](../_sources/api_overview/display_active-attribute.rst.txt)
 
-[Previous](display_active-constructor.html "Overview: DisplayActive: Constructor")
-[Next](display_active-method.html "Overview: DisplayActive: Method")
+[Previous](display_active-constructor.md "Overview: DisplayActive: Constructor")
+[Next](display_active-method.md "Overview: DisplayActive: Method")
 
 ---
 
 # Overview: DisplayActive: Attribute[](#overview-displayactive-attribute "Link to this heading")
 
-[Detail: DisplayActive: Attribute](../api_detail/display_active-attribute.html#api-detail-displayactive-attribute)
+[Detail: DisplayActive: Attribute](../api_detail/display_active-attribute.md#api-detail-displayactive-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/display_active-attribute.html#api-sig-displayactive-file-name) | `DisplayActive.FILE_NAME` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/display_active-attribute.md#api-sig-displayactive-file-name) | `DisplayActive.FILE_NAME` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
 
-[DisplayActive](display_active.html#api-overview-displayactive): [Constructor](display_active-constructor.html#api-overview-displayactive-constructor) | [Attribute](#api-overview-displayactive-attribute) | [Method](display_active-method.html#api-overview-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.html#api-overview-displayactive-dictionary-like) | [Display](display_active-display.html#api-overview-displayactive-display)
+[DisplayActive](display_active.md#api-overview-displayactive): [Constructor](display_active-constructor.md#api-overview-displayactive-constructor) | [Attribute](#api-overview-displayactive-attribute) | [Method](display_active-method.md#api-overview-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.md#api-overview-displayactive-dictionary-like) | [Display](display_active-display.md#api-overview-displayactive-display)
 
-[Previous](display_active-constructor.html "Overview: DisplayActive: Constructor")
-[Next](display_active-method.html "Overview: DisplayActive: Method")
+[Previous](display_active-constructor.md "Overview: DisplayActive: Constructor")
+[Next](display_active-method.md "Overview: DisplayActive: Method")
 
 ---
 

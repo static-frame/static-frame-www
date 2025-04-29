@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Quilt: Exporter
 * [View page source](../_sources/api_overview/quilt-exporter.rst.txt)
 
-[Previous](quilt-constructor.html "Overview: Quilt: Constructor")
-[Next](quilt-attribute.html "Overview: Quilt: Attribute")
+[Previous](quilt-constructor.md "Overview: Quilt: Constructor")
+[Next](quilt-attribute.md "Overview: Quilt: Attribute")
 
 ---
 
 # Overview: Quilt: Exporter[](#overview-quilt-exporter "Link to this heading")
 
-[Detail: Quilt: Exporter](../api_detail/quilt-exporter.html#api-detail-quilt-exporter)
+[Detail: Quilt: Exporter](../api_detail/quilt-exporter.md#api-detail-quilt-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-frame) | `Quilt.to_frame()` | Return a consolidated Frame. |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-sqlite) | `Quilt.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-visidata) | `Quilt.to_visidata()` | Open an interactive VisiData session. |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-xlsx) | `Quilt.to_xlsx(fp, *, config)` | Write the complete Bus as a XLSX workbook. Args: fp: A string file path or Path… |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-zip-csv) | `Quilt.to_zip_csv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of CSV files. Args: fp: A string file… |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-zip-npy) | `Quilt.to_zip_npy(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPY files. Args: fp: A string file… |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-zip-npz) | `Quilt.to_zip_npz(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPZ files. Args: fp: A string file… |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-zip-parquet) | `Quilt.to_zip_parquet(fp, *, config, compression)` | Write the complete Bus as a zipped archive of parquet files. Args: fp: A string… |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-zip-pickle) | `Quilt.to_zip_pickle(fp, *, config, compression)` | Write the complete Bus as a zipped archive of pickles. Args: fp: A string file p… |
-| [Detail](../api_detail/quilt-exporter.html#api-sig-quilt-to-zip-tsv) | `Quilt.to_zip_tsv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of TSV files. Args: fp: A string file… |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-frame) | `Quilt.to_frame()` | Return a consolidated Frame. |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-sqlite) | `Quilt.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-visidata) | `Quilt.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-xlsx) | `Quilt.to_xlsx(fp, *, config)` | Write the complete Bus as a XLSX workbook. Args: fp: A string file path or Path… |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-zip-csv) | `Quilt.to_zip_csv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of CSV files. Args: fp: A string file… |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-zip-npy) | `Quilt.to_zip_npy(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPY files. Args: fp: A string file… |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-zip-npz) | `Quilt.to_zip_npz(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPZ files. Args: fp: A string file… |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-zip-parquet) | `Quilt.to_zip_parquet(fp, *, config, compression)` | Write the complete Bus as a zipped archive of parquet files. Args: fp: A string… |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-zip-pickle) | `Quilt.to_zip_pickle(fp, *, config, compression)` | Write the complete Bus as a zipped archive of pickles. Args: fp: A string file p… |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-zip-tsv) | `Quilt.to_zip_tsv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of TSV files. Args: fp: A string file… |
 
-[Quilt](quilt.html#api-overview-quilt): [Constructor](quilt-constructor.html#api-overview-quilt-constructor) | [Exporter](#api-overview-quilt-exporter) | [Attribute](quilt-attribute.html#api-overview-quilt-attribute) | [Method](quilt-method.html#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-overview-quilt-dictionary-like) | [Display](quilt-display.html#api-overview-quilt-display) | [Selector](quilt-selector.html#api-overview-quilt-selector) | [Iterator](quilt-iterator.html#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-overview-quilt): [Constructor](quilt-constructor.md#api-overview-quilt-constructor) | [Exporter](#api-overview-quilt-exporter) | [Attribute](quilt-attribute.md#api-overview-quilt-attribute) | [Method](quilt-method.md#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-overview-quilt-dictionary-like) | [Display](quilt-display.md#api-overview-quilt-display) | [Selector](quilt-selector.md#api-overview-quilt-selector) | [Iterator](quilt-iterator.md#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic)
 
-[Previous](quilt-constructor.html "Overview: Quilt: Constructor")
-[Next](quilt-attribute.html "Overview: Quilt: Attribute")
+[Previous](quilt-constructor.md "Overview: Quilt: Constructor")
+[Next](quilt-attribute.md "Overview: Quilt: Attribute")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexHierarchy: Display
 * [View page source](../_sources/api_detail/index_hierarchy-display.rst.txt)
 
-[Previous](index_hierarchy-dictionary_like.html "Detail: IndexHierarchy: Dictionary-Like")
-[Next](index_hierarchy-selector.html "Detail: IndexHierarchy: Selector")
+[Previous](index_hierarchy-dictionary_like.md "Detail: IndexHierarchy: Dictionary-Like")
+[Next](index_hierarchy-selector.md "Detail: IndexHierarchy: Selector")
 
 ---
 
 # Detail: IndexHierarchy: Display[](#detail-indexhierarchy-display "Link to this heading")
 
-[Overview: IndexHierarchy: Display](../api_overview/index_hierarchy-display.html#api-overview-indexhierarchy-display)
+[Overview: IndexHierarchy: Display](../api_overview/index_hierarchy-display.md#api-overview-indexhierarchy-display)
 
 IndexHierarchy.interface[](#IndexHierarchy.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -226,11 +226,11 @@ IndexHierarchy.\_\_str\_\_()[](#static_frame.IndexHierarchy.__str__ "Link to 
 
     ```
 
-IndexHierarchy.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.display)[](#static_frame.IndexHierarchy.display "Link to this definition")
+IndexHierarchy.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.display)[](#static_frame.IndexHierarchy.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
@@ -251,7 +251,7 @@ IndexHierarchy.display\_tall(*config=None*, */*)[](#static_frame.IndexHierarc
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
@@ -268,7 +268,7 @@ IndexHierarchy.display\_wide(*config=None*, */*)[](#static_frame.IndexHierarc
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
@@ -281,10 +281,10 @@ IndexHierarchy.display\_wide(*config=None*, */*)[](#static_frame.IndexHierarc
 
     ```
 
-[IndexHierarchy](index_hierarchy.html#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like) | [Display](#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-dictionary_like.html "Detail: IndexHierarchy: Dictionary-Like")
-[Next](index_hierarchy-selector.html "Detail: IndexHierarchy: Selector")
+[Previous](index_hierarchy-dictionary_like.md "Detail: IndexHierarchy: Dictionary-Like")
+[Next](index_hierarchy-selector.md "Detail: IndexHierarchy: Selector")
 
 ---
 

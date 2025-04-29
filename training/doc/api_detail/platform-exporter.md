@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,21 +135,21 @@ API Detail
 * Detail: Platform: Exporter
 * [View page source](../_sources/api_detail/platform-exporter.rst.txt)
 
-[Previous](platform-constructor.html "Detail: Platform: Constructor")
-[Next](platform-display.html "Detail: Platform: Display")
+[Previous](platform-constructor.md "Detail: Platform: Constructor")
+[Next](platform-display.md "Detail: Platform: Display")
 
 ---
 
 # Detail: Platform: Exporter[](#detail-platform-exporter "Link to this heading")
 
-[Overview: Platform: Exporter](../api_overview/platform-exporter.html#api-overview-platform-exporter)
+[Overview: Platform: Exporter](../api_overview/platform-exporter.md#api-overview-platform-exporter)
 
-*static* Platform.to\_series()[[source]](../_modules/static_frame/core/platform.html#Platform.to_series)[](#static_frame.Platform.to_series "Link to this definition")
+*static* Platform.to\_series()[[source]](../_modules/static_frame/core/platform.md#Platform.to_series)[](#static_frame.Platform.to_series "Link to this definition")
 
-[Platform](platform.html#api-detail-platform): [Constructor](platform-constructor.html#api-detail-platform-constructor) | [Exporter](#api-detail-platform-exporter) | [Display](platform-display.html#api-detail-platform-display)
+[Platform](platform.md#api-detail-platform): [Constructor](platform-constructor.md#api-detail-platform-constructor) | [Exporter](#api-detail-platform-exporter) | [Display](platform-display.md#api-detail-platform-display)
 
-[Previous](platform-constructor.html "Detail: Platform: Constructor")
-[Next](platform-display.html "Detail: Platform: Display")
+[Previous](platform-constructor.md "Detail: Platform: Constructor")
+[Next](platform-display.md "Detail: Platform: Display")
 
 ---
 

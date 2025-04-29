@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexSecond: Accessor Type Clinic
 * [View page source](../_sources/api_detail/index_second-accessor_type_clinic.rst.txt)
 
-[Previous](index_second-accessor_hashlib.html "Detail: IndexSecond: Accessor Hashlib")
-[Next](index_second_go-constructor.html "Detail: IndexSecondGO: Constructor")
+[Previous](index_second-accessor_hashlib.md "Detail: IndexSecond: Accessor Hashlib")
+[Next](index_second_go-constructor.md "Detail: IndexSecondGO: Constructor")
 
 ---
 
 # Detail: IndexSecond: Accessor Type Clinic[](#detail-indexsecond-accessor-type-clinic "Link to this heading")
 
-[Overview: IndexSecond: Accessor Type Clinic](../api_overview/index_second-accessor_type_clinic.html#api-overview-indexsecond-accessor-type-clinic)
+[Overview: IndexSecond: Accessor Type Clinic](../api_overview/index_second-accessor_type_clinic.md#api-overview-indexsecond-accessor-type-clinic)
 
 IndexSecond.via\_type\_clinic.to\_hint
 :   IndexSecond.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -166,7 +166,7 @@ IndexSecond.via\_type\_clinic.to\_hint
 IndexSecond.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   IndexSecond.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -188,7 +188,7 @@ IndexSecond.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 IndexSecond.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   IndexSecond.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -198,7 +198,7 @@ IndexSecond.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 IndexSecond.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   IndexSecond.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -227,7 +227,7 @@ IndexSecond.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 IndexSecond.via\_type\_clinic.\_\_repr\_\_
 :   IndexSecond.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -243,10 +243,10 @@ IndexSecond.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[IndexSecond](index_second.html#api-detail-indexsecond): [Constructor](index_second-constructor.html#api-detail-indexsecond-constructor) | [Exporter](index_second-exporter.html#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-detail-indexsecond-attribute) | [Method](index_second-method.html#api-detail-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.html#api-detail-indexsecond-display) | [Selector](index_second-selector.html#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.html#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-detail-indexsecond): [Constructor](index_second-constructor.md#api-detail-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-detail-indexsecond-attribute) | [Method](index_second-method.md#api-detail-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.md#api-detail-indexsecond-display) | [Selector](index_second-selector.md#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.md#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-accessor_hashlib.html "Detail: IndexSecond: Accessor Hashlib")
-[Next](index_second_go-constructor.html "Detail: IndexSecondGO: Constructor")
+[Previous](index_second-accessor_hashlib.md "Detail: IndexSecond: Accessor Hashlib")
+[Next](index_second_go-constructor.md "Detail: IndexSecondGO: Constructor")
 
 ---
 

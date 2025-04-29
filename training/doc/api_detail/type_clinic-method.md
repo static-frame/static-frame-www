@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: TypeClinic: Method
 * [View page source](../_sources/api_detail/type_clinic-method.rst.txt)
 
-[Previous](type_clinic-exporter.html "Detail: TypeClinic: Exporter")
-[Next](type_clinic-display.html "Detail: TypeClinic: Display")
+[Previous](type_clinic-exporter.md "Detail: TypeClinic: Exporter")
+[Next](type_clinic-display.md "Detail: TypeClinic: Display")
 
 ---
 
 # Detail: TypeClinic: Method[](#detail-typeclinic-method "Link to this heading")
 
-[Overview: TypeClinic: Method](../api_overview/type_clinic-method.html#api-overview-typeclinic-method)
+[Overview: TypeClinic: Method](../api_overview/type_clinic-method.md#api-overview-typeclinic-method)
 
-TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)[](#static_frame.TypeClinic.__call__ "Link to this definition")
+TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)[](#static_frame.TypeClinic.__call__ "Link to this definition")
 :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
     Parameters:
@@ -171,7 +171,7 @@ TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_mod
 
     ```
 
-TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)[](#static_frame.TypeClinic.check "Link to this definition")
+TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)[](#static_frame.TypeClinic.check "Link to this definition")
 :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
     Parameters:
@@ -194,17 +194,17 @@ TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/st
 
     ```
 
-TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)[](#static_frame.TypeClinic.warn "Link to this definition")
+TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)[](#static_frame.TypeClinic.warn "Link to this definition")
 :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
     Parameters:
     :   * **fail\_fast** – If True, return on first failure. If False, all failures are discovered and reported.
         * **category** – The `Warning` subclass to be used for issueing the warning.
 
-[TypeClinic](type_clinic.html#api-detail-typeclinic): [Constructor](type_clinic-constructor.html#api-detail-typeclinic-constructor) | [Exporter](type_clinic-exporter.html#api-detail-typeclinic-exporter) | [Method](#api-detail-typeclinic-method) | [Display](type_clinic-display.html#api-detail-typeclinic-display)
+[TypeClinic](type_clinic.md#api-detail-typeclinic): [Constructor](type_clinic-constructor.md#api-detail-typeclinic-constructor) | [Exporter](type_clinic-exporter.md#api-detail-typeclinic-exporter) | [Method](#api-detail-typeclinic-method) | [Display](type_clinic-display.md#api-detail-typeclinic-display)
 
-[Previous](type_clinic-exporter.html "Detail: TypeClinic: Exporter")
-[Next](type_clinic-display.html "Detail: TypeClinic: Display")
+[Previous](type_clinic-exporter.md "Detail: TypeClinic: Exporter")
+[Next](type_clinic-display.md "Detail: TypeClinic: Display")
 
 ---
 

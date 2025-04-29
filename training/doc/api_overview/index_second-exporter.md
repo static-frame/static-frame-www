@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexSecond: Exporter
 * [View page source](../_sources/api_overview/index_second-exporter.rst.txt)
 
-[Previous](index_second-constructor.html "Overview: IndexSecond: Constructor")
-[Next](index_second-attribute.html "Overview: IndexSecond: Attribute")
+[Previous](index_second-constructor.md "Overview: IndexSecond: Constructor")
+[Next](index_second-attribute.md "Overview: IndexSecond: Attribute")
 
 ---
 
 # Overview: IndexSecond: Exporter[](#overview-indexsecond-exporter "Link to this heading")
 
-[Detail: IndexSecond: Exporter](../api_detail/index_second-exporter.html#api-detail-indexsecond-exporter)
+[Detail: IndexSecond: Exporter](../api_detail/index_second-exporter.md#api-detail-indexsecond-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second-exporter.html#api-sig-indexsecond-to-html) | `IndexSecond.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
-| [Detail](../api_detail/index_second-exporter.html#api-sig-indexsecond-to-html-datatables) | `IndexSecond.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
-| [Detail](../api_detail/index_second-exporter.html#api-sig-indexsecond-to-pandas) | `IndexSecond.to_pandas()` | Return a Pandas Index. |
-| [Detail](../api_detail/index_second-exporter.html#api-sig-indexsecond-to-series) | `IndexSecond.to_series()` | Return a Series with values from this Index’s labels. |
-| [Detail](../api_detail/index_second-exporter.html#api-sig-indexsecond-to-visidata) | `IndexSecond.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/index_second-exporter.md#api-sig-indexsecond-to-html) | `IndexSecond.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
+| [Detail](../api_detail/index_second-exporter.md#api-sig-indexsecond-to-html-datatables) | `IndexSecond.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
+| [Detail](../api_detail/index_second-exporter.md#api-sig-indexsecond-to-pandas) | `IndexSecond.to_pandas()` | Return a Pandas Index. |
+| [Detail](../api_detail/index_second-exporter.md#api-sig-indexsecond-to-series) | `IndexSecond.to_series()` | Return a Series with values from this Index’s labels. |
+| [Detail](../api_detail/index_second-exporter.md#api-sig-indexsecond-to-visidata) | `IndexSecond.to_visidata()` | Open an interactive VisiData session. |
 
-[IndexSecond](index_second.html#api-overview-indexsecond): [Constructor](index_second-constructor.html#api-overview-indexsecond-constructor) | [Exporter](#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-overview-indexsecond-attribute) | [Method](index_second-method.html#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.html#api-overview-indexsecond-display) | [Selector](index_second-selector.html#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.html#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-overview-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-overview-indexsecond): [Constructor](index_second-constructor.md#api-overview-indexsecond-constructor) | [Exporter](#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-overview-indexsecond-attribute) | [Method](index_second-method.md#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.md#api-overview-indexsecond-display) | [Selector](index_second-selector.md#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.md#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-overview-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-constructor.html "Overview: IndexSecond: Constructor")
-[Next](index_second-attribute.html "Overview: IndexSecond: Attribute")
+[Previous](index_second-constructor.md "Overview: IndexSecond: Constructor")
+[Next](index_second-attribute.md "Overview: IndexSecond: Attribute")
 
 ---
 

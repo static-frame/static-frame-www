@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexMinuteGO: Accessor Datetime
 * [View page source](../_sources/api_overview/index_minute_go-accessor_datetime.rst.txt)
 
-[Previous](index_minute_go-accessor_values.html "Overview: IndexMinuteGO: Accessor Values")
-[Next](index_minute_go-accessor_string.html "Overview: IndexMinuteGO: Accessor String")
+[Previous](index_minute_go-accessor_values.md "Overview: IndexMinuteGO: Accessor Values")
+[Next](index_minute_go-accessor_string.md "Overview: IndexMinuteGO: Accessor String")
 
 ---
 
 # Overview: IndexMinuteGO: Accessor Datetime[](#overview-indexminutego-accessor-datetime "Link to this heading")
 
-[Detail: IndexMinuteGO: Accessor Datetime](../api_detail/index_minute_go-accessor_datetime.html#api-detail-indexminutego-accessor-datetime)
+[Detail: IndexMinuteGO: Accessor Datetime](../api_detail/index_minute_go-accessor_datetime.md#api-detail-indexminutego-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-call) | `IndexMinuteGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-year) | `IndexMinuteGO.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-year-month) | `IndexMinuteGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-year-quarter) | `IndexMinuteGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-month) | `IndexMinuteGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-day) | `IndexMinuteGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-hour) | `IndexMinuteGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-minute) | `IndexMinuteGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-second) | `IndexMinuteGO.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-weekday) | `IndexMinuteGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-quarter) | `IndexMinuteGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-is-month-end) | `IndexMinuteGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-is-month-start) | `IndexMinuteGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-is-year-end) | `IndexMinuteGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-is-year-start) | `IndexMinuteGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-is-quarter-end) | `IndexMinuteGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-is-quarter-start) | `IndexMinuteGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-timetuple) | `IndexMinuteGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-isoformat) | `IndexMinuteGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-fromisoformat) | `IndexMinuteGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-strftime) | `IndexMinuteGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-strptime) | `IndexMinuteGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_minute_go-accessor_datetime.html#api-sig-indexminutego-via-dt-strpdate) | `IndexMinuteGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-call) | `IndexMinuteGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-year) | `IndexMinuteGO.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-year-month) | `IndexMinuteGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-year-quarter) | `IndexMinuteGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-month) | `IndexMinuteGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-day) | `IndexMinuteGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-hour) | `IndexMinuteGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-minute) | `IndexMinuteGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-second) | `IndexMinuteGO.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-weekday) | `IndexMinuteGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-quarter) | `IndexMinuteGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-is-month-end) | `IndexMinuteGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-is-month-start) | `IndexMinuteGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-is-year-end) | `IndexMinuteGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-is-year-start) | `IndexMinuteGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-is-quarter-end) | `IndexMinuteGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-is-quarter-start) | `IndexMinuteGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-timetuple) | `IndexMinuteGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-isoformat) | `IndexMinuteGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-fromisoformat) | `IndexMinuteGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-strftime) | `IndexMinuteGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-strptime) | `IndexMinuteGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_minute_go-accessor_datetime.md#api-sig-indexminutego-via-dt-strpdate) | `IndexMinuteGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexMinuteGO](index_minute_go.html#api-overview-indexminutego): [Constructor](index_minute_go-constructor.html#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.html#api-overview-indexminutego-exporter) | [Attribute](index_minute_go-attribute.html#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.html#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.html#api-overview-indexminutego-dictionary-like) | [Display](index_minute_go-display.html#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.html#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.html#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.html#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.html#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.html#api-overview-indexminutego-accessor-values) | [Accessor Datetime](#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.html#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.html#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.html#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.html#api-overview-indexminutego-accessor-type-clinic)
+[IndexMinuteGO](index_minute_go.md#api-overview-indexminutego): [Constructor](index_minute_go-constructor.md#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.md#api-overview-indexminutego-exporter) | [Attribute](index_minute_go-attribute.md#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.md#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-overview-indexminutego-dictionary-like) | [Display](index_minute_go-display.md#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.md#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.md#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.md#api-overview-indexminutego-accessor-values) | [Accessor Datetime](#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.md#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-overview-indexminutego-accessor-type-clinic)
 
-[Previous](index_minute_go-accessor_values.html "Overview: IndexMinuteGO: Accessor Values")
-[Next](index_minute_go-accessor_string.html "Overview: IndexMinuteGO: Accessor String")
+[Previous](index_minute_go-accessor_values.md "Overview: IndexMinuteGO: Accessor Values")
+[Next](index_minute_go-accessor_string.md "Overview: IndexMinuteGO: Accessor String")
 
 ---
 

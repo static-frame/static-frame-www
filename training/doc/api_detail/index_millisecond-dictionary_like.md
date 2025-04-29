@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMillisecond: Dictionary-Like
 * [View page source](../_sources/api_detail/index_millisecond-dictionary_like.rst.txt)
 
-[Previous](index_millisecond-method.html "Detail: IndexMillisecond: Method")
-[Next](index_millisecond-display.html "Detail: IndexMillisecond: Display")
+[Previous](index_millisecond-method.md "Detail: IndexMillisecond: Method")
+[Next](index_millisecond-display.md "Detail: IndexMillisecond: Display")
 
 ---
 
 # Detail: IndexMillisecond: Dictionary-Like[](#detail-indexmillisecond-dictionary-like "Link to this heading")
 
-[Overview: IndexMillisecond: Dictionary-Like](../api_overview/index_millisecond-dictionary_like.html#api-overview-indexmillisecond-dictionary-like)
+[Overview: IndexMillisecond: Dictionary-Like](../api_overview/index_millisecond-dictionary_like.md#api-overview-indexmillisecond-dictionary-like)
 
 IndexMillisecond.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexMillisecond.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
@@ -220,7 +220,7 @@ IndexMillisecond.\_\_reversed\_\_()[](#static_frame.IndexMillisecond.__revers
     ```
 
 IndexMillisecond.values[](#static_frame.IndexMillisecond.values "Link to this definition")
-:   A 1D NumPy array of the values in the [`Index`](index-selector.html#Index "Index"). This array will have the same dtype as the container.
+:   A 1D NumPy array of the values in the [`Index`](index-selector.md#Index "Index"). This array will have the same dtype as the container.
 
     ```
     >>> ix = sf.IndexMillisecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -236,10 +236,10 @@ IndexMillisecond.values[](#static_frame.IndexMillisecond.values "Link to this
 
     ```
 
-[IndexMillisecond](index_millisecond.html#api-detail-indexmillisecond): [Constructor](index_millisecond-constructor.html#api-detail-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.html#api-detail-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.html#api-detail-indexmillisecond-attribute) | [Method](index_millisecond-method.html#api-detail-indexmillisecond-method) | [Dictionary-Like](#api-detail-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.html#api-detail-indexmillisecond-display) | [Selector](index_millisecond-selector.html#api-detail-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.html#api-detail-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.html#api-detail-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.html#api-detail-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.html#api-detail-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.html#api-detail-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.html#api-detail-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.html#api-detail-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.html#api-detail-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.html#api-detail-indexmillisecond-accessor-type-clinic)
+[IndexMillisecond](index_millisecond.md#api-detail-indexmillisecond): [Constructor](index_millisecond-constructor.md#api-detail-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.md#api-detail-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.md#api-detail-indexmillisecond-attribute) | [Method](index_millisecond-method.md#api-detail-indexmillisecond-method) | [Dictionary-Like](#api-detail-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.md#api-detail-indexmillisecond-display) | [Selector](index_millisecond-selector.md#api-detail-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.md#api-detail-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.md#api-detail-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.md#api-detail-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.md#api-detail-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.md#api-detail-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.md#api-detail-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.md#api-detail-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.md#api-detail-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.md#api-detail-indexmillisecond-accessor-type-clinic)
 
-[Previous](index_millisecond-method.html "Detail: IndexMillisecond: Method")
-[Next](index_millisecond-display.html "Detail: IndexMillisecond: Display")
+[Previous](index_millisecond-method.md "Detail: IndexMillisecond: Method")
+[Next](index_millisecond-display.md "Detail: IndexMillisecond: Display")
 
 ---
 

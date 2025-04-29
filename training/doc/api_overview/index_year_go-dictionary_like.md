@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexYearGO: Dictionary-Like
 * [View page source](../_sources/api_overview/index_year_go-dictionary_like.rst.txt)
 
-[Previous](index_year_go-method.html "Overview: IndexYearGO: Method")
-[Next](index_year_go-display.html "Overview: IndexYearGO: Display")
+[Previous](index_year_go-method.md "Overview: IndexYearGO: Method")
+[Next](index_year_go-display.md "Overview: IndexYearGO: Display")
 
 ---
 
 # Overview: IndexYearGO: Dictionary-Like[](#overview-indexyeargo-dictionary-like "Link to this heading")
 
-[Detail: IndexYearGO: Dictionary-Like](../api_detail/index_year_go-dictionary_like.html#api-detail-indexyeargo-dictionary-like)
+[Detail: IndexYearGO: Dictionary-Like](../api_detail/index_year_go-dictionary_like.md#api-detail-indexyeargo-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_go-dictionary_like.html#api-sig-indexyeargo-contains) | `IndexYearGO.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
-| [Detail](../api_detail/index_year_go-dictionary_like.html#api-sig-indexyeargo-iter) | `IndexYearGO.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index_year_go-dictionary_like.html#api-sig-indexyeargo-reversed) | `IndexYearGO.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index_year_go-dictionary_like.html#api-sig-indexyeargo-values) | `IndexYearGO.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
+| [Detail](../api_detail/index_year_go-dictionary_like.md#api-sig-indexyeargo-contains) | `IndexYearGO.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
+| [Detail](../api_detail/index_year_go-dictionary_like.md#api-sig-indexyeargo-iter) | `IndexYearGO.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index_year_go-dictionary_like.md#api-sig-indexyeargo-reversed) | `IndexYearGO.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index_year_go-dictionary_like.md#api-sig-indexyeargo-values) | `IndexYearGO.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
 
-[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](index_year_go-constructor.html#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.html#api-overview-indexyeargo-method) | [Dictionary-Like](#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-overview-indexyeargo): [Constructor](index_year_go-constructor.md#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.md#api-overview-indexyeargo-method) | [Dictionary-Like](#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.md#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-overview-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-method.html "Overview: IndexYearGO: Method")
-[Next](index_year_go-display.html "Overview: IndexYearGO: Display")
+[Previous](index_year_go-method.md "Overview: IndexYearGO: Method")
+[Next](index_year_go-display.md "Overview: IndexYearGO: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: FrameGO: Display
 * [View page source](../_sources/api_overview/frame_go-display.rst.txt)
 
-[Previous](frame_go-dictionary_like.html "Overview: FrameGO: Dictionary-Like")
-[Next](frame_go-assignment.html "Overview: FrameGO: Assignment")
+[Previous](frame_go-dictionary_like.md "Overview: FrameGO: Dictionary-Like")
+[Next](frame_go-assignment.md "Overview: FrameGO: Assignment")
 
 ---
 
 # Overview: FrameGO: Display[](#overview-framego-display "Link to this heading")
 
-[Detail: FrameGO: Display](../api_detail/frame_go-display.html#api-detail-framego-display)
+[Detail: FrameGO: Display](../api_detail/frame_go-display.md#api-detail-framego-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-display.html#api-sig-framego-interface) | [`FrameGO.interface`](../api_detail/frame_go-display.html#FrameGO.interface "FrameGO.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/frame_go-display.html#api-sig-framego-repr) | `FrameGO.__repr__()` |  |
-| [Detail](../api_detail/frame_go-display.html#api-sig-framego-str) | `FrameGO.__str__()` | Return str(self). |
-| [Detail](../api_detail/frame_go-display.html#api-sig-framego-display) | `FrameGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/frame_go-display.html#api-sig-framego-display-tall) | `FrameGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/frame_go-display.html#api-sig-framego-display-wide) | `FrameGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/frame_go-display.md#api-sig-framego-interface) | [`FrameGO.interface`](../api_detail/frame_go-display.md#FrameGO.interface "FrameGO.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/frame_go-display.md#api-sig-framego-repr) | `FrameGO.__repr__()` |  |
+| [Detail](../api_detail/frame_go-display.md#api-sig-framego-str) | `FrameGO.__str__()` | Return str(self). |
+| [Detail](../api_detail/frame_go-display.md#api-sig-framego-display) | `FrameGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/frame_go-display.md#api-sig-framego-display-tall) | `FrameGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/frame_go-display.md#api-sig-framego-display-wide) | `FrameGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-dictionary_like.html "Overview: FrameGO: Dictionary-Like")
-[Next](frame_go-assignment.html "Overview: FrameGO: Assignment")
+[Previous](frame_go-dictionary_like.md "Overview: FrameGO: Dictionary-Like")
+[Next](frame_go-assignment.md "Overview: FrameGO: Assignment")
 
 ---
 

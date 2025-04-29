@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Detail: NPY: Constructor
 * [View page source](../_sources/api_detail/npy-constructor.rst.txt)
 
-[Previous](npz-display.html "Detail: NPZ: Display")
-[Next](npy-attribute.html "Detail: NPY: Attribute")
+[Previous](npz-display.md "Detail: NPZ: Display")
+[Next](npy-attribute.md "Detail: NPY: Attribute")
 
 ---
 
 # Detail: NPY: Constructor[](#detail-npy-constructor "Link to this heading")
 
-[Overview: NPY: Constructor](../api_overview/npy-constructor.html#api-overview-npy-constructor)
+[Overview: NPY: Constructor](../api_overview/npy-constructor.md#api-overview-npy-constructor)
 
 NPY.\_\_init\_\_(*fp*, *mode='r'*)[](#static_frame.NPY.__init__ "Link to this definition")
 
 NPY.from\_arrays(*blocks*, *\**, *index=None*, *columns=None*, *name=None*, *axis=0*)[](#static_frame.NPY.from_arrays "Link to this definition")
-:   Given an iterable of arrays, write out an NPZ or NPY directly, without building up intermediary [`Frame`](frame-selector.html#Frame "Frame"). If axis 0, the arrays are vertically stacked; if axis 1, they are horizontally stacked. For both axis, if included, indices must be of appropriate length.
+:   Given an iterable of arrays, write out an NPZ or NPY directly, without building up intermediary [`Frame`](frame-selector.md#Frame "Frame"). If axis 0, the arrays are vertically stacked; if axis 1, they are horizontally stacked. For both axis, if included, indices must be of appropriate length.
 
     Parameters:
     :   * **blocks** –
         * **\*** –
-        * **index** – An array, [`Index`](index-selector.html#Index "Index"), or [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
-        * **columns** – An array, [`Index`](index-selector.html#Index "Index"), or [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+        * **index** – An array, [`Index`](index-selector.md#Index "Index"), or [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
+        * **columns** – An array, [`Index`](index-selector.md#Index "Index"), or [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
         * **name** –
         * **axis** –
 
@@ -170,10 +170,10 @@ NPY.from\_frames(*frames*, *\**, *include\_index=True*, *include\_columns=True*,
         * **name** –
         * **fill\_value** –
 
-[NPY](npy.html#api-detail-npy): [Constructor](#api-detail-npy-constructor) | [Attribute](npy-attribute.html#api-detail-npy-attribute) | [Method](npy-method.html#api-detail-npy-method) | [Display](npy-display.html#api-detail-npy-display)
+[NPY](npy.md#api-detail-npy): [Constructor](#api-detail-npy-constructor) | [Attribute](npy-attribute.md#api-detail-npy-attribute) | [Method](npy-method.md#api-detail-npy-method) | [Display](npy-display.md#api-detail-npy-display)
 
-[Previous](npz-display.html "Detail: NPZ: Display")
-[Next](npy-attribute.html "Detail: NPY: Attribute")
+[Previous](npz-display.md "Detail: NPZ: Display")
+[Next](npy-attribute.md "Detail: NPY: Attribute")
 
 ---
 

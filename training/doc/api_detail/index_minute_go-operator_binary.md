@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMinuteGO: Operator Binary
 * [View page source](../_sources/api_detail/index_minute_go-operator_binary.rst.txt)
 
-[Previous](index_minute_go-iterator.html "Detail: IndexMinuteGO: Iterator")
-[Next](index_minute_go-operator_unary.html "Detail: IndexMinuteGO: Operator Unary")
+[Previous](index_minute_go-iterator.md "Detail: IndexMinuteGO: Iterator")
+[Next](index_minute_go-operator_unary.md "Detail: IndexMinuteGO: Operator Unary")
 
 ---
 
 # Detail: IndexMinuteGO: Operator Binary[](#detail-indexminutego-operator-binary "Link to this heading")
 
-[Overview: IndexMinuteGO: Operator Binary](../api_overview/index_minute_go-operator_binary.html#api-overview-indexminutego-operator-binary)
+[Overview: IndexMinuteGO: Operator Binary](../api_overview/index_minute_go-operator_binary.md#api-overview-indexminutego-operator-binary)
 
 IndexMinuteGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexMinuteGO.__add__ "Link to this definition")
 :   ```
@@ -500,10 +500,10 @@ IndexMinuteGO.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexMinuteGO.__xor__
 
     ```
 
-[IndexMinuteGO](index_minute_go.html#api-detail-indexminutego): [Constructor](index_minute_go-constructor.html#api-detail-indexminutego-constructor) | [Exporter](index_minute_go-exporter.html#api-detail-indexminutego-exporter) | [Attribute](index_minute_go-attribute.html#api-detail-indexminutego-attribute) | [Method](index_minute_go-method.html#api-detail-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.html#api-detail-indexminutego-dictionary-like) | [Display](index_minute_go-display.html#api-detail-indexminutego-display) | [Selector](index_minute_go-selector.html#api-detail-indexminutego-selector) | [Iterator](index_minute_go-iterator.html#api-detail-indexminutego-iterator) | [Operator Binary](#api-detail-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.html#api-detail-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.html#api-detail-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.html#api-detail-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.html#api-detail-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.html#api-detail-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.html#api-detail-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.html#api-detail-indexminutego-accessor-type-clinic)
+[IndexMinuteGO](index_minute_go.md#api-detail-indexminutego): [Constructor](index_minute_go-constructor.md#api-detail-indexminutego-constructor) | [Exporter](index_minute_go-exporter.md#api-detail-indexminutego-exporter) | [Attribute](index_minute_go-attribute.md#api-detail-indexminutego-attribute) | [Method](index_minute_go-method.md#api-detail-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-detail-indexminutego-dictionary-like) | [Display](index_minute_go-display.md#api-detail-indexminutego-display) | [Selector](index_minute_go-selector.md#api-detail-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-detail-indexminutego-iterator) | [Operator Binary](#api-detail-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-detail-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.md#api-detail-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.md#api-detail-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-detail-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-detail-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.md#api-detail-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-detail-indexminutego-accessor-type-clinic)
 
-[Previous](index_minute_go-iterator.html "Detail: IndexMinuteGO: Iterator")
-[Next](index_minute_go-operator_unary.html "Detail: IndexMinuteGO: Operator Unary")
+[Previous](index_minute_go-iterator.md "Detail: IndexMinuteGO: Iterator")
+[Next](index_minute_go-operator_unary.md "Detail: IndexMinuteGO: Operator Unary")
 
 ---
 

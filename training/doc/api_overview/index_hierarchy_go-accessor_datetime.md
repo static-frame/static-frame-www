@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexHierarchyGO: Accessor Datetime
 * [View page source](../_sources/api_overview/index_hierarchy_go-accessor_datetime.rst.txt)
 
-[Previous](index_hierarchy_go-accessor_values.html "Overview: IndexHierarchyGO: Accessor Values")
-[Next](index_hierarchy_go-accessor_string.html "Overview: IndexHierarchyGO: Accessor String")
+[Previous](index_hierarchy_go-accessor_values.md "Overview: IndexHierarchyGO: Accessor Values")
+[Next](index_hierarchy_go-accessor_string.md "Overview: IndexHierarchyGO: Accessor String")
 
 ---
 
 # Overview: IndexHierarchyGO: Accessor Datetime[](#overview-indexhierarchygo-accessor-datetime "Link to this heading")
 
-[Detail: IndexHierarchyGO: Accessor Datetime](../api_detail/index_hierarchy_go-accessor_datetime.html#api-detail-indexhierarchygo-accessor-datetime)
+[Detail: IndexHierarchyGO: Accessor Datetime](../api_detail/index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-call) | `IndexHierarchyGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-year) | `IndexHierarchyGO.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-year-month) | `IndexHierarchyGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-year-quarter) | `IndexHierarchyGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-month) | `IndexHierarchyGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-day) | `IndexHierarchyGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-hour) | `IndexHierarchyGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-minute) | `IndexHierarchyGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-second) | `IndexHierarchyGO.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-weekday) | `IndexHierarchyGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-quarter) | `IndexHierarchyGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-is-month-end) | `IndexHierarchyGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-is-month-start) | `IndexHierarchyGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-is-year-end) | `IndexHierarchyGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-is-year-start) | `IndexHierarchyGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-is-quarter-end) | `IndexHierarchyGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-is-quarter-start) | `IndexHierarchyGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-timetuple) | `IndexHierarchyGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-isoformat) | `IndexHierarchyGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-fromisoformat) | `IndexHierarchyGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-strftime) | `IndexHierarchyGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-strptime) | `IndexHierarchyGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.html#api-sig-indexhierarchygo-via-dt-strpdate) | `IndexHierarchyGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-call) | `IndexHierarchyGO.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-year) | `IndexHierarchyGO.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-year-month) | `IndexHierarchyGO.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-year-quarter) | `IndexHierarchyGO.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-month) | `IndexHierarchyGO.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-day) | `IndexHierarchyGO.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-hour) | `IndexHierarchyGO.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-minute) | `IndexHierarchyGO.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-second) | `IndexHierarchyGO.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-weekday) | `IndexHierarchyGO.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-quarter) | `IndexHierarchyGO.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-is-month-end) | `IndexHierarchyGO.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-is-month-start) | `IndexHierarchyGO.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-is-year-end) | `IndexHierarchyGO.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-is-year-start) | `IndexHierarchyGO.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-is-quarter-end) | `IndexHierarchyGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-is-quarter-start) | `IndexHierarchyGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-timetuple) | `IndexHierarchyGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-isoformat) | `IndexHierarchyGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-fromisoformat) | `IndexHierarchyGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-strftime) | `IndexHierarchyGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-strptime) | `IndexHierarchyGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_datetime.md#api-sig-indexhierarchygo-via-dt-strpdate) | `IndexHierarchyGO.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-overview-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-overview-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-accessor_values.html "Overview: IndexHierarchyGO: Accessor Values")
-[Next](index_hierarchy_go-accessor_string.html "Overview: IndexHierarchyGO: Accessor String")
+[Previous](index_hierarchy_go-accessor_values.md "Overview: IndexHierarchyGO: Accessor Values")
+[Next](index_hierarchy_go-accessor_string.md "Overview: IndexHierarchyGO: Accessor String")
 
 ---
 

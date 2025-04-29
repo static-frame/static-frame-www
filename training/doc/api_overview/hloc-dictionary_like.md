@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: HLoc: Dictionary-Like
 * [View page source](../_sources/api_overview/hloc-dictionary_like.rst.txt)
 
-[Previous](hloc-method.html "Overview: HLoc: Method")
-[Next](hloc-display.html "Overview: HLoc: Display")
+[Previous](hloc-method.md "Overview: HLoc: Method")
+[Next](hloc-display.md "Overview: HLoc: Display")
 
 ---
 
 # Overview: HLoc: Dictionary-Like[](#overview-hloc-dictionary-like "Link to this heading")
 
-[Detail: HLoc: Dictionary-Like](../api_detail/hloc-dictionary_like.html#api-detail-hloc-dictionary-like)
+[Detail: HLoc: Dictionary-Like](../api_detail/hloc-dictionary_like.md#api-detail-hloc-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/hloc-dictionary_like.html#api-sig-hloc-iter) | `HLoc.__iter__()` |  |
+| [Detail](../api_detail/hloc-dictionary_like.md#api-sig-hloc-iter) | `HLoc.__iter__()` |  |
 
-[HLoc](hloc.html#api-overview-hloc): [Constructor](hloc-constructor.html#api-overview-hloc-constructor) | [Attribute](hloc-attribute.html#api-overview-hloc-attribute) | [Method](hloc-method.html#api-overview-hloc-method) | [Dictionary-Like](#api-overview-hloc-dictionary-like) | [Display](hloc-display.html#api-overview-hloc-display)
+[HLoc](hloc.md#api-overview-hloc): [Constructor](hloc-constructor.md#api-overview-hloc-constructor) | [Attribute](hloc-attribute.md#api-overview-hloc-attribute) | [Method](hloc-method.md#api-overview-hloc-method) | [Dictionary-Like](#api-overview-hloc-dictionary-like) | [Display](hloc-display.md#api-overview-hloc-display)
 
-[Previous](hloc-method.html "Overview: HLoc: Method")
-[Next](hloc-display.html "Overview: HLoc: Display")
+[Previous](hloc-method.md "Overview: HLoc: Method")
+[Next](hloc-display.md "Overview: HLoc: Display")
 
 ---
 

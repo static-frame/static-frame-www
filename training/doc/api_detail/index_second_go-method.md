@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexSecondGO: Method
 * [View page source](../_sources/api_detail/index_second_go-method.rst.txt)
 
-[Previous](index_second_go-attribute.html "Detail: IndexSecondGO: Attribute")
-[Next](index_second_go-dictionary_like.html "Detail: IndexSecondGO: Dictionary-Like")
+[Previous](index_second_go-attribute.md "Detail: IndexSecondGO: Attribute")
+[Next](index_second_go-dictionary_like.md "Detail: IndexSecondGO: Dictionary-Like")
 
 ---
 
 # Detail: IndexSecondGO: Method[](#detail-indexsecondgo-method "Link to this heading")
 
-[Overview: IndexSecondGO: Method](../api_overview/index_second_go-method.html#api-overview-indexsecondgo-method)
+[Overview: IndexSecondGO: Method](../api_overview/index_second_go-method.md#api-overview-indexsecondgo-method)
 
 IndexSecondGO.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexSecondGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -419,7 +419,7 @@ IndexSecondGO.difference(*\*others*)[](#static_frame.IndexSecondGO.difference
     ```
 
 IndexSecondGO.dropfalsy()[](#static_frame.IndexSecondGO.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexSecondGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -438,7 +438,7 @@ IndexSecondGO.dropfalsy()[](#static_frame.IndexSecondGO.dropfalsy "Link to th
     ```
 
 IndexSecondGO.dropna()[](#static_frame.IndexSecondGO.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexSecondGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -518,7 +518,7 @@ IndexSecondGO.extend(*values*, */*)[](#static_frame.IndexSecondGO.extend "Lin
     ```
 
 IndexSecondGO.fillfalsy(*value*, */*)[](#static_frame.IndexSecondGO.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -537,7 +537,7 @@ IndexSecondGO.fillfalsy(*value*, */*)[](#static_frame.IndexSecondGO.fillfalsy
     ```
 
 IndexSecondGO.fillna(*value*, */*)[](#static_frame.IndexSecondGO.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -560,10 +560,10 @@ IndexSecondGO.fillna(*value*, */*)[](#static_frame.IndexSecondGO.fillna "Link
     ```
 
 IndexSecondGO.head(*count=5*, */*)[](#static_frame.IndexSecondGO.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -582,7 +582,7 @@ IndexSecondGO.head(*count=5*, */*)[](#static_frame.IndexSecondGO.head "Link t
     ```
 
 IndexSecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexSecondGO.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -706,7 +706,7 @@ IndexSecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#st
     ```
 
 IndexSecondGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexSecondGO.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1024,10 +1024,10 @@ IndexSecondGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#st
     ```
 
 IndexSecondGO.tail(*count=5*, */*)[](#static_frame.IndexSecondGO.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -1134,10 +1134,10 @@ IndexSecondGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#sta
 
     ```
 
-[IndexSecondGO](index_second_go.html#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.html#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-detail-indexsecondgo-attribute) | [Method](#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-detail-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.md#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-detail-indexsecondgo-attribute) | [Method](#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-detail-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-attribute.html "Detail: IndexSecondGO: Attribute")
-[Next](index_second_go-dictionary_like.html "Detail: IndexSecondGO: Dictionary-Like")
+[Previous](index_second_go-attribute.md "Detail: IndexSecondGO: Attribute")
+[Next](index_second_go-dictionary_like.md "Detail: IndexSecondGO: Dictionary-Like")
 
 ---
 

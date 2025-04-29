@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,38 +135,38 @@ API Detail
 * Overview: Index
 * [View page source](../_sources/api_overview/index.rst.txt)
 
-[Previous](quilt.html "Overview: Quilt")
-[Next](index_go.html "Overview: IndexGO")
+[Previous](quilt.md "Overview: Quilt")
+[Next](index_go.md "Overview: IndexGO")
 
 ---
 
 # Overview: Index[](#overview-index "Link to this heading")
 
-[Detail: Index](../api_detail/index.html#api-detail-index)
+[Detail: Index](../api_detail/index.md#api-detail-index)
 
 |  |  |
 | --- | --- |
-| [Constructor](index-constructor.html#api-overview-index-constructor) | Alternative constructors for creating instances. |
-| [Exporter](index-exporter.html#api-overview-index-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](index-attribute.html#api-overview-index-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](index-method.html#api-overview-index-method) | Methods for general functionality. |
-| [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](index-display.html#api-overview-index-display) | Methods for providing a text representation of the object. |
-| [Selector](index-selector.html#api-overview-index-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](index-iterator.html#api-overview-index-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | Underlying (magic) methods for binary operator implementation. |
-| [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | Underlying (magic) methods for unary operator implementation. |
-| [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | Interface for using NumPy functions on conatainers. |
-| [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
-| [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | Interface for employing string methods on container elements. |
-| [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
-| [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](index-constructor.md#api-overview-index-constructor) | Alternative constructors for creating instances. |
+| [Exporter](index-exporter.md#api-overview-index-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](index-attribute.md#api-overview-index-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](index-method.md#api-overview-index-method) | Methods for general functionality. |
+| [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](index-display.md#api-overview-index-display) | Methods for providing a text representation of the object. |
+| [Selector](index-selector.md#api-overview-index-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](index-iterator.md#api-overview-index-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | Underlying (magic) methods for binary operator implementation. |
+| [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | Underlying (magic) methods for unary operator implementation. |
+| [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | Interface for using NumPy functions on conatainers. |
+| [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
+| [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | Interface for employing string methods on container elements. |
+| [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
+| [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 
-[Index](#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](index-exporter.html#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](index-method.html#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | [Display](index-display.html#api-overview-index-display) | [Selector](index-selector.html#api-overview-index-selector) | [Iterator](index-iterator.html#api-overview-index-iterator) | [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](index-exporter.md#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](index-method.md#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | [Display](index-display.md#api-overview-index-display) | [Selector](index-selector.md#api-overview-index-selector) | [Iterator](index-iterator.md#api-overview-index-iterator) | [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](quilt.html "Overview: Quilt")
-[Next](index_go.html "Overview: IndexGO")
+[Previous](quilt.md "Overview: Quilt")
+[Next](index_go.md "Overview: IndexGO")
 
 ---
 

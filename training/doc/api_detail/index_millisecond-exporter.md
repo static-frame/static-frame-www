@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Detail: IndexMillisecond: Exporter
 * [View page source](../_sources/api_detail/index_millisecond-exporter.rst.txt)
 
-[Previous](index_millisecond-constructor.html "Detail: IndexMillisecond: Constructor")
-[Next](index_millisecond-attribute.html "Detail: IndexMillisecond: Attribute")
+[Previous](index_millisecond-constructor.md "Detail: IndexMillisecond: Constructor")
+[Next](index_millisecond-attribute.md "Detail: IndexMillisecond: Attribute")
 
 ---
 
 # Detail: IndexMillisecond: Exporter[](#detail-indexmillisecond-exporter "Link to this heading")
 
-[Overview: IndexMillisecond: Exporter](../api_overview/index_millisecond-exporter.html#api-overview-indexmillisecond-exporter)
+[Overview: IndexMillisecond: Exporter](../api_overview/index_millisecond-exporter.md#api-overview-indexmillisecond-exporter)
 
 IndexMillisecond.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexMillisecond.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Index`](index-selector.html#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 IndexMillisecond.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexMillisecond.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Index`](index-selector.html#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
@@ -204,10 +204,10 @@ IndexMillisecond.to\_series()[](#static_frame.IndexMillisecond.to_series "Lin
 IndexMillisecond.to\_visidata()[](#static_frame.IndexMillisecond.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[IndexMillisecond](index_millisecond.html#api-detail-indexmillisecond): [Constructor](index_millisecond-constructor.html#api-detail-indexmillisecond-constructor) | [Exporter](#api-detail-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.html#api-detail-indexmillisecond-attribute) | [Method](index_millisecond-method.html#api-detail-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.html#api-detail-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.html#api-detail-indexmillisecond-display) | [Selector](index_millisecond-selector.html#api-detail-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.html#api-detail-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.html#api-detail-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.html#api-detail-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.html#api-detail-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.html#api-detail-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.html#api-detail-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.html#api-detail-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.html#api-detail-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.html#api-detail-indexmillisecond-accessor-type-clinic)
+[IndexMillisecond](index_millisecond.md#api-detail-indexmillisecond): [Constructor](index_millisecond-constructor.md#api-detail-indexmillisecond-constructor) | [Exporter](#api-detail-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.md#api-detail-indexmillisecond-attribute) | [Method](index_millisecond-method.md#api-detail-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.md#api-detail-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.md#api-detail-indexmillisecond-display) | [Selector](index_millisecond-selector.md#api-detail-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.md#api-detail-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.md#api-detail-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.md#api-detail-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.md#api-detail-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.md#api-detail-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.md#api-detail-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.md#api-detail-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.md#api-detail-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.md#api-detail-indexmillisecond-accessor-type-clinic)
 
-[Previous](index_millisecond-constructor.html "Detail: IndexMillisecond: Constructor")
-[Next](index_millisecond-attribute.html "Detail: IndexMillisecond: Attribute")
+[Previous](index_millisecond-constructor.md "Detail: IndexMillisecond: Constructor")
+[Next](index_millisecond-attribute.md "Detail: IndexMillisecond: Attribute")
 
 ---
 

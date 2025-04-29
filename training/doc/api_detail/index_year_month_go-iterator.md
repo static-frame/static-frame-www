@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexYearMonthGO: Iterator
 * [View page source](../_sources/api_detail/index_year_month_go-iterator.rst.txt)
 
-[Previous](index_year_month_go-selector.html "Detail: IndexYearMonthGO: Selector")
-[Next](index_year_month_go-operator_binary.html "Detail: IndexYearMonthGO: Operator Binary")
+[Previous](index_year_month_go-selector.md "Detail: IndexYearMonthGO: Selector")
+[Next](index_year_month_go-operator_binary.md "Detail: IndexYearMonthGO: Operator Binary")
 
 ---
 
 # Detail: IndexYearMonthGO: Iterator[](#detail-indexyearmonthgo-iterator "Link to this heading")
 
-[Overview: IndexYearMonthGO: Iterator](../api_overview/index_year_month_go-iterator.html#api-overview-indexyearmonthgo-iterator)
+[Overview: IndexYearMonthGO: Iterator](../api_overview/index_year_month_go-iterator.md#api-overview-indexyearmonthgo-iterator)
 
 IndexYearMonthGO.iter\_label(*depth\_level*)
 :   iter\_label
@@ -163,7 +163,7 @@ IndexYearMonthGO.iter\_label(*depth\_level*)
 IndexYearMonthGO.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_label
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -186,7 +186,7 @@ IndexYearMonthGO.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*, 
 IndexYearMonthGO.iter\_label(*depth\_level).apply\_iter(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -211,7 +211,7 @@ IndexYearMonthGO.iter\_label(*depth\_level).apply\_iter(func*)
 IndexYearMonthGO.iter\_label(*depth\_level).apply\_iter\_items(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -236,7 +236,7 @@ IndexYearMonthGO.iter\_label(*depth\_level).apply\_iter\_items(func*)
 IndexYearMonthGO.iter\_label(*depth\_level).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -261,10 +261,10 @@ IndexYearMonthGO.iter\_label(*depth\_level).apply\_pool(func*, *\**, *dtype*, *n
 
     ```
 
-[IndexYearMonthGO](index_year_month_go.html#api-detail-indexyearmonthgo): [Constructor](index_year_month_go-constructor.html#api-detail-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.html#api-detail-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.html#api-detail-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.html#api-detail-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.html#api-detail-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.html#api-detail-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.html#api-detail-indexyearmonthgo-selector) | [Iterator](#api-detail-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.html#api-detail-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.html#api-detail-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.html#api-detail-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.html#api-detail-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.html#api-detail-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.html#api-detail-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.html#api-detail-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.html#api-detail-indexyearmonthgo-accessor-type-clinic)
+[IndexYearMonthGO](index_year_month_go.md#api-detail-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-detail-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.md#api-detail-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.md#api-detail-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-detail-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-detail-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.md#api-detail-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.md#api-detail-indexyearmonthgo-selector) | [Iterator](#api-detail-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-detail-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.md#api-detail-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-detail-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-detail-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.md#api-detail-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-detail-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.md#api-detail-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.md#api-detail-indexyearmonthgo-accessor-type-clinic)
 
-[Previous](index_year_month_go-selector.html "Detail: IndexYearMonthGO: Selector")
-[Next](index_year_month_go-operator_binary.html "Detail: IndexYearMonthGO: Operator Binary")
+[Previous](index_year_month_go-selector.md "Detail: IndexYearMonthGO: Selector")
+[Next](index_year_month_go-operator_binary.md "Detail: IndexYearMonthGO: Operator Binary")
 
 ---
 

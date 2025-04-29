@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Batch: Accessor String
 * [View page source](../_sources/api_detail/batch-accessor_string.rst.txt)
 
-[Previous](batch-accessor_datetime.html "Detail: Batch: Accessor Datetime")
-[Next](batch-accessor_transpose.html "Detail: Batch: Accessor Transpose")
+[Previous](batch-accessor_datetime.md "Detail: Batch: Accessor Datetime")
+[Next](batch-accessor_transpose.md "Detail: Batch: Accessor Transpose")
 
 ---
 
 # Detail: Batch: Accessor String[](#detail-batch-accessor-string "Link to this heading")
 
-[Overview: Batch: Accessor String](../api_overview/batch-accessor_string.html#api-overview-batch-accessor-string)
+[Overview: Batch: Accessor String](../api_overview/batch-accessor_string.md#api-overview-batch-accessor-string)
 
 Batch.via\_str.\_\_getitem\_\_(*key*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.__getitem__)
+    InterfaceBatchString.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.__getitem__)
     :   Return a container with the provided selection or slice of each element.
 
     ```
@@ -175,7 +175,7 @@ Batch.via\_str.capitalize
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.capitalize()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.capitalize)
+    InterfaceBatchString.capitalize()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.capitalize)
     :   Return a container with only the first character of each element capitalized.
 
     ```
@@ -202,7 +202,7 @@ Batch.via\_str.center(*width*, *fillchar*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.center(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.center)
+    InterfaceBatchString.center(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.center)
     :   Return a container with its elements centered in a string of length `width`.
 
     ```
@@ -229,7 +229,7 @@ Batch.via\_str.contains(*item*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.contains(*item*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.contains)
+    InterfaceBatchString.contains(*item*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.contains)
     :   Returns a container with the number of non-overlapping occurrences of substring sub in the optional range `start`, `end`.
 
     ```
@@ -256,7 +256,7 @@ Batch.via\_str.count(*sub*, *start*, *end*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.count(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.count)
+    InterfaceBatchString.count(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.count)
     :   Returns a container with the number of non-overlapping occurrences of substring sub in the optional range `start`, `end`.
 
     ```
@@ -283,7 +283,7 @@ Batch.via\_str.decode(*encoding*, *errors*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.decode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.decode)
+    InterfaceBatchString.decode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.decode)
     :   Apply str.decode() to each element. Elements must be bytes.
 
     ```
@@ -310,7 +310,7 @@ Batch.via\_str.encode(*encoding*, *errors*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.encode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.encode)
+    InterfaceBatchString.encode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.encode)
     :   Apply str.encode() to each element. Elements must be strings.
 
     ```
@@ -337,7 +337,7 @@ Batch.via\_str.endswith(*suffix*, *start*, *end*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.endswith(*suffix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.endswith)
+    InterfaceBatchString.endswith(*suffix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.endswith)
     :   Returns a container with the number of non-overlapping occurrences of substring `suffix` (or an iterable of suffixes) in the optional range `start`, `end`.
 
     ```
@@ -364,7 +364,7 @@ Batch.via\_str.find(*sub*, *start*, *end*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.find(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.find)
+    InterfaceBatchString.find(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.find)
     :   For each element, return the lowest index in the string where substring `sub` is found.
 
     ```
@@ -391,7 +391,7 @@ Batch.via\_str.format(*format*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.format(*format*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.format)
+    InterfaceBatchString.format(*format*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.format)
     :   For each element, return a string resulting from calling the format argument’s format method with the values in this container.
 
     ```
@@ -418,7 +418,7 @@ Batch.via\_str.index(*sub*, *start*, *end*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.index(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.index)
+    InterfaceBatchString.index(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.index)
     :   Like `find`, but raises `ValueError` when the substring is not found.
 
     ```
@@ -434,7 +434,7 @@ Batch.via\_str.isalnum
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.isalnum()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.isalnum)
+    InterfaceBatchString.isalnum()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.isalnum)
     :   Returns true for each element if all characters in the string are alphanumeric and there is at least one character, false otherwise.
 
     ```
@@ -461,7 +461,7 @@ Batch.via\_str.isalpha
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.isalpha()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.isalpha)
+    InterfaceBatchString.isalpha()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.isalpha)
     :   Returns true for each element if all characters in the string are alphabetic and there is at least one character, false otherwise.
 
     ```
@@ -488,7 +488,7 @@ Batch.via\_str.isdecimal
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.isdecimal()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.isdecimal)
+    InterfaceBatchString.isdecimal()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.isdecimal)
     :   For each element, return True if there are only decimal characters in the element.
 
     ```
@@ -515,7 +515,7 @@ Batch.via\_str.isdigit
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.isdigit()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.isdigit)
+    InterfaceBatchString.isdigit()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.isdigit)
     :   Returns true for each element if all characters in the string are digits and there is at least one character, false otherwise.
 
     ```
@@ -542,7 +542,7 @@ Batch.via\_str.islower
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.islower()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.islower)
+    InterfaceBatchString.islower()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.islower)
     :   Returns true for each element if all cased characters in the string are lowercase and there is at least one cased character, false otherwise.
 
     ```
@@ -569,7 +569,7 @@ Batch.via\_str.isnumeric
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.isnumeric()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.isnumeric)
+    InterfaceBatchString.isnumeric()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.isnumeric)
     :   For each element in self, return True if there are only numeric characters in the element.
 
     ```
@@ -596,7 +596,7 @@ Batch.via\_str.isspace
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.isspace()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.isspace)
+    InterfaceBatchString.isspace()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.isspace)
     :   Returns true for each element if there are only whitespace characters in the string and there is at least one character, false otherwise.
 
     ```
@@ -623,7 +623,7 @@ Batch.via\_str.istitle
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.istitle()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.istitle)
+    InterfaceBatchString.istitle()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.istitle)
     :   Returns true for each element if the element is a titlecased string and there is at least one character, false otherwise.
 
     ```
@@ -650,7 +650,7 @@ Batch.via\_str.isupper
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.isupper()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.isupper)
+    InterfaceBatchString.isupper()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.isupper)
     :   Returns true for each element if all cased characters in the string are uppercase and there is at least one character, false otherwise.
 
     ```
@@ -677,7 +677,7 @@ Batch.via\_str.ljust(*width*, *fillchar*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.ljust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.ljust)
+    InterfaceBatchString.ljust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.ljust)
     :   Return a container with its elements ljusted in a string of length `width`.
 
     ```
@@ -704,7 +704,7 @@ Batch.via\_str.len
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.len()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.len)
+    InterfaceBatchString.len()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.len)
     :   Return the length of the string.
 
     ```
@@ -731,7 +731,7 @@ Batch.via\_str.lower
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.lower()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.lower)
+    InterfaceBatchString.lower()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.lower)
     :   Return an array with the elements of self converted to lowercase.
 
     ```
@@ -758,7 +758,7 @@ Batch.via\_str.lstrip(*chars*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.lstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.lstrip)
+    InterfaceBatchString.lstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.lstrip)
     :   For each element, return a copy with the leading characters removed.
 
     ```
@@ -785,7 +785,7 @@ Batch.via\_str.partition(*sep*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.partition(*sep*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.partition)
+    InterfaceBatchString.partition(*sep*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.partition)
     :   Partition each element around `sep`.
 
     ```
@@ -812,7 +812,7 @@ Batch.via\_str.replace(*old*, *new*, *count*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.replace(*old*, *new*, *count=-1*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.replace)
+    InterfaceBatchString.replace(*old*, *new*, *count=-1*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.replace)
     :   Return a container with its elements replaced in a string of length `width`.
 
     ```
@@ -839,7 +839,7 @@ Batch.via\_str.rfind(*sub*, *start*, *end*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.rfind(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.rfind)
+    InterfaceBatchString.rfind(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.rfind)
     :   For each element, return the highest index in the string where substring `sub` is found, such that sub is contained within `start`, `end`.
 
     ```
@@ -866,7 +866,7 @@ Batch.via\_str.rindex(*sub*, *start*, *end*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.rindex(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.rindex)
+    InterfaceBatchString.rindex(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.rindex)
     :   Like `rfind`, but raises `ValueError` when the substring `sub` is not found.
 
     ```
@@ -882,7 +882,7 @@ Batch.via\_str.rjust(*width*, *fillchar*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.rjust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.rjust)
+    InterfaceBatchString.rjust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.rjust)
     :   Return a container with its elements rjusted in a string of length `width`.
 
     ```
@@ -909,7 +909,7 @@ Batch.via\_str.rpartition(*sep*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.rpartition(*sep*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.rpartition)
+    InterfaceBatchString.rpartition(*sep*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.rpartition)
     :   Partition (split) each element around the right-most separator.
 
     ```
@@ -936,7 +936,7 @@ Batch.via\_str.rsplit(*sep*, *maxsplit*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.rsplit(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.rsplit)
+    InterfaceBatchString.rsplit(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.rsplit)
     :   For each element, return a tuple of the words in the string, using sep as the delimiter string.
 
     ```
@@ -963,7 +963,7 @@ Batch.via\_str.rstrip(*chars*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.rstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.rstrip)
+    InterfaceBatchString.rstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.rstrip)
     :   For each element, return a copy with the trailing characters removed.
 
     ```
@@ -990,7 +990,7 @@ Batch.via\_str.split(*sep*, *maxsplit*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.split(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.split)
+    InterfaceBatchString.split(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.split)
     :   For each element, return a tuple of the words in the string, using sep as the delimiter string.
 
     ```
@@ -1017,7 +1017,7 @@ Batch.via\_str.startswith(*prefix*, *start*, *end*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.startswith(*prefix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.startswith)
+    InterfaceBatchString.startswith(*prefix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.startswith)
     :   Returns a container with the number of non-overlapping occurrences of substring prefix (or an iterable of prefixes) in the optional range `start`, `end`.
 
     ```
@@ -1044,7 +1044,7 @@ Batch.via\_str.strip(*chars*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.strip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.strip)
+    InterfaceBatchString.strip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.strip)
     :   For each element, return a copy with the leading and trailing characters removed.
 
     ```
@@ -1071,7 +1071,7 @@ Batch.via\_str.swapcase
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.swapcase()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.swapcase)
+    InterfaceBatchString.swapcase()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.swapcase)
     :   Return a container with uppercase characters converted to lowercase and vice versa.
 
     ```
@@ -1098,7 +1098,7 @@ Batch.via\_str.title
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.title()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.title)
+    InterfaceBatchString.title()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.title)
     :   Return a container with uppercase characters converted to lowercase and vice versa.
 
     ```
@@ -1125,7 +1125,7 @@ Batch.via\_str.upper
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.upper()[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.upper)
+    InterfaceBatchString.upper()[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.upper)
     :   Return a container with uppercase characters converted to lowercase and vice versa.
 
     ```
@@ -1152,7 +1152,7 @@ Batch.via\_str.zfill(*width*)
 :   Batch.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceBatchString.zfill(*width*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceBatchString.zfill)
+    InterfaceBatchString.zfill(*width*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceBatchString.zfill)
     :   Return the string left-filled with zeros.
 
     ```
@@ -1175,10 +1175,10 @@ Batch.via\_str.zfill(*width*)
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-accessor_datetime.html "Detail: Batch: Accessor Datetime")
-[Next](batch-accessor_transpose.html "Detail: Batch: Accessor Transpose")
+[Previous](batch-accessor_datetime.md "Detail: Batch: Accessor Datetime")
+[Next](batch-accessor_transpose.md "Detail: Batch: Accessor Transpose")
 
 ---
 

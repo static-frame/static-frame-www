@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: IndexNanosecondGO: Accessor Hashlib
 * [View page source](../_sources/api_overview/index_nanosecond_go-accessor_hashlib.rst.txt)
 
-[Previous](index_nanosecond_go-accessor_regular_expression.html "Overview: IndexNanosecondGO: Accessor Regular Expression")
-[Next](index_nanosecond_go-accessor_type_clinic.html "Overview: IndexNanosecondGO: Accessor Type Clinic")
+[Previous](index_nanosecond_go-accessor_regular_expression.md "Overview: IndexNanosecondGO: Accessor Regular Expression")
+[Next](index_nanosecond_go-accessor_type_clinic.md "Overview: IndexNanosecondGO: Accessor Type Clinic")
 
 ---
 
 # Overview: IndexNanosecondGO: Accessor Hashlib[](#overview-indexnanosecondgo-accessor-hashlib "Link to this heading")
 
-[Detail: IndexNanosecondGO: Accessor Hashlib](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-detail-indexnanosecondgo-accessor-hashlib)
+[Detail: IndexNanosecondGO: Accessor Hashlib](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-detail-indexnanosecondgo-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-to-bytes) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-md5) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-sha256) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-sha512) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-sha3-256) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-sha3-512) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-shake-128) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-shake-256) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-blake2b) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.html#api-sig-indexnanosecondgo-via-hashlib-blake2s) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-to-bytes) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-md5) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-sha256) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-sha512) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-sha3-256) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-sha3-512) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-shake-128) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-shake-256) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-blake2b) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_nanosecond_go-accessor_hashlib.md#api-sig-indexnanosecondgo-via-hashlib-blake2s) | `IndexNanosecondGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[IndexNanosecondGO](index_nanosecond_go.html#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.html#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.html#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.html#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.html#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.html#api-overview-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.html#api-overview-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.html#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.html#api-overview-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.html#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.html#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.html#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.html#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.html#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.html#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.html#api-overview-indexnanosecondgo-accessor-type-clinic)
+[IndexNanosecondGO](index_nanosecond_go.md#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.md#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.md#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.md#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.md#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.md#api-overview-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.md#api-overview-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.md#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.md#api-overview-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.md#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.md#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.md#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.md#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.md#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.md#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.md#api-overview-indexnanosecondgo-accessor-type-clinic)
 
-[Previous](index_nanosecond_go-accessor_regular_expression.html "Overview: IndexNanosecondGO: Accessor Regular Expression")
-[Next](index_nanosecond_go-accessor_type_clinic.html "Overview: IndexNanosecondGO: Accessor Type Clinic")
+[Previous](index_nanosecond_go-accessor_regular_expression.md "Overview: IndexNanosecondGO: Accessor Regular Expression")
+[Next](index_nanosecond_go-accessor_type_clinic.md "Overview: IndexNanosecondGO: Accessor Type Clinic")
 
 ---
 

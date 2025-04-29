@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: ILoc: Attribute
 * [View page source](../_sources/api_overview/iloc-attribute.rst.txt)
 
-[Previous](iloc-constructor.html "Overview: ILoc: Constructor")
-[Next](iloc-display.html "Overview: ILoc: Display")
+[Previous](iloc-constructor.md "Overview: ILoc: Constructor")
+[Next](iloc-display.md "Overview: ILoc: Display")
 
 ---
 
 # Overview: ILoc: Attribute[](#overview-iloc-attribute "Link to this heading")
 
-[Detail: ILoc: Attribute](../api_detail/iloc-attribute.html#api-detail-iloc-attribute)
+[Detail: ILoc: Attribute](../api_detail/iloc-attribute.md#api-detail-iloc-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/iloc-attribute.html#api-sig-iloc-static) | `ILoc.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/iloc-attribute.html#api-sig-iloc-key) | `ILoc.key` | Built-in immutable sequence. If no argument is given, the constructor returns an… |
+| [Detail](../api_detail/iloc-attribute.md#api-sig-iloc-static) | `ILoc.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/iloc-attribute.md#api-sig-iloc-key) | `ILoc.key` | Built-in immutable sequence. If no argument is given, the constructor returns an… |
 
-[ILoc](iloc.html#api-overview-iloc): [Constructor](iloc-constructor.html#api-overview-iloc-constructor) | [Attribute](#api-overview-iloc-attribute) | [Display](iloc-display.html#api-overview-iloc-display)
+[ILoc](iloc.md#api-overview-iloc): [Constructor](iloc-constructor.md#api-overview-iloc-constructor) | [Attribute](#api-overview-iloc-attribute) | [Display](iloc-display.md#api-overview-iloc-display)
 
-[Previous](iloc-constructor.html "Overview: ILoc: Constructor")
-[Next](iloc-display.html "Overview: ILoc: Display")
+[Previous](iloc-constructor.md "Overview: ILoc: Constructor")
+[Next](iloc-display.md "Overview: ILoc: Display")
 
 ---
 

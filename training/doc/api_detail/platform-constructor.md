@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,21 +135,21 @@ API Detail
 * Detail: Platform: Constructor
 * [View page source](../_sources/api_detail/platform-constructor.rst.txt)
 
-[Previous](memory_display-display.html "Detail: MemoryDisplay: Display")
-[Next](platform-exporter.html "Detail: Platform: Exporter")
+[Previous](memory_display-display.md "Detail: MemoryDisplay: Display")
+[Next](platform-exporter.md "Detail: Platform: Exporter")
 
 ---
 
 # Detail: Platform: Constructor[](#detail-platform-constructor "Link to this heading")
 
-[Overview: Platform: Constructor](../api_overview/platform-constructor.html#api-overview-platform-constructor)
+[Overview: Platform: Constructor](../api_overview/platform-constructor.md#api-overview-platform-constructor)
 
 Platform.\_\_init\_\_()[](#static_frame.Platform.__init__ "Link to this definition")
 
-[Platform](platform.html#api-detail-platform): [Constructor](#api-detail-platform-constructor) | [Exporter](platform-exporter.html#api-detail-platform-exporter) | [Display](platform-display.html#api-detail-platform-display)
+[Platform](platform.md#api-detail-platform): [Constructor](#api-detail-platform-constructor) | [Exporter](platform-exporter.md#api-detail-platform-exporter) | [Display](platform-display.md#api-detail-platform-display)
 
-[Previous](memory_display-display.html "Detail: MemoryDisplay: Display")
-[Next](platform-exporter.html "Detail: Platform: Exporter")
+[Previous](memory_display-display.md "Detail: MemoryDisplay: Display")
+[Next](platform-exporter.md "Detail: Platform: Exporter")
 
 ---
 

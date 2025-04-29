@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Yarn: Display
 * [View page source](../_sources/api_detail/yarn-display.rst.txt)
 
-[Previous](yarn-dictionary_like.html "Detail: Yarn: Dictionary-Like")
-[Next](yarn-selector.html "Detail: Yarn: Selector")
+[Previous](yarn-dictionary_like.md "Detail: Yarn: Dictionary-Like")
+[Next](yarn-selector.md "Detail: Yarn: Selector")
 
 ---
 
 # Detail: Yarn: Display[](#detail-yarn-display "Link to this heading")
 
-[Overview: Yarn: Display](../api_overview/yarn-display.html#api-overview-yarn-display)
+[Overview: Yarn: Display](../api_overview/yarn-display.md#api-overview-yarn-display)
 
 Yarn.interface[](#Yarn.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -232,11 +232,11 @@ Yarn.\_\_str\_\_()[](#static_frame.Yarn.__str__ "Link to this definition")
 
     ```
 
-Yarn.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.display)[](#static_frame.Yarn.display "Link to this definition")
+Yarn.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.display)[](#static_frame.Yarn.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -260,7 +260,7 @@ Yarn.display\_tall(*config=None*, */*)[](#static_frame.Yarn.display_tall "Lin
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -279,7 +279,7 @@ Yarn.display\_wide(*config=None*, */*)[](#static_frame.Yarn.display_wide "Lin
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -294,10 +294,10 @@ Yarn.display\_wide(*config=None*, */*)[](#static_frame.Yarn.display_wide "Lin
 
     ```
 
-[Yarn](yarn.html#api-detail-yarn): [Constructor](yarn-constructor.html#api-detail-yarn-constructor) | [Exporter](yarn-exporter.html#api-detail-yarn-exporter) | [Attribute](yarn-attribute.html#api-detail-yarn-attribute) | [Method](yarn-method.html#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like) | [Display](#api-detail-yarn-display) | [Selector](yarn-selector.html#api-detail-yarn-selector) | [Iterator](yarn-iterator.html#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
-[Previous](yarn-dictionary_like.html "Detail: Yarn: Dictionary-Like")
-[Next](yarn-selector.html "Detail: Yarn: Selector")
+[Previous](yarn-dictionary_like.md "Detail: Yarn: Dictionary-Like")
+[Next](yarn-selector.md "Detail: Yarn: Selector")
 
 ---
 

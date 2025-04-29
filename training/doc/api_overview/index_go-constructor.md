@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexGO: Constructor
 * [View page source](../_sources/api_overview/index_go-constructor.rst.txt)
 
-[Previous](index-accessor_type_clinic.html "Overview: Index: Accessor Type Clinic")
-[Next](index_go-exporter.html "Overview: IndexGO: Exporter")
+[Previous](index-accessor_type_clinic.md "Overview: Index: Accessor Type Clinic")
+[Next](index_go-exporter.md "Overview: IndexGO: Exporter")
 
 ---
 
 # Overview: IndexGO: Constructor[](#overview-indexgo-constructor "Link to this heading")
 
-[Detail: IndexGO: Constructor](../api_detail/index_go-constructor.html#api-detail-indexgo-constructor)
+[Detail: IndexGO: Constructor](../api_detail/index_go-constructor.md#api-detail-indexgo-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_go-constructor.html#api-sig-indexgo-init) | `IndexGO.__init__(labels, *, loc_is_iloc, name, dtype)` | Initializer. Args: labels: An iterable of unique, hashable values, or another In… |
-| [Detail](../api_detail/index_go-constructor.html#api-sig-indexgo-from-labels) | `IndexGO.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
-| [Detail](../api_detail/index_go-constructor.html#api-sig-indexgo-from-pandas) | `IndexGO.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-init) | `IndexGO.__init__(labels, *, loc_is_iloc, name, dtype)` | Initializer. Args: labels: An iterable of unique, hashable values, or another In… |
+| [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-from-labels) | `IndexGO.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
+| [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-from-pandas) | `IndexGO.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
 
-[IndexGO](index_go.html#api-overview-indexgo): [Constructor](#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.html#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.html#api-overview-indexgo-attribute) | [Method](index_go-method.html#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-overview-indexgo-dictionary-like) | [Display](index_go-display.html#api-overview-indexgo-display) | [Selector](index_go-selector.html#api-overview-indexgo-selector) | [Iterator](index_go-iterator.html#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-overview-indexgo): [Constructor](#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | [Method](index_go-method.md#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 
-[Previous](index-accessor_type_clinic.html "Overview: Index: Accessor Type Clinic")
-[Next](index_go-exporter.html "Overview: IndexGO: Exporter")
+[Previous](index-accessor_type_clinic.md "Overview: Index: Accessor Type Clinic")
+[Next](index_go-exporter.md "Overview: IndexGO: Exporter")
 
 ---
 

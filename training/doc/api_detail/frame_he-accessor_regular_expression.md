@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: FrameHE: Accessor Regular Expression
 * [View page source](../_sources/api_detail/frame_he-accessor_regular_expression.rst.txt)
 
-[Previous](frame_he-accessor_fill_value.html "Detail: FrameHE: Accessor Fill Value")
-[Next](frame_he-accessor_hashlib.html "Detail: FrameHE: Accessor Hashlib")
+[Previous](frame_he-accessor_fill_value.md "Detail: FrameHE: Accessor Fill Value")
+[Next](frame_he-accessor_hashlib.md "Detail: FrameHE: Accessor Hashlib")
 
 ---
 
 # Detail: FrameHE: Accessor Regular Expression[](#detail-framehe-accessor-regular-expression "Link to this heading")
 
-[Overview: FrameHE: Accessor Regular Expression](../api_overview/frame_he-accessor_regular_expression.html#api-overview-framehe-accessor-regular-expression)
+[Overview: FrameHE: Accessor Regular Expression](../api_overview/frame_he-accessor_regular_expression.md#api-overview-framehe-accessor-regular-expression)
 
 FrameHE.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 :   via\_re *= <function Frame.via\_re>*
 
-    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.search)
+    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.search)
     :   Scan through string looking for the first location where this regular expression produces a match and return True, else False. Note that this is different from finding a zero-length match at some point in the string.
 
         Parameters:
@@ -180,7 +180,7 @@ FrameHE.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 FrameHE.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 :   via\_re *= <function Frame.via\_re>*
 
-    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.match)
+    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.match)
     :   If zero or more characters at the beginning of string match this regular expression return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -213,7 +213,7 @@ FrameHE.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 FrameHE.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 :   via\_re *= <function Frame.via\_re>*
 
-    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.fullmatch)
+    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.fullmatch)
     :   If the whole string matches this regular expression, return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -246,7 +246,7 @@ FrameHE.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 FrameHE.via\_re(*pattern*, *flags).split(maxsplit*)
 :   via\_re *= <function Frame.via\_re>*
 
-    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.split)
+    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.split)
     :   Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting tuple.
 
         Parameters:
@@ -278,7 +278,7 @@ FrameHE.via\_re(*pattern*, *flags).split(maxsplit*)
 FrameHE.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 :   via\_re *= <function Frame.via\_re>*
 
-    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.findall)
+    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.findall)
     :   Return all non-overlapping matches of pattern in string, as a tuple of strings. The string is scanned left-to-right, and matches are returned in the order found. If one or more groups are present in the pattern, return a tuple of groups; this will be a tuple of tuples if the pattern has more than one group. Empty matches are included in the result.
 
         Parameters:
@@ -311,7 +311,7 @@ FrameHE.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 FrameHE.via\_re(*pattern*, *flags).sub(repl*, *count*)
 :   via\_re *= <function Frame.via\_re>*
 
-    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.sub)
+    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.sub)
     :   Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement `repl`. If the pattern is not found, the string is returned unchanged.
 
         Parameters:
@@ -344,7 +344,7 @@ FrameHE.via\_re(*pattern*, *flags).sub(repl*, *count*)
 FrameHE.via\_re(*pattern*, *flags).subn(repl*, *count*)
 :   via\_re *= <function Frame.via\_re>*
 
-    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.subn)
+    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.subn)
     :   Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_subs\_made).
 
         Parameters:
@@ -374,10 +374,10 @@ FrameHE.via\_re(*pattern*, *flags).subn(repl*, *count*)
 
     ```
 
-[FrameHE](frame_he.html#api-detail-framehe): [Constructor](frame_he-constructor.html#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.html#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.html#api-detail-framehe-attribute) | [Method](frame_he-method.html#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-detail-framehe-dictionary-like) | [Display](frame_he-display.html#api-detail-framehe-display) | [Assignment](frame_he-assignment.html#api-detail-framehe-assignment) | [Selector](frame_he-selector.html#api-detail-framehe-selector) | [Iterator](frame_he-iterator.html#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-detail-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.md#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.md#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](frame_he-assignment.md#api-detail-framehe-assignment) | [Selector](frame_he-selector.md#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)
 
-[Previous](frame_he-accessor_fill_value.html "Detail: FrameHE: Accessor Fill Value")
-[Next](frame_he-accessor_hashlib.html "Detail: FrameHE: Accessor Hashlib")
+[Previous](frame_he-accessor_fill_value.md "Detail: FrameHE: Accessor Fill Value")
+[Next](frame_he-accessor_hashlib.md "Detail: FrameHE: Accessor Hashlib")
 
 ---
 

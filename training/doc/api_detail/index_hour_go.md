@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,38 +136,38 @@ API Detail
 * Detail: IndexHourGO
 * [View page source](../_sources/api_detail/index_hour_go.rst.txt)
 
-[Previous](index_hour.html "Detail: IndexHour")
-[Next](index_second.html "Detail: IndexSecond")
+[Previous](index_hour.md "Detail: IndexHour")
+[Next](index_second.md "Detail: IndexSecond")
 
 ---
 
 # Detail: IndexHourGO[](#detail-indexhourgo "Link to this heading")
 
-[Overview: IndexHourGO](../api_overview/index_hour_go.html#api-overview-indexhourgo)
+[Overview: IndexHourGO](../api_overview/index_hour_go.md#api-overview-indexhourgo)
 
-*class* IndexHourGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.html#IndexHourGO)[](#static_frame.IndexHourGO "Link to this definition")
+*class* IndexHourGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexHourGO)[](#static_frame.IndexHourGO "Link to this definition")
 
-* [Constructor](index_hour_go-constructor.html#api-detail-indexhourgo-constructor): Alternative constructors for creating instances.
-* [Exporter](index_hour_go-exporter.html#api-detail-indexhourgo-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](index_hour_go-attribute.html#api-detail-indexhourgo-attribute): Attributes for retrieving basic characteristics.
-* [Method](index_hour_go-method.html#api-detail-indexhourgo-method): Methods for general functionality.
-* [Dictionary-Like](index_hour_go-dictionary_like.html#api-detail-indexhourgo-dictionary-like): All dictionary-like methods and iterators.
-* [Display](index_hour_go-display.html#api-detail-indexhourgo-display): Methods for providing a text representation of the object.
-* [Selector](index_hour_go-selector.html#api-detail-indexhourgo-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](index_hour_go-iterator.html#api-detail-indexhourgo-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Operator Binary](index_hour_go-operator_binary.html#api-detail-indexhourgo-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](index_hour_go-operator_unary.html#api-detail-indexhourgo-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](index_hour_go-accessor_values.html#api-detail-indexhourgo-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](index_hour_go-accessor_datetime.html#api-detail-indexhourgo-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](index_hour_go-accessor_string.html#api-detail-indexhourgo-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-detail-indexhourgo-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-detail-indexhourgo-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-detail-indexhourgo-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor): Alternative constructors for creating instances.
+* [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](index_hour_go-attribute.md#api-detail-indexhourgo-attribute): Attributes for retrieving basic characteristics.
+* [Method](index_hour_go-method.md#api-detail-indexhourgo-method): Methods for general functionality.
+* [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like): All dictionary-like methods and iterators.
+* [Display](index_hour_go-display.md#api-detail-indexhourgo-display): Methods for providing a text representation of the object.
+* [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](index_hour_go-operator_unary.md#api-detail-indexhourgo-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-detail-indexhourgo-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-detail-indexhourgo-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[IndexHourGO](#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.html#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-detail-indexhourgo-accessor-type-clinic)
+[IndexHourGO](#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-detail-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour.html "Detail: IndexHour")
-[Next](index_second.html "Detail: IndexSecond")
+[Previous](index_hour.md "Detail: IndexHour")
+[Next](index_second.md "Detail: IndexSecond")
 
 ---
 

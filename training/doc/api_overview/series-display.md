@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Series: Display
 * [View page source](../_sources/api_overview/series-display.rst.txt)
 
-[Previous](series-dictionary_like.html "Overview: Series: Dictionary-Like")
-[Next](series-assignment.html "Overview: Series: Assignment")
+[Previous](series-dictionary_like.md "Overview: Series: Dictionary-Like")
+[Next](series-assignment.md "Overview: Series: Assignment")
 
 ---
 
 # Overview: Series: Display[](#overview-series-display "Link to this heading")
 
-[Detail: Series: Display](../api_detail/series-display.html#api-detail-series-display)
+[Detail: Series: Display](../api_detail/series-display.md#api-detail-series-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-display.html#api-sig-series-interface) | [`Series.interface`](../api_detail/series-display.html#Series.interface "Series.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/series-display.html#api-sig-series-repr) | `Series.__repr__()` |  |
-| [Detail](../api_detail/series-display.html#api-sig-series-str) | `Series.__str__()` | Return str(self). |
-| [Detail](../api_detail/series-display.html#api-sig-series-display) | `Series.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/series-display.html#api-sig-series-display-tall) | `Series.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/series-display.html#api-sig-series-display-wide) | `Series.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/series-display.md#api-sig-series-interface) | [`Series.interface`](../api_detail/series-display.md#Series.interface "Series.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/series-display.md#api-sig-series-repr) | `Series.__repr__()` |  |
+| [Detail](../api_detail/series-display.md#api-sig-series-str) | `Series.__str__()` | Return str(self). |
+| [Detail](../api_detail/series-display.md#api-sig-series-display) | `Series.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/series-display.md#api-sig-series-display-tall) | `Series.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/series-display.md#api-sig-series-display-wide) | `Series.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-dictionary_like.html "Overview: Series: Dictionary-Like")
-[Next](series-assignment.html "Overview: Series: Assignment")
+[Previous](series-dictionary_like.md "Overview: Series: Dictionary-Like")
+[Next](series-assignment.md "Overview: Series: Assignment")
 
 ---
 

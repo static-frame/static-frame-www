@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: Batch: Accessor Fill Value
 * [View page source](../_sources/api_detail/batch-accessor_fill_value.rst.txt)
 
-[Previous](batch-accessor_transpose.html "Detail: Batch: Accessor Transpose")
-[Next](batch-accessor_regular_expression.html "Detail: Batch: Accessor Regular Expression")
+[Previous](batch-accessor_transpose.md "Detail: Batch: Accessor Transpose")
+[Next](batch-accessor_regular_expression.md "Detail: Batch: Accessor Regular Expression")
 
 ---
 
 # Detail: Batch: Accessor Fill Value[](#detail-batch-accessor-fill-value "Link to this heading")
 
-[Overview: Batch: Accessor Fill Value](../api_overview/batch-accessor_fill_value.html#api-overview-batch-accessor-fill-value)
+[Overview: Batch: Accessor Fill Value](../api_overview/batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value)
 
 Batch.via\_fill\_value(fill\_value).loc
-:   Batch.via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   Batch.via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
     InterfaceFillValue.loc
     :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
@@ -167,9 +167,9 @@ Batch.via\_fill\_value(fill\_value).loc
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_getitem\_\_(key*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__getitem__)
+    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__getitem__)
     :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
 
     ```
@@ -187,7 +187,7 @@ Batch.via\_fill\_value(*fill\_value).\_\_getitem\_\_(key*)
     ```
 
 Batch.via\_fill\_value(fill\_value).via\_T
-:   Batch.via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   Batch.via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
     InterfaceFillValue.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
@@ -210,9 +210,9 @@ Batch.via\_fill\_value(fill\_value).via\_T
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__add__)
+    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__add__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -232,9 +232,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__sub__)
+    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__sub__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -254,9 +254,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mul__)
+    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mul__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -276,9 +276,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__truediv__)
+    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__truediv__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -298,9 +298,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__floordiv__)
+    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__floordiv__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -320,9 +320,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mod__)
+    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mod__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -342,9 +342,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__pow__)
+    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__pow__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -364,9 +364,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lshift__)
+    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lshift__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -384,9 +384,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rshift__)
+    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rshift__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -404,9 +404,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__and__)
+    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__and__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), ('j', sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w'))))
@@ -426,9 +426,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__xor__)
+    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__xor__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), ('j', sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w'))))
@@ -448,9 +448,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__or__)
+    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__or__)
     :   Return self|value.
 
     ```
@@ -471,9 +471,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lt__)
+    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lt__)
     :   Return self<value.
 
     ```
@@ -494,9 +494,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__le__)
+    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__le__)
     :   Return self<=value.
 
     ```
@@ -517,9 +517,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__eq__)
+    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__eq__)
     :   Return self==value.
 
     ```
@@ -540,9 +540,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ne__)
+    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ne__)
     :   Return self!=value.
 
     ```
@@ -563,9 +563,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__gt__)
+    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__gt__)
     :   Return self>value.
 
     ```
@@ -586,9 +586,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ge__)
+    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ge__)
     :   Return self>=value.
 
     ```
@@ -609,9 +609,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__radd__)
+    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__radd__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -631,9 +631,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rsub__)
+    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rsub__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -653,9 +653,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rmul__)
+    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rmul__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -675,9 +675,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rtruediv__)
+    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rtruediv__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -697,9 +697,9 @@ Batch.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
     ```
 
 Batch.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
-:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.html#Batch.via_fill_value)
+:   via\_fill\_value *= <function Batch.via\_fill\_value>*[[source]](../_modules/static_frame/core/batch.md#Batch.via_fill_value)
 
-    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rfloordiv__)
+    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rfloordiv__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')), ('j', sf.Frame.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y'))))
@@ -718,10 +718,10 @@ Batch.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-accessor_transpose.html "Detail: Batch: Accessor Transpose")
-[Next](batch-accessor_regular_expression.html "Detail: Batch: Accessor Regular Expression")
+[Previous](batch-accessor_transpose.md "Detail: Batch: Accessor Transpose")
+[Next](batch-accessor_regular_expression.md "Detail: Batch: Accessor Regular Expression")
 
 ---
 

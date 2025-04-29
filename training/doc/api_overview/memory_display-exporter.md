@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: MemoryDisplay: Exporter
 * [View page source](../_sources/api_overview/memory_display-exporter.rst.txt)
 
-[Previous](memory_display-constructor.html "Overview: MemoryDisplay: Constructor")
-[Next](memory_display-display.html "Overview: MemoryDisplay: Display")
+[Previous](memory_display-constructor.md "Overview: MemoryDisplay: Constructor")
+[Next](memory_display-display.md "Overview: MemoryDisplay: Display")
 
 ---
 
 # Overview: MemoryDisplay: Exporter[](#overview-memorydisplay-exporter "Link to this heading")
 
-[Detail: MemoryDisplay: Exporter](../api_detail/memory_display-exporter.html#api-detail-memorydisplay-exporter)
+[Detail: MemoryDisplay: Exporter](../api_detail/memory_display-exporter.md#api-detail-memorydisplay-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/memory_display-exporter.html#api-sig-memorydisplay-to-frame) | `MemoryDisplay.to_frame()` | Return a Frame of byte counts. |
+| [Detail](../api_detail/memory_display-exporter.md#api-sig-memorydisplay-to-frame) | `MemoryDisplay.to_frame()` | Return a Frame of byte counts. |
 
-[MemoryDisplay](memory_display.html#api-overview-memorydisplay): [Constructor](memory_display-constructor.html#api-overview-memorydisplay-constructor) | [Exporter](#api-overview-memorydisplay-exporter) | [Display](memory_display-display.html#api-overview-memorydisplay-display)
+[MemoryDisplay](memory_display.md#api-overview-memorydisplay): [Constructor](memory_display-constructor.md#api-overview-memorydisplay-constructor) | [Exporter](#api-overview-memorydisplay-exporter) | [Display](memory_display-display.md#api-overview-memorydisplay-display)
 
-[Previous](memory_display-constructor.html "Overview: MemoryDisplay: Constructor")
-[Next](memory_display-display.html "Overview: MemoryDisplay: Display")
+[Previous](memory_display-constructor.md "Overview: MemoryDisplay: Constructor")
+[Next](memory_display-display.md "Overview: MemoryDisplay: Display")
 
 ---
 

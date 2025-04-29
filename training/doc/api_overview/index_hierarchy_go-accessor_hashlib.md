@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: IndexHierarchyGO: Accessor Hashlib
 * [View page source](../_sources/api_overview/index_hierarchy_go-accessor_hashlib.rst.txt)
 
-[Previous](index_hierarchy_go-accessor_regular_expression.html "Overview: IndexHierarchyGO: Accessor Regular Expression")
-[Next](index_hierarchy_go-accessor_type_clinic.html "Overview: IndexHierarchyGO: Accessor Type Clinic")
+[Previous](index_hierarchy_go-accessor_regular_expression.md "Overview: IndexHierarchyGO: Accessor Regular Expression")
+[Next](index_hierarchy_go-accessor_type_clinic.md "Overview: IndexHierarchyGO: Accessor Type Clinic")
 
 ---
 
 # Overview: IndexHierarchyGO: Accessor Hashlib[](#overview-indexhierarchygo-accessor-hashlib "Link to this heading")
 
-[Detail: IndexHierarchyGO: Accessor Hashlib](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-detail-indexhierarchygo-accessor-hashlib)
+[Detail: IndexHierarchyGO: Accessor Hashlib](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-to-bytes) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-md5) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-sha256) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-sha512) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-sha3-256) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-sha3-512) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-shake-128) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-shake-256) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-blake2b) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.html#api-sig-indexhierarchygo-via-hashlib-blake2s) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-to-bytes) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-md5) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-sha256) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-sha512) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-sha3-256) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-sha3-512) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-shake-128) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-shake-256) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-blake2b) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_hashlib.md#api-sig-indexhierarchygo-via-hashlib-blake2s) | `IndexHierarchyGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-overview-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-overview-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-accessor_regular_expression.html "Overview: IndexHierarchyGO: Accessor Regular Expression")
-[Next](index_hierarchy_go-accessor_type_clinic.html "Overview: IndexHierarchyGO: Accessor Type Clinic")
+[Previous](index_hierarchy_go-accessor_regular_expression.md "Overview: IndexHierarchyGO: Accessor Regular Expression")
+[Next](index_hierarchy_go-accessor_type_clinic.md "Overview: IndexHierarchyGO: Accessor Type Clinic")
 
 ---
 

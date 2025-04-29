@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: ClinicResult: Constructor
 * [View page source](../_sources/api_overview/clinic_result-constructor.rst.txt)
 
-[Previous](call_guard-method.html "Overview: CallGuard: Method")
-[Next](clinic_result-exporter.html "Overview: ClinicResult: Exporter")
+[Previous](call_guard-method.md "Overview: CallGuard: Method")
+[Next](clinic_result-exporter.md "Overview: ClinicResult: Exporter")
 
 ---
 
 # Overview: ClinicResult: Constructor[](#overview-clinicresult-constructor "Link to this heading")
 
-[Detail: ClinicResult: Constructor](../api_detail/clinic_result-constructor.html#api-detail-clinicresult-constructor)
+[Detail: ClinicResult: Constructor](../api_detail/clinic_result-constructor.md#api-detail-clinicresult-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/clinic_result-constructor.html#api-sig-clinicresult-init) | `ClinicResult.__init__(log)` |  |
+| [Detail](../api_detail/clinic_result-constructor.md#api-sig-clinicresult-init) | `ClinicResult.__init__(log)` |  |
 
-[ClinicResult](clinic_result.html#api-overview-clinicresult): [Constructor](#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-overview-clinicresult-attribute) | [Method](clinic_result-method.html#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-overview-clinicresult-display)
+[ClinicResult](clinic_result.md#api-overview-clinicresult): [Constructor](#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-overview-clinicresult-attribute) | [Method](clinic_result-method.md#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-overview-clinicresult-display)
 
-[Previous](call_guard-method.html "Overview: CallGuard: Method")
-[Next](clinic_result-exporter.html "Overview: ClinicResult: Exporter")
+[Previous](call_guard-method.md "Overview: CallGuard: Method")
+[Next](clinic_result-exporter.md "Overview: ClinicResult: Exporter")
 
 ---
 

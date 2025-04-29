@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: TypeClinic: Display
 * [View page source](../_sources/api_overview/type_clinic-display.rst.txt)
 
-[Previous](type_clinic-method.html "Overview: TypeClinic: Method")
-[Next](call_guard-method.html "Overview: CallGuard: Method")
+[Previous](type_clinic-method.md "Overview: TypeClinic: Method")
+[Next](call_guard-method.md "Overview: CallGuard: Method")
 
 ---
 
 # Overview: TypeClinic: Display[](#overview-typeclinic-display "Link to this heading")
 
-[Detail: TypeClinic: Display](../api_detail/type_clinic-display.html#api-detail-typeclinic-display)
+[Detail: TypeClinic: Display](../api_detail/type_clinic-display.md#api-detail-typeclinic-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/type_clinic-display.html#api-sig-typeclinic-repr) | `TypeClinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
-| [Detail](../api_detail/type_clinic-display.html#api-sig-typeclinic-str) | `TypeClinic.__str__()` | Return str(self). |
+| [Detail](../api_detail/type_clinic-display.md#api-sig-typeclinic-repr) | `TypeClinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/type_clinic-display.md#api-sig-typeclinic-str) | `TypeClinic.__str__()` | Return str(self). |
 
-[TypeClinic](type_clinic.html#api-overview-typeclinic): [Constructor](type_clinic-constructor.html#api-overview-typeclinic-constructor) | [Exporter](type_clinic-exporter.html#api-overview-typeclinic-exporter) | [Method](type_clinic-method.html#api-overview-typeclinic-method) | [Display](#api-overview-typeclinic-display)
+[TypeClinic](type_clinic.md#api-overview-typeclinic): [Constructor](type_clinic-constructor.md#api-overview-typeclinic-constructor) | [Exporter](type_clinic-exporter.md#api-overview-typeclinic-exporter) | [Method](type_clinic-method.md#api-overview-typeclinic-method) | [Display](#api-overview-typeclinic-display)
 
-[Previous](type_clinic-method.html "Overview: TypeClinic: Method")
-[Next](call_guard-method.html "Overview: CallGuard: Method")
+[Previous](type_clinic-method.md "Overview: TypeClinic: Method")
+[Next](call_guard-method.md "Overview: CallGuard: Method")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: StoreFilter
 * [View page source](../_sources/api_overview/store_filter.rst.txt)
 
-[Previous](store_config.html "Overview: StoreConfig")
-[Next](index_auto_factory.html "Overview: IndexAutoFactory")
+[Previous](store_config.md "Overview: StoreConfig")
+[Next](index_auto_factory.md "Overview: IndexAutoFactory")
 
 ---
 
 # Overview: StoreFilter[](#overview-storefilter "Link to this heading")
 
-[Detail: StoreFilter](../api_detail/store_filter.html#api-detail-storefilter)
+[Detail: StoreFilter](../api_detail/store_filter.md#api-detail-storefilter)
 
 |  |  |
 | --- | --- |
-| [Constructor](store_filter-constructor.html#api-overview-storefilter-constructor) | Alternative constructors for creating instances. |
-| [Exporter](store_filter-exporter.html#api-overview-storefilter-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](store_filter-attribute.html#api-overview-storefilter-attribute) | Attributes for retrieving basic characteristics. |
-| [Display](store_filter-display.html#api-overview-storefilter-display) | Methods for providing a text representation of the object. |
+| [Constructor](store_filter-constructor.md#api-overview-storefilter-constructor) | Alternative constructors for creating instances. |
+| [Exporter](store_filter-exporter.md#api-overview-storefilter-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](store_filter-attribute.md#api-overview-storefilter-attribute) | Attributes for retrieving basic characteristics. |
+| [Display](store_filter-display.md#api-overview-storefilter-display) | Methods for providing a text representation of the object. |
 
-[StoreFilter](#api-overview-storefilter): [Constructor](store_filter-constructor.html#api-overview-storefilter-constructor) | [Exporter](store_filter-exporter.html#api-overview-storefilter-exporter) | [Attribute](store_filter-attribute.html#api-overview-storefilter-attribute) | [Display](store_filter-display.html#api-overview-storefilter-display)
+[StoreFilter](#api-overview-storefilter): [Constructor](store_filter-constructor.md#api-overview-storefilter-constructor) | [Exporter](store_filter-exporter.md#api-overview-storefilter-exporter) | [Attribute](store_filter-attribute.md#api-overview-storefilter-attribute) | [Display](store_filter-display.md#api-overview-storefilter-display)
 
-[Previous](store_config.html "Overview: StoreConfig")
-[Next](index_auto_factory.html "Overview: IndexAutoFactory")
+[Previous](store_config.md "Overview: StoreConfig")
+[Next](index_auto_factory.md "Overview: IndexAutoFactory")
 
 ---
 

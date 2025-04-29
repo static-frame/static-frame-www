@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexYearGO: Accessor Values
 * [View page source](../_sources/api_overview/index_year_go-accessor_values.rst.txt)
 
-[Previous](index_year_go-operator_unary.html "Overview: IndexYearGO: Operator Unary")
-[Next](index_year_go-accessor_datetime.html "Overview: IndexYearGO: Accessor Datetime")
+[Previous](index_year_go-operator_unary.md "Overview: IndexYearGO: Operator Unary")
+[Next](index_year_go-accessor_datetime.md "Overview: IndexYearGO: Accessor Datetime")
 
 ---
 
 # Overview: IndexYearGO: Accessor Values[](#overview-indexyeargo-accessor-values "Link to this heading")
 
-[Detail: IndexYearGO: Accessor Values](../api_detail/index_year_go-accessor_values.html#api-detail-indexyeargo-accessor-values)
+[Detail: IndexYearGO: Accessor Values](../api_detail/index_year_go-accessor_values.md#api-detail-indexyeargo-accessor-values)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_go-accessor_values.html#api-sig-indexyeargo-via-values-apply) | `IndexYearGO.via_values.apply(func, *args, **kwargs)` |  |
-| [Detail](../api_detail/index_year_go-accessor_values.html#api-sig-indexyeargo-via-values-array-ufunc) | `IndexYearGO.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
-| [Detail](../api_detail/index_year_go-accessor_values.html#api-sig-indexyeargo-via-values-call) | `IndexYearGO.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
+| [Detail](../api_detail/index_year_go-accessor_values.md#api-sig-indexyeargo-via-values-apply) | `IndexYearGO.via_values.apply(func, *args, **kwargs)` |  |
+| [Detail](../api_detail/index_year_go-accessor_values.md#api-sig-indexyeargo-via-values-array-ufunc) | `IndexYearGO.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
+| [Detail](../api_detail/index_year_go-accessor_values.md#api-sig-indexyeargo-via-values-call) | `IndexYearGO.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
 
-[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](index_year_go-constructor.html#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.html#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-overview-indexyeargo-operator-unary) | [Accessor Values](#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-overview-indexyeargo): [Constructor](index_year_go-constructor.md#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.md#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.md#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-overview-indexyeargo-operator-unary) | [Accessor Values](#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-overview-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-operator_unary.html "Overview: IndexYearGO: Operator Unary")
-[Next](index_year_go-accessor_datetime.html "Overview: IndexYearGO: Accessor Datetime")
+[Previous](index_year_go-operator_unary.md "Overview: IndexYearGO: Operator Unary")
+[Next](index_year_go-accessor_datetime.md "Overview: IndexYearGO: Accessor Datetime")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexHourGO: Operator Unary
 * [View page source](../_sources/api_detail/index_hour_go-operator_unary.rst.txt)
 
-[Previous](index_hour_go-operator_binary.html "Detail: IndexHourGO: Operator Binary")
-[Next](index_hour_go-accessor_values.html "Detail: IndexHourGO: Accessor Values")
+[Previous](index_hour_go-operator_binary.md "Detail: IndexHourGO: Operator Binary")
+[Next](index_hour_go-accessor_values.md "Detail: IndexHourGO: Accessor Values")
 
 ---
 
 # Detail: IndexHourGO: Operator Unary[](#detail-indexhourgo-operator-unary "Link to this heading")
 
-[Overview: IndexHourGO: Operator Unary](../api_overview/index_hour_go-operator_unary.html#api-overview-indexhourgo-operator-unary)
+[Overview: IndexHourGO: Operator Unary](../api_overview/index_hour_go-operator_unary.md#api-overview-indexhourgo-operator-unary)
 
 IndexHourGO.\_\_abs\_\_()[](#static_frame.IndexHourGO.__abs__ "Link to this definition")
 :   ```
@@ -200,10 +200,10 @@ IndexHourGO.\_\_pos\_\_()[](#static_frame.IndexHourGO.__pos__ "Link to this d
 
     ```
 
-[IndexHourGO](index_hour_go.html#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.html#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-detail-indexhourgo-operator-binary) | [Operator Unary](#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-detail-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary) | [Operator Unary](#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-detail-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-operator_binary.html "Detail: IndexHourGO: Operator Binary")
-[Next](index_hour_go-accessor_values.html "Detail: IndexHourGO: Accessor Values")
+[Previous](index_hour_go-operator_binary.md "Detail: IndexHourGO: Operator Binary")
+[Next](index_hour_go-accessor_values.md "Detail: IndexHourGO: Accessor Values")
 
 ---
 

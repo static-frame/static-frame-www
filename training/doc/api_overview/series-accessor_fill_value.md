@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,48 +135,48 @@ API Detail
 * Overview: Series: Accessor Fill Value
 * [View page source](../_sources/api_overview/series-accessor_fill_value.rst.txt)
 
-[Previous](series-accessor_string.html "Overview: Series: Accessor String")
-[Next](series-accessor_regular_expression.html "Overview: Series: Accessor Regular Expression")
+[Previous](series-accessor_string.md "Overview: Series: Accessor String")
+[Next](series-accessor_regular_expression.md "Overview: Series: Accessor Regular Expression")
 
 ---
 
 # Overview: Series: Accessor Fill Value[](#overview-series-accessor-fill-value "Link to this heading")
 
-[Detail: Series: Accessor Fill Value](../api_detail/series-accessor_fill_value.html#api-detail-series-accessor-fill-value)
+[Detail: Series: Accessor Fill Value](../api_detail/series-accessor_fill_value.md#api-detail-series-accessor-fill-value)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-loc) | `Series.via_fill_value(fill_value).loc` | Label-based selection where labels not specified will define a new container con… |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-getitem) | `Series.via_fill_value(fill_value).__getitem__(key)` | Label-based selection where labels not specified will define a new container con… |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-via-t) | `Series.via_fill_value(fill_value).via_T` | Interface for using binary operators with one-dimensional sequences, where the o… |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-add) | `Series.via_fill_value(fill_value).__add__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-sub) | `Series.via_fill_value(fill_value).__sub__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-mul) | `Series.via_fill_value(fill_value).__mul__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-truediv) | `Series.via_fill_value(fill_value).__truediv__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-floordiv) | `Series.via_fill_value(fill_value).__floordiv__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-mod) | `Series.via_fill_value(fill_value).__mod__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-pow) | `Series.via_fill_value(fill_value).__pow__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-lshift) | `Series.via_fill_value(fill_value).__lshift__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-rshift) | `Series.via_fill_value(fill_value).__rshift__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-and) | `Series.via_fill_value(fill_value).__and__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-xor) | `Series.via_fill_value(fill_value).__xor__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-or) | `Series.via_fill_value(fill_value).__or__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-lt) | `Series.via_fill_value(fill_value).__lt__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-le) | `Series.via_fill_value(fill_value).__le__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-eq) | `Series.via_fill_value(fill_value).__eq__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-ne) | `Series.via_fill_value(fill_value).__ne__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-gt) | `Series.via_fill_value(fill_value).__gt__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-ge) | `Series.via_fill_value(fill_value).__ge__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-radd) | `Series.via_fill_value(fill_value).__radd__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-rsub) | `Series.via_fill_value(fill_value).__rsub__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-rmul) | `Series.via_fill_value(fill_value).__rmul__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-rtruediv) | `Series.via_fill_value(fill_value).__rtruediv__(other)` |  |
-| [Detail](../api_detail/series-accessor_fill_value.html#api-sig-series-via-fill-value-rfloordiv) | `Series.via_fill_value(fill_value).__rfloordiv__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-loc) | `Series.via_fill_value(fill_value).loc` | Label-based selection where labels not specified will define a new container con… |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-getitem) | `Series.via_fill_value(fill_value).__getitem__(key)` | Label-based selection where labels not specified will define a new container con… |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-via-t) | `Series.via_fill_value(fill_value).via_T` | Interface for using binary operators with one-dimensional sequences, where the o… |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-add) | `Series.via_fill_value(fill_value).__add__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-sub) | `Series.via_fill_value(fill_value).__sub__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-mul) | `Series.via_fill_value(fill_value).__mul__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-truediv) | `Series.via_fill_value(fill_value).__truediv__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-floordiv) | `Series.via_fill_value(fill_value).__floordiv__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-mod) | `Series.via_fill_value(fill_value).__mod__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-pow) | `Series.via_fill_value(fill_value).__pow__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-lshift) | `Series.via_fill_value(fill_value).__lshift__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-rshift) | `Series.via_fill_value(fill_value).__rshift__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-and) | `Series.via_fill_value(fill_value).__and__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-xor) | `Series.via_fill_value(fill_value).__xor__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-or) | `Series.via_fill_value(fill_value).__or__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-lt) | `Series.via_fill_value(fill_value).__lt__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-le) | `Series.via_fill_value(fill_value).__le__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-eq) | `Series.via_fill_value(fill_value).__eq__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-ne) | `Series.via_fill_value(fill_value).__ne__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-gt) | `Series.via_fill_value(fill_value).__gt__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-ge) | `Series.via_fill_value(fill_value).__ge__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-radd) | `Series.via_fill_value(fill_value).__radd__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-rsub) | `Series.via_fill_value(fill_value).__rsub__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-rmul) | `Series.via_fill_value(fill_value).__rmul__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-rtruediv) | `Series.via_fill_value(fill_value).__rtruediv__(other)` |  |
+| [Detail](../api_detail/series-accessor_fill_value.md#api-sig-series-via-fill-value-rfloordiv) | `Series.via_fill_value(fill_value).__rfloordiv__(other)` |  |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-accessor_string.html "Overview: Series: Accessor String")
-[Next](series-accessor_regular_expression.html "Overview: Series: Accessor Regular Expression")
+[Previous](series-accessor_string.md "Overview: Series: Accessor String")
+[Next](series-accessor_regular_expression.md "Overview: Series: Accessor Regular Expression")
 
 ---
 

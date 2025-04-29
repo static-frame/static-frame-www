@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMillisecond: Method
 * [View page source](../_sources/api_detail/index_millisecond-method.rst.txt)
 
-[Previous](index_millisecond-attribute.html "Detail: IndexMillisecond: Attribute")
-[Next](index_millisecond-dictionary_like.html "Detail: IndexMillisecond: Dictionary-Like")
+[Previous](index_millisecond-attribute.md "Detail: IndexMillisecond: Attribute")
+[Next](index_millisecond-dictionary_like.md "Detail: IndexMillisecond: Dictionary-Like")
 
 ---
 
 # Detail: IndexMillisecond: Method[](#detail-indexmillisecond-method "Link to this heading")
 
-[Overview: IndexMillisecond: Method](../api_overview/index_millisecond-method.html#api-overview-indexmillisecond-method)
+[Overview: IndexMillisecond: Method](../api_overview/index_millisecond-method.md#api-overview-indexmillisecond-method)
 
 IndexMillisecond.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexMillisecond.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -398,7 +398,7 @@ IndexMillisecond.difference(*\*others*)[](#static_frame.IndexMillisecond.diff
     ```
 
 IndexMillisecond.dropfalsy()[](#static_frame.IndexMillisecond.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexMillisecond(('1620-09-16', 'NaT', '1620-11-21'))
@@ -417,7 +417,7 @@ IndexMillisecond.dropfalsy()[](#static_frame.IndexMillisecond.dropfalsy "Link
     ```
 
 IndexMillisecond.dropna()[](#static_frame.IndexMillisecond.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexMillisecond(('1620-09-16', 'NaT', '1620-11-21'))
@@ -465,7 +465,7 @@ IndexMillisecond.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dty
     ```
 
 IndexMillisecond.fillfalsy(*value*, */*)[](#static_frame.IndexMillisecond.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -484,7 +484,7 @@ IndexMillisecond.fillfalsy(*value*, */*)[](#static_frame.IndexMillisecond.fil
     ```
 
 IndexMillisecond.fillna(*value*, */*)[](#static_frame.IndexMillisecond.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -507,10 +507,10 @@ IndexMillisecond.fillna(*value*, */*)[](#static_frame.IndexMillisecond.fillna
     ```
 
 IndexMillisecond.head(*count=5*, */*)[](#static_frame.IndexMillisecond.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexMillisecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -529,7 +529,7 @@ IndexMillisecond.head(*count=5*, */*)[](#static_frame.IndexMillisecond.head "
     ```
 
 IndexMillisecond.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexMillisecond.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -653,7 +653,7 @@ IndexMillisecond.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](
     ```
 
 IndexMillisecond.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexMillisecond.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -971,10 +971,10 @@ IndexMillisecond.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](
     ```
 
 IndexMillisecond.tail(*count=5*, */*)[](#static_frame.IndexMillisecond.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexMillisecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -1083,10 +1083,10 @@ IndexMillisecond.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#
 
     ```
 
-[IndexMillisecond](index_millisecond.html#api-detail-indexmillisecond): [Constructor](index_millisecond-constructor.html#api-detail-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.html#api-detail-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.html#api-detail-indexmillisecond-attribute) | [Method](#api-detail-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.html#api-detail-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.html#api-detail-indexmillisecond-display) | [Selector](index_millisecond-selector.html#api-detail-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.html#api-detail-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.html#api-detail-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.html#api-detail-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.html#api-detail-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.html#api-detail-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.html#api-detail-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.html#api-detail-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.html#api-detail-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.html#api-detail-indexmillisecond-accessor-type-clinic)
+[IndexMillisecond](index_millisecond.md#api-detail-indexmillisecond): [Constructor](index_millisecond-constructor.md#api-detail-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.md#api-detail-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.md#api-detail-indexmillisecond-attribute) | [Method](#api-detail-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.md#api-detail-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.md#api-detail-indexmillisecond-display) | [Selector](index_millisecond-selector.md#api-detail-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.md#api-detail-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.md#api-detail-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.md#api-detail-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.md#api-detail-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.md#api-detail-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.md#api-detail-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.md#api-detail-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.md#api-detail-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.md#api-detail-indexmillisecond-accessor-type-clinic)
 
-[Previous](index_millisecond-attribute.html "Detail: IndexMillisecond: Attribute")
-[Next](index_millisecond-dictionary_like.html "Detail: IndexMillisecond: Dictionary-Like")
+[Previous](index_millisecond-attribute.md "Detail: IndexMillisecond: Attribute")
+[Next](index_millisecond-dictionary_like.md "Detail: IndexMillisecond: Dictionary-Like")
 
 ---
 

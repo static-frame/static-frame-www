@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Detail: StoreConfig: Method
 * [View page source](../_sources/api_detail/store_config-method.rst.txt)
 
-[Previous](store_config-attribute.html "Detail: StoreConfig: Attribute")
-[Next](store_config-display.html "Detail: StoreConfig: Display")
+[Previous](store_config-attribute.md "Detail: StoreConfig: Attribute")
+[Next](store_config-display.md "Detail: StoreConfig: Display")
 
 ---
 
 # Detail: StoreConfig: Method[](#detail-storeconfig-method "Link to this heading")
 
-[Overview: StoreConfig: Method](../api_overview/store_config-method.html#api-overview-storeconfig-method)
+[Overview: StoreConfig: Method](../api_overview/store_config-method.md#api-overview-storeconfig-method)
 
-StoreConfig.label\_decode(*label*)[[source]](../_modules/static_frame/core/store_config.html#StoreConfig.label_decode)[](#static_frame.StoreConfig.label_decode "Link to this definition")
+StoreConfig.label\_decode(*label*)[[source]](../_modules/static_frame/core/store_config.md#StoreConfig.label_decode)[](#static_frame.StoreConfig.label_decode "Link to this definition")
 
-StoreConfig.label\_encode(*label*)[[source]](../_modules/static_frame/core/store_config.html#StoreConfig.label_encode)[](#static_frame.StoreConfig.label_encode "Link to this definition")
+StoreConfig.label\_encode(*label*)[[source]](../_modules/static_frame/core/store_config.md#StoreConfig.label_encode)[](#static_frame.StoreConfig.label_encode "Link to this definition")
 
-[StoreConfig](store_config.html#api-detail-storeconfig): [Constructor](store_config-constructor.html#api-detail-storeconfig-constructor) | [Exporter](store_config-exporter.html#api-detail-storeconfig-exporter) | [Attribute](store_config-attribute.html#api-detail-storeconfig-attribute) | [Method](#api-detail-storeconfig-method) | [Display](store_config-display.html#api-detail-storeconfig-display)
+[StoreConfig](store_config.md#api-detail-storeconfig): [Constructor](store_config-constructor.md#api-detail-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-detail-storeconfig-exporter) | [Attribute](store_config-attribute.md#api-detail-storeconfig-attribute) | [Method](#api-detail-storeconfig-method) | [Display](store_config-display.md#api-detail-storeconfig-display)
 
-[Previous](store_config-attribute.html "Detail: StoreConfig: Attribute")
-[Next](store_config-display.html "Detail: StoreConfig: Display")
+[Previous](store_config-attribute.md "Detail: StoreConfig: Attribute")
+[Next](store_config-display.md "Detail: StoreConfig: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: Batch: Accessor Reduce
 * [View page source](../_sources/api_overview/batch-accessor_reduce.rst.txt)
 
-[Previous](batch-accessor_type_clinic.html "Overview: Batch: Accessor Type Clinic")
-[Next](yarn-constructor.html "Overview: Yarn: Constructor")
+[Previous](batch-accessor_type_clinic.md "Overview: Batch: Accessor Type Clinic")
+[Next](yarn-constructor.md "Overview: Yarn: Constructor")
 
 ---
 
 # Overview: Batch: Accessor Reduce[](#overview-batch-accessor-reduce "Link to this heading")
 
-[Detail: Batch: Accessor Reduce](../api_detail/batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Detail: Batch: Accessor Reduce](../api_detail/batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-accessor_reduce.html#api-sig-batch-reduce-from-func) | `Batch.reduce.from_func(func, *, fill_value)` |  |
-| [Detail](../api_detail/batch-accessor_reduce.html#api-sig-batch-reduce-from-map-func) | `Batch.reduce.from_map_func(func, *, fill_value)` |  |
-| [Detail](../api_detail/batch-accessor_reduce.html#api-sig-batch-reduce-from-label-map) | `Batch.reduce.from_label_map(func_map, *, fill_value)` |  |
-| [Detail](../api_detail/batch-accessor_reduce.html#api-sig-batch-reduce-from-label-pair-map) | `Batch.reduce.from_label_pair_map(func_map, *, fill_value)` |  |
+| [Detail](../api_detail/batch-accessor_reduce.md#api-sig-batch-reduce-from-func) | `Batch.reduce.from_func(func, *, fill_value)` |  |
+| [Detail](../api_detail/batch-accessor_reduce.md#api-sig-batch-reduce-from-map-func) | `Batch.reduce.from_map_func(func, *, fill_value)` |  |
+| [Detail](../api_detail/batch-accessor_reduce.md#api-sig-batch-reduce-from-label-map) | `Batch.reduce.from_label_map(func_map, *, fill_value)` |  |
+| [Detail](../api_detail/batch-accessor_reduce.md#api-sig-batch-reduce-from-label-pair-map) | `Batch.reduce.from_label_pair_map(func_map, *, fill_value)` |  |
 
-[Batch](batch.html#api-overview-batch): [Constructor](batch-constructor.html#api-overview-batch-constructor) | [Exporter](batch-exporter.html#api-overview-batch-exporter) | [Attribute](batch-attribute.html#api-overview-batch-attribute) | [Method](batch-method.html#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-overview-batch-dictionary-like) | [Display](batch-display.html#api-overview-batch-display) | [Selector](batch-selector.html#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.html#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](#api-overview-batch-accessor-reduce)
+[Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](batch-attribute.md#api-overview-batch-attribute) | [Method](batch-method.md#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-overview-batch-dictionary-like) | [Display](batch-display.md#api-overview-batch-display) | [Selector](batch-selector.md#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.md#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](#api-overview-batch-accessor-reduce)
 
-[Previous](batch-accessor_type_clinic.html "Overview: Batch: Accessor Type Clinic")
-[Next](yarn-constructor.html "Overview: Yarn: Constructor")
+[Previous](batch-accessor_type_clinic.md "Overview: Batch: Accessor Type Clinic")
+[Next](yarn-constructor.md "Overview: Yarn: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,43 +135,43 @@ API Detail
 * Overview: Yarn: Method
 * [View page source](../_sources/api_overview/yarn-method.rst.txt)
 
-[Previous](yarn-attribute.html "Overview: Yarn: Attribute")
-[Next](yarn-dictionary_like.html "Overview: Yarn: Dictionary-Like")
+[Previous](yarn-attribute.md "Overview: Yarn: Attribute")
+[Next](yarn-dictionary_like.md "Overview: Yarn: Dictionary-Like")
 
 ---
 
 # Overview: Yarn: Method[](#overview-yarn-method "Link to this heading")
 
-[Detail: Yarn: Method](../api_detail/yarn-method.html#api-detail-yarn-method)
+[Detail: Yarn: Method](../api_detail/yarn-method.md#api-detail-yarn-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-bool) | `Yarn.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-len) | `Yarn.__len__()` | Length of values. |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-equals) | `Yarn.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Note: this will attempt to lo… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-head) | `Yarn.head(count)` | Return a Yarn consisting only of the top elements as specified by count. Args: c… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-persist) | `Yarn.persist[key]` | Label-based selection. |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-persist-iloc) | `Yarn.persist.iloc[key]` | Integer-position based selection. |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-persist-loc) | `Yarn.persist.loc[key]` | Label-based selection. |
-| [Detail](../api_detail/yarn-method.html#id1) | `Yarn.persist()` | Persist all Frame. |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-rehierarch) | `Yarn.rehierarch(depth_map, *, index_constructors)` | Return a new Series with new a hierarchy based on the supplied depth\_map. |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-reindex) | `Yarn.reindex(index, *, fill_value, own_index, check_equals)` | Return a new Bus with labels defined by the provided index. The size and orderin… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-relabel) | `Yarn.relabel(index)` | Return a new Yarn with transformed labels on the index. The size and ordering of… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-relabel-flat) | `Yarn.relabel_flat()` | Return a new Yarn, where an IndexHierarchy (if defined) is replaced with a flat,… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-relabel-level-add) | `Yarn.relabel_level_add(level)` | Return a new Yarn, adding a new root level to an existing IndexHierarchy, or cre… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-relabel-level-drop) | `Yarn.relabel_level_drop(count)` | Return a new Yarn, dropping one or more levels from a either the root or the lea… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-rename) | `Yarn.rename(name)` | Return a new Yarn with an updated name attribute. Args: name |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-roll) | `Yarn.roll(shift, *, include_index)` | Return a Yarn with values rotated forward and wrapped around the index (with a p… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-shift) | `Yarn.shift(shift, *, fill_value)` | Return a Yarn with values shifted forward on the index (with a positive shift) o… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-sort-index) | `Yarn.sort_index(*, ascending, kind, key)` | Return a new Yarn ordered by the sorted Index. Args: \* ascendings: Boolean, or i… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-sort-values) | `Yarn.sort_values(*, ascending, kind, key)` | Return a new Yarn ordered by the sorted values. Note that as a Yarn contains Fra… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-tail) | `Yarn.tail(count)` | Return a Yarn consisting only of the bottom elements as specified by count. s Ar… |
-| [Detail](../api_detail/yarn-method.html#api-sig-yarn-unpersist) | `Yarn.unpersist()` | For the Bus contained in this object, replace all loaded Frame with FrameDeferre… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-bool) | `Yarn.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-len) | `Yarn.__len__()` | Length of values. |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-equals) | `Yarn.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Note: this will attempt to lo… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-head) | `Yarn.head(count)` | Return a Yarn consisting only of the top elements as specified by count. Args: c… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-persist) | `Yarn.persist[key]` | Label-based selection. |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-persist-iloc) | `Yarn.persist.iloc[key]` | Integer-position based selection. |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-persist-loc) | `Yarn.persist.loc[key]` | Label-based selection. |
+| [Detail](../api_detail/yarn-method.md#id1) | `Yarn.persist()` | Persist all Frame. |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-rehierarch) | `Yarn.rehierarch(depth_map, *, index_constructors)` | Return a new Series with new a hierarchy based on the supplied depth\_map. |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-reindex) | `Yarn.reindex(index, *, fill_value, own_index, check_equals)` | Return a new Bus with labels defined by the provided index. The size and orderin… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-relabel) | `Yarn.relabel(index)` | Return a new Yarn with transformed labels on the index. The size and ordering of… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-relabel-flat) | `Yarn.relabel_flat()` | Return a new Yarn, where an IndexHierarchy (if defined) is replaced with a flat,… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-relabel-level-add) | `Yarn.relabel_level_add(level)` | Return a new Yarn, adding a new root level to an existing IndexHierarchy, or cre… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-relabel-level-drop) | `Yarn.relabel_level_drop(count)` | Return a new Yarn, dropping one or more levels from a either the root or the lea… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-rename) | `Yarn.rename(name)` | Return a new Yarn with an updated name attribute. Args: name |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-roll) | `Yarn.roll(shift, *, include_index)` | Return a Yarn with values rotated forward and wrapped around the index (with a p… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-shift) | `Yarn.shift(shift, *, fill_value)` | Return a Yarn with values shifted forward on the index (with a positive shift) o… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-sort-index) | `Yarn.sort_index(*, ascending, kind, key)` | Return a new Yarn ordered by the sorted Index. Args: \* ascendings: Boolean, or i… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-sort-values) | `Yarn.sort_values(*, ascending, kind, key)` | Return a new Yarn ordered by the sorted values. Note that as a Yarn contains Fra… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-tail) | `Yarn.tail(count)` | Return a Yarn consisting only of the bottom elements as specified by count. s Ar… |
+| [Detail](../api_detail/yarn-method.md#api-sig-yarn-unpersist) | `Yarn.unpersist()` | For the Bus contained in this object, replace all loaded Frame with FrameDeferre… |
 
-[Yarn](yarn.html#api-overview-yarn): [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | [Method](#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](yarn-display.html#api-overview-yarn-display) | [Selector](yarn-selector.html#api-overview-yarn-selector) | [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-overview-yarn): [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | [Method](#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](yarn-display.md#api-overview-yarn-display) | [Selector](yarn-selector.md#api-overview-yarn-selector) | [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
-[Previous](yarn-attribute.html "Overview: Yarn: Attribute")
-[Next](yarn-dictionary_like.html "Overview: Yarn: Dictionary-Like")
+[Previous](yarn-attribute.md "Overview: Yarn: Attribute")
+[Next](yarn-dictionary_like.md "Overview: Yarn: Dictionary-Like")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexYearMonth: Attribute
 * [View page source](../_sources/api_detail/index_year_month-attribute.rst.txt)
 
-[Previous](index_year_month-exporter.html "Detail: IndexYearMonth: Exporter")
-[Next](index_year_month-method.html "Detail: IndexYearMonth: Method")
+[Previous](index_year_month-exporter.md "Detail: IndexYearMonth: Exporter")
+[Next](index_year_month-method.md "Detail: IndexYearMonth: Method")
 
 ---
 
 # Detail: IndexYearMonth: Attribute[](#detail-indexyearmonth-attribute "Link to this heading")
 
-[Overview: IndexYearMonth: Attribute](../api_overview/index_year_month-attribute.html#api-overview-indexyearmonth-attribute)
+[Overview: IndexYearMonth: Attribute](../api_overview/index_year_month-attribute.md#api-overview-indexyearmonth-attribute)
 
 IndexYearMonth.STATIC *= True*[](#static_frame.IndexYearMonth.STATIC "Link to this definition")
 :   ```
@@ -177,7 +177,7 @@ IndexYearMonth.index\_types[](#static_frame.IndexYearMonth.index_types "Link 
 :   Return a Series of Index classes for each index depth.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
@@ -190,7 +190,7 @@ IndexYearMonth.index\_types[](#static_frame.IndexYearMonth.index_types "Link 
     ```
 
 IndexYearMonth.memory[](#static_frame.IndexYearMonth.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -299,10 +299,10 @@ IndexYearMonth.size[](#static_frame.IndexYearMonth.size "Link to this definit
 
     ```
 
-[IndexYearMonth](index_year_month.html#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.html#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-detail-indexyearmonth-exporter) | [Attribute](#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-detail-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-detail-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-exporter.html "Detail: IndexYearMonth: Exporter")
-[Next](index_year_month-method.html "Detail: IndexYearMonth: Method")
+[Previous](index_year_month-exporter.md "Detail: IndexYearMonth: Exporter")
+[Next](index_year_month-method.md "Detail: IndexYearMonth: Method")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Detail: IndexAutoFactory: Constructor
 * [View page source](../_sources/api_detail/index_auto_factory-constructor.rst.txt)
 
-[Previous](store_filter-display.html "Detail: StoreFilter: Display")
-[Next](index_auto_factory-exporter.html "Detail: IndexAutoFactory: Exporter")
+[Previous](store_filter-display.md "Detail: StoreFilter: Display")
+[Next](index_auto_factory-exporter.md "Detail: IndexAutoFactory: Exporter")
 
 ---
 
 # Detail: IndexAutoFactory: Constructor[](#detail-indexautofactory-constructor "Link to this heading")
 
-[Overview: IndexAutoFactory: Constructor](../api_overview/index_auto_factory-constructor.html#api-overview-indexautofactory-constructor)
+[Overview: IndexAutoFactory: Constructor](../api_overview/index_auto_factory-constructor.md#api-overview-indexautofactory-constructor)
 
-IndexAutoFactory.\_\_init\_\_(*size*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_auto.html#IndexAutoFactory.__init__)[](#static_frame.IndexAutoFactory.__init__ "Link to this definition")
+IndexAutoFactory.\_\_init\_\_(*size*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_auto.md#IndexAutoFactory.__init__)[](#static_frame.IndexAutoFactory.__init__ "Link to this definition")
 
-*classmethod* IndexAutoFactory.from\_optional\_constructor(*initializer*, *\**, *default\_constructor*, *explicit\_constructor=None*)[[source]](../_modules/static_frame/core/index_auto.html#IndexAutoFactory.from_optional_constructor)[](#static_frame.IndexAutoFactory.from_optional_constructor "Link to this definition")
+*classmethod* IndexAutoFactory.from\_optional\_constructor(*initializer*, *\**, *default\_constructor*, *explicit\_constructor=None*)[[source]](../_modules/static_frame/core/index_auto.md#IndexAutoFactory.from_optional_constructor)[](#static_frame.IndexAutoFactory.from_optional_constructor "Link to this definition")
 
-[IndexAutoFactory](index_auto_factory.html#api-detail-indexautofactory): [Constructor](#api-detail-indexautofactory-constructor) | [Exporter](index_auto_factory-exporter.html#api-detail-indexautofactory-exporter) | [Display](index_auto_factory-display.html#api-detail-indexautofactory-display)
+[IndexAutoFactory](index_auto_factory.md#api-detail-indexautofactory): [Constructor](#api-detail-indexautofactory-constructor) | [Exporter](index_auto_factory-exporter.md#api-detail-indexautofactory-exporter) | [Display](index_auto_factory-display.md#api-detail-indexautofactory-display)
 
-[Previous](store_filter-display.html "Detail: StoreFilter: Display")
-[Next](index_auto_factory-exporter.html "Detail: IndexAutoFactory: Exporter")
+[Previous](store_filter-display.md "Detail: StoreFilter: Display")
+[Next](index_auto_factory-exporter.md "Detail: IndexAutoFactory: Exporter")
 
 ---
 

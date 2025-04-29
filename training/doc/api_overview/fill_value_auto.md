@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: FillValueAuto
 * [View page source](../_sources/api_overview/fill_value_auto.rst.txt)
 
-[Previous](www.html "Overview: WWW")
-[Next](display_active.html "Overview: DisplayActive")
+[Previous](www.md "Overview: WWW")
+[Next](display_active.md "Overview: DisplayActive")
 
 ---
 
 # Overview: FillValueAuto[](#overview-fillvalueauto "Link to this heading")
 
-[Detail: FillValueAuto](../api_detail/fill_value_auto.html#api-detail-fillvalueauto)
+[Detail: FillValueAuto](../api_detail/fill_value_auto.md#api-detail-fillvalueauto)
 
 |  |  |
 | --- | --- |
-| [Constructor](fill_value_auto-constructor.html#api-overview-fillvalueauto-constructor) | Alternative constructors for creating instances. |
-| [Attribute](fill_value_auto-attribute.html#api-overview-fillvalueauto-attribute) | Attributes for retrieving basic characteristics. |
-| [Display](fill_value_auto-display.html#api-overview-fillvalueauto-display) | Methods for providing a text representation of the object. |
-| [Selector](fill_value_auto-selector.html#api-overview-fillvalueauto-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Constructor](fill_value_auto-constructor.md#api-overview-fillvalueauto-constructor) | Alternative constructors for creating instances. |
+| [Attribute](fill_value_auto-attribute.md#api-overview-fillvalueauto-attribute) | Attributes for retrieving basic characteristics. |
+| [Display](fill_value_auto-display.md#api-overview-fillvalueauto-display) | Methods for providing a text representation of the object. |
+| [Selector](fill_value_auto-selector.md#api-overview-fillvalueauto-selector) | Interfaces for selecting by position, label or Boolean. |
 
-[FillValueAuto](#api-overview-fillvalueauto): [Constructor](fill_value_auto-constructor.html#api-overview-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.html#api-overview-fillvalueauto-attribute) | [Display](fill_value_auto-display.html#api-overview-fillvalueauto-display) | [Selector](fill_value_auto-selector.html#api-overview-fillvalueauto-selector)
+[FillValueAuto](#api-overview-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-overview-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-overview-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-overview-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-overview-fillvalueauto-selector)
 
-[Previous](www.html "Overview: WWW")
-[Next](display_active.html "Overview: DisplayActive")
+[Previous](www.md "Overview: WWW")
+[Next](display_active.md "Overview: DisplayActive")
 
 ---
 

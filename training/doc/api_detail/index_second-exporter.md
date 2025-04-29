@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Detail: IndexSecond: Exporter
 * [View page source](../_sources/api_detail/index_second-exporter.rst.txt)
 
-[Previous](index_second-constructor.html "Detail: IndexSecond: Constructor")
-[Next](index_second-attribute.html "Detail: IndexSecond: Attribute")
+[Previous](index_second-constructor.md "Detail: IndexSecond: Constructor")
+[Next](index_second-attribute.md "Detail: IndexSecond: Attribute")
 
 ---
 
 # Detail: IndexSecond: Exporter[](#detail-indexsecond-exporter "Link to this heading")
 
-[Overview: IndexSecond: Exporter](../api_overview/index_second-exporter.html#api-overview-indexsecond-exporter)
+[Overview: IndexSecond: Exporter](../api_overview/index_second-exporter.md#api-overview-indexsecond-exporter)
 
 IndexSecond.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexSecond.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Index`](index-selector.html#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 IndexSecond.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexSecond.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Index`](index-selector.html#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
@@ -204,10 +204,10 @@ IndexSecond.to\_series()[](#static_frame.IndexSecond.to_series "Link to this 
 IndexSecond.to\_visidata()[](#static_frame.IndexSecond.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[IndexSecond](index_second.html#api-detail-indexsecond): [Constructor](index_second-constructor.html#api-detail-indexsecond-constructor) | [Exporter](#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-detail-indexsecond-attribute) | [Method](index_second-method.html#api-detail-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.html#api-detail-indexsecond-display) | [Selector](index_second-selector.html#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.html#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-detail-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-detail-indexsecond): [Constructor](index_second-constructor.md#api-detail-indexsecond-constructor) | [Exporter](#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-detail-indexsecond-attribute) | [Method](index_second-method.md#api-detail-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.md#api-detail-indexsecond-display) | [Selector](index_second-selector.md#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.md#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-detail-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-constructor.html "Detail: IndexSecond: Constructor")
-[Next](index_second-attribute.html "Detail: IndexSecond: Attribute")
+[Previous](index_second-constructor.md "Detail: IndexSecond: Constructor")
+[Next](index_second-attribute.md "Detail: IndexSecond: Attribute")
 
 ---
 

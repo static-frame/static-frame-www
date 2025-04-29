@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexSecondGO: Operator Binary
 * [View page source](../_sources/api_overview/index_second_go-operator_binary.rst.txt)
 
-[Previous](index_second_go-iterator.html "Overview: IndexSecondGO: Iterator")
-[Next](index_second_go-operator_unary.html "Overview: IndexSecondGO: Operator Unary")
+[Previous](index_second_go-iterator.md "Overview: IndexSecondGO: Iterator")
+[Next](index_second_go-operator_unary.md "Overview: IndexSecondGO: Operator Unary")
 
 ---
 
 # Overview: IndexSecondGO: Operator Binary[](#overview-indexsecondgo-operator-binary "Link to this heading")
 
-[Detail: IndexSecondGO: Operator Binary](../api_detail/index_second_go-operator_binary.html#api-detail-indexsecondgo-operator-binary)
+[Detail: IndexSecondGO: Operator Binary](../api_detail/index_second_go-operator_binary.md#api-detail-indexsecondgo-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-add) | `IndexSecondGO.__add__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-and) | `IndexSecondGO.__and__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-eq) | `IndexSecondGO.__eq__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-floordiv) | `IndexSecondGO.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-ge) | `IndexSecondGO.__ge__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-gt) | `IndexSecondGO.__gt__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-le) | `IndexSecondGO.__le__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-lt) | `IndexSecondGO.__lt__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-matmul) | `IndexSecondGO.__matmul__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-mod) | `IndexSecondGO.__mod__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-mul) | `IndexSecondGO.__mul__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-ne) | `IndexSecondGO.__ne__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-or) | `IndexSecondGO.__or__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-pow) | `IndexSecondGO.__pow__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-radd) | `IndexSecondGO.__radd__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-rfloordiv) | `IndexSecondGO.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-rmatmul) | `IndexSecondGO.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-rmul) | `IndexSecondGO.__rmul__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-rshift) | `IndexSecondGO.__rshift__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-rsub) | `IndexSecondGO.__rsub__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-rtruediv) | `IndexSecondGO.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-sub) | `IndexSecondGO.__sub__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-truediv) | `IndexSecondGO.__truediv__(other)` |  |
-| [Detail](../api_detail/index_second_go-operator_binary.html#api-sig-indexsecondgo-xor) | `IndexSecondGO.__xor__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-add) | `IndexSecondGO.__add__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-and) | `IndexSecondGO.__and__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-eq) | `IndexSecondGO.__eq__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-floordiv) | `IndexSecondGO.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-ge) | `IndexSecondGO.__ge__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-gt) | `IndexSecondGO.__gt__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-le) | `IndexSecondGO.__le__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-lt) | `IndexSecondGO.__lt__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-matmul) | `IndexSecondGO.__matmul__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-mod) | `IndexSecondGO.__mod__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-mul) | `IndexSecondGO.__mul__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-ne) | `IndexSecondGO.__ne__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-or) | `IndexSecondGO.__or__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-pow) | `IndexSecondGO.__pow__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-radd) | `IndexSecondGO.__radd__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-rfloordiv) | `IndexSecondGO.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-rmatmul) | `IndexSecondGO.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-rmul) | `IndexSecondGO.__rmul__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-rshift) | `IndexSecondGO.__rshift__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-rsub) | `IndexSecondGO.__rsub__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-rtruediv) | `IndexSecondGO.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-sub) | `IndexSecondGO.__sub__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-truediv) | `IndexSecondGO.__truediv__(other)` |  |
+| [Detail](../api_detail/index_second_go-operator_binary.md#api-sig-indexsecondgo-xor) | `IndexSecondGO.__xor__(other)` |  |
 
-[IndexSecondGO](index_second_go.html#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.html#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-overview-indexsecondgo-iterator) | [Operator Binary](#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-overview-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.md#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-overview-indexsecondgo-iterator) | [Operator Binary](#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-overview-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-iterator.html "Overview: IndexSecondGO: Iterator")
-[Next](index_second_go-operator_unary.html "Overview: IndexSecondGO: Operator Unary")
+[Previous](index_second_go-iterator.md "Overview: IndexSecondGO: Iterator")
+[Next](index_second_go-operator_unary.md "Overview: IndexSecondGO: Operator Unary")
 
 ---
 

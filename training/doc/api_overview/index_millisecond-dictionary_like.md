@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexMillisecond: Dictionary-Like
 * [View page source](../_sources/api_overview/index_millisecond-dictionary_like.rst.txt)
 
-[Previous](index_millisecond-method.html "Overview: IndexMillisecond: Method")
-[Next](index_millisecond-display.html "Overview: IndexMillisecond: Display")
+[Previous](index_millisecond-method.md "Overview: IndexMillisecond: Method")
+[Next](index_millisecond-display.md "Overview: IndexMillisecond: Display")
 
 ---
 
 # Overview: IndexMillisecond: Dictionary-Like[](#overview-indexmillisecond-dictionary-like "Link to this heading")
 
-[Detail: IndexMillisecond: Dictionary-Like](../api_detail/index_millisecond-dictionary_like.html#api-detail-indexmillisecond-dictionary-like)
+[Detail: IndexMillisecond: Dictionary-Like](../api_detail/index_millisecond-dictionary_like.md#api-detail-indexmillisecond-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond-dictionary_like.html#api-sig-indexmillisecond-contains) | `IndexMillisecond.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
-| [Detail](../api_detail/index_millisecond-dictionary_like.html#api-sig-indexmillisecond-iter) | `IndexMillisecond.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index_millisecond-dictionary_like.html#api-sig-indexmillisecond-reversed) | `IndexMillisecond.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index_millisecond-dictionary_like.html#api-sig-indexmillisecond-values) | `IndexMillisecond.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
+| [Detail](../api_detail/index_millisecond-dictionary_like.md#api-sig-indexmillisecond-contains) | `IndexMillisecond.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
+| [Detail](../api_detail/index_millisecond-dictionary_like.md#api-sig-indexmillisecond-iter) | `IndexMillisecond.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index_millisecond-dictionary_like.md#api-sig-indexmillisecond-reversed) | `IndexMillisecond.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index_millisecond-dictionary_like.md#api-sig-indexmillisecond-values) | `IndexMillisecond.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
 
-[IndexMillisecond](index_millisecond.html#api-overview-indexmillisecond): [Constructor](index_millisecond-constructor.html#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.html#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.html#api-overview-indexmillisecond-attribute) | [Method](index_millisecond-method.html#api-overview-indexmillisecond-method) | [Dictionary-Like](#api-overview-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.html#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.html#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.html#api-overview-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.html#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.html#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.html#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.html#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.html#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.html#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.html#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.html#api-overview-indexmillisecond-accessor-type-clinic)
+[IndexMillisecond](index_millisecond.md#api-overview-indexmillisecond): [Constructor](index_millisecond-constructor.md#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.md#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.md#api-overview-indexmillisecond-attribute) | [Method](index_millisecond-method.md#api-overview-indexmillisecond-method) | [Dictionary-Like](#api-overview-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.md#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.md#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.md#api-overview-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.md#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.md#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.md#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.md#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.md#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.md#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.md#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.md#api-overview-indexmillisecond-accessor-type-clinic)
 
-[Previous](index_millisecond-method.html "Overview: IndexMillisecond: Method")
-[Next](index_millisecond-display.html "Overview: IndexMillisecond: Display")
+[Previous](index_millisecond-method.md "Overview: IndexMillisecond: Method")
+[Next](index_millisecond-display.md "Overview: IndexMillisecond: Display")
 
 ---
 

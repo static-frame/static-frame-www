@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexMicrosecondGO: Accessor Values
 * [View page source](../_sources/api_overview/index_microsecond_go-accessor_values.rst.txt)
 
-[Previous](index_microsecond_go-operator_unary.html "Overview: IndexMicrosecondGO: Operator Unary")
-[Next](index_microsecond_go-accessor_datetime.html "Overview: IndexMicrosecondGO: Accessor Datetime")
+[Previous](index_microsecond_go-operator_unary.md "Overview: IndexMicrosecondGO: Operator Unary")
+[Next](index_microsecond_go-accessor_datetime.md "Overview: IndexMicrosecondGO: Accessor Datetime")
 
 ---
 
 # Overview: IndexMicrosecondGO: Accessor Values[](#overview-indexmicrosecondgo-accessor-values "Link to this heading")
 
-[Detail: IndexMicrosecondGO: Accessor Values](../api_detail/index_microsecond_go-accessor_values.html#api-detail-indexmicrosecondgo-accessor-values)
+[Detail: IndexMicrosecondGO: Accessor Values](../api_detail/index_microsecond_go-accessor_values.md#api-detail-indexmicrosecondgo-accessor-values)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_microsecond_go-accessor_values.html#api-sig-indexmicrosecondgo-via-values-apply) | `IndexMicrosecondGO.via_values.apply(func, *args, **kwargs)` |  |
-| [Detail](../api_detail/index_microsecond_go-accessor_values.html#api-sig-indexmicrosecondgo-via-values-array-ufunc) | `IndexMicrosecondGO.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
-| [Detail](../api_detail/index_microsecond_go-accessor_values.html#api-sig-indexmicrosecondgo-via-values-call) | `IndexMicrosecondGO.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
+| [Detail](../api_detail/index_microsecond_go-accessor_values.md#api-sig-indexmicrosecondgo-via-values-apply) | `IndexMicrosecondGO.via_values.apply(func, *args, **kwargs)` |  |
+| [Detail](../api_detail/index_microsecond_go-accessor_values.md#api-sig-indexmicrosecondgo-via-values-array-ufunc) | `IndexMicrosecondGO.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
+| [Detail](../api_detail/index_microsecond_go-accessor_values.md#api-sig-indexmicrosecondgo-via-values-call) | `IndexMicrosecondGO.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
 
-[IndexMicrosecondGO](index_microsecond_go.html#api-overview-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.html#api-overview-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.html#api-overview-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.html#api-overview-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.html#api-overview-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.html#api-overview-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.html#api-overview-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.html#api-overview-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.html#api-overview-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.html#api-overview-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.html#api-overview-indexmicrosecondgo-operator-unary) | [Accessor Values](#api-overview-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.html#api-overview-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.html#api-overview-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.html#api-overview-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.html#api-overview-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.html#api-overview-indexmicrosecondgo-accessor-type-clinic)
+[IndexMicrosecondGO](index_microsecond_go.md#api-overview-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.md#api-overview-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.md#api-overview-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.md#api-overview-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.md#api-overview-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.md#api-overview-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.md#api-overview-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.md#api-overview-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.md#api-overview-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.md#api-overview-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.md#api-overview-indexmicrosecondgo-operator-unary) | [Accessor Values](#api-overview-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.md#api-overview-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.md#api-overview-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.md#api-overview-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.md#api-overview-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.md#api-overview-indexmicrosecondgo-accessor-type-clinic)
 
-[Previous](index_microsecond_go-operator_unary.html "Overview: IndexMicrosecondGO: Operator Unary")
-[Next](index_microsecond_go-accessor_datetime.html "Overview: IndexMicrosecondGO: Accessor Datetime")
+[Previous](index_microsecond_go-operator_unary.md "Overview: IndexMicrosecondGO: Operator Unary")
+[Next](index_microsecond_go-accessor_datetime.md "Overview: IndexMicrosecondGO: Accessor Datetime")
 
 ---
 

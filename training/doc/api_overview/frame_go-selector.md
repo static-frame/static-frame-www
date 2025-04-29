@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: FrameGO: Selector
 * [View page source](../_sources/api_overview/frame_go-selector.rst.txt)
 
-[Previous](frame_go-assignment.html "Overview: FrameGO: Assignment")
-[Next](frame_go-iterator.html "Overview: FrameGO: Iterator")
+[Previous](frame_go-assignment.md "Overview: FrameGO: Assignment")
+[Next](frame_go-iterator.md "Overview: FrameGO: Iterator")
 
 ---
 
 # Overview: FrameGO: Selector[](#overview-framego-selector "Link to this heading")
 
-[Detail: FrameGO: Selector](../api_detail/frame_go-selector.html#api-detail-framego-selector)
+[Detail: FrameGO: Selector](../api_detail/frame_go-selector.md#api-detail-framego-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-bloc) | `FrameGO.bloc[key]` |  |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-drop) | `FrameGO.drop[key]` | Label-based selection. |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-drop-iloc) | `FrameGO.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-drop-loc) | `FrameGO.drop.loc[key]` |  |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-mask) | `FrameGO.mask[key]` | Label-based selection. |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-mask-iloc) | `FrameGO.mask.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-mask-loc) | `FrameGO.mask.loc[key]` |  |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-masked-array) | `FrameGO.masked_array[key]` | Label-based selection. |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-masked-array-iloc) | `FrameGO.masked_array.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-masked-array-loc) | `FrameGO.masked_array.loc[key]` |  |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego) | `FrameGO[key]` | Selector of columns by label. Args: key: A loc selector, either a label, a list… |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-iloc) | `FrameGO.iloc[key]` |  |
-| [Detail](../api_detail/frame_go-selector.html#api-sig-framego-loc) | `FrameGO.loc[key]` |  |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-bloc) | `FrameGO.bloc[key]` |  |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-drop) | `FrameGO.drop[key]` | Label-based selection. |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-drop-iloc) | `FrameGO.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-drop-loc) | `FrameGO.drop.loc[key]` |  |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-mask) | `FrameGO.mask[key]` | Label-based selection. |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-mask-iloc) | `FrameGO.mask.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-mask-loc) | `FrameGO.mask.loc[key]` |  |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-masked-array) | `FrameGO.masked_array[key]` | Label-based selection. |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-masked-array-iloc) | `FrameGO.masked_array.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-masked-array-loc) | `FrameGO.masked_array.loc[key]` |  |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego) | `FrameGO[key]` | Selector of columns by label. Args: key: A loc selector, either a label, a list… |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-iloc) | `FrameGO.iloc[key]` |  |
+| [Detail](../api_detail/frame_go-selector.md#api-sig-framego-loc) | `FrameGO.loc[key]` |  |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-assignment.html "Overview: FrameGO: Assignment")
-[Next](frame_go-iterator.html "Overview: FrameGO: Iterator")
+[Previous](frame_go-assignment.md "Overview: FrameGO: Assignment")
+[Next](frame_go-iterator.md "Overview: FrameGO: Iterator")
 
 ---
 

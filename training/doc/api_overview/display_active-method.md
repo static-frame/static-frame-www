@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: DisplayActive: Method
 * [View page source](../_sources/api_overview/display_active-method.rst.txt)
 
-[Previous](display_active-attribute.html "Overview: DisplayActive: Attribute")
-[Next](display_active-dictionary_like.html "Overview: DisplayActive: Dictionary-Like")
+[Previous](display_active-attribute.md "Overview: DisplayActive: Attribute")
+[Next](display_active-dictionary_like.md "Overview: DisplayActive: Dictionary-Like")
 
 ---
 
 # Overview: DisplayActive: Method[](#overview-displayactive-method "Link to this heading")
 
-[Detail: DisplayActive: Method](../api_detail/display_active-method.html#api-detail-displayactive-method)
+[Detail: DisplayActive: Method](../api_detail/display_active-method.md#api-detail-displayactive-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/display_active-method.html#api-sig-displayactive-read) | `DisplayActive.read(fp)` |  |
-| [Detail](../api_detail/display_active-method.html#api-sig-displayactive-set) | `DisplayActive.set(dc)` |  |
-| [Detail](../api_detail/display_active-method.html#api-sig-displayactive-update) | `DisplayActive.update(**kwargs)` |  |
-| [Detail](../api_detail/display_active-method.html#api-sig-displayactive-write) | `DisplayActive.write(fp)` |  |
+| [Detail](../api_detail/display_active-method.md#api-sig-displayactive-read) | `DisplayActive.read(fp)` |  |
+| [Detail](../api_detail/display_active-method.md#api-sig-displayactive-set) | `DisplayActive.set(dc)` |  |
+| [Detail](../api_detail/display_active-method.md#api-sig-displayactive-update) | `DisplayActive.update(**kwargs)` |  |
+| [Detail](../api_detail/display_active-method.md#api-sig-displayactive-write) | `DisplayActive.write(fp)` |  |
 
-[DisplayActive](display_active.html#api-overview-displayactive): [Constructor](display_active-constructor.html#api-overview-displayactive-constructor) | [Attribute](display_active-attribute.html#api-overview-displayactive-attribute) | [Method](#api-overview-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.html#api-overview-displayactive-dictionary-like) | [Display](display_active-display.html#api-overview-displayactive-display)
+[DisplayActive](display_active.md#api-overview-displayactive): [Constructor](display_active-constructor.md#api-overview-displayactive-constructor) | [Attribute](display_active-attribute.md#api-overview-displayactive-attribute) | [Method](#api-overview-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.md#api-overview-displayactive-dictionary-like) | [Display](display_active-display.md#api-overview-displayactive-display)
 
-[Previous](display_active-attribute.html "Overview: DisplayActive: Attribute")
-[Next](display_active-dictionary_like.html "Overview: DisplayActive: Dictionary-Like")
+[Previous](display_active-attribute.md "Overview: DisplayActive: Attribute")
+[Next](display_active-dictionary_like.md "Overview: DisplayActive: Dictionary-Like")
 
 ---
 

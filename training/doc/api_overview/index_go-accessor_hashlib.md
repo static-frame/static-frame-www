@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: IndexGO: Accessor Hashlib
 * [View page source](../_sources/api_overview/index_go-accessor_hashlib.rst.txt)
 
-[Previous](index_go-accessor_regular_expression.html "Overview: IndexGO: Accessor Regular Expression")
-[Next](index_go-accessor_type_clinic.html "Overview: IndexGO: Accessor Type Clinic")
+[Previous](index_go-accessor_regular_expression.md "Overview: IndexGO: Accessor Regular Expression")
+[Next](index_go-accessor_type_clinic.md "Overview: IndexGO: Accessor Type Clinic")
 
 ---
 
 # Overview: IndexGO: Accessor Hashlib[](#overview-indexgo-accessor-hashlib "Link to this heading")
 
-[Detail: IndexGO: Accessor Hashlib](../api_detail/index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib)
+[Detail: IndexGO: Accessor Hashlib](../api_detail/index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-to-bytes) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-md5) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-sha256) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-sha512) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-sha3-256) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-sha3-512) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-shake-128) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-shake-256) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-blake2b) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/index_go-accessor_hashlib.html#api-sig-indexgo-via-hashlib-blake2s) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-to-bytes) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-md5) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-sha256) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-sha512) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-sha3-256) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-sha3-512) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-shake-128) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-shake-256) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-blake2b) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_go-accessor_hashlib.md#api-sig-indexgo-via-hashlib-blake2s) | `IndexGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[IndexGO](index_go.html#api-overview-indexgo): [Constructor](index_go-constructor.html#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.html#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.html#api-overview-indexgo-attribute) | [Method](index_go-method.html#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-overview-indexgo-dictionary-like) | [Display](index_go-display.html#api-overview-indexgo-display) | [Selector](index_go-selector.html#api-overview-indexgo-selector) | [Iterator](index_go-iterator.html#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-overview-indexgo): [Constructor](index_go-constructor.md#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | [Method](index_go-method.md#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 
-[Previous](index_go-accessor_regular_expression.html "Overview: IndexGO: Accessor Regular Expression")
-[Next](index_go-accessor_type_clinic.html "Overview: IndexGO: Accessor Type Clinic")
+[Previous](index_go-accessor_regular_expression.md "Overview: IndexGO: Accessor Regular Expression")
+[Next](index_go-accessor_type_clinic.md "Overview: IndexGO: Accessor Type Clinic")
 
 ---
 

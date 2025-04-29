@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexMinute: Accessor Datetime
 * [View page source](../_sources/api_overview/index_minute-accessor_datetime.rst.txt)
 
-[Previous](index_minute-accessor_values.html "Overview: IndexMinute: Accessor Values")
-[Next](index_minute-accessor_string.html "Overview: IndexMinute: Accessor String")
+[Previous](index_minute-accessor_values.md "Overview: IndexMinute: Accessor Values")
+[Next](index_minute-accessor_string.md "Overview: IndexMinute: Accessor String")
 
 ---
 
 # Overview: IndexMinute: Accessor Datetime[](#overview-indexminute-accessor-datetime "Link to this heading")
 
-[Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.html#api-detail-indexminute-accessor-datetime)
+[Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-call) | `IndexMinute.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-year) | `IndexMinute.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-year-month) | `IndexMinute.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-year-quarter) | `IndexMinute.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-month) | `IndexMinute.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-day) | `IndexMinute.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-hour) | `IndexMinute.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-minute) | `IndexMinute.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-second) | `IndexMinute.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-weekday) | `IndexMinute.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-quarter) | `IndexMinute.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-is-month-end) | `IndexMinute.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-is-month-start) | `IndexMinute.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-is-year-end) | `IndexMinute.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-is-year-start) | `IndexMinute.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-is-quarter-end) | `IndexMinute.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-is-quarter-start) | `IndexMinute.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-timetuple) | `IndexMinute.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-isoformat) | `IndexMinute.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-fromisoformat) | `IndexMinute.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-strftime) | `IndexMinute.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-strptime) | `IndexMinute.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_minute-accessor_datetime.html#api-sig-indexminute-via-dt-strpdate) | `IndexMinute.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-call) | `IndexMinute.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-year) | `IndexMinute.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-year-month) | `IndexMinute.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-year-quarter) | `IndexMinute.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-month) | `IndexMinute.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-day) | `IndexMinute.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-hour) | `IndexMinute.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-minute) | `IndexMinute.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-second) | `IndexMinute.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-weekday) | `IndexMinute.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-quarter) | `IndexMinute.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-is-month-end) | `IndexMinute.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-is-month-start) | `IndexMinute.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-is-year-end) | `IndexMinute.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-is-year-start) | `IndexMinute.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-is-quarter-end) | `IndexMinute.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-is-quarter-start) | `IndexMinute.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-timetuple) | `IndexMinute.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-isoformat) | `IndexMinute.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-fromisoformat) | `IndexMinute.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-strftime) | `IndexMinute.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-strptime) | `IndexMinute.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_minute-accessor_datetime.md#api-sig-indexminute-via-dt-strpdate) | `IndexMinute.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-accessor_values.html "Overview: IndexMinute: Accessor Values")
-[Next](index_minute-accessor_string.html "Overview: IndexMinute: Accessor String")
+[Previous](index_minute-accessor_values.md "Overview: IndexMinute: Accessor Values")
+[Next](index_minute-accessor_string.md "Overview: IndexMinute: Accessor String")
 
 ---
 

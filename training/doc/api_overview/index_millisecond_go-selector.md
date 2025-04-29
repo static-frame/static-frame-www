@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexMillisecondGO: Selector
 * [View page source](../_sources/api_overview/index_millisecond_go-selector.rst.txt)
 
-[Previous](index_millisecond_go-display.html "Overview: IndexMillisecondGO: Display")
-[Next](index_millisecond_go-iterator.html "Overview: IndexMillisecondGO: Iterator")
+[Previous](index_millisecond_go-display.md "Overview: IndexMillisecondGO: Display")
+[Next](index_millisecond_go-iterator.md "Overview: IndexMillisecondGO: Iterator")
 
 ---
 
 # Overview: IndexMillisecondGO: Selector[](#overview-indexmillisecondgo-selector "Link to this heading")
 
-[Detail: IndexMillisecondGO: Selector](../api_detail/index_millisecond_go-selector.html#api-detail-indexmillisecondgo-selector)
+[Detail: IndexMillisecondGO: Selector](../api_detail/index_millisecond_go-selector.md#api-detail-indexmillisecondgo-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond_go-selector.html#api-sig-indexmillisecondgo-drop-iloc) | `IndexMillisecondGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
-| [Detail](../api_detail/index_millisecond_go-selector.html#api-sig-indexmillisecondgo-drop-loc) | `IndexMillisecondGO.drop.loc[key]` |  |
-| [Detail](../api_detail/index_millisecond_go-selector.html#api-sig-indexmillisecondgo) | `IndexMillisecondGO[key]` | Extract a new index given an iloc key. |
-| [Detail](../api_detail/index_millisecond_go-selector.html#api-sig-indexmillisecondgo-iloc) | `IndexMillisecondGO.iloc[key]` |  |
-| [Detail](../api_detail/index_millisecond_go-selector.html#api-sig-indexmillisecondgo-loc) | `IndexMillisecondGO.loc[key]` |  |
+| [Detail](../api_detail/index_millisecond_go-selector.md#api-sig-indexmillisecondgo-drop-iloc) | `IndexMillisecondGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
+| [Detail](../api_detail/index_millisecond_go-selector.md#api-sig-indexmillisecondgo-drop-loc) | `IndexMillisecondGO.drop.loc[key]` |  |
+| [Detail](../api_detail/index_millisecond_go-selector.md#api-sig-indexmillisecondgo) | `IndexMillisecondGO[key]` | Extract a new index given an iloc key. |
+| [Detail](../api_detail/index_millisecond_go-selector.md#api-sig-indexmillisecondgo-iloc) | `IndexMillisecondGO.iloc[key]` |  |
+| [Detail](../api_detail/index_millisecond_go-selector.md#api-sig-indexmillisecondgo-loc) | `IndexMillisecondGO.loc[key]` |  |
 
-[IndexMillisecondGO](index_millisecond_go.html#api-overview-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.html#api-overview-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.html#api-overview-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.html#api-overview-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.html#api-overview-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.html#api-overview-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.html#api-overview-indexmillisecondgo-display) | [Selector](#api-overview-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.html#api-overview-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.html#api-overview-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.html#api-overview-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.html#api-overview-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.html#api-overview-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.html#api-overview-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.html#api-overview-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.html#api-overview-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.html#api-overview-indexmillisecondgo-accessor-type-clinic)
+[IndexMillisecondGO](index_millisecond_go.md#api-overview-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.md#api-overview-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-overview-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-overview-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.md#api-overview-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-overview-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.md#api-overview-indexmillisecondgo-display) | [Selector](#api-overview-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-overview-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-overview-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-overview-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-overview-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-overview-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-overview-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-overview-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-overview-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-overview-indexmillisecondgo-accessor-type-clinic)
 
-[Previous](index_millisecond_go-display.html "Overview: IndexMillisecondGO: Display")
-[Next](index_millisecond_go-iterator.html "Overview: IndexMillisecondGO: Iterator")
+[Previous](index_millisecond_go-display.md "Overview: IndexMillisecondGO: Display")
+[Next](index_millisecond_go-iterator.md "Overview: IndexMillisecondGO: Iterator")
 
 ---
 

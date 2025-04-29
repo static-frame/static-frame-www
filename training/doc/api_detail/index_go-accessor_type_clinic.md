@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexGO: Accessor Type Clinic
 * [View page source](../_sources/api_detail/index_go-accessor_type_clinic.rst.txt)
 
-[Previous](index_go-accessor_hashlib.html "Detail: IndexGO: Accessor Hashlib")
-[Next](index_hierarchy-constructor.html "Detail: IndexHierarchy: Constructor")
+[Previous](index_go-accessor_hashlib.md "Detail: IndexGO: Accessor Hashlib")
+[Next](index_hierarchy-constructor.md "Detail: IndexHierarchy: Constructor")
 
 ---
 
 # Detail: IndexGO: Accessor Type Clinic[](#detail-indexgo-accessor-type-clinic "Link to this heading")
 
-[Overview: IndexGO: Accessor Type Clinic](../api_overview/index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic)
+[Overview: IndexGO: Accessor Type Clinic](../api_overview/index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 
 IndexGO.via\_type\_clinic.to\_hint
 :   IndexGO.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -168,7 +168,7 @@ IndexGO.via\_type\_clinic.to\_hint
 IndexGO.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   IndexGO.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -192,7 +192,7 @@ IndexGO.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 IndexGO.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   IndexGO.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -202,7 +202,7 @@ IndexGO.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 IndexGO.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   IndexGO.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -233,7 +233,7 @@ IndexGO.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 IndexGO.via\_type\_clinic.\_\_repr\_\_
 :   IndexGO.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -251,10 +251,10 @@ IndexGO.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[IndexGO](index_go.html#api-detail-indexgo): [Constructor](index_go-constructor.html#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.html#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.html#api-detail-indexgo-attribute) | [Method](index_go-method.html#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-detail-indexgo-dictionary-like) | [Display](index_go-display.html#api-detail-indexgo-display) | [Selector](index_go-selector.html#api-detail-indexgo-selector) | [Iterator](index_go-iterator.html#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexgo-accessor-type-clinic)
 
-[Previous](index_go-accessor_hashlib.html "Detail: IndexGO: Accessor Hashlib")
-[Next](index_hierarchy-constructor.html "Detail: IndexHierarchy: Constructor")
+[Previous](index_go-accessor_hashlib.md "Detail: IndexGO: Accessor Hashlib")
+[Next](index_hierarchy-constructor.md "Detail: IndexHierarchy: Constructor")
 
 ---
 

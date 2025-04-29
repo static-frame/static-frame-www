@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexSecondGO: Accessor Type Clinic
 * [View page source](../_sources/api_overview/index_second_go-accessor_type_clinic.rst.txt)
 
-[Previous](index_second_go-accessor_hashlib.html "Overview: IndexSecondGO: Accessor Hashlib")
-[Next](index_millisecond-constructor.html "Overview: IndexMillisecond: Constructor")
+[Previous](index_second_go-accessor_hashlib.md "Overview: IndexSecondGO: Accessor Hashlib")
+[Next](index_millisecond-constructor.md "Overview: IndexMillisecond: Constructor")
 
 ---
 
 # Overview: IndexSecondGO: Accessor Type Clinic[](#overview-indexsecondgo-accessor-type-clinic "Link to this heading")
 
-[Detail: IndexSecondGO: Accessor Type Clinic](../api_detail/index_second_go-accessor_type_clinic.html#api-detail-indexsecondgo-accessor-type-clinic)
+[Detail: IndexSecondGO: Accessor Type Clinic](../api_detail/index_second_go-accessor_type_clinic.md#api-detail-indexsecondgo-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second_go-accessor_type_clinic.html#api-sig-indexsecondgo-via-type-clinic-to-hint) | `IndexSecondGO.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/index_second_go-accessor_type_clinic.html#api-sig-indexsecondgo-via-type-clinic-check) | `IndexSecondGO.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/index_second_go-accessor_type_clinic.html#api-sig-indexsecondgo-via-type-clinic-warn) | `IndexSecondGO.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/index_second_go-accessor_type_clinic.html#api-sig-indexsecondgo-via-type-clinic-call) | `IndexSecondGO.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/index_second_go-accessor_type_clinic.html#api-sig-indexsecondgo-via-type-clinic-repr) | `IndexSecondGO.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/index_second_go-accessor_type_clinic.md#api-sig-indexsecondgo-via-type-clinic-to-hint) | `IndexSecondGO.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/index_second_go-accessor_type_clinic.md#api-sig-indexsecondgo-via-type-clinic-check) | `IndexSecondGO.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/index_second_go-accessor_type_clinic.md#api-sig-indexsecondgo-via-type-clinic-warn) | `IndexSecondGO.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/index_second_go-accessor_type_clinic.md#api-sig-indexsecondgo-via-type-clinic-call) | `IndexSecondGO.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/index_second_go-accessor_type_clinic.md#api-sig-indexsecondgo-via-type-clinic-repr) | `IndexSecondGO.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[IndexSecondGO](index_second_go.html#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.html#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.md#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-overview-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-accessor_hashlib.html "Overview: IndexSecondGO: Accessor Hashlib")
-[Next](index_millisecond-constructor.html "Overview: IndexMillisecond: Constructor")
+[Previous](index_second_go-accessor_hashlib.md "Overview: IndexSecondGO: Accessor Hashlib")
+[Next](index_millisecond-constructor.md "Overview: IndexMillisecond: Constructor")
 
 ---
 

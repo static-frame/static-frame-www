@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Detail: IndexSecondGO: Exporter
 * [View page source](../_sources/api_detail/index_second_go-exporter.rst.txt)
 
-[Previous](index_second_go-constructor.html "Detail: IndexSecondGO: Constructor")
-[Next](index_second_go-attribute.html "Detail: IndexSecondGO: Attribute")
+[Previous](index_second_go-constructor.md "Detail: IndexSecondGO: Constructor")
+[Next](index_second_go-attribute.md "Detail: IndexSecondGO: Attribute")
 
 ---
 
 # Detail: IndexSecondGO: Exporter[](#detail-indexsecondgo-exporter "Link to this heading")
 
-[Overview: IndexSecondGO: Exporter](../api_overview/index_second_go-exporter.html#api-overview-indexsecondgo-exporter)
+[Overview: IndexSecondGO: Exporter](../api_overview/index_second_go-exporter.md#api-overview-indexsecondgo-exporter)
 
 IndexSecondGO.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexSecondGO.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Index`](index-selector.html#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 IndexSecondGO.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexSecondGO.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Index`](index-selector.html#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
@@ -204,10 +204,10 @@ IndexSecondGO.to\_series()[](#static_frame.IndexSecondGO.to_series "Link to t
 IndexSecondGO.to\_visidata()[](#static_frame.IndexSecondGO.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[IndexSecondGO](index_second_go.html#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.html#api-detail-indexsecondgo-constructor) | [Exporter](#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-detail-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.md#api-detail-indexsecondgo-constructor) | [Exporter](#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-detail-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-constructor.html "Detail: IndexSecondGO: Constructor")
-[Next](index_second_go-attribute.html "Detail: IndexSecondGO: Attribute")
+[Previous](index_second_go-constructor.md "Detail: IndexSecondGO: Constructor")
+[Next](index_second_go-attribute.md "Detail: IndexSecondGO: Attribute")
 
 ---
 

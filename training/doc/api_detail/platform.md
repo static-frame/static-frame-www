@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,25 +136,25 @@ API Detail
 * Detail: Platform
 * [View page source](../_sources/api_detail/platform.rst.txt)
 
-[Previous](memory_display.html "Detail: MemoryDisplay")
-[Next](../api_overview/series-constructor.html "Overview: Series: Constructor")
+[Previous](memory_display.md "Detail: MemoryDisplay")
+[Next](../api_overview/series-constructor.md "Overview: Series: Constructor")
 
 ---
 
 # Detail: Platform[](#detail-platform "Link to this heading")
 
-[Overview: Platform](../api_overview/platform.html#api-overview-platform)
+[Overview: Platform](../api_overview/platform.md#api-overview-platform)
 
-*class* Platform[[source]](../_modules/static_frame/core/platform.html#Platform)[](#static_frame.Platform "Link to this definition")
+*class* Platform[[source]](../_modules/static_frame/core/platform.md#Platform)[](#static_frame.Platform "Link to this definition")
 
-* [Constructor](platform-constructor.html#api-detail-platform-constructor): Alternative constructors for creating instances.
-* [Exporter](platform-exporter.html#api-detail-platform-exporter): Methods for transforming, exporting, or serializing objects.
-* [Display](platform-display.html#api-detail-platform-display): Methods for providing a text representation of the object.
+* [Constructor](platform-constructor.md#api-detail-platform-constructor): Alternative constructors for creating instances.
+* [Exporter](platform-exporter.md#api-detail-platform-exporter): Methods for transforming, exporting, or serializing objects.
+* [Display](platform-display.md#api-detail-platform-display): Methods for providing a text representation of the object.
 
-[Platform](#api-detail-platform): [Constructor](platform-constructor.html#api-detail-platform-constructor) | [Exporter](platform-exporter.html#api-detail-platform-exporter) | [Display](platform-display.html#api-detail-platform-display)
+[Platform](#api-detail-platform): [Constructor](platform-constructor.md#api-detail-platform-constructor) | [Exporter](platform-exporter.md#api-detail-platform-exporter) | [Display](platform-display.md#api-detail-platform-display)
 
-[Previous](memory_display.html "Detail: MemoryDisplay")
-[Next](../api_overview/series-constructor.html "Overview: Series: Constructor")
+[Previous](memory_display.md "Detail: MemoryDisplay")
+[Next](../api_overview/series-constructor.md "Overview: Series: Constructor")
 
 ---
 

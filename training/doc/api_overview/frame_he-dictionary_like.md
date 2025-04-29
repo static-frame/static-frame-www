@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: FrameHE: Dictionary-Like
 * [View page source](../_sources/api_overview/frame_he-dictionary_like.rst.txt)
 
-[Previous](frame_he-method.html "Overview: FrameHE: Method")
-[Next](frame_he-display.html "Overview: FrameHE: Display")
+[Previous](frame_he-method.md "Overview: FrameHE: Method")
+[Next](frame_he-display.md "Overview: FrameHE: Display")
 
 ---
 
 # Overview: FrameHE: Dictionary-Like[](#overview-framehe-dictionary-like "Link to this heading")
 
-[Detail: FrameHE: Dictionary-Like](../api_detail/frame_he-dictionary_like.html#api-detail-framehe-dictionary-like)
+[Detail: FrameHE: Dictionary-Like](../api_detail/frame_he-dictionary_like.md#api-detail-framehe-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_he-dictionary_like.html#api-sig-framehe-contains) | `FrameHE.__contains__(value)` | Inclusion of value in column labels. |
-| [Detail](../api_detail/frame_he-dictionary_like.html#api-sig-framehe-iter) | `FrameHE.__iter__()` | Iterator of column labels, same as Frame.keys. |
-| [Detail](../api_detail/frame_he-dictionary_like.html#api-sig-framehe-reversed) | `FrameHE.__reversed__()` | Returns a reverse iterator on the frame’s columns. |
-| [Detail](../api_detail/frame_he-dictionary_like.html#api-sig-framehe-get) | `FrameHE.get(key, default)` | Return the value found at the columns key, else the default if the key is not fo… |
-| [Detail](../api_detail/frame_he-dictionary_like.html#api-sig-framehe-items) | `FrameHE.items()` | Iterator of pairs of column label and corresponding column Series. |
-| [Detail](../api_detail/frame_he-dictionary_like.html#api-sig-framehe-keys) | `FrameHE.keys()` | Iterator of column labels. |
-| [Detail](../api_detail/frame_he-dictionary_like.html#api-sig-framehe-values) | `FrameHE.values` | A 2D NumPy array of all values in the Frame. As this is a single array, heteroge… |
+| [Detail](../api_detail/frame_he-dictionary_like.md#api-sig-framehe-contains) | `FrameHE.__contains__(value)` | Inclusion of value in column labels. |
+| [Detail](../api_detail/frame_he-dictionary_like.md#api-sig-framehe-iter) | `FrameHE.__iter__()` | Iterator of column labels, same as Frame.keys. |
+| [Detail](../api_detail/frame_he-dictionary_like.md#api-sig-framehe-reversed) | `FrameHE.__reversed__()` | Returns a reverse iterator on the frame’s columns. |
+| [Detail](../api_detail/frame_he-dictionary_like.md#api-sig-framehe-get) | `FrameHE.get(key, default)` | Return the value found at the columns key, else the default if the key is not fo… |
+| [Detail](../api_detail/frame_he-dictionary_like.md#api-sig-framehe-items) | `FrameHE.items()` | Iterator of pairs of column label and corresponding column Series. |
+| [Detail](../api_detail/frame_he-dictionary_like.md#api-sig-framehe-keys) | `FrameHE.keys()` | Iterator of column labels. |
+| [Detail](../api_detail/frame_he-dictionary_like.md#api-sig-framehe-values) | `FrameHE.values` | A 2D NumPy array of all values in the Frame. As this is a single array, heteroge… |
 
-[FrameHE](frame_he.html#api-overview-framehe): [Constructor](frame_he-constructor.html#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.html#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.html#api-overview-framehe-attribute) | [Method](frame_he-method.html#api-overview-framehe-method) | [Dictionary-Like](#api-overview-framehe-dictionary-like) | [Display](frame_he-display.html#api-overview-framehe-display) | [Assignment](frame_he-assignment.html#api-overview-framehe-assignment) | [Selector](frame_he-selector.html#api-overview-framehe-selector) | [Iterator](frame_he-iterator.html#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-overview-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-overview-framehe): [Constructor](frame_he-constructor.md#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.md#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.md#api-overview-framehe-attribute) | [Method](frame_he-method.md#api-overview-framehe-method) | [Dictionary-Like](#api-overview-framehe-dictionary-like) | [Display](frame_he-display.md#api-overview-framehe-display) | [Assignment](frame_he-assignment.md#api-overview-framehe-assignment) | [Selector](frame_he-selector.md#api-overview-framehe-selector) | [Iterator](frame_he-iterator.md#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-overview-framehe-accessor-reduce)
 
-[Previous](frame_he-method.html "Overview: FrameHE: Method")
-[Next](frame_he-display.html "Overview: FrameHE: Display")
+[Previous](frame_he-method.md "Overview: FrameHE: Method")
+[Next](frame_he-display.md "Overview: FrameHE: Display")
 
 ---
 

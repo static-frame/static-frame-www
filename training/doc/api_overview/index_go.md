@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,38 +135,38 @@ API Detail
 * Overview: IndexGO
 * [View page source](../_sources/api_overview/index_go.rst.txt)
 
-[Previous](index.html "Overview: Index")
-[Next](index_hierarchy.html "Overview: IndexHierarchy")
+[Previous](index.md "Overview: Index")
+[Next](index_hierarchy.md "Overview: IndexHierarchy")
 
 ---
 
 # Overview: IndexGO[](#overview-indexgo "Link to this heading")
 
-[Detail: IndexGO](../api_detail/index_go.html#api-detail-indexgo)
+[Detail: IndexGO](../api_detail/index_go.md#api-detail-indexgo)
 
 |  |  |
 | --- | --- |
-| [Constructor](index_go-constructor.html#api-overview-indexgo-constructor) | Alternative constructors for creating instances. |
-| [Exporter](index_go-exporter.html#api-overview-indexgo-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](index_go-attribute.html#api-overview-indexgo-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](index_go-method.html#api-overview-indexgo-method) | Methods for general functionality. |
-| [Dictionary-Like](index_go-dictionary_like.html#api-overview-indexgo-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](index_go-display.html#api-overview-indexgo-display) | Methods for providing a text representation of the object. |
-| [Selector](index_go-selector.html#api-overview-indexgo-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](index_go-iterator.html#api-overview-indexgo-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Operator Binary](index_go-operator_binary.html#api-overview-indexgo-operator-binary) | Underlying (magic) methods for binary operator implementation. |
-| [Operator Unary](index_go-operator_unary.html#api-overview-indexgo-operator-unary) | Underlying (magic) methods for unary operator implementation. |
-| [Accessor Values](index_go-accessor_values.html#api-overview-indexgo-accessor-values) | Interface for using NumPy functions on conatainers. |
-| [Accessor Datetime](index_go-accessor_datetime.html#api-overview-indexgo-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
-| [Accessor String](index_go-accessor_string.html#api-overview-indexgo-accessor-string) | Interface for employing string methods on container elements. |
-| [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-overview-indexgo-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
-| [Accessor Hashlib](index_go-accessor_hashlib.html#api-overview-indexgo-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](index_go-constructor.md#api-overview-indexgo-constructor) | Alternative constructors for creating instances. |
+| [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](index_go-method.md#api-overview-indexgo-method) | Methods for general functionality. |
+| [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](index_go-display.md#api-overview-indexgo-display) | Methods for providing a text representation of the object. |
+| [Selector](index_go-selector.md#api-overview-indexgo-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | Underlying (magic) methods for binary operator implementation. |
+| [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | Underlying (magic) methods for unary operator implementation. |
+| [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | Interface for using NumPy functions on conatainers. |
+| [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
+| [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | Interface for employing string methods on container elements. |
+| [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
+| [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 
-[IndexGO](#api-overview-indexgo): [Constructor](index_go-constructor.html#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.html#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.html#api-overview-indexgo-attribute) | [Method](index_go-method.html#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-overview-indexgo-dictionary-like) | [Display](index_go-display.html#api-overview-indexgo-display) | [Selector](index_go-selector.html#api-overview-indexgo-selector) | [Iterator](index_go-iterator.html#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic)
+[IndexGO](#api-overview-indexgo): [Constructor](index_go-constructor.md#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | [Method](index_go-method.md#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 
-[Previous](index.html "Overview: Index")
-[Next](index_hierarchy.html "Overview: IndexHierarchy")
+[Previous](index.md "Overview: Index")
+[Next](index_hierarchy.md "Overview: IndexHierarchy")
 
 ---
 

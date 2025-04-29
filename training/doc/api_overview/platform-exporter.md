@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: Platform: Exporter
 * [View page source](../_sources/api_overview/platform-exporter.rst.txt)
 
-[Previous](platform-constructor.html "Overview: Platform: Constructor")
-[Next](platform-display.html "Overview: Platform: Display")
+[Previous](platform-constructor.md "Overview: Platform: Constructor")
+[Next](platform-display.md "Overview: Platform: Display")
 
 ---
 
 # Overview: Platform: Exporter[](#overview-platform-exporter "Link to this heading")
 
-[Detail: Platform: Exporter](../api_detail/platform-exporter.html#api-detail-platform-exporter)
+[Detail: Platform: Exporter](../api_detail/platform-exporter.md#api-detail-platform-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/platform-exporter.html#api-sig-platform-to-series) | `Platform.to_series()` |  |
+| [Detail](../api_detail/platform-exporter.md#api-sig-platform-to-series) | `Platform.to_series()` |  |
 
-[Platform](platform.html#api-overview-platform): [Constructor](platform-constructor.html#api-overview-platform-constructor) | [Exporter](#api-overview-platform-exporter) | [Display](platform-display.html#api-overview-platform-display)
+[Platform](platform.md#api-overview-platform): [Constructor](platform-constructor.md#api-overview-platform-constructor) | [Exporter](#api-overview-platform-exporter) | [Display](platform-display.md#api-overview-platform-display)
 
-[Previous](platform-constructor.html "Overview: Platform: Constructor")
-[Next](platform-display.html "Overview: Platform: Display")
+[Previous](platform-constructor.md "Overview: Platform: Constructor")
+[Next](platform-display.md "Overview: Platform: Display")
 
 ---
 

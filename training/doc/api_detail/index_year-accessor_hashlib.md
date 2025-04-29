@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexYear: Accessor Hashlib
 * [View page source](../_sources/api_detail/index_year-accessor_hashlib.rst.txt)
 
-[Previous](index_year-accessor_regular_expression.html "Detail: IndexYear: Accessor Regular Expression")
-[Next](index_year-accessor_type_clinic.html "Detail: IndexYear: Accessor Type Clinic")
+[Previous](index_year-accessor_regular_expression.md "Detail: IndexYear: Accessor Regular Expression")
+[Next](index_year-accessor_type_clinic.md "Detail: IndexYear: Accessor Type Clinic")
 
 ---
 
 # Detail: IndexYear: Accessor Hashlib[](#detail-indexyear-accessor-hashlib "Link to this heading")
 
-[Overview: IndexYear: Accessor Hashlib](../api_overview/index_year-accessor_hashlib.html#api-overview-indexyear-accessor-hashlib)
+[Overview: IndexYear: Accessor Hashlib](../api_overview/index_year-accessor_hashlib.md#api-overview-indexyear-accessor-hashlib)
 
 IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.to_bytes)
+    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.to_bytes)
     :   Return the byte signature for this container, suitable for passing to a cryptographic hash function.
 
     ```
@@ -168,7 +168,7 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.md5)
+    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.md5)
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -187,7 +187,7 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha25
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha256)
+    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha256)
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -206,7 +206,7 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha51
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha512)
+    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha512)
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -225,7 +225,7 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_256)
+    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_256)
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -244,7 +244,7 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_512)
+    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_512)
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -263,7 +263,7 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_128)
+    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_128)
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -282,7 +282,7 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_256)
+    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_256)
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -301,7 +301,7 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2b)
+    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2b)
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -320,7 +320,7 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2s)
+    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2s)
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -335,10 +335,10 @@ IndexYear.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake
 
     ```
 
-[IndexYear](index_year.html#api-detail-indexyear): [Constructor](index_year-constructor.html#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.html#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.html#api-detail-indexyear-attribute) | [Method](index_year-method.html#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-detail-indexyear-dictionary-like) | [Display](index_year-display.html#api-detail-indexyear-display) | [Selector](index_year-selector.html#api-detail-indexyear-selector) | [Iterator](index_year-iterator.html#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-detail-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-detail-indexyear): [Constructor](index_year-constructor.md#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.md#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.md#api-detail-indexyear-attribute) | [Method](index_year-method.md#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-detail-indexyear-dictionary-like) | [Display](index_year-display.md#api-detail-indexyear-display) | [Selector](index_year-selector.md#api-detail-indexyear-selector) | [Iterator](index_year-iterator.md#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-detail-indexyear-accessor-type-clinic)
 
-[Previous](index_year-accessor_regular_expression.html "Detail: IndexYear: Accessor Regular Expression")
-[Next](index_year-accessor_type_clinic.html "Detail: IndexYear: Accessor Type Clinic")
+[Previous](index_year-accessor_regular_expression.md "Detail: IndexYear: Accessor Regular Expression")
+[Next](index_year-accessor_type_clinic.md "Detail: IndexYear: Accessor Type Clinic")
 
 ---
 

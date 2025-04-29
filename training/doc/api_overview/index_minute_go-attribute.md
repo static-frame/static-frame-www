@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexMinuteGO: Attribute
 * [View page source](../_sources/api_overview/index_minute_go-attribute.rst.txt)
 
-[Previous](index_minute_go-exporter.html "Overview: IndexMinuteGO: Exporter")
-[Next](index_minute_go-method.html "Overview: IndexMinuteGO: Method")
+[Previous](index_minute_go-exporter.md "Overview: IndexMinuteGO: Exporter")
+[Next](index_minute_go-method.md "Overview: IndexMinuteGO: Method")
 
 ---
 
 # Overview: IndexMinuteGO: Attribute[](#overview-indexminutego-attribute "Link to this heading")
 
-[Detail: IndexMinuteGO: Attribute](../api_detail/index_minute_go-attribute.html#api-detail-indexminutego-attribute)
+[Detail: IndexMinuteGO: Attribute](../api_detail/index_minute_go-attribute.md#api-detail-indexminutego-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-static) | `IndexMinuteGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-depth) | `IndexMinuteGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-dtype) | `IndexMinuteGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-index-types) | `IndexMinuteGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-memory) | `IndexMinuteGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-mloc) | `IndexMinuteGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-name) | `IndexMinuteGO.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-names) | `IndexMinuteGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-nbytes) | `IndexMinuteGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-ndim) | `IndexMinuteGO.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-positions) | `IndexMinuteGO.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-shape) | `IndexMinuteGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_minute_go-attribute.html#api-sig-indexminutego-size) | `IndexMinuteGO.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-static) | `IndexMinuteGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-depth) | `IndexMinuteGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-dtype) | `IndexMinuteGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-index-types) | `IndexMinuteGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-memory) | `IndexMinuteGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-mloc) | `IndexMinuteGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-name) | `IndexMinuteGO.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-names) | `IndexMinuteGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-nbytes) | `IndexMinuteGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-ndim) | `IndexMinuteGO.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-positions) | `IndexMinuteGO.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-shape) | `IndexMinuteGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_minute_go-attribute.md#api-sig-indexminutego-size) | `IndexMinuteGO.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexMinuteGO](index_minute_go.html#api-overview-indexminutego): [Constructor](index_minute_go-constructor.html#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.html#api-overview-indexminutego-exporter) | [Attribute](#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.html#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.html#api-overview-indexminutego-dictionary-like) | [Display](index_minute_go-display.html#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.html#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.html#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.html#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.html#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.html#api-overview-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.html#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.html#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.html#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.html#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.html#api-overview-indexminutego-accessor-type-clinic)
+[IndexMinuteGO](index_minute_go.md#api-overview-indexminutego): [Constructor](index_minute_go-constructor.md#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.md#api-overview-indexminutego-exporter) | [Attribute](#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.md#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-overview-indexminutego-dictionary-like) | [Display](index_minute_go-display.md#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.md#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.md#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.md#api-overview-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.md#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.md#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-overview-indexminutego-accessor-type-clinic)
 
-[Previous](index_minute_go-exporter.html "Overview: IndexMinuteGO: Exporter")
-[Next](index_minute_go-method.html "Overview: IndexMinuteGO: Method")
+[Previous](index_minute_go-exporter.md "Overview: IndexMinuteGO: Exporter")
+[Next](index_minute_go-method.md "Overview: IndexMinuteGO: Method")
 
 ---
 

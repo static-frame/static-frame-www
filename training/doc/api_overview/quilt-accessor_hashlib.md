@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Quilt: Accessor Hashlib
 * [View page source](../_sources/api_overview/quilt-accessor_hashlib.rst.txt)
 
-[Previous](quilt-iterator.html "Overview: Quilt: Iterator")
-[Next](quilt-accessor_type_clinic.html "Overview: Quilt: Accessor Type Clinic")
+[Previous](quilt-iterator.md "Overview: Quilt: Iterator")
+[Next](quilt-accessor_type_clinic.md "Overview: Quilt: Accessor Type Clinic")
 
 ---
 
 # Overview: Quilt: Accessor Hashlib[](#overview-quilt-accessor-hashlib "Link to this heading")
 
-[Detail: Quilt: Accessor Hashlib](../api_detail/quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib)
+[Detail: Quilt: Accessor Hashlib](../api_detail/quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-to-bytes) | `Quilt.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-md5) | `Quilt.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-sha256) | `Quilt.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-sha512) | `Quilt.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-sha3-256) | `Quilt.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-sha3-512) | `Quilt.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-shake-128) | `Quilt.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-shake-256) | `Quilt.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-blake2b) | `Quilt.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/quilt-accessor_hashlib.html#api-sig-quilt-via-hashlib-blake2s) | `Quilt.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-to-bytes) | `Quilt.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-md5) | `Quilt.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-sha256) | `Quilt.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-sha512) | `Quilt.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-sha3-256) | `Quilt.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-sha3-512) | `Quilt.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-shake-128) | `Quilt.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-shake-256) | `Quilt.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-blake2b) | `Quilt.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/quilt-accessor_hashlib.md#api-sig-quilt-via-hashlib-blake2s) | `Quilt.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[Quilt](quilt.html#api-overview-quilt): [Constructor](quilt-constructor.html#api-overview-quilt-constructor) | [Exporter](quilt-exporter.html#api-overview-quilt-exporter) | [Attribute](quilt-attribute.html#api-overview-quilt-attribute) | [Method](quilt-method.html#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-overview-quilt-dictionary-like) | [Display](quilt-display.html#api-overview-quilt-display) | [Selector](quilt-selector.html#api-overview-quilt-selector) | [Iterator](quilt-iterator.html#api-overview-quilt-iterator) | [Accessor Hashlib](#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-overview-quilt): [Constructor](quilt-constructor.md#api-overview-quilt-constructor) | [Exporter](quilt-exporter.md#api-overview-quilt-exporter) | [Attribute](quilt-attribute.md#api-overview-quilt-attribute) | [Method](quilt-method.md#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-overview-quilt-dictionary-like) | [Display](quilt-display.md#api-overview-quilt-display) | [Selector](quilt-selector.md#api-overview-quilt-selector) | [Iterator](quilt-iterator.md#api-overview-quilt-iterator) | [Accessor Hashlib](#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic)
 
-[Previous](quilt-iterator.html "Overview: Quilt: Iterator")
-[Next](quilt-accessor_type_clinic.html "Overview: Quilt: Accessor Type Clinic")
+[Previous](quilt-iterator.md "Overview: Quilt: Iterator")
+[Next](quilt-accessor_type_clinic.md "Overview: Quilt: Accessor Type Clinic")
 
 ---
 

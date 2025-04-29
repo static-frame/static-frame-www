@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: SeriesHE: Accessor Hashlib
 * [View page source](../_sources/api_detail/series_he-accessor_hashlib.rst.txt)
 
-[Previous](series_he-accessor_regular_expression.html "Detail: SeriesHE: Accessor Regular Expression")
-[Next](series_he-accessor_type_clinic.html "Detail: SeriesHE: Accessor Type Clinic")
+[Previous](series_he-accessor_regular_expression.md "Detail: SeriesHE: Accessor Regular Expression")
+[Next](series_he-accessor_type_clinic.md "Detail: SeriesHE: Accessor Type Clinic")
 
 ---
 
 # Detail: SeriesHE: Accessor Hashlib[](#detail-serieshe-accessor-hashlib "Link to this heading")
 
-[Overview: SeriesHE: Accessor Hashlib](../api_overview/series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib)
+[Overview: SeriesHE: Accessor Hashlib](../api_overview/series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib)
 
 SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.to_bytes)
+    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.to_bytes)
     :   Return the byte signature for this container, suitable for passing to a cryptographic hash function.
 
     ```
@@ -169,7 +169,7 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.md5)
+    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.md5)
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -189,7 +189,7 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha256)
+    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha256)
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -209,7 +209,7 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha512)
+    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha512)
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -229,7 +229,7 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_256)
+    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_256)
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -249,7 +249,7 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_512)
+    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_512)
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -269,7 +269,7 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_128)
+    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_128)
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -289,7 +289,7 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_256)
+    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_256)
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -309,7 +309,7 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2b)
+    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2b)
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -329,7 +329,7 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2s)
+    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2s)
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -345,10 +345,10 @@ SeriesHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2
 
     ```
 
-[SeriesHE](series_he.html#api-detail-serieshe): [Constructor](series_he-constructor.html#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.html#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.html#api-detail-serieshe-attribute) | [Method](series_he-method.html#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-detail-serieshe-dictionary-like) | [Display](series_he-display.html#api-detail-serieshe-display) | [Assignment](series_he-assignment.html#api-detail-serieshe-assignment) | [Selector](series_he-selector.html#api-detail-serieshe-selector) | [Iterator](series_he-iterator.html#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-accessor_regular_expression.html "Detail: SeriesHE: Accessor Regular Expression")
-[Next](series_he-accessor_type_clinic.html "Detail: SeriesHE: Accessor Type Clinic")
+[Previous](series_he-accessor_regular_expression.md "Detail: SeriesHE: Accessor Regular Expression")
+[Next](series_he-accessor_type_clinic.md "Detail: SeriesHE: Accessor Type Clinic")
 
 ---
 

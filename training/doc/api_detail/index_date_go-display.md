@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexDateGO: Display
 * [View page source](../_sources/api_detail/index_date_go-display.rst.txt)
 
-[Previous](index_date_go-dictionary_like.html "Detail: IndexDateGO: Dictionary-Like")
-[Next](index_date_go-selector.html "Detail: IndexDateGO: Selector")
+[Previous](index_date_go-dictionary_like.md "Detail: IndexDateGO: Dictionary-Like")
+[Next](index_date_go-selector.md "Detail: IndexDateGO: Selector")
 
 ---
 
 # Detail: IndexDateGO: Display[](#detail-indexdatego-display "Link to this heading")
 
-[Overview: IndexDateGO: Display](../api_overview/index_date_go-display.html#api-overview-indexdatego-display)
+[Overview: IndexDateGO: Display](../api_overview/index_date_go-display.md#api-overview-indexdatego-display)
 
 IndexDateGO.interface[](#IndexDateGO.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -230,7 +230,7 @@ IndexDateGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexDateGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -251,7 +251,7 @@ IndexDateGO.display\_tall(*config=None*, */*)[](#static_frame.IndexDateGO.dis
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexDateGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -268,7 +268,7 @@ IndexDateGO.display\_wide(*config=None*, */*)[](#static_frame.IndexDateGO.dis
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexDateGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -281,10 +281,10 @@ IndexDateGO.display\_wide(*config=None*, */*)[](#static_frame.IndexDateGO.dis
 
     ```
 
-[IndexDateGO](index_date_go.html#api-detail-indexdatego): [Constructor](index_date_go-constructor.html#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.html#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-detail-indexdatego-attribute) | [Method](index_date_go-method.html#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.html#api-detail-indexdatego-dictionary-like) | [Display](#api-detail-indexdatego-display) | [Selector](index_date_go-selector.html#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.html#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.html#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.html#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.html#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.html#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-detail-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-detail-indexdatego): [Constructor](index_date_go-constructor.md#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-detail-indexdatego-attribute) | [Method](index_date_go-method.md#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-detail-indexdatego-dictionary-like) | [Display](#api-detail-indexdatego-display) | [Selector](index_date_go-selector.md#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-detail-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-dictionary_like.html "Detail: IndexDateGO: Dictionary-Like")
-[Next](index_date_go-selector.html "Detail: IndexDateGO: Selector")
+[Previous](index_date_go-dictionary_like.md "Detail: IndexDateGO: Dictionary-Like")
+[Next](index_date_go-selector.md "Detail: IndexDateGO: Selector")
 
 ---
 

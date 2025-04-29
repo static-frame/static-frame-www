@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,28 +136,28 @@ API Detail
 * Detail: DisplayConfig
 * [View page source](../_sources/api_detail/display_config.rst.txt)
 
-[Previous](display_active.html "Detail: DisplayActive")
-[Next](store_config.html "Detail: StoreConfig")
+[Previous](display_active.md "Detail: DisplayActive")
+[Next](store_config.md "Detail: StoreConfig")
 
 ---
 
 # Detail: DisplayConfig[](#detail-displayconfig "Link to this heading")
 
-[Overview: DisplayConfig](../api_overview/display_config.html#api-overview-displayconfig)
+[Overview: DisplayConfig](../api_overview/display_config.md#api-overview-displayconfig)
 
-*class* DisplayConfig(*\**, *type\_show=True*, *type\_color=True*, *type\_color\_default=5263440*, *type\_color\_int=5263440*, *type\_color\_float=5263440*, *type\_color\_complex=5263440*, *type\_color\_bool=5263440*, *type\_color\_object=5263440*, *type\_color\_str=5263440*, *type\_color\_datetime=5263440*, *type\_color\_timedelta=5263440*, *type\_color\_index=7829367*, *type\_color\_series=7829367*, *type\_color\_frame=7829367*, *type\_color\_bus=7829367*, *type\_color\_quilt=7829367*, *type\_delimiter\_left='<'*, *type\_delimiter\_right='>'*, *value\_format\_float\_positional='{}'*, *value\_format\_float\_scientific='{:.8e}'*, *value\_format\_complex\_positional='{}'*, *value\_format\_complex\_scientific='{:.2e}'*, *cell\_placeholder='.'*, *display\_format=DisplayFormats.TERMINAL*, *display\_columns=12*, *display\_rows=36*, *include\_columns=True*, *include\_index=True*, *cell\_max\_width=20*, *cell\_max\_width\_leftmost=36*, *cell\_align\_left=True*)[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig)[](#static_frame.DisplayConfig "Link to this definition")
+*class* DisplayConfig(*\**, *type\_show=True*, *type\_color=True*, *type\_color\_default=5263440*, *type\_color\_int=5263440*, *type\_color\_float=5263440*, *type\_color\_complex=5263440*, *type\_color\_bool=5263440*, *type\_color\_object=5263440*, *type\_color\_str=5263440*, *type\_color\_datetime=5263440*, *type\_color\_timedelta=5263440*, *type\_color\_index=7829367*, *type\_color\_series=7829367*, *type\_color\_frame=7829367*, *type\_color\_bus=7829367*, *type\_color\_quilt=7829367*, *type\_delimiter\_left='<'*, *type\_delimiter\_right='>'*, *value\_format\_float\_positional='{}'*, *value\_format\_float\_scientific='{:.8e}'*, *value\_format\_complex\_positional='{}'*, *value\_format\_complex\_scientific='{:.2e}'*, *cell\_placeholder='.'*, *display\_format=DisplayFormats.TERMINAL*, *display\_columns=12*, *display\_rows=36*, *include\_columns=True*, *include\_index=True*, *cell\_max\_width=20*, *cell\_max\_width\_leftmost=36*, *cell\_align\_left=True*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig)[](#static_frame.DisplayConfig "Link to this definition")
 :   Storage container for all display settings.
 
-* [Constructor](display_config-constructor.html#api-detail-displayconfig-constructor): Alternative constructors for creating instances.
-* [Exporter](display_config-exporter.html#api-detail-displayconfig-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](display_config-attribute.html#api-detail-displayconfig-attribute): Attributes for retrieving basic characteristics.
-* [Method](display_config-method.html#api-detail-displayconfig-method): Methods for general functionality.
-* [Display](display_config-display.html#api-detail-displayconfig-display): Methods for providing a text representation of the object.
+* [Constructor](display_config-constructor.md#api-detail-displayconfig-constructor): Alternative constructors for creating instances.
+* [Exporter](display_config-exporter.md#api-detail-displayconfig-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](display_config-attribute.md#api-detail-displayconfig-attribute): Attributes for retrieving basic characteristics.
+* [Method](display_config-method.md#api-detail-displayconfig-method): Methods for general functionality.
+* [Display](display_config-display.md#api-detail-displayconfig-display): Methods for providing a text representation of the object.
 
-[DisplayConfig](#api-detail-displayconfig): [Constructor](display_config-constructor.html#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.html#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.html#api-detail-displayconfig-attribute) | [Method](display_config-method.html#api-detail-displayconfig-method) | [Display](display_config-display.html#api-detail-displayconfig-display)
+[DisplayConfig](#api-detail-displayconfig): [Constructor](display_config-constructor.md#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.md#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.md#api-detail-displayconfig-attribute) | [Method](display_config-method.md#api-detail-displayconfig-method) | [Display](display_config-display.md#api-detail-displayconfig-display)
 
-[Previous](display_active.html "Detail: DisplayActive")
-[Next](store_config.html "Detail: StoreConfig")
+[Previous](display_active.md "Detail: DisplayActive")
+[Next](store_config.md "Detail: StoreConfig")
 
 ---
 

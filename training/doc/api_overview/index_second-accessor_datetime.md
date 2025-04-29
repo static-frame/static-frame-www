@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexSecond: Accessor Datetime
 * [View page source](../_sources/api_overview/index_second-accessor_datetime.rst.txt)
 
-[Previous](index_second-accessor_values.html "Overview: IndexSecond: Accessor Values")
-[Next](index_second-accessor_string.html "Overview: IndexSecond: Accessor String")
+[Previous](index_second-accessor_values.md "Overview: IndexSecond: Accessor Values")
+[Next](index_second-accessor_string.md "Overview: IndexSecond: Accessor String")
 
 ---
 
 # Overview: IndexSecond: Accessor Datetime[](#overview-indexsecond-accessor-datetime "Link to this heading")
 
-[Detail: IndexSecond: Accessor Datetime](../api_detail/index_second-accessor_datetime.html#api-detail-indexsecond-accessor-datetime)
+[Detail: IndexSecond: Accessor Datetime](../api_detail/index_second-accessor_datetime.md#api-detail-indexsecond-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-call) | `IndexSecond.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-year) | `IndexSecond.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-year-month) | `IndexSecond.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-year-quarter) | `IndexSecond.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-month) | `IndexSecond.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-day) | `IndexSecond.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-hour) | `IndexSecond.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-minute) | `IndexSecond.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-second) | `IndexSecond.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-weekday) | `IndexSecond.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-quarter) | `IndexSecond.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-is-month-end) | `IndexSecond.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-is-month-start) | `IndexSecond.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-is-year-end) | `IndexSecond.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-is-year-start) | `IndexSecond.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-is-quarter-end) | `IndexSecond.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-is-quarter-start) | `IndexSecond.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-timetuple) | `IndexSecond.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-isoformat) | `IndexSecond.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-fromisoformat) | `IndexSecond.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-strftime) | `IndexSecond.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-strptime) | `IndexSecond.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_second-accessor_datetime.html#api-sig-indexsecond-via-dt-strpdate) | `IndexSecond.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-call) | `IndexSecond.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-year) | `IndexSecond.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-year-month) | `IndexSecond.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-year-quarter) | `IndexSecond.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-month) | `IndexSecond.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-day) | `IndexSecond.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-hour) | `IndexSecond.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-minute) | `IndexSecond.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-second) | `IndexSecond.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-weekday) | `IndexSecond.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-quarter) | `IndexSecond.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-is-month-end) | `IndexSecond.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-is-month-start) | `IndexSecond.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-is-year-end) | `IndexSecond.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-is-year-start) | `IndexSecond.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-is-quarter-end) | `IndexSecond.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-is-quarter-start) | `IndexSecond.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-timetuple) | `IndexSecond.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-isoformat) | `IndexSecond.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-fromisoformat) | `IndexSecond.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-strftime) | `IndexSecond.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-strptime) | `IndexSecond.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_second-accessor_datetime.md#api-sig-indexsecond-via-dt-strpdate) | `IndexSecond.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexSecond](index_second.html#api-overview-indexsecond): [Constructor](index_second-constructor.html#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.html#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-overview-indexsecond-attribute) | [Method](index_second-method.html#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.html#api-overview-indexsecond-display) | [Selector](index_second-selector.html#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.html#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-overview-indexsecond-accessor-values) | [Accessor Datetime](#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-overview-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-overview-indexsecond): [Constructor](index_second-constructor.md#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-overview-indexsecond-attribute) | [Method](index_second-method.md#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.md#api-overview-indexsecond-display) | [Selector](index_second-selector.md#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.md#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-overview-indexsecond-accessor-values) | [Accessor Datetime](#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-overview-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-accessor_values.html "Overview: IndexSecond: Accessor Values")
-[Next](index_second-accessor_string.html "Overview: IndexSecond: Accessor String")
+[Previous](index_second-accessor_values.md "Overview: IndexSecond: Accessor Values")
+[Next](index_second-accessor_string.md "Overview: IndexSecond: Accessor String")
 
 ---
 

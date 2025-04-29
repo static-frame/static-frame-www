@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: DisplayActive: Dictionary-Like
 * [View page source](../_sources/api_overview/display_active-dictionary_like.rst.txt)
 
-[Previous](display_active-method.html "Overview: DisplayActive: Method")
-[Next](display_active-display.html "Overview: DisplayActive: Display")
+[Previous](display_active-method.md "Overview: DisplayActive: Method")
+[Next](display_active-display.md "Overview: DisplayActive: Display")
 
 ---
 
 # Overview: DisplayActive: Dictionary-Like[](#overview-displayactive-dictionary-like "Link to this heading")
 
-[Detail: DisplayActive: Dictionary-Like](../api_detail/display_active-dictionary_like.html#api-detail-displayactive-dictionary-like)
+[Detail: DisplayActive: Dictionary-Like](../api_detail/display_active-dictionary_like.md#api-detail-displayactive-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/display_active-dictionary_like.html#api-sig-displayactive-get) | `DisplayActive.get(**kwargs)` |  |
+| [Detail](../api_detail/display_active-dictionary_like.md#api-sig-displayactive-get) | `DisplayActive.get(**kwargs)` |  |
 
-[DisplayActive](display_active.html#api-overview-displayactive): [Constructor](display_active-constructor.html#api-overview-displayactive-constructor) | [Attribute](display_active-attribute.html#api-overview-displayactive-attribute) | [Method](display_active-method.html#api-overview-displayactive-method) | [Dictionary-Like](#api-overview-displayactive-dictionary-like) | [Display](display_active-display.html#api-overview-displayactive-display)
+[DisplayActive](display_active.md#api-overview-displayactive): [Constructor](display_active-constructor.md#api-overview-displayactive-constructor) | [Attribute](display_active-attribute.md#api-overview-displayactive-attribute) | [Method](display_active-method.md#api-overview-displayactive-method) | [Dictionary-Like](#api-overview-displayactive-dictionary-like) | [Display](display_active-display.md#api-overview-displayactive-display)
 
-[Previous](display_active-method.html "Overview: DisplayActive: Method")
-[Next](display_active-display.html "Overview: DisplayActive: Display")
+[Previous](display_active-method.md "Overview: DisplayActive: Method")
+[Next](display_active-display.md "Overview: DisplayActive: Display")
 
 ---
 

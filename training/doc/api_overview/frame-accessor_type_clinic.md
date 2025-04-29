@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: Frame: Accessor Type Clinic
 * [View page source](../_sources/api_overview/frame-accessor_type_clinic.rst.txt)
 
-[Previous](frame-accessor_hashlib.html "Overview: Frame: Accessor Hashlib")
-[Next](frame-accessor_reduce.html "Overview: Frame: Accessor Reduce")
+[Previous](frame-accessor_hashlib.md "Overview: Frame: Accessor Hashlib")
+[Next](frame-accessor_reduce.md "Overview: Frame: Accessor Reduce")
 
 ---
 
 # Overview: Frame: Accessor Type Clinic[](#overview-frame-accessor-type-clinic "Link to this heading")
 
-[Detail: Frame: Accessor Type Clinic](../api_detail/frame-accessor_type_clinic.html#api-detail-frame-accessor-type-clinic)
+[Detail: Frame: Accessor Type Clinic](../api_detail/frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame-accessor_type_clinic.html#api-sig-frame-via-type-clinic-to-hint) | `Frame.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/frame-accessor_type_clinic.html#api-sig-frame-via-type-clinic-check) | `Frame.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/frame-accessor_type_clinic.html#api-sig-frame-via-type-clinic-warn) | `Frame.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/frame-accessor_type_clinic.html#api-sig-frame-via-type-clinic-call) | `Frame.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/frame-accessor_type_clinic.html#api-sig-frame-via-type-clinic-repr) | `Frame.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/frame-accessor_type_clinic.md#api-sig-frame-via-type-clinic-to-hint) | `Frame.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/frame-accessor_type_clinic.md#api-sig-frame-via-type-clinic-check) | `Frame.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/frame-accessor_type_clinic.md#api-sig-frame-via-type-clinic-warn) | `Frame.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/frame-accessor_type_clinic.md#api-sig-frame-via-type-clinic-call) | `Frame.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/frame-accessor_type_clinic.md#api-sig-frame-via-type-clinic-repr) | `Frame.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[Frame](frame.html#api-overview-frame): [Constructor](frame-constructor.html#api-overview-frame-constructor) | [Exporter](frame-exporter.html#api-overview-frame-exporter) | [Attribute](frame-attribute.html#api-overview-frame-attribute) | [Method](frame-method.html#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-overview-frame-dictionary-like) | [Display](frame-display.html#api-overview-frame-display) | [Assignment](frame-assignment.html#api-overview-frame-assignment) | [Selector](frame-selector.html#api-overview-frame-selector) | [Iterator](frame-iterator.html#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-overview-frame-accessor-reduce)
+[Frame](frame.md#api-overview-frame): [Constructor](frame-constructor.md#api-overview-frame-constructor) | [Exporter](frame-exporter.md#api-overview-frame-exporter) | [Attribute](frame-attribute.md#api-overview-frame-attribute) | [Method](frame-method.md#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-overview-frame-dictionary-like) | [Display](frame-display.md#api-overview-frame-display) | [Assignment](frame-assignment.md#api-overview-frame-assignment) | [Selector](frame-selector.md#api-overview-frame-selector) | [Iterator](frame-iterator.md#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-overview-frame-accessor-reduce)
 
-[Previous](frame-accessor_hashlib.html "Overview: Frame: Accessor Hashlib")
-[Next](frame-accessor_reduce.html "Overview: Frame: Accessor Reduce")
+[Previous](frame-accessor_hashlib.md "Overview: Frame: Accessor Hashlib")
+[Next](frame-accessor_reduce.md "Overview: Frame: Accessor Reduce")
 
 ---
 

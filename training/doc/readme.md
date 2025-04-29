@@ -13,7 +13,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](intro.md)
-* [Media](intro.html#media)
+* [Media](intro.md#media)
 * [What is New in StaticFrame](new.md)
 * [Contributing](contributing.md)
 
@@ -140,8 +140,8 @@ API Detail
 * static-frame
 * [View page source](_sources/readme.rst.txt)
 
-[Previous](index.html "StaticFrame")
-[Next](license.html "License")
+[Previous](index.md "StaticFrame")
+[Next](license.md "License")
 
 ---
 
@@ -552,8 +552,8 @@ This simple naive Bayes classifier can predict iris species correctly about 73% 
 
 For further introduction to StaticFrame, including links to articles, videos, and documentation, see [here](https://static-frame.readthedocs.io/en/latest/intro.md).
 
-[Previous](index.html "StaticFrame")
-[Next](license.html "License")
+[Previous](index.md "StaticFrame")
+[Next](license.md "License")
 
 ---
 

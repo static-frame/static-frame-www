@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexMinute: Accessor Values
 * [View page source](../_sources/api_detail/index_minute-accessor_values.rst.txt)
 
-[Previous](index_minute-operator_unary.html "Detail: IndexMinute: Operator Unary")
-[Next](index_minute-accessor_datetime.html "Detail: IndexMinute: Accessor Datetime")
+[Previous](index_minute-operator_unary.md "Detail: IndexMinute: Operator Unary")
+[Next](index_minute-accessor_datetime.md "Detail: IndexMinute: Accessor Datetime")
 
 ---
 
 # Detail: IndexMinute: Accessor Values[](#detail-indexminute-accessor-values "Link to this heading")
 
-[Overview: IndexMinute: Accessor Values](../api_overview/index_minute-accessor_values.html#api-overview-indexminute-accessor-values)
+[Overview: IndexMinute: Accessor Values](../api_overview/index_minute-accessor_values.md#api-overview-indexminute-accessor-values)
 
 IndexMinute.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
 :   IndexMinute.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.apply)
+    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.apply)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -167,7 +167,7 @@ IndexMinute.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*k
 :   IndexMinute.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__array_ufunc__)
+    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__array_ufunc__)
     :   Support for applying NumPy functions directly on containers.
 
     ```
@@ -187,7 +187,7 @@ IndexMinute.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks
 :   IndexMinute.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__call__)
+    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__call__)
     :   Parameters:
         :   * **consolidate\_blocks** – Group adjacent same-typed arrays into 2D arrays.
             * **unify\_blocks** – Group all arrays into single array, re-typing to an appropriate dtype.
@@ -206,10 +206,10 @@ IndexMinute.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks
 
     ```
 
-[IndexMinute](index_minute.html#api-detail-indexminute): [Constructor](index_minute-constructor.html#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-detail-indexminute-attribute) | [Method](index_minute-method.html#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.html#api-detail-indexminute-display) | [Selector](index_minute-selector.html#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.html#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-detail-indexminute-operator-unary) | [Accessor Values](#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-detail-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](index_minute-method.md#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.md#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-detail-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-operator_unary.html "Detail: IndexMinute: Operator Unary")
-[Next](index_minute-accessor_datetime.html "Detail: IndexMinute: Accessor Datetime")
+[Previous](index_minute-operator_unary.md "Detail: IndexMinute: Operator Unary")
+[Next](index_minute-accessor_datetime.md "Detail: IndexMinute: Accessor Datetime")
 
 ---
 

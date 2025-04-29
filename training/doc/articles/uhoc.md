@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -147,8 +147,8 @@ API Detail
 * Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames
 * [View page source](../_sources/articles/uhoc.rst.txt)
 
-[Previous](hash.html "Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations")
-[Next](fill_value.html "One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames")
+[Previous](hash.md "Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations")
+[Next](fill_value.md "One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames")
 
 ---
 
@@ -635,8 +635,8 @@ Similarly, all `Batch` constructors expose `max_workers`, `chunk_size`, and `use
 
 While related tools for working with collections of `Frames` exist, the `Bus`, `Batch`, `Quilt`, and `Yarn` provide well-defined abstractions that cover common needs in working with potentially huge collections of tables. Combined with lazy loading, eager unloading, and lazy execution, as well as support for a variety of multi-table storage formats, these tools provide valuable resources for DataFrame processing.
 
-[Previous](hash.html "Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations")
-[Next](fill_value.html "One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames")
+[Previous](hash.md "Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations")
+[Next](fill_value.md "One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames")
 
 ---
 

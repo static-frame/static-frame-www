@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexYearMonth: Selector
 * [View page source](../_sources/api_overview/index_year_month-selector.rst.txt)
 
-[Previous](index_year_month-display.html "Overview: IndexYearMonth: Display")
-[Next](index_year_month-iterator.html "Overview: IndexYearMonth: Iterator")
+[Previous](index_year_month-display.md "Overview: IndexYearMonth: Display")
+[Next](index_year_month-iterator.md "Overview: IndexYearMonth: Iterator")
 
 ---
 
 # Overview: IndexYearMonth: Selector[](#overview-indexyearmonth-selector "Link to this heading")
 
-[Detail: IndexYearMonth: Selector](../api_detail/index_year_month-selector.html#api-detail-indexyearmonth-selector)
+[Detail: IndexYearMonth: Selector](../api_detail/index_year_month-selector.md#api-detail-indexyearmonth-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month-selector.html#api-sig-indexyearmonth-drop-iloc) | `IndexYearMonth.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
-| [Detail](../api_detail/index_year_month-selector.html#api-sig-indexyearmonth-drop-loc) | `IndexYearMonth.drop.loc[key]` |  |
-| [Detail](../api_detail/index_year_month-selector.html#api-sig-indexyearmonth) | `IndexYearMonth[key]` | Extract a new index given an iloc key. |
-| [Detail](../api_detail/index_year_month-selector.html#api-sig-indexyearmonth-iloc) | `IndexYearMonth.iloc[key]` |  |
-| [Detail](../api_detail/index_year_month-selector.html#api-sig-indexyearmonth-loc) | `IndexYearMonth.loc[key]` |  |
+| [Detail](../api_detail/index_year_month-selector.md#api-sig-indexyearmonth-drop-iloc) | `IndexYearMonth.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
+| [Detail](../api_detail/index_year_month-selector.md#api-sig-indexyearmonth-drop-loc) | `IndexYearMonth.drop.loc[key]` |  |
+| [Detail](../api_detail/index_year_month-selector.md#api-sig-indexyearmonth) | `IndexYearMonth[key]` | Extract a new index given an iloc key. |
+| [Detail](../api_detail/index_year_month-selector.md#api-sig-indexyearmonth-iloc) | `IndexYearMonth.iloc[key]` |  |
+| [Detail](../api_detail/index_year_month-selector.md#api-sig-indexyearmonth-loc) | `IndexYearMonth.loc[key]` |  |
 
-[IndexYearMonth](index_year_month.html#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.html#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-overview-indexyearmonth-display) | [Selector](#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-overview-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.md#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-overview-indexyearmonth-display) | [Selector](#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-overview-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-display.html "Overview: IndexYearMonth: Display")
-[Next](index_year_month-iterator.html "Overview: IndexYearMonth: Iterator")
+[Previous](index_year_month-display.md "Overview: IndexYearMonth: Display")
+[Next](index_year_month-iterator.md "Overview: IndexYearMonth: Iterator")
 
 ---
 

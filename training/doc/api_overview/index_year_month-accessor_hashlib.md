@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: IndexYearMonth: Accessor Hashlib
 * [View page source](../_sources/api_overview/index_year_month-accessor_hashlib.rst.txt)
 
-[Previous](index_year_month-accessor_regular_expression.html "Overview: IndexYearMonth: Accessor Regular Expression")
-[Next](index_year_month-accessor_type_clinic.html "Overview: IndexYearMonth: Accessor Type Clinic")
+[Previous](index_year_month-accessor_regular_expression.md "Overview: IndexYearMonth: Accessor Regular Expression")
+[Next](index_year_month-accessor_type_clinic.md "Overview: IndexYearMonth: Accessor Type Clinic")
 
 ---
 
 # Overview: IndexYearMonth: Accessor Hashlib[](#overview-indexyearmonth-accessor-hashlib "Link to this heading")
 
-[Detail: IndexYearMonth: Accessor Hashlib](../api_detail/index_year_month-accessor_hashlib.html#api-detail-indexyearmonth-accessor-hashlib)
+[Detail: IndexYearMonth: Accessor Hashlib](../api_detail/index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-to-bytes) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-md5) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-sha256) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-sha512) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-sha3-256) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-sha3-512) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-shake-128) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-shake-256) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-blake2b) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/index_year_month-accessor_hashlib.html#api-sig-indexyearmonth-via-hashlib-blake2s) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-to-bytes) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-md5) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-sha256) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-sha512) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-sha3-256) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-sha3-512) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-shake-128) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-shake-256) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-blake2b) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_year_month-accessor_hashlib.md#api-sig-indexyearmonth-via-hashlib-blake2s) | `IndexYearMonth.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[IndexYearMonth](index_year_month.html#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.html#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-overview-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.md#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-overview-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-accessor_regular_expression.html "Overview: IndexYearMonth: Accessor Regular Expression")
-[Next](index_year_month-accessor_type_clinic.html "Overview: IndexYearMonth: Accessor Type Clinic")
+[Previous](index_year_month-accessor_regular_expression.md "Overview: IndexYearMonth: Accessor Regular Expression")
+[Next](index_year_month-accessor_type_clinic.md "Overview: IndexYearMonth: Accessor Type Clinic")
 
 ---
 

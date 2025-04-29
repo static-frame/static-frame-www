@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](intro.md)
-* [Media](intro.html#media)
+* [Media](intro.md#media)
 * [What is New in StaticFrame](new.md)
 * [Contributing](contributing.md)
 

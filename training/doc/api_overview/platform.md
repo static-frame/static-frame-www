@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: Platform
 * [View page source](../_sources/api_overview/platform.rst.txt)
 
-[Previous](memory_display.html "Overview: MemoryDisplay")
-[Next](../api_detail/series.html "Detail: Series")
+[Previous](memory_display.md "Overview: MemoryDisplay")
+[Next](../api_detail/series.md "Detail: Series")
 
 ---
 
 # Overview: Platform[](#overview-platform "Link to this heading")
 
-[Detail: Platform](../api_detail/platform.html#api-detail-platform)
+[Detail: Platform](../api_detail/platform.md#api-detail-platform)
 
 |  |  |
 | --- | --- |
-| [Constructor](platform-constructor.html#api-overview-platform-constructor) | Alternative constructors for creating instances. |
-| [Exporter](platform-exporter.html#api-overview-platform-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Display](platform-display.html#api-overview-platform-display) | Methods for providing a text representation of the object. |
+| [Constructor](platform-constructor.md#api-overview-platform-constructor) | Alternative constructors for creating instances. |
+| [Exporter](platform-exporter.md#api-overview-platform-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Display](platform-display.md#api-overview-platform-display) | Methods for providing a text representation of the object. |
 
-[Platform](#api-overview-platform): [Constructor](platform-constructor.html#api-overview-platform-constructor) | [Exporter](platform-exporter.html#api-overview-platform-exporter) | [Display](platform-display.html#api-overview-platform-display)
+[Platform](#api-overview-platform): [Constructor](platform-constructor.md#api-overview-platform-constructor) | [Exporter](platform-exporter.md#api-overview-platform-exporter) | [Display](platform-display.md#api-overview-platform-display)
 
-[Previous](memory_display.html "Overview: MemoryDisplay")
-[Next](../api_detail/series.html "Detail: Series")
+[Previous](memory_display.md "Overview: MemoryDisplay")
+[Next](../api_detail/series.md "Detail: Series")
 
 ---
 

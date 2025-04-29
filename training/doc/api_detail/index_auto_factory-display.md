@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexAutoFactory: Display
 * [View page source](../_sources/api_detail/index_auto_factory-display.rst.txt)
 
-[Previous](index_auto_factory-exporter.html "Detail: IndexAutoFactory: Exporter")
-[Next](index_default_constructor_factory-constructor.html "Detail: IndexDefaultConstructorFactory: Constructor")
+[Previous](index_auto_factory-exporter.md "Detail: IndexAutoFactory: Exporter")
+[Next](index_default_constructor_factory-constructor.md "Detail: IndexDefaultConstructorFactory: Constructor")
 
 ---
 
 # Detail: IndexAutoFactory: Display[](#detail-indexautofactory-display "Link to this heading")
 
-[Overview: IndexAutoFactory: Display](../api_overview/index_auto_factory-display.html#api-overview-indexautofactory-display)
+[Overview: IndexAutoFactory: Display](../api_overview/index_auto_factory-display.md#api-overview-indexautofactory-display)
 
 IndexAutoFactory.\_\_repr\_\_()[](#static_frame.IndexAutoFactory.__repr__ "Link to this definition")
 :   Return repr(self).
@@ -150,10 +150,10 @@ IndexAutoFactory.\_\_repr\_\_()[](#static_frame.IndexAutoFactory.__repr__ "Li
 IndexAutoFactory.\_\_str\_\_()[](#static_frame.IndexAutoFactory.__str__ "Link to this definition")
 :   Return str(self).
 
-[IndexAutoFactory](index_auto_factory.html#api-detail-indexautofactory): [Constructor](index_auto_factory-constructor.html#api-detail-indexautofactory-constructor) | [Exporter](index_auto_factory-exporter.html#api-detail-indexautofactory-exporter) | [Display](#api-detail-indexautofactory-display)
+[IndexAutoFactory](index_auto_factory.md#api-detail-indexautofactory): [Constructor](index_auto_factory-constructor.md#api-detail-indexautofactory-constructor) | [Exporter](index_auto_factory-exporter.md#api-detail-indexautofactory-exporter) | [Display](#api-detail-indexautofactory-display)
 
-[Previous](index_auto_factory-exporter.html "Detail: IndexAutoFactory: Exporter")
-[Next](index_default_constructor_factory-constructor.html "Detail: IndexDefaultConstructorFactory: Constructor")
+[Previous](index_auto_factory-exporter.md "Detail: IndexAutoFactory: Exporter")
+[Next](index_default_constructor_factory-constructor.md "Detail: IndexDefaultConstructorFactory: Constructor")
 
 ---
 

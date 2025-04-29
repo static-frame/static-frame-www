@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexMinute: Operator Binary
 * [View page source](../_sources/api_overview/index_minute-operator_binary.rst.txt)
 
-[Previous](index_minute-iterator.html "Overview: IndexMinute: Iterator")
-[Next](index_minute-operator_unary.html "Overview: IndexMinute: Operator Unary")
+[Previous](index_minute-iterator.md "Overview: IndexMinute: Iterator")
+[Next](index_minute-operator_unary.md "Overview: IndexMinute: Operator Unary")
 
 ---
 
 # Overview: IndexMinute: Operator Binary[](#overview-indexminute-operator-binary "Link to this heading")
 
-[Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.html#api-detail-indexminute-operator-binary)
+[Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md#api-detail-indexminute-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-add) | `IndexMinute.__add__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-and) | `IndexMinute.__and__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-eq) | `IndexMinute.__eq__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-floordiv) | `IndexMinute.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-ge) | `IndexMinute.__ge__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-gt) | `IndexMinute.__gt__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-le) | `IndexMinute.__le__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-lt) | `IndexMinute.__lt__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-matmul) | `IndexMinute.__matmul__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-mod) | `IndexMinute.__mod__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-mul) | `IndexMinute.__mul__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-ne) | `IndexMinute.__ne__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-or) | `IndexMinute.__or__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-pow) | `IndexMinute.__pow__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-radd) | `IndexMinute.__radd__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-rfloordiv) | `IndexMinute.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-rmatmul) | `IndexMinute.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-rmul) | `IndexMinute.__rmul__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-rshift) | `IndexMinute.__rshift__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-rsub) | `IndexMinute.__rsub__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-rtruediv) | `IndexMinute.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-sub) | `IndexMinute.__sub__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-truediv) | `IndexMinute.__truediv__(other)` |  |
-| [Detail](../api_detail/index_minute-operator_binary.html#api-sig-indexminute-xor) | `IndexMinute.__xor__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-add) | `IndexMinute.__add__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-and) | `IndexMinute.__and__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-eq) | `IndexMinute.__eq__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-floordiv) | `IndexMinute.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-ge) | `IndexMinute.__ge__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-gt) | `IndexMinute.__gt__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-le) | `IndexMinute.__le__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-lt) | `IndexMinute.__lt__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-matmul) | `IndexMinute.__matmul__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-mod) | `IndexMinute.__mod__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-mul) | `IndexMinute.__mul__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-ne) | `IndexMinute.__ne__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-or) | `IndexMinute.__or__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-pow) | `IndexMinute.__pow__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-radd) | `IndexMinute.__radd__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-rfloordiv) | `IndexMinute.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-rmatmul) | `IndexMinute.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-rmul) | `IndexMinute.__rmul__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-rshift) | `IndexMinute.__rshift__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-rsub) | `IndexMinute.__rsub__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-rtruediv) | `IndexMinute.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-sub) | `IndexMinute.__sub__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-truediv) | `IndexMinute.__truediv__(other)` |  |
+| [Detail](../api_detail/index_minute-operator_binary.md#api-sig-indexminute-xor) | `IndexMinute.__xor__(other)` |  |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-iterator.html "Overview: IndexMinute: Iterator")
-[Next](index_minute-operator_unary.html "Overview: IndexMinute: Operator Unary")
+[Previous](index_minute-iterator.md "Overview: IndexMinute: Iterator")
+[Next](index_minute-operator_unary.md "Overview: IndexMinute: Operator Unary")
 
 ---
 

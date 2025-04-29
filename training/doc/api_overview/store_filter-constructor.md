@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: StoreFilter: Constructor
 * [View page source](../_sources/api_overview/store_filter-constructor.rst.txt)
 
-[Previous](store_config-display.html "Overview: StoreConfig: Display")
-[Next](store_filter-exporter.html "Overview: StoreFilter: Exporter")
+[Previous](store_config-display.md "Overview: StoreConfig: Display")
+[Next](store_filter-exporter.md "Overview: StoreFilter: Exporter")
 
 ---
 
 # Overview: StoreFilter: Constructor[](#overview-storefilter-constructor "Link to this heading")
 
-[Detail: StoreFilter: Constructor](../api_detail/store_filter-constructor.html#api-detail-storefilter-constructor)
+[Detail: StoreFilter: Constructor](../api_detail/store_filter-constructor.md#api-detail-storefilter-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/store_filter-constructor.html#api-sig-storefilter-init) | `StoreFilter.__init__(*, from_nan, from_nat, from_none, from_posinf, from_neginf, to_nan, to_nat, to_none, to_posinf, to_neginf, value_format_float_positional, value_format_float_scientific, value_format_complex_positional, value_format_complex_scientific)` |  |
-| [Detail](../api_detail/store_filter-constructor.html#api-sig-storefilter-from-type-filter-array) | `StoreFilter.from_type_filter_array(array)` | Given an array, replace types with strings |
-| [Detail](../api_detail/store_filter-constructor.html#api-sig-storefilter-from-type-filter-element) | `StoreFilter.from_type_filter_element(value)` | Filter single values to string. |
+| [Detail](../api_detail/store_filter-constructor.md#api-sig-storefilter-init) | `StoreFilter.__init__(*, from_nan, from_nat, from_none, from_posinf, from_neginf, to_nan, to_nat, to_none, to_posinf, to_neginf, value_format_float_positional, value_format_float_scientific, value_format_complex_positional, value_format_complex_scientific)` |  |
+| [Detail](../api_detail/store_filter-constructor.md#api-sig-storefilter-from-type-filter-array) | `StoreFilter.from_type_filter_array(array)` | Given an array, replace types with strings |
+| [Detail](../api_detail/store_filter-constructor.md#api-sig-storefilter-from-type-filter-element) | `StoreFilter.from_type_filter_element(value)` | Filter single values to string. |
 
-[StoreFilter](store_filter.html#api-overview-storefilter): [Constructor](#api-overview-storefilter-constructor) | [Exporter](store_filter-exporter.html#api-overview-storefilter-exporter) | [Attribute](store_filter-attribute.html#api-overview-storefilter-attribute) | [Display](store_filter-display.html#api-overview-storefilter-display)
+[StoreFilter](store_filter.md#api-overview-storefilter): [Constructor](#api-overview-storefilter-constructor) | [Exporter](store_filter-exporter.md#api-overview-storefilter-exporter) | [Attribute](store_filter-attribute.md#api-overview-storefilter-attribute) | [Display](store_filter-display.md#api-overview-storefilter-display)
 
-[Previous](store_config-display.html "Overview: StoreConfig: Display")
-[Next](store_filter-exporter.html "Overview: StoreFilter: Exporter")
+[Previous](store_config-display.md "Overview: StoreConfig: Display")
+[Next](store_filter-exporter.md "Overview: StoreFilter: Exporter")
 
 ---
 

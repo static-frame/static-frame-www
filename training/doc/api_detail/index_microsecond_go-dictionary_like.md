@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMicrosecondGO: Dictionary-Like
 * [View page source](../_sources/api_detail/index_microsecond_go-dictionary_like.rst.txt)
 
-[Previous](index_microsecond_go-method.html "Detail: IndexMicrosecondGO: Method")
-[Next](index_microsecond_go-display.html "Detail: IndexMicrosecondGO: Display")
+[Previous](index_microsecond_go-method.md "Detail: IndexMicrosecondGO: Method")
+[Next](index_microsecond_go-display.md "Detail: IndexMicrosecondGO: Display")
 
 ---
 
 # Detail: IndexMicrosecondGO: Dictionary-Like[](#detail-indexmicrosecondgo-dictionary-like "Link to this heading")
 
-[Overview: IndexMicrosecondGO: Dictionary-Like](../api_overview/index_microsecond_go-dictionary_like.html#api-overview-indexmicrosecondgo-dictionary-like)
+[Overview: IndexMicrosecondGO: Dictionary-Like](../api_overview/index_microsecond_go-dictionary_like.md#api-overview-indexmicrosecondgo-dictionary-like)
 
 IndexMicrosecondGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexMicrosecondGO.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
@@ -220,7 +220,7 @@ IndexMicrosecondGO.\_\_reversed\_\_()[](#static_frame.IndexMicrosecondGO.__re
     ```
 
 IndexMicrosecondGO.values[](#static_frame.IndexMicrosecondGO.values "Link to this definition")
-:   A 1D NumPy array of the values in the [`Index`](index-selector.html#Index "Index"). This array will have the same dtype as the container.
+:   A 1D NumPy array of the values in the [`Index`](index-selector.md#Index "Index"). This array will have the same dtype as the container.
 
     ```
     >>> ix = sf.IndexMicrosecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -236,10 +236,10 @@ IndexMicrosecondGO.values[](#static_frame.IndexMicrosecondGO.values "Link to 
 
     ```
 
-[IndexMicrosecondGO](index_microsecond_go.html#api-detail-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.html#api-detail-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.html#api-detail-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.html#api-detail-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.html#api-detail-indexmicrosecondgo-method) | [Dictionary-Like](#api-detail-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.html#api-detail-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.html#api-detail-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.html#api-detail-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.html#api-detail-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.html#api-detail-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.html#api-detail-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.html#api-detail-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.html#api-detail-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.html#api-detail-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.html#api-detail-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.html#api-detail-indexmicrosecondgo-accessor-type-clinic)
+[IndexMicrosecondGO](index_microsecond_go.md#api-detail-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.md#api-detail-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.md#api-detail-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.md#api-detail-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.md#api-detail-indexmicrosecondgo-method) | [Dictionary-Like](#api-detail-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.md#api-detail-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.md#api-detail-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.md#api-detail-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.md#api-detail-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.md#api-detail-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.md#api-detail-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.md#api-detail-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.md#api-detail-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.md#api-detail-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.md#api-detail-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.md#api-detail-indexmicrosecondgo-accessor-type-clinic)
 
-[Previous](index_microsecond_go-method.html "Detail: IndexMicrosecondGO: Method")
-[Next](index_microsecond_go-display.html "Detail: IndexMicrosecondGO: Display")
+[Previous](index_microsecond_go-method.md "Detail: IndexMicrosecondGO: Method")
+[Next](index_microsecond_go-display.md "Detail: IndexMicrosecondGO: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Detail: IndexMicrosecondGO: Exporter
 * [View page source](../_sources/api_detail/index_microsecond_go-exporter.rst.txt)
 
-[Previous](index_microsecond_go-constructor.html "Detail: IndexMicrosecondGO: Constructor")
-[Next](index_microsecond_go-attribute.html "Detail: IndexMicrosecondGO: Attribute")
+[Previous](index_microsecond_go-constructor.md "Detail: IndexMicrosecondGO: Constructor")
+[Next](index_microsecond_go-attribute.md "Detail: IndexMicrosecondGO: Attribute")
 
 ---
 
 # Detail: IndexMicrosecondGO: Exporter[](#detail-indexmicrosecondgo-exporter "Link to this heading")
 
-[Overview: IndexMicrosecondGO: Exporter](../api_overview/index_microsecond_go-exporter.html#api-overview-indexmicrosecondgo-exporter)
+[Overview: IndexMicrosecondGO: Exporter](../api_overview/index_microsecond_go-exporter.md#api-overview-indexmicrosecondgo-exporter)
 
 IndexMicrosecondGO.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexMicrosecondGO.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Index`](index-selector.html#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 IndexMicrosecondGO.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexMicrosecondGO.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Index`](index-selector.html#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
@@ -204,10 +204,10 @@ IndexMicrosecondGO.to\_series()[](#static_frame.IndexMicrosecondGO.to_series 
 IndexMicrosecondGO.to\_visidata()[](#static_frame.IndexMicrosecondGO.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[IndexMicrosecondGO](index_microsecond_go.html#api-detail-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.html#api-detail-indexmicrosecondgo-constructor) | [Exporter](#api-detail-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.html#api-detail-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.html#api-detail-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.html#api-detail-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.html#api-detail-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.html#api-detail-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.html#api-detail-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.html#api-detail-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.html#api-detail-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.html#api-detail-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.html#api-detail-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.html#api-detail-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.html#api-detail-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.html#api-detail-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.html#api-detail-indexmicrosecondgo-accessor-type-clinic)
+[IndexMicrosecondGO](index_microsecond_go.md#api-detail-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.md#api-detail-indexmicrosecondgo-constructor) | [Exporter](#api-detail-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.md#api-detail-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.md#api-detail-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.md#api-detail-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.md#api-detail-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.md#api-detail-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.md#api-detail-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.md#api-detail-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.md#api-detail-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.md#api-detail-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.md#api-detail-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.md#api-detail-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.md#api-detail-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.md#api-detail-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.md#api-detail-indexmicrosecondgo-accessor-type-clinic)
 
-[Previous](index_microsecond_go-constructor.html "Detail: IndexMicrosecondGO: Constructor")
-[Next](index_microsecond_go-attribute.html "Detail: IndexMicrosecondGO: Attribute")
+[Previous](index_microsecond_go-constructor.md "Detail: IndexMicrosecondGO: Constructor")
+[Next](index_microsecond_go-attribute.md "Detail: IndexMicrosecondGO: Attribute")
 
 ---
 

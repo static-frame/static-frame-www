@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](intro.md)
-* [Media](intro.html#media)
+* [Media](intro.md#media)
 * What is New in StaticFrame
   + [3.0.0](#id1)
   + [2.18.0](#id2)
@@ -347,8 +347,8 @@ API Detail
 * What is New in StaticFrame
 * [View page source](_sources/new.rst.txt)
 
-[Previous](intro.html "About StaticFrame")
-[Next](contributing.html "Contributing")
+[Previous](intro.md "About StaticFrame")
+[Next](contributing.md "Contributing")
 
 ---
 
@@ -2346,8 +2346,8 @@ The `DisplayConfig` class has been expanded to permit definition of colors, spec
 
 The following `DisplayFormats` have been created and implemented: `terminal`, `html_datatables`, `html_table`, and `html_pre`.
 
-[Previous](intro.html "About StaticFrame")
-[Next](contributing.html "Contributing")
+[Previous](intro.md "About StaticFrame")
+[Next](contributing.md "Contributing")
 
 ---
 

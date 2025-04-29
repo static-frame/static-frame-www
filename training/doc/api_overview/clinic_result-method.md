@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: ClinicResult: Method
 * [View page source](../_sources/api_overview/clinic_result-method.rst.txt)
 
-[Previous](clinic_result-attribute.html "Overview: ClinicResult: Attribute")
-[Next](clinic_result-dictionary_like.html "Overview: ClinicResult: Dictionary-Like")
+[Previous](clinic_result-attribute.md "Overview: ClinicResult: Attribute")
+[Next](clinic_result-dictionary_like.md "Overview: ClinicResult: Dictionary-Like")
 
 ---
 
 # Overview: ClinicResult: Method[](#overview-clinicresult-method "Link to this heading")
 
-[Detail: ClinicResult: Method](../api_detail/clinic_result-method.html#api-detail-clinicresult-method)
+[Detail: ClinicResult: Method](../api_detail/clinic_result-method.md#api-detail-clinicresult-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/clinic_result-method.html#api-sig-clinicresult-bool) | `ClinicResult.__bool__()` | Return True if there are validation issues. |
-| [Detail](../api_detail/clinic_result-method.html#api-sig-clinicresult-len) | `ClinicResult.__len__()` |  |
+| [Detail](../api_detail/clinic_result-method.md#api-sig-clinicresult-bool) | `ClinicResult.__bool__()` | Return True if there are validation issues. |
+| [Detail](../api_detail/clinic_result-method.md#api-sig-clinicresult-len) | `ClinicResult.__len__()` |  |
 
-[ClinicResult](clinic_result.html#api-overview-clinicresult): [Constructor](clinic_result-constructor.html#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-overview-clinicresult-attribute) | [Method](#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-overview-clinicresult-display)
+[ClinicResult](clinic_result.md#api-overview-clinicresult): [Constructor](clinic_result-constructor.md#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-overview-clinicresult-attribute) | [Method](#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-overview-clinicresult-display)
 
-[Previous](clinic_result-attribute.html "Overview: ClinicResult: Attribute")
-[Next](clinic_result-dictionary_like.html "Overview: ClinicResult: Dictionary-Like")
+[Previous](clinic_result-attribute.md "Overview: ClinicResult: Attribute")
+[Next](clinic_result-dictionary_like.md "Overview: ClinicResult: Dictionary-Like")
 
 ---
 

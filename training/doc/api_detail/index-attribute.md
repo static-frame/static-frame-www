@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Index: Attribute
 * [View page source](../_sources/api_detail/index-attribute.rst.txt)
 
-[Previous](index-exporter.html "Detail: Index: Exporter")
-[Next](index-method.html "Detail: Index: Method")
+[Previous](index-exporter.md "Detail: Index: Exporter")
+[Next](index-method.md "Detail: Index: Method")
 
 ---
 
 # Detail: Index: Attribute[](#detail-index-attribute "Link to this heading")
 
-[Overview: Index: Attribute](../api_overview/index-attribute.html#api-overview-index-attribute)
+[Overview: Index: Attribute](../api_overview/index-attribute.md#api-overview-index-attribute)
 
 Index.STATIC *= True*[](#static_frame.Index.STATIC "Link to this definition")
 :   ```
@@ -177,7 +177,7 @@ Index.index\_types[](#static_frame.Index.index_types "Link to this definition
 :   Return a Series of Index classes for each index depth.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
@@ -190,7 +190,7 @@ Index.index\_types[](#static_frame.Index.index_types "Link to this definition
     ```
 
 Index.memory[](#static_frame.Index.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -300,10 +300,10 @@ Index.size[](#static_frame.Index.size "Link to this definition")
 
     ```
 
-[Index](index.html#api-detail-index): [Constructor](index-constructor.html#api-detail-index-constructor) | [Exporter](index-exporter.html#api-detail-index-exporter) | [Attribute](#api-detail-index-attribute) | [Method](index-method.html#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.html#api-detail-index-dictionary-like) | [Display](index-display.html#api-detail-index-display) | [Selector](index-selector.html#api-detail-index-selector) | [Iterator](index-iterator.html#api-detail-index-iterator) | [Operator Binary](index-operator_binary.html#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-detail-index-accessor-type-clinic)
+[Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](#api-detail-index-attribute) | [Method](index-method.md#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)
 
-[Previous](index-exporter.html "Detail: Index: Exporter")
-[Next](index-method.html "Detail: Index: Method")
+[Previous](index-exporter.md "Detail: Index: Exporter")
+[Next](index-method.md "Detail: Index: Method")
 
 ---
 

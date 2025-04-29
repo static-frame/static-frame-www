@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexHourGO: Method
 * [View page source](../_sources/api_detail/index_hour_go-method.rst.txt)
 
-[Previous](index_hour_go-attribute.html "Detail: IndexHourGO: Attribute")
-[Next](index_hour_go-dictionary_like.html "Detail: IndexHourGO: Dictionary-Like")
+[Previous](index_hour_go-attribute.md "Detail: IndexHourGO: Attribute")
+[Next](index_hour_go-dictionary_like.md "Detail: IndexHourGO: Dictionary-Like")
 
 ---
 
 # Detail: IndexHourGO: Method[](#detail-indexhourgo-method "Link to this heading")
 
-[Overview: IndexHourGO: Method](../api_overview/index_hour_go-method.html#api-overview-indexhourgo-method)
+[Overview: IndexHourGO: Method](../api_overview/index_hour_go-method.md#api-overview-indexhourgo-method)
 
 IndexHourGO.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexHourGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -419,7 +419,7 @@ IndexHourGO.difference(*\*others*)[](#static_frame.IndexHourGO.difference "Li
     ```
 
 IndexHourGO.dropfalsy()[](#static_frame.IndexHourGO.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexHourGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -438,7 +438,7 @@ IndexHourGO.dropfalsy()[](#static_frame.IndexHourGO.dropfalsy "Link to this d
     ```
 
 IndexHourGO.dropna()[](#static_frame.IndexHourGO.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexHourGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -518,7 +518,7 @@ IndexHourGO.extend(*values*, */*)[](#static_frame.IndexHourGO.extend "Link to
     ```
 
 IndexHourGO.fillfalsy(*value*, */*)[](#static_frame.IndexHourGO.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -537,7 +537,7 @@ IndexHourGO.fillfalsy(*value*, */*)[](#static_frame.IndexHourGO.fillfalsy "Li
     ```
 
 IndexHourGO.fillna(*value*, */*)[](#static_frame.IndexHourGO.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -560,10 +560,10 @@ IndexHourGO.fillna(*value*, */*)[](#static_frame.IndexHourGO.fillna "Link to 
     ```
 
 IndexHourGO.head(*count=5*, */*)[](#static_frame.IndexHourGO.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -582,7 +582,7 @@ IndexHourGO.head(*count=5*, */*)[](#static_frame.IndexHourGO.head "Link to th
     ```
 
 IndexHourGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexHourGO.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -706,7 +706,7 @@ IndexHourGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#stat
     ```
 
 IndexHourGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexHourGO.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1024,10 +1024,10 @@ IndexHourGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#stat
     ```
 
 IndexHourGO.tail(*count=5*, */*)[](#static_frame.IndexHourGO.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -1134,10 +1134,10 @@ IndexHourGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#stati
 
     ```
 
-[IndexHourGO](index_hour_go.html#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.html#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-detail-indexhourgo-attribute) | [Method](#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-detail-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-detail-indexhourgo-attribute) | [Method](#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-detail-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-attribute.html "Detail: IndexHourGO: Attribute")
-[Next](index_hour_go-dictionary_like.html "Detail: IndexHourGO: Dictionary-Like")
+[Previous](index_hour_go-attribute.md "Detail: IndexHourGO: Attribute")
+[Next](index_hour_go-dictionary_like.md "Detail: IndexHourGO: Dictionary-Like")
 
 ---
 

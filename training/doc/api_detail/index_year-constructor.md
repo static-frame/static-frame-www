@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexYear: Constructor
 * [View page source](../_sources/api_detail/index_year-constructor.rst.txt)
 
-[Previous](index_hierarchy_go-accessor_type_clinic.html "Detail: IndexHierarchyGO: Accessor Type Clinic")
-[Next](index_year-exporter.html "Detail: IndexYear: Exporter")
+[Previous](index_hierarchy_go-accessor_type_clinic.md "Detail: IndexHierarchyGO: Accessor Type Clinic")
+[Next](index_year-exporter.md "Detail: IndexYear: Exporter")
 
 ---
 
 # Detail: IndexYear: Constructor[](#detail-indexyear-constructor "Link to this heading")
 
-[Overview: IndexYear: Constructor](../api_overview/index_year-constructor.html#api-overview-indexyear-constructor)
+[Overview: IndexYear: Constructor](../api_overview/index_year-constructor.md#api-overview-indexyear-constructor)
 
 IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexYear.__init__ "Link to this definition")
 :   Initializer.
@@ -161,7 +161,7 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
 
     ```
 
-*classmethod* IndexYear.from\_date\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_datetime.html#IndexYear.from_date_range)[](#static_frame.IndexYear.from_date_range "Link to this definition")
+*classmethod* IndexYear.from\_date\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear.from_date_range)[](#static_frame.IndexYear.from_date_range "Link to this definition")
 :   Get an IndexYearMonth instance over a range of dates, where start and stop are inclusive.
 
     ```
@@ -200,7 +200,7 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
 
     ```
 
-*classmethod* IndexYear.from\_year\_month\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_datetime.html#IndexYear.from_year_month_range)[](#static_frame.IndexYear.from_year_month_range "Link to this definition")
+*classmethod* IndexYear.from\_year\_month\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear.from_year_month_range)[](#static_frame.IndexYear.from_year_month_range "Link to this definition")
 :   Get an IndexYearMonth instance over a range of months, where start and end are inclusive.
 
     ```
@@ -212,7 +212,7 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
 
     ```
 
-*classmethod* IndexYear.from\_year\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_datetime.html#IndexYear.from_year_range)[](#static_frame.IndexYear.from_year_range "Link to this definition")
+*classmethod* IndexYear.from\_year\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear.from_year_range)[](#static_frame.IndexYear.from_year_range "Link to this definition")
 :   Get an IndexDate instance over a range of years, where start and end are inclusive.
 
     ```
@@ -224,10 +224,10 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
 
     ```
 
-[IndexYear](index_year.html#api-detail-indexyear): [Constructor](#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.html#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.html#api-detail-indexyear-attribute) | [Method](index_year-method.html#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-detail-indexyear-dictionary-like) | [Display](index_year-display.html#api-detail-indexyear-display) | [Selector](index_year-selector.html#api-detail-indexyear-selector) | [Iterator](index_year-iterator.html#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-detail-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-detail-indexyear): [Constructor](#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.md#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.md#api-detail-indexyear-attribute) | [Method](index_year-method.md#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-detail-indexyear-dictionary-like) | [Display](index_year-display.md#api-detail-indexyear-display) | [Selector](index_year-selector.md#api-detail-indexyear-selector) | [Iterator](index_year-iterator.md#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-detail-indexyear-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-accessor_type_clinic.html "Detail: IndexHierarchyGO: Accessor Type Clinic")
-[Next](index_year-exporter.html "Detail: IndexYear: Exporter")
+[Previous](index_hierarchy_go-accessor_type_clinic.md "Detail: IndexHierarchyGO: Accessor Type Clinic")
+[Next](index_year-exporter.md "Detail: IndexYear: Exporter")
 
 ---
 

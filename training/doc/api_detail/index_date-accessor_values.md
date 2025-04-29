@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexDate: Accessor Values
 * [View page source](../_sources/api_detail/index_date-accessor_values.rst.txt)
 
-[Previous](index_date-operator_unary.html "Detail: IndexDate: Operator Unary")
-[Next](index_date-accessor_datetime.html "Detail: IndexDate: Accessor Datetime")
+[Previous](index_date-operator_unary.md "Detail: IndexDate: Operator Unary")
+[Next](index_date-accessor_datetime.md "Detail: IndexDate: Accessor Datetime")
 
 ---
 
 # Detail: IndexDate: Accessor Values[](#detail-indexdate-accessor-values "Link to this heading")
 
-[Overview: IndexDate: Accessor Values](../api_overview/index_date-accessor_values.html#api-overview-indexdate-accessor-values)
+[Overview: IndexDate: Accessor Values](../api_overview/index_date-accessor_values.md#api-overview-indexdate-accessor-values)
 
 IndexDate.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
 :   IndexDate.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.apply)
+    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.apply)
 
     ```
     >>> ix = sf.IndexDate(('1517-04-01', '1517-12', '1517-06-30'))
@@ -167,7 +167,7 @@ IndexDate.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwa
 :   IndexDate.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__array_ufunc__)
+    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__array_ufunc__)
     :   Support for applying NumPy functions directly on containers.
 
     ```
@@ -187,7 +187,7 @@ IndexDate.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*,
 :   IndexDate.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__call__)
+    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__call__)
     :   Parameters:
         :   * **consolidate\_blocks** – Group adjacent same-typed arrays into 2D arrays.
             * **unify\_blocks** – Group all arrays into single array, re-typing to an appropriate dtype.
@@ -206,10 +206,10 @@ IndexDate.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*,
 
     ```
 
-[IndexDate](index_date.html#api-detail-indexdate): [Constructor](index_date-constructor.html#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.html#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.html#api-detail-indexdate-attribute) | [Method](index_date-method.html#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-detail-indexdate-dictionary-like) | [Display](index_date-display.html#api-detail-indexdate-display) | [Selector](index_date-selector.html#api-detail-indexdate-selector) | [Iterator](index_date-iterator.html#api-detail-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-detail-indexdate-operator-unary) | [Accessor Values](#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-detail-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-detail-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-detail-indexdate): [Constructor](index_date-constructor.md#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.md#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.md#api-detail-indexdate-attribute) | [Method](index_date-method.md#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-detail-indexdate-dictionary-like) | [Display](index_date-display.md#api-detail-indexdate-display) | [Selector](index_date-selector.md#api-detail-indexdate-selector) | [Iterator](index_date-iterator.md#api-detail-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-detail-indexdate-operator-unary) | [Accessor Values](#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-detail-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-detail-indexdate-accessor-type-clinic)
 
-[Previous](index_date-operator_unary.html "Detail: IndexDate: Operator Unary")
-[Next](index_date-accessor_datetime.html "Detail: IndexDate: Accessor Datetime")
+[Previous](index_date-operator_unary.md "Detail: IndexDate: Operator Unary")
+[Next](index_date-accessor_datetime.md "Detail: IndexDate: Accessor Datetime")
 
 ---
 

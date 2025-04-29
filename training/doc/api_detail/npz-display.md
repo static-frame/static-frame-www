@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: NPZ: Display
 * [View page source](../_sources/api_detail/npz-display.rst.txt)
 
-[Previous](npz-method.html "Detail: NPZ: Method")
-[Next](npy-constructor.html "Detail: NPY: Constructor")
+[Previous](npz-method.md "Detail: NPZ: Method")
+[Next](npy-constructor.md "Detail: NPY: Constructor")
 
 ---
 
 # Detail: NPZ: Display[](#detail-npz-display "Link to this heading")
 
-[Overview: NPZ: Display](../api_overview/npz-display.html#api-overview-npz-display)
+[Overview: NPZ: Display](../api_overview/npz-display.md#api-overview-npz-display)
 
 NPZ.interface[](#NPZ.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -153,10 +153,10 @@ NPZ.\_\_repr\_\_()[](#static_frame.NPZ.__repr__ "Link to this definition")
 NPZ.\_\_str\_\_()[](#static_frame.NPZ.__str__ "Link to this definition")
 :   Return str(self).
 
-[NPZ](npz.html#api-detail-npz): [Constructor](npz-constructor.html#api-detail-npz-constructor) | [Attribute](npz-attribute.html#api-detail-npz-attribute) | [Method](npz-method.html#api-detail-npz-method) | [Display](#api-detail-npz-display)
+[NPZ](npz.md#api-detail-npz): [Constructor](npz-constructor.md#api-detail-npz-constructor) | [Attribute](npz-attribute.md#api-detail-npz-attribute) | [Method](npz-method.md#api-detail-npz-method) | [Display](#api-detail-npz-display)
 
-[Previous](npz-method.html "Detail: NPZ: Method")
-[Next](npy-constructor.html "Detail: NPY: Constructor")
+[Previous](npz-method.md "Detail: NPZ: Method")
+[Next](npy-constructor.md "Detail: NPY: Constructor")
 
 ---
 

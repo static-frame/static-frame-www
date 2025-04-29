@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMillisecondGO: Constructor
 * [View page source](../_sources/api_detail/index_millisecond_go-constructor.rst.txt)
 
-[Previous](index_millisecond-accessor_type_clinic.html "Detail: IndexMillisecond: Accessor Type Clinic")
-[Next](index_millisecond_go-exporter.html "Detail: IndexMillisecondGO: Exporter")
+[Previous](index_millisecond-accessor_type_clinic.md "Detail: IndexMillisecond: Accessor Type Clinic")
+[Next](index_millisecond_go-exporter.md "Detail: IndexMillisecondGO: Exporter")
 
 ---
 
 # Detail: IndexMillisecondGO: Constructor[](#detail-indexmillisecondgo-constructor "Link to this heading")
 
-[Overview: IndexMillisecondGO: Constructor](../api_overview/index_millisecond_go-constructor.html#api-overview-indexmillisecondgo-constructor)
+[Overview: IndexMillisecondGO: Constructor](../api_overview/index_millisecond_go-constructor.md#api-overview-indexmillisecondgo-constructor)
 
 IndexMillisecondGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexMillisecondGO.__init__ "Link to this definition")
 :   Initializer.
@@ -188,10 +188,10 @@ IndexMillisecondGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *nam
 
     ```
 
-[IndexMillisecondGO](index_millisecond_go.html#api-detail-indexmillisecondgo): [Constructor](#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.html#api-detail-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.html#api-detail-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.html#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.html#api-detail-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.html#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.html#api-detail-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.html#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.html#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.html#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.html#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.html#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.html#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.html#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.html#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.html#api-detail-indexmillisecondgo-accessor-type-clinic)
+[IndexMillisecondGO](index_millisecond_go.md#api-detail-indexmillisecondgo): [Constructor](#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-detail-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-detail-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.md#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-detail-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.md#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-detail-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-detail-indexmillisecondgo-accessor-type-clinic)
 
-[Previous](index_millisecond-accessor_type_clinic.html "Detail: IndexMillisecond: Accessor Type Clinic")
-[Next](index_millisecond_go-exporter.html "Detail: IndexMillisecondGO: Exporter")
+[Previous](index_millisecond-accessor_type_clinic.md "Detail: IndexMillisecond: Accessor Type Clinic")
+[Next](index_millisecond_go-exporter.md "Detail: IndexMillisecondGO: Exporter")
 
 ---
 

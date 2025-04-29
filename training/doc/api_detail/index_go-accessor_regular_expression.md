@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexGO: Accessor Regular Expression
 * [View page source](../_sources/api_detail/index_go-accessor_regular_expression.rst.txt)
 
-[Previous](index_go-accessor_string.html "Detail: IndexGO: Accessor String")
-[Next](index_go-accessor_hashlib.html "Detail: IndexGO: Accessor Hashlib")
+[Previous](index_go-accessor_string.md "Detail: IndexGO: Accessor String")
+[Next](index_go-accessor_hashlib.md "Detail: IndexGO: Accessor Hashlib")
 
 ---
 
 # Detail: IndexGO: Accessor Regular Expression[](#detail-indexgo-accessor-regular-expression "Link to this heading")
 
-[Overview: IndexGO: Accessor Regular Expression](../api_overview/index_go-accessor_regular_expression.html#api-overview-indexgo-accessor-regular-expression)
+[Overview: IndexGO: Accessor Regular Expression](../api_overview/index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression)
 
 IndexGO.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.search)
+    InterfaceRe.search(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.search)
     :   Scan through string looking for the first location where this regular expression produces a match and return True, else False. Note that this is different from finding a zero-length match at some point in the string.
 
         Parameters:
@@ -171,7 +171,7 @@ IndexGO.via\_re(*pattern*, *flags).search(pos*, *endpos*)
 IndexGO.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.match)
+    InterfaceRe.match(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.match)
     :   If zero or more characters at the beginning of string match this regular expression return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -195,7 +195,7 @@ IndexGO.via\_re(*pattern*, *flags).match(pos*, *endpos*)
 IndexGO.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.fullmatch)
+    InterfaceRe.fullmatch(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.fullmatch)
     :   If the whole string matches this regular expression, return True, else False. Note that this is different from a zero-length match.
 
         Parameters:
@@ -219,7 +219,7 @@ IndexGO.via\_re(*pattern*, *flags).fullmatch(pos*, *endpos*)
 IndexGO.via\_re(*pattern*, *flags).split(maxsplit*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.split)
+    InterfaceRe.split(*maxsplit=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.split)
     :   Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting tuple.
 
         Parameters:
@@ -242,7 +242,7 @@ IndexGO.via\_re(*pattern*, *flags).split(maxsplit*)
 IndexGO.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.findall)
+    InterfaceRe.findall(*pos=0*, *endpos=None*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.findall)
     :   Return all non-overlapping matches of pattern in string, as a tuple of strings. The string is scanned left-to-right, and matches are returned in the order found. If one or more groups are present in the pattern, return a tuple of groups; this will be a tuple of tuples if the pattern has more than one group. Empty matches are included in the result.
 
         Parameters:
@@ -266,7 +266,7 @@ IndexGO.via\_re(*pattern*, *flags).findall(pos*, *endpos*)
 IndexGO.via\_re(*pattern*, *flags).sub(repl*, *count*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.sub)
+    InterfaceRe.sub(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.sub)
     :   Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement `repl`. If the pattern is not found, the string is returned unchanged.
 
         Parameters:
@@ -290,7 +290,7 @@ IndexGO.via\_re(*pattern*, *flags).sub(repl*, *count*)
 IndexGO.via\_re(*pattern*, *flags).subn(repl*, *count*)
 :   via\_re *= <function Index.via\_re>*
 
-    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.html#InterfaceRe.subn)
+    InterfaceRe.subn(*repl*, *count=0*)[[source]](../_modules/static_frame/core/node_re.md#InterfaceRe.subn)
     :   Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_subs\_made).
 
         Parameters:
@@ -311,10 +311,10 @@ IndexGO.via\_re(*pattern*, *flags).subn(repl*, *count*)
 
     ```
 
-[IndexGO](index_go.html#api-detail-indexgo): [Constructor](index_go-constructor.html#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.html#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.html#api-detail-indexgo-attribute) | [Method](index_go-method.html#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-detail-indexgo-dictionary-like) | [Display](index_go-display.html#api-detail-indexgo-display) | [Selector](index_go-selector.html#api-detail-indexgo-selector) | [Iterator](index_go-iterator.html#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-detail-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)
 
-[Previous](index_go-accessor_string.html "Detail: IndexGO: Accessor String")
-[Next](index_go-accessor_hashlib.html "Detail: IndexGO: Accessor Hashlib")
+[Previous](index_go-accessor_string.md "Detail: IndexGO: Accessor String")
+[Next](index_go-accessor_hashlib.md "Detail: IndexGO: Accessor Hashlib")
 
 ---
 

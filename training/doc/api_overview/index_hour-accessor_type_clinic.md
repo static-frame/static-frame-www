@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexHour: Accessor Type Clinic
 * [View page source](../_sources/api_overview/index_hour-accessor_type_clinic.rst.txt)
 
-[Previous](index_hour-accessor_hashlib.html "Overview: IndexHour: Accessor Hashlib")
-[Next](index_hour_go-constructor.html "Overview: IndexHourGO: Constructor")
+[Previous](index_hour-accessor_hashlib.md "Overview: IndexHour: Accessor Hashlib")
+[Next](index_hour_go-constructor.md "Overview: IndexHourGO: Constructor")
 
 ---
 
 # Overview: IndexHour: Accessor Type Clinic[](#overview-indexhour-accessor-type-clinic "Link to this heading")
 
-[Detail: IndexHour: Accessor Type Clinic](../api_detail/index_hour-accessor_type_clinic.html#api-detail-indexhour-accessor-type-clinic)
+[Detail: IndexHour: Accessor Type Clinic](../api_detail/index_hour-accessor_type_clinic.md#api-detail-indexhour-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour-accessor_type_clinic.html#api-sig-indexhour-via-type-clinic-to-hint) | `IndexHour.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/index_hour-accessor_type_clinic.html#api-sig-indexhour-via-type-clinic-check) | `IndexHour.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/index_hour-accessor_type_clinic.html#api-sig-indexhour-via-type-clinic-warn) | `IndexHour.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/index_hour-accessor_type_clinic.html#api-sig-indexhour-via-type-clinic-call) | `IndexHour.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/index_hour-accessor_type_clinic.html#api-sig-indexhour-via-type-clinic-repr) | `IndexHour.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/index_hour-accessor_type_clinic.md#api-sig-indexhour-via-type-clinic-to-hint) | `IndexHour.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/index_hour-accessor_type_clinic.md#api-sig-indexhour-via-type-clinic-check) | `IndexHour.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/index_hour-accessor_type_clinic.md#api-sig-indexhour-via-type-clinic-warn) | `IndexHour.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/index_hour-accessor_type_clinic.md#api-sig-indexhour-via-type-clinic-call) | `IndexHour.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/index_hour-accessor_type_clinic.md#api-sig-indexhour-via-type-clinic-repr) | `IndexHour.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[IndexHour](index_hour.html#api-overview-indexhour): [Constructor](index_hour-constructor.html#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-overview-indexhour-attribute) | [Method](index_hour-method.html#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.html#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.html#api-overview-indexhour-display) | [Selector](index_hour-selector.html#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.html#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.html#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.html#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.html#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.html#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.html#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-overview-indexhour): [Constructor](index_hour-constructor.md#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-overview-indexhour-attribute) | [Method](index_hour-method.md#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.md#api-overview-indexhour-display) | [Selector](index_hour-selector.md#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.md#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-accessor_hashlib.html "Overview: IndexHour: Accessor Hashlib")
-[Next](index_hour_go-constructor.html "Overview: IndexHourGO: Constructor")
+[Previous](index_hour-accessor_hashlib.md "Overview: IndexHour: Accessor Hashlib")
+[Next](index_hour_go-constructor.md "Overview: IndexHourGO: Constructor")
 
 ---
 

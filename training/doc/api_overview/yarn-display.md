@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Yarn: Display
 * [View page source](../_sources/api_overview/yarn-display.rst.txt)
 
-[Previous](yarn-dictionary_like.html "Overview: Yarn: Dictionary-Like")
-[Next](yarn-selector.html "Overview: Yarn: Selector")
+[Previous](yarn-dictionary_like.md "Overview: Yarn: Dictionary-Like")
+[Next](yarn-selector.md "Overview: Yarn: Selector")
 
 ---
 
 # Overview: Yarn: Display[](#overview-yarn-display "Link to this heading")
 
-[Detail: Yarn: Display](../api_detail/yarn-display.html#api-detail-yarn-display)
+[Detail: Yarn: Display](../api_detail/yarn-display.md#api-detail-yarn-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/yarn-display.html#api-sig-yarn-interface) | [`Yarn.interface`](../api_detail/yarn-display.html#Yarn.interface "Yarn.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/yarn-display.html#api-sig-yarn-repr) | `Yarn.__repr__()` |  |
-| [Detail](../api_detail/yarn-display.html#api-sig-yarn-str) | `Yarn.__str__()` | Return str(self). |
-| [Detail](../api_detail/yarn-display.html#api-sig-yarn-display) | `Yarn.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/yarn-display.html#api-sig-yarn-display-tall) | `Yarn.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/yarn-display.html#api-sig-yarn-display-wide) | `Yarn.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/yarn-display.md#api-sig-yarn-interface) | [`Yarn.interface`](../api_detail/yarn-display.md#Yarn.interface "Yarn.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/yarn-display.md#api-sig-yarn-repr) | `Yarn.__repr__()` |  |
+| [Detail](../api_detail/yarn-display.md#api-sig-yarn-str) | `Yarn.__str__()` | Return str(self). |
+| [Detail](../api_detail/yarn-display.md#api-sig-yarn-display) | `Yarn.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/yarn-display.md#api-sig-yarn-display-tall) | `Yarn.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/yarn-display.md#api-sig-yarn-display-wide) | `Yarn.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[Yarn](yarn.html#api-overview-yarn): [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | [Method](yarn-method.html#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](#api-overview-yarn-display) | [Selector](yarn-selector.html#api-overview-yarn-selector) | [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-overview-yarn): [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | [Method](yarn-method.md#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](#api-overview-yarn-display) | [Selector](yarn-selector.md#api-overview-yarn-selector) | [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
-[Previous](yarn-dictionary_like.html "Overview: Yarn: Dictionary-Like")
-[Next](yarn-selector.html "Overview: Yarn: Selector")
+[Previous](yarn-dictionary_like.md "Overview: Yarn: Dictionary-Like")
+[Next](yarn-selector.md "Overview: Yarn: Selector")
 
 ---
 

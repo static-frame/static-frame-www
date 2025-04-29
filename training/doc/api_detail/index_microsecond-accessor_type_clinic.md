@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: IndexMicrosecond: Accessor Type Clinic
 * [View page source](../_sources/api_detail/index_microsecond-accessor_type_clinic.rst.txt)
 
-[Previous](index_microsecond-accessor_hashlib.html "Detail: IndexMicrosecond: Accessor Hashlib")
-[Next](index_microsecond_go-constructor.html "Detail: IndexMicrosecondGO: Constructor")
+[Previous](index_microsecond-accessor_hashlib.md "Detail: IndexMicrosecond: Accessor Hashlib")
+[Next](index_microsecond_go-constructor.md "Detail: IndexMicrosecondGO: Constructor")
 
 ---
 
 # Detail: IndexMicrosecond: Accessor Type Clinic[](#detail-indexmicrosecond-accessor-type-clinic "Link to this heading")
 
-[Overview: IndexMicrosecond: Accessor Type Clinic](../api_overview/index_microsecond-accessor_type_clinic.html#api-overview-indexmicrosecond-accessor-type-clinic)
+[Overview: IndexMicrosecond: Accessor Type Clinic](../api_overview/index_microsecond-accessor_type_clinic.md#api-overview-indexmicrosecond-accessor-type-clinic)
 
 IndexMicrosecond.via\_type\_clinic.to\_hint
 :   IndexMicrosecond.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -166,7 +166,7 @@ IndexMicrosecond.via\_type\_clinic.to\_hint
 IndexMicrosecond.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   IndexMicrosecond.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -188,7 +188,7 @@ IndexMicrosecond.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 IndexMicrosecond.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   IndexMicrosecond.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -198,7 +198,7 @@ IndexMicrosecond.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 IndexMicrosecond.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   IndexMicrosecond.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -227,7 +227,7 @@ IndexMicrosecond.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 IndexMicrosecond.via\_type\_clinic.\_\_repr\_\_
 :   IndexMicrosecond.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -243,10 +243,10 @@ IndexMicrosecond.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[IndexMicrosecond](index_microsecond.html#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.html#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.html#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.html#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.html#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.html#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.html#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.html#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](index_microsecond.md#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_microsecond-accessor_hashlib.html "Detail: IndexMicrosecond: Accessor Hashlib")
-[Next](index_microsecond_go-constructor.html "Detail: IndexMicrosecondGO: Constructor")
+[Previous](index_microsecond-accessor_hashlib.md "Detail: IndexMicrosecond: Accessor Hashlib")
+[Next](index_microsecond_go-constructor.md "Detail: IndexMicrosecondGO: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexDate: Accessor Values
 * [View page source](../_sources/api_overview/index_date-accessor_values.rst.txt)
 
-[Previous](index_date-operator_unary.html "Overview: IndexDate: Operator Unary")
-[Next](index_date-accessor_datetime.html "Overview: IndexDate: Accessor Datetime")
+[Previous](index_date-operator_unary.md "Overview: IndexDate: Operator Unary")
+[Next](index_date-accessor_datetime.md "Overview: IndexDate: Accessor Datetime")
 
 ---
 
 # Overview: IndexDate: Accessor Values[](#overview-indexdate-accessor-values "Link to this heading")
 
-[Detail: IndexDate: Accessor Values](../api_detail/index_date-accessor_values.html#api-detail-indexdate-accessor-values)
+[Detail: IndexDate: Accessor Values](../api_detail/index_date-accessor_values.md#api-detail-indexdate-accessor-values)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date-accessor_values.html#api-sig-indexdate-via-values-apply) | `IndexDate.via_values.apply(func, *args, **kwargs)` |  |
-| [Detail](../api_detail/index_date-accessor_values.html#api-sig-indexdate-via-values-array-ufunc) | `IndexDate.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
-| [Detail](../api_detail/index_date-accessor_values.html#api-sig-indexdate-via-values-call) | `IndexDate.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
+| [Detail](../api_detail/index_date-accessor_values.md#api-sig-indexdate-via-values-apply) | `IndexDate.via_values.apply(func, *args, **kwargs)` |  |
+| [Detail](../api_detail/index_date-accessor_values.md#api-sig-indexdate-via-values-array-ufunc) | `IndexDate.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
+| [Detail](../api_detail/index_date-accessor_values.md#api-sig-indexdate-via-values-call) | `IndexDate.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
 
-[IndexDate](index_date.html#api-overview-indexdate): [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | [Method](index_date-method.html#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | [Display](index_date-display.html#api-overview-indexdate-display) | [Selector](index_date-selector.html#api-overview-indexdate-selector) | [Iterator](index_date-iterator.html#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | [Accessor Values](#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-overview-indexdate): [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | [Method](index_date-method.md#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | [Display](index_date-display.md#api-overview-indexdate-display) | [Selector](index_date-selector.md#api-overview-indexdate-selector) | [Iterator](index_date-iterator.md#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | [Accessor Values](#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic)
 
-[Previous](index_date-operator_unary.html "Overview: IndexDate: Operator Unary")
-[Next](index_date-accessor_datetime.html "Overview: IndexDate: Accessor Datetime")
+[Previous](index_date-operator_unary.md "Overview: IndexDate: Operator Unary")
+[Next](index_date-accessor_datetime.md "Overview: IndexDate: Accessor Datetime")
 
 ---
 

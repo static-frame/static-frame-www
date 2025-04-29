@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: StoreConfig: Display
 * [View page source](../_sources/api_overview/store_config-display.rst.txt)
 
-[Previous](store_config-method.html "Overview: StoreConfig: Method")
-[Next](store_filter-constructor.html "Overview: StoreFilter: Constructor")
+[Previous](store_config-method.md "Overview: StoreConfig: Method")
+[Next](store_filter-constructor.md "Overview: StoreFilter: Constructor")
 
 ---
 
 # Overview: StoreConfig: Display[](#overview-storeconfig-display "Link to this heading")
 
-[Detail: StoreConfig: Display](../api_detail/store_config-display.html#api-detail-storeconfig-display)
+[Detail: StoreConfig: Display](../api_detail/store_config-display.md#api-detail-storeconfig-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/store_config-display.html#api-sig-storeconfig-interface) | [`StoreConfig.interface`](../api_detail/store_config-display.html#StoreConfig.interface "StoreConfig.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/store_config-display.html#api-sig-storeconfig-repr) | `StoreConfig.__repr__()` | Return repr(self). |
-| [Detail](../api_detail/store_config-display.html#api-sig-storeconfig-str) | `StoreConfig.__str__()` | Return str(self). |
+| [Detail](../api_detail/store_config-display.md#api-sig-storeconfig-interface) | [`StoreConfig.interface`](../api_detail/store_config-display.md#StoreConfig.interface "StoreConfig.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/store_config-display.md#api-sig-storeconfig-repr) | `StoreConfig.__repr__()` | Return repr(self). |
+| [Detail](../api_detail/store_config-display.md#api-sig-storeconfig-str) | `StoreConfig.__str__()` | Return str(self). |
 
-[StoreConfig](store_config.html#api-overview-storeconfig): [Constructor](store_config-constructor.html#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.html#api-overview-storeconfig-exporter) | [Attribute](store_config-attribute.html#api-overview-storeconfig-attribute) | [Method](store_config-method.html#api-overview-storeconfig-method) | [Display](#api-overview-storeconfig-display)
+[StoreConfig](store_config.md#api-overview-storeconfig): [Constructor](store_config-constructor.md#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-overview-storeconfig-exporter) | [Attribute](store_config-attribute.md#api-overview-storeconfig-attribute) | [Method](store_config-method.md#api-overview-storeconfig-method) | [Display](#api-overview-storeconfig-display)
 
-[Previous](store_config-method.html "Overview: StoreConfig: Method")
-[Next](store_filter-constructor.html "Overview: StoreFilter: Constructor")
+[Previous](store_config-method.md "Overview: StoreConfig: Method")
+[Next](store_filter-constructor.md "Overview: StoreFilter: Constructor")
 
 ---
 

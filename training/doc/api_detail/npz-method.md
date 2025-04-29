@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: NPZ: Method
 * [View page source](../_sources/api_detail/npz-method.rst.txt)
 
-[Previous](npz-attribute.html "Detail: NPZ: Attribute")
-[Next](npz-display.html "Detail: NPZ: Display")
+[Previous](npz-attribute.md "Detail: NPZ: Attribute")
+[Next](npz-display.md "Detail: NPZ: Display")
 
 ---
 
 # Detail: NPZ: Method[](#detail-npz-method "Link to this heading")
 
-[Overview: NPZ: Method](../api_overview/npz-method.html#api-overview-npz-method)
+[Overview: NPZ: Method](../api_overview/npz-method.md#api-overview-npz-method)
 
 NPZ.\_\_enter\_\_()[](#static_frame.NPZ.__enter__ "Link to this definition")
 :   When entering a context manager, a handle to this instance is returned.
@@ -150,10 +150,10 @@ NPZ.\_\_enter\_\_()[](#static_frame.NPZ.__enter__ "Link to this definition")
 NPZ.\_\_exit\_\_(*type*, *value*, *traceback*)[](#static_frame.NPZ.__exit__ "Link to this definition")
 :   When exiting a context manager, resources are closed as necessary.
 
-[NPZ](npz.html#api-detail-npz): [Constructor](npz-constructor.html#api-detail-npz-constructor) | [Attribute](npz-attribute.html#api-detail-npz-attribute) | [Method](#api-detail-npz-method) | [Display](npz-display.html#api-detail-npz-display)
+[NPZ](npz.md#api-detail-npz): [Constructor](npz-constructor.md#api-detail-npz-constructor) | [Attribute](npz-attribute.md#api-detail-npz-attribute) | [Method](#api-detail-npz-method) | [Display](npz-display.md#api-detail-npz-display)
 
-[Previous](npz-attribute.html "Detail: NPZ: Attribute")
-[Next](npz-display.html "Detail: NPZ: Display")
+[Previous](npz-attribute.md "Detail: NPZ: Attribute")
+[Next](npz-display.md "Detail: NPZ: Display")
 
 ---
 

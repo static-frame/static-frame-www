@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Overview: Series: Exporter
 * [View page source](../_sources/api_overview/series-exporter.rst.txt)
 
-[Previous](series-constructor.html "Overview: Series: Constructor")
-[Next](series-attribute.html "Overview: Series: Attribute")
+[Previous](series-constructor.md "Overview: Series: Constructor")
+[Next](series-attribute.md "Overview: Series: Attribute")
 
 ---
 
 # Overview: Series: Exporter[](#overview-series-exporter "Link to this heading")
 
-[Detail: Series: Exporter](../api_detail/series-exporter.html#api-detail-series-exporter)
+[Detail: Series: Exporter](../api_detail/series-exporter.md#api-detail-series-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-exporter.html#api-sig-series-to-frame) | `Series.to_frame(*, axis, index, index_constructor, columns, columns_constructor, name)` | Return a Frame view of this Series. As underlying data is immutable, this is a n… |
-| [Detail](../api_detail/series-exporter.html#api-sig-series-to-frame-go) | `Series.to_frame_go(*, axis, index, index_constructor, columns, columns_constructor, name)` | Return FrameGO view of this Series. As underlying data is immutable, this is a n… |
-| [Detail](../api_detail/series-exporter.html#api-sig-series-to-frame-he) | `Series.to_frame_he(*, axis, index, index_constructor, columns, columns_constructor, name)` | Return FrameHE view of this Series. As underlying data is immutable, this is a n… |
-| [Detail](../api_detail/series-exporter.html#api-sig-series-to-html) | `Series.to_html(config, *, style_config)` | Return an HTML table representation of this Series using standard TABLE, TR, and… |
-| [Detail](../api_detail/series-exporter.html#api-sig-series-to-html-datatables) | `Series.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Series using the DataTables JS lib… |
-| [Detail](../api_detail/series-exporter.html#api-sig-series-to-pairs) | `Series.to_pairs()` | Return a tuple of tuples, where each inner tuple is a pair of index label, value… |
-| [Detail](../api_detail/series-exporter.html#api-sig-series-to-pandas) | `Series.to_pandas()` | Return a Pandas Series. Returns: pandas.Series |
-| [Detail](../api_detail/series-exporter.html#api-sig-series-to-series-he) | `Series.to_series_he()` | Return a SeriesHE from this Series. |
-| [Detail](../api_detail/series-exporter.html#api-sig-series-to-visidata) | `Series.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-frame) | `Series.to_frame(*, axis, index, index_constructor, columns, columns_constructor, name)` | Return a Frame view of this Series. As underlying data is immutable, this is a n… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-frame-go) | `Series.to_frame_go(*, axis, index, index_constructor, columns, columns_constructor, name)` | Return FrameGO view of this Series. As underlying data is immutable, this is a n… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-frame-he) | `Series.to_frame_he(*, axis, index, index_constructor, columns, columns_constructor, name)` | Return FrameHE view of this Series. As underlying data is immutable, this is a n… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-html) | `Series.to_html(config, *, style_config)` | Return an HTML table representation of this Series using standard TABLE, TR, and… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-html-datatables) | `Series.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Series using the DataTables JS lib… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-pairs) | `Series.to_pairs()` | Return a tuple of tuples, where each inner tuple is a pair of index label, value… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-pandas) | `Series.to_pandas()` | Return a Pandas Series. Returns: pandas.Series |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-series-he) | `Series.to_series_he()` | Return a SeriesHE from this Series. |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-visidata) | `Series.to_visidata()` | Open an interactive VisiData session. |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-constructor.html "Overview: Series: Constructor")
-[Next](series-attribute.html "Overview: Series: Attribute")
+[Previous](series-constructor.md "Overview: Series: Constructor")
+[Next](series-attribute.md "Overview: Series: Attribute")
 
 ---
 

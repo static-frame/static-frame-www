@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexSecond: Operator Binary
 * [View page source](../_sources/api_overview/index_second-operator_binary.rst.txt)
 
-[Previous](index_second-iterator.html "Overview: IndexSecond: Iterator")
-[Next](index_second-operator_unary.html "Overview: IndexSecond: Operator Unary")
+[Previous](index_second-iterator.md "Overview: IndexSecond: Iterator")
+[Next](index_second-operator_unary.md "Overview: IndexSecond: Operator Unary")
 
 ---
 
 # Overview: IndexSecond: Operator Binary[](#overview-indexsecond-operator-binary "Link to this heading")
 
-[Detail: IndexSecond: Operator Binary](../api_detail/index_second-operator_binary.html#api-detail-indexsecond-operator-binary)
+[Detail: IndexSecond: Operator Binary](../api_detail/index_second-operator_binary.md#api-detail-indexsecond-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-add) | `IndexSecond.__add__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-and) | `IndexSecond.__and__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-eq) | `IndexSecond.__eq__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-floordiv) | `IndexSecond.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-ge) | `IndexSecond.__ge__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-gt) | `IndexSecond.__gt__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-le) | `IndexSecond.__le__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-lt) | `IndexSecond.__lt__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-matmul) | `IndexSecond.__matmul__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-mod) | `IndexSecond.__mod__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-mul) | `IndexSecond.__mul__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-ne) | `IndexSecond.__ne__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-or) | `IndexSecond.__or__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-pow) | `IndexSecond.__pow__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-radd) | `IndexSecond.__radd__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-rfloordiv) | `IndexSecond.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-rmatmul) | `IndexSecond.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-rmul) | `IndexSecond.__rmul__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-rshift) | `IndexSecond.__rshift__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-rsub) | `IndexSecond.__rsub__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-rtruediv) | `IndexSecond.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-sub) | `IndexSecond.__sub__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-truediv) | `IndexSecond.__truediv__(other)` |  |
-| [Detail](../api_detail/index_second-operator_binary.html#api-sig-indexsecond-xor) | `IndexSecond.__xor__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-add) | `IndexSecond.__add__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-and) | `IndexSecond.__and__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-eq) | `IndexSecond.__eq__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-floordiv) | `IndexSecond.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-ge) | `IndexSecond.__ge__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-gt) | `IndexSecond.__gt__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-le) | `IndexSecond.__le__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-lt) | `IndexSecond.__lt__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-matmul) | `IndexSecond.__matmul__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-mod) | `IndexSecond.__mod__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-mul) | `IndexSecond.__mul__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-ne) | `IndexSecond.__ne__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-or) | `IndexSecond.__or__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-pow) | `IndexSecond.__pow__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-radd) | `IndexSecond.__radd__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-rfloordiv) | `IndexSecond.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-rmatmul) | `IndexSecond.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-rmul) | `IndexSecond.__rmul__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-rshift) | `IndexSecond.__rshift__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-rsub) | `IndexSecond.__rsub__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-rtruediv) | `IndexSecond.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-sub) | `IndexSecond.__sub__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-truediv) | `IndexSecond.__truediv__(other)` |  |
+| [Detail](../api_detail/index_second-operator_binary.md#api-sig-indexsecond-xor) | `IndexSecond.__xor__(other)` |  |
 
-[IndexSecond](index_second.html#api-overview-indexsecond): [Constructor](index_second-constructor.html#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.html#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-overview-indexsecond-attribute) | [Method](index_second-method.html#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.html#api-overview-indexsecond-display) | [Selector](index_second-selector.html#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.html#api-overview-indexsecond-iterator) | [Operator Binary](#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-overview-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-overview-indexsecond): [Constructor](index_second-constructor.md#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-overview-indexsecond-attribute) | [Method](index_second-method.md#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.md#api-overview-indexsecond-display) | [Selector](index_second-selector.md#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.md#api-overview-indexsecond-iterator) | [Operator Binary](#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-overview-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-iterator.html "Overview: IndexSecond: Iterator")
-[Next](index_second-operator_unary.html "Overview: IndexSecond: Operator Unary")
+[Previous](index_second-iterator.md "Overview: IndexSecond: Iterator")
+[Next](index_second-operator_unary.md "Overview: IndexSecond: Operator Unary")
 
 ---
 

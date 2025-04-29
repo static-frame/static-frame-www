@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexYearGO: Constructor
 * [View page source](../_sources/api_overview/index_year_go-constructor.rst.txt)
 
-[Previous](index_year-accessor_type_clinic.html "Overview: IndexYear: Accessor Type Clinic")
-[Next](index_year_go-exporter.html "Overview: IndexYearGO: Exporter")
+[Previous](index_year-accessor_type_clinic.md "Overview: IndexYear: Accessor Type Clinic")
+[Next](index_year_go-exporter.md "Overview: IndexYearGO: Exporter")
 
 ---
 
 # Overview: IndexYearGO: Constructor[](#overview-indexyeargo-constructor "Link to this heading")
 
-[Detail: IndexYearGO: Constructor](../api_detail/index_year_go-constructor.html#api-detail-indexyeargo-constructor)
+[Detail: IndexYearGO: Constructor](../api_detail/index_year_go-constructor.md#api-detail-indexyeargo-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_go-constructor.html#api-sig-indexyeargo-init) | `IndexYearGO.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
-| [Detail](../api_detail/index_year_go-constructor.html#api-sig-indexyeargo-from-date-range) | `IndexYearGO.from_date_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of dates, where start and stop are i… |
-| [Detail](../api_detail/index_year_go-constructor.html#api-sig-indexyeargo-from-labels) | `IndexYearGO.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
-| [Detail](../api_detail/index_year_go-constructor.html#api-sig-indexyeargo-from-pandas) | `IndexYearGO.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
-| [Detail](../api_detail/index_year_go-constructor.html#api-sig-indexyeargo-from-year-month-range) | `IndexYearGO.from_year_month_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of months, where start and end are i… |
-| [Detail](../api_detail/index_year_go-constructor.html#api-sig-indexyeargo-from-year-range) | `IndexYearGO.from_year_range(start, stop, step, *, name)` | Get an IndexDate instance over a range of years, where start and end are inclusi… |
+| [Detail](../api_detail/index_year_go-constructor.md#api-sig-indexyeargo-init) | `IndexYearGO.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_year_go-constructor.md#api-sig-indexyeargo-from-date-range) | `IndexYearGO.from_date_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of dates, where start and stop are i… |
+| [Detail](../api_detail/index_year_go-constructor.md#api-sig-indexyeargo-from-labels) | `IndexYearGO.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
+| [Detail](../api_detail/index_year_go-constructor.md#api-sig-indexyeargo-from-pandas) | `IndexYearGO.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_year_go-constructor.md#api-sig-indexyeargo-from-year-month-range) | `IndexYearGO.from_year_month_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of months, where start and end are i… |
+| [Detail](../api_detail/index_year_go-constructor.md#api-sig-indexyeargo-from-year-range) | `IndexYearGO.from_year_range(start, stop, step, *, name)` | Get an IndexDate instance over a range of years, where start and end are inclusi… |
 
-[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.html#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-overview-indexyeargo): [Constructor](#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.md#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.md#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-overview-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year-accessor_type_clinic.html "Overview: IndexYear: Accessor Type Clinic")
-[Next](index_year_go-exporter.html "Overview: IndexYearGO: Exporter")
+[Previous](index_year-accessor_type_clinic.md "Overview: IndexYear: Accessor Type Clinic")
+[Next](index_year_go-exporter.md "Overview: IndexYearGO: Exporter")
 
 ---
 

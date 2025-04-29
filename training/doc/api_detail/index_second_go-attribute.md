@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexSecondGO: Attribute
 * [View page source](../_sources/api_detail/index_second_go-attribute.rst.txt)
 
-[Previous](index_second_go-exporter.html "Detail: IndexSecondGO: Exporter")
-[Next](index_second_go-method.html "Detail: IndexSecondGO: Method")
+[Previous](index_second_go-exporter.md "Detail: IndexSecondGO: Exporter")
+[Next](index_second_go-method.md "Detail: IndexSecondGO: Method")
 
 ---
 
 # Detail: IndexSecondGO: Attribute[](#detail-indexsecondgo-attribute "Link to this heading")
 
-[Overview: IndexSecondGO: Attribute](../api_overview/index_second_go-attribute.html#api-overview-indexsecondgo-attribute)
+[Overview: IndexSecondGO: Attribute](../api_overview/index_second_go-attribute.md#api-overview-indexsecondgo-attribute)
 
 IndexSecondGO.STATIC *= False*[](#static_frame.IndexSecondGO.STATIC "Link to this definition")
 :   ```
@@ -177,7 +177,7 @@ IndexSecondGO.index\_types[](#static_frame.IndexSecondGO.index_types "Link to
 :   Return a Series of Index classes for each index depth.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -190,7 +190,7 @@ IndexSecondGO.index\_types[](#static_frame.IndexSecondGO.index_types "Link to
     ```
 
 IndexSecondGO.memory[](#static_frame.IndexSecondGO.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -299,10 +299,10 @@ IndexSecondGO.size[](#static_frame.IndexSecondGO.size "Link to this definitio
 
     ```
 
-[IndexSecondGO](index_second_go.html#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.html#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-detail-indexsecondgo-exporter) | [Attribute](#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-detail-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.md#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-detail-indexsecondgo-exporter) | [Attribute](#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-detail-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-exporter.html "Detail: IndexSecondGO: Exporter")
-[Next](index_second_go-method.html "Detail: IndexSecondGO: Method")
+[Previous](index_second_go-exporter.md "Detail: IndexSecondGO: Exporter")
+[Next](index_second_go-method.md "Detail: IndexSecondGO: Method")
 
 ---
 

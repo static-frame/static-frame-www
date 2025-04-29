@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexYear: Iterator
 * [View page source](../_sources/api_overview/index_year-iterator.rst.txt)
 
-[Previous](index_year-selector.html "Overview: IndexYear: Selector")
-[Next](index_year-operator_binary.html "Overview: IndexYear: Operator Binary")
+[Previous](index_year-selector.md "Overview: IndexYear: Selector")
+[Next](index_year-operator_binary.md "Overview: IndexYear: Operator Binary")
 
 ---
 
 # Overview: IndexYear: Iterator[](#overview-indexyear-iterator "Link to this heading")
 
-[Detail: IndexYear: Iterator](../api_detail/index_year-iterator.html#api-detail-indexyear-iterator)
+[Detail: IndexYear: Iterator](../api_detail/index_year-iterator.md#api-detail-indexyear-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year-iterator.html#api-sig-indexyear-iter-label) | `IndexYear.iter_label(depth_level)` |  |
-| [Detail](../api_detail/index_year-iterator.html#api-sig-indexyear-iter-label-apply) | `IndexYear.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/index_year-iterator.html#api-sig-indexyear-iter-label-apply-iter) | `IndexYear.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/index_year-iterator.html#api-sig-indexyear-iter-label-apply-iter-items) | `IndexYear.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/index_year-iterator.html#api-sig-indexyear-iter-label-apply-pool) | `IndexYear.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/index_year-iterator.md#api-sig-indexyear-iter-label) | `IndexYear.iter_label(depth_level)` |  |
+| [Detail](../api_detail/index_year-iterator.md#api-sig-indexyear-iter-label-apply) | `IndexYear.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/index_year-iterator.md#api-sig-indexyear-iter-label-apply-iter) | `IndexYear.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/index_year-iterator.md#api-sig-indexyear-iter-label-apply-iter-items) | `IndexYear.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/index_year-iterator.md#api-sig-indexyear-iter-label-apply-pool) | `IndexYear.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[IndexYear](index_year.html#api-overview-indexyear): [Constructor](index_year-constructor.html#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.html#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.html#api-overview-indexyear-attribute) | [Method](index_year-method.html#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-overview-indexyear-dictionary-like) | [Display](index_year-display.html#api-overview-indexyear-display) | [Selector](index_year-selector.html#api-overview-indexyear-selector) | [Iterator](#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-overview-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-overview-indexyear): [Constructor](index_year-constructor.md#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.md#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.md#api-overview-indexyear-attribute) | [Method](index_year-method.md#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-overview-indexyear-dictionary-like) | [Display](index_year-display.md#api-overview-indexyear-display) | [Selector](index_year-selector.md#api-overview-indexyear-selector) | [Iterator](#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-overview-indexyear-accessor-type-clinic)
 
-[Previous](index_year-selector.html "Overview: IndexYear: Selector")
-[Next](index_year-operator_binary.html "Overview: IndexYear: Operator Binary")
+[Previous](index_year-selector.md "Overview: IndexYear: Selector")
+[Next](index_year-operator_binary.md "Overview: IndexYear: Operator Binary")
 
 ---
 

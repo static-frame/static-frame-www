@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexHierarchy: Method
 * [View page source](../_sources/api_detail/index_hierarchy-method.rst.txt)
 
-[Previous](index_hierarchy-attribute.html "Detail: IndexHierarchy: Attribute")
-[Next](index_hierarchy-dictionary_like.html "Detail: IndexHierarchy: Dictionary-Like")
+[Previous](index_hierarchy-attribute.md "Detail: IndexHierarchy: Attribute")
+[Next](index_hierarchy-dictionary_like.md "Detail: IndexHierarchy: Dictionary-Like")
 
 ---
 
 # Detail: IndexHierarchy: Method[](#detail-indexhierarchy-method "Link to this heading")
 
-[Overview: IndexHierarchy: Method](../api_overview/index_hierarchy-method.html#api-overview-indexhierarchy-method)
+[Overview: IndexHierarchy: Method](../api_overview/index_hierarchy-method.md#api-overview-indexhierarchy-method)
 
 IndexHierarchy.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexHierarchy.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -196,7 +196,7 @@ IndexHierarchy.\_\_bool\_\_()[](#static_frame.IndexHierarchy.__bool__ "Link t
 
     ```
 
-IndexHierarchy.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.__copy__)[](#static_frame.IndexHierarchy.__copy__ "Link to this definition")
+IndexHierarchy.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__copy__)[](#static_frame.IndexHierarchy.__copy__ "Link to this definition")
 :   Return a shallow copy of this IndexHierarchy.
 
     ```
@@ -217,7 +217,7 @@ IndexHierarchy.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index_hier
 
     ```
 
-IndexHierarchy.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.__deepcopy__)[](#static_frame.IndexHierarchy.__deepcopy__ "Link to this definition")
+IndexHierarchy.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__deepcopy__)[](#static_frame.IndexHierarchy.__deepcopy__ "Link to this definition")
 :   Return a deep copy of this IndexHierarchy.
 
     ```
@@ -238,7 +238,7 @@ IndexHierarchy.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/
 
     ```
 
-IndexHierarchy.\_\_len\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.__len__)[](#static_frame.IndexHierarchy.__len__ "Link to this definition")
+IndexHierarchy.\_\_len\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__len__)[](#static_frame.IndexHierarchy.__len__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -299,7 +299,7 @@ IndexHierarchy.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
         Parameters:
         :   **dtype** – A value suitable for specyfying a NumPy dtype, such as a Python type (float), NumPy array protocol strings (‘f8’), or a dtype instance.
 
-    InterfaceIndexHierarchyAsType.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceIndexHierarchyAsType.__getitem__)
+    InterfaceIndexHierarchyAsType.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceIndexHierarchyAsType.__getitem__)
     :   Selector of columns by label.
 
         Parameters:
@@ -329,7 +329,7 @@ IndexHierarchy.astype(*dtype*, *\**, *consolidate\_blocks*)
         Parameters:
         :   **dtype** – A value suitable for specyfying a NumPy dtype, such as a Python type (float), NumPy array protocol strings (‘f8’), or a dtype instance.
 
-    InterfaceIndexHierarchyAsType.\_\_call\_\_(*dtype*, */*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceIndexHierarchyAsType.__call__)
+    InterfaceIndexHierarchyAsType.\_\_call\_\_(*dtype*, */*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceIndexHierarchyAsType.__call__)
     :   Apply a single `dtype` to all columns.
 
     ```
@@ -349,7 +349,7 @@ IndexHierarchy.astype(*dtype*, *\**, *consolidate\_blocks*)
 
     ```
 
-IndexHierarchy.copy()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.copy)[](#static_frame.IndexHierarchy.copy "Link to this definition")
+IndexHierarchy.copy()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.copy)[](#static_frame.IndexHierarchy.copy "Link to this definition")
 :   Return a shallow copy of this IndexHierarchy.
 
     ```
@@ -409,7 +409,7 @@ IndexHierarchy.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHie
 
     ```
 
-IndexHierarchy.difference(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.difference)[](#static_frame.IndexHierarchy.difference "Link to this definition")
+IndexHierarchy.difference(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.difference)[](#static_frame.IndexHierarchy.difference "Link to this definition")
 :   Perform difference with another Index, container, or NumPy array. Retains order.
 
     ```
@@ -434,7 +434,7 @@ IndexHierarchy.difference(*\*others*)[[source]](../_modules/static_frame/core/in
 
     ```
 
-IndexHierarchy.dropfalsy(*\**, *condition=<function all>*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.dropfalsy)[](#static_frame.IndexHierarchy.dropfalsy "Link to this definition")
+IndexHierarchy.dropfalsy(*\**, *condition=<function all>*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.dropfalsy)[](#static_frame.IndexHierarchy.dropfalsy "Link to this definition")
 :   Return a new obj:IndexHierarchy after removing labels where any or all values are falsy. The condition is determined by a NumPy ufunc that process the Boolean array returned by `isna()`; the default is `np.all`.
 
     Parameters:
@@ -457,7 +457,7 @@ IndexHierarchy.dropfalsy(*\**, *condition=<function all>*)[[source]](../_modules
 
     ```
 
-IndexHierarchy.dropna(*\**, *condition=<function all>*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.dropna)[](#static_frame.IndexHierarchy.dropna "Link to this definition")
+IndexHierarchy.dropna(*\**, *condition=<function all>*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.dropna)[](#static_frame.IndexHierarchy.dropna "Link to this definition")
 :   Return a new obj:IndexHierarchy after removing labels where any or all values are NA (NaN or None). The condition is determined by a NumPy ufunc that process the Boolean array returned by `isna()`; the default is `np.all`.
 
     Parameters:
@@ -480,7 +480,7 @@ IndexHierarchy.dropna(*\**, *condition=<function all>*)[[source]](../_modules/st
 
     ```
 
-IndexHierarchy.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.equals)[](#static_frame.IndexHierarchy.equals "Link to this definition")
+IndexHierarchy.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.equals)[](#static_frame.IndexHierarchy.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -508,8 +508,8 @@ IndexHierarchy.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype
 
     ```
 
-IndexHierarchy.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.fillfalsy)[](#static_frame.IndexHierarchy.fillfalsy "Link to this definition")
-:   Return an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") after replacing falsy values with the supplied value.
+IndexHierarchy.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.fillfalsy)[](#static_frame.IndexHierarchy.fillfalsy "Link to this definition")
+:   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -531,8 +531,8 @@ IndexHierarchy.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/i
 
     ```
 
-IndexHierarchy.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.fillna)[](#static_frame.IndexHierarchy.fillna "Link to this definition")
-:   Return an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") after replacing NA (NaN or None) with the supplied value.
+IndexHierarchy.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.fillna)[](#static_frame.IndexHierarchy.fillna "Link to this definition")
+:   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after replacing NA (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -554,7 +554,7 @@ IndexHierarchy.fillna(*value*, */*)[[source]](../_modules/static_frame/core/inde
 
     ```
 
-IndexHierarchy.flat()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.flat)[](#static_frame.IndexHierarchy.flat "Link to this definition")
+IndexHierarchy.flat()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.flat)[](#static_frame.IndexHierarchy.flat "Link to this definition")
 :   Return a flat, one-dimensional index of tuples for each level.
 
     ```
@@ -575,10 +575,10 @@ IndexHierarchy.flat()[[source]](../_modules/static_frame/core/index_hierarchy.ht
     ```
 
 IndexHierarchy.head(*count=5*, */*)[](#static_frame.IndexHierarchy.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ih = sf.IndexHierarchy.from_product(('a', 'b', 'c'), ('1517-04-01', '1620-11-21'), name='x', index_constructors=(sf.Index, sf.IndexDate))
@@ -599,8 +599,8 @@ IndexHierarchy.head(*count=5*, */*)[](#static_frame.IndexHierarchy.head "Link
 
     ```
 
-IndexHierarchy.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.iloc_searchsorted)[](#static_frame.IndexHierarchy.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+IndexHierarchy.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.iloc_searchsorted)[](#static_frame.IndexHierarchy.iloc_searchsorted "Link to this definition")
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -622,7 +622,7 @@ IndexHierarchy.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[sourc
 
     ```
 
-IndexHierarchy.index\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.index_at_depth)[](#static_frame.IndexHierarchy.index_at_depth "Link to this definition")
+IndexHierarchy.index\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.index_at_depth)[](#static_frame.IndexHierarchy.index_at_depth "Link to this definition")
 :   Return an index, or a tuple of indices for the `depth_level` specified.
 
     Parameters:
@@ -653,7 +653,7 @@ IndexHierarchy.index\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/sta
 
     ```
 
-IndexHierarchy.indexer\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.indexer_at_depth)[](#static_frame.IndexHierarchy.indexer_at_depth "Link to this definition")
+IndexHierarchy.indexer\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.indexer_at_depth)[](#static_frame.IndexHierarchy.indexer_at_depth "Link to this definition")
 :   Return the indexers for the `depth_level` specified.
     Array will 2D if multiple depths are selected.
 
@@ -676,7 +676,7 @@ IndexHierarchy.indexer\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/s
 
     ```
 
-IndexHierarchy.intersection(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.intersection)[](#static_frame.IndexHierarchy.intersection "Link to this definition")
+IndexHierarchy.intersection(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.intersection)[](#static_frame.IndexHierarchy.intersection "Link to this definition")
 :   Perform intersection with one or many Index, container, or NumPy array. Identical comparisons retain order.
 
     ```
@@ -712,7 +712,7 @@ IndexHierarchy.isfalsy()[](#static_frame.IndexHierarchy.isfalsy "Link to this
 
     ```
 
-IndexHierarchy.isin(*other*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.isin)[](#static_frame.IndexHierarchy.isin "Link to this definition")
+IndexHierarchy.isin(*other*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.isin)[](#static_frame.IndexHierarchy.isin "Link to this definition")
 :   Return a Boolean array showing True where one or more of the passed in iterable of labels is found in the index.
 
     ```
@@ -743,7 +743,7 @@ IndexHierarchy.isna()[](#static_frame.IndexHierarchy.isna "Link to this defin
 
     ```
 
-IndexHierarchy.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.label_widths_at_depth)[](#static_frame.IndexHierarchy.label_widths_at_depth "Link to this definition")
+IndexHierarchy.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.label_widths_at_depth)[](#static_frame.IndexHierarchy.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -767,7 +767,7 @@ IndexHierarchy.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_mod
 
     ```
 
-IndexHierarchy.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.level_add)[](#static_frame.IndexHierarchy.level_add "Link to this definition")
+IndexHierarchy.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.level_add)[](#static_frame.IndexHierarchy.level_add "Link to this definition")
 :   Return an IndexHierarchy with a new root (outer) level added.
 
     ```
@@ -787,7 +787,7 @@ IndexHierarchy.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source
 
     ```
 
-IndexHierarchy.level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.level_drop)[](#static_frame.IndexHierarchy.level_drop "Link to this definition")
+IndexHierarchy.level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.level_drop)[](#static_frame.IndexHierarchy.level_drop "Link to this definition")
 :   Return an IndexHierarchy with one or more leaf levels removed.
 
     Parameters:
@@ -810,8 +810,8 @@ IndexHierarchy.level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/co
 
     ```
 
-IndexHierarchy.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.loc_searchsorted)[](#static_frame.IndexHierarchy.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+IndexHierarchy.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.loc_searchsorted)[](#static_frame.IndexHierarchy.loc_searchsorted "Link to this definition")
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -834,7 +834,7 @@ IndexHierarchy.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_
 
     ```
 
-IndexHierarchy.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.loc_to_iloc)[](#static_frame.IndexHierarchy.loc_to_iloc "Link to this definition")
+IndexHierarchy.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.loc_to_iloc)[](#static_frame.IndexHierarchy.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, an HLoc object, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -982,8 +982,8 @@ IndexHierarchy.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#
 
     ```
 
-IndexHierarchy.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.rehierarch)[](#static_frame.IndexHierarchy.rehierarch "Link to this definition")
-:   Return a new [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") that conforms to the new depth assignments given be depth\_map.
+IndexHierarchy.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.rehierarch)[](#static_frame.IndexHierarchy.rehierarch "Link to this definition")
+:   Return a new [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") that conforms to the new depth assignments given be depth\_map.
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('b', 1024, True), ('a', 1024, True), ('a', 2048, True), ('a', 2048, False)), name='x')
@@ -1004,7 +1004,7 @@ IndexHierarchy.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[sourc
 
     ```
 
-IndexHierarchy.relabel(*mapper*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.relabel)[](#static_frame.IndexHierarchy.relabel "Link to this definition")
+IndexHierarchy.relabel(*mapper*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.relabel)[](#static_frame.IndexHierarchy.relabel "Link to this definition")
 :   Return a new IndexHierarchy with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping should map tuple representation of labels, and need not map all origin keys.
 
     ```
@@ -1026,8 +1026,8 @@ IndexHierarchy.relabel(*mapper*)[[source]](../_modules/static_frame/core/index_h
 
     ```
 
-IndexHierarchy.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.relabel_at_depth)[](#static_frame.IndexHierarchy.relabel_at_depth "Link to this definition")
-:   Return a new [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") after applying mapper to a level or each individual level specified by depth\_level.
+IndexHierarchy.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.relabel_at_depth)[](#static_frame.IndexHierarchy.relabel_at_depth "Link to this definition")
+:   Return a new [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after applying mapper to a level or each individual level specified by depth\_level.
 
     mapper can be a callable, mapping, or iterable.
     :   * If a callable, it must accept a single hashable, and return a single hashable.
@@ -1070,7 +1070,7 @@ IndexHierarchy.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[[source
 
     ```
 
-IndexHierarchy.rename(*name*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.rename)[](#static_frame.IndexHierarchy.rename "Link to this definition")
+IndexHierarchy.rename(*name*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.rename)[](#static_frame.IndexHierarchy.rename "Link to this definition")
 :   Return a new IndexHierarchy with an updated name attribute.
 
     ```
@@ -1092,8 +1092,8 @@ IndexHierarchy.rename(*name*, */*)[[source]](../_modules/static_frame/core/index
 
     ```
 
-IndexHierarchy.roll(*shift*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.roll)[](#static_frame.IndexHierarchy.roll "Link to this definition")
-:   Return an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") with values rotated forward and wrapped around (with a positive shift) or backward and wrapped around (with a negative shift).
+IndexHierarchy.roll(*shift*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.roll)[](#static_frame.IndexHierarchy.roll "Link to this definition")
+:   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") with values rotated forward and wrapped around (with a positive shift) or backward and wrapped around (with a negative shift).
 
     ```
     >>> ih = sf.IndexHierarchy.from_product(('a', 'b', 'c'), ('1517-04-01', '1620-11-21'), name='x', index_constructors=(sf.Index, sf.IndexDate))
@@ -1144,7 +1144,7 @@ IndexHierarchy.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexHier
 
     ```
 
-IndexHierarchy.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.sort)[](#static_frame.IndexHierarchy.sort "Link to this definition")
+IndexHierarchy.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.sort)[](#static_frame.IndexHierarchy.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -1219,10 +1219,10 @@ IndexHierarchy.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#s
     ```
 
 IndexHierarchy.tail(*count=5*, */*)[](#static_frame.IndexHierarchy.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ih = sf.IndexHierarchy.from_product(('a', 'b', 'c'), ('1517-04-01', '1620-11-21'), name='x', index_constructors=(sf.Index, sf.IndexDate))
@@ -1243,7 +1243,7 @@ IndexHierarchy.tail(*count=5*, */*)[](#static_frame.IndexHierarchy.tail "Link
 
     ```
 
-IndexHierarchy.union(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.union)[](#static_frame.IndexHierarchy.union "Link to this definition")
+IndexHierarchy.union(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.union)[](#static_frame.IndexHierarchy.union "Link to this definition")
 :   Perform union with another Index, container, or NumPy array. Identical comparisons retain order.
 
     ```
@@ -1270,7 +1270,7 @@ IndexHierarchy.union(*\*others*)[[source]](../_modules/static_frame/core/index_h
 
     ```
 
-IndexHierarchy.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.unique)[](#static_frame.IndexHierarchy.unique "Link to this definition")
+IndexHierarchy.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.unique)[](#static_frame.IndexHierarchy.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1293,7 +1293,7 @@ IndexHierarchy.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*
 
     ```
 
-IndexHierarchy.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.values_at_depth)[](#static_frame.IndexHierarchy.values_at_depth "Link to this definition")
+IndexHierarchy.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.values_at_depth)[](#static_frame.IndexHierarchy.values_at_depth "Link to this definition")
 :   Return an NP array for the `depth_level` specified.
 
     Parameters:
@@ -1334,10 +1334,10 @@ IndexHierarchy.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#st
 
     ```
 
-[IndexHierarchy](index_hierarchy.html#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-attribute.html "Detail: IndexHierarchy: Attribute")
-[Next](index_hierarchy-dictionary_like.html "Detail: IndexHierarchy: Dictionary-Like")
+[Previous](index_hierarchy-attribute.md "Detail: IndexHierarchy: Attribute")
+[Next](index_hierarchy-dictionary_like.md "Detail: IndexHierarchy: Dictionary-Like")
 
 ---
 

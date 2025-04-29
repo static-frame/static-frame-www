@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: DisplayConfig: Constructor
 * [View page source](../_sources/api_overview/display_config-constructor.rst.txt)
 
-[Previous](display_active-display.html "Overview: DisplayActive: Display")
-[Next](display_config-exporter.html "Overview: DisplayConfig: Exporter")
+[Previous](display_active-display.md "Overview: DisplayActive: Display")
+[Next](display_config-exporter.md "Overview: DisplayConfig: Exporter")
 
 ---
 
 # Overview: DisplayConfig: Constructor[](#overview-displayconfig-constructor "Link to this heading")
 
-[Detail: DisplayConfig: Constructor](../api_detail/display_config-constructor.html#api-detail-displayconfig-constructor)
+[Detail: DisplayConfig: Constructor](../api_detail/display_config-constructor.md#api-detail-displayconfig-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/display_config-constructor.html#api-sig-displayconfig-init) | `DisplayConfig.__init__(*, type_show, type_color, type_color_default, type_color_int, type_color_float, type_color_complex, type_color_bool, type_color_object, type_color_str, type_color_datetime, type_color_timedelta, type_color_index, type_color_series, type_color_frame, type_color_bus, type_color_quilt, type_delimiter_left, type_delimiter_right, value_format_float_positional, value_format_float_scientific, value_format_complex_positional, value_format_complex_scientific, cell_placeholder, display_format, display_columns, display_rows, include_columns, include_index, cell_max_width, cell_max_width_leftmost, cell_align_left)` |  |
-| [Detail](../api_detail/display_config-constructor.html#api-sig-displayconfig-from-default) | `DisplayConfig.from_default(**kwargs)` |  |
-| [Detail](../api_detail/display_config-constructor.html#api-sig-displayconfig-from-file) | `DisplayConfig.from_file(fp)` |  |
-| [Detail](../api_detail/display_config-constructor.html#api-sig-displayconfig-from-json) | `DisplayConfig.from_json(json_str)` |  |
+| [Detail](../api_detail/display_config-constructor.md#api-sig-displayconfig-init) | `DisplayConfig.__init__(*, type_show, type_color, type_color_default, type_color_int, type_color_float, type_color_complex, type_color_bool, type_color_object, type_color_str, type_color_datetime, type_color_timedelta, type_color_index, type_color_series, type_color_frame, type_color_bus, type_color_quilt, type_delimiter_left, type_delimiter_right, value_format_float_positional, value_format_float_scientific, value_format_complex_positional, value_format_complex_scientific, cell_placeholder, display_format, display_columns, display_rows, include_columns, include_index, cell_max_width, cell_max_width_leftmost, cell_align_left)` |  |
+| [Detail](../api_detail/display_config-constructor.md#api-sig-displayconfig-from-default) | `DisplayConfig.from_default(**kwargs)` |  |
+| [Detail](../api_detail/display_config-constructor.md#api-sig-displayconfig-from-file) | `DisplayConfig.from_file(fp)` |  |
+| [Detail](../api_detail/display_config-constructor.md#api-sig-displayconfig-from-json) | `DisplayConfig.from_json(json_str)` |  |
 
-[DisplayConfig](display_config.html#api-overview-displayconfig): [Constructor](#api-overview-displayconfig-constructor) | [Exporter](display_config-exporter.html#api-overview-displayconfig-exporter) | [Attribute](display_config-attribute.html#api-overview-displayconfig-attribute) | [Method](display_config-method.html#api-overview-displayconfig-method) | [Display](display_config-display.html#api-overview-displayconfig-display)
+[DisplayConfig](display_config.md#api-overview-displayconfig): [Constructor](#api-overview-displayconfig-constructor) | [Exporter](display_config-exporter.md#api-overview-displayconfig-exporter) | [Attribute](display_config-attribute.md#api-overview-displayconfig-attribute) | [Method](display_config-method.md#api-overview-displayconfig-method) | [Display](display_config-display.md#api-overview-displayconfig-display)
 
-[Previous](display_active-display.html "Overview: DisplayActive: Display")
-[Next](display_config-exporter.html "Overview: DisplayConfig: Exporter")
+[Previous](display_active-display.md "Overview: DisplayActive: Display")
+[Next](display_config-exporter.md "Overview: DisplayConfig: Exporter")
 
 ---
 

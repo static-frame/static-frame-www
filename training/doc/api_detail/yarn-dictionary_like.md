@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: Yarn: Dictionary-Like
 * [View page source](../_sources/api_detail/yarn-dictionary_like.rst.txt)
 
-[Previous](yarn-method.html "Detail: Yarn: Method")
-[Next](yarn-display.html "Detail: Yarn: Display")
+[Previous](yarn-method.md "Detail: Yarn: Method")
+[Next](yarn-display.md "Detail: Yarn: Display")
 
 ---
 
 # Detail: Yarn: Dictionary-Like[](#detail-yarn-dictionary-like "Link to this heading")
 
-[Overview: Yarn: Dictionary-Like](../api_overview/yarn-dictionary_like.html#api-overview-yarn-dictionary-like)
+[Overview: Yarn: Dictionary-Like](../api_overview/yarn-dictionary_like.md#api-overview-yarn-dictionary-like)
 
-Yarn.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.__contains__)[](#static_frame.Yarn.__contains__ "Link to this definition")
+Yarn.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.__contains__)[](#static_frame.Yarn.__contains__ "Link to this definition")
 :   Inclusion of value in index labels.
 
     Returns:
@@ -165,8 +165,8 @@ Yarn.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/yarn
 
     ```
 
-Yarn.\_\_iter\_\_()[[source]](../_modules/static_frame/core/yarn.html#Yarn.__iter__)[](#static_frame.Yarn.__iter__ "Link to this definition")
-:   Iterator of index labels, same as [`static_frame.Series.keys`](series-dictionary_like.html#static_frame.Series.keys "static_frame.Series.keys").
+Yarn.\_\_iter\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__iter__)[](#static_frame.Yarn.__iter__ "Link to this definition")
+:   Iterator of index labels, same as [`static_frame.Series.keys`](series-dictionary_like.md#static_frame.Series.keys "static_frame.Series.keys").
 
     Returns:
     :   `Iterator[Hashasble]`
@@ -186,11 +186,11 @@ Yarn.\_\_iter\_\_()[[source]](../_modules/static_frame/core/yarn.html#Yarn.__ite
 
     ```
 
-Yarn.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/yarn.html#Yarn.__reversed__)[](#static_frame.Yarn.__reversed__ "Link to this definition")
-:   Returns a reverse iterator on the [`Yarn`](yarn-selector.html#Yarn "Yarn") index.
+Yarn.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__reversed__)[](#static_frame.Yarn.__reversed__ "Link to this definition")
+:   Returns a reverse iterator on the [`Yarn`](yarn-selector.md#Yarn "Yarn") index.
 
     Returns:
-    :   [`Index`](index-selector.html#Index "Index")
+    :   [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -207,7 +207,7 @@ Yarn.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/yarn.html#Yarn._
 
     ```
 
-Yarn.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.get)[](#static_frame.Yarn.get "Link to this definition")
+Yarn.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.get)[](#static_frame.Yarn.get "Link to this definition")
 :   Return the value found at the index key, else the default if the key is not found.
 
     Returns:
@@ -229,8 +229,8 @@ Yarn.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/yarn.htm
 
     ```
 
-Yarn.items()[[source]](../_modules/static_frame/core/yarn.html#Yarn.items)[](#static_frame.Yarn.items "Link to this definition")
-:   Iterator of pairs of [`Yarn`](yarn-selector.html#Yarn "Yarn") label and contained [`Frame`](frame-selector.html#Frame "Frame").
+Yarn.items()[[source]](../_modules/static_frame/core/yarn.md#Yarn.items)[](#static_frame.Yarn.items "Link to this definition")
+:   Iterator of pairs of [`Yarn`](yarn-selector.md#Yarn "Yarn") label and contained [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -271,7 +271,7 @@ Yarn.items()[[source]](../_modules/static_frame/core/yarn.html#Yarn.items)[](
 
     ```
 
-Yarn.keys()[[source]](../_modules/static_frame/core/yarn.html#Yarn.keys)[](#static_frame.Yarn.keys "Link to this definition")
+Yarn.keys()[[source]](../_modules/static_frame/core/yarn.md#Yarn.keys)[](#static_frame.Yarn.keys "Link to this definition")
 :   Iterator of index labels.
 
     Returns:
@@ -298,7 +298,7 @@ Yarn.keys()[[source]](../_modules/static_frame/core/yarn.html#Yarn.keys)[](#s
     ```
 
 Yarn.values[](#static_frame.Yarn.values "Link to this definition")
-:   A 1D object array of all [`Frame`](frame-selector.html#Frame "Frame") contained in all contained [`Bus`](bus-selector.html#Bus "Bus").
+:   A 1D object array of all [`Frame`](frame-selector.md#Frame "Frame") contained in all contained [`Bus`](bus-selector.md#Bus "Bus").
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -340,10 +340,10 @@ Yarn.values[](#static_frame.Yarn.values "Link to this definition")
 
     ```
 
-[Yarn](yarn.html#api-detail-yarn): [Constructor](yarn-constructor.html#api-detail-yarn-constructor) | [Exporter](yarn-exporter.html#api-detail-yarn-exporter) | [Attribute](yarn-attribute.html#api-detail-yarn-attribute) | [Method](yarn-method.html#api-detail-yarn-method) | [Dictionary-Like](#api-detail-yarn-dictionary-like) | [Display](yarn-display.html#api-detail-yarn-display) | [Selector](yarn-selector.html#api-detail-yarn-selector) | [Iterator](yarn-iterator.html#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
-[Previous](yarn-method.html "Detail: Yarn: Method")
-[Next](yarn-display.html "Detail: Yarn: Display")
+[Previous](yarn-method.md "Detail: Yarn: Method")
+[Next](yarn-display.md "Detail: Yarn: Display")
 
 ---
 

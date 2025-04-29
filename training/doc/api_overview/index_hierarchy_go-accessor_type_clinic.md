@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexHierarchyGO: Accessor Type Clinic
 * [View page source](../_sources/api_overview/index_hierarchy_go-accessor_type_clinic.rst.txt)
 
-[Previous](index_hierarchy_go-accessor_hashlib.html "Overview: IndexHierarchyGO: Accessor Hashlib")
-[Next](index_year-constructor.html "Overview: IndexYear: Constructor")
+[Previous](index_hierarchy_go-accessor_hashlib.md "Overview: IndexHierarchyGO: Accessor Hashlib")
+[Next](index_year-constructor.md "Overview: IndexYear: Constructor")
 
 ---
 
 # Overview: IndexHierarchyGO: Accessor Type Clinic[](#overview-indexhierarchygo-accessor-type-clinic "Link to this heading")
 
-[Detail: IndexHierarchyGO: Accessor Type Clinic](../api_detail/index_hierarchy_go-accessor_type_clinic.html#api-detail-indexhierarchygo-accessor-type-clinic)
+[Detail: IndexHierarchyGO: Accessor Type Clinic](../api_detail/index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.html#api-sig-indexhierarchygo-via-type-clinic-to-hint) | `IndexHierarchyGO.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.html#api-sig-indexhierarchygo-via-type-clinic-check) | `IndexHierarchyGO.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.html#api-sig-indexhierarchygo-via-type-clinic-warn) | `IndexHierarchyGO.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.html#api-sig-indexhierarchygo-via-type-clinic-call) | `IndexHierarchyGO.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.html#api-sig-indexhierarchygo-via-type-clinic-repr) | `IndexHierarchyGO.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.md#api-sig-indexhierarchygo-via-type-clinic-to-hint) | `IndexHierarchyGO.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.md#api-sig-indexhierarchygo-via-type-clinic-check) | `IndexHierarchyGO.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.md#api-sig-indexhierarchygo-via-type-clinic-warn) | `IndexHierarchyGO.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.md#api-sig-indexhierarchygo-via-type-clinic-call) | `IndexHierarchyGO.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_type_clinic.md#api-sig-indexhierarchygo-via-type-clinic-repr) | `IndexHierarchyGO.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-accessor_hashlib.html "Overview: IndexHierarchyGO: Accessor Hashlib")
-[Next](index_year-constructor.html "Overview: IndexYear: Constructor")
+[Previous](index_hierarchy_go-accessor_hashlib.md "Overview: IndexHierarchyGO: Accessor Hashlib")
+[Next](index_year-constructor.md "Overview: IndexYear: Constructor")
 
 ---
 

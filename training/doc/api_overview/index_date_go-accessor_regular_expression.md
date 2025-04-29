@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexDateGO: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_date_go-accessor_regular_expression.rst.txt)
 
-[Previous](index_date_go-accessor_string.html "Overview: IndexDateGO: Accessor String")
-[Next](index_date_go-accessor_hashlib.html "Overview: IndexDateGO: Accessor Hashlib")
+[Previous](index_date_go-accessor_string.md "Overview: IndexDateGO: Accessor String")
+[Next](index_date_go-accessor_hashlib.md "Overview: IndexDateGO: Accessor Hashlib")
 
 ---
 
 # Overview: IndexDateGO: Accessor Regular Expression[](#overview-indexdatego-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexDateGO: Accessor Regular Expression](../api_detail/index_date_go-accessor_regular_expression.html#api-detail-indexdatego-accessor-regular-expression)
+[Detail: IndexDateGO: Accessor Regular Expression](../api_detail/index_date_go-accessor_regular_expression.md#api-detail-indexdatego-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date_go-accessor_regular_expression.html#api-sig-indexdatego-via-re-search) | `IndexDateGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_date_go-accessor_regular_expression.html#api-sig-indexdatego-via-re-match) | `IndexDateGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_date_go-accessor_regular_expression.html#api-sig-indexdatego-via-re-fullmatch) | `IndexDateGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_date_go-accessor_regular_expression.html#api-sig-indexdatego-via-re-split) | `IndexDateGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_date_go-accessor_regular_expression.html#api-sig-indexdatego-via-re-findall) | `IndexDateGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_date_go-accessor_regular_expression.html#api-sig-indexdatego-via-re-sub) | `IndexDateGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_date_go-accessor_regular_expression.html#api-sig-indexdatego-via-re-subn) | `IndexDateGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_date_go-accessor_regular_expression.md#api-sig-indexdatego-via-re-search) | `IndexDateGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_date_go-accessor_regular_expression.md#api-sig-indexdatego-via-re-match) | `IndexDateGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_date_go-accessor_regular_expression.md#api-sig-indexdatego-via-re-fullmatch) | `IndexDateGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_date_go-accessor_regular_expression.md#api-sig-indexdatego-via-re-split) | `IndexDateGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_date_go-accessor_regular_expression.md#api-sig-indexdatego-via-re-findall) | `IndexDateGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_date_go-accessor_regular_expression.md#api-sig-indexdatego-via-re-sub) | `IndexDateGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_date_go-accessor_regular_expression.md#api-sig-indexdatego-via-re-subn) | `IndexDateGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexDateGO](index_date_go.html#api-overview-indexdatego): [Constructor](index_date_go-constructor.html#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.html#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-overview-indexdatego-attribute) | [Method](index_date_go-method.html#api-overview-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.html#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.html#api-overview-indexdatego-display) | [Selector](index_date_go-selector.html#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-overview-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.html#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.html#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.html#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.html#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-overview-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-overview-indexdatego): [Constructor](index_date_go-constructor.md#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-overview-indexdatego-attribute) | [Method](index_date_go-method.md#api-overview-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-overview-indexdatego-display) | [Selector](index_date_go-selector.md#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-overview-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-overview-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-accessor_string.html "Overview: IndexDateGO: Accessor String")
-[Next](index_date_go-accessor_hashlib.html "Overview: IndexDateGO: Accessor Hashlib")
+[Previous](index_date_go-accessor_string.md "Overview: IndexDateGO: Accessor String")
+[Next](index_date_go-accessor_hashlib.md "Overview: IndexDateGO: Accessor Hashlib")
 
 ---
 

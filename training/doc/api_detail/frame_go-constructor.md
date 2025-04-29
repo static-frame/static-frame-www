@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: FrameGO: Constructor
 * [View page source](../_sources/api_detail/frame_go-constructor.rst.txt)
 
-[Previous](frame-accessor_reduce.html "Detail: Frame: Accessor Reduce")
-[Next](frame_go-exporter.html "Detail: FrameGO: Exporter")
+[Previous](frame-accessor_reduce.md "Detail: Frame: Accessor Reduce")
+[Next](frame_go-exporter.md "Detail: FrameGO: Exporter")
 
 ---
 
 # Detail: FrameGO: Constructor[](#detail-framego-constructor "Link to this heading")
 
-[Overview: FrameGO: Constructor](../api_overview/frame_go-constructor.html#api-overview-framego-constructor)
+[Overview: FrameGO: Constructor](../api_overview/frame_go-constructor.md#api-overview-framego-constructor)
 
 FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[](#static_frame.FrameGO.__init__ "Link to this definition")
 :   Initializer.
@@ -153,9 +153,9 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **columns** – Optional column initializer. If provided in addition to data values, lengths must be compatible.
         * **index\_constructor** –
         * **columns\_constructor** –
-        * **own\_data** – Flag the data values as ownable by this [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
-        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
-        * **own\_columns** – Flag the passed columns as ownable by this [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
+        * **own\_data** – Flag the data values as ownable by this [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
+        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
+        * **own\_columns** – Flag the passed columns as ownable by this [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
 
     ```
     >>> sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -174,14 +174,14 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
 
     Parameters:
     :   * **value** – A `pyarrow.Table` instance.
-        * **index\_depth** – integer specification of how many columns to use in forming the index. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
-        * **columns\_depth** – integer specification of how many rows to use in forming the columns. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+        * **index\_depth** – integer specification of how many columns to use in forming the index. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
+        * **columns\_depth** – integer specification of how many rows to use in forming the columns. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
         * **dtypes** – Optionally provide an iterable of dtypes, equal in length to the length of each row, or a mapping by column name (where overspecied labels is not an error). If a dtype is given as None, element-wise type determination will be used.
         * **name** – A hashable object to label the container.
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -215,13 +215,13 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_clipboard(*\**, *delimiter='\t'*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[](#static_frame.FrameGO.from_clipboard "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from the contents of the clipboard (assuming a table is stored as delimited file).
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from the contents of the clipboard (assuming a table is stored as delimited file).
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
 *classmethod* FrameGO.from\_concat(*frames*, */*, *\**, *axis=0*, *union=True*, *index=None*, *columns=None*, *index\_constructor=None*, *columns\_constructor=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*)[](#static_frame.FrameGO.from_concat "Link to this definition")
-:   Concatenate multiple [`Frame`](frame-selector.html#Frame "Frame") or [`Series`](series-selector.html#Series "Series") into a new [`Frame`](frame-selector.html#Frame "Frame"). If index or columns are provided and appropriately sized, the resulting [`Frame`](frame-selector.html#Frame "Frame") will use those indices. If the axis along concatenation (index for axis 0, columns for axis 1) is unique after concatenation, it will be preserved; otherwise, a new index or an [`IndexAutoFactory`](index_auto_factory.html#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") must be supplied.
+:   Concatenate multiple [`Frame`](frame-selector.md#Frame "Frame") or [`Series`](series-selector.md#Series "Series") into a new [`Frame`](frame-selector.md#Frame "Frame"). If index or columns are provided and appropriately sized, the resulting [`Frame`](frame-selector.md#Frame "Frame") will use those indices. If the axis along concatenation (index for axis 0, columns for axis 1) is unique after concatenation, it will be preserved; otherwise, a new index or an [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") must be supplied.
 
     Parameters:
     :   * **frames** – Iterable of Frames.
@@ -235,7 +235,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -279,10 +279,10 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_concat\_items(*items*, */*, *\**, *axis=0*, *union=True*, *name=None*, *fill\_value=nan*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[](#static_frame.FrameGO.from_concat_items "Link to this definition")
-:   Produce a [`Frame`](frame-selector.html#Frame "Frame") with a hierarchical index from an iterable of pairs of labels, [`Frame`](frame-selector.html#Frame "Frame"). The [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") is formed from the provided labels and the [`Index`](index-selector.html#Index "Index") if each [`Frame`](frame-selector.html#Frame "Frame").
+:   Produce a [`Frame`](frame-selector.md#Frame "Frame") with a hierarchical index from an iterable of pairs of labels, [`Frame`](frame-selector.md#Frame "Frame"). The [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") is formed from the provided labels and the [`Index`](index-selector.md#Index "Index") if each [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
-    :   * **items** – Iterable of pairs of label, [`Frame`](frame-selector.html#Frame "Frame")
+    :   * **items** – Iterable of pairs of label, [`Frame`](frame-selector.md#Frame "Frame")
         * **axis** –
         * **union** –
         * **name** –
@@ -334,10 +334,10 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_csv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[](#static_frame.FrameGO.from_csv "Link to this definition")
-:   Specialized version of [`Frame.from_delimited`](frame-constructor.html#static_frame.Frame.from_delimited "static_frame.Frame.from_delimited") for CSV files.
+:   Specialized version of [`Frame.from_delimited`](frame-constructor.md#static_frame.Frame.from_delimited "static_frame.Frame.from_delimited") for CSV files.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -369,7 +369,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_delimited(*fp*, */*, *\**, *delimiter*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[](#static_frame.FrameGO.from_delimited "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from a file path or a file-like object defining a delimited (CSV, TSV) data file.
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from a file path or a file-like object defining a delimited (CSV, TSV) data file.
 
     Parameters:
     :   * **fp** – A file path or a file-like object.
@@ -392,7 +392,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -424,7 +424,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_dict(*mapping*, */*, *\**, *index=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[](#static_frame.FrameGO.from_dict "Link to this definition")
-:   Create a Frame from a dictionary (or any object that has an items() method) where keys are column labels and values are columns values (either sequence types or [`Series`](series-selector.html#Series "Series")).
+:   Create a Frame from a dictionary (or any object that has an items() method) where keys are column labels and values are columns values (either sequence types or [`Series`](series-selector.md#Series "Series")).
 
     Parameters:
     :   * **mapping** – a dictionary or similar mapping interface.
@@ -461,7 +461,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> sf.FrameGO.from_dict_fields((dict(a=False, b=False, c=True), dict(a='1517-04-01', b='1517-01-01', c='1517-04-01')), columns=('p', 'q'), dtypes=dict(q=np.datetime64), name='x')
@@ -487,7 +487,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> sf.FrameGO.from_dict_records((dict(a=10, b=False, c='1517-01-01'), dict(a=8, b=True, c='1517-04-01')), index=('p', 'q'), dtypes=dict(c=np.datetime64), name='x')
@@ -510,7 +510,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sf.FrameGO.from_dict_records_items((('p', dict(a=10, b=False, c='1517-01-01')), ('q', dict(a=8, b=True, c='1517-04-01'))), dtypes=dict(c=np.datetime64), name='x')
@@ -539,7 +539,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_element\_items(*items*, */*, *\**, *index*, *columns*, *dtype=None*, *axis=None*, *name=None*, *fill\_value=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[](#static_frame.FrameGO.from_element_items "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from an iterable of key, value, where key is a pair of row, column labels.
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from an iterable of key, value, where key is a pair of row, column labels.
 
     This function is partialed (setting the index and columns) and used by `IterNodeDelegate` as the apply constructor for doing application on element iteration.
 
@@ -548,7 +548,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **axis** – when None, items can be in an order; when 0, items must be well-formed and ordered row major; when 1, items must be well-formed and ordered columns major.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sf.FrameGO.from_element_items(((('a', 0), -1), (('b', 0), 10), (('a', 1), 3), (('b', 'a'), 1)), columns=(0, 1), index=('a', 'b'), name='x', axis=1)
@@ -573,7 +573,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_fields(*fields*, */*, *\**, *index=None*, *columns=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*, *consolidate\_blocks=False*)[](#static_frame.FrameGO.from_fields "Link to this definition")
-:   Frame constructor from an iterator of columns, where columns are iterables. [`Series`](series-selector.html#Series "Series") can be provided as values if an `index` argument is supplied. This constructor is similar to `from_items()`, though here columns are provided through an independent `columns` argument.
+:   Frame constructor from an iterator of columns, where columns are iterables. [`Series`](series-selector.md#Series "Series") can be provided as values if an `index` argument is supplied. This constructor is similar to `from_items()`, though here columns are provided through an independent `columns` argument.
 
     Parameters:
     :   * **fields** – Iterable of column values.
@@ -584,7 +584,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -600,7 +600,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_items(*pairs*, */*, *\**, *index=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[](#static_frame.FrameGO.from_items "Link to this definition")
-:   Frame constructor from an iterator of pairs, where the first value is the column label and the second value is an iterable of column values. [`Series`](series-selector.html#Series "Series") can be provided as values if an `index` argument is supplied.
+:   Frame constructor from an iterator of pairs, where the first value is the column label and the second value is an iterable of column values. [`Series`](series-selector.md#Series "Series") can be provided as values if an `index` argument is supplied.
 
     Parameters:
     :   * **pairs** – Iterable of pairs of column name, column values.
@@ -613,7 +613,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> sf.FrameGO.from_items((('a', (10, 2, 8, 3)), ('b', ('qrs ', 'XYZ', '123', ' wX '))), index=('p', 'q', 'r', 's'), name='x')
@@ -638,7 +638,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -695,7 +695,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -754,7 +754,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -813,7 +813,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -882,7 +882,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     :   **json\_data** – a string or StringIO of JSON data
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -996,7 +996,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1046,7 +1046,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_npy(*fp*, */*)[](#static_frame.FrameGO.from_npy "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from an directory of npy files.
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from an directory of npy files.
 
     Parameters:
     :   **fp** – The path to the NPY directory.
@@ -1078,13 +1078,13 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_npy\_mmap(*fp*, */*)[](#static_frame.FrameGO.from_npy_mmap "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from an directory of npy files using memory maps.
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from an directory of npy files using memory maps.
 
     Parameters:
     :   **fp** – The path to the NPY directory.
 
     Returns:
-    :   A tuple of [`Frame`](frame-selector.html#Frame "Frame") and the callable needed to close the open memory map objects. On some platforms this must be called before the process exits.
+    :   A tuple of [`Frame`](frame-selector.md#Frame "Frame") and the callable needed to close the open memory map objects. On some platforms this must be called before the process exits.
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1115,7 +1115,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_npz(*fp*, */*)[](#static_frame.FrameGO.from_npz "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from an npz file.
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from an npz file.
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1142,12 +1142,12 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_overlay(*containers*, */*, *\**, *index=None*, *columns=None*, *union=True*, *name=None*, *func=<function isna\_array>*, *fill\_value=<object object>*)[](#static_frame.FrameGO.from_overlay "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") made by overlaying containers, filling in values with aligned values from subsequent containers. Values are filled based on a passed function that must return a Boolean array. By default, that function is isna\_array, returning True for missing values (NaN and None).
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") made by overlaying containers, filling in values with aligned values from subsequent containers. Values are filled based on a passed function that must return a Boolean array. By default, that function is isna\_array, returning True for missing values (NaN and None).
 
     Parameters:
-    :   * **containers** – Iterable of [`Frame`](frame-selector.html#Frame "Frame").
-        * **index** – An optional [`Index`](index-selector.html#Index "Index"), [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy"), or index initializer, to be used as the index upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.html#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
-        * **columns** – An optional [`Index`](index-selector.html#Index "Index"), [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy"), or columns initializer, to be used as the columns upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.html#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
+    :   * **containers** – Iterable of [`Frame`](frame-selector.md#Frame "Frame").
+        * **index** – An optional [`Index`](index-selector.md#Index "Index"), [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"), or index initializer, to be used as the index upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
+        * **columns** – An optional [`Index`](index-selector.md#Index "Index"), [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"), or columns initializer, to be used as the columns upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
         * **union** – If True, and no `index` or `columns` argument is supplied, a union index or columns from `containers` will be used; if False, the intersection index or columns will be used.
         * **name** –
         * **func** – A function that takes an array and returns a same-sized Boolean array, where True indicates availability for insertion.
@@ -1188,14 +1188,14 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
 
     Parameters:
     :   * **value** – Pandas DataFrame.
-        * **index\_constructor** – Optional class or constructor function to create the [`Index`](index-selector.html#Index "Index") applied to the rows.
-        * **columns\_constructor** – Optional class or constructor function to create the [`Index`](index-selector.html#Index "Index") applied to the columns.
+        * **index\_constructor** – Optional class or constructor function to create the [`Index`](index-selector.md#Index "Index") applied to the rows.
+        * **columns\_constructor** – Optional class or constructor function to create the [`Index`](index-selector.md#Index "Index") applied to the columns.
         * **dtypes** –
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
         * **own\_data** – If True, the underlying NumPy data array will be made immutable and used without a copy.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((10, 2, 8, 3), ('qrs ', 'XYZ', '123', ' wX ')), columns=('a', 'b'), index=('p', 'q', 'r', 's'), name='x')
@@ -1232,10 +1232,10 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
 
     Parameters:
     :   * **fp** – A string file path or `Path` instance.
-        * **index\_depth** – integer specification of how many columns to use in forming the index. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+        * **index\_depth** – integer specification of how many columns to use in forming the index. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
         * **index\_name\_depth\_level** –
         * **index\_constructors** –
-        * **columns\_depth** – integer specification of how many rows to use in forming the columns. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+        * **columns\_depth** – integer specification of how many rows to use in forming the columns. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
         * **columns\_name\_depth\_level** –
         * **columns\_constructors** –
         * **columns\_select** – An optional iterable of column names to load.
@@ -1268,7 +1268,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_pickle(*fp*, */*)[](#static_frame.FrameGO.from_pickle "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from a pickle file.
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from a pickle file.
 
     The pickle module is not secure. Only unpickle data you trust.
 
@@ -1300,7 +1300,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_records(*records*, */*, *\**, *index=None*, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[](#static_frame.FrameGO.from_records "Link to this definition")
-:   Construct a [`Frame`](frame-selector.html#Frame "Frame") from an iterable of rows, where rows are defined as iterables, including tuples, lists, and arrays. If each row is a NamedTuple, and `columns` is not provided, column names will be derived from the NamedTuple fields.
+:   Construct a [`Frame`](frame-selector.md#Frame "Frame") from an iterable of rows, where rows are defined as iterables, including tuples, lists, and arrays. If each row is a NamedTuple, and `columns` is not provided, column names will be derived from the NamedTuple fields.
 
     Supplying `dtypes` will significantly improve performance, as otherwise columnar array types must be derived by element-wise examination.
 
@@ -1315,7 +1315,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> sf.FrameGO.from_records(((10, False, '1517-01-01'), (8, True,'1517-04-01')), index=('p', 'q'), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1339,7 +1339,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sf.FrameGO.from_records_items((('p', (10, False, '1517-01-01')), ('q', (8, True,'1517-04-01'))), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1457,7 +1457,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sa = np.array([(False, 8), (True, 19)], dtype=[('a', bool), ('b', int)])
@@ -1474,10 +1474,10 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     ```
 
 *classmethod* FrameGO.from\_tsv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[](#static_frame.FrameGO.from_tsv "Link to this definition")
-:   Specialized version of [`Frame.from_delimited`](frame-constructor.html#static_frame.Frame.from_delimited "static_frame.Frame.from_delimited") for TSV files.
+:   Specialized version of [`Frame.from_delimited`](frame-constructor.md#static_frame.Frame.from_delimited "static_frame.Frame.from_delimited") for TSV files.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -1536,10 +1536,10 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
 
     ```
 
-[FrameGO](frame_go.html#api-detail-framego): [Constructor](#api-detail-framego-constructor) | [Exporter](frame_go-exporter.html#api-detail-framego-exporter) | [Attribute](frame_go-attribute.html#api-detail-framego-attribute) | [Method](frame_go-method.html#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-detail-framego-dictionary-like) | [Display](frame_go-display.html#api-detail-framego-display) | [Assignment](frame_go-assignment.html#api-detail-framego-assignment) | [Selector](frame_go-selector.html#api-detail-framego-selector) | [Iterator](frame_go-iterator.html#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-detail-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-detail-framego): [Constructor](#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)
 
-[Previous](frame-accessor_reduce.html "Detail: Frame: Accessor Reduce")
-[Next](frame_go-exporter.html "Detail: FrameGO: Exporter")
+[Previous](frame-accessor_reduce.md "Detail: Frame: Accessor Reduce")
+[Next](frame_go-exporter.md "Detail: FrameGO: Exporter")
 
 ---
 

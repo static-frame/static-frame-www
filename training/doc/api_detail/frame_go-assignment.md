@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Detail: FrameGO: Assignment
 * [View page source](../_sources/api_detail/frame_go-assignment.rst.txt)
 
-[Previous](frame_go-display.html "Detail: FrameGO: Display")
-[Next](frame_go-selector.html "Detail: FrameGO: Selector")
+[Previous](frame_go-display.md "Detail: FrameGO: Display")
+[Next](frame_go-selector.md "Detail: FrameGO: Selector")
 
 ---
 
 # Detail: FrameGO: Assignment[](#detail-framego-assignment "Link to this heading")
 
-[Overview: FrameGO: Assignment](../api_overview/frame_go-assignment.html#api-overview-framego-assignment)
+[Overview: FrameGO: Assignment](../api_overview/frame_go-assignment.md#api-overview-framego-assignment)
 
 FrameGO.assign[*key*](*value*, *\**, *fill\_value*)
 :   assign
 
-    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.__call__)
+    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -190,7 +190,7 @@ FrameGO.assign[*key*](*value*, *\**, *fill\_value*)
 FrameGO.assign[key].apply(func, \*, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply)
+    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -224,7 +224,7 @@ FrameGO.assign[key].apply(func, \*, fill\_value)
 FrameGO.assign[key].apply\_element(func, \*, dtype, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element)
+    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -258,7 +258,7 @@ FrameGO.assign[key].apply\_element(func, \*, dtype, fill\_value)
 FrameGO.assign[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element_items)
+    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -292,11 +292,11 @@ FrameGO.assign[key].apply\_element\_items(func, \*, dtype, fill\_value)
 FrameGO.assign.iloc[*key*](*value*, *\**, *fill\_value*)
 :   FrameGO.assign
 
-    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.__call__)
+    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -344,7 +344,7 @@ FrameGO.assign.iloc[*key*](*value*, *\**, *fill\_value*)
 FrameGO.assign.iloc[key].apply(func, \*, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply)
+    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -378,7 +378,7 @@ FrameGO.assign.iloc[key].apply(func, \*, fill\_value)
 FrameGO.assign.iloc[key].apply\_element(func, \*, dtype, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element)
+    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -412,7 +412,7 @@ FrameGO.assign.iloc[key].apply\_element(func, \*, dtype, fill\_value)
 FrameGO.assign.iloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element_items)
+    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -446,11 +446,11 @@ FrameGO.assign.iloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 FrameGO.assign.loc[*key*](*value*, *\**, *fill\_value*)
 :   FrameGO.assign
 
-    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.__call__)
+    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -498,7 +498,7 @@ FrameGO.assign.loc[*key*](*value*, *\**, *fill\_value*)
 FrameGO.assign.loc[key].apply(func, \*, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply)
+    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -532,7 +532,7 @@ FrameGO.assign.loc[key].apply(func, \*, fill\_value)
 FrameGO.assign.loc[key].apply\_element(func, \*, dtype, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element)
+    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -566,7 +566,7 @@ FrameGO.assign.loc[key].apply\_element(func, \*, dtype, fill\_value)
 FrameGO.assign.loc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element_items)
+    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -600,11 +600,11 @@ FrameGO.assign.loc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 FrameGO.assign.bloc[*key*](*value*, *\**, *fill\_value*)
 :   FrameGO.assign
 
-    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.__call__)
+    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -634,7 +634,7 @@ FrameGO.assign.bloc[*key*](*value*, *\**, *fill\_value*)
 FrameGO.assign.bloc[key].apply(func, \*, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply)
+    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -668,7 +668,7 @@ FrameGO.assign.bloc[key].apply(func, \*, fill\_value)
 FrameGO.assign.bloc[key].apply\_element(func, \*, dtype, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element)
+    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -702,7 +702,7 @@ FrameGO.assign.bloc[key].apply\_element(func, \*, dtype, fill\_value)
 FrameGO.assign.bloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   FrameGO.assign
 
-    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element_items)
+    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -733,10 +733,10 @@ FrameGO.assign.bloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 
     ```
 
-[FrameGO](frame_go.html#api-detail-framego): [Constructor](frame_go-constructor.html#api-detail-framego-constructor) | [Exporter](frame_go-exporter.html#api-detail-framego-exporter) | [Attribute](frame_go-attribute.html#api-detail-framego-attribute) | [Method](frame_go-method.html#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-detail-framego-dictionary-like) | [Display](frame_go-display.html#api-detail-framego-display) | [Assignment](#api-detail-framego-assignment) | [Selector](frame_go-selector.html#api-detail-framego-selector) | [Iterator](frame_go-iterator.html#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-detail-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)
 
-[Previous](frame_go-display.html "Detail: FrameGO: Display")
-[Next](frame_go-selector.html "Detail: FrameGO: Selector")
+[Previous](frame_go-display.md "Detail: FrameGO: Display")
+[Next](frame_go-selector.md "Detail: FrameGO: Selector")
 
 ---
 

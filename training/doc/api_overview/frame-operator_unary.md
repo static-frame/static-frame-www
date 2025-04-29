@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: Frame: Operator Unary
 * [View page source](../_sources/api_overview/frame-operator_unary.rst.txt)
 
-[Previous](frame-operator_binary.html "Overview: Frame: Operator Binary")
-[Next](frame-accessor_values.html "Overview: Frame: Accessor Values")
+[Previous](frame-operator_binary.md "Overview: Frame: Operator Binary")
+[Next](frame-accessor_values.md "Overview: Frame: Accessor Values")
 
 ---
 
 # Overview: Frame: Operator Unary[](#overview-frame-operator-unary "Link to this heading")
 
-[Detail: Frame: Operator Unary](../api_detail/frame-operator_unary.html#api-detail-frame-operator-unary)
+[Detail: Frame: Operator Unary](../api_detail/frame-operator_unary.md#api-detail-frame-operator-unary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame-operator_unary.html#api-sig-frame-abs) | `Frame.__abs__()` |  |
-| [Detail](../api_detail/frame-operator_unary.html#api-sig-frame-invert) | `Frame.__invert__()` |  |
-| [Detail](../api_detail/frame-operator_unary.html#api-sig-frame-neg) | `Frame.__neg__()` |  |
-| [Detail](../api_detail/frame-operator_unary.html#api-sig-frame-pos) | `Frame.__pos__()` |  |
-| [Detail](../api_detail/frame-operator_unary.html#id1) | `Frame.abs()` |  |
+| [Detail](../api_detail/frame-operator_unary.md#api-sig-frame-abs) | `Frame.__abs__()` |  |
+| [Detail](../api_detail/frame-operator_unary.md#api-sig-frame-invert) | `Frame.__invert__()` |  |
+| [Detail](../api_detail/frame-operator_unary.md#api-sig-frame-neg) | `Frame.__neg__()` |  |
+| [Detail](../api_detail/frame-operator_unary.md#api-sig-frame-pos) | `Frame.__pos__()` |  |
+| [Detail](../api_detail/frame-operator_unary.md#id1) | `Frame.abs()` |  |
 
-[Frame](frame.html#api-overview-frame): [Constructor](frame-constructor.html#api-overview-frame-constructor) | [Exporter](frame-exporter.html#api-overview-frame-exporter) | [Attribute](frame-attribute.html#api-overview-frame-attribute) | [Method](frame-method.html#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-overview-frame-dictionary-like) | [Display](frame-display.html#api-overview-frame-display) | [Assignment](frame-assignment.html#api-overview-frame-assignment) | [Selector](frame-selector.html#api-overview-frame-selector) | [Iterator](frame-iterator.html#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-overview-frame-operator-binary) | [Operator Unary](#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-overview-frame-accessor-reduce)
+[Frame](frame.md#api-overview-frame): [Constructor](frame-constructor.md#api-overview-frame-constructor) | [Exporter](frame-exporter.md#api-overview-frame-exporter) | [Attribute](frame-attribute.md#api-overview-frame-attribute) | [Method](frame-method.md#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-overview-frame-dictionary-like) | [Display](frame-display.md#api-overview-frame-display) | [Assignment](frame-assignment.md#api-overview-frame-assignment) | [Selector](frame-selector.md#api-overview-frame-selector) | [Iterator](frame-iterator.md#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-overview-frame-operator-binary) | [Operator Unary](#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-overview-frame-accessor-reduce)
 
-[Previous](frame-operator_binary.html "Overview: Frame: Operator Binary")
-[Next](frame-accessor_values.html "Overview: Frame: Accessor Values")
+[Previous](frame-operator_binary.md "Overview: Frame: Operator Binary")
+[Next](frame-accessor_values.md "Overview: Frame: Accessor Values")
 
 ---
 

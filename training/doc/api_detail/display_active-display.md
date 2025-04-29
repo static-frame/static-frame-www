@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: DisplayActive: Display
 * [View page source](../_sources/api_detail/display_active-display.rst.txt)
 
-[Previous](display_active-dictionary_like.html "Detail: DisplayActive: Dictionary-Like")
-[Next](display_config-constructor.html "Detail: DisplayConfig: Constructor")
+[Previous](display_active-dictionary_like.md "Detail: DisplayActive: Dictionary-Like")
+[Next](display_config-constructor.md "Detail: DisplayConfig: Constructor")
 
 ---
 
 # Detail: DisplayActive: Display[](#detail-displayactive-display "Link to this heading")
 
-[Overview: DisplayActive: Display](../api_overview/display_active-display.html#api-overview-displayactive-display)
+[Overview: DisplayActive: Display](../api_overview/display_active-display.md#api-overview-displayactive-display)
 
 DisplayActive.\_\_repr\_\_()[](#static_frame.DisplayActive.__repr__ "Link to this definition")
 :   Return repr(self).
@@ -150,10 +150,10 @@ DisplayActive.\_\_repr\_\_()[](#static_frame.DisplayActive.__repr__ "Link to 
 DisplayActive.\_\_str\_\_()[](#static_frame.DisplayActive.__str__ "Link to this definition")
 :   Return str(self).
 
-[DisplayActive](display_active.html#api-detail-displayactive): [Constructor](display_active-constructor.html#api-detail-displayactive-constructor) | [Attribute](display_active-attribute.html#api-detail-displayactive-attribute) | [Method](display_active-method.html#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.html#api-detail-displayactive-dictionary-like) | [Display](#api-detail-displayactive-display)
+[DisplayActive](display_active.md#api-detail-displayactive): [Constructor](display_active-constructor.md#api-detail-displayactive-constructor) | [Attribute](display_active-attribute.md#api-detail-displayactive-attribute) | [Method](display_active-method.md#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.md#api-detail-displayactive-dictionary-like) | [Display](#api-detail-displayactive-display)
 
-[Previous](display_active-dictionary_like.html "Detail: DisplayActive: Dictionary-Like")
-[Next](display_config-constructor.html "Detail: DisplayConfig: Constructor")
+[Previous](display_active-dictionary_like.md "Detail: DisplayActive: Dictionary-Like")
+[Next](display_config-constructor.md "Detail: DisplayConfig: Constructor")
 
 ---
 

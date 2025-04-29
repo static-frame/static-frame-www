@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexHierarchyGO: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_hierarchy_go-accessor_regular_expression.rst.txt)
 
-[Previous](index_hierarchy_go-accessor_transpose.html "Overview: IndexHierarchyGO: Accessor Transpose")
-[Next](index_hierarchy_go-accessor_hashlib.html "Overview: IndexHierarchyGO: Accessor Hashlib")
+[Previous](index_hierarchy_go-accessor_transpose.md "Overview: IndexHierarchyGO: Accessor Transpose")
+[Next](index_hierarchy_go-accessor_hashlib.md "Overview: IndexHierarchyGO: Accessor Hashlib")
 
 ---
 
 # Overview: IndexHierarchyGO: Accessor Regular Expression[](#overview-indexhierarchygo-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexHierarchyGO: Accessor Regular Expression](../api_detail/index_hierarchy_go-accessor_regular_expression.html#api-detail-indexhierarchygo-accessor-regular-expression)
+[Detail: IndexHierarchyGO: Accessor Regular Expression](../api_detail/index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.html#api-sig-indexhierarchygo-via-re-search) | `IndexHierarchyGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.html#api-sig-indexhierarchygo-via-re-match) | `IndexHierarchyGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.html#api-sig-indexhierarchygo-via-re-fullmatch) | `IndexHierarchyGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.html#api-sig-indexhierarchygo-via-re-split) | `IndexHierarchyGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.html#api-sig-indexhierarchygo-via-re-findall) | `IndexHierarchyGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.html#api-sig-indexhierarchygo-via-re-sub) | `IndexHierarchyGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.html#api-sig-indexhierarchygo-via-re-subn) | `IndexHierarchyGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.md#api-sig-indexhierarchygo-via-re-search) | `IndexHierarchyGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.md#api-sig-indexhierarchygo-via-re-match) | `IndexHierarchyGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.md#api-sig-indexhierarchygo-via-re-fullmatch) | `IndexHierarchyGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.md#api-sig-indexhierarchygo-via-re-split) | `IndexHierarchyGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.md#api-sig-indexhierarchygo-via-re-findall) | `IndexHierarchyGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.md#api-sig-indexhierarchygo-via-re-sub) | `IndexHierarchyGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_hierarchy_go-accessor_regular_expression.md#api-sig-indexhierarchygo-via-re-subn) | `IndexHierarchyGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-overview-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-overview-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-accessor_transpose.html "Overview: IndexHierarchyGO: Accessor Transpose")
-[Next](index_hierarchy_go-accessor_hashlib.html "Overview: IndexHierarchyGO: Accessor Hashlib")
+[Previous](index_hierarchy_go-accessor_transpose.md "Overview: IndexHierarchyGO: Accessor Transpose")
+[Next](index_hierarchy_go-accessor_hashlib.md "Overview: IndexHierarchyGO: Accessor Hashlib")
 
 ---
 

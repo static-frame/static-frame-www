@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexGO: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_go-accessor_regular_expression.rst.txt)
 
-[Previous](index_go-accessor_string.html "Overview: IndexGO: Accessor String")
-[Next](index_go-accessor_hashlib.html "Overview: IndexGO: Accessor Hashlib")
+[Previous](index_go-accessor_string.md "Overview: IndexGO: Accessor String")
+[Next](index_go-accessor_hashlib.md "Overview: IndexGO: Accessor Hashlib")
 
 ---
 
 # Overview: IndexGO: Accessor Regular Expression[](#overview-indexgo-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexGO: Accessor Regular Expression](../api_detail/index_go-accessor_regular_expression.html#api-detail-indexgo-accessor-regular-expression)
+[Detail: IndexGO: Accessor Regular Expression](../api_detail/index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_go-accessor_regular_expression.html#api-sig-indexgo-via-re-search) | `IndexGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_go-accessor_regular_expression.html#api-sig-indexgo-via-re-match) | `IndexGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_go-accessor_regular_expression.html#api-sig-indexgo-via-re-fullmatch) | `IndexGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_go-accessor_regular_expression.html#api-sig-indexgo-via-re-split) | `IndexGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_go-accessor_regular_expression.html#api-sig-indexgo-via-re-findall) | `IndexGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_go-accessor_regular_expression.html#api-sig-indexgo-via-re-sub) | `IndexGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_go-accessor_regular_expression.html#api-sig-indexgo-via-re-subn) | `IndexGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_go-accessor_regular_expression.md#api-sig-indexgo-via-re-search) | `IndexGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_go-accessor_regular_expression.md#api-sig-indexgo-via-re-match) | `IndexGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_go-accessor_regular_expression.md#api-sig-indexgo-via-re-fullmatch) | `IndexGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_go-accessor_regular_expression.md#api-sig-indexgo-via-re-split) | `IndexGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_go-accessor_regular_expression.md#api-sig-indexgo-via-re-findall) | `IndexGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_go-accessor_regular_expression.md#api-sig-indexgo-via-re-sub) | `IndexGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_go-accessor_regular_expression.md#api-sig-indexgo-via-re-subn) | `IndexGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexGO](index_go.html#api-overview-indexgo): [Constructor](index_go-constructor.html#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.html#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.html#api-overview-indexgo-attribute) | [Method](index_go-method.html#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-overview-indexgo-dictionary-like) | [Display](index_go-display.html#api-overview-indexgo-display) | [Selector](index_go-selector.html#api-overview-indexgo-selector) | [Iterator](index_go-iterator.html#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-overview-indexgo): [Constructor](index_go-constructor.md#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | [Method](index_go-method.md#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 
-[Previous](index_go-accessor_string.html "Overview: IndexGO: Accessor String")
-[Next](index_go-accessor_hashlib.html "Overview: IndexGO: Accessor Hashlib")
+[Previous](index_go-accessor_string.md "Overview: IndexGO: Accessor String")
+[Next](index_go-accessor_hashlib.md "Overview: IndexGO: Accessor Hashlib")
 
 ---
 

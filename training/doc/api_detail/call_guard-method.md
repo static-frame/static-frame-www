@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: CallGuard: Method
 * [View page source](../_sources/api_detail/call_guard-method.rst.txt)
 
-[Previous](type_clinic-display.html "Detail: TypeClinic: Display")
-[Next](clinic_result-constructor.html "Detail: ClinicResult: Constructor")
+[Previous](type_clinic-display.md "Detail: TypeClinic: Display")
+[Next](clinic_result-constructor.md "Detail: ClinicResult: Constructor")
 
 ---
 
 # Detail: CallGuard: Method[](#detail-callguard-method "Link to this heading")
 
-[Overview: CallGuard: Method](../api_overview/call_guard-method.html#api-overview-callguard-method)
+[Overview: CallGuard: Method](../api_overview/call_guard-method.md#api-overview-callguard-method)
 
-*static* CallGuard.check(*func=None*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#CallGuard.check)[](#static_frame.CallGuard.check "Link to this definition")
+*static* CallGuard.check(*func=None*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#CallGuard.check)[](#static_frame.CallGuard.check "Link to this definition")
 :   A function decorator to perform run-time checking of function arguments and return values based on the function type annotations, including type hints and `Require`-provided validators. Raises `ClinicError` on failure.
 
     ```
@@ -171,13 +171,13 @@ API Detail
 
     ```
 
-*static* CallGuard.warn(*func=None*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#CallGuard.warn)[](#static_frame.CallGuard.warn "Link to this definition")
+*static* CallGuard.warn(*func=None*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#CallGuard.warn)[](#static_frame.CallGuard.warn "Link to this definition")
 :   A function decorator to perform run-time checking of function arguments and return values based on the function type annotations, including type hints and `Require`-provided validators. Issues a warning on failure.
 
-[CallGuard](call_guard.html#api-detail-callguard): [Method](#api-detail-callguard-method)
+[CallGuard](call_guard.md#api-detail-callguard): [Method](#api-detail-callguard-method)
 
-[Previous](type_clinic-display.html "Detail: TypeClinic: Display")
-[Next](clinic_result-constructor.html "Detail: ClinicResult: Constructor")
+[Previous](type_clinic-display.md "Detail: TypeClinic: Display")
+[Next](clinic_result-constructor.md "Detail: ClinicResult: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: Bus: Accessor Type Clinic
 * [View page source](../_sources/api_overview/bus-accessor_type_clinic.rst.txt)
 
-[Previous](bus-accessor_hashlib.html "Overview: Bus: Accessor Hashlib")
-[Next](batch-constructor.html "Overview: Batch: Constructor")
+[Previous](bus-accessor_hashlib.md "Overview: Bus: Accessor Hashlib")
+[Next](batch-constructor.md "Overview: Batch: Constructor")
 
 ---
 
 # Overview: Bus: Accessor Type Clinic[](#overview-bus-accessor-type-clinic "Link to this heading")
 
-[Detail: Bus: Accessor Type Clinic](../api_detail/bus-accessor_type_clinic.html#api-detail-bus-accessor-type-clinic)
+[Detail: Bus: Accessor Type Clinic](../api_detail/bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-accessor_type_clinic.html#api-sig-bus-via-type-clinic-to-hint) | `Bus.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/bus-accessor_type_clinic.html#api-sig-bus-via-type-clinic-check) | `Bus.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/bus-accessor_type_clinic.html#api-sig-bus-via-type-clinic-warn) | `Bus.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/bus-accessor_type_clinic.html#api-sig-bus-via-type-clinic-call) | `Bus.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/bus-accessor_type_clinic.html#api-sig-bus-via-type-clinic-repr) | `Bus.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/bus-accessor_type_clinic.md#api-sig-bus-via-type-clinic-to-hint) | `Bus.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/bus-accessor_type_clinic.md#api-sig-bus-via-type-clinic-check) | `Bus.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/bus-accessor_type_clinic.md#api-sig-bus-via-type-clinic-warn) | `Bus.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/bus-accessor_type_clinic.md#api-sig-bus-via-type-clinic-call) | `Bus.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/bus-accessor_type_clinic.md#api-sig-bus-via-type-clinic-repr) | `Bus.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[Bus](bus.html#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](#api-overview-bus-accessor-type-clinic)
 
-[Previous](bus-accessor_hashlib.html "Overview: Bus: Accessor Hashlib")
-[Next](batch-constructor.html "Overview: Batch: Constructor")
+[Previous](bus-accessor_hashlib.md "Overview: Bus: Accessor Hashlib")
+[Next](batch-constructor.md "Overview: Batch: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexMicrosecondGO: Attribute
 * [View page source](../_sources/api_overview/index_microsecond_go-attribute.rst.txt)
 
-[Previous](index_microsecond_go-exporter.html "Overview: IndexMicrosecondGO: Exporter")
-[Next](index_microsecond_go-method.html "Overview: IndexMicrosecondGO: Method")
+[Previous](index_microsecond_go-exporter.md "Overview: IndexMicrosecondGO: Exporter")
+[Next](index_microsecond_go-method.md "Overview: IndexMicrosecondGO: Method")
 
 ---
 
 # Overview: IndexMicrosecondGO: Attribute[](#overview-indexmicrosecondgo-attribute "Link to this heading")
 
-[Detail: IndexMicrosecondGO: Attribute](../api_detail/index_microsecond_go-attribute.html#api-detail-indexmicrosecondgo-attribute)
+[Detail: IndexMicrosecondGO: Attribute](../api_detail/index_microsecond_go-attribute.md#api-detail-indexmicrosecondgo-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-static) | `IndexMicrosecondGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-depth) | `IndexMicrosecondGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-dtype) | `IndexMicrosecondGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-index-types) | `IndexMicrosecondGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-memory) | `IndexMicrosecondGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-mloc) | `IndexMicrosecondGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-name) | `IndexMicrosecondGO.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-names) | `IndexMicrosecondGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-nbytes) | `IndexMicrosecondGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-ndim) | `IndexMicrosecondGO.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-positions) | `IndexMicrosecondGO.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-shape) | `IndexMicrosecondGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_microsecond_go-attribute.html#api-sig-indexmicrosecondgo-size) | `IndexMicrosecondGO.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-static) | `IndexMicrosecondGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-depth) | `IndexMicrosecondGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-dtype) | `IndexMicrosecondGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-index-types) | `IndexMicrosecondGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-memory) | `IndexMicrosecondGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-mloc) | `IndexMicrosecondGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-name) | `IndexMicrosecondGO.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-names) | `IndexMicrosecondGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-nbytes) | `IndexMicrosecondGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-ndim) | `IndexMicrosecondGO.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-positions) | `IndexMicrosecondGO.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-shape) | `IndexMicrosecondGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_microsecond_go-attribute.md#api-sig-indexmicrosecondgo-size) | `IndexMicrosecondGO.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexMicrosecondGO](index_microsecond_go.html#api-overview-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.html#api-overview-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.html#api-overview-indexmicrosecondgo-exporter) | [Attribute](#api-overview-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.html#api-overview-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.html#api-overview-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.html#api-overview-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.html#api-overview-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.html#api-overview-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.html#api-overview-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.html#api-overview-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.html#api-overview-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.html#api-overview-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.html#api-overview-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.html#api-overview-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.html#api-overview-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.html#api-overview-indexmicrosecondgo-accessor-type-clinic)
+[IndexMicrosecondGO](index_microsecond_go.md#api-overview-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.md#api-overview-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.md#api-overview-indexmicrosecondgo-exporter) | [Attribute](#api-overview-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.md#api-overview-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.md#api-overview-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.md#api-overview-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.md#api-overview-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.md#api-overview-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.md#api-overview-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.md#api-overview-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.md#api-overview-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.md#api-overview-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.md#api-overview-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.md#api-overview-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.md#api-overview-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.md#api-overview-indexmicrosecondgo-accessor-type-clinic)
 
-[Previous](index_microsecond_go-exporter.html "Overview: IndexMicrosecondGO: Exporter")
-[Next](index_microsecond_go-method.html "Overview: IndexMicrosecondGO: Method")
+[Previous](index_microsecond_go-exporter.md "Overview: IndexMicrosecondGO: Exporter")
+[Next](index_microsecond_go-method.md "Overview: IndexMicrosecondGO: Method")
 
 ---
 

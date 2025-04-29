@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: ClinicResult: Attribute
 * [View page source](../_sources/api_detail/clinic_result-attribute.rst.txt)
 
-[Previous](clinic_result-exporter.html "Detail: ClinicResult: Exporter")
-[Next](clinic_result-method.html "Detail: ClinicResult: Method")
+[Previous](clinic_result-exporter.md "Detail: ClinicResult: Exporter")
+[Next](clinic_result-method.md "Detail: ClinicResult: Method")
 
 ---
 
 # Detail: ClinicResult: Attribute[](#detail-clinicresult-attribute "Link to this heading")
 
-[Overview: ClinicResult: Attribute](../api_overview/clinic_result-attribute.html#api-overview-clinicresult-attribute)
+[Overview: ClinicResult: Attribute](../api_overview/clinic_result-attribute.md#api-overview-clinicresult-attribute)
 
 ClinicResult.validated[](#static_frame.ClinicResult.validated "Link to this definition")
 :   ```
@@ -163,10 +163,10 @@ ClinicResult.validated[](#static_frame.ClinicResult.validated "Link to this d
 
     ```
 
-[ClinicResult](clinic_result.html#api-detail-clinicresult): [Constructor](clinic_result-constructor.html#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-detail-clinicresult-exporter) | [Attribute](#api-detail-clinicresult-attribute) | [Method](clinic_result-method.html#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-detail-clinicresult-display)
+[ClinicResult](clinic_result.md#api-detail-clinicresult): [Constructor](clinic_result-constructor.md#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-detail-clinicresult-exporter) | [Attribute](#api-detail-clinicresult-attribute) | [Method](clinic_result-method.md#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-detail-clinicresult-display)
 
-[Previous](clinic_result-exporter.html "Detail: ClinicResult: Exporter")
-[Next](clinic_result-method.html "Detail: ClinicResult: Method")
+[Previous](clinic_result-exporter.md "Detail: ClinicResult: Exporter")
+[Next](clinic_result-method.md "Detail: ClinicResult: Method")
 
 ---
 

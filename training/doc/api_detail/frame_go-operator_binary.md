@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: FrameGO: Operator Binary
 * [View page source](../_sources/api_detail/frame_go-operator_binary.rst.txt)
 
-[Previous](frame_go-iterator.html "Detail: FrameGO: Iterator")
-[Next](frame_go-operator_unary.html "Detail: FrameGO: Operator Unary")
+[Previous](frame_go-iterator.md "Detail: FrameGO: Iterator")
+[Next](frame_go-operator_unary.md "Detail: FrameGO: Operator Unary")
 
 ---
 
 # Detail: FrameGO: Operator Binary[](#detail-framego-operator-binary "Link to this heading")
 
-[Overview: FrameGO: Operator Binary](../api_overview/frame_go-operator_binary.html#api-overview-framego-operator-binary)
+[Overview: FrameGO: Operator Binary](../api_overview/frame_go-operator_binary.md#api-overview-framego-operator-binary)
 
 FrameGO.\_\_add\_\_(*other*, */*)[](#static_frame.FrameGO.__add__ "Link to this definition")
 :   ```
@@ -1031,10 +1031,10 @@ FrameGO.\_\_xor\_\_(*other*, */*)[](#static_frame.FrameGO.__xor__ "Link to th
 
     ```
 
-[FrameGO](frame_go.html#api-detail-framego): [Constructor](frame_go-constructor.html#api-detail-framego-constructor) | [Exporter](frame_go-exporter.html#api-detail-framego-exporter) | [Attribute](frame_go-attribute.html#api-detail-framego-attribute) | [Method](frame_go-method.html#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-detail-framego-dictionary-like) | [Display](frame_go-display.html#api-detail-framego-display) | [Assignment](frame_go-assignment.html#api-detail-framego-assignment) | [Selector](frame_go-selector.html#api-detail-framego-selector) | [Iterator](frame_go-iterator.html#api-detail-framego-iterator) | [Operator Binary](#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-detail-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)
 
-[Previous](frame_go-iterator.html "Detail: FrameGO: Iterator")
-[Next](frame_go-operator_unary.html "Detail: FrameGO: Operator Unary")
+[Previous](frame_go-iterator.md "Detail: FrameGO: Iterator")
+[Next](frame_go-operator_unary.md "Detail: FrameGO: Operator Unary")
 
 ---
 

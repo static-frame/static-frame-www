@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Yarn: Method
 * [View page source](../_sources/api_detail/yarn-method.rst.txt)
 
-[Previous](yarn-attribute.html "Detail: Yarn: Attribute")
-[Next](yarn-dictionary_like.html "Detail: Yarn: Dictionary-Like")
+[Previous](yarn-attribute.md "Detail: Yarn: Attribute")
+[Next](yarn-dictionary_like.md "Detail: Yarn: Dictionary-Like")
 
 ---
 
 # Detail: Yarn: Method[](#detail-yarn-method "Link to this heading")
 
-[Overview: Yarn: Method](../api_overview/yarn-method.html#api-overview-yarn-method)
+[Overview: Yarn: Method](../api_overview/yarn-method.md#api-overview-yarn-method)
 
 Yarn.\_\_bool\_\_()[](#static_frame.Yarn.__bool__ "Link to this definition")
 :   Raises ValueError to prohibit ambiguous use of truthy evaluation.
@@ -164,7 +164,7 @@ Yarn.\_\_bool\_\_()[](#static_frame.Yarn.__bool__ "Link to this definition")
 
     ```
 
-Yarn.\_\_len\_\_()[[source]](../_modules/static_frame/core/yarn.html#Yarn.__len__)[](#static_frame.Yarn.__len__ "Link to this definition")
+Yarn.\_\_len\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__len__)[](#static_frame.Yarn.__len__ "Link to this definition")
 :   Length of values.
 
     ```
@@ -184,7 +184,7 @@ Yarn.\_\_len\_\_()[[source]](../_modules/static_frame/core/yarn.html#Yarn.__len_
 
     ```
 
-Yarn.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.equals)[](#static_frame.Yarn.equals "Link to this definition")
+Yarn.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.equals)[](#static_frame.Yarn.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Note: this will attempt to load and compare all Frame managed by the Bus.
@@ -222,14 +222,14 @@ Yarn.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *
 
     ```
 
-Yarn.head(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.head)[](#static_frame.Yarn.head "Link to this definition")
-:   Return a [`Yarn`](yarn-selector.html#Yarn "Yarn") consisting only of the top elements as specified by `count`.
+Yarn.head(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.head)[](#static_frame.Yarn.head "Link to this definition")
+:   Return a [`Yarn`](yarn-selector.md#Yarn "Yarn") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Yarn`](yarn-selector.html#Yarn "Yarn")
+    :   **count** – Number of elements to be returned from the top of the [`Yarn`](yarn-selector.md#Yarn "Yarn")
 
     Returns:
-    :   [`Yarn`](yarn-selector.html#Yarn "Yarn")
+    :   [`Yarn`](yarn-selector.md#Yarn "Yarn")
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -256,7 +256,7 @@ Yarn.persist[*key*]
 :   persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
 
-    InterfacePersist.\_\_getitem\_\_ *= <function InterfacePersist.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/node_selector.html#InterfacePersist.__getitem__)
+    InterfacePersist.\_\_getitem\_\_ *= <function InterfacePersist.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/node_selector.md#InterfacePersist.__getitem__)
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -402,7 +402,7 @@ Yarn.persist
 :   persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
 
-    InterfacePersist.\_\_call\_\_()[[source]](../_modules/static_frame/core/node_selector.html#InterfacePersist.__call__)
+    InterfacePersist.\_\_call\_\_()[[source]](../_modules/static_frame/core/node_selector.md#InterfacePersist.__call__)
     :   Persist all Frame.
 
     ```
@@ -447,8 +447,8 @@ Yarn.persist
 
     ```
 
-Yarn.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.rehierarch)[](#static_frame.Yarn.rehierarch "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") with new a hierarchy based on the supplied `depth_map`.
+Yarn.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.rehierarch)[](#static_frame.Yarn.rehierarch "Link to this definition")
+:   Return a new [`Series`](series-selector.md#Series "Series") with new a hierarchy based on the supplied `depth_map`.
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -473,14 +473,14 @@ Yarn.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[[source]](.
 
     ```
 
-Yarn.reindex(*index*, *\**, *fill\_value=None*, *own\_index=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.reindex)[](#static_frame.Yarn.reindex "Link to this definition")
-:   Return a new [`Bus`](bus-selector.html#Bus "Bus") with labels defined by the provided index. The size and ordering of the data is determined by the newly provided index, where data will continue to be aligned under labels found in both the new and the old index. Labels found only in the new index will be filled with `fill_value`.
+Yarn.reindex(*index*, *\**, *fill\_value=None*, *own\_index=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.reindex)[](#static_frame.Yarn.reindex "Link to this definition")
+:   Return a new [`Bus`](bus-selector.md#Bus "Bus") with labels defined by the provided index. The size and ordering of the data is determined by the newly provided index, where data will continue to be aligned under labels found in both the new and the old index. Labels found only in the new index will be filled with `fill_value`.
 
     Parameters:
     :   * **index** – An iterable of unique, hashable values, or another `Index` or `IndexHierarchy`, to be used as the labels of the index.
         * **columns** – An iterable of unique, hashable values, or another `Index` or `IndexHierarchy`, to be used as the labels of the index.
         * **fill\_value** – A value to be used to fill space created by a new index that has values not found in the previous index.
-        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Bus`](bus.html#static_frame.Bus "static_frame.Bus"). Primarily used by internal clients.
+        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Bus`](bus.md#static_frame.Bus "static_frame.Bus"). Primarily used by internal clients.
 
     ```
     >>> y1 = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=False)
@@ -502,8 +502,8 @@ Yarn.reindex(*index*, *\**, *fill\_value=None*, *own\_index=False*, *check\_equa
 
     ```
 
-Yarn.relabel(*index*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.relabel)[](#static_frame.Yarn.relabel "Link to this definition")
-:   Return a new [`Yarn`](yarn-selector.html#Yarn "Yarn") with transformed labels on the index. The size and ordering of the data is never changed in a relabeling operation. The resulting index must be unique.
+Yarn.relabel(*index*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel)[](#static_frame.Yarn.relabel "Link to this definition")
+:   Return a new [`Yarn`](yarn-selector.md#Yarn "Yarn") with transformed labels on the index. The size and ordering of the data is never changed in a relabeling operation. The resulting index must be unique.
 
     Parameters:
     :   **index** – One of the following types, used to create new index labels with the same size as the previous index. (a) A mapping (as a dictionary or `Series`), used to lookup and transform the labels in the previous index. Labels not found in the mapping will be reused. (b) A function, returning a hashable, that is applied to each label in the previous index. (c) The `IndexAutoFactory` type, to apply auto-incremented integer labels. (d) An `Index` initializer, i.e., either an iterable of hashables or an `Index` instance.
@@ -539,8 +539,8 @@ Yarn.relabel(*index*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.rel
 
     ```
 
-Yarn.relabel\_flat()[[source]](../_modules/static_frame/core/yarn.html#Yarn.relabel_flat)[](#static_frame.Yarn.relabel_flat "Link to this definition")
-:   Return a new [`Yarn`](yarn-selector.html#Yarn "Yarn"), where an `IndexHierarchy` (if defined) is replaced with a flat, one-dimension index of tuples.
+Yarn.relabel\_flat()[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_flat)[](#static_frame.Yarn.relabel_flat "Link to this definition")
+:   Return a new [`Yarn`](yarn-selector.md#Yarn "Yarn"), where an `IndexHierarchy` (if defined) is replaced with a flat, one-dimension index of tuples.
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -565,8 +565,8 @@ Yarn.relabel\_flat()[[source]](../_modules/static_frame/core/yarn.html#Yarn.rela
 
     ```
 
-Yarn.relabel\_level\_add(*level*, */*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.relabel_level_add)[](#static_frame.Yarn.relabel_level_add "Link to this definition")
-:   Return a new [`Yarn`](yarn-selector.html#Yarn "Yarn"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
+Yarn.relabel\_level\_add(*level*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_level_add)[](#static_frame.Yarn.relabel_level_add "Link to this definition")
+:   Return a new [`Yarn`](yarn-selector.md#Yarn "Yarn"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
 
     Parameters:
     :   **level** – A hashable value to be used as a new root level, extending or creating an `IndexHierarchy`
@@ -594,8 +594,8 @@ Yarn.relabel\_level\_add(*level*, */*)[[source]](../_modules/static_frame/core/y
 
     ```
 
-Yarn.relabel\_level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.relabel_level_drop)[](#static_frame.Yarn.relabel_level_drop "Link to this definition")
-:   Return a new [`Yarn`](yarn-selector.html#Yarn "Yarn"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
+Yarn.relabel\_level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_level_drop)[](#static_frame.Yarn.relabel_level_drop "Link to this definition")
+:   Return a new [`Yarn`](yarn-selector.md#Yarn "Yarn"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
 
     Parameters:
     :   **count** – A positive integer drops that many outer-most (root) levels; a negative integer drops that many inner-most (leaf)levels.
@@ -623,8 +623,8 @@ Yarn.relabel\_level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/cor
 
     ```
 
-Yarn.rename(*name*, */*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.rename)[](#static_frame.Yarn.rename "Link to this definition")
-:   Return a new [`Yarn`](yarn-selector.html#Yarn "Yarn") with an updated name attribute.
+Yarn.rename(*name*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.rename)[](#static_frame.Yarn.rename "Link to this definition")
+:   Return a new [`Yarn`](yarn-selector.md#Yarn "Yarn") with an updated name attribute.
 
     Parameters:
     :   **name** –
@@ -652,7 +652,7 @@ Yarn.rename(*name*, */*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.
 
     ```
 
-Yarn.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.roll)[](#static_frame.Yarn.roll "Link to this definition")
+Yarn.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.roll)[](#static_frame.Yarn.roll "Link to this definition")
 :   Return a Yarn with values rotated forward and wrapped around the index (with a positive shift) or backward and wrapped around the index (with a negative shift).
 
     Parameters:
@@ -660,7 +660,7 @@ Yarn.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/stat
         * **include\_index** – Determine if the Index is shifted with the underlying data.
 
     Returns:
-    :   [`Yarn`](yarn-selector.html#Yarn "Yarn")
+    :   [`Yarn`](yarn-selector.md#Yarn "Yarn")
 
     ```
     >>> y1 = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=False)
@@ -691,15 +691,15 @@ Yarn.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/stat
 
     ```
 
-Yarn.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.shift)[](#static_frame.Yarn.shift "Link to this definition")
-:   Return a [`Yarn`](yarn-selector.html#Yarn "Yarn") with values shifted forward on the index (with a positive shift) or backward on the index (with a negative shift).
+Yarn.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.shift)[](#static_frame.Yarn.shift "Link to this definition")
+:   Return a [`Yarn`](yarn-selector.md#Yarn "Yarn") with values shifted forward on the index (with a positive shift) or backward on the index (with a negative shift).
 
     Parameters:
     :   * **shift** – Positive or negative integer shift.
         * **fill\_value** – Value to be used to fill data missing after the shift.
 
     Returns:
-    :   [`Yarn`](yarn-selector.html#Yarn "Yarn")
+    :   [`Yarn`](yarn-selector.md#Yarn "Yarn")
 
     ```
     >>> y1 = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=False)
@@ -716,7 +716,7 @@ Yarn.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame
 
     ```
 
-Yarn.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.sort_index)[](#static_frame.Yarn.sort_index "Link to this definition")
+Yarn.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.sort_index)[](#static_frame.Yarn.sort_index "Link to this definition")
 :   Return a new Yarn ordered by the sorted Index.
 
     Parameters:
@@ -726,7 +726,7 @@ Yarn.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source
         * **key** – A function that is used to pre-process the selected columns or rows and derive new values to sort by.
 
     Returns:
-    :   [`Yarn`](yarn-selector.html#Yarn "Yarn")
+    :   [`Yarn`](yarn-selector.md#Yarn "Yarn")
 
     ```
     >>> y1 = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=False)
@@ -750,8 +750,8 @@ Yarn.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source
 
     ```
 
-Yarn.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.sort_values)[](#static_frame.Yarn.sort_values "Link to this definition")
-:   Return a new Yarn ordered by the sorted values. Note that as a Yarn contains Frames, a key argument must be provided to extract a sortable value, and this key function will process a [`Series`](series-selector.html#Series "Series") of [`Frame`](frame-selector.html#Frame "Frame").
+Yarn.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.sort_values)[](#static_frame.Yarn.sort_values "Link to this definition")
+:   Return a new Yarn ordered by the sorted values. Note that as a Yarn contains Frames, a key argument must be provided to extract a sortable value, and this key function will process a [`Series`](series-selector.md#Series "Series") of [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
     :   * **\*** –
@@ -760,7 +760,7 @@ Yarn.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](.
         * **key** – A function that is used to pre-process the selected columns or rows and derive new values to sort by.
 
     Returns:
-    :   [`Yarn`](yarn-selector.html#Yarn "Yarn")
+    :   [`Yarn`](yarn-selector.md#Yarn "Yarn")
 
     ```
     >>> y1 = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=False)
@@ -783,15 +783,15 @@ Yarn.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](.
 
     ```
 
-Yarn.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.tail)[](#static_frame.Yarn.tail "Link to this definition")
-:   Return a [`Yarn`](yarn-selector.html#Yarn "Yarn") consisting only of the bottom elements as specified by `count`.
+Yarn.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.tail)[](#static_frame.Yarn.tail "Link to this definition")
+:   Return a [`Yarn`](yarn-selector.md#Yarn "Yarn") consisting only of the bottom elements as specified by `count`.
     :   s
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Yarn`](yarn-selector.html#Yarn "Yarn")
+    :   **count** – Number of elements to be returned from the bottom of the [`Yarn`](yarn-selector.md#Yarn "Yarn")
 
     Returns:
-    :   [`Yarn`](yarn-selector.html#Yarn "Yarn")
+    :   [`Yarn`](yarn-selector.md#Yarn "Yarn")
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -814,8 +814,8 @@ Yarn.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.html#Yarn
 
     ```
 
-Yarn.unpersist()[[source]](../_modules/static_frame/core/yarn.html#Yarn.unpersist)[](#static_frame.Yarn.unpersist "Link to this definition")
-:   For the [`Bus`](bus-selector.html#Bus "Bus") contained in this object, replace all loaded [`Frame`](frame-selector.html#Frame "Frame") with `FrameDeferred`.
+Yarn.unpersist()[[source]](../_modules/static_frame/core/yarn.md#Yarn.unpersist)[](#static_frame.Yarn.unpersist "Link to this definition")
+:   For the [`Bus`](bus-selector.md#Bus "Bus") contained in this object, replace all loaded [`Frame`](frame-selector.md#Frame "Frame") with `FrameDeferred`.
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -891,10 +891,10 @@ Yarn.unpersist()[[source]](../_modules/static_frame/core/yarn.html#Yarn.unpersis
 
     ```
 
-[Yarn](yarn.html#api-detail-yarn): [Constructor](yarn-constructor.html#api-detail-yarn-constructor) | [Exporter](yarn-exporter.html#api-detail-yarn-exporter) | [Attribute](yarn-attribute.html#api-detail-yarn-attribute) | [Method](#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like) | [Display](yarn-display.html#api-detail-yarn-display) | [Selector](yarn-selector.html#api-detail-yarn-selector) | [Iterator](yarn-iterator.html#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
-[Previous](yarn-attribute.html "Detail: Yarn: Attribute")
-[Next](yarn-dictionary_like.html "Detail: Yarn: Dictionary-Like")
+[Previous](yarn-attribute.md "Detail: Yarn: Attribute")
+[Next](yarn-dictionary_like.md "Detail: Yarn: Dictionary-Like")
 
 ---
 

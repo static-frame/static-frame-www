@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,42 +135,42 @@ API Detail
 * Overview: FrameGO: Accessor Reduce
 * [View page source](../_sources/api_overview/frame_go-accessor_reduce.rst.txt)
 
-[Previous](frame_go-accessor_type_clinic.html "Overview: FrameGO: Accessor Type Clinic")
-[Next](frame_he-constructor.html "Overview: FrameHE: Constructor")
+[Previous](frame_go-accessor_type_clinic.md "Overview: FrameGO: Accessor Type Clinic")
+[Next](frame_he-constructor.md "Overview: FrameHE: Constructor")
 
 ---
 
 # Overview: FrameGO: Accessor Reduce[](#overview-framego-accessor-reduce "Link to this heading")
 
-[Detail: FrameGO: Accessor Reduce](../api_detail/frame_go-accessor_reduce.html#api-detail-framego-accessor-reduce)
+[Detail: FrameGO: Accessor Reduce](../api_detail/frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-func-keys) | `FrameGO.reduce.from_func(func, *, fill_value).keys()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-func-iter) | `FrameGO.reduce.from_func(func, *, fill_value).__iter__()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-func-items) | `FrameGO.reduce.from_func(func, *, fill_value).items()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-func-values) | `FrameGO.reduce.from_func(func, *, fill_value).values()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-func-to-frame) | `FrameGO.reduce.from_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-map-func-keys) | `FrameGO.reduce.from_map_func(func, *, fill_value).keys()` | For each Frame, reduce by applying, for each column, a function that reduces to… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-map-func-iter) | `FrameGO.reduce.from_map_func(func, *, fill_value).__iter__()` | For each Frame, reduce by applying, for each column, a function that reduces to… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-map-func-items) | `FrameGO.reduce.from_map_func(func, *, fill_value).items()` | For each Frame, reduce by applying, for each column, a function that reduces to… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-map-func-values) | `FrameGO.reduce.from_map_func(func, *, fill_value).values()` | For each Frame, reduce by applying, for each column, a function that reduces to… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-map-func-to-frame) | `FrameGO.reduce.from_map_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For each Frame, reduce by applying, for each column, a function that reduces to… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-map-keys) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).keys()` | For Frame, reduce by applying a function to each column, where the column label… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-map-iter) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).__iter__()` | For Frame, reduce by applying a function to each column, where the column label… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-map-items) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).items()` | For Frame, reduce by applying a function to each column, where the column label… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-map-values) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).values()` | For Frame, reduce by applying a function to each column, where the column label… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-map-to-frame) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For Frame, reduce by applying a function to each column, where the column label… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-pair-map-keys) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).keys()` | For Frame, reduce by applying a function to a column and assigning the result a… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-pair-map-iter) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).__iter__()` | For Frame, reduce by applying a function to a column and assigning the result a… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-pair-map-items) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).items()` | For Frame, reduce by applying a function to a column and assigning the result a… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-pair-map-values) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).values()` | For Frame, reduce by applying a function to a column and assigning the result a… |
-| [Detail](../api_detail/frame_go-accessor_reduce.html#api-sig-framego-reduce-from-label-pair-map-to-frame) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For Frame, reduce by applying a function to a column and assigning the result a… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-func-keys) | `FrameGO.reduce.from_func(func, *, fill_value).keys()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-func-iter) | `FrameGO.reduce.from_func(func, *, fill_value).__iter__()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-func-items) | `FrameGO.reduce.from_func(func, *, fill_value).items()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-func-values) | `FrameGO.reduce.from_func(func, *, fill_value).values()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-func-to-frame) | `FrameGO.reduce.from_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-map-func-keys) | `FrameGO.reduce.from_map_func(func, *, fill_value).keys()` | For each Frame, reduce by applying, for each column, a function that reduces to… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-map-func-iter) | `FrameGO.reduce.from_map_func(func, *, fill_value).__iter__()` | For each Frame, reduce by applying, for each column, a function that reduces to… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-map-func-items) | `FrameGO.reduce.from_map_func(func, *, fill_value).items()` | For each Frame, reduce by applying, for each column, a function that reduces to… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-map-func-values) | `FrameGO.reduce.from_map_func(func, *, fill_value).values()` | For each Frame, reduce by applying, for each column, a function that reduces to… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-map-func-to-frame) | `FrameGO.reduce.from_map_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For each Frame, reduce by applying, for each column, a function that reduces to… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-map-keys) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).keys()` | For Frame, reduce by applying a function to each column, where the column label… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-map-iter) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).__iter__()` | For Frame, reduce by applying a function to each column, where the column label… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-map-items) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).items()` | For Frame, reduce by applying a function to each column, where the column label… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-map-values) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).values()` | For Frame, reduce by applying a function to each column, where the column label… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-map-to-frame) | `FrameGO.reduce.from_label_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For Frame, reduce by applying a function to each column, where the column label… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-pair-map-keys) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).keys()` | For Frame, reduce by applying a function to a column and assigning the result a… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-pair-map-iter) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).__iter__()` | For Frame, reduce by applying a function to a column and assigning the result a… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-pair-map-items) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).items()` | For Frame, reduce by applying a function to a column and assigning the result a… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-pair-map-values) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).values()` | For Frame, reduce by applying a function to a column and assigning the result a… |
+| [Detail](../api_detail/frame_go-accessor_reduce.md#api-sig-framego-reduce-from-label-pair-map-to-frame) | `FrameGO.reduce.from_label_pair_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For Frame, reduce by applying a function to a column and assigning the result a… |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-accessor_type_clinic.html "Overview: FrameGO: Accessor Type Clinic")
-[Next](frame_he-constructor.html "Overview: FrameHE: Constructor")
+[Previous](frame_go-accessor_type_clinic.md "Overview: FrameGO: Accessor Type Clinic")
+[Next](frame_he-constructor.md "Overview: FrameHE: Constructor")
 
 ---
 

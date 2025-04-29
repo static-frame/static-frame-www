@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: FrameGO: Attribute
 * [View page source](../_sources/api_detail/frame_go-attribute.rst.txt)
 
-[Previous](frame_go-exporter.html "Detail: FrameGO: Exporter")
-[Next](frame_go-method.html "Detail: FrameGO: Method")
+[Previous](frame_go-exporter.md "Detail: FrameGO: Exporter")
+[Next](frame_go-method.md "Detail: FrameGO: Method")
 
 ---
 
 # Detail: FrameGO: Attribute[](#detail-framego-attribute "Link to this heading")
 
-[Overview: FrameGO: Attribute](../api_overview/frame_go-attribute.html#api-overview-framego-attribute)
+[Overview: FrameGO: Attribute](../api_overview/frame_go-attribute.md#api-overview-framego-attribute)
 
 FrameGO.STATIC *= False*[](#static_frame.FrameGO.STATIC "Link to this definition")
 :   ```
@@ -153,7 +153,7 @@ FrameGO.STATIC *= False*[](#static_frame.FrameGO.STATIC "Link to this definit
     ```
 
 FrameGO.T[](#static_frame.FrameGO.T "Link to this definition")
-:   Transpose. Return a [`Frame`](frame-selector.html#Frame "Frame") with `index` as `columns` and vice versa.
+:   Transpose. Return a [`Frame`](frame-selector.md#Frame "Frame") with `index` as `columns` and vice versa.
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -186,7 +186,7 @@ FrameGO.dtypes[](#static_frame.FrameGO.dtypes "Link to this definition")
 :   Return a Series of dytpes for each realizable column.
 
     Returns:
-    :   [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series")
+    :   [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series")
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -216,7 +216,7 @@ FrameGO.index[](#static_frame.FrameGO.index "Link to this definition")
     ```
 
 FrameGO.memory[](#static_frame.FrameGO.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -306,10 +306,10 @@ FrameGO.size[](#static_frame.FrameGO.size "Link to this definition")
 
     ```
 
-[FrameGO](frame_go.html#api-detail-framego): [Constructor](frame_go-constructor.html#api-detail-framego-constructor) | [Exporter](frame_go-exporter.html#api-detail-framego-exporter) | [Attribute](#api-detail-framego-attribute) | [Method](frame_go-method.html#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-detail-framego-dictionary-like) | [Display](frame_go-display.html#api-detail-framego-display) | [Assignment](frame_go-assignment.html#api-detail-framego-assignment) | [Selector](frame_go-selector.html#api-detail-framego-selector) | [Iterator](frame_go-iterator.html#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-detail-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)
 
-[Previous](frame_go-exporter.html "Detail: FrameGO: Exporter")
-[Next](frame_go-method.html "Detail: FrameGO: Method")
+[Previous](frame_go-exporter.md "Detail: FrameGO: Exporter")
+[Next](frame_go-method.md "Detail: FrameGO: Method")
 
 ---
 

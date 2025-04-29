@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMinuteGO: Display
 * [View page source](../_sources/api_detail/index_minute_go-display.rst.txt)
 
-[Previous](index_minute_go-dictionary_like.html "Detail: IndexMinuteGO: Dictionary-Like")
-[Next](index_minute_go-selector.html "Detail: IndexMinuteGO: Selector")
+[Previous](index_minute_go-dictionary_like.md "Detail: IndexMinuteGO: Dictionary-Like")
+[Next](index_minute_go-selector.md "Detail: IndexMinuteGO: Selector")
 
 ---
 
 # Detail: IndexMinuteGO: Display[](#detail-indexminutego-display "Link to this heading")
 
-[Overview: IndexMinuteGO: Display](../api_overview/index_minute_go-display.html#api-overview-indexminutego-display)
+[Overview: IndexMinuteGO: Display](../api_overview/index_minute_go-display.md#api-overview-indexminutego-display)
 
 IndexMinuteGO.interface[](#IndexMinuteGO.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -230,7 +230,7 @@ IndexMinuteGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#stat
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexMinuteGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -251,7 +251,7 @@ IndexMinuteGO.display\_tall(*config=None*, */*)[](#static_frame.IndexMinuteGO
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexMinuteGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -268,7 +268,7 @@ IndexMinuteGO.display\_wide(*config=None*, */*)[](#static_frame.IndexMinuteGO
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
-    :   **config** – A [`static_frame.DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.html#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
+    :   **config** – A [`static_frame.DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance. If not provided, the [`static_frame.DisplayActive`](display_active.md#static_frame.DisplayActive "static_frame.DisplayActive") will be used.
 
     ```
     >>> ix = sf.IndexMinuteGO(('1620-09-16', 'NaT', '1620-11-21'))
@@ -281,10 +281,10 @@ IndexMinuteGO.display\_wide(*config=None*, */*)[](#static_frame.IndexMinuteGO
 
     ```
 
-[IndexMinuteGO](index_minute_go.html#api-detail-indexminutego): [Constructor](index_minute_go-constructor.html#api-detail-indexminutego-constructor) | [Exporter](index_minute_go-exporter.html#api-detail-indexminutego-exporter) | [Attribute](index_minute_go-attribute.html#api-detail-indexminutego-attribute) | [Method](index_minute_go-method.html#api-detail-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.html#api-detail-indexminutego-dictionary-like) | [Display](#api-detail-indexminutego-display) | [Selector](index_minute_go-selector.html#api-detail-indexminutego-selector) | [Iterator](index_minute_go-iterator.html#api-detail-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.html#api-detail-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.html#api-detail-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.html#api-detail-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.html#api-detail-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.html#api-detail-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.html#api-detail-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.html#api-detail-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.html#api-detail-indexminutego-accessor-type-clinic)
+[IndexMinuteGO](index_minute_go.md#api-detail-indexminutego): [Constructor](index_minute_go-constructor.md#api-detail-indexminutego-constructor) | [Exporter](index_minute_go-exporter.md#api-detail-indexminutego-exporter) | [Attribute](index_minute_go-attribute.md#api-detail-indexminutego-attribute) | [Method](index_minute_go-method.md#api-detail-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-detail-indexminutego-dictionary-like) | [Display](#api-detail-indexminutego-display) | [Selector](index_minute_go-selector.md#api-detail-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-detail-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.md#api-detail-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-detail-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.md#api-detail-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.md#api-detail-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-detail-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-detail-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.md#api-detail-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-detail-indexminutego-accessor-type-clinic)
 
-[Previous](index_minute_go-dictionary_like.html "Detail: IndexMinuteGO: Dictionary-Like")
-[Next](index_minute_go-selector.html "Detail: IndexMinuteGO: Selector")
+[Previous](index_minute_go-dictionary_like.md "Detail: IndexMinuteGO: Dictionary-Like")
+[Next](index_minute_go-selector.md "Detail: IndexMinuteGO: Selector")
 
 ---
 

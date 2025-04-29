@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,21 +135,21 @@ API Detail
 * Detail: Batch: Constructor
 * [View page source](../_sources/api_detail/batch-constructor.rst.txt)
 
-[Previous](bus-accessor_type_clinic.html "Detail: Bus: Accessor Type Clinic")
-[Next](batch-exporter.html "Detail: Batch: Exporter")
+[Previous](bus-accessor_type_clinic.md "Detail: Bus: Accessor Type Clinic")
+[Next](batch-exporter.md "Detail: Batch: Exporter")
 
 ---
 
 # Detail: Batch: Constructor[](#detail-batch-constructor "Link to this heading")
 
-[Overview: Batch: Constructor](../api_overview/batch-constructor.html#api-overview-batch-constructor)
+[Overview: Batch: Constructor](../api_overview/batch-constructor.md#api-overview-batch-constructor)
 
-Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.__init__)[](#static_frame.Batch.__init__ "Link to this definition")
-:   Default constructor of a [`Batch`](batch-selector.html#Batch "Batch").
+Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.__init__)[](#static_frame.Batch.__init__ "Link to this definition")
+:   Default constructor of a [`Batch`](batch-selector.md#Batch "Batch").
 
     > Args:
     > :   name: A hashable object to label the container.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -172,8 +172,8 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_frames(*frames*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.from_frames)[](#static_frame.Batch.from_frames "Link to this definition")
-:   Return a [`Batch`](batch-selector.html#Batch "Batch") from an iterable of [`Frame`](frame-selector.html#Frame "Frame"); labels will be drawn from [`Frame.name`](frame-attribute.html#static_frame.Frame.name "static_frame.Frame.name").
+*classmethod* Batch.from\_frames(*frames*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_frames)[](#static_frame.Batch.from_frames "Link to this definition")
+:   Return a [`Batch`](batch-selector.md#Batch "Batch") from an iterable of [`Frame`](frame-selector.md#Frame "Frame"); labels will be drawn from [`Frame.name`](frame-attribute.md#static_frame.Frame.name "static_frame.Frame.name").
 
     ```
     >>> bt = sf.Batch.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')))
@@ -193,12 +193,12 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_sqlite(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.from_sqlite)[](#static_frame.Batch.from_sqlite "Link to this definition")
-:   Given a file path to an SQLite [`Batch`](batch-selector.html#Batch "Batch") store, return a [`Batch`](batch-selector.html#Batch "Batch") instance.
+*classmethod* Batch.from\_sqlite(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_sqlite)[](#static_frame.Batch.from_sqlite "Link to this definition")
+:   Given a file path to an SQLite [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -221,12 +221,12 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_xlsx(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.from_xlsx)[](#static_frame.Batch.from_xlsx "Link to this definition")
-:   Given a file path to an XLSX [`Batch`](batch-selector.html#Batch "Batch") store, return a [`Batch`](batch-selector.html#Batch "Batch") instance.
+*classmethod* Batch.from\_xlsx(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_xlsx)[](#static_frame.Batch.from_xlsx "Link to this definition")
+:   Given a file path to an XLSX [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -249,12 +249,12 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_csv(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.from_zip_csv)[](#static_frame.Batch.from_zip_csv "Link to this definition")
-:   Given a file path to zipped CSV [`Batch`](batch-selector.html#Batch "Batch") store, return a [`Batch`](batch-selector.html#Batch "Batch") instance.
+*classmethod* Batch.from\_zip\_csv(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_csv)[](#static_frame.Batch.from_zip_csv "Link to this definition")
+:   Given a file path to zipped CSV [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -277,12 +277,12 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_npy(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.from_zip_npy)[](#static_frame.Batch.from_zip_npy "Link to this definition")
-:   Given a file path to zipped NPY [`Batch`](batch-selector.html#Batch "Batch") store, return a [`Batch`](batch-selector.html#Batch "Batch") instance.
+*classmethod* Batch.from\_zip\_npy(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_npy)[](#static_frame.Batch.from_zip_npy "Link to this definition")
+:   Given a file path to zipped NPY [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -305,12 +305,12 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_npz(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.from_zip_npz)[](#static_frame.Batch.from_zip_npz "Link to this definition")
-:   Given a file path to zipped NPZ [`Batch`](batch-selector.html#Batch "Batch") store, return a [`Batch`](batch-selector.html#Batch "Batch") instance.
+*classmethod* Batch.from\_zip\_npz(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_npz)[](#static_frame.Batch.from_zip_npz "Link to this definition")
+:   Given a file path to zipped NPZ [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -333,12 +333,12 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_parquet(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.from_zip_parquet)[](#static_frame.Batch.from_zip_parquet "Link to this definition")
-:   Given a file path to zipped parquet [`Batch`](batch-selector.html#Batch "Batch") store, return a [`Batch`](batch-selector.html#Batch "Batch") instance.
+*classmethod* Batch.from\_zip\_parquet(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_parquet)[](#static_frame.Batch.from_zip_parquet "Link to this definition")
+:   Given a file path to zipped parquet [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -361,12 +361,12 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_pickle(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.from_zip_pickle)[](#static_frame.Batch.from_zip_pickle "Link to this definition")
-:   Given a file path to zipped pickle [`Batch`](batch-selector.html#Batch "Batch") store, return a [`Batch`](batch-selector.html#Batch "Batch") instance.
+*classmethod* Batch.from\_zip\_pickle(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_pickle)[](#static_frame.Batch.from_zip_pickle "Link to this definition")
+:   Given a file path to zipped pickle [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -389,12 +389,12 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_tsv(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.html#Batch.from_zip_tsv)[](#static_frame.Batch.from_zip_tsv "Link to this definition")
-:   Given a file path to zipped TSV [`Batch`](batch-selector.html#Batch "Batch") store, return a [`Batch`](batch-selector.html#Batch "Batch") instance.
+*classmethod* Batch.from\_zip\_tsv(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_tsv)[](#static_frame.Batch.from_zip_tsv "Link to this definition")
+:   Given a file path to zipped TSV [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -417,10 +417,10 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](bus-accessor_type_clinic.html "Detail: Bus: Accessor Type Clinic")
-[Next](batch-exporter.html "Detail: Batch: Exporter")
+[Previous](bus-accessor_type_clinic.md "Detail: Bus: Accessor Type Clinic")
+[Next](batch-exporter.md "Detail: Batch: Exporter")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: IndexHour: Accessor String
 * [View page source](../_sources/api_overview/index_hour-accessor_string.rst.txt)
 
-[Previous](index_hour-accessor_datetime.html "Overview: IndexHour: Accessor Datetime")
-[Next](index_hour-accessor_regular_expression.html "Overview: IndexHour: Accessor Regular Expression")
+[Previous](index_hour-accessor_datetime.md "Overview: IndexHour: Accessor Datetime")
+[Next](index_hour-accessor_regular_expression.md "Overview: IndexHour: Accessor Regular Expression")
 
 ---
 
 # Overview: IndexHour: Accessor String[](#overview-indexhour-accessor-string "Link to this heading")
 
-[Detail: IndexHour: Accessor String](../api_detail/index_hour-accessor_string.html#api-detail-indexhour-accessor-string)
+[Detail: IndexHour: Accessor String](../api_detail/index_hour-accessor_string.md#api-detail-indexhour-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-getitem) | `IndexHour.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-capitalize) | `IndexHour.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-center) | `IndexHour.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-contains) | `IndexHour.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-count) | `IndexHour.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-decode) | `IndexHour.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-encode) | `IndexHour.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-endswith) | `IndexHour.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-find) | `IndexHour.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-format) | `IndexHour.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-index) | `IndexHour.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-isalnum) | `IndexHour.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-isalpha) | `IndexHour.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-isdecimal) | `IndexHour.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-isdigit) | `IndexHour.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-islower) | `IndexHour.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-isnumeric) | `IndexHour.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-isspace) | `IndexHour.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-istitle) | `IndexHour.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-isupper) | `IndexHour.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-ljust) | `IndexHour.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-len) | `IndexHour.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-lower) | `IndexHour.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-lstrip) | `IndexHour.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-partition) | `IndexHour.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-replace) | `IndexHour.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-rfind) | `IndexHour.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-rindex) | `IndexHour.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-rjust) | `IndexHour.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-rpartition) | `IndexHour.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-rsplit) | `IndexHour.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-rstrip) | `IndexHour.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-split) | `IndexHour.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-startswith) | `IndexHour.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-strip) | `IndexHour.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-swapcase) | `IndexHour.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-title) | `IndexHour.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-upper) | `IndexHour.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_hour-accessor_string.html#api-sig-indexhour-via-str-zfill) | `IndexHour.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-getitem) | `IndexHour.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-capitalize) | `IndexHour.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-center) | `IndexHour.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-contains) | `IndexHour.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-count) | `IndexHour.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-decode) | `IndexHour.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-encode) | `IndexHour.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-endswith) | `IndexHour.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-find) | `IndexHour.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-format) | `IndexHour.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-index) | `IndexHour.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-isalnum) | `IndexHour.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-isalpha) | `IndexHour.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-isdecimal) | `IndexHour.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-isdigit) | `IndexHour.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-islower) | `IndexHour.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-isnumeric) | `IndexHour.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-isspace) | `IndexHour.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-istitle) | `IndexHour.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-isupper) | `IndexHour.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-ljust) | `IndexHour.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-len) | `IndexHour.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-lower) | `IndexHour.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-lstrip) | `IndexHour.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-partition) | `IndexHour.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-replace) | `IndexHour.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-rfind) | `IndexHour.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-rindex) | `IndexHour.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-rjust) | `IndexHour.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-rpartition) | `IndexHour.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-rsplit) | `IndexHour.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-rstrip) | `IndexHour.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-split) | `IndexHour.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-startswith) | `IndexHour.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-strip) | `IndexHour.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-swapcase) | `IndexHour.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-title) | `IndexHour.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-upper) | `IndexHour.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_hour-accessor_string.md#api-sig-indexhour-via-str-zfill) | `IndexHour.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[IndexHour](index_hour.html#api-overview-indexhour): [Constructor](index_hour-constructor.html#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-overview-indexhour-attribute) | [Method](index_hour-method.html#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.html#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.html#api-overview-indexhour-display) | [Selector](index_hour-selector.html#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.html#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.html#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.html#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.html#api-overview-indexhour-accessor-datetime) | [Accessor String](#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.html#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.html#api-overview-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-overview-indexhour): [Constructor](index_hour-constructor.md#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-overview-indexhour-attribute) | [Method](index_hour-method.md#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.md#api-overview-indexhour-display) | [Selector](index_hour-selector.md#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.md#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-overview-indexhour-accessor-datetime) | [Accessor String](#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-overview-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-accessor_datetime.html "Overview: IndexHour: Accessor Datetime")
-[Next](index_hour-accessor_regular_expression.html "Overview: IndexHour: Accessor Regular Expression")
+[Previous](index_hour-accessor_datetime.md "Overview: IndexHour: Accessor Datetime")
+[Next](index_hour-accessor_regular_expression.md "Overview: IndexHour: Accessor Regular Expression")
 
 ---
 

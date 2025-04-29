@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: StoreConfig: Method
 * [View page source](../_sources/api_overview/store_config-method.rst.txt)
 
-[Previous](store_config-attribute.html "Overview: StoreConfig: Attribute")
-[Next](store_config-display.html "Overview: StoreConfig: Display")
+[Previous](store_config-attribute.md "Overview: StoreConfig: Attribute")
+[Next](store_config-display.md "Overview: StoreConfig: Display")
 
 ---
 
 # Overview: StoreConfig: Method[](#overview-storeconfig-method "Link to this heading")
 
-[Detail: StoreConfig: Method](../api_detail/store_config-method.html#api-detail-storeconfig-method)
+[Detail: StoreConfig: Method](../api_detail/store_config-method.md#api-detail-storeconfig-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/store_config-method.html#api-sig-storeconfig-label-decode) | `StoreConfig.label_decode(label)` |  |
-| [Detail](../api_detail/store_config-method.html#api-sig-storeconfig-label-encode) | `StoreConfig.label_encode(label)` |  |
+| [Detail](../api_detail/store_config-method.md#api-sig-storeconfig-label-decode) | `StoreConfig.label_decode(label)` |  |
+| [Detail](../api_detail/store_config-method.md#api-sig-storeconfig-label-encode) | `StoreConfig.label_encode(label)` |  |
 
-[StoreConfig](store_config.html#api-overview-storeconfig): [Constructor](store_config-constructor.html#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.html#api-overview-storeconfig-exporter) | [Attribute](store_config-attribute.html#api-overview-storeconfig-attribute) | [Method](#api-overview-storeconfig-method) | [Display](store_config-display.html#api-overview-storeconfig-display)
+[StoreConfig](store_config.md#api-overview-storeconfig): [Constructor](store_config-constructor.md#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-overview-storeconfig-exporter) | [Attribute](store_config-attribute.md#api-overview-storeconfig-attribute) | [Method](#api-overview-storeconfig-method) | [Display](store_config-display.md#api-overview-storeconfig-display)
 
-[Previous](store_config-attribute.html "Overview: StoreConfig: Attribute")
-[Next](store_config-display.html "Overview: StoreConfig: Display")
+[Previous](store_config-attribute.md "Overview: StoreConfig: Attribute")
+[Next](store_config-display.md "Overview: StoreConfig: Display")
 
 ---
 

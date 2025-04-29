@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: FrameHE: Accessor Fill Value
 * [View page source](../_sources/api_detail/frame_he-accessor_fill_value.rst.txt)
 
-[Previous](frame_he-accessor_transpose.html "Detail: FrameHE: Accessor Transpose")
-[Next](frame_he-accessor_regular_expression.html "Detail: FrameHE: Accessor Regular Expression")
+[Previous](frame_he-accessor_transpose.md "Detail: FrameHE: Accessor Transpose")
+[Next](frame_he-accessor_regular_expression.md "Detail: FrameHE: Accessor Regular Expression")
 
 ---
 
 # Detail: FrameHE: Accessor Fill Value[](#detail-framehe-accessor-fill-value "Link to this heading")
 
-[Overview: FrameHE: Accessor Fill Value](../api_overview/frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value)
+[Overview: FrameHE: Accessor Fill Value](../api_overview/frame_he-accessor_fill_value.md#api-overview-framehe-accessor-fill-value)
 
 FrameHE.via\_fill\_value(fill\_value).loc
 :   FrameHE.via\_fill\_value *= <function Frame.via\_fill\_value>*
@@ -174,7 +174,7 @@ FrameHE.via\_fill\_value(fill\_value).loc
 FrameHE.via\_fill\_value(*fill\_value).\_\_getitem\_\_(key*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__getitem__)
+    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__getitem__)
     :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
 
     ```
@@ -230,7 +230,7 @@ FrameHE.via\_fill\_value(fill\_value).via\_T
 FrameHE.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__add__)
+    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__add__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -264,7 +264,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__sub__)
+    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__sub__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -298,7 +298,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mul__)
+    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mul__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -332,7 +332,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__truediv__)
+    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__truediv__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -366,7 +366,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__floordiv__)
+    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__floordiv__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -400,7 +400,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mod__)
+    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mod__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -434,7 +434,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__pow__)
+    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__pow__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -468,7 +468,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lshift__)
+    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lshift__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -502,7 +502,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rshift__)
+    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rshift__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -536,7 +536,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__and__)
+    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__and__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((False, True, True), (True, False, True)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -570,7 +570,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__xor__)
+    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__xor__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((False, True, True), (True, False, True)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -604,7 +604,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__or__)
+    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__or__)
     :   Return self|value.
 
     ```
@@ -639,7 +639,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lt__)
+    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lt__)
     :   Return self<value.
 
     ```
@@ -674,7 +674,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__le__)
+    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__le__)
     :   Return self<=value.
 
     ```
@@ -709,7 +709,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__eq__)
+    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__eq__)
     :   Return self==value.
 
     ```
@@ -744,7 +744,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ne__)
+    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ne__)
     :   Return self!=value.
 
     ```
@@ -779,7 +779,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__gt__)
+    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__gt__)
     :   Return self>value.
 
     ```
@@ -814,7 +814,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ge__)
+    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ge__)
     :   Return self>=value.
 
     ```
@@ -849,7 +849,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__radd__)
+    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__radd__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -877,7 +877,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rsub__)
+    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rsub__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -905,7 +905,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rmul__)
+    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rmul__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -933,7 +933,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rtruediv__)
+    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rtruediv__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -961,7 +961,7 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
 FrameHE.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
 :   via\_fill\_value *= <function Frame.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rfloordiv__)
+    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rfloordiv__)
 
     ```
     >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -986,10 +986,10 @@ FrameHE.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
 
     ```
 
-[FrameHE](frame_he.html#api-detail-framehe): [Constructor](frame_he-constructor.html#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.html#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.html#api-detail-framehe-attribute) | [Method](frame_he-method.html#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-detail-framehe-dictionary-like) | [Display](frame_he-display.html#api-detail-framehe-display) | [Assignment](frame_he-assignment.html#api-detail-framehe-assignment) | [Selector](frame_he-selector.html#api-detail-framehe-selector) | [Iterator](frame_he-iterator.html#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-detail-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.md#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.md#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](frame_he-assignment.md#api-detail-framehe-assignment) | [Selector](frame_he-selector.md#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)
 
-[Previous](frame_he-accessor_transpose.html "Detail: FrameHE: Accessor Transpose")
-[Next](frame_he-accessor_regular_expression.html "Detail: FrameHE: Accessor Regular Expression")
+[Previous](frame_he-accessor_transpose.md "Detail: FrameHE: Accessor Transpose")
+[Next](frame_he-accessor_regular_expression.md "Detail: FrameHE: Accessor Regular Expression")
 
 ---
 

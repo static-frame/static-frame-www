@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Detail: NPZ: Attribute
 * [View page source](../_sources/api_detail/npz-attribute.rst.txt)
 
-[Previous](npz-constructor.html "Detail: NPZ: Constructor")
-[Next](npz-method.html "Detail: NPZ: Method")
+[Previous](npz-constructor.md "Detail: NPZ: Constructor")
+[Next](npz-method.md "Detail: NPZ: Method")
 
 ---
 
 # Detail: NPZ: Attribute[](#detail-npz-attribute "Link to this heading")
 
-[Overview: NPZ: Attribute](../api_overview/npz-attribute.html#api-overview-npz-attribute)
+[Overview: NPZ: Attribute](../api_overview/npz-attribute.md#api-overview-npz-attribute)
 
 NPZ.contents[](#static_frame.NPZ.contents "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") indicating name, dtype, shape, and bytes, of Archive components.
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") indicating name, dtype, shape, and bytes, of Archive components.
 
 NPZ.nbytes[](#static_frame.NPZ.nbytes "Link to this definition")
 :   Return numer of bytes stored in this archive.
 
-[NPZ](npz.html#api-detail-npz): [Constructor](npz-constructor.html#api-detail-npz-constructor) | [Attribute](#api-detail-npz-attribute) | [Method](npz-method.html#api-detail-npz-method) | [Display](npz-display.html#api-detail-npz-display)
+[NPZ](npz.md#api-detail-npz): [Constructor](npz-constructor.md#api-detail-npz-constructor) | [Attribute](#api-detail-npz-attribute) | [Method](npz-method.md#api-detail-npz-method) | [Display](npz-display.md#api-detail-npz-display)
 
-[Previous](npz-constructor.html "Detail: NPZ: Constructor")
-[Next](npz-method.html "Detail: NPZ: Method")
+[Previous](npz-constructor.md "Detail: NPZ: Constructor")
+[Next](npz-method.md "Detail: NPZ: Method")
 
 ---
 

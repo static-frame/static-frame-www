@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: IndexHierarchy: Dictionary-Like
 * [View page source](../_sources/api_detail/index_hierarchy-dictionary_like.rst.txt)
 
-[Previous](index_hierarchy-method.html "Detail: IndexHierarchy: Method")
-[Next](index_hierarchy-display.html "Detail: IndexHierarchy: Display")
+[Previous](index_hierarchy-method.md "Detail: IndexHierarchy: Method")
+[Next](index_hierarchy-display.md "Detail: IndexHierarchy: Display")
 
 ---
 
 # Detail: IndexHierarchy: Dictionary-Like[](#detail-indexhierarchy-dictionary-like "Link to this heading")
 
-[Overview: IndexHierarchy: Dictionary-Like](../api_overview/index_hierarchy-dictionary_like.html#api-overview-indexhierarchy-dictionary-like)
+[Overview: IndexHierarchy: Dictionary-Like](../api_overview/index_hierarchy-dictionary_like.md#api-overview-indexhierarchy-dictionary-like)
 
-IndexHierarchy.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.__contains__)[](#static_frame.IndexHierarchy.__contains__ "Link to this definition")
+IndexHierarchy.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__contains__)[](#static_frame.IndexHierarchy.__contains__ "Link to this definition")
 :   Determine if a label value is contained in this Index.
 
     ```
@@ -160,7 +160,7 @@ IndexHierarchy.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame
 
     ```
 
-IndexHierarchy.\_\_iter\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.__iter__)[](#static_frame.IndexHierarchy.__iter__ "Link to this definition")
+IndexHierarchy.\_\_iter\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__iter__)[](#static_frame.IndexHierarchy.__iter__ "Link to this definition")
 :   Iterate over labels.
 
     ```
@@ -176,7 +176,7 @@ IndexHierarchy.\_\_iter\_\_()[[source]](../_modules/static_frame/core/index_hier
 
     ```
 
-IndexHierarchy.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.__reversed__)[](#static_frame.IndexHierarchy.__reversed__ "Link to this definition")
+IndexHierarchy.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__reversed__)[](#static_frame.IndexHierarchy.__reversed__ "Link to this definition")
 :   Returns a reverse iterator on the index labels.
 
     ```
@@ -193,7 +193,7 @@ IndexHierarchy.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/index_
     ```
 
 IndexHierarchy.values[](#static_frame.IndexHierarchy.values "Link to this definition")
-:   A 2D NumPy array of all values in the [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy"). As this is a single array, heterogenous columnar types might be coerced to a compatible type.
+:   A 2D NumPy array of all values in the [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). As this is a single array, heterogenous columnar types might be coerced to a compatible type.
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
@@ -210,10 +210,10 @@ IndexHierarchy.values[](#static_frame.IndexHierarchy.values "Link to this def
 
     ```
 
-[IndexHierarchy](index_hierarchy.html#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method) | [Dictionary-Like](#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-method.html "Detail: IndexHierarchy: Method")
-[Next](index_hierarchy-display.html "Detail: IndexHierarchy: Display")
+[Previous](index_hierarchy-method.md "Detail: IndexHierarchy: Method")
+[Next](index_hierarchy-display.md "Detail: IndexHierarchy: Display")
 
 ---
 

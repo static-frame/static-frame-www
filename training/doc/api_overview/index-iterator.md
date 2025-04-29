@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: Index: Iterator
 * [View page source](../_sources/api_overview/index-iterator.rst.txt)
 
-[Previous](index-selector.html "Overview: Index: Selector")
-[Next](index-operator_binary.html "Overview: Index: Operator Binary")
+[Previous](index-selector.md "Overview: Index: Selector")
+[Next](index-operator_binary.md "Overview: Index: Operator Binary")
 
 ---
 
 # Overview: Index: Iterator[](#overview-index-iterator "Link to this heading")
 
-[Detail: Index: Iterator](../api_detail/index-iterator.html#api-detail-index-iterator)
+[Detail: Index: Iterator](../api_detail/index-iterator.md#api-detail-index-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-iterator.html#api-sig-index-iter-label) | `Index.iter_label(depth_level)` |  |
-| [Detail](../api_detail/index-iterator.html#api-sig-index-iter-label-apply) | `Index.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/index-iterator.html#api-sig-index-iter-label-apply-iter) | `Index.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/index-iterator.html#api-sig-index-iter-label-apply-iter-items) | `Index.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/index-iterator.html#api-sig-index-iter-label-apply-pool) | `Index.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/index-iterator.md#api-sig-index-iter-label) | `Index.iter_label(depth_level)` |  |
+| [Detail](../api_detail/index-iterator.md#api-sig-index-iter-label-apply) | `Index.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/index-iterator.md#api-sig-index-iter-label-apply-iter) | `Index.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/index-iterator.md#api-sig-index-iter-label-apply-iter-items) | `Index.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/index-iterator.md#api-sig-index-iter-label-apply-pool) | `Index.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[Index](index.html#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](index-exporter.html#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](index-method.html#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | [Display](index-display.html#api-overview-index-display) | [Selector](index-selector.html#api-overview-index-selector) | [Iterator](#api-overview-index-iterator) | [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](index.md#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](index-exporter.md#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](index-method.md#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | [Display](index-display.md#api-overview-index-display) | [Selector](index-selector.md#api-overview-index-selector) | [Iterator](#api-overview-index-iterator) | [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](index-selector.html "Overview: Index: Selector")
-[Next](index-operator_binary.html "Overview: Index: Operator Binary")
+[Previous](index-selector.md "Overview: Index: Selector")
+[Next](index-operator_binary.md "Overview: Index: Operator Binary")
 
 ---
 

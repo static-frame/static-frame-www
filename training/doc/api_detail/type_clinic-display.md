@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: TypeClinic: Display
 * [View page source](../_sources/api_detail/type_clinic-display.rst.txt)
 
-[Previous](type_clinic-method.html "Detail: TypeClinic: Method")
-[Next](call_guard-method.html "Detail: CallGuard: Method")
+[Previous](type_clinic-method.md "Detail: TypeClinic: Method")
+[Next](call_guard-method.md "Detail: CallGuard: Method")
 
 ---
 
 # Detail: TypeClinic: Display[](#detail-typeclinic-display "Link to this heading")
 
-[Overview: TypeClinic: Display](../api_overview/type_clinic-display.html#api-overview-typeclinic-display)
+[Overview: TypeClinic: Display](../api_overview/type_clinic-display.md#api-overview-typeclinic-display)
 
-TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)[](#static_frame.TypeClinic.__repr__ "Link to this definition")
+TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)[](#static_frame.TypeClinic.__repr__ "Link to this definition")
 :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -184,10 +184,10 @@ TypeClinic.\_\_str\_\_()[](#static_frame.TypeClinic.__str__ "Link to this def
 
     ```
 
-[TypeClinic](type_clinic.html#api-detail-typeclinic): [Constructor](type_clinic-constructor.html#api-detail-typeclinic-constructor) | [Exporter](type_clinic-exporter.html#api-detail-typeclinic-exporter) | [Method](type_clinic-method.html#api-detail-typeclinic-method) | [Display](#api-detail-typeclinic-display)
+[TypeClinic](type_clinic.md#api-detail-typeclinic): [Constructor](type_clinic-constructor.md#api-detail-typeclinic-constructor) | [Exporter](type_clinic-exporter.md#api-detail-typeclinic-exporter) | [Method](type_clinic-method.md#api-detail-typeclinic-method) | [Display](#api-detail-typeclinic-display)
 
-[Previous](type_clinic-method.html "Detail: TypeClinic: Method")
-[Next](call_guard-method.html "Detail: CallGuard: Method")
+[Previous](type_clinic-method.md "Detail: TypeClinic: Method")
+[Next](call_guard-method.md "Detail: CallGuard: Method")
 
 ---
 

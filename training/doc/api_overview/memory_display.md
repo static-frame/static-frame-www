@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: MemoryDisplay
 * [View page source](../_sources/api_overview/memory_display.rst.txt)
 
-[Previous](npy.html "Overview: NPY")
-[Next](platform.html "Overview: Platform")
+[Previous](npy.md "Overview: NPY")
+[Next](platform.md "Overview: Platform")
 
 ---
 
 # Overview: MemoryDisplay[](#overview-memorydisplay "Link to this heading")
 
-[Detail: MemoryDisplay](../api_detail/memory_display.html#api-detail-memorydisplay)
+[Detail: MemoryDisplay](../api_detail/memory_display.md#api-detail-memorydisplay)
 
 |  |  |
 | --- | --- |
-| [Constructor](memory_display-constructor.html#api-overview-memorydisplay-constructor) | Alternative constructors for creating instances. |
-| [Exporter](memory_display-exporter.html#api-overview-memorydisplay-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Display](memory_display-display.html#api-overview-memorydisplay-display) | Methods for providing a text representation of the object. |
+| [Constructor](memory_display-constructor.md#api-overview-memorydisplay-constructor) | Alternative constructors for creating instances. |
+| [Exporter](memory_display-exporter.md#api-overview-memorydisplay-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Display](memory_display-display.md#api-overview-memorydisplay-display) | Methods for providing a text representation of the object. |
 
-[MemoryDisplay](#api-overview-memorydisplay): [Constructor](memory_display-constructor.html#api-overview-memorydisplay-constructor) | [Exporter](memory_display-exporter.html#api-overview-memorydisplay-exporter) | [Display](memory_display-display.html#api-overview-memorydisplay-display)
+[MemoryDisplay](#api-overview-memorydisplay): [Constructor](memory_display-constructor.md#api-overview-memorydisplay-constructor) | [Exporter](memory_display-exporter.md#api-overview-memorydisplay-exporter) | [Display](memory_display-display.md#api-overview-memorydisplay-display)
 
-[Previous](npy.html "Overview: NPY")
-[Next](platform.html "Overview: Platform")
+[Previous](npy.md "Overview: NPY")
+[Next](platform.md "Overview: Platform")
 
 ---
 

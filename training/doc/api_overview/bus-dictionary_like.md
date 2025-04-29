@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: Bus: Dictionary-Like
 * [View page source](../_sources/api_overview/bus-dictionary_like.rst.txt)
 
-[Previous](bus-method.html "Overview: Bus: Method")
-[Next](bus-display.html "Overview: Bus: Display")
+[Previous](bus-method.md "Overview: Bus: Method")
+[Next](bus-display.md "Overview: Bus: Display")
 
 ---
 
 # Overview: Bus: Dictionary-Like[](#overview-bus-dictionary-like "Link to this heading")
 
-[Detail: Bus: Dictionary-Like](../api_detail/bus-dictionary_like.html#api-detail-bus-dictionary-like)
+[Detail: Bus: Dictionary-Like](../api_detail/bus-dictionary_like.md#api-detail-bus-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-dictionary_like.html#api-sig-bus-contains) | `Bus.__contains__(value)` | Inclusion of value in index labels. Returns: bool |
-| [Detail](../api_detail/bus-dictionary_like.html#api-sig-bus-iter) | `Bus.__iter__()` | Iterator of index labels, same as Series.keys. Returns: Iterator[Hashasble] |
-| [Detail](../api_detail/bus-dictionary_like.html#api-sig-bus-reversed) | `Bus.__reversed__()` | Returns a reverse iterator on the Bus index. Returns: Index |
-| [Detail](../api_detail/bus-dictionary_like.html#api-sig-bus-get) | `Bus.get(key, default)` | Return the value found at the index key, else the default if the key is not foun… |
-| [Detail](../api_detail/bus-dictionary_like.html#api-sig-bus-items) | `Bus.items()` | Iterator of pairs of Bus label and contained Frame. |
-| [Detail](../api_detail/bus-dictionary_like.html#api-sig-bus-keys) | `Bus.keys()` | Iterator of index labels. Returns: Iterator[Hashable] |
-| [Detail](../api_detail/bus-dictionary_like.html#api-sig-bus-values) | `Bus.values` | A 1D object array of all Frame contained in the Bus. The returned np.ndarray wil… |
+| [Detail](../api_detail/bus-dictionary_like.md#api-sig-bus-contains) | `Bus.__contains__(value)` | Inclusion of value in index labels. Returns: bool |
+| [Detail](../api_detail/bus-dictionary_like.md#api-sig-bus-iter) | `Bus.__iter__()` | Iterator of index labels, same as Series.keys. Returns: Iterator[Hashasble] |
+| [Detail](../api_detail/bus-dictionary_like.md#api-sig-bus-reversed) | `Bus.__reversed__()` | Returns a reverse iterator on the Bus index. Returns: Index |
+| [Detail](../api_detail/bus-dictionary_like.md#api-sig-bus-get) | `Bus.get(key, default)` | Return the value found at the index key, else the default if the key is not foun… |
+| [Detail](../api_detail/bus-dictionary_like.md#api-sig-bus-items) | `Bus.items()` | Iterator of pairs of Bus label and contained Frame. |
+| [Detail](../api_detail/bus-dictionary_like.md#api-sig-bus-keys) | `Bus.keys()` | Iterator of index labels. Returns: Iterator[Hashable] |
+| [Detail](../api_detail/bus-dictionary_like.md#api-sig-bus-values) | `Bus.values` | A 1D object array of all Frame contained in the Bus. The returned np.ndarray wil… |
 
-[Bus](bus.html#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](bus-method.html "Overview: Bus: Method")
-[Next](bus-display.html "Overview: Bus: Display")
+[Previous](bus-method.md "Overview: Bus: Method")
+[Next](bus-display.md "Overview: Bus: Display")
 
 ---
 

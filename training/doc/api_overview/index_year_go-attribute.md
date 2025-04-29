@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexYearGO: Attribute
 * [View page source](../_sources/api_overview/index_year_go-attribute.rst.txt)
 
-[Previous](index_year_go-exporter.html "Overview: IndexYearGO: Exporter")
-[Next](index_year_go-method.html "Overview: IndexYearGO: Method")
+[Previous](index_year_go-exporter.md "Overview: IndexYearGO: Exporter")
+[Next](index_year_go-method.md "Overview: IndexYearGO: Method")
 
 ---
 
 # Overview: IndexYearGO: Attribute[](#overview-indexyeargo-attribute "Link to this heading")
 
-[Detail: IndexYearGO: Attribute](../api_detail/index_year_go-attribute.html#api-detail-indexyeargo-attribute)
+[Detail: IndexYearGO: Attribute](../api_detail/index_year_go-attribute.md#api-detail-indexyeargo-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-static) | `IndexYearGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-depth) | `IndexYearGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-dtype) | `IndexYearGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-index-types) | `IndexYearGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-memory) | `IndexYearGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-mloc) | `IndexYearGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-name) | `IndexYearGO.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-names) | `IndexYearGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-nbytes) | `IndexYearGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-ndim) | `IndexYearGO.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-positions) | `IndexYearGO.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-shape) | `IndexYearGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_year_go-attribute.html#api-sig-indexyeargo-size) | `IndexYearGO.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-static) | `IndexYearGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-depth) | `IndexYearGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-dtype) | `IndexYearGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-index-types) | `IndexYearGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-memory) | `IndexYearGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-mloc) | `IndexYearGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-name) | `IndexYearGO.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-names) | `IndexYearGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-nbytes) | `IndexYearGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-ndim) | `IndexYearGO.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-positions) | `IndexYearGO.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-shape) | `IndexYearGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_year_go-attribute.md#api-sig-indexyeargo-size) | `IndexYearGO.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](index_year_go-constructor.html#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.html#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-overview-indexyeargo): [Constructor](index_year_go-constructor.md#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-overview-indexyeargo-exporter) | [Attribute](#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.md#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.md#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-overview-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-exporter.html "Overview: IndexYearGO: Exporter")
-[Next](index_year_go-method.html "Overview: IndexYearGO: Method")
+[Previous](index_year_go-exporter.md "Overview: IndexYearGO: Exporter")
+[Next](index_year_go-method.md "Overview: IndexYearGO: Method")
 
 ---
 

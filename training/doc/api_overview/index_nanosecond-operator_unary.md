@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexNanosecond: Operator Unary
 * [View page source](../_sources/api_overview/index_nanosecond-operator_unary.rst.txt)
 
-[Previous](index_nanosecond-operator_binary.html "Overview: IndexNanosecond: Operator Binary")
-[Next](index_nanosecond-accessor_values.html "Overview: IndexNanosecond: Accessor Values")
+[Previous](index_nanosecond-operator_binary.md "Overview: IndexNanosecond: Operator Binary")
+[Next](index_nanosecond-accessor_values.md "Overview: IndexNanosecond: Accessor Values")
 
 ---
 
 # Overview: IndexNanosecond: Operator Unary[](#overview-indexnanosecond-operator-unary "Link to this heading")
 
-[Detail: IndexNanosecond: Operator Unary](../api_detail/index_nanosecond-operator_unary.html#api-detail-indexnanosecond-operator-unary)
+[Detail: IndexNanosecond: Operator Unary](../api_detail/index_nanosecond-operator_unary.md#api-detail-indexnanosecond-operator-unary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond-operator_unary.html#api-sig-indexnanosecond-abs) | `IndexNanosecond.__abs__()` |  |
-| [Detail](../api_detail/index_nanosecond-operator_unary.html#api-sig-indexnanosecond-invert) | `IndexNanosecond.__invert__()` |  |
-| [Detail](../api_detail/index_nanosecond-operator_unary.html#api-sig-indexnanosecond-neg) | `IndexNanosecond.__neg__()` |  |
-| [Detail](../api_detail/index_nanosecond-operator_unary.html#api-sig-indexnanosecond-pos) | `IndexNanosecond.__pos__()` |  |
+| [Detail](../api_detail/index_nanosecond-operator_unary.md#api-sig-indexnanosecond-abs) | `IndexNanosecond.__abs__()` |  |
+| [Detail](../api_detail/index_nanosecond-operator_unary.md#api-sig-indexnanosecond-invert) | `IndexNanosecond.__invert__()` |  |
+| [Detail](../api_detail/index_nanosecond-operator_unary.md#api-sig-indexnanosecond-neg) | `IndexNanosecond.__neg__()` |  |
+| [Detail](../api_detail/index_nanosecond-operator_unary.md#api-sig-indexnanosecond-pos) | `IndexNanosecond.__pos__()` |  |
 
-[IndexNanosecond](index_nanosecond.html#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.html#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.html#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.html#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.html#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.html#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.html#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.html#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.html#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.html#api-overview-indexnanosecond-operator-binary) | [Operator Unary](#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.html#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.html#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.html#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.html#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.html#api-overview-indexnanosecond-accessor-type-clinic)
+[IndexNanosecond](index_nanosecond.md#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-overview-indexnanosecond-operator-binary) | [Operator Unary](#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-overview-indexnanosecond-accessor-type-clinic)
 
-[Previous](index_nanosecond-operator_binary.html "Overview: IndexNanosecond: Operator Binary")
-[Next](index_nanosecond-accessor_values.html "Overview: IndexNanosecond: Accessor Values")
+[Previous](index_nanosecond-operator_binary.md "Overview: IndexNanosecond: Operator Binary")
+[Next](index_nanosecond-accessor_values.md "Overview: IndexNanosecond: Accessor Values")
 
 ---
 

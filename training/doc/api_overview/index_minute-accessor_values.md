@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexMinute: Accessor Values
 * [View page source](../_sources/api_overview/index_minute-accessor_values.rst.txt)
 
-[Previous](index_minute-operator_unary.html "Overview: IndexMinute: Operator Unary")
-[Next](index_minute-accessor_datetime.html "Overview: IndexMinute: Accessor Datetime")
+[Previous](index_minute-operator_unary.md "Overview: IndexMinute: Operator Unary")
+[Next](index_minute-accessor_datetime.md "Overview: IndexMinute: Accessor Datetime")
 
 ---
 
 # Overview: IndexMinute: Accessor Values[](#overview-indexminute-accessor-values "Link to this heading")
 
-[Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.html#api-detail-indexminute-accessor-values)
+[Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md#api-detail-indexminute-accessor-values)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-accessor_values.html#api-sig-indexminute-via-values-apply) | `IndexMinute.via_values.apply(func, *args, **kwargs)` |  |
-| [Detail](../api_detail/index_minute-accessor_values.html#api-sig-indexminute-via-values-array-ufunc) | `IndexMinute.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
-| [Detail](../api_detail/index_minute-accessor_values.html#api-sig-indexminute-via-values-call) | `IndexMinute.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
+| [Detail](../api_detail/index_minute-accessor_values.md#api-sig-indexminute-via-values-apply) | `IndexMinute.via_values.apply(func, *args, **kwargs)` |  |
+| [Detail](../api_detail/index_minute-accessor_values.md#api-sig-indexminute-via-values-array-ufunc) | `IndexMinute.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
+| [Detail](../api_detail/index_minute-accessor_values.md#api-sig-indexminute-via-values-call) | `IndexMinute.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-operator_unary.html "Overview: IndexMinute: Operator Unary")
-[Next](index_minute-accessor_datetime.html "Overview: IndexMinute: Accessor Datetime")
+[Previous](index_minute-operator_unary.md "Overview: IndexMinute: Operator Unary")
+[Next](index_minute-accessor_datetime.md "Overview: IndexMinute: Accessor Datetime")
 
 ---
 

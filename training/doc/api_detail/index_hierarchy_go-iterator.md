@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexHierarchyGO: Iterator
 * [View page source](../_sources/api_detail/index_hierarchy_go-iterator.rst.txt)
 
-[Previous](index_hierarchy_go-selector.html "Detail: IndexHierarchyGO: Selector")
-[Next](index_hierarchy_go-operator_binary.html "Detail: IndexHierarchyGO: Operator Binary")
+[Previous](index_hierarchy_go-selector.md "Detail: IndexHierarchyGO: Selector")
+[Next](index_hierarchy_go-operator_binary.md "Detail: IndexHierarchyGO: Operator Binary")
 
 ---
 
 # Detail: IndexHierarchyGO: Iterator[](#detail-indexhierarchygo-iterator "Link to this heading")
 
-[Overview: IndexHierarchyGO: Iterator](../api_overview/index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator)
+[Overview: IndexHierarchyGO: Iterator](../api_overview/index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator)
 
 IndexHierarchyGO.iter\_label(*depth\_level*)
 :   iter\_label
@@ -169,7 +169,7 @@ IndexHierarchyGO.iter\_label(*depth\_level*)
 IndexHierarchyGO.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_label
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -200,7 +200,7 @@ IndexHierarchyGO.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*, 
 IndexHierarchyGO.iter\_label(*depth\_level).apply\_iter(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -231,7 +231,7 @@ IndexHierarchyGO.iter\_label(*depth\_level).apply\_iter(func*)
 IndexHierarchyGO.iter\_label(*depth\_level).apply\_iter\_items(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -262,7 +262,7 @@ IndexHierarchyGO.iter\_label(*depth\_level).apply\_iter\_items(func*)
 IndexHierarchyGO.iter\_label(*depth\_level).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.html#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -295,10 +295,10 @@ IndexHierarchyGO.iter\_label(*depth\_level).apply\_pool(func*, *\**, *dtype*, *n
 
     ```
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-detail-indexhierarchygo-selector) | [Iterator](#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-detail-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-selector.html "Detail: IndexHierarchyGO: Selector")
-[Next](index_hierarchy_go-operator_binary.html "Detail: IndexHierarchyGO: Operator Binary")
+[Previous](index_hierarchy_go-selector.md "Detail: IndexHierarchyGO: Selector")
+[Next](index_hierarchy_go-operator_binary.md "Detail: IndexHierarchyGO: Operator Binary")
 
 ---
 

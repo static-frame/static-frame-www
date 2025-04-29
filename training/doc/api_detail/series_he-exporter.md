@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Detail: SeriesHE: Exporter
 * [View page source](../_sources/api_detail/series_he-exporter.rst.txt)
 
-[Previous](series_he-constructor.html "Detail: SeriesHE: Constructor")
-[Next](series_he-attribute.html "Detail: SeriesHE: Attribute")
+[Previous](series_he-constructor.md "Detail: SeriesHE: Constructor")
+[Next](series_he-attribute.md "Detail: SeriesHE: Attribute")
 
 ---
 
 # Detail: SeriesHE: Exporter[](#detail-serieshe-exporter "Link to this heading")
 
-[Overview: SeriesHE: Exporter](../api_overview/series_he-exporter.html#api-overview-serieshe-exporter)
+[Overview: SeriesHE: Exporter](../api_overview/series_he-exporter.md#api-overview-serieshe-exporter)
 
 SeriesHE.to\_frame(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.to_frame "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") view of this [`Series`](series-selector.html#Series "Series"). As underlying data is immutable, this is a no-copy operation.
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") view of this [`Series`](series-selector.md#Series "Series"). As underlying data is immutable, this is a no-copy operation.
 
     Parameters:
-    :   * **axis** – Axis 1 (default) creates a single-column [`Frame`](frame-selector.html#Frame "Frame") with the same index: axis 0 creates a single-row [`Frame`](frame-selector.html#Frame "Frame") with the index as columns.
+    :   * **axis** – Axis 1 (default) creates a single-column [`Frame`](frame-selector.md#Frame "Frame") with the same index: axis 0 creates a single-row [`Frame`](frame-selector.md#Frame "Frame") with the index as columns.
         * **\*** –
         * **index\_constructor** –
         * **columns\_constructor** –
         * **name** –
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -178,7 +178,7 @@ SeriesHE.to\_frame(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *col
     ```
 
 SeriesHE.to\_frame\_go(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.to_frame_go "Link to this definition")
-:   Return [`FrameGO`](frame_go-selector.html#FrameGO "FrameGO") view of this [`Series`](series-selector.html#Series "Series"). As underlying data is immutable, this is a no-copy operation.
+:   Return [`FrameGO`](frame_go-selector.md#FrameGO "FrameGO") view of this [`Series`](series-selector.md#Series "Series"). As underlying data is immutable, this is a no-copy operation.
 
     Parameters:
     :   * **axis** –
@@ -187,7 +187,7 @@ SeriesHE.to\_frame\_go(*\**, *axis=1*, *index=None*, *index\_constructor=None*, 
         * **columns\_constructor** –
 
     Returns:
-    :   [`FrameGO`](frame_go-selector.html#FrameGO "FrameGO")
+    :   [`FrameGO`](frame_go-selector.md#FrameGO "FrameGO")
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -210,7 +210,7 @@ SeriesHE.to\_frame\_go(*\**, *axis=1*, *index=None*, *index\_constructor=None*, 
     ```
 
 SeriesHE.to\_frame\_he(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.to_frame_he "Link to this definition")
-:   Return [`FrameHE`](frame_he-selector.html#FrameHE "FrameHE") view of this [`Series`](series-selector.html#Series "Series"). As underlying data is immutable, this is a no-copy operation.
+:   Return [`FrameHE`](frame_he-selector.md#FrameHE "FrameHE") view of this [`Series`](series-selector.md#Series "Series"). As underlying data is immutable, this is a no-copy operation.
 
     Parameters:
     :   * **axis** –
@@ -219,7 +219,7 @@ SeriesHE.to\_frame\_he(*\**, *axis=1*, *index=None*, *index\_constructor=None*, 
         * **columns\_constructor** –
 
     Returns:
-    :   [`FrameHE`](frame_he-selector.html#FrameHE "FrameHE")
+    :   [`FrameHE`](frame_he-selector.md#FrameHE "FrameHE")
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -242,21 +242,21 @@ SeriesHE.to\_frame\_he(*\**, *axis=1*, *index=None*, *index\_constructor=None*, 
     ```
 
 SeriesHE.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.SeriesHE.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Series`](series-selector.html#Series "Series") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Series`](series-selector.md#Series "Series") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 SeriesHE.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.SeriesHE.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Series`](series-selector.html#Series "Series") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Series`](series-selector.md#Series "Series") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
@@ -304,7 +304,7 @@ SeriesHE.to\_pandas()[](#static_frame.SeriesHE.to_pandas "Link to this defini
 
     ```
 
-SeriesHE.to\_series()[[source]](../_modules/static_frame/core/series.html#SeriesHE.to_series)[](#static_frame.SeriesHE.to_series "Link to this definition")
+SeriesHE.to\_series()[[source]](../_modules/static_frame/core/series.md#SeriesHE.to_series)[](#static_frame.SeriesHE.to_series "Link to this definition")
 :   Return a `Series` from this `SeriesHE`.
 
     ```
@@ -327,7 +327,7 @@ SeriesHE.to\_series()[[source]](../_modules/static_frame/core/series.html#Series
     ```
 
 SeriesHE.to\_series\_he()[](#static_frame.SeriesHE.to_series_he "Link to this definition")
-:   Return a [`SeriesHE`](series_he-selector.html#SeriesHE "SeriesHE") from this [`Series`](series-selector.html#Series "Series").
+:   Return a [`SeriesHE`](series_he-selector.md#SeriesHE "SeriesHE") from this [`Series`](series-selector.md#Series "Series").
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -351,10 +351,10 @@ SeriesHE.to\_series\_he()[](#static_frame.SeriesHE.to_series_he "Link to this
 SeriesHE.to\_visidata()[](#static_frame.SeriesHE.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[SeriesHE](series_he.html#api-detail-serieshe): [Constructor](series_he-constructor.html#api-detail-serieshe-constructor) | [Exporter](#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.html#api-detail-serieshe-attribute) | [Method](series_he-method.html#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-detail-serieshe-dictionary-like) | [Display](series_he-display.html#api-detail-serieshe-display) | [Assignment](series_he-assignment.html#api-detail-serieshe-assignment) | [Selector](series_he-selector.html#api-detail-serieshe-selector) | [Iterator](series_he-iterator.html#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-constructor.html "Detail: SeriesHE: Constructor")
-[Next](series_he-attribute.html "Detail: SeriesHE: Attribute")
+[Previous](series_he-constructor.md "Detail: SeriesHE: Constructor")
+[Next](series_he-attribute.md "Detail: SeriesHE: Attribute")
 
 ---
 

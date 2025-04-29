@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexYearGO: Accessor Values
 * [View page source](../_sources/api_detail/index_year_go-accessor_values.rst.txt)
 
-[Previous](index_year_go-operator_unary.html "Detail: IndexYearGO: Operator Unary")
-[Next](index_year_go-accessor_datetime.html "Detail: IndexYearGO: Accessor Datetime")
+[Previous](index_year_go-operator_unary.md "Detail: IndexYearGO: Operator Unary")
+[Next](index_year_go-accessor_datetime.md "Detail: IndexYearGO: Accessor Datetime")
 
 ---
 
 # Detail: IndexYearGO: Accessor Values[](#detail-indexyeargo-accessor-values "Link to this heading")
 
-[Overview: IndexYearGO: Accessor Values](../api_overview/index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values)
+[Overview: IndexYearGO: Accessor Values](../api_overview/index_year_go-accessor_values.md#api-overview-indexyeargo-accessor-values)
 
 IndexYearGO.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
 :   IndexYearGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.apply)
+    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.apply)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -167,7 +167,7 @@ IndexYearGO.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*k
 :   IndexYearGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__array_ufunc__)
+    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__array_ufunc__)
     :   Support for applying NumPy functions directly on containers.
 
     ```
@@ -187,7 +187,7 @@ IndexYearGO.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks
 :   IndexYearGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__call__)
+    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__call__)
     :   Parameters:
         :   * **consolidate\_blocks** – Group adjacent same-typed arrays into 2D arrays.
             * **unify\_blocks** – Group all arrays into single array, re-typing to an appropriate dtype.
@@ -206,10 +206,10 @@ IndexYearGO.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks
 
     ```
 
-[IndexYearGO](index_year_go.html#api-detail-indexyeargo): [Constructor](index_year_go-constructor.html#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-detail-indexyeargo-attribute) | [Method](index_year_go-method.html#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.html#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-detail-indexyeargo-operator-unary) | [Accessor Values](#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-detail-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-detail-indexyeargo): [Constructor](index_year_go-constructor.md#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-detail-indexyeargo-attribute) | [Method](index_year_go-method.md#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.md#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-detail-indexyeargo-operator-unary) | [Accessor Values](#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-detail-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-operator_unary.html "Detail: IndexYearGO: Operator Unary")
-[Next](index_year_go-accessor_datetime.html "Detail: IndexYearGO: Accessor Datetime")
+[Previous](index_year_go-operator_unary.md "Detail: IndexYearGO: Operator Unary")
+[Next](index_year_go-accessor_datetime.md "Detail: IndexYearGO: Accessor Datetime")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexDate: Selector
 * [View page source](../_sources/api_overview/index_date-selector.rst.txt)
 
-[Previous](index_date-display.html "Overview: IndexDate: Display")
-[Next](index_date-iterator.html "Overview: IndexDate: Iterator")
+[Previous](index_date-display.md "Overview: IndexDate: Display")
+[Next](index_date-iterator.md "Overview: IndexDate: Iterator")
 
 ---
 
 # Overview: IndexDate: Selector[](#overview-indexdate-selector "Link to this heading")
 
-[Detail: IndexDate: Selector](../api_detail/index_date-selector.html#api-detail-indexdate-selector)
+[Detail: IndexDate: Selector](../api_detail/index_date-selector.md#api-detail-indexdate-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date-selector.html#api-sig-indexdate-drop-iloc) | `IndexDate.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
-| [Detail](../api_detail/index_date-selector.html#api-sig-indexdate-drop-loc) | `IndexDate.drop.loc[key]` |  |
-| [Detail](../api_detail/index_date-selector.html#api-sig-indexdate) | `IndexDate[key]` | Extract a new index given an iloc key. |
-| [Detail](../api_detail/index_date-selector.html#api-sig-indexdate-iloc) | `IndexDate.iloc[key]` |  |
-| [Detail](../api_detail/index_date-selector.html#api-sig-indexdate-loc) | `IndexDate.loc[key]` |  |
+| [Detail](../api_detail/index_date-selector.md#api-sig-indexdate-drop-iloc) | `IndexDate.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
+| [Detail](../api_detail/index_date-selector.md#api-sig-indexdate-drop-loc) | `IndexDate.drop.loc[key]` |  |
+| [Detail](../api_detail/index_date-selector.md#api-sig-indexdate) | `IndexDate[key]` | Extract a new index given an iloc key. |
+| [Detail](../api_detail/index_date-selector.md#api-sig-indexdate-iloc) | `IndexDate.iloc[key]` |  |
+| [Detail](../api_detail/index_date-selector.md#api-sig-indexdate-loc) | `IndexDate.loc[key]` |  |
 
-[IndexDate](index_date.html#api-overview-indexdate): [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | [Method](index_date-method.html#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | [Display](index_date-display.html#api-overview-indexdate-display) | [Selector](#api-overview-indexdate-selector) | [Iterator](index_date-iterator.html#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-overview-indexdate): [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | [Method](index_date-method.md#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | [Display](index_date-display.md#api-overview-indexdate-display) | [Selector](#api-overview-indexdate-selector) | [Iterator](index_date-iterator.md#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic)
 
-[Previous](index_date-display.html "Overview: IndexDate: Display")
-[Next](index_date-iterator.html "Overview: IndexDate: Iterator")
+[Previous](index_date-display.md "Overview: IndexDate: Display")
+[Next](index_date-iterator.md "Overview: IndexDate: Iterator")
 
 ---
 

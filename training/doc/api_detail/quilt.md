@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,33 +136,33 @@ API Detail
 * Detail: Quilt
 * [View page source](../_sources/api_detail/quilt.rst.txt)
 
-[Previous](yarn.html "Detail: Yarn")
-[Next](index.html "Detail: Index")
+[Previous](yarn.md "Detail: Yarn")
+[Next](index.md "Detail: Index")
 
 ---
 
 # Detail: Quilt[](#detail-quilt "Link to this heading")
 
-[Overview: Quilt](../api_overview/quilt.html#api-overview-quilt)
+[Overview: Quilt](../api_overview/quilt.md#api-overview-quilt)
 
-*class* Quilt(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarchy=None*, *axis\_opposite=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.html#Quilt)[](#static_frame.Quilt "Link to this definition")
-:   A [`Frame`](frame-selector.html#Frame "Frame")-like view of the contents of a [`Bus`](bus-selector.html#Bus "Bus") or [`Yarn`](yarn-selector.html#Yarn "Yarn"). With the Quilt, [`Frame`](frame-selector.html#Frame "Frame") contained in a [`Bus`](bus-selector.html#Bus "Bus") or [`Yarn`](yarn-selector.html#Yarn "Yarn") can be conceived as stacking vertically (primary axis 0) or horizontally (primary axis 1). If the labels of the primary axis are unique across all contained [`Frame`](frame-selector.html#Frame "Frame"), `retain_labels` can be set to `False` and underlying labels are simply concatenated; otherwise, `retain_labels` must be set to `True` and an additional depth-level is added to the primary axis labels. A [`Quilt`](quilt-selector.html#Quilt "Quilt") can only be created if labels of the opposite axis of all contained [`Frame`](frame-selector.html#Frame "Frame") are aligned.
+*class* Quilt(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarchy=None*, *axis\_opposite=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt)[](#static_frame.Quilt "Link to this definition")
+:   A [`Frame`](frame-selector.md#Frame "Frame")-like view of the contents of a [`Bus`](bus-selector.md#Bus "Bus") or [`Yarn`](yarn-selector.md#Yarn "Yarn"). With the Quilt, [`Frame`](frame-selector.md#Frame "Frame") contained in a [`Bus`](bus-selector.md#Bus "Bus") or [`Yarn`](yarn-selector.md#Yarn "Yarn") can be conceived as stacking vertically (primary axis 0) or horizontally (primary axis 1). If the labels of the primary axis are unique across all contained [`Frame`](frame-selector.md#Frame "Frame"), `retain_labels` can be set to `False` and underlying labels are simply concatenated; otherwise, `retain_labels` must be set to `True` and an additional depth-level is added to the primary axis labels. A [`Quilt`](quilt-selector.md#Quilt "Quilt") can only be created if labels of the opposite axis of all contained [`Frame`](frame-selector.md#Frame "Frame") are aligned.
 
-* [Constructor](quilt-constructor.html#api-detail-quilt-constructor): Alternative constructors for creating instances.
-* [Exporter](quilt-exporter.html#api-detail-quilt-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](quilt-attribute.html#api-detail-quilt-attribute): Attributes for retrieving basic characteristics.
-* [Method](quilt-method.html#api-detail-quilt-method): Methods for general functionality.
-* [Dictionary-Like](quilt-dictionary_like.html#api-detail-quilt-dictionary-like): All dictionary-like methods and iterators.
-* [Display](quilt-display.html#api-detail-quilt-display): Methods for providing a text representation of the object.
-* [Selector](quilt-selector.html#api-detail-quilt-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](quilt-iterator.html#api-detail-quilt-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Accessor Hashlib](quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-detail-quilt-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](quilt-constructor.md#api-detail-quilt-constructor): Alternative constructors for creating instances.
+* [Exporter](quilt-exporter.md#api-detail-quilt-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](quilt-attribute.md#api-detail-quilt-attribute): Attributes for retrieving basic characteristics.
+* [Method](quilt-method.md#api-detail-quilt-method): Methods for general functionality.
+* [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like): All dictionary-like methods and iterators.
+* [Display](quilt-display.md#api-detail-quilt-display): Methods for providing a text representation of the object.
+* [Selector](quilt-selector.md#api-detail-quilt-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](quilt-iterator.md#api-detail-quilt-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[Quilt](#api-detail-quilt): [Constructor](quilt-constructor.html#api-detail-quilt-constructor) | [Exporter](quilt-exporter.html#api-detail-quilt-exporter) | [Attribute](quilt-attribute.html#api-detail-quilt-attribute) | [Method](quilt-method.html#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-detail-quilt-dictionary-like) | [Display](quilt-display.html#api-detail-quilt-display) | [Selector](quilt-selector.html#api-detail-quilt-selector) | [Iterator](quilt-iterator.html#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-detail-quilt-accessor-type-clinic)
+[Quilt](#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)
 
-[Previous](yarn.html "Detail: Yarn")
-[Next](index.html "Detail: Index")
+[Previous](yarn.md "Detail: Yarn")
+[Next](index.md "Detail: Index")
 
 ---
 

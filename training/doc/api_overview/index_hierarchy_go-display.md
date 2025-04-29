@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexHierarchyGO: Display
 * [View page source](../_sources/api_overview/index_hierarchy_go-display.rst.txt)
 
-[Previous](index_hierarchy_go-dictionary_like.html "Overview: IndexHierarchyGO: Dictionary-Like")
-[Next](index_hierarchy_go-selector.html "Overview: IndexHierarchyGO: Selector")
+[Previous](index_hierarchy_go-dictionary_like.md "Overview: IndexHierarchyGO: Dictionary-Like")
+[Next](index_hierarchy_go-selector.md "Overview: IndexHierarchyGO: Selector")
 
 ---
 
 # Overview: IndexHierarchyGO: Display[](#overview-indexhierarchygo-display "Link to this heading")
 
-[Detail: IndexHierarchyGO: Display](../api_detail/index_hierarchy_go-display.html#api-detail-indexhierarchygo-display)
+[Detail: IndexHierarchyGO: Display](../api_detail/index_hierarchy_go-display.md#api-detail-indexhierarchygo-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy_go-display.html#api-sig-indexhierarchygo-interface) | [`IndexHierarchyGO.interface`](../api_detail/index_hierarchy_go-display.html#IndexHierarchyGO.interface "IndexHierarchyGO.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_hierarchy_go-display.html#api-sig-indexhierarchygo-repr) | `IndexHierarchyGO.__repr__()` |  |
-| [Detail](../api_detail/index_hierarchy_go-display.html#api-sig-indexhierarchygo-str) | `IndexHierarchyGO.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_hierarchy_go-display.html#api-sig-indexhierarchygo-display) | `IndexHierarchyGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_hierarchy_go-display.html#api-sig-indexhierarchygo-display-tall) | `IndexHierarchyGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_hierarchy_go-display.html#api-sig-indexhierarchygo-display-wide) | `IndexHierarchyGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_hierarchy_go-display.md#api-sig-indexhierarchygo-interface) | [`IndexHierarchyGO.interface`](../api_detail/index_hierarchy_go-display.md#IndexHierarchyGO.interface "IndexHierarchyGO.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_hierarchy_go-display.md#api-sig-indexhierarchygo-repr) | `IndexHierarchyGO.__repr__()` |  |
+| [Detail](../api_detail/index_hierarchy_go-display.md#api-sig-indexhierarchygo-str) | `IndexHierarchyGO.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_hierarchy_go-display.md#api-sig-indexhierarchygo-display) | `IndexHierarchyGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_hierarchy_go-display.md#api-sig-indexhierarchygo-display-tall) | `IndexHierarchyGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_hierarchy_go-display.md#api-sig-indexhierarchygo-display-wide) | `IndexHierarchyGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-overview-indexhierarchygo-dictionary-like) | [Display](#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-overview-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like) | [Display](#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-overview-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-dictionary_like.html "Overview: IndexHierarchyGO: Dictionary-Like")
-[Next](index_hierarchy_go-selector.html "Overview: IndexHierarchyGO: Selector")
+[Previous](index_hierarchy_go-dictionary_like.md "Overview: IndexHierarchyGO: Dictionary-Like")
+[Next](index_hierarchy_go-selector.md "Overview: IndexHierarchyGO: Selector")
 
 ---
 

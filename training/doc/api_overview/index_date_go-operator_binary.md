@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexDateGO: Operator Binary
 * [View page source](../_sources/api_overview/index_date_go-operator_binary.rst.txt)
 
-[Previous](index_date_go-iterator.html "Overview: IndexDateGO: Iterator")
-[Next](index_date_go-operator_unary.html "Overview: IndexDateGO: Operator Unary")
+[Previous](index_date_go-iterator.md "Overview: IndexDateGO: Iterator")
+[Next](index_date_go-operator_unary.md "Overview: IndexDateGO: Operator Unary")
 
 ---
 
 # Overview: IndexDateGO: Operator Binary[](#overview-indexdatego-operator-binary "Link to this heading")
 
-[Detail: IndexDateGO: Operator Binary](../api_detail/index_date_go-operator_binary.html#api-detail-indexdatego-operator-binary)
+[Detail: IndexDateGO: Operator Binary](../api_detail/index_date_go-operator_binary.md#api-detail-indexdatego-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-add) | `IndexDateGO.__add__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-and) | `IndexDateGO.__and__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-eq) | `IndexDateGO.__eq__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-floordiv) | `IndexDateGO.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-ge) | `IndexDateGO.__ge__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-gt) | `IndexDateGO.__gt__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-le) | `IndexDateGO.__le__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-lt) | `IndexDateGO.__lt__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-matmul) | `IndexDateGO.__matmul__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-mod) | `IndexDateGO.__mod__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-mul) | `IndexDateGO.__mul__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-ne) | `IndexDateGO.__ne__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-or) | `IndexDateGO.__or__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-pow) | `IndexDateGO.__pow__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-radd) | `IndexDateGO.__radd__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-rfloordiv) | `IndexDateGO.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-rmatmul) | `IndexDateGO.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-rmul) | `IndexDateGO.__rmul__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-rshift) | `IndexDateGO.__rshift__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-rsub) | `IndexDateGO.__rsub__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-rtruediv) | `IndexDateGO.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-sub) | `IndexDateGO.__sub__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-truediv) | `IndexDateGO.__truediv__(other)` |  |
-| [Detail](../api_detail/index_date_go-operator_binary.html#api-sig-indexdatego-xor) | `IndexDateGO.__xor__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-add) | `IndexDateGO.__add__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-and) | `IndexDateGO.__and__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-eq) | `IndexDateGO.__eq__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-floordiv) | `IndexDateGO.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-ge) | `IndexDateGO.__ge__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-gt) | `IndexDateGO.__gt__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-le) | `IndexDateGO.__le__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-lt) | `IndexDateGO.__lt__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-matmul) | `IndexDateGO.__matmul__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-mod) | `IndexDateGO.__mod__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-mul) | `IndexDateGO.__mul__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-ne) | `IndexDateGO.__ne__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-or) | `IndexDateGO.__or__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-pow) | `IndexDateGO.__pow__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-radd) | `IndexDateGO.__radd__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-rfloordiv) | `IndexDateGO.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-rmatmul) | `IndexDateGO.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-rmul) | `IndexDateGO.__rmul__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-rshift) | `IndexDateGO.__rshift__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-rsub) | `IndexDateGO.__rsub__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-rtruediv) | `IndexDateGO.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-sub) | `IndexDateGO.__sub__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-truediv) | `IndexDateGO.__truediv__(other)` |  |
+| [Detail](../api_detail/index_date_go-operator_binary.md#api-sig-indexdatego-xor) | `IndexDateGO.__xor__(other)` |  |
 
-[IndexDateGO](index_date_go.html#api-overview-indexdatego): [Constructor](index_date_go-constructor.html#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.html#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.html#api-overview-indexdatego-attribute) | [Method](index_date_go-method.html#api-overview-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.html#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.html#api-overview-indexdatego-display) | [Selector](index_date_go-selector.html#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.html#api-overview-indexdatego-iterator) | [Operator Binary](#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.html#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.html#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.html#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.html#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.html#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.html#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.html#api-overview-indexdatego-accessor-type-clinic)
+[IndexDateGO](index_date_go.md#api-overview-indexdatego): [Constructor](index_date_go-constructor.md#api-overview-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-overview-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-overview-indexdatego-attribute) | [Method](index_date_go-method.md#api-overview-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-overview-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-overview-indexdatego-display) | [Selector](index_date_go-selector.md#api-overview-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-overview-indexdatego-iterator) | [Operator Binary](#api-overview-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-overview-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-overview-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-overview-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-overview-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-overview-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-overview-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-overview-indexdatego-accessor-type-clinic)
 
-[Previous](index_date_go-iterator.html "Overview: IndexDateGO: Iterator")
-[Next](index_date_go-operator_unary.html "Overview: IndexDateGO: Operator Unary")
+[Previous](index_date_go-iterator.md "Overview: IndexDateGO: Iterator")
+[Next](index_date_go-operator_unary.md "Overview: IndexDateGO: Operator Unary")
 
 ---
 

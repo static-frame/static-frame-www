@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,24 +136,24 @@ API Detail
 * Detail: CallGuard
 * [View page source](../_sources/api_detail/call_guard.rst.txt)
 
-[Previous](type_clinic.html "Detail: TypeClinic")
-[Next](clinic_result.html "Detail: ClinicResult")
+[Previous](type_clinic.md "Detail: TypeClinic")
+[Next](clinic_result.md "Detail: ClinicResult")
 
 ---
 
 # Detail: CallGuard[](#detail-callguard "Link to this heading")
 
-[Overview: CallGuard](../api_overview/call_guard.html#api-overview-callguard)
+[Overview: CallGuard](../api_overview/call_guard.md#api-overview-callguard)
 
-*class* CallGuard[[source]](../_modules/static_frame/core/type_clinic.html#CallGuard)[](#static_frame.CallGuard "Link to this definition")
+*class* CallGuard[[source]](../_modules/static_frame/core/type_clinic.md#CallGuard)[](#static_frame.CallGuard "Link to this definition")
 :   A family of decorators for run-time type checking and data validation of functions.
 
-* [Method](call_guard-method.html#api-detail-callguard-method): Methods for general functionality.
+* [Method](call_guard-method.md#api-detail-callguard-method): Methods for general functionality.
 
-[CallGuard](#api-detail-callguard): [Method](call_guard-method.html#api-detail-callguard-method)
+[CallGuard](#api-detail-callguard): [Method](call_guard-method.md#api-detail-callguard-method)
 
-[Previous](type_clinic.html "Detail: TypeClinic")
-[Next](clinic_result.html "Detail: ClinicResult")
+[Previous](type_clinic.md "Detail: TypeClinic")
+[Next](clinic_result.md "Detail: ClinicResult")
 
 ---
 

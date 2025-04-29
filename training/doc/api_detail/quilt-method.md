@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Quilt: Method
 * [View page source](../_sources/api_detail/quilt-method.rst.txt)
 
-[Previous](quilt-attribute.html "Detail: Quilt: Attribute")
-[Next](quilt-dictionary_like.html "Detail: Quilt: Dictionary-Like")
+[Previous](quilt-attribute.md "Detail: Quilt: Attribute")
+[Next](quilt-dictionary_like.md "Detail: Quilt: Dictionary-Like")
 
 ---
 
 # Detail: Quilt: Method[](#detail-quilt-method "Link to this heading")
 
-[Overview: Quilt: Method](../api_overview/quilt-method.html#api-overview-quilt-method)
+[Overview: Quilt: Method](../api_overview/quilt-method.md#api-overview-quilt-method)
 
 Quilt.\_\_bool\_\_()[](#static_frame.Quilt.__bool__ "Link to this definition")
 :   Raises ValueError to prohibit ambiguous use of truthy evaluation.
@@ -162,7 +162,7 @@ Quilt.\_\_bool\_\_()[](#static_frame.Quilt.__bool__ "Link to this definition"
 
     ```
 
-Quilt.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/quilt.html#Quilt.equals)[](#static_frame.Quilt.equals "Link to this definition")
+Quilt.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.equals)[](#static_frame.Quilt.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Note: this will attempt to load and compare all Frame managed by the Bus stored within this Quilt.
@@ -197,11 +197,11 @@ Quilt.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
 
     ```
 
-Quilt.head(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.html#Quilt.head)[](#static_frame.Quilt.head "Link to this definition")
-:   Return a [`Quilt`](quilt-selector.html#Quilt "Quilt") consisting only of the top elements as specified by `count`.
+Quilt.head(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.head)[](#static_frame.Quilt.head "Link to this definition")
+:   Return a [`Quilt`](quilt-selector.md#Quilt "Quilt") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Quilt`](quilt-selector.html#Quilt "Quilt")
+    :   **count** – Number of elements to be returned from the top of the [`Quilt`](quilt-selector.md#Quilt "Quilt")
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
@@ -223,8 +223,8 @@ Quilt.head(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.html#Qu
 
     ```
 
-Quilt.rename(*name*, */*)[[source]](../_modules/static_frame/core/quilt.html#Quilt.rename)[](#static_frame.Quilt.rename "Link to this definition")
-:   Return a new [`Quilt`](quilt-selector.html#Quilt "Quilt") with an updated name attribute.
+Quilt.rename(*name*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.rename)[](#static_frame.Quilt.rename "Link to this definition")
+:   Return a new [`Quilt`](quilt-selector.md#Quilt "Quilt") with an updated name attribute.
 
     Parameters:
     :   **name** –
@@ -249,7 +249,7 @@ Quilt.rename(*name*, */*)[[source]](../_modules/static_frame/core/quilt.html#Qui
 
     ```
 
-Quilt.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/quilt.html#Quilt.sample)[](#static_frame.Quilt.sample "Link to this definition")
+Quilt.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.sample)[](#static_frame.Quilt.sample "Link to this definition")
 :   Randomly (optionally made deterministic with a fixed seed) extract items from the container to return a subset of the container.
 
     Parameters:
@@ -277,11 +277,11 @@ Quilt.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modu
 
     ```
 
-Quilt.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.html#Quilt.tail)[](#static_frame.Quilt.tail "Link to this definition")
-:   Return a [`Quilt`](quilt-selector.html#Quilt "Quilt") consisting only of the bottom elements as specified by `count`.
+Quilt.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.tail)[](#static_frame.Quilt.tail "Link to this definition")
+:   Return a [`Quilt`](quilt-selector.md#Quilt "Quilt") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Quilt`](quilt-selector.html#Quilt "Quilt")
+    :   **count** – Number of elements to be returned from the bottom of the [`Quilt`](quilt-selector.md#Quilt "Quilt")
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
@@ -303,8 +303,8 @@ Quilt.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.html#Qu
 
     ```
 
-Quilt.unpersist()[[source]](../_modules/static_frame/core/quilt.html#Quilt.unpersist)[](#static_frame.Quilt.unpersist "Link to this definition")
-:   For the [`Bus`](bus-selector.html#Bus "Bus") or [`Yarn`](yarn-selector.html#Yarn "Yarn") contained in this object, replace all loaded [`Frame`](frame-selector.html#Frame "Frame") with `FrameDeferred`.
+Quilt.unpersist()[[source]](../_modules/static_frame/core/quilt.md#Quilt.unpersist)[](#static_frame.Quilt.unpersist "Link to this definition")
+:   For the [`Bus`](bus-selector.md#Bus "Bus") or [`Yarn`](yarn-selector.md#Yarn "Yarn") contained in this object, replace all loaded [`Frame`](frame-selector.md#Frame "Frame") with `FrameDeferred`.
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
@@ -347,10 +347,10 @@ Quilt.unpersist()[[source]](../_modules/static_frame/core/quilt.html#Quilt.unper
 
     ```
 
-[Quilt](quilt.html#api-detail-quilt): [Constructor](quilt-constructor.html#api-detail-quilt-constructor) | [Exporter](quilt-exporter.html#api-detail-quilt-exporter) | [Attribute](quilt-attribute.html#api-detail-quilt-attribute) | [Method](#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-detail-quilt-dictionary-like) | [Display](quilt-display.html#api-detail-quilt-display) | [Selector](quilt-selector.html#api-detail-quilt-selector) | [Iterator](quilt-iterator.html#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-detail-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)
 
-[Previous](quilt-attribute.html "Detail: Quilt: Attribute")
-[Next](quilt-dictionary_like.html "Detail: Quilt: Dictionary-Like")
+[Previous](quilt-attribute.md "Detail: Quilt: Attribute")
+[Next](quilt-dictionary_like.md "Detail: Quilt: Dictionary-Like")
 
 ---
 

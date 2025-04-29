@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: FrameGO: Accessor Fill Value
 * [View page source](../_sources/api_detail/frame_go-accessor_fill_value.rst.txt)
 
-[Previous](frame_go-accessor_transpose.html "Detail: FrameGO: Accessor Transpose")
-[Next](frame_go-accessor_regular_expression.html "Detail: FrameGO: Accessor Regular Expression")
+[Previous](frame_go-accessor_transpose.md "Detail: FrameGO: Accessor Transpose")
+[Next](frame_go-accessor_regular_expression.md "Detail: FrameGO: Accessor Regular Expression")
 
 ---
 
 # Detail: FrameGO: Accessor Fill Value[](#detail-framego-accessor-fill-value "Link to this heading")
 
-[Overview: FrameGO: Accessor Fill Value](../api_overview/frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value)
+[Overview: FrameGO: Accessor Fill Value](../api_overview/frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value)
 
 FrameGO.via\_fill\_value(fill\_value).loc
-:   FrameGO.via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   FrameGO.via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
     InterfaceFillValue.loc
     :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
@@ -172,9 +172,9 @@ FrameGO.via\_fill\_value(fill\_value).loc
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_getitem\_\_(key*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__getitem__)
+    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__getitem__)
     :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
 
     ```
@@ -199,7 +199,7 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_getitem\_\_(key*)
     ```
 
 FrameGO.via\_fill\_value(fill\_value).via\_T
-:   FrameGO.via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   FrameGO.via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
     InterfaceFillValue.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
@@ -228,9 +228,9 @@ FrameGO.via\_fill\_value(fill\_value).via\_T
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__add__)
+    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__add__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -262,9 +262,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__sub__)
+    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__sub__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -296,9 +296,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mul__)
+    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mul__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -330,9 +330,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__truediv__)
+    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__truediv__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -364,9 +364,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__floordiv__)
+    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__floordiv__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -398,9 +398,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mod__)
+    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mod__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -432,9 +432,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__pow__)
+    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__pow__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -466,9 +466,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lshift__)
+    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lshift__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -500,9 +500,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rshift__)
+    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rshift__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -534,9 +534,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__and__)
+    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__and__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((False, True, True), (True, False, True)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -568,9 +568,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__xor__)
+    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__xor__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((False, True, True), (True, False, True)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -602,9 +602,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__or__)
+    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__or__)
     :   Return self|value.
 
     ```
@@ -637,9 +637,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lt__)
+    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lt__)
     :   Return self<value.
 
     ```
@@ -672,9 +672,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__le__)
+    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__le__)
     :   Return self<=value.
 
     ```
@@ -707,9 +707,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__eq__)
+    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__eq__)
     :   Return self==value.
 
     ```
@@ -742,9 +742,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ne__)
+    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ne__)
     :   Return self!=value.
 
     ```
@@ -777,9 +777,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__gt__)
+    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__gt__)
     :   Return self>value.
 
     ```
@@ -812,9 +812,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ge__)
+    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ge__)
     :   Return self>=value.
 
     ```
@@ -847,9 +847,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__radd__)
+    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__radd__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -880,9 +880,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rsub__)
+    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rsub__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -913,9 +913,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rmul__)
+    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rmul__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -946,9 +946,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rtruediv__)
+    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rtruediv__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -979,9 +979,9 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
     ```
 
 FrameGO.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
-:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.html#FrameGO.via_fill_value)
+:   via\_fill\_value *= <function FrameGO.via\_fill\_value>*[[source]](../_modules/static_frame/core/frame.md#FrameGO.via_fill_value)
 
-    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rfloordiv__)
+    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rfloordiv__)
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
@@ -1011,10 +1011,10 @@ FrameGO.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
 
     ```
 
-[FrameGO](frame_go.html#api-detail-framego): [Constructor](frame_go-constructor.html#api-detail-framego-constructor) | [Exporter](frame_go-exporter.html#api-detail-framego-exporter) | [Attribute](frame_go-attribute.html#api-detail-framego-attribute) | [Method](frame_go-method.html#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-detail-framego-dictionary-like) | [Display](frame_go-display.html#api-detail-framego-display) | [Assignment](frame_go-assignment.html#api-detail-framego-assignment) | [Selector](frame_go-selector.html#api-detail-framego-selector) | [Iterator](frame_go-iterator.html#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-detail-framego-accessor-transpose) | [Accessor Fill Value](#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-detail-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)
 
-[Previous](frame_go-accessor_transpose.html "Detail: FrameGO: Accessor Transpose")
-[Next](frame_go-accessor_regular_expression.html "Detail: FrameGO: Accessor Regular Expression")
+[Previous](frame_go-accessor_transpose.md "Detail: FrameGO: Accessor Transpose")
+[Next](frame_go-accessor_regular_expression.md "Detail: FrameGO: Accessor Regular Expression")
 
 ---
 

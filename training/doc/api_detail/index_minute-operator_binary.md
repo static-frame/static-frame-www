@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMinute: Operator Binary
 * [View page source](../_sources/api_detail/index_minute-operator_binary.rst.txt)
 
-[Previous](index_minute-iterator.html "Detail: IndexMinute: Iterator")
-[Next](index_minute-operator_unary.html "Detail: IndexMinute: Operator Unary")
+[Previous](index_minute-iterator.md "Detail: IndexMinute: Iterator")
+[Next](index_minute-operator_unary.md "Detail: IndexMinute: Operator Unary")
 
 ---
 
 # Detail: IndexMinute: Operator Binary[](#detail-indexminute-operator-binary "Link to this heading")
 
-[Overview: IndexMinute: Operator Binary](../api_overview/index_minute-operator_binary.html#api-overview-indexminute-operator-binary)
+[Overview: IndexMinute: Operator Binary](../api_overview/index_minute-operator_binary.md#api-overview-indexminute-operator-binary)
 
 IndexMinute.\_\_add\_\_(*other*, */*)[](#static_frame.IndexMinute.__add__ "Link to this definition")
 :   ```
@@ -500,10 +500,10 @@ IndexMinute.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexMinute.__xor__ "Li
 
     ```
 
-[IndexMinute](index_minute.html#api-detail-indexminute): [Constructor](index_minute-constructor.html#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-detail-indexminute-attribute) | [Method](index_minute-method.html#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.html#api-detail-indexminute-display) | [Selector](index_minute-selector.html#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.html#api-detail-indexminute-iterator) | [Operator Binary](#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-detail-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](index_minute-method.md#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.md#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-detail-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-iterator.html "Detail: IndexMinute: Iterator")
-[Next](index_minute-operator_unary.html "Detail: IndexMinute: Operator Unary")
+[Previous](index_minute-iterator.md "Detail: IndexMinute: Iterator")
+[Next](index_minute-operator_unary.md "Detail: IndexMinute: Operator Unary")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexMinuteGO: Accessor Values
 * [View page source](../_sources/api_detail/index_minute_go-accessor_values.rst.txt)
 
-[Previous](index_minute_go-operator_unary.html "Detail: IndexMinuteGO: Operator Unary")
-[Next](index_minute_go-accessor_datetime.html "Detail: IndexMinuteGO: Accessor Datetime")
+[Previous](index_minute_go-operator_unary.md "Detail: IndexMinuteGO: Operator Unary")
+[Next](index_minute_go-accessor_datetime.md "Detail: IndexMinuteGO: Accessor Datetime")
 
 ---
 
 # Detail: IndexMinuteGO: Accessor Values[](#detail-indexminutego-accessor-values "Link to this heading")
 
-[Overview: IndexMinuteGO: Accessor Values](../api_overview/index_minute_go-accessor_values.html#api-overview-indexminutego-accessor-values)
+[Overview: IndexMinuteGO: Accessor Values](../api_overview/index_minute_go-accessor_values.md#api-overview-indexminutego-accessor-values)
 
 IndexMinuteGO.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
 :   IndexMinuteGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.apply)
+    InterfaceValues.apply(*func*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.apply)
 
     ```
     >>> ix = sf.IndexMinuteGO(('1517-04-01', '1517-12', '1517-06-30'))
@@ -167,7 +167,7 @@ IndexMinuteGO.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\
 :   IndexMinuteGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__array_ufunc__)
+    InterfaceValues.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__array_ufunc__)
     :   Support for applying NumPy functions directly on containers.
 
     ```
@@ -187,7 +187,7 @@ IndexMinuteGO.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_bloc
 :   IndexMinuteGO.via\_values
     :   Interface for applying functions to values (as arrays) in this container.
 
-    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.html#InterfaceValues.__call__)
+    InterfaceValues.\_\_call\_\_(*\**, *consolidate\_blocks=False*, *unify\_blocks=False*, *dtype=None*)[[source]](../_modules/static_frame/core/node_values.md#InterfaceValues.__call__)
     :   Parameters:
         :   * **consolidate\_blocks** – Group adjacent same-typed arrays into 2D arrays.
             * **unify\_blocks** – Group all arrays into single array, re-typing to an appropriate dtype.
@@ -206,10 +206,10 @@ IndexMinuteGO.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_bloc
 
     ```
 
-[IndexMinuteGO](index_minute_go.html#api-detail-indexminutego): [Constructor](index_minute_go-constructor.html#api-detail-indexminutego-constructor) | [Exporter](index_minute_go-exporter.html#api-detail-indexminutego-exporter) | [Attribute](index_minute_go-attribute.html#api-detail-indexminutego-attribute) | [Method](index_minute_go-method.html#api-detail-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.html#api-detail-indexminutego-dictionary-like) | [Display](index_minute_go-display.html#api-detail-indexminutego-display) | [Selector](index_minute_go-selector.html#api-detail-indexminutego-selector) | [Iterator](index_minute_go-iterator.html#api-detail-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.html#api-detail-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.html#api-detail-indexminutego-operator-unary) | [Accessor Values](#api-detail-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.html#api-detail-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.html#api-detail-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.html#api-detail-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.html#api-detail-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.html#api-detail-indexminutego-accessor-type-clinic)
+[IndexMinuteGO](index_minute_go.md#api-detail-indexminutego): [Constructor](index_minute_go-constructor.md#api-detail-indexminutego-constructor) | [Exporter](index_minute_go-exporter.md#api-detail-indexminutego-exporter) | [Attribute](index_minute_go-attribute.md#api-detail-indexminutego-attribute) | [Method](index_minute_go-method.md#api-detail-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-detail-indexminutego-dictionary-like) | [Display](index_minute_go-display.md#api-detail-indexminutego-display) | [Selector](index_minute_go-selector.md#api-detail-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-detail-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.md#api-detail-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-detail-indexminutego-operator-unary) | [Accessor Values](#api-detail-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.md#api-detail-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-detail-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-detail-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.md#api-detail-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-detail-indexminutego-accessor-type-clinic)
 
-[Previous](index_minute_go-operator_unary.html "Detail: IndexMinuteGO: Operator Unary")
-[Next](index_minute_go-accessor_datetime.html "Detail: IndexMinuteGO: Accessor Datetime")
+[Previous](index_minute_go-operator_unary.md "Detail: IndexMinuteGO: Operator Unary")
+[Next](index_minute_go-accessor_datetime.md "Detail: IndexMinuteGO: Accessor Datetime")
 
 ---
 

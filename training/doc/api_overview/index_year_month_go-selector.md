@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexYearMonthGO: Selector
 * [View page source](../_sources/api_overview/index_year_month_go-selector.rst.txt)
 
-[Previous](index_year_month_go-display.html "Overview: IndexYearMonthGO: Display")
-[Next](index_year_month_go-iterator.html "Overview: IndexYearMonthGO: Iterator")
+[Previous](index_year_month_go-display.md "Overview: IndexYearMonthGO: Display")
+[Next](index_year_month_go-iterator.md "Overview: IndexYearMonthGO: Iterator")
 
 ---
 
 # Overview: IndexYearMonthGO: Selector[](#overview-indexyearmonthgo-selector "Link to this heading")
 
-[Detail: IndexYearMonthGO: Selector](../api_detail/index_year_month_go-selector.html#api-detail-indexyearmonthgo-selector)
+[Detail: IndexYearMonthGO: Selector](../api_detail/index_year_month_go-selector.md#api-detail-indexyearmonthgo-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month_go-selector.html#api-sig-indexyearmonthgo-drop-iloc) | `IndexYearMonthGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
-| [Detail](../api_detail/index_year_month_go-selector.html#api-sig-indexyearmonthgo-drop-loc) | `IndexYearMonthGO.drop.loc[key]` |  |
-| [Detail](../api_detail/index_year_month_go-selector.html#api-sig-indexyearmonthgo) | `IndexYearMonthGO[key]` | Extract a new index given an iloc key. |
-| [Detail](../api_detail/index_year_month_go-selector.html#api-sig-indexyearmonthgo-iloc) | `IndexYearMonthGO.iloc[key]` |  |
-| [Detail](../api_detail/index_year_month_go-selector.html#api-sig-indexyearmonthgo-loc) | `IndexYearMonthGO.loc[key]` |  |
+| [Detail](../api_detail/index_year_month_go-selector.md#api-sig-indexyearmonthgo-drop-iloc) | `IndexYearMonthGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
+| [Detail](../api_detail/index_year_month_go-selector.md#api-sig-indexyearmonthgo-drop-loc) | `IndexYearMonthGO.drop.loc[key]` |  |
+| [Detail](../api_detail/index_year_month_go-selector.md#api-sig-indexyearmonthgo) | `IndexYearMonthGO[key]` | Extract a new index given an iloc key. |
+| [Detail](../api_detail/index_year_month_go-selector.md#api-sig-indexyearmonthgo-iloc) | `IndexYearMonthGO.iloc[key]` |  |
+| [Detail](../api_detail/index_year_month_go-selector.md#api-sig-indexyearmonthgo-loc) | `IndexYearMonthGO.loc[key]` |  |
 
-[IndexYearMonthGO](index_year_month_go.html#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.html#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.html#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.html#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.html#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.html#api-overview-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.html#api-overview-indexyearmonthgo-display) | [Selector](#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.html#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.html#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.html#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.html#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.html#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.html#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.html#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.html#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.html#api-overview-indexyearmonthgo-accessor-type-clinic)
+[IndexYearMonthGO](index_year_month_go.md#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.md#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.md#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-overview-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.md#api-overview-indexyearmonthgo-display) | [Selector](#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.md#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.md#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.md#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.md#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.md#api-overview-indexyearmonthgo-accessor-type-clinic)
 
-[Previous](index_year_month_go-display.html "Overview: IndexYearMonthGO: Display")
-[Next](index_year_month_go-iterator.html "Overview: IndexYearMonthGO: Iterator")
+[Previous](index_year_month_go-display.md "Overview: IndexYearMonthGO: Display")
+[Next](index_year_month_go-iterator.md "Overview: IndexYearMonthGO: Iterator")
 
 ---
 

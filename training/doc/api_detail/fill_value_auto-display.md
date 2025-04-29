@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: FillValueAuto: Display
 * [View page source](../_sources/api_detail/fill_value_auto-display.rst.txt)
 
-[Previous](fill_value_auto-attribute.html "Detail: FillValueAuto: Attribute")
-[Next](fill_value_auto-selector.html "Detail: FillValueAuto: Selector")
+[Previous](fill_value_auto-attribute.md "Detail: FillValueAuto: Attribute")
+[Next](fill_value_auto-selector.md "Detail: FillValueAuto: Selector")
 
 ---
 
 # Detail: FillValueAuto: Display[](#detail-fillvalueauto-display "Link to this heading")
 
-[Overview: FillValueAuto: Display](../api_overview/fill_value_auto-display.html#api-overview-fillvalueauto-display)
+[Overview: FillValueAuto: Display](../api_overview/fill_value_auto-display.md#api-overview-fillvalueauto-display)
 
 FillValueAuto.\_\_repr\_\_()[](#static_frame.FillValueAuto.__repr__ "Link to this definition")
 :   Return repr(self).
@@ -164,10 +164,10 @@ FillValueAuto.\_\_str\_\_()[](#static_frame.FillValueAuto.__str__ "Link to th
 
     ```
 
-[FillValueAuto](fill_value_auto.html#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.html#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.html#api-detail-fillvalueauto-attribute) | [Display](#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.html#api-detail-fillvalueauto-selector)
+[FillValueAuto](fill_value_auto.md#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-detail-fillvalueauto-attribute) | [Display](#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-detail-fillvalueauto-selector)
 
-[Previous](fill_value_auto-attribute.html "Detail: FillValueAuto: Attribute")
-[Next](fill_value_auto-selector.html "Detail: FillValueAuto: Selector")
+[Previous](fill_value_auto-attribute.md "Detail: FillValueAuto: Attribute")
+[Next](fill_value_auto-selector.md "Detail: FillValueAuto: Selector")
 
 ---
 

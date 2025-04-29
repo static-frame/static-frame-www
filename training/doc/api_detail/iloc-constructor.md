@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: ILoc: Constructor
 * [View page source](../_sources/api_detail/iloc-constructor.rst.txt)
 
-[Previous](hloc-display.html "Detail: HLoc: Display")
-[Next](iloc-attribute.html "Detail: ILoc: Attribute")
+[Previous](hloc-display.md "Detail: HLoc: Display")
+[Next](iloc-attribute.md "Detail: ILoc: Attribute")
 
 ---
 
 # Detail: ILoc: Constructor[](#detail-iloc-constructor "Link to this heading")
 
-[Overview: ILoc: Constructor](../api_overview/iloc-constructor.html#api-overview-iloc-constructor)
+[Overview: ILoc: Constructor](../api_overview/iloc-constructor.md#api-overview-iloc-constructor)
 
-ILoc.\_\_init\_\_(*key*, */*)[[source]](../_modules/static_frame/core/index.html#ILoc.__init__)[](#static_frame.ILoc.__init__ "Link to this definition")
+ILoc.\_\_init\_\_(*key*, */*)[[source]](../_modules/static_frame/core/index.md#ILoc.__init__)[](#static_frame.ILoc.__init__ "Link to this definition")
 :   ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f
@@ -172,10 +172,10 @@ ILoc.\_\_init\_\_(*key*, */*)[[source]](../_modules/static_frame/core/index.html
 
     ```
 
-[ILoc](iloc.html#api-detail-iloc): [Constructor](#api-detail-iloc-constructor) | [Attribute](iloc-attribute.html#api-detail-iloc-attribute) | [Display](iloc-display.html#api-detail-iloc-display)
+[ILoc](iloc.md#api-detail-iloc): [Constructor](#api-detail-iloc-constructor) | [Attribute](iloc-attribute.md#api-detail-iloc-attribute) | [Display](iloc-display.md#api-detail-iloc-display)
 
-[Previous](hloc-display.html "Detail: HLoc: Display")
-[Next](iloc-attribute.html "Detail: ILoc: Attribute")
+[Previous](hloc-display.md "Detail: HLoc: Display")
+[Next](iloc-attribute.md "Detail: ILoc: Attribute")
 
 ---
 

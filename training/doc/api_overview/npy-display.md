@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: NPY: Display
 * [View page source](../_sources/api_overview/npy-display.rst.txt)
 
-[Previous](npy-method.html "Overview: NPY: Method")
-[Next](memory_display-constructor.html "Overview: MemoryDisplay: Constructor")
+[Previous](npy-method.md "Overview: NPY: Method")
+[Next](memory_display-constructor.md "Overview: MemoryDisplay: Constructor")
 
 ---
 
 # Overview: NPY: Display[](#overview-npy-display "Link to this heading")
 
-[Detail: NPY: Display](../api_detail/npy-display.html#api-detail-npy-display)
+[Detail: NPY: Display](../api_detail/npy-display.md#api-detail-npy-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/npy-display.html#api-sig-npy-interface) | [`NPY.interface`](../api_detail/npy-display.html#NPY.interface "NPY.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/npy-display.html#api-sig-npy-repr) | `NPY.__repr__()` | Return repr(self). |
-| [Detail](../api_detail/npy-display.html#api-sig-npy-str) | `NPY.__str__()` | Return str(self). |
+| [Detail](../api_detail/npy-display.md#api-sig-npy-interface) | [`NPY.interface`](../api_detail/npy-display.md#NPY.interface "NPY.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/npy-display.md#api-sig-npy-repr) | `NPY.__repr__()` | Return repr(self). |
+| [Detail](../api_detail/npy-display.md#api-sig-npy-str) | `NPY.__str__()` | Return str(self). |
 
-[NPY](npy.html#api-overview-npy): [Constructor](npy-constructor.html#api-overview-npy-constructor) | [Attribute](npy-attribute.html#api-overview-npy-attribute) | [Method](npy-method.html#api-overview-npy-method) | [Display](#api-overview-npy-display)
+[NPY](npy.md#api-overview-npy): [Constructor](npy-constructor.md#api-overview-npy-constructor) | [Attribute](npy-attribute.md#api-overview-npy-attribute) | [Method](npy-method.md#api-overview-npy-method) | [Display](#api-overview-npy-display)
 
-[Previous](npy-method.html "Overview: NPY: Method")
-[Next](memory_display-constructor.html "Overview: MemoryDisplay: Constructor")
+[Previous](npy-method.md "Overview: NPY: Method")
+[Next](memory_display-constructor.md "Overview: MemoryDisplay: Constructor")
 
 ---
 

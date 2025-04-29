@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexMicrosecond: Accessor Datetime
 * [View page source](../_sources/api_overview/index_microsecond-accessor_datetime.rst.txt)
 
-[Previous](index_microsecond-accessor_values.html "Overview: IndexMicrosecond: Accessor Values")
-[Next](index_microsecond-accessor_string.html "Overview: IndexMicrosecond: Accessor String")
+[Previous](index_microsecond-accessor_values.md "Overview: IndexMicrosecond: Accessor Values")
+[Next](index_microsecond-accessor_string.md "Overview: IndexMicrosecond: Accessor String")
 
 ---
 
 # Overview: IndexMicrosecond: Accessor Datetime[](#overview-indexmicrosecond-accessor-datetime "Link to this heading")
 
-[Detail: IndexMicrosecond: Accessor Datetime](../api_detail/index_microsecond-accessor_datetime.html#api-detail-indexmicrosecond-accessor-datetime)
+[Detail: IndexMicrosecond: Accessor Datetime](../api_detail/index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-call) | `IndexMicrosecond.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-year) | `IndexMicrosecond.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-year-month) | `IndexMicrosecond.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-year-quarter) | `IndexMicrosecond.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-month) | `IndexMicrosecond.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-day) | `IndexMicrosecond.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-hour) | `IndexMicrosecond.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-minute) | `IndexMicrosecond.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-second) | `IndexMicrosecond.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-weekday) | `IndexMicrosecond.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-quarter) | `IndexMicrosecond.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-is-month-end) | `IndexMicrosecond.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-is-month-start) | `IndexMicrosecond.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-is-year-end) | `IndexMicrosecond.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-is-year-start) | `IndexMicrosecond.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-is-quarter-end) | `IndexMicrosecond.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-is-quarter-start) | `IndexMicrosecond.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-timetuple) | `IndexMicrosecond.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-isoformat) | `IndexMicrosecond.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-fromisoformat) | `IndexMicrosecond.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-strftime) | `IndexMicrosecond.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-strptime) | `IndexMicrosecond.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_microsecond-accessor_datetime.html#api-sig-indexmicrosecond-via-dt-strpdate) | `IndexMicrosecond.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-call) | `IndexMicrosecond.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-year) | `IndexMicrosecond.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-year-month) | `IndexMicrosecond.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-year-quarter) | `IndexMicrosecond.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-month) | `IndexMicrosecond.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-day) | `IndexMicrosecond.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-hour) | `IndexMicrosecond.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-minute) | `IndexMicrosecond.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-second) | `IndexMicrosecond.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-weekday) | `IndexMicrosecond.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-quarter) | `IndexMicrosecond.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-is-month-end) | `IndexMicrosecond.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-is-month-start) | `IndexMicrosecond.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-is-year-end) | `IndexMicrosecond.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-is-year-start) | `IndexMicrosecond.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-is-quarter-end) | `IndexMicrosecond.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-is-quarter-start) | `IndexMicrosecond.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-timetuple) | `IndexMicrosecond.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-isoformat) | `IndexMicrosecond.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-fromisoformat) | `IndexMicrosecond.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-strftime) | `IndexMicrosecond.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-strptime) | `IndexMicrosecond.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_microsecond-accessor_datetime.md#api-sig-indexmicrosecond-via-dt-strpdate) | `IndexMicrosecond.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexMicrosecond](index_microsecond.html#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-overview-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.html#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.html#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-overview-indexmicrosecond-display) | [Selector](index_microsecond-selector.html#api-overview-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.html#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.html#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.html#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-overview-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](index_microsecond.md#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-overview-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-overview-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-overview-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-overview-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_microsecond-accessor_values.html "Overview: IndexMicrosecond: Accessor Values")
-[Next](index_microsecond-accessor_string.html "Overview: IndexMicrosecond: Accessor String")
+[Previous](index_microsecond-accessor_values.md "Overview: IndexMicrosecond: Accessor Values")
+[Next](index_microsecond-accessor_string.md "Overview: IndexMicrosecond: Accessor String")
 
 ---
 

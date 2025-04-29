@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexHourGO: Selector
 * [View page source](../_sources/api_overview/index_hour_go-selector.rst.txt)
 
-[Previous](index_hour_go-display.html "Overview: IndexHourGO: Display")
-[Next](index_hour_go-iterator.html "Overview: IndexHourGO: Iterator")
+[Previous](index_hour_go-display.md "Overview: IndexHourGO: Display")
+[Next](index_hour_go-iterator.md "Overview: IndexHourGO: Iterator")
 
 ---
 
 # Overview: IndexHourGO: Selector[](#overview-indexhourgo-selector "Link to this heading")
 
-[Detail: IndexHourGO: Selector](../api_detail/index_hour_go-selector.html#api-detail-indexhourgo-selector)
+[Detail: IndexHourGO: Selector](../api_detail/index_hour_go-selector.md#api-detail-indexhourgo-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour_go-selector.html#api-sig-indexhourgo-drop-iloc) | `IndexHourGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
-| [Detail](../api_detail/index_hour_go-selector.html#api-sig-indexhourgo-drop-loc) | `IndexHourGO.drop.loc[key]` |  |
-| [Detail](../api_detail/index_hour_go-selector.html#api-sig-indexhourgo) | `IndexHourGO[key]` | Extract a new index given an iloc key. |
-| [Detail](../api_detail/index_hour_go-selector.html#api-sig-indexhourgo-iloc) | `IndexHourGO.iloc[key]` |  |
-| [Detail](../api_detail/index_hour_go-selector.html#api-sig-indexhourgo-loc) | `IndexHourGO.loc[key]` |  |
+| [Detail](../api_detail/index_hour_go-selector.md#api-sig-indexhourgo-drop-iloc) | `IndexHourGO.drop.iloc[key]` | Interface for iloc selection that reduces dimensionality. |
+| [Detail](../api_detail/index_hour_go-selector.md#api-sig-indexhourgo-drop-loc) | `IndexHourGO.drop.loc[key]` |  |
+| [Detail](../api_detail/index_hour_go-selector.md#api-sig-indexhourgo) | `IndexHourGO[key]` | Extract a new index given an iloc key. |
+| [Detail](../api_detail/index_hour_go-selector.md#api-sig-indexhourgo-iloc) | `IndexHourGO.iloc[key]` |  |
+| [Detail](../api_detail/index_hour_go-selector.md#api-sig-indexhourgo-loc) | `IndexHourGO.loc[key]` |  |
 
-[IndexHourGO](index_hour_go.html#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.html#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-overview-indexhourgo-display) | [Selector](#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-overview-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.md#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-overview-indexhourgo-display) | [Selector](#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-overview-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-display.html "Overview: IndexHourGO: Display")
-[Next](index_hour_go-iterator.html "Overview: IndexHourGO: Iterator")
+[Previous](index_hour_go-display.md "Overview: IndexHourGO: Display")
+[Next](index_hour_go-iterator.md "Overview: IndexHourGO: Iterator")
 
 ---
 

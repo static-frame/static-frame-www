@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: FillValueAuto: Display
 * [View page source](../_sources/api_overview/fill_value_auto-display.rst.txt)
 
-[Previous](fill_value_auto-attribute.html "Overview: FillValueAuto: Attribute")
-[Next](fill_value_auto-selector.html "Overview: FillValueAuto: Selector")
+[Previous](fill_value_auto-attribute.md "Overview: FillValueAuto: Attribute")
+[Next](fill_value_auto-selector.md "Overview: FillValueAuto: Selector")
 
 ---
 
 # Overview: FillValueAuto: Display[](#overview-fillvalueauto-display "Link to this heading")
 
-[Detail: FillValueAuto: Display](../api_detail/fill_value_auto-display.html#api-detail-fillvalueauto-display)
+[Detail: FillValueAuto: Display](../api_detail/fill_value_auto-display.md#api-detail-fillvalueauto-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/fill_value_auto-display.html#api-sig-fillvalueauto-repr) | `FillValueAuto.__repr__()` | Return repr(self). |
-| [Detail](../api_detail/fill_value_auto-display.html#api-sig-fillvalueauto-str) | `FillValueAuto.__str__()` | Return str(self). |
+| [Detail](../api_detail/fill_value_auto-display.md#api-sig-fillvalueauto-repr) | `FillValueAuto.__repr__()` | Return repr(self). |
+| [Detail](../api_detail/fill_value_auto-display.md#api-sig-fillvalueauto-str) | `FillValueAuto.__str__()` | Return str(self). |
 
-[FillValueAuto](fill_value_auto.html#api-overview-fillvalueauto): [Constructor](fill_value_auto-constructor.html#api-overview-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.html#api-overview-fillvalueauto-attribute) | [Display](#api-overview-fillvalueauto-display) | [Selector](fill_value_auto-selector.html#api-overview-fillvalueauto-selector)
+[FillValueAuto](fill_value_auto.md#api-overview-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-overview-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-overview-fillvalueauto-attribute) | [Display](#api-overview-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-overview-fillvalueauto-selector)
 
-[Previous](fill_value_auto-attribute.html "Overview: FillValueAuto: Attribute")
-[Next](fill_value_auto-selector.html "Overview: FillValueAuto: Selector")
+[Previous](fill_value_auto-attribute.md "Overview: FillValueAuto: Attribute")
+[Next](fill_value_auto-selector.md "Overview: FillValueAuto: Selector")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexHourGO: Iterator
 * [View page source](../_sources/api_overview/index_hour_go-iterator.rst.txt)
 
-[Previous](index_hour_go-selector.html "Overview: IndexHourGO: Selector")
-[Next](index_hour_go-operator_binary.html "Overview: IndexHourGO: Operator Binary")
+[Previous](index_hour_go-selector.md "Overview: IndexHourGO: Selector")
+[Next](index_hour_go-operator_binary.md "Overview: IndexHourGO: Operator Binary")
 
 ---
 
 # Overview: IndexHourGO: Iterator[](#overview-indexhourgo-iterator "Link to this heading")
 
-[Detail: IndexHourGO: Iterator](../api_detail/index_hour_go-iterator.html#api-detail-indexhourgo-iterator)
+[Detail: IndexHourGO: Iterator](../api_detail/index_hour_go-iterator.md#api-detail-indexhourgo-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour_go-iterator.html#api-sig-indexhourgo-iter-label) | `IndexHourGO.iter_label(depth_level)` |  |
-| [Detail](../api_detail/index_hour_go-iterator.html#api-sig-indexhourgo-iter-label-apply) | `IndexHourGO.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/index_hour_go-iterator.html#api-sig-indexhourgo-iter-label-apply-iter) | `IndexHourGO.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/index_hour_go-iterator.html#api-sig-indexhourgo-iter-label-apply-iter-items) | `IndexHourGO.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/index_hour_go-iterator.html#api-sig-indexhourgo-iter-label-apply-pool) | `IndexHourGO.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/index_hour_go-iterator.md#api-sig-indexhourgo-iter-label) | `IndexHourGO.iter_label(depth_level)` |  |
+| [Detail](../api_detail/index_hour_go-iterator.md#api-sig-indexhourgo-iter-label-apply) | `IndexHourGO.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/index_hour_go-iterator.md#api-sig-indexhourgo-iter-label-apply-iter) | `IndexHourGO.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/index_hour_go-iterator.md#api-sig-indexhourgo-iter-label-apply-iter-items) | `IndexHourGO.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/index_hour_go-iterator.md#api-sig-indexhourgo-iter-label-apply-pool) | `IndexHourGO.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[IndexHourGO](index_hour_go.html#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.html#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-overview-indexhourgo-selector) | [Iterator](#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-overview-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.md#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-overview-indexhourgo-selector) | [Iterator](#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-overview-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-selector.html "Overview: IndexHourGO: Selector")
-[Next](index_hour_go-operator_binary.html "Overview: IndexHourGO: Operator Binary")
+[Previous](index_hour_go-selector.md "Overview: IndexHourGO: Selector")
+[Next](index_hour_go-operator_binary.md "Overview: IndexHourGO: Operator Binary")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Require: Constructor
 * [View page source](../_sources/api_overview/require-constructor.rst.txt)
 
-[Previous](clinic_result-display.html "Overview: ClinicResult: Display")
-[Next](www-constructor.html "Overview: WWW: Constructor")
+[Previous](clinic_result-display.md "Overview: ClinicResult: Display")
+[Next](www-constructor.md "Overview: WWW: Constructor")
 
 ---
 
 # Overview: Require: Constructor[](#overview-require-constructor "Link to this heading")
 
-[Detail: Require: Constructor](../api_detail/require-constructor.html#api-detail-require-constructor)
+[Detail: Require: Constructor](../api_detail/require-constructor.md#api-detail-require-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/require-constructor.html#api-sig-require-apply) | `Require.Apply(func)` | Apply a function to a container with an arbitrary function. The validation passe… |
-| [Detail](../api_detail/require-constructor.html#api-sig-require-labelsmatch) | `Require.LabelsMatch(*labels)` | Validate the presence of one or more labels, specified with the value, a pattern… |
-| [Detail](../api_detail/require-constructor.html#api-sig-require-labelsorder) | `Require.LabelsOrder(*labels)` | Validate the ordering of labels. Args: \*labels: Provide labels as args. Use …… |
-| [Detail](../api_detail/require-constructor.html#api-sig-require-len) | `Require.Len(len)` | Validate the length of a container. Args: len: The length to validate against. / |
-| [Detail](../api_detail/require-constructor.html#api-sig-require-name) | `Require.Name(name)` | Validate the name of a container. Args: name: The name to validate against. / |
-| [Detail](../api_detail/require-constructor.html#api-sig-require-shape) | `Require.Shape(*shape)` | Validate the length of a container. Args: shape: A tuple of one or two values, w… |
+| [Detail](../api_detail/require-constructor.md#api-sig-require-apply) | `Require.Apply(func)` | Apply a function to a container with an arbitrary function. The validation passe… |
+| [Detail](../api_detail/require-constructor.md#api-sig-require-labelsmatch) | `Require.LabelsMatch(*labels)` | Validate the presence of one or more labels, specified with the value, a pattern… |
+| [Detail](../api_detail/require-constructor.md#api-sig-require-labelsorder) | `Require.LabelsOrder(*labels)` | Validate the ordering of labels. Args: \*labels: Provide labels as args. Use …… |
+| [Detail](../api_detail/require-constructor.md#api-sig-require-len) | `Require.Len(len)` | Validate the length of a container. Args: len: The length to validate against. / |
+| [Detail](../api_detail/require-constructor.md#api-sig-require-name) | `Require.Name(name)` | Validate the name of a container. Args: name: The name to validate against. / |
+| [Detail](../api_detail/require-constructor.md#api-sig-require-shape) | `Require.Shape(*shape)` | Validate the length of a container. Args: shape: A tuple of one or two values, w… |
 
-[Require](require.html#api-overview-require): [Constructor](#api-overview-require-constructor)
+[Require](require.md#api-overview-require): [Constructor](#api-overview-require-constructor)
 
-[Previous](clinic_result-display.html "Overview: ClinicResult: Display")
-[Next](www-constructor.html "Overview: WWW: Constructor")
+[Previous](clinic_result-display.md "Overview: ClinicResult: Display")
+[Next](www-constructor.md "Overview: WWW: Constructor")
 
 ---
 

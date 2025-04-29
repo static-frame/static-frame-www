@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexMillisecondGO: Dictionary-Like
 * [View page source](../_sources/api_overview/index_millisecond_go-dictionary_like.rst.txt)
 
-[Previous](index_millisecond_go-method.html "Overview: IndexMillisecondGO: Method")
-[Next](index_millisecond_go-display.html "Overview: IndexMillisecondGO: Display")
+[Previous](index_millisecond_go-method.md "Overview: IndexMillisecondGO: Method")
+[Next](index_millisecond_go-display.md "Overview: IndexMillisecondGO: Display")
 
 ---
 
 # Overview: IndexMillisecondGO: Dictionary-Like[](#overview-indexmillisecondgo-dictionary-like "Link to this heading")
 
-[Detail: IndexMillisecondGO: Dictionary-Like](../api_detail/index_millisecond_go-dictionary_like.html#api-detail-indexmillisecondgo-dictionary-like)
+[Detail: IndexMillisecondGO: Dictionary-Like](../api_detail/index_millisecond_go-dictionary_like.md#api-detail-indexmillisecondgo-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond_go-dictionary_like.html#api-sig-indexmillisecondgo-contains) | `IndexMillisecondGO.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
-| [Detail](../api_detail/index_millisecond_go-dictionary_like.html#api-sig-indexmillisecondgo-iter) | `IndexMillisecondGO.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index_millisecond_go-dictionary_like.html#api-sig-indexmillisecondgo-reversed) | `IndexMillisecondGO.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index_millisecond_go-dictionary_like.html#api-sig-indexmillisecondgo-values) | `IndexMillisecondGO.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
+| [Detail](../api_detail/index_millisecond_go-dictionary_like.md#api-sig-indexmillisecondgo-contains) | `IndexMillisecondGO.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
+| [Detail](../api_detail/index_millisecond_go-dictionary_like.md#api-sig-indexmillisecondgo-iter) | `IndexMillisecondGO.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index_millisecond_go-dictionary_like.md#api-sig-indexmillisecondgo-reversed) | `IndexMillisecondGO.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index_millisecond_go-dictionary_like.md#api-sig-indexmillisecondgo-values) | `IndexMillisecondGO.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
 
-[IndexMillisecondGO](index_millisecond_go.html#api-overview-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.html#api-overview-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.html#api-overview-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.html#api-overview-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.html#api-overview-indexmillisecondgo-method) | [Dictionary-Like](#api-overview-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.html#api-overview-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.html#api-overview-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.html#api-overview-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.html#api-overview-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.html#api-overview-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.html#api-overview-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.html#api-overview-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.html#api-overview-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.html#api-overview-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.html#api-overview-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.html#api-overview-indexmillisecondgo-accessor-type-clinic)
+[IndexMillisecondGO](index_millisecond_go.md#api-overview-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.md#api-overview-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-overview-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-overview-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.md#api-overview-indexmillisecondgo-method) | [Dictionary-Like](#api-overview-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.md#api-overview-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-overview-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-overview-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-overview-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-overview-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-overview-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-overview-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-overview-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-overview-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-overview-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-overview-indexmillisecondgo-accessor-type-clinic)
 
-[Previous](index_millisecond_go-method.html "Overview: IndexMillisecondGO: Method")
-[Next](index_millisecond_go-display.html "Overview: IndexMillisecondGO: Display")
+[Previous](index_millisecond_go-method.md "Overview: IndexMillisecondGO: Method")
+[Next](index_millisecond_go-display.md "Overview: IndexMillisecondGO: Display")
 
 ---
 

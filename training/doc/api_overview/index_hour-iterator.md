@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexHour: Iterator
 * [View page source](../_sources/api_overview/index_hour-iterator.rst.txt)
 
-[Previous](index_hour-selector.html "Overview: IndexHour: Selector")
-[Next](index_hour-operator_binary.html "Overview: IndexHour: Operator Binary")
+[Previous](index_hour-selector.md "Overview: IndexHour: Selector")
+[Next](index_hour-operator_binary.md "Overview: IndexHour: Operator Binary")
 
 ---
 
 # Overview: IndexHour: Iterator[](#overview-indexhour-iterator "Link to this heading")
 
-[Detail: IndexHour: Iterator](../api_detail/index_hour-iterator.html#api-detail-indexhour-iterator)
+[Detail: IndexHour: Iterator](../api_detail/index_hour-iterator.md#api-detail-indexhour-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour-iterator.html#api-sig-indexhour-iter-label) | `IndexHour.iter_label(depth_level)` |  |
-| [Detail](../api_detail/index_hour-iterator.html#api-sig-indexhour-iter-label-apply) | `IndexHour.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/index_hour-iterator.html#api-sig-indexhour-iter-label-apply-iter) | `IndexHour.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/index_hour-iterator.html#api-sig-indexhour-iter-label-apply-iter-items) | `IndexHour.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/index_hour-iterator.html#api-sig-indexhour-iter-label-apply-pool) | `IndexHour.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/index_hour-iterator.md#api-sig-indexhour-iter-label) | `IndexHour.iter_label(depth_level)` |  |
+| [Detail](../api_detail/index_hour-iterator.md#api-sig-indexhour-iter-label-apply) | `IndexHour.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/index_hour-iterator.md#api-sig-indexhour-iter-label-apply-iter) | `IndexHour.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/index_hour-iterator.md#api-sig-indexhour-iter-label-apply-iter-items) | `IndexHour.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/index_hour-iterator.md#api-sig-indexhour-iter-label-apply-pool) | `IndexHour.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[IndexHour](index_hour.html#api-overview-indexhour): [Constructor](index_hour-constructor.html#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-overview-indexhour-attribute) | [Method](index_hour-method.html#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.html#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.html#api-overview-indexhour-display) | [Selector](index_hour-selector.html#api-overview-indexhour-selector) | [Iterator](#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.html#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.html#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.html#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.html#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.html#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.html#api-overview-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-overview-indexhour): [Constructor](index_hour-constructor.md#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-overview-indexhour-attribute) | [Method](index_hour-method.md#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.md#api-overview-indexhour-display) | [Selector](index_hour-selector.md#api-overview-indexhour-selector) | [Iterator](#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-overview-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-selector.html "Overview: IndexHour: Selector")
-[Next](index_hour-operator_binary.html "Overview: IndexHour: Operator Binary")
+[Previous](index_hour-selector.md "Overview: IndexHour: Selector")
+[Next](index_hour-operator_binary.md "Overview: IndexHour: Operator Binary")
 
 ---
 

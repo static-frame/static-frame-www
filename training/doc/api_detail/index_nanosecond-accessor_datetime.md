@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexNanosecond: Accessor Datetime
 * [View page source](../_sources/api_detail/index_nanosecond-accessor_datetime.rst.txt)
 
-[Previous](index_nanosecond-accessor_values.html "Detail: IndexNanosecond: Accessor Values")
-[Next](index_nanosecond-accessor_string.html "Detail: IndexNanosecond: Accessor String")
+[Previous](index_nanosecond-accessor_values.md "Detail: IndexNanosecond: Accessor Values")
+[Next](index_nanosecond-accessor_string.md "Detail: IndexNanosecond: Accessor String")
 
 ---
 
 # Detail: IndexNanosecond: Accessor Datetime[](#detail-indexnanosecond-accessor-datetime "Link to this heading")
 
-[Overview: IndexNanosecond: Accessor Datetime](../api_overview/index_nanosecond-accessor_datetime.html#api-overview-indexnanosecond-accessor-datetime)
+[Overview: IndexNanosecond: Accessor Datetime](../api_overview/index_nanosecond-accessor_datetime.md#api-overview-indexnanosecond-accessor-datetime)
 
 IndexNanosecond.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.__call__)
+    InterfaceDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.__call__)
     :   Parameters:
         :   **fill\_value** – If NAT are encountered, use this value.
 
@@ -329,7 +329,7 @@ IndexNanosecond.via\_dt.weekday
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.weekday)
+    InterfaceDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.weekday)
     :   Return the day of the week as an integer, where Monday is 0 and Sunday is 6.
 
     ```
@@ -349,7 +349,7 @@ IndexNanosecond.via\_dt.quarter
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.quarter)
+    InterfaceDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.quarter)
     :   Return the quarter of the year as an integer, where January through March is quarter 1.
 
     ```
@@ -369,7 +369,7 @@ IndexNanosecond.via\_dt.is\_month\_end
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_end)
+    InterfaceDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_end)
     :   Return Boolean indicators if the day is the month end.
 
     ```
@@ -389,7 +389,7 @@ IndexNanosecond.via\_dt.is\_month\_start
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_month_start)
+    InterfaceDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_month_start)
     :   Return Boolean indicators if the day is the month start.
 
     ```
@@ -409,7 +409,7 @@ IndexNanosecond.via\_dt.is\_year\_end
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_end)
+    InterfaceDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_end)
     :   Return Boolean indicators if the day is the year end.
 
     ```
@@ -429,7 +429,7 @@ IndexNanosecond.via\_dt.is\_year\_start
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_year_start)
+    InterfaceDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_year_start)
     :   Return Boolean indicators if the day is the year start.
 
     ```
@@ -449,7 +449,7 @@ IndexNanosecond.via\_dt.is\_quarter\_end
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_end)
+    InterfaceDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_end)
     :   Return Boolean indicators if the day is the quarter end.
 
     ```
@@ -469,7 +469,7 @@ IndexNanosecond.via\_dt.is\_quarter\_start
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.is_quarter_start)
+    InterfaceDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.is_quarter_start)
     :   Return Boolean indicators if the day is the quarter start.
 
     ```
@@ -489,7 +489,7 @@ IndexNanosecond.via\_dt.timetuple
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.timetuple)
+    InterfaceDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.timetuple)
     :   Return a `time.struct_time` such as returned by time.localtime().
 
     ```
@@ -509,7 +509,7 @@ IndexNanosecond.via\_dt.isoformat(*\**, *sep*, *timespec*)
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.isoformat)
+    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.isoformat)
     :   Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
 
     ```
@@ -529,7 +529,7 @@ IndexNanosecond.via\_dt.fromisoformat
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.fromisoformat)
+    InterfaceDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.fromisoformat)
     :   Return a `datetime.date` object from an ISO 8601 format.
 
     ```
@@ -549,7 +549,7 @@ IndexNanosecond.via\_dt.strftime(*format*)
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strftime)
+    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strftime)
     :   Return a string representing the date, controlled by an explicit `format` string.
 
     ```
@@ -569,7 +569,7 @@ IndexNanosecond.via\_dt.strptime(*format*)
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strptime)
+    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strptime)
     :   Return a Python datetime object from parsing a string defined with `format`.
 
     ```
@@ -589,7 +589,7 @@ IndexNanosecond.via\_dt.strpdate(*format*)
 :   IndexNanosecond.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceDatetime.strpdate)
+    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strpdate)
     :   Return a Python date object from parsing a string defined with `format`.
 
     ```
@@ -605,10 +605,10 @@ IndexNanosecond.via\_dt.strpdate(*format*)
 
     ```
 
-[IndexNanosecond](index_nanosecond.html#api-detail-indexnanosecond): [Constructor](index_nanosecond-constructor.html#api-detail-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.html#api-detail-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.html#api-detail-indexnanosecond-attribute) | [Method](index_nanosecond-method.html#api-detail-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.html#api-detail-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.html#api-detail-indexnanosecond-display) | [Selector](index_nanosecond-selector.html#api-detail-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.html#api-detail-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.html#api-detail-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.html#api-detail-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.html#api-detail-indexnanosecond-accessor-values) | [Accessor Datetime](#api-detail-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.html#api-detail-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.html#api-detail-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-detail-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.html#api-detail-indexnanosecond-accessor-type-clinic)
+[IndexNanosecond](index_nanosecond.md#api-detail-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-detail-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-detail-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-detail-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-detail-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-detail-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-detail-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-detail-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-detail-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-detail-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-detail-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-detail-indexnanosecond-accessor-values) | [Accessor Datetime](#api-detail-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-detail-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-detail-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-detail-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-detail-indexnanosecond-accessor-type-clinic)
 
-[Previous](index_nanosecond-accessor_values.html "Detail: IndexNanosecond: Accessor Values")
-[Next](index_nanosecond-accessor_string.html "Detail: IndexNanosecond: Accessor String")
+[Previous](index_nanosecond-accessor_values.md "Detail: IndexNanosecond: Accessor Values")
+[Next](index_nanosecond-accessor_string.md "Detail: IndexNanosecond: Accessor String")
 
 ---
 

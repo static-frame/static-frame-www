@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: WWW
 * [View page source](../_sources/api_overview/www.rst.txt)
 
-[Previous](require.html "Overview: Require")
-[Next](fill_value_auto.html "Overview: FillValueAuto")
+[Previous](require.md "Overview: Require")
+[Next](fill_value_auto.md "Overview: FillValueAuto")
 
 ---
 
 # Overview: WWW[](#overview-www "Link to this heading")
 
-[Detail: WWW](../api_detail/www.html#api-detail-www)
+[Detail: WWW](../api_detail/www.md#api-detail-www)
 
 |  |  |
 | --- | --- |
-| [Constructor](www-constructor.html#api-overview-www-constructor) | Alternative constructors for creating instances. |
+| [Constructor](www-constructor.md#api-overview-www-constructor) | Alternative constructors for creating instances. |
 
-[WWW](#api-overview-www): [Constructor](www-constructor.html#api-overview-www-constructor)
+[WWW](#api-overview-www): [Constructor](www-constructor.md#api-overview-www-constructor)
 
-[Previous](require.html "Overview: Require")
-[Next](fill_value_auto.html "Overview: FillValueAuto")
+[Previous](require.md "Overview: Require")
+[Next](fill_value_auto.md "Overview: FillValueAuto")
 
 ---
 

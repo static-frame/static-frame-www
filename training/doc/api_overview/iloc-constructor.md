@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: ILoc: Constructor
 * [View page source](../_sources/api_overview/iloc-constructor.rst.txt)
 
-[Previous](hloc-display.html "Overview: HLoc: Display")
-[Next](iloc-attribute.html "Overview: ILoc: Attribute")
+[Previous](hloc-display.md "Overview: HLoc: Display")
+[Next](iloc-attribute.md "Overview: ILoc: Attribute")
 
 ---
 
 # Overview: ILoc: Constructor[](#overview-iloc-constructor "Link to this heading")
 
-[Detail: ILoc: Constructor](../api_detail/iloc-constructor.html#api-detail-iloc-constructor)
+[Detail: ILoc: Constructor](../api_detail/iloc-constructor.md#api-detail-iloc-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/iloc-constructor.html#api-sig-iloc-init) | `ILoc.__init__(key)` |  |
+| [Detail](../api_detail/iloc-constructor.md#api-sig-iloc-init) | `ILoc.__init__(key)` |  |
 
-[ILoc](iloc.html#api-overview-iloc): [Constructor](#api-overview-iloc-constructor) | [Attribute](iloc-attribute.html#api-overview-iloc-attribute) | [Display](iloc-display.html#api-overview-iloc-display)
+[ILoc](iloc.md#api-overview-iloc): [Constructor](#api-overview-iloc-constructor) | [Attribute](iloc-attribute.md#api-overview-iloc-attribute) | [Display](iloc-display.md#api-overview-iloc-display)
 
-[Previous](hloc-display.html "Overview: HLoc: Display")
-[Next](iloc-attribute.html "Overview: ILoc: Attribute")
+[Previous](hloc-display.md "Overview: HLoc: Display")
+[Next](iloc-attribute.md "Overview: ILoc: Attribute")
 
 ---
 

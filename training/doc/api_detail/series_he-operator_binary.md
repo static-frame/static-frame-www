@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: SeriesHE: Operator Binary
 * [View page source](../_sources/api_detail/series_he-operator_binary.rst.txt)
 
-[Previous](series_he-iterator.html "Detail: SeriesHE: Iterator")
-[Next](series_he-operator_unary.html "Detail: SeriesHE: Operator Unary")
+[Previous](series_he-iterator.md "Detail: SeriesHE: Iterator")
+[Next](series_he-operator_unary.md "Detail: SeriesHE: Operator Unary")
 
 ---
 
 # Detail: SeriesHE: Operator Binary[](#detail-serieshe-operator-binary "Link to this heading")
 
-[Overview: SeriesHE: Operator Binary](../api_overview/series_he-operator_binary.html#api-overview-serieshe-operator-binary)
+[Overview: SeriesHE: Operator Binary](../api_overview/series_he-operator_binary.md#api-overview-serieshe-operator-binary)
 
 SeriesHE.\_\_add\_\_(*other*, */*)[](#static_frame.SeriesHE.__add__ "Link to this definition")
 :   ```
@@ -198,7 +198,7 @@ SeriesHE.\_\_and\_\_(*other*, */*)[](#static_frame.SeriesHE.__and__ "Link to 
 
     ```
 
-SeriesHE.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/series.html#SeriesHE.__eq__)[](#static_frame.SeriesHE.__eq__ "Link to this definition")
+SeriesHE.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/series.md#SeriesHE.__eq__)[](#static_frame.SeriesHE.__eq__ "Link to this definition")
 :   Return True if other is a `Series` with the same labels, values, and name. Container class and underlying dtypes are not independently compared.
 
     ```
@@ -429,7 +429,7 @@ SeriesHE.\_\_mul\_\_(*other*, */*)[](#static_frame.SeriesHE.__mul__ "Link to 
 
     ```
 
-SeriesHE.\_\_ne\_\_(*other*, */*)[[source]](../_modules/static_frame/core/series.html#SeriesHE.__ne__)[](#static_frame.SeriesHE.__ne__ "Link to this definition")
+SeriesHE.\_\_ne\_\_(*other*, */*)[[source]](../_modules/static_frame/core/series.md#SeriesHE.__ne__)[](#static_frame.SeriesHE.__ne__ "Link to this definition")
 :   Return False if other is a `Series` with the same labels, values, and name. Container class and underlying dtypes are not independently compared.
 
     ```
@@ -720,10 +720,10 @@ SeriesHE.\_\_xor\_\_(*other*, */*)[](#static_frame.SeriesHE.__xor__ "Link to 
 
     ```
 
-[SeriesHE](series_he.html#api-detail-serieshe): [Constructor](series_he-constructor.html#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.html#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.html#api-detail-serieshe-attribute) | [Method](series_he-method.html#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-detail-serieshe-dictionary-like) | [Display](series_he-display.html#api-detail-serieshe-display) | [Assignment](series_he-assignment.html#api-detail-serieshe-assignment) | [Selector](series_he-selector.html#api-detail-serieshe-selector) | [Iterator](series_he-iterator.html#api-detail-serieshe-iterator) | [Operator Binary](#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-iterator.html "Detail: SeriesHE: Iterator")
-[Next](series_he-operator_unary.html "Detail: SeriesHE: Operator Unary")
+[Previous](series_he-iterator.md "Detail: SeriesHE: Iterator")
+[Next](series_he-operator_unary.md "Detail: SeriesHE: Operator Unary")
 
 ---
 

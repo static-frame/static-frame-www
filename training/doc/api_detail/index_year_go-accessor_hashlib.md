@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexYearGO: Accessor Hashlib
 * [View page source](../_sources/api_detail/index_year_go-accessor_hashlib.rst.txt)
 
-[Previous](index_year_go-accessor_regular_expression.html "Detail: IndexYearGO: Accessor Regular Expression")
-[Next](index_year_go-accessor_type_clinic.html "Detail: IndexYearGO: Accessor Type Clinic")
+[Previous](index_year_go-accessor_regular_expression.md "Detail: IndexYearGO: Accessor Regular Expression")
+[Next](index_year_go-accessor_type_clinic.md "Detail: IndexYearGO: Accessor Type Clinic")
 
 ---
 
 # Detail: IndexYearGO: Accessor Hashlib[](#detail-indexyeargo-accessor-hashlib "Link to this heading")
 
-[Overview: IndexYearGO: Accessor Hashlib](../api_overview/index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib)
+[Overview: IndexYearGO: Accessor Hashlib](../api_overview/index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib)
 
 IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.to_bytes)
+    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.to_bytes)
     :   Return the byte signature for this container, suitable for passing to a cryptographic hash function.
 
     ```
@@ -168,7 +168,7 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.md5)
+    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.md5)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -187,7 +187,7 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha256)
+    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha256)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -206,7 +206,7 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha512)
+    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha512)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -225,7 +225,7 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_256)
+    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_256)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -244,7 +244,7 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_512)
+    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_512)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -263,7 +263,7 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_128)
+    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_128)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -282,7 +282,7 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_256)
+    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_256)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -301,7 +301,7 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).bla
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2b)
+    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2b)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -320,7 +320,7 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).bla
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2s)
+    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2s)
 
     ```
     >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
@@ -335,10 +335,10 @@ IndexYearGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).bla
 
     ```
 
-[IndexYearGO](index_year_go.html#api-detail-indexyeargo): [Constructor](index_year_go-constructor.html#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-detail-indexyeargo-attribute) | [Method](index_year_go-method.html#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.html#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-detail-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-detail-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-detail-indexyeargo): [Constructor](index_year_go-constructor.md#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-detail-indexyeargo-attribute) | [Method](index_year_go-method.md#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.md#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-detail-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-detail-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-accessor_regular_expression.html "Detail: IndexYearGO: Accessor Regular Expression")
-[Next](index_year_go-accessor_type_clinic.html "Detail: IndexYearGO: Accessor Type Clinic")
+[Previous](index_year_go-accessor_regular_expression.md "Detail: IndexYearGO: Accessor Regular Expression")
+[Next](index_year_go-accessor_type_clinic.md "Detail: IndexYearGO: Accessor Type Clinic")
 
 ---
 

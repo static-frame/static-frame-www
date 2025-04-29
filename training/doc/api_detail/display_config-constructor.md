@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Detail: DisplayConfig: Constructor
 * [View page source](../_sources/api_detail/display_config-constructor.rst.txt)
 
-[Previous](display_active-display.html "Detail: DisplayActive: Display")
-[Next](display_config-exporter.html "Detail: DisplayConfig: Exporter")
+[Previous](display_active-display.md "Detail: DisplayActive: Display")
+[Next](display_config-exporter.md "Detail: DisplayConfig: Exporter")
 
 ---
 
 # Detail: DisplayConfig: Constructor[](#detail-displayconfig-constructor "Link to this heading")
 
-[Overview: DisplayConfig: Constructor](../api_overview/display_config-constructor.html#api-overview-displayconfig-constructor)
+[Overview: DisplayConfig: Constructor](../api_overview/display_config-constructor.md#api-overview-displayconfig-constructor)
 
-DisplayConfig.\_\_init\_\_(*\**, *type\_show=True*, *type\_color=True*, *type\_color\_default=5263440*, *type\_color\_int=5263440*, *type\_color\_float=5263440*, *type\_color\_complex=5263440*, *type\_color\_bool=5263440*, *type\_color\_object=5263440*, *type\_color\_str=5263440*, *type\_color\_datetime=5263440*, *type\_color\_timedelta=5263440*, *type\_color\_index=7829367*, *type\_color\_series=7829367*, *type\_color\_frame=7829367*, *type\_color\_bus=7829367*, *type\_color\_quilt=7829367*, *type\_delimiter\_left='<'*, *type\_delimiter\_right='>'*, *value\_format\_float\_positional='{}'*, *value\_format\_float\_scientific='{:.8e}'*, *value\_format\_complex\_positional='{}'*, *value\_format\_complex\_scientific='{:.2e}'*, *cell\_placeholder='.'*, *display\_format=DisplayFormats.TERMINAL*, *display\_columns=12*, *display\_rows=36*, *include\_columns=True*, *include\_index=True*, *cell\_max\_width=20*, *cell\_max\_width\_leftmost=36*, *cell\_align\_left=True*)[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.__init__)[](#static_frame.DisplayConfig.__init__ "Link to this definition")
+DisplayConfig.\_\_init\_\_(*\**, *type\_show=True*, *type\_color=True*, *type\_color\_default=5263440*, *type\_color\_int=5263440*, *type\_color\_float=5263440*, *type\_color\_complex=5263440*, *type\_color\_bool=5263440*, *type\_color\_object=5263440*, *type\_color\_str=5263440*, *type\_color\_datetime=5263440*, *type\_color\_timedelta=5263440*, *type\_color\_index=7829367*, *type\_color\_series=7829367*, *type\_color\_frame=7829367*, *type\_color\_bus=7829367*, *type\_color\_quilt=7829367*, *type\_delimiter\_left='<'*, *type\_delimiter\_right='>'*, *value\_format\_float\_positional='{}'*, *value\_format\_float\_scientific='{:.8e}'*, *value\_format\_complex\_positional='{}'*, *value\_format\_complex\_scientific='{:.2e}'*, *cell\_placeholder='.'*, *display\_format=DisplayFormats.TERMINAL*, *display\_columns=12*, *display\_rows=36*, *include\_columns=True*, *include\_index=True*, *cell\_max\_width=20*, *cell\_max\_width\_leftmost=36*, *cell\_align\_left=True*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.__init__)[](#static_frame.DisplayConfig.__init__ "Link to this definition")
 
-*classmethod* DisplayConfig.from\_default(*\*\*kwargs*)[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.from_default)[](#static_frame.DisplayConfig.from_default "Link to this definition")
+*classmethod* DisplayConfig.from\_default(*\*\*kwargs*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.from_default)[](#static_frame.DisplayConfig.from_default "Link to this definition")
 
-*classmethod* DisplayConfig.from\_file(*fp*)[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.from_file)[](#static_frame.DisplayConfig.from_file "Link to this definition")
+*classmethod* DisplayConfig.from\_file(*fp*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.from_file)[](#static_frame.DisplayConfig.from_file "Link to this definition")
 
-*classmethod* DisplayConfig.from\_json(*json\_str*)[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.from_json)[](#static_frame.DisplayConfig.from_json "Link to this definition")
+*classmethod* DisplayConfig.from\_json(*json\_str*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.from_json)[](#static_frame.DisplayConfig.from_json "Link to this definition")
 
-[DisplayConfig](display_config.html#api-detail-displayconfig): [Constructor](#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.html#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.html#api-detail-displayconfig-attribute) | [Method](display_config-method.html#api-detail-displayconfig-method) | [Display](display_config-display.html#api-detail-displayconfig-display)
+[DisplayConfig](display_config.md#api-detail-displayconfig): [Constructor](#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.md#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.md#api-detail-displayconfig-attribute) | [Method](display_config-method.md#api-detail-displayconfig-method) | [Display](display_config-display.md#api-detail-displayconfig-display)
 
-[Previous](display_active-display.html "Detail: DisplayActive: Display")
-[Next](display_config-exporter.html "Detail: DisplayConfig: Exporter")
+[Previous](display_active-display.md "Detail: DisplayActive: Display")
+[Next](display_config-exporter.md "Detail: DisplayConfig: Exporter")
 
 ---
 

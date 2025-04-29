@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexMinute: Accessor Hashlib
 * [View page source](../_sources/api_detail/index_minute-accessor_hashlib.rst.txt)
 
-[Previous](index_minute-accessor_regular_expression.html "Detail: IndexMinute: Accessor Regular Expression")
-[Next](index_minute-accessor_type_clinic.html "Detail: IndexMinute: Accessor Type Clinic")
+[Previous](index_minute-accessor_regular_expression.md "Detail: IndexMinute: Accessor Regular Expression")
+[Next](index_minute-accessor_type_clinic.md "Detail: IndexMinute: Accessor Type Clinic")
 
 ---
 
 # Detail: IndexMinute: Accessor Hashlib[](#detail-indexminute-accessor-hashlib "Link to this heading")
 
-[Overview: IndexMinute: Accessor Hashlib](../api_overview/index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib)
+[Overview: IndexMinute: Accessor Hashlib](../api_overview/index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib)
 
 IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.to_bytes)
+    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.to_bytes)
     :   Return the byte signature for this container, suitable for passing to a cryptographic hash function.
 
     ```
@@ -168,7 +168,7 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.md5)
+    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.md5)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -187,7 +187,7 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha256)
+    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha256)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -206,7 +206,7 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha512)
+    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha512)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -225,7 +225,7 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_256)
+    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_256)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -244,7 +244,7 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_512)
+    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_512)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -263,7 +263,7 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_128)
+    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_128)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -282,7 +282,7 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_256)
+    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_256)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -301,7 +301,7 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).bla
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2b)
+    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2b)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -320,7 +320,7 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).bla
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2s)
+    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2s)
 
     ```
     >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
@@ -335,10 +335,10 @@ IndexMinute.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).bla
 
     ```
 
-[IndexMinute](index_minute.html#api-detail-indexminute): [Constructor](index_minute-constructor.html#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-detail-indexminute-attribute) | [Method](index_minute-method.html#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.html#api-detail-indexminute-display) | [Selector](index_minute-selector.html#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.html#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-detail-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](index_minute-method.md#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.md#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-detail-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-accessor_regular_expression.html "Detail: IndexMinute: Accessor Regular Expression")
-[Next](index_minute-accessor_type_clinic.html "Detail: IndexMinute: Accessor Type Clinic")
+[Previous](index_minute-accessor_regular_expression.md "Detail: IndexMinute: Accessor Regular Expression")
+[Next](index_minute-accessor_type_clinic.md "Detail: IndexMinute: Accessor Type Clinic")
 
 ---
 

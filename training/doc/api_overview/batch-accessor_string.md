@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: Batch: Accessor String
 * [View page source](../_sources/api_overview/batch-accessor_string.rst.txt)
 
-[Previous](batch-accessor_datetime.html "Overview: Batch: Accessor Datetime")
-[Next](batch-accessor_transpose.html "Overview: Batch: Accessor Transpose")
+[Previous](batch-accessor_datetime.md "Overview: Batch: Accessor Datetime")
+[Next](batch-accessor_transpose.md "Overview: Batch: Accessor Transpose")
 
 ---
 
 # Overview: Batch: Accessor String[](#overview-batch-accessor-string "Link to this heading")
 
-[Detail: Batch: Accessor String](../api_detail/batch-accessor_string.html#api-detail-batch-accessor-string)
+[Detail: Batch: Accessor String](../api_detail/batch-accessor_string.md#api-detail-batch-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-getitem) | `Batch.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-capitalize) | `Batch.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-center) | `Batch.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-contains) | `Batch.via_str.contains(item)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-count) | `Batch.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-decode) | `Batch.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-encode) | `Batch.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-endswith) | `Batch.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-find) | `Batch.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-format) | `Batch.via_str.format(format)` | For each element, return a string resulting from calling the format argument’s f… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-index) | `Batch.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-isalnum) | `Batch.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-isalpha) | `Batch.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-isdecimal) | `Batch.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-isdigit) | `Batch.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-islower) | `Batch.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-isnumeric) | `Batch.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-isspace) | `Batch.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-istitle) | `Batch.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-isupper) | `Batch.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-ljust) | `Batch.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-len) | `Batch.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-lower) | `Batch.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-lstrip) | `Batch.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-partition) | `Batch.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-replace) | `Batch.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-rfind) | `Batch.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-rindex) | `Batch.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-rjust) | `Batch.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-rpartition) | `Batch.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-rsplit) | `Batch.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-rstrip) | `Batch.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-split) | `Batch.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-startswith) | `Batch.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-strip) | `Batch.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-swapcase) | `Batch.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-title) | `Batch.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-upper) | `Batch.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/batch-accessor_string.html#api-sig-batch-via-str-zfill) | `Batch.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-getitem) | `Batch.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-capitalize) | `Batch.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-center) | `Batch.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-contains) | `Batch.via_str.contains(item)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-count) | `Batch.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-decode) | `Batch.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-encode) | `Batch.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-endswith) | `Batch.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-find) | `Batch.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-format) | `Batch.via_str.format(format)` | For each element, return a string resulting from calling the format argument’s f… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-index) | `Batch.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-isalnum) | `Batch.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-isalpha) | `Batch.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-isdecimal) | `Batch.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-isdigit) | `Batch.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-islower) | `Batch.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-isnumeric) | `Batch.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-isspace) | `Batch.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-istitle) | `Batch.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-isupper) | `Batch.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-ljust) | `Batch.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-len) | `Batch.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-lower) | `Batch.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-lstrip) | `Batch.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-partition) | `Batch.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-replace) | `Batch.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-rfind) | `Batch.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-rindex) | `Batch.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-rjust) | `Batch.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-rpartition) | `Batch.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-rsplit) | `Batch.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-rstrip) | `Batch.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-split) | `Batch.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-startswith) | `Batch.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-strip) | `Batch.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-swapcase) | `Batch.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-title) | `Batch.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-upper) | `Batch.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/batch-accessor_string.md#api-sig-batch-via-str-zfill) | `Batch.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[Batch](batch.html#api-overview-batch): [Constructor](batch-constructor.html#api-overview-batch-constructor) | [Exporter](batch-exporter.html#api-overview-batch-exporter) | [Attribute](batch-attribute.html#api-overview-batch-attribute) | [Method](batch-method.html#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-overview-batch-dictionary-like) | [Display](batch-display.html#api-overview-batch-display) | [Selector](batch-selector.html#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.html#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-overview-batch-accessor-datetime) | [Accessor String](#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-overview-batch-accessor-reduce)
+[Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](batch-attribute.md#api-overview-batch-attribute) | [Method](batch-method.md#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-overview-batch-dictionary-like) | [Display](batch-display.md#api-overview-batch-display) | [Selector](batch-selector.md#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.md#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-overview-batch-accessor-datetime) | [Accessor String](#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 
-[Previous](batch-accessor_datetime.html "Overview: Batch: Accessor Datetime")
-[Next](batch-accessor_transpose.html "Overview: Batch: Accessor Transpose")
+[Previous](batch-accessor_datetime.md "Overview: Batch: Accessor Datetime")
+[Next](batch-accessor_transpose.md "Overview: Batch: Accessor Transpose")
 
 ---
 

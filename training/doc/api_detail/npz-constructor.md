@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Detail: NPZ: Constructor
 * [View page source](../_sources/api_detail/npz-constructor.rst.txt)
 
-[Previous](index_auto_constructor_factory-display.html "Detail: IndexAutoConstructorFactory: Display")
-[Next](npz-attribute.html "Detail: NPZ: Attribute")
+[Previous](index_auto_constructor_factory-display.md "Detail: IndexAutoConstructorFactory: Display")
+[Next](npz-attribute.md "Detail: NPZ: Attribute")
 
 ---
 
 # Detail: NPZ: Constructor[](#detail-npz-constructor "Link to this heading")
 
-[Overview: NPZ: Constructor](../api_overview/npz-constructor.html#api-overview-npz-constructor)
+[Overview: NPZ: Constructor](../api_overview/npz-constructor.md#api-overview-npz-constructor)
 
 NPZ.\_\_init\_\_(*fp*, *mode='r'*)[](#static_frame.NPZ.__init__ "Link to this definition")
 
 NPZ.from\_arrays(*blocks*, *\**, *index=None*, *columns=None*, *name=None*, *axis=0*)[](#static_frame.NPZ.from_arrays "Link to this definition")
-:   Given an iterable of arrays, write out an NPZ or NPY directly, without building up intermediary [`Frame`](frame-selector.html#Frame "Frame"). If axis 0, the arrays are vertically stacked; if axis 1, they are horizontally stacked. For both axis, if included, indices must be of appropriate length.
+:   Given an iterable of arrays, write out an NPZ or NPY directly, without building up intermediary [`Frame`](frame-selector.md#Frame "Frame"). If axis 0, the arrays are vertically stacked; if axis 1, they are horizontally stacked. For both axis, if included, indices must be of appropriate length.
 
     Parameters:
     :   * **blocks** –
         * **\*** –
-        * **index** – An array, [`Index`](index-selector.html#Index "Index"), or [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
-        * **columns** – An array, [`Index`](index-selector.html#Index "Index"), or [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+        * **index** – An array, [`Index`](index-selector.md#Index "Index"), or [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
+        * **columns** – An array, [`Index`](index-selector.md#Index "Index"), or [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
         * **name** –
         * **axis** –
 
@@ -170,10 +170,10 @@ NPZ.from\_frames(*frames*, *\**, *include\_index=True*, *include\_columns=True*,
         * **name** –
         * **fill\_value** –
 
-[NPZ](npz.html#api-detail-npz): [Constructor](#api-detail-npz-constructor) | [Attribute](npz-attribute.html#api-detail-npz-attribute) | [Method](npz-method.html#api-detail-npz-method) | [Display](npz-display.html#api-detail-npz-display)
+[NPZ](npz.md#api-detail-npz): [Constructor](#api-detail-npz-constructor) | [Attribute](npz-attribute.md#api-detail-npz-attribute) | [Method](npz-method.md#api-detail-npz-method) | [Display](npz-display.md#api-detail-npz-display)
 
-[Previous](index_auto_constructor_factory-display.html "Detail: IndexAutoConstructorFactory: Display")
-[Next](npz-attribute.html "Detail: NPZ: Attribute")
+[Previous](index_auto_constructor_factory-display.md "Detail: IndexAutoConstructorFactory: Display")
+[Next](npz-attribute.md "Detail: NPZ: Attribute")
 
 ---
 

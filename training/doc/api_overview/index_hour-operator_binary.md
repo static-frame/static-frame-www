@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexHour: Operator Binary
 * [View page source](../_sources/api_overview/index_hour-operator_binary.rst.txt)
 
-[Previous](index_hour-iterator.html "Overview: IndexHour: Iterator")
-[Next](index_hour-operator_unary.html "Overview: IndexHour: Operator Unary")
+[Previous](index_hour-iterator.md "Overview: IndexHour: Iterator")
+[Next](index_hour-operator_unary.md "Overview: IndexHour: Operator Unary")
 
 ---
 
 # Overview: IndexHour: Operator Binary[](#overview-indexhour-operator-binary "Link to this heading")
 
-[Detail: IndexHour: Operator Binary](../api_detail/index_hour-operator_binary.html#api-detail-indexhour-operator-binary)
+[Detail: IndexHour: Operator Binary](../api_detail/index_hour-operator_binary.md#api-detail-indexhour-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-add) | `IndexHour.__add__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-and) | `IndexHour.__and__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-eq) | `IndexHour.__eq__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-floordiv) | `IndexHour.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-ge) | `IndexHour.__ge__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-gt) | `IndexHour.__gt__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-le) | `IndexHour.__le__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-lt) | `IndexHour.__lt__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-matmul) | `IndexHour.__matmul__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-mod) | `IndexHour.__mod__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-mul) | `IndexHour.__mul__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-ne) | `IndexHour.__ne__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-or) | `IndexHour.__or__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-pow) | `IndexHour.__pow__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-radd) | `IndexHour.__radd__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-rfloordiv) | `IndexHour.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-rmatmul) | `IndexHour.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-rmul) | `IndexHour.__rmul__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-rshift) | `IndexHour.__rshift__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-rsub) | `IndexHour.__rsub__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-rtruediv) | `IndexHour.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-sub) | `IndexHour.__sub__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-truediv) | `IndexHour.__truediv__(other)` |  |
-| [Detail](../api_detail/index_hour-operator_binary.html#api-sig-indexhour-xor) | `IndexHour.__xor__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-add) | `IndexHour.__add__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-and) | `IndexHour.__and__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-eq) | `IndexHour.__eq__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-floordiv) | `IndexHour.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-ge) | `IndexHour.__ge__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-gt) | `IndexHour.__gt__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-le) | `IndexHour.__le__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-lt) | `IndexHour.__lt__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-matmul) | `IndexHour.__matmul__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-mod) | `IndexHour.__mod__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-mul) | `IndexHour.__mul__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-ne) | `IndexHour.__ne__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-or) | `IndexHour.__or__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-pow) | `IndexHour.__pow__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-radd) | `IndexHour.__radd__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-rfloordiv) | `IndexHour.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-rmatmul) | `IndexHour.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-rmul) | `IndexHour.__rmul__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-rshift) | `IndexHour.__rshift__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-rsub) | `IndexHour.__rsub__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-rtruediv) | `IndexHour.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-sub) | `IndexHour.__sub__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-truediv) | `IndexHour.__truediv__(other)` |  |
+| [Detail](../api_detail/index_hour-operator_binary.md#api-sig-indexhour-xor) | `IndexHour.__xor__(other)` |  |
 
-[IndexHour](index_hour.html#api-overview-indexhour): [Constructor](index_hour-constructor.html#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-overview-indexhour-attribute) | [Method](index_hour-method.html#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.html#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.html#api-overview-indexhour-display) | [Selector](index_hour-selector.html#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.html#api-overview-indexhour-iterator) | [Operator Binary](#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.html#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.html#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.html#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.html#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.html#api-overview-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-overview-indexhour): [Constructor](index_hour-constructor.md#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-overview-indexhour-attribute) | [Method](index_hour-method.md#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.md#api-overview-indexhour-display) | [Selector](index_hour-selector.md#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.md#api-overview-indexhour-iterator) | [Operator Binary](#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-overview-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-iterator.html "Overview: IndexHour: Iterator")
-[Next](index_hour-operator_unary.html "Overview: IndexHour: Operator Unary")
+[Previous](index_hour-iterator.md "Overview: IndexHour: Iterator")
+[Next](index_hour-operator_unary.md "Overview: IndexHour: Operator Unary")
 
 ---
 

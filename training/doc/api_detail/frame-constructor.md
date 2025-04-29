@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: Frame: Constructor
 * [View page source](../_sources/api_detail/frame-constructor.rst.txt)
 
-[Previous](series_he-accessor_type_clinic.html "Detail: SeriesHE: Accessor Type Clinic")
-[Next](frame-exporter.html "Detail: Frame: Exporter")
+[Previous](series_he-accessor_type_clinic.md "Detail: SeriesHE: Accessor Type Clinic")
+[Next](frame-exporter.md "Detail: Frame: Exporter")
 
 ---
 
 # Detail: Frame: Constructor[](#detail-frame-constructor "Link to this heading")
 
-[Overview: Frame: Constructor](../api_overview/frame-constructor.html#api-overview-frame-constructor)
+[Overview: Frame: Constructor](../api_overview/frame-constructor.md#api-overview-frame-constructor)
 
-Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.__init__)[](#static_frame.Frame.__init__ "Link to this definition")
+Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.__init__)[](#static_frame.Frame.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -153,9 +153,9 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **columns** – Optional column initializer. If provided in addition to data values, lengths must be compatible.
         * **index\_constructor** –
         * **columns\_constructor** –
-        * **own\_data** – Flag the data values as ownable by this [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
-        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
-        * **own\_columns** – Flag the passed columns as ownable by this [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
+        * **own\_data** – Flag the data values as ownable by this [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
+        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
+        * **own\_columns** – Flag the passed columns as ownable by this [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame"). Primarily used by internal clients.
 
     ```
     >>> sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -169,19 +169,19 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_arrow(*value*, */*, *\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_arrow)[](#static_frame.Frame.from_arrow "Link to this definition")
+*classmethod* Frame.from\_arrow(*value*, */*, *\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_arrow)[](#static_frame.Frame.from_arrow "Link to this definition")
 :   Realize a `Frame` from an Arrow Table.
 
     Parameters:
     :   * **value** – A `pyarrow.Table` instance.
-        * **index\_depth** – integer specification of how many columns to use in forming the index. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
-        * **columns\_depth** – integer specification of how many rows to use in forming the columns. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+        * **index\_depth** – integer specification of how many columns to use in forming the index. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
+        * **columns\_depth** – integer specification of how many rows to use in forming the columns. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
         * **dtypes** – Optionally provide an iterable of dtypes, equal in length to the length of each row, or a mapping by column name (where overspecied labels is not an error). If a dtype is given as None, element-wise type determination will be used.
         * **name** – A hashable object to label the container.
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -214,14 +214,14 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_clipboard(*\**, *delimiter='\t'*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_clipboard)[](#static_frame.Frame.from_clipboard "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from the contents of the clipboard (assuming a table is stored as delimited file).
+*classmethod* Frame.from\_clipboard(*\**, *delimiter='\t'*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_clipboard)[](#static_frame.Frame.from_clipboard "Link to this definition")
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from the contents of the clipboard (assuming a table is stored as delimited file).
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
-*classmethod* Frame.from\_concat(*frames*, */*, *\**, *axis=0*, *union=True*, *index=None*, *columns=None*, *index\_constructor=None*, *columns\_constructor=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_concat)[](#static_frame.Frame.from_concat "Link to this definition")
-:   Concatenate multiple [`Frame`](frame-selector.html#Frame "Frame") or [`Series`](series-selector.html#Series "Series") into a new [`Frame`](frame-selector.html#Frame "Frame"). If index or columns are provided and appropriately sized, the resulting [`Frame`](frame-selector.html#Frame "Frame") will use those indices. If the axis along concatenation (index for axis 0, columns for axis 1) is unique after concatenation, it will be preserved; otherwise, a new index or an [`IndexAutoFactory`](index_auto_factory.html#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") must be supplied.
+*classmethod* Frame.from\_concat(*frames*, */*, *\**, *axis=0*, *union=True*, *index=None*, *columns=None*, *index\_constructor=None*, *columns\_constructor=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_concat)[](#static_frame.Frame.from_concat "Link to this definition")
+:   Concatenate multiple [`Frame`](frame-selector.md#Frame "Frame") or [`Series`](series-selector.md#Series "Series") into a new [`Frame`](frame-selector.md#Frame "Frame"). If index or columns are provided and appropriately sized, the resulting [`Frame`](frame-selector.md#Frame "Frame") will use those indices. If the axis along concatenation (index for axis 0, columns for axis 1) is unique after concatenation, it will be preserved; otherwise, a new index or an [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") must be supplied.
 
     Parameters:
     :   * **frames** – Iterable of Frames.
@@ -235,7 +235,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -278,11 +278,11 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_concat\_items(*items*, */*, *\**, *axis=0*, *union=True*, *name=None*, *fill\_value=nan*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_concat_items)[](#static_frame.Frame.from_concat_items "Link to this definition")
-:   Produce a [`Frame`](frame-selector.html#Frame "Frame") with a hierarchical index from an iterable of pairs of labels, [`Frame`](frame-selector.html#Frame "Frame"). The [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") is formed from the provided labels and the [`Index`](index-selector.html#Index "Index") if each [`Frame`](frame-selector.html#Frame "Frame").
+*classmethod* Frame.from\_concat\_items(*items*, */*, *\**, *axis=0*, *union=True*, *name=None*, *fill\_value=nan*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_concat_items)[](#static_frame.Frame.from_concat_items "Link to this definition")
+:   Produce a [`Frame`](frame-selector.md#Frame "Frame") with a hierarchical index from an iterable of pairs of labels, [`Frame`](frame-selector.md#Frame "Frame"). The [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") is formed from the provided labels and the [`Index`](index-selector.md#Index "Index") if each [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
-    :   * **items** – Iterable of pairs of label, [`Frame`](frame-selector.html#Frame "Frame")
+    :   * **items** – Iterable of pairs of label, [`Frame`](frame-selector.md#Frame "Frame")
         * **axis** –
         * **union** –
         * **name** –
@@ -333,11 +333,11 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_csv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_csv)[](#static_frame.Frame.from_csv "Link to this definition")
+*classmethod* Frame.from\_csv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_csv)[](#static_frame.Frame.from_csv "Link to this definition")
 :   Specialized version of [`Frame.from_delimited`](#static_frame.Frame.from_delimited "static_frame.Frame.from_delimited") for CSV files.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -368,8 +368,8 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_delimited(*fp*, */*, *\**, *delimiter*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_delimited)[](#static_frame.Frame.from_delimited "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from a file path or a file-like object defining a delimited (CSV, TSV) data file.
+*classmethod* Frame.from\_delimited(*fp*, */*, *\**, *delimiter*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_delimited)[](#static_frame.Frame.from_delimited "Link to this definition")
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from a file path or a file-like object defining a delimited (CSV, TSV) data file.
 
     Parameters:
     :   * **fp** – A file path or a file-like object.
@@ -392,7 +392,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -423,8 +423,8 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_dict(*mapping*, */*, *\**, *index=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_dict)[](#static_frame.Frame.from_dict "Link to this definition")
-:   Create a Frame from a dictionary (or any object that has an items() method) where keys are column labels and values are columns values (either sequence types or [`Series`](series-selector.html#Series "Series")).
+*classmethod* Frame.from\_dict(*mapping*, */*, *\**, *index=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_dict)[](#static_frame.Frame.from_dict "Link to this definition")
+:   Create a Frame from a dictionary (or any object that has an items() method) where keys are column labels and values are columns values (either sequence types or [`Series`](series-selector.md#Series "Series")).
 
     Parameters:
     :   * **mapping** – a dictionary or similar mapping interface.
@@ -449,7 +449,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_dict\_fields(*fields*, */*, *\**, *columns=None*, *dtypes=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_dict_fields)[](#static_frame.Frame.from_dict_fields "Link to this definition")
+*classmethod* Frame.from\_dict\_fields(*fields*, */*, *\**, *columns=None*, *dtypes=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_dict_fields)[](#static_frame.Frame.from_dict_fields "Link to this definition")
 :   Frame constructor from an iterable of dictionaries, where each dictionary represents a column; index labels will be derived from the union of all column dictionary keys.
 
     Parameters:
@@ -461,7 +461,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> sf.Frame.from_dict_fields((dict(a=False, b=False, c=True), dict(a='1517-04-01', b='1517-01-01', c='1517-04-01')), columns=('p', 'q'), dtypes=dict(q=np.datetime64), name='x')
@@ -475,7 +475,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_dict\_records(*records*, */*, *\**, *index=None*, *dtypes=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_dict_records)[](#static_frame.Frame.from_dict_records "Link to this definition")
+*classmethod* Frame.from\_dict\_records(*records*, */*, *\**, *index=None*, *dtypes=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_dict_records)[](#static_frame.Frame.from_dict_records "Link to this definition")
 :   Frame constructor from an iterable of dictionaries, where each dictionary represents a row; column names will be derived from the union of all row dictionary keys.
 
     Parameters:
@@ -487,7 +487,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> sf.Frame.from_dict_records((dict(a=10, b=False, c='1517-01-01'), dict(a=8, b=True, c='1517-04-01')), index=('p', 'q'), dtypes=dict(c=np.datetime64), name='x')
@@ -500,7 +500,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_dict\_records\_items(*items*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_dict_records_items)[](#static_frame.Frame.from_dict_records_items "Link to this definition")
+*classmethod* Frame.from\_dict\_records\_items(*items*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_dict_records_items)[](#static_frame.Frame.from_dict_records_items "Link to this definition")
 :   Frame constructor from iterable of pairs of index label, row, where row is a dictionary. Column names will be derived from the union of all row dictionary keys.
 
     Parameters:
@@ -510,7 +510,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sf.Frame.from_dict_records_items((('p', dict(a=10, b=False, c='1517-01-01')), ('q', dict(a=8, b=True, c='1517-04-01'))), dtypes=dict(c=np.datetime64), name='x')
@@ -523,7 +523,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_element(*element*, */*, *\**, *index*, *columns*, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_element)[](#static_frame.Frame.from_element "Link to this definition")
+*classmethod* Frame.from\_element(*element*, */*, *\**, *index*, *columns*, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_element)[](#static_frame.Frame.from_element "Link to this definition")
 :   Create a Frame from an element, i.e., a single value stored in a single cell. Both `index` and `columns` are required, and cannot be specified with `IndexAutoFactory`.
 
     ```
@@ -538,8 +538,8 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_element\_items(*items*, */*, *\**, *index*, *columns*, *dtype=None*, *axis=None*, *name=None*, *fill\_value=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_element_items)[](#static_frame.Frame.from_element_items "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from an iterable of key, value, where key is a pair of row, column labels.
+*classmethod* Frame.from\_element\_items(*items*, */*, *\**, *index*, *columns*, *dtype=None*, *axis=None*, *name=None*, *fill\_value=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_element_items)[](#static_frame.Frame.from_element_items "Link to this definition")
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from an iterable of key, value, where key is a pair of row, column labels.
 
     This function is partialed (setting the index and columns) and used by `IterNodeDelegate` as the apply constructor for doing application on element iteration.
 
@@ -548,7 +548,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **axis** – when None, items can be in an order; when 0, items must be well-formed and ordered row major; when 1, items must be well-formed and ordered columns major.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sf.Frame.from_element_items(((('a', 0), -1), (('b', 0), 10), (('a', 1), 3), (('b', 'a'), 1)), columns=(0, 1), index=('a', 'b'), name='x', axis=1)
@@ -556,7 +556,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_elements(*elements*, */*, *\**, *index=None*, *columns=None*, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_elements)[](#static_frame.Frame.from_elements "Link to this definition")
+*classmethod* Frame.from\_elements(*elements*, */*, *\**, *index=None*, *columns=None*, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_elements)[](#static_frame.Frame.from_elements "Link to this definition")
 :   Create a Frame from an iterable of elements, to be formed into a `Frame` with a single column.
 
     ```
@@ -572,8 +572,8 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_fields(*fields*, */*, *\**, *index=None*, *columns=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_fields)[](#static_frame.Frame.from_fields "Link to this definition")
-:   Frame constructor from an iterator of columns, where columns are iterables. [`Series`](series-selector.html#Series "Series") can be provided as values if an `index` argument is supplied. This constructor is similar to `from_items()`, though here columns are provided through an independent `columns` argument.
+*classmethod* Frame.from\_fields(*fields*, */*, *\**, *index=None*, *columns=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_fields)[](#static_frame.Frame.from_fields "Link to this definition")
+:   Frame constructor from an iterator of columns, where columns are iterables. [`Series`](series-selector.md#Series "Series") can be provided as values if an `index` argument is supplied. This constructor is similar to `from_items()`, though here columns are provided through an independent `columns` argument.
 
     Parameters:
     :   * **fields** – Iterable of column values.
@@ -584,7 +584,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -599,8 +599,8 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_items(*pairs*, */*, *\**, *index=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_items)[](#static_frame.Frame.from_items "Link to this definition")
-:   Frame constructor from an iterator of pairs, where the first value is the column label and the second value is an iterable of column values. [`Series`](series-selector.html#Series "Series") can be provided as values if an `index` argument is supplied.
+*classmethod* Frame.from\_items(*pairs*, */*, *\**, *index=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_items)[](#static_frame.Frame.from_items "Link to this definition")
+:   Frame constructor from an iterator of pairs, where the first value is the column label and the second value is an iterable of column values. [`Series`](series-selector.md#Series "Series") can be provided as values if an `index` argument is supplied.
 
     Parameters:
     :   * **pairs** – Iterable of pairs of column name, column values.
@@ -613,7 +613,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> sf.Frame.from_items((('a', (10, 2, 8, 3)), ('b', ('qrs ', 'XYZ', '123', ' wX '))), index=('p', 'q', 'r', 's'), name='x')
@@ -628,7 +628,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_json\_columns(*json\_data*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_json_columns)[](#static_frame.Frame.from_json_columns "Link to this definition")
+*classmethod* Frame.from\_json\_columns(*json\_data*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_json_columns)[](#static_frame.Frame.from_json_columns "Link to this definition")
 :   Frame constructor from an in-memory JSON document in the following format: A JSON object keyed by column labels, where values are columns represented by an object mapping of index labels to values.
 
     Parameters:
@@ -638,7 +638,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -685,7 +685,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_json\_index(*json\_data*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_json_index)[](#static_frame.Frame.from_json_index "Link to this definition")
+*classmethod* Frame.from\_json\_index(*json\_data*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_json_index)[](#static_frame.Frame.from_json_index "Link to this definition")
 :   Frame constructor from an in-memory JSON document in the following format: A JSON object keyed by index labels, where values are rows represented by an object mapping of column labels to values.
 
     Parameters:
@@ -695,7 +695,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -744,7 +744,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_json\_records(*json\_data*, */*, *\**, *index=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_json_records)[](#static_frame.Frame.from_json_records "Link to this definition")
+*classmethod* Frame.from\_json\_records(*json\_data*, */*, *\**, *index=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_json_records)[](#static_frame.Frame.from_json_records "Link to this definition")
 :   Frame constructor from an in-memory JSON document in the following format: A JSON array of row objects, where column labels are repeated for each row, and no index labels are included.
 
     Parameters:
@@ -754,7 +754,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -803,7 +803,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_json\_split(*json\_data*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_json_split)[](#static_frame.Frame.from_json_split "Link to this definition")
+*classmethod* Frame.from\_json\_split(*json\_data*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_json_split)[](#static_frame.Frame.from_json_split "Link to this definition")
 :   Frame constructor from an in-memory JSON document in the following format: A JSON object with a key for “columns”, “index”, and “data”, where data is given as an array of arrays of row values.
 
     Parameters:
@@ -813,7 +813,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -875,14 +875,14 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_json\_typed(*json\_data*, */*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_json_typed)[](#static_frame.Frame.from_json_typed "Link to this definition")
+*classmethod* Frame.from\_json\_typed(*json\_data*, */*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_json_typed)[](#static_frame.Frame.from_json_typed "Link to this definition")
 :   Frame constructor from an in-memory JSON document in the following format: A JSON object with a key for “columns”, “index”, and “data”, where data is given as an array of arrays of column values; additionally, a key for “\_\_meta\_\_” defines an object with complete metadata and typing information.
 
     Parameters:
     :   **json\_data** – a string or StringIO of JSON data
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -986,7 +986,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_json\_values(*json\_data*, */*, *\**, *index=None*, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_json_values)[](#static_frame.Frame.from_json_values "Link to this definition")
+*classmethod* Frame.from\_json\_values(*json\_data*, */*, *\**, *index=None*, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_json_values)[](#static_frame.Frame.from_json_values "Link to this definition")
 :   Frame constructor from an in-memory JSON document in the following format: A JSON array of arrays of row values; no index or columns labels are included.
 
     Parameters:
@@ -996,7 +996,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1045,8 +1045,8 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_npy(*fp*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_npy)[](#static_frame.Frame.from_npy "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from an directory of npy files.
+*classmethod* Frame.from\_npy(*fp*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_npy)[](#static_frame.Frame.from_npy "Link to this definition")
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from an directory of npy files.
 
     Parameters:
     :   **fp** – The path to the NPY directory.
@@ -1077,14 +1077,14 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_npy\_mmap(*fp*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_npy_mmap)[](#static_frame.Frame.from_npy_mmap "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from an directory of npy files using memory maps.
+*classmethod* Frame.from\_npy\_mmap(*fp*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_npy_mmap)[](#static_frame.Frame.from_npy_mmap "Link to this definition")
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from an directory of npy files using memory maps.
 
     Parameters:
     :   **fp** – The path to the NPY directory.
 
     Returns:
-    :   A tuple of [`Frame`](frame-selector.html#Frame "Frame") and the callable needed to close the open memory map objects. On some platforms this must be called before the process exits.
+    :   A tuple of [`Frame`](frame-selector.md#Frame "Frame") and the callable needed to close the open memory map objects. On some platforms this must be called before the process exits.
 
     ```
     >>> f1 = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1114,8 +1114,8 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_npz(*fp*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_npz)[](#static_frame.Frame.from_npz "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from an npz file.
+*classmethod* Frame.from\_npz(*fp*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_npz)[](#static_frame.Frame.from_npz "Link to this definition")
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from an npz file.
 
     ```
     >>> f1 = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1141,13 +1141,13 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_overlay(*containers*, */*, *\**, *index=None*, *columns=None*, *union=True*, *name=None*, *func=<function isna\_array>*, *fill\_value=<object object>*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_overlay)[](#static_frame.Frame.from_overlay "Link to this definition")
-:   Return a new [`Frame`](frame-selector.html#Frame "Frame") made by overlaying containers, filling in values with aligned values from subsequent containers. Values are filled based on a passed function that must return a Boolean array. By default, that function is isna\_array, returning True for missing values (NaN and None).
+*classmethod* Frame.from\_overlay(*containers*, */*, *\**, *index=None*, *columns=None*, *union=True*, *name=None*, *func=<function isna\_array>*, *fill\_value=<object object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_overlay)[](#static_frame.Frame.from_overlay "Link to this definition")
+:   Return a new [`Frame`](frame-selector.md#Frame "Frame") made by overlaying containers, filling in values with aligned values from subsequent containers. Values are filled based on a passed function that must return a Boolean array. By default, that function is isna\_array, returning True for missing values (NaN and None).
 
     Parameters:
-    :   * **containers** – Iterable of [`Frame`](frame-selector.html#Frame "Frame").
-        * **index** – An optional [`Index`](index-selector.html#Index "Index"), [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy"), or index initializer, to be used as the index upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.html#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
-        * **columns** – An optional [`Index`](index-selector.html#Index "Index"), [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy"), or columns initializer, to be used as the columns upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.html#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
+    :   * **containers** – Iterable of [`Frame`](frame-selector.md#Frame "Frame").
+        * **index** – An optional [`Index`](index-selector.md#Index "Index"), [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"), or index initializer, to be used as the index upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
+        * **columns** – An optional [`Index`](index-selector.md#Index "Index"), [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"), or columns initializer, to be used as the columns upon which all containers are aligned. [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is not supported.
         * **union** – If True, and no `index` or `columns` argument is supplied, a union index or columns from `containers` will be used; if False, the intersection index or columns will be used.
         * **name** –
         * **func** – A function that takes an array and returns a same-sized Boolean array, where True indicates availability for insertion.
@@ -1183,19 +1183,19 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_pandas(*value*, */*, *\**, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*, *own\_data=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_pandas)[](#static_frame.Frame.from_pandas "Link to this definition")
+*classmethod* Frame.from\_pandas(*value*, */*, *\**, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*, *own\_data=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_pandas)[](#static_frame.Frame.from_pandas "Link to this definition")
 :   Given a Pandas DataFrame, return a Frame.
 
     Parameters:
     :   * **value** – Pandas DataFrame.
-        * **index\_constructor** – Optional class or constructor function to create the [`Index`](index-selector.html#Index "Index") applied to the rows.
-        * **columns\_constructor** – Optional class or constructor function to create the [`Index`](index-selector.html#Index "Index") applied to the columns.
+        * **index\_constructor** – Optional class or constructor function to create the [`Index`](index-selector.md#Index "Index") applied to the rows.
+        * **columns\_constructor** – Optional class or constructor function to create the [`Index`](index-selector.md#Index "Index") applied to the columns.
         * **dtypes** –
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
         * **own\_data** – If True, the underlying NumPy data array will be made immutable and used without a copy.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> f1 = sf.Frame.from_fields(((10, 2, 8, 3), ('qrs ', 'XYZ', '123', ' wX ')), columns=('a', 'b'), index=('p', 'q', 'r', 's'), name='x')
@@ -1227,15 +1227,15 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_parquet(*fp*, */*, *\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_select=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_parquet)[](#static_frame.Frame.from_parquet "Link to this definition")
+*classmethod* Frame.from\_parquet(*fp*, */*, *\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_select=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_parquet)[](#static_frame.Frame.from_parquet "Link to this definition")
 :   Realize a `Frame` from a Parquet file.
 
     Parameters:
     :   * **fp** – A string file path or `Path` instance.
-        * **index\_depth** – integer specification of how many columns to use in forming the index. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+        * **index\_depth** – integer specification of how many columns to use in forming the index. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
         * **index\_name\_depth\_level** –
         * **index\_constructors** –
-        * **columns\_depth** – integer specification of how many rows to use in forming the columns. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy").
+        * **columns\_depth** – integer specification of how many rows to use in forming the columns. A value of 0 will select none; a value greater than 1 will create an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy").
         * **columns\_name\_depth\_level** –
         * **columns\_constructors** –
         * **columns\_select** – An optional iterable of column names to load.
@@ -1267,8 +1267,8 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_pickle(*fp*, */*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_pickle)[](#static_frame.Frame.from_pickle "Link to this definition")
-:   Create a [`Frame`](frame-selector.html#Frame "Frame") from a pickle file.
+*classmethod* Frame.from\_pickle(*fp*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_pickle)[](#static_frame.Frame.from_pickle "Link to this definition")
+:   Create a [`Frame`](frame-selector.md#Frame "Frame") from a pickle file.
 
     The pickle module is not secure. Only unpickle data you trust.
 
@@ -1299,8 +1299,8 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_records(*records*, */*, *\**, *index=None*, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_records)[](#static_frame.Frame.from_records "Link to this definition")
-:   Construct a [`Frame`](frame-selector.html#Frame "Frame") from an iterable of rows, where rows are defined as iterables, including tuples, lists, and arrays. If each row is a NamedTuple, and `columns` is not provided, column names will be derived from the NamedTuple fields.
+*classmethod* Frame.from\_records(*records*, */*, *\**, *index=None*, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_records)[](#static_frame.Frame.from_records "Link to this definition")
+:   Construct a [`Frame`](frame-selector.md#Frame "Frame") from an iterable of rows, where rows are defined as iterables, including tuples, lists, and arrays. If each row is a NamedTuple, and `columns` is not provided, column names will be derived from the NamedTuple fields.
 
     Supplying `dtypes` will significantly improve performance, as otherwise columnar array types must be derived by element-wise examination.
 
@@ -1315,7 +1315,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`Frame`](frame-selector.html#Frame "Frame")
+    :   [`Frame`](frame-selector.md#Frame "Frame")
 
     ```
     >>> sf.Frame.from_records(((10, False, '1517-01-01'), (8, True,'1517-04-01')), index=('p', 'q'), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1328,7 +1328,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_records\_items(*items*, */*, *\**, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_records_items)[](#static_frame.Frame.from_records_items "Link to this definition")
+*classmethod* Frame.from\_records\_items(*items*, */*, *\**, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_records_items)[](#static_frame.Frame.from_records_items "Link to this definition")
 :   Frame constructor from iterable of pairs of index value, row (where row is an iterable).
 
     Parameters:
@@ -1339,7 +1339,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sf.Frame.from_records_items((('p', (10, False, '1517-01-01')), ('q', (8, True,'1517-04-01'))), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -1352,7 +1352,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_series(*series*, */*, *\**, *name=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_series)[](#static_frame.Frame.from_series "Link to this definition")
+*classmethod* Frame.from\_series(*series*, */*, *\**, *name=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_series)[](#static_frame.Frame.from_series "Link to this definition")
 :   Frame constructor from a Series:
 
     Parameters:
@@ -1378,7 +1378,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_sql(*query*, */*, *\**, *connection*, *index\_depth=0*, *index\_constructors=None*, *columns\_depth=1*, *columns\_select=None*, *columns\_constructors=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *parameters=()*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_sql)[](#static_frame.Frame.from_sql "Link to this definition")
+*classmethod* Frame.from\_sql(*query*, */*, *\**, *connection*, *index\_depth=0*, *index\_constructors=None*, *columns\_depth=1*, *columns\_select=None*, *columns\_constructors=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *parameters=()*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_sql)[](#static_frame.Frame.from_sql "Link to this definition")
 :   Frame constructor from an SQL query and a database connection object.
 
     Parameters:
@@ -1418,7 +1418,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_sqlite(*fp*, */*, *\**, *label*, *index\_depth=0*, *index\_constructors=None*, *columns\_depth=1*, *columns\_constructors=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_sqlite)[](#static_frame.Frame.from_sqlite "Link to this definition")
+*classmethod* Frame.from\_sqlite(*fp*, */*, *\**, *label*, *index\_depth=0*, *index\_constructors=None*, *columns\_depth=1*, *columns\_constructors=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_sqlite)[](#static_frame.Frame.from_sqlite "Link to this definition")
 :   Load Frame from the contents of a table in an SQLite database file.
 
     ```
@@ -1445,7 +1445,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_structured\_array(*array*, */*, *\**, *index\_depth=0*, *index\_column\_first=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_constructors=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_structured_array)[](#static_frame.Frame.from_structured_array "Link to this definition")
+*classmethod* Frame.from\_structured\_array(*array*, */*, *\**, *index\_depth=0*, *index\_column\_first=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_constructors=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_structured_array)[](#static_frame.Frame.from_structured_array "Link to this definition")
 :   Convert a NumPy structed array into a Frame.
 
     Parameters:
@@ -1457,7 +1457,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
         * **consolidate\_blocks** – Optionally consolidate adjacent same-typed columns into contiguous arrays.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> sa = np.array([(False, 8), (True, 19)], dtype=[('a', bool), ('b', int)])
@@ -1473,11 +1473,11 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_tsv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_tsv)[](#static_frame.Frame.from_tsv "Link to this definition")
+*classmethod* Frame.from\_tsv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_tsv)[](#static_frame.Frame.from_tsv "Link to this definition")
 :   Specialized version of [`Frame.from_delimited`](#static_frame.Frame.from_delimited "static_frame.Frame.from_delimited") for TSV files.
 
     Returns:
-    :   [`static_frame.Frame`](frame.html#static_frame.Frame "static_frame.Frame")
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
     ```
     >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -1508,7 +1508,7 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-*classmethod* Frame.from\_xlsx(*fp*, */*, *\**, *label=<object object>*, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*, *skip\_header=0*, *skip\_footer=0*, *trim\_nadir=False*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.html#Frame.from_xlsx)[](#static_frame.Frame.from_xlsx "Link to this definition")
+*classmethod* Frame.from\_xlsx(*fp*, */*, *\**, *label=<object object>*, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*, *skip\_header=0*, *skip\_footer=0*, *trim\_nadir=False*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.from_xlsx)[](#static_frame.Frame.from_xlsx "Link to this definition")
 :   Load Frame from the contents of a sheet in an XLSX workbook.
 
     Parameters:
@@ -1536,10 +1536,10 @@ Frame.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=Non
 
     ```
 
-[Frame](frame.html#api-detail-frame): [Constructor](#api-detail-frame-constructor) | [Exporter](frame-exporter.html#api-detail-frame-exporter) | [Attribute](frame-attribute.html#api-detail-frame-attribute) | [Method](frame-method.html#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-detail-frame-dictionary-like) | [Display](frame-display.html#api-detail-frame-display) | [Assignment](frame-assignment.html#api-detail-frame-assignment) | [Selector](frame-selector.html#api-detail-frame-selector) | [Iterator](frame-iterator.html#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-detail-frame-accessor-reduce)
+[Frame](frame.md#api-detail-frame): [Constructor](#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)
 
-[Previous](series_he-accessor_type_clinic.html "Detail: SeriesHE: Accessor Type Clinic")
-[Next](frame-exporter.html "Detail: Frame: Exporter")
+[Previous](series_he-accessor_type_clinic.md "Detail: SeriesHE: Accessor Type Clinic")
+[Next](frame-exporter.md "Detail: Frame: Exporter")
 
 ---
 

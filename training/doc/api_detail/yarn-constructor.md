@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: Yarn: Constructor
 * [View page source](../_sources/api_detail/yarn-constructor.rst.txt)
 
-[Previous](batch-accessor_reduce.html "Detail: Batch: Accessor Reduce")
-[Next](yarn-exporter.html "Detail: Yarn: Exporter")
+[Previous](batch-accessor_reduce.md "Detail: Batch: Accessor Reduce")
+[Next](yarn-exporter.md "Detail: Yarn: Exporter")
 
 ---
 
 # Detail: Yarn: Constructor[](#detail-yarn-constructor "Link to this heading")
 
-[Overview: Yarn: Constructor](../api_overview/yarn-constructor.html#api-overview-yarn-constructor)
+[Overview: Yarn: Constructor](../api_overview/yarn-constructor.md#api-overview-yarn-constructor)
 
-Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, *deepcopy\_from\_bus=False*, *indexer=None*, *hierarchy=None*, *name=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.__init__)[](#static_frame.Yarn.__init__ "Link to this definition")
+Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, *deepcopy\_from\_bus=False*, *indexer=None*, *hierarchy=None*, *name=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.__init__)[](#static_frame.Yarn.__init__ "Link to this definition")
 :   Parameters:
-    :   * **series** – An iterable (or [`Series`](series-selector.html#Series "Series")) of [`Bus`](bus-selector.html#Bus "Bus"). The length of this container may not be the same as `index`, if provided.
-        * **index** – Optionally provide an index for the [`Frame`](frame-selector.html#Frame "Frame") contained in all [`Bus`](bus-selector.html#Bus "Bus").
+    :   * **series** – An iterable (or [`Series`](series-selector.md#Series "Series")) of [`Bus`](bus-selector.md#Bus "Bus"). The length of this container may not be the same as `index`, if provided.
+        * **index** – Optionally provide an index for the [`Frame`](frame-selector.md#Frame "Frame") contained in all [`Bus`](bus-selector.md#Bus "Bus").
         * **index\_constructor** –
         * **deepcopy\_from\_bus** –
         * **hierarchy** – Optionally provide a depth-two IndexHierarchy constructed from Bus integer positions on the outer level, and contained Frame labels on the inner level.
@@ -181,8 +181,8 @@ Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, 
 
     ```
 
-*classmethod* Yarn.from\_buses(*buses*, */*, *\**, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.from_buses)[](#static_frame.Yarn.from_buses "Link to this definition")
-:   Return a [`Yarn`](yarn-selector.html#Yarn "Yarn") from an iterable of [`Bus`](bus-selector.html#Bus "Bus"); labels will be drawn from [`Bus.name`](bus-attribute.html#static_frame.Bus.name "static_frame.Bus.name").
+*classmethod* Yarn.from\_buses(*buses*, */*, *\**, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.from_buses)[](#static_frame.Yarn.from_buses "Link to this definition")
+:   Return a [`Yarn`](yarn-selector.md#Yarn "Yarn") from an iterable of [`Bus`](bus-selector.md#Bus "Bus"); labels will be drawn from [`Bus.name`](bus-attribute.md#static_frame.Bus.name "static_frame.Bus.name").
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -218,8 +218,8 @@ Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, 
 
     ```
 
-*classmethod* Yarn.from\_concat(*containers*, */*, *\**, *index=None*, *name=<object object>*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.html#Yarn.from_concat)[](#static_frame.Yarn.from_concat "Link to this definition")
-:   Concatenate multiple [`Yarn`](yarn-selector.html#Yarn "Yarn") into a new [`Yarn`](yarn-selector.html#Yarn "Yarn"). Loaded status of [`Frame`](frame-selector.html#Frame "Frame") within each [`Bus`](bus-selector.html#Bus "Bus") will not be altered.
+*classmethod* Yarn.from\_concat(*containers*, */*, *\**, *index=None*, *name=<object object>*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.from_concat)[](#static_frame.Yarn.from_concat "Link to this definition")
+:   Concatenate multiple [`Yarn`](yarn-selector.md#Yarn "Yarn") into a new [`Yarn`](yarn-selector.md#Yarn "Yarn"). Loaded status of [`Frame`](frame-selector.md#Frame "Frame") within each [`Bus`](bus-selector.md#Bus "Bus") will not be altered.
 
     Parameters:
     :   * **containers** –
@@ -284,10 +284,10 @@ Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, 
 
     ```
 
-[Yarn](yarn.html#api-detail-yarn): [Constructor](#api-detail-yarn-constructor) | [Exporter](yarn-exporter.html#api-detail-yarn-exporter) | [Attribute](yarn-attribute.html#api-detail-yarn-attribute) | [Method](yarn-method.html#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like) | [Display](yarn-display.html#api-detail-yarn-display) | [Selector](yarn-selector.html#api-detail-yarn-selector) | [Iterator](yarn-iterator.html#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-detail-yarn): [Constructor](#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
-[Previous](batch-accessor_reduce.html "Detail: Batch: Accessor Reduce")
-[Next](yarn-exporter.html "Detail: Yarn: Exporter")
+[Previous](batch-accessor_reduce.md "Detail: Batch: Accessor Reduce")
+[Next](yarn-exporter.md "Detail: Yarn: Exporter")
 
 ---
 

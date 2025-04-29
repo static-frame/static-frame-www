@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: WWW: Constructor
 * [View page source](../_sources/api_overview/www-constructor.rst.txt)
 
-[Previous](require-constructor.html "Overview: Require: Constructor")
-[Next](fill_value_auto-constructor.html "Overview: FillValueAuto: Constructor")
+[Previous](require-constructor.md "Overview: Require: Constructor")
+[Next](fill_value_auto-constructor.md "Overview: FillValueAuto: Constructor")
 
 ---
 
 # Overview: WWW: Constructor[](#overview-www-constructor "Link to this heading")
 
-[Detail: WWW: Constructor](../api_detail/www-constructor.html#api-detail-www-constructor)
+[Detail: WWW: Constructor](../api_detail/www-constructor.md#api-detail-www-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/www-constructor.html#api-sig-www-from-file) | `WWW.from_file(url, *, encoding, in_memory, buffer_size, fp)` | Given a URL, return a loadable component, either as an in-memory store (a String… |
-| [Detail](../api_detail/www-constructor.html#api-sig-www-from-gzip) | `WWW.from_gzip(url, *, encoding, in_memory, buffer_size, fp)` | Given a URL, return a loadable component, either as an in-memory store (a String… |
-| [Detail](../api_detail/www-constructor.html#api-sig-www-from-zip) | `WWW.from_zip(url, *, encoding, in_memory, buffer_size, fp, component)` | Given a URL, return a loadable component, either as an in-memory store (a String… |
+| [Detail](../api_detail/www-constructor.md#api-sig-www-from-file) | `WWW.from_file(url, *, encoding, in_memory, buffer_size, fp)` | Given a URL, return a loadable component, either as an in-memory store (a String… |
+| [Detail](../api_detail/www-constructor.md#api-sig-www-from-gzip) | `WWW.from_gzip(url, *, encoding, in_memory, buffer_size, fp)` | Given a URL, return a loadable component, either as an in-memory store (a String… |
+| [Detail](../api_detail/www-constructor.md#api-sig-www-from-zip) | `WWW.from_zip(url, *, encoding, in_memory, buffer_size, fp, component)` | Given a URL, return a loadable component, either as an in-memory store (a String… |
 
-[WWW](www.html#api-overview-www): [Constructor](#api-overview-www-constructor)
+[WWW](www.md#api-overview-www): [Constructor](#api-overview-www-constructor)
 
-[Previous](require-constructor.html "Overview: Require: Constructor")
-[Next](fill_value_auto-constructor.html "Overview: FillValueAuto: Constructor")
+[Previous](require-constructor.md "Overview: Require: Constructor")
+[Next](fill_value_auto-constructor.md "Overview: FillValueAuto: Constructor")
 
 ---
 

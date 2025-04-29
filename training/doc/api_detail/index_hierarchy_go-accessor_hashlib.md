@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexHierarchyGO: Accessor Hashlib
 * [View page source](../_sources/api_detail/index_hierarchy_go-accessor_hashlib.rst.txt)
 
-[Previous](index_hierarchy_go-accessor_regular_expression.html "Detail: IndexHierarchyGO: Accessor Regular Expression")
-[Next](index_hierarchy_go-accessor_type_clinic.html "Detail: IndexHierarchyGO: Accessor Type Clinic")
+[Previous](index_hierarchy_go-accessor_regular_expression.md "Detail: IndexHierarchyGO: Accessor Regular Expression")
+[Next](index_hierarchy_go-accessor_type_clinic.md "Detail: IndexHierarchyGO: Accessor Type Clinic")
 
 ---
 
 # Detail: IndexHierarchyGO: Accessor Hashlib[](#detail-indexhierarchygo-accessor-hashlib "Link to this heading")
 
-[Overview: IndexHierarchyGO: Accessor Hashlib](../api_overview/index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib)
+[Overview: IndexHierarchyGO: Accessor Hashlib](../api_overview/index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib)
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.to_bytes)
+    InterfaceHashlib.to\_bytes()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.to_bytes)
     :   Return the byte signature for this container, suitable for passing to a cryptographic hash function.
 
     ```
@@ -169,7 +169,7 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.md5)
+    InterfaceHashlib.md5()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.md5)
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -189,7 +189,7 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha256)
+    InterfaceHashlib.sha256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha256)
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -209,7 +209,7 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha512)
+    InterfaceHashlib.sha512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha512)
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -229,7 +229,7 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_256)
+    InterfaceHashlib.sha3\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_256)
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -249,7 +249,7 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.sha3_512)
+    InterfaceHashlib.sha3\_512()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.sha3_512)
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -269,7 +269,7 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_128)
+    InterfaceHashlib.shake\_128()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_128)
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -289,7 +289,7 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.shake_256)
+    InterfaceHashlib.shake\_256()[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.shake_256)
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -309,7 +309,7 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2b)
+    InterfaceHashlib.blake2b(*\**, *digest\_size=64*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2b)
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -329,7 +329,7 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
-    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.html#InterfaceHashlib.blake2s)
+    InterfaceHashlib.blake2s(*\**, *digest\_size=32*, *key=b''*, *salt=b''*, *person=b''*, *fanout=1*, *depth=1*, *leaf\_size=0*, *node\_offset=0*, *node\_depth=0*, *inner\_size=0*, *last\_node=False*)[[source]](../_modules/static_frame/core/node_hashlib.md#InterfaceHashlib.blake2s)
 
     ```
     >>> ih = sf.IndexHierarchyGO.from_labels((('qrs ', '4/1/1517'), ('XYZ', '12/31/1517'), ('123', '6/30/1517'), (' wX ', '12/31/2021')))
@@ -345,10 +345,10 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
 
     ```
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-detail-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-accessor_regular_expression.html "Detail: IndexHierarchyGO: Accessor Regular Expression")
-[Next](index_hierarchy_go-accessor_type_clinic.html "Detail: IndexHierarchyGO: Accessor Type Clinic")
+[Previous](index_hierarchy_go-accessor_regular_expression.md "Detail: IndexHierarchyGO: Accessor Regular Expression")
+[Next](index_hierarchy_go-accessor_type_clinic.md "Detail: IndexHierarchyGO: Accessor Type Clinic")
 
 ---
 

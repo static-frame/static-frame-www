@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexYearGO: Display
 * [View page source](../_sources/api_overview/index_year_go-display.rst.txt)
 
-[Previous](index_year_go-dictionary_like.html "Overview: IndexYearGO: Dictionary-Like")
-[Next](index_year_go-selector.html "Overview: IndexYearGO: Selector")
+[Previous](index_year_go-dictionary_like.md "Overview: IndexYearGO: Dictionary-Like")
+[Next](index_year_go-selector.md "Overview: IndexYearGO: Selector")
 
 ---
 
 # Overview: IndexYearGO: Display[](#overview-indexyeargo-display "Link to this heading")
 
-[Detail: IndexYearGO: Display](../api_detail/index_year_go-display.html#api-detail-indexyeargo-display)
+[Detail: IndexYearGO: Display](../api_detail/index_year_go-display.md#api-detail-indexyeargo-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_go-display.html#api-sig-indexyeargo-interface) | [`IndexYearGO.interface`](../api_detail/index_year_go-display.html#IndexYearGO.interface "IndexYearGO.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_year_go-display.html#api-sig-indexyeargo-repr) | `IndexYearGO.__repr__()` |  |
-| [Detail](../api_detail/index_year_go-display.html#api-sig-indexyeargo-str) | `IndexYearGO.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_year_go-display.html#api-sig-indexyeargo-display) | `IndexYearGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_year_go-display.html#api-sig-indexyeargo-display-tall) | `IndexYearGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_year_go-display.html#api-sig-indexyeargo-display-wide) | `IndexYearGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_year_go-display.md#api-sig-indexyeargo-interface) | [`IndexYearGO.interface`](../api_detail/index_year_go-display.md#IndexYearGO.interface "IndexYearGO.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_year_go-display.md#api-sig-indexyeargo-repr) | `IndexYearGO.__repr__()` |  |
+| [Detail](../api_detail/index_year_go-display.md#api-sig-indexyeargo-str) | `IndexYearGO.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_year_go-display.md#api-sig-indexyeargo-display) | `IndexYearGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_year_go-display.md#api-sig-indexyeargo-display-tall) | `IndexYearGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_year_go-display.md#api-sig-indexyeargo-display-wide) | `IndexYearGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](index_year_go-constructor.html#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.html#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-overview-indexyeargo-dictionary-like) | [Display](#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-overview-indexyeargo): [Constructor](index_year_go-constructor.md#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.md#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-overview-indexyeargo-dictionary-like) | [Display](#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.md#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-overview-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-dictionary_like.html "Overview: IndexYearGO: Dictionary-Like")
-[Next](index_year_go-selector.html "Overview: IndexYearGO: Selector")
+[Previous](index_year_go-dictionary_like.md "Overview: IndexYearGO: Dictionary-Like")
+[Next](index_year_go-selector.md "Overview: IndexYearGO: Selector")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: Quilt: Exporter
 * [View page source](../_sources/api_detail/quilt-exporter.rst.txt)
 
-[Previous](quilt-constructor.html "Detail: Quilt: Constructor")
-[Next](quilt-attribute.html "Detail: Quilt: Attribute")
+[Previous](quilt-constructor.md "Detail: Quilt: Constructor")
+[Next](quilt-attribute.md "Detail: Quilt: Attribute")
 
 ---
 
 # Detail: Quilt: Exporter[](#detail-quilt-exporter "Link to this heading")
 
-[Overview: Quilt: Exporter](../api_overview/quilt-exporter.html#api-overview-quilt-exporter)
+[Overview: Quilt: Exporter](../api_overview/quilt-exporter.md#api-overview-quilt-exporter)
 
-Quilt.to\_frame()[[source]](../_modules/static_frame/core/quilt.html#Quilt.to_frame)[](#static_frame.Quilt.to_frame "Link to this definition")
-:   Return a consolidated [`Frame`](frame-selector.html#Frame "Frame").
+Quilt.to\_frame()[[source]](../_modules/static_frame/core/quilt.md#Quilt.to_frame)[](#static_frame.Quilt.to_frame "Link to this definition")
+:   Return a consolidated [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
@@ -172,11 +172,11 @@ Quilt.to\_frame()[[source]](../_modules/static_frame/core/quilt.html#Quilt.to_fr
     ```
 
 Quilt.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Quilt.to_sqlite "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as an SQLite database file.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -197,11 +197,11 @@ Quilt.to\_visidata()[](#static_frame.Quilt.to_visidata "Link to this definiti
 :   Open an interactive VisiData session.
 
 Quilt.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Quilt.to_xlsx "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a XLSX workbook.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a XLSX workbook.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -219,11 +219,11 @@ Quilt.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Quilt.to_xlsx 
     ```
 
 Quilt.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_csv "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of CSV files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of CSV files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -241,11 +241,11 @@ Quilt.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
     ```
 
 Quilt.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_npy "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of NPY files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPY files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -263,11 +263,11 @@ Quilt.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
     ```
 
 Quilt.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_npz "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of NPZ files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPZ files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -285,11 +285,11 @@ Quilt.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
     ```
 
 Quilt.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_parquet "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of parquet files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of parquet files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -307,11 +307,11 @@ Quilt.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#st
     ```
 
 Quilt.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_pickle "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of pickles.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of pickles.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -329,11 +329,11 @@ Quilt.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#sta
     ```
 
 Quilt.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_tsv "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of TSV files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of TSV files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -350,10 +350,10 @@ Quilt.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
 
     ```
 
-[Quilt](quilt.html#api-detail-quilt): [Constructor](quilt-constructor.html#api-detail-quilt-constructor) | [Exporter](#api-detail-quilt-exporter) | [Attribute](quilt-attribute.html#api-detail-quilt-attribute) | [Method](quilt-method.html#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-detail-quilt-dictionary-like) | [Display](quilt-display.html#api-detail-quilt-display) | [Selector](quilt-selector.html#api-detail-quilt-selector) | [Iterator](quilt-iterator.html#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-detail-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)
 
-[Previous](quilt-constructor.html "Detail: Quilt: Constructor")
-[Next](quilt-attribute.html "Detail: Quilt: Attribute")
+[Previous](quilt-constructor.md "Detail: Quilt: Constructor")
+[Next](quilt-attribute.md "Detail: Quilt: Attribute")
 
 ---
 

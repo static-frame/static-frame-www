@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMillisecondGO: Attribute
 * [View page source](../_sources/api_detail/index_millisecond_go-attribute.rst.txt)
 
-[Previous](index_millisecond_go-exporter.html "Detail: IndexMillisecondGO: Exporter")
-[Next](index_millisecond_go-method.html "Detail: IndexMillisecondGO: Method")
+[Previous](index_millisecond_go-exporter.md "Detail: IndexMillisecondGO: Exporter")
+[Next](index_millisecond_go-method.md "Detail: IndexMillisecondGO: Method")
 
 ---
 
 # Detail: IndexMillisecondGO: Attribute[](#detail-indexmillisecondgo-attribute "Link to this heading")
 
-[Overview: IndexMillisecondGO: Attribute](../api_overview/index_millisecond_go-attribute.html#api-overview-indexmillisecondgo-attribute)
+[Overview: IndexMillisecondGO: Attribute](../api_overview/index_millisecond_go-attribute.md#api-overview-indexmillisecondgo-attribute)
 
 IndexMillisecondGO.STATIC *= False*[](#static_frame.IndexMillisecondGO.STATIC "Link to this definition")
 :   ```
@@ -177,7 +177,7 @@ IndexMillisecondGO.index\_types[](#static_frame.IndexMillisecondGO.index_type
 :   Return a Series of Index classes for each index depth.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> ix = sf.IndexMillisecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -190,7 +190,7 @@ IndexMillisecondGO.index\_types[](#static_frame.IndexMillisecondGO.index_type
     ```
 
 IndexMillisecondGO.memory[](#static_frame.IndexMillisecondGO.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -299,10 +299,10 @@ IndexMillisecondGO.size[](#static_frame.IndexMillisecondGO.size "Link to this
 
     ```
 
-[IndexMillisecondGO](index_millisecond_go.html#api-detail-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.html#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.html#api-detail-indexmillisecondgo-exporter) | [Attribute](#api-detail-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.html#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.html#api-detail-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.html#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.html#api-detail-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.html#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.html#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.html#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.html#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.html#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.html#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.html#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.html#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.html#api-detail-indexmillisecondgo-accessor-type-clinic)
+[IndexMillisecondGO](index_millisecond_go.md#api-detail-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.md#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-detail-indexmillisecondgo-exporter) | [Attribute](#api-detail-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.md#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-detail-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.md#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-detail-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-detail-indexmillisecondgo-accessor-type-clinic)
 
-[Previous](index_millisecond_go-exporter.html "Detail: IndexMillisecondGO: Exporter")
-[Next](index_millisecond_go-method.html "Detail: IndexMillisecondGO: Method")
+[Previous](index_millisecond_go-exporter.md "Detail: IndexMillisecondGO: Exporter")
+[Next](index_millisecond_go-method.md "Detail: IndexMillisecondGO: Method")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: MemoryDisplay: Display
 * [View page source](../_sources/api_overview/memory_display-display.rst.txt)
 
-[Previous](memory_display-exporter.html "Overview: MemoryDisplay: Exporter")
-[Next](platform-constructor.html "Overview: Platform: Constructor")
+[Previous](memory_display-exporter.md "Overview: MemoryDisplay: Exporter")
+[Next](platform-constructor.md "Overview: Platform: Constructor")
 
 ---
 
 # Overview: MemoryDisplay: Display[](#overview-memorydisplay-display "Link to this heading")
 
-[Detail: MemoryDisplay: Display](../api_detail/memory_display-display.html#api-detail-memorydisplay-display)
+[Detail: MemoryDisplay: Display](../api_detail/memory_display-display.md#api-detail-memorydisplay-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/memory_display-display.html#api-sig-memorydisplay-repr) | `MemoryDisplay.__repr__()` |  |
-| [Detail](../api_detail/memory_display-display.html#api-sig-memorydisplay-str) | `MemoryDisplay.__str__()` | Return str(self). |
+| [Detail](../api_detail/memory_display-display.md#api-sig-memorydisplay-repr) | `MemoryDisplay.__repr__()` |  |
+| [Detail](../api_detail/memory_display-display.md#api-sig-memorydisplay-str) | `MemoryDisplay.__str__()` | Return str(self). |
 
-[MemoryDisplay](memory_display.html#api-overview-memorydisplay): [Constructor](memory_display-constructor.html#api-overview-memorydisplay-constructor) | [Exporter](memory_display-exporter.html#api-overview-memorydisplay-exporter) | [Display](#api-overview-memorydisplay-display)
+[MemoryDisplay](memory_display.md#api-overview-memorydisplay): [Constructor](memory_display-constructor.md#api-overview-memorydisplay-constructor) | [Exporter](memory_display-exporter.md#api-overview-memorydisplay-exporter) | [Display](#api-overview-memorydisplay-display)
 
-[Previous](memory_display-exporter.html "Overview: MemoryDisplay: Exporter")
-[Next](platform-constructor.html "Overview: Platform: Constructor")
+[Previous](memory_display-exporter.md "Overview: MemoryDisplay: Exporter")
+[Next](platform-constructor.md "Overview: Platform: Constructor")
 
 ---
 

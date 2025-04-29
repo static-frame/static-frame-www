@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexMillisecondGO: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_millisecond_go-accessor_regular_expression.rst.txt)
 
-[Previous](index_millisecond_go-accessor_string.html "Overview: IndexMillisecondGO: Accessor String")
-[Next](index_millisecond_go-accessor_hashlib.html "Overview: IndexMillisecondGO: Accessor Hashlib")
+[Previous](index_millisecond_go-accessor_string.md "Overview: IndexMillisecondGO: Accessor String")
+[Next](index_millisecond_go-accessor_hashlib.md "Overview: IndexMillisecondGO: Accessor Hashlib")
 
 ---
 
 # Overview: IndexMillisecondGO: Accessor Regular Expression[](#overview-indexmillisecondgo-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexMillisecondGO: Accessor Regular Expression](../api_detail/index_millisecond_go-accessor_regular_expression.html#api-detail-indexmillisecondgo-accessor-regular-expression)
+[Detail: IndexMillisecondGO: Accessor Regular Expression](../api_detail/index_millisecond_go-accessor_regular_expression.md#api-detail-indexmillisecondgo-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.html#api-sig-indexmillisecondgo-via-re-search) | `IndexMillisecondGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.html#api-sig-indexmillisecondgo-via-re-match) | `IndexMillisecondGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.html#api-sig-indexmillisecondgo-via-re-fullmatch) | `IndexMillisecondGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.html#api-sig-indexmillisecondgo-via-re-split) | `IndexMillisecondGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.html#api-sig-indexmillisecondgo-via-re-findall) | `IndexMillisecondGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.html#api-sig-indexmillisecondgo-via-re-sub) | `IndexMillisecondGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.html#api-sig-indexmillisecondgo-via-re-subn) | `IndexMillisecondGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.md#api-sig-indexmillisecondgo-via-re-search) | `IndexMillisecondGO.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.md#api-sig-indexmillisecondgo-via-re-match) | `IndexMillisecondGO.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.md#api-sig-indexmillisecondgo-via-re-fullmatch) | `IndexMillisecondGO.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.md#api-sig-indexmillisecondgo-via-re-split) | `IndexMillisecondGO.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.md#api-sig-indexmillisecondgo-via-re-findall) | `IndexMillisecondGO.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.md#api-sig-indexmillisecondgo-via-re-sub) | `IndexMillisecondGO.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_millisecond_go-accessor_regular_expression.md#api-sig-indexmillisecondgo-via-re-subn) | `IndexMillisecondGO.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexMillisecondGO](index_millisecond_go.html#api-overview-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.html#api-overview-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.html#api-overview-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.html#api-overview-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.html#api-overview-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.html#api-overview-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.html#api-overview-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.html#api-overview-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.html#api-overview-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.html#api-overview-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.html#api-overview-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.html#api-overview-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.html#api-overview-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.html#api-overview-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](#api-overview-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.html#api-overview-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.html#api-overview-indexmillisecondgo-accessor-type-clinic)
+[IndexMillisecondGO](index_millisecond_go.md#api-overview-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.md#api-overview-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-overview-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-overview-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.md#api-overview-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-overview-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.md#api-overview-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-overview-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-overview-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-overview-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-overview-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-overview-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-overview-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-overview-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](#api-overview-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-overview-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-overview-indexmillisecondgo-accessor-type-clinic)
 
-[Previous](index_millisecond_go-accessor_string.html "Overview: IndexMillisecondGO: Accessor String")
-[Next](index_millisecond_go-accessor_hashlib.html "Overview: IndexMillisecondGO: Accessor Hashlib")
+[Previous](index_millisecond_go-accessor_string.md "Overview: IndexMillisecondGO: Accessor String")
+[Next](index_millisecond_go-accessor_hashlib.md "Overview: IndexMillisecondGO: Accessor Hashlib")
 
 ---
 

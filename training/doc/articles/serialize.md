@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -145,8 +145,8 @@ API Detail
 * Faster DataFrame Serialization
 * [View page source](../_sources/articles/serialize.rst.txt)
 
-[Previous](ftyping.html "Type-Hinting DataFrames for Static Analysis and Runtime Validation")
-[Next](no_copy.html "The Performance Advantage of No-Copy DataFrame Operations")
+[Previous](ftyping.md "Type-Hinting DataFrames for Static Analysis and Runtime Validation")
+[Next](no_copy.md "The Performance Advantage of No-Copy DataFrame Operations")
 
 ---
 
@@ -338,8 +338,8 @@ As a simple ZIP file, tools to extract the contents of a StaticFrame NPZ are ubi
 
 The performance of DataFrame serialization is critical to many applications. While Parquet has widespread support, its generality compromises type specificity and performance. StaticFrame NPZ can read and write DataFrames up to ten-times faster than Parquet with or without compression, with similar (or only modestly larger) file sizes. While Feather is an attractive alternative, NPZ read performance is still generally twice as fast as Feather. If data I/O is a bottleneck (and it often is), StaticFrame NPZ offers a solution.
 
-[Previous](ftyping.html "Type-Hinting DataFrames for Static Analysis and Runtime Validation")
-[Next](no_copy.html "The Performance Advantage of No-Copy DataFrame Operations")
+[Previous](ftyping.md "Type-Hinting DataFrames for Static Analysis and Runtime Validation")
+[Next](no_copy.md "The Performance Advantage of No-Copy DataFrame Operations")
 
 ---
 

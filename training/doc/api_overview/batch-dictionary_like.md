@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: Batch: Dictionary-Like
 * [View page source](../_sources/api_overview/batch-dictionary_like.rst.txt)
 
-[Previous](batch-method.html "Overview: Batch: Method")
-[Next](batch-display.html "Overview: Batch: Display")
+[Previous](batch-method.md "Overview: Batch: Method")
+[Next](batch-display.md "Overview: Batch: Display")
 
 ---
 
 # Overview: Batch: Dictionary-Like[](#overview-batch-dictionary-like "Link to this heading")
 
-[Detail: Batch: Dictionary-Like](../api_detail/batch-dictionary_like.html#api-detail-batch-dictionary-like)
+[Detail: Batch: Dictionary-Like](../api_detail/batch-dictionary_like.md#api-detail-batch-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-dictionary_like.html#api-sig-batch-iter) | `Batch.__iter__()` | Iterator of Frame labels, same as Batch.keys. |
-| [Detail](../api_detail/batch-dictionary_like.html#api-sig-batch-items) | `Batch.items()` | Iterator of labels, Frame. |
-| [Detail](../api_detail/batch-dictionary_like.html#api-sig-batch-keys) | `Batch.keys()` | Iterator of Frame labels. |
-| [Detail](../api_detail/batch-dictionary_like.html#api-sig-batch-values) | `Batch.values` | Return an iterator of values (Frame or Series) stored in this Batch. |
+| [Detail](../api_detail/batch-dictionary_like.md#api-sig-batch-iter) | `Batch.__iter__()` | Iterator of Frame labels, same as Batch.keys. |
+| [Detail](../api_detail/batch-dictionary_like.md#api-sig-batch-items) | `Batch.items()` | Iterator of labels, Frame. |
+| [Detail](../api_detail/batch-dictionary_like.md#api-sig-batch-keys) | `Batch.keys()` | Iterator of Frame labels. |
+| [Detail](../api_detail/batch-dictionary_like.md#api-sig-batch-values) | `Batch.values` | Return an iterator of values (Frame or Series) stored in this Batch. |
 
-[Batch](batch.html#api-overview-batch): [Constructor](batch-constructor.html#api-overview-batch-constructor) | [Exporter](batch-exporter.html#api-overview-batch-exporter) | [Attribute](batch-attribute.html#api-overview-batch-attribute) | [Method](batch-method.html#api-overview-batch-method) | [Dictionary-Like](#api-overview-batch-dictionary-like) | [Display](batch-display.html#api-overview-batch-display) | [Selector](batch-selector.html#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.html#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-overview-batch-accessor-reduce)
+[Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](batch-attribute.md#api-overview-batch-attribute) | [Method](batch-method.md#api-overview-batch-method) | [Dictionary-Like](#api-overview-batch-dictionary-like) | [Display](batch-display.md#api-overview-batch-display) | [Selector](batch-selector.md#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.md#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 
-[Previous](batch-method.html "Overview: Batch: Method")
-[Next](batch-display.html "Overview: Batch: Display")
+[Previous](batch-method.md "Overview: Batch: Method")
+[Next](batch-display.md "Overview: Batch: Display")
 
 ---
 

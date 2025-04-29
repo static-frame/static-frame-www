@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,34 +135,34 @@ API Detail
 * Overview: FrameGO: Attribute
 * [View page source](../_sources/api_overview/frame_go-attribute.rst.txt)
 
-[Previous](frame_go-exporter.html "Overview: FrameGO: Exporter")
-[Next](frame_go-method.html "Overview: FrameGO: Method")
+[Previous](frame_go-exporter.md "Overview: FrameGO: Exporter")
+[Next](frame_go-method.md "Overview: FrameGO: Method")
 
 ---
 
 # Overview: FrameGO: Attribute[](#overview-framego-attribute "Link to this heading")
 
-[Detail: FrameGO: Attribute](../api_detail/frame_go-attribute.html#api-detail-framego-attribute)
+[Detail: FrameGO: Attribute](../api_detail/frame_go-attribute.md#api-detail-framego-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-static) | `FrameGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-t) | `FrameGO.T` | Transpose. Return a Frame with index as columns and vice versa. |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-columns) | `FrameGO.columns` | The IndexBase instance assigned for column labels. |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-dtypes) | `FrameGO.dtypes` | Return a Series of dytpes for each realizable column. Returns: Series |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-index) | `FrameGO.index` | The IndexBase instance assigned for row labels. |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-memory) | `FrameGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-mloc) | `FrameGO.mloc` | The memory locations, represented as an array of integers, of the underlying Num… |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-name) | `FrameGO.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-nbytes) | `FrameGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-ndim) | `FrameGO.ndim` | Return the number of dimensions, which for a Frame is always 2. Returns: int |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-shape) | `FrameGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/frame_go-attribute.html#api-sig-framego-size) | `FrameGO.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-static) | `FrameGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-t) | `FrameGO.T` | Transpose. Return a Frame with index as columns and vice versa. |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-columns) | `FrameGO.columns` | The IndexBase instance assigned for column labels. |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-dtypes) | `FrameGO.dtypes` | Return a Series of dytpes for each realizable column. Returns: Series |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-index) | `FrameGO.index` | The IndexBase instance assigned for row labels. |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-memory) | `FrameGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-mloc) | `FrameGO.mloc` | The memory locations, represented as an array of integers, of the underlying Num… |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-name) | `FrameGO.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-nbytes) | `FrameGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-ndim) | `FrameGO.ndim` | Return the number of dimensions, which for a Frame is always 2. Returns: int |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-shape) | `FrameGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-size) | `FrameGO.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-exporter.html "Overview: FrameGO: Exporter")
-[Next](frame_go-method.html "Overview: FrameGO: Method")
+[Previous](frame_go-exporter.md "Overview: FrameGO: Exporter")
+[Next](frame_go-method.md "Overview: FrameGO: Method")
 
 ---
 

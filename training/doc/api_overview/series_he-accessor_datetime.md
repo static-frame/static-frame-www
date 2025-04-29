@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: SeriesHE: Accessor Datetime
 * [View page source](../_sources/api_overview/series_he-accessor_datetime.rst.txt)
 
-[Previous](series_he-accessor_values.html "Overview: SeriesHE: Accessor Values")
-[Next](series_he-accessor_string.html "Overview: SeriesHE: Accessor String")
+[Previous](series_he-accessor_values.md "Overview: SeriesHE: Accessor Values")
+[Next](series_he-accessor_string.md "Overview: SeriesHE: Accessor String")
 
 ---
 
 # Overview: SeriesHE: Accessor Datetime[](#overview-serieshe-accessor-datetime "Link to this heading")
 
-[Detail: SeriesHE: Accessor Datetime](../api_detail/series_he-accessor_datetime.html#api-detail-serieshe-accessor-datetime)
+[Detail: SeriesHE: Accessor Datetime](../api_detail/series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-call) | `SeriesHE.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-year) | `SeriesHE.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-year-month) | `SeriesHE.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-year-quarter) | `SeriesHE.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-month) | `SeriesHE.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-day) | `SeriesHE.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-hour) | `SeriesHE.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-minute) | `SeriesHE.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-second) | `SeriesHE.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-weekday) | `SeriesHE.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-quarter) | `SeriesHE.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-is-month-end) | `SeriesHE.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-is-month-start) | `SeriesHE.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-is-year-end) | `SeriesHE.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-is-year-start) | `SeriesHE.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-is-quarter-end) | `SeriesHE.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-is-quarter-start) | `SeriesHE.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-timetuple) | `SeriesHE.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-isoformat) | `SeriesHE.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-fromisoformat) | `SeriesHE.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-strftime) | `SeriesHE.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-strptime) | `SeriesHE.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/series_he-accessor_datetime.html#api-sig-serieshe-via-dt-strpdate) | `SeriesHE.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-call) | `SeriesHE.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-year) | `SeriesHE.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-year-month) | `SeriesHE.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-year-quarter) | `SeriesHE.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-month) | `SeriesHE.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-day) | `SeriesHE.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-hour) | `SeriesHE.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-minute) | `SeriesHE.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-second) | `SeriesHE.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-weekday) | `SeriesHE.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-quarter) | `SeriesHE.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-is-month-end) | `SeriesHE.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-is-month-start) | `SeriesHE.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-is-year-end) | `SeriesHE.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-is-year-start) | `SeriesHE.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-is-quarter-end) | `SeriesHE.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-is-quarter-start) | `SeriesHE.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-timetuple) | `SeriesHE.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-isoformat) | `SeriesHE.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-fromisoformat) | `SeriesHE.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-strftime) | `SeriesHE.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-strptime) | `SeriesHE.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/series_he-accessor_datetime.md#api-sig-serieshe-via-dt-strpdate) | `SeriesHE.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[SeriesHE](series_he.html#api-overview-serieshe): [Constructor](series_he-constructor.html#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | [Method](series_he-method.html#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-overview-serieshe-dictionary-like) | [Display](series_he-display.html#api-overview-serieshe-display) | [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | [Selector](series_he-selector.html#api-overview-serieshe-selector) | [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-overview-serieshe-accessor-values) | [Accessor Datetime](#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-overview-serieshe): [Constructor](series_he-constructor.md#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | [Method](series_he-method.md#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-overview-serieshe-dictionary-like) | [Display](series_he-display.md#api-overview-serieshe-display) | [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | [Selector](series_he-selector.md#api-overview-serieshe-selector) | [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-overview-serieshe-accessor-values) | [Accessor Datetime](#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-accessor_values.html "Overview: SeriesHE: Accessor Values")
-[Next](series_he-accessor_string.html "Overview: SeriesHE: Accessor String")
+[Previous](series_he-accessor_values.md "Overview: SeriesHE: Accessor Values")
+[Next](series_he-accessor_string.md "Overview: SeriesHE: Accessor String")
 
 ---
 

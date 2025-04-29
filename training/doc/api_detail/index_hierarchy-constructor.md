@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexHierarchy: Constructor
 * [View page source](../_sources/api_detail/index_hierarchy-constructor.rst.txt)
 
-[Previous](index_go-accessor_type_clinic.html "Detail: IndexGO: Accessor Type Clinic")
-[Next](index_hierarchy-exporter.html "Detail: IndexHierarchy: Exporter")
+[Previous](index_go-accessor_type_clinic.md "Detail: IndexGO: Accessor Type Clinic")
+[Next](index_hierarchy-exporter.md "Detail: IndexHierarchy: Exporter")
 
 ---
 
 # Detail: IndexHierarchy: Constructor[](#detail-indexhierarchy-constructor "Link to this heading")
 
-[Overview: IndexHierarchy: Constructor](../api_overview/index_hierarchy-constructor.html#api-overview-indexhierarchy-constructor)
+[Overview: IndexHierarchy: Constructor](../api_overview/index_hierarchy-constructor.md#api-overview-indexhierarchy-constructor)
 
-IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.__init__)[](#static_frame.IndexHierarchy.__init__ "Link to this definition")
+IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__init__)[](#static_frame.IndexHierarchy.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
-    :   * **indices** – list of [`Index`](index-selector.html#Index "Index") objects
+    :   * **indices** – list of [`Index`](index-selector.md#Index "Index") objects
         * **indexers** – a 2D indexer array
         * **name** – name of the IndexHierarchy
         * **blocks** –
@@ -167,8 +167,8 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
 
     ```
 
-*classmethod* IndexHierarchy.from\_index\_items(*items*, */*, *\**, *index\_constructor=None*, *name=None*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.from_index_items)[](#static_frame.IndexHierarchy.from_index_items "Link to this definition")
-:   Given an iterable of pairs of label, `IndexBase`, produce an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") where the labels are depth 0, the indices are depth 1. While the provided `IndexBase` can be Index or IndexHierarchy, across all pairs all depths must be the same.
+*classmethod* IndexHierarchy.from\_index\_items(*items*, */*, *\**, *index\_constructor=None*, *name=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_index_items)[](#static_frame.IndexHierarchy.from_index_items "Link to this definition")
+:   Given an iterable of pairs of label, `IndexBase`, produce an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") where the labels are depth 0, the indices are depth 1. While the provided `IndexBase` can be Index or IndexHierarchy, across all pairs all depths must be the same.
 
     Parameters:
     :   * **items** – iterable of pairs of label, `IndexBase`.
@@ -227,7 +227,7 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
 
     ```
 
-*classmethod* IndexHierarchy.from\_labels(*labels*, */*, *\**, *name=None*, *reorder\_for\_hierarchy=False*, *index\_constructors=None*, *depth\_reference=None*, *continuation\_token=<object object>*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.from_labels)[](#static_frame.IndexHierarchy.from_labels "Link to this definition")
+*classmethod* IndexHierarchy.from\_labels(*labels*, */*, *\**, *name=None*, *reorder\_for\_hierarchy=False*, *index\_constructors=None*, *depth\_reference=None*, *continuation\_token=<object object>*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_labels)[](#static_frame.IndexHierarchy.from_labels "Link to this definition")
 :   Construct an `IndexHierarchy` from an iterable of labels, where each label is tuple defining the component labels for all hierarchies.
 
     Parameters:
@@ -240,7 +240,7 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
         * **continuation\_token** – a Hashable that will be used as a token to identify when a value in a label should use the previously encountered value at the same depth.
 
     Returns:
-    :   [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy")
+    :   [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy")
 
     ```
     >>> sf.IndexHierarchy.from_labels((('a', 1024, True), ('a', 2048, True), ('a', 2048, False), ('b', 1024, True)), name='x')
@@ -253,14 +253,14 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
 
     ```
 
-*classmethod* IndexHierarchy.from\_labels\_delimited(*labels*, */*, *\**, *delimiter=' '*, *name=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.from_labels_delimited)[](#static_frame.IndexHierarchy.from_labels_delimited "Link to this definition")
-:   Construct an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") from an iterable of labels, where each label is string defining the component labels for all hierarchies using a string delimiter. All components after splitting the string by the delimited will be literal evaled to produce proper types; thus, strings must be quoted.
+*classmethod* IndexHierarchy.from\_labels\_delimited(*labels*, */*, *\**, *delimiter=' '*, *name=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_labels_delimited)[](#static_frame.IndexHierarchy.from_labels_delimited "Link to this definition")
+:   Construct an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") from an iterable of labels, where each label is string defining the component labels for all hierarchies using a string delimiter. All components after splitting the string by the delimited will be literal evaled to produce proper types; thus, strings must be quoted.
 
     Parameters:
     :   **labels** – an iterator or generator of tuples.
 
     Returns:
-    :   [`static_frame.IndexHierarchy`](index_hierarchy.html#static_frame.IndexHierarchy "static_frame.IndexHierarchy")
+    :   [`static_frame.IndexHierarchy`](index_hierarchy.md#static_frame.IndexHierarchy "static_frame.IndexHierarchy")
 
     ```
     >>> sf.IndexHierarchy.from_labels_delimited(("'a'|1024|False", "'b'|1024|True", "'b'|2048|False"), delimiter='|')
@@ -272,8 +272,8 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
 
     ```
 
-*classmethod* IndexHierarchy.from\_names(*names*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.from_names)[](#static_frame.IndexHierarchy.from_names "Link to this definition")
-:   Construct a zero-length [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") from an iterable of `names`, where the length of `names` defines the zero-length depth.
+*classmethod* IndexHierarchy.from\_names(*names*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_names)[](#static_frame.IndexHierarchy.from_names "Link to this definition")
+:   Construct a zero-length [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") from an iterable of `names`, where the length of `names` defines the zero-length depth.
 
     Parameters:
     :   **names** – Iterable of hashable names per depth.
@@ -285,7 +285,7 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
 
     ```
 
-*classmethod* IndexHierarchy.from\_pandas(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.from_pandas)[](#static_frame.IndexHierarchy.from_pandas "Link to this definition")
+*classmethod* IndexHierarchy.from\_pandas(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_pandas)[](#static_frame.IndexHierarchy.from_pandas "Link to this definition")
 :   Given a Pandas index, return the appropriate IndexBase derived class.
 
     ```
@@ -300,7 +300,7 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
 
     ```
 
-*classmethod* IndexHierarchy.from\_product(*\*levels*, *name=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.from_product)[](#static_frame.IndexHierarchy.from_product "Link to this definition")
+*classmethod* IndexHierarchy.from\_product(*\*levels*, *name=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_product)[](#static_frame.IndexHierarchy.from_product "Link to this definition")
 :   Given groups of iterables, return an `IndexHierarchy` made of the product of a values in those groups, where the first group is the top-most hierarchy.
 
     Parameters:
@@ -309,7 +309,7 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
         * **index\_consructors** –
 
     Returns:
-    :   [`static_frame.IndexHierarchy`](index_hierarchy.html#static_frame.IndexHierarchy "static_frame.IndexHierarchy")
+    :   [`static_frame.IndexHierarchy`](index_hierarchy.md#static_frame.IndexHierarchy "static_frame.IndexHierarchy")
 
     ```
     >>> sf.IndexHierarchy.from_product(('a', 'b'), ('1517-04-01', '1620-11-21'), name='x', index_constructors=(sf.Index, sf.IndexDate))
@@ -322,11 +322,11 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
 
     ```
 
-*classmethod* IndexHierarchy.from\_tree(*tree*, */*, *\**, *name=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.from_tree)[](#static_frame.IndexHierarchy.from_tree "Link to this definition")
+*classmethod* IndexHierarchy.from\_tree(*tree*, */*, *\**, *name=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_tree)[](#static_frame.IndexHierarchy.from_tree "Link to this definition")
 :   Convert into a `IndexHierarchy` a dictionary defining keys to either iterables or nested dictionaries of the same.
 
     Returns:
-    :   [`static_frame.IndexHierarchy`](index_hierarchy.html#static_frame.IndexHierarchy "static_frame.IndexHierarchy")
+    :   [`static_frame.IndexHierarchy`](index_hierarchy.md#static_frame.IndexHierarchy "static_frame.IndexHierarchy")
 
     ```
     >>> sf.IndexHierarchy.from_tree({'a': {1024: (False, True), 2048: (True,)}})
@@ -338,13 +338,13 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
 
     ```
 
-*classmethod* IndexHierarchy.from\_values\_per\_depth(*values*, */*, *\**, *name=None*, *depth\_reference=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy.from_values_per_depth)[](#static_frame.IndexHierarchy.from_values_per_depth "Link to this definition")
-:   Construct an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy") from a 2D NumPy array, or a collection of 1D arrays per depth.
+*classmethod* IndexHierarchy.from\_values\_per\_depth(*values*, */*, *\**, *name=None*, *depth\_reference=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_values_per_depth)[](#static_frame.IndexHierarchy.from_values_per_depth "Link to this definition")
+:   Construct an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") from a 2D NumPy array, or a collection of 1D arrays per depth.
 
     Very similar implementation to `_from_type_blocks()`, but avoids creating TypeBlocks instance.
 
     Returns:
-    :   [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy")
+    :   [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy")
 
     ```
     >>> sf.IndexHierarchy.from_values_per_depth((('a', 'a', 'b', 'b'), (0, 1, 0, 1)))
@@ -366,10 +366,10 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
 
     ```
 
-[IndexHierarchy](index_hierarchy.html#api-detail-indexhierarchy): [Constructor](#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_go-accessor_type_clinic.html "Detail: IndexGO: Accessor Type Clinic")
-[Next](index_hierarchy-exporter.html "Detail: IndexHierarchy: Exporter")
+[Previous](index_go-accessor_type_clinic.md "Detail: IndexGO: Accessor Type Clinic")
+[Next](index_hierarchy-exporter.md "Detail: IndexHierarchy: Exporter")
 
 ---
 

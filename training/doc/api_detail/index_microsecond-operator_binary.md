@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMicrosecond: Operator Binary
 * [View page source](../_sources/api_detail/index_microsecond-operator_binary.rst.txt)
 
-[Previous](index_microsecond-iterator.html "Detail: IndexMicrosecond: Iterator")
-[Next](index_microsecond-operator_unary.html "Detail: IndexMicrosecond: Operator Unary")
+[Previous](index_microsecond-iterator.md "Detail: IndexMicrosecond: Iterator")
+[Next](index_microsecond-operator_unary.md "Detail: IndexMicrosecond: Operator Unary")
 
 ---
 
 # Detail: IndexMicrosecond: Operator Binary[](#detail-indexmicrosecond-operator-binary "Link to this heading")
 
-[Overview: IndexMicrosecond: Operator Binary](../api_overview/index_microsecond-operator_binary.html#api-overview-indexmicrosecond-operator-binary)
+[Overview: IndexMicrosecond: Operator Binary](../api_overview/index_microsecond-operator_binary.md#api-overview-indexmicrosecond-operator-binary)
 
 IndexMicrosecond.\_\_add\_\_(*other*, */*)[](#static_frame.IndexMicrosecond.__add__ "Link to this definition")
 :   ```
@@ -502,10 +502,10 @@ IndexMicrosecond.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexMicrosecond._
 
     ```
 
-[IndexMicrosecond](index_microsecond.html#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.html#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.html#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.html#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.html#api-detail-indexmicrosecond-iterator) | [Operator Binary](#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.html#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.html#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-detail-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](index_microsecond.md#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-detail-indexmicrosecond-iterator) | [Operator Binary](#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-detail-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_microsecond-iterator.html "Detail: IndexMicrosecond: Iterator")
-[Next](index_microsecond-operator_unary.html "Detail: IndexMicrosecond: Operator Unary")
+[Previous](index_microsecond-iterator.md "Detail: IndexMicrosecond: Iterator")
+[Next](index_microsecond-operator_unary.md "Detail: IndexMicrosecond: Operator Unary")
 
 ---
 

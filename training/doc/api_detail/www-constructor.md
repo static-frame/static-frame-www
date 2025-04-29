@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: WWW: Constructor
 * [View page source](../_sources/api_detail/www-constructor.rst.txt)
 
-[Previous](require-constructor.html "Detail: Require: Constructor")
-[Next](fill_value_auto-constructor.html "Detail: FillValueAuto: Constructor")
+[Previous](require-constructor.md "Detail: Require: Constructor")
+[Next](fill_value_auto-constructor.md "Detail: FillValueAuto: Constructor")
 
 ---
 
 # Detail: WWW: Constructor[](#detail-www-constructor "Link to this heading")
 
-[Overview: WWW: Constructor](../api_overview/www-constructor.html#api-overview-www-constructor)
+[Overview: WWW: Constructor](../api_overview/www-constructor.md#api-overview-www-constructor)
 
-*classmethod* WWW.from\_file(*url*, *\**, *encoding='utf-8'*, *in\_memory=None*, *buffer\_size=8192*, *fp=None*)[[source]](../_modules/static_frame/core/www.html#WWW.from_file)[](#static_frame.WWW.from_file "Link to this definition")
+*classmethod* WWW.from\_file(*url*, *\**, *encoding='utf-8'*, *in\_memory=None*, *buffer\_size=8192*, *fp=None*)[[source]](../_modules/static_frame/core/www.md#WWW.from_file)[](#static_frame.WWW.from_file "Link to this definition")
 :   Given a URL, return a loadable component, either as an in-memory store (a StringIO or BytesIO) or a disk-based store (either to a provided file path or or managed temporary file that will be deleted after being read).
 
     Parameters:
@@ -154,7 +154,7 @@ API Detail
         * **buffer\_size** – When in\_memory is False, the number of bytes to be written per network read
         * **fp** – Optionally specify a file path to write to; cannot be specified if in\_memory is True. When reading from archives (zip, gzip), only the extracted component will be written to this file path.
 
-*classmethod* WWW.from\_gzip(*url*, *\**, *encoding='utf-8'*, *in\_memory=None*, *buffer\_size=8192*, *fp=None*)[[source]](../_modules/static_frame/core/www.html#WWW.from_gzip)[](#static_frame.WWW.from_gzip "Link to this definition")
+*classmethod* WWW.from\_gzip(*url*, *\**, *encoding='utf-8'*, *in\_memory=None*, *buffer\_size=8192*, *fp=None*)[[source]](../_modules/static_frame/core/www.md#WWW.from_gzip)[](#static_frame.WWW.from_gzip "Link to this definition")
 :   Given a URL, return a loadable component, either as an in-memory store (a StringIO or BytesIO) or a disk-based store (either to a provided file path or or managed temporary file that will be deleted after being read).
 
     Parameters:
@@ -164,7 +164,7 @@ API Detail
         * **buffer\_size** – When in\_memory is False, the number of bytes to be written per network read
         * **fp** – Optionally specify a file path to write to; cannot be specified if in\_memory is True. When reading from archives (zip, gzip), only the extracted component will be written to this file path.
 
-*classmethod* WWW.from\_zip(*url*, *\**, *encoding='utf-8'*, *in\_memory=None*, *buffer\_size=8192*, *fp=None*, *component=None*)[[source]](../_modules/static_frame/core/www.html#WWW.from_zip)[](#static_frame.WWW.from_zip "Link to this definition")
+*classmethod* WWW.from\_zip(*url*, *\**, *encoding='utf-8'*, *in\_memory=None*, *buffer\_size=8192*, *fp=None*, *component=None*)[[source]](../_modules/static_frame/core/www.md#WWW.from_zip)[](#static_frame.WWW.from_zip "Link to this definition")
 :   Given a URL, return a loadable component, either as an in-memory store (a StringIO or BytesIO) or a disk-based store (either to a provided file path or or managed temporary file that will be deleted after being read).
 
     Parameters:
@@ -175,10 +175,10 @@ API Detail
         * **fp** – Optionally specify a file path to write to; cannot be specified if in\_memory is True. When reading from archives (zip, gzip), only the extracted component will be written to this file path.
         * **component** – When reading from a ZIP, specify the name of the component to load; if not specified and only one component exists, that component will be used.
 
-[WWW](www.html#api-detail-www): [Constructor](#api-detail-www-constructor)
+[WWW](www.md#api-detail-www): [Constructor](#api-detail-www-constructor)
 
-[Previous](require-constructor.html "Detail: Require: Constructor")
-[Next](fill_value_auto-constructor.html "Detail: FillValueAuto: Constructor")
+[Previous](require-constructor.md "Detail: Require: Constructor")
+[Next](fill_value_auto-constructor.md "Detail: FillValueAuto: Constructor")
 
 ---
 

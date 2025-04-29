@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: FrameHE: Accessor Regular Expression
 * [View page source](../_sources/api_overview/frame_he-accessor_regular_expression.rst.txt)
 
-[Previous](frame_he-accessor_fill_value.html "Overview: FrameHE: Accessor Fill Value")
-[Next](frame_he-accessor_hashlib.html "Overview: FrameHE: Accessor Hashlib")
+[Previous](frame_he-accessor_fill_value.md "Overview: FrameHE: Accessor Fill Value")
+[Next](frame_he-accessor_hashlib.md "Overview: FrameHE: Accessor Hashlib")
 
 ---
 
 # Overview: FrameHE: Accessor Regular Expression[](#overview-framehe-accessor-regular-expression "Link to this heading")
 
-[Detail: FrameHE: Accessor Regular Expression](../api_detail/frame_he-accessor_regular_expression.html#api-detail-framehe-accessor-regular-expression)
+[Detail: FrameHE: Accessor Regular Expression](../api_detail/frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_he-accessor_regular_expression.html#api-sig-framehe-via-re-search) | `FrameHE.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/frame_he-accessor_regular_expression.html#api-sig-framehe-via-re-match) | `FrameHE.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/frame_he-accessor_regular_expression.html#api-sig-framehe-via-re-fullmatch) | `FrameHE.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/frame_he-accessor_regular_expression.html#api-sig-framehe-via-re-split) | `FrameHE.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/frame_he-accessor_regular_expression.html#api-sig-framehe-via-re-findall) | `FrameHE.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/frame_he-accessor_regular_expression.html#api-sig-framehe-via-re-sub) | `FrameHE.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/frame_he-accessor_regular_expression.html#api-sig-framehe-via-re-subn) | `FrameHE.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/frame_he-accessor_regular_expression.md#api-sig-framehe-via-re-search) | `FrameHE.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/frame_he-accessor_regular_expression.md#api-sig-framehe-via-re-match) | `FrameHE.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/frame_he-accessor_regular_expression.md#api-sig-framehe-via-re-fullmatch) | `FrameHE.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/frame_he-accessor_regular_expression.md#api-sig-framehe-via-re-split) | `FrameHE.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/frame_he-accessor_regular_expression.md#api-sig-framehe-via-re-findall) | `FrameHE.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/frame_he-accessor_regular_expression.md#api-sig-framehe-via-re-sub) | `FrameHE.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/frame_he-accessor_regular_expression.md#api-sig-framehe-via-re-subn) | `FrameHE.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[FrameHE](frame_he.html#api-overview-framehe): [Constructor](frame_he-constructor.html#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.html#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.html#api-overview-framehe-attribute) | [Method](frame_he-method.html#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-overview-framehe-dictionary-like) | [Display](frame_he-display.html#api-overview-framehe-display) | [Assignment](frame_he-assignment.html#api-overview-framehe-assignment) | [Selector](frame_he-selector.html#api-overview-framehe-selector) | [Iterator](frame_he-iterator.html#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-overview-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-overview-framehe): [Constructor](frame_he-constructor.md#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.md#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.md#api-overview-framehe-attribute) | [Method](frame_he-method.md#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-overview-framehe-dictionary-like) | [Display](frame_he-display.md#api-overview-framehe-display) | [Assignment](frame_he-assignment.md#api-overview-framehe-assignment) | [Selector](frame_he-selector.md#api-overview-framehe-selector) | [Iterator](frame_he-iterator.md#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-overview-framehe-accessor-reduce)
 
-[Previous](frame_he-accessor_fill_value.html "Overview: FrameHE: Accessor Fill Value")
-[Next](frame_he-accessor_hashlib.html "Overview: FrameHE: Accessor Hashlib")
+[Previous](frame_he-accessor_fill_value.md "Overview: FrameHE: Accessor Fill Value")
+[Next](frame_he-accessor_hashlib.md "Overview: FrameHE: Accessor Hashlib")
 
 ---
 

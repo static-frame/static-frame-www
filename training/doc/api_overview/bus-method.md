@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,43 +135,43 @@ API Detail
 * Overview: Bus: Method
 * [View page source](../_sources/api_overview/bus-method.rst.txt)
 
-[Previous](bus-attribute.html "Overview: Bus: Attribute")
-[Next](bus-dictionary_like.html "Overview: Bus: Dictionary-Like")
+[Previous](bus-attribute.md "Overview: Bus: Attribute")
+[Next](bus-dictionary_like.md "Overview: Bus: Dictionary-Like")
 
 ---
 
 # Overview: Bus: Method[](#overview-bus-method "Link to this heading")
 
-[Detail: Bus: Method](../api_detail/bus-method.html#api-detail-bus-method)
+[Detail: Bus: Method](../api_detail/bus-method.md#api-detail-bus-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-bool) | `Bus.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-len) | `Bus.__len__()` | Length of values. |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-equals) | `Bus.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Note: this will attempt to lo… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-head) | `Bus.head(count)` | Return a Bus consisting only of the top elements as specified by count. Args: co… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-persist) | `Bus.persist[key]` | Label-based selection. |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-persist-iloc) | `Bus.persist.iloc[key]` | Integer-position based selection. |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-persist-loc) | `Bus.persist.loc[key]` | Label-based selection. |
-| [Detail](../api_detail/bus-method.html#id1) | `Bus.persist()` | Persist all Frame. |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-rehierarch) | `Bus.rehierarch(depth_map, *, index_constructors)` | Return a new Bus with new a hierarchy based on the supplied depth\_map. |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-reindex) | `Bus.reindex(index, *, fill_value, own_index, check_equals)` | Return a new Bus with labels defined by the provided index. The size and orderin… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-relabel) | `Bus.relabel(index, *, index_constructor)` | Return a new Bus with transformed labels on the index. The size and ordering of… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-relabel-flat) | `Bus.relabel_flat()` | Return a new Bus, where an IndexHierarchy (if defined) is replaced with a flat,… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-relabel-level-add) | `Bus.relabel_level_add(level)` | Return a new Bus, adding a new root level to an existing IndexHierarchy, or crea… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-relabel-level-drop) | `Bus.relabel_level_drop(count)` | Return a new Bus, dropping one or more levels from a either the root or the leav… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-rename) | `Bus.rename(name)` | Return a new Bus with an updated name attribute. |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-roll) | `Bus.roll(shift, *, include_index)` | Return a Bus with values rotated forward and wrapped around the index (with a po… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-shift) | `Bus.shift(shift, *, fill_value)` | Return a Bus with values shifted forward on the index (with a positive shift) or… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-sort-index) | `Bus.sort_index(*, ascending, kind, key)` | Return a new Bus ordered by the sorted Index. Args: \* ascendings: Boolean, or it… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-sort-values) | `Bus.sort_values(*, ascending, kind, key)` | Return a new Bus ordered by the sorted values. Note that as a Bus contains Frame… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-tail) | `Bus.tail(count)` | Return a Bus consisting only of the bottom elements as specified by count. s Arg… |
-| [Detail](../api_detail/bus-method.html#api-sig-bus-unpersist) | `Bus.unpersist()` | Replace all loaded Frame with FrameDeferred. |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-bool) | `Bus.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-len) | `Bus.__len__()` | Length of values. |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-equals) | `Bus.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Note: this will attempt to lo… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-head) | `Bus.head(count)` | Return a Bus consisting only of the top elements as specified by count. Args: co… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-persist) | `Bus.persist[key]` | Label-based selection. |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-persist-iloc) | `Bus.persist.iloc[key]` | Integer-position based selection. |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-persist-loc) | `Bus.persist.loc[key]` | Label-based selection. |
+| [Detail](../api_detail/bus-method.md#id1) | `Bus.persist()` | Persist all Frame. |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-rehierarch) | `Bus.rehierarch(depth_map, *, index_constructors)` | Return a new Bus with new a hierarchy based on the supplied depth\_map. |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-reindex) | `Bus.reindex(index, *, fill_value, own_index, check_equals)` | Return a new Bus with labels defined by the provided index. The size and orderin… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-relabel) | `Bus.relabel(index, *, index_constructor)` | Return a new Bus with transformed labels on the index. The size and ordering of… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-relabel-flat) | `Bus.relabel_flat()` | Return a new Bus, where an IndexHierarchy (if defined) is replaced with a flat,… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-relabel-level-add) | `Bus.relabel_level_add(level)` | Return a new Bus, adding a new root level to an existing IndexHierarchy, or crea… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-relabel-level-drop) | `Bus.relabel_level_drop(count)` | Return a new Bus, dropping one or more levels from a either the root or the leav… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-rename) | `Bus.rename(name)` | Return a new Bus with an updated name attribute. |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-roll) | `Bus.roll(shift, *, include_index)` | Return a Bus with values rotated forward and wrapped around the index (with a po… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-shift) | `Bus.shift(shift, *, fill_value)` | Return a Bus with values shifted forward on the index (with a positive shift) or… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-sort-index) | `Bus.sort_index(*, ascending, kind, key)` | Return a new Bus ordered by the sorted Index. Args: \* ascendings: Boolean, or it… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-sort-values) | `Bus.sort_values(*, ascending, kind, key)` | Return a new Bus ordered by the sorted values. Note that as a Bus contains Frame… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-tail) | `Bus.tail(count)` | Return a Bus consisting only of the bottom elements as specified by count. s Arg… |
+| [Detail](../api_detail/bus-method.md#api-sig-bus-unpersist) | `Bus.unpersist()` | Replace all loaded Frame with FrameDeferred. |
 
-[Bus](bus.html#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](bus-attribute.html "Overview: Bus: Attribute")
-[Next](bus-dictionary_like.html "Overview: Bus: Dictionary-Like")
+[Previous](bus-attribute.md "Overview: Bus: Attribute")
+[Next](bus-dictionary_like.md "Overview: Bus: Dictionary-Like")
 
 ---
 

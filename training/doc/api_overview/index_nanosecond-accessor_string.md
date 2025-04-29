@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: IndexNanosecond: Accessor String
 * [View page source](../_sources/api_overview/index_nanosecond-accessor_string.rst.txt)
 
-[Previous](index_nanosecond-accessor_datetime.html "Overview: IndexNanosecond: Accessor Datetime")
-[Next](index_nanosecond-accessor_regular_expression.html "Overview: IndexNanosecond: Accessor Regular Expression")
+[Previous](index_nanosecond-accessor_datetime.md "Overview: IndexNanosecond: Accessor Datetime")
+[Next](index_nanosecond-accessor_regular_expression.md "Overview: IndexNanosecond: Accessor Regular Expression")
 
 ---
 
 # Overview: IndexNanosecond: Accessor String[](#overview-indexnanosecond-accessor-string "Link to this heading")
 
-[Detail: IndexNanosecond: Accessor String](../api_detail/index_nanosecond-accessor_string.html#api-detail-indexnanosecond-accessor-string)
+[Detail: IndexNanosecond: Accessor String](../api_detail/index_nanosecond-accessor_string.md#api-detail-indexnanosecond-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-getitem) | `IndexNanosecond.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-capitalize) | `IndexNanosecond.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-center) | `IndexNanosecond.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-contains) | `IndexNanosecond.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-count) | `IndexNanosecond.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-decode) | `IndexNanosecond.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-encode) | `IndexNanosecond.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-endswith) | `IndexNanosecond.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-find) | `IndexNanosecond.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-format) | `IndexNanosecond.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-index) | `IndexNanosecond.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-isalnum) | `IndexNanosecond.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-isalpha) | `IndexNanosecond.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-isdecimal) | `IndexNanosecond.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-isdigit) | `IndexNanosecond.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-islower) | `IndexNanosecond.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-isnumeric) | `IndexNanosecond.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-isspace) | `IndexNanosecond.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-istitle) | `IndexNanosecond.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-isupper) | `IndexNanosecond.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-ljust) | `IndexNanosecond.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-len) | `IndexNanosecond.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-lower) | `IndexNanosecond.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-lstrip) | `IndexNanosecond.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-partition) | `IndexNanosecond.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-replace) | `IndexNanosecond.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-rfind) | `IndexNanosecond.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-rindex) | `IndexNanosecond.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-rjust) | `IndexNanosecond.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-rpartition) | `IndexNanosecond.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-rsplit) | `IndexNanosecond.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-rstrip) | `IndexNanosecond.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-split) | `IndexNanosecond.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-startswith) | `IndexNanosecond.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-strip) | `IndexNanosecond.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-swapcase) | `IndexNanosecond.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-title) | `IndexNanosecond.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-upper) | `IndexNanosecond.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_nanosecond-accessor_string.html#api-sig-indexnanosecond-via-str-zfill) | `IndexNanosecond.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-getitem) | `IndexNanosecond.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-capitalize) | `IndexNanosecond.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-center) | `IndexNanosecond.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-contains) | `IndexNanosecond.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-count) | `IndexNanosecond.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-decode) | `IndexNanosecond.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-encode) | `IndexNanosecond.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-endswith) | `IndexNanosecond.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-find) | `IndexNanosecond.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-format) | `IndexNanosecond.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-index) | `IndexNanosecond.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-isalnum) | `IndexNanosecond.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-isalpha) | `IndexNanosecond.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-isdecimal) | `IndexNanosecond.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-isdigit) | `IndexNanosecond.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-islower) | `IndexNanosecond.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-isnumeric) | `IndexNanosecond.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-isspace) | `IndexNanosecond.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-istitle) | `IndexNanosecond.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-isupper) | `IndexNanosecond.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-ljust) | `IndexNanosecond.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-len) | `IndexNanosecond.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-lower) | `IndexNanosecond.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-lstrip) | `IndexNanosecond.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-partition) | `IndexNanosecond.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-replace) | `IndexNanosecond.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-rfind) | `IndexNanosecond.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-rindex) | `IndexNanosecond.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-rjust) | `IndexNanosecond.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-rpartition) | `IndexNanosecond.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-rsplit) | `IndexNanosecond.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-rstrip) | `IndexNanosecond.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-split) | `IndexNanosecond.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-startswith) | `IndexNanosecond.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-strip) | `IndexNanosecond.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-swapcase) | `IndexNanosecond.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-title) | `IndexNanosecond.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-upper) | `IndexNanosecond.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_nanosecond-accessor_string.md#api-sig-indexnanosecond-via-str-zfill) | `IndexNanosecond.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[IndexNanosecond](index_nanosecond.html#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.html#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.html#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.html#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.html#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.html#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.html#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.html#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.html#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.html#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.html#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.html#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.html#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.html#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.html#api-overview-indexnanosecond-accessor-type-clinic)
+[IndexNanosecond](index_nanosecond.md#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-overview-indexnanosecond-accessor-type-clinic)
 
-[Previous](index_nanosecond-accessor_datetime.html "Overview: IndexNanosecond: Accessor Datetime")
-[Next](index_nanosecond-accessor_regular_expression.html "Overview: IndexNanosecond: Accessor Regular Expression")
+[Previous](index_nanosecond-accessor_datetime.md "Overview: IndexNanosecond: Accessor Datetime")
+[Next](index_nanosecond-accessor_regular_expression.md "Overview: IndexNanosecond: Accessor Regular Expression")
 
 ---
 

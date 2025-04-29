@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: HLoc
 * [View page source](../_sources/api_overview/hloc.rst.txt)
 
-[Previous](index_nanosecond_go.html "Overview: IndexNanosecondGO")
-[Next](iloc.html "Overview: ILoc")
+[Previous](index_nanosecond_go.md "Overview: IndexNanosecondGO")
+[Next](iloc.md "Overview: ILoc")
 
 ---
 
 # Overview: HLoc[](#overview-hloc "Link to this heading")
 
-[Detail: HLoc](../api_detail/hloc.html#api-detail-hloc)
+[Detail: HLoc](../api_detail/hloc.md#api-detail-hloc)
 
 |  |  |
 | --- | --- |
-| [Constructor](hloc-constructor.html#api-overview-hloc-constructor) | Alternative constructors for creating instances. |
-| [Attribute](hloc-attribute.html#api-overview-hloc-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](hloc-method.html#api-overview-hloc-method) | Methods for general functionality. |
-| [Dictionary-Like](hloc-dictionary_like.html#api-overview-hloc-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](hloc-display.html#api-overview-hloc-display) | Methods for providing a text representation of the object. |
+| [Constructor](hloc-constructor.md#api-overview-hloc-constructor) | Alternative constructors for creating instances. |
+| [Attribute](hloc-attribute.md#api-overview-hloc-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](hloc-method.md#api-overview-hloc-method) | Methods for general functionality. |
+| [Dictionary-Like](hloc-dictionary_like.md#api-overview-hloc-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](hloc-display.md#api-overview-hloc-display) | Methods for providing a text representation of the object. |
 
-[HLoc](#api-overview-hloc): [Constructor](hloc-constructor.html#api-overview-hloc-constructor) | [Attribute](hloc-attribute.html#api-overview-hloc-attribute) | [Method](hloc-method.html#api-overview-hloc-method) | [Dictionary-Like](hloc-dictionary_like.html#api-overview-hloc-dictionary-like) | [Display](hloc-display.html#api-overview-hloc-display)
+[HLoc](#api-overview-hloc): [Constructor](hloc-constructor.md#api-overview-hloc-constructor) | [Attribute](hloc-attribute.md#api-overview-hloc-attribute) | [Method](hloc-method.md#api-overview-hloc-method) | [Dictionary-Like](hloc-dictionary_like.md#api-overview-hloc-dictionary-like) | [Display](hloc-display.md#api-overview-hloc-display)
 
-[Previous](index_nanosecond_go.html "Overview: IndexNanosecondGO")
-[Next](iloc.html "Overview: ILoc")
+[Previous](index_nanosecond_go.md "Overview: IndexNanosecondGO")
+[Next](iloc.md "Overview: ILoc")
 
 ---
 

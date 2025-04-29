@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexMicrosecond: Exporter
 * [View page source](../_sources/api_overview/index_microsecond-exporter.rst.txt)
 
-[Previous](index_microsecond-constructor.html "Overview: IndexMicrosecond: Constructor")
-[Next](index_microsecond-attribute.html "Overview: IndexMicrosecond: Attribute")
+[Previous](index_microsecond-constructor.md "Overview: IndexMicrosecond: Constructor")
+[Next](index_microsecond-attribute.md "Overview: IndexMicrosecond: Attribute")
 
 ---
 
 # Overview: IndexMicrosecond: Exporter[](#overview-indexmicrosecond-exporter "Link to this heading")
 
-[Detail: IndexMicrosecond: Exporter](../api_detail/index_microsecond-exporter.html#api-detail-indexmicrosecond-exporter)
+[Detail: IndexMicrosecond: Exporter](../api_detail/index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_microsecond-exporter.html#api-sig-indexmicrosecond-to-html) | `IndexMicrosecond.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
-| [Detail](../api_detail/index_microsecond-exporter.html#api-sig-indexmicrosecond-to-html-datatables) | `IndexMicrosecond.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
-| [Detail](../api_detail/index_microsecond-exporter.html#api-sig-indexmicrosecond-to-pandas) | `IndexMicrosecond.to_pandas()` | Return a Pandas Index. |
-| [Detail](../api_detail/index_microsecond-exporter.html#api-sig-indexmicrosecond-to-series) | `IndexMicrosecond.to_series()` | Return a Series with values from this Index’s labels. |
-| [Detail](../api_detail/index_microsecond-exporter.html#api-sig-indexmicrosecond-to-visidata) | `IndexMicrosecond.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/index_microsecond-exporter.md#api-sig-indexmicrosecond-to-html) | `IndexMicrosecond.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
+| [Detail](../api_detail/index_microsecond-exporter.md#api-sig-indexmicrosecond-to-html-datatables) | `IndexMicrosecond.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
+| [Detail](../api_detail/index_microsecond-exporter.md#api-sig-indexmicrosecond-to-pandas) | `IndexMicrosecond.to_pandas()` | Return a Pandas Index. |
+| [Detail](../api_detail/index_microsecond-exporter.md#api-sig-indexmicrosecond-to-series) | `IndexMicrosecond.to_series()` | Return a Series with values from this Index’s labels. |
+| [Detail](../api_detail/index_microsecond-exporter.md#api-sig-indexmicrosecond-to-visidata) | `IndexMicrosecond.to_visidata()` | Open an interactive VisiData session. |
 
-[IndexMicrosecond](index_microsecond.html#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-overview-indexmicrosecond-constructor) | [Exporter](#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.html#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-overview-indexmicrosecond-display) | [Selector](index_microsecond-selector.html#api-overview-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.html#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.html#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.html#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.html#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-overview-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](index_microsecond.md#api-overview-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-overview-indexmicrosecond-constructor) | [Exporter](#api-overview-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-overview-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-overview-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-overview-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-overview-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-overview-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-overview-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-overview-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-overview-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-overview-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-overview-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-overview-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-overview-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-overview-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-overview-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_microsecond-constructor.html "Overview: IndexMicrosecond: Constructor")
-[Next](index_microsecond-attribute.html "Overview: IndexMicrosecond: Attribute")
+[Previous](index_microsecond-constructor.md "Overview: IndexMicrosecond: Constructor")
+[Next](index_microsecond-attribute.md "Overview: IndexMicrosecond: Attribute")
 
 ---
 

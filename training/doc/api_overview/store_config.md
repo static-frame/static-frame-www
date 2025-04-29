@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: StoreConfig
 * [View page source](../_sources/api_overview/store_config.rst.txt)
 
-[Previous](display_config.html "Overview: DisplayConfig")
-[Next](store_filter.html "Overview: StoreFilter")
+[Previous](display_config.md "Overview: DisplayConfig")
+[Next](store_filter.md "Overview: StoreFilter")
 
 ---
 
 # Overview: StoreConfig[](#overview-storeconfig "Link to this heading")
 
-[Detail: StoreConfig](../api_detail/store_config.html#api-detail-storeconfig)
+[Detail: StoreConfig](../api_detail/store_config.md#api-detail-storeconfig)
 
 |  |  |
 | --- | --- |
-| [Constructor](store_config-constructor.html#api-overview-storeconfig-constructor) | Alternative constructors for creating instances. |
-| [Exporter](store_config-exporter.html#api-overview-storeconfig-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](store_config-attribute.html#api-overview-storeconfig-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](store_config-method.html#api-overview-storeconfig-method) | Methods for general functionality. |
-| [Display](store_config-display.html#api-overview-storeconfig-display) | Methods for providing a text representation of the object. |
+| [Constructor](store_config-constructor.md#api-overview-storeconfig-constructor) | Alternative constructors for creating instances. |
+| [Exporter](store_config-exporter.md#api-overview-storeconfig-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](store_config-attribute.md#api-overview-storeconfig-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](store_config-method.md#api-overview-storeconfig-method) | Methods for general functionality. |
+| [Display](store_config-display.md#api-overview-storeconfig-display) | Methods for providing a text representation of the object. |
 
-[StoreConfig](#api-overview-storeconfig): [Constructor](store_config-constructor.html#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.html#api-overview-storeconfig-exporter) | [Attribute](store_config-attribute.html#api-overview-storeconfig-attribute) | [Method](store_config-method.html#api-overview-storeconfig-method) | [Display](store_config-display.html#api-overview-storeconfig-display)
+[StoreConfig](#api-overview-storeconfig): [Constructor](store_config-constructor.md#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-overview-storeconfig-exporter) | [Attribute](store_config-attribute.md#api-overview-storeconfig-attribute) | [Method](store_config-method.md#api-overview-storeconfig-method) | [Display](store_config-display.md#api-overview-storeconfig-display)
 
-[Previous](display_config.html "Overview: DisplayConfig")
-[Next](store_filter.html "Overview: StoreFilter")
+[Previous](display_config.md "Overview: DisplayConfig")
+[Next](store_filter.md "Overview: StoreFilter")
 
 ---
 

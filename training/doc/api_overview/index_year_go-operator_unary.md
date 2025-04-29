@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexYearGO: Operator Unary
 * [View page source](../_sources/api_overview/index_year_go-operator_unary.rst.txt)
 
-[Previous](index_year_go-operator_binary.html "Overview: IndexYearGO: Operator Binary")
-[Next](index_year_go-accessor_values.html "Overview: IndexYearGO: Accessor Values")
+[Previous](index_year_go-operator_binary.md "Overview: IndexYearGO: Operator Binary")
+[Next](index_year_go-accessor_values.md "Overview: IndexYearGO: Accessor Values")
 
 ---
 
 # Overview: IndexYearGO: Operator Unary[](#overview-indexyeargo-operator-unary "Link to this heading")
 
-[Detail: IndexYearGO: Operator Unary](../api_detail/index_year_go-operator_unary.html#api-detail-indexyeargo-operator-unary)
+[Detail: IndexYearGO: Operator Unary](../api_detail/index_year_go-operator_unary.md#api-detail-indexyeargo-operator-unary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_go-operator_unary.html#api-sig-indexyeargo-abs) | `IndexYearGO.__abs__()` |  |
-| [Detail](../api_detail/index_year_go-operator_unary.html#api-sig-indexyeargo-invert) | `IndexYearGO.__invert__()` |  |
-| [Detail](../api_detail/index_year_go-operator_unary.html#api-sig-indexyeargo-neg) | `IndexYearGO.__neg__()` |  |
-| [Detail](../api_detail/index_year_go-operator_unary.html#api-sig-indexyeargo-pos) | `IndexYearGO.__pos__()` |  |
+| [Detail](../api_detail/index_year_go-operator_unary.md#api-sig-indexyeargo-abs) | `IndexYearGO.__abs__()` |  |
+| [Detail](../api_detail/index_year_go-operator_unary.md#api-sig-indexyeargo-invert) | `IndexYearGO.__invert__()` |  |
+| [Detail](../api_detail/index_year_go-operator_unary.md#api-sig-indexyeargo-neg) | `IndexYearGO.__neg__()` |  |
+| [Detail](../api_detail/index_year_go-operator_unary.md#api-sig-indexyeargo-pos) | `IndexYearGO.__pos__()` |  |
 
-[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](index_year_go-constructor.html#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.html#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-overview-indexyeargo-operator-binary) | [Operator Unary](#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-overview-indexyeargo): [Constructor](index_year_go-constructor.md#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.md#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.md#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-overview-indexyeargo-operator-binary) | [Operator Unary](#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-overview-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-operator_binary.html "Overview: IndexYearGO: Operator Binary")
-[Next](index_year_go-accessor_values.html "Overview: IndexYearGO: Accessor Values")
+[Previous](index_year_go-operator_binary.md "Overview: IndexYearGO: Operator Binary")
+[Next](index_year_go-accessor_values.md "Overview: IndexYearGO: Accessor Values")
 
 ---
 

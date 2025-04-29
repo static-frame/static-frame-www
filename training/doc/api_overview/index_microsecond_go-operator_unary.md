@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexMicrosecondGO: Operator Unary
 * [View page source](../_sources/api_overview/index_microsecond_go-operator_unary.rst.txt)
 
-[Previous](index_microsecond_go-operator_binary.html "Overview: IndexMicrosecondGO: Operator Binary")
-[Next](index_microsecond_go-accessor_values.html "Overview: IndexMicrosecondGO: Accessor Values")
+[Previous](index_microsecond_go-operator_binary.md "Overview: IndexMicrosecondGO: Operator Binary")
+[Next](index_microsecond_go-accessor_values.md "Overview: IndexMicrosecondGO: Accessor Values")
 
 ---
 
 # Overview: IndexMicrosecondGO: Operator Unary[](#overview-indexmicrosecondgo-operator-unary "Link to this heading")
 
-[Detail: IndexMicrosecondGO: Operator Unary](../api_detail/index_microsecond_go-operator_unary.html#api-detail-indexmicrosecondgo-operator-unary)
+[Detail: IndexMicrosecondGO: Operator Unary](../api_detail/index_microsecond_go-operator_unary.md#api-detail-indexmicrosecondgo-operator-unary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_microsecond_go-operator_unary.html#api-sig-indexmicrosecondgo-abs) | `IndexMicrosecondGO.__abs__()` |  |
-| [Detail](../api_detail/index_microsecond_go-operator_unary.html#api-sig-indexmicrosecondgo-invert) | `IndexMicrosecondGO.__invert__()` |  |
-| [Detail](../api_detail/index_microsecond_go-operator_unary.html#api-sig-indexmicrosecondgo-neg) | `IndexMicrosecondGO.__neg__()` |  |
-| [Detail](../api_detail/index_microsecond_go-operator_unary.html#api-sig-indexmicrosecondgo-pos) | `IndexMicrosecondGO.__pos__()` |  |
+| [Detail](../api_detail/index_microsecond_go-operator_unary.md#api-sig-indexmicrosecondgo-abs) | `IndexMicrosecondGO.__abs__()` |  |
+| [Detail](../api_detail/index_microsecond_go-operator_unary.md#api-sig-indexmicrosecondgo-invert) | `IndexMicrosecondGO.__invert__()` |  |
+| [Detail](../api_detail/index_microsecond_go-operator_unary.md#api-sig-indexmicrosecondgo-neg) | `IndexMicrosecondGO.__neg__()` |  |
+| [Detail](../api_detail/index_microsecond_go-operator_unary.md#api-sig-indexmicrosecondgo-pos) | `IndexMicrosecondGO.__pos__()` |  |
 
-[IndexMicrosecondGO](index_microsecond_go.html#api-overview-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.html#api-overview-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.html#api-overview-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.html#api-overview-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.html#api-overview-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.html#api-overview-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.html#api-overview-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.html#api-overview-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.html#api-overview-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.html#api-overview-indexmicrosecondgo-operator-binary) | [Operator Unary](#api-overview-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.html#api-overview-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.html#api-overview-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.html#api-overview-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.html#api-overview-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.html#api-overview-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.html#api-overview-indexmicrosecondgo-accessor-type-clinic)
+[IndexMicrosecondGO](index_microsecond_go.md#api-overview-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.md#api-overview-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.md#api-overview-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.md#api-overview-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.md#api-overview-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.md#api-overview-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.md#api-overview-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.md#api-overview-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.md#api-overview-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.md#api-overview-indexmicrosecondgo-operator-binary) | [Operator Unary](#api-overview-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.md#api-overview-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.md#api-overview-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.md#api-overview-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.md#api-overview-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.md#api-overview-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.md#api-overview-indexmicrosecondgo-accessor-type-clinic)
 
-[Previous](index_microsecond_go-operator_binary.html "Overview: IndexMicrosecondGO: Operator Binary")
-[Next](index_microsecond_go-accessor_values.html "Overview: IndexMicrosecondGO: Accessor Values")
+[Previous](index_microsecond_go-operator_binary.md "Overview: IndexMicrosecondGO: Operator Binary")
+[Next](index_microsecond_go-accessor_values.md "Overview: IndexMicrosecondGO: Accessor Values")
 
 ---
 

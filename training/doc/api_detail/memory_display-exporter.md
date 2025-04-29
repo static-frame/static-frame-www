@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: MemoryDisplay: Exporter
 * [View page source](../_sources/api_detail/memory_display-exporter.rst.txt)
 
-[Previous](memory_display-constructor.html "Detail: MemoryDisplay: Constructor")
-[Next](memory_display-display.html "Detail: MemoryDisplay: Display")
+[Previous](memory_display-constructor.md "Detail: MemoryDisplay: Constructor")
+[Next](memory_display-display.md "Detail: MemoryDisplay: Display")
 
 ---
 
 # Detail: MemoryDisplay: Exporter[](#detail-memorydisplay-exporter "Link to this heading")
 
-[Overview: MemoryDisplay: Exporter](../api_overview/memory_display-exporter.html#api-overview-memorydisplay-exporter)
+[Overview: MemoryDisplay: Exporter](../api_overview/memory_display-exporter.md#api-overview-memorydisplay-exporter)
 
-MemoryDisplay.to\_frame()[[source]](../_modules/static_frame/core/memory_measure.html#MemoryDisplay.to_frame)[](#static_frame.MemoryDisplay.to_frame "Link to this definition")
+MemoryDisplay.to\_frame()[[source]](../_modules/static_frame/core/memory_measure.md#MemoryDisplay.to_frame)[](#static_frame.MemoryDisplay.to_frame "Link to this definition")
 :   Return a Frame of byte counts.
 
     ```
@@ -171,10 +171,10 @@ MemoryDisplay.to\_frame()[[source]](../_modules/static_frame/core/memory_measure
 
     ```
 
-[MemoryDisplay](memory_display.html#api-detail-memorydisplay): [Constructor](memory_display-constructor.html#api-detail-memorydisplay-constructor) | [Exporter](#api-detail-memorydisplay-exporter) | [Display](memory_display-display.html#api-detail-memorydisplay-display)
+[MemoryDisplay](memory_display.md#api-detail-memorydisplay): [Constructor](memory_display-constructor.md#api-detail-memorydisplay-constructor) | [Exporter](#api-detail-memorydisplay-exporter) | [Display](memory_display-display.md#api-detail-memorydisplay-display)
 
-[Previous](memory_display-constructor.html "Detail: MemoryDisplay: Constructor")
-[Next](memory_display-display.html "Detail: MemoryDisplay: Display")
+[Previous](memory_display-constructor.md "Detail: MemoryDisplay: Constructor")
+[Next](memory_display-display.md "Detail: MemoryDisplay: Display")
 
 ---
 

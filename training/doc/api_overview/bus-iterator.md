@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,72 +135,72 @@ API Detail
 * Overview: Bus: Iterator
 * [View page source](../_sources/api_overview/bus-iterator.rst.txt)
 
-[Previous](bus-selector.html "Overview: Bus: Selector")
-[Next](bus-accessor_hashlib.html "Overview: Bus: Accessor Hashlib")
+[Previous](bus-selector.md "Overview: Bus: Selector")
+[Next](bus-accessor_hashlib.md "Overview: Bus: Accessor Hashlib")
 
 ---
 
 # Overview: Bus: Iterator[](#overview-bus-iterator "Link to this heading")
 
-[Detail: Bus: Iterator](../api_detail/bus-iterator.html#api-detail-bus-iterator)
+[Detail: Bus: Iterator](../api_detail/bus-iterator.md#api-detail-bus-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element) | `Bus.iter_element()` | Iterator of elements. |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-apply) | `Bus.iter_element().apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-apply-iter) | `Bus.iter_element().apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-apply-iter-items) | `Bus.iter_element().apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-apply-pool) | `Bus.iter_element().apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-func-keys) | `Bus.iter_element().reduce.from_func(func, *, fill_value).keys()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-func-iter) | `Bus.iter_element().reduce.from_func(func, *, fill_value).__iter__()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-func-items) | `Bus.iter_element().reduce.from_func(func, *, fill_value).items()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-func-values) | `Bus.iter_element().reduce.from_func(func, *, fill_value).values()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-func-to-frame) | `Bus.iter_element().reduce.from_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-map-func-keys) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).keys()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-map-func-iter) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).__iter__()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-map-func-items) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).items()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-map-func-values) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).values()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-map-func-to-frame) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-map-keys) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).keys()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-map-iter) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).__iter__()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-map-items) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).items()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-map-values) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).values()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-map-to-frame) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-pair-map-keys) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).keys()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-pair-map-iter) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).__iter__()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-pair-map-items) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).items()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-pair-map-values) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).values()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-reduce-from-label-pair-map-to-frame) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items) | `Bus.iter_element_items()` | Iterator of label, element pairs. |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-apply) | `Bus.iter_element_items().apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-apply-iter) | `Bus.iter_element_items().apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-apply-iter-items) | `Bus.iter_element_items().apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-apply-pool) | `Bus.iter_element_items().apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-func-keys) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).keys()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-func-iter) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).__iter__()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-func-items) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).items()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-func-values) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).values()` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-func-to-frame) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For each Frame, and given a function func that returns either a Series or a Fram… |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-map-func-keys) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).keys()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-map-func-iter) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).__iter__()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-map-func-items) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).items()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-map-func-values) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).values()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-map-func-to-frame) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-map-keys) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).keys()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-map-iter) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).__iter__()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-map-items) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).items()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-map-values) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).values()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-map-to-frame) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-pair-map-keys) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).keys()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-pair-map-iter) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).__iter__()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-pair-map-items) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).items()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-pair-map-values) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).values()` |  |
-| [Detail](../api_detail/bus-iterator.html#api-sig-bus-iter-element-items-reduce-from-label-pair-map-to-frame) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element) | `Bus.iter_element()` | Iterator of elements. |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-apply) | `Bus.iter_element().apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-apply-iter) | `Bus.iter_element().apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-apply-iter-items) | `Bus.iter_element().apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-apply-pool) | `Bus.iter_element().apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-func-keys) | `Bus.iter_element().reduce.from_func(func, *, fill_value).keys()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-func-iter) | `Bus.iter_element().reduce.from_func(func, *, fill_value).__iter__()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-func-items) | `Bus.iter_element().reduce.from_func(func, *, fill_value).items()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-func-values) | `Bus.iter_element().reduce.from_func(func, *, fill_value).values()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-func-to-frame) | `Bus.iter_element().reduce.from_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-map-func-keys) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).keys()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-map-func-iter) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).__iter__()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-map-func-items) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).items()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-map-func-values) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).values()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-map-func-to-frame) | `Bus.iter_element().reduce.from_map_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-map-keys) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).keys()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-map-iter) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).__iter__()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-map-items) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).items()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-map-values) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).values()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-map-to-frame) | `Bus.iter_element().reduce.from_label_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-pair-map-keys) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).keys()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-pair-map-iter) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).__iter__()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-pair-map-items) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).items()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-pair-map-values) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).values()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-reduce-from-label-pair-map-to-frame) | `Bus.iter_element().reduce.from_label_pair_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items) | `Bus.iter_element_items()` | Iterator of label, element pairs. |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-apply) | `Bus.iter_element_items().apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-apply-iter) | `Bus.iter_element_items().apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-apply-iter-items) | `Bus.iter_element_items().apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-apply-pool) | `Bus.iter_element_items().apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-func-keys) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).keys()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-func-iter) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).__iter__()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-func-items) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).items()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-func-values) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).values()` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-func-to-frame) | `Bus.iter_element_items().reduce.from_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` | For each Frame, and given a function func that returns either a Series or a Fram… |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-map-func-keys) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).keys()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-map-func-iter) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).__iter__()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-map-func-items) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).items()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-map-func-values) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).values()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-map-func-to-frame) | `Bus.iter_element_items().reduce.from_map_func(func, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-map-keys) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).keys()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-map-iter) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).__iter__()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-map-items) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).items()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-map-values) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).values()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-map-to-frame) | `Bus.iter_element_items().reduce.from_label_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-pair-map-keys) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).keys()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-pair-map-iter) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).__iter__()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-pair-map-items) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).items()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-pair-map-values) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).values()` |  |
+| [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-pair-map-to-frame) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
 
-[Bus](bus.html#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](bus-selector.html "Overview: Bus: Selector")
-[Next](bus-accessor_hashlib.html "Overview: Bus: Accessor Hashlib")
+[Previous](bus-selector.md "Overview: Bus: Selector")
+[Next](bus-accessor_hashlib.md "Overview: Bus: Accessor Hashlib")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexMicrosecond: Attribute
 * [View page source](../_sources/api_detail/index_microsecond-attribute.rst.txt)
 
-[Previous](index_microsecond-exporter.html "Detail: IndexMicrosecond: Exporter")
-[Next](index_microsecond-method.html "Detail: IndexMicrosecond: Method")
+[Previous](index_microsecond-exporter.md "Detail: IndexMicrosecond: Exporter")
+[Next](index_microsecond-method.md "Detail: IndexMicrosecond: Method")
 
 ---
 
 # Detail: IndexMicrosecond: Attribute[](#detail-indexmicrosecond-attribute "Link to this heading")
 
-[Overview: IndexMicrosecond: Attribute](../api_overview/index_microsecond-attribute.html#api-overview-indexmicrosecond-attribute)
+[Overview: IndexMicrosecond: Attribute](../api_overview/index_microsecond-attribute.md#api-overview-indexmicrosecond-attribute)
 
 IndexMicrosecond.STATIC *= True*[](#static_frame.IndexMicrosecond.STATIC "Link to this definition")
 :   ```
@@ -177,7 +177,7 @@ IndexMicrosecond.index\_types[](#static_frame.IndexMicrosecond.index_types "L
 :   Return a Series of Index classes for each index depth.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -190,7 +190,7 @@ IndexMicrosecond.index\_types[](#static_frame.IndexMicrosecond.index_types "L
     ```
 
 IndexMicrosecond.memory[](#static_frame.IndexMicrosecond.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -299,10 +299,10 @@ IndexMicrosecond.size[](#static_frame.IndexMicrosecond.size "Link to this def
 
     ```
 
-[IndexMicrosecond](index_microsecond.html#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.html#api-detail-indexmicrosecond-exporter) | [Attribute](#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.html#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.html#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.html#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.html#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.html#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-detail-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](index_microsecond.md#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter) | [Attribute](#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-detail-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_microsecond-exporter.html "Detail: IndexMicrosecond: Exporter")
-[Next](index_microsecond-method.html "Detail: IndexMicrosecond: Method")
+[Previous](index_microsecond-exporter.md "Detail: IndexMicrosecond: Exporter")
+[Next](index_microsecond-method.md "Detail: IndexMicrosecond: Method")
 
 ---
 

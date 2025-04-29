@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: TypeClinic
 * [View page source](../_sources/api_overview/type_clinic.rst.txt)
 
-[Previous](iloc.html "Overview: ILoc")
-[Next](call_guard.html "Overview: CallGuard")
+[Previous](iloc.md "Overview: ILoc")
+[Next](call_guard.md "Overview: CallGuard")
 
 ---
 
 # Overview: TypeClinic[](#overview-typeclinic "Link to this heading")
 
-[Detail: TypeClinic](../api_detail/type_clinic.html#api-detail-typeclinic)
+[Detail: TypeClinic](../api_detail/type_clinic.md#api-detail-typeclinic)
 
 |  |  |
 | --- | --- |
-| [Constructor](type_clinic-constructor.html#api-overview-typeclinic-constructor) | Alternative constructors for creating instances. |
-| [Exporter](type_clinic-exporter.html#api-overview-typeclinic-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Method](type_clinic-method.html#api-overview-typeclinic-method) | Methods for general functionality. |
-| [Display](type_clinic-display.html#api-overview-typeclinic-display) | Methods for providing a text representation of the object. |
+| [Constructor](type_clinic-constructor.md#api-overview-typeclinic-constructor) | Alternative constructors for creating instances. |
+| [Exporter](type_clinic-exporter.md#api-overview-typeclinic-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Method](type_clinic-method.md#api-overview-typeclinic-method) | Methods for general functionality. |
+| [Display](type_clinic-display.md#api-overview-typeclinic-display) | Methods for providing a text representation of the object. |
 
-[TypeClinic](#api-overview-typeclinic): [Constructor](type_clinic-constructor.html#api-overview-typeclinic-constructor) | [Exporter](type_clinic-exporter.html#api-overview-typeclinic-exporter) | [Method](type_clinic-method.html#api-overview-typeclinic-method) | [Display](type_clinic-display.html#api-overview-typeclinic-display)
+[TypeClinic](#api-overview-typeclinic): [Constructor](type_clinic-constructor.md#api-overview-typeclinic-constructor) | [Exporter](type_clinic-exporter.md#api-overview-typeclinic-exporter) | [Method](type_clinic-method.md#api-overview-typeclinic-method) | [Display](type_clinic-display.md#api-overview-typeclinic-display)
 
-[Previous](iloc.html "Overview: ILoc")
-[Next](call_guard.html "Overview: CallGuard")
+[Previous](iloc.md "Overview: ILoc")
+[Next](call_guard.md "Overview: CallGuard")
 
 ---
 

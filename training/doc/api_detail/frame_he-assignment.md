@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Detail: FrameHE: Assignment
 * [View page source](../_sources/api_detail/frame_he-assignment.rst.txt)
 
-[Previous](frame_he-display.html "Detail: FrameHE: Display")
-[Next](frame_he-selector.html "Detail: FrameHE: Selector")
+[Previous](frame_he-display.md "Detail: FrameHE: Display")
+[Next](frame_he-selector.md "Detail: FrameHE: Selector")
 
 ---
 
 # Detail: FrameHE: Assignment[](#detail-framehe-assignment "Link to this heading")
 
-[Overview: FrameHE: Assignment](../api_overview/frame_he-assignment.html#api-overview-framehe-assignment)
+[Overview: FrameHE: Assignment](../api_overview/frame_he-assignment.md#api-overview-framehe-assignment)
 
 FrameHE.assign[*key*](*value*, *\**, *fill\_value*)
 :   assign
 
-    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.__call__)
+    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -190,7 +190,7 @@ FrameHE.assign[*key*](*value*, *\**, *fill\_value*)
 FrameHE.assign[key].apply(func, \*, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply)
+    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -224,7 +224,7 @@ FrameHE.assign[key].apply(func, \*, fill\_value)
 FrameHE.assign[key].apply\_element(func, \*, dtype, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element)
+    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -258,7 +258,7 @@ FrameHE.assign[key].apply\_element(func, \*, dtype, fill\_value)
 FrameHE.assign[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element_items)
+    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -292,11 +292,11 @@ FrameHE.assign[key].apply\_element\_items(func, \*, dtype, fill\_value)
 FrameHE.assign.iloc[*key*](*value*, *\**, *fill\_value*)
 :   FrameHE.assign
 
-    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.__call__)
+    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -344,7 +344,7 @@ FrameHE.assign.iloc[*key*](*value*, *\**, *fill\_value*)
 FrameHE.assign.iloc[key].apply(func, \*, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply)
+    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -378,7 +378,7 @@ FrameHE.assign.iloc[key].apply(func, \*, fill\_value)
 FrameHE.assign.iloc[key].apply\_element(func, \*, dtype, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element)
+    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -412,7 +412,7 @@ FrameHE.assign.iloc[key].apply\_element(func, \*, dtype, fill\_value)
 FrameHE.assign.iloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element_items)
+    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -446,11 +446,11 @@ FrameHE.assign.iloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 FrameHE.assign.loc[*key*](*value*, *\**, *fill\_value*)
 :   FrameHE.assign
 
-    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.__call__)
+    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -498,7 +498,7 @@ FrameHE.assign.loc[*key*](*value*, *\**, *fill\_value*)
 FrameHE.assign.loc[key].apply(func, \*, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply)
+    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -532,7 +532,7 @@ FrameHE.assign.loc[key].apply(func, \*, fill\_value)
 FrameHE.assign.loc[key].apply\_element(func, \*, dtype, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element)
+    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -566,7 +566,7 @@ FrameHE.assign.loc[key].apply\_element(func, \*, dtype, fill\_value)
 FrameHE.assign.loc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element_items)
+    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -600,11 +600,11 @@ FrameHE.assign.loc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 FrameHE.assign.bloc[*key*](*value*, *\**, *fill\_value*)
 :   FrameHE.assign
 
-    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.__call__)
+    FrameAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), [`Frame`](frame-selector.html#Frame "Frame"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), [`Frame`](frame-selector.md#Frame "Frame"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -634,7 +634,7 @@ FrameHE.assign.bloc[*key*](*value*, *\**, *fill\_value*)
 FrameHE.assign.bloc[key].apply(func, \*, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply)
+    FrameAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -668,7 +668,7 @@ FrameHE.assign.bloc[key].apply(func, \*, fill\_value)
 FrameHE.assign.bloc[key].apply\_element(func, \*, dtype, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element)
+    FrameAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -702,7 +702,7 @@ FrameHE.assign.bloc[key].apply\_element(func, \*, dtype, fill\_value)
 FrameHE.assign.bloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   FrameHE.assign
 
-    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.html#FrameAssign.apply_element_items)
+    FrameAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -733,10 +733,10 @@ FrameHE.assign.bloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 
     ```
 
-[FrameHE](frame_he.html#api-detail-framehe): [Constructor](frame_he-constructor.html#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.html#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.html#api-detail-framehe-attribute) | [Method](frame_he-method.html#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-detail-framehe-dictionary-like) | [Display](frame_he-display.html#api-detail-framehe-display) | [Assignment](#api-detail-framehe-assignment) | [Selector](frame_he-selector.html#api-detail-framehe-selector) | [Iterator](frame_he-iterator.html#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-detail-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.md#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.md#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](#api-detail-framehe-assignment) | [Selector](frame_he-selector.md#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)
 
-[Previous](frame_he-display.html "Detail: FrameHE: Display")
-[Next](frame_he-selector.html "Detail: FrameHE: Selector")
+[Previous](frame_he-display.md "Detail: FrameHE: Display")
+[Next](frame_he-selector.md "Detail: FrameHE: Selector")
 
 ---
 

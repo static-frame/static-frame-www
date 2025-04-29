@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: MemoryDisplay: Display
 * [View page source](../_sources/api_detail/memory_display-display.rst.txt)
 
-[Previous](memory_display-exporter.html "Detail: MemoryDisplay: Exporter")
-[Next](platform-constructor.html "Detail: Platform: Constructor")
+[Previous](memory_display-exporter.md "Detail: MemoryDisplay: Exporter")
+[Next](platform-constructor.md "Detail: Platform: Constructor")
 
 ---
 
 # Detail: MemoryDisplay: Display[](#detail-memorydisplay-display "Link to this heading")
 
-[Overview: MemoryDisplay: Display](../api_overview/memory_display-display.html#api-overview-memorydisplay-display)
+[Overview: MemoryDisplay: Display](../api_overview/memory_display-display.md#api-overview-memorydisplay-display)
 
-MemoryDisplay.\_\_repr\_\_()[[source]](../_modules/static_frame/core/memory_measure.html#MemoryDisplay.__repr__)[](#static_frame.MemoryDisplay.__repr__ "Link to this definition")
+MemoryDisplay.\_\_repr\_\_()[[source]](../_modules/static_frame/core/memory_measure.md#MemoryDisplay.__repr__)[](#static_frame.MemoryDisplay.__repr__ "Link to this definition")
 :   Return repr(self).
 
     ```
@@ -194,10 +194,10 @@ MemoryDisplay.\_\_str\_\_()[](#static_frame.MemoryDisplay.__str__ "Link to th
 
     ```
 
-[MemoryDisplay](memory_display.html#api-detail-memorydisplay): [Constructor](memory_display-constructor.html#api-detail-memorydisplay-constructor) | [Exporter](memory_display-exporter.html#api-detail-memorydisplay-exporter) | [Display](#api-detail-memorydisplay-display)
+[MemoryDisplay](memory_display.md#api-detail-memorydisplay): [Constructor](memory_display-constructor.md#api-detail-memorydisplay-constructor) | [Exporter](memory_display-exporter.md#api-detail-memorydisplay-exporter) | [Display](#api-detail-memorydisplay-display)
 
-[Previous](memory_display-exporter.html "Detail: MemoryDisplay: Exporter")
-[Next](platform-constructor.html "Detail: Platform: Constructor")
+[Previous](memory_display-exporter.md "Detail: MemoryDisplay: Exporter")
+[Next](platform-constructor.md "Detail: Platform: Constructor")
 
 ---
 

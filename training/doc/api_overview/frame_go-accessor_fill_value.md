@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,48 +135,48 @@ API Detail
 * Overview: FrameGO: Accessor Fill Value
 * [View page source](../_sources/api_overview/frame_go-accessor_fill_value.rst.txt)
 
-[Previous](frame_go-accessor_transpose.html "Overview: FrameGO: Accessor Transpose")
-[Next](frame_go-accessor_regular_expression.html "Overview: FrameGO: Accessor Regular Expression")
+[Previous](frame_go-accessor_transpose.md "Overview: FrameGO: Accessor Transpose")
+[Next](frame_go-accessor_regular_expression.md "Overview: FrameGO: Accessor Regular Expression")
 
 ---
 
 # Overview: FrameGO: Accessor Fill Value[](#overview-framego-accessor-fill-value "Link to this heading")
 
-[Detail: FrameGO: Accessor Fill Value](../api_detail/frame_go-accessor_fill_value.html#api-detail-framego-accessor-fill-value)
+[Detail: FrameGO: Accessor Fill Value](../api_detail/frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-loc) | `FrameGO.via_fill_value(fill_value).loc` | Label-based selection where labels not specified will define a new container con… |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-getitem) | `FrameGO.via_fill_value(fill_value).__getitem__(key)` | Label-based selection where labels not specified will define a new container con… |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-via-t) | `FrameGO.via_fill_value(fill_value).via_T` | Interface for using binary operators with one-dimensional sequences, where the o… |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-add) | `FrameGO.via_fill_value(fill_value).__add__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-sub) | `FrameGO.via_fill_value(fill_value).__sub__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-mul) | `FrameGO.via_fill_value(fill_value).__mul__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-truediv) | `FrameGO.via_fill_value(fill_value).__truediv__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-floordiv) | `FrameGO.via_fill_value(fill_value).__floordiv__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-mod) | `FrameGO.via_fill_value(fill_value).__mod__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-pow) | `FrameGO.via_fill_value(fill_value).__pow__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-lshift) | `FrameGO.via_fill_value(fill_value).__lshift__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-rshift) | `FrameGO.via_fill_value(fill_value).__rshift__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-and) | `FrameGO.via_fill_value(fill_value).__and__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-xor) | `FrameGO.via_fill_value(fill_value).__xor__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-or) | `FrameGO.via_fill_value(fill_value).__or__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-lt) | `FrameGO.via_fill_value(fill_value).__lt__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-le) | `FrameGO.via_fill_value(fill_value).__le__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-eq) | `FrameGO.via_fill_value(fill_value).__eq__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-ne) | `FrameGO.via_fill_value(fill_value).__ne__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-gt) | `FrameGO.via_fill_value(fill_value).__gt__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-ge) | `FrameGO.via_fill_value(fill_value).__ge__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-radd) | `FrameGO.via_fill_value(fill_value).__radd__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-rsub) | `FrameGO.via_fill_value(fill_value).__rsub__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-rmul) | `FrameGO.via_fill_value(fill_value).__rmul__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-rtruediv) | `FrameGO.via_fill_value(fill_value).__rtruediv__(other)` |  |
-| [Detail](../api_detail/frame_go-accessor_fill_value.html#api-sig-framego-via-fill-value-rfloordiv) | `FrameGO.via_fill_value(fill_value).__rfloordiv__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-loc) | `FrameGO.via_fill_value(fill_value).loc` | Label-based selection where labels not specified will define a new container con… |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-getitem) | `FrameGO.via_fill_value(fill_value).__getitem__(key)` | Label-based selection where labels not specified will define a new container con… |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-via-t) | `FrameGO.via_fill_value(fill_value).via_T` | Interface for using binary operators with one-dimensional sequences, where the o… |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-add) | `FrameGO.via_fill_value(fill_value).__add__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-sub) | `FrameGO.via_fill_value(fill_value).__sub__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-mul) | `FrameGO.via_fill_value(fill_value).__mul__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-truediv) | `FrameGO.via_fill_value(fill_value).__truediv__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-floordiv) | `FrameGO.via_fill_value(fill_value).__floordiv__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-mod) | `FrameGO.via_fill_value(fill_value).__mod__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-pow) | `FrameGO.via_fill_value(fill_value).__pow__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-lshift) | `FrameGO.via_fill_value(fill_value).__lshift__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-rshift) | `FrameGO.via_fill_value(fill_value).__rshift__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-and) | `FrameGO.via_fill_value(fill_value).__and__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-xor) | `FrameGO.via_fill_value(fill_value).__xor__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-or) | `FrameGO.via_fill_value(fill_value).__or__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-lt) | `FrameGO.via_fill_value(fill_value).__lt__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-le) | `FrameGO.via_fill_value(fill_value).__le__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-eq) | `FrameGO.via_fill_value(fill_value).__eq__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-ne) | `FrameGO.via_fill_value(fill_value).__ne__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-gt) | `FrameGO.via_fill_value(fill_value).__gt__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-ge) | `FrameGO.via_fill_value(fill_value).__ge__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-radd) | `FrameGO.via_fill_value(fill_value).__radd__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-rsub) | `FrameGO.via_fill_value(fill_value).__rsub__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-rmul) | `FrameGO.via_fill_value(fill_value).__rmul__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-rtruediv) | `FrameGO.via_fill_value(fill_value).__rtruediv__(other)` |  |
+| [Detail](../api_detail/frame_go-accessor_fill_value.md#api-sig-framego-via-fill-value-rfloordiv) | `FrameGO.via_fill_value(fill_value).__rfloordiv__(other)` |  |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-accessor_transpose.html "Overview: FrameGO: Accessor Transpose")
-[Next](frame_go-accessor_regular_expression.html "Overview: FrameGO: Accessor Regular Expression")
+[Previous](frame_go-accessor_transpose.md "Overview: FrameGO: Accessor Transpose")
+[Next](frame_go-accessor_regular_expression.md "Overview: FrameGO: Accessor Regular Expression")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,13 +135,13 @@ API Detail
 * Detail: Platform: Display
 * [View page source](../_sources/api_detail/platform-display.rst.txt)
 
-[Previous](platform-exporter.html "Detail: Platform: Exporter")
+[Previous](platform-exporter.md "Detail: Platform: Exporter")
 
 ---
 
 # Detail: Platform: Display[](#detail-platform-display "Link to this heading")
 
-[Overview: Platform: Display](../api_overview/platform-display.html#api-overview-platform-display)
+[Overview: Platform: Display](../api_overview/platform-display.md#api-overview-platform-display)
 
 Platform.\_\_repr\_\_()[](#static_frame.Platform.__repr__ "Link to this definition")
 :   Return repr(self).
@@ -149,11 +149,11 @@ Platform.\_\_repr\_\_()[](#static_frame.Platform.__repr__ "Link to this defin
 Platform.\_\_str\_\_()[](#static_frame.Platform.__str__ "Link to this definition")
 :   Return str(self).
 
-*classmethod* Platform.display()[[source]](../_modules/static_frame/core/platform.html#Platform.display)[](#static_frame.Platform.display "Link to this definition")
+*classmethod* Platform.display()[[source]](../_modules/static_frame/core/platform.md#Platform.display)[](#static_frame.Platform.display "Link to this definition")
 
-[Platform](platform.html#api-detail-platform): [Constructor](platform-constructor.html#api-detail-platform-constructor) | [Exporter](platform-exporter.html#api-detail-platform-exporter) | [Display](#api-detail-platform-display)
+[Platform](platform.md#api-detail-platform): [Constructor](platform-constructor.md#api-detail-platform-constructor) | [Exporter](platform-exporter.md#api-detail-platform-exporter) | [Display](#api-detail-platform-display)
 
-[Previous](platform-exporter.html "Detail: Platform: Exporter")
+[Previous](platform-exporter.md "Detail: Platform: Exporter")
 
 ---
 

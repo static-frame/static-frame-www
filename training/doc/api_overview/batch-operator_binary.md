@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: Batch: Operator Binary
 * [View page source](../_sources/api_overview/batch-operator_binary.rst.txt)
 
-[Previous](batch-selector.html "Overview: Batch: Selector")
-[Next](batch-operator_unary.html "Overview: Batch: Operator Unary")
+[Previous](batch-selector.md "Overview: Batch: Selector")
+[Next](batch-operator_unary.md "Overview: Batch: Operator Unary")
 
 ---
 
 # Overview: Batch: Operator Binary[](#overview-batch-operator-binary "Link to this heading")
 
-[Detail: Batch: Operator Binary](../api_detail/batch-operator_binary.html#api-detail-batch-operator-binary)
+[Detail: Batch: Operator Binary](../api_detail/batch-operator_binary.md#api-detail-batch-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-add) | `Batch.__add__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-and) | `Batch.__and__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-eq) | `Batch.__eq__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-floordiv) | `Batch.__floordiv__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-ge) | `Batch.__ge__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-gt) | `Batch.__gt__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-le) | `Batch.__le__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-lt) | `Batch.__lt__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-matmul) | `Batch.__matmul__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-mod) | `Batch.__mod__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-mul) | `Batch.__mul__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-ne) | `Batch.__ne__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-or) | `Batch.__or__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-pow) | `Batch.__pow__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-radd) | `Batch.__radd__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-rfloordiv) | `Batch.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-rmatmul) | `Batch.__rmatmul__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-rmul) | `Batch.__rmul__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-rshift) | `Batch.__rshift__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-rsub) | `Batch.__rsub__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-rtruediv) | `Batch.__rtruediv__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-sub) | `Batch.__sub__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-truediv) | `Batch.__truediv__(other)` |  |
-| [Detail](../api_detail/batch-operator_binary.html#api-sig-batch-xor) | `Batch.__xor__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-add) | `Batch.__add__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-and) | `Batch.__and__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-eq) | `Batch.__eq__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-floordiv) | `Batch.__floordiv__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-ge) | `Batch.__ge__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-gt) | `Batch.__gt__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-le) | `Batch.__le__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-lt) | `Batch.__lt__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-matmul) | `Batch.__matmul__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-mod) | `Batch.__mod__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-mul) | `Batch.__mul__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-ne) | `Batch.__ne__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-or) | `Batch.__or__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-pow) | `Batch.__pow__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-radd) | `Batch.__radd__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-rfloordiv) | `Batch.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-rmatmul) | `Batch.__rmatmul__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-rmul) | `Batch.__rmul__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-rshift) | `Batch.__rshift__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-rsub) | `Batch.__rsub__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-rtruediv) | `Batch.__rtruediv__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-sub) | `Batch.__sub__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-truediv) | `Batch.__truediv__(other)` |  |
+| [Detail](../api_detail/batch-operator_binary.md#api-sig-batch-xor) | `Batch.__xor__(other)` |  |
 
-[Batch](batch.html#api-overview-batch): [Constructor](batch-constructor.html#api-overview-batch-constructor) | [Exporter](batch-exporter.html#api-overview-batch-exporter) | [Attribute](batch-attribute.html#api-overview-batch-attribute) | [Method](batch-method.html#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-overview-batch-dictionary-like) | [Display](batch-display.html#api-overview-batch-display) | [Selector](batch-selector.html#api-overview-batch-selector) | [Operator Binary](#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-overview-batch-accessor-reduce)
+[Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](batch-attribute.md#api-overview-batch-attribute) | [Method](batch-method.md#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-overview-batch-dictionary-like) | [Display](batch-display.md#api-overview-batch-display) | [Selector](batch-selector.md#api-overview-batch-selector) | [Operator Binary](#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 
-[Previous](batch-selector.html "Overview: Batch: Selector")
-[Next](batch-operator_unary.html "Overview: Batch: Operator Unary")
+[Previous](batch-selector.md "Overview: Batch: Selector")
+[Next](batch-operator_unary.md "Overview: Batch: Operator Unary")
 
 ---
 

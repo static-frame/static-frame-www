@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexNanosecond: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_nanosecond-accessor_regular_expression.rst.txt)
 
-[Previous](index_nanosecond-accessor_string.html "Overview: IndexNanosecond: Accessor String")
-[Next](index_nanosecond-accessor_hashlib.html "Overview: IndexNanosecond: Accessor Hashlib")
+[Previous](index_nanosecond-accessor_string.md "Overview: IndexNanosecond: Accessor String")
+[Next](index_nanosecond-accessor_hashlib.md "Overview: IndexNanosecond: Accessor Hashlib")
 
 ---
 
 # Overview: IndexNanosecond: Accessor Regular Expression[](#overview-indexnanosecond-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexNanosecond: Accessor Regular Expression](../api_detail/index_nanosecond-accessor_regular_expression.html#api-detail-indexnanosecond-accessor-regular-expression)
+[Detail: IndexNanosecond: Accessor Regular Expression](../api_detail/index_nanosecond-accessor_regular_expression.md#api-detail-indexnanosecond-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.html#api-sig-indexnanosecond-via-re-search) | `IndexNanosecond.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.html#api-sig-indexnanosecond-via-re-match) | `IndexNanosecond.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.html#api-sig-indexnanosecond-via-re-fullmatch) | `IndexNanosecond.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.html#api-sig-indexnanosecond-via-re-split) | `IndexNanosecond.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.html#api-sig-indexnanosecond-via-re-findall) | `IndexNanosecond.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.html#api-sig-indexnanosecond-via-re-sub) | `IndexNanosecond.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.html#api-sig-indexnanosecond-via-re-subn) | `IndexNanosecond.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.md#api-sig-indexnanosecond-via-re-search) | `IndexNanosecond.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.md#api-sig-indexnanosecond-via-re-match) | `IndexNanosecond.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.md#api-sig-indexnanosecond-via-re-fullmatch) | `IndexNanosecond.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.md#api-sig-indexnanosecond-via-re-split) | `IndexNanosecond.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.md#api-sig-indexnanosecond-via-re-findall) | `IndexNanosecond.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.md#api-sig-indexnanosecond-via-re-sub) | `IndexNanosecond.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_nanosecond-accessor_regular_expression.md#api-sig-indexnanosecond-via-re-subn) | `IndexNanosecond.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexNanosecond](index_nanosecond.html#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.html#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.html#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.html#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.html#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.html#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.html#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.html#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.html#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.html#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.html#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.html#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.html#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.html#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.html#api-overview-indexnanosecond-accessor-type-clinic)
+[IndexNanosecond](index_nanosecond.md#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-overview-indexnanosecond-accessor-type-clinic)
 
-[Previous](index_nanosecond-accessor_string.html "Overview: IndexNanosecond: Accessor String")
-[Next](index_nanosecond-accessor_hashlib.html "Overview: IndexNanosecond: Accessor Hashlib")
+[Previous](index_nanosecond-accessor_string.md "Overview: IndexNanosecond: Accessor String")
+[Next](index_nanosecond-accessor_hashlib.md "Overview: IndexNanosecond: Accessor Hashlib")
 
 ---
 

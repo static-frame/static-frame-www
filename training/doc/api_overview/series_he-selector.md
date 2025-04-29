@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,34 +135,34 @@ API Detail
 * Overview: SeriesHE: Selector
 * [View page source](../_sources/api_overview/series_he-selector.rst.txt)
 
-[Previous](series_he-assignment.html "Overview: SeriesHE: Assignment")
-[Next](series_he-iterator.html "Overview: SeriesHE: Iterator")
+[Previous](series_he-assignment.md "Overview: SeriesHE: Assignment")
+[Next](series_he-iterator.md "Overview: SeriesHE: Iterator")
 
 ---
 
 # Overview: SeriesHE: Selector[](#overview-serieshe-selector "Link to this heading")
 
-[Detail: SeriesHE: Selector](../api_detail/series_he-selector.html#api-detail-serieshe-selector)
+[Detail: SeriesHE: Selector](../api_detail/series_he-selector.md#api-detail-serieshe-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-drop) | `SeriesHE.drop[key]` | Label-based selection. |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-drop-iloc) | `SeriesHE.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-drop-loc) | `SeriesHE.drop.loc[key]` |  |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-mask) | `SeriesHE.mask[key]` | Label-based selection. |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-mask-iloc) | `SeriesHE.mask.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-mask-loc) | `SeriesHE.mask.loc[key]` |  |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-masked-array) | `SeriesHE.masked_array[key]` | Label-based selection. |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-masked-array-iloc) | `SeriesHE.masked_array.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-masked-array-loc) | `SeriesHE.masked_array.loc[key]` |  |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe) | `SeriesHE[key]` | Selector of values by label. Args: key: A loc selector, either a label, a list o… |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-iloc) | `SeriesHE.iloc[key]` | Interface for position-based selection. |
-| [Detail](../api_detail/series_he-selector.html#api-sig-serieshe-loc) | `SeriesHE.loc[key]` | Interface for label-based selection. |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-drop) | `SeriesHE.drop[key]` | Label-based selection. |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-drop-iloc) | `SeriesHE.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-drop-loc) | `SeriesHE.drop.loc[key]` |  |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-mask) | `SeriesHE.mask[key]` | Label-based selection. |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-mask-iloc) | `SeriesHE.mask.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-mask-loc) | `SeriesHE.mask.loc[key]` |  |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-masked-array) | `SeriesHE.masked_array[key]` | Label-based selection. |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-masked-array-iloc) | `SeriesHE.masked_array.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-masked-array-loc) | `SeriesHE.masked_array.loc[key]` |  |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe) | `SeriesHE[key]` | Selector of values by label. Args: key: A loc selector, either a label, a list o… |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-iloc) | `SeriesHE.iloc[key]` | Interface for position-based selection. |
+| [Detail](../api_detail/series_he-selector.md#api-sig-serieshe-loc) | `SeriesHE.loc[key]` | Interface for label-based selection. |
 
-[SeriesHE](series_he.html#api-overview-serieshe): [Constructor](series_he-constructor.html#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | [Method](series_he-method.html#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-overview-serieshe-dictionary-like) | [Display](series_he-display.html#api-overview-serieshe-display) | [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | [Selector](#api-overview-serieshe-selector) | [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-overview-serieshe): [Constructor](series_he-constructor.md#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | [Method](series_he-method.md#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-overview-serieshe-dictionary-like) | [Display](series_he-display.md#api-overview-serieshe-display) | [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | [Selector](#api-overview-serieshe-selector) | [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-assignment.html "Overview: SeriesHE: Assignment")
-[Next](series_he-iterator.html "Overview: SeriesHE: Iterator")
+[Previous](series_he-assignment.md "Overview: SeriesHE: Assignment")
+[Next](series_he-iterator.md "Overview: SeriesHE: Iterator")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexHourGO: Accessor Values
 * [View page source](../_sources/api_overview/index_hour_go-accessor_values.rst.txt)
 
-[Previous](index_hour_go-operator_unary.html "Overview: IndexHourGO: Operator Unary")
-[Next](index_hour_go-accessor_datetime.html "Overview: IndexHourGO: Accessor Datetime")
+[Previous](index_hour_go-operator_unary.md "Overview: IndexHourGO: Operator Unary")
+[Next](index_hour_go-accessor_datetime.md "Overview: IndexHourGO: Accessor Datetime")
 
 ---
 
 # Overview: IndexHourGO: Accessor Values[](#overview-indexhourgo-accessor-values "Link to this heading")
 
-[Detail: IndexHourGO: Accessor Values](../api_detail/index_hour_go-accessor_values.html#api-detail-indexhourgo-accessor-values)
+[Detail: IndexHourGO: Accessor Values](../api_detail/index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour_go-accessor_values.html#api-sig-indexhourgo-via-values-apply) | `IndexHourGO.via_values.apply(func, *args, **kwargs)` |  |
-| [Detail](../api_detail/index_hour_go-accessor_values.html#api-sig-indexhourgo-via-values-array-ufunc) | `IndexHourGO.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
-| [Detail](../api_detail/index_hour_go-accessor_values.html#api-sig-indexhourgo-via-values-call) | `IndexHourGO.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
+| [Detail](../api_detail/index_hour_go-accessor_values.md#api-sig-indexhourgo-via-values-apply) | `IndexHourGO.via_values.apply(func, *args, **kwargs)` |  |
+| [Detail](../api_detail/index_hour_go-accessor_values.md#api-sig-indexhourgo-via-values-array-ufunc) | `IndexHourGO.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
+| [Detail](../api_detail/index_hour_go-accessor_values.md#api-sig-indexhourgo-via-values-call) | `IndexHourGO.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
 
-[IndexHourGO](index_hour_go.html#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.html#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-overview-indexhourgo-operator-unary) | [Accessor Values](#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-overview-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.md#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-overview-indexhourgo-operator-unary) | [Accessor Values](#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-overview-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-operator_unary.html "Overview: IndexHourGO: Operator Unary")
-[Next](index_hour_go-accessor_datetime.html "Overview: IndexHourGO: Accessor Datetime")
+[Previous](index_hour_go-operator_unary.md "Overview: IndexHourGO: Operator Unary")
+[Next](index_hour_go-accessor_datetime.md "Overview: IndexHourGO: Accessor Datetime")
 
 ---
 

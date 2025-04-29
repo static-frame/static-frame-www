@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: IndexMinuteGO: Accessor Hashlib
 * [View page source](../_sources/api_overview/index_minute_go-accessor_hashlib.rst.txt)
 
-[Previous](index_minute_go-accessor_regular_expression.html "Overview: IndexMinuteGO: Accessor Regular Expression")
-[Next](index_minute_go-accessor_type_clinic.html "Overview: IndexMinuteGO: Accessor Type Clinic")
+[Previous](index_minute_go-accessor_regular_expression.md "Overview: IndexMinuteGO: Accessor Regular Expression")
+[Next](index_minute_go-accessor_type_clinic.md "Overview: IndexMinuteGO: Accessor Type Clinic")
 
 ---
 
 # Overview: IndexMinuteGO: Accessor Hashlib[](#overview-indexminutego-accessor-hashlib "Link to this heading")
 
-[Detail: IndexMinuteGO: Accessor Hashlib](../api_detail/index_minute_go-accessor_hashlib.html#api-detail-indexminutego-accessor-hashlib)
+[Detail: IndexMinuteGO: Accessor Hashlib](../api_detail/index_minute_go-accessor_hashlib.md#api-detail-indexminutego-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-to-bytes) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-md5) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-sha256) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-sha512) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-sha3-256) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-sha3-512) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-shake-128) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-shake-256) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-blake2b) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/index_minute_go-accessor_hashlib.html#api-sig-indexminutego-via-hashlib-blake2s) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-to-bytes) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-md5) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-sha256) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-sha512) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-sha3-256) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-sha3-512) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-shake-128) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-shake-256) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-blake2b) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_minute_go-accessor_hashlib.md#api-sig-indexminutego-via-hashlib-blake2s) | `IndexMinuteGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[IndexMinuteGO](index_minute_go.html#api-overview-indexminutego): [Constructor](index_minute_go-constructor.html#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.html#api-overview-indexminutego-exporter) | [Attribute](index_minute_go-attribute.html#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.html#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.html#api-overview-indexminutego-dictionary-like) | [Display](index_minute_go-display.html#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.html#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.html#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.html#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.html#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.html#api-overview-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.html#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.html#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.html#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.html#api-overview-indexminutego-accessor-type-clinic)
+[IndexMinuteGO](index_minute_go.md#api-overview-indexminutego): [Constructor](index_minute_go-constructor.md#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.md#api-overview-indexminutego-exporter) | [Attribute](index_minute_go-attribute.md#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.md#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-overview-indexminutego-dictionary-like) | [Display](index_minute_go-display.md#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.md#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.md#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.md#api-overview-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.md#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-overview-indexminutego-accessor-type-clinic)
 
-[Previous](index_minute_go-accessor_regular_expression.html "Overview: IndexMinuteGO: Accessor Regular Expression")
-[Next](index_minute_go-accessor_type_clinic.html "Overview: IndexMinuteGO: Accessor Type Clinic")
+[Previous](index_minute_go-accessor_regular_expression.md "Overview: IndexMinuteGO: Accessor Regular Expression")
+[Next](index_minute_go-accessor_type_clinic.md "Overview: IndexMinuteGO: Accessor Type Clinic")
 
 ---
 

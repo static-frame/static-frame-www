@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexYear: Accessor Type Clinic
 * [View page source](../_sources/api_overview/index_year-accessor_type_clinic.rst.txt)
 
-[Previous](index_year-accessor_hashlib.html "Overview: IndexYear: Accessor Hashlib")
-[Next](index_year_go-constructor.html "Overview: IndexYearGO: Constructor")
+[Previous](index_year-accessor_hashlib.md "Overview: IndexYear: Accessor Hashlib")
+[Next](index_year_go-constructor.md "Overview: IndexYearGO: Constructor")
 
 ---
 
 # Overview: IndexYear: Accessor Type Clinic[](#overview-indexyear-accessor-type-clinic "Link to this heading")
 
-[Detail: IndexYear: Accessor Type Clinic](../api_detail/index_year-accessor_type_clinic.html#api-detail-indexyear-accessor-type-clinic)
+[Detail: IndexYear: Accessor Type Clinic](../api_detail/index_year-accessor_type_clinic.md#api-detail-indexyear-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year-accessor_type_clinic.html#api-sig-indexyear-via-type-clinic-to-hint) | `IndexYear.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/index_year-accessor_type_clinic.html#api-sig-indexyear-via-type-clinic-check) | `IndexYear.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/index_year-accessor_type_clinic.html#api-sig-indexyear-via-type-clinic-warn) | `IndexYear.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/index_year-accessor_type_clinic.html#api-sig-indexyear-via-type-clinic-call) | `IndexYear.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/index_year-accessor_type_clinic.html#api-sig-indexyear-via-type-clinic-repr) | `IndexYear.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/index_year-accessor_type_clinic.md#api-sig-indexyear-via-type-clinic-to-hint) | `IndexYear.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/index_year-accessor_type_clinic.md#api-sig-indexyear-via-type-clinic-check) | `IndexYear.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/index_year-accessor_type_clinic.md#api-sig-indexyear-via-type-clinic-warn) | `IndexYear.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/index_year-accessor_type_clinic.md#api-sig-indexyear-via-type-clinic-call) | `IndexYear.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/index_year-accessor_type_clinic.md#api-sig-indexyear-via-type-clinic-repr) | `IndexYear.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[IndexYear](index_year.html#api-overview-indexyear): [Constructor](index_year-constructor.html#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.html#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.html#api-overview-indexyear-attribute) | [Method](index_year-method.html#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-overview-indexyear-dictionary-like) | [Display](index_year-display.html#api-overview-indexyear-display) | [Selector](index_year-selector.html#api-overview-indexyear-selector) | [Iterator](index_year-iterator.html#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-overview-indexyear): [Constructor](index_year-constructor.md#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.md#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.md#api-overview-indexyear-attribute) | [Method](index_year-method.md#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-overview-indexyear-dictionary-like) | [Display](index_year-display.md#api-overview-indexyear-display) | [Selector](index_year-selector.md#api-overview-indexyear-selector) | [Iterator](index_year-iterator.md#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexyear-accessor-type-clinic)
 
-[Previous](index_year-accessor_hashlib.html "Overview: IndexYear: Accessor Hashlib")
-[Next](index_year_go-constructor.html "Overview: IndexYearGO: Constructor")
+[Previous](index_year-accessor_hashlib.md "Overview: IndexYear: Accessor Hashlib")
+[Next](index_year_go-constructor.md "Overview: IndexYearGO: Constructor")
 
 ---
 

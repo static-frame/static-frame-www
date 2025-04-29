@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,36 +135,36 @@ API Detail
 * Overview: Bus: Attribute
 * [View page source](../_sources/api_overview/bus-attribute.rst.txt)
 
-[Previous](bus-exporter.html "Overview: Bus: Exporter")
-[Next](bus-method.html "Overview: Bus: Method")
+[Previous](bus-exporter.md "Overview: Bus: Exporter")
+[Next](bus-method.md "Overview: Bus: Method")
 
 ---
 
 # Overview: Bus: Attribute[](#overview-bus-attribute "Link to this heading")
 
-[Detail: Bus: Attribute](../api_detail/bus-attribute.html#api-detail-bus-attribute)
+[Detail: Bus: Attribute](../api_detail/bus-attribute.md#api-detail-bus-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-static) | `Bus.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-dtype) | `Bus.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-dtypes) | `Bus.dtypes` | Returns a Frame of dtype per column for all loaded Frames. |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-index) | `Bus.index` | The index instance assigned to this container. Returns: Index |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-inventory) | `Bus.inventory` | Return a Frame indicating file\_path, last-modified time, and size of underlying… |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-memory) | `Bus.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-mloc) | `Bus.mloc` | Returns a Series showing a tuple of memory locations within each loaded Frame. |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-name) | `Bus.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-nbytes) | `Bus.nbytes` | Total bytes of data currently loaded in the Bus. |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-ndim) | `Bus.ndim` | Return the number of dimensions, which for a Bus is always 1. Returns: int |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-shape) | `Bus.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: Tupl… |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-shapes) | `Bus.shapes` | A Series describing the shape of each loaded Frame. Unloaded Frame will have a s… |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-size) | `Bus.size` | Return the size of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/bus-attribute.html#api-sig-bus-status) | `Bus.status` | Return a Frame indicating loaded status, size, bytes, and shape of all loaded Fr… |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-static) | `Bus.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-dtype) | `Bus.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-dtypes) | `Bus.dtypes` | Returns a Frame of dtype per column for all loaded Frames. |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-index) | `Bus.index` | The index instance assigned to this container. Returns: Index |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-inventory) | `Bus.inventory` | Return a Frame indicating file\_path, last-modified time, and size of underlying… |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-memory) | `Bus.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-mloc) | `Bus.mloc` | Returns a Series showing a tuple of memory locations within each loaded Frame. |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-name) | `Bus.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-nbytes) | `Bus.nbytes` | Total bytes of data currently loaded in the Bus. |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-ndim) | `Bus.ndim` | Return the number of dimensions, which for a Bus is always 1. Returns: int |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-shape) | `Bus.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: Tupl… |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-shapes) | `Bus.shapes` | A Series describing the shape of each loaded Frame. Unloaded Frame will have a s… |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-size) | `Bus.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-status) | `Bus.status` | Return a Frame indicating loaded status, size, bytes, and shape of all loaded Fr… |
 
-[Bus](bus.html#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](bus-exporter.html#api-overview-bus-exporter) | [Attribute](#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](bus-exporter.html "Overview: Bus: Exporter")
-[Next](bus-method.html "Overview: Bus: Method")
+[Previous](bus-exporter.md "Overview: Bus: Exporter")
+[Next](bus-method.md "Overview: Bus: Method")
 
 ---
 

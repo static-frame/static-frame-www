@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexNanosecond: Exporter
 * [View page source](../_sources/api_overview/index_nanosecond-exporter.rst.txt)
 
-[Previous](index_nanosecond-constructor.html "Overview: IndexNanosecond: Constructor")
-[Next](index_nanosecond-attribute.html "Overview: IndexNanosecond: Attribute")
+[Previous](index_nanosecond-constructor.md "Overview: IndexNanosecond: Constructor")
+[Next](index_nanosecond-attribute.md "Overview: IndexNanosecond: Attribute")
 
 ---
 
 # Overview: IndexNanosecond: Exporter[](#overview-indexnanosecond-exporter "Link to this heading")
 
-[Detail: IndexNanosecond: Exporter](../api_detail/index_nanosecond-exporter.html#api-detail-indexnanosecond-exporter)
+[Detail: IndexNanosecond: Exporter](../api_detail/index_nanosecond-exporter.md#api-detail-indexnanosecond-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond-exporter.html#api-sig-indexnanosecond-to-html) | `IndexNanosecond.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
-| [Detail](../api_detail/index_nanosecond-exporter.html#api-sig-indexnanosecond-to-html-datatables) | `IndexNanosecond.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
-| [Detail](../api_detail/index_nanosecond-exporter.html#api-sig-indexnanosecond-to-pandas) | `IndexNanosecond.to_pandas()` | Return a Pandas Index. |
-| [Detail](../api_detail/index_nanosecond-exporter.html#api-sig-indexnanosecond-to-series) | `IndexNanosecond.to_series()` | Return a Series with values from this Index’s labels. |
-| [Detail](../api_detail/index_nanosecond-exporter.html#api-sig-indexnanosecond-to-visidata) | `IndexNanosecond.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/index_nanosecond-exporter.md#api-sig-indexnanosecond-to-html) | `IndexNanosecond.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
+| [Detail](../api_detail/index_nanosecond-exporter.md#api-sig-indexnanosecond-to-html-datatables) | `IndexNanosecond.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
+| [Detail](../api_detail/index_nanosecond-exporter.md#api-sig-indexnanosecond-to-pandas) | `IndexNanosecond.to_pandas()` | Return a Pandas Index. |
+| [Detail](../api_detail/index_nanosecond-exporter.md#api-sig-indexnanosecond-to-series) | `IndexNanosecond.to_series()` | Return a Series with values from this Index’s labels. |
+| [Detail](../api_detail/index_nanosecond-exporter.md#api-sig-indexnanosecond-to-visidata) | `IndexNanosecond.to_visidata()` | Open an interactive VisiData session. |
 
-[IndexNanosecond](index_nanosecond.html#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.html#api-overview-indexnanosecond-constructor) | [Exporter](#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.html#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.html#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.html#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.html#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.html#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.html#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.html#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.html#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.html#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.html#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.html#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.html#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.html#api-overview-indexnanosecond-accessor-type-clinic)
+[IndexNanosecond](index_nanosecond.md#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-overview-indexnanosecond-constructor) | [Exporter](#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-overview-indexnanosecond-accessor-type-clinic)
 
-[Previous](index_nanosecond-constructor.html "Overview: IndexNanosecond: Constructor")
-[Next](index_nanosecond-attribute.html "Overview: IndexNanosecond: Attribute")
+[Previous](index_nanosecond-constructor.md "Overview: IndexNanosecond: Constructor")
+[Next](index_nanosecond-attribute.md "Overview: IndexNanosecond: Attribute")
 
 ---
 

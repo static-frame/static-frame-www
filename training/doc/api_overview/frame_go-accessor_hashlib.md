@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: FrameGO: Accessor Hashlib
 * [View page source](../_sources/api_overview/frame_go-accessor_hashlib.rst.txt)
 
-[Previous](frame_go-accessor_regular_expression.html "Overview: FrameGO: Accessor Regular Expression")
-[Next](frame_go-accessor_type_clinic.html "Overview: FrameGO: Accessor Type Clinic")
+[Previous](frame_go-accessor_regular_expression.md "Overview: FrameGO: Accessor Regular Expression")
+[Next](frame_go-accessor_type_clinic.md "Overview: FrameGO: Accessor Type Clinic")
 
 ---
 
 # Overview: FrameGO: Accessor Hashlib[](#overview-framego-accessor-hashlib "Link to this heading")
 
-[Detail: FrameGO: Accessor Hashlib](../api_detail/frame_go-accessor_hashlib.html#api-detail-framego-accessor-hashlib)
+[Detail: FrameGO: Accessor Hashlib](../api_detail/frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-to-bytes) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-md5) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-sha256) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-sha512) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-sha3-256) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-sha3-512) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-shake-128) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-shake-256) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-blake2b) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/frame_go-accessor_hashlib.html#api-sig-framego-via-hashlib-blake2s) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-to-bytes) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-md5) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-sha256) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-sha512) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-sha3-256) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-sha3-512) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-shake-128) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-shake-256) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-blake2b) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/frame_go-accessor_hashlib.md#api-sig-framego-via-hashlib-blake2s) | `FrameGO.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-accessor_regular_expression.html "Overview: FrameGO: Accessor Regular Expression")
-[Next](frame_go-accessor_type_clinic.html "Overview: FrameGO: Accessor Type Clinic")
+[Previous](frame_go-accessor_regular_expression.md "Overview: FrameGO: Accessor Regular Expression")
+[Next](frame_go-accessor_type_clinic.md "Overview: FrameGO: Accessor Type Clinic")
 
 ---
 

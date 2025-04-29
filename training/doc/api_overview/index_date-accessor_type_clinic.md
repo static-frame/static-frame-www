@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexDate: Accessor Type Clinic
 * [View page source](../_sources/api_overview/index_date-accessor_type_clinic.rst.txt)
 
-[Previous](index_date-accessor_hashlib.html "Overview: IndexDate: Accessor Hashlib")
-[Next](index_date_go-constructor.html "Overview: IndexDateGO: Constructor")
+[Previous](index_date-accessor_hashlib.md "Overview: IndexDate: Accessor Hashlib")
+[Next](index_date_go-constructor.md "Overview: IndexDateGO: Constructor")
 
 ---
 
 # Overview: IndexDate: Accessor Type Clinic[](#overview-indexdate-accessor-type-clinic "Link to this heading")
 
-[Detail: IndexDate: Accessor Type Clinic](../api_detail/index_date-accessor_type_clinic.html#api-detail-indexdate-accessor-type-clinic)
+[Detail: IndexDate: Accessor Type Clinic](../api_detail/index_date-accessor_type_clinic.md#api-detail-indexdate-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date-accessor_type_clinic.html#api-sig-indexdate-via-type-clinic-to-hint) | `IndexDate.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/index_date-accessor_type_clinic.html#api-sig-indexdate-via-type-clinic-check) | `IndexDate.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/index_date-accessor_type_clinic.html#api-sig-indexdate-via-type-clinic-warn) | `IndexDate.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/index_date-accessor_type_clinic.html#api-sig-indexdate-via-type-clinic-call) | `IndexDate.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/index_date-accessor_type_clinic.html#api-sig-indexdate-via-type-clinic-repr) | `IndexDate.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/index_date-accessor_type_clinic.md#api-sig-indexdate-via-type-clinic-to-hint) | `IndexDate.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/index_date-accessor_type_clinic.md#api-sig-indexdate-via-type-clinic-check) | `IndexDate.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/index_date-accessor_type_clinic.md#api-sig-indexdate-via-type-clinic-warn) | `IndexDate.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/index_date-accessor_type_clinic.md#api-sig-indexdate-via-type-clinic-call) | `IndexDate.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/index_date-accessor_type_clinic.md#api-sig-indexdate-via-type-clinic-repr) | `IndexDate.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[IndexDate](index_date.html#api-overview-indexdate): [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | [Method](index_date-method.html#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | [Display](index_date-display.html#api-overview-indexdate-display) | [Selector](index_date-selector.html#api-overview-indexdate-selector) | [Iterator](index_date-iterator.html#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.html#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-overview-indexdate): [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | [Method](index_date-method.md#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | [Display](index_date-display.md#api-overview-indexdate-display) | [Selector](index_date-selector.md#api-overview-indexdate-selector) | [Iterator](index_date-iterator.md#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexdate-accessor-type-clinic)
 
-[Previous](index_date-accessor_hashlib.html "Overview: IndexDate: Accessor Hashlib")
-[Next](index_date_go-constructor.html "Overview: IndexDateGO: Constructor")
+[Previous](index_date-accessor_hashlib.md "Overview: IndexDate: Accessor Hashlib")
+[Next](index_date_go-constructor.md "Overview: IndexDateGO: Constructor")
 
 ---
 

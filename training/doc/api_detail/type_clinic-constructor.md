@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: TypeClinic: Constructor
 * [View page source](../_sources/api_detail/type_clinic-constructor.rst.txt)
 
-[Previous](iloc-display.html "Detail: ILoc: Display")
-[Next](type_clinic-exporter.html "Detail: TypeClinic: Exporter")
+[Previous](iloc-display.md "Detail: ILoc: Display")
+[Next](type_clinic-exporter.md "Detail: TypeClinic: Exporter")
 
 ---
 
 # Detail: TypeClinic: Constructor[](#detail-typeclinic-constructor "Link to this heading")
 
-[Overview: TypeClinic: Constructor](../api_overview/type_clinic-constructor.html#api-overview-typeclinic-constructor)
+[Overview: TypeClinic: Constructor](../api_overview/type_clinic-constructor.md#api-overview-typeclinic-constructor)
 
-TypeClinic.\_\_init\_\_(*value*, */*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__init__)[](#static_frame.TypeClinic.__init__ "Link to this definition")
+TypeClinic.\_\_init\_\_(*value*, */*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__init__)[](#static_frame.TypeClinic.__init__ "Link to this definition")
 :   ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f
@@ -162,10 +162,10 @@ TypeClinic.\_\_init\_\_(*value*, */*)[[source]](../_modules/static_frame/core/ty
 
     ```
 
-[TypeClinic](type_clinic.html#api-detail-typeclinic): [Constructor](#api-detail-typeclinic-constructor) | [Exporter](type_clinic-exporter.html#api-detail-typeclinic-exporter) | [Method](type_clinic-method.html#api-detail-typeclinic-method) | [Display](type_clinic-display.html#api-detail-typeclinic-display)
+[TypeClinic](type_clinic.md#api-detail-typeclinic): [Constructor](#api-detail-typeclinic-constructor) | [Exporter](type_clinic-exporter.md#api-detail-typeclinic-exporter) | [Method](type_clinic-method.md#api-detail-typeclinic-method) | [Display](type_clinic-display.md#api-detail-typeclinic-display)
 
-[Previous](iloc-display.html "Detail: ILoc: Display")
-[Next](type_clinic-exporter.html "Detail: TypeClinic: Exporter")
+[Previous](iloc-display.md "Detail: ILoc: Display")
+[Next](type_clinic-exporter.md "Detail: TypeClinic: Exporter")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: Batch: Selector
 * [View page source](../_sources/api_overview/batch-selector.rst.txt)
 
-[Previous](batch-display.html "Overview: Batch: Display")
-[Next](batch-operator_binary.html "Overview: Batch: Operator Binary")
+[Previous](batch-display.md "Overview: Batch: Display")
+[Next](batch-operator_binary.md "Overview: Batch: Operator Binary")
 
 ---
 
 # Overview: Batch: Selector[](#overview-batch-selector "Link to this heading")
 
-[Detail: Batch: Selector](../api_detail/batch-selector.html#api-detail-batch-selector)
+[Detail: Batch: Selector](../api_detail/batch-selector.md#api-detail-batch-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-selector.html#api-sig-batch-bloc) | `Batch.bloc[key]` |  |
-| [Detail](../api_detail/batch-selector.html#api-sig-batch-drop) | `Batch.drop[key]` | Label-based selection. |
-| [Detail](../api_detail/batch-selector.html#api-sig-batch-drop-iloc) | `Batch.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/batch-selector.html#api-sig-batch-drop-loc) | `Batch.drop.loc[key]` |  |
-| [Detail](../api_detail/batch-selector.html#api-sig-batch) | `Batch[key]` |  |
-| [Detail](../api_detail/batch-selector.html#api-sig-batch-iloc) | `Batch.iloc[key]` |  |
-| [Detail](../api_detail/batch-selector.html#api-sig-batch-loc) | `Batch.loc[key]` |  |
+| [Detail](../api_detail/batch-selector.md#api-sig-batch-bloc) | `Batch.bloc[key]` |  |
+| [Detail](../api_detail/batch-selector.md#api-sig-batch-drop) | `Batch.drop[key]` | Label-based selection. |
+| [Detail](../api_detail/batch-selector.md#api-sig-batch-drop-iloc) | `Batch.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/batch-selector.md#api-sig-batch-drop-loc) | `Batch.drop.loc[key]` |  |
+| [Detail](../api_detail/batch-selector.md#api-sig-batch) | `Batch[key]` |  |
+| [Detail](../api_detail/batch-selector.md#api-sig-batch-iloc) | `Batch.iloc[key]` |  |
+| [Detail](../api_detail/batch-selector.md#api-sig-batch-loc) | `Batch.loc[key]` |  |
 
-[Batch](batch.html#api-overview-batch): [Constructor](batch-constructor.html#api-overview-batch-constructor) | [Exporter](batch-exporter.html#api-overview-batch-exporter) | [Attribute](batch-attribute.html#api-overview-batch-attribute) | [Method](batch-method.html#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-overview-batch-dictionary-like) | [Display](batch-display.html#api-overview-batch-display) | [Selector](#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.html#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-overview-batch-accessor-reduce)
+[Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](batch-attribute.md#api-overview-batch-attribute) | [Method](batch-method.md#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-overview-batch-dictionary-like) | [Display](batch-display.md#api-overview-batch-display) | [Selector](#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.md#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 
-[Previous](batch-display.html "Overview: Batch: Display")
-[Next](batch-operator_binary.html "Overview: Batch: Operator Binary")
+[Previous](batch-display.md "Overview: Batch: Display")
+[Next](batch-operator_binary.md "Overview: Batch: Operator Binary")
 
 ---
 

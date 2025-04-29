@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: TypeClinic: Constructor
 * [View page source](../_sources/api_overview/type_clinic-constructor.rst.txt)
 
-[Previous](iloc-display.html "Overview: ILoc: Display")
-[Next](type_clinic-exporter.html "Overview: TypeClinic: Exporter")
+[Previous](iloc-display.md "Overview: ILoc: Display")
+[Next](type_clinic-exporter.md "Overview: TypeClinic: Exporter")
 
 ---
 
 # Overview: TypeClinic: Constructor[](#overview-typeclinic-constructor "Link to this heading")
 
-[Detail: TypeClinic: Constructor](../api_detail/type_clinic-constructor.html#api-detail-typeclinic-constructor)
+[Detail: TypeClinic: Constructor](../api_detail/type_clinic-constructor.md#api-detail-typeclinic-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/type_clinic-constructor.html#api-sig-typeclinic-init) | `TypeClinic.__init__(value)` |  |
+| [Detail](../api_detail/type_clinic-constructor.md#api-sig-typeclinic-init) | `TypeClinic.__init__(value)` |  |
 
-[TypeClinic](type_clinic.html#api-overview-typeclinic): [Constructor](#api-overview-typeclinic-constructor) | [Exporter](type_clinic-exporter.html#api-overview-typeclinic-exporter) | [Method](type_clinic-method.html#api-overview-typeclinic-method) | [Display](type_clinic-display.html#api-overview-typeclinic-display)
+[TypeClinic](type_clinic.md#api-overview-typeclinic): [Constructor](#api-overview-typeclinic-constructor) | [Exporter](type_clinic-exporter.md#api-overview-typeclinic-exporter) | [Method](type_clinic-method.md#api-overview-typeclinic-method) | [Display](type_clinic-display.md#api-overview-typeclinic-display)
 
-[Previous](iloc-display.html "Overview: ILoc: Display")
-[Next](type_clinic-exporter.html "Overview: TypeClinic: Exporter")
+[Previous](iloc-display.md "Overview: ILoc: Display")
+[Next](type_clinic-exporter.md "Overview: TypeClinic: Exporter")
 
 ---
 

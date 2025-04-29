@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexNanosecond: Attribute
 * [View page source](../_sources/api_overview/index_nanosecond-attribute.rst.txt)
 
-[Previous](index_nanosecond-exporter.html "Overview: IndexNanosecond: Exporter")
-[Next](index_nanosecond-method.html "Overview: IndexNanosecond: Method")
+[Previous](index_nanosecond-exporter.md "Overview: IndexNanosecond: Exporter")
+[Next](index_nanosecond-method.md "Overview: IndexNanosecond: Method")
 
 ---
 
 # Overview: IndexNanosecond: Attribute[](#overview-indexnanosecond-attribute "Link to this heading")
 
-[Detail: IndexNanosecond: Attribute](../api_detail/index_nanosecond-attribute.html#api-detail-indexnanosecond-attribute)
+[Detail: IndexNanosecond: Attribute](../api_detail/index_nanosecond-attribute.md#api-detail-indexnanosecond-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-static) | `IndexNanosecond.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-depth) | `IndexNanosecond.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-dtype) | `IndexNanosecond.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-index-types) | `IndexNanosecond.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-memory) | `IndexNanosecond.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-mloc) | `IndexNanosecond.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-name) | `IndexNanosecond.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-names) | `IndexNanosecond.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-nbytes) | `IndexNanosecond.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-ndim) | `IndexNanosecond.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-positions) | `IndexNanosecond.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-shape) | `IndexNanosecond.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_nanosecond-attribute.html#api-sig-indexnanosecond-size) | `IndexNanosecond.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-static) | `IndexNanosecond.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-depth) | `IndexNanosecond.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-dtype) | `IndexNanosecond.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-index-types) | `IndexNanosecond.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-memory) | `IndexNanosecond.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-mloc) | `IndexNanosecond.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-name) | `IndexNanosecond.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-names) | `IndexNanosecond.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-nbytes) | `IndexNanosecond.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-ndim) | `IndexNanosecond.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-positions) | `IndexNanosecond.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-shape) | `IndexNanosecond.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_nanosecond-attribute.md#api-sig-indexnanosecond-size) | `IndexNanosecond.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexNanosecond](index_nanosecond.html#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.html#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.html#api-overview-indexnanosecond-exporter) | [Attribute](#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.html#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.html#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.html#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.html#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.html#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.html#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.html#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.html#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.html#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.html#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.html#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.html#api-overview-indexnanosecond-accessor-type-clinic)
+[IndexNanosecond](index_nanosecond.md#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-overview-indexnanosecond-exporter) | [Attribute](#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-overview-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-overview-indexnanosecond-accessor-type-clinic)
 
-[Previous](index_nanosecond-exporter.html "Overview: IndexNanosecond: Exporter")
-[Next](index_nanosecond-method.html "Overview: IndexNanosecond: Method")
+[Previous](index_nanosecond-exporter.md "Overview: IndexNanosecond: Exporter")
+[Next](index_nanosecond-method.md "Overview: IndexNanosecond: Method")
 
 ---
 

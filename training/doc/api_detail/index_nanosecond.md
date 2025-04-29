@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,39 +136,39 @@ API Detail
 * Detail: IndexNanosecond
 * [View page source](../_sources/api_detail/index_nanosecond.rst.txt)
 
-[Previous](index_microsecond_go.html "Detail: IndexMicrosecondGO")
-[Next](index_nanosecond_go.html "Detail: IndexNanosecondGO")
+[Previous](index_microsecond_go.md "Detail: IndexMicrosecondGO")
+[Next](index_nanosecond_go.md "Detail: IndexNanosecondGO")
 
 ---
 
 # Detail: IndexNanosecond[](#detail-indexnanosecond "Link to this heading")
 
-[Overview: IndexNanosecond](../api_overview/index_nanosecond.html#api-overview-indexnanosecond)
+[Overview: IndexNanosecond](../api_overview/index_nanosecond.md#api-overview-indexnanosecond)
 
-*class* IndexNanosecond(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.html#IndexNanosecond)[](#static_frame.IndexNanosecond "Link to this definition")
+*class* IndexNanosecond(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexNanosecond)[](#static_frame.IndexNanosecond "Link to this definition")
 :   A mapping of nanoseconds (NumPy `datetime64[ns]`) to positions, immutable and of fixed size.
 
-* [Constructor](index_nanosecond-constructor.html#api-detail-indexnanosecond-constructor): Alternative constructors for creating instances.
-* [Exporter](index_nanosecond-exporter.html#api-detail-indexnanosecond-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](index_nanosecond-attribute.html#api-detail-indexnanosecond-attribute): Attributes for retrieving basic characteristics.
-* [Method](index_nanosecond-method.html#api-detail-indexnanosecond-method): Methods for general functionality.
-* [Dictionary-Like](index_nanosecond-dictionary_like.html#api-detail-indexnanosecond-dictionary-like): All dictionary-like methods and iterators.
-* [Display](index_nanosecond-display.html#api-detail-indexnanosecond-display): Methods for providing a text representation of the object.
-* [Selector](index_nanosecond-selector.html#api-detail-indexnanosecond-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](index_nanosecond-iterator.html#api-detail-indexnanosecond-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Operator Binary](index_nanosecond-operator_binary.html#api-detail-indexnanosecond-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](index_nanosecond-operator_unary.html#api-detail-indexnanosecond-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](index_nanosecond-accessor_values.html#api-detail-indexnanosecond-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](index_nanosecond-accessor_datetime.html#api-detail-indexnanosecond-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](index_nanosecond-accessor_string.html#api-detail-indexnanosecond-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.html#api-detail-indexnanosecond-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-detail-indexnanosecond-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.html#api-detail-indexnanosecond-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](index_nanosecond-constructor.md#api-detail-indexnanosecond-constructor): Alternative constructors for creating instances.
+* [Exporter](index_nanosecond-exporter.md#api-detail-indexnanosecond-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](index_nanosecond-attribute.md#api-detail-indexnanosecond-attribute): Attributes for retrieving basic characteristics.
+* [Method](index_nanosecond-method.md#api-detail-indexnanosecond-method): Methods for general functionality.
+* [Dictionary-Like](index_nanosecond-dictionary_like.md#api-detail-indexnanosecond-dictionary-like): All dictionary-like methods and iterators.
+* [Display](index_nanosecond-display.md#api-detail-indexnanosecond-display): Methods for providing a text representation of the object.
+* [Selector](index_nanosecond-selector.md#api-detail-indexnanosecond-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](index_nanosecond-iterator.md#api-detail-indexnanosecond-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Operator Binary](index_nanosecond-operator_binary.md#api-detail-indexnanosecond-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](index_nanosecond-operator_unary.md#api-detail-indexnanosecond-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](index_nanosecond-accessor_values.md#api-detail-indexnanosecond-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-detail-indexnanosecond-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](index_nanosecond-accessor_string.md#api-detail-indexnanosecond-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-detail-indexnanosecond-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-detail-indexnanosecond-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-detail-indexnanosecond-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[IndexNanosecond](#api-detail-indexnanosecond): [Constructor](index_nanosecond-constructor.html#api-detail-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.html#api-detail-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.html#api-detail-indexnanosecond-attribute) | [Method](index_nanosecond-method.html#api-detail-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.html#api-detail-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.html#api-detail-indexnanosecond-display) | [Selector](index_nanosecond-selector.html#api-detail-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.html#api-detail-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.html#api-detail-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.html#api-detail-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.html#api-detail-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.html#api-detail-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.html#api-detail-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.html#api-detail-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-detail-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.html#api-detail-indexnanosecond-accessor-type-clinic)
+[IndexNanosecond](#api-detail-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-detail-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-detail-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-detail-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-detail-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-detail-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-detail-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-detail-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-detail-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-detail-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-detail-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-detail-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-detail-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-detail-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-detail-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-detail-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-detail-indexnanosecond-accessor-type-clinic)
 
-[Previous](index_microsecond_go.html "Detail: IndexMicrosecondGO")
-[Next](index_nanosecond_go.html "Detail: IndexNanosecondGO")
+[Previous](index_microsecond_go.md "Detail: IndexMicrosecondGO")
+[Next](index_nanosecond_go.md "Detail: IndexNanosecondGO")
 
 ---
 

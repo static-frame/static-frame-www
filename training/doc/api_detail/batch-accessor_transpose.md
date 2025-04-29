@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Batch: Accessor Transpose
 * [View page source](../_sources/api_detail/batch-accessor_transpose.rst.txt)
 
-[Previous](batch-accessor_string.html "Detail: Batch: Accessor String")
-[Next](batch-accessor_fill_value.html "Detail: Batch: Accessor Fill Value")
+[Previous](batch-accessor_string.md "Detail: Batch: Accessor String")
+[Next](batch-accessor_fill_value.md "Detail: Batch: Accessor Fill Value")
 
 ---
 
 # Detail: Batch: Accessor Transpose[](#detail-batch-accessor-transpose "Link to this heading")
 
-[Overview: Batch: Accessor Transpose](../api_overview/batch-accessor_transpose.html#api-overview-batch-accessor-transpose)
+[Overview: Batch: Accessor Transpose](../api_overview/batch-accessor_transpose.md#api-overview-batch-accessor-transpose)
 
 Batch.via\_T.via\_fill\_value(*fill\_value*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.via\_fill\_value(*fill\_value*, */*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.via_fill_value)
+    InterfaceBatchTranspose.via\_fill\_value(*fill\_value*, */*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.via_fill_value)
     :   Interface for using binary operators and methods with a pre-defined fill value.
 
     ```
@@ -160,7 +160,7 @@ Batch.via\_T.\_\_add\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__add__)
+    InterfaceBatchTranspose.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__add__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -185,7 +185,7 @@ Batch.via\_T.\_\_sub\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__sub__)
+    InterfaceBatchTranspose.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__sub__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -210,7 +210,7 @@ Batch.via\_T.\_\_mul\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__mul__)
+    InterfaceBatchTranspose.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__mul__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -235,7 +235,7 @@ Batch.via\_T.\_\_truediv\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__truediv__)
+    InterfaceBatchTranspose.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__truediv__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -260,7 +260,7 @@ Batch.via\_T.\_\_floordiv\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__floordiv__)
+    InterfaceBatchTranspose.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__floordiv__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -285,7 +285,7 @@ Batch.via\_T.\_\_mod\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__mod__)
+    InterfaceBatchTranspose.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__mod__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -310,7 +310,7 @@ Batch.via\_T.\_\_pow\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__pow__)
+    InterfaceBatchTranspose.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__pow__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -335,7 +335,7 @@ Batch.via\_T.\_\_lshift\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__lshift__)
+    InterfaceBatchTranspose.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__lshift__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -360,7 +360,7 @@ Batch.via\_T.\_\_rshift\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__rshift__)
+    InterfaceBatchTranspose.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__rshift__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -385,7 +385,7 @@ Batch.via\_T.\_\_and\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__and__)
+    InterfaceBatchTranspose.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__and__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), ('j', sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w'))))
@@ -408,7 +408,7 @@ Batch.via\_T.\_\_xor\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__xor__)
+    InterfaceBatchTranspose.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__xor__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), ('j', sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w'))))
@@ -431,7 +431,7 @@ Batch.via\_T.\_\_or\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__or__)
+    InterfaceBatchTranspose.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__or__)
     :   Return self|value.
 
     ```
@@ -455,7 +455,7 @@ Batch.via\_T.\_\_lt\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__lt__)
+    InterfaceBatchTranspose.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__lt__)
     :   Return self<value.
 
     ```
@@ -481,7 +481,7 @@ Batch.via\_T.\_\_le\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__le__)
+    InterfaceBatchTranspose.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__le__)
     :   Return self<=value.
 
     ```
@@ -507,7 +507,7 @@ Batch.via\_T.\_\_eq\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__eq__)
+    InterfaceBatchTranspose.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__eq__)
     :   Return self==value.
 
     ```
@@ -533,7 +533,7 @@ Batch.via\_T.\_\_ne\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__ne__)
+    InterfaceBatchTranspose.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__ne__)
     :   Return self!=value.
 
     ```
@@ -559,7 +559,7 @@ Batch.via\_T.\_\_gt\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__gt__)
+    InterfaceBatchTranspose.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__gt__)
     :   Return self>value.
 
     ```
@@ -585,7 +585,7 @@ Batch.via\_T.\_\_ge\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__ge__)
+    InterfaceBatchTranspose.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__ge__)
     :   Return self>=value.
 
     ```
@@ -611,7 +611,7 @@ Batch.via\_T.\_\_radd\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__radd__)
+    InterfaceBatchTranspose.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__radd__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -636,7 +636,7 @@ Batch.via\_T.\_\_rsub\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__rsub__)
+    InterfaceBatchTranspose.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__rsub__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -661,7 +661,7 @@ Batch.via\_T.\_\_rmul\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__rmul__)
+    InterfaceBatchTranspose.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__rmul__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -686,7 +686,7 @@ Batch.via\_T.\_\_rtruediv\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__rtruediv__)
+    InterfaceBatchTranspose.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__rtruediv__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -711,7 +711,7 @@ Batch.via\_T.\_\_rfloordiv\_\_(*other*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceBatchTranspose.__rfloordiv__)
+    InterfaceBatchTranspose.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.__rfloordiv__)
 
     ```
     >>> bt = sf.Batch((('i', sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')), ('j', sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x'))))
@@ -732,10 +732,10 @@ Batch.via\_T.\_\_rfloordiv\_\_(*other*)
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.html#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-accessor_string.html "Detail: Batch: Accessor String")
-[Next](batch-accessor_fill_value.html "Detail: Batch: Accessor Fill Value")
+[Previous](batch-accessor_string.md "Detail: Batch: Accessor String")
+[Next](batch-accessor_fill_value.md "Detail: Batch: Accessor Fill Value")
 
 ---
 

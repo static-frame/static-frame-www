@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexYear: Accessor Datetime
 * [View page source](../_sources/api_overview/index_year-accessor_datetime.rst.txt)
 
-[Previous](index_year-accessor_values.html "Overview: IndexYear: Accessor Values")
-[Next](index_year-accessor_string.html "Overview: IndexYear: Accessor String")
+[Previous](index_year-accessor_values.md "Overview: IndexYear: Accessor Values")
+[Next](index_year-accessor_string.md "Overview: IndexYear: Accessor String")
 
 ---
 
 # Overview: IndexYear: Accessor Datetime[](#overview-indexyear-accessor-datetime "Link to this heading")
 
-[Detail: IndexYear: Accessor Datetime](../api_detail/index_year-accessor_datetime.html#api-detail-indexyear-accessor-datetime)
+[Detail: IndexYear: Accessor Datetime](../api_detail/index_year-accessor_datetime.md#api-detail-indexyear-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-call) | `IndexYear.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-year) | `IndexYear.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-year-month) | `IndexYear.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-year-quarter) | `IndexYear.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-month) | `IndexYear.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-day) | `IndexYear.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-hour) | `IndexYear.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-minute) | `IndexYear.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-second) | `IndexYear.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-weekday) | `IndexYear.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-quarter) | `IndexYear.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-is-month-end) | `IndexYear.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-is-month-start) | `IndexYear.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-is-year-end) | `IndexYear.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-is-year-start) | `IndexYear.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-is-quarter-end) | `IndexYear.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-is-quarter-start) | `IndexYear.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-timetuple) | `IndexYear.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-isoformat) | `IndexYear.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-fromisoformat) | `IndexYear.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-strftime) | `IndexYear.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-strptime) | `IndexYear.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_year-accessor_datetime.html#api-sig-indexyear-via-dt-strpdate) | `IndexYear.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-call) | `IndexYear.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-year) | `IndexYear.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-year-month) | `IndexYear.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-year-quarter) | `IndexYear.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-month) | `IndexYear.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-day) | `IndexYear.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-hour) | `IndexYear.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-minute) | `IndexYear.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-second) | `IndexYear.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-weekday) | `IndexYear.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-quarter) | `IndexYear.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-is-month-end) | `IndexYear.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-is-month-start) | `IndexYear.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-is-year-end) | `IndexYear.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-is-year-start) | `IndexYear.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-is-quarter-end) | `IndexYear.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-is-quarter-start) | `IndexYear.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-timetuple) | `IndexYear.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-isoformat) | `IndexYear.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-fromisoformat) | `IndexYear.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-strftime) | `IndexYear.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-strptime) | `IndexYear.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_year-accessor_datetime.md#api-sig-indexyear-via-dt-strpdate) | `IndexYear.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexYear](index_year.html#api-overview-indexyear): [Constructor](index_year-constructor.html#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.html#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.html#api-overview-indexyear-attribute) | [Method](index_year-method.html#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-overview-indexyear-dictionary-like) | [Display](index_year-display.html#api-overview-indexyear-display) | [Selector](index_year-selector.html#api-overview-indexyear-selector) | [Iterator](index_year-iterator.html#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-overview-indexyear-accessor-values) | [Accessor Datetime](#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-overview-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-overview-indexyear): [Constructor](index_year-constructor.md#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.md#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.md#api-overview-indexyear-attribute) | [Method](index_year-method.md#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-overview-indexyear-dictionary-like) | [Display](index_year-display.md#api-overview-indexyear-display) | [Selector](index_year-selector.md#api-overview-indexyear-selector) | [Iterator](index_year-iterator.md#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-overview-indexyear-accessor-values) | [Accessor Datetime](#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-overview-indexyear-accessor-type-clinic)
 
-[Previous](index_year-accessor_values.html "Overview: IndexYear: Accessor Values")
-[Next](index_year-accessor_string.html "Overview: IndexYear: Accessor String")
+[Previous](index_year-accessor_values.md "Overview: IndexYear: Accessor Values")
+[Next](index_year-accessor_string.md "Overview: IndexYear: Accessor String")
 
 ---
 

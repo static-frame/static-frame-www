@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: NPZ: Method
 * [View page source](../_sources/api_overview/npz-method.rst.txt)
 
-[Previous](npz-attribute.html "Overview: NPZ: Attribute")
-[Next](npz-display.html "Overview: NPZ: Display")
+[Previous](npz-attribute.md "Overview: NPZ: Attribute")
+[Next](npz-display.md "Overview: NPZ: Display")
 
 ---
 
 # Overview: NPZ: Method[](#overview-npz-method "Link to this heading")
 
-[Detail: NPZ: Method](../api_detail/npz-method.html#api-detail-npz-method)
+[Detail: NPZ: Method](../api_detail/npz-method.md#api-detail-npz-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/npz-method.html#api-sig-npz-enter) | `NPZ.__enter__()` | When entering a context manager, a handle to this instance is returned. |
-| [Detail](../api_detail/npz-method.html#api-sig-npz-exit) | `NPZ.__exit__(type, value, traceback)` | When exiting a context manager, resources are closed as necessary. |
+| [Detail](../api_detail/npz-method.md#api-sig-npz-enter) | `NPZ.__enter__()` | When entering a context manager, a handle to this instance is returned. |
+| [Detail](../api_detail/npz-method.md#api-sig-npz-exit) | `NPZ.__exit__(type, value, traceback)` | When exiting a context manager, resources are closed as necessary. |
 
-[NPZ](npz.html#api-overview-npz): [Constructor](npz-constructor.html#api-overview-npz-constructor) | [Attribute](npz-attribute.html#api-overview-npz-attribute) | [Method](#api-overview-npz-method) | [Display](npz-display.html#api-overview-npz-display)
+[NPZ](npz.md#api-overview-npz): [Constructor](npz-constructor.md#api-overview-npz-constructor) | [Attribute](npz-attribute.md#api-overview-npz-attribute) | [Method](#api-overview-npz-method) | [Display](npz-display.md#api-overview-npz-display)
 
-[Previous](npz-attribute.html "Overview: NPZ: Attribute")
-[Next](npz-display.html "Overview: NPZ: Display")
+[Previous](npz-attribute.md "Overview: NPZ: Attribute")
+[Next](npz-display.md "Overview: NPZ: Display")
 
 ---
 

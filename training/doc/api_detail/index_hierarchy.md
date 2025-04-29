@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,40 +136,40 @@ API Detail
 * Detail: IndexHierarchy
 * [View page source](../_sources/api_detail/index_hierarchy.rst.txt)
 
-[Previous](index_go.html "Detail: IndexGO")
-[Next](index_hierarchy_go.html "Detail: IndexHierarchyGO")
+[Previous](index_go.md "Detail: IndexGO")
+[Next](index_hierarchy_go.md "Detail: IndexHierarchyGO")
 
 ---
 
 # Detail: IndexHierarchy[](#detail-indexhierarchy "Link to this heading")
 
-[Overview: IndexHierarchy](../api_overview/index_hierarchy.html#api-overview-indexhierarchy)
+[Overview: IndexHierarchy](../api_overview/index_hierarchy.md#api-overview-indexhierarchy)
 
-*class* IndexHierarchy(*indices*, */*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*)[[source]](../_modules/static_frame/core/index_hierarchy.html#IndexHierarchy)[](#static_frame.IndexHierarchy "Link to this definition")
-:   A hierarchy of [`Index`](index-selector.html#Index "Index") objects.
+*class* IndexHierarchy(*indices*, */*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy)[](#static_frame.IndexHierarchy "Link to this definition")
+:   A hierarchy of [`Index`](index-selector.md#Index "Index") objects.
 
-* [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor): Alternative constructors for creating instances.
-* [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute): Attributes for retrieving basic characteristics.
-* [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method): Methods for general functionality.
-* [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like): All dictionary-like methods and iterators.
-* [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display): Methods for providing a text representation of the object.
-* [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose): Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows.
-* [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor): Alternative constructors for creating instances.
+* [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute): Attributes for retrieving basic characteristics.
+* [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method): Methods for general functionality.
+* [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like): All dictionary-like methods and iterators.
+* [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display): Methods for providing a text representation of the object.
+* [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose): Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows.
+* [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[IndexHierarchy](#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_go.html "Detail: IndexGO")
-[Next](index_hierarchy_go.html "Detail: IndexHierarchyGO")
+[Previous](index_go.md "Detail: IndexGO")
+[Next](index_hierarchy_go.md "Detail: IndexHierarchyGO")
 
 ---
 

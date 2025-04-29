@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: ILoc: Attribute
 * [View page source](../_sources/api_detail/iloc-attribute.rst.txt)
 
-[Previous](iloc-constructor.html "Detail: ILoc: Constructor")
-[Next](iloc-display.html "Detail: ILoc: Display")
+[Previous](iloc-constructor.md "Detail: ILoc: Constructor")
+[Next](iloc-display.md "Detail: ILoc: Display")
 
 ---
 
 # Detail: ILoc: Attribute[](#detail-iloc-attribute "Link to this heading")
 
-[Overview: ILoc: Attribute](../api_overview/iloc-attribute.html#api-overview-iloc-attribute)
+[Overview: ILoc: Attribute](../api_overview/iloc-attribute.md#api-overview-iloc-attribute)
 
 ILoc.STATIC *= True*[](#static_frame.ILoc.STATIC "Link to this definition")
 :   ```
@@ -158,10 +158,10 @@ ILoc.key[](#static_frame.ILoc.key "Link to this definition")
 
     ```
 
-[ILoc](iloc.html#api-detail-iloc): [Constructor](iloc-constructor.html#api-detail-iloc-constructor) | [Attribute](#api-detail-iloc-attribute) | [Display](iloc-display.html#api-detail-iloc-display)
+[ILoc](iloc.md#api-detail-iloc): [Constructor](iloc-constructor.md#api-detail-iloc-constructor) | [Attribute](#api-detail-iloc-attribute) | [Display](iloc-display.md#api-detail-iloc-display)
 
-[Previous](iloc-constructor.html "Detail: ILoc: Constructor")
-[Next](iloc-display.html "Detail: ILoc: Display")
+[Previous](iloc-constructor.md "Detail: ILoc: Constructor")
+[Next](iloc-display.md "Detail: ILoc: Display")
 
 ---
 

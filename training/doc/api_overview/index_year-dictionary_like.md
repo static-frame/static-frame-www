@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexYear: Dictionary-Like
 * [View page source](../_sources/api_overview/index_year-dictionary_like.rst.txt)
 
-[Previous](index_year-method.html "Overview: IndexYear: Method")
-[Next](index_year-display.html "Overview: IndexYear: Display")
+[Previous](index_year-method.md "Overview: IndexYear: Method")
+[Next](index_year-display.md "Overview: IndexYear: Display")
 
 ---
 
 # Overview: IndexYear: Dictionary-Like[](#overview-indexyear-dictionary-like "Link to this heading")
 
-[Detail: IndexYear: Dictionary-Like](../api_detail/index_year-dictionary_like.html#api-detail-indexyear-dictionary-like)
+[Detail: IndexYear: Dictionary-Like](../api_detail/index_year-dictionary_like.md#api-detail-indexyear-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year-dictionary_like.html#api-sig-indexyear-contains) | `IndexYear.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
-| [Detail](../api_detail/index_year-dictionary_like.html#api-sig-indexyear-iter) | `IndexYear.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index_year-dictionary_like.html#api-sig-indexyear-reversed) | `IndexYear.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index_year-dictionary_like.html#api-sig-indexyear-values) | `IndexYear.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
+| [Detail](../api_detail/index_year-dictionary_like.md#api-sig-indexyear-contains) | `IndexYear.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
+| [Detail](../api_detail/index_year-dictionary_like.md#api-sig-indexyear-iter) | `IndexYear.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index_year-dictionary_like.md#api-sig-indexyear-reversed) | `IndexYear.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index_year-dictionary_like.md#api-sig-indexyear-values) | `IndexYear.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
 
-[IndexYear](index_year.html#api-overview-indexyear): [Constructor](index_year-constructor.html#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.html#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.html#api-overview-indexyear-attribute) | [Method](index_year-method.html#api-overview-indexyear-method) | [Dictionary-Like](#api-overview-indexyear-dictionary-like) | [Display](index_year-display.html#api-overview-indexyear-display) | [Selector](index_year-selector.html#api-overview-indexyear-selector) | [Iterator](index_year-iterator.html#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-overview-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-overview-indexyear): [Constructor](index_year-constructor.md#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.md#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.md#api-overview-indexyear-attribute) | [Method](index_year-method.md#api-overview-indexyear-method) | [Dictionary-Like](#api-overview-indexyear-dictionary-like) | [Display](index_year-display.md#api-overview-indexyear-display) | [Selector](index_year-selector.md#api-overview-indexyear-selector) | [Iterator](index_year-iterator.md#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-overview-indexyear-accessor-type-clinic)
 
-[Previous](index_year-method.html "Overview: IndexYear: Method")
-[Next](index_year-display.html "Overview: IndexYear: Display")
+[Previous](index_year-method.md "Overview: IndexYear: Method")
+[Next](index_year-display.md "Overview: IndexYear: Display")
 
 ---
 

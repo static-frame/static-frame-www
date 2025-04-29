@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: Frame: Operator Binary
 * [View page source](../_sources/api_overview/frame-operator_binary.rst.txt)
 
-[Previous](frame-iterator.html "Overview: Frame: Iterator")
-[Next](frame-operator_unary.html "Overview: Frame: Operator Unary")
+[Previous](frame-iterator.md "Overview: Frame: Iterator")
+[Next](frame-operator_unary.md "Overview: Frame: Operator Unary")
 
 ---
 
 # Overview: Frame: Operator Binary[](#overview-frame-operator-binary "Link to this heading")
 
-[Detail: Frame: Operator Binary](../api_detail/frame-operator_binary.html#api-detail-frame-operator-binary)
+[Detail: Frame: Operator Binary](../api_detail/frame-operator_binary.md#api-detail-frame-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-add) | `Frame.__add__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-and) | `Frame.__and__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-eq) | `Frame.__eq__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-floordiv) | `Frame.__floordiv__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-ge) | `Frame.__ge__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-gt) | `Frame.__gt__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-le) | `Frame.__le__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-lt) | `Frame.__lt__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-matmul) | `Frame.__matmul__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-mod) | `Frame.__mod__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-mul) | `Frame.__mul__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-ne) | `Frame.__ne__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-or) | `Frame.__or__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-pow) | `Frame.__pow__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-radd) | `Frame.__radd__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-rfloordiv) | `Frame.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-rmatmul) | `Frame.__rmatmul__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-rmul) | `Frame.__rmul__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-rshift) | `Frame.__rshift__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-rsub) | `Frame.__rsub__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-rtruediv) | `Frame.__rtruediv__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-sub) | `Frame.__sub__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-truediv) | `Frame.__truediv__(other)` |  |
-| [Detail](../api_detail/frame-operator_binary.html#api-sig-frame-xor) | `Frame.__xor__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-add) | `Frame.__add__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-and) | `Frame.__and__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-eq) | `Frame.__eq__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-floordiv) | `Frame.__floordiv__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-ge) | `Frame.__ge__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-gt) | `Frame.__gt__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-le) | `Frame.__le__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-lt) | `Frame.__lt__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-matmul) | `Frame.__matmul__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-mod) | `Frame.__mod__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-mul) | `Frame.__mul__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-ne) | `Frame.__ne__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-or) | `Frame.__or__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-pow) | `Frame.__pow__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-radd) | `Frame.__radd__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-rfloordiv) | `Frame.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-rmatmul) | `Frame.__rmatmul__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-rmul) | `Frame.__rmul__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-rshift) | `Frame.__rshift__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-rsub) | `Frame.__rsub__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-rtruediv) | `Frame.__rtruediv__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-sub) | `Frame.__sub__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-truediv) | `Frame.__truediv__(other)` |  |
+| [Detail](../api_detail/frame-operator_binary.md#api-sig-frame-xor) | `Frame.__xor__(other)` |  |
 
-[Frame](frame.html#api-overview-frame): [Constructor](frame-constructor.html#api-overview-frame-constructor) | [Exporter](frame-exporter.html#api-overview-frame-exporter) | [Attribute](frame-attribute.html#api-overview-frame-attribute) | [Method](frame-method.html#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-overview-frame-dictionary-like) | [Display](frame-display.html#api-overview-frame-display) | [Assignment](frame-assignment.html#api-overview-frame-assignment) | [Selector](frame-selector.html#api-overview-frame-selector) | [Iterator](frame-iterator.html#api-overview-frame-iterator) | [Operator Binary](#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-overview-frame-accessor-reduce)
+[Frame](frame.md#api-overview-frame): [Constructor](frame-constructor.md#api-overview-frame-constructor) | [Exporter](frame-exporter.md#api-overview-frame-exporter) | [Attribute](frame-attribute.md#api-overview-frame-attribute) | [Method](frame-method.md#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-overview-frame-dictionary-like) | [Display](frame-display.md#api-overview-frame-display) | [Assignment](frame-assignment.md#api-overview-frame-assignment) | [Selector](frame-selector.md#api-overview-frame-selector) | [Iterator](frame-iterator.md#api-overview-frame-iterator) | [Operator Binary](#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-overview-frame-accessor-reduce)
 
-[Previous](frame-iterator.html "Overview: Frame: Iterator")
-[Next](frame-operator_unary.html "Overview: Frame: Operator Unary")
+[Previous](frame-iterator.md "Overview: Frame: Iterator")
+[Next](frame-operator_unary.md "Overview: Frame: Operator Unary")
 
 ---
 

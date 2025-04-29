@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexNanosecond: Iterator
 * [View page source](../_sources/api_overview/index_nanosecond-iterator.rst.txt)
 
-[Previous](index_nanosecond-selector.html "Overview: IndexNanosecond: Selector")
-[Next](index_nanosecond-operator_binary.html "Overview: IndexNanosecond: Operator Binary")
+[Previous](index_nanosecond-selector.md "Overview: IndexNanosecond: Selector")
+[Next](index_nanosecond-operator_binary.md "Overview: IndexNanosecond: Operator Binary")
 
 ---
 
 # Overview: IndexNanosecond: Iterator[](#overview-indexnanosecond-iterator "Link to this heading")
 
-[Detail: IndexNanosecond: Iterator](../api_detail/index_nanosecond-iterator.html#api-detail-indexnanosecond-iterator)
+[Detail: IndexNanosecond: Iterator](../api_detail/index_nanosecond-iterator.md#api-detail-indexnanosecond-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond-iterator.html#api-sig-indexnanosecond-iter-label) | `IndexNanosecond.iter_label(depth_level)` |  |
-| [Detail](../api_detail/index_nanosecond-iterator.html#api-sig-indexnanosecond-iter-label-apply) | `IndexNanosecond.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/index_nanosecond-iterator.html#api-sig-indexnanosecond-iter-label-apply-iter) | `IndexNanosecond.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/index_nanosecond-iterator.html#api-sig-indexnanosecond-iter-label-apply-iter-items) | `IndexNanosecond.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/index_nanosecond-iterator.html#api-sig-indexnanosecond-iter-label-apply-pool) | `IndexNanosecond.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/index_nanosecond-iterator.md#api-sig-indexnanosecond-iter-label) | `IndexNanosecond.iter_label(depth_level)` |  |
+| [Detail](../api_detail/index_nanosecond-iterator.md#api-sig-indexnanosecond-iter-label-apply) | `IndexNanosecond.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/index_nanosecond-iterator.md#api-sig-indexnanosecond-iter-label-apply-iter) | `IndexNanosecond.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/index_nanosecond-iterator.md#api-sig-indexnanosecond-iter-label-apply-iter-items) | `IndexNanosecond.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/index_nanosecond-iterator.md#api-sig-indexnanosecond-iter-label-apply-pool) | `IndexNanosecond.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[IndexNanosecond](index_nanosecond.html#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.html#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.html#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.html#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.html#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.html#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.html#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.html#api-overview-indexnanosecond-selector) | [Iterator](#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.html#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.html#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.html#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.html#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.html#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.html#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.html#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.html#api-overview-indexnanosecond-accessor-type-clinic)
+[IndexNanosecond](index_nanosecond.md#api-overview-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-overview-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-overview-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-overview-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-overview-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-overview-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-overview-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-overview-indexnanosecond-selector) | [Iterator](#api-overview-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-overview-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-overview-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-overview-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-overview-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-overview-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-overview-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-overview-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-overview-indexnanosecond-accessor-type-clinic)
 
-[Previous](index_nanosecond-selector.html "Overview: IndexNanosecond: Selector")
-[Next](index_nanosecond-operator_binary.html "Overview: IndexNanosecond: Operator Binary")
+[Previous](index_nanosecond-selector.md "Overview: IndexNanosecond: Selector")
+[Next](index_nanosecond-operator_binary.md "Overview: IndexNanosecond: Operator Binary")
 
 ---
 

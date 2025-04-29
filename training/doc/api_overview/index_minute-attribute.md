@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexMinute: Attribute
 * [View page source](../_sources/api_overview/index_minute-attribute.rst.txt)
 
-[Previous](index_minute-exporter.html "Overview: IndexMinute: Exporter")
-[Next](index_minute-method.html "Overview: IndexMinute: Method")
+[Previous](index_minute-exporter.md "Overview: IndexMinute: Exporter")
+[Next](index_minute-method.md "Overview: IndexMinute: Method")
 
 ---
 
 # Overview: IndexMinute: Attribute[](#overview-indexminute-attribute "Link to this heading")
 
-[Detail: IndexMinute: Attribute](../api_detail/index_minute-attribute.html#api-detail-indexminute-attribute)
+[Detail: IndexMinute: Attribute](../api_detail/index_minute-attribute.md#api-detail-indexminute-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-static) | `IndexMinute.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-depth) | `IndexMinute.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-dtype) | `IndexMinute.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-index-types) | `IndexMinute.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-memory) | `IndexMinute.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-mloc) | `IndexMinute.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-name) | `IndexMinute.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-names) | `IndexMinute.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-nbytes) | `IndexMinute.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-ndim) | `IndexMinute.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-positions) | `IndexMinute.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-shape) | `IndexMinute.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_minute-attribute.html#api-sig-indexminute-size) | `IndexMinute.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-static) | `IndexMinute.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-depth) | `IndexMinute.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-dtype) | `IndexMinute.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-index-types) | `IndexMinute.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-memory) | `IndexMinute.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-mloc) | `IndexMinute.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-name) | `IndexMinute.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-names) | `IndexMinute.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-nbytes) | `IndexMinute.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-ndim) | `IndexMinute.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-positions) | `IndexMinute.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-shape) | `IndexMinute.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_minute-attribute.md#api-sig-indexminute-size) | `IndexMinute.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-exporter.html "Overview: IndexMinute: Exporter")
-[Next](index_minute-method.html "Overview: IndexMinute: Method")
+[Previous](index_minute-exporter.md "Overview: IndexMinute: Exporter")
+[Next](index_minute-method.md "Overview: IndexMinute: Method")
 
 ---
 

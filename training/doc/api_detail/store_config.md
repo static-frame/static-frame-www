@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,28 +136,28 @@ API Detail
 * Detail: StoreConfig
 * [View page source](../_sources/api_detail/store_config.rst.txt)
 
-[Previous](display_config.html "Detail: DisplayConfig")
-[Next](store_filter.html "Detail: StoreFilter")
+[Previous](display_config.md "Detail: DisplayConfig")
+[Next](store_filter.md "Detail: StoreFilter")
 
 ---
 
 # Detail: StoreConfig[](#detail-storeconfig "Link to this heading")
 
-[Overview: StoreConfig](../api_overview/store_config.html#api-overview-storeconfig)
+[Overview: StoreConfig](../api_overview/store_config.md#api-overview-storeconfig)
 
-*class* StoreConfig(*\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_select=None*, *dtypes=None*, *consolidate\_blocks=False*, *skip\_header=0*, *skip\_footer=0*, *trim\_nadir=False*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *merge\_hierarchical\_labels=True*, *label\_encoder=None*, *label\_decoder=None*, *read\_max\_workers=None*, *read\_chunksize=1*, *write\_max\_workers=None*, *write\_chunksize=1*, *mp\_context=None*)[[source]](../_modules/static_frame/core/store_config.html#StoreConfig)[](#static_frame.StoreConfig "Link to this definition")
+*class* StoreConfig(*\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_select=None*, *dtypes=None*, *consolidate\_blocks=False*, *skip\_header=0*, *skip\_footer=0*, *trim\_nadir=False*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *merge\_hierarchical\_labels=True*, *label\_encoder=None*, *label\_decoder=None*, *read\_max\_workers=None*, *read\_chunksize=1*, *write\_max\_workers=None*, *write\_chunksize=1*, *mp\_context=None*)[[source]](../_modules/static_frame/core/store_config.md#StoreConfig)[](#static_frame.StoreConfig "Link to this definition")
 :   A read-only container of parameters used by `Store` subclasses for reading from and writing to multi-table storage formats.
 
-* [Constructor](store_config-constructor.html#api-detail-storeconfig-constructor): Alternative constructors for creating instances.
-* [Exporter](store_config-exporter.html#api-detail-storeconfig-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](store_config-attribute.html#api-detail-storeconfig-attribute): Attributes for retrieving basic characteristics.
-* [Method](store_config-method.html#api-detail-storeconfig-method): Methods for general functionality.
-* [Display](store_config-display.html#api-detail-storeconfig-display): Methods for providing a text representation of the object.
+* [Constructor](store_config-constructor.md#api-detail-storeconfig-constructor): Alternative constructors for creating instances.
+* [Exporter](store_config-exporter.md#api-detail-storeconfig-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](store_config-attribute.md#api-detail-storeconfig-attribute): Attributes for retrieving basic characteristics.
+* [Method](store_config-method.md#api-detail-storeconfig-method): Methods for general functionality.
+* [Display](store_config-display.md#api-detail-storeconfig-display): Methods for providing a text representation of the object.
 
-[StoreConfig](#api-detail-storeconfig): [Constructor](store_config-constructor.html#api-detail-storeconfig-constructor) | [Exporter](store_config-exporter.html#api-detail-storeconfig-exporter) | [Attribute](store_config-attribute.html#api-detail-storeconfig-attribute) | [Method](store_config-method.html#api-detail-storeconfig-method) | [Display](store_config-display.html#api-detail-storeconfig-display)
+[StoreConfig](#api-detail-storeconfig): [Constructor](store_config-constructor.md#api-detail-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-detail-storeconfig-exporter) | [Attribute](store_config-attribute.md#api-detail-storeconfig-attribute) | [Method](store_config-method.md#api-detail-storeconfig-method) | [Display](store_config-display.md#api-detail-storeconfig-display)
 
-[Previous](display_config.html "Detail: DisplayConfig")
-[Next](store_filter.html "Detail: StoreFilter")
+[Previous](display_config.md "Detail: DisplayConfig")
+[Next](store_filter.md "Detail: StoreFilter")
 
 ---
 

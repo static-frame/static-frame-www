@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexHour: Accessor Datetime
 * [View page source](../_sources/api_overview/index_hour-accessor_datetime.rst.txt)
 
-[Previous](index_hour-accessor_values.html "Overview: IndexHour: Accessor Values")
-[Next](index_hour-accessor_string.html "Overview: IndexHour: Accessor String")
+[Previous](index_hour-accessor_values.md "Overview: IndexHour: Accessor Values")
+[Next](index_hour-accessor_string.md "Overview: IndexHour: Accessor String")
 
 ---
 
 # Overview: IndexHour: Accessor Datetime[](#overview-indexhour-accessor-datetime "Link to this heading")
 
-[Detail: IndexHour: Accessor Datetime](../api_detail/index_hour-accessor_datetime.html#api-detail-indexhour-accessor-datetime)
+[Detail: IndexHour: Accessor Datetime](../api_detail/index_hour-accessor_datetime.md#api-detail-indexhour-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-call) | `IndexHour.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-year) | `IndexHour.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-year-month) | `IndexHour.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-year-quarter) | `IndexHour.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-month) | `IndexHour.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-day) | `IndexHour.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-hour) | `IndexHour.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-minute) | `IndexHour.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-second) | `IndexHour.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-weekday) | `IndexHour.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-quarter) | `IndexHour.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-is-month-end) | `IndexHour.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-is-month-start) | `IndexHour.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-is-year-end) | `IndexHour.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-is-year-start) | `IndexHour.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-is-quarter-end) | `IndexHour.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-is-quarter-start) | `IndexHour.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-timetuple) | `IndexHour.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-isoformat) | `IndexHour.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-fromisoformat) | `IndexHour.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-strftime) | `IndexHour.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-strptime) | `IndexHour.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_hour-accessor_datetime.html#api-sig-indexhour-via-dt-strpdate) | `IndexHour.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-call) | `IndexHour.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-year) | `IndexHour.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-year-month) | `IndexHour.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-year-quarter) | `IndexHour.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-month) | `IndexHour.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-day) | `IndexHour.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-hour) | `IndexHour.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-minute) | `IndexHour.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-second) | `IndexHour.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-weekday) | `IndexHour.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-quarter) | `IndexHour.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-is-month-end) | `IndexHour.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-is-month-start) | `IndexHour.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-is-year-end) | `IndexHour.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-is-year-start) | `IndexHour.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-is-quarter-end) | `IndexHour.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-is-quarter-start) | `IndexHour.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-timetuple) | `IndexHour.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-isoformat) | `IndexHour.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-fromisoformat) | `IndexHour.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-strftime) | `IndexHour.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-strptime) | `IndexHour.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_hour-accessor_datetime.md#api-sig-indexhour-via-dt-strpdate) | `IndexHour.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexHour](index_hour.html#api-overview-indexhour): [Constructor](index_hour-constructor.html#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-overview-indexhour-attribute) | [Method](index_hour-method.html#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.html#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.html#api-overview-indexhour-display) | [Selector](index_hour-selector.html#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.html#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.html#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.html#api-overview-indexhour-accessor-values) | [Accessor Datetime](#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.html#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.html#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.html#api-overview-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-overview-indexhour): [Constructor](index_hour-constructor.md#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-overview-indexhour-attribute) | [Method](index_hour-method.md#api-overview-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.md#api-overview-indexhour-display) | [Selector](index_hour-selector.md#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.md#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-overview-indexhour-accessor-values) | [Accessor Datetime](#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-overview-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-accessor_values.html "Overview: IndexHour: Accessor Values")
-[Next](index_hour-accessor_string.html "Overview: IndexHour: Accessor String")
+[Previous](index_hour-accessor_values.md "Overview: IndexHour: Accessor Values")
+[Next](index_hour-accessor_string.md "Overview: IndexHour: Accessor String")
 
 ---
 

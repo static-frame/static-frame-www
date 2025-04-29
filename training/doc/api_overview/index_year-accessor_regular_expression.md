@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexYear: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_year-accessor_regular_expression.rst.txt)
 
-[Previous](index_year-accessor_string.html "Overview: IndexYear: Accessor String")
-[Next](index_year-accessor_hashlib.html "Overview: IndexYear: Accessor Hashlib")
+[Previous](index_year-accessor_string.md "Overview: IndexYear: Accessor String")
+[Next](index_year-accessor_hashlib.md "Overview: IndexYear: Accessor Hashlib")
 
 ---
 
 # Overview: IndexYear: Accessor Regular Expression[](#overview-indexyear-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexYear: Accessor Regular Expression](../api_detail/index_year-accessor_regular_expression.html#api-detail-indexyear-accessor-regular-expression)
+[Detail: IndexYear: Accessor Regular Expression](../api_detail/index_year-accessor_regular_expression.md#api-detail-indexyear-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year-accessor_regular_expression.html#api-sig-indexyear-via-re-search) | `IndexYear.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_year-accessor_regular_expression.html#api-sig-indexyear-via-re-match) | `IndexYear.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_year-accessor_regular_expression.html#api-sig-indexyear-via-re-fullmatch) | `IndexYear.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_year-accessor_regular_expression.html#api-sig-indexyear-via-re-split) | `IndexYear.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_year-accessor_regular_expression.html#api-sig-indexyear-via-re-findall) | `IndexYear.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_year-accessor_regular_expression.html#api-sig-indexyear-via-re-sub) | `IndexYear.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_year-accessor_regular_expression.html#api-sig-indexyear-via-re-subn) | `IndexYear.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_year-accessor_regular_expression.md#api-sig-indexyear-via-re-search) | `IndexYear.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_year-accessor_regular_expression.md#api-sig-indexyear-via-re-match) | `IndexYear.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_year-accessor_regular_expression.md#api-sig-indexyear-via-re-fullmatch) | `IndexYear.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_year-accessor_regular_expression.md#api-sig-indexyear-via-re-split) | `IndexYear.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_year-accessor_regular_expression.md#api-sig-indexyear-via-re-findall) | `IndexYear.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_year-accessor_regular_expression.md#api-sig-indexyear-via-re-sub) | `IndexYear.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_year-accessor_regular_expression.md#api-sig-indexyear-via-re-subn) | `IndexYear.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexYear](index_year.html#api-overview-indexyear): [Constructor](index_year-constructor.html#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.html#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.html#api-overview-indexyear-attribute) | [Method](index_year-method.html#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-overview-indexyear-dictionary-like) | [Display](index_year-display.html#api-overview-indexyear-display) | [Selector](index_year-selector.html#api-overview-indexyear-selector) | [Iterator](index_year-iterator.html#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-overview-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-overview-indexyear): [Constructor](index_year-constructor.md#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.md#api-overview-indexyear-exporter) | [Attribute](index_year-attribute.md#api-overview-indexyear-attribute) | [Method](index_year-method.md#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-overview-indexyear-dictionary-like) | [Display](index_year-display.md#api-overview-indexyear-display) | [Selector](index_year-selector.md#api-overview-indexyear-selector) | [Iterator](index_year-iterator.md#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-overview-indexyear-accessor-type-clinic)
 
-[Previous](index_year-accessor_string.html "Overview: IndexYear: Accessor String")
-[Next](index_year-accessor_hashlib.html "Overview: IndexYear: Accessor Hashlib")
+[Previous](index_year-accessor_string.md "Overview: IndexYear: Accessor String")
+[Next](index_year-accessor_hashlib.md "Overview: IndexYear: Accessor Hashlib")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: IndexHourGO: Accessor String
 * [View page source](../_sources/api_overview/index_hour_go-accessor_string.rst.txt)
 
-[Previous](index_hour_go-accessor_datetime.html "Overview: IndexHourGO: Accessor Datetime")
-[Next](index_hour_go-accessor_regular_expression.html "Overview: IndexHourGO: Accessor Regular Expression")
+[Previous](index_hour_go-accessor_datetime.md "Overview: IndexHourGO: Accessor Datetime")
+[Next](index_hour_go-accessor_regular_expression.md "Overview: IndexHourGO: Accessor Regular Expression")
 
 ---
 
 # Overview: IndexHourGO: Accessor String[](#overview-indexhourgo-accessor-string "Link to this heading")
 
-[Detail: IndexHourGO: Accessor String](../api_detail/index_hour_go-accessor_string.html#api-detail-indexhourgo-accessor-string)
+[Detail: IndexHourGO: Accessor String](../api_detail/index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-getitem) | `IndexHourGO.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-capitalize) | `IndexHourGO.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-center) | `IndexHourGO.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-contains) | `IndexHourGO.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-count) | `IndexHourGO.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-decode) | `IndexHourGO.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-encode) | `IndexHourGO.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-endswith) | `IndexHourGO.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-find) | `IndexHourGO.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-format) | `IndexHourGO.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-index) | `IndexHourGO.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-isalnum) | `IndexHourGO.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-isalpha) | `IndexHourGO.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-isdecimal) | `IndexHourGO.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-isdigit) | `IndexHourGO.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-islower) | `IndexHourGO.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-isnumeric) | `IndexHourGO.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-isspace) | `IndexHourGO.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-istitle) | `IndexHourGO.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-isupper) | `IndexHourGO.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-ljust) | `IndexHourGO.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-len) | `IndexHourGO.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-lower) | `IndexHourGO.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-lstrip) | `IndexHourGO.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-partition) | `IndexHourGO.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-replace) | `IndexHourGO.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-rfind) | `IndexHourGO.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-rindex) | `IndexHourGO.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-rjust) | `IndexHourGO.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-rpartition) | `IndexHourGO.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-rsplit) | `IndexHourGO.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-rstrip) | `IndexHourGO.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-split) | `IndexHourGO.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-startswith) | `IndexHourGO.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-strip) | `IndexHourGO.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-swapcase) | `IndexHourGO.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-title) | `IndexHourGO.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-upper) | `IndexHourGO.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_hour_go-accessor_string.html#api-sig-indexhourgo-via-str-zfill) | `IndexHourGO.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-getitem) | `IndexHourGO.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-capitalize) | `IndexHourGO.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-center) | `IndexHourGO.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-contains) | `IndexHourGO.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-count) | `IndexHourGO.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-decode) | `IndexHourGO.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-encode) | `IndexHourGO.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-endswith) | `IndexHourGO.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-find) | `IndexHourGO.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-format) | `IndexHourGO.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-index) | `IndexHourGO.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-isalnum) | `IndexHourGO.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-isalpha) | `IndexHourGO.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-isdecimal) | `IndexHourGO.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-isdigit) | `IndexHourGO.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-islower) | `IndexHourGO.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-isnumeric) | `IndexHourGO.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-isspace) | `IndexHourGO.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-istitle) | `IndexHourGO.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-isupper) | `IndexHourGO.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-ljust) | `IndexHourGO.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-len) | `IndexHourGO.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-lower) | `IndexHourGO.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-lstrip) | `IndexHourGO.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-partition) | `IndexHourGO.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-replace) | `IndexHourGO.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-rfind) | `IndexHourGO.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-rindex) | `IndexHourGO.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-rjust) | `IndexHourGO.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-rpartition) | `IndexHourGO.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-rsplit) | `IndexHourGO.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-rstrip) | `IndexHourGO.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-split) | `IndexHourGO.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-startswith) | `IndexHourGO.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-strip) | `IndexHourGO.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-swapcase) | `IndexHourGO.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-title) | `IndexHourGO.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-upper) | `IndexHourGO.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_hour_go-accessor_string.md#api-sig-indexhourgo-via-str-zfill) | `IndexHourGO.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[IndexHourGO](index_hour_go.html#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.html#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.html#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-overview-indexhourgo-accessor-datetime) | [Accessor String](#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-overview-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.md#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-overview-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-overview-indexhourgo-accessor-datetime) | [Accessor String](#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-overview-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-accessor_datetime.html "Overview: IndexHourGO: Accessor Datetime")
-[Next](index_hour_go-accessor_regular_expression.html "Overview: IndexHourGO: Accessor Regular Expression")
+[Previous](index_hour_go-accessor_datetime.md "Overview: IndexHourGO: Accessor Datetime")
+[Next](index_hour_go-accessor_regular_expression.md "Overview: IndexHourGO: Accessor Regular Expression")
 
 ---
 

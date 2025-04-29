@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: IndexSecond: Accessor String
 * [View page source](../_sources/api_overview/index_second-accessor_string.rst.txt)
 
-[Previous](index_second-accessor_datetime.html "Overview: IndexSecond: Accessor Datetime")
-[Next](index_second-accessor_regular_expression.html "Overview: IndexSecond: Accessor Regular Expression")
+[Previous](index_second-accessor_datetime.md "Overview: IndexSecond: Accessor Datetime")
+[Next](index_second-accessor_regular_expression.md "Overview: IndexSecond: Accessor Regular Expression")
 
 ---
 
 # Overview: IndexSecond: Accessor String[](#overview-indexsecond-accessor-string "Link to this heading")
 
-[Detail: IndexSecond: Accessor String](../api_detail/index_second-accessor_string.html#api-detail-indexsecond-accessor-string)
+[Detail: IndexSecond: Accessor String](../api_detail/index_second-accessor_string.md#api-detail-indexsecond-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-getitem) | `IndexSecond.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-capitalize) | `IndexSecond.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-center) | `IndexSecond.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-contains) | `IndexSecond.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-count) | `IndexSecond.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-decode) | `IndexSecond.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-encode) | `IndexSecond.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-endswith) | `IndexSecond.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-find) | `IndexSecond.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-format) | `IndexSecond.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-index) | `IndexSecond.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-isalnum) | `IndexSecond.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-isalpha) | `IndexSecond.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-isdecimal) | `IndexSecond.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-isdigit) | `IndexSecond.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-islower) | `IndexSecond.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-isnumeric) | `IndexSecond.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-isspace) | `IndexSecond.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-istitle) | `IndexSecond.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-isupper) | `IndexSecond.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-ljust) | `IndexSecond.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-len) | `IndexSecond.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-lower) | `IndexSecond.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-lstrip) | `IndexSecond.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-partition) | `IndexSecond.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-replace) | `IndexSecond.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-rfind) | `IndexSecond.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-rindex) | `IndexSecond.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-rjust) | `IndexSecond.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-rpartition) | `IndexSecond.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-rsplit) | `IndexSecond.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-rstrip) | `IndexSecond.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-split) | `IndexSecond.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-startswith) | `IndexSecond.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-strip) | `IndexSecond.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-swapcase) | `IndexSecond.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-title) | `IndexSecond.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-upper) | `IndexSecond.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_second-accessor_string.html#api-sig-indexsecond-via-str-zfill) | `IndexSecond.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-getitem) | `IndexSecond.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-capitalize) | `IndexSecond.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-center) | `IndexSecond.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-contains) | `IndexSecond.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-count) | `IndexSecond.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-decode) | `IndexSecond.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-encode) | `IndexSecond.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-endswith) | `IndexSecond.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-find) | `IndexSecond.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-format) | `IndexSecond.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-index) | `IndexSecond.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-isalnum) | `IndexSecond.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-isalpha) | `IndexSecond.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-isdecimal) | `IndexSecond.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-isdigit) | `IndexSecond.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-islower) | `IndexSecond.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-isnumeric) | `IndexSecond.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-isspace) | `IndexSecond.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-istitle) | `IndexSecond.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-isupper) | `IndexSecond.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-ljust) | `IndexSecond.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-len) | `IndexSecond.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-lower) | `IndexSecond.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-lstrip) | `IndexSecond.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-partition) | `IndexSecond.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-replace) | `IndexSecond.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-rfind) | `IndexSecond.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-rindex) | `IndexSecond.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-rjust) | `IndexSecond.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-rpartition) | `IndexSecond.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-rsplit) | `IndexSecond.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-rstrip) | `IndexSecond.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-split) | `IndexSecond.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-startswith) | `IndexSecond.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-strip) | `IndexSecond.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-swapcase) | `IndexSecond.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-title) | `IndexSecond.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-upper) | `IndexSecond.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_second-accessor_string.md#api-sig-indexsecond-via-str-zfill) | `IndexSecond.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[IndexSecond](index_second.html#api-overview-indexsecond): [Constructor](index_second-constructor.html#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.html#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-overview-indexsecond-attribute) | [Method](index_second-method.html#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.html#api-overview-indexsecond-display) | [Selector](index_second-selector.html#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.html#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-overview-indexsecond-accessor-datetime) | [Accessor String](#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-overview-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-overview-indexsecond): [Constructor](index_second-constructor.md#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-overview-indexsecond-attribute) | [Method](index_second-method.md#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.md#api-overview-indexsecond-display) | [Selector](index_second-selector.md#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.md#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-overview-indexsecond-accessor-datetime) | [Accessor String](#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-overview-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-accessor_datetime.html "Overview: IndexSecond: Accessor Datetime")
-[Next](index_second-accessor_regular_expression.html "Overview: IndexSecond: Accessor Regular Expression")
+[Previous](index_second-accessor_datetime.md "Overview: IndexSecond: Accessor Datetime")
+[Next](index_second-accessor_regular_expression.md "Overview: IndexSecond: Accessor Regular Expression")
 
 ---
 

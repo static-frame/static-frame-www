@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: Frame: Accessor String
 * [View page source](../_sources/api_overview/frame-accessor_string.rst.txt)
 
-[Previous](frame-accessor_datetime.html "Overview: Frame: Accessor Datetime")
-[Next](frame-accessor_transpose.html "Overview: Frame: Accessor Transpose")
+[Previous](frame-accessor_datetime.md "Overview: Frame: Accessor Datetime")
+[Next](frame-accessor_transpose.md "Overview: Frame: Accessor Transpose")
 
 ---
 
 # Overview: Frame: Accessor String[](#overview-frame-accessor-string "Link to this heading")
 
-[Detail: Frame: Accessor String](../api_detail/frame-accessor_string.html#api-detail-frame-accessor-string)
+[Detail: Frame: Accessor String](../api_detail/frame-accessor_string.md#api-detail-frame-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-getitem) | `Frame.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-capitalize) | `Frame.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-center) | `Frame.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-contains) | `Frame.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-count) | `Frame.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-decode) | `Frame.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-encode) | `Frame.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-endswith) | `Frame.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-find) | `Frame.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-format) | `Frame.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-index) | `Frame.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-isalnum) | `Frame.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-isalpha) | `Frame.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-isdecimal) | `Frame.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-isdigit) | `Frame.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-islower) | `Frame.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-isnumeric) | `Frame.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-isspace) | `Frame.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-istitle) | `Frame.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-isupper) | `Frame.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-ljust) | `Frame.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-len) | `Frame.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-lower) | `Frame.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-lstrip) | `Frame.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-partition) | `Frame.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-replace) | `Frame.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-rfind) | `Frame.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-rindex) | `Frame.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-rjust) | `Frame.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-rpartition) | `Frame.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-rsplit) | `Frame.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-rstrip) | `Frame.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-split) | `Frame.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-startswith) | `Frame.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-strip) | `Frame.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-swapcase) | `Frame.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-title) | `Frame.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-upper) | `Frame.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/frame-accessor_string.html#api-sig-frame-via-str-zfill) | `Frame.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-getitem) | `Frame.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-capitalize) | `Frame.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-center) | `Frame.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-contains) | `Frame.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-count) | `Frame.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-decode) | `Frame.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-encode) | `Frame.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-endswith) | `Frame.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-find) | `Frame.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-format) | `Frame.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-index) | `Frame.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-isalnum) | `Frame.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-isalpha) | `Frame.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-isdecimal) | `Frame.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-isdigit) | `Frame.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-islower) | `Frame.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-isnumeric) | `Frame.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-isspace) | `Frame.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-istitle) | `Frame.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-isupper) | `Frame.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-ljust) | `Frame.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-len) | `Frame.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-lower) | `Frame.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-lstrip) | `Frame.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-partition) | `Frame.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-replace) | `Frame.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-rfind) | `Frame.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-rindex) | `Frame.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-rjust) | `Frame.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-rpartition) | `Frame.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-rsplit) | `Frame.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-rstrip) | `Frame.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-split) | `Frame.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-startswith) | `Frame.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-strip) | `Frame.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-swapcase) | `Frame.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-title) | `Frame.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-upper) | `Frame.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/frame-accessor_string.md#api-sig-frame-via-str-zfill) | `Frame.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[Frame](frame.html#api-overview-frame): [Constructor](frame-constructor.html#api-overview-frame-constructor) | [Exporter](frame-exporter.html#api-overview-frame-exporter) | [Attribute](frame-attribute.html#api-overview-frame-attribute) | [Method](frame-method.html#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-overview-frame-dictionary-like) | [Display](frame-display.html#api-overview-frame-display) | [Assignment](frame-assignment.html#api-overview-frame-assignment) | [Selector](frame-selector.html#api-overview-frame-selector) | [Iterator](frame-iterator.html#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-overview-frame-accessor-datetime) | [Accessor String](#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-overview-frame-accessor-reduce)
+[Frame](frame.md#api-overview-frame): [Constructor](frame-constructor.md#api-overview-frame-constructor) | [Exporter](frame-exporter.md#api-overview-frame-exporter) | [Attribute](frame-attribute.md#api-overview-frame-attribute) | [Method](frame-method.md#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-overview-frame-dictionary-like) | [Display](frame-display.md#api-overview-frame-display) | [Assignment](frame-assignment.md#api-overview-frame-assignment) | [Selector](frame-selector.md#api-overview-frame-selector) | [Iterator](frame-iterator.md#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-overview-frame-accessor-datetime) | [Accessor String](#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-overview-frame-accessor-reduce)
 
-[Previous](frame-accessor_datetime.html "Overview: Frame: Accessor Datetime")
-[Next](frame-accessor_transpose.html "Overview: Frame: Accessor Transpose")
+[Previous](frame-accessor_datetime.md "Overview: Frame: Accessor Datetime")
+[Next](frame-accessor_transpose.md "Overview: Frame: Accessor Transpose")
 
 ---
 

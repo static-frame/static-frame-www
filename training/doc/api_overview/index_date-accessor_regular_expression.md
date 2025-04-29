@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexDate: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_date-accessor_regular_expression.rst.txt)
 
-[Previous](index_date-accessor_string.html "Overview: IndexDate: Accessor String")
-[Next](index_date-accessor_hashlib.html "Overview: IndexDate: Accessor Hashlib")
+[Previous](index_date-accessor_string.md "Overview: IndexDate: Accessor String")
+[Next](index_date-accessor_hashlib.md "Overview: IndexDate: Accessor Hashlib")
 
 ---
 
 # Overview: IndexDate: Accessor Regular Expression[](#overview-indexdate-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexDate: Accessor Regular Expression](../api_detail/index_date-accessor_regular_expression.html#api-detail-indexdate-accessor-regular-expression)
+[Detail: IndexDate: Accessor Regular Expression](../api_detail/index_date-accessor_regular_expression.md#api-detail-indexdate-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date-accessor_regular_expression.html#api-sig-indexdate-via-re-search) | `IndexDate.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_date-accessor_regular_expression.html#api-sig-indexdate-via-re-match) | `IndexDate.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_date-accessor_regular_expression.html#api-sig-indexdate-via-re-fullmatch) | `IndexDate.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_date-accessor_regular_expression.html#api-sig-indexdate-via-re-split) | `IndexDate.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_date-accessor_regular_expression.html#api-sig-indexdate-via-re-findall) | `IndexDate.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_date-accessor_regular_expression.html#api-sig-indexdate-via-re-sub) | `IndexDate.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_date-accessor_regular_expression.html#api-sig-indexdate-via-re-subn) | `IndexDate.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_date-accessor_regular_expression.md#api-sig-indexdate-via-re-search) | `IndexDate.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_date-accessor_regular_expression.md#api-sig-indexdate-via-re-match) | `IndexDate.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_date-accessor_regular_expression.md#api-sig-indexdate-via-re-fullmatch) | `IndexDate.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_date-accessor_regular_expression.md#api-sig-indexdate-via-re-split) | `IndexDate.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_date-accessor_regular_expression.md#api-sig-indexdate-via-re-findall) | `IndexDate.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_date-accessor_regular_expression.md#api-sig-indexdate-via-re-sub) | `IndexDate.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_date-accessor_regular_expression.md#api-sig-indexdate-via-re-subn) | `IndexDate.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexDate](index_date.html#api-overview-indexdate): [Constructor](index_date-constructor.html#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.html#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.html#api-overview-indexdate-attribute) | [Method](index_date-method.html#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.html#api-overview-indexdate-dictionary-like) | [Display](index_date-display.html#api-overview-indexdate-display) | [Selector](index_date-selector.html#api-overview-indexdate-selector) | [Iterator](index_date-iterator.html#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.html#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.html#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.html#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.html#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.html#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.html#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.html#api-overview-indexdate-accessor-type-clinic)
+[IndexDate](index_date.md#api-overview-indexdate): [Constructor](index_date-constructor.md#api-overview-indexdate-constructor) | [Exporter](index_date-exporter.md#api-overview-indexdate-exporter) | [Attribute](index_date-attribute.md#api-overview-indexdate-attribute) | [Method](index_date-method.md#api-overview-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-overview-indexdate-dictionary-like) | [Display](index_date-display.md#api-overview-indexdate-display) | [Selector](index_date-selector.md#api-overview-indexdate-selector) | [Iterator](index_date-iterator.md#api-overview-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-overview-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-overview-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-overview-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-overview-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-overview-indexdate-accessor-string) | [Accessor Regular Expression](#api-overview-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-overview-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-overview-indexdate-accessor-type-clinic)
 
-[Previous](index_date-accessor_string.html "Overview: IndexDate: Accessor String")
-[Next](index_date-accessor_hashlib.html "Overview: IndexDate: Accessor Hashlib")
+[Previous](index_date-accessor_string.md "Overview: IndexDate: Accessor String")
+[Next](index_date-accessor_hashlib.md "Overview: IndexDate: Accessor Hashlib")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Yarn: Attribute
 * [View page source](../_sources/api_detail/yarn-attribute.rst.txt)
 
-[Previous](yarn-exporter.html "Detail: Yarn: Exporter")
-[Next](yarn-method.html "Detail: Yarn: Method")
+[Previous](yarn-exporter.md "Detail: Yarn: Exporter")
+[Next](yarn-method.md "Detail: Yarn: Method")
 
 ---
 
 # Detail: Yarn: Attribute[](#detail-yarn-attribute "Link to this heading")
 
-[Overview: Yarn: Attribute](../api_overview/yarn-attribute.html#api-overview-yarn-attribute)
+[Overview: Yarn: Attribute](../api_overview/yarn-attribute.md#api-overview-yarn-attribute)
 
 Yarn.STATIC *= True*[](#static_frame.Yarn.STATIC "Link to this definition")
 :   ```
@@ -186,7 +186,7 @@ Yarn.index[](#static_frame.Yarn.index "Link to this definition")
 :   The index instance assigned to this container.
 
     Returns:
-    :   [`Index`](index-selector.html#Index "Index")
+    :   [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -201,7 +201,7 @@ Yarn.index[](#static_frame.Yarn.index "Link to this definition")
     ```
 
 Yarn.inventory[](#static_frame.Yarn.inventory "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") indicating file\_path, last-modified time, and size of underlying disk-based data stores if used for this [`Yarn`](yarn-selector.html#Yarn "Yarn").
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") indicating file\_path, last-modified time, and size of underlying disk-based data stores if used for this [`Yarn`](yarn-selector.md#Yarn "Yarn").
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -216,7 +216,7 @@ Yarn.inventory[](#static_frame.Yarn.inventory "Link to this definition")
     ```
 
 Yarn.memory[](#static_frame.Yarn.memory "Link to this definition")
-:   Return a [`MemoryDisplay`](memory_display.html#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+:   Return a [`MemoryDisplay`](memory_display.md#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
 
     L: Local: memory ignoring referenced array data provided via views.
     LM: Local Materialized: memory where arrays that are locally owned report their byte payload
@@ -235,7 +235,7 @@ Yarn.memory[](#static_frame.Yarn.memory "Link to this definition")
     ```
 
 Yarn.mloc[](#static_frame.Yarn.mloc "Link to this definition")
-:   Returns a [`Series`](series-selector.html#Series "Series") showing a tuple of memory locations within each loaded Frame.
+:   Returns a [`Series`](series-selector.md#Series "Series") showing a tuple of memory locations within each loaded Frame.
 
 Yarn.name[](#static_frame.Yarn.name "Link to this definition")
 :   A hashable label attached to this container.
@@ -250,7 +250,7 @@ Yarn.name[](#static_frame.Yarn.name "Link to this definition")
     ```
 
 Yarn.nbytes[](#static_frame.Yarn.nbytes "Link to this definition")
-:   Total bytes of data currently loaded in [`Frame`](frame-selector.html#Frame "Frame") contained in this [`Yarn`](yarn-selector.html#Yarn "Yarn").
+:   Total bytes of data currently loaded in [`Frame`](frame-selector.md#Frame "Frame") contained in this [`Yarn`](yarn-selector.md#Yarn "Yarn").
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -260,7 +260,7 @@ Yarn.nbytes[](#static_frame.Yarn.nbytes "Link to this definition")
     ```
 
 Yarn.ndim[](#static_frame.Yarn.ndim "Link to this definition")
-:   Return the number of dimensions, which for a [`Yarn`](yarn-selector.html#Yarn "Yarn") is always 1.
+:   Return the number of dimensions, which for a [`Yarn`](yarn-selector.md#Yarn "Yarn") is always 1.
 
     Returns:
     :   `int`
@@ -286,7 +286,7 @@ Yarn.shape[](#static_frame.Yarn.shape "Link to this definition")
     ```
 
 Yarn.shapes[](#static_frame.Yarn.shapes "Link to this definition")
-:   A [`Series`](series-selector.html#Series "Series") describing the shape of each loaded [`Frame`](frame-selector.html#Frame "Frame"). Unloaded [`Frame`](frame-selector.html#Frame "Frame") will have a shape of None.
+:   A [`Series`](series-selector.md#Series "Series") describing the shape of each loaded [`Frame`](frame-selector.md#Frame "Frame"). Unloaded [`Frame`](frame-selector.md#Frame "Frame") will have a shape of None.
 
     Returns:
     :   `tp.Series`
@@ -318,7 +318,7 @@ Yarn.size[](#static_frame.Yarn.size "Link to this definition")
     ```
 
 Yarn.status[](#static_frame.Yarn.status "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") indicating loaded status, size, bytes, and shape of all loaded [`Frame`](frame-selector.html#Frame "Frame") in [`Bus`](bus-selector.html#Bus "Bus") contined in this [`Yarn`](yarn-selector.html#Yarn "Yarn").
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") indicating loaded status, size, bytes, and shape of all loaded [`Frame`](frame-selector.md#Frame "Frame") in [`Bus`](bus-selector.md#Bus "Bus") contined in this [`Yarn`](yarn-selector.md#Yarn "Yarn").
 
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
@@ -334,10 +334,10 @@ Yarn.status[](#static_frame.Yarn.status "Link to this definition")
 
     ```
 
-[Yarn](yarn.html#api-detail-yarn): [Constructor](yarn-constructor.html#api-detail-yarn-constructor) | [Exporter](yarn-exporter.html#api-detail-yarn-exporter) | [Attribute](#api-detail-yarn-attribute) | [Method](yarn-method.html#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like) | [Display](yarn-display.html#api-detail-yarn-display) | [Selector](yarn-selector.html#api-detail-yarn-selector) | [Iterator](yarn-iterator.html#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
-[Previous](yarn-exporter.html "Detail: Yarn: Exporter")
-[Next](yarn-method.html "Detail: Yarn: Method")
+[Previous](yarn-exporter.md "Detail: Yarn: Exporter")
+[Next](yarn-method.md "Detail: Yarn: Method")
 
 ---
 

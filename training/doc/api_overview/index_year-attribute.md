@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexYear: Attribute
 * [View page source](../_sources/api_overview/index_year-attribute.rst.txt)
 
-[Previous](index_year-exporter.html "Overview: IndexYear: Exporter")
-[Next](index_year-method.html "Overview: IndexYear: Method")
+[Previous](index_year-exporter.md "Overview: IndexYear: Exporter")
+[Next](index_year-method.md "Overview: IndexYear: Method")
 
 ---
 
 # Overview: IndexYear: Attribute[](#overview-indexyear-attribute "Link to this heading")
 
-[Detail: IndexYear: Attribute](../api_detail/index_year-attribute.html#api-detail-indexyear-attribute)
+[Detail: IndexYear: Attribute](../api_detail/index_year-attribute.md#api-detail-indexyear-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-static) | `IndexYear.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-depth) | `IndexYear.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-dtype) | `IndexYear.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-index-types) | `IndexYear.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-memory) | `IndexYear.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-mloc) | `IndexYear.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-name) | `IndexYear.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-names) | `IndexYear.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-nbytes) | `IndexYear.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-ndim) | `IndexYear.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-positions) | `IndexYear.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-shape) | `IndexYear.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_year-attribute.html#api-sig-indexyear-size) | `IndexYear.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-static) | `IndexYear.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-depth) | `IndexYear.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-dtype) | `IndexYear.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-index-types) | `IndexYear.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-memory) | `IndexYear.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-mloc) | `IndexYear.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-name) | `IndexYear.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-names) | `IndexYear.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-nbytes) | `IndexYear.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-ndim) | `IndexYear.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-positions) | `IndexYear.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-shape) | `IndexYear.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_year-attribute.md#api-sig-indexyear-size) | `IndexYear.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexYear](index_year.html#api-overview-indexyear): [Constructor](index_year-constructor.html#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.html#api-overview-indexyear-exporter) | [Attribute](#api-overview-indexyear-attribute) | [Method](index_year-method.html#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.html#api-overview-indexyear-dictionary-like) | [Display](index_year-display.html#api-overview-indexyear-display) | [Selector](index_year-selector.html#api-overview-indexyear-selector) | [Iterator](index_year-iterator.html#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-overview-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-overview-indexyear): [Constructor](index_year-constructor.md#api-overview-indexyear-constructor) | [Exporter](index_year-exporter.md#api-overview-indexyear-exporter) | [Attribute](#api-overview-indexyear-attribute) | [Method](index_year-method.md#api-overview-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-overview-indexyear-dictionary-like) | [Display](index_year-display.md#api-overview-indexyear-display) | [Selector](index_year-selector.md#api-overview-indexyear-selector) | [Iterator](index_year-iterator.md#api-overview-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-overview-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-overview-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-overview-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-overview-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-overview-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-overview-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-overview-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-overview-indexyear-accessor-type-clinic)
 
-[Previous](index_year-exporter.html "Overview: IndexYear: Exporter")
-[Next](index_year-method.html "Overview: IndexYear: Method")
+[Previous](index_year-exporter.md "Overview: IndexYear: Exporter")
+[Next](index_year-method.md "Overview: IndexYear: Method")
 
 ---
 

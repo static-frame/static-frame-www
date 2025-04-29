@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: NPY: Constructor
 * [View page source](../_sources/api_overview/npy-constructor.rst.txt)
 
-[Previous](npz-display.html "Overview: NPZ: Display")
-[Next](npy-attribute.html "Overview: NPY: Attribute")
+[Previous](npz-display.md "Overview: NPZ: Display")
+[Next](npy-attribute.md "Overview: NPY: Attribute")
 
 ---
 
 # Overview: NPY: Constructor[](#overview-npy-constructor "Link to this heading")
 
-[Detail: NPY: Constructor](../api_detail/npy-constructor.html#api-detail-npy-constructor)
+[Detail: NPY: Constructor](../api_detail/npy-constructor.md#api-detail-npy-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/npy-constructor.html#api-sig-npy-init) | `NPY.__init__(fp, mode)` |  |
-| [Detail](../api_detail/npy-constructor.html#api-sig-npy-from-arrays) | `NPY.from_arrays(blocks, *, index, columns, name, axis)` | Given an iterable of arrays, write out an NPZ or NPY directly, without building… |
-| [Detail](../api_detail/npy-constructor.html#api-sig-npy-from-frames) | `NPY.from_frames(frames, *, include_index, include_columns, axis, union, name, fill_value)` | Given an iterable of Frames, write out an NPZ or NPY directly, without building… |
+| [Detail](../api_detail/npy-constructor.md#api-sig-npy-init) | `NPY.__init__(fp, mode)` |  |
+| [Detail](../api_detail/npy-constructor.md#api-sig-npy-from-arrays) | `NPY.from_arrays(blocks, *, index, columns, name, axis)` | Given an iterable of arrays, write out an NPZ or NPY directly, without building… |
+| [Detail](../api_detail/npy-constructor.md#api-sig-npy-from-frames) | `NPY.from_frames(frames, *, include_index, include_columns, axis, union, name, fill_value)` | Given an iterable of Frames, write out an NPZ or NPY directly, without building… |
 
-[NPY](npy.html#api-overview-npy): [Constructor](#api-overview-npy-constructor) | [Attribute](npy-attribute.html#api-overview-npy-attribute) | [Method](npy-method.html#api-overview-npy-method) | [Display](npy-display.html#api-overview-npy-display)
+[NPY](npy.md#api-overview-npy): [Constructor](#api-overview-npy-constructor) | [Attribute](npy-attribute.md#api-overview-npy-attribute) | [Method](npy-method.md#api-overview-npy-method) | [Display](npy-display.md#api-overview-npy-display)
 
-[Previous](npz-display.html "Overview: NPZ: Display")
-[Next](npy-attribute.html "Overview: NPY: Attribute")
+[Previous](npz-display.md "Overview: NPZ: Display")
+[Next](npy-attribute.md "Overview: NPY: Attribute")
 
 ---
 

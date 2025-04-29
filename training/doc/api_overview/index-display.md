@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Index: Display
 * [View page source](../_sources/api_overview/index-display.rst.txt)
 
-[Previous](index-dictionary_like.html "Overview: Index: Dictionary-Like")
-[Next](index-selector.html "Overview: Index: Selector")
+[Previous](index-dictionary_like.md "Overview: Index: Dictionary-Like")
+[Next](index-selector.md "Overview: Index: Selector")
 
 ---
 
 # Overview: Index: Display[](#overview-index-display "Link to this heading")
 
-[Detail: Index: Display](../api_detail/index-display.html#api-detail-index-display)
+[Detail: Index: Display](../api_detail/index-display.md#api-detail-index-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-display.html#api-sig-index-interface) | [`Index.interface`](../api_detail/index-display.html#Index.interface "Index.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index-display.html#api-sig-index-repr) | `Index.__repr__()` |  |
-| [Detail](../api_detail/index-display.html#api-sig-index-str) | `Index.__str__()` | Return str(self). |
-| [Detail](../api_detail/index-display.html#api-sig-index-display) | `Index.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index-display.html#api-sig-index-display-tall) | `Index.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index-display.html#api-sig-index-display-wide) | `Index.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index-display.md#api-sig-index-interface) | [`Index.interface`](../api_detail/index-display.md#Index.interface "Index.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index-display.md#api-sig-index-repr) | `Index.__repr__()` |  |
+| [Detail](../api_detail/index-display.md#api-sig-index-str) | `Index.__str__()` | Return str(self). |
+| [Detail](../api_detail/index-display.md#api-sig-index-display) | `Index.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index-display.md#api-sig-index-display-tall) | `Index.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index-display.md#api-sig-index-display-wide) | `Index.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[Index](index.html#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](index-exporter.html#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](index-method.html#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.html#api-overview-index-dictionary-like) | [Display](#api-overview-index-display) | [Selector](index-selector.html#api-overview-index-selector) | [Iterator](index-iterator.html#api-overview-index-iterator) | [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](index.md#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](index-exporter.md#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](index-method.md#api-overview-index-method) | [Dictionary-Like](index-dictionary_like.md#api-overview-index-dictionary-like) | [Display](#api-overview-index-display) | [Selector](index-selector.md#api-overview-index-selector) | [Iterator](index-iterator.md#api-overview-index-iterator) | [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](index-dictionary_like.html "Overview: Index: Dictionary-Like")
-[Next](index-selector.html "Overview: Index: Selector")
+[Previous](index-dictionary_like.md "Overview: Index: Dictionary-Like")
+[Next](index-selector.md "Overview: Index: Selector")
 
 ---
 

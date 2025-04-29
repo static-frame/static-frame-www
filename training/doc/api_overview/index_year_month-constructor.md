@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexYearMonth: Constructor
 * [View page source](../_sources/api_overview/index_year_month-constructor.rst.txt)
 
-[Previous](index_year_go-accessor_type_clinic.html "Overview: IndexYearGO: Accessor Type Clinic")
-[Next](index_year_month-exporter.html "Overview: IndexYearMonth: Exporter")
+[Previous](index_year_go-accessor_type_clinic.md "Overview: IndexYearGO: Accessor Type Clinic")
+[Next](index_year_month-exporter.md "Overview: IndexYearMonth: Exporter")
 
 ---
 
 # Overview: IndexYearMonth: Constructor[](#overview-indexyearmonth-constructor "Link to this heading")
 
-[Detail: IndexYearMonth: Constructor](../api_detail/index_year_month-constructor.html#api-detail-indexyearmonth-constructor)
+[Detail: IndexYearMonth: Constructor](../api_detail/index_year_month-constructor.md#api-detail-indexyearmonth-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month-constructor.html#api-sig-indexyearmonth-init) | `IndexYearMonth.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
-| [Detail](../api_detail/index_year_month-constructor.html#api-sig-indexyearmonth-from-date-range) | `IndexYearMonth.from_date_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of dates, where start and stop is in… |
-| [Detail](../api_detail/index_year_month-constructor.html#api-sig-indexyearmonth-from-labels) | `IndexYearMonth.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
-| [Detail](../api_detail/index_year_month-constructor.html#api-sig-indexyearmonth-from-pandas) | `IndexYearMonth.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
-| [Detail](../api_detail/index_year_month-constructor.html#api-sig-indexyearmonth-from-year-month-range) | `IndexYearMonth.from_year_month_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of months, where start and end are i… |
-| [Detail](../api_detail/index_year_month-constructor.html#api-sig-indexyearmonth-from-year-range) | `IndexYearMonth.from_year_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of years, where start and end are in… |
+| [Detail](../api_detail/index_year_month-constructor.md#api-sig-indexyearmonth-init) | `IndexYearMonth.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_year_month-constructor.md#api-sig-indexyearmonth-from-date-range) | `IndexYearMonth.from_date_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of dates, where start and stop is in… |
+| [Detail](../api_detail/index_year_month-constructor.md#api-sig-indexyearmonth-from-labels) | `IndexYearMonth.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
+| [Detail](../api_detail/index_year_month-constructor.md#api-sig-indexyearmonth-from-pandas) | `IndexYearMonth.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_year_month-constructor.md#api-sig-indexyearmonth-from-year-month-range) | `IndexYearMonth.from_year_month_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of months, where start and end are i… |
+| [Detail](../api_detail/index_year_month-constructor.md#api-sig-indexyearmonth-from-year-range) | `IndexYearMonth.from_year_range(start, stop, step, *, name)` | Get an IndexYearMonth instance over a range of years, where start and end are in… |
 
-[IndexYearMonth](index_year_month.html#api-overview-indexyearmonth): [Constructor](#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.html#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-overview-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-overview-indexyearmonth): [Constructor](#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-overview-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-overview-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_go-accessor_type_clinic.html "Overview: IndexYearGO: Accessor Type Clinic")
-[Next](index_year_month-exporter.html "Overview: IndexYearMonth: Exporter")
+[Previous](index_year_go-accessor_type_clinic.md "Overview: IndexYearGO: Accessor Type Clinic")
+[Next](index_year_month-exporter.md "Overview: IndexYearMonth: Exporter")
 
 ---
 

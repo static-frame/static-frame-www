@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: SeriesHE: Accessor Fill Value
 * [View page source](../_sources/api_detail/series_he-accessor_fill_value.rst.txt)
 
-[Previous](series_he-accessor_string.html "Detail: SeriesHE: Accessor String")
-[Next](series_he-accessor_regular_expression.html "Detail: SeriesHE: Accessor Regular Expression")
+[Previous](series_he-accessor_string.md "Detail: SeriesHE: Accessor String")
+[Next](series_he-accessor_regular_expression.md "Detail: SeriesHE: Accessor Regular Expression")
 
 ---
 
 # Detail: SeriesHE: Accessor Fill Value[](#detail-serieshe-accessor-fill-value "Link to this heading")
 
-[Overview: SeriesHE: Accessor Fill Value](../api_overview/series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value)
+[Overview: SeriesHE: Accessor Fill Value](../api_overview/series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value)
 
 SeriesHE.via\_fill\_value(fill\_value).loc
 :   SeriesHE.via\_fill\_value *= <function Series.via\_fill\_value>*
@@ -173,7 +173,7 @@ SeriesHE.via\_fill\_value(fill\_value).loc
 SeriesHE.via\_fill\_value(*fill\_value).\_\_getitem\_\_(key*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__getitem__)
+    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__getitem__)
     :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
 
     ```
@@ -219,7 +219,7 @@ SeriesHE.via\_fill\_value(fill\_value).via\_T
 SeriesHE.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__add__)
+    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__add__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -238,7 +238,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__sub__)
+    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__sub__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -257,7 +257,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mul__)
+    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mul__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -276,7 +276,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__truediv__)
+    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__truediv__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -295,7 +295,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__floordiv__)
+    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__floordiv__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -314,7 +314,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mod__)
+    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mod__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -333,7 +333,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__pow__)
+    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__pow__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -352,7 +352,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lshift__)
+    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lshift__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -385,7 +385,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rshift__)
+    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rshift__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -418,7 +418,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__and__)
+    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__and__)
 
     ```
     >>> s1 = sf.SeriesHE((False, False, True), index=('a', 'b', 'c'))
@@ -451,7 +451,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__xor__)
+    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__xor__)
 
     ```
     >>> s1 = sf.SeriesHE((False, False, True), index=('a', 'b', 'c'))
@@ -484,7 +484,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__or__)
+    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__or__)
     :   Return self|value.
 
     ```
@@ -518,7 +518,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lt__)
+    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lt__)
     :   Return self<value.
 
     ```
@@ -538,7 +538,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__le__)
+    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__le__)
     :   Return self<=value.
 
     ```
@@ -558,7 +558,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__eq__)
+    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__eq__)
     :   Return self==value.
 
     ```
@@ -578,7 +578,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ne__)
+    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ne__)
     :   Return self!=value.
 
     ```
@@ -598,7 +598,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__gt__)
+    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__gt__)
     :   Return self>value.
 
     ```
@@ -618,7 +618,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ge__)
+    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ge__)
     :   Return self>=value.
 
     ```
@@ -638,7 +638,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__radd__)
+    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__radd__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -651,7 +651,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rsub__)
+    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rsub__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -664,7 +664,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rmul__)
+    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rmul__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -677,7 +677,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rtruediv__)
+    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rtruediv__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -690,7 +690,7 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
 SeriesHE.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
 :   via\_fill\_value *= <function Series.via\_fill\_value>*
 
-    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rfloordiv__)
+    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rfloordiv__)
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -700,10 +700,10 @@ SeriesHE.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
 
     ```
 
-[SeriesHE](series_he.html#api-detail-serieshe): [Constructor](series_he-constructor.html#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.html#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.html#api-detail-serieshe-attribute) | [Method](series_he-method.html#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-detail-serieshe-dictionary-like) | [Display](series_he-display.html#api-detail-serieshe-display) | [Assignment](series_he-assignment.html#api-detail-serieshe-assignment) | [Selector](series_he-selector.html#api-detail-serieshe-selector) | [Iterator](series_he-iterator.html#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-detail-serieshe-accessor-string) | [Accessor Fill Value](#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-accessor_string.html "Detail: SeriesHE: Accessor String")
-[Next](series_he-accessor_regular_expression.html "Detail: SeriesHE: Accessor Regular Expression")
+[Previous](series_he-accessor_string.md "Detail: SeriesHE: Accessor String")
+[Next](series_he-accessor_regular_expression.md "Detail: SeriesHE: Accessor Regular Expression")
 
 ---
 

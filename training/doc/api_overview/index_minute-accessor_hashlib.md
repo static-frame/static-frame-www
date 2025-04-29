@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: IndexMinute: Accessor Hashlib
 * [View page source](../_sources/api_overview/index_minute-accessor_hashlib.rst.txt)
 
-[Previous](index_minute-accessor_regular_expression.html "Overview: IndexMinute: Accessor Regular Expression")
-[Next](index_minute-accessor_type_clinic.html "Overview: IndexMinute: Accessor Type Clinic")
+[Previous](index_minute-accessor_regular_expression.md "Overview: IndexMinute: Accessor Regular Expression")
+[Next](index_minute-accessor_type_clinic.md "Overview: IndexMinute: Accessor Type Clinic")
 
 ---
 
 # Overview: IndexMinute: Accessor Hashlib[](#overview-indexminute-accessor-hashlib "Link to this heading")
 
-[Detail: IndexMinute: Accessor Hashlib](../api_detail/index_minute-accessor_hashlib.html#api-detail-indexminute-accessor-hashlib)
+[Detail: IndexMinute: Accessor Hashlib](../api_detail/index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-to-bytes) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-md5) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-sha256) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-sha512) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-sha3-256) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-sha3-512) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-shake-128) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-shake-256) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-blake2b) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/index_minute-accessor_hashlib.html#api-sig-indexminute-via-hashlib-blake2s) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-to-bytes) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-md5) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-sha256) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-sha512) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-sha3-256) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-sha3-512) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-shake-128) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-shake-256) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-blake2b) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/index_minute-accessor_hashlib.md#api-sig-indexminute-via-hashlib-blake2s) | `IndexMinute.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-accessor_regular_expression.html "Overview: IndexMinute: Accessor Regular Expression")
-[Next](index_minute-accessor_type_clinic.html "Overview: IndexMinute: Accessor Type Clinic")
+[Previous](index_minute-accessor_regular_expression.md "Overview: IndexMinute: Accessor Regular Expression")
+[Next](index_minute-accessor_type_clinic.md "Overview: IndexMinute: Accessor Type Clinic")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexHierarchy: Display
 * [View page source](../_sources/api_overview/index_hierarchy-display.rst.txt)
 
-[Previous](index_hierarchy-dictionary_like.html "Overview: IndexHierarchy: Dictionary-Like")
-[Next](index_hierarchy-selector.html "Overview: IndexHierarchy: Selector")
+[Previous](index_hierarchy-dictionary_like.md "Overview: IndexHierarchy: Dictionary-Like")
+[Next](index_hierarchy-selector.md "Overview: IndexHierarchy: Selector")
 
 ---
 
 # Overview: IndexHierarchy: Display[](#overview-indexhierarchy-display "Link to this heading")
 
-[Detail: IndexHierarchy: Display](../api_detail/index_hierarchy-display.html#api-detail-indexhierarchy-display)
+[Detail: IndexHierarchy: Display](../api_detail/index_hierarchy-display.md#api-detail-indexhierarchy-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy-display.html#api-sig-indexhierarchy-interface) | [`IndexHierarchy.interface`](../api_detail/index_hierarchy-display.html#IndexHierarchy.interface "IndexHierarchy.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_hierarchy-display.html#api-sig-indexhierarchy-repr) | `IndexHierarchy.__repr__()` |  |
-| [Detail](../api_detail/index_hierarchy-display.html#api-sig-indexhierarchy-str) | `IndexHierarchy.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_hierarchy-display.html#api-sig-indexhierarchy-display) | `IndexHierarchy.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_hierarchy-display.html#api-sig-indexhierarchy-display-tall) | `IndexHierarchy.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_hierarchy-display.html#api-sig-indexhierarchy-display-wide) | `IndexHierarchy.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_hierarchy-display.md#api-sig-indexhierarchy-interface) | [`IndexHierarchy.interface`](../api_detail/index_hierarchy-display.md#IndexHierarchy.interface "IndexHierarchy.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_hierarchy-display.md#api-sig-indexhierarchy-repr) | `IndexHierarchy.__repr__()` |  |
+| [Detail](../api_detail/index_hierarchy-display.md#api-sig-indexhierarchy-str) | `IndexHierarchy.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_hierarchy-display.md#api-sig-indexhierarchy-display) | `IndexHierarchy.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_hierarchy-display.md#api-sig-indexhierarchy-display-tall) | `IndexHierarchy.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_hierarchy-display.md#api-sig-indexhierarchy-display-wide) | `IndexHierarchy.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexHierarchy](index_hierarchy.html#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-overview-indexhierarchy-dictionary-like) | [Display](#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-overview-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-overview-indexhierarchy-dictionary-like) | [Display](#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-overview-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-dictionary_like.html "Overview: IndexHierarchy: Dictionary-Like")
-[Next](index_hierarchy-selector.html "Overview: IndexHierarchy: Selector")
+[Previous](index_hierarchy-dictionary_like.md "Overview: IndexHierarchy: Dictionary-Like")
+[Next](index_hierarchy-selector.md "Overview: IndexHierarchy: Selector")
 
 ---
 

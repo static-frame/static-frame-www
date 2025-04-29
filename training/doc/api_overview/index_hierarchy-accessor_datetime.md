@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: IndexHierarchy: Accessor Datetime
 * [View page source](../_sources/api_overview/index_hierarchy-accessor_datetime.rst.txt)
 
-[Previous](index_hierarchy-accessor_values.html "Overview: IndexHierarchy: Accessor Values")
-[Next](index_hierarchy-accessor_string.html "Overview: IndexHierarchy: Accessor String")
+[Previous](index_hierarchy-accessor_values.md "Overview: IndexHierarchy: Accessor Values")
+[Next](index_hierarchy-accessor_string.md "Overview: IndexHierarchy: Accessor String")
 
 ---
 
 # Overview: IndexHierarchy: Accessor Datetime[](#overview-indexhierarchy-accessor-datetime "Link to this heading")
 
-[Detail: IndexHierarchy: Accessor Datetime](../api_detail/index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime)
+[Detail: IndexHierarchy: Accessor Datetime](../api_detail/index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-call) | `IndexHierarchy.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-year) | `IndexHierarchy.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-year-month) | `IndexHierarchy.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-year-quarter) | `IndexHierarchy.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-month) | `IndexHierarchy.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-day) | `IndexHierarchy.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-hour) | `IndexHierarchy.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-minute) | `IndexHierarchy.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-second) | `IndexHierarchy.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-weekday) | `IndexHierarchy.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-quarter) | `IndexHierarchy.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-is-month-end) | `IndexHierarchy.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-is-month-start) | `IndexHierarchy.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-is-year-end) | `IndexHierarchy.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-is-year-start) | `IndexHierarchy.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-is-quarter-end) | `IndexHierarchy.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-is-quarter-start) | `IndexHierarchy.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-timetuple) | `IndexHierarchy.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-isoformat) | `IndexHierarchy.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-fromisoformat) | `IndexHierarchy.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-strftime) | `IndexHierarchy.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-strptime) | `IndexHierarchy.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/index_hierarchy-accessor_datetime.html#api-sig-indexhierarchy-via-dt-strpdate) | `IndexHierarchy.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-call) | `IndexHierarchy.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-year) | `IndexHierarchy.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-year-month) | `IndexHierarchy.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-year-quarter) | `IndexHierarchy.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-month) | `IndexHierarchy.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-day) | `IndexHierarchy.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-hour) | `IndexHierarchy.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-minute) | `IndexHierarchy.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-second) | `IndexHierarchy.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-weekday) | `IndexHierarchy.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-quarter) | `IndexHierarchy.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-is-month-end) | `IndexHierarchy.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-is-month-start) | `IndexHierarchy.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-is-year-end) | `IndexHierarchy.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-is-year-start) | `IndexHierarchy.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-is-quarter-end) | `IndexHierarchy.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-is-quarter-start) | `IndexHierarchy.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-timetuple) | `IndexHierarchy.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-isoformat) | `IndexHierarchy.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-fromisoformat) | `IndexHierarchy.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-strftime) | `IndexHierarchy.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-strptime) | `IndexHierarchy.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/index_hierarchy-accessor_datetime.md#api-sig-indexhierarchy-via-dt-strpdate) | `IndexHierarchy.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[IndexHierarchy](index_hierarchy.html#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-overview-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-overview-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-accessor_values.html "Overview: IndexHierarchy: Accessor Values")
-[Next](index_hierarchy-accessor_string.html "Overview: IndexHierarchy: Accessor String")
+[Previous](index_hierarchy-accessor_values.md "Overview: IndexHierarchy: Accessor Values")
+[Next](index_hierarchy-accessor_string.md "Overview: IndexHierarchy: Accessor String")
 
 ---
 

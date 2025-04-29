@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexMillisecond: Operator Binary
 * [View page source](../_sources/api_overview/index_millisecond-operator_binary.rst.txt)
 
-[Previous](index_millisecond-iterator.html "Overview: IndexMillisecond: Iterator")
-[Next](index_millisecond-operator_unary.html "Overview: IndexMillisecond: Operator Unary")
+[Previous](index_millisecond-iterator.md "Overview: IndexMillisecond: Iterator")
+[Next](index_millisecond-operator_unary.md "Overview: IndexMillisecond: Operator Unary")
 
 ---
 
 # Overview: IndexMillisecond: Operator Binary[](#overview-indexmillisecond-operator-binary "Link to this heading")
 
-[Detail: IndexMillisecond: Operator Binary](../api_detail/index_millisecond-operator_binary.html#api-detail-indexmillisecond-operator-binary)
+[Detail: IndexMillisecond: Operator Binary](../api_detail/index_millisecond-operator_binary.md#api-detail-indexmillisecond-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-add) | `IndexMillisecond.__add__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-and) | `IndexMillisecond.__and__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-eq) | `IndexMillisecond.__eq__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-floordiv) | `IndexMillisecond.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-ge) | `IndexMillisecond.__ge__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-gt) | `IndexMillisecond.__gt__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-le) | `IndexMillisecond.__le__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-lt) | `IndexMillisecond.__lt__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-matmul) | `IndexMillisecond.__matmul__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-mod) | `IndexMillisecond.__mod__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-mul) | `IndexMillisecond.__mul__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-ne) | `IndexMillisecond.__ne__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-or) | `IndexMillisecond.__or__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-pow) | `IndexMillisecond.__pow__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-radd) | `IndexMillisecond.__radd__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-rfloordiv) | `IndexMillisecond.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-rmatmul) | `IndexMillisecond.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-rmul) | `IndexMillisecond.__rmul__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-rshift) | `IndexMillisecond.__rshift__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-rsub) | `IndexMillisecond.__rsub__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-rtruediv) | `IndexMillisecond.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-sub) | `IndexMillisecond.__sub__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-truediv) | `IndexMillisecond.__truediv__(other)` |  |
-| [Detail](../api_detail/index_millisecond-operator_binary.html#api-sig-indexmillisecond-xor) | `IndexMillisecond.__xor__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-add) | `IndexMillisecond.__add__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-and) | `IndexMillisecond.__and__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-eq) | `IndexMillisecond.__eq__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-floordiv) | `IndexMillisecond.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-ge) | `IndexMillisecond.__ge__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-gt) | `IndexMillisecond.__gt__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-le) | `IndexMillisecond.__le__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-lt) | `IndexMillisecond.__lt__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-matmul) | `IndexMillisecond.__matmul__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-mod) | `IndexMillisecond.__mod__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-mul) | `IndexMillisecond.__mul__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-ne) | `IndexMillisecond.__ne__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-or) | `IndexMillisecond.__or__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-pow) | `IndexMillisecond.__pow__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-radd) | `IndexMillisecond.__radd__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-rfloordiv) | `IndexMillisecond.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-rmatmul) | `IndexMillisecond.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-rmul) | `IndexMillisecond.__rmul__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-rshift) | `IndexMillisecond.__rshift__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-rsub) | `IndexMillisecond.__rsub__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-rtruediv) | `IndexMillisecond.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-sub) | `IndexMillisecond.__sub__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-truediv) | `IndexMillisecond.__truediv__(other)` |  |
+| [Detail](../api_detail/index_millisecond-operator_binary.md#api-sig-indexmillisecond-xor) | `IndexMillisecond.__xor__(other)` |  |
 
-[IndexMillisecond](index_millisecond.html#api-overview-indexmillisecond): [Constructor](index_millisecond-constructor.html#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.html#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.html#api-overview-indexmillisecond-attribute) | [Method](index_millisecond-method.html#api-overview-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.html#api-overview-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.html#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.html#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.html#api-overview-indexmillisecond-iterator) | [Operator Binary](#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.html#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.html#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.html#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.html#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.html#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.html#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.html#api-overview-indexmillisecond-accessor-type-clinic)
+[IndexMillisecond](index_millisecond.md#api-overview-indexmillisecond): [Constructor](index_millisecond-constructor.md#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.md#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.md#api-overview-indexmillisecond-attribute) | [Method](index_millisecond-method.md#api-overview-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.md#api-overview-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.md#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.md#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.md#api-overview-indexmillisecond-iterator) | [Operator Binary](#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.md#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.md#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.md#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.md#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.md#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.md#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.md#api-overview-indexmillisecond-accessor-type-clinic)
 
-[Previous](index_millisecond-iterator.html "Overview: IndexMillisecond: Iterator")
-[Next](index_millisecond-operator_unary.html "Overview: IndexMillisecond: Operator Unary")
+[Previous](index_millisecond-iterator.md "Overview: IndexMillisecond: Iterator")
+[Next](index_millisecond-operator_unary.md "Overview: IndexMillisecond: Operator Unary")
 
 ---
 

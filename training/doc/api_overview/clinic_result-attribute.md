@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: ClinicResult: Attribute
 * [View page source](../_sources/api_overview/clinic_result-attribute.rst.txt)
 
-[Previous](clinic_result-exporter.html "Overview: ClinicResult: Exporter")
-[Next](clinic_result-method.html "Overview: ClinicResult: Method")
+[Previous](clinic_result-exporter.md "Overview: ClinicResult: Exporter")
+[Next](clinic_result-method.md "Overview: ClinicResult: Method")
 
 ---
 
 # Overview: ClinicResult: Attribute[](#overview-clinicresult-attribute "Link to this heading")
 
-[Detail: ClinicResult: Attribute](../api_detail/clinic_result-attribute.html#api-detail-clinicresult-attribute)
+[Detail: ClinicResult: Attribute](../api_detail/clinic_result-attribute.md#api-detail-clinicresult-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/clinic_result-attribute.html#api-sig-clinicresult-validated) | `ClinicResult.validated` |  |
+| [Detail](../api_detail/clinic_result-attribute.md#api-sig-clinicresult-validated) | `ClinicResult.validated` |  |
 
-[ClinicResult](clinic_result.html#api-overview-clinicresult): [Constructor](clinic_result-constructor.html#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-overview-clinicresult-exporter) | [Attribute](#api-overview-clinicresult-attribute) | [Method](clinic_result-method.html#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-overview-clinicresult-display)
+[ClinicResult](clinic_result.md#api-overview-clinicresult): [Constructor](clinic_result-constructor.md#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-overview-clinicresult-exporter) | [Attribute](#api-overview-clinicresult-attribute) | [Method](clinic_result-method.md#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-overview-clinicresult-display)
 
-[Previous](clinic_result-exporter.html "Overview: ClinicResult: Exporter")
-[Next](clinic_result-method.html "Overview: ClinicResult: Method")
+[Previous](clinic_result-exporter.md "Overview: ClinicResult: Exporter")
+[Next](clinic_result-method.md "Overview: ClinicResult: Method")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: FrameGO: Operator Binary
 * [View page source](../_sources/api_overview/frame_go-operator_binary.rst.txt)
 
-[Previous](frame_go-iterator.html "Overview: FrameGO: Iterator")
-[Next](frame_go-operator_unary.html "Overview: FrameGO: Operator Unary")
+[Previous](frame_go-iterator.md "Overview: FrameGO: Iterator")
+[Next](frame_go-operator_unary.md "Overview: FrameGO: Operator Unary")
 
 ---
 
 # Overview: FrameGO: Operator Binary[](#overview-framego-operator-binary "Link to this heading")
 
-[Detail: FrameGO: Operator Binary](../api_detail/frame_go-operator_binary.html#api-detail-framego-operator-binary)
+[Detail: FrameGO: Operator Binary](../api_detail/frame_go-operator_binary.md#api-detail-framego-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-add) | `FrameGO.__add__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-and) | `FrameGO.__and__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-eq) | `FrameGO.__eq__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-floordiv) | `FrameGO.__floordiv__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-ge) | `FrameGO.__ge__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-gt) | `FrameGO.__gt__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-le) | `FrameGO.__le__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-lt) | `FrameGO.__lt__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-matmul) | `FrameGO.__matmul__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-mod) | `FrameGO.__mod__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-mul) | `FrameGO.__mul__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-ne) | `FrameGO.__ne__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-or) | `FrameGO.__or__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-pow) | `FrameGO.__pow__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-radd) | `FrameGO.__radd__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-rfloordiv) | `FrameGO.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-rmatmul) | `FrameGO.__rmatmul__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-rmul) | `FrameGO.__rmul__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-rshift) | `FrameGO.__rshift__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-rsub) | `FrameGO.__rsub__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-rtruediv) | `FrameGO.__rtruediv__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-sub) | `FrameGO.__sub__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-truediv) | `FrameGO.__truediv__(other)` |  |
-| [Detail](../api_detail/frame_go-operator_binary.html#api-sig-framego-xor) | `FrameGO.__xor__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-add) | `FrameGO.__add__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-and) | `FrameGO.__and__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-eq) | `FrameGO.__eq__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-floordiv) | `FrameGO.__floordiv__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-ge) | `FrameGO.__ge__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-gt) | `FrameGO.__gt__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-le) | `FrameGO.__le__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-lt) | `FrameGO.__lt__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-matmul) | `FrameGO.__matmul__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-mod) | `FrameGO.__mod__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-mul) | `FrameGO.__mul__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-ne) | `FrameGO.__ne__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-or) | `FrameGO.__or__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-pow) | `FrameGO.__pow__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-radd) | `FrameGO.__radd__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-rfloordiv) | `FrameGO.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-rmatmul) | `FrameGO.__rmatmul__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-rmul) | `FrameGO.__rmul__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-rshift) | `FrameGO.__rshift__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-rsub) | `FrameGO.__rsub__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-rtruediv) | `FrameGO.__rtruediv__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-sub) | `FrameGO.__sub__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-truediv) | `FrameGO.__truediv__(other)` |  |
+| [Detail](../api_detail/frame_go-operator_binary.md#api-sig-framego-xor) | `FrameGO.__xor__(other)` |  |
 
-[FrameGO](frame_go.html#api-overview-framego): [Constructor](frame_go-constructor.html#api-overview-framego-constructor) | [Exporter](frame_go-exporter.html#api-overview-framego-exporter) | [Attribute](frame_go-attribute.html#api-overview-framego-attribute) | [Method](frame_go-method.html#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-overview-framego-dictionary-like) | [Display](frame_go-display.html#api-overview-framego-display) | [Assignment](frame_go-assignment.html#api-overview-framego-assignment) | [Selector](frame_go-selector.html#api-overview-framego-selector) | [Iterator](frame_go-iterator.html#api-overview-framego-iterator) | [Operator Binary](#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-overview-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-overview-framego): [Constructor](frame_go-constructor.md#api-overview-framego-constructor) | [Exporter](frame_go-exporter.md#api-overview-framego-exporter) | [Attribute](frame_go-attribute.md#api-overview-framego-attribute) | [Method](frame_go-method.md#api-overview-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-overview-framego-dictionary-like) | [Display](frame_go-display.md#api-overview-framego-display) | [Assignment](frame_go-assignment.md#api-overview-framego-assignment) | [Selector](frame_go-selector.md#api-overview-framego-selector) | [Iterator](frame_go-iterator.md#api-overview-framego-iterator) | [Operator Binary](#api-overview-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-overview-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-overview-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-overview-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-overview-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-overview-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-overview-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-overview-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-overview-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-overview-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-overview-framego-accessor-reduce)
 
-[Previous](frame_go-iterator.html "Overview: FrameGO: Iterator")
-[Next](frame_go-operator_unary.html "Overview: FrameGO: Operator Unary")
+[Previous](frame_go-iterator.md "Overview: FrameGO: Iterator")
+[Next](frame_go-operator_unary.md "Overview: FrameGO: Operator Unary")
 
 ---
 

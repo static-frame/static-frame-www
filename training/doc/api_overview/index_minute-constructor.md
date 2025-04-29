@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexMinute: Constructor
 * [View page source](../_sources/api_overview/index_minute-constructor.rst.txt)
 
-[Previous](index_date_go-accessor_type_clinic.html "Overview: IndexDateGO: Accessor Type Clinic")
-[Next](index_minute-exporter.html "Overview: IndexMinute: Exporter")
+[Previous](index_date_go-accessor_type_clinic.md "Overview: IndexDateGO: Accessor Type Clinic")
+[Next](index_minute-exporter.md "Overview: IndexMinute: Exporter")
 
 ---
 
 # Overview: IndexMinute: Constructor[](#overview-indexminute-constructor "Link to this heading")
 
-[Detail: IndexMinute: Constructor](../api_detail/index_minute-constructor.html#api-detail-indexminute-constructor)
+[Detail: IndexMinute: Constructor](../api_detail/index_minute-constructor.md#api-detail-indexminute-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-constructor.html#api-sig-indexminute-init) | `IndexMinute.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
-| [Detail](../api_detail/index_minute-constructor.html#api-sig-indexminute-from-labels) | `IndexMinute.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
-| [Detail](../api_detail/index_minute-constructor.html#api-sig-indexminute-from-pandas) | `IndexMinute.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_minute-constructor.md#api-sig-indexminute-init) | `IndexMinute.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_minute-constructor.md#api-sig-indexminute-from-labels) | `IndexMinute.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
+| [Detail](../api_detail/index_minute-constructor.md#api-sig-indexminute-from-pandas) | `IndexMinute.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_date_go-accessor_type_clinic.html "Overview: IndexDateGO: Accessor Type Clinic")
-[Next](index_minute-exporter.html "Overview: IndexMinute: Exporter")
+[Previous](index_date_go-accessor_type_clinic.md "Overview: IndexDateGO: Accessor Type Clinic")
+[Next](index_minute-exporter.md "Overview: IndexMinute: Exporter")
 
 ---
 

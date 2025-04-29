@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Detail: DisplayConfig: Display
 * [View page source](../_sources/api_detail/display_config-display.rst.txt)
 
-[Previous](display_config-method.html "Detail: DisplayConfig: Method")
-[Next](store_config-constructor.html "Detail: StoreConfig: Constructor")
+[Previous](display_config-method.md "Detail: DisplayConfig: Method")
+[Next](store_config-constructor.md "Detail: StoreConfig: Constructor")
 
 ---
 
 # Detail: DisplayConfig: Display[](#detail-displayconfig-display "Link to this heading")
 
-[Overview: DisplayConfig: Display](../api_overview/display_config-display.html#api-overview-displayconfig-display)
+[Overview: DisplayConfig: Display](../api_overview/display_config-display.md#api-overview-displayconfig-display)
 
 DisplayConfig.interface[](#DisplayConfig.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
 
-DisplayConfig.\_\_repr\_\_()[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.__repr__)[](#static_frame.DisplayConfig.__repr__ "Link to this definition")
+DisplayConfig.\_\_repr\_\_()[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.__repr__)[](#static_frame.DisplayConfig.__repr__ "Link to this definition")
 :   Return repr(self).
 
 DisplayConfig.\_\_str\_\_()[](#static_frame.DisplayConfig.__str__ "Link to this definition")
 :   Return str(self).
 
-[DisplayConfig](display_config.html#api-detail-displayconfig): [Constructor](display_config-constructor.html#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.html#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.html#api-detail-displayconfig-attribute) | [Method](display_config-method.html#api-detail-displayconfig-method) | [Display](#api-detail-displayconfig-display)
+[DisplayConfig](display_config.md#api-detail-displayconfig): [Constructor](display_config-constructor.md#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.md#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.md#api-detail-displayconfig-attribute) | [Method](display_config-method.md#api-detail-displayconfig-method) | [Display](#api-detail-displayconfig-display)
 
-[Previous](display_config-method.html "Detail: DisplayConfig: Method")
-[Next](store_config-constructor.html "Detail: StoreConfig: Constructor")
+[Previous](display_config-method.md "Detail: DisplayConfig: Method")
+[Next](store_config-constructor.md "Detail: StoreConfig: Constructor")
 
 ---
 

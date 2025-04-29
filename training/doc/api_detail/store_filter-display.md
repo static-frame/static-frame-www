@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: StoreFilter: Display
 * [View page source](../_sources/api_detail/store_filter-display.rst.txt)
 
-[Previous](store_filter-attribute.html "Detail: StoreFilter: Attribute")
-[Next](index_auto_factory-constructor.html "Detail: IndexAutoFactory: Constructor")
+[Previous](store_filter-attribute.md "Detail: StoreFilter: Attribute")
+[Next](index_auto_factory-constructor.md "Detail: IndexAutoFactory: Constructor")
 
 ---
 
 # Detail: StoreFilter: Display[](#detail-storefilter-display "Link to this heading")
 
-[Overview: StoreFilter: Display](../api_overview/store_filter-display.html#api-overview-storefilter-display)
+[Overview: StoreFilter: Display](../api_overview/store_filter-display.md#api-overview-storefilter-display)
 
 StoreFilter.interface[](#StoreFilter.interface "Link to this definition")
 :   A Frame documenting the interface of this class.
@@ -153,10 +153,10 @@ StoreFilter.\_\_repr\_\_()[](#static_frame.StoreFilter.__repr__ "Link to this
 StoreFilter.\_\_str\_\_()[](#static_frame.StoreFilter.__str__ "Link to this definition")
 :   Return str(self).
 
-[StoreFilter](store_filter.html#api-detail-storefilter): [Constructor](store_filter-constructor.html#api-detail-storefilter-constructor) | [Exporter](store_filter-exporter.html#api-detail-storefilter-exporter) | [Attribute](store_filter-attribute.html#api-detail-storefilter-attribute) | [Display](#api-detail-storefilter-display)
+[StoreFilter](store_filter.md#api-detail-storefilter): [Constructor](store_filter-constructor.md#api-detail-storefilter-constructor) | [Exporter](store_filter-exporter.md#api-detail-storefilter-exporter) | [Attribute](store_filter-attribute.md#api-detail-storefilter-attribute) | [Display](#api-detail-storefilter-display)
 
-[Previous](store_filter-attribute.html "Detail: StoreFilter: Attribute")
-[Next](index_auto_factory-constructor.html "Detail: IndexAutoFactory: Constructor")
+[Previous](store_filter-attribute.md "Detail: StoreFilter: Attribute")
+[Next](index_auto_factory-constructor.md "Detail: IndexAutoFactory: Constructor")
 
 ---
 

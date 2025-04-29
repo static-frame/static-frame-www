@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: NPY: Method
 * [View page source](../_sources/api_detail/npy-method.rst.txt)
 
-[Previous](npy-attribute.html "Detail: NPY: Attribute")
-[Next](npy-display.html "Detail: NPY: Display")
+[Previous](npy-attribute.md "Detail: NPY: Attribute")
+[Next](npy-display.md "Detail: NPY: Display")
 
 ---
 
 # Detail: NPY: Method[](#detail-npy-method "Link to this heading")
 
-[Overview: NPY: Method](../api_overview/npy-method.html#api-overview-npy-method)
+[Overview: NPY: Method](../api_overview/npy-method.md#api-overview-npy-method)
 
 NPY.\_\_enter\_\_()[](#static_frame.NPY.__enter__ "Link to this definition")
 :   When entering a context manager, a handle to this instance is returned.
@@ -150,10 +150,10 @@ NPY.\_\_enter\_\_()[](#static_frame.NPY.__enter__ "Link to this definition")
 NPY.\_\_exit\_\_(*type*, *value*, *traceback*)[](#static_frame.NPY.__exit__ "Link to this definition")
 :   When exiting a context manager, resources are closed as necessary.
 
-[NPY](npy.html#api-detail-npy): [Constructor](npy-constructor.html#api-detail-npy-constructor) | [Attribute](npy-attribute.html#api-detail-npy-attribute) | [Method](#api-detail-npy-method) | [Display](npy-display.html#api-detail-npy-display)
+[NPY](npy.md#api-detail-npy): [Constructor](npy-constructor.md#api-detail-npy-constructor) | [Attribute](npy-attribute.md#api-detail-npy-attribute) | [Method](#api-detail-npy-method) | [Display](npy-display.md#api-detail-npy-display)
 
-[Previous](npy-attribute.html "Detail: NPY: Attribute")
-[Next](npy-display.html "Detail: NPY: Display")
+[Previous](npy-attribute.md "Detail: NPY: Attribute")
+[Next](npy-display.md "Detail: NPY: Display")
 
 ---
 

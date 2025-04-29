@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,22 +135,22 @@ API Detail
 * Detail: DisplayConfig: Method
 * [View page source](../_sources/api_detail/display_config-method.rst.txt)
 
-[Previous](display_config-attribute.html "Detail: DisplayConfig: Attribute")
-[Next](display_config-display.html "Detail: DisplayConfig: Display")
+[Previous](display_config-attribute.md "Detail: DisplayConfig: Attribute")
+[Next](display_config-display.md "Detail: DisplayConfig: Display")
 
 ---
 
 # Detail: DisplayConfig: Method[](#detail-displayconfig-method "Link to this heading")
 
-[Overview: DisplayConfig: Method](../api_overview/display_config-method.html#api-overview-displayconfig-method)
+[Overview: DisplayConfig: Method](../api_overview/display_config-method.md#api-overview-displayconfig-method)
 
-DisplayConfig.write(*fp*)[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.write)[](#static_frame.DisplayConfig.write "Link to this definition")
+DisplayConfig.write(*fp*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.write)[](#static_frame.DisplayConfig.write "Link to this definition")
 :   Write a JSON file.
 
-[DisplayConfig](display_config.html#api-detail-displayconfig): [Constructor](display_config-constructor.html#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.html#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.html#api-detail-displayconfig-attribute) | [Method](#api-detail-displayconfig-method) | [Display](display_config-display.html#api-detail-displayconfig-display)
+[DisplayConfig](display_config.md#api-detail-displayconfig): [Constructor](display_config-constructor.md#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.md#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.md#api-detail-displayconfig-attribute) | [Method](#api-detail-displayconfig-method) | [Display](display_config-display.md#api-detail-displayconfig-display)
 
-[Previous](display_config-attribute.html "Detail: DisplayConfig: Attribute")
-[Next](display_config-display.html "Detail: DisplayConfig: Display")
+[Previous](display_config-attribute.md "Detail: DisplayConfig: Attribute")
+[Next](display_config-display.md "Detail: DisplayConfig: Display")
 
 ---
 

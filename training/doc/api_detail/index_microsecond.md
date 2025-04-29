@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,39 +136,39 @@ API Detail
 * Detail: IndexMicrosecond
 * [View page source](../_sources/api_detail/index_microsecond.rst.txt)
 
-[Previous](index_millisecond_go.html "Detail: IndexMillisecondGO")
-[Next](index_microsecond_go.html "Detail: IndexMicrosecondGO")
+[Previous](index_millisecond_go.md "Detail: IndexMillisecondGO")
+[Next](index_microsecond_go.md "Detail: IndexMicrosecondGO")
 
 ---
 
 # Detail: IndexMicrosecond[](#detail-indexmicrosecond "Link to this heading")
 
-[Overview: IndexMicrosecond](../api_overview/index_microsecond.html#api-overview-indexmicrosecond)
+[Overview: IndexMicrosecond](../api_overview/index_microsecond.md#api-overview-indexmicrosecond)
 
-*class* IndexMicrosecond(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.html#IndexMicrosecond)[](#static_frame.IndexMicrosecond "Link to this definition")
+*class* IndexMicrosecond(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexMicrosecond)[](#static_frame.IndexMicrosecond "Link to this definition")
 :   A mapping of microseconds (NumPy `datetime64[us]`) to positions, immutable and of fixed size.
 
-* [Constructor](index_microsecond-constructor.html#api-detail-indexmicrosecond-constructor): Alternative constructors for creating instances.
-* [Exporter](index_microsecond-exporter.html#api-detail-indexmicrosecond-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](index_microsecond-attribute.html#api-detail-indexmicrosecond-attribute): Attributes for retrieving basic characteristics.
-* [Method](index_microsecond-method.html#api-detail-indexmicrosecond-method): Methods for general functionality.
-* [Dictionary-Like](index_microsecond-dictionary_like.html#api-detail-indexmicrosecond-dictionary-like): All dictionary-like methods and iterators.
-* [Display](index_microsecond-display.html#api-detail-indexmicrosecond-display): Methods for providing a text representation of the object.
-* [Selector](index_microsecond-selector.html#api-detail-indexmicrosecond-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](index_microsecond-iterator.html#api-detail-indexmicrosecond-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Operator Binary](index_microsecond-operator_binary.html#api-detail-indexmicrosecond-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](index_microsecond-operator_unary.html#api-detail-indexmicrosecond-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](index_microsecond-accessor_values.html#api-detail-indexmicrosecond-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](index_microsecond-accessor_datetime.html#api-detail-indexmicrosecond-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](index_microsecond-accessor_string.html#api-detail-indexmicrosecond-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-detail-indexmicrosecond-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-detail-indexmicrosecond-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-detail-indexmicrosecond-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](index_microsecond-constructor.md#api-detail-indexmicrosecond-constructor): Alternative constructors for creating instances.
+* [Exporter](index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](index_microsecond-attribute.md#api-detail-indexmicrosecond-attribute): Attributes for retrieving basic characteristics.
+* [Method](index_microsecond-method.md#api-detail-indexmicrosecond-method): Methods for general functionality.
+* [Dictionary-Like](index_microsecond-dictionary_like.md#api-detail-indexmicrosecond-dictionary-like): All dictionary-like methods and iterators.
+* [Display](index_microsecond-display.md#api-detail-indexmicrosecond-display): Methods for providing a text representation of the object.
+* [Selector](index_microsecond-selector.md#api-detail-indexmicrosecond-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](index_microsecond-iterator.md#api-detail-indexmicrosecond-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Operator Binary](index_microsecond-operator_binary.md#api-detail-indexmicrosecond-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](index_microsecond-operator_unary.md#api-detail-indexmicrosecond-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](index_microsecond-accessor_values.md#api-detail-indexmicrosecond-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-detail-indexmicrosecond-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-detail-indexmicrosecond-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-detail-indexmicrosecond-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[IndexMicrosecond](#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.html#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.html#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.html#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.html#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.html#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.html#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.html#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.html#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.html#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.html#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.html#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.html#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.html#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.html#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.html#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.html#api-detail-indexmicrosecond-accessor-type-clinic)
+[IndexMicrosecond](#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-detail-indexmicrosecond-accessor-type-clinic)
 
-[Previous](index_millisecond_go.html "Detail: IndexMillisecondGO")
-[Next](index_microsecond_go.html "Detail: IndexMicrosecondGO")
+[Previous](index_millisecond_go.md "Detail: IndexMillisecondGO")
+[Next](index_microsecond_go.md "Detail: IndexMicrosecondGO")
 
 ---
 

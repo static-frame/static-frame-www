@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,36 +135,36 @@ API Detail
 * Overview: StoreFilter: Attribute
 * [View page source](../_sources/api_overview/store_filter-attribute.rst.txt)
 
-[Previous](store_filter-exporter.html "Overview: StoreFilter: Exporter")
-[Next](store_filter-display.html "Overview: StoreFilter: Display")
+[Previous](store_filter-exporter.md "Overview: StoreFilter: Exporter")
+[Next](store_filter-display.md "Overview: StoreFilter: Display")
 
 ---
 
 # Overview: StoreFilter: Attribute[](#overview-storefilter-attribute "Link to this heading")
 
-[Detail: StoreFilter: Attribute](../api_detail/store_filter-attribute.html#api-detail-storefilter-attribute)
+[Detail: StoreFilter: Attribute](../api_detail/store_filter-attribute.md#api-detail-storefilter-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-from-nan) | `StoreFilter.from_nan` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-from-nat) | `StoreFilter.from_nat` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-from-neginf) | `StoreFilter.from_neginf` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-from-none) | `StoreFilter.from_none` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-from-posinf) | `StoreFilter.from_posinf` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-to-nan) | `StoreFilter.to_nan` | Build an immutable unordered collection of unique elements. |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-to-nat) | `StoreFilter.to_nat` | Build an immutable unordered collection of unique elements. |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-to-neginf) | `StoreFilter.to_neginf` | Build an immutable unordered collection of unique elements. |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-to-none) | `StoreFilter.to_none` | Build an immutable unordered collection of unique elements. |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-to-posinf) | `StoreFilter.to_posinf` | Build an immutable unordered collection of unique elements. |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-value-format-complex-positional) | `StoreFilter.value_format_complex_positional` | The type of the None singleton. |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-value-format-complex-scientific) | `StoreFilter.value_format_complex_scientific` | The type of the None singleton. |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-value-format-float-positional) | `StoreFilter.value_format_float_positional` | The type of the None singleton. |
-| [Detail](../api_detail/store_filter-attribute.html#api-sig-storefilter-value-format-float-scientific) | `StoreFilter.value_format_float_scientific` | The type of the None singleton. |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-from-nan) | `StoreFilter.from_nan` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-from-nat) | `StoreFilter.from_nat` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-from-neginf) | `StoreFilter.from_neginf` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-from-none) | `StoreFilter.from_none` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-from-posinf) | `StoreFilter.from_posinf` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-to-nan) | `StoreFilter.to_nan` | Build an immutable unordered collection of unique elements. |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-to-nat) | `StoreFilter.to_nat` | Build an immutable unordered collection of unique elements. |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-to-neginf) | `StoreFilter.to_neginf` | Build an immutable unordered collection of unique elements. |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-to-none) | `StoreFilter.to_none` | Build an immutable unordered collection of unique elements. |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-to-posinf) | `StoreFilter.to_posinf` | Build an immutable unordered collection of unique elements. |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-value-format-complex-positional) | `StoreFilter.value_format_complex_positional` | The type of the None singleton. |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-value-format-complex-scientific) | `StoreFilter.value_format_complex_scientific` | The type of the None singleton. |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-value-format-float-positional) | `StoreFilter.value_format_float_positional` | The type of the None singleton. |
+| [Detail](../api_detail/store_filter-attribute.md#api-sig-storefilter-value-format-float-scientific) | `StoreFilter.value_format_float_scientific` | The type of the None singleton. |
 
-[StoreFilter](store_filter.html#api-overview-storefilter): [Constructor](store_filter-constructor.html#api-overview-storefilter-constructor) | [Exporter](store_filter-exporter.html#api-overview-storefilter-exporter) | [Attribute](#api-overview-storefilter-attribute) | [Display](store_filter-display.html#api-overview-storefilter-display)
+[StoreFilter](store_filter.md#api-overview-storefilter): [Constructor](store_filter-constructor.md#api-overview-storefilter-constructor) | [Exporter](store_filter-exporter.md#api-overview-storefilter-exporter) | [Attribute](#api-overview-storefilter-attribute) | [Display](store_filter-display.md#api-overview-storefilter-display)
 
-[Previous](store_filter-exporter.html "Overview: StoreFilter: Exporter")
-[Next](store_filter-display.html "Overview: StoreFilter: Display")
+[Previous](store_filter-exporter.md "Overview: StoreFilter: Exporter")
+[Next](store_filter-display.md "Overview: StoreFilter: Display")
 
 ---
 

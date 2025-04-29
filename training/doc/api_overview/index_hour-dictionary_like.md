@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexHour: Dictionary-Like
 * [View page source](../_sources/api_overview/index_hour-dictionary_like.rst.txt)
 
-[Previous](index_hour-method.html "Overview: IndexHour: Method")
-[Next](index_hour-display.html "Overview: IndexHour: Display")
+[Previous](index_hour-method.md "Overview: IndexHour: Method")
+[Next](index_hour-display.md "Overview: IndexHour: Display")
 
 ---
 
 # Overview: IndexHour: Dictionary-Like[](#overview-indexhour-dictionary-like "Link to this heading")
 
-[Detail: IndexHour: Dictionary-Like](../api_detail/index_hour-dictionary_like.html#api-detail-indexhour-dictionary-like)
+[Detail: IndexHour: Dictionary-Like](../api_detail/index_hour-dictionary_like.md#api-detail-indexhour-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour-dictionary_like.html#api-sig-indexhour-contains) | `IndexHour.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
-| [Detail](../api_detail/index_hour-dictionary_like.html#api-sig-indexhour-iter) | `IndexHour.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index_hour-dictionary_like.html#api-sig-indexhour-reversed) | `IndexHour.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index_hour-dictionary_like.html#api-sig-indexhour-values) | `IndexHour.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
+| [Detail](../api_detail/index_hour-dictionary_like.md#api-sig-indexhour-contains) | `IndexHour.__contains__(value)` | Return True if value in the labels. Will only return True for an exact match to… |
+| [Detail](../api_detail/index_hour-dictionary_like.md#api-sig-indexhour-iter) | `IndexHour.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index_hour-dictionary_like.md#api-sig-indexhour-reversed) | `IndexHour.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index_hour-dictionary_like.md#api-sig-indexhour-values) | `IndexHour.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
 
-[IndexHour](index_hour.html#api-overview-indexhour): [Constructor](index_hour-constructor.html#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.html#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.html#api-overview-indexhour-attribute) | [Method](index_hour-method.html#api-overview-indexhour-method) | [Dictionary-Like](#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.html#api-overview-indexhour-display) | [Selector](index_hour-selector.html#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.html#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.html#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.html#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.html#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.html#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.html#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.html#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.html#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.html#api-overview-indexhour-accessor-type-clinic)
+[IndexHour](index_hour.md#api-overview-indexhour): [Constructor](index_hour-constructor.md#api-overview-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-overview-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-overview-indexhour-attribute) | [Method](index_hour-method.md#api-overview-indexhour-method) | [Dictionary-Like](#api-overview-indexhour-dictionary-like) | [Display](index_hour-display.md#api-overview-indexhour-display) | [Selector](index_hour-selector.md#api-overview-indexhour-selector) | [Iterator](index_hour-iterator.md#api-overview-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-overview-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-overview-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-overview-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-overview-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-overview-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-overview-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-overview-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-overview-indexhour-accessor-type-clinic)
 
-[Previous](index_hour-method.html "Overview: IndexHour: Method")
-[Next](index_hour-display.html "Overview: IndexHour: Display")
+[Previous](index_hour-method.md "Overview: IndexHour: Method")
+[Next](index_hour-display.md "Overview: IndexHour: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: TypeClinic: Exporter
 * [View page source](../_sources/api_detail/type_clinic-exporter.rst.txt)
 
-[Previous](type_clinic-constructor.html "Detail: TypeClinic: Constructor")
-[Next](type_clinic-method.html "Detail: TypeClinic: Method")
+[Previous](type_clinic-constructor.md "Detail: TypeClinic: Constructor")
+[Next](type_clinic-method.md "Detail: TypeClinic: Method")
 
 ---
 
 # Detail: TypeClinic: Exporter[](#detail-typeclinic-exporter "Link to this heading")
 
-[Overview: TypeClinic: Exporter](../api_overview/type_clinic-exporter.html#api-overview-typeclinic-exporter)
+[Overview: TypeClinic: Exporter](../api_overview/type_clinic-exporter.md#api-overview-typeclinic-exporter)
 
-TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)[](#static_frame.TypeClinic.to_hint "Link to this definition")
+TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)[](#static_frame.TypeClinic.to_hint "Link to this definition")
 :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -164,10 +164,10 @@ TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#T
 
     ```
 
-[TypeClinic](type_clinic.html#api-detail-typeclinic): [Constructor](type_clinic-constructor.html#api-detail-typeclinic-constructor) | [Exporter](#api-detail-typeclinic-exporter) | [Method](type_clinic-method.html#api-detail-typeclinic-method) | [Display](type_clinic-display.html#api-detail-typeclinic-display)
+[TypeClinic](type_clinic.md#api-detail-typeclinic): [Constructor](type_clinic-constructor.md#api-detail-typeclinic-constructor) | [Exporter](#api-detail-typeclinic-exporter) | [Method](type_clinic-method.md#api-detail-typeclinic-method) | [Display](type_clinic-display.md#api-detail-typeclinic-display)
 
-[Previous](type_clinic-constructor.html "Detail: TypeClinic: Constructor")
-[Next](type_clinic-method.html "Detail: TypeClinic: Method")
+[Previous](type_clinic-constructor.md "Detail: TypeClinic: Constructor")
+[Next](type_clinic-method.md "Detail: TypeClinic: Method")
 
 ---
 

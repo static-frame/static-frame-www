@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: DisplayConfig: Attribute
 * [View page source](../_sources/api_detail/display_config-attribute.rst.txt)
 
-[Previous](display_config-exporter.html "Detail: DisplayConfig: Exporter")
-[Next](display_config-method.html "Detail: DisplayConfig: Method")
+[Previous](display_config-exporter.md "Detail: DisplayConfig: Exporter")
+[Next](display_config-method.md "Detail: DisplayConfig: Method")
 
 ---
 
 # Detail: DisplayConfig: Attribute[](#detail-displayconfig-attribute "Link to this heading")
 
-[Overview: DisplayConfig: Attribute](../api_overview/display_config-attribute.html#api-overview-displayconfig-attribute)
+[Overview: DisplayConfig: Attribute](../api_overview/display_config-attribute.md#api-overview-displayconfig-attribute)
 
 DisplayConfig.cell\_align\_left[](#static_frame.DisplayConfig.cell_align_left "Link to this definition")
 
@@ -206,10 +206,10 @@ DisplayConfig.value\_format\_float\_positional[](#static_frame.DisplayConfig.
 
 DisplayConfig.value\_format\_float\_scientific[](#static_frame.DisplayConfig.value_format_float_scientific "Link to this definition")
 
-[DisplayConfig](display_config.html#api-detail-displayconfig): [Constructor](display_config-constructor.html#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.html#api-detail-displayconfig-exporter) | [Attribute](#api-detail-displayconfig-attribute) | [Method](display_config-method.html#api-detail-displayconfig-method) | [Display](display_config-display.html#api-detail-displayconfig-display)
+[DisplayConfig](display_config.md#api-detail-displayconfig): [Constructor](display_config-constructor.md#api-detail-displayconfig-constructor) | [Exporter](display_config-exporter.md#api-detail-displayconfig-exporter) | [Attribute](#api-detail-displayconfig-attribute) | [Method](display_config-method.md#api-detail-displayconfig-method) | [Display](display_config-display.md#api-detail-displayconfig-display)
 
-[Previous](display_config-exporter.html "Detail: DisplayConfig: Exporter")
-[Next](display_config-method.html "Detail: DisplayConfig: Method")
+[Previous](display_config-exporter.md "Detail: DisplayConfig: Exporter")
+[Next](display_config-method.md "Detail: DisplayConfig: Method")
 
 ---
 

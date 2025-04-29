@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexGO: Attribute
 * [View page source](../_sources/api_overview/index_go-attribute.rst.txt)
 
-[Previous](index_go-exporter.html "Overview: IndexGO: Exporter")
-[Next](index_go-method.html "Overview: IndexGO: Method")
+[Previous](index_go-exporter.md "Overview: IndexGO: Exporter")
+[Next](index_go-method.md "Overview: IndexGO: Method")
 
 ---
 
 # Overview: IndexGO: Attribute[](#overview-indexgo-attribute "Link to this heading")
 
-[Detail: IndexGO: Attribute](../api_detail/index_go-attribute.html#api-detail-indexgo-attribute)
+[Detail: IndexGO: Attribute](../api_detail/index_go-attribute.md#api-detail-indexgo-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-static) | `IndexGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-depth) | `IndexGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-dtype) | `IndexGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-index-types) | `IndexGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-memory) | `IndexGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-mloc) | `IndexGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-name) | `IndexGO.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-names) | `IndexGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-nbytes) | `IndexGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-ndim) | `IndexGO.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-positions) | `IndexGO.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-shape) | `IndexGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_go-attribute.html#api-sig-indexgo-size) | `IndexGO.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-static) | `IndexGO.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-depth) | `IndexGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-dtype) | `IndexGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-index-types) | `IndexGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-memory) | `IndexGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-mloc) | `IndexGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-name) | `IndexGO.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-names) | `IndexGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-nbytes) | `IndexGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-ndim) | `IndexGO.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-positions) | `IndexGO.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-shape) | `IndexGO.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-size) | `IndexGO.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexGO](index_go.html#api-overview-indexgo): [Constructor](index_go-constructor.html#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.html#api-overview-indexgo-exporter) | [Attribute](#api-overview-indexgo-attribute) | [Method](index_go-method.html#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-overview-indexgo-dictionary-like) | [Display](index_go-display.html#api-overview-indexgo-display) | [Selector](index_go-selector.html#api-overview-indexgo-selector) | [Iterator](index_go-iterator.html#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-overview-indexgo): [Constructor](index_go-constructor.md#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | [Attribute](#api-overview-indexgo-attribute) | [Method](index_go-method.md#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 
-[Previous](index_go-exporter.html "Overview: IndexGO: Exporter")
-[Next](index_go-method.html "Overview: IndexGO: Method")
+[Previous](index_go-exporter.md "Overview: IndexGO: Exporter")
+[Next](index_go-method.md "Overview: IndexGO: Method")
 
 ---
 

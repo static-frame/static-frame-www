@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexGO: Dictionary-Like
 * [View page source](../_sources/api_detail/index_go-dictionary_like.rst.txt)
 
-[Previous](index_go-method.html "Detail: IndexGO: Method")
-[Next](index_go-display.html "Detail: IndexGO: Display")
+[Previous](index_go-method.md "Detail: IndexGO: Method")
+[Next](index_go-display.md "Detail: IndexGO: Display")
 
 ---
 
 # Detail: IndexGO: Dictionary-Like[](#detail-indexgo-dictionary-like "Link to this heading")
 
-[Overview: IndexGO: Dictionary-Like](../api_overview/index_go-dictionary_like.html#api-overview-indexgo-dictionary-like)
+[Overview: IndexGO: Dictionary-Like](../api_overview/index_go-dictionary_like.md#api-overview-indexgo-dictionary-like)
 
 IndexGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexGO.__contains__ "Link to this definition")
 :   Return True if value in the labels.
@@ -199,7 +199,7 @@ IndexGO.\_\_reversed\_\_()[](#static_frame.IndexGO.__reversed__ "Link to this
     ```
 
 IndexGO.values[](#static_frame.IndexGO.values "Link to this definition")
-:   A 1D NumPy array of the values in the [`Index`](index-selector.html#Index "Index"). This array will have the same dtype as the container.
+:   A 1D NumPy array of the values in the [`Index`](index-selector.md#Index "Index"). This array will have the same dtype as the container.
 
     ```
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
@@ -216,10 +216,10 @@ IndexGO.values[](#static_frame.IndexGO.values "Link to this definition")
 
     ```
 
-[IndexGO](index_go.html#api-detail-indexgo): [Constructor](index_go-constructor.html#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.html#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.html#api-detail-indexgo-attribute) | [Method](index_go-method.html#api-detail-indexgo-method) | [Dictionary-Like](#api-detail-indexgo-dictionary-like) | [Display](index_go-display.html#api-detail-indexgo-display) | [Selector](index_go-selector.html#api-detail-indexgo-selector) | [Iterator](index_go-iterator.html#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-detail-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)
 
-[Previous](index_go-method.html "Detail: IndexGO: Method")
-[Next](index_go-display.html "Detail: IndexGO: Display")
+[Previous](index_go-method.md "Detail: IndexGO: Method")
+[Next](index_go-display.md "Detail: IndexGO: Display")
 
 ---
 

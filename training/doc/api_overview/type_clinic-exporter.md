@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: TypeClinic: Exporter
 * [View page source](../_sources/api_overview/type_clinic-exporter.rst.txt)
 
-[Previous](type_clinic-constructor.html "Overview: TypeClinic: Constructor")
-[Next](type_clinic-method.html "Overview: TypeClinic: Method")
+[Previous](type_clinic-constructor.md "Overview: TypeClinic: Constructor")
+[Next](type_clinic-method.md "Overview: TypeClinic: Method")
 
 ---
 
 # Overview: TypeClinic: Exporter[](#overview-typeclinic-exporter "Link to this heading")
 
-[Detail: TypeClinic: Exporter](../api_detail/type_clinic-exporter.html#api-detail-typeclinic-exporter)
+[Detail: TypeClinic: Exporter](../api_detail/type_clinic-exporter.md#api-detail-typeclinic-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/type_clinic-exporter.html#api-sig-typeclinic-to-hint) | `TypeClinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/type_clinic-exporter.md#api-sig-typeclinic-to-hint) | `TypeClinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
 
-[TypeClinic](type_clinic.html#api-overview-typeclinic): [Constructor](type_clinic-constructor.html#api-overview-typeclinic-constructor) | [Exporter](#api-overview-typeclinic-exporter) | [Method](type_clinic-method.html#api-overview-typeclinic-method) | [Display](type_clinic-display.html#api-overview-typeclinic-display)
+[TypeClinic](type_clinic.md#api-overview-typeclinic): [Constructor](type_clinic-constructor.md#api-overview-typeclinic-constructor) | [Exporter](#api-overview-typeclinic-exporter) | [Method](type_clinic-method.md#api-overview-typeclinic-method) | [Display](type_clinic-display.md#api-overview-typeclinic-display)
 
-[Previous](type_clinic-constructor.html "Overview: TypeClinic: Constructor")
-[Next](type_clinic-method.html "Overview: TypeClinic: Method")
+[Previous](type_clinic-constructor.md "Overview: TypeClinic: Constructor")
+[Next](type_clinic-method.md "Overview: TypeClinic: Method")
 
 ---
 

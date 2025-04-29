@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Detail: IndexYearMonthGO: Exporter
 * [View page source](../_sources/api_detail/index_year_month_go-exporter.rst.txt)
 
-[Previous](index_year_month_go-constructor.html "Detail: IndexYearMonthGO: Constructor")
-[Next](index_year_month_go-attribute.html "Detail: IndexYearMonthGO: Attribute")
+[Previous](index_year_month_go-constructor.md "Detail: IndexYearMonthGO: Constructor")
+[Next](index_year_month_go-attribute.md "Detail: IndexYearMonthGO: Attribute")
 
 ---
 
 # Detail: IndexYearMonthGO: Exporter[](#detail-indexyearmonthgo-exporter "Link to this heading")
 
-[Overview: IndexYearMonthGO: Exporter](../api_overview/index_year_month_go-exporter.html#api-overview-indexyearmonthgo-exporter)
+[Overview: IndexYearMonthGO: Exporter](../api_overview/index_year_month_go-exporter.md#api-overview-indexyearmonthgo-exporter)
 
 IndexYearMonthGO.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexYearMonthGO.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Index`](index-selector.html#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 IndexYearMonthGO.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexYearMonthGO.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Index`](index-selector.html#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
@@ -204,10 +204,10 @@ IndexYearMonthGO.to\_series()[](#static_frame.IndexYearMonthGO.to_series "Lin
 IndexYearMonthGO.to\_visidata()[](#static_frame.IndexYearMonthGO.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-[IndexYearMonthGO](index_year_month_go.html#api-detail-indexyearmonthgo): [Constructor](index_year_month_go-constructor.html#api-detail-indexyearmonthgo-constructor) | [Exporter](#api-detail-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.html#api-detail-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.html#api-detail-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.html#api-detail-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.html#api-detail-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.html#api-detail-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.html#api-detail-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.html#api-detail-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.html#api-detail-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.html#api-detail-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.html#api-detail-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.html#api-detail-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.html#api-detail-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.html#api-detail-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.html#api-detail-indexyearmonthgo-accessor-type-clinic)
+[IndexYearMonthGO](index_year_month_go.md#api-detail-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-detail-indexyearmonthgo-constructor) | [Exporter](#api-detail-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.md#api-detail-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-detail-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-detail-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.md#api-detail-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.md#api-detail-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.md#api-detail-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-detail-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.md#api-detail-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-detail-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-detail-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.md#api-detail-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-detail-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.md#api-detail-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.md#api-detail-indexyearmonthgo-accessor-type-clinic)
 
-[Previous](index_year_month_go-constructor.html "Detail: IndexYearMonthGO: Constructor")
-[Next](index_year_month_go-attribute.html "Detail: IndexYearMonthGO: Attribute")
+[Previous](index_year_month_go-constructor.md "Detail: IndexYearMonthGO: Constructor")
+[Next](index_year_month_go-attribute.md "Detail: IndexYearMonthGO: Attribute")
 
 ---
 

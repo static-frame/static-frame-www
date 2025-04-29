@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,24 +136,24 @@ API Detail
 * Detail: WWW
 * [View page source](../_sources/api_detail/www.rst.txt)
 
-[Previous](require.html "Detail: Require")
-[Next](fill_value_auto.html "Detail: FillValueAuto")
+[Previous](require.md "Detail: Require")
+[Next](fill_value_auto.md "Detail: FillValueAuto")
 
 ---
 
 # Detail: WWW[](#detail-www "Link to this heading")
 
-[Overview: WWW](../api_overview/www.html#api-overview-www)
+[Overview: WWW](../api_overview/www.md#api-overview-www)
 
-*class* WWW[[source]](../_modules/static_frame/core/www.html#WWW)[](#static_frame.WWW "Link to this definition")
+*class* WWW[[source]](../_modules/static_frame/core/www.md#WWW)[](#static_frame.WWW "Link to this definition")
 :   Utilities for downloading resources from the world-wide-web.
 
-* [Constructor](www-constructor.html#api-detail-www-constructor): Alternative constructors for creating instances.
+* [Constructor](www-constructor.md#api-detail-www-constructor): Alternative constructors for creating instances.
 
-[WWW](#api-detail-www): [Constructor](www-constructor.html#api-detail-www-constructor)
+[WWW](#api-detail-www): [Constructor](www-constructor.md#api-detail-www-constructor)
 
-[Previous](require.html "Detail: Require")
-[Next](fill_value_auto.html "Detail: FillValueAuto")
+[Previous](require.md "Detail: Require")
+[Next](fill_value_auto.md "Detail: FillValueAuto")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,19 +135,19 @@ API Detail
 * Detail: Yarn: Accessor Type Clinic
 * [View page source](../_sources/api_detail/yarn-accessor_type_clinic.rst.txt)
 
-[Previous](yarn-accessor_hashlib.html "Detail: Yarn: Accessor Hashlib")
-[Next](quilt-constructor.html "Detail: Quilt: Constructor")
+[Previous](yarn-accessor_hashlib.md "Detail: Yarn: Accessor Hashlib")
+[Next](quilt-constructor.md "Detail: Quilt: Constructor")
 
 ---
 
 # Detail: Yarn: Accessor Type Clinic[](#detail-yarn-accessor-type-clinic "Link to this heading")
 
-[Overview: Yarn: Accessor Type Clinic](../api_overview/yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Overview: Yarn: Accessor Type Clinic](../api_overview/yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
 Yarn.via\_type\_clinic.to\_hint
 :   Yarn.via\_type\_clinic
 
-    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.to_hint)
+    TypeClinic.to\_hint()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.to_hint)
     :   Return the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -168,7 +168,7 @@ Yarn.via\_type\_clinic.to\_hint
 Yarn.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 :   Yarn.via\_type\_clinic
 
-    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.check)
+    TypeClinic.check(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.check)
     :   Given a hint (a type and/or generic alias), raise a `ClinicError` exception describing the result of the check if an error is found.
 
         Parameters:
@@ -192,7 +192,7 @@ Yarn.via\_type\_clinic.check(*hint*, *\**, *fail\_fast*)
 Yarn.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 :   Yarn.via\_type\_clinic
 
-    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.warn)
+    TypeClinic.warn(*hint*, */*, *\**, *fail\_fast=False*, *category=<class 'UserWarning'>*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.warn)
     :   Given a hint (a type and/or generic alias), issue a warning describing the result of the check if an error is found.
 
         Parameters:
@@ -202,7 +202,7 @@ Yarn.via\_type\_clinic.warn(*hint*, *\**, *fail\_fast*, *category*)
 Yarn.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 :   Yarn.via\_type\_clinic
 
-    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__call__)
+    TypeClinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast=False*)[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__call__)
     :   Given a hint (a type and/or generic alias), return a `ClinicResult` object describing the result of the check.
 
         Parameters:
@@ -233,7 +233,7 @@ Yarn.via\_type\_clinic.\_\_call\_\_(*hint*, *\**, *fail\_fast*)
 Yarn.via\_type\_clinic.\_\_repr\_\_
 :   Yarn.via\_type\_clinic
 
-    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#TypeClinic.__repr__)
+    TypeClinic.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#TypeClinic.__repr__)
     :   Return a compact string representation of the type hint (the type and/or generic aliases necessary) to represent the object given at initialization.
 
     ```
@@ -251,10 +251,10 @@ Yarn.via\_type\_clinic.\_\_repr\_\_
 
     ```
 
-[Yarn](yarn.html#api-detail-yarn): [Constructor](yarn-constructor.html#api-detail-yarn-constructor) | [Exporter](yarn-exporter.html#api-detail-yarn-exporter) | [Attribute](yarn-attribute.html#api-detail-yarn-attribute) | [Method](yarn-method.html#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like) | [Display](yarn-display.html#api-detail-yarn-display) | [Selector](yarn-selector.html#api-detail-yarn-selector) | [Iterator](yarn-iterator.html#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](#api-detail-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](#api-detail-yarn-accessor-type-clinic)
 
-[Previous](yarn-accessor_hashlib.html "Detail: Yarn: Accessor Hashlib")
-[Next](quilt-constructor.html "Detail: Quilt: Constructor")
+[Previous](yarn-accessor_hashlib.md "Detail: Yarn: Accessor Hashlib")
+[Next](quilt-constructor.md "Detail: Quilt: Constructor")
 
 ---
 

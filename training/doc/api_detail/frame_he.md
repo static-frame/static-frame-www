@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,43 +136,43 @@ API Detail
 * Detail: FrameHE
 * [View page source](../_sources/api_detail/frame_he.rst.txt)
 
-[Previous](frame_go.html "Detail: FrameGO")
-[Next](bus.html "Detail: Bus")
+[Previous](frame_go.md "Detail: FrameGO")
+[Next](bus.md "Detail: Bus")
 
 ---
 
 # Detail: FrameHE[](#detail-framehe "Link to this heading")
 
-[Overview: FrameHE](../api_overview/frame_he.html#api-overview-framehe)
+[Overview: FrameHE](../api_overview/frame_he.md#api-overview-framehe)
 
-*class* FrameHE(*data=<object object>*, */*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.html#FrameHE)[](#static_frame.FrameHE "Link to this definition")
-:   A hash/equals subclass of [`Frame`](frame-selector.html#Frame "Frame"), permiting usage in a Python set, dictionary, or other contexts where a hashable container is needed. To support hashability, `__eq__` is implemented to return a Boolean rather than a Boolean [`Frame`](frame-selector.html#Frame "Frame")
+*class* FrameHE(*data=<object object>*, */*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#FrameHE)[](#static_frame.FrameHE "Link to this definition")
+:   A hash/equals subclass of [`Frame`](frame-selector.md#Frame "Frame"), permiting usage in a Python set, dictionary, or other contexts where a hashable container is needed. To support hashability, `__eq__` is implemented to return a Boolean rather than a Boolean [`Frame`](frame-selector.md#Frame "Frame")
 
-* [Constructor](frame_he-constructor.html#api-detail-framehe-constructor): Alternative constructors for creating instances.
-* [Exporter](frame_he-exporter.html#api-detail-framehe-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](frame_he-attribute.html#api-detail-framehe-attribute): Attributes for retrieving basic characteristics.
-* [Method](frame_he-method.html#api-detail-framehe-method): Methods for general functionality.
-* [Dictionary-Like](frame_he-dictionary_like.html#api-detail-framehe-dictionary-like): All dictionary-like methods and iterators.
-* [Display](frame_he-display.html#api-detail-framehe-display): Methods for providing a text representation of the object.
-* [Assignment](frame_he-assignment.html#api-detail-framehe-assignment): Interfaces for creating new containers with assignment-like specification.
-* [Selector](frame_he-selector.html#api-detail-framehe-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](frame_he-iterator.html#api-detail-framehe-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Operator Binary](frame_he-operator_binary.html#api-detail-framehe-operator-binary): Underlying (magic) methods for binary operator implementation.
-* [Operator Unary](frame_he-operator_unary.html#api-detail-framehe-operator-unary): Underlying (magic) methods for unary operator implementation.
-* [Accessor Values](frame_he-accessor_values.html#api-detail-framehe-accessor-values): Interface for using NumPy functions on conatainers.
-* [Accessor Datetime](frame_he-accessor_datetime.html#api-detail-framehe-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
-* [Accessor String](frame_he-accessor_string.html#api-detail-framehe-accessor-string): Interface for employing string methods on container elements.
-* [Accessor Transpose](frame_he-accessor_transpose.html#api-detail-framehe-accessor-transpose): Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows.
-* [Accessor Fill Value](frame_he-accessor_fill_value.html#api-detail-framehe-accessor-fill-value): Interface that permits supplying a fill value to be used when binary operator application forces reindexing.
-* [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-detail-framehe-accessor-regular-expression): Interface exposing regular expression application on container elements.
-* [Accessor Hashlib](frame_he-accessor_hashlib.html#api-detail-framehe-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-detail-framehe-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
-* [Accessor Reduce](frame_he-accessor_reduce.html#api-detail-framehe-accessor-reduce): Interface for providing function application to columns or containers that result in new Frame.
+* [Constructor](frame_he-constructor.md#api-detail-framehe-constructor): Alternative constructors for creating instances.
+* [Exporter](frame_he-exporter.md#api-detail-framehe-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](frame_he-attribute.md#api-detail-framehe-attribute): Attributes for retrieving basic characteristics.
+* [Method](frame_he-method.md#api-detail-framehe-method): Methods for general functionality.
+* [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like): All dictionary-like methods and iterators.
+* [Display](frame_he-display.md#api-detail-framehe-display): Methods for providing a text representation of the object.
+* [Assignment](frame_he-assignment.md#api-detail-framehe-assignment): Interfaces for creating new containers with assignment-like specification.
+* [Selector](frame_he-selector.md#api-detail-framehe-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](frame_he-iterator.md#api-detail-framehe-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary): Underlying (magic) methods for binary operator implementation.
+* [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary): Underlying (magic) methods for unary operator implementation.
+* [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values): Interface for using NumPy functions on conatainers.
+* [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime): Interface for extracting date and datetime characteristics on elements.
+* [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string): Interface for employing string methods on container elements.
+* [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose): Interface representing a virtual transposition, permiting application of binary operators with Series along columns instead of rows.
+* [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value): Interface that permits supplying a fill value to be used when binary operator application forces reindexing.
+* [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression): Interface exposing regular expression application on container elements.
+* [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce): Interface for providing function application to columns or containers that result in new Frame.
 
-[FrameHE](#api-detail-framehe): [Constructor](frame_he-constructor.html#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.html#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.html#api-detail-framehe-attribute) | [Method](frame_he-method.html#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-detail-framehe-dictionary-like) | [Display](frame_he-display.html#api-detail-framehe-display) | [Assignment](frame_he-assignment.html#api-detail-framehe-assignment) | [Selector](frame_he-selector.html#api-detail-framehe-selector) | [Iterator](frame_he-iterator.html#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-detail-framehe-accessor-reduce)
+[FrameHE](#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.md#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.md#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](frame_he-assignment.md#api-detail-framehe-assignment) | [Selector](frame_he-selector.md#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)
 
-[Previous](frame_go.html "Detail: FrameGO")
-[Next](bus.html "Detail: Bus")
+[Previous](frame_go.md "Detail: FrameGO")
+[Next](bus.md "Detail: Bus")
 
 ---
 

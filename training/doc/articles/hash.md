@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -140,8 +140,8 @@ API Detail
 * Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations
 * [View page source](../_sources/articles/hash.rst.txt)
 
-[Previous](no_copy.html "The Performance Advantage of No-Copy DataFrame Operations")
-[Next](uhoc.html "Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames")
+[Previous](no_copy.md "The Performance Advantage of No-Copy DataFrame Operations")
+[Next](uhoc.md "Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames")
 
 ---
 
@@ -306,8 +306,8 @@ The `via_hashlib()` interfaces can be used in other situations as a digital sign
 
 If pure functions are called multiple times with the same arguments, memoization can vastly improve performance. While functions that input and output DataFrames require special handling, StaticFrame offers convenient tools to implement both in-memory and disk-based memoization. While care must be taken to ensure that caches are properly invalidated and collisions are avoided, great performance benefits can be realized when repeated work is eliminated.
 
-[Previous](no_copy.html "The Performance Advantage of No-Copy DataFrame Operations")
-[Next](uhoc.html "Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames")
+[Previous](no_copy.md "The Performance Advantage of No-Copy DataFrame Operations")
+[Next](uhoc.md "Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,33 +135,33 @@ API Detail
 * Overview: Series: Attribute
 * [View page source](../_sources/api_overview/series-attribute.rst.txt)
 
-[Previous](series-exporter.html "Overview: Series: Exporter")
-[Next](series-method.html "Overview: Series: Method")
+[Previous](series-exporter.md "Overview: Series: Exporter")
+[Next](series-method.md "Overview: Series: Method")
 
 ---
 
 # Overview: Series: Attribute[](#overview-series-attribute "Link to this heading")
 
-[Detail: Series: Attribute](../api_detail/series-attribute.html#api-detail-series-attribute)
+[Detail: Series: Attribute](../api_detail/series-attribute.md#api-detail-series-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-static) | `Series.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-t) | `Series.T` | Transpose. For a 1D immutable container, this returns a reference to self. Retur… |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-dtype) | `Series.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-index) | `Series.index` | The index instance assigned to this container. Returns: Index |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-memory) | `Series.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-mloc) | `Series.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-name) | `Series.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-nbytes) | `Series.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-ndim) | `Series.ndim` | Return the number of dimensions, which for a Series is always 1. Returns: int |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-shape) | `Series.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: Tupl… |
-| [Detail](../api_detail/series-attribute.html#api-sig-series-size) | `Series.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-static) | `Series.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-t) | `Series.T` | Transpose. For a 1D immutable container, this returns a reference to self. Retur… |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-dtype) | `Series.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-index) | `Series.index` | The index instance assigned to this container. Returns: Index |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-memory) | `Series.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-mloc) | `Series.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-name) | `Series.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-nbytes) | `Series.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-ndim) | `Series.ndim` | Return the number of dimensions, which for a Series is always 1. Returns: int |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-shape) | `Series.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: Tupl… |
+| [Detail](../api_detail/series-attribute.md#api-sig-series-size) | `Series.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-exporter.html "Overview: Series: Exporter")
-[Next](series-method.html "Overview: Series: Method")
+[Previous](series-exporter.md "Overview: Series: Exporter")
+[Next](series-method.md "Overview: Series: Method")
 
 ---
 

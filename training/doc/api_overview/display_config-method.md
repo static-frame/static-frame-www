@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: DisplayConfig: Method
 * [View page source](../_sources/api_overview/display_config-method.rst.txt)
 
-[Previous](display_config-attribute.html "Overview: DisplayConfig: Attribute")
-[Next](display_config-display.html "Overview: DisplayConfig: Display")
+[Previous](display_config-attribute.md "Overview: DisplayConfig: Attribute")
+[Next](display_config-display.md "Overview: DisplayConfig: Display")
 
 ---
 
 # Overview: DisplayConfig: Method[](#overview-displayconfig-method "Link to this heading")
 
-[Detail: DisplayConfig: Method](../api_detail/display_config-method.html#api-detail-displayconfig-method)
+[Detail: DisplayConfig: Method](../api_detail/display_config-method.md#api-detail-displayconfig-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/display_config-method.html#api-sig-displayconfig-write) | `DisplayConfig.write(fp)` | Write a JSON file. |
+| [Detail](../api_detail/display_config-method.md#api-sig-displayconfig-write) | `DisplayConfig.write(fp)` | Write a JSON file. |
 
-[DisplayConfig](display_config.html#api-overview-displayconfig): [Constructor](display_config-constructor.html#api-overview-displayconfig-constructor) | [Exporter](display_config-exporter.html#api-overview-displayconfig-exporter) | [Attribute](display_config-attribute.html#api-overview-displayconfig-attribute) | [Method](#api-overview-displayconfig-method) | [Display](display_config-display.html#api-overview-displayconfig-display)
+[DisplayConfig](display_config.md#api-overview-displayconfig): [Constructor](display_config-constructor.md#api-overview-displayconfig-constructor) | [Exporter](display_config-exporter.md#api-overview-displayconfig-exporter) | [Attribute](display_config-attribute.md#api-overview-displayconfig-attribute) | [Method](#api-overview-displayconfig-method) | [Display](display_config-display.md#api-overview-displayconfig-display)
 
-[Previous](display_config-attribute.html "Overview: DisplayConfig: Attribute")
-[Next](display_config-display.html "Overview: DisplayConfig: Display")
+[Previous](display_config-attribute.md "Overview: DisplayConfig: Attribute")
+[Next](display_config-display.md "Overview: DisplayConfig: Display")
 
 ---
 

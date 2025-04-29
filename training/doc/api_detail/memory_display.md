@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,26 +136,26 @@ API Detail
 * Detail: MemoryDisplay
 * [View page source](../_sources/api_detail/memory_display.rst.txt)
 
-[Previous](npy.html "Detail: NPY")
-[Next](platform.html "Detail: Platform")
+[Previous](npy.md "Detail: NPY")
+[Next](platform.md "Detail: Platform")
 
 ---
 
 # Detail: MemoryDisplay[](#detail-memorydisplay "Link to this heading")
 
-[Overview: MemoryDisplay](../api_overview/memory_display.html#api-overview-memorydisplay)
+[Overview: MemoryDisplay](../api_overview/memory_display.md#api-overview-memorydisplay)
 
-*class* MemoryDisplay(*frame*)[[source]](../_modules/static_frame/core/memory_measure.html#MemoryDisplay)[](#static_frame.MemoryDisplay "Link to this definition")
+*class* MemoryDisplay(*frame*)[[source]](../_modules/static_frame/core/memory_measure.md#MemoryDisplay)[](#static_frame.MemoryDisplay "Link to this definition")
 :   A simple container for capturing and displaying memory usage in bytes for StaticFrame containers.
 
-* [Constructor](memory_display-constructor.html#api-detail-memorydisplay-constructor): Alternative constructors for creating instances.
-* [Exporter](memory_display-exporter.html#api-detail-memorydisplay-exporter): Methods for transforming, exporting, or serializing objects.
-* [Display](memory_display-display.html#api-detail-memorydisplay-display): Methods for providing a text representation of the object.
+* [Constructor](memory_display-constructor.md#api-detail-memorydisplay-constructor): Alternative constructors for creating instances.
+* [Exporter](memory_display-exporter.md#api-detail-memorydisplay-exporter): Methods for transforming, exporting, or serializing objects.
+* [Display](memory_display-display.md#api-detail-memorydisplay-display): Methods for providing a text representation of the object.
 
-[MemoryDisplay](#api-detail-memorydisplay): [Constructor](memory_display-constructor.html#api-detail-memorydisplay-constructor) | [Exporter](memory_display-exporter.html#api-detail-memorydisplay-exporter) | [Display](memory_display-display.html#api-detail-memorydisplay-display)
+[MemoryDisplay](#api-detail-memorydisplay): [Constructor](memory_display-constructor.md#api-detail-memorydisplay-constructor) | [Exporter](memory_display-exporter.md#api-detail-memorydisplay-exporter) | [Display](memory_display-display.md#api-detail-memorydisplay-display)
 
-[Previous](npy.html "Detail: NPY")
-[Next](platform.html "Detail: Platform")
+[Previous](npy.md "Detail: NPY")
+[Next](platform.md "Detail: Platform")
 
 ---
 

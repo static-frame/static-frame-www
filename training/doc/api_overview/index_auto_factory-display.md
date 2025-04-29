@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: IndexAutoFactory: Display
 * [View page source](../_sources/api_overview/index_auto_factory-display.rst.txt)
 
-[Previous](index_auto_factory-exporter.html "Overview: IndexAutoFactory: Exporter")
-[Next](index_default_constructor_factory-constructor.html "Overview: IndexDefaultConstructorFactory: Constructor")
+[Previous](index_auto_factory-exporter.md "Overview: IndexAutoFactory: Exporter")
+[Next](index_default_constructor_factory-constructor.md "Overview: IndexDefaultConstructorFactory: Constructor")
 
 ---
 
 # Overview: IndexAutoFactory: Display[](#overview-indexautofactory-display "Link to this heading")
 
-[Detail: IndexAutoFactory: Display](../api_detail/index_auto_factory-display.html#api-detail-indexautofactory-display)
+[Detail: IndexAutoFactory: Display](../api_detail/index_auto_factory-display.md#api-detail-indexautofactory-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_auto_factory-display.html#api-sig-indexautofactory-repr) | `IndexAutoFactory.__repr__()` | Return repr(self). |
-| [Detail](../api_detail/index_auto_factory-display.html#api-sig-indexautofactory-str) | `IndexAutoFactory.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_auto_factory-display.md#api-sig-indexautofactory-repr) | `IndexAutoFactory.__repr__()` | Return repr(self). |
+| [Detail](../api_detail/index_auto_factory-display.md#api-sig-indexautofactory-str) | `IndexAutoFactory.__str__()` | Return str(self). |
 
-[IndexAutoFactory](index_auto_factory.html#api-overview-indexautofactory): [Constructor](index_auto_factory-constructor.html#api-overview-indexautofactory-constructor) | [Exporter](index_auto_factory-exporter.html#api-overview-indexautofactory-exporter) | [Display](#api-overview-indexautofactory-display)
+[IndexAutoFactory](index_auto_factory.md#api-overview-indexautofactory): [Constructor](index_auto_factory-constructor.md#api-overview-indexautofactory-constructor) | [Exporter](index_auto_factory-exporter.md#api-overview-indexautofactory-exporter) | [Display](#api-overview-indexautofactory-display)
 
-[Previous](index_auto_factory-exporter.html "Overview: IndexAutoFactory: Exporter")
-[Next](index_default_constructor_factory-constructor.html "Overview: IndexDefaultConstructorFactory: Constructor")
+[Previous](index_auto_factory-exporter.md "Overview: IndexAutoFactory: Exporter")
+[Next](index_default_constructor_factory-constructor.md "Overview: IndexDefaultConstructorFactory: Constructor")
 
 ---
 

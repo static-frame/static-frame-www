@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: Quilt: Method
 * [View page source](../_sources/api_overview/quilt-method.rst.txt)
 
-[Previous](quilt-attribute.html "Overview: Quilt: Attribute")
-[Next](quilt-dictionary_like.html "Overview: Quilt: Dictionary-Like")
+[Previous](quilt-attribute.md "Overview: Quilt: Attribute")
+[Next](quilt-dictionary_like.md "Overview: Quilt: Dictionary-Like")
 
 ---
 
 # Overview: Quilt: Method[](#overview-quilt-method "Link to this heading")
 
-[Detail: Quilt: Method](../api_detail/quilt-method.html#api-detail-quilt-method)
+[Detail: Quilt: Method](../api_detail/quilt-method.md#api-detail-quilt-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/quilt-method.html#api-sig-quilt-bool) | `Quilt.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/quilt-method.html#api-sig-quilt-equals) | `Quilt.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Note: this will attempt to lo… |
-| [Detail](../api_detail/quilt-method.html#api-sig-quilt-head) | `Quilt.head(count)` | Return a Quilt consisting only of the top elements as specified by count. Args:… |
-| [Detail](../api_detail/quilt-method.html#api-sig-quilt-rename) | `Quilt.rename(name)` | Return a new Quilt with an updated name attribute. Args: name |
-| [Detail](../api_detail/quilt-method.html#api-sig-quilt-sample) | `Quilt.sample(index, columns, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/quilt-method.html#api-sig-quilt-tail) | `Quilt.tail(count)` | Return a Quilt consisting only of the bottom elements as specified by count. Arg… |
-| [Detail](../api_detail/quilt-method.html#api-sig-quilt-unpersist) | `Quilt.unpersist()` | For the Bus or Yarn contained in this object, replace all loaded Frame with Fram… |
+| [Detail](../api_detail/quilt-method.md#api-sig-quilt-bool) | `Quilt.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/quilt-method.md#api-sig-quilt-equals) | `Quilt.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Note: this will attempt to lo… |
+| [Detail](../api_detail/quilt-method.md#api-sig-quilt-head) | `Quilt.head(count)` | Return a Quilt consisting only of the top elements as specified by count. Args:… |
+| [Detail](../api_detail/quilt-method.md#api-sig-quilt-rename) | `Quilt.rename(name)` | Return a new Quilt with an updated name attribute. Args: name |
+| [Detail](../api_detail/quilt-method.md#api-sig-quilt-sample) | `Quilt.sample(index, columns, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
+| [Detail](../api_detail/quilt-method.md#api-sig-quilt-tail) | `Quilt.tail(count)` | Return a Quilt consisting only of the bottom elements as specified by count. Arg… |
+| [Detail](../api_detail/quilt-method.md#api-sig-quilt-unpersist) | `Quilt.unpersist()` | For the Bus or Yarn contained in this object, replace all loaded Frame with Fram… |
 
-[Quilt](quilt.html#api-overview-quilt): [Constructor](quilt-constructor.html#api-overview-quilt-constructor) | [Exporter](quilt-exporter.html#api-overview-quilt-exporter) | [Attribute](quilt-attribute.html#api-overview-quilt-attribute) | [Method](#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.html#api-overview-quilt-dictionary-like) | [Display](quilt-display.html#api-overview-quilt-display) | [Selector](quilt-selector.html#api-overview-quilt-selector) | [Iterator](quilt-iterator.html#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.html#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.html#api-overview-quilt-accessor-type-clinic)
+[Quilt](quilt.md#api-overview-quilt): [Constructor](quilt-constructor.md#api-overview-quilt-constructor) | [Exporter](quilt-exporter.md#api-overview-quilt-exporter) | [Attribute](quilt-attribute.md#api-overview-quilt-attribute) | [Method](#api-overview-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-overview-quilt-dictionary-like) | [Display](quilt-display.md#api-overview-quilt-display) | [Selector](quilt-selector.md#api-overview-quilt-selector) | [Iterator](quilt-iterator.md#api-overview-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-overview-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-overview-quilt-accessor-type-clinic)
 
-[Previous](quilt-attribute.html "Overview: Quilt: Attribute")
-[Next](quilt-dictionary_like.html "Overview: Quilt: Dictionary-Like")
+[Previous](quilt-attribute.md "Overview: Quilt: Attribute")
+[Next](quilt-dictionary_like.md "Overview: Quilt: Dictionary-Like")
 
 ---
 

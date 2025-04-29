@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexMinuteGO: Display
 * [View page source](../_sources/api_overview/index_minute_go-display.rst.txt)
 
-[Previous](index_minute_go-dictionary_like.html "Overview: IndexMinuteGO: Dictionary-Like")
-[Next](index_minute_go-selector.html "Overview: IndexMinuteGO: Selector")
+[Previous](index_minute_go-dictionary_like.md "Overview: IndexMinuteGO: Dictionary-Like")
+[Next](index_minute_go-selector.md "Overview: IndexMinuteGO: Selector")
 
 ---
 
 # Overview: IndexMinuteGO: Display[](#overview-indexminutego-display "Link to this heading")
 
-[Detail: IndexMinuteGO: Display](../api_detail/index_minute_go-display.html#api-detail-indexminutego-display)
+[Detail: IndexMinuteGO: Display](../api_detail/index_minute_go-display.md#api-detail-indexminutego-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute_go-display.html#api-sig-indexminutego-interface) | [`IndexMinuteGO.interface`](../api_detail/index_minute_go-display.html#IndexMinuteGO.interface "IndexMinuteGO.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_minute_go-display.html#api-sig-indexminutego-repr) | `IndexMinuteGO.__repr__()` |  |
-| [Detail](../api_detail/index_minute_go-display.html#api-sig-indexminutego-str) | `IndexMinuteGO.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_minute_go-display.html#api-sig-indexminutego-display) | `IndexMinuteGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_minute_go-display.html#api-sig-indexminutego-display-tall) | `IndexMinuteGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_minute_go-display.html#api-sig-indexminutego-display-wide) | `IndexMinuteGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_minute_go-display.md#api-sig-indexminutego-interface) | [`IndexMinuteGO.interface`](../api_detail/index_minute_go-display.md#IndexMinuteGO.interface "IndexMinuteGO.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_minute_go-display.md#api-sig-indexminutego-repr) | `IndexMinuteGO.__repr__()` |  |
+| [Detail](../api_detail/index_minute_go-display.md#api-sig-indexminutego-str) | `IndexMinuteGO.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_minute_go-display.md#api-sig-indexminutego-display) | `IndexMinuteGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_minute_go-display.md#api-sig-indexminutego-display-tall) | `IndexMinuteGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_minute_go-display.md#api-sig-indexminutego-display-wide) | `IndexMinuteGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexMinuteGO](index_minute_go.html#api-overview-indexminutego): [Constructor](index_minute_go-constructor.html#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.html#api-overview-indexminutego-exporter) | [Attribute](index_minute_go-attribute.html#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.html#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.html#api-overview-indexminutego-dictionary-like) | [Display](#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.html#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.html#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.html#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.html#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.html#api-overview-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.html#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.html#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.html#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.html#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.html#api-overview-indexminutego-accessor-type-clinic)
+[IndexMinuteGO](index_minute_go.md#api-overview-indexminutego): [Constructor](index_minute_go-constructor.md#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.md#api-overview-indexminutego-exporter) | [Attribute](index_minute_go-attribute.md#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.md#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-overview-indexminutego-dictionary-like) | [Display](#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.md#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.md#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.md#api-overview-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.md#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.md#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-overview-indexminutego-accessor-type-clinic)
 
-[Previous](index_minute_go-dictionary_like.html "Overview: IndexMinuteGO: Dictionary-Like")
-[Next](index_minute_go-selector.html "Overview: IndexMinuteGO: Selector")
+[Previous](index_minute_go-dictionary_like.md "Overview: IndexMinuteGO: Dictionary-Like")
+[Next](index_minute_go-selector.md "Overview: IndexMinuteGO: Selector")
 
 ---
 

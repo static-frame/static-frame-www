@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: Platform: Display
 * [View page source](../_sources/api_overview/platform-display.rst.txt)
 
-[Previous](platform-exporter.html "Overview: Platform: Exporter")
-[Next](../api_detail/series-constructor.html "Detail: Series: Constructor")
+[Previous](platform-exporter.md "Overview: Platform: Exporter")
+[Next](../api_detail/series-constructor.md "Detail: Series: Constructor")
 
 ---
 
 # Overview: Platform: Display[](#overview-platform-display "Link to this heading")
 
-[Detail: Platform: Display](../api_detail/platform-display.html#api-detail-platform-display)
+[Detail: Platform: Display](../api_detail/platform-display.md#api-detail-platform-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/platform-display.html#api-sig-platform-repr) | `Platform.__repr__()` | Return repr(self). |
-| [Detail](../api_detail/platform-display.html#api-sig-platform-str) | `Platform.__str__()` | Return str(self). |
-| [Detail](../api_detail/platform-display.html#api-sig-platform-display) | `Platform.display()` |  |
+| [Detail](../api_detail/platform-display.md#api-sig-platform-repr) | `Platform.__repr__()` | Return repr(self). |
+| [Detail](../api_detail/platform-display.md#api-sig-platform-str) | `Platform.__str__()` | Return str(self). |
+| [Detail](../api_detail/platform-display.md#api-sig-platform-display) | `Platform.display()` |  |
 
-[Platform](platform.html#api-overview-platform): [Constructor](platform-constructor.html#api-overview-platform-constructor) | [Exporter](platform-exporter.html#api-overview-platform-exporter) | [Display](#api-overview-platform-display)
+[Platform](platform.md#api-overview-platform): [Constructor](platform-constructor.md#api-overview-platform-constructor) | [Exporter](platform-exporter.md#api-overview-platform-exporter) | [Display](#api-overview-platform-display)
 
-[Previous](platform-exporter.html "Overview: Platform: Exporter")
-[Next](../api_detail/series-constructor.html "Detail: Series: Constructor")
+[Previous](platform-exporter.md "Overview: Platform: Exporter")
+[Next](../api_detail/series-constructor.md "Detail: Series: Constructor")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Batch: Accessor Datetime
 * [View page source](../_sources/api_detail/batch-accessor_datetime.rst.txt)
 
-[Previous](batch-accessor_values.html "Detail: Batch: Accessor Values")
-[Next](batch-accessor_string.html "Detail: Batch: Accessor String")
+[Previous](batch-accessor_values.md "Detail: Batch: Accessor Values")
+[Next](batch-accessor_string.md "Detail: Batch: Accessor String")
 
 ---
 
 # Detail: Batch: Accessor Datetime[](#detail-batch-accessor-datetime "Link to this heading")
 
-[Overview: Batch: Accessor Datetime](../api_overview/batch-accessor_datetime.html#api-overview-batch-accessor-datetime)
+[Overview: Batch: Accessor Datetime](../api_overview/batch-accessor_datetime.md#api-overview-batch-accessor-datetime)
 
 Batch.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.__call__)
+    InterfaceBatchDatetime.\_\_call\_\_(*\**, *fill\_value*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.__call__)
     :   Parameters:
         :   **fill\_value** – If NAT are encountered, use this value.
 
@@ -356,7 +356,7 @@ Batch.via\_dt.weekday
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.weekday)
+    InterfaceBatchDatetime.weekday()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.weekday)
     :   Return the day of the week as an integer, where Monday is 0 and Sunday is 6.
 
     ```
@@ -379,7 +379,7 @@ Batch.via\_dt.quarter
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.quarter)
+    InterfaceBatchDatetime.quarter()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.quarter)
     :   Return the quarter of the year as an integer, where January through March is quarter 1.
 
     ```
@@ -402,7 +402,7 @@ Batch.via\_dt.is\_month\_end
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.is_month_end)
+    InterfaceBatchDatetime.is\_month\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.is_month_end)
     :   Return Boolean indicators if the day is the month end.
 
     ```
@@ -425,7 +425,7 @@ Batch.via\_dt.is\_month\_start
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.is_month_start)
+    InterfaceBatchDatetime.is\_month\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.is_month_start)
     :   Return Boolean indicators if the day is the month start.
 
     ```
@@ -448,7 +448,7 @@ Batch.via\_dt.is\_year\_end
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.is_year_end)
+    InterfaceBatchDatetime.is\_year\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.is_year_end)
     :   Return Boolean indicators if the day is the year end.
 
     ```
@@ -471,7 +471,7 @@ Batch.via\_dt.is\_year\_start
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.is_year_start)
+    InterfaceBatchDatetime.is\_year\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.is_year_start)
     :   Return Boolean indicators if the day is the year start.
 
     ```
@@ -494,7 +494,7 @@ Batch.via\_dt.is\_quarter\_end
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.is_quarter_end)
+    InterfaceBatchDatetime.is\_quarter\_end()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.is_quarter_end)
     :   Return Boolean indicators if the day is the quarter end.
 
     ```
@@ -517,7 +517,7 @@ Batch.via\_dt.is\_quarter\_start
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.is_quarter_start)
+    InterfaceBatchDatetime.is\_quarter\_start()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.is_quarter_start)
     :   Return Boolean indicators if the day is the quarter start.
 
     ```
@@ -540,7 +540,7 @@ Batch.via\_dt.timetuple
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.timetuple)
+    InterfaceBatchDatetime.timetuple()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.timetuple)
     :   Return a `time.struct_time` such as returned by time.localtime().
 
     ```
@@ -563,7 +563,7 @@ Batch.via\_dt.isoformat(*\**, *sep*, *timespec*)
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.isoformat)
+    InterfaceBatchDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.isoformat)
     :   Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
 
     ```
@@ -586,7 +586,7 @@ Batch.via\_dt.fromisoformat
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.fromisoformat)
+    InterfaceBatchDatetime.fromisoformat()[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.fromisoformat)
     :   Return a `datetime.date` object from an ISO 8601 format.
 
     ```
@@ -609,7 +609,7 @@ Batch.via\_dt.strftime(*format*)
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.strftime)
+    InterfaceBatchDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.strftime)
     :   Return a string representing the date, controlled by an explicit `format` string.
 
     ```
@@ -632,7 +632,7 @@ Batch.via\_dt.strptime(*format*)
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.strptime)
+    InterfaceBatchDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.strptime)
     :   Return a Python datetime object from parsing a string defined with `format`.
 
     ```
@@ -655,7 +655,7 @@ Batch.via\_dt.strpdate(*format*)
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.html#InterfaceBatchDatetime.strpdate)
+    InterfaceBatchDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.strpdate)
     :   Return a Python date object from parsing a string defined with `format`.
 
     ```
@@ -674,10 +674,10 @@ Batch.via\_dt.strpdate(*format*)
 
     ```
 
-[Batch](batch.html#api-detail-batch): [Constructor](batch-constructor.html#api-detail-batch-constructor) | [Exporter](batch-exporter.html#api-detail-batch-exporter) | [Attribute](batch-attribute.html#api-detail-batch-attribute) | [Method](batch-method.html#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.html#api-detail-batch-dictionary-like) | [Display](batch-display.html#api-detail-batch-display) | [Selector](batch-selector.html#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.html#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.html#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.html#api-detail-batch-accessor-values) | [Accessor Datetime](#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.html#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.html#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.html#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.html#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.html#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.html#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.html#api-detail-batch-accessor-reduce)
+[Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
 
-[Previous](batch-accessor_values.html "Detail: Batch: Accessor Values")
-[Next](batch-accessor_string.html "Detail: Batch: Accessor String")
+[Previous](batch-accessor_values.md "Detail: Batch: Accessor Values")
+[Next](batch-accessor_string.md "Detail: Batch: Accessor String")
 
 ---
 

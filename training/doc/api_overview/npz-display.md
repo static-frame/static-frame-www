@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: NPZ: Display
 * [View page source](../_sources/api_overview/npz-display.rst.txt)
 
-[Previous](npz-method.html "Overview: NPZ: Method")
-[Next](npy-constructor.html "Overview: NPY: Constructor")
+[Previous](npz-method.md "Overview: NPZ: Method")
+[Next](npy-constructor.md "Overview: NPY: Constructor")
 
 ---
 
 # Overview: NPZ: Display[](#overview-npz-display "Link to this heading")
 
-[Detail: NPZ: Display](../api_detail/npz-display.html#api-detail-npz-display)
+[Detail: NPZ: Display](../api_detail/npz-display.md#api-detail-npz-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/npz-display.html#api-sig-npz-interface) | [`NPZ.interface`](../api_detail/npz-display.html#NPZ.interface "NPZ.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/npz-display.html#api-sig-npz-repr) | `NPZ.__repr__()` | Return repr(self). |
-| [Detail](../api_detail/npz-display.html#api-sig-npz-str) | `NPZ.__str__()` | Return str(self). |
+| [Detail](../api_detail/npz-display.md#api-sig-npz-interface) | [`NPZ.interface`](../api_detail/npz-display.md#NPZ.interface "NPZ.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/npz-display.md#api-sig-npz-repr) | `NPZ.__repr__()` | Return repr(self). |
+| [Detail](../api_detail/npz-display.md#api-sig-npz-str) | `NPZ.__str__()` | Return str(self). |
 
-[NPZ](npz.html#api-overview-npz): [Constructor](npz-constructor.html#api-overview-npz-constructor) | [Attribute](npz-attribute.html#api-overview-npz-attribute) | [Method](npz-method.html#api-overview-npz-method) | [Display](#api-overview-npz-display)
+[NPZ](npz.md#api-overview-npz): [Constructor](npz-constructor.md#api-overview-npz-constructor) | [Attribute](npz-attribute.md#api-overview-npz-attribute) | [Method](npz-method.md#api-overview-npz-method) | [Display](#api-overview-npz-display)
 
-[Previous](npz-method.html "Overview: NPZ: Method")
-[Next](npy-constructor.html "Overview: NPY: Constructor")
+[Previous](npz-method.md "Overview: NPZ: Method")
+[Next](npy-constructor.md "Overview: NPY: Constructor")
 
 ---
 

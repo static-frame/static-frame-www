@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Yarn: Iterator
 * [View page source](../_sources/api_overview/yarn-iterator.rst.txt)
 
-[Previous](yarn-selector.html "Overview: Yarn: Selector")
-[Next](yarn-accessor_hashlib.html "Overview: Yarn: Accessor Hashlib")
+[Previous](yarn-selector.md "Overview: Yarn: Selector")
+[Next](yarn-accessor_hashlib.md "Overview: Yarn: Accessor Hashlib")
 
 ---
 
 # Overview: Yarn: Iterator[](#overview-yarn-iterator "Link to this heading")
 
-[Detail: Yarn: Iterator](../api_detail/yarn-iterator.html#api-detail-yarn-iterator)
+[Detail: Yarn: Iterator](../api_detail/yarn-iterator.md#api-detail-yarn-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element) | `Yarn.iter_element()` | Iterator of elements. |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element-apply) | `Yarn.iter_element().apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element-apply-iter) | `Yarn.iter_element().apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element-apply-iter-items) | `Yarn.iter_element().apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element-apply-pool) | `Yarn.iter_element().apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element-items) | `Yarn.iter_element_items()` | Iterator of label, element pairs. |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element-items-apply) | `Yarn.iter_element_items().apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element-items-apply-iter) | `Yarn.iter_element_items().apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element-items-apply-iter-items) | `Yarn.iter_element_items().apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/yarn-iterator.html#api-sig-yarn-iter-element-items-apply-pool) | `Yarn.iter_element_items().apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element) | `Yarn.iter_element()` | Iterator of elements. |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element-apply) | `Yarn.iter_element().apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element-apply-iter) | `Yarn.iter_element().apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element-apply-iter-items) | `Yarn.iter_element().apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element-apply-pool) | `Yarn.iter_element().apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element-items) | `Yarn.iter_element_items()` | Iterator of label, element pairs. |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element-items-apply) | `Yarn.iter_element_items().apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element-items-apply-iter) | `Yarn.iter_element_items().apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element-items-apply-iter-items) | `Yarn.iter_element_items().apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/yarn-iterator.md#api-sig-yarn-iter-element-items-apply-pool) | `Yarn.iter_element_items().apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[Yarn](yarn.html#api-overview-yarn): [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | [Method](yarn-method.html#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](yarn-display.html#api-overview-yarn-display) | [Selector](yarn-selector.html#api-overview-yarn-selector) | [Iterator](#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-overview-yarn): [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | [Method](yarn-method.md#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](yarn-display.md#api-overview-yarn-display) | [Selector](yarn-selector.md#api-overview-yarn-selector) | [Iterator](#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
-[Previous](yarn-selector.html "Overview: Yarn: Selector")
-[Next](yarn-accessor_hashlib.html "Overview: Yarn: Accessor Hashlib")
+[Previous](yarn-selector.md "Overview: Yarn: Selector")
+[Next](yarn-accessor_hashlib.md "Overview: Yarn: Accessor Hashlib")
 
 ---
 

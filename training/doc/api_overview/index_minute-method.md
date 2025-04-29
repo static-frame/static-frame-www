@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,69 +135,69 @@ API Detail
 * Overview: IndexMinute: Method
 * [View page source](../_sources/api_overview/index_minute-method.rst.txt)
 
-[Previous](index_minute-attribute.html "Overview: IndexMinute: Attribute")
-[Next](index_minute-dictionary_like.html "Overview: IndexMinute: Dictionary-Like")
+[Previous](index_minute-attribute.md "Overview: IndexMinute: Attribute")
+[Next](index_minute-dictionary_like.md "Overview: IndexMinute: Dictionary-Like")
 
 ---
 
 # Overview: IndexMinute: Method[](#overview-indexminute-method "Link to this heading")
 
-[Detail: IndexMinute: Method](../api_detail/index_minute-method.html#api-detail-indexminute-method)
+[Detail: IndexMinute: Method](../api_detail/index_minute-method.md#api-detail-indexminute-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-array) | `IndexMinute.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-array-ufunc) | `IndexMinute.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-bool) | `IndexMinute.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-copy) | `IndexMinute.__copy__()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-deepcopy) | `IndexMinute.__deepcopy__(memo)` |  |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-len) | `IndexMinute.__len__()` |  |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-all) | `IndexMinute.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-any) | `IndexMinute.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-astype) | `IndexMinute.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
-| [Detail](../api_detail/index_minute-method.html#id1) | `IndexMinute.copy()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-cumprod) | `IndexMinute.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-cumsum) | `IndexMinute.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-difference) | `IndexMinute.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-dropfalsy) | `IndexMinute.dropfalsy()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-dropna) | `IndexMinute.dropna()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-equals) | `IndexMinute.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-fillfalsy) | `IndexMinute.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-fillna) | `IndexMinute.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-head) | `IndexMinute.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-iloc-searchsorted) | `IndexMinute.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-intersection) | `IndexMinute.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-isfalsy) | `IndexMinute.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-isin) | `IndexMinute.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-isna) | `IndexMinute.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-label-widths-at-depth) | `IndexMinute.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-level-add) | `IndexMinute.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-loc-searchsorted) | `IndexMinute.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-loc-to-iloc) | `IndexMinute.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-max) | `IndexMinute.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-mean) | `IndexMinute.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-median) | `IndexMinute.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-min) | `IndexMinute.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-notfalsy) | `IndexMinute.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-notna) | `IndexMinute.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-prod) | `IndexMinute.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-relabel) | `IndexMinute.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-rename) | `IndexMinute.rename(name)` | Return a new Frame with an updated name attribute. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-roll) | `IndexMinute.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-sample) | `IndexMinute.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-sort) | `IndexMinute.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-std) | `IndexMinute.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-sum) | `IndexMinute.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-tail) | `IndexMinute.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-union) | `IndexMinute.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-unique) | `IndexMinute.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-values-at-depth) | `IndexMinute.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
-| [Detail](../api_detail/index_minute-method.html#api-sig-indexminute-var) | `IndexMinute.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-array) | `IndexMinute.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-array-ufunc) | `IndexMinute.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-bool) | `IndexMinute.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-copy) | `IndexMinute.__copy__()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-deepcopy) | `IndexMinute.__deepcopy__(memo)` |  |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-len) | `IndexMinute.__len__()` |  |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-all) | `IndexMinute.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-any) | `IndexMinute.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-astype) | `IndexMinute.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
+| [Detail](../api_detail/index_minute-method.md#id1) | `IndexMinute.copy()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-cumprod) | `IndexMinute.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-cumsum) | `IndexMinute.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-difference) | `IndexMinute.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-dropfalsy) | `IndexMinute.dropfalsy()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-dropna) | `IndexMinute.dropna()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-equals) | `IndexMinute.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-fillfalsy) | `IndexMinute.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-fillna) | `IndexMinute.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-head) | `IndexMinute.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-iloc-searchsorted) | `IndexMinute.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-intersection) | `IndexMinute.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-isfalsy) | `IndexMinute.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-isin) | `IndexMinute.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-isna) | `IndexMinute.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-label-widths-at-depth) | `IndexMinute.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-level-add) | `IndexMinute.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-loc-searchsorted) | `IndexMinute.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-loc-to-iloc) | `IndexMinute.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-max) | `IndexMinute.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-mean) | `IndexMinute.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-median) | `IndexMinute.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-min) | `IndexMinute.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-notfalsy) | `IndexMinute.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-notna) | `IndexMinute.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-prod) | `IndexMinute.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-relabel) | `IndexMinute.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-rename) | `IndexMinute.rename(name)` | Return a new Frame with an updated name attribute. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-roll) | `IndexMinute.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-sample) | `IndexMinute.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-sort) | `IndexMinute.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-std) | `IndexMinute.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-sum) | `IndexMinute.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-tail) | `IndexMinute.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-union) | `IndexMinute.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-unique) | `IndexMinute.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-values-at-depth) | `IndexMinute.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
+| [Detail](../api_detail/index_minute-method.md#api-sig-indexminute-var) | `IndexMinute.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-attribute.html "Overview: IndexMinute: Attribute")
-[Next](index_minute-dictionary_like.html "Overview: IndexMinute: Dictionary-Like")
+[Previous](index_minute-attribute.md "Overview: IndexMinute: Attribute")
+[Next](index_minute-dictionary_like.md "Overview: IndexMinute: Dictionary-Like")
 
 ---
 

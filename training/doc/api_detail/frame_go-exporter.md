@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: FrameGO: Exporter
 * [View page source](../_sources/api_detail/frame_go-exporter.rst.txt)
 
-[Previous](frame_go-constructor.html "Detail: FrameGO: Constructor")
-[Next](frame_go-attribute.html "Detail: FrameGO: Attribute")
+[Previous](frame_go-constructor.md "Detail: FrameGO: Constructor")
+[Next](frame_go-attribute.md "Detail: FrameGO: Attribute")
 
 ---
 
 # Detail: FrameGO: Exporter[](#detail-framego-exporter "Link to this heading")
 
-[Overview: FrameGO: Exporter](../api_overview/frame_go-exporter.html#api-overview-framego-exporter)
+[Overview: FrameGO: Exporter](../api_overview/frame_go-exporter.md#api-overview-framego-exporter)
 
 FrameGO.to\_arrow(*\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*)[](#static_frame.FrameGO.to_arrow "Link to this definition")
-:   Return a `pyarrow.Table` from this [`Frame`](frame-selector.html#Frame "Frame").
+:   Return a `pyarrow.Table` from this [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), ('qrs ', 'XYZ', '123', ' wX ')), columns=('a', 'b'), index=('p', 'q', 'r', 's'), name='x')
@@ -171,7 +171,7 @@ FrameGO.to\_arrow(*\**, *include\_index=True*, *include\_index\_name=True*, *inc
     ```
 
 FrameGO.to\_clipboard(*\**, *delimiter='\t'*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[](#static_frame.FrameGO.to_clipboard "Link to this definition")
-:   Given a file path or file-like object, write the [`Frame`](frame-selector.html#Frame "Frame") as delimited text. The `delimiter` defaults to a tab.
+:   Given a file path or file-like object, write the [`Frame`](frame-selector.md#Frame "Frame") as delimited text. The `delimiter` defaults to a tab.
 
     Parameters:
     :   * **path** (*A file*) –
@@ -189,10 +189,10 @@ FrameGO.to\_clipboard(*\**, *delimiter='\t'*, *include\_index=True*, *include\_i
         * **quote\_double** – Controls how instances of quote\_char appearing inside a field should themselves be quoted. When `True`, the character is doubled. When `False`, the `escape_char` is used as a prefix to the `quote_char`. It defaults to True.
         * **escape\_char** – A one-character string used by the writer to escape the delimiter if quoting is set to QUOTE\_NONE and the quotechar if quote\_double is False.
         * **quoting** – Controls when quotes should be generated. It can take on any of the QUOTE\_\* constants from the standard library csv module.
-        * **store\_filter** – A [`StoreFilter`](store_filter.html#static_frame.StoreFilter "static_frame.StoreFilter") instance.
+        * **store\_filter** – A [`StoreFilter`](store_filter.md#static_frame.StoreFilter "static_frame.StoreFilter") instance.
 
 FrameGO.to\_csv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[](#static_frame.FrameGO.to_csv "Link to this definition")
-:   Given a file path or file-like object, write the [`Frame`](frame-selector.html#Frame "Frame") as delimited text. The delimiter is set to a comma.
+:   Given a file path or file-like object, write the [`Frame`](frame-selector.md#Frame "Frame") as delimited text. The delimiter is set to a comma.
 
     Parameters:
     :   * **path** (*A file*) –
@@ -209,7 +209,7 @@ FrameGO.to\_csv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=Tr
         * **quote\_double** – Controls how instances of quote\_char appearing inside a field should themselves be quoted. When `True`, the character is doubled. When `False`, the `escape_char` is used as a prefix to the `quote_char`. It defaults to True.
         * **escape\_char** – A one-character string used by the writer to escape the delimiter if quoting is set to QUOTE\_NONE and the quotechar if quote\_double is False.
         * **quoting** – Controls when quotes should be generated. It can take on any of the QUOTE\_\* constants from the standard library csv module.
-        * **store\_filter** – A [`StoreFilter`](store_filter.html#static_frame.StoreFilter "static_frame.StoreFilter") instance.
+        * **store\_filter** – A [`StoreFilter`](store_filter.md#static_frame.StoreFilter "static_frame.StoreFilter") instance.
 
     ```
     >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -232,7 +232,7 @@ FrameGO.to\_csv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=Tr
     ```
 
 FrameGO.to\_delimited(*fp*, */*, *\**, *delimiter*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[](#static_frame.FrameGO.to_delimited "Link to this definition")
-:   Given a file path or file-like object, write the [`Frame`](frame-selector.html#Frame "Frame") as delimited text. A `delimiter` character must be specified.
+:   Given a file path or file-like object, write the [`Frame`](frame-selector.md#Frame "Frame") as delimited text. A `delimiter` character must be specified.
 
     Parameters:
     :   * **path** (*A file*) –
@@ -250,7 +250,7 @@ FrameGO.to\_delimited(*fp*, */*, *\**, *delimiter*, *include\_index=True*, *incl
         * **quote\_double** – Controls how instances of quote\_char appearing inside a field should themselves be quoted. When `True`, the character is doubled. When `False`, the `escape_char` is used as a prefix to the `quote_char`. It defaults to True.
         * **escape\_char** – A one-character string used by the writer to escape the delimiter if quoting is set to QUOTE\_NONE and the quotechar if quote\_double is False.
         * **quoting** – Controls when quotes should be generated. It can take on any of the QUOTE\_\* constants from the standard library csv module.
-        * **store\_filter** – A [`StoreFilter`](store_filter.html#static_frame.StoreFilter "static_frame.StoreFilter") instance.
+        * **store\_filter** – A [`StoreFilter`](store_filter.md#static_frame.StoreFilter "static_frame.StoreFilter") instance.
 
     ```
     >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -351,27 +351,27 @@ FrameGO.to\_frame\_he(*\**, *name=<object object>*)[](#static_frame.FrameGO.t
     ```
 
 FrameGO.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.FrameGO.to_html "Link to this definition")
-:   Return an HTML table representation of this [`Frame`](frame-selector.html#Frame "Frame") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
+:   Return an HTML table representation of this [`Frame`](frame-selector.md#Frame "Frame") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
-    :   **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+    :   **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`
 
 FrameGO.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.FrameGO.to_html_datatables "Link to this definition")
-:   Return a complete HTML representation of this [`Frame`](frame-selector.html#Frame "Frame") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
+:   Return a complete HTML representation of this [`Frame`](frame-selector.md#Frame "Frame") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
     :   * **fp** – optional file path to write; if not provided, a temporary file will be created. Note: the caller is responsible for deleting this file.
         * **show** – if True, the file will be opened with a webbrowser.
-        * **config** – Optional [`DisplayConfig`](display_config.html#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
+        * **config** – Optional [`DisplayConfig`](display_config.md#static_frame.DisplayConfig "static_frame.DisplayConfig") instance.
 
     Returns:
     :   `str`, absolute file path to the file written.
 
 FrameGO.to\_json\_columns(*\**, *indent=None*)[](#static_frame.FrameGO.to_json_columns "Link to this definition")
-:   Export a [`Frame`](frame-selector.html#Frame "Frame") as a JSON string constructed as follows: A JSON object keyed by column labels, where values are columns represented by an object mapping of index labels to values.
+:   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON object keyed by column labels, where values are columns represented by an object mapping of index labels to values.
 
     Parameters:
     :   **indent** – If indent is a non-negative integer or string, then JSON array elements and object members will be pretty-printed with that indent level.
@@ -412,7 +412,7 @@ FrameGO.to\_json\_columns(*\**, *indent=None*)[](#static_frame.FrameGO.to_jso
     ```
 
 FrameGO.to\_json\_index(*\**, *indent=None*)[](#static_frame.FrameGO.to_json_index "Link to this definition")
-:   Export a [`Frame`](frame-selector.html#Frame "Frame") as a JSON string constructed as follows: A JSON object keyed by index labels, where values are rows represented by an object mapping of column labels to values.
+:   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON object keyed by index labels, where values are rows represented by an object mapping of column labels to values.
 
     Parameters:
     :   **indent** – If indent is a non-negative integer or string, then JSON array elements and object members will be pretty-printed with that indent level.
@@ -455,7 +455,7 @@ FrameGO.to\_json\_index(*\**, *indent=None*)[](#static_frame.FrameGO.to_json_
     ```
 
 FrameGO.to\_json\_records(*\**, *indent=None*)[](#static_frame.FrameGO.to_json_records "Link to this definition")
-:   Export a [`Frame`](frame-selector.html#Frame "Frame") as a JSON string constructed as follows: A JSON array of row objects, where column labels are repeated for each row, and no index labels are included.
+:   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON array of row objects, where column labels are repeated for each row, and no index labels are included.
 
     Parameters:
     :   **indent** – If indent is a non-negative integer or string, then JSON array elements and object members will be pretty-printed with that indent level.
@@ -498,7 +498,7 @@ FrameGO.to\_json\_records(*\**, *indent=None*)[](#static_frame.FrameGO.to_jso
     ```
 
 FrameGO.to\_json\_split(*\**, *indent=None*)[](#static_frame.FrameGO.to_json_split "Link to this definition")
-:   Export a [`Frame`](frame-selector.html#Frame "Frame") as a JSON string constructed as follows: A JSON object with a key for “columns”, “index”, and “data”, where data is given as an array of arrays of row values.
+:   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON object with a key for “columns”, “index”, and “data”, where data is given as an array of arrays of row values.
 
     Parameters:
     :   **indent** – If indent is a non-negative integer or string, then JSON array elements and object members will be pretty-printed with that indent level.
@@ -554,7 +554,7 @@ FrameGO.to\_json\_split(*\**, *indent=None*)[](#static_frame.FrameGO.to_json_
     ```
 
 FrameGO.to\_json\_typed(*\**, *indent=None*)[](#static_frame.FrameGO.to_json_typed "Link to this definition")
-:   Export a [`Frame`](frame-selector.html#Frame "Frame") as a JSON string constructed as follows: A JSON object with a key for “columns”, “index”, and “data”, where data is given as an array of arrays of column values; additionally, a key for “\_\_meta\_\_” defines an object with complete metadata and typing information.
+:   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON object with a key for “columns”, “index”, and “data”, where data is given as an array of arrays of column values; additionally, a key for “\_\_meta\_\_” defines an object with complete metadata and typing information.
 
     Parameters:
     :   **indent** – If indent is a non-negative integer or string, then JSON array elements and object members will be pretty-printed with that indent level.
@@ -630,7 +630,7 @@ FrameGO.to\_json\_typed(*\**, *indent=None*)[](#static_frame.FrameGO.to_json_
     ```
 
 FrameGO.to\_json\_values(*\**, *indent=None*)[](#static_frame.FrameGO.to_json_values "Link to this definition")
-:   Export a [`Frame`](frame-selector.html#Frame "Frame") as a JSON string constructed as follows: A JSON array of arrays of row values; no index or columns labels are included.
+:   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON array of arrays of row values; no index or columns labels are included.
 
     Parameters:
     :   **indent** – If indent is a non-negative integer or string, then JSON array elements and object members will be pretty-printed with that indent level.
@@ -727,7 +727,7 @@ FrameGO.to\_markdown(*config=None*, */*)[](#static_frame.FrameGO.to_markdown 
     ```
 
 FrameGO.to\_npy(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*, *consolidate\_blocks=False*)[](#static_frame.FrameGO.to_npy "Link to this definition")
-:   Write a [`Frame`](frame-selector.html#Frame "Frame") as a directory of npy file.
+:   Write a [`Frame`](frame-selector.md#Frame "Frame") as a directory of npy file.
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -756,7 +756,7 @@ FrameGO.to\_npy(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*,
     ```
 
 FrameGO.to\_npz(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*, *consolidate\_blocks=False*)[](#static_frame.FrameGO.to_npz "Link to this definition")
-:   Write a [`Frame`](frame-selector.html#Frame "Frame") as an npz file.
+:   Write a [`Frame`](frame-selector.md#Frame "Frame") as an npz file.
 
     ```
     >>> f1 = sf.FrameGO.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -842,7 +842,7 @@ FrameGO.to\_parquet(*fp*, */*, *\**, *include\_index=True*, *include\_index\_nam
     ```
 
 FrameGO.to\_pickle(*fp*, */*, *\**, *protocol=None*)[](#static_frame.FrameGO.to_pickle "Link to this definition")
-:   Write a [`Frame`](frame-selector.html#Frame "Frame") as a Python pickle.
+:   Write a [`Frame`](frame-selector.md#Frame "Frame") as a Python pickle.
 
     The pickle module is not secure. Only unpickle data you trust.
 
@@ -992,7 +992,7 @@ FrameGO.to\_sqlite(*fp*, */*, *\**, *label=<object object>*, *include\_index=Tru
     ```
 
 FrameGO.to\_tsv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[](#static_frame.FrameGO.to_tsv "Link to this definition")
-:   Given a file path or file-like object, write the [`Frame`](frame-selector.html#Frame "Frame") as delimited text. The delimiter is set to a tab.
+:   Given a file path or file-like object, write the [`Frame`](frame-selector.md#Frame "Frame") as delimited text. The delimiter is set to a tab.
 
     Parameters:
     :   * **path** (*A file*) –
@@ -1009,7 +1009,7 @@ FrameGO.to\_tsv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=Tr
         * **quote\_double** – Controls how instances of quote\_char appearing inside a field should themselves be quoted. When `True`, the character is doubled. When `False`, the `escape_char` is used as a prefix to the `quote_char`. It defaults to True.
         * **escape\_char** – A one-character string used by the writer to escape the delimiter if quoting is set to QUOTE\_NONE and the quotechar if quote\_double is False.
         * **quoting** – Controls when quotes should be generated. It can take on any of the QUOTE\_\* constants from the standard library csv module.
-        * **store\_filter** – A [`StoreFilter`](store_filter.html#static_frame.StoreFilter "static_frame.StoreFilter") instance.
+        * **store\_filter** – A [`StoreFilter`](store_filter.md#static_frame.StoreFilter "static_frame.StoreFilter") instance.
 
     ```
     >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
@@ -1037,7 +1037,7 @@ FrameGO.to\_visidata()[](#static_frame.FrameGO.to_visidata "Link to this defi
 FrameGO.to\_xarray()[](#static_frame.FrameGO.to_xarray "Link to this definition")
 :   Return an xarray Dataset.
 
-    In order to preserve columnar types, and following the precedent of Pandas, the [`Frame`](frame-selector.html#Frame "Frame"), with a 1D index, is translated as a Dataset of 1D arrays, where each DataArray is a 1D array. If the index is an [`IndexHierarchy`](index_hierarchy-selector.html#IndexHierarchy "IndexHierarchy"), each column is mapped into an ND array of shape equal to the unique values found at each depth of the index.
+    In order to preserve columnar types, and following the precedent of Pandas, the [`Frame`](frame-selector.md#Frame "Frame"), with a 1D index, is translated as a Dataset of 1D arrays, where each DataArray is a 1D array. If the index is an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"), each column is mapped into an ND array of shape equal to the unique values found at each depth of the index.
 
     ```
     >>> f = sf.FrameGO.from_fields(((10, 2, 8, 3), ('qrs ', 'XYZ', '123', ' wX ')), columns=('a', 'b'), index=('p', 'q', 'r', 's'), name='x')
@@ -1078,10 +1078,10 @@ FrameGO.to\_xlsx(*fp*, */*, *\**, *label=<object object>*, *include\_index=True*
 
     ```
 
-[FrameGO](frame_go.html#api-detail-framego): [Constructor](frame_go-constructor.html#api-detail-framego-constructor) | [Exporter](#api-detail-framego-exporter) | [Attribute](frame_go-attribute.html#api-detail-framego-attribute) | [Method](frame_go-method.html#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.html#api-detail-framego-dictionary-like) | [Display](frame_go-display.html#api-detail-framego-display) | [Assignment](frame_go-assignment.html#api-detail-framego-assignment) | [Selector](frame_go-selector.html#api-detail-framego-selector) | [Iterator](frame_go-iterator.html#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.html#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.html#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.html#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.html#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.html#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.html#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.html#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.html#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.html#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.html#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.html#api-detail-framego-accessor-reduce)
+[FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)
 
-[Previous](frame_go-constructor.html "Detail: FrameGO: Constructor")
-[Next](frame_go-attribute.html "Detail: FrameGO: Attribute")
+[Previous](frame_go-constructor.md "Detail: FrameGO: Constructor")
+[Next](frame_go-attribute.md "Detail: FrameGO: Attribute")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: SeriesHE: Method
 * [View page source](../_sources/api_detail/series_he-method.rst.txt)
 
-[Previous](series_he-attribute.html "Detail: SeriesHE: Attribute")
-[Next](series_he-dictionary_like.html "Detail: SeriesHE: Dictionary-Like")
+[Previous](series_he-attribute.md "Detail: SeriesHE: Attribute")
+[Next](series_he-dictionary_like.md "Detail: SeriesHE: Dictionary-Like")
 
 ---
 
 # Detail: SeriesHE: Method[](#detail-serieshe-method "Link to this heading")
 
-[Overview: SeriesHE: Method](../api_overview/series_he-method.html#api-overview-serieshe-method)
+[Overview: SeriesHE: Method](../api_overview/series_he-method.md#api-overview-serieshe-method)
 
 SeriesHE.\_\_array\_\_(*dtype=None*)[](#static_frame.SeriesHE.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -245,7 +245,7 @@ SeriesHE.\_\_round\_\_(*decimals=0*, */*)[](#static_frame.SeriesHE.__round__ 
     :   **decimals** – number of decimals to round to.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((10.235, 2.124, 8.734), index=('a', 'b', 'c'))
@@ -315,7 +315,7 @@ SeriesHE.astype(*dtype*, */*)[](#static_frame.SeriesHE.astype "Link to this d
     :   **dtype** – A value suitable for specyfying a NumPy dtype, such as a Python type (float), NumPy array protocol strings (‘f8’), or a dtype instance.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((11, 1, None), index=('a', 'b', 'c'))
@@ -337,14 +337,14 @@ SeriesHE.astype(*dtype*, */*)[](#static_frame.SeriesHE.astype "Link to this d
     ```
 
 SeriesHE.clip(*\**, *lower=None*, *upper=None*)[](#static_frame.SeriesHE.clip "Link to this definition")
-:   Apply a clip operation to this [`Series`](series-selector.html#Series "Series"). Note that clip operations can be applied to object types, but cannot be applied to non-numerical objects (e.g., strings, None)
+:   Apply a clip operation to this [`Series`](series-selector.md#Series "Series"). Note that clip operations can be applied to object types, but cannot be applied to non-numerical objects (e.g., strings, None)
 
     Parameters:
     :   * **lower** – value or `Series` to define the inclusive lower bound.
         * **upper** – value or `Series` to define the inclusive upper bound.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((10.235, 2.124, 8.734), index=('a', 'b', 'c'))
@@ -366,7 +366,7 @@ SeriesHE.clip(*\**, *lower=None*, *upper=None*)[](#static_frame.SeriesHE.clip
     ```
 
 SeriesHE.corr(*other*, */*)[](#static_frame.SeriesHE.corr "Link to this definition")
-:   Return the index-aligned correlation to the supplied [`Series`](series-selector.html#Series "Series").
+:   Return the index-aligned correlation to the supplied [`Series`](series-selector.md#Series "Series").
 
     Parameters:
     :   **other** – Series to be correlated with by selection on corresponding labels.
@@ -419,7 +419,7 @@ SeriesHE.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)
     ```
 
 SeriesHE.cov(*other*, */*, *\**, *ddof=1*)[](#static_frame.SeriesHE.cov "Link to this definition")
-:   Return the index-aligned covariance to the supplied [`Series`](series-selector.html#Series "Series").
+:   Return the index-aligned covariance to the supplied [`Series`](series-selector.md#Series "Series").
 
     Parameters:
     :   **ddof** – Delta degrees of freedom, defaults to 1.
@@ -506,7 +506,7 @@ SeriesHE.drop\_duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[�
         * **exclude\_last** – Boolean to select if the last duplicated value is excluded.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((8, 5, None, 8), index=('a', 'b', 'c', 'd'))
@@ -528,7 +528,7 @@ SeriesHE.drop\_duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[�
     ```
 
 SeriesHE.dropfalsy()[](#static_frame.SeriesHE.dropfalsy "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after removing values of falsy.
+:   Return a new [`Series`](series-selector.md#Series "Series") after removing values of falsy.
 
     ```
     >>> s = sf.SeriesHE(('q', 'r', '', 's'), index=('a', 'b', 'c', 'd'))
@@ -551,7 +551,7 @@ SeriesHE.dropfalsy()[](#static_frame.SeriesHE.dropfalsy "Link to this definit
     ```
 
 SeriesHE.dropna()[](#static_frame.SeriesHE.dropna "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after removing values of NaN or None.
+:   Return a new [`Series`](series-selector.md#Series "Series") after removing values of NaN or None.
 
     ```
     >>> s = sf.SeriesHE((8, 5, None, 8), index=('a', 'b', 'c', 'd'))
@@ -636,7 +636,7 @@ SeriesHE.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False
     ```
 
 SeriesHE.fillfalsy(*value*, */*)[](#static_frame.SeriesHE.fillfalsy "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after replacing falsy values with the supplied value. The `value` can be an element or [`Series`](series-selector.html#Series "Series").
+:   Return a new [`Series`](series-selector.md#Series "Series") after replacing falsy values with the supplied value. The `value` can be an element or [`Series`](series-selector.md#Series "Series").
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -663,7 +663,7 @@ SeriesHE.fillfalsy(*value*, */*)[](#static_frame.SeriesHE.fillfalsy "Link to 
     ```
 
 SeriesHE.fillfalsy\_backward(*limit=0*, */*)[](#static_frame.SeriesHE.fillfalsy_backward "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after feeding backward the last non-falsy observation across contiguous falsy values.
+:   Return a new [`Series`](series-selector.md#Series "Series") after feeding backward the last non-falsy observation across contiguous falsy values.
 
     Parameters:
     :   **limit** – Set the maximum count of missing values (NaN or None) to be filled per contiguous region of missing vlaues. A value of 0 is equivalent to no limit.
@@ -690,7 +690,7 @@ SeriesHE.fillfalsy\_backward(*limit=0*, */*)[](#static_frame.SeriesHE.fillfal
     ```
 
 SeriesHE.fillfalsy\_forward(*limit=0*, */*)[](#static_frame.SeriesHE.fillfalsy_forward "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after feeding forward the last non-falsy observation across contiguous falsy values.
+:   Return a new [`Series`](series-selector.md#Series "Series") after feeding forward the last non-falsy observation across contiguous falsy values.
 
     Parameters:
     :   **limit** – Set the maximum count of missing values (NaN or None) to be filled per contiguous region of missing vlaues. A value of 0 is equivalent to no limit.
@@ -717,7 +717,7 @@ SeriesHE.fillfalsy\_forward(*limit=0*, */*)[](#static_frame.SeriesHE.fillfals
     ```
 
 SeriesHE.fillfalsy\_leading(*value*, */*)[](#static_frame.SeriesHE.fillfalsy_leading "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after filling leading (and only leading) falsy values with the supplied value.
+:   Return a new [`Series`](series-selector.md#Series "Series") after filling leading (and only leading) falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -744,7 +744,7 @@ SeriesHE.fillfalsy\_leading(*value*, */*)[](#static_frame.SeriesHE.fillfalsy_
     ```
 
 SeriesHE.fillfalsy\_trailing(*value*, */*)[](#static_frame.SeriesHE.fillfalsy_trailing "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after filling trailing (and only trailing) falsy values with the supplied value.
+:   Return a new [`Series`](series-selector.md#Series "Series") after filling trailing (and only trailing) falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -771,7 +771,7 @@ SeriesHE.fillfalsy\_trailing(*value*, */*)[](#static_frame.SeriesHE.fillfalsy
     ```
 
 SeriesHE.fillna(*value*, */*)[](#static_frame.SeriesHE.fillna "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after replacing NA (NaN or None) with the supplied value. The `value` can be an element or [`Series`](series-selector.html#Series "Series").
+:   Return a new [`Series`](series-selector.md#Series "Series") after replacing NA (NaN or None) with the supplied value. The `value` can be an element or [`Series`](series-selector.md#Series "Series").
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -800,7 +800,7 @@ SeriesHE.fillna(*value*, */*)[](#static_frame.SeriesHE.fillna "Link to this d
     ```
 
 SeriesHE.fillna\_backward(*limit=0*, */*)[](#static_frame.SeriesHE.fillna_backward "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after feeding backward the last non-null (NaN or None) observation across contiguous nulls.
+:   Return a new [`Series`](series-selector.md#Series "Series") after feeding backward the last non-null (NaN or None) observation across contiguous nulls.
 
     Parameters:
     :   **limit** – Set the maximum count of missing values (NaN or None) to be filled per contiguous region of missing vlaues. A value of 0 is equivalent to no limit.
@@ -829,7 +829,7 @@ SeriesHE.fillna\_backward(*limit=0*, */*)[](#static_frame.SeriesHE.fillna_bac
     ```
 
 SeriesHE.fillna\_forward(*limit=0*, */*)[](#static_frame.SeriesHE.fillna_forward "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after feeding forward the last non-null (NaN or None) observation across contiguous nulls.
+:   Return a new [`Series`](series-selector.md#Series "Series") after feeding forward the last non-null (NaN or None) observation across contiguous nulls.
 
     Parameters:
     :   **limit** – Set the maximum count of missing values (NaN or None) to be filled per contiguous region of missing vlaues. A value of 0 is equivalent to no limit.
@@ -858,7 +858,7 @@ SeriesHE.fillna\_forward(*limit=0*, */*)[](#static_frame.SeriesHE.fillna_forw
     ```
 
 SeriesHE.fillna\_leading(*value*, */*)[](#static_frame.SeriesHE.fillna_leading "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after filling leading (and only leading) null (NaN or None) with the supplied value.
+:   Return a new [`Series`](series-selector.md#Series "Series") after filling leading (and only leading) null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -887,7 +887,7 @@ SeriesHE.fillna\_leading(*value*, */*)[](#static_frame.SeriesHE.fillna_leadin
     ```
 
 SeriesHE.fillna\_trailing(*value*, */*)[](#static_frame.SeriesHE.fillna_trailing "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") after filling trailing (and only trailing) null (NaN or None) with the supplied value.
+:   Return a new [`Series`](series-selector.md#Series "Series") after filling trailing (and only trailing) null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -916,13 +916,13 @@ SeriesHE.fillna\_trailing(*value*, */*)[](#static_frame.SeriesHE.fillna_trail
     ```
 
 SeriesHE.head(*count=5*, */*)[](#static_frame.SeriesHE.head "Link to this definition")
-:   Return a [`Series`](series-selector.html#Series "Series") consisting only of the top elements as specified by `count`.
+:   Return a [`Series`](series-selector.md#Series "Series") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Series`](series-selector.html#Series "Series")
+    :   **count** – Number of elements to be returned from the top of the [`Series`](series-selector.md#Series "Series")
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((10.235, 2.124, np.nan, 8.734, np.nan), index=('a', 'b', 'c', 'd', 'e'))
@@ -1095,7 +1095,7 @@ SeriesHE.iloc\_notna\_last(*\**, *fill\_value=-1*)[](#static_frame.SeriesHE.i
     ```
 
 SeriesHE.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.SeriesHE.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1118,14 +1118,14 @@ SeriesHE.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static
     ```
 
 SeriesHE.insert\_after(*key*, *container*, */*)[](#static_frame.SeriesHE.insert_after "Link to this definition")
-:   Create a new [`Series`](series-selector.html#Series "Series") by inserting a [`Series`](series-selector.html#Series "Series") at the position after the label specified by `key`.
+:   Create a new [`Series`](series-selector.md#Series "Series") by inserting a [`Series`](series-selector.md#Series "Series") at the position after the label specified by `key`.
 
     Parameters:
     :   * **key** – Label after which the new container will be inserted.
         * **container** – Container to be inserted.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -1144,14 +1144,14 @@ SeriesHE.insert\_after(*key*, *container*, */*)[](#static_frame.SeriesHE.inse
     ```
 
 SeriesHE.insert\_before(*key*, *container*, */*)[](#static_frame.SeriesHE.insert_before "Link to this definition")
-:   Create a new [`Series`](series-selector.html#Series "Series") by inserting a [`Series`](series-selector.html#Series "Series") at the position before the label specified by `key`.
+:   Create a new [`Series`](series-selector.md#Series "Series") by inserting a [`Series`](series-selector.md#Series "Series") at the position before the label specified by `key`.
 
     Parameters:
     :   * **key** – Label before which the new container will be inserted.
         * **container** – Container to be inserted.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s1 = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -1170,7 +1170,7 @@ SeriesHE.insert\_before(*key*, *container*, */*)[](#static_frame.SeriesHE.ins
     ```
 
 SeriesHE.isfalsy()[](#static_frame.SeriesHE.isfalsy "Link to this definition")
-:   Return a same-indexed, Boolean [`Series`](series-selector.html#Series "Series") indicating which values are falsy.
+:   Return a same-indexed, Boolean [`Series`](series-selector.md#Series "Series") indicating which values are falsy.
 
     ```
     >>> s = sf.SeriesHE((2, '', 19, 0, None), index=('a', 'b', 'c', 'd', 'e'))
@@ -1199,7 +1199,7 @@ SeriesHE.isin(*other*, */*)[](#static_frame.SeriesHE.isin "Link to this defin
 :   Return a same-sized Boolean Series that shows if the same-positioned element is in the iterable passed to the function.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((2, '', 19, 0, None), index=('a', 'b', 'c', 'd', 'e'))
@@ -1216,7 +1216,7 @@ SeriesHE.isin(*other*, */*)[](#static_frame.SeriesHE.isin "Link to this defin
     ```
 
 SeriesHE.isna()[](#static_frame.SeriesHE.isna "Link to this definition")
-:   Return a same-indexed, Boolean [`Series`](series-selector.html#Series "Series") indicating which values are NaN or None.
+:   Return a same-indexed, Boolean [`Series`](series-selector.md#Series "Series") indicating which values are NaN or None.
 
     ```
     >>> s = sf.SeriesHE((10.235, 2.124, np.nan, 8.734, np.nan), index=('a', 'b', 'c', 'd', 'e'))
@@ -1392,7 +1392,7 @@ SeriesHE.loc\_notna\_last(*\**, *fill\_value=-1*)[](#static_frame.SeriesHE.lo
     ```
 
 SeriesHE.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.SeriesHE.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -1500,7 +1500,7 @@ SeriesHE.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Serie
     ```
 
 SeriesHE.notfalsy()[](#static_frame.SeriesHE.notfalsy "Link to this definition")
-:   Return a same-indexed, Boolean [`Series`](series-selector.html#Series "Series") indicating which values are falsy.
+:   Return a same-indexed, Boolean [`Series`](series-selector.md#Series "Series") indicating which values are falsy.
 
     ```
     >>> s = sf.SeriesHE((2, '', 19, 0, None), index=('a', 'b', 'c', 'd', 'e'))
@@ -1526,7 +1526,7 @@ SeriesHE.notfalsy()[](#static_frame.SeriesHE.notfalsy "Link to this definitio
     ```
 
 SeriesHE.notna()[](#static_frame.SeriesHE.notna "Link to this definition")
-:   Return a same-indexed, Boolean [`Series`](series-selector.html#Series "Series") indicating which values are NaN or None.
+:   Return a same-indexed, Boolean [`Series`](series-selector.md#Series "Series") indicating which values are NaN or None.
 
     ```
     >>> s = sf.SeriesHE((10.235, 2.124, np.nan, 8.734, np.nan), index=('a', 'b', 'c', 'd', 'e'))
@@ -1582,7 +1582,7 @@ SeriesHE.rank\_dense(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_va
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((8, 5, 0, 8), index=('a', 'b', 'c', 'd'))
@@ -1615,7 +1615,7 @@ SeriesHE.rank\_max(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_valu
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((8, 5, 0, 8), index=('a', 'b', 'c', 'd'))
@@ -1648,7 +1648,7 @@ SeriesHE.rank\_mean(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_val
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((8, 5, 0, 8), index=('a', 'b', 'c', 'd'))
@@ -1681,7 +1681,7 @@ SeriesHE.rank\_min(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_valu
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((8, 5, 0, 8), index=('a', 'b', 'c', 'd'))
@@ -1714,7 +1714,7 @@ SeriesHE.rank\_ordinal(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_
         * **fill\_value** – A value to be used to fill NA values ignored in ranking when `skipna` is `True`. The default is `np.nan` but can be set to any value to force NA values to the “bottom” or “top” of a rank as needed.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((8, 5, 0, 8), index=('a', 'b', 'c', 'd'))
@@ -1738,7 +1738,7 @@ SeriesHE.rank\_ordinal(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_
     ```
 
 SeriesHE.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[](#static_frame.SeriesHE.rehierarch "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") with new a hierarchy based on the supplied `depth_map`.
+:   Return a new [`Series`](series-selector.md#Series "Series") with new a hierarchy based on the supplied `depth_map`.
 
     ```
     >>> s = sf.SeriesHE((3, 2, 8, 7), index=sf.IndexHierarchy.from_product((1, 2), ('a', 'b')))
@@ -1762,13 +1762,13 @@ SeriesHE.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[](#s
     ```
 
 SeriesHE.reindex(*index*, *\**, *fill\_value=nan*, *own\_index=False*, *check\_equals=True*)[](#static_frame.SeriesHE.reindex "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") with labels defined by the provided index. The size and ordering of the data is determined by the newly provided index, where data will continue to be aligned under labels found in both the new and the old index. Labels found only in the new index will be filled with `fill_value`.
+:   Return a new [`Series`](series-selector.md#Series "Series") with labels defined by the provided index. The size and ordering of the data is determined by the newly provided index, where data will continue to be aligned under labels found in both the new and the old index. Labels found only in the new index will be filled with `fill_value`.
 
     Parameters:
     :   * **index** – An iterable of unique, hashable values, or another `Index` or `IndexHierarchy`, to be used as the labels of the index.
         * **columns** – An iterable of unique, hashable values, or another `Index` or `IndexHierarchy`, to be used as the labels of the index.
         * **fill\_value** – A value to be used to fill space created by a new index that has values not found in the previous index.
-        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series"). Primarily used by internal clients.
+        * **own\_index** – Flag the passed index as ownable by this [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series"). Primarily used by internal clients.
 
     ```
     >>> s = sf.SeriesHE((8, 5, 0, 8), index=('a', 'b', 'c', 'd'))
@@ -1792,7 +1792,7 @@ SeriesHE.reindex(*index*, *\**, *fill\_value=nan*, *own\_index=False*, *check\_e
     ```
 
 SeriesHE.relabel(*index*, *\**, *index\_constructor=None*)[](#static_frame.SeriesHE.relabel "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series") with transformed labels on the index. The size and ordering of the data is never changed in a relabeling operation. The resulting index must be unique.
+:   Return a new [`Series`](series-selector.md#Series "Series") with transformed labels on the index. The size and ordering of the data is never changed in a relabeling operation. The resulting index must be unique.
 
     Parameters:
     :   **index** – One of the following types, used to create new index labels with the same size as the previous index. (a) A mapping (as a dictionary or `Series`), used to lookup and transform the labels in the previous index. Labels not found in the mapping will be reused. (b) A function, returning a hashable, that is applied to each label in the previous index. (c) The `IndexAutoFactory` type, to apply auto-incremented integer labels. (d) An `Index` initializer, i.e., either an iterable of hashables or an `Index` instance.
@@ -1831,7 +1831,7 @@ SeriesHE.relabel(*index*, *\**, *index\_constructor=None*)[](#static_frame.Se
     ```
 
 SeriesHE.relabel\_flat()[](#static_frame.SeriesHE.relabel_flat "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series"), where an `IndexHierarchy` (if defined) is replaced with a flat, one-dimension index of tuples.
+:   Return a new [`Series`](series-selector.md#Series "Series"), where an `IndexHierarchy` (if defined) is replaced with a flat, one-dimension index of tuples.
 
     ```
     >>> s = sf.SeriesHE((3, 2, 8, 7), index=sf.IndexHierarchy.from_product((1, 2), ('a', 'b')))
@@ -1855,7 +1855,7 @@ SeriesHE.relabel\_flat()[](#static_frame.SeriesHE.relabel_flat "Link to this 
     ```
 
 SeriesHE.relabel\_level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.SeriesHE.relabel_level_add "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
+:   Return a new [`Series`](series-selector.md#Series "Series"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
 
     Parameters:
     :   **level** – A hashable value to be used as a new root level, extending or creating an `IndexHierarchy`
@@ -1882,7 +1882,7 @@ SeriesHE.relabel\_level\_add(*level*, */*, *\**, *index\_constructor=None*)[]
     ```
 
 SeriesHE.relabel\_level\_drop(*count=1*, */*)[](#static_frame.SeriesHE.relabel_level_drop "Link to this definition")
-:   Return a new [`Series`](series-selector.html#Series "Series"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
+:   Return a new [`Series`](series-selector.md#Series "Series"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
 
     Parameters:
     :   **count** – A positive integer drops that many outer-most (root) levels; a negative integer drops that many inner-most (leaf)levels.
@@ -1936,7 +1936,7 @@ SeriesHE.roll(*shift*, */*, *\**, *include\_index=False*)[](#static_frame.Ser
         * **include\_index** – Determine if the Index is shifted with the underlying data.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((2, 8, 19, 34, 54), index=('a', 'b', 'c', 'd', 'e'))
@@ -1996,7 +1996,7 @@ SeriesHE.shift(*shift*, */*, *\**, *fill\_value=nan*)[](#static_frame.SeriesH
         * **fill\_value** – Value to be used to fill data missing after the shift.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((2, 8, 19, 34, 54), index=('a', 'b', 'c', 'd', 'e'))
@@ -2031,7 +2031,7 @@ SeriesHE.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[
         * **key** – A function that is used to pre-process the selected columns or rows and derive new values to sort by.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((8, 5, 0, 8), index=('a', 'b', 'c', 'd'))
@@ -2072,7 +2072,7 @@ SeriesHE.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[�
         * **key** – A function that is used to pre-process the selected columns or rows and derive new values to sort by.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((8, 5, 0, 8), index=('a', 'b', 'c', 'd'))
@@ -2146,14 +2146,14 @@ SeriesHE.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_
     ```
 
 SeriesHE.tail(*count=5*, */*)[](#static_frame.SeriesHE.tail "Link to this definition")
-:   Return a [`Series`](series-selector.html#Series "Series") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Series`](series-selector.md#Series "Series") consisting only of the bottom elements as specified by `count`.
     :   s
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Series`](series-selector.html#Series "Series")
+    :   **count** – Number of elements to be returned from the bottom of the [`Series`](series-selector.md#Series "Series")
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((10.235, 2.124, np.nan, 8.734, np.nan), index=('a', 'b', 'c', 'd', 'e'))
@@ -2179,7 +2179,7 @@ SeriesHE.transpose()[](#static_frame.SeriesHE.transpose "Link to this definit
 :   Transpose. For a 1D immutable container, this returns a reference to self.
 
     Returns:
-    :   [`Series`](series-selector.html#Series "Series")
+    :   [`Series`](series-selector.md#Series "Series")
 
     ```
     >>> s = sf.SeriesHE((10, 2, 8), index=('a', 'b', 'c'))
@@ -2264,10 +2264,10 @@ SeriesHE.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_f
 
     ```
 
-[SeriesHE](series_he.html#api-detail-serieshe): [Constructor](series_he-constructor.html#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.html#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.html#api-detail-serieshe-attribute) | [Method](#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-detail-serieshe-dictionary-like) | [Display](series_he-display.html#api-detail-serieshe-display) | [Assignment](series_he-assignment.html#api-detail-serieshe-assignment) | [Selector](series_he-selector.html#api-detail-serieshe-selector) | [Iterator](series_he-iterator.html#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-attribute.html "Detail: SeriesHE: Attribute")
-[Next](series_he-dictionary_like.html "Detail: SeriesHE: Dictionary-Like")
+[Previous](series_he-attribute.md "Detail: SeriesHE: Attribute")
+[Next](series_he-dictionary_like.md "Detail: SeriesHE: Dictionary-Like")
 
 ---
 

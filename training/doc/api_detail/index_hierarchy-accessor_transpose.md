@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexHierarchy: Accessor Transpose
 * [View page source](../_sources/api_detail/index_hierarchy-accessor_transpose.rst.txt)
 
-[Previous](index_hierarchy-accessor_string.html "Detail: IndexHierarchy: Accessor String")
-[Next](index_hierarchy-accessor_regular_expression.html "Detail: IndexHierarchy: Accessor Regular Expression")
+[Previous](index_hierarchy-accessor_string.md "Detail: IndexHierarchy: Accessor String")
+[Next](index_hierarchy-accessor_regular_expression.md "Detail: IndexHierarchy: Accessor Regular Expression")
 
 ---
 
 # Detail: IndexHierarchy: Accessor Transpose[](#detail-indexhierarchy-accessor-transpose "Link to this heading")
 
-[Overview: IndexHierarchy: Accessor Transpose](../api_overview/index_hierarchy-accessor_transpose.html#api-overview-indexhierarchy-accessor-transpose)
+[Overview: IndexHierarchy: Accessor Transpose](../api_overview/index_hierarchy-accessor_transpose.md#api-overview-indexhierarchy-accessor-transpose)
 
 IndexHierarchy.via\_T.via\_fill\_value(*fill\_value*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.via\_fill\_value(*fill\_value*, */*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.via_fill_value)
+    InterfaceTranspose.via\_fill\_value(*fill\_value*, */*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.via_fill_value)
     :   Interface for using binary operators and methods with a pre-defined fill value.
 
     ```
@@ -160,7 +160,7 @@ IndexHierarchy.via\_T.\_\_add\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__add__)
+    InterfaceTranspose.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__add__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -183,7 +183,7 @@ IndexHierarchy.via\_T.\_\_sub\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__sub__)
+    InterfaceTranspose.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__sub__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -206,7 +206,7 @@ IndexHierarchy.via\_T.\_\_mul\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__mul__)
+    InterfaceTranspose.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__mul__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -229,7 +229,7 @@ IndexHierarchy.via\_T.\_\_truediv\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__truediv__)
+    InterfaceTranspose.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__truediv__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -252,7 +252,7 @@ IndexHierarchy.via\_T.\_\_floordiv\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__floordiv__)
+    InterfaceTranspose.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__floordiv__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -275,7 +275,7 @@ IndexHierarchy.via\_T.\_\_mod\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__mod__)
+    InterfaceTranspose.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__mod__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -298,7 +298,7 @@ IndexHierarchy.via\_T.\_\_pow\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__pow__)
+    InterfaceTranspose.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__pow__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -321,7 +321,7 @@ IndexHierarchy.via\_T.\_\_lshift\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__lshift__)
+    InterfaceTranspose.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__lshift__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -350,7 +350,7 @@ IndexHierarchy.via\_T.\_\_rshift\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rshift__)
+    InterfaceTranspose.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rshift__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -379,7 +379,7 @@ IndexHierarchy.via\_T.\_\_and\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__and__)
+    InterfaceTranspose.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__and__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((False, True, True), (True, True, True), (False, True, False)), name=('x', 'y', 'z'))
@@ -400,7 +400,7 @@ IndexHierarchy.via\_T.\_\_xor\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__xor__)
+    InterfaceTranspose.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__xor__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((False, True, True), (True, True, True), (False, True, False)), name=('x', 'y', 'z'))
@@ -421,7 +421,7 @@ IndexHierarchy.via\_T.\_\_or\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__or__)
+    InterfaceTranspose.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__or__)
     :   Return self|value.
 
     ```
@@ -443,7 +443,7 @@ IndexHierarchy.via\_T.\_\_lt\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__lt__)
+    InterfaceTranspose.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__lt__)
     :   Return self<value.
 
     ```
@@ -467,7 +467,7 @@ IndexHierarchy.via\_T.\_\_le\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__le__)
+    InterfaceTranspose.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__le__)
     :   Return self<=value.
 
     ```
@@ -491,7 +491,7 @@ IndexHierarchy.via\_T.\_\_eq\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__eq__)
+    InterfaceTranspose.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__eq__)
     :   Return self==value.
 
     ```
@@ -515,7 +515,7 @@ IndexHierarchy.via\_T.\_\_ne\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__ne__)
+    InterfaceTranspose.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__ne__)
     :   Return self!=value.
 
     ```
@@ -539,7 +539,7 @@ IndexHierarchy.via\_T.\_\_gt\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__gt__)
+    InterfaceTranspose.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__gt__)
     :   Return self>value.
 
     ```
@@ -563,7 +563,7 @@ IndexHierarchy.via\_T.\_\_ge\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__ge__)
+    InterfaceTranspose.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__ge__)
     :   Return self>=value.
 
     ```
@@ -587,7 +587,7 @@ IndexHierarchy.via\_T.\_\_radd\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__radd__)
+    InterfaceTranspose.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__radd__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -610,7 +610,7 @@ IndexHierarchy.via\_T.\_\_rsub\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rsub__)
+    InterfaceTranspose.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rsub__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -633,7 +633,7 @@ IndexHierarchy.via\_T.\_\_rmul\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rmul__)
+    InterfaceTranspose.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rmul__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -656,7 +656,7 @@ IndexHierarchy.via\_T.\_\_rtruediv\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rtruediv__)
+    InterfaceTranspose.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rtruediv__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -679,7 +679,7 @@ IndexHierarchy.via\_T.\_\_rfloordiv\_\_(*other*)
 :   IndexHierarchy.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.html#InterfaceTranspose.__rfloordiv__)
+    InterfaceTranspose.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.__rfloordiv__)
 
     ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024), (1, np.nan), (10, 2048), (np.nan, np.nan)), name=('x', 'y'))
@@ -698,10 +698,10 @@ IndexHierarchy.via\_T.\_\_rfloordiv\_\_(*other*)
 
     ```
 
-[IndexHierarchy](index_hierarchy.html#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-detail-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-accessor_string.html "Detail: IndexHierarchy: Accessor String")
-[Next](index_hierarchy-accessor_regular_expression.html "Detail: IndexHierarchy: Accessor Regular Expression")
+[Previous](index_hierarchy-accessor_string.md "Detail: IndexHierarchy: Accessor String")
+[Next](index_hierarchy-accessor_regular_expression.md "Detail: IndexHierarchy: Accessor Regular Expression")
 
 ---
 

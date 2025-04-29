@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,38 +135,38 @@ API Detail
 * Overview: FrameHE: Assignment
 * [View page source](../_sources/api_overview/frame_he-assignment.rst.txt)
 
-[Previous](frame_he-display.html "Overview: FrameHE: Display")
-[Next](frame_he-selector.html "Overview: FrameHE: Selector")
+[Previous](frame_he-display.md "Overview: FrameHE: Display")
+[Next](frame_he-selector.md "Overview: FrameHE: Selector")
 
 ---
 
 # Overview: FrameHE: Assignment[](#overview-framehe-assignment "Link to this heading")
 
-[Detail: FrameHE: Assignment](../api_detail/frame_he-assignment.html#api-detail-framehe-assignment)
+[Detail: FrameHE: Assignment](../api_detail/frame_he-assignment.md#api-detail-framehe-assignment)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign) | `FrameHE.assign[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-apply) | `FrameHE.assign[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-apply-element) | `FrameHE.assign[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-apply-element-items) | `FrameHE.assign[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-iloc) | `FrameHE.assign.iloc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-iloc-apply) | `FrameHE.assign.iloc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-iloc-apply-element) | `FrameHE.assign.iloc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-iloc-apply-element-items) | `FrameHE.assign.iloc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-loc) | `FrameHE.assign.loc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-loc-apply) | `FrameHE.assign.loc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-loc-apply-element) | `FrameHE.assign.loc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-loc-apply-element-items) | `FrameHE.assign.loc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-bloc) | `FrameHE.assign.bloc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-bloc-apply) | `FrameHE.assign.bloc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-bloc-apply-element) | `FrameHE.assign.bloc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
-| [Detail](../api_detail/frame_he-assignment.html#api-sig-framehe-assign-bloc-apply-element-items) | `FrameHE.assign.bloc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign) | `FrameHE.assign[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-apply) | `FrameHE.assign[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-apply-element) | `FrameHE.assign[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-apply-element-items) | `FrameHE.assign[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-iloc) | `FrameHE.assign.iloc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-iloc-apply) | `FrameHE.assign.iloc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-iloc-apply-element) | `FrameHE.assign.iloc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-iloc-apply-element-items) | `FrameHE.assign.iloc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-loc) | `FrameHE.assign.loc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-loc-apply) | `FrameHE.assign.loc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-loc-apply-element) | `FrameHE.assign.loc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-loc-apply-element-items) | `FrameHE.assign.loc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-bloc) | `FrameHE.assign.bloc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-bloc-apply) | `FrameHE.assign.bloc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-bloc-apply-element) | `FrameHE.assign.bloc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
+| [Detail](../api_detail/frame_he-assignment.md#api-sig-framehe-assign-bloc-apply-element-items) | `FrameHE.assign.bloc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
 
-[FrameHE](frame_he.html#api-overview-framehe): [Constructor](frame_he-constructor.html#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.html#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.html#api-overview-framehe-attribute) | [Method](frame_he-method.html#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-overview-framehe-dictionary-like) | [Display](frame_he-display.html#api-overview-framehe-display) | [Assignment](#api-overview-framehe-assignment) | [Selector](frame_he-selector.html#api-overview-framehe-selector) | [Iterator](frame_he-iterator.html#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-overview-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-overview-framehe): [Constructor](frame_he-constructor.md#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.md#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.md#api-overview-framehe-attribute) | [Method](frame_he-method.md#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-overview-framehe-dictionary-like) | [Display](frame_he-display.md#api-overview-framehe-display) | [Assignment](#api-overview-framehe-assignment) | [Selector](frame_he-selector.md#api-overview-framehe-selector) | [Iterator](frame_he-iterator.md#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-overview-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-overview-framehe-accessor-reduce)
 
-[Previous](frame_he-display.html "Overview: FrameHE: Display")
-[Next](frame_he-selector.html "Overview: FrameHE: Selector")
+[Previous](frame_he-display.md "Overview: FrameHE: Display")
+[Next](frame_he-selector.md "Overview: FrameHE: Selector")
 
 ---
 

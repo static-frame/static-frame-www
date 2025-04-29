@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexMinute: Display
 * [View page source](../_sources/api_overview/index_minute-display.rst.txt)
 
-[Previous](index_minute-dictionary_like.html "Overview: IndexMinute: Dictionary-Like")
-[Next](index_minute-selector.html "Overview: IndexMinute: Selector")
+[Previous](index_minute-dictionary_like.md "Overview: IndexMinute: Dictionary-Like")
+[Next](index_minute-selector.md "Overview: IndexMinute: Selector")
 
 ---
 
 # Overview: IndexMinute: Display[](#overview-indexminute-display "Link to this heading")
 
-[Detail: IndexMinute: Display](../api_detail/index_minute-display.html#api-detail-indexminute-display)
+[Detail: IndexMinute: Display](../api_detail/index_minute-display.md#api-detail-indexminute-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-display.html#api-sig-indexminute-interface) | [`IndexMinute.interface`](../api_detail/index_minute-display.html#IndexMinute.interface "IndexMinute.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_minute-display.html#api-sig-indexminute-repr) | `IndexMinute.__repr__()` |  |
-| [Detail](../api_detail/index_minute-display.html#api-sig-indexminute-str) | `IndexMinute.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_minute-display.html#api-sig-indexminute-display) | `IndexMinute.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_minute-display.html#api-sig-indexminute-display-tall) | `IndexMinute.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_minute-display.html#api-sig-indexminute-display-wide) | `IndexMinute.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_minute-display.md#api-sig-indexminute-interface) | [`IndexMinute.interface`](../api_detail/index_minute-display.md#IndexMinute.interface "IndexMinute.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_minute-display.md#api-sig-indexminute-repr) | `IndexMinute.__repr__()` |  |
+| [Detail](../api_detail/index_minute-display.md#api-sig-indexminute-str) | `IndexMinute.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_minute-display.md#api-sig-indexminute-display) | `IndexMinute.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_minute-display.md#api-sig-indexminute-display-tall) | `IndexMinute.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_minute-display.md#api-sig-indexminute-display-wide) | `IndexMinute.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-dictionary_like.html "Overview: IndexMinute: Dictionary-Like")
-[Next](index_minute-selector.html "Overview: IndexMinute: Selector")
+[Previous](index_minute-dictionary_like.md "Overview: IndexMinute: Dictionary-Like")
+[Next](index_minute-selector.md "Overview: IndexMinute: Selector")
 
 ---
 

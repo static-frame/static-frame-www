@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: ClinicResult: Method
 * [View page source](../_sources/api_detail/clinic_result-method.rst.txt)
 
-[Previous](clinic_result-attribute.html "Detail: ClinicResult: Attribute")
-[Next](clinic_result-dictionary_like.html "Detail: ClinicResult: Dictionary-Like")
+[Previous](clinic_result-attribute.md "Detail: ClinicResult: Attribute")
+[Next](clinic_result-dictionary_like.md "Detail: ClinicResult: Dictionary-Like")
 
 ---
 
 # Detail: ClinicResult: Method[](#detail-clinicresult-method "Link to this heading")
 
-[Overview: ClinicResult: Method](../api_overview/clinic_result-method.html#api-overview-clinicresult-method)
+[Overview: ClinicResult: Method](../api_overview/clinic_result-method.md#api-overview-clinicresult-method)
 
-ClinicResult.\_\_bool\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#ClinicResult.__bool__)[](#static_frame.ClinicResult.__bool__ "Link to this definition")
+ClinicResult.\_\_bool\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#ClinicResult.__bool__)[](#static_frame.ClinicResult.__bool__ "Link to this definition")
 :   Return True if there are validation issues.
 
     ```
@@ -165,7 +165,7 @@ ClinicResult.\_\_bool\_\_()[[source]](../_modules/static_frame/core/type_clinic.
 
     ```
 
-ClinicResult.\_\_len\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#ClinicResult.__len__)[](#static_frame.ClinicResult.__len__ "Link to this definition")
+ClinicResult.\_\_len\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#ClinicResult.__len__)[](#static_frame.ClinicResult.__len__ "Link to this definition")
 :   ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f
@@ -184,10 +184,10 @@ ClinicResult.\_\_len\_\_()[[source]](../_modules/static_frame/core/type_clinic.h
 
     ```
 
-[ClinicResult](clinic_result.html#api-detail-clinicresult): [Constructor](clinic_result-constructor.html#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-detail-clinicresult-attribute) | [Method](#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-detail-clinicresult-display)
+[ClinicResult](clinic_result.md#api-detail-clinicresult): [Constructor](clinic_result-constructor.md#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-detail-clinicresult-attribute) | [Method](#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-detail-clinicresult-display)
 
-[Previous](clinic_result-attribute.html "Detail: ClinicResult: Attribute")
-[Next](clinic_result-dictionary_like.html "Detail: ClinicResult: Dictionary-Like")
+[Previous](clinic_result-attribute.md "Detail: ClinicResult: Attribute")
+[Next](clinic_result-dictionary_like.md "Detail: ClinicResult: Dictionary-Like")
 
 ---
 

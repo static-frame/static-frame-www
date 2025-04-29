@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: Index: Dictionary-Like
 * [View page source](../_sources/api_overview/index-dictionary_like.rst.txt)
 
-[Previous](index-method.html "Overview: Index: Method")
-[Next](index-display.html "Overview: Index: Display")
+[Previous](index-method.md "Overview: Index: Method")
+[Next](index-display.md "Overview: Index: Display")
 
 ---
 
 # Overview: Index: Dictionary-Like[](#overview-index-dictionary-like "Link to this heading")
 
-[Detail: Index: Dictionary-Like](../api_detail/index-dictionary_like.html#api-detail-index-dictionary-like)
+[Detail: Index: Dictionary-Like](../api_detail/index-dictionary_like.md#api-detail-index-dictionary-like)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-dictionary_like.html#api-sig-index-contains) | `Index.__contains__(value)` | Return True if value in the labels. |
-| [Detail](../api_detail/index-dictionary_like.html#api-sig-index-iter) | `Index.__iter__()` | Iterate over labels. |
-| [Detail](../api_detail/index-dictionary_like.html#api-sig-index-reversed) | `Index.__reversed__()` | Returns a reverse iterator on the index labels. |
-| [Detail](../api_detail/index-dictionary_like.html#api-sig-index-values) | `Index.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
+| [Detail](../api_detail/index-dictionary_like.md#api-sig-index-contains) | `Index.__contains__(value)` | Return True if value in the labels. |
+| [Detail](../api_detail/index-dictionary_like.md#api-sig-index-iter) | `Index.__iter__()` | Iterate over labels. |
+| [Detail](../api_detail/index-dictionary_like.md#api-sig-index-reversed) | `Index.__reversed__()` | Returns a reverse iterator on the index labels. |
+| [Detail](../api_detail/index-dictionary_like.md#api-sig-index-values) | `Index.values` | A 1D NumPy array of the values in the Index. This array will have the same dtype… |
 
-[Index](index.html#api-overview-index): [Constructor](index-constructor.html#api-overview-index-constructor) | [Exporter](index-exporter.html#api-overview-index-exporter) | [Attribute](index-attribute.html#api-overview-index-attribute) | [Method](index-method.html#api-overview-index-method) | [Dictionary-Like](#api-overview-index-dictionary-like) | [Display](index-display.html#api-overview-index-display) | [Selector](index-selector.html#api-overview-index-selector) | [Iterator](index-iterator.html#api-overview-index-iterator) | [Operator Binary](index-operator_binary.html#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.html#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.html#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.html#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.html#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.html#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.html#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.html#api-overview-index-accessor-type-clinic)
+[Index](index.md#api-overview-index): [Constructor](index-constructor.md#api-overview-index-constructor) | [Exporter](index-exporter.md#api-overview-index-exporter) | [Attribute](index-attribute.md#api-overview-index-attribute) | [Method](index-method.md#api-overview-index-method) | [Dictionary-Like](#api-overview-index-dictionary-like) | [Display](index-display.md#api-overview-index-display) | [Selector](index-selector.md#api-overview-index-selector) | [Iterator](index-iterator.md#api-overview-index-iterator) | [Operator Binary](index-operator_binary.md#api-overview-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-overview-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-overview-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-overview-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-overview-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-overview-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-overview-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-overview-index-accessor-type-clinic)
 
-[Previous](index-method.html "Overview: Index: Method")
-[Next](index-display.html "Overview: Index: Display")
+[Previous](index-method.md "Overview: Index: Method")
+[Next](index-display.md "Overview: Index: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Detail: HLoc: Method
 * [View page source](../_sources/api_detail/hloc-method.rst.txt)
 
-[Previous](hloc-attribute.html "Detail: HLoc: Attribute")
-[Next](hloc-dictionary_like.html "Detail: HLoc: Dictionary-Like")
+[Previous](hloc-attribute.md "Detail: HLoc: Attribute")
+[Next](hloc-dictionary_like.md "Detail: HLoc: Dictionary-Like")
 
 ---
 
 # Detail: HLoc: Method[](#detail-hloc-method "Link to this heading")
 
-[Overview: HLoc: Method](../api_overview/hloc-method.html#api-overview-hloc-method)
+[Overview: HLoc: Method](../api_overview/hloc-method.md#api-overview-hloc-method)
 
-HLoc.\_\_len\_\_()[[source]](../_modules/static_frame/core/hloc.html#HLoc.__len__)[](#static_frame.HLoc.__len__ "Link to this definition")
+HLoc.\_\_len\_\_()[[source]](../_modules/static_frame/core/hloc.md#HLoc.__len__)[](#static_frame.HLoc.__len__ "Link to this definition")
 :   ```
     >>> len(sf.HLoc[:, ['a', 'b'], 2048:])
     3
 
     ```
 
-[HLoc](hloc.html#api-detail-hloc): [Constructor](hloc-constructor.html#api-detail-hloc-constructor) | [Attribute](hloc-attribute.html#api-detail-hloc-attribute) | [Method](#api-detail-hloc-method) | [Dictionary-Like](hloc-dictionary_like.html#api-detail-hloc-dictionary-like) | [Display](hloc-display.html#api-detail-hloc-display)
+[HLoc](hloc.md#api-detail-hloc): [Constructor](hloc-constructor.md#api-detail-hloc-constructor) | [Attribute](hloc-attribute.md#api-detail-hloc-attribute) | [Method](#api-detail-hloc-method) | [Dictionary-Like](hloc-dictionary_like.md#api-detail-hloc-dictionary-like) | [Display](hloc-display.md#api-detail-hloc-display)
 
-[Previous](hloc-attribute.html "Detail: HLoc: Attribute")
-[Next](hloc-dictionary_like.html "Detail: HLoc: Dictionary-Like")
+[Previous](hloc-attribute.md "Detail: HLoc: Attribute")
+[Next](hloc-dictionary_like.md "Detail: HLoc: Dictionary-Like")
 
 ---
 

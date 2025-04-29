@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: Frame: Selector
 * [View page source](../_sources/api_overview/frame-selector.rst.txt)
 
-[Previous](frame-assignment.html "Overview: Frame: Assignment")
-[Next](frame-iterator.html "Overview: Frame: Iterator")
+[Previous](frame-assignment.md "Overview: Frame: Assignment")
+[Next](frame-iterator.md "Overview: Frame: Iterator")
 
 ---
 
 # Overview: Frame: Selector[](#overview-frame-selector "Link to this heading")
 
-[Detail: Frame: Selector](../api_detail/frame-selector.html#api-detail-frame-selector)
+[Detail: Frame: Selector](../api_detail/frame-selector.md#api-detail-frame-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-bloc) | `Frame.bloc[key]` |  |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-drop) | `Frame.drop[key]` | Label-based selection. |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-drop-iloc) | `Frame.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-drop-loc) | `Frame.drop.loc[key]` |  |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-mask) | `Frame.mask[key]` | Label-based selection. |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-mask-iloc) | `Frame.mask.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-mask-loc) | `Frame.mask.loc[key]` |  |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-masked-array) | `Frame.masked_array[key]` | Label-based selection. |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-masked-array-iloc) | `Frame.masked_array.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-masked-array-loc) | `Frame.masked_array.loc[key]` |  |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame) | `Frame[key]` | Selector of columns by label. Args: key: A loc selector, either a label, a list… |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-iloc) | `Frame.iloc[key]` |  |
-| [Detail](../api_detail/frame-selector.html#api-sig-frame-loc) | `Frame.loc[key]` |  |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-bloc) | `Frame.bloc[key]` |  |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-drop) | `Frame.drop[key]` | Label-based selection. |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-drop-iloc) | `Frame.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-drop-loc) | `Frame.drop.loc[key]` |  |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-mask) | `Frame.mask[key]` | Label-based selection. |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-mask-iloc) | `Frame.mask.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-mask-loc) | `Frame.mask.loc[key]` |  |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-masked-array) | `Frame.masked_array[key]` | Label-based selection. |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-masked-array-iloc) | `Frame.masked_array.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-masked-array-loc) | `Frame.masked_array.loc[key]` |  |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame) | `Frame[key]` | Selector of columns by label. Args: key: A loc selector, either a label, a list… |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-iloc) | `Frame.iloc[key]` |  |
+| [Detail](../api_detail/frame-selector.md#api-sig-frame-loc) | `Frame.loc[key]` |  |
 
-[Frame](frame.html#api-overview-frame): [Constructor](frame-constructor.html#api-overview-frame-constructor) | [Exporter](frame-exporter.html#api-overview-frame-exporter) | [Attribute](frame-attribute.html#api-overview-frame-attribute) | [Method](frame-method.html#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-overview-frame-dictionary-like) | [Display](frame-display.html#api-overview-frame-display) | [Assignment](frame-assignment.html#api-overview-frame-assignment) | [Selector](#api-overview-frame-selector) | [Iterator](frame-iterator.html#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-overview-frame-accessor-reduce)
+[Frame](frame.md#api-overview-frame): [Constructor](frame-constructor.md#api-overview-frame-constructor) | [Exporter](frame-exporter.md#api-overview-frame-exporter) | [Attribute](frame-attribute.md#api-overview-frame-attribute) | [Method](frame-method.md#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-overview-frame-dictionary-like) | [Display](frame-display.md#api-overview-frame-display) | [Assignment](frame-assignment.md#api-overview-frame-assignment) | [Selector](#api-overview-frame-selector) | [Iterator](frame-iterator.md#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-overview-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-overview-frame-accessor-reduce)
 
-[Previous](frame-assignment.html "Overview: Frame: Assignment")
-[Next](frame-iterator.html "Overview: Frame: Iterator")
+[Previous](frame-assignment.md "Overview: Frame: Assignment")
+[Next](frame-iterator.md "Overview: Frame: Iterator")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexSecondGO: Accessor Values
 * [View page source](../_sources/api_overview/index_second_go-accessor_values.rst.txt)
 
-[Previous](index_second_go-operator_unary.html "Overview: IndexSecondGO: Operator Unary")
-[Next](index_second_go-accessor_datetime.html "Overview: IndexSecondGO: Accessor Datetime")
+[Previous](index_second_go-operator_unary.md "Overview: IndexSecondGO: Operator Unary")
+[Next](index_second_go-accessor_datetime.md "Overview: IndexSecondGO: Accessor Datetime")
 
 ---
 
 # Overview: IndexSecondGO: Accessor Values[](#overview-indexsecondgo-accessor-values "Link to this heading")
 
-[Detail: IndexSecondGO: Accessor Values](../api_detail/index_second_go-accessor_values.html#api-detail-indexsecondgo-accessor-values)
+[Detail: IndexSecondGO: Accessor Values](../api_detail/index_second_go-accessor_values.md#api-detail-indexsecondgo-accessor-values)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second_go-accessor_values.html#api-sig-indexsecondgo-via-values-apply) | `IndexSecondGO.via_values.apply(func, *args, **kwargs)` |  |
-| [Detail](../api_detail/index_second_go-accessor_values.html#api-sig-indexsecondgo-via-values-array-ufunc) | `IndexSecondGO.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
-| [Detail](../api_detail/index_second_go-accessor_values.html#api-sig-indexsecondgo-via-values-call) | `IndexSecondGO.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
+| [Detail](../api_detail/index_second_go-accessor_values.md#api-sig-indexsecondgo-via-values-apply) | `IndexSecondGO.via_values.apply(func, *args, **kwargs)` |  |
+| [Detail](../api_detail/index_second_go-accessor_values.md#api-sig-indexsecondgo-via-values-array-ufunc) | `IndexSecondGO.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
+| [Detail](../api_detail/index_second_go-accessor_values.md#api-sig-indexsecondgo-via-values-call) | `IndexSecondGO.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
 
-[IndexSecondGO](index_second_go.html#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.html#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-overview-indexsecondgo-operator-unary) | [Accessor Values](#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.html#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-overview-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-overview-indexsecondgo): [Constructor](index_second_go-constructor.md#api-overview-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-overview-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-overview-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-overview-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-overview-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-overview-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-overview-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-overview-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-overview-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-overview-indexsecondgo-operator-unary) | [Accessor Values](#api-overview-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-overview-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-overview-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-overview-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-overview-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-overview-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-operator_unary.html "Overview: IndexSecondGO: Operator Unary")
-[Next](index_second_go-accessor_datetime.html "Overview: IndexSecondGO: Accessor Datetime")
+[Previous](index_second_go-operator_unary.md "Overview: IndexSecondGO: Operator Unary")
+[Next](index_second_go-accessor_datetime.md "Overview: IndexSecondGO: Accessor Datetime")
 
 ---
 

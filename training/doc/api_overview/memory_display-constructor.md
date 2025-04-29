@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: MemoryDisplay: Constructor
 * [View page source](../_sources/api_overview/memory_display-constructor.rst.txt)
 
-[Previous](npy-display.html "Overview: NPY: Display")
-[Next](memory_display-exporter.html "Overview: MemoryDisplay: Exporter")
+[Previous](npy-display.md "Overview: NPY: Display")
+[Next](memory_display-exporter.md "Overview: MemoryDisplay: Exporter")
 
 ---
 
 # Overview: MemoryDisplay: Constructor[](#overview-memorydisplay-constructor "Link to this heading")
 
-[Detail: MemoryDisplay: Constructor](../api_detail/memory_display-constructor.html#api-detail-memorydisplay-constructor)
+[Detail: MemoryDisplay: Constructor](../api_detail/memory_display-constructor.md#api-detail-memorydisplay-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/memory_display-constructor.html#api-sig-memorydisplay-init) | `MemoryDisplay.__init__(frame)` | Initialize an instance with a Frame of byte counts. |
-| [Detail](../api_detail/memory_display-constructor.html#api-sig-memorydisplay-from-any) | `MemoryDisplay.from_any(obj, label_component_pairs)` | Given any slotted object, return a MemoryDisplay instance. |
+| [Detail](../api_detail/memory_display-constructor.md#api-sig-memorydisplay-init) | `MemoryDisplay.__init__(frame)` | Initialize an instance with a Frame of byte counts. |
+| [Detail](../api_detail/memory_display-constructor.md#api-sig-memorydisplay-from-any) | `MemoryDisplay.from_any(obj, label_component_pairs)` | Given any slotted object, return a MemoryDisplay instance. |
 
-[MemoryDisplay](memory_display.html#api-overview-memorydisplay): [Constructor](#api-overview-memorydisplay-constructor) | [Exporter](memory_display-exporter.html#api-overview-memorydisplay-exporter) | [Display](memory_display-display.html#api-overview-memorydisplay-display)
+[MemoryDisplay](memory_display.md#api-overview-memorydisplay): [Constructor](#api-overview-memorydisplay-constructor) | [Exporter](memory_display-exporter.md#api-overview-memorydisplay-exporter) | [Display](memory_display-display.md#api-overview-memorydisplay-display)
 
-[Previous](npy-display.html "Overview: NPY: Display")
-[Next](memory_display-exporter.html "Overview: MemoryDisplay: Exporter")
+[Previous](npy-display.md "Overview: NPY: Display")
+[Next](memory_display-exporter.md "Overview: MemoryDisplay: Exporter")
 
 ---
 

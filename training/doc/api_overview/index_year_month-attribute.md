@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,35 +135,35 @@ API Detail
 * Overview: IndexYearMonth: Attribute
 * [View page source](../_sources/api_overview/index_year_month-attribute.rst.txt)
 
-[Previous](index_year_month-exporter.html "Overview: IndexYearMonth: Exporter")
-[Next](index_year_month-method.html "Overview: IndexYearMonth: Method")
+[Previous](index_year_month-exporter.md "Overview: IndexYearMonth: Exporter")
+[Next](index_year_month-method.md "Overview: IndexYearMonth: Method")
 
 ---
 
 # Overview: IndexYearMonth: Attribute[](#overview-indexyearmonth-attribute "Link to this heading")
 
-[Detail: IndexYearMonth: Attribute](../api_detail/index_year_month-attribute.html#api-detail-indexyearmonth-attribute)
+[Detail: IndexYearMonth: Attribute](../api_detail/index_year_month-attribute.md#api-detail-indexyearmonth-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-static) | `IndexYearMonth.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-depth) | `IndexYearMonth.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-dtype) | `IndexYearMonth.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-index-types) | `IndexYearMonth.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-memory) | `IndexYearMonth.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-mloc) | `IndexYearMonth.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-name) | `IndexYearMonth.name` | A hashable label attached to this container. Returns: Hashable |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-names) | `IndexYearMonth.names` | Provide a suitable iterable of names for usage in output formats that require a… |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-nbytes) | `IndexYearMonth.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-ndim) | `IndexYearMonth.ndim` | Return the number of dimensions. Returns: int |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-positions) | `IndexYearMonth.positions` | Return the immutable positions array. |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-shape) | `IndexYearMonth.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
-| [Detail](../api_detail/index_year_month-attribute.html#api-sig-indexyearmonth-size) | `IndexYearMonth.size` | Return the size of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-static) | `IndexYearMonth.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-depth) | `IndexYearMonth.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-dtype) | `IndexYearMonth.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-index-types) | `IndexYearMonth.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-memory) | `IndexYearMonth.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-mloc) | `IndexYearMonth.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-name) | `IndexYearMonth.name` | A hashable label attached to this container. Returns: Hashable |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-names) | `IndexYearMonth.names` | Provide a suitable iterable of names for usage in output formats that require a… |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-nbytes) | `IndexYearMonth.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-ndim) | `IndexYearMonth.ndim` | Return the number of dimensions. Returns: int |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-positions) | `IndexYearMonth.positions` | Return the immutable positions array. |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-shape) | `IndexYearMonth.shape` | Return a tuple describing the shape of the underlying NumPy array. Returns: tp.T… |
+| [Detail](../api_detail/index_year_month-attribute.md#api-sig-indexyearmonth-size) | `IndexYearMonth.size` | Return the size of the underlying NumPy array. Returns: int |
 
-[IndexYearMonth](index_year_month.html#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.html#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.html#api-overview-indexyearmonth-exporter) | [Attribute](#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.html#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.html#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.html#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.html#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.html#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.html#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.html#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.html#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.html#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.html#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.html#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.html#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.html#api-overview-indexyearmonth-accessor-type-clinic)
+[IndexYearMonth](index_year_month.md#api-overview-indexyearmonth): [Constructor](index_year_month-constructor.md#api-overview-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-overview-indexyearmonth-exporter) | [Attribute](#api-overview-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-overview-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-overview-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-overview-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-overview-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-overview-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-overview-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-overview-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-overview-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-overview-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-overview-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-overview-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-overview-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-overview-indexyearmonth-accessor-type-clinic)
 
-[Previous](index_year_month-exporter.html "Overview: IndexYearMonth: Exporter")
-[Next](index_year_month-method.html "Overview: IndexYearMonth: Method")
+[Previous](index_year_month-exporter.md "Overview: IndexYearMonth: Exporter")
+[Next](index_year_month-method.md "Overview: IndexYearMonth: Method")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,22 +135,22 @@ API Detail
 * Detail: IndexDefaultConstructorFactory: Method
 * [View page source](../_sources/api_detail/index_default_constructor_factory-method.rst.txt)
 
-[Previous](index_default_constructor_factory-constructor.html "Detail: IndexDefaultConstructorFactory: Constructor")
-[Next](index_default_constructor_factory-display.html "Detail: IndexDefaultConstructorFactory: Display")
+[Previous](index_default_constructor_factory-constructor.md "Detail: IndexDefaultConstructorFactory: Constructor")
+[Next](index_default_constructor_factory-display.md "Detail: IndexDefaultConstructorFactory: Display")
 
 ---
 
 # Detail: IndexDefaultConstructorFactory: Method[](#detail-indexdefaultconstructorfactory-method "Link to this heading")
 
-[Overview: IndexDefaultConstructorFactory: Method](../api_overview/index_default_constructor_factory-method.html#api-overview-indexdefaultconstructorfactory-method)
+[Overview: IndexDefaultConstructorFactory: Method](../api_overview/index_default_constructor_factory-method.md#api-overview-indexdefaultconstructorfactory-method)
 
-IndexDefaultConstructorFactory.\_\_call\_\_(*labels*, *\**, *name=<object object>*, *default\_constructor*)[[source]](../_modules/static_frame/core/index_auto.html#IndexDefaultConstructorFactory.__call__)[](#static_frame.IndexDefaultConstructorFactory.__call__ "Link to this definition")
+IndexDefaultConstructorFactory.\_\_call\_\_(*labels*, *\**, *name=<object object>*, *default\_constructor*)[[source]](../_modules/static_frame/core/index_auto.md#IndexDefaultConstructorFactory.__call__)[](#static_frame.IndexDefaultConstructorFactory.__call__ "Link to this definition")
 :   Call the passed constructor with the `name`.
 
-[IndexDefaultConstructorFactory](index_default_constructor_factory.html#api-detail-indexdefaultconstructorfactory): [Constructor](index_default_constructor_factory-constructor.html#api-detail-indexdefaultconstructorfactory-constructor) | [Method](#api-detail-indexdefaultconstructorfactory-method) | [Display](index_default_constructor_factory-display.html#api-detail-indexdefaultconstructorfactory-display)
+[IndexDefaultConstructorFactory](index_default_constructor_factory.md#api-detail-indexdefaultconstructorfactory): [Constructor](index_default_constructor_factory-constructor.md#api-detail-indexdefaultconstructorfactory-constructor) | [Method](#api-detail-indexdefaultconstructorfactory-method) | [Display](index_default_constructor_factory-display.md#api-detail-indexdefaultconstructorfactory-display)
 
-[Previous](index_default_constructor_factory-constructor.html "Detail: IndexDefaultConstructorFactory: Constructor")
-[Next](index_default_constructor_factory-display.html "Detail: IndexDefaultConstructorFactory: Display")
+[Previous](index_default_constructor_factory-constructor.md "Detail: IndexDefaultConstructorFactory: Constructor")
+[Next](index_default_constructor_factory-display.md "Detail: IndexDefaultConstructorFactory: Display")
 
 ---
 

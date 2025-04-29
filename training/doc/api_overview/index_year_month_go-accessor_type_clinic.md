@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexYearMonthGO: Accessor Type Clinic
 * [View page source](../_sources/api_overview/index_year_month_go-accessor_type_clinic.rst.txt)
 
-[Previous](index_year_month_go-accessor_hashlib.html "Overview: IndexYearMonthGO: Accessor Hashlib")
-[Next](index_date-constructor.html "Overview: IndexDate: Constructor")
+[Previous](index_year_month_go-accessor_hashlib.md "Overview: IndexYearMonthGO: Accessor Hashlib")
+[Next](index_date-constructor.md "Overview: IndexDate: Constructor")
 
 ---
 
 # Overview: IndexYearMonthGO: Accessor Type Clinic[](#overview-indexyearmonthgo-accessor-type-clinic "Link to this heading")
 
-[Detail: IndexYearMonthGO: Accessor Type Clinic](../api_detail/index_year_month_go-accessor_type_clinic.html#api-detail-indexyearmonthgo-accessor-type-clinic)
+[Detail: IndexYearMonthGO: Accessor Type Clinic](../api_detail/index_year_month_go-accessor_type_clinic.md#api-detail-indexyearmonthgo-accessor-type-clinic)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.html#api-sig-indexyearmonthgo-via-type-clinic-to-hint) | `IndexYearMonthGO.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
-| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.html#api-sig-indexyearmonthgo-via-type-clinic-check) | `IndexYearMonthGO.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
-| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.html#api-sig-indexyearmonthgo-via-type-clinic-warn) | `IndexYearMonthGO.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
-| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.html#api-sig-indexyearmonthgo-via-type-clinic-call) | `IndexYearMonthGO.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
-| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.html#api-sig-indexyearmonthgo-via-type-clinic-repr) | `IndexYearMonthGO.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
+| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.md#api-sig-indexyearmonthgo-via-type-clinic-to-hint) | `IndexYearMonthGO.via_type_clinic.to_hint()` | Return the type hint (the type and/or generic aliases necessary) to represent th… |
+| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.md#api-sig-indexyearmonthgo-via-type-clinic-check) | `IndexYearMonthGO.via_type_clinic.check(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), raise a ClinicError exception descri… |
+| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.md#api-sig-indexyearmonthgo-via-type-clinic-warn) | `IndexYearMonthGO.via_type_clinic.warn(hint, *, fail_fast, category)` | Given a hint (a type and/or generic alias), issue a warning describing the resul… |
+| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.md#api-sig-indexyearmonthgo-via-type-clinic-call) | `IndexYearMonthGO.via_type_clinic.__call__(hint, *, fail_fast)` | Given a hint (a type and/or generic alias), return a ClinicResult object describ… |
+| [Detail](../api_detail/index_year_month_go-accessor_type_clinic.md#api-sig-indexyearmonthgo-via-type-clinic-repr) | `IndexYearMonthGO.via_type_clinic.__repr__()` | Return a compact string representation of the type hint (the type and/or generic… |
 
-[IndexYearMonthGO](index_year_month_go.html#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.html#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.html#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.html#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.html#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.html#api-overview-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.html#api-overview-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.html#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.html#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.html#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.html#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.html#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.html#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.html#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.html#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.html#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexyearmonthgo-accessor-type-clinic)
+[IndexYearMonthGO](index_year_month_go.md#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.md#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.md#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-overview-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.md#api-overview-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.md#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.md#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.md#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.md#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.md#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](#api-overview-indexyearmonthgo-accessor-type-clinic)
 
-[Previous](index_year_month_go-accessor_hashlib.html "Overview: IndexYearMonthGO: Accessor Hashlib")
-[Next](index_date-constructor.html "Overview: IndexDate: Constructor")
+[Previous](index_year_month_go-accessor_hashlib.md "Overview: IndexYearMonthGO: Accessor Hashlib")
+[Next](index_date-constructor.md "Overview: IndexDate: Constructor")
 
 ---
 

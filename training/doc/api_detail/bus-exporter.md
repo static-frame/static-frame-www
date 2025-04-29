@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: Bus: Exporter
 * [View page source](../_sources/api_detail/bus-exporter.rst.txt)
 
-[Previous](bus-constructor.html "Detail: Bus: Constructor")
-[Next](bus-attribute.html "Detail: Bus: Attribute")
+[Previous](bus-constructor.md "Detail: Bus: Constructor")
+[Next](bus-attribute.md "Detail: Bus: Attribute")
 
 ---
 
 # Detail: Bus: Exporter[](#detail-bus-exporter "Link to this heading")
 
-[Overview: Bus: Exporter](../api_overview/bus-exporter.html#api-overview-bus-exporter)
+[Overview: Bus: Exporter](../api_overview/bus-exporter.md#api-overview-bus-exporter)
 
-Bus.to\_series()[[source]](../_modules/static_frame/core/bus.html#Bus.to_series)[](#static_frame.Bus.to_series "Link to this definition")
-:   Return a [`Series`](series-selector.html#Series "Series") with the [`Frame`](frame-selector.html#Frame "Frame") contained in this [`Bus`](bus-selector.html#Bus "Bus"). If the [`Bus`](bus-selector.html#Bus "Bus") is associated with a `Store`, all [`Frame`](frame-selector.html#Frame "Frame") will be loaded into memory and the returned [`Bus`](bus-selector.html#Bus "Bus") will no longer be associated with the `Store`.
+Bus.to\_series()[[source]](../_modules/static_frame/core/bus.md#Bus.to_series)[](#static_frame.Bus.to_series "Link to this definition")
+:   Return a [`Series`](series-selector.md#Series "Series") with the [`Frame`](frame-selector.md#Frame "Frame") contained in this [`Bus`](bus-selector.md#Bus "Bus"). If the [`Bus`](bus-selector.md#Bus "Bus") is associated with a `Store`, all [`Frame`](frame-selector.md#Frame "Frame") will be loaded into memory and the returned [`Bus`](bus-selector.md#Bus "Bus") will no longer be associated with the `Store`.
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -165,11 +165,11 @@ Bus.to\_series()[[source]](../_modules/static_frame/core/bus.html#Bus.to_series)
     ```
 
 Bus.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Bus.to_sqlite "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as an SQLite database file.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -188,11 +188,11 @@ Bus.to\_visidata()[](#static_frame.Bus.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
 Bus.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Bus.to_xlsx "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a XLSX workbook.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a XLSX workbook.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -208,11 +208,11 @@ Bus.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Bus.to_xlsx "Lin
     ```
 
 Bus.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_csv "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of CSV files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of CSV files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -228,11 +228,11 @@ Bus.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_f
     ```
 
 Bus.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_npy "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of NPY files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPY files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -248,11 +248,11 @@ Bus.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_f
     ```
 
 Bus.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_npz "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of NPZ files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPZ files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -268,11 +268,11 @@ Bus.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_f
     ```
 
 Bus.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_parquet "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of parquet files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of parquet files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -288,11 +288,11 @@ Bus.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#stat
     ```
 
 Bus.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_pickle "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of pickles.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of pickles.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -308,11 +308,11 @@ Bus.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#stati
     ```
 
 Bus.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_tsv "Link to this definition")
-:   Write the complete [`Bus`](bus-selector.html#Bus "Bus") as a zipped archive of TSV files.
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of TSV files.
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.html#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -327,10 +327,10 @@ Bus.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_f
 
     ```
 
-[Bus](bus.html#api-detail-bus): [Constructor](bus-constructor.html#api-detail-bus-constructor) | [Exporter](#api-detail-bus-exporter) | [Attribute](bus-attribute.html#api-detail-bus-attribute) | [Method](bus-method.html#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-detail-bus-dictionary-like) | [Display](bus-display.html#api-detail-bus-display) | [Selector](bus-selector.html#api-detail-bus-selector) | [Iterator](bus-iterator.html#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
 
-[Previous](bus-constructor.html "Detail: Bus: Constructor")
-[Next](bus-attribute.html "Detail: Bus: Attribute")
+[Previous](bus-constructor.md "Detail: Bus: Constructor")
+[Next](bus-attribute.md "Detail: Bus: Attribute")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -142,8 +142,8 @@ API Detail
 * Type-Hinting DataFrames for Static Analysis and Runtime Validation
 * [View page source](../_sources/articles/ftyping.rst.txt)
 
-[Previous](guard.html "Improving Code Quality with Array and DataFrame Type Hints")
-[Next](serialize.html "Faster DataFrame Serialization")
+[Previous](guard.md "Improving Code Quality with Array and DataFrame Type Hints")
+[Next](serialize.md "Faster DataFrame Serialization")
 
 ---
 
@@ -448,8 +448,8 @@ To support gradual typing, StaticFrame defines several generic aliases configure
 
 Better type hinting for DataFrames is overdue. With modern Python typing tools and a DataFrame built on an immutable data model, StaticFrame 2 meets this need, providing powerful resources for engineers prioritizing maintainability and verifiability.
 
-[Previous](guard.html "Improving Code Quality with Array and DataFrame Type Hints")
-[Next](serialize.html "Faster DataFrame Serialization")
+[Previous](guard.md "Improving Code Quality with Array and DataFrame Type Hints")
+[Next](serialize.md "Faster DataFrame Serialization")
 
 ---
 

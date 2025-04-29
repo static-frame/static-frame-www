@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: StoreFilter: Attribute
 * [View page source](../_sources/api_detail/store_filter-attribute.rst.txt)
 
-[Previous](store_filter-exporter.html "Detail: StoreFilter: Exporter")
-[Next](store_filter-display.html "Detail: StoreFilter: Display")
+[Previous](store_filter-exporter.md "Detail: StoreFilter: Exporter")
+[Next](store_filter-display.md "Detail: StoreFilter: Display")
 
 ---
 
 # Detail: StoreFilter: Attribute[](#detail-storefilter-attribute "Link to this heading")
 
-[Overview: StoreFilter: Attribute](../api_overview/store_filter-attribute.html#api-overview-storefilter-attribute)
+[Overview: StoreFilter: Attribute](../api_overview/store_filter-attribute.md#api-overview-storefilter-attribute)
 
 StoreFilter.from\_nan[](#static_frame.StoreFilter.from_nan "Link to this definition")
 
@@ -172,10 +172,10 @@ StoreFilter.value\_format\_float\_positional[](#static_frame.StoreFilter.valu
 
 StoreFilter.value\_format\_float\_scientific[](#static_frame.StoreFilter.value_format_float_scientific "Link to this definition")
 
-[StoreFilter](store_filter.html#api-detail-storefilter): [Constructor](store_filter-constructor.html#api-detail-storefilter-constructor) | [Exporter](store_filter-exporter.html#api-detail-storefilter-exporter) | [Attribute](#api-detail-storefilter-attribute) | [Display](store_filter-display.html#api-detail-storefilter-display)
+[StoreFilter](store_filter.md#api-detail-storefilter): [Constructor](store_filter-constructor.md#api-detail-storefilter-constructor) | [Exporter](store_filter-exporter.md#api-detail-storefilter-exporter) | [Attribute](#api-detail-storefilter-attribute) | [Display](store_filter-display.md#api-detail-storefilter-display)
 
-[Previous](store_filter-exporter.html "Detail: StoreFilter: Exporter")
-[Next](store_filter-display.html "Detail: StoreFilter: Display")
+[Previous](store_filter-exporter.md "Detail: StoreFilter: Exporter")
+[Next](store_filter-display.md "Detail: StoreFilter: Display")
 
 ---
 

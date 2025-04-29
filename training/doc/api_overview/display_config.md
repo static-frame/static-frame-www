@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: DisplayConfig
 * [View page source](../_sources/api_overview/display_config.rst.txt)
 
-[Previous](display_active.html "Overview: DisplayActive")
-[Next](store_config.html "Overview: StoreConfig")
+[Previous](display_active.md "Overview: DisplayActive")
+[Next](store_config.md "Overview: StoreConfig")
 
 ---
 
 # Overview: DisplayConfig[](#overview-displayconfig "Link to this heading")
 
-[Detail: DisplayConfig](../api_detail/display_config.html#api-detail-displayconfig)
+[Detail: DisplayConfig](../api_detail/display_config.md#api-detail-displayconfig)
 
 |  |  |
 | --- | --- |
-| [Constructor](display_config-constructor.html#api-overview-displayconfig-constructor) | Alternative constructors for creating instances. |
-| [Exporter](display_config-exporter.html#api-overview-displayconfig-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](display_config-attribute.html#api-overview-displayconfig-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](display_config-method.html#api-overview-displayconfig-method) | Methods for general functionality. |
-| [Display](display_config-display.html#api-overview-displayconfig-display) | Methods for providing a text representation of the object. |
+| [Constructor](display_config-constructor.md#api-overview-displayconfig-constructor) | Alternative constructors for creating instances. |
+| [Exporter](display_config-exporter.md#api-overview-displayconfig-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](display_config-attribute.md#api-overview-displayconfig-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](display_config-method.md#api-overview-displayconfig-method) | Methods for general functionality. |
+| [Display](display_config-display.md#api-overview-displayconfig-display) | Methods for providing a text representation of the object. |
 
-[DisplayConfig](#api-overview-displayconfig): [Constructor](display_config-constructor.html#api-overview-displayconfig-constructor) | [Exporter](display_config-exporter.html#api-overview-displayconfig-exporter) | [Attribute](display_config-attribute.html#api-overview-displayconfig-attribute) | [Method](display_config-method.html#api-overview-displayconfig-method) | [Display](display_config-display.html#api-overview-displayconfig-display)
+[DisplayConfig](#api-overview-displayconfig): [Constructor](display_config-constructor.md#api-overview-displayconfig-constructor) | [Exporter](display_config-exporter.md#api-overview-displayconfig-exporter) | [Attribute](display_config-attribute.md#api-overview-displayconfig-attribute) | [Method](display_config-method.md#api-overview-displayconfig-method) | [Display](display_config-display.md#api-overview-displayconfig-display)
 
-[Previous](display_active.html "Overview: DisplayActive")
-[Next](store_config.html "Overview: StoreConfig")
+[Previous](display_active.md "Overview: DisplayActive")
+[Next](store_config.md "Overview: StoreConfig")
 
 ---
 

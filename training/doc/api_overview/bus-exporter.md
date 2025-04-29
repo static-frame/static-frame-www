@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Bus: Exporter
 * [View page source](../_sources/api_overview/bus-exporter.rst.txt)
 
-[Previous](bus-constructor.html "Overview: Bus: Constructor")
-[Next](bus-attribute.html "Overview: Bus: Attribute")
+[Previous](bus-constructor.md "Overview: Bus: Constructor")
+[Next](bus-attribute.md "Overview: Bus: Attribute")
 
 ---
 
 # Overview: Bus: Exporter[](#overview-bus-exporter "Link to this heading")
 
-[Detail: Bus: Exporter](../api_detail/bus-exporter.html#api-detail-bus-exporter)
+[Detail: Bus: Exporter](../api_detail/bus-exporter.md#api-detail-bus-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-series) | `Bus.to_series()` | Return a Series with the Frame contained in this Bus. If the Bus is associated w… |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-sqlite) | `Bus.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-visidata) | `Bus.to_visidata()` | Open an interactive VisiData session. |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-xlsx) | `Bus.to_xlsx(fp, *, config)` | Write the complete Bus as a XLSX workbook. Args: fp: A string file path or Path… |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-zip-csv) | `Bus.to_zip_csv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of CSV files. Args: fp: A string file… |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-zip-npy) | `Bus.to_zip_npy(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPY files. Args: fp: A string file… |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-zip-npz) | `Bus.to_zip_npz(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPZ files. Args: fp: A string file… |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-zip-parquet) | `Bus.to_zip_parquet(fp, *, config, compression)` | Write the complete Bus as a zipped archive of parquet files. Args: fp: A string… |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-zip-pickle) | `Bus.to_zip_pickle(fp, *, config, compression)` | Write the complete Bus as a zipped archive of pickles. Args: fp: A string file p… |
-| [Detail](../api_detail/bus-exporter.html#api-sig-bus-to-zip-tsv) | `Bus.to_zip_tsv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of TSV files. Args: fp: A string file… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-series) | `Bus.to_series()` | Return a Series with the Frame contained in this Bus. If the Bus is associated w… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-sqlite) | `Bus.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-visidata) | `Bus.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-xlsx) | `Bus.to_xlsx(fp, *, config)` | Write the complete Bus as a XLSX workbook. Args: fp: A string file path or Path… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-zip-csv) | `Bus.to_zip_csv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of CSV files. Args: fp: A string file… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-zip-npy) | `Bus.to_zip_npy(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPY files. Args: fp: A string file… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-zip-npz) | `Bus.to_zip_npz(fp, *, config, compression)` | Write the complete Bus as a zipped archive of NPZ files. Args: fp: A string file… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-zip-parquet) | `Bus.to_zip_parquet(fp, *, config, compression)` | Write the complete Bus as a zipped archive of parquet files. Args: fp: A string… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-zip-pickle) | `Bus.to_zip_pickle(fp, *, config, compression)` | Write the complete Bus as a zipped archive of pickles. Args: fp: A string file p… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-zip-tsv) | `Bus.to_zip_tsv(fp, *, config, compression)` | Write the complete Bus as a zipped archive of TSV files. Args: fp: A string file… |
 
-[Bus](bus.html#api-overview-bus): [Constructor](bus-constructor.html#api-overview-bus-constructor) | [Exporter](#api-overview-bus-exporter) | [Attribute](bus-attribute.html#api-overview-bus-attribute) | [Method](bus-method.html#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-overview-bus-dictionary-like) | [Display](bus-display.html#api-overview-bus-display) | [Selector](bus-selector.html#api-overview-bus-selector) | [Iterator](bus-iterator.html#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](bus-iterator.md#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
 
-[Previous](bus-constructor.html "Overview: Bus: Constructor")
-[Next](bus-attribute.html "Overview: Bus: Attribute")
+[Previous](bus-constructor.md "Overview: Bus: Constructor")
+[Next](bus-attribute.md "Overview: Bus: Attribute")
 
 ---
 

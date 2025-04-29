@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: FrameHE: Accessor Transpose
 * [View page source](../_sources/api_overview/frame_he-accessor_transpose.rst.txt)
 
-[Previous](frame_he-accessor_string.html "Overview: FrameHE: Accessor String")
-[Next](frame_he-accessor_fill_value.html "Overview: FrameHE: Accessor Fill Value")
+[Previous](frame_he-accessor_string.md "Overview: FrameHE: Accessor String")
+[Next](frame_he-accessor_fill_value.md "Overview: FrameHE: Accessor Fill Value")
 
 ---
 
 # Overview: FrameHE: Accessor Transpose[](#overview-framehe-accessor-transpose "Link to this heading")
 
-[Detail: FrameHE: Accessor Transpose](../api_detail/frame_he-accessor_transpose.html#api-detail-framehe-accessor-transpose)
+[Detail: FrameHE: Accessor Transpose](../api_detail/frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-via-fill-value) | `FrameHE.via_T.via_fill_value(fill_value)` | Interface for using binary operators and methods with a pre-defined fill value. |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-add) | `FrameHE.via_T.__add__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-sub) | `FrameHE.via_T.__sub__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-mul) | `FrameHE.via_T.__mul__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-truediv) | `FrameHE.via_T.__truediv__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-floordiv) | `FrameHE.via_T.__floordiv__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-mod) | `FrameHE.via_T.__mod__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-pow) | `FrameHE.via_T.__pow__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-lshift) | `FrameHE.via_T.__lshift__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-rshift) | `FrameHE.via_T.__rshift__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-and) | `FrameHE.via_T.__and__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-xor) | `FrameHE.via_T.__xor__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-or) | `FrameHE.via_T.__or__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-lt) | `FrameHE.via_T.__lt__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-le) | `FrameHE.via_T.__le__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-eq) | `FrameHE.via_T.__eq__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-ne) | `FrameHE.via_T.__ne__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-gt) | `FrameHE.via_T.__gt__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-ge) | `FrameHE.via_T.__ge__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-radd) | `FrameHE.via_T.__radd__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-rsub) | `FrameHE.via_T.__rsub__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-rmul) | `FrameHE.via_T.__rmul__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-rtruediv) | `FrameHE.via_T.__rtruediv__(other)` |  |
-| [Detail](../api_detail/frame_he-accessor_transpose.html#api-sig-framehe-via-t-rfloordiv) | `FrameHE.via_T.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-via-fill-value) | `FrameHE.via_T.via_fill_value(fill_value)` | Interface for using binary operators and methods with a pre-defined fill value. |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-add) | `FrameHE.via_T.__add__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-sub) | `FrameHE.via_T.__sub__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-mul) | `FrameHE.via_T.__mul__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-truediv) | `FrameHE.via_T.__truediv__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-floordiv) | `FrameHE.via_T.__floordiv__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-mod) | `FrameHE.via_T.__mod__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-pow) | `FrameHE.via_T.__pow__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-lshift) | `FrameHE.via_T.__lshift__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-rshift) | `FrameHE.via_T.__rshift__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-and) | `FrameHE.via_T.__and__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-xor) | `FrameHE.via_T.__xor__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-or) | `FrameHE.via_T.__or__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-lt) | `FrameHE.via_T.__lt__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-le) | `FrameHE.via_T.__le__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-eq) | `FrameHE.via_T.__eq__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-ne) | `FrameHE.via_T.__ne__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-gt) | `FrameHE.via_T.__gt__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-ge) | `FrameHE.via_T.__ge__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-radd) | `FrameHE.via_T.__radd__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-rsub) | `FrameHE.via_T.__rsub__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-rmul) | `FrameHE.via_T.__rmul__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-rtruediv) | `FrameHE.via_T.__rtruediv__(other)` |  |
+| [Detail](../api_detail/frame_he-accessor_transpose.md#api-sig-framehe-via-t-rfloordiv) | `FrameHE.via_T.__rfloordiv__(other)` |  |
 
-[FrameHE](frame_he.html#api-overview-framehe): [Constructor](frame_he-constructor.html#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.html#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.html#api-overview-framehe-attribute) | [Method](frame_he-method.html#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-overview-framehe-dictionary-like) | [Display](frame_he-display.html#api-overview-framehe-display) | [Assignment](frame_he-assignment.html#api-overview-framehe-assignment) | [Selector](frame_he-selector.html#api-overview-framehe-selector) | [Iterator](frame_he-iterator.html#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-overview-framehe-accessor-string) | [Accessor Transpose](#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-overview-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-overview-framehe): [Constructor](frame_he-constructor.md#api-overview-framehe-constructor) | [Exporter](frame_he-exporter.md#api-overview-framehe-exporter) | [Attribute](frame_he-attribute.md#api-overview-framehe-attribute) | [Method](frame_he-method.md#api-overview-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-overview-framehe-dictionary-like) | [Display](frame_he-display.md#api-overview-framehe-display) | [Assignment](frame_he-assignment.md#api-overview-framehe-assignment) | [Selector](frame_he-selector.md#api-overview-framehe-selector) | [Iterator](frame_he-iterator.md#api-overview-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-overview-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-overview-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-overview-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-overview-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-overview-framehe-accessor-string) | [Accessor Transpose](#api-overview-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-overview-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-overview-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-overview-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-overview-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-overview-framehe-accessor-reduce)
 
-[Previous](frame_he-accessor_string.html "Overview: FrameHE: Accessor String")
-[Next](frame_he-accessor_fill_value.html "Overview: FrameHE: Accessor Fill Value")
+[Previous](frame_he-accessor_string.md "Overview: FrameHE: Accessor String")
+[Next](frame_he-accessor_fill_value.md "Overview: FrameHE: Accessor Fill Value")
 
 ---
 

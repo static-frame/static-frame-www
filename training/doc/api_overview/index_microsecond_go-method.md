@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,71 +135,71 @@ API Detail
 * Overview: IndexMicrosecondGO: Method
 * [View page source](../_sources/api_overview/index_microsecond_go-method.rst.txt)
 
-[Previous](index_microsecond_go-attribute.html "Overview: IndexMicrosecondGO: Attribute")
-[Next](index_microsecond_go-dictionary_like.html "Overview: IndexMicrosecondGO: Dictionary-Like")
+[Previous](index_microsecond_go-attribute.md "Overview: IndexMicrosecondGO: Attribute")
+[Next](index_microsecond_go-dictionary_like.md "Overview: IndexMicrosecondGO: Dictionary-Like")
 
 ---
 
 # Overview: IndexMicrosecondGO: Method[](#overview-indexmicrosecondgo-method "Link to this heading")
 
-[Detail: IndexMicrosecondGO: Method](../api_detail/index_microsecond_go-method.html#api-detail-indexmicrosecondgo-method)
+[Detail: IndexMicrosecondGO: Method](../api_detail/index_microsecond_go-method.md#api-detail-indexmicrosecondgo-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-array) | `IndexMicrosecondGO.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-array-ufunc) | `IndexMicrosecondGO.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-bool) | `IndexMicrosecondGO.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-copy) | `IndexMicrosecondGO.__copy__()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-deepcopy) | `IndexMicrosecondGO.__deepcopy__(memo)` |  |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-len) | `IndexMicrosecondGO.__len__()` |  |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-all) | `IndexMicrosecondGO.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-any) | `IndexMicrosecondGO.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-append) | `IndexMicrosecondGO.append(value)` | Specialize for fixed-typed indices: convert value argument; do not need to resol… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-astype) | `IndexMicrosecondGO.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
-| [Detail](../api_detail/index_microsecond_go-method.html#id1) | `IndexMicrosecondGO.copy()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-cumprod) | `IndexMicrosecondGO.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-cumsum) | `IndexMicrosecondGO.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-difference) | `IndexMicrosecondGO.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-dropfalsy) | `IndexMicrosecondGO.dropfalsy()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-dropna) | `IndexMicrosecondGO.dropna()` | Return a new Index after removing values of NaN or None. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-equals) | `IndexMicrosecondGO.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-extend) | `IndexMicrosecondGO.extend(values)` | Append multiple values Args: values: can be a generator. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-fillfalsy) | `IndexMicrosecondGO.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-fillna) | `IndexMicrosecondGO.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-head) | `IndexMicrosecondGO.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-iloc-searchsorted) | `IndexMicrosecondGO.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-intersection) | `IndexMicrosecondGO.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-isfalsy) | `IndexMicrosecondGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-isin) | `IndexMicrosecondGO.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-isna) | `IndexMicrosecondGO.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-label-widths-at-depth) | `IndexMicrosecondGO.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-level-add) | `IndexMicrosecondGO.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-loc-searchsorted) | `IndexMicrosecondGO.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-loc-to-iloc) | `IndexMicrosecondGO.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-max) | `IndexMicrosecondGO.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-mean) | `IndexMicrosecondGO.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-median) | `IndexMicrosecondGO.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-min) | `IndexMicrosecondGO.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-notfalsy) | `IndexMicrosecondGO.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-notna) | `IndexMicrosecondGO.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-prod) | `IndexMicrosecondGO.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-relabel) | `IndexMicrosecondGO.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-rename) | `IndexMicrosecondGO.rename(name)` | Return a new Frame with an updated name attribute. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-roll) | `IndexMicrosecondGO.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-sample) | `IndexMicrosecondGO.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-sort) | `IndexMicrosecondGO.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-std) | `IndexMicrosecondGO.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-sum) | `IndexMicrosecondGO.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-tail) | `IndexMicrosecondGO.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-union) | `IndexMicrosecondGO.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-unique) | `IndexMicrosecondGO.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-values-at-depth) | `IndexMicrosecondGO.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
-| [Detail](../api_detail/index_microsecond_go-method.html#api-sig-indexmicrosecondgo-var) | `IndexMicrosecondGO.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-array) | `IndexMicrosecondGO.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-array-ufunc) | `IndexMicrosecondGO.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-bool) | `IndexMicrosecondGO.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-copy) | `IndexMicrosecondGO.__copy__()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-deepcopy) | `IndexMicrosecondGO.__deepcopy__(memo)` |  |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-len) | `IndexMicrosecondGO.__len__()` |  |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-all) | `IndexMicrosecondGO.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-any) | `IndexMicrosecondGO.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-append) | `IndexMicrosecondGO.append(value)` | Specialize for fixed-typed indices: convert value argument; do not need to resol… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-astype) | `IndexMicrosecondGO.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
+| [Detail](../api_detail/index_microsecond_go-method.md#id1) | `IndexMicrosecondGO.copy()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-cumprod) | `IndexMicrosecondGO.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-cumsum) | `IndexMicrosecondGO.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-difference) | `IndexMicrosecondGO.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-dropfalsy) | `IndexMicrosecondGO.dropfalsy()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-dropna) | `IndexMicrosecondGO.dropna()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-equals) | `IndexMicrosecondGO.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-extend) | `IndexMicrosecondGO.extend(values)` | Append multiple values Args: values: can be a generator. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-fillfalsy) | `IndexMicrosecondGO.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-fillna) | `IndexMicrosecondGO.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-head) | `IndexMicrosecondGO.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-iloc-searchsorted) | `IndexMicrosecondGO.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-intersection) | `IndexMicrosecondGO.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-isfalsy) | `IndexMicrosecondGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-isin) | `IndexMicrosecondGO.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-isna) | `IndexMicrosecondGO.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-label-widths-at-depth) | `IndexMicrosecondGO.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-level-add) | `IndexMicrosecondGO.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-loc-searchsorted) | `IndexMicrosecondGO.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-loc-to-iloc) | `IndexMicrosecondGO.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-max) | `IndexMicrosecondGO.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-mean) | `IndexMicrosecondGO.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-median) | `IndexMicrosecondGO.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-min) | `IndexMicrosecondGO.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-notfalsy) | `IndexMicrosecondGO.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-notna) | `IndexMicrosecondGO.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-prod) | `IndexMicrosecondGO.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-relabel) | `IndexMicrosecondGO.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-rename) | `IndexMicrosecondGO.rename(name)` | Return a new Frame with an updated name attribute. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-roll) | `IndexMicrosecondGO.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-sample) | `IndexMicrosecondGO.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-sort) | `IndexMicrosecondGO.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-std) | `IndexMicrosecondGO.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-sum) | `IndexMicrosecondGO.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-tail) | `IndexMicrosecondGO.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-union) | `IndexMicrosecondGO.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-unique) | `IndexMicrosecondGO.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-values-at-depth) | `IndexMicrosecondGO.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
+| [Detail](../api_detail/index_microsecond_go-method.md#api-sig-indexmicrosecondgo-var) | `IndexMicrosecondGO.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
-[IndexMicrosecondGO](index_microsecond_go.html#api-overview-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.html#api-overview-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.html#api-overview-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.html#api-overview-indexmicrosecondgo-attribute) | [Method](#api-overview-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.html#api-overview-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.html#api-overview-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.html#api-overview-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.html#api-overview-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.html#api-overview-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.html#api-overview-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.html#api-overview-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.html#api-overview-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.html#api-overview-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.html#api-overview-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.html#api-overview-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.html#api-overview-indexmicrosecondgo-accessor-type-clinic)
+[IndexMicrosecondGO](index_microsecond_go.md#api-overview-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.md#api-overview-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.md#api-overview-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.md#api-overview-indexmicrosecondgo-attribute) | [Method](#api-overview-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.md#api-overview-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.md#api-overview-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.md#api-overview-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.md#api-overview-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.md#api-overview-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.md#api-overview-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.md#api-overview-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.md#api-overview-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.md#api-overview-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.md#api-overview-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.md#api-overview-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_microsecond_go-accessor_type_clinic.md#api-overview-indexmicrosecondgo-accessor-type-clinic)
 
-[Previous](index_microsecond_go-attribute.html "Overview: IndexMicrosecondGO: Attribute")
-[Next](index_microsecond_go-dictionary_like.html "Overview: IndexMicrosecondGO: Dictionary-Like")
+[Previous](index_microsecond_go-attribute.md "Overview: IndexMicrosecondGO: Attribute")
+[Next](index_microsecond_go-dictionary_like.md "Overview: IndexMicrosecondGO: Dictionary-Like")
 
 ---
 

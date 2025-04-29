@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: Yarn: Selector
 * [View page source](../_sources/api_overview/yarn-selector.rst.txt)
 
-[Previous](yarn-display.html "Overview: Yarn: Display")
-[Next](yarn-iterator.html "Overview: Yarn: Iterator")
+[Previous](yarn-display.md "Overview: Yarn: Display")
+[Next](yarn-iterator.md "Overview: Yarn: Iterator")
 
 ---
 
 # Overview: Yarn: Selector[](#overview-yarn-selector "Link to this heading")
 
-[Detail: Yarn: Selector](../api_detail/yarn-selector.html#api-detail-yarn-selector)
+[Detail: Yarn: Selector](../api_detail/yarn-selector.md#api-detail-yarn-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/yarn-selector.html#api-sig-yarn-drop) | `Yarn.drop[key]` | Label-based selection. |
-| [Detail](../api_detail/yarn-selector.html#api-sig-yarn-drop-iloc) | `Yarn.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
-| [Detail](../api_detail/yarn-selector.html#api-sig-yarn-drop-loc) | `Yarn.drop.loc[key]` |  |
-| [Detail](../api_detail/yarn-selector.html#api-sig-yarn) | `Yarn[key]` | Selector of values by label. Args: key: A loc selector, either a label, a list o… |
-| [Detail](../api_detail/yarn-selector.html#api-sig-yarn-iloc) | `Yarn.iloc[key]` |  |
-| [Detail](../api_detail/yarn-selector.html#api-sig-yarn-loc) | `Yarn.loc[key]` |  |
+| [Detail](../api_detail/yarn-selector.md#api-sig-yarn-drop) | `Yarn.drop[key]` | Label-based selection. |
+| [Detail](../api_detail/yarn-selector.md#api-sig-yarn-drop-iloc) | `Yarn.drop.iloc[key]` | Interface for iloc selection that does not reduce dimensionality. |
+| [Detail](../api_detail/yarn-selector.md#api-sig-yarn-drop-loc) | `Yarn.drop.loc[key]` |  |
+| [Detail](../api_detail/yarn-selector.md#api-sig-yarn) | `Yarn[key]` | Selector of values by label. Args: key: A loc selector, either a label, a list o… |
+| [Detail](../api_detail/yarn-selector.md#api-sig-yarn-iloc) | `Yarn.iloc[key]` |  |
+| [Detail](../api_detail/yarn-selector.md#api-sig-yarn-loc) | `Yarn.loc[key]` |  |
 
-[Yarn](yarn.html#api-overview-yarn): [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | [Method](yarn-method.html#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](yarn-display.html#api-overview-yarn-display) | [Selector](#api-overview-yarn-selector) | [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Yarn](yarn.md#api-overview-yarn): [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | [Method](yarn-method.md#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](yarn-display.md#api-overview-yarn-display) | [Selector](#api-overview-yarn-selector) | [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
-[Previous](yarn-display.html "Overview: Yarn: Display")
-[Next](yarn-iterator.html "Overview: Yarn: Iterator")
+[Previous](yarn-display.md "Overview: Yarn: Display")
+[Next](yarn-iterator.md "Overview: Yarn: Iterator")
 
 ---
 

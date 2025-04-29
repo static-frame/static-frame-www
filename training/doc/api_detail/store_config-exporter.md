@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,22 +135,22 @@ API Detail
 * Detail: StoreConfig: Exporter
 * [View page source](../_sources/api_detail/store_config-exporter.rst.txt)
 
-[Previous](store_config-constructor.html "Detail: StoreConfig: Constructor")
-[Next](store_config-attribute.html "Detail: StoreConfig: Attribute")
+[Previous](store_config-constructor.md "Detail: StoreConfig: Constructor")
+[Next](store_config-attribute.md "Detail: StoreConfig: Attribute")
 
 ---
 
 # Detail: StoreConfig: Exporter[](#detail-storeconfig-exporter "Link to this heading")
 
-[Overview: StoreConfig: Exporter](../api_overview/store_config-exporter.html#api-overview-storeconfig-exporter)
+[Overview: StoreConfig: Exporter](../api_overview/store_config-exporter.md#api-overview-storeconfig-exporter)
 
-StoreConfig.to\_store\_config\_he()[[source]](../_modules/static_frame/core/store_config.html#StoreConfig.to_store_config_he)[](#static_frame.StoreConfig.to_store_config_he "Link to this definition")
+StoreConfig.to\_store\_config\_he()[[source]](../_modules/static_frame/core/store_config.md#StoreConfig.to_store_config_he)[](#static_frame.StoreConfig.to_store_config_he "Link to this definition")
 :   Return a `StoreConfigHE` version of this StoreConfig.
 
-[StoreConfig](store_config.html#api-detail-storeconfig): [Constructor](store_config-constructor.html#api-detail-storeconfig-constructor) | [Exporter](#api-detail-storeconfig-exporter) | [Attribute](store_config-attribute.html#api-detail-storeconfig-attribute) | [Method](store_config-method.html#api-detail-storeconfig-method) | [Display](store_config-display.html#api-detail-storeconfig-display)
+[StoreConfig](store_config.md#api-detail-storeconfig): [Constructor](store_config-constructor.md#api-detail-storeconfig-constructor) | [Exporter](#api-detail-storeconfig-exporter) | [Attribute](store_config-attribute.md#api-detail-storeconfig-attribute) | [Method](store_config-method.md#api-detail-storeconfig-method) | [Display](store_config-display.md#api-detail-storeconfig-display)
 
-[Previous](store_config-constructor.html "Detail: StoreConfig: Constructor")
-[Next](store_config-attribute.html "Detail: StoreConfig: Attribute")
+[Previous](store_config-constructor.md "Detail: StoreConfig: Constructor")
+[Next](store_config-attribute.md "Detail: StoreConfig: Attribute")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexHourGO: Operator Binary
 * [View page source](../_sources/api_overview/index_hour_go-operator_binary.rst.txt)
 
-[Previous](index_hour_go-iterator.html "Overview: IndexHourGO: Iterator")
-[Next](index_hour_go-operator_unary.html "Overview: IndexHourGO: Operator Unary")
+[Previous](index_hour_go-iterator.md "Overview: IndexHourGO: Iterator")
+[Next](index_hour_go-operator_unary.md "Overview: IndexHourGO: Operator Unary")
 
 ---
 
 # Overview: IndexHourGO: Operator Binary[](#overview-indexhourgo-operator-binary "Link to this heading")
 
-[Detail: IndexHourGO: Operator Binary](../api_detail/index_hour_go-operator_binary.html#api-detail-indexhourgo-operator-binary)
+[Detail: IndexHourGO: Operator Binary](../api_detail/index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-add) | `IndexHourGO.__add__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-and) | `IndexHourGO.__and__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-eq) | `IndexHourGO.__eq__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-floordiv) | `IndexHourGO.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-ge) | `IndexHourGO.__ge__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-gt) | `IndexHourGO.__gt__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-le) | `IndexHourGO.__le__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-lt) | `IndexHourGO.__lt__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-matmul) | `IndexHourGO.__matmul__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-mod) | `IndexHourGO.__mod__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-mul) | `IndexHourGO.__mul__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-ne) | `IndexHourGO.__ne__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-or) | `IndexHourGO.__or__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-pow) | `IndexHourGO.__pow__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-radd) | `IndexHourGO.__radd__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-rfloordiv) | `IndexHourGO.__rfloordiv__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-rmatmul) | `IndexHourGO.__rmatmul__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-rmul) | `IndexHourGO.__rmul__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-rshift) | `IndexHourGO.__rshift__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-rsub) | `IndexHourGO.__rsub__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-rtruediv) | `IndexHourGO.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-sub) | `IndexHourGO.__sub__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-truediv) | `IndexHourGO.__truediv__(other)` |  |
-| [Detail](../api_detail/index_hour_go-operator_binary.html#api-sig-indexhourgo-xor) | `IndexHourGO.__xor__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-add) | `IndexHourGO.__add__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-and) | `IndexHourGO.__and__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-eq) | `IndexHourGO.__eq__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-floordiv) | `IndexHourGO.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-ge) | `IndexHourGO.__ge__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-gt) | `IndexHourGO.__gt__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-le) | `IndexHourGO.__le__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-lt) | `IndexHourGO.__lt__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-matmul) | `IndexHourGO.__matmul__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-mod) | `IndexHourGO.__mod__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-mul) | `IndexHourGO.__mul__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-ne) | `IndexHourGO.__ne__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-or) | `IndexHourGO.__or__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-pow) | `IndexHourGO.__pow__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-radd) | `IndexHourGO.__radd__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-rfloordiv) | `IndexHourGO.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-rmatmul) | `IndexHourGO.__rmatmul__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-rmul) | `IndexHourGO.__rmul__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-rshift) | `IndexHourGO.__rshift__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-rsub) | `IndexHourGO.__rsub__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-rtruediv) | `IndexHourGO.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-sub) | `IndexHourGO.__sub__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-truediv) | `IndexHourGO.__truediv__(other)` |  |
+| [Detail](../api_detail/index_hour_go-operator_binary.md#api-sig-indexhourgo-xor) | `IndexHourGO.__xor__(other)` |  |
 
-[IndexHourGO](index_hour_go.html#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.html#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.html#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.html#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.html#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.html#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.html#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.html#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.html#api-overview-indexhourgo-iterator) | [Operator Binary](#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.html#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.html#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.html#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.html#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.html#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.html#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.html#api-overview-indexhourgo-accessor-type-clinic)
+[IndexHourGO](index_hour_go.md#api-overview-indexhourgo): [Constructor](index_hour_go-constructor.md#api-overview-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-overview-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-overview-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-overview-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-overview-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-overview-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-overview-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-overview-indexhourgo-iterator) | [Operator Binary](#api-overview-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-overview-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-overview-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-overview-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-overview-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-overview-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-overview-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-overview-indexhourgo-accessor-type-clinic)
 
-[Previous](index_hour_go-iterator.html "Overview: IndexHourGO: Iterator")
-[Next](index_hour_go-operator_unary.html "Overview: IndexHourGO: Operator Unary")
+[Previous](index_hour_go-iterator.md "Overview: IndexHourGO: Iterator")
+[Next](index_hour_go-operator_unary.md "Overview: IndexHourGO: Operator Unary")
 
 ---
 

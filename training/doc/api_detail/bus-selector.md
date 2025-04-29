@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Bus: Selector
 * [View page source](../_sources/api_detail/bus-selector.rst.txt)
 
-[Previous](bus-display.html "Detail: Bus: Display")
-[Next](bus-iterator.html "Detail: Bus: Iterator")
+[Previous](bus-display.md "Detail: Bus: Display")
+[Next](bus-iterator.md "Detail: Bus: Iterator")
 
 ---
 
 # Detail: Bus: Selector[](#detail-bus-selector "Link to this heading")
 
-[Overview: Bus: Selector](../api_overview/bus-selector.html#api-overview-bus-selector)
+[Overview: Bus: Selector](../api_overview/bus-selector.md#api-overview-bus-selector)
 
 Bus.drop[*key*]
 :   drop
-    :   Interface for dropping elements from [`static_frame.Bus`](bus.html#static_frame.Bus "static_frame.Bus").
+    :   Interface for dropping elements from [`static_frame.Bus`](bus.md#static_frame.Bus "static_frame.Bus").
 
-    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceSelectTrio.__getitem__)
+    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceSelectTrio.__getitem__)
     :   Label-based selection.
 
     ```
@@ -185,7 +185,7 @@ Bus.drop[*key*]
 
 Bus.drop.iloc[*key*]
 :   Bus.drop
-    :   Interface for dropping elements from [`static_frame.Bus`](bus.html#static_frame.Bus "static_frame.Bus").
+    :   Interface for dropping elements from [`static_frame.Bus`](bus.md#static_frame.Bus "static_frame.Bus").
 
     InterfaceSelectTrio.iloc
     :   Integer-position based selection.
@@ -223,7 +223,7 @@ Bus.drop.iloc[*key*]
 
 Bus.drop.loc[*key*]
 :   Bus.drop
-    :   Interface for dropping elements from [`static_frame.Bus`](bus.html#static_frame.Bus "static_frame.Bus").
+    :   Interface for dropping elements from [`static_frame.Bus`](bus.md#static_frame.Bus "static_frame.Bus").
 
     InterfaceSelectTrio.loc
     :   Label-based selection.
@@ -261,7 +261,7 @@ Bus.drop.loc[*key*]
     ```
 
 Bus[*key*]()[](#Bus "Link to this definition")
-:   Bus.\_\_getitem\_\_ *= <function Bus.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/bus.html#Bus.__getitem__)
+:   Bus.\_\_getitem\_\_ *= <function Bus.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/bus.md#Bus.__getitem__)
 
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='k')
@@ -369,10 +369,10 @@ Bus.loc[*key*]
 
     ```
 
-[Bus](bus.html#api-detail-bus): [Constructor](bus-constructor.html#api-detail-bus-constructor) | [Exporter](bus-exporter.html#api-detail-bus-exporter) | [Attribute](bus-attribute.html#api-detail-bus-attribute) | [Method](bus-method.html#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.html#api-detail-bus-dictionary-like) | [Display](bus-display.html#api-detail-bus-display) | [Selector](#api-detail-bus-selector) | [Iterator](bus-iterator.html#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.html#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.html#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
 
-[Previous](bus-display.html "Detail: Bus: Display")
-[Next](bus-iterator.html "Detail: Bus: Iterator")
+[Previous](bus-display.md "Detail: Bus: Display")
+[Next](bus-iterator.md "Detail: Bus: Iterator")
 
 ---
 

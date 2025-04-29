@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,61 +135,61 @@ API Detail
 * Overview: IndexHierarchy: Accessor String
 * [View page source](../_sources/api_overview/index_hierarchy-accessor_string.rst.txt)
 
-[Previous](index_hierarchy-accessor_datetime.html "Overview: IndexHierarchy: Accessor Datetime")
-[Next](index_hierarchy-accessor_transpose.html "Overview: IndexHierarchy: Accessor Transpose")
+[Previous](index_hierarchy-accessor_datetime.md "Overview: IndexHierarchy: Accessor Datetime")
+[Next](index_hierarchy-accessor_transpose.md "Overview: IndexHierarchy: Accessor Transpose")
 
 ---
 
 # Overview: IndexHierarchy: Accessor String[](#overview-indexhierarchy-accessor-string "Link to this heading")
 
-[Detail: IndexHierarchy: Accessor String](../api_detail/index_hierarchy-accessor_string.html#api-detail-indexhierarchy-accessor-string)
+[Detail: IndexHierarchy: Accessor String](../api_detail/index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-getitem) | `IndexHierarchy.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-capitalize) | `IndexHierarchy.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-center) | `IndexHierarchy.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-contains) | `IndexHierarchy.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-count) | `IndexHierarchy.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-decode) | `IndexHierarchy.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-encode) | `IndexHierarchy.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-endswith) | `IndexHierarchy.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-find) | `IndexHierarchy.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-format) | `IndexHierarchy.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-index) | `IndexHierarchy.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-isalnum) | `IndexHierarchy.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-isalpha) | `IndexHierarchy.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-isdecimal) | `IndexHierarchy.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-isdigit) | `IndexHierarchy.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-islower) | `IndexHierarchy.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-isnumeric) | `IndexHierarchy.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-isspace) | `IndexHierarchy.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-istitle) | `IndexHierarchy.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-isupper) | `IndexHierarchy.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-ljust) | `IndexHierarchy.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-len) | `IndexHierarchy.via_str.len()` | Return the length of the string. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-lower) | `IndexHierarchy.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-lstrip) | `IndexHierarchy.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-partition) | `IndexHierarchy.via_str.partition(sep)` | Partition each element around sep. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-replace) | `IndexHierarchy.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-rfind) | `IndexHierarchy.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-rindex) | `IndexHierarchy.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-rjust) | `IndexHierarchy.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-rpartition) | `IndexHierarchy.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-rsplit) | `IndexHierarchy.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-rstrip) | `IndexHierarchy.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-split) | `IndexHierarchy.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-startswith) | `IndexHierarchy.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-strip) | `IndexHierarchy.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-swapcase) | `IndexHierarchy.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-title) | `IndexHierarchy.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-upper) | `IndexHierarchy.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
-| [Detail](../api_detail/index_hierarchy-accessor_string.html#api-sig-indexhierarchy-via-str-zfill) | `IndexHierarchy.via_str.zfill(width)` | Return the string left-filled with zeros. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-getitem) | `IndexHierarchy.via_str.__getitem__(key)` | Return a container with the provided selection or slice of each element. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-capitalize) | `IndexHierarchy.via_str.capitalize()` | Return a container with only the first character of each element capitalized. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-center) | `IndexHierarchy.via_str.center(width, fillchar)` | Return a container with its elements centered in a string of length width. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-contains) | `IndexHierarchy.via_str.contains(item)` | Return a Boolean container showing True of item is a substring of elements. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-count) | `IndexHierarchy.via_str.count(sub, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-decode) | `IndexHierarchy.via_str.decode(encoding, errors)` | Apply str.decode() to each element. Elements must be bytes. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-encode) | `IndexHierarchy.via_str.encode(encoding, errors)` | Apply str.encode() to each element. Elements must be strings. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-endswith) | `IndexHierarchy.via_str.endswith(suffix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-find) | `IndexHierarchy.via_str.find(sub, start, end)` | For each element, return the lowest index in the string where substring sub is f… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-format) | `IndexHierarchy.via_str.format(format)` | For each element, return a string resulting from calling the string format argum… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-index) | `IndexHierarchy.via_str.index(sub, start, end)` | Like find, but raises ValueError when the substring is not found. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-isalnum) | `IndexHierarchy.via_str.isalnum()` | Returns true for each element if all characters in the string are alphanumeric a… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-isalpha) | `IndexHierarchy.via_str.isalpha()` | Returns true for each element if all characters in the string are alphabetic and… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-isdecimal) | `IndexHierarchy.via_str.isdecimal()` | For each element, return True if there are only decimal characters in the elemen… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-isdigit) | `IndexHierarchy.via_str.isdigit()` | Returns true for each element if all characters in the string are digits and the… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-islower) | `IndexHierarchy.via_str.islower()` | Returns true for each element if all cased characters in the string are lowercas… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-isnumeric) | `IndexHierarchy.via_str.isnumeric()` | For each element in self, return True if there are only numeric characters in th… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-isspace) | `IndexHierarchy.via_str.isspace()` | Returns true for each element if there are only whitespace characters in the str… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-istitle) | `IndexHierarchy.via_str.istitle()` | Returns true for each element if the element is a titlecased string and there is… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-isupper) | `IndexHierarchy.via_str.isupper()` | Returns true for each element if all cased characters in the string are uppercas… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-ljust) | `IndexHierarchy.via_str.ljust(width, fillchar)` | Return a container with its elements ljusted in a string of length width. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-len) | `IndexHierarchy.via_str.len()` | Return the length of the string. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-lower) | `IndexHierarchy.via_str.lower()` | Return an array with the elements of self converted to lowercase. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-lstrip) | `IndexHierarchy.via_str.lstrip(chars)` | For each element, return a copy with the leading characters removed. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-partition) | `IndexHierarchy.via_str.partition(sep)` | Partition each element around sep. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-replace) | `IndexHierarchy.via_str.replace(old, new, count)` | Return a container with its elements replaced in a string of length width. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-rfind) | `IndexHierarchy.via_str.rfind(sub, start, end)` | For each element, return the highest index in the string where substring sub is… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-rindex) | `IndexHierarchy.via_str.rindex(sub, start, end)` | Like rfind, but raises ValueError when the substring sub is not found. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-rjust) | `IndexHierarchy.via_str.rjust(width, fillchar)` | Return a container with its elements rjusted in a string of length width. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-rpartition) | `IndexHierarchy.via_str.rpartition(sep)` | Partition (split) each element around the right-most separator. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-rsplit) | `IndexHierarchy.via_str.rsplit(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-rstrip) | `IndexHierarchy.via_str.rstrip(chars)` | For each element, return a copy with the trailing characters removed. |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-split) | `IndexHierarchy.via_str.split(sep, maxsplit)` | For each element, return a tuple of the words in the string, using sep as the de… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-startswith) | `IndexHierarchy.via_str.startswith(prefix, start, end)` | Returns a container with the number of non-overlapping occurrences of substring… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-strip) | `IndexHierarchy.via_str.strip(chars)` | For each element, return a copy with the leading and trailing characters removed… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-swapcase) | `IndexHierarchy.via_str.swapcase()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-title) | `IndexHierarchy.via_str.title()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-upper) | `IndexHierarchy.via_str.upper()` | Return a container with uppercase characters converted to lowercase and vice ver… |
+| [Detail](../api_detail/index_hierarchy-accessor_string.md#api-sig-indexhierarchy-via-str-zfill) | `IndexHierarchy.via_str.zfill(width)` | Return the string left-filled with zeros. |
 
-[IndexHierarchy](index_hierarchy.html#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.html#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.html#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.html#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.html#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.html#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.html#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.html#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.html#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.html#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.html#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.html#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.html#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.html#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.html#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.html#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.html#api-overview-indexhierarchy-accessor-type-clinic)
+[IndexHierarchy](index_hierarchy.md#api-overview-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-overview-indexhierarchy-accessor-type-clinic)
 
-[Previous](index_hierarchy-accessor_datetime.html "Overview: IndexHierarchy: Accessor Datetime")
-[Next](index_hierarchy-accessor_transpose.html "Overview: IndexHierarchy: Accessor Transpose")
+[Previous](index_hierarchy-accessor_datetime.md "Overview: IndexHierarchy: Accessor Datetime")
+[Next](index_hierarchy-accessor_transpose.md "Overview: IndexHierarchy: Accessor Transpose")
 
 ---
 

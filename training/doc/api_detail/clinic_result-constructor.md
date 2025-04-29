@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: ClinicResult: Constructor
 * [View page source](../_sources/api_detail/clinic_result-constructor.rst.txt)
 
-[Previous](call_guard-method.html "Detail: CallGuard: Method")
-[Next](clinic_result-exporter.html "Detail: ClinicResult: Exporter")
+[Previous](call_guard-method.md "Detail: CallGuard: Method")
+[Next](clinic_result-exporter.md "Detail: ClinicResult: Exporter")
 
 ---
 
 # Detail: ClinicResult: Constructor[](#detail-clinicresult-constructor "Link to this heading")
 
-[Overview: ClinicResult: Constructor](../api_overview/clinic_result-constructor.html#api-overview-clinicresult-constructor)
+[Overview: ClinicResult: Constructor](../api_overview/clinic_result-constructor.md#api-overview-clinicresult-constructor)
 
-ClinicResult.\_\_init\_\_(*log*)[[source]](../_modules/static_frame/core/type_clinic.html#ClinicResult.__init__)[](#static_frame.ClinicResult.__init__ "Link to this definition")
+ClinicResult.\_\_init\_\_(*log*)[[source]](../_modules/static_frame/core/type_clinic.md#ClinicResult.__init__)[](#static_frame.ClinicResult.__init__ "Link to this definition")
 :   ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f
@@ -163,10 +163,10 @@ ClinicResult.\_\_init\_\_(*log*)[[source]](../_modules/static_frame/core/type_cl
 
     ```
 
-[ClinicResult](clinic_result.html#api-detail-clinicresult): [Constructor](#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-detail-clinicresult-attribute) | [Method](clinic_result-method.html#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-detail-clinicresult-display)
+[ClinicResult](clinic_result.md#api-detail-clinicresult): [Constructor](#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-detail-clinicresult-attribute) | [Method](clinic_result-method.md#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-detail-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-detail-clinicresult-display)
 
-[Previous](call_guard-method.html "Detail: CallGuard: Method")
-[Next](clinic_result-exporter.html "Detail: ClinicResult: Exporter")
+[Previous](call_guard-method.md "Detail: CallGuard: Method")
+[Next](clinic_result-exporter.md "Detail: ClinicResult: Exporter")
 
 ---
 

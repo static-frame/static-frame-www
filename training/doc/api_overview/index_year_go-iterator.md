@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexYearGO: Iterator
 * [View page source](../_sources/api_overview/index_year_go-iterator.rst.txt)
 
-[Previous](index_year_go-selector.html "Overview: IndexYearGO: Selector")
-[Next](index_year_go-operator_binary.html "Overview: IndexYearGO: Operator Binary")
+[Previous](index_year_go-selector.md "Overview: IndexYearGO: Selector")
+[Next](index_year_go-operator_binary.md "Overview: IndexYearGO: Operator Binary")
 
 ---
 
 # Overview: IndexYearGO: Iterator[](#overview-indexyeargo-iterator "Link to this heading")
 
-[Detail: IndexYearGO: Iterator](../api_detail/index_year_go-iterator.html#api-detail-indexyeargo-iterator)
+[Detail: IndexYearGO: Iterator](../api_detail/index_year_go-iterator.md#api-detail-indexyeargo-iterator)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_go-iterator.html#api-sig-indexyeargo-iter-label) | `IndexYearGO.iter_label(depth_level)` |  |
-| [Detail](../api_detail/index_year_go-iterator.html#api-sig-indexyeargo-iter-label-apply) | `IndexYearGO.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
-| [Detail](../api_detail/index_year_go-iterator.html#api-sig-indexyeargo-iter-label-apply-iter) | `IndexYearGO.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
-| [Detail](../api_detail/index_year_go-iterator.html#api-sig-indexyeargo-iter-label-apply-iter-items) | `IndexYearGO.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
-| [Detail](../api_detail/index_year_go-iterator.html#api-sig-indexyeargo-iter-label-apply-pool) | `IndexYearGO.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
+| [Detail](../api_detail/index_year_go-iterator.md#api-sig-indexyeargo-iter-label) | `IndexYearGO.iter_label(depth_level)` |  |
+| [Detail](../api_detail/index_year_go-iterator.md#api-sig-indexyeargo-iter-label-apply) | `IndexYearGO.iter_label(depth_level).apply(func, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
+| [Detail](../api_detail/index_year_go-iterator.md#api-sig-indexyeargo-iter-label-apply-iter) | `IndexYearGO.iter_label(depth_level).apply_iter(func)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
+| [Detail](../api_detail/index_year_go-iterator.md#api-sig-indexyeargo-iter-label-apply-iter-items) | `IndexYearGO.iter_label(depth_level).apply_iter_items(func)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
+| [Detail](../api_detail/index_year_go-iterator.md#api-sig-indexyeargo-iter-label-apply-pool) | `IndexYearGO.iter_label(depth_level).apply_pool(func, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
 
-[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](index_year_go-constructor.html#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.html#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+[IndexYearGO](index_year_go.md#api-overview-indexyeargo): [Constructor](index_year_go-constructor.md#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-overview-indexyeargo-attribute) | [Method](index_year_go-method.md#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.md#api-overview-indexyeargo-selector) | [Iterator](#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-overview-indexyeargo-accessor-type-clinic)
 
-[Previous](index_year_go-selector.html "Overview: IndexYearGO: Selector")
-[Next](index_year_go-operator_binary.html "Overview: IndexYearGO: Operator Binary")
+[Previous](index_year_go-selector.md "Overview: IndexYearGO: Selector")
+[Next](index_year_go-operator_binary.md "Overview: IndexYearGO: Operator Binary")
 
 ---
 

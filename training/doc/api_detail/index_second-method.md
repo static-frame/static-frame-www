@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: IndexSecond: Method
 * [View page source](../_sources/api_detail/index_second-method.rst.txt)
 
-[Previous](index_second-attribute.html "Detail: IndexSecond: Attribute")
-[Next](index_second-dictionary_like.html "Detail: IndexSecond: Dictionary-Like")
+[Previous](index_second-attribute.md "Detail: IndexSecond: Attribute")
+[Next](index_second-dictionary_like.md "Detail: IndexSecond: Dictionary-Like")
 
 ---
 
 # Detail: IndexSecond: Method[](#detail-indexsecond-method "Link to this heading")
 
-[Overview: IndexSecond: Method](../api_overview/index_second-method.html#api-overview-indexsecond-method)
+[Overview: IndexSecond: Method](../api_overview/index_second-method.md#api-overview-indexsecond-method)
 
 IndexSecond.\_\_array\_\_(*dtype=None*)[](#static_frame.IndexSecond.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
@@ -397,7 +397,7 @@ IndexSecond.difference(*\*others*)[](#static_frame.IndexSecond.difference "Li
     ```
 
 IndexSecond.dropfalsy()[](#static_frame.IndexSecond.dropfalsy "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexSecond(('1620-09-16', 'NaT', '1620-11-21'))
@@ -416,7 +416,7 @@ IndexSecond.dropfalsy()[](#static_frame.IndexSecond.dropfalsy "Link to this d
     ```
 
 IndexSecond.dropna()[](#static_frame.IndexSecond.dropna "Link to this definition")
-:   Return a new [`Index`](index-selector.html#Index "Index") after removing values of NaN or None.
+:   Return a new [`Index`](index-selector.md#Index "Index") after removing values of NaN or None.
 
     ```
     >>> ix = sf.IndexSecond(('1620-09-16', 'NaT', '1620-11-21'))
@@ -464,7 +464,7 @@ IndexSecond.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fa
     ```
 
 IndexSecond.fillfalsy(*value*, */*)[](#static_frame.IndexSecond.fillfalsy "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing falsy values with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -483,7 +483,7 @@ IndexSecond.fillfalsy(*value*, */*)[](#static_frame.IndexSecond.fillfalsy "Li
     ```
 
 IndexSecond.fillna(*value*, */*)[](#static_frame.IndexSecond.fillna "Link to this definition")
-:   Return an [`Index`](index-selector.html#Index "Index") with replacing null (NaN or None) with the supplied value.
+:   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
     :   **value** – Value to be used to replace missing values (NaN or None).
@@ -506,10 +506,10 @@ IndexSecond.fillna(*value*, */*)[](#static_frame.IndexSecond.fillna "Link to 
     ```
 
 IndexSecond.head(*count=5*, */*)[](#static_frame.IndexSecond.head "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the top elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the top of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -528,7 +528,7 @@ IndexSecond.head(*count=5*, */*)[](#static_frame.IndexSecond.head "Link to th
     ```
 
 IndexSecond.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexSecond.iloc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -652,7 +652,7 @@ IndexSecond.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#stat
     ```
 
 IndexSecond.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexSecond.loc_searchsorted "Link to this definition")
-:   Given a sorted [`Series`](series-selector.html#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
+:   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
     :   * **values** – a single value, or iterable of values.
@@ -970,10 +970,10 @@ IndexSecond.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#stat
     ```
 
 IndexSecond.tail(*count=5*, */*)[](#static_frame.IndexSecond.tail "Link to this definition")
-:   Return a [`Index`](index-selector.html#Index "Index") consisting only of the bottom elements as specified by `count`.
+:   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
-    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.html#Index "Index")
+    :   **count** – Number of elements to be returned from the bottom of the [`Index`](index-selector.md#Index "Index")
 
     ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
@@ -1080,10 +1080,10 @@ IndexSecond.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#stati
 
     ```
 
-[IndexSecond](index_second.html#api-detail-indexsecond): [Constructor](index_second-constructor.html#api-detail-indexsecond-constructor) | [Exporter](index_second-exporter.html#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.html#api-detail-indexsecond-attribute) | [Method](#api-detail-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.html#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.html#api-detail-indexsecond-display) | [Selector](index_second-selector.html#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.html#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.html#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.html#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.html#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.html#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.html#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.html#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.html#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.html#api-detail-indexsecond-accessor-type-clinic)
+[IndexSecond](index_second.md#api-detail-indexsecond): [Constructor](index_second-constructor.md#api-detail-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-detail-indexsecond-attribute) | [Method](#api-detail-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.md#api-detail-indexsecond-display) | [Selector](index_second-selector.md#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.md#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-detail-indexsecond-accessor-type-clinic)
 
-[Previous](index_second-attribute.html "Detail: IndexSecond: Attribute")
-[Next](index_second-dictionary_like.html "Detail: IndexSecond: Dictionary-Like")
+[Previous](index_second-attribute.md "Detail: IndexSecond: Attribute")
+[Next](index_second-dictionary_like.md "Detail: IndexSecond: Dictionary-Like")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: StoreConfig: Attribute
 * [View page source](../_sources/api_detail/store_config-attribute.rst.txt)
 
-[Previous](store_config-exporter.html "Detail: StoreConfig: Exporter")
-[Next](store_config-method.html "Detail: StoreConfig: Method")
+[Previous](store_config-exporter.md "Detail: StoreConfig: Exporter")
+[Next](store_config-method.md "Detail: StoreConfig: Method")
 
 ---
 
 # Detail: StoreConfig: Attribute[](#detail-storeconfig-attribute "Link to this heading")
 
-[Overview: StoreConfig: Attribute](../api_overview/store_config-attribute.html#api-overview-storeconfig-attribute)
+[Overview: StoreConfig: Attribute](../api_overview/store_config-attribute.md#api-overview-storeconfig-attribute)
 
 StoreConfig.columns\_constructors[](#static_frame.StoreConfig.columns_constructors "Link to this definition")
 
@@ -192,10 +192,10 @@ StoreConfig.write\_chunksize[](#static_frame.StoreConfig.write_chunksize "Lin
 
 StoreConfig.write\_max\_workers[](#static_frame.StoreConfig.write_max_workers "Link to this definition")
 
-[StoreConfig](store_config.html#api-detail-storeconfig): [Constructor](store_config-constructor.html#api-detail-storeconfig-constructor) | [Exporter](store_config-exporter.html#api-detail-storeconfig-exporter) | [Attribute](#api-detail-storeconfig-attribute) | [Method](store_config-method.html#api-detail-storeconfig-method) | [Display](store_config-display.html#api-detail-storeconfig-display)
+[StoreConfig](store_config.md#api-detail-storeconfig): [Constructor](store_config-constructor.md#api-detail-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-detail-storeconfig-exporter) | [Attribute](#api-detail-storeconfig-attribute) | [Method](store_config-method.md#api-detail-storeconfig-method) | [Display](store_config-display.md#api-detail-storeconfig-display)
 
-[Previous](store_config-exporter.html "Detail: StoreConfig: Exporter")
-[Next](store_config-method.html "Detail: StoreConfig: Method")
+[Previous](store_config-exporter.md "Detail: StoreConfig: Exporter")
+[Next](store_config-method.md "Detail: StoreConfig: Method")
 
 ---
 

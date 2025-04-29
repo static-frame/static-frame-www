@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexNanosecondGO: Display
 * [View page source](../_sources/api_overview/index_nanosecond_go-display.rst.txt)
 
-[Previous](index_nanosecond_go-dictionary_like.html "Overview: IndexNanosecondGO: Dictionary-Like")
-[Next](index_nanosecond_go-selector.html "Overview: IndexNanosecondGO: Selector")
+[Previous](index_nanosecond_go-dictionary_like.md "Overview: IndexNanosecondGO: Dictionary-Like")
+[Next](index_nanosecond_go-selector.md "Overview: IndexNanosecondGO: Selector")
 
 ---
 
 # Overview: IndexNanosecondGO: Display[](#overview-indexnanosecondgo-display "Link to this heading")
 
-[Detail: IndexNanosecondGO: Display](../api_detail/index_nanosecond_go-display.html#api-detail-indexnanosecondgo-display)
+[Detail: IndexNanosecondGO: Display](../api_detail/index_nanosecond_go-display.md#api-detail-indexnanosecondgo-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_nanosecond_go-display.html#api-sig-indexnanosecondgo-interface) | [`IndexNanosecondGO.interface`](../api_detail/index_nanosecond_go-display.html#IndexNanosecondGO.interface "IndexNanosecondGO.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_nanosecond_go-display.html#api-sig-indexnanosecondgo-repr) | `IndexNanosecondGO.__repr__()` |  |
-| [Detail](../api_detail/index_nanosecond_go-display.html#api-sig-indexnanosecondgo-str) | `IndexNanosecondGO.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_nanosecond_go-display.html#api-sig-indexnanosecondgo-display) | `IndexNanosecondGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_nanosecond_go-display.html#api-sig-indexnanosecondgo-display-tall) | `IndexNanosecondGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_nanosecond_go-display.html#api-sig-indexnanosecondgo-display-wide) | `IndexNanosecondGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_nanosecond_go-display.md#api-sig-indexnanosecondgo-interface) | [`IndexNanosecondGO.interface`](../api_detail/index_nanosecond_go-display.md#IndexNanosecondGO.interface "IndexNanosecondGO.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_nanosecond_go-display.md#api-sig-indexnanosecondgo-repr) | `IndexNanosecondGO.__repr__()` |  |
+| [Detail](../api_detail/index_nanosecond_go-display.md#api-sig-indexnanosecondgo-str) | `IndexNanosecondGO.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_nanosecond_go-display.md#api-sig-indexnanosecondgo-display) | `IndexNanosecondGO.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_nanosecond_go-display.md#api-sig-indexnanosecondgo-display-tall) | `IndexNanosecondGO.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_nanosecond_go-display.md#api-sig-indexnanosecondgo-display-wide) | `IndexNanosecondGO.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexNanosecondGO](index_nanosecond_go.html#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.html#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.html#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.html#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.html#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.html#api-overview-indexnanosecondgo-dictionary-like) | [Display](#api-overview-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.html#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.html#api-overview-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.html#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.html#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.html#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.html#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.html#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.html#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.html#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.html#api-overview-indexnanosecondgo-accessor-type-clinic)
+[IndexNanosecondGO](index_nanosecond_go.md#api-overview-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.md#api-overview-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.md#api-overview-indexnanosecondgo-exporter) | [Attribute](index_nanosecond_go-attribute.md#api-overview-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.md#api-overview-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.md#api-overview-indexnanosecondgo-dictionary-like) | [Display](#api-overview-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.md#api-overview-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.md#api-overview-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.md#api-overview-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.md#api-overview-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.md#api-overview-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.md#api-overview-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.md#api-overview-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.md#api-overview-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.md#api-overview-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.md#api-overview-indexnanosecondgo-accessor-type-clinic)
 
-[Previous](index_nanosecond_go-dictionary_like.html "Overview: IndexNanosecondGO: Dictionary-Like")
-[Next](index_nanosecond_go-selector.html "Overview: IndexNanosecondGO: Selector")
+[Previous](index_nanosecond_go-dictionary_like.md "Overview: IndexNanosecondGO: Dictionary-Like")
+[Next](index_nanosecond_go-selector.md "Overview: IndexNanosecondGO: Selector")
 
 ---
 

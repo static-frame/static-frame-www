@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: IndexMinuteGO: Constructor
 * [View page source](../_sources/api_overview/index_minute_go-constructor.rst.txt)
 
-[Previous](index_minute-accessor_type_clinic.html "Overview: IndexMinute: Accessor Type Clinic")
-[Next](index_minute_go-exporter.html "Overview: IndexMinuteGO: Exporter")
+[Previous](index_minute-accessor_type_clinic.md "Overview: IndexMinute: Accessor Type Clinic")
+[Next](index_minute_go-exporter.md "Overview: IndexMinuteGO: Exporter")
 
 ---
 
 # Overview: IndexMinuteGO: Constructor[](#overview-indexminutego-constructor "Link to this heading")
 
-[Detail: IndexMinuteGO: Constructor](../api_detail/index_minute_go-constructor.html#api-detail-indexminutego-constructor)
+[Detail: IndexMinuteGO: Constructor](../api_detail/index_minute_go-constructor.md#api-detail-indexminutego-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute_go-constructor.html#api-sig-indexminutego-init) | `IndexMinuteGO.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
-| [Detail](../api_detail/index_minute_go-constructor.html#api-sig-indexminutego-from-labels) | `IndexMinuteGO.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
-| [Detail](../api_detail/index_minute_go-constructor.html#api-sig-indexminutego-from-pandas) | `IndexMinuteGO.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_minute_go-constructor.md#api-sig-indexminutego-init) | `IndexMinuteGO.__init__(labels, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_minute_go-constructor.md#api-sig-indexminutego-from-labels) | `IndexMinuteGO.from_labels(labels, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
+| [Detail](../api_detail/index_minute_go-constructor.md#api-sig-indexminutego-from-pandas) | `IndexMinuteGO.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
 
-[IndexMinuteGO](index_minute_go.html#api-overview-indexminutego): [Constructor](#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.html#api-overview-indexminutego-exporter) | [Attribute](index_minute_go-attribute.html#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.html#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.html#api-overview-indexminutego-dictionary-like) | [Display](index_minute_go-display.html#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.html#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.html#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.html#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.html#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.html#api-overview-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.html#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.html#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.html#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.html#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.html#api-overview-indexminutego-accessor-type-clinic)
+[IndexMinuteGO](index_minute_go.md#api-overview-indexminutego): [Constructor](#api-overview-indexminutego-constructor) | [Exporter](index_minute_go-exporter.md#api-overview-indexminutego-exporter) | [Attribute](index_minute_go-attribute.md#api-overview-indexminutego-attribute) | [Method](index_minute_go-method.md#api-overview-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-overview-indexminutego-dictionary-like) | [Display](index_minute_go-display.md#api-overview-indexminutego-display) | [Selector](index_minute_go-selector.md#api-overview-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-overview-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.md#api-overview-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-overview-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.md#api-overview-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.md#api-overview-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-overview-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-overview-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.md#api-overview-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-overview-indexminutego-accessor-type-clinic)
 
-[Previous](index_minute-accessor_type_clinic.html "Overview: IndexMinute: Accessor Type Clinic")
-[Next](index_minute_go-exporter.html "Overview: IndexMinuteGO: Exporter")
+[Previous](index_minute-accessor_type_clinic.md "Overview: IndexMinute: Accessor Type Clinic")
+[Next](index_minute_go-exporter.md "Overview: IndexMinuteGO: Exporter")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,32 +135,32 @@ API Detail
 * Overview: Yarn
 * [View page source](../_sources/api_overview/yarn.rst.txt)
 
-[Previous](batch.html "Overview: Batch")
-[Next](quilt.html "Overview: Quilt")
+[Previous](batch.md "Overview: Batch")
+[Next](quilt.md "Overview: Quilt")
 
 ---
 
 # Overview: Yarn[](#overview-yarn "Link to this heading")
 
-[Detail: Yarn](../api_detail/yarn.html#api-detail-yarn)
+[Detail: Yarn](../api_detail/yarn.md#api-detail-yarn)
 
 |  |  |
 | --- | --- |
-| [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | Alternative constructors for creating instances. |
-| [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](yarn-method.html#api-overview-yarn-method) | Methods for general functionality. |
-| [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](yarn-display.html#api-overview-yarn-display) | Methods for providing a text representation of the object. |
-| [Selector](yarn-selector.html#api-overview-yarn-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | Alternative constructors for creating instances. |
+| [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](yarn-method.md#api-overview-yarn-method) | Methods for general functionality. |
+| [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](yarn-display.md#api-overview-yarn-display) | Methods for providing a text representation of the object. |
+| [Selector](yarn-selector.md#api-overview-yarn-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 
-[Yarn](#api-overview-yarn): [Constructor](yarn-constructor.html#api-overview-yarn-constructor) | [Exporter](yarn-exporter.html#api-overview-yarn-exporter) | [Attribute](yarn-attribute.html#api-overview-yarn-attribute) | [Method](yarn-method.html#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-overview-yarn-dictionary-like) | [Display](yarn-display.html#api-overview-yarn-display) | [Selector](yarn-selector.html#api-overview-yarn-selector) | [Iterator](yarn-iterator.html#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-overview-yarn-accessor-type-clinic)
+[Yarn](#api-overview-yarn): [Constructor](yarn-constructor.md#api-overview-yarn-constructor) | [Exporter](yarn-exporter.md#api-overview-yarn-exporter) | [Attribute](yarn-attribute.md#api-overview-yarn-attribute) | [Method](yarn-method.md#api-overview-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-overview-yarn-dictionary-like) | [Display](yarn-display.md#api-overview-yarn-display) | [Selector](yarn-selector.md#api-overview-yarn-selector) | [Iterator](yarn-iterator.md#api-overview-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-overview-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-overview-yarn-accessor-type-clinic)
 
-[Previous](batch.html "Overview: Batch")
-[Next](quilt.html "Overview: Quilt")
+[Previous](batch.md "Overview: Batch")
+[Next](quilt.md "Overview: Quilt")
 
 ---
 

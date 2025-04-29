@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,21 +135,21 @@ API Detail
 * Detail: DisplayActive: Attribute
 * [View page source](../_sources/api_detail/display_active-attribute.rst.txt)
 
-[Previous](display_active-constructor.html "Detail: DisplayActive: Constructor")
-[Next](display_active-method.html "Detail: DisplayActive: Method")
+[Previous](display_active-constructor.md "Detail: DisplayActive: Constructor")
+[Next](display_active-method.md "Detail: DisplayActive: Method")
 
 ---
 
 # Detail: DisplayActive: Attribute[](#detail-displayactive-attribute "Link to this heading")
 
-[Overview: DisplayActive: Attribute](../api_overview/display_active-attribute.html#api-overview-displayactive-attribute)
+[Overview: DisplayActive: Attribute](../api_overview/display_active-attribute.md#api-overview-displayactive-attribute)
 
 DisplayActive.FILE\_NAME *= '.static\_frame.conf'*[](#static_frame.DisplayActive.FILE_NAME "Link to this definition")
 
-[DisplayActive](display_active.html#api-detail-displayactive): [Constructor](display_active-constructor.html#api-detail-displayactive-constructor) | [Attribute](#api-detail-displayactive-attribute) | [Method](display_active-method.html#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.html#api-detail-displayactive-dictionary-like) | [Display](display_active-display.html#api-detail-displayactive-display)
+[DisplayActive](display_active.md#api-detail-displayactive): [Constructor](display_active-constructor.md#api-detail-displayactive-constructor) | [Attribute](#api-detail-displayactive-attribute) | [Method](display_active-method.md#api-detail-displayactive-method) | [Dictionary-Like](display_active-dictionary_like.md#api-detail-displayactive-dictionary-like) | [Display](display_active-display.md#api-detail-displayactive-display)
 
-[Previous](display_active-constructor.html "Detail: DisplayActive: Constructor")
-[Next](display_active-method.html "Detail: DisplayActive: Method")
+[Previous](display_active-constructor.md "Detail: DisplayActive: Constructor")
+[Next](display_active-method.md "Detail: DisplayActive: Method")
 
 ---
 

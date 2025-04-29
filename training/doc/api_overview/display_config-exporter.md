@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: DisplayConfig: Exporter
 * [View page source](../_sources/api_overview/display_config-exporter.rst.txt)
 
-[Previous](display_config-constructor.html "Overview: DisplayConfig: Constructor")
-[Next](display_config-attribute.html "Overview: DisplayConfig: Attribute")
+[Previous](display_config-constructor.md "Overview: DisplayConfig: Constructor")
+[Next](display_config-attribute.md "Overview: DisplayConfig: Attribute")
 
 ---
 
 # Overview: DisplayConfig: Exporter[](#overview-displayconfig-exporter "Link to this heading")
 
-[Detail: DisplayConfig: Exporter](../api_detail/display_config-exporter.html#api-detail-displayconfig-exporter)
+[Detail: DisplayConfig: Exporter](../api_detail/display_config-exporter.md#api-detail-displayconfig-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/display_config-exporter.html#api-sig-displayconfig-to-dict) | `DisplayConfig.to_dict(**kwargs)` |  |
-| [Detail](../api_detail/display_config-exporter.html#api-sig-displayconfig-to-display-config) | `DisplayConfig.to_display_config(**kwargs)` |  |
-| [Detail](../api_detail/display_config-exporter.html#api-sig-displayconfig-to-json) | `DisplayConfig.to_json()` |  |
-| [Detail](../api_detail/display_config-exporter.html#api-sig-displayconfig-to-transpose) | `DisplayConfig.to_transpose()` |  |
+| [Detail](../api_detail/display_config-exporter.md#api-sig-displayconfig-to-dict) | `DisplayConfig.to_dict(**kwargs)` |  |
+| [Detail](../api_detail/display_config-exporter.md#api-sig-displayconfig-to-display-config) | `DisplayConfig.to_display_config(**kwargs)` |  |
+| [Detail](../api_detail/display_config-exporter.md#api-sig-displayconfig-to-json) | `DisplayConfig.to_json()` |  |
+| [Detail](../api_detail/display_config-exporter.md#api-sig-displayconfig-to-transpose) | `DisplayConfig.to_transpose()` |  |
 
-[DisplayConfig](display_config.html#api-overview-displayconfig): [Constructor](display_config-constructor.html#api-overview-displayconfig-constructor) | [Exporter](#api-overview-displayconfig-exporter) | [Attribute](display_config-attribute.html#api-overview-displayconfig-attribute) | [Method](display_config-method.html#api-overview-displayconfig-method) | [Display](display_config-display.html#api-overview-displayconfig-display)
+[DisplayConfig](display_config.md#api-overview-displayconfig): [Constructor](display_config-constructor.md#api-overview-displayconfig-constructor) | [Exporter](#api-overview-displayconfig-exporter) | [Attribute](display_config-attribute.md#api-overview-displayconfig-attribute) | [Method](display_config-method.md#api-overview-displayconfig-method) | [Display](display_config-display.md#api-overview-displayconfig-display)
 
-[Previous](display_config-constructor.html "Overview: DisplayConfig: Constructor")
-[Next](display_config-attribute.html "Overview: DisplayConfig: Attribute")
+[Previous](display_config-constructor.md "Overview: DisplayConfig: Constructor")
+[Next](display_config-attribute.md "Overview: DisplayConfig: Attribute")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: Series: Selector
 * [View page source](../_sources/api_detail/series-selector.rst.txt)
 
-[Previous](series-assignment.html "Detail: Series: Assignment")
-[Next](series-iterator.html "Detail: Series: Iterator")
+[Previous](series-assignment.md "Detail: Series: Assignment")
+[Next](series-iterator.md "Detail: Series: Iterator")
 
 ---
 
 # Detail: Series: Selector[](#detail-series-selector "Link to this heading")
 
-[Overview: Series: Selector](../api_overview/series-selector.html#api-overview-series-selector)
+[Overview: Series: Selector](../api_overview/series-selector.md#api-overview-series-selector)
 
 Series.drop[*key*]
 :   drop
-    :   Interface for dropping elements from [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series"). This alway returns a Series.
+    :   Interface for dropping elements from [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series"). This alway returns a Series.
 
-    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceSelectTrio.__getitem__)
+    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceSelectTrio.__getitem__)
     :   Label-based selection.
 
     ```
@@ -188,7 +188,7 @@ Series.drop[*key*]
 
 Series.drop.iloc[*key*]
 :   Series.drop
-    :   Interface for dropping elements from [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series"). This alway returns a Series.
+    :   Interface for dropping elements from [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series"). This alway returns a Series.
 
     InterfaceSelectTrio.iloc
     :   Integer-position based selection.
@@ -230,7 +230,7 @@ Series.drop.iloc[*key*]
 
 Series.drop.loc[*key*]
 :   Series.drop
-    :   Interface for dropping elements from [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series"). This alway returns a Series.
+    :   Interface for dropping elements from [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series"). This alway returns a Series.
 
     InterfaceSelectTrio.loc
     :   Label-based selection.
@@ -272,9 +272,9 @@ Series.drop.loc[*key*]
 
 Series.mask[*key*]
 :   mask
-    :   Interface for extracting Boolean [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series").
+    :   Interface for extracting Boolean [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series").
 
-    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceSelectTrio.__getitem__)
+    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceSelectTrio.__getitem__)
     :   Label-based selection.
 
     ```
@@ -320,7 +320,7 @@ Series.mask[*key*]
 
 Series.mask.iloc[*key*]
 :   Series.mask
-    :   Interface for extracting Boolean [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series").
+    :   Interface for extracting Boolean [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series").
 
     InterfaceSelectTrio.iloc
     :   Integer-position based selection.
@@ -368,7 +368,7 @@ Series.mask.iloc[*key*]
 
 Series.mask.loc[*key*]
 :   Series.mask
-    :   Interface for extracting Boolean [`static_frame.Series`](series.html#static_frame.Series "static_frame.Series").
+    :   Interface for extracting Boolean [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series").
 
     InterfaceSelectTrio.loc
     :   Label-based selection.
@@ -418,7 +418,7 @@ Series.masked\_array[*key*]
 :   masked\_array
     :   Interface for extracting NumPy Masked Arrays.
 
-    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.html#InterfaceSelectTrio.__getitem__)
+    InterfaceSelectTrio.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceSelectTrio.__getitem__)
     :   Label-based selection.
 
     ```
@@ -496,7 +496,7 @@ Series.masked\_array.loc[*key*]
     ```
 
 Series[*key*]()[](#Series "Link to this definition")
-:   Series.\_\_getitem\_\_ *= <function Series.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/series.html#Series.__getitem__)
+:   Series.\_\_getitem\_\_ *= <function Series.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/series.md#Series.__getitem__)
 
     ```
     >>> s = sf.Series((2, 8, 19, 34, 54), index=('a', 'b', 'c', 'd', 'e'))
@@ -593,10 +593,10 @@ Series.loc[*key*]
 
     ```
 
-[Series](series.html#api-detail-series): [Constructor](series-constructor.html#api-detail-series-constructor) | [Exporter](series-exporter.html#api-detail-series-exporter) | [Attribute](series-attribute.html#api-detail-series-attribute) | [Method](series-method.html#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.html#api-detail-series-dictionary-like) | [Display](series-display.html#api-detail-series-display) | [Assignment](series-assignment.html#api-detail-series-assignment) | [Selector](#api-detail-series-selector) | [Iterator](series-iterator.html#api-detail-series-iterator) | [Operator Binary](series-operator_binary.html#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-detail-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-assignment.html "Detail: Series: Assignment")
-[Next](series-iterator.html "Detail: Series: Iterator")
+[Previous](series-assignment.md "Detail: Series: Assignment")
+[Next](series-iterator.md "Detail: Series: Iterator")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: FillValueAuto: Selector
 * [View page source](../_sources/api_overview/fill_value_auto-selector.rst.txt)
 
-[Previous](fill_value_auto-display.html "Overview: FillValueAuto: Display")
-[Next](display_active-constructor.html "Overview: DisplayActive: Constructor")
+[Previous](fill_value_auto-display.md "Overview: FillValueAuto: Display")
+[Next](display_active-constructor.md "Overview: DisplayActive: Constructor")
 
 ---
 
 # Overview: FillValueAuto: Selector[](#overview-fillvalueauto-selector "Link to this heading")
 
-[Detail: FillValueAuto: Selector](../api_detail/fill_value_auto-selector.html#api-detail-fillvalueauto-selector)
+[Detail: FillValueAuto: Selector](../api_detail/fill_value_auto-selector.md#api-detail-fillvalueauto-selector)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/fill_value_auto-selector.html#api-sig-fillvalueauto) | `FillValueAuto[dtype]` |  |
+| [Detail](../api_detail/fill_value_auto-selector.md#api-sig-fillvalueauto) | `FillValueAuto[dtype]` |  |
 
-[FillValueAuto](fill_value_auto.html#api-overview-fillvalueauto): [Constructor](fill_value_auto-constructor.html#api-overview-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.html#api-overview-fillvalueauto-attribute) | [Display](fill_value_auto-display.html#api-overview-fillvalueauto-display) | [Selector](#api-overview-fillvalueauto-selector)
+[FillValueAuto](fill_value_auto.md#api-overview-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-overview-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-overview-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-overview-fillvalueauto-display) | [Selector](#api-overview-fillvalueauto-selector)
 
-[Previous](fill_value_auto-display.html "Overview: FillValueAuto: Display")
-[Next](display_active-constructor.html "Overview: DisplayActive: Constructor")
+[Previous](fill_value_auto-display.md "Overview: FillValueAuto: Display")
+[Next](display_active-constructor.md "Overview: DisplayActive: Constructor")
 
 ---
 

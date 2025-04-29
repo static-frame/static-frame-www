@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,53 +135,53 @@ API Detail
 * Overview: DisplayConfig: Attribute
 * [View page source](../_sources/api_overview/display_config-attribute.rst.txt)
 
-[Previous](display_config-exporter.html "Overview: DisplayConfig: Exporter")
-[Next](display_config-method.html "Overview: DisplayConfig: Method")
+[Previous](display_config-exporter.md "Overview: DisplayConfig: Exporter")
+[Next](display_config-method.md "Overview: DisplayConfig: Method")
 
 ---
 
 # Overview: DisplayConfig: Attribute[](#overview-displayconfig-attribute "Link to this heading")
 
-[Detail: DisplayConfig: Attribute](../api_detail/display_config-attribute.html#api-detail-displayconfig-attribute)
+[Detail: DisplayConfig: Attribute](../api_detail/display_config-attribute.md#api-detail-displayconfig-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-cell-align-left) | `DisplayConfig.cell_align_left` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-cell-max-width) | `DisplayConfig.cell_max_width` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-cell-max-width-leftmost) | `DisplayConfig.cell_max_width_leftmost` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-cell-placeholder) | `DisplayConfig.cell_placeholder` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-display-columns) | `DisplayConfig.display_columns` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-display-format) | `DisplayConfig.display_format` | Define display output format. |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-display-rows) | `DisplayConfig.display_rows` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-include-columns) | `DisplayConfig.include_columns` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-include-index) | `DisplayConfig.include_index` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color) | `DisplayConfig.type_color` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-bool) | `DisplayConfig.type_color_bool` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-bus) | `DisplayConfig.type_color_bus` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-complex) | `DisplayConfig.type_color_complex` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-datetime) | `DisplayConfig.type_color_datetime` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-default) | `DisplayConfig.type_color_default` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-float) | `DisplayConfig.type_color_float` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-frame) | `DisplayConfig.type_color_frame` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-index) | `DisplayConfig.type_color_index` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-int) | `DisplayConfig.type_color_int` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-object) | `DisplayConfig.type_color_object` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-quilt) | `DisplayConfig.type_color_quilt` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-series) | `DisplayConfig.type_color_series` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-str) | `DisplayConfig.type_color_str` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-color-timedelta) | `DisplayConfig.type_color_timedelta` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-delimiter-left) | `DisplayConfig.type_delimiter_left` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-delimiter-right) | `DisplayConfig.type_delimiter_right` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-type-show) | `DisplayConfig.type_show` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-value-format-complex-positional) | `DisplayConfig.value_format_complex_positional` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-value-format-complex-scientific) | `DisplayConfig.value_format_complex_scientific` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-value-format-float-positional) | `DisplayConfig.value_format_float_positional` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
-| [Detail](../api_detail/display_config-attribute.html#api-sig-displayconfig-value-format-float-scientific) | `DisplayConfig.value_format_float_scientific` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-cell-align-left) | `DisplayConfig.cell_align_left` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-cell-max-width) | `DisplayConfig.cell_max_width` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-cell-max-width-leftmost) | `DisplayConfig.cell_max_width_leftmost` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-cell-placeholder) | `DisplayConfig.cell_placeholder` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-display-columns) | `DisplayConfig.display_columns` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-display-format) | `DisplayConfig.display_format` | Define display output format. |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-display-rows) | `DisplayConfig.display_rows` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-include-columns) | `DisplayConfig.include_columns` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-include-index) | `DisplayConfig.include_index` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color) | `DisplayConfig.type_color` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-bool) | `DisplayConfig.type_color_bool` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-bus) | `DisplayConfig.type_color_bus` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-complex) | `DisplayConfig.type_color_complex` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-datetime) | `DisplayConfig.type_color_datetime` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-default) | `DisplayConfig.type_color_default` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-float) | `DisplayConfig.type_color_float` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-frame) | `DisplayConfig.type_color_frame` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-index) | `DisplayConfig.type_color_index` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-int) | `DisplayConfig.type_color_int` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-object) | `DisplayConfig.type_color_object` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-quilt) | `DisplayConfig.type_color_quilt` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-series) | `DisplayConfig.type_color_series` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-str) | `DisplayConfig.type_color_str` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-color-timedelta) | `DisplayConfig.type_color_timedelta` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-delimiter-left) | `DisplayConfig.type_delimiter_left` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-delimiter-right) | `DisplayConfig.type_delimiter_right` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-type-show) | `DisplayConfig.type_show` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-value-format-complex-positional) | `DisplayConfig.value_format_complex_positional` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-value-format-complex-scientific) | `DisplayConfig.value_format_complex_scientific` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-value-format-float-positional) | `DisplayConfig.value_format_float_positional` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
+| [Detail](../api_detail/display_config-attribute.md#api-sig-displayconfig-value-format-float-scientific) | `DisplayConfig.value_format_float_scientific` | str(object=’’) -> str str(bytes\_or\_buffer[, encoding[, errors]]) -> str Create a… |
 
-[DisplayConfig](display_config.html#api-overview-displayconfig): [Constructor](display_config-constructor.html#api-overview-displayconfig-constructor) | [Exporter](display_config-exporter.html#api-overview-displayconfig-exporter) | [Attribute](#api-overview-displayconfig-attribute) | [Method](display_config-method.html#api-overview-displayconfig-method) | [Display](display_config-display.html#api-overview-displayconfig-display)
+[DisplayConfig](display_config.md#api-overview-displayconfig): [Constructor](display_config-constructor.md#api-overview-displayconfig-constructor) | [Exporter](display_config-exporter.md#api-overview-displayconfig-exporter) | [Attribute](#api-overview-displayconfig-attribute) | [Method](display_config-method.md#api-overview-displayconfig-method) | [Display](display_config-display.md#api-overview-displayconfig-display)
 
-[Previous](display_config-exporter.html "Overview: DisplayConfig: Exporter")
-[Next](display_config-method.html "Overview: DisplayConfig: Method")
+[Previous](display_config-exporter.md "Overview: DisplayConfig: Exporter")
+[Next](display_config-method.md "Overview: DisplayConfig: Method")
 
 ---
 

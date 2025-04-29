@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Detail: NPY: Attribute
 * [View page source](../_sources/api_detail/npy-attribute.rst.txt)
 
-[Previous](npy-constructor.html "Detail: NPY: Constructor")
-[Next](npy-method.html "Detail: NPY: Method")
+[Previous](npy-constructor.md "Detail: NPY: Constructor")
+[Next](npy-method.md "Detail: NPY: Method")
 
 ---
 
 # Detail: NPY: Attribute[](#detail-npy-attribute "Link to this heading")
 
-[Overview: NPY: Attribute](../api_overview/npy-attribute.html#api-overview-npy-attribute)
+[Overview: NPY: Attribute](../api_overview/npy-attribute.md#api-overview-npy-attribute)
 
 NPY.contents[](#static_frame.NPY.contents "Link to this definition")
-:   Return a [`Frame`](frame-selector.html#Frame "Frame") indicating name, dtype, shape, and bytes, of Archive components.
+:   Return a [`Frame`](frame-selector.md#Frame "Frame") indicating name, dtype, shape, and bytes, of Archive components.
 
 NPY.nbytes[](#static_frame.NPY.nbytes "Link to this definition")
 :   Return numer of bytes stored in this archive.
 
-[NPY](npy.html#api-detail-npy): [Constructor](npy-constructor.html#api-detail-npy-constructor) | [Attribute](#api-detail-npy-attribute) | [Method](npy-method.html#api-detail-npy-method) | [Display](npy-display.html#api-detail-npy-display)
+[NPY](npy.md#api-detail-npy): [Constructor](npy-constructor.md#api-detail-npy-constructor) | [Attribute](#api-detail-npy-attribute) | [Method](npy-method.md#api-detail-npy-method) | [Display](npy-display.md#api-detail-npy-display)
 
-[Previous](npy-constructor.html "Detail: NPY: Constructor")
-[Next](npy-method.html "Detail: NPY: Method")
+[Previous](npy-constructor.md "Detail: NPY: Constructor")
+[Next](npy-method.md "Detail: NPY: Method")
 
 ---
 

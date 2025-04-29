@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,33 +136,33 @@ API Detail
 * Detail: Yarn
 * [View page source](../_sources/api_detail/yarn.rst.txt)
 
-[Previous](batch.html "Detail: Batch")
-[Next](quilt.html "Detail: Quilt")
+[Previous](batch.md "Detail: Batch")
+[Next](quilt.md "Detail: Quilt")
 
 ---
 
 # Detail: Yarn[](#detail-yarn "Link to this heading")
 
-[Overview: Yarn](../api_overview/yarn.html#api-overview-yarn)
+[Overview: Yarn](../api_overview/yarn.md#api-overview-yarn)
 
-*class* Yarn(*series*, */*, *\**, *index=None*, *index\_constructor=None*, *deepcopy\_from\_bus=False*, *indexer=None*, *hierarchy=None*, *name=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/yarn.html#Yarn)[](#static_frame.Yarn "Link to this definition")
-:   A [`Series`](series-selector.html#Series "Series")-like container made of an ordered collection of [`Bus`](bus-selector.html#Bus "Bus"). [`Yarn`](yarn-selector.html#Yarn "Yarn") can be indexed independently of the contained [`Bus`](bus-selector.html#Bus "Bus"), permitting independent labels per contained [`Frame`](frame-selector.html#Frame "Frame").
+*class* Yarn(*series*, */*, *\**, *index=None*, *index\_constructor=None*, *deepcopy\_from\_bus=False*, *indexer=None*, *hierarchy=None*, *name=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn)[](#static_frame.Yarn "Link to this definition")
+:   A [`Series`](series-selector.md#Series "Series")-like container made of an ordered collection of [`Bus`](bus-selector.md#Bus "Bus"). [`Yarn`](yarn-selector.md#Yarn "Yarn") can be indexed independently of the contained [`Bus`](bus-selector.md#Bus "Bus"), permitting independent labels per contained [`Frame`](frame-selector.md#Frame "Frame").
 
-* [Constructor](yarn-constructor.html#api-detail-yarn-constructor): Alternative constructors for creating instances.
-* [Exporter](yarn-exporter.html#api-detail-yarn-exporter): Methods for transforming, exporting, or serializing objects.
-* [Attribute](yarn-attribute.html#api-detail-yarn-attribute): Attributes for retrieving basic characteristics.
-* [Method](yarn-method.html#api-detail-yarn-method): Methods for general functionality.
-* [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like): All dictionary-like methods and iterators.
-* [Display](yarn-display.html#api-detail-yarn-display): Methods for providing a text representation of the object.
-* [Selector](yarn-selector.html#api-detail-yarn-selector): Interfaces for selecting by position, label or Boolean.
-* [Iterator](yarn-iterator.html#api-detail-yarn-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
-* [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
-* [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* [Constructor](yarn-constructor.md#api-detail-yarn-constructor): Alternative constructors for creating instances.
+* [Exporter](yarn-exporter.md#api-detail-yarn-exporter): Methods for transforming, exporting, or serializing objects.
+* [Attribute](yarn-attribute.md#api-detail-yarn-attribute): Attributes for retrieving basic characteristics.
+* [Method](yarn-method.md#api-detail-yarn-method): Methods for general functionality.
+* [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like): All dictionary-like methods and iterators.
+* [Display](yarn-display.md#api-detail-yarn-display): Methods for providing a text representation of the object.
+* [Selector](yarn-selector.md#api-detail-yarn-selector): Interfaces for selecting by position, label or Boolean.
+* [Iterator](yarn-iterator.md#api-detail-yarn-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
+* [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
+* [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
 
-[Yarn](#api-detail-yarn): [Constructor](yarn-constructor.html#api-detail-yarn-constructor) | [Exporter](yarn-exporter.html#api-detail-yarn-exporter) | [Attribute](yarn-attribute.html#api-detail-yarn-attribute) | [Method](yarn-method.html#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.html#api-detail-yarn-dictionary-like) | [Display](yarn-display.html#api-detail-yarn-display) | [Selector](yarn-selector.html#api-detail-yarn-selector) | [Iterator](yarn-iterator.html#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.html#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.html#api-detail-yarn-accessor-type-clinic)
+[Yarn](#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)
 
-[Previous](batch.html "Detail: Batch")
-[Next](quilt.html "Detail: Quilt")
+[Previous](batch.md "Detail: Batch")
+[Next](quilt.md "Detail: Quilt")
 
 ---
 

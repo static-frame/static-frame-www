@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: Frame: Accessor Datetime
 * [View page source](../_sources/api_overview/frame-accessor_datetime.rst.txt)
 
-[Previous](frame-accessor_values.html "Overview: Frame: Accessor Values")
-[Next](frame-accessor_string.html "Overview: Frame: Accessor String")
+[Previous](frame-accessor_values.md "Overview: Frame: Accessor Values")
+[Next](frame-accessor_string.md "Overview: Frame: Accessor String")
 
 ---
 
 # Overview: Frame: Accessor Datetime[](#overview-frame-accessor-datetime "Link to this heading")
 
-[Detail: Frame: Accessor Datetime](../api_detail/frame-accessor_datetime.html#api-detail-frame-accessor-datetime)
+[Detail: Frame: Accessor Datetime](../api_detail/frame-accessor_datetime.md#api-detail-frame-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-call) | `Frame.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-year) | `Frame.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-year-month) | `Frame.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-year-quarter) | `Frame.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-month) | `Frame.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-day) | `Frame.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-hour) | `Frame.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-minute) | `Frame.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-second) | `Frame.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-weekday) | `Frame.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-quarter) | `Frame.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-is-month-end) | `Frame.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-is-month-start) | `Frame.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-is-year-end) | `Frame.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-is-year-start) | `Frame.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-is-quarter-end) | `Frame.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-is-quarter-start) | `Frame.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-timetuple) | `Frame.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-isoformat) | `Frame.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-fromisoformat) | `Frame.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-strftime) | `Frame.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-strptime) | `Frame.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/frame-accessor_datetime.html#api-sig-frame-via-dt-strpdate) | `Frame.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-call) | `Frame.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-year) | `Frame.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-year-month) | `Frame.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-year-quarter) | `Frame.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-month) | `Frame.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-day) | `Frame.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-hour) | `Frame.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-minute) | `Frame.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-second) | `Frame.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-weekday) | `Frame.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-quarter) | `Frame.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-is-month-end) | `Frame.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-is-month-start) | `Frame.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-is-year-end) | `Frame.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-is-year-start) | `Frame.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-is-quarter-end) | `Frame.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-is-quarter-start) | `Frame.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-timetuple) | `Frame.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-isoformat) | `Frame.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-fromisoformat) | `Frame.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-strftime) | `Frame.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-strptime) | `Frame.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/frame-accessor_datetime.md#api-sig-frame-via-dt-strpdate) | `Frame.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[Frame](frame.html#api-overview-frame): [Constructor](frame-constructor.html#api-overview-frame-constructor) | [Exporter](frame-exporter.html#api-overview-frame-exporter) | [Attribute](frame-attribute.html#api-overview-frame-attribute) | [Method](frame-method.html#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-overview-frame-dictionary-like) | [Display](frame-display.html#api-overview-frame-display) | [Assignment](frame-assignment.html#api-overview-frame-assignment) | [Selector](frame-selector.html#api-overview-frame-selector) | [Iterator](frame-iterator.html#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-overview-frame-accessor-values) | [Accessor Datetime](#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.html#api-overview-frame-accessor-reduce)
+[Frame](frame.md#api-overview-frame): [Constructor](frame-constructor.md#api-overview-frame-constructor) | [Exporter](frame-exporter.md#api-overview-frame-exporter) | [Attribute](frame-attribute.md#api-overview-frame-attribute) | [Method](frame-method.md#api-overview-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-overview-frame-dictionary-like) | [Display](frame-display.md#api-overview-frame-display) | [Assignment](frame-assignment.md#api-overview-frame-assignment) | [Selector](frame-selector.md#api-overview-frame-selector) | [Iterator](frame-iterator.md#api-overview-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-overview-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-overview-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-overview-frame-accessor-values) | [Accessor Datetime](#api-overview-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-overview-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-overview-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-overview-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-overview-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-overview-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-overview-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-overview-frame-accessor-reduce)
 
-[Previous](frame-accessor_values.html "Overview: Frame: Accessor Values")
-[Next](frame-accessor_string.html "Overview: Frame: Accessor String")
+[Previous](frame-accessor_values.md "Overview: Frame: Accessor Values")
+[Next](frame-accessor_string.md "Overview: Frame: Accessor String")
 
 ---
 

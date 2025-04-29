@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: Series: Operator Unary
 * [View page source](../_sources/api_overview/series-operator_unary.rst.txt)
 
-[Previous](series-operator_binary.html "Overview: Series: Operator Binary")
-[Next](series-accessor_values.html "Overview: Series: Accessor Values")
+[Previous](series-operator_binary.md "Overview: Series: Operator Binary")
+[Next](series-accessor_values.md "Overview: Series: Accessor Values")
 
 ---
 
 # Overview: Series: Operator Unary[](#overview-series-operator-unary "Link to this heading")
 
-[Detail: Series: Operator Unary](../api_detail/series-operator_unary.html#api-detail-series-operator-unary)
+[Detail: Series: Operator Unary](../api_detail/series-operator_unary.md#api-detail-series-operator-unary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-operator_unary.html#api-sig-series-abs) | `Series.__abs__()` |  |
-| [Detail](../api_detail/series-operator_unary.html#api-sig-series-invert) | `Series.__invert__()` |  |
-| [Detail](../api_detail/series-operator_unary.html#api-sig-series-neg) | `Series.__neg__()` |  |
-| [Detail](../api_detail/series-operator_unary.html#api-sig-series-pos) | `Series.__pos__()` |  |
-| [Detail](../api_detail/series-operator_unary.html#id1) | `Series.abs()` |  |
+| [Detail](../api_detail/series-operator_unary.md#api-sig-series-abs) | `Series.__abs__()` |  |
+| [Detail](../api_detail/series-operator_unary.md#api-sig-series-invert) | `Series.__invert__()` |  |
+| [Detail](../api_detail/series-operator_unary.md#api-sig-series-neg) | `Series.__neg__()` |  |
+| [Detail](../api_detail/series-operator_unary.md#api-sig-series-pos) | `Series.__pos__()` |  |
+| [Detail](../api_detail/series-operator_unary.md#id1) | `Series.abs()` |  |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-operator_binary.html "Overview: Series: Operator Binary")
-[Next](series-accessor_values.html "Overview: Series: Accessor Values")
+[Previous](series-operator_binary.md "Overview: Series: Operator Binary")
+[Next](series-accessor_values.md "Overview: Series: Accessor Values")
 
 ---
 

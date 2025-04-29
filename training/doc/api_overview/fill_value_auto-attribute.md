@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,33 +135,33 @@ API Detail
 * Overview: FillValueAuto: Attribute
 * [View page source](../_sources/api_overview/fill_value_auto-attribute.rst.txt)
 
-[Previous](fill_value_auto-constructor.html "Overview: FillValueAuto: Constructor")
-[Next](fill_value_auto-display.html "Overview: FillValueAuto: Display")
+[Previous](fill_value_auto-constructor.md "Overview: FillValueAuto: Constructor")
+[Next](fill_value_auto-display.md "Overview: FillValueAuto: Display")
 
 ---
 
 # Overview: FillValueAuto: Attribute[](#overview-fillvalueauto-attribute "Link to this heading")
 
-[Detail: FillValueAuto: Attribute](../api_detail/fill_value_auto-attribute.html#api-detail-fillvalueauto-attribute)
+[Detail: FillValueAuto: Attribute](../api_detail/fill_value_auto-attribute.md#api-detail-fillvalueauto-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/fill_value_auto-attribute.html#api-sig-fillvalueauto-m) | `FillValueAuto.M` | The base class of the class hierarchy. When called, it accepts no arguments and… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#api-sig-fillvalueauto-o) | `FillValueAuto.O` | The base class of the class hierarchy. When called, it accepts no arguments and… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#api-sig-fillvalueauto-s) | `FillValueAuto.S` | The base class of the class hierarchy. When called, it accepts no arguments and… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#api-sig-fillvalueauto-u) | `FillValueAuto.U` | The base class of the class hierarchy. When called, it accepts no arguments and… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#api-sig-fillvalueauto-v) | `FillValueAuto.V` | The base class of the class hierarchy. When called, it accepts no arguments and… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#api-sig-fillvalueauto-b) | `FillValueAuto.b` | Built-in immutable sequence. If no argument is given, the constructor returns an… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#api-sig-fillvalueauto-c) | `FillValueAuto.c` | The base class of the class hierarchy. When called, it accepts no arguments and… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#api-sig-fillvalueauto-f) | `FillValueAuto.f` | The base class of the class hierarchy. When called, it accepts no arguments and… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#api-sig-fillvalueauto-i) | `FillValueAuto.i` | The base class of the class hierarchy. When called, it accepts no arguments and… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#id1) | `FillValueAuto.m` | The base class of the class hierarchy. When called, it accepts no arguments and… |
-| [Detail](../api_detail/fill_value_auto-attribute.html#id2) | `FillValueAuto.u` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#api-sig-fillvalueauto-m) | `FillValueAuto.M` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#api-sig-fillvalueauto-o) | `FillValueAuto.O` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#api-sig-fillvalueauto-s) | `FillValueAuto.S` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#api-sig-fillvalueauto-u) | `FillValueAuto.U` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#api-sig-fillvalueauto-v) | `FillValueAuto.V` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#api-sig-fillvalueauto-b) | `FillValueAuto.b` | Built-in immutable sequence. If no argument is given, the constructor returns an… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#api-sig-fillvalueauto-c) | `FillValueAuto.c` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#api-sig-fillvalueauto-f) | `FillValueAuto.f` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#api-sig-fillvalueauto-i) | `FillValueAuto.i` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#id1) | `FillValueAuto.m` | The base class of the class hierarchy. When called, it accepts no arguments and… |
+| [Detail](../api_detail/fill_value_auto-attribute.md#id2) | `FillValueAuto.u` | The base class of the class hierarchy. When called, it accepts no arguments and… |
 
-[FillValueAuto](fill_value_auto.html#api-overview-fillvalueauto): [Constructor](fill_value_auto-constructor.html#api-overview-fillvalueauto-constructor) | [Attribute](#api-overview-fillvalueauto-attribute) | [Display](fill_value_auto-display.html#api-overview-fillvalueauto-display) | [Selector](fill_value_auto-selector.html#api-overview-fillvalueauto-selector)
+[FillValueAuto](fill_value_auto.md#api-overview-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-overview-fillvalueauto-constructor) | [Attribute](#api-overview-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-overview-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-overview-fillvalueauto-selector)
 
-[Previous](fill_value_auto-constructor.html "Overview: FillValueAuto: Constructor")
-[Next](fill_value_auto-display.html "Overview: FillValueAuto: Display")
+[Previous](fill_value_auto-constructor.md "Overview: FillValueAuto: Constructor")
+[Next](fill_value_auto-display.md "Overview: FillValueAuto: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: FrameHE: Dictionary-Like
 * [View page source](../_sources/api_detail/frame_he-dictionary_like.rst.txt)
 
-[Previous](frame_he-method.html "Detail: FrameHE: Method")
-[Next](frame_he-display.html "Detail: FrameHE: Display")
+[Previous](frame_he-method.md "Detail: FrameHE: Method")
+[Next](frame_he-display.md "Detail: FrameHE: Display")
 
 ---
 
 # Detail: FrameHE: Dictionary-Like[](#detail-framehe-dictionary-like "Link to this heading")
 
-[Overview: FrameHE: Dictionary-Like](../api_overview/frame_he-dictionary_like.html#api-overview-framehe-dictionary-like)
+[Overview: FrameHE: Dictionary-Like](../api_overview/frame_he-dictionary_like.md#api-overview-framehe-dictionary-like)
 
 FrameHE.\_\_contains\_\_(*value*, */*)[](#static_frame.FrameHE.__contains__ "Link to this definition")
 :   Inclusion of value in column labels.
@@ -164,7 +164,7 @@ FrameHE.\_\_contains\_\_(*value*, */*)[](#static_frame.FrameHE.__contains__ "
     ```
 
 FrameHE.\_\_iter\_\_()[](#static_frame.FrameHE.__iter__ "Link to this definition")
-:   Iterator of column labels, same as [`Frame.keys()`](frame-dictionary_like.html#static_frame.Frame.keys "static_frame.Frame.keys").
+:   Iterator of column labels, same as [`Frame.keys()`](frame-dictionary_like.md#static_frame.Frame.keys "static_frame.Frame.keys").
 
     ```
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -229,7 +229,7 @@ FrameHE.get(*key*, *default=None*)[](#static_frame.FrameHE.get "Link to this 
     ```
 
 FrameHE.items()[](#static_frame.FrameHE.items "Link to this definition")
-:   Iterator of pairs of column label and corresponding column [`Series`](series-selector.html#Series "Series").
+:   Iterator of pairs of column label and corresponding column [`Series`](series-selector.md#Series "Series").
 
     ```
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -289,7 +289,7 @@ FrameHE.keys()[](#static_frame.FrameHE.keys "Link to this definition")
     ```
 
 FrameHE.values[](#static_frame.FrameHE.values "Link to this definition")
-:   A 2D NumPy array of all values in the [`Frame`](frame-selector.html#Frame "Frame"). As this is a single array, heterogenous columnar types might be coerced to a compatible type.
+:   A 2D NumPy array of all values in the [`Frame`](frame-selector.md#Frame "Frame"). As this is a single array, heterogenous columnar types might be coerced to a compatible type.
 
     ```
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
@@ -310,10 +310,10 @@ FrameHE.values[](#static_frame.FrameHE.values "Link to this definition")
 
     ```
 
-[FrameHE](frame_he.html#api-detail-framehe): [Constructor](frame_he-constructor.html#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.html#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.html#api-detail-framehe-attribute) | [Method](frame_he-method.html#api-detail-framehe-method) | [Dictionary-Like](#api-detail-framehe-dictionary-like) | [Display](frame_he-display.html#api-detail-framehe-display) | [Assignment](frame_he-assignment.html#api-detail-framehe-assignment) | [Selector](frame_he-selector.html#api-detail-framehe-selector) | [Iterator](frame_he-iterator.html#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.html#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-detail-framehe-accessor-reduce)
+[FrameHE](frame_he.md#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.md#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.md#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](frame_he-assignment.md#api-detail-framehe-assignment) | [Selector](frame_he-selector.md#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)
 
-[Previous](frame_he-method.html "Detail: FrameHE: Method")
-[Next](frame_he-display.html "Detail: FrameHE: Display")
+[Previous](frame_he-method.md "Detail: FrameHE: Method")
+[Next](frame_he-display.md "Detail: FrameHE: Display")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: IndexMillisecond: Display
 * [View page source](../_sources/api_overview/index_millisecond-display.rst.txt)
 
-[Previous](index_millisecond-dictionary_like.html "Overview: IndexMillisecond: Dictionary-Like")
-[Next](index_millisecond-selector.html "Overview: IndexMillisecond: Selector")
+[Previous](index_millisecond-dictionary_like.md "Overview: IndexMillisecond: Dictionary-Like")
+[Next](index_millisecond-selector.md "Overview: IndexMillisecond: Selector")
 
 ---
 
 # Overview: IndexMillisecond: Display[](#overview-indexmillisecond-display "Link to this heading")
 
-[Detail: IndexMillisecond: Display](../api_detail/index_millisecond-display.html#api-detail-indexmillisecond-display)
+[Detail: IndexMillisecond: Display](../api_detail/index_millisecond-display.md#api-detail-indexmillisecond-display)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond-display.html#api-sig-indexmillisecond-interface) | [`IndexMillisecond.interface`](../api_detail/index_millisecond-display.html#IndexMillisecond.interface "IndexMillisecond.interface") | A Frame documenting the interface of this class. |
-| [Detail](../api_detail/index_millisecond-display.html#api-sig-indexmillisecond-repr) | `IndexMillisecond.__repr__()` |  |
-| [Detail](../api_detail/index_millisecond-display.html#api-sig-indexmillisecond-str) | `IndexMillisecond.__str__()` | Return str(self). |
-| [Detail](../api_detail/index_millisecond-display.html#api-sig-indexmillisecond-display) | `IndexMillisecond.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
-| [Detail](../api_detail/index_millisecond-display.html#api-sig-indexmillisecond-display-tall) | `IndexMillisecond.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
-| [Detail](../api_detail/index_millisecond-display.html#api-sig-indexmillisecond-display-wide) | `IndexMillisecond.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
+| [Detail](../api_detail/index_millisecond-display.md#api-sig-indexmillisecond-interface) | [`IndexMillisecond.interface`](../api_detail/index_millisecond-display.md#IndexMillisecond.interface "IndexMillisecond.interface") | A Frame documenting the interface of this class. |
+| [Detail](../api_detail/index_millisecond-display.md#api-sig-indexmillisecond-repr) | `IndexMillisecond.__repr__()` |  |
+| [Detail](../api_detail/index_millisecond-display.md#api-sig-indexmillisecond-str) | `IndexMillisecond.__str__()` | Return str(self). |
+| [Detail](../api_detail/index_millisecond-display.md#api-sig-indexmillisecond-display) | `IndexMillisecond.display(config, *, style_config)` | Return a Display, capable of providing a string representation. Args: config: A… |
+| [Detail](../api_detail/index_millisecond-display.md#api-sig-indexmillisecond-display-tall) | `IndexMillisecond.display_tall(config)` | Maximize vertical presentation. Return a Display, capable of providing a string… |
+| [Detail](../api_detail/index_millisecond-display.md#api-sig-indexmillisecond-display-wide) | `IndexMillisecond.display_wide(config)` | Maximize horizontal presentation. Return a Display, capable of providing a strin… |
 
-[IndexMillisecond](index_millisecond.html#api-overview-indexmillisecond): [Constructor](index_millisecond-constructor.html#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.html#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.html#api-overview-indexmillisecond-attribute) | [Method](index_millisecond-method.html#api-overview-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.html#api-overview-indexmillisecond-dictionary-like) | [Display](#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.html#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.html#api-overview-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.html#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.html#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.html#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.html#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.html#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.html#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.html#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.html#api-overview-indexmillisecond-accessor-type-clinic)
+[IndexMillisecond](index_millisecond.md#api-overview-indexmillisecond): [Constructor](index_millisecond-constructor.md#api-overview-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.md#api-overview-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.md#api-overview-indexmillisecond-attribute) | [Method](index_millisecond-method.md#api-overview-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.md#api-overview-indexmillisecond-dictionary-like) | [Display](#api-overview-indexmillisecond-display) | [Selector](index_millisecond-selector.md#api-overview-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.md#api-overview-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.md#api-overview-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.md#api-overview-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.md#api-overview-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.md#api-overview-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.md#api-overview-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.md#api-overview-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](index_millisecond-accessor_hashlib.md#api-overview-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.md#api-overview-indexmillisecond-accessor-type-clinic)
 
-[Previous](index_millisecond-dictionary_like.html "Overview: IndexMillisecond: Dictionary-Like")
-[Next](index_millisecond-selector.html "Overview: IndexMillisecond: Selector")
+[Previous](index_millisecond-dictionary_like.md "Overview: IndexMillisecond: Dictionary-Like")
+[Next](index_millisecond-selector.md "Overview: IndexMillisecond: Selector")
 
 ---
 

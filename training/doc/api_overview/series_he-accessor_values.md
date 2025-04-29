@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: SeriesHE: Accessor Values
 * [View page source](../_sources/api_overview/series_he-accessor_values.rst.txt)
 
-[Previous](series_he-operator_unary.html "Overview: SeriesHE: Operator Unary")
-[Next](series_he-accessor_datetime.html "Overview: SeriesHE: Accessor Datetime")
+[Previous](series_he-operator_unary.md "Overview: SeriesHE: Operator Unary")
+[Next](series_he-accessor_datetime.md "Overview: SeriesHE: Accessor Datetime")
 
 ---
 
 # Overview: SeriesHE: Accessor Values[](#overview-serieshe-accessor-values "Link to this heading")
 
-[Detail: SeriesHE: Accessor Values](../api_detail/series_he-accessor_values.html#api-detail-serieshe-accessor-values)
+[Detail: SeriesHE: Accessor Values](../api_detail/series_he-accessor_values.md#api-detail-serieshe-accessor-values)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series_he-accessor_values.html#api-sig-serieshe-via-values-apply) | `SeriesHE.via_values.apply(func, *args, **kwargs)` |  |
-| [Detail](../api_detail/series_he-accessor_values.html#api-sig-serieshe-via-values-array-ufunc) | `SeriesHE.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
-| [Detail](../api_detail/series_he-accessor_values.html#api-sig-serieshe-via-values-call) | `SeriesHE.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
+| [Detail](../api_detail/series_he-accessor_values.md#api-sig-serieshe-via-values-apply) | `SeriesHE.via_values.apply(func, *args, **kwargs)` |  |
+| [Detail](../api_detail/series_he-accessor_values.md#api-sig-serieshe-via-values-array-ufunc) | `SeriesHE.via_values.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for applying NumPy functions directly on containers. |
+| [Detail](../api_detail/series_he-accessor_values.md#api-sig-serieshe-via-values-call) | `SeriesHE.via_values.__call__(*, consolidate_blocks, unify_blocks, dtype)` | Args: consolidate\_blocks: Group adjacent same-typed arrays into 2D arrays. unify… |
 
-[SeriesHE](series_he.html#api-overview-serieshe): [Constructor](series_he-constructor.html#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.html#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.html#api-overview-serieshe-attribute) | [Method](series_he-method.html#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-overview-serieshe-dictionary-like) | [Display](series_he-display.html#api-overview-serieshe-display) | [Assignment](series_he-assignment.html#api-overview-serieshe-assignment) | [Selector](series_he-selector.html#api-overview-serieshe-selector) | [Iterator](series_he-iterator.html#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-overview-serieshe-operator-unary) | [Accessor Values](#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-overview-serieshe): [Constructor](series_he-constructor.md#api-overview-serieshe-constructor) | [Exporter](series_he-exporter.md#api-overview-serieshe-exporter) | [Attribute](series_he-attribute.md#api-overview-serieshe-attribute) | [Method](series_he-method.md#api-overview-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-overview-serieshe-dictionary-like) | [Display](series_he-display.md#api-overview-serieshe-display) | [Assignment](series_he-assignment.md#api-overview-serieshe-assignment) | [Selector](series_he-selector.md#api-overview-serieshe-selector) | [Iterator](series_he-iterator.md#api-overview-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-overview-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-overview-serieshe-operator-unary) | [Accessor Values](#api-overview-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-overview-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-overview-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-overview-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-overview-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-overview-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-overview-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-operator_unary.html "Overview: SeriesHE: Operator Unary")
-[Next](series_he-accessor_datetime.html "Overview: SeriesHE: Accessor Datetime")
+[Previous](series_he-operator_unary.md "Overview: SeriesHE: Operator Unary")
+[Next](series_he-accessor_datetime.md "Overview: SeriesHE: Accessor Datetime")
 
 ---
 

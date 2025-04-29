@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,20 +135,20 @@ API Detail
 * Detail: IndexSecondGO: Accessor String
 * [View page source](../_sources/api_detail/index_second_go-accessor_string.rst.txt)
 
-[Previous](index_second_go-accessor_datetime.html "Detail: IndexSecondGO: Accessor Datetime")
-[Next](index_second_go-accessor_regular_expression.html "Detail: IndexSecondGO: Accessor Regular Expression")
+[Previous](index_second_go-accessor_datetime.md "Detail: IndexSecondGO: Accessor Datetime")
+[Next](index_second_go-accessor_regular_expression.md "Detail: IndexSecondGO: Accessor Regular Expression")
 
 ---
 
 # Detail: IndexSecondGO: Accessor String[](#detail-indexsecondgo-accessor-string "Link to this heading")
 
-[Overview: IndexSecondGO: Accessor String](../api_overview/index_second_go-accessor_string.html#api-overview-indexsecondgo-accessor-string)
+[Overview: IndexSecondGO: Accessor String](../api_overview/index_second_go-accessor_string.md#api-overview-indexsecondgo-accessor-string)
 
 IndexSecondGO.via\_str.\_\_getitem\_\_(*key*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.__getitem__)
+    InterfaceString.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.__getitem__)
     :   Return a container with the provided selection or slice of each element.
 
     ```
@@ -168,7 +168,7 @@ IndexSecondGO.via\_str.capitalize
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.capitalize()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.capitalize)
+    InterfaceString.capitalize()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.capitalize)
     :   Return a container with only the first character of each element capitalized.
 
     ```
@@ -188,7 +188,7 @@ IndexSecondGO.via\_str.center(*width*, *fillchar*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.center(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.center)
+    InterfaceString.center(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.center)
     :   Return a container with its elements centered in a string of length `width`.
 
     ```
@@ -208,7 +208,7 @@ IndexSecondGO.via\_str.contains(*item*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.contains(*item*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.contains)
+    InterfaceString.contains(*item*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.contains)
     :   Return a Boolean container showing True of item is a substring of elements.
 
     ```
@@ -228,7 +228,7 @@ IndexSecondGO.via\_str.count(*sub*, *start*, *end*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.count(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.count)
+    InterfaceString.count(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.count)
     :   Returns a container with the number of non-overlapping occurrences of substring sub in the optional range `start`, `end`.
 
     ```
@@ -248,7 +248,7 @@ IndexSecondGO.via\_str.decode(*encoding*, *errors*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.decode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.decode)
+    InterfaceString.decode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.decode)
     :   Apply str.decode() to each element. Elements must be bytes.
 
     ```
@@ -268,7 +268,7 @@ IndexSecondGO.via\_str.encode(*encoding*, *errors*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.encode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.encode)
+    InterfaceString.encode(*encoding=None*, *errors=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.encode)
     :   Apply str.encode() to each element. Elements must be strings.
 
     ```
@@ -288,7 +288,7 @@ IndexSecondGO.via\_str.endswith(*suffix*, *start*, *end*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.endswith(*suffix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.endswith)
+    InterfaceString.endswith(*suffix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.endswith)
     :   Returns a container with the number of non-overlapping occurrences of substring `suffix` (or an iterable of suffixes) in the optional range `start`, `end`.
 
     ```
@@ -308,7 +308,7 @@ IndexSecondGO.via\_str.find(*sub*, *start*, *end*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.find(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.find)
+    InterfaceString.find(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.find)
     :   For each element, return the lowest index in the string where substring `sub` is found.
 
     ```
@@ -328,8 +328,8 @@ IndexSecondGO.via\_str.format(*format*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.format(*format*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.format)
-    :   For each element, return a string resulting from calling the string `format` argument’s `format` method with the the element. Format strings (given within curly braces) can use Python’s format mini language: <https://docs.python.org/3/library/string.html#formatspec>
+    InterfaceString.format(*format*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.format)
+    :   For each element, return a string resulting from calling the string `format` argument’s `format` method with the the element. Format strings (given within curly braces) can use Python’s format mini language: <https://docs.python.org/3/library/string.md#formatspec>
 
         Parameters:
         :   **format** – A string, an iterable of strings, or a mapping of labels to strings. For 1D containers, an iterable of strings must be of length equal to the container; a mapping can use Index labels (for a Series) or positions (for an Index). For 2D containers, an iterable of strings must be of length equal to the columns (for a Frame) or the depth (for an Index Hierarchy); a mapping can use column labels (for a Frame) or depths (for an IndexHierarchy).
@@ -351,7 +351,7 @@ IndexSecondGO.via\_str.index(*sub*, *start*, *end*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.index(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.index)
+    InterfaceString.index(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.index)
     :   Like `find`, but raises `ValueError` when the substring is not found.
 
     ```
@@ -371,7 +371,7 @@ IndexSecondGO.via\_str.isalnum
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isalnum()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isalnum)
+    InterfaceString.isalnum()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isalnum)
     :   Returns true for each element if all characters in the string are alphanumeric and there is at least one character, false otherwise.
 
     ```
@@ -391,7 +391,7 @@ IndexSecondGO.via\_str.isalpha
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isalpha()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isalpha)
+    InterfaceString.isalpha()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isalpha)
     :   Returns true for each element if all characters in the string are alphabetic and there is at least one character, false otherwise.
 
     ```
@@ -411,7 +411,7 @@ IndexSecondGO.via\_str.isdecimal
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isdecimal()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isdecimal)
+    InterfaceString.isdecimal()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isdecimal)
     :   For each element, return True if there are only decimal characters in the element.
 
     ```
@@ -431,7 +431,7 @@ IndexSecondGO.via\_str.isdigit
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isdigit()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isdigit)
+    InterfaceString.isdigit()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isdigit)
     :   Returns true for each element if all characters in the string are digits and there is at least one character, false otherwise.
 
     ```
@@ -451,7 +451,7 @@ IndexSecondGO.via\_str.islower
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.islower()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.islower)
+    InterfaceString.islower()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.islower)
     :   Returns true for each element if all cased characters in the string are lowercase and there is at least one cased character, false otherwise.
 
     ```
@@ -471,7 +471,7 @@ IndexSecondGO.via\_str.isnumeric
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isnumeric()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isnumeric)
+    InterfaceString.isnumeric()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isnumeric)
     :   For each element in self, return True if there are only numeric characters in the element.
 
     ```
@@ -491,7 +491,7 @@ IndexSecondGO.via\_str.isspace
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isspace()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isspace)
+    InterfaceString.isspace()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isspace)
     :   Returns true for each element if there are only whitespace characters in the string and there is at least one character, false otherwise.
 
     ```
@@ -511,7 +511,7 @@ IndexSecondGO.via\_str.istitle
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.istitle()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.istitle)
+    InterfaceString.istitle()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.istitle)
     :   Returns true for each element if the element is a titlecased string and there is at least one character, false otherwise.
 
     ```
@@ -531,7 +531,7 @@ IndexSecondGO.via\_str.isupper
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.isupper()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.isupper)
+    InterfaceString.isupper()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.isupper)
     :   Returns true for each element if all cased characters in the string are uppercase and there is at least one character, false otherwise.
 
     ```
@@ -551,7 +551,7 @@ IndexSecondGO.via\_str.ljust(*width*, *fillchar*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.ljust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.ljust)
+    InterfaceString.ljust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.ljust)
     :   Return a container with its elements ljusted in a string of length `width`.
 
     ```
@@ -571,7 +571,7 @@ IndexSecondGO.via\_str.len
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.len()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.len)
+    InterfaceString.len()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.len)
     :   Return the length of the string.
 
     ```
@@ -591,7 +591,7 @@ IndexSecondGO.via\_str.lower
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.lower()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.lower)
+    InterfaceString.lower()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.lower)
     :   Return an array with the elements of self converted to lowercase.
 
     ```
@@ -611,7 +611,7 @@ IndexSecondGO.via\_str.lstrip(*chars*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.lstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.lstrip)
+    InterfaceString.lstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.lstrip)
     :   For each element, return a copy with the leading characters removed.
 
     ```
@@ -631,7 +631,7 @@ IndexSecondGO.via\_str.partition(*sep*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.partition(*sep*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.partition)
+    InterfaceString.partition(*sep*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.partition)
     :   Partition each element around `sep`.
 
     ```
@@ -653,7 +653,7 @@ IndexSecondGO.via\_str.replace(*old*, *new*, *count*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.replace(*old*, *new*, *count=-1*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.replace)
+    InterfaceString.replace(*old*, *new*, *count=-1*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.replace)
     :   Return a container with its elements replaced in a string of length `width`.
 
     ```
@@ -673,7 +673,7 @@ IndexSecondGO.via\_str.rfind(*sub*, *start*, *end*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rfind(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rfind)
+    InterfaceString.rfind(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rfind)
     :   For each element, return the highest index in the string where substring `sub` is found, such that sub is contained within `start`, `end`.
 
     ```
@@ -693,7 +693,7 @@ IndexSecondGO.via\_str.rindex(*sub*, *start*, *end*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rindex(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rindex)
+    InterfaceString.rindex(*sub*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rindex)
     :   Like `rfind`, but raises `ValueError` when the substring `sub` is not found.
 
     ```
@@ -713,7 +713,7 @@ IndexSecondGO.via\_str.rjust(*width*, *fillchar*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rjust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rjust)
+    InterfaceString.rjust(*width*, *fillchar=' '*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rjust)
     :   Return a container with its elements rjusted in a string of length `width`.
 
     ```
@@ -733,7 +733,7 @@ IndexSecondGO.via\_str.rpartition(*sep*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rpartition(*sep*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rpartition)
+    InterfaceString.rpartition(*sep*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rpartition)
     :   Partition (split) each element around the right-most separator.
 
     ```
@@ -755,7 +755,7 @@ IndexSecondGO.via\_str.rsplit(*sep*, *maxsplit*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rsplit(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rsplit)
+    InterfaceString.rsplit(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rsplit)
     :   For each element, return a tuple of the words in the string, using sep as the delimiter string.
 
     ```
@@ -776,7 +776,7 @@ IndexSecondGO.via\_str.rstrip(*chars*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.rstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.rstrip)
+    InterfaceString.rstrip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.rstrip)
     :   For each element, return a copy with the trailing characters removed.
 
     ```
@@ -796,7 +796,7 @@ IndexSecondGO.via\_str.split(*sep*, *maxsplit*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.split(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.split)
+    InterfaceString.split(*sep*, *maxsplit=-1*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.split)
     :   For each element, return a tuple of the words in the string, using sep as the delimiter string.
 
     ```
@@ -817,7 +817,7 @@ IndexSecondGO.via\_str.startswith(*prefix*, *start*, *end*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.startswith(*prefix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.startswith)
+    InterfaceString.startswith(*prefix*, *start=0*, *end=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.startswith)
     :   Returns a container with the number of non-overlapping occurrences of substring prefix (or an iterable of prefixes) in the optional range `start`, `end`.
 
     ```
@@ -837,7 +837,7 @@ IndexSecondGO.via\_str.strip(*chars*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.strip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.strip)
+    InterfaceString.strip(*chars=None*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.strip)
     :   For each element, return a copy with the leading and trailing characters removed.
 
     ```
@@ -857,7 +857,7 @@ IndexSecondGO.via\_str.swapcase
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.swapcase()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.swapcase)
+    InterfaceString.swapcase()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.swapcase)
     :   Return a container with uppercase characters converted to lowercase and vice versa.
 
     ```
@@ -877,7 +877,7 @@ IndexSecondGO.via\_str.title
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.title()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.title)
+    InterfaceString.title()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.title)
     :   Return a container with uppercase characters converted to lowercase and vice versa.
 
     ```
@@ -897,7 +897,7 @@ IndexSecondGO.via\_str.upper
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.upper()[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.upper)
+    InterfaceString.upper()[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.upper)
     :   Return a container with uppercase characters converted to lowercase and vice versa.
 
     ```
@@ -917,7 +917,7 @@ IndexSecondGO.via\_str.zfill(*width*)
 :   IndexSecondGO.via\_str
     :   Interface for applying string methods to elements in this container.
 
-    InterfaceString.zfill(*width*)[[source]](../_modules/static_frame/core/node_str.html#InterfaceString.zfill)
+    InterfaceString.zfill(*width*)[[source]](../_modules/static_frame/core/node_str.md#InterfaceString.zfill)
     :   Return the string left-filled with zeros.
 
     ```
@@ -933,10 +933,10 @@ IndexSecondGO.via\_str.zfill(*width*)
 
     ```
 
-[IndexSecondGO](index_second_go.html#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.html#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.html#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.html#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.html#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.html#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.html#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.html#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.html#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.html#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.html#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.html#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.html#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.html#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.html#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.html#api-detail-indexsecondgo-accessor-type-clinic)
+[IndexSecondGO](index_second_go.md#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.md#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-detail-indexsecondgo-accessor-type-clinic)
 
-[Previous](index_second_go-accessor_datetime.html "Detail: IndexSecondGO: Accessor Datetime")
-[Next](index_second_go-accessor_regular_expression.html "Detail: IndexSecondGO: Accessor Regular Expression")
+[Previous](index_second_go-accessor_datetime.md "Detail: IndexSecondGO: Accessor Datetime")
+[Next](index_second_go-accessor_regular_expression.md "Detail: IndexSecondGO: Accessor Regular Expression")
 
 ---
 

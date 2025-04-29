@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Detail: SeriesHE: Assignment
 * [View page source](../_sources/api_detail/series_he-assignment.rst.txt)
 
-[Previous](series_he-display.html "Detail: SeriesHE: Display")
-[Next](series_he-selector.html "Detail: SeriesHE: Selector")
+[Previous](series_he-display.md "Detail: SeriesHE: Display")
+[Next](series_he-selector.md "Detail: SeriesHE: Selector")
 
 ---
 
 # Detail: SeriesHE: Assignment[](#detail-serieshe-assignment "Link to this heading")
 
-[Overview: SeriesHE: Assignment](../api_overview/series_he-assignment.html#api-overview-serieshe-assignment)
+[Overview: SeriesHE: Assignment](../api_overview/series_he-assignment.md#api-overview-serieshe-assignment)
 
 SeriesHE.assign[*key*](*value*, *\**, *fill\_value*)
 :   assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.__call__)
+    SeriesAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -201,7 +201,7 @@ SeriesHE.assign[key].apply(func, \*, fill\_value)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.apply)
+    SeriesAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -236,7 +236,7 @@ SeriesHE.assign[key].apply\_element(func, \*, dtype, fill\_value)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.apply_element)
+    SeriesAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -271,7 +271,7 @@ SeriesHE.assign[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.apply_element_items)
+    SeriesAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -306,11 +306,11 @@ SeriesHE.assign.iloc[*key*](*value*, *\**, *fill\_value*)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.__call__)
+    SeriesAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -359,7 +359,7 @@ SeriesHE.assign.iloc[key].apply(func, \*, fill\_value)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.apply)
+    SeriesAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -394,7 +394,7 @@ SeriesHE.assign.iloc[key].apply\_element(func, \*, dtype, fill\_value)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.apply_element)
+    SeriesAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -429,7 +429,7 @@ SeriesHE.assign.iloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.apply_element_items)
+    SeriesAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -464,11 +464,11 @@ SeriesHE.assign.loc[*key*](*value*, *\**, *fill\_value*)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.__call__)
+    SeriesAssign.\_\_call\_\_(*value*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.__call__)
     :   Assign the `value` in the position specified by the selector. The name attribute is propagated to the returned container.
 
         Parameters:
-        :   * **value** – Value to assign, which can be a [`Series`](series-selector.html#Series "Series"), np.ndarray, or element.
+        :   * **value** – Value to assign, which can be a [`Series`](series-selector.md#Series "Series"), np.ndarray, or element.
             * **\*.** –
             * **fill\_value** – If the `value` parameter has to be reindexed, this element will be used to fill newly created elements.
 
@@ -517,7 +517,7 @@ SeriesHE.assign.loc[key].apply(func, \*, fill\_value)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.apply)
+    SeriesAssign.apply(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.apply)
     :   Provide a function to apply to the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -552,7 +552,7 @@ SeriesHE.assign.loc[key].apply\_element(func, \*, dtype, fill\_value)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.apply_element)
+    SeriesAssign.apply\_element(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.apply_element)
     :   Provide a function to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -587,7 +587,7 @@ SeriesHE.assign.loc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 :   SeriesHE.assign
     :   Interface for doing assignment-like selection and replacement.
 
-    SeriesAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.html#SeriesAssign.apply_element_items)
+    SeriesAssign.apply\_element\_items(*func*, *\**, *dtype=None*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#SeriesAssign.apply_element_items)
     :   Provide a function, taking pairs of label, element, to apply to each element in the assignment target, and use that as the assignment value.
 
         Parameters:
@@ -618,10 +618,10 @@ SeriesHE.assign.loc[key].apply\_element\_items(func, \*, dtype, fill\_value)
 
     ```
 
-[SeriesHE](series_he.html#api-detail-serieshe): [Constructor](series_he-constructor.html#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.html#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.html#api-detail-serieshe-attribute) | [Method](series_he-method.html#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.html#api-detail-serieshe-dictionary-like) | [Display](series_he-display.html#api-detail-serieshe-display) | [Assignment](#api-detail-serieshe-assignment) | [Selector](series_he-selector.html#api-detail-serieshe-selector) | [Iterator](series_he-iterator.html#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.html#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.html#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.html#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.html#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.html#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.html#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.html#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.html#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.html#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
+[SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series_he-display.html "Detail: SeriesHE: Display")
-[Next](series_he-selector.html "Detail: SeriesHE: Selector")
+[Previous](series_he-display.md "Detail: SeriesHE: Display")
+[Next](series_he-selector.md "Detail: SeriesHE: Selector")
 
 ---
 

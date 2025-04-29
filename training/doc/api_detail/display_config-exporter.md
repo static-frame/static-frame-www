@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Detail: DisplayConfig: Exporter
 * [View page source](../_sources/api_detail/display_config-exporter.rst.txt)
 
-[Previous](display_config-constructor.html "Detail: DisplayConfig: Constructor")
-[Next](display_config-attribute.html "Detail: DisplayConfig: Attribute")
+[Previous](display_config-constructor.md "Detail: DisplayConfig: Constructor")
+[Next](display_config-attribute.md "Detail: DisplayConfig: Attribute")
 
 ---
 
 # Detail: DisplayConfig: Exporter[](#detail-displayconfig-exporter "Link to this heading")
 
-[Overview: DisplayConfig: Exporter](../api_overview/display_config-exporter.html#api-overview-displayconfig-exporter)
+[Overview: DisplayConfig: Exporter](../api_overview/display_config-exporter.md#api-overview-displayconfig-exporter)
 
-DisplayConfig.to\_dict(*\*\*kwargs*)[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.to_dict)[](#static_frame.DisplayConfig.to_dict "Link to this definition")
+DisplayConfig.to\_dict(*\*\*kwargs*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.to_dict)[](#static_frame.DisplayConfig.to_dict "Link to this definition")
 
-DisplayConfig.to\_display\_config(*\*\*kwargs*)[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.to_display_config)[](#static_frame.DisplayConfig.to_display_config "Link to this definition")
+DisplayConfig.to\_display\_config(*\*\*kwargs*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.to_display_config)[](#static_frame.DisplayConfig.to_display_config "Link to this definition")
 
-DisplayConfig.to\_json()[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.to_json)[](#static_frame.DisplayConfig.to_json "Link to this definition")
+DisplayConfig.to\_json()[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.to_json)[](#static_frame.DisplayConfig.to_json "Link to this definition")
 
-DisplayConfig.to\_transpose()[[source]](../_modules/static_frame/core/display_config.html#DisplayConfig.to_transpose)[](#static_frame.DisplayConfig.to_transpose "Link to this definition")
+DisplayConfig.to\_transpose()[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.to_transpose)[](#static_frame.DisplayConfig.to_transpose "Link to this definition")
 
-[DisplayConfig](display_config.html#api-detail-displayconfig): [Constructor](display_config-constructor.html#api-detail-displayconfig-constructor) | [Exporter](#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.html#api-detail-displayconfig-attribute) | [Method](display_config-method.html#api-detail-displayconfig-method) | [Display](display_config-display.html#api-detail-displayconfig-display)
+[DisplayConfig](display_config.md#api-detail-displayconfig): [Constructor](display_config-constructor.md#api-detail-displayconfig-constructor) | [Exporter](#api-detail-displayconfig-exporter) | [Attribute](display_config-attribute.md#api-detail-displayconfig-attribute) | [Method](display_config-method.md#api-detail-displayconfig-method) | [Display](display_config-display.md#api-detail-displayconfig-display)
 
-[Previous](display_config-constructor.html "Detail: DisplayConfig: Constructor")
-[Next](display_config-attribute.html "Detail: DisplayConfig: Attribute")
+[Previous](display_config-constructor.md "Detail: DisplayConfig: Constructor")
+[Next](display_config-attribute.md "Detail: DisplayConfig: Attribute")
 
 ---
 

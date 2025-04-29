@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: IndexYear: Dictionary-Like
 * [View page source](../_sources/api_detail/index_year-dictionary_like.rst.txt)
 
-[Previous](index_year-method.html "Detail: IndexYear: Method")
-[Next](index_year-display.html "Detail: IndexYear: Display")
+[Previous](index_year-method.md "Detail: IndexYear: Method")
+[Next](index_year-display.md "Detail: IndexYear: Display")
 
 ---
 
 # Detail: IndexYear: Dictionary-Like[](#detail-indexyear-dictionary-like "Link to this heading")
 
-[Overview: IndexYear: Dictionary-Like](../api_overview/index_year-dictionary_like.html#api-overview-indexyear-dictionary-like)
+[Overview: IndexYear: Dictionary-Like](../api_overview/index_year-dictionary_like.md#api-overview-indexyear-dictionary-like)
 
-IndexYear.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/index_datetime.html#IndexYear.__contains__)[](#static_frame.IndexYear.__contains__ "Link to this definition")
+IndexYear.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear.__contains__)[](#static_frame.IndexYear.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```
@@ -220,7 +220,7 @@ IndexYear.\_\_reversed\_\_()[](#static_frame.IndexYear.__reversed__ "Link to 
     ```
 
 IndexYear.values[](#static_frame.IndexYear.values "Link to this definition")
-:   A 1D NumPy array of the values in the [`Index`](index-selector.html#Index "Index"). This array will have the same dtype as the container.
+:   A 1D NumPy array of the values in the [`Index`](index-selector.md#Index "Index"). This array will have the same dtype as the container.
 
     ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
@@ -235,10 +235,10 @@ IndexYear.values[](#static_frame.IndexYear.values "Link to this definition")
 
     ```
 
-[IndexYear](index_year.html#api-detail-indexyear): [Constructor](index_year-constructor.html#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.html#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.html#api-detail-indexyear-attribute) | [Method](index_year-method.html#api-detail-indexyear-method) | [Dictionary-Like](#api-detail-indexyear-dictionary-like) | [Display](index_year-display.html#api-detail-indexyear-display) | [Selector](index_year-selector.html#api-detail-indexyear-selector) | [Iterator](index_year-iterator.html#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.html#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.html#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.html#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.html#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.html#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.html#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.html#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.html#api-detail-indexyear-accessor-type-clinic)
+[IndexYear](index_year.md#api-detail-indexyear): [Constructor](index_year-constructor.md#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.md#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.md#api-detail-indexyear-attribute) | [Method](index_year-method.md#api-detail-indexyear-method) | [Dictionary-Like](#api-detail-indexyear-dictionary-like) | [Display](index_year-display.md#api-detail-indexyear-display) | [Selector](index_year-selector.md#api-detail-indexyear-selector) | [Iterator](index_year-iterator.md#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-detail-indexyear-accessor-type-clinic)
 
-[Previous](index_year-method.html "Detail: IndexYear: Method")
-[Next](index_year-display.html "Detail: IndexYear: Display")
+[Previous](index_year-method.md "Detail: IndexYear: Method")
+[Next](index_year-display.md "Detail: IndexYear: Display")
 
 ---
 

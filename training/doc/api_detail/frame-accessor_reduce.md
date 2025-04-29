@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,14 +135,14 @@ API Detail
 * Detail: Frame: Accessor Reduce
 * [View page source](../_sources/api_detail/frame-accessor_reduce.rst.txt)
 
-[Previous](frame-accessor_type_clinic.html "Detail: Frame: Accessor Type Clinic")
-[Next](frame_go-constructor.html "Detail: FrameGO: Constructor")
+[Previous](frame-accessor_type_clinic.md "Detail: Frame: Accessor Type Clinic")
+[Next](frame_go-constructor.md "Detail: FrameGO: Constructor")
 
 ---
 
 # Detail: Frame: Accessor Reduce[](#detail-frame-accessor-reduce "Link to this heading")
 
-[Overview: Frame: Accessor Reduce](../api_overview/frame-accessor_reduce.html#api-overview-frame-accessor-reduce)
+[Overview: Frame: Accessor Reduce](../api_overview/frame-accessor_reduce.md#api-overview-frame-accessor-reduce)
 
 Frame.reduce.from\_func(*func*, *\**, *fill\_value).keys(*)
 :   Frame.reduce
@@ -281,7 +281,7 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).keys(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_map_func)
+    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_map_func)
     :   For each Frame, reduce by applying, for each column, a function that reduces to (0-dimensional) elements, where the column label and function are given as a mapping. Column labels are retained.
 
     ```
@@ -304,7 +304,7 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_map_func)
+    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_map_func)
     :   For each Frame, reduce by applying, for each column, a function that reduces to (0-dimensional) elements, where the column label and function are given as a mapping. Column labels are retained.
 
     ```
@@ -327,7 +327,7 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).items(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_map_func)
+    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_map_func)
     :   For each Frame, reduce by applying, for each column, a function that reduces to (0-dimensional) elements, where the column label and function are given as a mapping. Column labels are retained.
 
     ```
@@ -355,7 +355,7 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).values(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_map_func)
+    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_map_func)
     :   For each Frame, reduce by applying, for each column, a function that reduces to (0-dimensional) elements, where the column label and function are given as a mapping. Column labels are retained.
 
     ```
@@ -383,7 +383,7 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).to\_frame(\**, *index*,
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_map_func)
+    ReduceDispatchAligned.from\_map\_func(*func*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_map_func)
     :   For each Frame, reduce by applying, for each column, a function that reduces to (0-dimensional) elements, where the column label and function are given as a mapping. Column labels are retained.
 
     ```
@@ -410,7 +410,7 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).keys(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_map)
+    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_map)
     :   For Frame, reduce by applying a function to each column, where the column label and function are given as a mapping. Column labels are retained.
 
         Parameters:
@@ -436,7 +436,7 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_map)
+    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_map)
     :   For Frame, reduce by applying a function to each column, where the column label and function are given as a mapping. Column labels are retained.
 
         Parameters:
@@ -462,7 +462,7 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).items(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_map)
+    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_map)
     :   For Frame, reduce by applying a function to each column, where the column label and function are given as a mapping. Column labels are retained.
 
         Parameters:
@@ -492,7 +492,7 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).values(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_map)
+    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_map)
     :   For Frame, reduce by applying a function to each column, where the column label and function are given as a mapping. Column labels are retained.
 
         Parameters:
@@ -522,7 +522,7 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).to\_frame(\**, *i
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_map)
+    ReduceDispatchAligned.from\_label\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_map)
     :   For Frame, reduce by applying a function to each column, where the column label and function are given as a mapping. Column labels are retained.
 
         Parameters:
@@ -552,7 +552,7 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).keys(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_pair_map)
+    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_pair_map)
     :   For Frame, reduce by applying a function to a column and assigning the result a new label. Functions are provided as values in a mapping, where the key is tuple of source label, destination label.
 
         Parameters:
@@ -578,7 +578,7 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).\_\_iter\_\
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_pair_map)
+    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_pair_map)
     :   For Frame, reduce by applying a function to a column and assigning the result a new label. Functions are provided as values in a mapping, where the key is tuple of source label, destination label.
 
         Parameters:
@@ -604,7 +604,7 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).items(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_pair_map)
+    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_pair_map)
     :   For Frame, reduce by applying a function to a column and assigning the result a new label. Functions are provided as values in a mapping, where the key is tuple of source label, destination label.
 
         Parameters:
@@ -634,7 +634,7 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).values(*)
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_pair_map)
+    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_pair_map)
     :   For Frame, reduce by applying a function to a column and assigning the result a new label. Functions are provided as values in a mapping, where the key is tuple of source label, destination label.
 
         Parameters:
@@ -664,7 +664,7 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).to\_frame(\
 :   Frame.reduce
     :   Return a `ReduceAligned` interface, permitting function application per column or on entire containers.
 
-    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.html#ReduceDispatchAligned.from_label_pair_map)
+    ReduceDispatchAligned.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/reduce.md#ReduceDispatchAligned.from_label_pair_map)
     :   For Frame, reduce by applying a function to a column and assigning the result a new label. Functions are provided as values in a mapping, where the key is tuple of source label, destination label.
 
         Parameters:
@@ -690,10 +690,10 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).to\_frame(\
 
     ```
 
-[Frame](frame.html#api-detail-frame): [Constructor](frame-constructor.html#api-detail-frame-constructor) | [Exporter](frame-exporter.html#api-detail-frame-exporter) | [Attribute](frame-attribute.html#api-detail-frame-attribute) | [Method](frame-method.html#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.html#api-detail-frame-dictionary-like) | [Display](frame-display.html#api-detail-frame-display) | [Assignment](frame-assignment.html#api-detail-frame-assignment) | [Selector](frame-selector.html#api-detail-frame-selector) | [Iterator](frame-iterator.html#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.html#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.html#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.html#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.html#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.html#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.html#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.html#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.html#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.html#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.html#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](#api-detail-frame-accessor-reduce)
+[Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](#api-detail-frame-accessor-reduce)
 
-[Previous](frame-accessor_type_clinic.html "Detail: Frame: Accessor Type Clinic")
-[Next](frame_go-constructor.html "Detail: FrameGO: Constructor")
+[Previous](frame-accessor_type_clinic.md "Detail: Frame: Accessor Type Clinic")
+[Next](frame_go-constructor.md "Detail: FrameGO: Constructor")
 
 ---
 

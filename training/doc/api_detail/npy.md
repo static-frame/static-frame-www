@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,27 +136,27 @@ API Detail
 * Detail: NPY
 * [View page source](../_sources/api_detail/npy.rst.txt)
 
-[Previous](npz.html "Detail: NPZ")
-[Next](memory_display.html "Detail: MemoryDisplay")
+[Previous](npz.md "Detail: NPZ")
+[Next](memory_display.md "Detail: MemoryDisplay")
 
 ---
 
 # Detail: NPY[](#detail-npy "Link to this heading")
 
-[Overview: NPY](../api_overview/npy.html#api-overview-npy)
+[Overview: NPY](../api_overview/npy.md#api-overview-npy)
 
-*class* NPY(*fp*, *mode='r'*)[[source]](../_modules/static_frame/core/archive_npy.html#NPY)[](#static_frame.NPY "Link to this definition")
-:   Utility object for reading characteristics from, or writing new, NPY directories from arrays or [`Frame`](frame-selector.html#Frame "Frame").
+*class* NPY(*fp*, *mode='r'*)[[source]](../_modules/static_frame/core/archive_npy.md#NPY)[](#static_frame.NPY "Link to this definition")
+:   Utility object for reading characteristics from, or writing new, NPY directories from arrays or [`Frame`](frame-selector.md#Frame "Frame").
 
-* [Constructor](npy-constructor.html#api-detail-npy-constructor): Alternative constructors for creating instances.
-* [Attribute](npy-attribute.html#api-detail-npy-attribute): Attributes for retrieving basic characteristics.
-* [Method](npy-method.html#api-detail-npy-method): Methods for general functionality.
-* [Display](npy-display.html#api-detail-npy-display): Methods for providing a text representation of the object.
+* [Constructor](npy-constructor.md#api-detail-npy-constructor): Alternative constructors for creating instances.
+* [Attribute](npy-attribute.md#api-detail-npy-attribute): Attributes for retrieving basic characteristics.
+* [Method](npy-method.md#api-detail-npy-method): Methods for general functionality.
+* [Display](npy-display.md#api-detail-npy-display): Methods for providing a text representation of the object.
 
-[NPY](#api-detail-npy): [Constructor](npy-constructor.html#api-detail-npy-constructor) | [Attribute](npy-attribute.html#api-detail-npy-attribute) | [Method](npy-method.html#api-detail-npy-method) | [Display](npy-display.html#api-detail-npy-display)
+[NPY](#api-detail-npy): [Constructor](npy-constructor.md#api-detail-npy-constructor) | [Attribute](npy-attribute.md#api-detail-npy-attribute) | [Method](npy-method.md#api-detail-npy-method) | [Display](npy-display.md#api-detail-npy-display)
 
-[Previous](npz.html "Detail: NPZ")
-[Next](memory_display.html "Detail: MemoryDisplay")
+[Previous](npz.md "Detail: NPZ")
+[Next](memory_display.md "Detail: MemoryDisplay")
 
 ---
 

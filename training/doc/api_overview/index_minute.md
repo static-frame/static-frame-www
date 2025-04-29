@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,38 +135,38 @@ API Detail
 * Overview: IndexMinute
 * [View page source](../_sources/api_overview/index_minute.rst.txt)
 
-[Previous](index_date_go.html "Overview: IndexDateGO")
-[Next](index_minute_go.html "Overview: IndexMinuteGO")
+[Previous](index_date_go.md "Overview: IndexDateGO")
+[Next](index_minute_go.md "Overview: IndexMinuteGO")
 
 ---
 
 # Overview: IndexMinute[](#overview-indexminute "Link to this heading")
 
-[Detail: IndexMinute](../api_detail/index_minute.html#api-detail-indexminute)
+[Detail: IndexMinute](../api_detail/index_minute.md#api-detail-indexminute)
 
 |  |  |
 | --- | --- |
-| [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | Alternative constructors for creating instances. |
-| [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](index_minute-method.html#api-overview-indexminute-method) | Methods for general functionality. |
-| [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](index_minute-display.html#api-overview-indexminute-display) | Methods for providing a text representation of the object. |
-| [Selector](index_minute-selector.html#api-overview-indexminute-selector) | Interfaces for selecting by position, label or Boolean. |
-| [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
-| [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | Underlying (magic) methods for binary operator implementation. |
-| [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | Underlying (magic) methods for unary operator implementation. |
-| [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | Interface for using NumPy functions on conatainers. |
-| [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
-| [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | Interface for employing string methods on container elements. |
-| [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
-| [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
-| [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
+| [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | Alternative constructors for creating instances. |
+| [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](index_minute-method.md#api-overview-indexminute-method) | Methods for general functionality. |
+| [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](index_minute-display.md#api-overview-indexminute-display) | Methods for providing a text representation of the object. |
+| [Selector](index_minute-selector.md#api-overview-indexminute-selector) | Interfaces for selecting by position, label or Boolean. |
+| [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | Interfaces for iterating (and applying functions to) elements, axis, groups, or windows. |
+| [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | Underlying (magic) methods for binary operator implementation. |
+| [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | Underlying (magic) methods for unary operator implementation. |
+| [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | Interface for using NumPy functions on conatainers. |
+| [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | Interface for extracting date and datetime characteristics on elements. |
+| [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | Interface for employing string methods on container elements. |
+| [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | Interface exposing regular expression application on container elements. |
+| [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | Interface exposing cryptographic hashing via hashlib interfaces. |
+| [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic) | Interface for providing a type hint from a container or validating a container against a type hint. |
 
-[IndexMinute](#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.html#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_date_go.html "Overview: IndexDateGO")
-[Next](index_minute_go.html "Overview: IndexMinuteGO")
+[Previous](index_date_go.md "Overview: IndexDateGO")
+[Next](index_minute_go.md "Overview: IndexMinuteGO")
 
 ---
 

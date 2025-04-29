@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,29 +135,29 @@ API Detail
 * Overview: IndexMinute: Accessor Regular Expression
 * [View page source](../_sources/api_overview/index_minute-accessor_regular_expression.rst.txt)
 
-[Previous](index_minute-accessor_string.html "Overview: IndexMinute: Accessor String")
-[Next](index_minute-accessor_hashlib.html "Overview: IndexMinute: Accessor Hashlib")
+[Previous](index_minute-accessor_string.md "Overview: IndexMinute: Accessor String")
+[Next](index_minute-accessor_hashlib.md "Overview: IndexMinute: Accessor Hashlib")
 
 ---
 
 # Overview: IndexMinute: Accessor Regular Expression[](#overview-indexminute-accessor-regular-expression "Link to this heading")
 
-[Detail: IndexMinute: Accessor Regular Expression](../api_detail/index_minute-accessor_regular_expression.html#api-detail-indexminute-accessor-regular-expression)
+[Detail: IndexMinute: Accessor Regular Expression](../api_detail/index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_minute-accessor_regular_expression.html#api-sig-indexminute-via-re-search) | `IndexMinute.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
-| [Detail](../api_detail/index_minute-accessor_regular_expression.html#api-sig-indexminute-via-re-match) | `IndexMinute.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
-| [Detail](../api_detail/index_minute-accessor_regular_expression.html#api-sig-indexminute-via-re-fullmatch) | `IndexMinute.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
-| [Detail](../api_detail/index_minute-accessor_regular_expression.html#api-sig-indexminute-via-re-split) | `IndexMinute.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/index_minute-accessor_regular_expression.html#api-sig-indexminute-via-re-findall) | `IndexMinute.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
-| [Detail](../api_detail/index_minute-accessor_regular_expression.html#api-sig-indexminute-via-re-sub) | `IndexMinute.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
-| [Detail](../api_detail/index_minute-accessor_regular_expression.html#api-sig-indexminute-via-re-subn) | `IndexMinute.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
+| [Detail](../api_detail/index_minute-accessor_regular_expression.md#api-sig-indexminute-via-re-search) | `IndexMinute.via_re(pattern, flags).search(pos, endpos)` | Scan through string looking for the first location where this regular expression… |
+| [Detail](../api_detail/index_minute-accessor_regular_expression.md#api-sig-indexminute-via-re-match) | `IndexMinute.via_re(pattern, flags).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
+| [Detail](../api_detail/index_minute-accessor_regular_expression.md#api-sig-indexminute-via-re-fullmatch) | `IndexMinute.via_re(pattern, flags).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
+| [Detail](../api_detail/index_minute-accessor_regular_expression.md#api-sig-indexminute-via-re-split) | `IndexMinute.via_re(pattern, flags).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
+| [Detail](../api_detail/index_minute-accessor_regular_expression.md#api-sig-indexminute-via-re-findall) | `IndexMinute.via_re(pattern, flags).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/index_minute-accessor_regular_expression.md#api-sig-indexminute-via-re-sub) | `IndexMinute.via_re(pattern, flags).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
+| [Detail](../api_detail/index_minute-accessor_regular_expression.md#api-sig-indexminute-via-re-subn) | `IndexMinute.via_re(pattern, flags).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
-[IndexMinute](index_minute.html#api-overview-indexminute): [Constructor](index_minute-constructor.html#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.html#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.html#api-overview-indexminute-attribute) | [Method](index_minute-method.html#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.html#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.html#api-overview-indexminute-display) | [Selector](index_minute-selector.html#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.html#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.html#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.html#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.html#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.html#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.html#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.html#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.html#api-overview-indexminute-accessor-type-clinic)
+[IndexMinute](index_minute.md#api-overview-indexminute): [Constructor](index_minute-constructor.md#api-overview-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-overview-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-overview-indexminute-attribute) | [Method](index_minute-method.md#api-overview-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-overview-indexminute-dictionary-like) | [Display](index_minute-display.md#api-overview-indexminute-display) | [Selector](index_minute-selector.md#api-overview-indexminute-selector) | [Iterator](index_minute-iterator.md#api-overview-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-overview-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-overview-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-overview-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-overview-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-overview-indexminute-accessor-string) | [Accessor Regular Expression](#api-overview-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-overview-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-overview-indexminute-accessor-type-clinic)
 
-[Previous](index_minute-accessor_string.html "Overview: IndexMinute: Accessor String")
-[Next](index_minute-accessor_hashlib.html "Overview: IndexMinute: Accessor Hashlib")
+[Previous](index_minute-accessor_string.md "Overview: IndexMinute: Accessor String")
+[Next](index_minute-accessor_hashlib.md "Overview: IndexMinute: Accessor Hashlib")
 
 ---
 

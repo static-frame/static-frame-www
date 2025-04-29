@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,27 +136,27 @@ API Detail
 * Detail: FillValueAuto
 * [View page source](../_sources/api_detail/fill_value_auto.rst.txt)
 
-[Previous](www.html "Detail: WWW")
-[Next](display_active.html "Detail: DisplayActive")
+[Previous](www.md "Detail: WWW")
+[Next](display_active.md "Detail: DisplayActive")
 
 ---
 
 # Detail: FillValueAuto[](#detail-fillvalueauto "Link to this heading")
 
-[Overview: FillValueAuto](../api_overview/fill_value_auto.html#api-overview-fillvalueauto)
+[Overview: FillValueAuto](../api_overview/fill_value_auto.md#api-overview-fillvalueauto)
 
-*class* FillValueAuto(*b=<object object>*, *i=<object object>*, *u=<object object>*, *f=<object object>*, *c=<object object>*, *m=<object object>*, *M=<object object>*, *O=<object object>*, *S=<object object>*, *U=<object object>*, *V=<object object>*)[[source]](../_modules/static_frame/core/fill_value_auto.html#FillValueAuto)[](#static_frame.FillValueAuto "Link to this definition")
+*class* FillValueAuto(*b=<object object>*, *i=<object object>*, *u=<object object>*, *f=<object object>*, *c=<object object>*, *m=<object object>*, *M=<object object>*, *O=<object object>*, *S=<object object>*, *U=<object object>*, *V=<object object>*)[[source]](../_modules/static_frame/core/fill_value_auto.md#FillValueAuto)[](#static_frame.FillValueAuto "Link to this definition")
 :   Define, per NumPy dtype kind, a value to be used for filling missing values.
 
-* [Constructor](fill_value_auto-constructor.html#api-detail-fillvalueauto-constructor): Alternative constructors for creating instances.
-* [Attribute](fill_value_auto-attribute.html#api-detail-fillvalueauto-attribute): Attributes for retrieving basic characteristics.
-* [Display](fill_value_auto-display.html#api-detail-fillvalueauto-display): Methods for providing a text representation of the object.
-* [Selector](fill_value_auto-selector.html#api-detail-fillvalueauto-selector): Interfaces for selecting by position, label or Boolean.
+* [Constructor](fill_value_auto-constructor.md#api-detail-fillvalueauto-constructor): Alternative constructors for creating instances.
+* [Attribute](fill_value_auto-attribute.md#api-detail-fillvalueauto-attribute): Attributes for retrieving basic characteristics.
+* [Display](fill_value_auto-display.md#api-detail-fillvalueauto-display): Methods for providing a text representation of the object.
+* [Selector](fill_value_auto-selector.md#api-detail-fillvalueauto-selector): Interfaces for selecting by position, label or Boolean.
 
-[FillValueAuto](#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.html#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.html#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.html#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.html#api-detail-fillvalueauto-selector)
+[FillValueAuto](#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-detail-fillvalueauto-selector)
 
-[Previous](www.html "Detail: WWW")
-[Next](display_active.html "Detail: DisplayActive")
+[Previous](www.md "Detail: WWW")
+[Next](display_active.md "Detail: DisplayActive")
 
 ---
 

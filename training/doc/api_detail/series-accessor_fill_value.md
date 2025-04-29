@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,17 +135,17 @@ API Detail
 * Detail: Series: Accessor Fill Value
 * [View page source](../_sources/api_detail/series-accessor_fill_value.rst.txt)
 
-[Previous](series-accessor_string.html "Detail: Series: Accessor String")
-[Next](series-accessor_regular_expression.html "Detail: Series: Accessor Regular Expression")
+[Previous](series-accessor_string.md "Detail: Series: Accessor String")
+[Next](series-accessor_regular_expression.md "Detail: Series: Accessor Regular Expression")
 
 ---
 
 # Detail: Series: Accessor Fill Value[](#detail-series-accessor-fill-value "Link to this heading")
 
-[Overview: Series: Accessor Fill Value](../api_overview/series-accessor_fill_value.html#api-overview-series-accessor-fill-value)
+[Overview: Series: Accessor Fill Value](../api_overview/series-accessor_fill_value.md#api-overview-series-accessor-fill-value)
 
 Series.via\_fill\_value(fill\_value).loc
-:   Series.via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   Series.via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
     InterfaceFillValue.loc
     :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
@@ -171,9 +171,9 @@ Series.via\_fill\_value(fill\_value).loc
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_getitem\_\_(key*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__getitem__)
+    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__getitem__)
     :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
 
     ```
@@ -197,7 +197,7 @@ Series.via\_fill\_value(*fill\_value).\_\_getitem\_\_(key*)
     ```
 
 Series.via\_fill\_value(fill\_value).via\_T
-:   Series.via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   Series.via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
     InterfaceFillValue.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
@@ -217,9 +217,9 @@ Series.via\_fill\_value(fill\_value).via\_T
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__add__)
+    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__add__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -236,9 +236,9 @@ Series.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__sub__)
+    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__sub__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -255,9 +255,9 @@ Series.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mul__)
+    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mul__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -274,9 +274,9 @@ Series.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__truediv__)
+    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__truediv__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -293,9 +293,9 @@ Series.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__floordiv__)
+    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__floordiv__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -312,9 +312,9 @@ Series.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mod__)
+    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__mod__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -331,9 +331,9 @@ Series.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__pow__)
+    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__pow__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -350,9 +350,9 @@ Series.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lshift__)
+    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lshift__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -383,9 +383,9 @@ Series.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rshift__)
+    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rshift__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -416,9 +416,9 @@ Series.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__and__)
+    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__and__)
 
     ```
     >>> s1 = sf.Series((False, False, True), index=('a', 'b', 'c'))
@@ -449,9 +449,9 @@ Series.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__xor__)
+    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__xor__)
 
     ```
     >>> s1 = sf.Series((False, False, True), index=('a', 'b', 'c'))
@@ -482,9 +482,9 @@ Series.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__or__)
+    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__or__)
     :   Return self|value.
 
     ```
@@ -516,9 +516,9 @@ Series.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lt__)
+    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__lt__)
     :   Return self<value.
 
     ```
@@ -536,9 +536,9 @@ Series.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__le__)
+    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__le__)
     :   Return self<=value.
 
     ```
@@ -556,9 +556,9 @@ Series.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__eq__)
+    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__eq__)
     :   Return self==value.
 
     ```
@@ -576,9 +576,9 @@ Series.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ne__)
+    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ne__)
     :   Return self!=value.
 
     ```
@@ -596,9 +596,9 @@ Series.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__gt__)
+    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__gt__)
     :   Return self>value.
 
     ```
@@ -616,9 +616,9 @@ Series.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ge__)
+    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__ge__)
     :   Return self>=value.
 
     ```
@@ -636,9 +636,9 @@ Series.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__radd__)
+    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__radd__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -649,9 +649,9 @@ Series.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rsub__)
+    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rsub__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -662,9 +662,9 @@ Series.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rmul__)
+    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rmul__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -675,9 +675,9 @@ Series.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rtruediv__)
+    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rtruediv__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -688,9 +688,9 @@ Series.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
     ```
 
 Series.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
-:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.html#Series.via_fill_value)
+:   via\_fill\_value *= <function Series.via\_fill\_value>*[[source]](../_modules/static_frame/core/series.md#Series.via_fill_value)
 
-    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rfloordiv__)
+    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.md#InterfaceFillValue.__rfloordiv__)
 
     ```
     >>> s1 = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
@@ -700,10 +700,10 @@ Series.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
 
     ```
 
-[Series](series.html#api-detail-series): [Constructor](series-constructor.html#api-detail-series-constructor) | [Exporter](series-exporter.html#api-detail-series-exporter) | [Attribute](series-attribute.html#api-detail-series-attribute) | [Method](series-method.html#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.html#api-detail-series-dictionary-like) | [Display](series-display.html#api-detail-series-display) | [Assignment](series-assignment.html#api-detail-series-assignment) | [Selector](series-selector.html#api-detail-series-selector) | [Iterator](series-iterator.html#api-detail-series-iterator) | [Operator Binary](series-operator_binary.html#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-detail-series-accessor-string) | [Accessor Fill Value](#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-detail-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-accessor_string.html "Detail: Series: Accessor String")
-[Next](series-accessor_regular_expression.html "Detail: Series: Accessor Regular Expression")
+[Previous](series-accessor_string.md "Detail: Series: Accessor String")
+[Next](series-accessor_regular_expression.md "Detail: Series: Accessor Regular Expression")
 
 ---
 

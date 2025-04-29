@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,23 +135,23 @@ API Detail
 * Overview: Platform: Constructor
 * [View page source](../_sources/api_overview/platform-constructor.rst.txt)
 
-[Previous](memory_display-display.html "Overview: MemoryDisplay: Display")
-[Next](platform-exporter.html "Overview: Platform: Exporter")
+[Previous](memory_display-display.md "Overview: MemoryDisplay: Display")
+[Next](platform-exporter.md "Overview: Platform: Exporter")
 
 ---
 
 # Overview: Platform: Constructor[](#overview-platform-constructor "Link to this heading")
 
-[Detail: Platform: Constructor](../api_detail/platform-constructor.html#api-detail-platform-constructor)
+[Detail: Platform: Constructor](../api_detail/platform-constructor.md#api-detail-platform-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/platform-constructor.html#api-sig-platform-init) | `Platform.__init__(*args, **kwargs)` | Initialize self. See help(type(self)) for accurate signature. |
+| [Detail](../api_detail/platform-constructor.md#api-sig-platform-init) | `Platform.__init__(*args, **kwargs)` | Initialize self. See help(type(self)) for accurate signature. |
 
-[Platform](platform.html#api-overview-platform): [Constructor](#api-overview-platform-constructor) | [Exporter](platform-exporter.html#api-overview-platform-exporter) | [Display](platform-display.html#api-overview-platform-display)
+[Platform](platform.md#api-overview-platform): [Constructor](#api-overview-platform-constructor) | [Exporter](platform-exporter.md#api-overview-platform-exporter) | [Display](platform-display.md#api-overview-platform-display)
 
-[Previous](memory_display-display.html "Overview: MemoryDisplay: Display")
-[Next](platform-exporter.html "Overview: Platform: Exporter")
+[Previous](memory_display-display.md "Overview: MemoryDisplay: Display")
+[Next](platform-exporter.md "Overview: Platform: Exporter")
 
 ---
 

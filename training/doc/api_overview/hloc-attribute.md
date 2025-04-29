@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: HLoc: Attribute
 * [View page source](../_sources/api_overview/hloc-attribute.rst.txt)
 
-[Previous](hloc-constructor.html "Overview: HLoc: Constructor")
-[Next](hloc-method.html "Overview: HLoc: Method")
+[Previous](hloc-constructor.md "Overview: HLoc: Constructor")
+[Next](hloc-method.md "Overview: HLoc: Method")
 
 ---
 
 # Overview: HLoc: Attribute[](#overview-hloc-attribute "Link to this heading")
 
-[Detail: HLoc: Attribute](../api_detail/hloc-attribute.html#api-detail-hloc-attribute)
+[Detail: HLoc: Attribute](../api_detail/hloc-attribute.md#api-detail-hloc-attribute)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/hloc-attribute.html#api-sig-hloc-static) | `HLoc.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
-| [Detail](../api_detail/hloc-attribute.html#api-sig-hloc-key) | `HLoc.key` | Built-in immutable sequence. If no argument is given, the constructor returns an… |
+| [Detail](../api_detail/hloc-attribute.md#api-sig-hloc-static) | `HLoc.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
+| [Detail](../api_detail/hloc-attribute.md#api-sig-hloc-key) | `HLoc.key` | Built-in immutable sequence. If no argument is given, the constructor returns an… |
 
-[HLoc](hloc.html#api-overview-hloc): [Constructor](hloc-constructor.html#api-overview-hloc-constructor) | [Attribute](#api-overview-hloc-attribute) | [Method](hloc-method.html#api-overview-hloc-method) | [Dictionary-Like](hloc-dictionary_like.html#api-overview-hloc-dictionary-like) | [Display](hloc-display.html#api-overview-hloc-display)
+[HLoc](hloc.md#api-overview-hloc): [Constructor](hloc-constructor.md#api-overview-hloc-constructor) | [Attribute](#api-overview-hloc-attribute) | [Method](hloc-method.md#api-overview-hloc-method) | [Dictionary-Like](hloc-dictionary_like.md#api-overview-hloc-dictionary-like) | [Display](hloc-display.md#api-overview-hloc-display)
 
-[Previous](hloc-constructor.html "Overview: HLoc: Constructor")
-[Next](hloc-method.html "Overview: HLoc: Method")
+[Previous](hloc-constructor.md "Overview: HLoc: Constructor")
+[Next](hloc-method.md "Overview: HLoc: Method")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -136,27 +136,27 @@ API Detail
 * Detail: IndexAutoConstructorFactory
 * [View page source](../_sources/api_detail/index_auto_constructor_factory.rst.txt)
 
-[Previous](index_default_constructor_factory.html "Detail: IndexDefaultConstructorFactory")
-[Next](npz.html "Detail: NPZ")
+[Previous](index_default_constructor_factory.md "Detail: IndexDefaultConstructorFactory")
+[Next](npz.md "Detail: NPZ")
 
 ---
 
 # Detail: IndexAutoConstructorFactory[](#detail-indexautoconstructorfactory "Link to this heading")
 
-[Overview: IndexAutoConstructorFactory](../api_overview/index_auto_constructor_factory.html#api-overview-indexautoconstructorfactory)
+[Overview: IndexAutoConstructorFactory](../api_overview/index_auto_constructor_factory.md#api-overview-indexautoconstructorfactory)
 
-*class* IndexAutoConstructorFactory(*name*)[[source]](../_modules/static_frame/core/index_auto.html#IndexAutoConstructorFactory)[](#static_frame.IndexAutoConstructorFactory "Link to this definition")
+*class* IndexAutoConstructorFactory(*name*)[[source]](../_modules/static_frame/core/index_auto.md#IndexAutoConstructorFactory)[](#static_frame.IndexAutoConstructorFactory "Link to this definition")
 :   Token class to be used to automatically determine index type by array dtype; can also provide a `name` attribute. To be used as a constructor argument. An instance or a class can be used.
 
-* [Constructor](index_auto_constructor_factory-constructor.html#api-detail-indexautoconstructorfactory-constructor): Alternative constructors for creating instances.
-* [Exporter](index_auto_constructor_factory-exporter.html#api-detail-indexautoconstructorfactory-exporter): Methods for transforming, exporting, or serializing objects.
-* [Method](index_auto_constructor_factory-method.html#api-detail-indexautoconstructorfactory-method): Methods for general functionality.
-* [Display](index_auto_constructor_factory-display.html#api-detail-indexautoconstructorfactory-display): Methods for providing a text representation of the object.
+* [Constructor](index_auto_constructor_factory-constructor.md#api-detail-indexautoconstructorfactory-constructor): Alternative constructors for creating instances.
+* [Exporter](index_auto_constructor_factory-exporter.md#api-detail-indexautoconstructorfactory-exporter): Methods for transforming, exporting, or serializing objects.
+* [Method](index_auto_constructor_factory-method.md#api-detail-indexautoconstructorfactory-method): Methods for general functionality.
+* [Display](index_auto_constructor_factory-display.md#api-detail-indexautoconstructorfactory-display): Methods for providing a text representation of the object.
 
-[IndexAutoConstructorFactory](#api-detail-indexautoconstructorfactory): [Constructor](index_auto_constructor_factory-constructor.html#api-detail-indexautoconstructorfactory-constructor) | [Exporter](index_auto_constructor_factory-exporter.html#api-detail-indexautoconstructorfactory-exporter) | [Method](index_auto_constructor_factory-method.html#api-detail-indexautoconstructorfactory-method) | [Display](index_auto_constructor_factory-display.html#api-detail-indexautoconstructorfactory-display)
+[IndexAutoConstructorFactory](#api-detail-indexautoconstructorfactory): [Constructor](index_auto_constructor_factory-constructor.md#api-detail-indexautoconstructorfactory-constructor) | [Exporter](index_auto_constructor_factory-exporter.md#api-detail-indexautoconstructorfactory-exporter) | [Method](index_auto_constructor_factory-method.md#api-detail-indexautoconstructorfactory-method) | [Display](index_auto_constructor_factory-display.md#api-detail-indexautoconstructorfactory-display)
 
-[Previous](index_default_constructor_factory.html "Detail: IndexDefaultConstructorFactory")
-[Next](npz.html "Detail: NPZ")
+[Previous](index_default_constructor_factory.md "Detail: IndexDefaultConstructorFactory")
+[Next](npz.md "Detail: NPZ")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: HLoc: Dictionary-Like
 * [View page source](../_sources/api_detail/hloc-dictionary_like.rst.txt)
 
-[Previous](hloc-method.html "Detail: HLoc: Method")
-[Next](hloc-display.html "Detail: HLoc: Display")
+[Previous](hloc-method.md "Detail: HLoc: Method")
+[Next](hloc-display.md "Detail: HLoc: Display")
 
 ---
 
 # Detail: HLoc: Dictionary-Like[](#detail-hloc-dictionary-like "Link to this heading")
 
-[Overview: HLoc: Dictionary-Like](../api_overview/hloc-dictionary_like.html#api-overview-hloc-dictionary-like)
+[Overview: HLoc: Dictionary-Like](../api_overview/hloc-dictionary_like.md#api-overview-hloc-dictionary-like)
 
-HLoc.\_\_iter\_\_()[[source]](../_modules/static_frame/core/hloc.html#HLoc.__iter__)[](#static_frame.HLoc.__iter__ "Link to this definition")
+HLoc.\_\_iter\_\_()[[source]](../_modules/static_frame/core/hloc.md#HLoc.__iter__)[](#static_frame.HLoc.__iter__ "Link to this definition")
 :   ```
     >>> hl = sf.HLoc[:, ['a', 'b'], 2048:]
     >>> hl
@@ -154,10 +154,10 @@ HLoc.\_\_iter\_\_()[[source]](../_modules/static_frame/core/hloc.html#HLoc.__ite
 
     ```
 
-[HLoc](hloc.html#api-detail-hloc): [Constructor](hloc-constructor.html#api-detail-hloc-constructor) | [Attribute](hloc-attribute.html#api-detail-hloc-attribute) | [Method](hloc-method.html#api-detail-hloc-method) | [Dictionary-Like](#api-detail-hloc-dictionary-like) | [Display](hloc-display.html#api-detail-hloc-display)
+[HLoc](hloc.md#api-detail-hloc): [Constructor](hloc-constructor.md#api-detail-hloc-constructor) | [Attribute](hloc-attribute.md#api-detail-hloc-attribute) | [Method](hloc-method.md#api-detail-hloc-method) | [Dictionary-Like](#api-detail-hloc-dictionary-like) | [Display](hloc-display.md#api-detail-hloc-display)
 
-[Previous](hloc-method.html "Detail: HLoc: Method")
-[Next](hloc-display.html "Detail: HLoc: Display")
+[Previous](hloc-method.md "Detail: HLoc: Method")
+[Next](hloc-display.md "Detail: HLoc: Display")
 
 ---
 

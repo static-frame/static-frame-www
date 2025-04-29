@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,27 +135,27 @@ API Detail
 * Overview: IndexGO: Exporter
 * [View page source](../_sources/api_overview/index_go-exporter.rst.txt)
 
-[Previous](index_go-constructor.html "Overview: IndexGO: Constructor")
-[Next](index_go-attribute.html "Overview: IndexGO: Attribute")
+[Previous](index_go-constructor.md "Overview: IndexGO: Constructor")
+[Next](index_go-attribute.md "Overview: IndexGO: Attribute")
 
 ---
 
 # Overview: IndexGO: Exporter[](#overview-indexgo-exporter "Link to this heading")
 
-[Detail: IndexGO: Exporter](../api_detail/index_go-exporter.html#api-detail-indexgo-exporter)
+[Detail: IndexGO: Exporter](../api_detail/index_go-exporter.md#api-detail-indexgo-exporter)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_go-exporter.html#api-sig-indexgo-to-html) | `IndexGO.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
-| [Detail](../api_detail/index_go-exporter.html#api-sig-indexgo-to-html-datatables) | `IndexGO.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
-| [Detail](../api_detail/index_go-exporter.html#api-sig-indexgo-to-pandas) | `IndexGO.to_pandas()` | Return a Pandas Index. |
-| [Detail](../api_detail/index_go-exporter.html#api-sig-indexgo-to-series) | `IndexGO.to_series()` | Return a Series with values from this Index’s labels. |
-| [Detail](../api_detail/index_go-exporter.html#api-sig-indexgo-to-visidata) | `IndexGO.to_visidata()` | Open an interactive VisiData session. |
+| [Detail](../api_detail/index_go-exporter.md#api-sig-indexgo-to-html) | `IndexGO.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
+| [Detail](../api_detail/index_go-exporter.md#api-sig-indexgo-to-html-datatables) | `IndexGO.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
+| [Detail](../api_detail/index_go-exporter.md#api-sig-indexgo-to-pandas) | `IndexGO.to_pandas()` | Return a Pandas Index. |
+| [Detail](../api_detail/index_go-exporter.md#api-sig-indexgo-to-series) | `IndexGO.to_series()` | Return a Series with values from this Index’s labels. |
+| [Detail](../api_detail/index_go-exporter.md#api-sig-indexgo-to-visidata) | `IndexGO.to_visidata()` | Open an interactive VisiData session. |
 
-[IndexGO](index_go.html#api-overview-indexgo): [Constructor](index_go-constructor.html#api-overview-indexgo-constructor) | [Exporter](#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.html#api-overview-indexgo-attribute) | [Method](index_go-method.html#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.html#api-overview-indexgo-dictionary-like) | [Display](index_go-display.html#api-overview-indexgo-display) | [Selector](index_go-selector.html#api-overview-indexgo-selector) | [Iterator](index_go-iterator.html#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.html#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.html#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.html#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.html#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.html#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.html#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.html#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.html#api-overview-indexgo-accessor-type-clinic)
+[IndexGO](index_go.md#api-overview-indexgo): [Constructor](index_go-constructor.md#api-overview-indexgo-constructor) | [Exporter](#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | [Method](index_go-method.md#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 
-[Previous](index_go-constructor.html "Overview: IndexGO: Constructor")
-[Next](index_go-attribute.html "Overview: IndexGO: Attribute")
+[Previous](index_go-constructor.md "Overview: IndexGO: Constructor")
+[Next](index_go-attribute.md "Overview: IndexGO: Attribute")
 
 ---
 

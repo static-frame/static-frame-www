@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,25 +135,25 @@ API Detail
 * Overview: ILoc
 * [View page source](../_sources/api_overview/iloc.rst.txt)
 
-[Previous](hloc.html "Overview: HLoc")
-[Next](type_clinic.html "Overview: TypeClinic")
+[Previous](hloc.md "Overview: HLoc")
+[Next](type_clinic.md "Overview: TypeClinic")
 
 ---
 
 # Overview: ILoc[](#overview-iloc "Link to this heading")
 
-[Detail: ILoc](../api_detail/iloc.html#api-detail-iloc)
+[Detail: ILoc](../api_detail/iloc.md#api-detail-iloc)
 
 |  |  |
 | --- | --- |
-| [Constructor](iloc-constructor.html#api-overview-iloc-constructor) | Alternative constructors for creating instances. |
-| [Attribute](iloc-attribute.html#api-overview-iloc-attribute) | Attributes for retrieving basic characteristics. |
-| [Display](iloc-display.html#api-overview-iloc-display) | Methods for providing a text representation of the object. |
+| [Constructor](iloc-constructor.md#api-overview-iloc-constructor) | Alternative constructors for creating instances. |
+| [Attribute](iloc-attribute.md#api-overview-iloc-attribute) | Attributes for retrieving basic characteristics. |
+| [Display](iloc-display.md#api-overview-iloc-display) | Methods for providing a text representation of the object. |
 
-[ILoc](#api-overview-iloc): [Constructor](iloc-constructor.html#api-overview-iloc-constructor) | [Attribute](iloc-attribute.html#api-overview-iloc-attribute) | [Display](iloc-display.html#api-overview-iloc-display)
+[ILoc](#api-overview-iloc): [Constructor](iloc-constructor.md#api-overview-iloc-constructor) | [Attribute](iloc-attribute.md#api-overview-iloc-attribute) | [Display](iloc-display.md#api-overview-iloc-display)
 
-[Previous](hloc.html "Overview: HLoc")
-[Next](type_clinic.html "Overview: TypeClinic")
+[Previous](hloc.md "Overview: HLoc")
+[Next](type_clinic.md "Overview: TypeClinic")
 
 ---
 

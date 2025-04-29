@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: CallGuard: Method
 * [View page source](../_sources/api_overview/call_guard-method.rst.txt)
 
-[Previous](type_clinic-display.html "Overview: TypeClinic: Display")
-[Next](clinic_result-constructor.html "Overview: ClinicResult: Constructor")
+[Previous](type_clinic-display.md "Overview: TypeClinic: Display")
+[Next](clinic_result-constructor.md "Overview: ClinicResult: Constructor")
 
 ---
 
 # Overview: CallGuard: Method[](#overview-callguard-method "Link to this heading")
 
-[Detail: CallGuard: Method](../api_detail/call_guard-method.html#api-detail-callguard-method)
+[Detail: CallGuard: Method](../api_detail/call_guard-method.md#api-detail-callguard-method)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/call_guard-method.html#api-sig-callguard-check) | `CallGuard.check(func, *, fail_fast)` | A function decorator to perform run-time checking of function arguments and retu… |
-| [Detail](../api_detail/call_guard-method.html#api-sig-callguard-warn) | `CallGuard.warn(func, *, fail_fast, category)` | A function decorator to perform run-time checking of function arguments and retu… |
+| [Detail](../api_detail/call_guard-method.md#api-sig-callguard-check) | `CallGuard.check(func, *, fail_fast)` | A function decorator to perform run-time checking of function arguments and retu… |
+| [Detail](../api_detail/call_guard-method.md#api-sig-callguard-warn) | `CallGuard.warn(func, *, fail_fast, category)` | A function decorator to perform run-time checking of function arguments and retu… |
 
-[CallGuard](call_guard.html#api-overview-callguard): [Method](#api-overview-callguard-method)
+[CallGuard](call_guard.md#api-overview-callguard): [Method](#api-overview-callguard-method)
 
-[Previous](type_clinic-display.html "Overview: TypeClinic: Display")
-[Next](clinic_result-constructor.html "Overview: ClinicResult: Constructor")
+[Previous](type_clinic-display.md "Overview: TypeClinic: Display")
+[Next](clinic_result-constructor.md "Overview: ClinicResult: Constructor")
 
 ---
 

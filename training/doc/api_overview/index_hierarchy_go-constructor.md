@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,31 +135,31 @@ API Detail
 * Overview: IndexHierarchyGO: Constructor
 * [View page source](../_sources/api_overview/index_hierarchy_go-constructor.rst.txt)
 
-[Previous](index_hierarchy-accessor_type_clinic.html "Overview: IndexHierarchy: Accessor Type Clinic")
-[Next](index_hierarchy_go-exporter.html "Overview: IndexHierarchyGO: Exporter")
+[Previous](index_hierarchy-accessor_type_clinic.md "Overview: IndexHierarchy: Accessor Type Clinic")
+[Next](index_hierarchy_go-exporter.md "Overview: IndexHierarchyGO: Exporter")
 
 ---
 
 # Overview: IndexHierarchyGO: Constructor[](#overview-indexhierarchygo-constructor "Link to this heading")
 
-[Detail: IndexHierarchyGO: Constructor](../api_detail/index_hierarchy_go-constructor.html#api-detail-indexhierarchygo-constructor)
+[Detail: IndexHierarchyGO: Constructor](../api_detail/index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy_go-constructor.html#api-sig-indexhierarchygo-init) | `IndexHierarchyGO.__init__(indices, *, indexers, name, blocks, own_blocks)` | Initializer. Args: indices: list of Index objects indexers: a 2D indexer array n… |
-| [Detail](../api_detail/index_hierarchy_go-constructor.html#api-sig-indexhierarchygo-from-index-items) | `IndexHierarchyGO.from_index_items(items, *, index_constructor, name)` | Given an iterable of pairs of label, IndexBase, produce an IndexHierarchy where… |
-| [Detail](../api_detail/index_hierarchy_go-constructor.html#api-sig-indexhierarchygo-from-labels) | `IndexHierarchyGO.from_labels(labels, *, name, reorder_for_hierarchy, index_constructors, depth_reference, continuation_token)` | Construct an IndexHierarchy from an iterable of labels, where each label is tupl… |
-| [Detail](../api_detail/index_hierarchy_go-constructor.html#api-sig-indexhierarchygo-from-labels-delimited) | `IndexHierarchyGO.from_labels_delimited(labels, *, delimiter, name, index_constructors)` | Construct an IndexHierarchy from an iterable of labels, where each label is stri… |
-| [Detail](../api_detail/index_hierarchy_go-constructor.html#api-sig-indexhierarchygo-from-names) | `IndexHierarchyGO.from_names(names)` | Construct a zero-length IndexHierarchy from an iterable of names, where the leng… |
-| [Detail](../api_detail/index_hierarchy_go-constructor.html#api-sig-indexhierarchygo-from-pandas) | `IndexHierarchyGO.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
-| [Detail](../api_detail/index_hierarchy_go-constructor.html#api-sig-indexhierarchygo-from-product) | `IndexHierarchyGO.from_product(*, name, index_constructors, *levels)` | Given groups of iterables, return an IndexHierarchy made of the product of a val… |
-| [Detail](../api_detail/index_hierarchy_go-constructor.html#api-sig-indexhierarchygo-from-tree) | `IndexHierarchyGO.from_tree(tree, *, name, index_constructors)` | Convert into a IndexHierarchy a dictionary defining keys to either iterables or… |
-| [Detail](../api_detail/index_hierarchy_go-constructor.html#api-sig-indexhierarchygo-from-values-per-depth) | `IndexHierarchyGO.from_values_per_depth(values, *, name, depth_reference, index_constructors)` | Construct an IndexHierarchy from a 2D NumPy array, or a collection of 1D arrays… |
+| [Detail](../api_detail/index_hierarchy_go-constructor.md#api-sig-indexhierarchygo-init) | `IndexHierarchyGO.__init__(indices, *, indexers, name, blocks, own_blocks)` | Initializer. Args: indices: list of Index objects indexers: a 2D indexer array n… |
+| [Detail](../api_detail/index_hierarchy_go-constructor.md#api-sig-indexhierarchygo-from-index-items) | `IndexHierarchyGO.from_index_items(items, *, index_constructor, name)` | Given an iterable of pairs of label, IndexBase, produce an IndexHierarchy where… |
+| [Detail](../api_detail/index_hierarchy_go-constructor.md#api-sig-indexhierarchygo-from-labels) | `IndexHierarchyGO.from_labels(labels, *, name, reorder_for_hierarchy, index_constructors, depth_reference, continuation_token)` | Construct an IndexHierarchy from an iterable of labels, where each label is tupl… |
+| [Detail](../api_detail/index_hierarchy_go-constructor.md#api-sig-indexhierarchygo-from-labels-delimited) | `IndexHierarchyGO.from_labels_delimited(labels, *, delimiter, name, index_constructors)` | Construct an IndexHierarchy from an iterable of labels, where each label is stri… |
+| [Detail](../api_detail/index_hierarchy_go-constructor.md#api-sig-indexhierarchygo-from-names) | `IndexHierarchyGO.from_names(names)` | Construct a zero-length IndexHierarchy from an iterable of names, where the leng… |
+| [Detail](../api_detail/index_hierarchy_go-constructor.md#api-sig-indexhierarchygo-from-pandas) | `IndexHierarchyGO.from_pandas(value)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_hierarchy_go-constructor.md#api-sig-indexhierarchygo-from-product) | `IndexHierarchyGO.from_product(*, name, index_constructors, *levels)` | Given groups of iterables, return an IndexHierarchy made of the product of a val… |
+| [Detail](../api_detail/index_hierarchy_go-constructor.md#api-sig-indexhierarchygo-from-tree) | `IndexHierarchyGO.from_tree(tree, *, name, index_constructors)` | Convert into a IndexHierarchy a dictionary defining keys to either iterables or… |
+| [Detail](../api_detail/index_hierarchy_go-constructor.md#api-sig-indexhierarchygo-from-values-per-depth) | `IndexHierarchyGO.from_values_per_depth(values, *, name, depth_reference, index_constructors)` | Construct an IndexHierarchy from a 2D NumPy array, or a collection of 1D arrays… |
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-overview-indexhierarchygo): [Constructor](#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.html#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-overview-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-overview-indexhierarchygo): [Constructor](#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-overview-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy-accessor_type_clinic.html "Overview: IndexHierarchy: Accessor Type Clinic")
-[Next](index_hierarchy_go-exporter.html "Overview: IndexHierarchyGO: Exporter")
+[Previous](index_hierarchy-accessor_type_clinic.md "Overview: IndexHierarchy: Accessor Type Clinic")
+[Next](index_hierarchy_go-exporter.md "Overview: IndexHierarchyGO: Exporter")
 
 ---
 

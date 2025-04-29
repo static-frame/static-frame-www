@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,28 +135,28 @@ API Detail
 * Overview: ClinicResult
 * [View page source](../_sources/api_overview/clinic_result.rst.txt)
 
-[Previous](call_guard.html "Overview: CallGuard")
-[Next](require.html "Overview: Require")
+[Previous](call_guard.md "Overview: CallGuard")
+[Next](require.md "Overview: Require")
 
 ---
 
 # Overview: ClinicResult[](#overview-clinicresult "Link to this heading")
 
-[Detail: ClinicResult](../api_detail/clinic_result.html#api-detail-clinicresult)
+[Detail: ClinicResult](../api_detail/clinic_result.md#api-detail-clinicresult)
 
 |  |  |
 | --- | --- |
-| [Constructor](clinic_result-constructor.html#api-overview-clinicresult-constructor) | Alternative constructors for creating instances. |
-| [Exporter](clinic_result-exporter.html#api-overview-clinicresult-exporter) | Methods for transforming, exporting, or serializing objects. |
-| [Attribute](clinic_result-attribute.html#api-overview-clinicresult-attribute) | Attributes for retrieving basic characteristics. |
-| [Method](clinic_result-method.html#api-overview-clinicresult-method) | Methods for general functionality. |
-| [Dictionary-Like](clinic_result-dictionary_like.html#api-overview-clinicresult-dictionary-like) | All dictionary-like methods and iterators. |
-| [Display](clinic_result-display.html#api-overview-clinicresult-display) | Methods for providing a text representation of the object. |
+| [Constructor](clinic_result-constructor.md#api-overview-clinicresult-constructor) | Alternative constructors for creating instances. |
+| [Exporter](clinic_result-exporter.md#api-overview-clinicresult-exporter) | Methods for transforming, exporting, or serializing objects. |
+| [Attribute](clinic_result-attribute.md#api-overview-clinicresult-attribute) | Attributes for retrieving basic characteristics. |
+| [Method](clinic_result-method.md#api-overview-clinicresult-method) | Methods for general functionality. |
+| [Dictionary-Like](clinic_result-dictionary_like.md#api-overview-clinicresult-dictionary-like) | All dictionary-like methods and iterators. |
+| [Display](clinic_result-display.md#api-overview-clinicresult-display) | Methods for providing a text representation of the object. |
 
-[ClinicResult](#api-overview-clinicresult): [Constructor](clinic_result-constructor.html#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-overview-clinicresult-attribute) | [Method](clinic_result-method.html#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.html#api-overview-clinicresult-display)
+[ClinicResult](#api-overview-clinicresult): [Constructor](clinic_result-constructor.md#api-overview-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-overview-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-overview-clinicresult-attribute) | [Method](clinic_result-method.md#api-overview-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-overview-clinicresult-dictionary-like) | [Display](clinic_result-display.md#api-overview-clinicresult-display)
 
-[Previous](call_guard.html "Overview: CallGuard")
-[Next](require.html "Overview: Require")
+[Previous](call_guard.md "Overview: CallGuard")
+[Next](require.md "Overview: Require")
 
 ---
 

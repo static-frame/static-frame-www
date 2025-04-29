@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,34 +135,34 @@ API Detail
 * Overview: Series: Assignment
 * [View page source](../_sources/api_overview/series-assignment.rst.txt)
 
-[Previous](series-display.html "Overview: Series: Display")
-[Next](series-selector.html "Overview: Series: Selector")
+[Previous](series-display.md "Overview: Series: Display")
+[Next](series-selector.md "Overview: Series: Selector")
 
 ---
 
 # Overview: Series: Assignment[](#overview-series-assignment "Link to this heading")
 
-[Detail: Series: Assignment](../api_detail/series-assignment.html#api-detail-series-assignment)
+[Detail: Series: Assignment](../api_detail/series-assignment.md#api-detail-series-assignment)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign) | `Series.assign[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-apply) | `Series.assign[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-apply-element) | `Series.assign[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-apply-element-items) | `Series.assign[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-iloc) | `Series.assign.iloc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-iloc-apply) | `Series.assign.iloc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-iloc-apply-element) | `Series.assign.iloc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-iloc-apply-element-items) | `Series.assign.iloc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-loc) | `Series.assign.loc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-loc-apply) | `Series.assign.loc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-loc-apply-element) | `Series.assign.loc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
-| [Detail](../api_detail/series-assignment.html#api-sig-series-assign-loc-apply-element-items) | `Series.assign.loc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign) | `Series.assign[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-apply) | `Series.assign[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-apply-element) | `Series.assign[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-apply-element-items) | `Series.assign[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-iloc) | `Series.assign.iloc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-iloc-apply) | `Series.assign.iloc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-iloc-apply-element) | `Series.assign.iloc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-iloc-apply-element-items) | `Series.assign.iloc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-loc) | `Series.assign.loc[key](value, *, fill_value)` | Assign the value in the position specified by the selector. The name attribute i… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-loc-apply) | `Series.assign.loc[key].apply(func, *, fill_value)` | Provide a function to apply to the assignment target, and use that as the assign… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-loc-apply-element) | `Series.assign.loc[key].apply_element(func, *, dtype, fill_value)` | Provide a function to apply to each element in the assignment target, and use th… |
+| [Detail](../api_detail/series-assignment.md#api-sig-series-assign-loc-apply-element-items) | `Series.assign.loc[key].apply_element_items(func, *, dtype, fill_value)` | Provide a function, taking pairs of label, element, to apply to each element in… |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.html#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-display.html "Overview: Series: Display")
-[Next](series-selector.html "Overview: Series: Selector")
+[Previous](series-display.md "Overview: Series: Display")
+[Next](series-selector.md "Overview: Series: Selector")
 
 ---
 

@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,24 +135,24 @@ API Detail
 * Overview: StoreConfig: Constructor
 * [View page source](../_sources/api_overview/store_config-constructor.rst.txt)
 
-[Previous](display_config-display.html "Overview: DisplayConfig: Display")
-[Next](store_config-exporter.html "Overview: StoreConfig: Exporter")
+[Previous](display_config-display.md "Overview: DisplayConfig: Display")
+[Next](store_config-exporter.md "Overview: StoreConfig: Exporter")
 
 ---
 
 # Overview: StoreConfig: Constructor[](#overview-storeconfig-constructor "Link to this heading")
 
-[Detail: StoreConfig: Constructor](../api_detail/store_config-constructor.html#api-detail-storeconfig-constructor)
+[Detail: StoreConfig: Constructor](../api_detail/store_config-constructor.md#api-detail-storeconfig-constructor)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/store_config-constructor.html#api-sig-storeconfig-init) | `StoreConfig.__init__(*, index_depth, index_name_depth_level, index_constructors, columns_depth, columns_name_depth_level, columns_constructors, columns_select, dtypes, consolidate_blocks, skip_header, skip_footer, trim_nadir, include_index, include_index_name, include_columns, include_columns_name, merge_hierarchical_labels, label_encoder, label_decoder, read_max_workers, read_chunksize, write_max_workers, write_chunksize, mp_context)` |  |
-| [Detail](../api_detail/store_config-constructor.html#api-sig-storeconfig-from-frame) | `StoreConfig.from_frame(frame)` | Derive a config from a Frame. |
+| [Detail](../api_detail/store_config-constructor.md#api-sig-storeconfig-init) | `StoreConfig.__init__(*, index_depth, index_name_depth_level, index_constructors, columns_depth, columns_name_depth_level, columns_constructors, columns_select, dtypes, consolidate_blocks, skip_header, skip_footer, trim_nadir, include_index, include_index_name, include_columns, include_columns_name, merge_hierarchical_labels, label_encoder, label_decoder, read_max_workers, read_chunksize, write_max_workers, write_chunksize, mp_context)` |  |
+| [Detail](../api_detail/store_config-constructor.md#api-sig-storeconfig-from-frame) | `StoreConfig.from_frame(frame)` | Derive a config from a Frame. |
 
-[StoreConfig](store_config.html#api-overview-storeconfig): [Constructor](#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.html#api-overview-storeconfig-exporter) | [Attribute](store_config-attribute.html#api-overview-storeconfig-attribute) | [Method](store_config-method.html#api-overview-storeconfig-method) | [Display](store_config-display.html#api-overview-storeconfig-display)
+[StoreConfig](store_config.md#api-overview-storeconfig): [Constructor](#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-overview-storeconfig-exporter) | [Attribute](store_config-attribute.md#api-overview-storeconfig-attribute) | [Method](store_config-method.md#api-overview-storeconfig-method) | [Display](store_config-display.md#api-overview-storeconfig-display)
 
-[Previous](display_config-display.html "Overview: DisplayConfig: Display")
-[Next](store_config-exporter.html "Overview: StoreConfig: Exporter")
+[Previous](display_config-display.md "Overview: DisplayConfig: Display")
+[Next](store_config-exporter.md "Overview: StoreConfig: Exporter")
 
 ---
 

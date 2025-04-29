@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,16 +135,16 @@ API Detail
 * Detail: ClinicResult: Display
 * [View page source](../_sources/api_detail/clinic_result-display.rst.txt)
 
-[Previous](clinic_result-dictionary_like.html "Detail: ClinicResult: Dictionary-Like")
-[Next](require-constructor.html "Detail: Require: Constructor")
+[Previous](clinic_result-dictionary_like.md "Detail: ClinicResult: Dictionary-Like")
+[Next](require-constructor.md "Detail: Require: Constructor")
 
 ---
 
 # Detail: ClinicResult: Display[](#detail-clinicresult-display "Link to this heading")
 
-[Overview: ClinicResult: Display](../api_overview/clinic_result-display.html#api-overview-clinicresult-display)
+[Overview: ClinicResult: Display](../api_overview/clinic_result-display.md#api-overview-clinicresult-display)
 
-ClinicResult.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.html#ClinicResult.__repr__)[](#static_frame.ClinicResult.__repr__ "Link to this definition")
+ClinicResult.\_\_repr\_\_()[[source]](../_modules/static_frame/core/type_clinic.md#ClinicResult.__repr__)[](#static_frame.ClinicResult.__repr__ "Link to this definition")
 :   Return repr(self).
 
     ```
@@ -186,10 +186,10 @@ ClinicResult.\_\_str\_\_()[](#static_frame.ClinicResult.__str__ "Link to this
 
     ```
 
-[ClinicResult](clinic_result.html#api-detail-clinicresult): [Constructor](clinic_result-constructor.html#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.html#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.html#api-detail-clinicresult-attribute) | [Method](clinic_result-method.html#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.html#api-detail-clinicresult-dictionary-like) | [Display](#api-detail-clinicresult-display)
+[ClinicResult](clinic_result.md#api-detail-clinicresult): [Constructor](clinic_result-constructor.md#api-detail-clinicresult-constructor) | [Exporter](clinic_result-exporter.md#api-detail-clinicresult-exporter) | [Attribute](clinic_result-attribute.md#api-detail-clinicresult-attribute) | [Method](clinic_result-method.md#api-detail-clinicresult-method) | [Dictionary-Like](clinic_result-dictionary_like.md#api-detail-clinicresult-dictionary-like) | [Display](#api-detail-clinicresult-display)
 
-[Previous](clinic_result-dictionary_like.html "Detail: ClinicResult: Dictionary-Like")
-[Next](require-constructor.html "Detail: Require: Constructor")
+[Previous](clinic_result-dictionary_like.md "Detail: ClinicResult: Dictionary-Like")
+[Next](require-constructor.md "Detail: Require: Constructor")
 
 ---
 

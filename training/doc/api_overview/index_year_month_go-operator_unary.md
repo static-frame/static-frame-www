@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,26 +135,26 @@ API Detail
 * Overview: IndexYearMonthGO: Operator Unary
 * [View page source](../_sources/api_overview/index_year_month_go-operator_unary.rst.txt)
 
-[Previous](index_year_month_go-operator_binary.html "Overview: IndexYearMonthGO: Operator Binary")
-[Next](index_year_month_go-accessor_values.html "Overview: IndexYearMonthGO: Accessor Values")
+[Previous](index_year_month_go-operator_binary.md "Overview: IndexYearMonthGO: Operator Binary")
+[Next](index_year_month_go-accessor_values.md "Overview: IndexYearMonthGO: Accessor Values")
 
 ---
 
 # Overview: IndexYearMonthGO: Operator Unary[](#overview-indexyearmonthgo-operator-unary "Link to this heading")
 
-[Detail: IndexYearMonthGO: Operator Unary](../api_detail/index_year_month_go-operator_unary.html#api-detail-indexyearmonthgo-operator-unary)
+[Detail: IndexYearMonthGO: Operator Unary](../api_detail/index_year_month_go-operator_unary.md#api-detail-indexyearmonthgo-operator-unary)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_year_month_go-operator_unary.html#api-sig-indexyearmonthgo-abs) | `IndexYearMonthGO.__abs__()` |  |
-| [Detail](../api_detail/index_year_month_go-operator_unary.html#api-sig-indexyearmonthgo-invert) | `IndexYearMonthGO.__invert__()` |  |
-| [Detail](../api_detail/index_year_month_go-operator_unary.html#api-sig-indexyearmonthgo-neg) | `IndexYearMonthGO.__neg__()` |  |
-| [Detail](../api_detail/index_year_month_go-operator_unary.html#api-sig-indexyearmonthgo-pos) | `IndexYearMonthGO.__pos__()` |  |
+| [Detail](../api_detail/index_year_month_go-operator_unary.md#api-sig-indexyearmonthgo-abs) | `IndexYearMonthGO.__abs__()` |  |
+| [Detail](../api_detail/index_year_month_go-operator_unary.md#api-sig-indexyearmonthgo-invert) | `IndexYearMonthGO.__invert__()` |  |
+| [Detail](../api_detail/index_year_month_go-operator_unary.md#api-sig-indexyearmonthgo-neg) | `IndexYearMonthGO.__neg__()` |  |
+| [Detail](../api_detail/index_year_month_go-operator_unary.md#api-sig-indexyearmonthgo-pos) | `IndexYearMonthGO.__pos__()` |  |
 
-[IndexYearMonthGO](index_year_month_go.html#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.html#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.html#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.html#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.html#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.html#api-overview-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.html#api-overview-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.html#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.html#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.html#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.html#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.html#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.html#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.html#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.html#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.html#api-overview-indexyearmonthgo-accessor-type-clinic)
+[IndexYearMonthGO](index_year_month_go.md#api-overview-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-overview-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.md#api-overview-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.md#api-overview-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-overview-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-overview-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.md#api-overview-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.md#api-overview-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.md#api-overview-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-overview-indexyearmonthgo-operator-binary) | [Operator Unary](#api-overview-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-overview-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-overview-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.md#api-overview-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-overview-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.md#api-overview-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.md#api-overview-indexyearmonthgo-accessor-type-clinic)
 
-[Previous](index_year_month_go-operator_binary.html "Overview: IndexYearMonthGO: Operator Binary")
-[Next](index_year_month_go-accessor_values.html "Overview: IndexYearMonthGO: Accessor Values")
+[Previous](index_year_month_go-operator_binary.md "Overview: IndexYearMonthGO: Operator Binary")
+[Next](index_year_month_go-accessor_values.md "Overview: IndexYearMonthGO: Accessor Values")
 
 ---
 

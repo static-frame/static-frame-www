@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,45 +135,45 @@ API Detail
 * Overview: Series: Accessor Datetime
 * [View page source](../_sources/api_overview/series-accessor_datetime.rst.txt)
 
-[Previous](series-accessor_values.html "Overview: Series: Accessor Values")
-[Next](series-accessor_string.html "Overview: Series: Accessor String")
+[Previous](series-accessor_values.md "Overview: Series: Accessor Values")
+[Next](series-accessor_string.md "Overview: Series: Accessor String")
 
 ---
 
 # Overview: Series: Accessor Datetime[](#overview-series-accessor-datetime "Link to this heading")
 
-[Detail: Series: Accessor Datetime](../api_detail/series-accessor_datetime.html#api-detail-series-accessor-datetime)
+[Detail: Series: Accessor Datetime](../api_detail/series-accessor_datetime.md#api-detail-series-accessor-datetime)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-call) | `Series.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-year) | `Series.via_dt.year` | Return the year of each element. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-year-month) | `Series.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-year-quarter) | `Series.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-month) | `Series.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-day) | `Series.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-hour) | `Series.via_dt.hour` | Return the hour of each element, between 0 and 24. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-minute) | `Series.via_dt.minute` | Return the minute of each element, between 0 and 60. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-second) | `Series.via_dt.second` | Return the second of each element, between 0 and 60. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-weekday) | `Series.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-quarter) | `Series.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-is-month-end) | `Series.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-is-month-start) | `Series.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-is-year-end) | `Series.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-is-year-start) | `Series.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-is-quarter-end) | `Series.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-is-quarter-start) | `Series.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-timetuple) | `Series.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-isoformat) | `Series.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-fromisoformat) | `Series.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-strftime) | `Series.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-strptime) | `Series.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
-| [Detail](../api_detail/series-accessor_datetime.html#api-sig-series-via-dt-strpdate) | `Series.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-call) | `Series.via_dt.__call__(*, fill_value)` | Args: fill\_value: If NAT are encountered, use this value. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-year) | `Series.via_dt.year` | Return the year of each element. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-year-month) | `Series.via_dt.year_month` | Return the year and month of each element as string formatted YYYY-MM. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-year-quarter) | `Series.via_dt.year_quarter` | Return the year and quarter of each element as a string formatted YYYY-QQ. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-month) | `Series.via_dt.month` | Return the month of each element, between 1 and 12 inclusive. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-day) | `Series.via_dt.day` | Return the day of each element, between 1 and the number of days in the given mo… |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-hour) | `Series.via_dt.hour` | Return the hour of each element, between 0 and 24. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-minute) | `Series.via_dt.minute` | Return the minute of each element, between 0 and 60. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-second) | `Series.via_dt.second` | Return the second of each element, between 0 and 60. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-weekday) | `Series.via_dt.weekday()` | Return the day of the week as an integer, where Monday is 0 and Sunday is 6. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-quarter) | `Series.via_dt.quarter()` | Return the quarter of the year as an integer, where January through March is qua… |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-is-month-end) | `Series.via_dt.is_month_end()` | Return Boolean indicators if the day is the month end. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-is-month-start) | `Series.via_dt.is_month_start()` | Return Boolean indicators if the day is the month start. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-is-year-end) | `Series.via_dt.is_year_end()` | Return Boolean indicators if the day is the year end. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-is-year-start) | `Series.via_dt.is_year_start()` | Return Boolean indicators if the day is the year start. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-is-quarter-end) | `Series.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-is-quarter-start) | `Series.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-timetuple) | `Series.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-isoformat) | `Series.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-fromisoformat) | `Series.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-strftime) | `Series.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-strptime) | `Series.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |
+| [Detail](../api_detail/series-accessor_datetime.md#api-sig-series-via-dt-strpdate) | `Series.via_dt.strpdate(format)` | Return a Python date object from parsing a string defined with format. |
 
-[Series](series.html#api-overview-series): [Constructor](series-constructor.html#api-overview-series-constructor) | [Exporter](series-exporter.html#api-overview-series-exporter) | [Attribute](series-attribute.html#api-overview-series-attribute) | [Method](series-method.html#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.html#api-overview-series-dictionary-like) | [Display](series-display.html#api-overview-series-display) | [Assignment](series-assignment.html#api-overview-series-assignment) | [Selector](series-selector.html#api-overview-series-selector) | [Iterator](series-iterator.html#api-overview-series-iterator) | [Operator Binary](series-operator_binary.html#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.html#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.html#api-overview-series-accessor-values) | [Accessor Datetime](#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.html#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.html#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.html#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.html#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.html#api-overview-series-accessor-type-clinic) | Accessor Mapping
+[Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](series-method.md#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 
-[Previous](series-accessor_values.html "Overview: Series: Accessor Values")
-[Next](series-accessor_string.html "Overview: Series: Accessor String")
+[Previous](series-accessor_values.md "Overview: Series: Accessor Values")
+[Next](series-accessor_string.md "Overview: Series: Accessor String")
 
 ---
 

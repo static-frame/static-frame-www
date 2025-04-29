@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -147,8 +147,8 @@ API Detail
 * Ten Reasons to Use StaticFrame Instead of Pandas
 * [View page source](../_sources/articles/upgrade.rst.txt)
 
-[Previous](fill_value.html "One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames")
-[Next](aiii.html "Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame")
+[Previous](fill_value.md "One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames")
+[Next](aiii.md "Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame")
 
 ---
 
@@ -862,8 +862,8 @@ The concept of a “data frame” object came long before Pandas 0.1 release in 
 
 For more information about StaticFrame, see the documentation (<http://static-frame.readthedocs.io>) or project site (<https://github.com/static-frame/static-frame>).
 
-[Previous](fill_value.html "One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames")
-[Next](aiii.html "Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame")
+[Previous](fill_value.md "One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames")
+[Next](aiii.md "Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame")
 
 ---
 

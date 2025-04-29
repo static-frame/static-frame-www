@@ -8,7 +8,7 @@ Quick Start
 Introduction
 
 * [About StaticFrame](../intro.md)
-* [Media](../intro.html#media)
+* [Media](../intro.md#media)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 
@@ -135,46 +135,46 @@ API Detail
 * Overview: IndexHierarchyGO: Accessor Transpose
 * [View page source](../_sources/api_overview/index_hierarchy_go-accessor_transpose.rst.txt)
 
-[Previous](index_hierarchy_go-accessor_string.html "Overview: IndexHierarchyGO: Accessor String")
-[Next](index_hierarchy_go-accessor_regular_expression.html "Overview: IndexHierarchyGO: Accessor Regular Expression")
+[Previous](index_hierarchy_go-accessor_string.md "Overview: IndexHierarchyGO: Accessor String")
+[Next](index_hierarchy_go-accessor_regular_expression.md "Overview: IndexHierarchyGO: Accessor Regular Expression")
 
 ---
 
 # Overview: IndexHierarchyGO: Accessor Transpose[](#overview-indexhierarchygo-accessor-transpose "Link to this heading")
 
-[Detail: IndexHierarchyGO: Accessor Transpose](../api_detail/index_hierarchy_go-accessor_transpose.html#api-detail-indexhierarchygo-accessor-transpose)
+[Detail: IndexHierarchyGO: Accessor Transpose](../api_detail/index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose)
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-via-fill-value) | `IndexHierarchyGO.via_T.via_fill_value(fill_value)` | Interface for using binary operators and methods with a pre-defined fill value. |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-add) | `IndexHierarchyGO.via_T.__add__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-sub) | `IndexHierarchyGO.via_T.__sub__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-mul) | `IndexHierarchyGO.via_T.__mul__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-truediv) | `IndexHierarchyGO.via_T.__truediv__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-floordiv) | `IndexHierarchyGO.via_T.__floordiv__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-mod) | `IndexHierarchyGO.via_T.__mod__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-pow) | `IndexHierarchyGO.via_T.__pow__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-lshift) | `IndexHierarchyGO.via_T.__lshift__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-rshift) | `IndexHierarchyGO.via_T.__rshift__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-and) | `IndexHierarchyGO.via_T.__and__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-xor) | `IndexHierarchyGO.via_T.__xor__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-or) | `IndexHierarchyGO.via_T.__or__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-lt) | `IndexHierarchyGO.via_T.__lt__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-le) | `IndexHierarchyGO.via_T.__le__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-eq) | `IndexHierarchyGO.via_T.__eq__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-ne) | `IndexHierarchyGO.via_T.__ne__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-gt) | `IndexHierarchyGO.via_T.__gt__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-ge) | `IndexHierarchyGO.via_T.__ge__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-radd) | `IndexHierarchyGO.via_T.__radd__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-rsub) | `IndexHierarchyGO.via_T.__rsub__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-rmul) | `IndexHierarchyGO.via_T.__rmul__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-rtruediv) | `IndexHierarchyGO.via_T.__rtruediv__(other)` |  |
-| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.html#api-sig-indexhierarchygo-via-t-rfloordiv) | `IndexHierarchyGO.via_T.__rfloordiv__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-via-fill-value) | `IndexHierarchyGO.via_T.via_fill_value(fill_value)` | Interface for using binary operators and methods with a pre-defined fill value. |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-add) | `IndexHierarchyGO.via_T.__add__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-sub) | `IndexHierarchyGO.via_T.__sub__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-mul) | `IndexHierarchyGO.via_T.__mul__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-truediv) | `IndexHierarchyGO.via_T.__truediv__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-floordiv) | `IndexHierarchyGO.via_T.__floordiv__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-mod) | `IndexHierarchyGO.via_T.__mod__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-pow) | `IndexHierarchyGO.via_T.__pow__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-lshift) | `IndexHierarchyGO.via_T.__lshift__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-rshift) | `IndexHierarchyGO.via_T.__rshift__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-and) | `IndexHierarchyGO.via_T.__and__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-xor) | `IndexHierarchyGO.via_T.__xor__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-or) | `IndexHierarchyGO.via_T.__or__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-lt) | `IndexHierarchyGO.via_T.__lt__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-le) | `IndexHierarchyGO.via_T.__le__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-eq) | `IndexHierarchyGO.via_T.__eq__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-ne) | `IndexHierarchyGO.via_T.__ne__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-gt) | `IndexHierarchyGO.via_T.__gt__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-ge) | `IndexHierarchyGO.via_T.__ge__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-radd) | `IndexHierarchyGO.via_T.__radd__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-rsub) | `IndexHierarchyGO.via_T.__rsub__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-rmul) | `IndexHierarchyGO.via_T.__rmul__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-rtruediv) | `IndexHierarchyGO.via_T.__rtruediv__(other)` |  |
+| [Detail](../api_detail/index_hierarchy_go-accessor_transpose.md#api-sig-indexhierarchygo-via-t-rfloordiv) | `IndexHierarchyGO.via_T.__rfloordiv__(other)` |  |
 
-[IndexHierarchyGO](index_hierarchy_go.html#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.html#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.html#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.html#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.html#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.html#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.html#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.html#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.html#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.html#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.html#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.html#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.html#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.html#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.html#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.html#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.html#api-overview-indexhierarchygo-accessor-type-clinic)
+[IndexHierarchyGO](index_hierarchy_go.md#api-overview-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-overview-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-overview-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-overview-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-overview-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-overview-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-overview-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-overview-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-overview-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-overview-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-overview-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-overview-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-overview-indexhierarchygo-accessor-string) | [Accessor Transpose](#api-overview-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-overview-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-overview-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-overview-indexhierarchygo-accessor-type-clinic)
 
-[Previous](index_hierarchy_go-accessor_string.html "Overview: IndexHierarchyGO: Accessor String")
-[Next](index_hierarchy_go-accessor_regular_expression.html "Overview: IndexHierarchyGO: Accessor Regular Expression")
+[Previous](index_hierarchy_go-accessor_string.md "Overview: IndexHierarchyGO: Accessor String")
+[Next](index_hierarchy_go-accessor_regular_expression.md "Overview: IndexHierarchyGO: Accessor Regular Expression")
 
 ---
 
