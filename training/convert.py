@@ -5,10 +5,12 @@ from pathlib import Path
 import shutil
 import re
 
+# This regex finds .html extensions in links like (...).html or (...).html#...
+LINK_HTML_RE = re.compile(r'(\]\([^)]*?)\.html([?#\)][^\)]*)')
+
 def fix_links(text: str) -> str:
     """Replace .html links with .md links."""
-    # This regex finds .html extensions in links like (...).html or (...).html#...
-    return re.sub(r'(\.html)([^\w]|$)', r'.md\2', text)
+    return LINK_HTML_RE.sub(r'\1.md\2', text)
 
 def convert_directory(input_dir: Path, output_dir: Path):
     input_dir = input_dir.resolve()
