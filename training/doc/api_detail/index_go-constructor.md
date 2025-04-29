@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexGO: Constructor](../api_overview/index_go-constructor.md#api-overview-indexgo-constructor)
 
-IndexGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[](#static_frame.IndexGO.__init__ "Link to this definition")
+IndexGO.\_\_init\_\_(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[](#static_frame.IndexGO.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -165,7 +165,7 @@ IndexGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object o
 
     ```
 
-*classmethod* IndexGO.from\_labels(*labels*, */*, *\**, *name=None*)[](#static_frame.IndexGO.from_labels "Link to this definition")
+*classmethod* IndexGO.from\_labels(*labels*, *\**, *name=None*)[](#static_frame.IndexGO.from_labels "Link to this definition")
 :   Construct an `Index` from an iterable of labels, where each label is a hashable. Provided for a compatible interface to `IndexHierarchy`.
 
     ```
@@ -180,7 +180,7 @@ IndexGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object o
 
     ```
 
-*classmethod* IndexGO.from\_pandas(*value*, */*)[](#static_frame.IndexGO.from_pandas "Link to this definition")
+*classmethod* IndexGO.from\_pandas(*value*)[](#static_frame.IndexGO.from_pandas "Link to this definition")
 :   Given a Pandas index, return the appropriate IndexBase derived class.
 
     ```

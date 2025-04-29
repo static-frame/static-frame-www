@@ -147,7 +147,9 @@ API Detail
 |  |  |  |
 | --- | --- | --- |
 | [Detail](../api_detail/batch-exporter.md#api-sig-batch-to-bus) | `Batch.to_bus(*, index_constructor)` | Realize the Batch as an Bus. Note that, as a Bus must have all labels (even if F… |
+| [Detail](../api_detail/batch-exporter.md#api-sig-batch-to-duckdb) | `Batch.to_duckdb(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
 | [Detail](../api_detail/batch-exporter.md#api-sig-batch-to-frame) | `Batch.to_frame(*, axis, union, index, columns, index_constructor, columns_constructor, name, fill_value, consolidate_blocks)` | Consolidate stored Frame into a new Frame using the stored labels as the index o… |
+| [Detail](../api_detail/batch-exporter.md#api-sig-batch-to-hdf5) | `Batch.to_hdf5(fp, *, config)` | Write the complete Bus as an HDF5 table. Args: fp: A string file path or Path in… |
 | [Detail](../api_detail/batch-exporter.md#api-sig-batch-to-series) | `Batch.to_series(*, dtype, name, index_constructor)` | Consolidate stored values into a new Series using the stored labels as the index… |
 | [Detail](../api_detail/batch-exporter.md#api-sig-batch-to-sqlite) | `Batch.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
 | [Detail](../api_detail/batch-exporter.md#api-sig-batch-to-visidata) | `Batch.to_visidata()` | Open an interactive VisiData session. |

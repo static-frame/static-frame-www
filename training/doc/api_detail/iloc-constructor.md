@@ -144,7 +144,7 @@ API Detail
 
 [Overview: ILoc: Constructor](../api_overview/iloc-constructor.md#api-overview-iloc-constructor)
 
-ILoc.\_\_init\_\_(*key*, */*)[[source]](../_modules/static_frame/core/index.md#ILoc.__init__)[](#static_frame.ILoc.__init__ "Link to this definition")
+ILoc.\_\_init\_\_(*key*)[[source]](../_modules/static_frame/core/index.md#ILoc.__init__)[](#static_frame.ILoc.__init__ "Link to this definition")
 :   ```
     >>> f = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), index=sf.IndexHierarchy.from_product((0, 1), ('p', 'q')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f

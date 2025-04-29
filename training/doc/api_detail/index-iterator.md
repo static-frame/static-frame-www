@@ -165,7 +165,7 @@ Index.iter\_label(*depth\_level*)
 Index.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
 :   iter\_label
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -190,7 +190,7 @@ Index.iter\_label(*depth\_level).apply(func*, *\**, *dtype*, *name*, *index\_con
 Index.iter\_label(*depth\_level).apply\_iter(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -217,7 +217,7 @@ Index.iter\_label(*depth\_level).apply\_iter(func*)
 Index.iter\_label(*depth\_level).apply\_iter\_items(func*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -244,7 +244,7 @@ Index.iter\_label(*depth\_level).apply\_iter\_items(func*)
 Index.iter\_label(*depth\_level).apply\_pool(func*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
 :   iter\_label
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:

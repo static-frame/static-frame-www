@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexYearGO](../api_overview/index_year_go.md#api-overview-indexyeargo)
 
-*class* IndexYearGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYearGO)[](#static_frame.IndexYearGO "Link to this definition")
+*class* IndexYearGO(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYearGO)[](#static_frame.IndexYearGO "Link to this definition")
 
 * [Constructor](index_year_go-constructor.md#api-detail-indexyeargo-constructor): Alternative constructors for creating instances.
 * [Exporter](index_year_go-exporter.md#api-detail-indexyeargo-exporter): Methods for transforming, exporting, or serializing objects.

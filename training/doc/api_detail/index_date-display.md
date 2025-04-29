@@ -165,7 +165,7 @@ IndexDate.interface[](#IndexDate.interface "Link to this definition")
     from_pandas(value)                   IndexDate Constructor          Given a Pandas in...
     from_year_month_range(start, stop... IndexDate Constructor          Get an IndexDate ...
     from_year_range(start, stop, step... IndexDate Constructor          Get an IndexDate ...
-    to_html(config, *, style_config)     IndexDate Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexDate Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexDate Exporter             Return a complete...
     to_pandas()                          IndexDate Exporter             Return a Pandas I...
     to_series()                          IndexDate Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexDate.interface[](#IndexDate.interface "Link to this definition")
     ...                                  ...       ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexDate Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexDate Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDate Accessor Hashlib
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib
+    via_hashlib(include_name, include... IndexDate Accessor Hashlib
     via_type_clinic.to_hint()            IndexDate Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexDate Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexDate Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexDate Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexDate Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U9>     <<U27>               <<U83>
+    <<U90>                               <<U9>     <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexDate.\_\_str\_\_()[](#static_frame.IndexDate.__str__ "Link to this defin
 
     ```
 
-IndexDate.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexDate.display "Link to this definition")
+IndexDate.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexDate.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexDate.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_f
 
     ```
 
-IndexDate.display\_tall(*config=None*, */*)[](#static_frame.IndexDate.display_tall "Link to this definition")
+IndexDate.display\_tall(*config=None*)[](#static_frame.IndexDate.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexDate.display\_tall(*config=None*, */*)[](#static_frame.IndexDate.display
 
     ```
 
-IndexDate.display\_wide(*config=None*, */*)[](#static_frame.IndexDate.display_wide "Link to this definition")
+IndexDate.display\_wide(*config=None*)[](#static_frame.IndexDate.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

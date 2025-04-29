@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexSecondGO: Operator Binary](../api_overview/index_second_go-operator_binary.md#api-overview-indexsecondgo-operator-binary)
 
-IndexSecondGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__add__ "Link to this definition")
+IndexSecondGO.\_\_add\_\_(*other*)[](#static_frame.IndexSecondGO.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -158,7 +158,7 @@ IndexSecondGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__add__
 
     ```
 
-IndexSecondGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__and__ "Link to this definition")
+IndexSecondGO.\_\_and\_\_(*other*)[](#static_frame.IndexSecondGO.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -174,7 +174,7 @@ IndexSecondGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__and__
 
     ```
 
-IndexSecondGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__eq__ "Link to this definition")
+IndexSecondGO.\_\_eq\_\_(*other*)[](#static_frame.IndexSecondGO.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -190,7 +190,7 @@ IndexSecondGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__eq__ "
 
     ```
 
-IndexSecondGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__floordiv__ "Link to this definition")
+IndexSecondGO.\_\_floordiv\_\_(*other*)[](#static_frame.IndexSecondGO.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -204,7 +204,7 @@ IndexSecondGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__
 
     ```
 
-IndexSecondGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__ge__ "Link to this definition")
+IndexSecondGO.\_\_ge\_\_(*other*)[](#static_frame.IndexSecondGO.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -220,7 +220,7 @@ IndexSecondGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__ge__ "
 
     ```
 
-IndexSecondGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__gt__ "Link to this definition")
+IndexSecondGO.\_\_gt\_\_(*other*)[](#static_frame.IndexSecondGO.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -236,7 +236,7 @@ IndexSecondGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__gt__ "
 
     ```
 
-IndexSecondGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__le__ "Link to this definition")
+IndexSecondGO.\_\_le\_\_(*other*)[](#static_frame.IndexSecondGO.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -252,7 +252,7 @@ IndexSecondGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__le__ "
 
     ```
 
-IndexSecondGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__lt__ "Link to this definition")
+IndexSecondGO.\_\_lt\_\_(*other*)[](#static_frame.IndexSecondGO.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -268,7 +268,7 @@ IndexSecondGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__lt__ "
 
     ```
 
-IndexSecondGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__matmul__ "Link to this definition")
+IndexSecondGO.\_\_matmul\_\_(*other*)[](#static_frame.IndexSecondGO.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -282,7 +282,7 @@ IndexSecondGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__ma
 
     ```
 
-IndexSecondGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__mod__ "Link to this definition")
+IndexSecondGO.\_\_mod\_\_(*other*)[](#static_frame.IndexSecondGO.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -296,7 +296,7 @@ IndexSecondGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__mod__
 
     ```
 
-IndexSecondGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__mul__ "Link to this definition")
+IndexSecondGO.\_\_mul\_\_(*other*)[](#static_frame.IndexSecondGO.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -310,7 +310,7 @@ IndexSecondGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__mul__
 
     ```
 
-IndexSecondGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__ne__ "Link to this definition")
+IndexSecondGO.\_\_ne\_\_(*other*)[](#static_frame.IndexSecondGO.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -326,7 +326,7 @@ IndexSecondGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__ne__ "
 
     ```
 
-IndexSecondGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__or__ "Link to this definition")
+IndexSecondGO.\_\_or\_\_(*other*)[](#static_frame.IndexSecondGO.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -344,7 +344,7 @@ IndexSecondGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__or__ "
 
     ```
 
-IndexSecondGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__pow__ "Link to this definition")
+IndexSecondGO.\_\_pow\_\_(*other*)[](#static_frame.IndexSecondGO.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -358,7 +358,7 @@ IndexSecondGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__pow__
 
     ```
 
-IndexSecondGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__radd__ "Link to this definition")
+IndexSecondGO.\_\_radd\_\_(*other*)[](#static_frame.IndexSecondGO.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -372,7 +372,7 @@ IndexSecondGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__radd
 
     ```
 
-IndexSecondGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__rfloordiv__ "Link to this definition")
+IndexSecondGO.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexSecondGO.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -386,7 +386,7 @@ IndexSecondGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexSecondGO._
 
     ```
 
-IndexSecondGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__rmatmul__ "Link to this definition")
+IndexSecondGO.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexSecondGO.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -400,7 +400,7 @@ IndexSecondGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__r
 
     ```
 
-IndexSecondGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__rmul__ "Link to this definition")
+IndexSecondGO.\_\_rmul\_\_(*other*)[](#static_frame.IndexSecondGO.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -414,7 +414,7 @@ IndexSecondGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__rmul
 
     ```
 
-IndexSecondGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__rshift__ "Link to this definition")
+IndexSecondGO.\_\_rshift\_\_(*other*)[](#static_frame.IndexSecondGO.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -428,7 +428,7 @@ IndexSecondGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__rs
 
     ```
 
-IndexSecondGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__rsub__ "Link to this definition")
+IndexSecondGO.\_\_rsub\_\_(*other*)[](#static_frame.IndexSecondGO.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -442,7 +442,7 @@ IndexSecondGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__rsub
 
     ```
 
-IndexSecondGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__rtruediv__ "Link to this definition")
+IndexSecondGO.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexSecondGO.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -456,7 +456,7 @@ IndexSecondGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__
 
     ```
 
-IndexSecondGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__sub__ "Link to this definition")
+IndexSecondGO.\_\_sub\_\_(*other*)[](#static_frame.IndexSecondGO.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -470,7 +470,7 @@ IndexSecondGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__sub__
 
     ```
 
-IndexSecondGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__truediv__ "Link to this definition")
+IndexSecondGO.\_\_truediv\_\_(*other*)[](#static_frame.IndexSecondGO.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -484,7 +484,7 @@ IndexSecondGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__t
 
     ```
 
-IndexSecondGO.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexSecondGO.__xor__ "Link to this definition")
+IndexSecondGO.\_\_xor\_\_(*other*)[](#static_frame.IndexSecondGO.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix

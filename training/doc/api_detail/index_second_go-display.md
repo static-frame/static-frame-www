@@ -162,7 +162,7 @@ IndexSecondGO.interface[](#IndexSecondGO.interface "Link to this definition")
     __init__(labels, *, loc_is_iloc, ... IndexSecondGO Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexSecondGO Constructor          Construct an Inde...
     from_pandas(value)                   IndexSecondGO Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexSecondGO Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexSecondGO Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexSecondGO Exporter             Return a complete...
     to_pandas()                          IndexSecondGO Exporter             Return a Pandas I...
     to_series()                          IndexSecondGO Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexSecondGO.interface[](#IndexSecondGO.interface "Link to this definition")
     ...                                  ...           ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexSecondGO Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexSecondGO Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecondGO Accessor Hashlib
     via_type_clinic.to_hint()            IndexSecondGO Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexSecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexSecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexSecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexSecondGO Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U13>        <<U27>               <<U83>
+    <<U90>                               <<U13>        <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexSecondGO.\_\_str\_\_()[](#static_frame.IndexSecondGO.__str__ "Link to th
 
     ```
 
-IndexSecondGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexSecondGO.display "Link to this definition")
+IndexSecondGO.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexSecondGO.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexSecondGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#stat
 
     ```
 
-IndexSecondGO.display\_tall(*config=None*, */*)[](#static_frame.IndexSecondGO.display_tall "Link to this definition")
+IndexSecondGO.display\_tall(*config=None*)[](#static_frame.IndexSecondGO.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexSecondGO.display\_tall(*config=None*, */*)[](#static_frame.IndexSecondGO
 
     ```
 
-IndexSecondGO.display\_wide(*config=None*, */*)[](#static_frame.IndexSecondGO.display_wide "Link to this definition")
+IndexSecondGO.display\_wide(*config=None*)[](#static_frame.IndexSecondGO.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

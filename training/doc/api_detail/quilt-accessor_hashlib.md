@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Quilt: Accessor Hashlib](../api_overview/quilt-accessor_hashlib.md#api-overview-quilt-accessor-hashlib)
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -165,7 +165,7 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes
 
     ```
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).md5(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -185,7 +185,7 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
 
     ```
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha256(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -205,7 +205,7 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
 
     ```
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha512(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -225,7 +225,7 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
 
     ```
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha3\_256(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -245,7 +245,7 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256
 
     ```
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha3\_512(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -265,7 +265,7 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512
 
     ```
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).shake\_128(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -285,7 +285,7 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_12
 
     ```
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).shake\_256(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -305,7 +305,7 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_25
 
     ```
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -325,7 +325,7 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\
 
     ```
 
-Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
+Quilt.via\_hashlib(*include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 

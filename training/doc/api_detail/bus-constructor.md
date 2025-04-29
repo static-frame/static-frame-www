@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Bus: Constructor](../api_overview/bus-constructor.md#api-overview-bus-constructor)
 
-Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=<object object>*, *store=None*, *config=None*, *max\_persist=None*, *own\_index=False*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.__init__)[](#static_frame.Bus.__init__ "Link to this definition")
+Bus.\_\_init\_\_(*frames*, *\**, *index*, *index\_constructor=None*, *name=<object object>*, *store=None*, *config=None*, *max\_persist=None*, *own\_index=False*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.__init__)[](#static_frame.Bus.__init__ "Link to this definition")
 :   Default Bus constructor.
 
     {args}
@@ -159,7 +159,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_concat(*containers*, */*, *\**, *index=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_concat)[](#static_frame.Bus.from_concat "Link to this definition")
+*classmethod* Bus.from\_concat(*containers*, *\**, *index=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_concat)[](#static_frame.Bus.from_concat "Link to this definition")
 :   Concatenate multiple [`Bus`](bus-selector.md#Bus "Bus") into a new [`Bus`](bus-selector.md#Bus "Bus"). All [`Bus`](bus-selector.md#Bus "Bus") will load all [`Frame`](frame-selector.md#Frame "Frame") into memory if any are deferred.
 
     ```
@@ -188,7 +188,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_dict(*mapping*, */*, *\**, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_dict)[](#static_frame.Bus.from_dict "Link to this definition")
+*classmethod* Bus.from\_dict(*mapping*, *\**, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_dict)[](#static_frame.Bus.from_dict "Link to this definition")
 :   Bus construction from a mapping of labels and [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
@@ -207,7 +207,37 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_frames(*frames*, */*, *\**, *index\_constructor=None*, *config=None*, *name=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_frames)[](#static_frame.Bus.from_frames "Link to this definition")
+*classmethod* Bus.from\_duckdb(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_duckdb)[](#static_frame.Bus.from_duckdb "Link to this definition")
+:   Given a file path to an DuckDB [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
+
+    ```
+    >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='k')
+    >>> b
+    <Bus: k>
+    <Index>
+    x        Frame
+    y        Frame
+    v        Frame
+    w        Frame
+    <<U1>    <object>
+    >>> b.to_duckdb('/tmp/b.duckdb')
+    >>> sf.Bus.from_duckdb('/tmp/b.duckdb')
+    <Bus>
+    <Index>
+    v       <FrameDeferred>
+    w       <FrameDeferred>
+    x       <FrameDeferred>
+    y       <FrameDeferred>
+    <<U1>   <object>
+
+    ```
+
+*classmethod* Bus.from\_frames(*frames*, *\**, *index\_constructor=None*, *config=None*, *name=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_frames)[](#static_frame.Bus.from_frames "Link to this definition")
 :   Return a [`Bus`](bus-selector.md#Bus "Bus") from an iterable of [`Frame`](frame-selector.md#Frame "Frame"); labels will be drawn from [`Frame.name`](frame-attribute.md#static_frame.Frame.name "static_frame.Frame.name").
 
     ```
@@ -220,7 +250,33 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_items(*pairs*, */*, *\**, *config=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_items)[](#static_frame.Bus.from_items "Link to this definition")
+*classmethod* Bus.from\_hdf5(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_hdf5)[](#static_frame.Bus.from_hdf5 "Link to this definition")
+:   Given a file path to a HDF5 [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
+
+    ```
+    >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
+    >>> b
+    <Bus: i>
+    <Index>
+    x        Frame
+    y        Frame
+    <<U1>    <object>
+    >>> b.to_hdf5('/tmp/b.hdf5')
+    >>> sf.Bus.from_hdf5('/tmp/b.hdf5')
+    <Bus>
+    <Index>
+    x       <FrameDeferred>
+    y       <FrameDeferred>
+    <<U1>   <object>
+
+    ```
+
+*classmethod* Bus.from\_items(*pairs*, *\**, *config=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_items)[](#static_frame.Bus.from_items "Link to this definition")
 :   Return a [`Bus`](bus-selector.md#Bus "Bus") from an iterable of pairs of label, [`Frame`](frame-selector.md#Frame "Frame").
 
     Returns:
@@ -236,7 +292,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_series(*series*, */*, *\**, *store=None*, *config=None*, *max\_persist=None*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_series)[](#static_frame.Bus.from_series "Link to this definition")
+*classmethod* Bus.from\_series(*series*, *\**, *store=None*, *config=None*, *max\_persist=None*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_series)[](#static_frame.Bus.from_series "Link to this definition")
 :   Create a [`Bus`](bus-selector.md#Bus "Bus") from a [`Series`](series-selector.md#Series "Series") of [`Frame`](frame-selector.md#Frame "Frame").
 
     ```
@@ -252,7 +308,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_sqlite(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_sqlite)[](#static_frame.Bus.from_sqlite "Link to this definition")
+*classmethod* Bus.from\_sqlite(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_sqlite)[](#static_frame.Bus.from_sqlite "Link to this definition")
 :   Given a file path to an SQLite [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
@@ -278,7 +334,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_xlsx(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_xlsx)[](#static_frame.Bus.from_xlsx "Link to this definition")
+*classmethod* Bus.from\_xlsx(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_xlsx)[](#static_frame.Bus.from_xlsx "Link to this definition")
 :   Given a file path to an XLSX [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
@@ -304,7 +360,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_csv(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_csv)[](#static_frame.Bus.from_zip_csv "Link to this definition")
+*classmethod* Bus.from\_zip\_csv(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_csv)[](#static_frame.Bus.from_zip_csv "Link to this definition")
 :   Given a file path to zipped CSV [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
@@ -330,7 +386,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_npy(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_npy)[](#static_frame.Bus.from_zip_npy "Link to this definition")
+*classmethod* Bus.from\_zip\_npy(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_npy)[](#static_frame.Bus.from_zip_npy "Link to this definition")
 :   Given a file path to zipped NPY [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
@@ -356,7 +412,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_npz(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_npz)[](#static_frame.Bus.from_zip_npz "Link to this definition")
+*classmethod* Bus.from\_zip\_npz(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_npz)[](#static_frame.Bus.from_zip_npz "Link to this definition")
 :   Given a file path to zipped NPZ [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
@@ -382,7 +438,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_parquet(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_parquet)[](#static_frame.Bus.from_zip_parquet "Link to this definition")
+*classmethod* Bus.from\_zip\_parquet(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_parquet)[](#static_frame.Bus.from_zip_parquet "Link to this definition")
 :   Given a file path to zipped parquet [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
@@ -408,7 +464,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_pickle(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_pickle)[](#static_frame.Bus.from_zip_pickle "Link to this definition")
+*classmethod* Bus.from\_zip\_pickle(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_pickle)[](#static_frame.Bus.from_zip_pickle "Link to this definition")
 :   Given a file path to zipped pickle [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:
@@ -434,7 +490,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
 
     ```
 
-*classmethod* Bus.from\_zip\_tsv(*fp*, */*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_tsv)[](#static_frame.Bus.from_zip_tsv "Link to this definition")
+*classmethod* Bus.from\_zip\_tsv(*fp*, *\**, *config=None*, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_zip_tsv)[](#static_frame.Bus.from_zip_tsv "Link to this definition")
 :   Given a file path to zipped TSV [`Bus`](bus-selector.md#Bus "Bus") store, return a [`Bus`](bus-selector.md#Bus "Bus") instance.
 
     > Args:

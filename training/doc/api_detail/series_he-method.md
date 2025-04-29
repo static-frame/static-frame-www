@@ -238,7 +238,7 @@ SeriesHE.\_\_len\_\_()[](#static_frame.SeriesHE.__len__ "Link to this definit
 
     ```
 
-SeriesHE.\_\_round\_\_(*decimals=0*, */*)[](#static_frame.SeriesHE.__round__ "Link to this definition")
+SeriesHE.\_\_round\_\_(*decimals=0*)[](#static_frame.SeriesHE.__round__ "Link to this definition")
 :   Return a Series rounded to the given decimals. Negative decimals round to the left of the decimal point.
 
     Parameters:
@@ -266,7 +266,7 @@ SeriesHE.\_\_round\_\_(*decimals=0*, */*)[](#static_frame.SeriesHE.__round__ 
 
     ```
 
-SeriesHE.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.all "Link to this definition")
+SeriesHE.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -287,7 +287,7 @@ SeriesHE.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Serie
 
     ```
 
-SeriesHE.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.any "Link to this definition")
+SeriesHE.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -308,7 +308,7 @@ SeriesHE.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Serie
 
     ```
 
-SeriesHE.astype(*dtype*, */*)[](#static_frame.SeriesHE.astype "Link to this definition")
+SeriesHE.astype(*dtype*)[](#static_frame.SeriesHE.astype "Link to this definition")
 :   Return a Series with type determined by dtype argument. Note that for Series, this is a simple function, whereas for `Frame`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -365,7 +365,7 @@ SeriesHE.clip(*\**, *lower=None*, *upper=None*)[](#static_frame.SeriesHE.clip
 
     ```
 
-SeriesHE.corr(*other*, */*)[](#static_frame.SeriesHE.corr "Link to this definition")
+SeriesHE.corr(*other*)[](#static_frame.SeriesHE.corr "Link to this definition")
 :   Return the index-aligned correlation to the supplied [`Series`](series-selector.md#Series "Series").
 
     Parameters:
@@ -418,7 +418,7 @@ SeriesHE.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)
 
     ```
 
-SeriesHE.cov(*other*, */*, *\**, *ddof=1*)[](#static_frame.SeriesHE.cov "Link to this definition")
+SeriesHE.cov(*other*, *\**, *ddof=1*)[](#static_frame.SeriesHE.cov "Link to this definition")
 :   Return the index-aligned covariance to the supplied [`Series`](series-selector.md#Series "Series").
 
     Parameters:
@@ -446,7 +446,7 @@ SeriesHE.cov(*other*, */*, *\**, *ddof=1*)[](#static_frame.SeriesHE.cov "Link
 
     ```
 
-SeriesHE.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.SeriesHE.cumprod "Link to this definition")
+SeriesHE.cumprod(*axis=0*, *skipna=True*)[](#static_frame.SeriesHE.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -472,7 +472,7 @@ SeriesHE.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.SeriesHE.cump
 
     ```
 
-SeriesHE.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.SeriesHE.cumsum "Link to this definition")
+SeriesHE.cumsum(*axis=0*, *skipna=True*)[](#static_frame.SeriesHE.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -604,7 +604,7 @@ SeriesHE.duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[](#s
 
     ```
 
-SeriesHE.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.SeriesHE.equals "Link to this definition")
+SeriesHE.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.SeriesHE.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -635,7 +635,7 @@ SeriesHE.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False
 
     ```
 
-SeriesHE.fillfalsy(*value*, */*)[](#static_frame.SeriesHE.fillfalsy "Link to this definition")
+SeriesHE.fillfalsy(*value*)[](#static_frame.SeriesHE.fillfalsy "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after replacing falsy values with the supplied value. The `value` can be an element or [`Series`](series-selector.md#Series "Series").
 
     Parameters:
@@ -662,7 +662,7 @@ SeriesHE.fillfalsy(*value*, */*)[](#static_frame.SeriesHE.fillfalsy "Link to 
 
     ```
 
-SeriesHE.fillfalsy\_backward(*limit=0*, */*)[](#static_frame.SeriesHE.fillfalsy_backward "Link to this definition")
+SeriesHE.fillfalsy\_backward(*limit=0*)[](#static_frame.SeriesHE.fillfalsy_backward "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after feeding backward the last non-falsy observation across contiguous falsy values.
 
     Parameters:
@@ -689,7 +689,7 @@ SeriesHE.fillfalsy\_backward(*limit=0*, */*)[](#static_frame.SeriesHE.fillfal
 
     ```
 
-SeriesHE.fillfalsy\_forward(*limit=0*, */*)[](#static_frame.SeriesHE.fillfalsy_forward "Link to this definition")
+SeriesHE.fillfalsy\_forward(*limit=0*)[](#static_frame.SeriesHE.fillfalsy_forward "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after feeding forward the last non-falsy observation across contiguous falsy values.
 
     Parameters:
@@ -716,7 +716,7 @@ SeriesHE.fillfalsy\_forward(*limit=0*, */*)[](#static_frame.SeriesHE.fillfals
 
     ```
 
-SeriesHE.fillfalsy\_leading(*value*, */*)[](#static_frame.SeriesHE.fillfalsy_leading "Link to this definition")
+SeriesHE.fillfalsy\_leading(*value*)[](#static_frame.SeriesHE.fillfalsy_leading "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after filling leading (and only leading) falsy values with the supplied value.
 
     Parameters:
@@ -743,7 +743,7 @@ SeriesHE.fillfalsy\_leading(*value*, */*)[](#static_frame.SeriesHE.fillfalsy_
 
     ```
 
-SeriesHE.fillfalsy\_trailing(*value*, */*)[](#static_frame.SeriesHE.fillfalsy_trailing "Link to this definition")
+SeriesHE.fillfalsy\_trailing(*value*)[](#static_frame.SeriesHE.fillfalsy_trailing "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after filling trailing (and only trailing) falsy values with the supplied value.
 
     Parameters:
@@ -770,7 +770,7 @@ SeriesHE.fillfalsy\_trailing(*value*, */*)[](#static_frame.SeriesHE.fillfalsy
 
     ```
 
-SeriesHE.fillna(*value*, */*)[](#static_frame.SeriesHE.fillna "Link to this definition")
+SeriesHE.fillna(*value*)[](#static_frame.SeriesHE.fillna "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after replacing NA (NaN or None) with the supplied value. The `value` can be an element or [`Series`](series-selector.md#Series "Series").
 
     Parameters:
@@ -799,7 +799,7 @@ SeriesHE.fillna(*value*, */*)[](#static_frame.SeriesHE.fillna "Link to this d
 
     ```
 
-SeriesHE.fillna\_backward(*limit=0*, */*)[](#static_frame.SeriesHE.fillna_backward "Link to this definition")
+SeriesHE.fillna\_backward(*limit=0*)[](#static_frame.SeriesHE.fillna_backward "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after feeding backward the last non-null (NaN or None) observation across contiguous nulls.
 
     Parameters:
@@ -828,7 +828,7 @@ SeriesHE.fillna\_backward(*limit=0*, */*)[](#static_frame.SeriesHE.fillna_bac
 
     ```
 
-SeriesHE.fillna\_forward(*limit=0*, */*)[](#static_frame.SeriesHE.fillna_forward "Link to this definition")
+SeriesHE.fillna\_forward(*limit=0*)[](#static_frame.SeriesHE.fillna_forward "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after feeding forward the last non-null (NaN or None) observation across contiguous nulls.
 
     Parameters:
@@ -857,7 +857,7 @@ SeriesHE.fillna\_forward(*limit=0*, */*)[](#static_frame.SeriesHE.fillna_forw
 
     ```
 
-SeriesHE.fillna\_leading(*value*, */*)[](#static_frame.SeriesHE.fillna_leading "Link to this definition")
+SeriesHE.fillna\_leading(*value*)[](#static_frame.SeriesHE.fillna_leading "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after filling leading (and only leading) null (NaN or None) with the supplied value.
 
     Parameters:
@@ -886,7 +886,7 @@ SeriesHE.fillna\_leading(*value*, */*)[](#static_frame.SeriesHE.fillna_leadin
 
     ```
 
-SeriesHE.fillna\_trailing(*value*, */*)[](#static_frame.SeriesHE.fillna_trailing "Link to this definition")
+SeriesHE.fillna\_trailing(*value*)[](#static_frame.SeriesHE.fillna_trailing "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") after filling trailing (and only trailing) null (NaN or None) with the supplied value.
 
     Parameters:
@@ -915,7 +915,7 @@ SeriesHE.fillna\_trailing(*value*, */*)[](#static_frame.SeriesHE.fillna_trail
 
     ```
 
-SeriesHE.head(*count=5*, */*)[](#static_frame.SeriesHE.head "Link to this definition")
+SeriesHE.head(*count=5*)[](#static_frame.SeriesHE.head "Link to this definition")
 :   Return a [`Series`](series-selector.md#Series "Series") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -1094,7 +1094,7 @@ SeriesHE.iloc\_notna\_last(*\**, *fill\_value=-1*)[](#static_frame.SeriesHE.i
 
     ```
 
-SeriesHE.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.SeriesHE.iloc_searchsorted "Link to this definition")
+SeriesHE.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.SeriesHE.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -1117,7 +1117,7 @@ SeriesHE.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static
 
     ```
 
-SeriesHE.insert\_after(*key*, *container*, */*)[](#static_frame.SeriesHE.insert_after "Link to this definition")
+SeriesHE.insert\_after(*key*, *container*)[](#static_frame.SeriesHE.insert_after "Link to this definition")
 :   Create a new [`Series`](series-selector.md#Series "Series") by inserting a [`Series`](series-selector.md#Series "Series") at the position after the label specified by `key`.
 
     Parameters:
@@ -1143,7 +1143,7 @@ SeriesHE.insert\_after(*key*, *container*, */*)[](#static_frame.SeriesHE.inse
 
     ```
 
-SeriesHE.insert\_before(*key*, *container*, */*)[](#static_frame.SeriesHE.insert_before "Link to this definition")
+SeriesHE.insert\_before(*key*, *container*)[](#static_frame.SeriesHE.insert_before "Link to this definition")
 :   Create a new [`Series`](series-selector.md#Series "Series") by inserting a [`Series`](series-selector.md#Series "Series") at the position before the label specified by `key`.
 
     Parameters:
@@ -1195,7 +1195,7 @@ SeriesHE.isfalsy()[](#static_frame.SeriesHE.isfalsy "Link to this definition"
 
     ```
 
-SeriesHE.isin(*other*, */*)[](#static_frame.SeriesHE.isin "Link to this definition")
+SeriesHE.isin(*other*)[](#static_frame.SeriesHE.isin "Link to this definition")
 :   Return a same-sized Boolean Series that shows if the same-positioned element is in the iterable passed to the function.
 
     Returns:
@@ -1391,7 +1391,7 @@ SeriesHE.loc\_notna\_last(*\**, *fill\_value=-1*)[](#static_frame.SeriesHE.lo
 
     ```
 
-SeriesHE.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.SeriesHE.loc_searchsorted "Link to this definition")
+SeriesHE.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.SeriesHE.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -1415,7 +1415,7 @@ SeriesHE.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=
 
     ```
 
-SeriesHE.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.max "Link to this definition")
+SeriesHE.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -1436,7 +1436,7 @@ SeriesHE.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Serie
 
     ```
 
-SeriesHE.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.mean "Link to this definition")
+SeriesHE.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -1457,7 +1457,7 @@ SeriesHE.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Seri
 
     ```
 
-SeriesHE.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.median "Link to this definition")
+SeriesHE.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -1478,7 +1478,7 @@ SeriesHE.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Se
 
     ```
 
-SeriesHE.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.min "Link to this definition")
+SeriesHE.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.SeriesHE.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -1551,7 +1551,7 @@ SeriesHE.notna()[](#static_frame.SeriesHE.notna "Link to this definition")
 
     ```
 
-SeriesHE.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.SeriesHE.prod "Link to this definition")
+SeriesHE.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.SeriesHE.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -1737,7 +1737,7 @@ SeriesHE.rank\_ordinal(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_
 
     ```
 
-SeriesHE.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[](#static_frame.SeriesHE.rehierarch "Link to this definition")
+SeriesHE.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[](#static_frame.SeriesHE.rehierarch "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") with new a hierarchy based on the supplied `depth_map`.
 
     ```
@@ -1854,7 +1854,7 @@ SeriesHE.relabel\_flat()[](#static_frame.SeriesHE.relabel_flat "Link to this 
 
     ```
 
-SeriesHE.relabel\_level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.SeriesHE.relabel_level_add "Link to this definition")
+SeriesHE.relabel\_level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.SeriesHE.relabel_level_add "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
 
     Parameters:
@@ -1881,7 +1881,7 @@ SeriesHE.relabel\_level\_add(*level*, */*, *\**, *index\_constructor=None*)[]
 
     ```
 
-SeriesHE.relabel\_level\_drop(*count=1*, */*)[](#static_frame.SeriesHE.relabel_level_drop "Link to this definition")
+SeriesHE.relabel\_level\_drop(*count=1*)[](#static_frame.SeriesHE.relabel_level_drop "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
 
     Parameters:
@@ -1906,7 +1906,7 @@ SeriesHE.relabel\_level\_drop(*count=1*, */*)[](#static_frame.SeriesHE.relabe
 
     ```
 
-SeriesHE.rename(*name=<object object>*, */*, *\**, *index=<object object>*)[](#static_frame.SeriesHE.rename "Link to this definition")
+SeriesHE.rename(*name=<object object>*, *\**, *index=<object object>*)[](#static_frame.SeriesHE.rename "Link to this definition")
 :   Return a new Series with an updated name attribute.
 
     ```
@@ -1928,7 +1928,7 @@ SeriesHE.rename(*name=<object object>*, */*, *\**, *index=<object object>*)[]
 
     ```
 
-SeriesHE.roll(*shift*, */*, *\**, *include\_index=False*)[](#static_frame.SeriesHE.roll "Link to this definition")
+SeriesHE.roll(*shift*, *\**, *include\_index=False*)[](#static_frame.SeriesHE.roll "Link to this definition")
 :   Return a Series with values rotated forward and wrapped around the index (with a positive shift) or backward and wrapped around the index (with a negative shift).
 
     Parameters:
@@ -1961,7 +1961,7 @@ SeriesHE.roll(*shift*, */*, *\**, *include\_index=False*)[](#static_frame.Ser
 
     ```
 
-SeriesHE.sample(*count=1*, */*, *\**, *seed=None*)[](#static_frame.SeriesHE.sample "Link to this definition")
+SeriesHE.sample(*count=1*, *\**, *seed=None*)[](#static_frame.SeriesHE.sample "Link to this definition")
 :   Randomly (optionally made deterministic with a fixed seed) extract items from the container to return a subset of the container.
 
     Parameters:
@@ -1988,7 +1988,7 @@ SeriesHE.sample(*count=1*, */*, *\**, *seed=None*)[](#static_frame.SeriesHE.s
 
     ```
 
-SeriesHE.shift(*shift*, */*, *\**, *fill\_value=nan*)[](#static_frame.SeriesHE.shift "Link to this definition")
+SeriesHE.shift(*shift*, *\**, *fill\_value=nan*)[](#static_frame.SeriesHE.shift "Link to this definition")
 :   Return a Series with values shifted forward on the index (with a positive shift) or backward on the index (with a negative shift).
 
     Parameters:
@@ -2103,7 +2103,7 @@ SeriesHE.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[�
 
     ```
 
-SeriesHE.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.SeriesHE.std "Link to this definition")
+SeriesHE.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.SeriesHE.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -2124,7 +2124,7 @@ SeriesHE.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_f
 
     ```
 
-SeriesHE.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.SeriesHE.sum "Link to this definition")
+SeriesHE.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.SeriesHE.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -2145,7 +2145,7 @@ SeriesHE.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_
 
     ```
 
-SeriesHE.tail(*count=5*, */*)[](#static_frame.SeriesHE.tail "Link to this definition")
+SeriesHE.tail(*count=5*)[](#static_frame.SeriesHE.tail "Link to this definition")
 :   Return a [`Series`](series-selector.md#Series "Series") consisting only of the bottom elements as specified by `count`.
     :   s
 
@@ -2243,7 +2243,7 @@ SeriesHE.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[](#stat
 
     ```
 
-SeriesHE.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.SeriesHE.var "Link to this definition")
+SeriesHE.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.SeriesHE.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

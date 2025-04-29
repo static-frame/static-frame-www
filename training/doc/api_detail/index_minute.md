@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexMinute](../api_overview/index_minute.md#api-overview-indexminute)
 
-*class* IndexMinute(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexMinute)[](#static_frame.IndexMinute "Link to this definition")
+*class* IndexMinute(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexMinute)[](#static_frame.IndexMinute "Link to this definition")
 :   A mapping of minutes (NumPy `datetime64[m]`) to positions, immutable and of fixed size.
 
 * [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor): Alternative constructors for creating instances.

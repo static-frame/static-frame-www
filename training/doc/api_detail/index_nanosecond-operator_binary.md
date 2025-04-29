@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexNanosecond: Operator Binary](../api_overview/index_nanosecond-operator_binary.md#api-overview-indexnanosecond-operator-binary)
 
-IndexNanosecond.\_\_add\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__add__ "Link to this definition")
+IndexNanosecond.\_\_add\_\_(*other*)[](#static_frame.IndexNanosecond.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -159,7 +159,7 @@ IndexNanosecond.\_\_add\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__a
 
     ```
 
-IndexNanosecond.\_\_and\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__and__ "Link to this definition")
+IndexNanosecond.\_\_and\_\_(*other*)[](#static_frame.IndexNanosecond.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -175,7 +175,7 @@ IndexNanosecond.\_\_and\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__a
 
     ```
 
-IndexNanosecond.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__eq__ "Link to this definition")
+IndexNanosecond.\_\_eq\_\_(*other*)[](#static_frame.IndexNanosecond.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -191,7 +191,7 @@ IndexNanosecond.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__eq
 
     ```
 
-IndexNanosecond.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__floordiv__ "Link to this definition")
+IndexNanosecond.\_\_floordiv\_\_(*other*)[](#static_frame.IndexNanosecond.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -205,7 +205,7 @@ IndexNanosecond.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexNanosecon
 
     ```
 
-IndexNanosecond.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__ge__ "Link to this definition")
+IndexNanosecond.\_\_ge\_\_(*other*)[](#static_frame.IndexNanosecond.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -221,7 +221,7 @@ IndexNanosecond.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__ge
 
     ```
 
-IndexNanosecond.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__gt__ "Link to this definition")
+IndexNanosecond.\_\_gt\_\_(*other*)[](#static_frame.IndexNanosecond.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -237,7 +237,7 @@ IndexNanosecond.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__gt
 
     ```
 
-IndexNanosecond.\_\_le\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__le__ "Link to this definition")
+IndexNanosecond.\_\_le\_\_(*other*)[](#static_frame.IndexNanosecond.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -253,7 +253,7 @@ IndexNanosecond.\_\_le\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__le
 
     ```
 
-IndexNanosecond.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__lt__ "Link to this definition")
+IndexNanosecond.\_\_lt\_\_(*other*)[](#static_frame.IndexNanosecond.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -269,7 +269,7 @@ IndexNanosecond.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__lt
 
     ```
 
-IndexNanosecond.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__matmul__ "Link to this definition")
+IndexNanosecond.\_\_matmul\_\_(*other*)[](#static_frame.IndexNanosecond.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -283,7 +283,7 @@ IndexNanosecond.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexNanosecond.
 
     ```
 
-IndexNanosecond.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__mod__ "Link to this definition")
+IndexNanosecond.\_\_mod\_\_(*other*)[](#static_frame.IndexNanosecond.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -297,7 +297,7 @@ IndexNanosecond.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__m
 
     ```
 
-IndexNanosecond.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__mul__ "Link to this definition")
+IndexNanosecond.\_\_mul\_\_(*other*)[](#static_frame.IndexNanosecond.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -311,7 +311,7 @@ IndexNanosecond.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__m
 
     ```
 
-IndexNanosecond.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__ne__ "Link to this definition")
+IndexNanosecond.\_\_ne\_\_(*other*)[](#static_frame.IndexNanosecond.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -327,7 +327,7 @@ IndexNanosecond.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__ne
 
     ```
 
-IndexNanosecond.\_\_or\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__or__ "Link to this definition")
+IndexNanosecond.\_\_or\_\_(*other*)[](#static_frame.IndexNanosecond.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -345,7 +345,7 @@ IndexNanosecond.\_\_or\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__or
 
     ```
 
-IndexNanosecond.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__pow__ "Link to this definition")
+IndexNanosecond.\_\_pow\_\_(*other*)[](#static_frame.IndexNanosecond.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -359,7 +359,7 @@ IndexNanosecond.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__p
 
     ```
 
-IndexNanosecond.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__radd__ "Link to this definition")
+IndexNanosecond.\_\_radd\_\_(*other*)[](#static_frame.IndexNanosecond.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -373,7 +373,7 @@ IndexNanosecond.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__
 
     ```
 
-IndexNanosecond.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__rfloordiv__ "Link to this definition")
+IndexNanosecond.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexNanosecond.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -387,7 +387,7 @@ IndexNanosecond.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexNanoseco
 
     ```
 
-IndexNanosecond.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__rmatmul__ "Link to this definition")
+IndexNanosecond.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexNanosecond.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -401,7 +401,7 @@ IndexNanosecond.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexNanosecond
 
     ```
 
-IndexNanosecond.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__rmul__ "Link to this definition")
+IndexNanosecond.\_\_rmul\_\_(*other*)[](#static_frame.IndexNanosecond.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -415,7 +415,7 @@ IndexNanosecond.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__
 
     ```
 
-IndexNanosecond.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__rshift__ "Link to this definition")
+IndexNanosecond.\_\_rshift\_\_(*other*)[](#static_frame.IndexNanosecond.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -429,7 +429,7 @@ IndexNanosecond.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexNanosecond.
 
     ```
 
-IndexNanosecond.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__rsub__ "Link to this definition")
+IndexNanosecond.\_\_rsub\_\_(*other*)[](#static_frame.IndexNanosecond.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -443,7 +443,7 @@ IndexNanosecond.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__
 
     ```
 
-IndexNanosecond.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__rtruediv__ "Link to this definition")
+IndexNanosecond.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexNanosecond.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -457,7 +457,7 @@ IndexNanosecond.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexNanosecon
 
     ```
 
-IndexNanosecond.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__sub__ "Link to this definition")
+IndexNanosecond.\_\_sub\_\_(*other*)[](#static_frame.IndexNanosecond.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -472,7 +472,7 @@ IndexNanosecond.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__s
 
     ```
 
-IndexNanosecond.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__truediv__ "Link to this definition")
+IndexNanosecond.\_\_truediv\_\_(*other*)[](#static_frame.IndexNanosecond.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix
@@ -486,7 +486,7 @@ IndexNanosecond.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexNanosecond
 
     ```
 
-IndexNanosecond.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexNanosecond.__xor__ "Link to this definition")
+IndexNanosecond.\_\_xor\_\_(*other*)[](#static_frame.IndexNanosecond.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix

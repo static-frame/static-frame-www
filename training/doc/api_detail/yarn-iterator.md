@@ -193,7 +193,7 @@ Yarn.iter\_element(*).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, 
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -227,7 +227,7 @@ Yarn.iter\_element(*).apply\_iter(func*)
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -257,7 +257,7 @@ Yarn.iter\_element(*).apply\_iter\_items(func*)
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -287,7 +287,7 @@ Yarn.iter\_element(*).apply\_pool(func*, *\**, *dtype*, *name*, *index\_construc
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -372,7 +372,7 @@ Yarn.iter\_element\_items(*).apply(func*, *\**, *dtype*, *name*, *index\_constru
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -406,7 +406,7 @@ Yarn.iter\_element\_items(*).apply\_iter(func*)
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -436,7 +436,7 @@ Yarn.iter\_element\_items(*).apply\_iter\_items(func*)
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -466,7 +466,7 @@ Yarn.iter\_element\_items(*).apply\_pool(func*, *\**, *dtype*, *name*, *index\_c
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:

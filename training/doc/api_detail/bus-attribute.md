@@ -207,7 +207,7 @@ Bus.inventory[](#static_frame.Bus.inventory "Link to this definition")
     <Frame>
     <Index>  path       last_modified        size  <<U13>
     <Index>
-    None     /tmp/b.zip 2025-04-28T17:51:... 965 B
+    None     /tmp/b.zip 2025-03-10T22:21:... 965 B
     <object> <<U10>     <<U32>               <<U5>
 
     ```

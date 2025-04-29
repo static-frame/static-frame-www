@@ -164,7 +164,7 @@ API Detail
 | [Detail](../api_detail/index_hour_go-accessor_datetime.md#api-sig-indexhourgo-via-dt-is-quarter-end) | `IndexHourGO.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
 | [Detail](../api_detail/index_hour_go-accessor_datetime.md#api-sig-indexhourgo-via-dt-is-quarter-start) | `IndexHourGO.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
 | [Detail](../api_detail/index_hour_go-accessor_datetime.md#api-sig-indexhourgo-via-dt-timetuple) | `IndexHourGO.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/index_hour_go-accessor_datetime.md#api-sig-indexhourgo-via-dt-isoformat) | `IndexHourGO.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/index_hour_go-accessor_datetime.md#api-sig-indexhourgo-via-dt-isoformat) | `IndexHourGO.via_dt.isoformat(sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
 | [Detail](../api_detail/index_hour_go-accessor_datetime.md#api-sig-indexhourgo-via-dt-fromisoformat) | `IndexHourGO.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
 | [Detail](../api_detail/index_hour_go-accessor_datetime.md#api-sig-indexhourgo-via-dt-strftime) | `IndexHourGO.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
 | [Detail](../api_detail/index_hour_go-accessor_datetime.md#api-sig-indexhourgo-via-dt-strptime) | `IndexHourGO.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |

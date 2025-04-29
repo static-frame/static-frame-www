@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexNanosecondGO: Dictionary-Like](../api_overview/index_nanosecond_go-dictionary_like.md#api-overview-indexnanosecondgo-dictionary-like)
 
-IndexNanosecondGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexNanosecondGO.__contains__ "Link to this definition")
+IndexNanosecondGO.\_\_contains\_\_(*value*)[](#static_frame.IndexNanosecondGO.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```

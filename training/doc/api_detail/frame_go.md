@@ -145,7 +145,7 @@ API Detail
 
 [Overview: FrameGO](../api_overview/frame_go.md#api-overview-framego)
 
-*class* FrameGO(*data=<object object>*, */*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#FrameGO)[](#static_frame.FrameGO "Link to this definition")
+*class* FrameGO(*data=<object object>*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#FrameGO)[](#static_frame.FrameGO "Link to this definition")
 :   A grow-only Frame, providing a two-dimensional, ordered, labelled container, immutable with grow-only columns.
 
 * [Constructor](frame_go-constructor.md#api-detail-framego-constructor): Alternative constructors for creating instances.

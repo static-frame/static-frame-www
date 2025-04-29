@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Batch: Operator Binary](../api_overview/batch-operator_binary.md#api-overview-batch-operator-binary)
 
-Batch.\_\_add\_\_(*other*, */*)[](#static_frame.Batch.__add__ "Link to this definition")
+Batch.\_\_add\_\_(*other*)[](#static_frame.Batch.__add__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt + 8).to_frame()
@@ -161,7 +161,7 @@ Batch.\_\_add\_\_(*other*, */*)[](#static_frame.Batch.__add__ "Link to this d
 
     ```
 
-Batch.\_\_and\_\_(*other*, */*)[](#static_frame.Batch.__and__ "Link to this definition")
+Batch.\_\_and\_\_(*other*)[](#static_frame.Batch.__and__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), ('j', sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w'))))
     >>> (bt & True).to_frame()
@@ -178,7 +178,7 @@ Batch.\_\_and\_\_(*other*, */*)[](#static_frame.Batch.__and__ "Link to this d
 
     ```
 
-Batch.\_\_eq\_\_(*other*, */*)[](#static_frame.Batch.__eq__ "Link to this definition")
+Batch.\_\_eq\_\_(*other*)[](#static_frame.Batch.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -197,7 +197,7 @@ Batch.\_\_eq\_\_(*other*, */*)[](#static_frame.Batch.__eq__ "Link to this def
 
     ```
 
-Batch.\_\_floordiv\_\_(*other*, */*)[](#static_frame.Batch.__floordiv__ "Link to this definition")
+Batch.\_\_floordiv\_\_(*other*)[](#static_frame.Batch.__floordiv__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt // 8).to_frame()
@@ -214,7 +214,7 @@ Batch.\_\_floordiv\_\_(*other*, */*)[](#static_frame.Batch.__floordiv__ "Link
 
     ```
 
-Batch.\_\_ge\_\_(*other*, */*)[](#static_frame.Batch.__ge__ "Link to this definition")
+Batch.\_\_ge\_\_(*other*)[](#static_frame.Batch.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -233,7 +233,7 @@ Batch.\_\_ge\_\_(*other*, */*)[](#static_frame.Batch.__ge__ "Link to this def
 
     ```
 
-Batch.\_\_gt\_\_(*other*, */*)[](#static_frame.Batch.__gt__ "Link to this definition")
+Batch.\_\_gt\_\_(*other*)[](#static_frame.Batch.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -252,7 +252,7 @@ Batch.\_\_gt\_\_(*other*, */*)[](#static_frame.Batch.__gt__ "Link to this def
 
     ```
 
-Batch.\_\_le\_\_(*other*, */*)[](#static_frame.Batch.__le__ "Link to this definition")
+Batch.\_\_le\_\_(*other*)[](#static_frame.Batch.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -271,7 +271,7 @@ Batch.\_\_le\_\_(*other*, */*)[](#static_frame.Batch.__le__ "Link to this def
 
     ```
 
-Batch.\_\_lt\_\_(*other*, */*)[](#static_frame.Batch.__lt__ "Link to this definition")
+Batch.\_\_lt\_\_(*other*)[](#static_frame.Batch.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -290,7 +290,7 @@ Batch.\_\_lt\_\_(*other*, */*)[](#static_frame.Batch.__lt__ "Link to this def
 
     ```
 
-Batch.\_\_matmul\_\_(*other*, */*)[](#static_frame.Batch.__matmul__ "Link to this definition")
+Batch.\_\_matmul\_\_(*other*)[](#static_frame.Batch.__matmul__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt @ (1, 0.5)).to_frame()
@@ -303,7 +303,7 @@ Batch.\_\_matmul\_\_(*other*, */*)[](#static_frame.Batch.__matmul__ "Link to 
 
     ```
 
-Batch.\_\_mod\_\_(*other*, */*)[](#static_frame.Batch.__mod__ "Link to this definition")
+Batch.\_\_mod\_\_(*other*)[](#static_frame.Batch.__mod__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt % 8).to_frame()
@@ -320,7 +320,7 @@ Batch.\_\_mod\_\_(*other*, */*)[](#static_frame.Batch.__mod__ "Link to this d
 
     ```
 
-Batch.\_\_mul\_\_(*other*, */*)[](#static_frame.Batch.__mul__ "Link to this definition")
+Batch.\_\_mul\_\_(*other*)[](#static_frame.Batch.__mul__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt * 8).to_frame()
@@ -337,7 +337,7 @@ Batch.\_\_mul\_\_(*other*, */*)[](#static_frame.Batch.__mul__ "Link to this d
 
     ```
 
-Batch.\_\_ne\_\_(*other*, */*)[](#static_frame.Batch.__ne__ "Link to this definition")
+Batch.\_\_ne\_\_(*other*)[](#static_frame.Batch.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -356,7 +356,7 @@ Batch.\_\_ne\_\_(*other*, */*)[](#static_frame.Batch.__ne__ "Link to this def
 
     ```
 
-Batch.\_\_or\_\_(*other*, */*)[](#static_frame.Batch.__or__ "Link to this definition")
+Batch.\_\_or\_\_(*other*)[](#static_frame.Batch.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -375,7 +375,7 @@ Batch.\_\_or\_\_(*other*, */*)[](#static_frame.Batch.__or__ "Link to this def
 
     ```
 
-Batch.\_\_pow\_\_(*other*, */*)[](#static_frame.Batch.__pow__ "Link to this definition")
+Batch.\_\_pow\_\_(*other*)[](#static_frame.Batch.__pow__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt ** 8).to_frame()
@@ -392,7 +392,7 @@ Batch.\_\_pow\_\_(*other*, */*)[](#static_frame.Batch.__pow__ "Link to this d
 
     ```
 
-Batch.\_\_radd\_\_(*other*, */*)[](#static_frame.Batch.__radd__ "Link to this definition")
+Batch.\_\_radd\_\_(*other*)[](#static_frame.Batch.__radd__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (8 + bt).to_frame()
@@ -409,7 +409,7 @@ Batch.\_\_radd\_\_(*other*, */*)[](#static_frame.Batch.__radd__ "Link to this
 
     ```
 
-Batch.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.Batch.__rfloordiv__ "Link to this definition")
+Batch.\_\_rfloordiv\_\_(*other*)[](#static_frame.Batch.__rfloordiv__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (8 // bt).to_frame()
@@ -426,7 +426,7 @@ Batch.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.Batch.__rfloordiv__ "Li
 
     ```
 
-Batch.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.Batch.__rmatmul__ "Link to this definition")
+Batch.\_\_rmatmul\_\_(*other*)[](#static_frame.Batch.__rmatmul__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt @ (1, 0.5)).to_frame()
@@ -439,7 +439,7 @@ Batch.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.Batch.__rmatmul__ "Link t
 
     ```
 
-Batch.\_\_rmul\_\_(*other*, */*)[](#static_frame.Batch.__rmul__ "Link to this definition")
+Batch.\_\_rmul\_\_(*other*)[](#static_frame.Batch.__rmul__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (8 * bt).to_frame()
@@ -456,7 +456,7 @@ Batch.\_\_rmul\_\_(*other*, */*)[](#static_frame.Batch.__rmul__ "Link to this
 
     ```
 
-Batch.\_\_rshift\_\_(*other*, */*)[](#static_frame.Batch.__rshift__ "Link to this definition")
+Batch.\_\_rshift\_\_(*other*)[](#static_frame.Batch.__rshift__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt >> 1).to_frame()
@@ -473,7 +473,7 @@ Batch.\_\_rshift\_\_(*other*, */*)[](#static_frame.Batch.__rshift__ "Link to 
 
     ```
 
-Batch.\_\_rsub\_\_(*other*, */*)[](#static_frame.Batch.__rsub__ "Link to this definition")
+Batch.\_\_rsub\_\_(*other*)[](#static_frame.Batch.__rsub__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (8 - bt).to_frame()
@@ -490,7 +490,7 @@ Batch.\_\_rsub\_\_(*other*, */*)[](#static_frame.Batch.__rsub__ "Link to this
 
     ```
 
-Batch.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.Batch.__rtruediv__ "Link to this definition")
+Batch.\_\_rtruediv\_\_(*other*)[](#static_frame.Batch.__rtruediv__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (8 / bt).to_frame()
@@ -507,7 +507,7 @@ Batch.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.Batch.__rtruediv__ "Link
 
     ```
 
-Batch.\_\_sub\_\_(*other*, */*)[](#static_frame.Batch.__sub__ "Link to this definition")
+Batch.\_\_sub\_\_(*other*)[](#static_frame.Batch.__sub__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt - 8).to_frame()
@@ -524,7 +524,7 @@ Batch.\_\_sub\_\_(*other*, */*)[](#static_frame.Batch.__sub__ "Link to this d
 
     ```
 
-Batch.\_\_truediv\_\_(*other*, */*)[](#static_frame.Batch.__truediv__ "Link to this definition")
+Batch.\_\_truediv\_\_(*other*)[](#static_frame.Batch.__truediv__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> (bt / 8).to_frame()
@@ -541,7 +541,7 @@ Batch.\_\_truediv\_\_(*other*, */*)[](#static_frame.Batch.__truediv__ "Link t
 
     ```
 
-Batch.\_\_xor\_\_(*other*, */*)[](#static_frame.Batch.__xor__ "Link to this definition")
+Batch.\_\_xor\_\_(*other*)[](#static_frame.Batch.__xor__ "Link to this definition")
 :   ```
     >>> bt = sf.Batch((('i', sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), ('j', sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w'))))
     >>> (bt ^ True).to_frame()

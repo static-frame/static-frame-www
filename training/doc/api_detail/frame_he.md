@@ -145,7 +145,7 @@ API Detail
 
 [Overview: FrameHE](../api_overview/frame_he.md#api-overview-framehe)
 
-*class* FrameHE(*data=<object object>*, */*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#FrameHE)[](#static_frame.FrameHE "Link to this definition")
+*class* FrameHE(*data=<object object>*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#FrameHE)[](#static_frame.FrameHE "Link to this definition")
 :   A hash/equals subclass of [`Frame`](frame-selector.md#Frame "Frame"), permiting usage in a Python set, dictionary, or other contexts where a hashable container is needed. To support hashability, `__eq__` is implemented to return a Boolean rather than a Boolean [`Frame`](frame-selector.md#Frame "Frame")
 
 * [Constructor](frame_he-constructor.md#api-detail-framehe-constructor): Alternative constructors for creating instances.

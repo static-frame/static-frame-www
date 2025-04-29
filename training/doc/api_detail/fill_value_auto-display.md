@@ -150,7 +150,7 @@ FillValueAuto.\_\_repr\_\_()[](#static_frame.FillValueAuto.__repr__ "Link to 
     ```
     >>> fva = sf.FillValueAuto.from_default()
     >>> repr(fva)
-    <static_frame.core.fill_value_auto.FillValueAuto object at 0x11a178840>
+    <static_frame.core.fill_value_auto.FillValueAuto object at 0x7f7640dd10c0>
 
     ```
 
@@ -160,7 +160,7 @@ FillValueAuto.\_\_str\_\_()[](#static_frame.FillValueAuto.__str__ "Link to th
     ```
     >>> fva = sf.FillValueAuto.from_default()
     >>> str(fva)
-    <static_frame.core.fill_value_auto.FillValueAuto object at 0x11a17a840>
+    <static_frame.core.fill_value_auto.FillValueAuto object at 0x7f7640dd33c0>
 
     ```
 

@@ -144,7 +144,7 @@ API Detail
 
 [Overview: FrameHE: Accessor Hashlib](../api_overview/frame_he-accessor_hashlib.md#api-overview-framehe-accessor-hashlib)
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -167,7 +167,7 @@ FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_byt
 
     ```
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).md5(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -189,7 +189,7 @@ FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
 
     ```
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha256(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -211,7 +211,7 @@ FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(
 
     ```
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha512(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -233,7 +233,7 @@ FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(
 
     ```
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha3\_256(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -255,7 +255,7 @@ FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_2
 
     ```
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha3\_512(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -277,7 +277,7 @@ FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_5
 
     ```
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).shake\_128(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -299,7 +299,7 @@ FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_
 
     ```
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).shake\_256(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -321,7 +321,7 @@ FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_
 
     ```
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -343,7 +343,7 @@ FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b
 
     ```
 
-FrameHE.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
+FrameHE.via\_hashlib(*include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 

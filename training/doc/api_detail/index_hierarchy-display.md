@@ -170,7 +170,7 @@ IndexHierarchy.interface[](#IndexHierarchy.interface "Link to this definition
     from_values_per_depth(values, *, ... IndexHierarchy Constructor          Construct an Inde...
     to_frame()                           IndexHierarchy Exporter             Return Frame vers...
     to_frame_go()                        IndexHierarchy Exporter             Return a FrameGO ...
-    to_html(config, *, style_config)     IndexHierarchy Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexHierarchy Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexHierarchy Exporter             Return a complete...
     to_pandas()                          IndexHierarchy Exporter             Return a Pandas M...
     to_tree()                            IndexHierarchy Exporter             Returns the tree ...
@@ -179,22 +179,22 @@ IndexHierarchy.interface[](#IndexHierarchy.interface "Link to this definition
     ...                                  ...            ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexHierarchy Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexHierarchy Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchy Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchy Accessor Hashlib
     via_type_clinic.to_hint()            IndexHierarchy Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexHierarchy Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexHierarchy Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexHierarchy Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexHierarchy Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U14>         <<U27>               <<U83>
+    <<U90>                               <<U14>         <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexHierarchy.\_\_str\_\_()[](#static_frame.IndexHierarchy.__str__ "Link to 
 
     ```
 
-IndexHierarchy.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.display)[](#static_frame.IndexHierarchy.display "Link to this definition")
+IndexHierarchy.display(*config=None*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.display)[](#static_frame.IndexHierarchy.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexHierarchy.display(*config=None*, */*, *\**, *style\_config=None*)[[source]]
 
     ```
 
-IndexHierarchy.display\_tall(*config=None*, */*)[](#static_frame.IndexHierarchy.display_tall "Link to this definition")
+IndexHierarchy.display\_tall(*config=None*)[](#static_frame.IndexHierarchy.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexHierarchy.display\_tall(*config=None*, */*)[](#static_frame.IndexHierarc
 
     ```
 
-IndexHierarchy.display\_wide(*config=None*, */*)[](#static_frame.IndexHierarchy.display_wide "Link to this definition")
+IndexHierarchy.display\_wide(*config=None*)[](#static_frame.IndexHierarchy.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

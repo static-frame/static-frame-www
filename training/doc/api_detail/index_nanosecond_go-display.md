@@ -162,7 +162,7 @@ IndexNanosecondGO.interface[](#IndexNanosecondGO.interface "Link to this defi
     __init__(labels, *, loc_is_iloc, ... IndexNanosecondGO Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexNanosecondGO Constructor          Construct an Inde...
     from_pandas(value)                   IndexNanosecondGO Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexNanosecondGO Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexNanosecondGO Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexNanosecondGO Exporter             Return a complete...
     to_pandas()                          IndexNanosecondGO Exporter             Return a Pandas I...
     to_series()                          IndexNanosecondGO Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexNanosecondGO.interface[](#IndexNanosecondGO.interface "Link to this defi
     ...                                  ...               ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexNanosecondGO Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexNanosecondGO Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecondGO Accessor Hashlib
     via_type_clinic.to_hint()            IndexNanosecondGO Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexNanosecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexNanosecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexNanosecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexNanosecondGO Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U17>            <<U27>               <<U83>
+    <<U90>                               <<U17>            <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexNanosecondGO.\_\_str\_\_()[](#static_frame.IndexNanosecondGO.__str__ "Li
 
     ```
 
-IndexNanosecondGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexNanosecondGO.display "Link to this definition")
+IndexNanosecondGO.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexNanosecondGO.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexNanosecondGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#
 
     ```
 
-IndexNanosecondGO.display\_tall(*config=None*, */*)[](#static_frame.IndexNanosecondGO.display_tall "Link to this definition")
+IndexNanosecondGO.display\_tall(*config=None*)[](#static_frame.IndexNanosecondGO.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexNanosecondGO.display\_tall(*config=None*, */*)[](#static_frame.IndexNano
 
     ```
 
-IndexNanosecondGO.display\_wide(*config=None*, */*)[](#static_frame.IndexNanosecondGO.display_wide "Link to this definition")
+IndexNanosecondGO.display\_wide(*config=None*)[](#static_frame.IndexNanosecondGO.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

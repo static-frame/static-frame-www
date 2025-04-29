@@ -144,7 +144,7 @@ API Detail
 
 [Overview: SeriesHE: Exporter](../api_overview/series_he-exporter.md#api-overview-serieshe-exporter)
 
-SeriesHE.to\_frame(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.to_frame "Link to this definition")
+SeriesHE.to\_frame(*axis=1*, *\**, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.to_frame "Link to this definition")
 :   Return a [`Frame`](frame-selector.md#Frame "Frame") view of this [`Series`](series-selector.md#Series "Series"). As underlying data is immutable, this is a no-copy operation.
 
     Parameters:
@@ -177,7 +177,7 @@ SeriesHE.to\_frame(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *col
 
     ```
 
-SeriesHE.to\_frame\_go(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.to_frame_go "Link to this definition")
+SeriesHE.to\_frame\_go(*axis=1*, *\**, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.to_frame_go "Link to this definition")
 :   Return [`FrameGO`](frame_go-selector.md#FrameGO "FrameGO") view of this [`Series`](series-selector.md#Series "Series"). As underlying data is immutable, this is a no-copy operation.
 
     Parameters:
@@ -209,7 +209,7 @@ SeriesHE.to\_frame\_go(*\**, *axis=1*, *index=None*, *index\_constructor=None*, 
 
     ```
 
-SeriesHE.to\_frame\_he(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.to_frame_he "Link to this definition")
+SeriesHE.to\_frame\_he(*axis=1*, *\**, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.to_frame_he "Link to this definition")
 :   Return [`FrameHE`](frame_he-selector.md#FrameHE "FrameHE") view of this [`Series`](series-selector.md#Series "Series"). As underlying data is immutable, this is a no-copy operation.
 
     Parameters:
@@ -241,7 +241,7 @@ SeriesHE.to\_frame\_he(*\**, *axis=1*, *index=None*, *index\_constructor=None*, 
 
     ```
 
-SeriesHE.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.SeriesHE.to_html "Link to this definition")
+SeriesHE.to\_html(*config=None*, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.SeriesHE.to_html "Link to this definition")
 :   Return an HTML table representation of this [`Series`](series-selector.md#Series "Series") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
@@ -250,7 +250,7 @@ SeriesHE.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.s
     Returns:
     :   `str`
 
-SeriesHE.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.SeriesHE.to_html_datatables "Link to this definition")
+SeriesHE.to\_html\_datatables(*fp=None*, *show=True*, *config=None*)[](#static_frame.SeriesHE.to_html_datatables "Link to this definition")
 :   Return a complete HTML representation of this [`Series`](series-selector.md#Series "Series") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:

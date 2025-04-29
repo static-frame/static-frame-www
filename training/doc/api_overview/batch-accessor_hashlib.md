@@ -146,16 +146,16 @@ API Detail
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-to-bytes) | `Batch.via_hashlib(*, include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-md5) | `Batch.via_hashlib(*, include_name, include_class, encoding).md5()` |  |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-sha256) | `Batch.via_hashlib(*, include_name, include_class, encoding).sha256()` |  |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-sha512) | `Batch.via_hashlib(*, include_name, include_class, encoding).sha512()` |  |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-sha3-256) | `Batch.via_hashlib(*, include_name, include_class, encoding).sha3_256()` |  |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-sha3-512) | `Batch.via_hashlib(*, include_name, include_class, encoding).sha3_512()` |  |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-shake-128) | `Batch.via_hashlib(*, include_name, include_class, encoding).shake_128()` |  |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-shake-256) | `Batch.via_hashlib(*, include_name, include_class, encoding).shake_256()` |  |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-blake2b) | `Batch.via_hashlib(*, include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
-| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-blake2s) | `Batch.via_hashlib(*, include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-to-bytes) | `Batch.via_hashlib(include_name, include_class, encoding).to_bytes()` | Return the byte signature for this container, suitable for passing to a cryptogr… |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-md5) | `Batch.via_hashlib(include_name, include_class, encoding).md5()` |  |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-sha256) | `Batch.via_hashlib(include_name, include_class, encoding).sha256()` |  |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-sha512) | `Batch.via_hashlib(include_name, include_class, encoding).sha512()` |  |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-sha3-256) | `Batch.via_hashlib(include_name, include_class, encoding).sha3_256()` |  |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-sha3-512) | `Batch.via_hashlib(include_name, include_class, encoding).sha3_512()` |  |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-shake-128) | `Batch.via_hashlib(include_name, include_class, encoding).shake_128()` |  |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-shake-256) | `Batch.via_hashlib(include_name, include_class, encoding).shake_256()` |  |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-blake2b) | `Batch.via_hashlib(include_name, include_class, encoding).blake2b(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
+| [Detail](../api_detail/batch-accessor_hashlib.md#api-sig-batch-via-hashlib-blake2s) | `Batch.via_hashlib(include_name, include_class, encoding).blake2s(*, digest_size, key, salt, person, fanout, depth, leaf_size, node_offset, node_depth, inner_size, last_node)` |  |
 
 [Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](batch-attribute.md#api-overview-batch-attribute) | [Method](batch-method.md#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-overview-batch-dictionary-like) | [Display](batch-display.md#api-overview-batch-display) | [Selector](batch-selector.md#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.md#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 

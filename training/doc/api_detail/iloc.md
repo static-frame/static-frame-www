@@ -145,7 +145,7 @@ API Detail
 
 [Overview: ILoc](../api_overview/iloc.md#api-overview-iloc)
 
-*class* ILoc(*key*, */*)[[source]](../_modules/static_frame/core/index.md#ILoc)[](#static_frame.ILoc "Link to this definition")
+*class* ILoc(*key*)[[source]](../_modules/static_frame/core/index.md#ILoc)[](#static_frame.ILoc "Link to this definition")
 :   A wrapper for embedding `iloc` specifications within a single axis argument of a `loc` selection.
 
 * [Constructor](iloc-constructor.md#api-detail-iloc-constructor): Alternative constructors for creating instances.

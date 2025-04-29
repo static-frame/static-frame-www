@@ -162,7 +162,7 @@ IndexMinute.interface[](#IndexMinute.interface "Link to this definition")
     __init__(labels, *, loc_is_iloc, ... IndexMinute Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexMinute Constructor          Construct an Inde...
     from_pandas(value)                   IndexMinute Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexMinute Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexMinute Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexMinute Exporter             Return a complete...
     to_pandas()                          IndexMinute Exporter             Return a Pandas I...
     to_series()                          IndexMinute Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexMinute.interface[](#IndexMinute.interface "Link to this definition")
     ...                                  ...         ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexMinute Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexMinute Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinute Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinute Accessor Hashlib
     via_type_clinic.to_hint()            IndexMinute Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexMinute Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexMinute Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexMinute Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexMinute Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U11>      <<U27>               <<U83>
+    <<U90>                               <<U11>      <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexMinute.\_\_str\_\_()[](#static_frame.IndexMinute.__str__ "Link to this d
 
     ```
 
-IndexMinute.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexMinute.display "Link to this definition")
+IndexMinute.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexMinute.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexMinute.display(*config=None*, */*, *\**, *style\_config=None*)[](#static
 
     ```
 
-IndexMinute.display\_tall(*config=None*, */*)[](#static_frame.IndexMinute.display_tall "Link to this definition")
+IndexMinute.display\_tall(*config=None*)[](#static_frame.IndexMinute.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexMinute.display\_tall(*config=None*, */*)[](#static_frame.IndexMinute.dis
 
     ```
 
-IndexMinute.display\_wide(*config=None*, */*)[](#static_frame.IndexMinute.display_wide "Link to this definition")
+IndexMinute.display\_wide(*config=None*)[](#static_frame.IndexMinute.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

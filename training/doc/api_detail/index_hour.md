@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexHour](../api_overview/index_hour.md#api-overview-indexhour)
 
-*class* IndexHour(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexHour)[](#static_frame.IndexHour "Link to this definition")
+*class* IndexHour(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexHour)[](#static_frame.IndexHour "Link to this definition")
 :   A mapping of hours (NumPy `datetime64[h]`) to positions, immutable and of fixed size.
 
 * [Constructor](index_hour-constructor.md#api-detail-indexhour-constructor): Alternative constructors for creating instances.

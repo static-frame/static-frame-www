@@ -176,7 +176,7 @@ Bus.\_\_len\_\_()[[source]](../_modules/static_frame/core/bus.md#Bus.__len__)[�
 
     ```
 
-Bus.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/bus.md#Bus.equals)[](#static_frame.Bus.equals "Link to this definition")
+Bus.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/bus.md#Bus.equals)[](#static_frame.Bus.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Note: this will attempt to load and compare all Frame managed by the Bus.
@@ -207,7 +207,7 @@ Bus.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *c
 
     ```
 
-Bus.head(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.head)[](#static_frame.Bus.head "Link to this definition")
+Bus.head(*count=5*)[[source]](../_modules/static_frame/core/bus.md#Bus.head)[](#static_frame.Bus.head "Link to this definition")
 :   Return a [`Bus`](bus-selector.md#Bus "Bus") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -238,8 +238,6 @@ Bus.head(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.head
 Bus.persist[*key*]
 :   persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
-
-    InterfacePersist.\_\_getitem\_\_ *= <function InterfacePersist.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/node_selector.md#InterfacePersist.__getitem__)
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -273,9 +271,6 @@ Bus.persist.iloc[*key*]
 :   Bus.persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
 
-    InterfacePersist.iloc
-    :   Integer-position based selection.
-
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b1
@@ -308,9 +303,6 @@ Bus.persist.loc[*key*]
 :   Bus.persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
 
-    InterfacePersist.loc
-    :   Label-based selection.
-
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b1
@@ -342,9 +334,6 @@ Bus.persist.loc[*key*]
 Bus.persist
 :   persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
-
-    InterfacePersist.\_\_call\_\_()[[source]](../_modules/static_frame/core/node_selector.md#InterfacePersist.__call__)
-    :   Persist all Frame.
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -528,7 +517,7 @@ Bus.relabel\_level\_drop(*count=1*)[[source]](../_modules/static_frame/core/bus.
 
     ```
 
-Bus.rename(*name*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.rename)[](#static_frame.Bus.rename "Link to this definition")
+Bus.rename(*name*)[[source]](../_modules/static_frame/core/bus.md#Bus.rename)[](#static_frame.Bus.rename "Link to this definition")
 :   Return a new [`Bus`](bus-selector.md#Bus "Bus") with an updated name attribute.
 
     ```
@@ -548,7 +537,7 @@ Bus.rename(*name*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.renam
 
     ```
 
-Bus.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.roll)[](#static_frame.Bus.roll "Link to this definition")
+Bus.roll(*shift*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.roll)[](#static_frame.Bus.roll "Link to this definition")
 :   Return a Bus with values rotated forward and wrapped around the index (with a positive shift) or backward and wrapped around the index (with a negative shift).
 
     Parameters:
@@ -579,7 +568,7 @@ Bus.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/stati
 
     ```
 
-Bus.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/bus.md#Bus.shift)[](#static_frame.Bus.shift "Link to this definition")
+Bus.shift(*shift*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/bus.md#Bus.shift)[](#static_frame.Bus.shift "Link to this definition")
 :   Return a [`Bus`](bus-selector.md#Bus "Bus") with values shifted forward on the index (with a positive shift) or backward on the index (with a negative shift).
 
     Parameters:
@@ -693,7 +682,7 @@ Bus.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](..
 
     ```
 
-Bus.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.tail)[](#static_frame.Bus.tail "Link to this definition")
+Bus.tail(*count=5*)[[source]](../_modules/static_frame/core/bus.md#Bus.tail)[](#static_frame.Bus.tail "Link to this definition")
 :   Return a [`Bus`](bus-selector.md#Bus "Bus") consisting only of the bottom elements as specified by `count`.
     :   s
 

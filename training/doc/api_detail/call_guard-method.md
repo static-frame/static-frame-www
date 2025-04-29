@@ -151,7 +151,7 @@ API Detail
     >>> def func1(ix: sf.Index[np.int64]): return len(ix)
     >>> func2 = sf.CallGuard.check(func1)
     >>> func2
-    <function func1 at 0x11a184040>
+    <function func1 at 0x7f7640e48720>
     >>> ix1 = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> func2(ix1)
     ClinicError('\nIn args of (ix: Index[int64]) -> Any\n└── In arg ix\n    └── Index[int64]\n        └── Expected int64, provided str_ invalid')

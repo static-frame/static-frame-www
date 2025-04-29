@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexHourGO](../api_overview/index_hour_go.md#api-overview-indexhourgo)
 
-*class* IndexHourGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexHourGO)[](#static_frame.IndexHourGO "Link to this definition")
+*class* IndexHourGO(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexHourGO)[](#static_frame.IndexHourGO "Link to this definition")
 
 * [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor): Alternative constructors for creating instances.
 * [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter): Methods for transforming, exporting, or serializing objects.

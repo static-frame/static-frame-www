@@ -162,7 +162,7 @@ IndexHourGO.interface[](#IndexHourGO.interface "Link to this definition")
     __init__(labels, *, loc_is_iloc, ... IndexHourGO Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexHourGO Constructor          Construct an Inde...
     from_pandas(value)                   IndexHourGO Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexHourGO Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexHourGO Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexHourGO Exporter             Return a complete...
     to_pandas()                          IndexHourGO Exporter             Return a Pandas I...
     to_series()                          IndexHourGO Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexHourGO.interface[](#IndexHourGO.interface "Link to this definition")
     ...                                  ...         ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexHourGO Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexHourGO Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHourGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHourGO Accessor Hashlib
     via_type_clinic.to_hint()            IndexHourGO Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexHourGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexHourGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexHourGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexHourGO Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U11>      <<U27>               <<U83>
+    <<U90>                               <<U11>      <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexHourGO.\_\_str\_\_()[](#static_frame.IndexHourGO.__str__ "Link to this d
 
     ```
 
-IndexHourGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexHourGO.display "Link to this definition")
+IndexHourGO.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexHourGO.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexHourGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static
 
     ```
 
-IndexHourGO.display\_tall(*config=None*, */*)[](#static_frame.IndexHourGO.display_tall "Link to this definition")
+IndexHourGO.display\_tall(*config=None*)[](#static_frame.IndexHourGO.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexHourGO.display\_tall(*config=None*, */*)[](#static_frame.IndexHourGO.dis
 
     ```
 
-IndexHourGO.display\_wide(*config=None*, */*)[](#static_frame.IndexHourGO.display_wide "Link to this definition")
+IndexHourGO.display\_wide(*config=None*)[](#static_frame.IndexHourGO.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

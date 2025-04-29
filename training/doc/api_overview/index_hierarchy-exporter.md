@@ -148,7 +148,7 @@ API Detail
 | --- | --- | --- |
 | [Detail](../api_detail/index_hierarchy-exporter.md#api-sig-indexhierarchy-to-frame) | `IndexHierarchy.to_frame()` | Return Frame version of this IndexHierarchy. |
 | [Detail](../api_detail/index_hierarchy-exporter.md#api-sig-indexhierarchy-to-frame-go) | `IndexHierarchy.to_frame_go()` | Return a FrameGO version of this IndexHierarchy. |
-| [Detail](../api_detail/index_hierarchy-exporter.md#api-sig-indexhierarchy-to-html) | `IndexHierarchy.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
+| [Detail](../api_detail/index_hierarchy-exporter.md#api-sig-indexhierarchy-to-html) | `IndexHierarchy.to_html(config, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
 | [Detail](../api_detail/index_hierarchy-exporter.md#api-sig-indexhierarchy-to-html-datatables) | `IndexHierarchy.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
 | [Detail](../api_detail/index_hierarchy-exporter.md#api-sig-indexhierarchy-to-pandas) | `IndexHierarchy.to_pandas()` | Return a Pandas MultiIndex. |
 | [Detail](../api_detail/index_hierarchy-exporter.md#api-sig-indexhierarchy-to-tree) | `IndexHierarchy.to_tree()` | Returns the tree representation of an IndexHierarchy |

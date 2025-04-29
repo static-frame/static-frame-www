@@ -162,7 +162,7 @@ IndexMicrosecondGO.interface[](#IndexMicrosecondGO.interface "Link to this de
     __init__(labels, *, loc_is_iloc, ... IndexMicrosecondGO Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexMicrosecondGO Constructor          Construct an Inde...
     from_pandas(value)                   IndexMicrosecondGO Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexMicrosecondGO Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexMicrosecondGO Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexMicrosecondGO Exporter             Return a complete...
     to_pandas()                          IndexMicrosecondGO Exporter             Return a Pandas I...
     to_series()                          IndexMicrosecondGO Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexMicrosecondGO.interface[](#IndexMicrosecondGO.interface "Link to this de
     ...                                  ...                ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexMicrosecondGO Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexMicrosecondGO Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMicrosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMicrosecondGO Accessor Hashlib
     via_type_clinic.to_hint()            IndexMicrosecondGO Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexMicrosecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexMicrosecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexMicrosecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexMicrosecondGO Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U18>             <<U27>               <<U83>
+    <<U90>                               <<U18>             <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexMicrosecondGO.\_\_str\_\_()[](#static_frame.IndexMicrosecondGO.__str__ "
 
     ```
 
-IndexMicrosecondGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexMicrosecondGO.display "Link to this definition")
+IndexMicrosecondGO.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexMicrosecondGO.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexMicrosecondGO.display(*config=None*, */*, *\**, *style\_config=None*)[](
 
     ```
 
-IndexMicrosecondGO.display\_tall(*config=None*, */*)[](#static_frame.IndexMicrosecondGO.display_tall "Link to this definition")
+IndexMicrosecondGO.display\_tall(*config=None*)[](#static_frame.IndexMicrosecondGO.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexMicrosecondGO.display\_tall(*config=None*, */*)[](#static_frame.IndexMic
 
     ```
 
-IndexMicrosecondGO.display\_wide(*config=None*, */*)[](#static_frame.IndexMicrosecondGO.display_wide "Link to this definition")
+IndexMicrosecondGO.display\_wide(*config=None*)[](#static_frame.IndexMicrosecondGO.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

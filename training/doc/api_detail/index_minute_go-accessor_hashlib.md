@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexMinuteGO: Accessor Hashlib](../api_overview/index_minute_go-accessor_hashlib.md#api-overview-indexminutego-accessor-hashlib)
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).to\_bytes(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -164,7 +164,7 @@ IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).t
 
     ```
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).md5(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -183,7 +183,7 @@ IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).m
 
     ```
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha256(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -202,7 +202,7 @@ IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 
     ```
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha512(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -221,7 +221,7 @@ IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 
     ```
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha3\_256(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -240,7 +240,7 @@ IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 
     ```
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).sha3\_512(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -259,7 +259,7 @@ IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 
     ```
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).shake\_128(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -278,7 +278,7 @@ IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 
     ```
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).shake\_256(*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -297,7 +297,7 @@ IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).s
 
     ```
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 
@@ -316,7 +316,7 @@ IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).b
 
     ```
 
-IndexMinuteGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
+IndexMinuteGO.via\_hashlib(*include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
 :   via\_hashlib
     :   Interface for deriving cryptographic hashes from this container.
 

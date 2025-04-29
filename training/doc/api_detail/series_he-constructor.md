@@ -144,7 +144,7 @@ API Detail
 
 [Overview: SeriesHE: Constructor](../api_overview/series_he-constructor.md#api-overview-serieshe-constructor)
 
-SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*, *dtype=None*, *index\_constructor=None*, *own\_index=False*)[](#static_frame.SeriesHE.__init__ "Link to this definition")
+SeriesHE.\_\_init\_\_(*values*, *\**, *index=None*, *name=<object object>*, *dtype=None*, *index\_constructor=None*, *own\_index=False*)[](#static_frame.SeriesHE.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -166,7 +166,7 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
 
     ```
 
-*classmethod* SeriesHE.from\_concat(*containers*, */*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.from_concat "Link to this definition")
+*classmethod* SeriesHE.from\_concat(*containers*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*)[](#static_frame.SeriesHE.from_concat "Link to this definition")
 :   Concatenate multiple [`Series`](series-selector.md#Series "Series") into a new [`Series`](series-selector.md#Series "Series").
 
     Parameters:
@@ -208,7 +208,7 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
 
     ```
 
-*classmethod* SeriesHE.from\_concat\_items(*items*, */*, *\**, *name=None*, *index\_constructor=None*)[](#static_frame.SeriesHE.from_concat_items "Link to this definition")
+*classmethod* SeriesHE.from\_concat\_items(*items*, *\**, *name=None*, *index\_constructor=None*)[](#static_frame.SeriesHE.from_concat_items "Link to this definition")
 :   Produce a [`Series`](series-selector.md#Series "Series") with a hierarchical index from an iterable of pairs of labels, [`Series`](series-selector.md#Series "Series"). The [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") is formed from the provided labels and the [`Index`](index-selector.md#Index "Index") if each [`Series`](series-selector.md#Series "Series").
 
     Parameters:
@@ -247,7 +247,7 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
 
     ```
 
-*classmethod* SeriesHE.from\_delimited(*delimited*, */*, *\**, *delimiter*, *index=None*, *dtype=None*, *name=None*, *index\_constructor=None*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *own\_index=False*)[](#static_frame.SeriesHE.from_delimited "Link to this definition")
+*classmethod* SeriesHE.from\_delimited(*delimited*, *\**, *delimiter*, *index=None*, *dtype=None*, *name=None*, *index\_constructor=None*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *own\_index=False*)[](#static_frame.SeriesHE.from_delimited "Link to this definition")
 :   Series construction from a delimited string.
 
     Parameters:
@@ -272,7 +272,7 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
 
     ```
 
-*classmethod* SeriesHE.from\_dict(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[](#static_frame.SeriesHE.from_dict "Link to this definition")
+*classmethod* SeriesHE.from\_dict(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[](#static_frame.SeriesHE.from_dict "Link to this definition")
 :   Series construction from a dictionary, where the first pair value is the index and the second is the value.
 
     Parameters:
@@ -293,7 +293,7 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
 
     ```
 
-*classmethod* SeriesHE.from\_element(*element*, */*, *\**, *index*, *dtype=None*, *name=None*, *index\_constructor=None*, *own\_index=False*)[](#static_frame.SeriesHE.from_element "Link to this definition")
+*classmethod* SeriesHE.from\_element(*element*, *\**, *index*, *dtype=None*, *name=None*, *index\_constructor=None*, *own\_index=False*)[](#static_frame.SeriesHE.from_element "Link to this definition")
 :   Create a [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series") from a single element. The size of the resultant container will be determined by the `index` argument.
 
     Returns:
@@ -310,7 +310,7 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
 
     ```
 
-*classmethod* SeriesHE.from\_items(*pairs*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[](#static_frame.SeriesHE.from_items "Link to this definition")
+*classmethod* SeriesHE.from\_items(*pairs*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[](#static_frame.SeriesHE.from_items "Link to this definition")
 :   Series construction from an iterator or generator of pairs, where the first pair value is the index and the second is the value.
 
     Parameters:
@@ -333,7 +333,7 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
 
     ```
 
-*classmethod* SeriesHE.from\_overlay(*containers*, */*, *\**, *index=None*, *union=True*, *name=None*, *func=<function isna\_array>*, *fill\_value=<object object>*)[](#static_frame.SeriesHE.from_overlay "Link to this definition")
+*classmethod* SeriesHE.from\_overlay(*containers*, *\**, *index=None*, *union=True*, *name=None*, *func=<function isna\_array>*, *fill\_value=<object object>*)[](#static_frame.SeriesHE.from_overlay "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") made by overlaying containers, aligned values are filled with values from subsequent containers with left-to-right precedence. Values are filled based on a passed function that must return a Boolean array. By default, that function is isna\_array, returning True for missing values (NaN and None).
 
     Parameters:
@@ -373,7 +373,7 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
 
     ```
 
-*classmethod* SeriesHE.from\_pandas(*value*, */*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*, *own\_data=False*)[](#static_frame.SeriesHE.from_pandas "Link to this definition")
+*classmethod* SeriesHE.from\_pandas(*value*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*, *own\_data=False*)[](#static_frame.SeriesHE.from_pandas "Link to this definition")
 :   Given a Pandas Series, return a Series.
 
     Parameters:

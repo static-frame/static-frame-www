@@ -146,6 +146,8 @@ API Detail
 
 |  |  |  |
 | --- | --- | --- |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-duckdb) | `Bus.to_duckdb(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
+| [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-hdf5) | `Bus.to_hdf5(fp, *, config)` | Write the complete Bus as an HDF5 table. Args: fp: A string file path or Path in… |
 | [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-series) | `Bus.to_series()` | Return a Series with the Frame contained in this Bus. If the Bus is associated w… |
 | [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-sqlite) | `Bus.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
 | [Detail](../api_detail/bus-exporter.md#api-sig-bus-to-visidata) | `Bus.to_visidata()` | Open an interactive VisiData session. |

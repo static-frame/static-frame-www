@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexMillisecond](../api_overview/index_millisecond.md#api-overview-indexmillisecond)
 
-*class* IndexMillisecond(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexMillisecond)[](#static_frame.IndexMillisecond "Link to this definition")
+*class* IndexMillisecond(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexMillisecond)[](#static_frame.IndexMillisecond "Link to this definition")
 :   A mapping of milliseconds (NumPy `datetime64[ms]`) to positions, immutable and of fixed size.
 
 * [Constructor](index_millisecond-constructor.md#api-detail-indexmillisecond-constructor): Alternative constructors for creating instances.

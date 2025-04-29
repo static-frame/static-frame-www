@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexSecondGO](../api_overview/index_second_go.md#api-overview-indexsecondgo)
 
-*class* IndexSecondGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexSecondGO)[](#static_frame.IndexSecondGO "Link to this definition")
+*class* IndexSecondGO(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexSecondGO)[](#static_frame.IndexSecondGO "Link to this definition")
 
 * [Constructor](index_second_go-constructor.md#api-detail-indexsecondgo-constructor): Alternative constructors for creating instances.
 * [Exporter](index_second_go-exporter.md#api-detail-indexsecondgo-exporter): Methods for transforming, exporting, or serializing objects.

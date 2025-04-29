@@ -191,7 +191,13 @@ Frame.to\_clipboard(*\**, *delimiter='\t'*, *include\_index=True*, *include\_ind
         * **quoting** – Controls when quotes should be generated. It can take on any of the QUOTE\_\* constants from the standard library csv module.
         * **store\_filter** – A [`StoreFilter`](store_filter.md#static_frame.StoreFilter "static_frame.StoreFilter") instance.
 
-Frame.to\_csv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_csv)[](#static_frame.Frame.to_csv "Link to this definition")
+    ```
+    >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
+    >>> f1.to_clipboard()
+
+    ```
+
+Frame.to\_csv(*fp*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_csv)[](#static_frame.Frame.to_csv "Link to this definition")
 :   Given a file path or file-like object, write the [`Frame`](frame-selector.md#Frame "Frame") as delimited text. The delimiter is set to a comma.
 
     Parameters:
@@ -231,7 +237,7 @@ Frame.to\_csv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True
 
     ```
 
-Frame.to\_delimited(*fp*, */*, *\**, *delimiter*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_delimited)[](#static_frame.Frame.to_delimited "Link to this definition")
+Frame.to\_delimited(*fp*, *\**, *delimiter*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_delimited)[](#static_frame.Frame.to_delimited "Link to this definition")
 :   Given a file path or file-like object, write the [`Frame`](frame-selector.md#Frame "Frame") as delimited text. A `delimiter` character must be specified.
 
     Parameters:
@@ -269,6 +275,28 @@ Frame.to\_delimited(*fp*, */*, *\**, *delimiter*, *include\_index=True*, *includ
     p|0|1
     q|2|3
     r|4|5
+
+    ```
+
+Frame.to\_duckdb(*fp*, *\**, *label=<object object>*, *include\_index=True*, *include\_columns=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_duckdb)[](#static_frame.Frame.to_duckdb "Link to this definition")
+:   Write the Frame as single-table DuckDB file.
+
+    ```
+    >>> f1 = sf.Frame.from_fields(((10, 2, 8, 3), ('qrs ', 'XYZ', '123', ' wX ')), columns=('a', 'b'), index=('p', 'q', 'r', 's'), name='x')
+    >>> f1
+    <Frame: x>
+    <Index>    a       b     <<U1>
+    <Index>
+    p          10      qrs
+    q          2       XYZ
+    r          8       123
+    s          3        wX
+    <<U1>      <int64> <<U4>
+    >>> f1.to_duckdb('/tmp/f.db')
+    >>> import duckdb
+    >>> conn = duckdb.connect('/tmp/f.db')
+    >>> sf.Frame.from_sql("select * from x limit 2", connection=conn, index_depth=1)
+    TypeError("'duckdb.duckdb.DuckDBPyConnection' object is not iterable")
 
     ```
 
@@ -350,7 +378,24 @@ Frame.to\_frame\_he(*\**, *name=<object object>*)[[source]](../_modules/static_f
 
     ```
 
-Frame.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_html)[](#static_frame.Frame.to_html "Link to this definition")
+Frame.to\_hdf5(*fp*, *\**, *label=<object object>*, *include\_index=True*, *include\_columns=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_hdf5)[](#static_frame.Frame.to_hdf5 "Link to this definition")
+:   Write the Frame as single-table SQLite file.
+
+    ```
+    >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
+    >>> f1
+    <Frame: x>
+    <Index>    a       b       <<U1>
+    <Index>
+    p          0       1
+    q          2       3
+    r          4       5
+    <<U1>      <int64> <int64>
+    >>> f1.to_hdf5('/tmp/f.h5')
+
+    ```
+
+Frame.to\_html(*config=None*, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_html)[](#static_frame.Frame.to_html "Link to this definition")
 :   Return an HTML table representation of this [`Frame`](frame-selector.md#Frame "Frame") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
@@ -359,7 +404,7 @@ Frame.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.styl
     Returns:
     :   `str`
 
-Frame.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_html_datatables)[](#static_frame.Frame.to_html_datatables "Link to this definition")
+Frame.to\_html\_datatables(*fp=None*, *show=True*, *config=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_html_datatables)[](#static_frame.Frame.to_html_datatables "Link to this definition")
 :   Return a complete HTML representation of this [`Frame`](frame-selector.md#Frame "Frame") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:
@@ -370,7 +415,7 @@ Frame.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[[so
     Returns:
     :   `str`, absolute file path to the file written.
 
-Frame.to\_json\_columns(*\**, *indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_columns)[](#static_frame.Frame.to_json_columns "Link to this definition")
+Frame.to\_json\_columns(*indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_columns)[](#static_frame.Frame.to_json_columns "Link to this definition")
 :   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON object keyed by column labels, where values are columns represented by an object mapping of index labels to values.
 
     Parameters:
@@ -411,7 +456,7 @@ Frame.to\_json\_columns(*\**, *indent=None*)[[source]](../_modules/static_frame/
 
     ```
 
-Frame.to\_json\_index(*\**, *indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_index)[](#static_frame.Frame.to_json_index "Link to this definition")
+Frame.to\_json\_index(*indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_index)[](#static_frame.Frame.to_json_index "Link to this definition")
 :   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON object keyed by index labels, where values are rows represented by an object mapping of column labels to values.
 
     Parameters:
@@ -454,7 +499,7 @@ Frame.to\_json\_index(*\**, *indent=None*)[[source]](../_modules/static_frame/co
 
     ```
 
-Frame.to\_json\_records(*\**, *indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_records)[](#static_frame.Frame.to_json_records "Link to this definition")
+Frame.to\_json\_records(*indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_records)[](#static_frame.Frame.to_json_records "Link to this definition")
 :   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON array of row objects, where column labels are repeated for each row, and no index labels are included.
 
     Parameters:
@@ -497,7 +542,7 @@ Frame.to\_json\_records(*\**, *indent=None*)[[source]](../_modules/static_frame/
 
     ```
 
-Frame.to\_json\_split(*\**, *indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_split)[](#static_frame.Frame.to_json_split "Link to this definition")
+Frame.to\_json\_split(*indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_split)[](#static_frame.Frame.to_json_split "Link to this definition")
 :   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON object with a key for “columns”, “index”, and “data”, where data is given as an array of arrays of row values.
 
     Parameters:
@@ -553,7 +598,7 @@ Frame.to\_json\_split(*\**, *indent=None*)[[source]](../_modules/static_frame/co
 
     ```
 
-Frame.to\_json\_typed(*\**, *indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_typed)[](#static_frame.Frame.to_json_typed "Link to this definition")
+Frame.to\_json\_typed(*indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_typed)[](#static_frame.Frame.to_json_typed "Link to this definition")
 :   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON object with a key for “columns”, “index”, and “data”, where data is given as an array of arrays of column values; additionally, a key for “\_\_meta\_\_” defines an object with complete metadata and typing information.
 
     Parameters:
@@ -629,7 +674,7 @@ Frame.to\_json\_typed(*\**, *indent=None*)[[source]](../_modules/static_frame/co
 
     ```
 
-Frame.to\_json\_values(*\**, *indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_values)[](#static_frame.Frame.to_json_values "Link to this definition")
+Frame.to\_json\_values(*indent=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_json_values)[](#static_frame.Frame.to_json_values "Link to this definition")
 :   Export a [`Frame`](frame-selector.md#Frame "Frame") as a JSON string constructed as follows: A JSON array of arrays of row values; no index or columns labels are included.
 
     Parameters:
@@ -672,7 +717,7 @@ Frame.to\_json\_values(*\**, *indent=None*)[[source]](../_modules/static_frame/c
 
     ```
 
-Frame.to\_latex(*config=None*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_latex)[](#static_frame.Frame.to_latex "Link to this definition")
+Frame.to\_latex(*config=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_latex)[](#static_frame.Frame.to_latex "Link to this definition")
 :   Display the Frame as a LaTeX formatted table.
 
     ```
@@ -702,7 +747,7 @@ Frame.to\_latex(*config=None*, */*)[[source]](../_modules/static_frame/core/fram
 
     ```
 
-Frame.to\_markdown(*config=None*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_markdown)[](#static_frame.Frame.to_markdown "Link to this definition")
+Frame.to\_markdown(*config=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_markdown)[](#static_frame.Frame.to_markdown "Link to this definition")
 :   Display the Frame as a Markdown formatted table.
 
     ```
@@ -726,7 +771,26 @@ Frame.to\_markdown(*config=None*, */*)[[source]](../_modules/static_frame/core/f
 
     ```
 
-Frame.to\_npy(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_npy)[](#static_frame.Frame.to_npy "Link to this definition")
+Frame.to\_msgpack()[[source]](../_modules/static_frame/core/frame.md#Frame.to_msgpack)[](#static_frame.Frame.to_msgpack "Link to this definition")
+:   Return msgpack bytes.
+
+    ```
+    >>> f = sf.Frame.from_fields(((10, 2, 8, 3), ('qrs ', 'XYZ', '123', ' wX ')), columns=('a', 'b'), index=('p', 'q', 'r', 's'), name='x')
+    >>> f
+    <Frame: x>
+    <Index>    a       b     <<U1>
+    <Index>
+    p          10      qrs
+    q          2       XYZ
+    r          8       123
+    s          3        wX
+    <<U1>      <int64> <<U4>
+    >>> f.to_msgpack()
+    b'\x85\xc4\x02sf\xa5Frame\xc4\x04name\xa1x\xc4\x06blocks\xc4\xcd\x82\xc4\x02sf\xaaTypeBlocks\xc4\x06blocks\xc4\xb3\x92\x85\xc4\x02nd\xc3\xc4\x04type\xa3<i8\xc4\x04kind\xc4\x00\xc4\x05shape\x91\x04\xc4\x04data\xc4 \n\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x85\xc4\x02nd\xc3\xc4\x04type\xa3<U4\xc4\x04kind\xc4\x00\xc4\x05shape\x91\x04\xc4\x04data\xc4@q\x00\x00\x00r\x00\x00\x00s\x00\x00\x00 \x00\x00\x00X\x00\x00\x00Y\x00\x00\x00Z\x00\x00\x00\x00\x00\x00\x001\x00\x00\x002\x00\x00\x003\x00\x00\x00\x00\x00\x00\x00 \x00\x00\x00w\x00\x00\x00X\x00\x00\x00 \x00\x00\x00\xc4\x05index\xc4S\x83\xc4\x02sf\xa5Index\xc4\x04name\xc0\xc4\x04data\xc49\x85\xc4\x02nd\xc3\xc4\x04type\xa3<U1\xc4\x04kind\xc4\x00\xc4\x05shape\x91\x04\xc4\x04data\xc4\x10p\x00\x00\x00q\x00\x00\x00r\x00\x00\x00s\x00\x00\x00\xc4\x07columns\xc4K\x83\xc4\x02sf\xa5Index\xc4\x04name\xc0\xc4\x04data\xc41\x85\xc4\x02nd\xc3\xc4\x04type\xa3<U1\xc4\x04kind\xc4\x00\xc4\x05shape\x91\x02\xc4\x04data\xc4\x08a\x00\x00\x00b\x00\x00\x00'
+
+    ```
+
+Frame.to\_npy(*fp*, *\**, *include\_index=True*, *include\_columns=True*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_npy)[](#static_frame.Frame.to_npy "Link to this definition")
 :   Write a [`Frame`](frame-selector.md#Frame "Frame") as a directory of npy file.
 
     ```
@@ -755,7 +819,7 @@ Frame.to\_npy(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*, *
 
     ```
 
-Frame.to\_npz(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_npz)[](#static_frame.Frame.to_npz "Link to this definition")
+Frame.to\_npz(*fp*, *\**, *include\_index=True*, *include\_columns=True*, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_npz)[](#static_frame.Frame.to_npz "Link to this definition")
 :   Write a [`Frame`](frame-selector.md#Frame "Frame") as an npz file.
 
     ```
@@ -782,7 +846,7 @@ Frame.to\_npz(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*, *
 
     ```
 
-Frame.to\_pairs(*\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_pairs)[](#static_frame.Frame.to_pairs "Link to this definition")
+Frame.to\_pairs(*axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_pairs)[](#static_frame.Frame.to_pairs "Link to this definition")
 :   Return a tuple of major axis key, minor axis key vlaue pairs, where major axis is determined by the axis argument. Note that the returned object is eagerly constructed; use an iterator interface for lazy iteration.
 
     ```
@@ -824,7 +888,7 @@ Frame.to\_pandas()[[source]](../_modules/static_frame/core/frame.md#Frame.to_pan
 
     ```
 
-Frame.to\_parquet(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_parquet)[](#static_frame.Frame.to_parquet "Link to this definition")
+Frame.to\_parquet(*fp*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_parquet)[](#static_frame.Frame.to_parquet "Link to this definition")
 :   Write an Arrow Parquet binary file.
 
     ```
@@ -841,7 +905,7 @@ Frame.to\_parquet(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=
 
     ```
 
-Frame.to\_pickle(*fp*, */*, *\**, *protocol=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_pickle)[](#static_frame.Frame.to_pickle "Link to this definition")
+Frame.to\_pickle(*fp*, *\**, *protocol=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_pickle)[](#static_frame.Frame.to_pickle "Link to this definition")
 :   Write a [`Frame`](frame-selector.md#Frame "Frame") as a Python pickle.
 
     The pickle module is not secure. Only unpickle data you trust.
@@ -874,7 +938,7 @@ Frame.to\_pickle(*fp*, */*, *\**, *protocol=None*)[[source]](../_modules/static_
 
     ```
 
-Frame.to\_rst(*config=None*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_rst)[](#static_frame.Frame.to_rst "Link to this definition")
+Frame.to\_rst(*config=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_rst)[](#static_frame.Frame.to_rst "Link to this definition")
 :   Display the Frame as an RST formatted table.
 
     ```
@@ -964,7 +1028,7 @@ Frame.to\_sql(*connection*, */*, *\**, *label=<object object>*, *include\_index=
 
     ```
 
-Frame.to\_sqlite(*fp*, */*, *\**, *label=<object object>*, *include\_index=True*, *include\_columns=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_sqlite)[](#static_frame.Frame.to_sqlite "Link to this definition")
+Frame.to\_sqlite(*fp*, *\**, *label=<object object>*, *include\_index=True*, *include\_columns=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_sqlite)[](#static_frame.Frame.to_sqlite "Link to this definition")
 :   Write the Frame as single-table SQLite file.
 
     ```
@@ -991,7 +1055,7 @@ Frame.to\_sqlite(*fp*, */*, *\**, *label=<object object>*, *include\_index=True*
 
     ```
 
-Frame.to\_tsv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_tsv)[](#static_frame.Frame.to_tsv "Link to this definition")
+Frame.to\_tsv(*fp*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_tsv)[](#static_frame.Frame.to_tsv "Link to this definition")
 :   Given a file path or file-like object, write the [`Frame`](frame-selector.md#Frame "Frame") as delimited text. The delimiter is set to a tab.
 
     Parameters:
@@ -1061,7 +1125,7 @@ Frame.to\_xarray()[[source]](../_modules/static_frame/core/frame.md#Frame.to_xar
 
     ```
 
-Frame.to\_xlsx(*fp*, */*, *\**, *label=<object object>*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *merge\_hierarchical\_labels=True*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_xlsx)[](#static_frame.Frame.to_xlsx "Link to this definition")
+Frame.to\_xlsx(*fp*, *\**, *label=<object object>*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *merge\_hierarchical\_labels=True*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.to_xlsx)[](#static_frame.Frame.to_xlsx "Link to this definition")
 :   Write the Frame as single-sheet XLSX file.
 
     ```

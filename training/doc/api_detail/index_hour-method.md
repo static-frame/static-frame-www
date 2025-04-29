@@ -246,7 +246,7 @@ IndexHour.\_\_len\_\_()[](#static_frame.IndexHour.__len__ "Link to this defin
 
     ```
 
-IndexHour.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.all "Link to this definition")
+IndexHour.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -266,7 +266,7 @@ IndexHour.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Inde
 
     ```
 
-IndexHour.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.any "Link to this definition")
+IndexHour.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -286,7 +286,7 @@ IndexHour.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Inde
 
     ```
 
-IndexHour.astype(*dtype*, */*)[](#static_frame.IndexHour.astype "Link to this definition")
+IndexHour.astype(*dtype*)[](#static_frame.IndexHour.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -329,7 +329,7 @@ IndexHour.copy()[](#static_frame.IndexHour.copy "Link to this definition")
 
     ```
 
-IndexHour.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHour.cumprod "Link to this definition")
+IndexHour.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexHour.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -349,7 +349,7 @@ IndexHour.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHour.cu
 
     ```
 
-IndexHour.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHour.cumsum "Link to this definition")
+IndexHour.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexHour.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -434,7 +434,7 @@ IndexHour.dropna()[](#static_frame.IndexHour.dropna "Link to this definition"
 
     ```
 
-IndexHour.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexHour.equals "Link to this definition")
+IndexHour.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexHour.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -463,7 +463,7 @@ IndexHour.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fals
 
     ```
 
-IndexHour.fillfalsy(*value*, */*)[](#static_frame.IndexHour.fillfalsy "Link to this definition")
+IndexHour.fillfalsy(*value*)[](#static_frame.IndexHour.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -482,7 +482,7 @@ IndexHour.fillfalsy(*value*, */*)[](#static_frame.IndexHour.fillfalsy "Link t
 
     ```
 
-IndexHour.fillna(*value*, */*)[](#static_frame.IndexHour.fillna "Link to this definition")
+IndexHour.fillna(*value*)[](#static_frame.IndexHour.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -505,7 +505,7 @@ IndexHour.fillna(*value*, */*)[](#static_frame.IndexHour.fillna "Link to this
 
     ```
 
-IndexHour.head(*count=5*, */*)[](#static_frame.IndexHour.head "Link to this definition")
+IndexHour.head(*count=5*)[](#static_frame.IndexHour.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -527,7 +527,7 @@ IndexHour.head(*count=5*, */*)[](#static_frame.IndexHour.head "Link to this d
 
     ```
 
-IndexHour.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexHour.iloc_searchsorted "Link to this definition")
+IndexHour.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexHour.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -581,7 +581,7 @@ IndexHour.isfalsy()[](#static_frame.IndexHour.isfalsy "Link to this definitio
 
     ```
 
-IndexHour.isin(*other*, */*)[](#static_frame.IndexHour.isin "Link to this definition")
+IndexHour.isin(*other*)[](#static_frame.IndexHour.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -607,7 +607,7 @@ IndexHour.isna()[](#static_frame.IndexHour.isna "Link to this definition")
 
     ```
 
-IndexHour.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHour.label_widths_at_depth "Link to this definition")
+IndexHour.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexHour.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -626,7 +626,7 @@ IndexHour.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.Ind
 
     ```
 
-IndexHour.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexHour.level_add "Link to this definition")
+IndexHour.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexHour.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -651,7 +651,7 @@ IndexHour.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static
 
     ```
 
-IndexHour.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexHour.loc_searchsorted "Link to this definition")
+IndexHour.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexHour.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -672,7 +672,7 @@ IndexHour.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value
 
     ```
 
-IndexHour.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexHour.loc_to_iloc "Link to this definition")
+IndexHour.loc\_to\_iloc(*key*)[](#static_frame.IndexHour.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -695,7 +695,7 @@ IndexHour.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexHour.loc_to_iloc "Li
 
     ```
 
-IndexHour.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.max "Link to this definition")
+IndexHour.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -715,7 +715,7 @@ IndexHour.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Inde
 
     ```
 
-IndexHour.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.mean "Link to this definition")
+IndexHour.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -735,7 +735,7 @@ IndexHour.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Ind
 
     ```
 
-IndexHour.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.median "Link to this definition")
+IndexHour.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -755,7 +755,7 @@ IndexHour.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.I
 
     ```
 
-IndexHour.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.min "Link to this definition")
+IndexHour.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHour.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -795,7 +795,7 @@ IndexHour.notna()[](#static_frame.IndexHour.notna "Link to this definition")
 
     ```
 
-IndexHour.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexHour.prod "Link to this definition")
+IndexHour.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexHour.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -815,7 +815,7 @@ IndexHour.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#stati
 
     ```
 
-IndexHour.relabel(*mapper*, */*)[](#static_frame.IndexHour.relabel "Link to this definition")
+IndexHour.relabel(*mapper*)[](#static_frame.IndexHour.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -835,7 +835,7 @@ IndexHour.relabel(*mapper*, */*)[](#static_frame.IndexHour.relabel "Link to t
 
     ```
 
-IndexHour.rename(*name*, */*)[](#static_frame.IndexHour.rename "Link to this definition")
+IndexHour.rename(*name*)[](#static_frame.IndexHour.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -898,7 +898,7 @@ IndexHour.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexHour.samp
 
     ```
 
-IndexHour.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexHour.sort "Link to this definition")
+IndexHour.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexHour.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -929,7 +929,7 @@ IndexHour.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#sta
 
     ```
 
-IndexHour.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHour.std "Link to this definition")
+IndexHour.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHour.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -949,7 +949,7 @@ IndexHour.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_
 
     ```
 
-IndexHour.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexHour.sum "Link to this definition")
+IndexHour.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexHour.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -969,7 +969,7 @@ IndexHour.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static
 
     ```
 
-IndexHour.tail(*count=5*, */*)[](#static_frame.IndexHour.tail "Link to this definition")
+IndexHour.tail(*count=5*)[](#static_frame.IndexHour.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1021,7 +1021,7 @@ IndexHour.union(*\*others*)[](#static_frame.IndexHour.union "Link to this def
 
     ```
 
-IndexHour.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexHour.unique "Link to this definition")
+IndexHour.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexHour.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1044,7 +1044,7 @@ IndexHour.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[
 
     ```
 
-IndexHour.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHour.values_at_depth "Link to this definition")
+IndexHour.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexHour.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1060,7 +1060,7 @@ IndexHour.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHour.
 
     ```
 
-IndexHour.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHour.var "Link to this definition")
+IndexHour.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHour.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

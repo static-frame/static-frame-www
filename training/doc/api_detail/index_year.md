@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexYear](../api_overview/index_year.md#api-overview-indexyear)
 
-*class* IndexYear(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear)[](#static_frame.IndexYear "Link to this definition")
+*class* IndexYear(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear)[](#static_frame.IndexYear "Link to this definition")
 :   A mapping of years (NumPy `datetime64[Y]`) to positions, immutable and of fixed size.
 
 * [Constructor](index_year-constructor.md#api-detail-indexyear-constructor): Alternative constructors for creating instances.

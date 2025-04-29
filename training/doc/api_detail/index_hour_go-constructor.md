@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexHourGO: Constructor](../api_overview/index_hour_go-constructor.md#api-overview-indexhourgo-constructor)
 
-IndexHourGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexHourGO.__init__ "Link to this definition")
+IndexHourGO.\_\_init\_\_(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexHourGO.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -161,7 +161,7 @@ IndexHourGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
 
     ```
 
-*classmethod* IndexHourGO.from\_labels(*labels*, */*, *\**, *name=None*)[](#static_frame.IndexHourGO.from_labels "Link to this definition")
+*classmethod* IndexHourGO.from\_labels(*labels*, *\**, *name=None*)[](#static_frame.IndexHourGO.from_labels "Link to this definition")
 :   Construct an `Index` from an iterable of labels, where each label is a hashable. Provided for a compatible interface to `IndexHierarchy`.
 
     ```
@@ -174,7 +174,7 @@ IndexHourGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
 
     ```
 
-*classmethod* IndexHourGO.from\_pandas(*value*, */*)[](#static_frame.IndexHourGO.from_pandas "Link to this definition")
+*classmethod* IndexHourGO.from\_pandas(*value*)[](#static_frame.IndexHourGO.from_pandas "Link to this definition")
 :   Given a Pandas index, return the appropriate IndexBase derived class.
 
     ```

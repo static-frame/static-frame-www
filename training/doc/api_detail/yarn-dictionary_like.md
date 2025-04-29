@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Yarn: Dictionary-Like](../api_overview/yarn-dictionary_like.md#api-overview-yarn-dictionary-like)
 
-Yarn.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.__contains__)[](#static_frame.Yarn.__contains__ "Link to this definition")
+Yarn.\_\_contains\_\_(*value*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.__contains__)[](#static_frame.Yarn.__contains__ "Link to this definition")
 :   Inclusion of value in index labels.
 
     Returns:
@@ -161,7 +161,7 @@ Yarn.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/yarn
     j                w     Frame
     <<U1>            <<U1> <object>
     >>> y.__contains__('a')
-    False
+    RuntimeError('Invalid key length for a; must be length 2.')
 
     ```
 
@@ -224,8 +224,9 @@ Yarn.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/yarn.md#
     j                w     Frame
     <<U1>            <<U1> <object>
     >>> y.get('a')
+    RuntimeError('Invalid key length for a; must be length 2.')
     >>> y.get('z', -1)
-    -1
+    RuntimeError('Invalid key length for z; must be length 2.')
 
     ```
 

@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexHierarchy: Operator Binary](../api_overview/index_hierarchy-operator_binary.md#api-overview-indexhierarchy-operator-binary)
 
-IndexHierarchy.\_\_add\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__add__ "Link to this definition")
+IndexHierarchy.\_\_add\_\_(*other*)[](#static_frame.IndexHierarchy.__add__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -160,7 +160,7 @@ IndexHierarchy.\_\_add\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__add
 
     ```
 
-IndexHierarchy.\_\_and\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__and__ "Link to this definition")
+IndexHierarchy.\_\_and\_\_(*other*)[](#static_frame.IndexHierarchy.__and__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((False, True, True), (True, True, True), (False, True, False)), name=('x', 'y', 'z'))
     >>> ih
@@ -180,7 +180,7 @@ IndexHierarchy.\_\_and\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__and
 
     ```
 
-IndexHierarchy.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__eq__ "Link to this definition")
+IndexHierarchy.\_\_eq\_\_(*other*)[](#static_frame.IndexHierarchy.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -198,7 +198,7 @@ IndexHierarchy.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__eq__
 
     ```
 
-IndexHierarchy.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__floordiv__ "Link to this definition")
+IndexHierarchy.\_\_floordiv\_\_(*other*)[](#static_frame.IndexHierarchy.__floordiv__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -214,7 +214,7 @@ IndexHierarchy.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexHierarchy.
 
     ```
 
-IndexHierarchy.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__ge__ "Link to this definition")
+IndexHierarchy.\_\_ge\_\_(*other*)[](#static_frame.IndexHierarchy.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -232,7 +232,7 @@ IndexHierarchy.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__ge__
 
     ```
 
-IndexHierarchy.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__gt__ "Link to this definition")
+IndexHierarchy.\_\_gt\_\_(*other*)[](#static_frame.IndexHierarchy.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -250,7 +250,7 @@ IndexHierarchy.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__gt__
 
     ```
 
-IndexHierarchy.\_\_le\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__le__ "Link to this definition")
+IndexHierarchy.\_\_le\_\_(*other*)[](#static_frame.IndexHierarchy.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -268,7 +268,7 @@ IndexHierarchy.\_\_le\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__le__
 
     ```
 
-IndexHierarchy.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__lt__ "Link to this definition")
+IndexHierarchy.\_\_lt\_\_(*other*)[](#static_frame.IndexHierarchy.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -286,7 +286,7 @@ IndexHierarchy.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__lt__
 
     ```
 
-IndexHierarchy.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__matmul__ "Link to this definition")
+IndexHierarchy.\_\_matmul\_\_(*other*)[](#static_frame.IndexHierarchy.__matmul__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -300,7 +300,7 @@ IndexHierarchy.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__
 
     ```
 
-IndexHierarchy.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__mod__ "Link to this definition")
+IndexHierarchy.\_\_mod\_\_(*other*)[](#static_frame.IndexHierarchy.__mod__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -316,7 +316,7 @@ IndexHierarchy.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__mod
 
     ```
 
-IndexHierarchy.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__mul__ "Link to this definition")
+IndexHierarchy.\_\_mul\_\_(*other*)[](#static_frame.IndexHierarchy.__mul__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -332,7 +332,7 @@ IndexHierarchy.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__mul
 
     ```
 
-IndexHierarchy.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__ne__ "Link to this definition")
+IndexHierarchy.\_\_ne\_\_(*other*)[](#static_frame.IndexHierarchy.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -350,7 +350,7 @@ IndexHierarchy.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__ne__
 
     ```
 
-IndexHierarchy.\_\_or\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__or__ "Link to this definition")
+IndexHierarchy.\_\_or\_\_(*other*)[](#static_frame.IndexHierarchy.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -372,7 +372,7 @@ IndexHierarchy.\_\_or\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__or__
 
     ```
 
-IndexHierarchy.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__pow__ "Link to this definition")
+IndexHierarchy.\_\_pow\_\_(*other*)[](#static_frame.IndexHierarchy.__pow__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -388,7 +388,7 @@ IndexHierarchy.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__pow
 
     ```
 
-IndexHierarchy.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__radd__ "Link to this definition")
+IndexHierarchy.\_\_radd\_\_(*other*)[](#static_frame.IndexHierarchy.__radd__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -404,7 +404,7 @@ IndexHierarchy.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__ra
 
     ```
 
-IndexHierarchy.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__rfloordiv__ "Link to this definition")
+IndexHierarchy.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexHierarchy.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -420,7 +420,7 @@ IndexHierarchy.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexHierarchy
 
     ```
 
-IndexHierarchy.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__rmatmul__ "Link to this definition")
+IndexHierarchy.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexHierarchy.__rmatmul__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -434,7 +434,7 @@ IndexHierarchy.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexHierarchy._
 
     ```
 
-IndexHierarchy.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__rmul__ "Link to this definition")
+IndexHierarchy.\_\_rmul\_\_(*other*)[](#static_frame.IndexHierarchy.__rmul__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -450,7 +450,7 @@ IndexHierarchy.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__rm
 
     ```
 
-IndexHierarchy.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__rshift__ "Link to this definition")
+IndexHierarchy.\_\_rshift\_\_(*other*)[](#static_frame.IndexHierarchy.__rshift__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -466,7 +466,7 @@ IndexHierarchy.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__
 
     ```
 
-IndexHierarchy.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__rsub__ "Link to this definition")
+IndexHierarchy.\_\_rsub\_\_(*other*)[](#static_frame.IndexHierarchy.__rsub__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -482,7 +482,7 @@ IndexHierarchy.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__rs
 
     ```
 
-IndexHierarchy.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__rtruediv__ "Link to this definition")
+IndexHierarchy.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexHierarchy.__rtruediv__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -498,7 +498,7 @@ IndexHierarchy.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexHierarchy.
 
     ```
 
-IndexHierarchy.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__sub__ "Link to this definition")
+IndexHierarchy.\_\_sub\_\_(*other*)[](#static_frame.IndexHierarchy.__sub__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -514,7 +514,7 @@ IndexHierarchy.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__sub
 
     ```
 
-IndexHierarchy.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__truediv__ "Link to this definition")
+IndexHierarchy.\_\_truediv\_\_(*other*)[](#static_frame.IndexHierarchy.__truediv__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((0, 1024, 32), (1, -2048, 32), (1, 1024, 32)), name=('x', 'y', 'z'))
     >>> ih
@@ -530,7 +530,7 @@ IndexHierarchy.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexHierarchy._
 
     ```
 
-IndexHierarchy.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexHierarchy.__xor__ "Link to this definition")
+IndexHierarchy.\_\_xor\_\_(*other*)[](#static_frame.IndexHierarchy.__xor__ "Link to this definition")
 :   ```
     >>> ih = sf.IndexHierarchy.from_labels(((False, True, True), (True, True, True), (False, True, False)), name=('x', 'y', 'z'))
     >>> ih

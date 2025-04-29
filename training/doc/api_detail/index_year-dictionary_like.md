@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexYear: Dictionary-Like](../api_overview/index_year-dictionary_like.md#api-overview-indexyear-dictionary-like)
 
-IndexYear.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear.__contains__)[](#static_frame.IndexYear.__contains__ "Link to this definition")
+IndexYear.\_\_contains\_\_(*value*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear.__contains__)[](#static_frame.IndexYear.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```

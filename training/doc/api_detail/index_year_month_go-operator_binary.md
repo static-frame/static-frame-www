@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexYearMonthGO: Operator Binary](../api_overview/index_year_month_go-operator_binary.md#api-overview-indexyearmonthgo-operator-binary)
 
-IndexYearMonthGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__add__ "Link to this definition")
+IndexYearMonthGO.\_\_add\_\_(*other*)[](#static_frame.IndexYearMonthGO.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -158,7 +158,7 @@ IndexYearMonthGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO._
 
     ```
 
-IndexYearMonthGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__and__ "Link to this definition")
+IndexYearMonthGO.\_\_and\_\_(*other*)[](#static_frame.IndexYearMonthGO.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -174,7 +174,7 @@ IndexYearMonthGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO._
 
     ```
 
-IndexYearMonthGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__eq__ "Link to this definition")
+IndexYearMonthGO.\_\_eq\_\_(*other*)[](#static_frame.IndexYearMonthGO.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -190,7 +190,7 @@ IndexYearMonthGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__
 
     ```
 
-IndexYearMonthGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__floordiv__ "Link to this definition")
+IndexYearMonthGO.\_\_floordiv\_\_(*other*)[](#static_frame.IndexYearMonthGO.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -204,7 +204,7 @@ IndexYearMonthGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexYearMont
 
     ```
 
-IndexYearMonthGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__ge__ "Link to this definition")
+IndexYearMonthGO.\_\_ge\_\_(*other*)[](#static_frame.IndexYearMonthGO.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -220,7 +220,7 @@ IndexYearMonthGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__
 
     ```
 
-IndexYearMonthGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__gt__ "Link to this definition")
+IndexYearMonthGO.\_\_gt\_\_(*other*)[](#static_frame.IndexYearMonthGO.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -236,7 +236,7 @@ IndexYearMonthGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__
 
     ```
 
-IndexYearMonthGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__le__ "Link to this definition")
+IndexYearMonthGO.\_\_le\_\_(*other*)[](#static_frame.IndexYearMonthGO.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -252,7 +252,7 @@ IndexYearMonthGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__
 
     ```
 
-IndexYearMonthGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__lt__ "Link to this definition")
+IndexYearMonthGO.\_\_lt\_\_(*other*)[](#static_frame.IndexYearMonthGO.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -268,7 +268,7 @@ IndexYearMonthGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__
 
     ```
 
-IndexYearMonthGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__matmul__ "Link to this definition")
+IndexYearMonthGO.\_\_matmul\_\_(*other*)[](#static_frame.IndexYearMonthGO.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -282,7 +282,7 @@ IndexYearMonthGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexYearMonthG
 
     ```
 
-IndexYearMonthGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__mod__ "Link to this definition")
+IndexYearMonthGO.\_\_mod\_\_(*other*)[](#static_frame.IndexYearMonthGO.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -296,7 +296,7 @@ IndexYearMonthGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO._
 
     ```
 
-IndexYearMonthGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__mul__ "Link to this definition")
+IndexYearMonthGO.\_\_mul\_\_(*other*)[](#static_frame.IndexYearMonthGO.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -310,7 +310,7 @@ IndexYearMonthGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO._
 
     ```
 
-IndexYearMonthGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__ne__ "Link to this definition")
+IndexYearMonthGO.\_\_ne\_\_(*other*)[](#static_frame.IndexYearMonthGO.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -326,7 +326,7 @@ IndexYearMonthGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__
 
     ```
 
-IndexYearMonthGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__or__ "Link to this definition")
+IndexYearMonthGO.\_\_or\_\_(*other*)[](#static_frame.IndexYearMonthGO.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -344,7 +344,7 @@ IndexYearMonthGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__
 
     ```
 
-IndexYearMonthGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__pow__ "Link to this definition")
+IndexYearMonthGO.\_\_pow\_\_(*other*)[](#static_frame.IndexYearMonthGO.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -358,7 +358,7 @@ IndexYearMonthGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO._
 
     ```
 
-IndexYearMonthGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__radd__ "Link to this definition")
+IndexYearMonthGO.\_\_radd\_\_(*other*)[](#static_frame.IndexYearMonthGO.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -372,7 +372,7 @@ IndexYearMonthGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.
 
     ```
 
-IndexYearMonthGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__rfloordiv__ "Link to this definition")
+IndexYearMonthGO.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexYearMonthGO.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -386,7 +386,7 @@ IndexYearMonthGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexYearMon
 
     ```
 
-IndexYearMonthGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__rmatmul__ "Link to this definition")
+IndexYearMonthGO.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexYearMonthGO.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -400,7 +400,7 @@ IndexYearMonthGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexYearMonth
 
     ```
 
-IndexYearMonthGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__rmul__ "Link to this definition")
+IndexYearMonthGO.\_\_rmul\_\_(*other*)[](#static_frame.IndexYearMonthGO.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -414,7 +414,7 @@ IndexYearMonthGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.
 
     ```
 
-IndexYearMonthGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__rshift__ "Link to this definition")
+IndexYearMonthGO.\_\_rshift\_\_(*other*)[](#static_frame.IndexYearMonthGO.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -428,7 +428,7 @@ IndexYearMonthGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexYearMonthG
 
     ```
 
-IndexYearMonthGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__rsub__ "Link to this definition")
+IndexYearMonthGO.\_\_rsub\_\_(*other*)[](#static_frame.IndexYearMonthGO.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -442,7 +442,7 @@ IndexYearMonthGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.
 
     ```
 
-IndexYearMonthGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__rtruediv__ "Link to this definition")
+IndexYearMonthGO.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexYearMonthGO.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -456,7 +456,7 @@ IndexYearMonthGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexYearMont
 
     ```
 
-IndexYearMonthGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__sub__ "Link to this definition")
+IndexYearMonthGO.\_\_sub\_\_(*other*)[](#static_frame.IndexYearMonthGO.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -470,7 +470,7 @@ IndexYearMonthGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO._
 
     ```
 
-IndexYearMonthGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__truediv__ "Link to this definition")
+IndexYearMonthGO.\_\_truediv\_\_(*other*)[](#static_frame.IndexYearMonthGO.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -484,7 +484,7 @@ IndexYearMonthGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexYearMonth
 
     ```
 
-IndexYearMonthGO.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexYearMonthGO.__xor__ "Link to this definition")
+IndexYearMonthGO.\_\_xor\_\_(*other*)[](#static_frame.IndexYearMonthGO.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix

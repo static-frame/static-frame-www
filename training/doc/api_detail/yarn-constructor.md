@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Yarn: Constructor](../api_overview/yarn-constructor.md#api-overview-yarn-constructor)
 
-Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, *deepcopy\_from\_bus=False*, *indexer=None*, *hierarchy=None*, *name=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.__init__)[](#static_frame.Yarn.__init__ "Link to this definition")
+Yarn.\_\_init\_\_(*series*, *\**, *index=None*, *index\_constructor=None*, *deepcopy\_from\_bus=False*, *indexer=None*, *hierarchy=None*, *name=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.__init__)[](#static_frame.Yarn.__init__ "Link to this definition")
 :   Parameters:
     :   * **series** – An iterable (or [`Series`](series-selector.md#Series "Series")) of [`Bus`](bus-selector.md#Bus "Bus"). The length of this container may not be the same as `index`, if provided.
         * **index** – Optionally provide an index for the [`Frame`](frame-selector.md#Frame "Frame") contained in all [`Bus`](bus-selector.md#Bus "Bus").
@@ -181,7 +181,7 @@ Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, 
 
     ```
 
-*classmethod* Yarn.from\_buses(*buses*, */*, *\**, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.from_buses)[](#static_frame.Yarn.from_buses "Link to this definition")
+*classmethod* Yarn.from\_buses(*buses*, *\**, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.from_buses)[](#static_frame.Yarn.from_buses "Link to this definition")
 :   Return a [`Yarn`](yarn-selector.md#Yarn "Yarn") from an iterable of [`Bus`](bus-selector.md#Bus "Bus"); labels will be drawn from [`Bus.name`](bus-attribute.md#static_frame.Bus.name "static_frame.Bus.name").
 
     ```
@@ -218,7 +218,7 @@ Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, 
 
     ```
 
-*classmethod* Yarn.from\_concat(*containers*, */*, *\**, *index=None*, *name=<object object>*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.from_concat)[](#static_frame.Yarn.from_concat "Link to this definition")
+*classmethod* Yarn.from\_concat(*containers*, *\**, *index=None*, *name=<object object>*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.from_concat)[](#static_frame.Yarn.from_concat "Link to this definition")
 :   Concatenate multiple [`Yarn`](yarn-selector.md#Yarn "Yarn") into a new [`Yarn`](yarn-selector.md#Yarn "Yarn"). Loaded status of [`Frame`](frame-selector.md#Frame "Frame") within each [`Bus`](bus-selector.md#Bus "Bus") will not be altered.
 
     Parameters:

@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexSecond](../api_overview/index_second.md#api-overview-indexsecond)
 
-*class* IndexSecond(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexSecond)[](#static_frame.IndexSecond "Link to this definition")
+*class* IndexSecond(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexSecond)[](#static_frame.IndexSecond "Link to this definition")
 :   A mapping of seconds (NumPy `datetime64[s]`) to positions, immutable and of fixed size.
 
 * [Constructor](index_second-constructor.md#api-detail-indexsecond-constructor): Alternative constructors for creating instances.

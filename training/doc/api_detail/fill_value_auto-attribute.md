@@ -194,7 +194,7 @@ FillValueAuto.c[](#static_frame.FillValueAuto.c "Link to this definition")
 FillValueAuto.f[](#static_frame.FillValueAuto.f "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default()
-    <static_frame.core.fill_value_auto.FillValueAuto object at 0x11a17b6c0>
+    <static_frame.core.fill_value_auto.FillValueAuto object at 0x7f7640dd2440>
 
     ```
 

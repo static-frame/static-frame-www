@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexMinute: Constructor](../api_overview/index_minute-constructor.md#api-overview-indexminute-constructor)
 
-IndexMinute.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexMinute.__init__ "Link to this definition")
+IndexMinute.\_\_init\_\_(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexMinute.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -161,7 +161,7 @@ IndexMinute.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
 
     ```
 
-*classmethod* IndexMinute.from\_labels(*labels*, */*, *\**, *name=None*)[](#static_frame.IndexMinute.from_labels "Link to this definition")
+*classmethod* IndexMinute.from\_labels(*labels*, *\**, *name=None*)[](#static_frame.IndexMinute.from_labels "Link to this definition")
 :   Construct an `Index` from an iterable of labels, where each label is a hashable. Provided for a compatible interface to `IndexHierarchy`.
 
     ```
@@ -174,7 +174,7 @@ IndexMinute.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
 
     ```
 
-*classmethod* IndexMinute.from\_pandas(*value*, */*)[](#static_frame.IndexMinute.from_pandas "Link to this definition")
+*classmethod* IndexMinute.from\_pandas(*value*)[](#static_frame.IndexMinute.from_pandas "Link to this definition")
 :   Given a Pandas index, return the appropriate IndexBase derived class.
 
     ```

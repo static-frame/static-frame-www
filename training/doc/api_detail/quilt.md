@@ -145,7 +145,7 @@ API Detail
 
 [Overview: Quilt](../api_overview/quilt.md#api-overview-quilt)
 
-*class* Quilt(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarchy=None*, *axis\_opposite=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt)[](#static_frame.Quilt "Link to this definition")
+*class* Quilt(*bus*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarchy=None*, *axis\_opposite=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt)[](#static_frame.Quilt "Link to this definition")
 :   A [`Frame`](frame-selector.md#Frame "Frame")-like view of the contents of a [`Bus`](bus-selector.md#Bus "Bus") or [`Yarn`](yarn-selector.md#Yarn "Yarn"). With the Quilt, [`Frame`](frame-selector.md#Frame "Frame") contained in a [`Bus`](bus-selector.md#Bus "Bus") or [`Yarn`](yarn-selector.md#Yarn "Yarn") can be conceived as stacking vertically (primary axis 0) or horizontally (primary axis 1). If the labels of the primary axis are unique across all contained [`Frame`](frame-selector.md#Frame "Frame"), `retain_labels` can be set to `False` and underlying labels are simply concatenated; otherwise, `retain_labels` must be set to `True` and an additional depth-level is added to the primary axis labels. A [`Quilt`](quilt-selector.md#Quilt "Quilt") can only be created if labels of the opposite axis of all contained [`Frame`](frame-selector.md#Frame "Frame") are aligned.
 
 * [Constructor](quilt-constructor.md#api-detail-quilt-constructor): Alternative constructors for creating instances.

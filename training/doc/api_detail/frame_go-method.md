@@ -266,7 +266,7 @@ FrameGO.\_\_len\_\_()[](#static_frame.FrameGO.__len__ "Link to this definitio
 
     ```
 
-FrameGO.\_\_round\_\_(*decimals=0*, */*)[](#static_frame.FrameGO.__round__ "Link to this definition")
+FrameGO.\_\_round\_\_(*decimals=0*)[](#static_frame.FrameGO.__round__ "Link to this definition")
 :   Return a [`Frame`](frame-selector.md#Frame "Frame") rounded to the given decimals. Negative decimals round to the left of the decimal point.
 
     Parameters:
@@ -296,7 +296,7 @@ FrameGO.\_\_round\_\_(*decimals=0*, */*)[](#static_frame.FrameGO.__round__ "L
 
     ```
 
-FrameGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.all "Link to this definition")
+FrameGO.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -322,7 +322,7 @@ FrameGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameG
 
     ```
 
-FrameGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.any "Link to this definition")
+FrameGO.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -656,7 +656,7 @@ FrameGO.cov(*\**, *axis=1*, *ddof=1*)[](#static_frame.FrameGO.cov "Link to th
 
     ```
 
-FrameGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.FrameGO.cumprod "Link to this definition")
+FrameGO.cumprod(*axis=0*, *skipna=True*)[](#static_frame.FrameGO.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -684,7 +684,7 @@ FrameGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.FrameGO.cumpro
 
     ```
 
-FrameGO.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.FrameGO.cumsum "Link to this definition")
+FrameGO.cumsum(*axis=0*, *skipna=True*)[](#static_frame.FrameGO.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -741,7 +741,7 @@ FrameGO.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=
 
     ```
 
-FrameGO.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[](#static_frame.FrameGO.dropfalsy "Link to this definition")
+FrameGO.dropfalsy(*axis=0*, *condition=<function all>*)[](#static_frame.FrameGO.dropfalsy "Link to this definition")
 :   Return a new Frame after removing rows (axis 0) or columns (axis 1) where any or all values are falsy. The condition is determined by a NumPy ufunc that process the Boolean array returned by `isfalsy()`; the default is `np.all`.
 
     Parameters:
@@ -770,7 +770,7 @@ FrameGO.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[](#static_frame
 
     ```
 
-FrameGO.dropna(*\**, *axis=0*, *condition=<function all>*)[](#static_frame.FrameGO.dropna "Link to this definition")
+FrameGO.dropna(*axis=0*, *condition=<function all>*)[](#static_frame.FrameGO.dropna "Link to this definition")
 :   Return a new [`Frame`](frame-selector.md#Frame "Frame") after removing rows (axis 0) or columns (axis 1) where any or all values are NA (NaN or None). The condition is determined by a NumPy ufunc that process the Boolean array returned by `isna()`; the default is `np.all`.
 
     Parameters:
@@ -829,7 +829,7 @@ FrameGO.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*
 
     ```
 
-FrameGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.FrameGO.equals "Link to this definition")
+FrameGO.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.FrameGO.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -862,7 +862,7 @@ FrameGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*
 
     ```
 
-FrameGO.extend(*container*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameGO.extend)[](#static_frame.FrameGO.extend "Link to this definition")
+FrameGO.extend(*container*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameGO.extend)[](#static_frame.FrameGO.extend "Link to this definition")
 :   Extend this FrameGO (in-place) with another Frame’s blocks or Series array; as blocks are immutable, this is a no-copy operation when indices align. If indices do not align, the passed-in Frame or Series will be reindexed (as happens when adding a column to a FrameGO).
 
     If a Series is passed in, the column name will be taken from the Series `name` attribute.
@@ -900,7 +900,7 @@ FrameGO.extend(*container*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/
 
     ```
 
-FrameGO.extend\_items(*pairs*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameGO.extend_items)[](#static_frame.FrameGO.extend_items "Link to this definition")
+FrameGO.extend\_items(*pairs*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#FrameGO.extend_items)[](#static_frame.FrameGO.extend_items "Link to this definition")
 :   Given an iterable of pairs of column name, column value, extend this FrameGO. Columns values can be any iterable suitable for usage in \_\_setitem\_\_.
 
     ```
@@ -925,7 +925,7 @@ FrameGO.extend\_items(*pairs*, */*, *\**, *fill\_value=nan*)[[source]](../_modul
 
     ```
 
-FrameGO.fillfalsy(*value*, */*)[](#static_frame.FrameGO.fillfalsy "Link to this definition")
+FrameGO.fillfalsy(*value*)[](#static_frame.FrameGO.fillfalsy "Link to this definition")
 :   Return a new `Frame` after replacing falsy values with the supplied value.
 
     Parameters:
@@ -954,7 +954,7 @@ FrameGO.fillfalsy(*value*, */*)[](#static_frame.FrameGO.fillfalsy "Link to th
 
     ```
 
-FrameGO.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[](#static_frame.FrameGO.fillfalsy_backward "Link to this definition")
+FrameGO.fillfalsy\_backward(*limit=0*, *\**, *axis=0*)[](#static_frame.FrameGO.fillfalsy_backward "Link to this definition")
 :   Return a new `Frame` after filling backward falsy values with the first observed value.
 
     Parameters:
@@ -984,7 +984,7 @@ FrameGO.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[](#static_frame.F
 
     ```
 
-FrameGO.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[](#static_frame.FrameGO.fillfalsy_forward "Link to this definition")
+FrameGO.fillfalsy\_forward(*limit=0*, *\**, *axis=0*)[](#static_frame.FrameGO.fillfalsy_forward "Link to this definition")
 :   Return a new `Frame` after filling forward falsy values with the last observed value.
 
     Parameters:
@@ -1014,7 +1014,7 @@ FrameGO.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[](#static_frame.Fr
 
     ```
 
-FrameGO.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[](#static_frame.FrameGO.fillfalsy_leading "Link to this definition")
+FrameGO.fillfalsy\_leading(*value*, *\**, *axis=0*)[](#static_frame.FrameGO.fillfalsy_leading "Link to this definition")
 :   Return a new `Frame` after filling leading (and only leading) falsy values with the provided `value`.
 
     Parameters:
@@ -1044,7 +1044,7 @@ FrameGO.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[](#static_frame.Fram
 
     ```
 
-FrameGO.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[](#static_frame.FrameGO.fillfalsy_trailing "Link to this definition")
+FrameGO.fillfalsy\_trailing(*value*, *\**, *axis=0*)[](#static_frame.FrameGO.fillfalsy_trailing "Link to this definition")
 :   Return a new `Frame` after filling trailing (and only trailing) falsy values with the provided `value`.
 
     Parameters:
@@ -1074,7 +1074,7 @@ FrameGO.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[](#static_frame.Fra
 
     ```
 
-FrameGO.fillna(*value*, */*)[](#static_frame.FrameGO.fillna "Link to this definition")
+FrameGO.fillna(*value*)[](#static_frame.FrameGO.fillna "Link to this definition")
 :   Return a new `Frame` after replacing null (NaN or None) values with the supplied value.
 
     Parameters:
@@ -1103,7 +1103,7 @@ FrameGO.fillna(*value*, */*)[](#static_frame.FrameGO.fillna "Link to this def
 
     ```
 
-FrameGO.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[](#static_frame.FrameGO.fillna_backward "Link to this definition")
+FrameGO.fillna\_backward(*limit=0*, *\**, *axis=0*)[](#static_frame.FrameGO.fillna_backward "Link to this definition")
 :   Return a new `Frame` after filling backward null (NaN or None) with the first observed value.
 
     Parameters:
@@ -1133,7 +1133,7 @@ FrameGO.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[](#static_frame.Fram
 
     ```
 
-FrameGO.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[](#static_frame.FrameGO.fillna_forward "Link to this definition")
+FrameGO.fillna\_forward(*limit=0*, *\**, *axis=0*)[](#static_frame.FrameGO.fillna_forward "Link to this definition")
 :   Return a new `Frame` after filling forward null (NaN or None) with the last observed value.
 
     Parameters:
@@ -1163,7 +1163,7 @@ FrameGO.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[](#static_frame.Frame
 
     ```
 
-FrameGO.fillna\_leading(*value*, */*, *\**, *axis=0*)[](#static_frame.FrameGO.fillna_leading "Link to this definition")
+FrameGO.fillna\_leading(*value*, *\**, *axis=0*)[](#static_frame.FrameGO.fillna_leading "Link to this definition")
 :   Return a new `Frame` after filling leading (and only leading) null (NaN or None) with the provided `value`.
 
     Parameters:
@@ -1193,7 +1193,7 @@ FrameGO.fillna\_leading(*value*, */*, *\**, *axis=0*)[](#static_frame.FrameGO
 
     ```
 
-FrameGO.fillna\_trailing(*value*, */*, *\**, *axis=0*)[](#static_frame.FrameGO.fillna_trailing "Link to this definition")
+FrameGO.fillna\_trailing(*value*, *\**, *axis=0*)[](#static_frame.FrameGO.fillna_trailing "Link to this definition")
 :   Return a new `Frame` after filling trailing (and only trailing) null (NaN or None) with the provided `value`.
 
     Parameters:
@@ -1223,7 +1223,7 @@ FrameGO.fillna\_trailing(*value*, */*, *\**, *axis=0*)[](#static_frame.FrameG
 
     ```
 
-FrameGO.head(*count=5*, */*)[](#static_frame.FrameGO.head "Link to this definition")
+FrameGO.head(*count=5*)[](#static_frame.FrameGO.head "Link to this definition")
 :   Return a [`Frame`](frame-selector.md#Frame "Frame") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -1450,7 +1450,7 @@ FrameGO.iloc\_notna\_last(*\**, *fill\_value=-1*, *axis=0*)[](#static_frame.F
 
     ```
 
-FrameGO.insert\_after(*key*, *container*, */*, *\**, *fill\_value=nan*)[](#static_frame.FrameGO.insert_after "Link to this definition")
+FrameGO.insert\_after(*key*, *container*, *\**, *fill\_value=nan*)[](#static_frame.FrameGO.insert_after "Link to this definition")
 :   Create a new [`Frame`](frame-selector.md#Frame "Frame") by inserting a named [`Series`](series-selector.md#Series "Series") or [`Frame`](frame-selector.md#Frame "Frame") at the position after the label specified by `key`.
 
     Parameters:
@@ -1491,7 +1491,7 @@ FrameGO.insert\_after(*key*, *container*, */*, *\**, *fill\_value=nan*)[](#st
 
     ```
 
-FrameGO.insert\_before(*key*, *container*, */*, *\**, *fill\_value=nan*)[](#static_frame.FrameGO.insert_before "Link to this definition")
+FrameGO.insert\_before(*key*, *container*, *\**, *fill\_value=nan*)[](#static_frame.FrameGO.insert_before "Link to this definition")
 :   Create a new [`Frame`](frame-selector.md#Frame "Frame") by inserting a named [`Series`](series-selector.md#Series "Series") or [`Frame`](frame-selector.md#Frame "Frame") at the position before the label specified by `key`.
 
     Parameters:
@@ -1558,7 +1558,7 @@ FrameGO.isfalsy()[](#static_frame.FrameGO.isfalsy "Link to this definition")
 
     ```
 
-FrameGO.isin(*other*, */*)[](#static_frame.FrameGO.isin "Link to this definition")
+FrameGO.isin(*other*)[](#static_frame.FrameGO.isin "Link to this definition")
 :   Return a same-sized Boolean [`Frame`](frame-selector.md#Frame "Frame") that shows if the same-positioned element is in the passed iterable.
 
     ```
@@ -1610,7 +1610,7 @@ FrameGO.isna()[](#static_frame.FrameGO.isna "Link to this definition")
 
     ```
 
-FrameGO.join\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.join_inner "Link to this definition")
+FrameGO.join\_inner(*other*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.join_inner "Link to this definition")
 :   Perform an inner join.
 
     Parameters:
@@ -1658,7 +1658,7 @@ FrameGO.join\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_column
 
     ```
 
-FrameGO.join\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.join_left "Link to this definition")
+FrameGO.join\_left(*other*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.join_left "Link to this definition")
 :   Perform a left outer join.
 
     Parameters:
@@ -1706,7 +1706,7 @@ FrameGO.join\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns
 
     ```
 
-FrameGO.join\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.join_outer "Link to this definition")
+FrameGO.join\_outer(*other*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.join_outer "Link to this definition")
 :   Perform an outer join.
 
     Parameters:
@@ -1754,7 +1754,7 @@ FrameGO.join\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_column
 
     ```
 
-FrameGO.join\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.join_right "Link to this definition")
+FrameGO.join\_right(*other*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.join_right "Link to this definition")
 :   Perform a right outer join.
 
     Parameters:
@@ -2002,7 +2002,7 @@ FrameGO.loc\_notna\_last(*\**, *fill\_value=nan*, *axis=0*)[](#static_frame.F
 
     ```
 
-FrameGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.max "Link to this definition")
+FrameGO.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -2028,7 +2028,7 @@ FrameGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameG
 
     ```
 
-FrameGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.mean "Link to this definition")
+FrameGO.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -2054,7 +2054,7 @@ FrameGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Frame
 
     ```
 
-FrameGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.median "Link to this definition")
+FrameGO.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -2080,7 +2080,7 @@ FrameGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Fra
 
     ```
 
-FrameGO.merge\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.merge_inner "Link to this definition")
+FrameGO.merge\_inner(*other*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.merge_inner "Link to this definition")
 :   Perform an inner merge, an inner join where matched columns are coalesced.
 
     Parameters:
@@ -2130,7 +2130,7 @@ FrameGO.merge\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_colum
 
     ```
 
-FrameGO.merge\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.merge_left "Link to this definition")
+FrameGO.merge\_left(*other*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.merge_left "Link to this definition")
 :   Perform a left merge, a left join where matched columns are coalesced.
 
     Parameters:
@@ -2180,7 +2180,7 @@ FrameGO.merge\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_column
 
     ```
 
-FrameGO.merge\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.merge_outer "Link to this definition")
+FrameGO.merge\_outer(*other*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.merge_outer "Link to this definition")
 :   Perform an outer merge, an outer join where matched columns are coalesced.
 
     Parameters:
@@ -2230,7 +2230,7 @@ FrameGO.merge\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_colum
 
     ```
 
-FrameGO.merge\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.merge_right "Link to this definition")
+FrameGO.merge\_right(*other*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[](#static_frame.FrameGO.merge_right "Link to this definition")
 :   Perform a right merge, a right join where matched columns are coalesced.
 
     Parameters:
@@ -2280,7 +2280,7 @@ FrameGO.merge\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_colum
 
     ```
 
-FrameGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.min "Link to this definition")
+FrameGO.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.FrameGO.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -2392,7 +2392,7 @@ FrameGO.pivot(*index\_fields*, *columns\_fields=()*, *data\_fields=()*, *\**, *f
 
     ```
 
-FrameGO.pivot\_stack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[](#static_frame.FrameGO.pivot_stack "Link to this definition")
+FrameGO.pivot\_stack(*depth\_level=-1*, *\**, *fill\_value=nan*)[](#static_frame.FrameGO.pivot_stack "Link to this definition")
 :   Move labels from the columns to the index, creating or extending an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") on the index.
 
     Parameters:
@@ -2429,7 +2429,7 @@ FrameGO.pivot\_stack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[](#stat
 
     ```
 
-FrameGO.pivot\_unstack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[](#static_frame.FrameGO.pivot_unstack "Link to this definition")
+FrameGO.pivot\_unstack(*depth\_level=-1*, *\**, *fill\_value=nan*)[](#static_frame.FrameGO.pivot_unstack "Link to this definition")
 :   Move labels from the index to the columns, creating or extending an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") on the columns.
 
     Parameters:
@@ -2477,7 +2477,7 @@ FrameGO.pivot\_unstack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[](#st
 
     ```
 
-FrameGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.FrameGO.prod "Link to this definition")
+FrameGO.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.FrameGO.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -2878,7 +2878,7 @@ FrameGO.relabel\_level\_drop(*index=0*, *columns=0*)[](#static_frame.FrameGO.
 
     ```
 
-FrameGO.relabel\_shift\_in(*key*, */*, *\**, *axis=0*, *index\_constructors=None*)[](#static_frame.FrameGO.relabel_shift_in "Link to this definition")
+FrameGO.relabel\_shift\_in(*key*, *\**, *axis=0*, *index\_constructors=None*)[](#static_frame.FrameGO.relabel_shift_in "Link to this definition")
 :   Create, or augment, an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") by providing one or more selections from the Frame (via axis-appropriate `loc` selections) to move into the [`Index`](index-selector.md#Index "Index").
 
     Parameters:
@@ -2908,7 +2908,7 @@ FrameGO.relabel\_shift\_in(*key*, */*, *\**, *axis=0*, *index\_constructors=None
 
     ```
 
-FrameGO.relabel\_shift\_out(*depth\_level*, */*, *\**, *axis=0*)[](#static_frame.FrameGO.relabel_shift_out "Link to this definition")
+FrameGO.relabel\_shift\_out(*depth\_level*, *\**, *axis=0*)[](#static_frame.FrameGO.relabel_shift_out "Link to this definition")
 :   Shift values from an index on an axis to the Frame by providing one or more depth level selections.
 
     Parameters:
@@ -2938,7 +2938,7 @@ FrameGO.relabel\_shift\_out(*depth\_level*, */*, *\**, *axis=0*)[](#static_fr
 
     ```
 
-FrameGO.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *columns=<object object>*)[](#static_frame.FrameGO.rename "Link to this definition")
+FrameGO.rename(*name=<object object>*, *\**, *index=<object object>*, *columns=<object object>*)[](#static_frame.FrameGO.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute. Optionally update the name attribute of `index` and `columns`.
 
     ```
@@ -3023,7 +3023,7 @@ FrameGO.sample(*index=None*, *columns=None*, *\**, *seed=None*)[](#static_fra
 
     ```
 
-FrameGO.set\_columns(*index*, */*, *\**, *drop=False*, *columns\_constructor=None*)[](#static_frame.FrameGO.set_columns "Link to this definition")
+FrameGO.set\_columns(*index*, *\**, *drop=False*, *columns\_constructor=None*)[](#static_frame.FrameGO.set_columns "Link to this definition")
 :   Return a new [`Frame`](frame-selector.md#Frame "Frame") produced by setting the given row as the columns, optionally removing that row from the new [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
@@ -3054,7 +3054,7 @@ FrameGO.set\_columns(*index*, */*, *\**, *drop=False*, *columns\_constructor=Non
 
     ```
 
-FrameGO.set\_columns\_hierarchy(*index*, */*, *\**, *drop=False*, *columns\_constructors=None*, *reorder\_for\_hierarchy=False*)[](#static_frame.FrameGO.set_columns_hierarchy "Link to this definition")
+FrameGO.set\_columns\_hierarchy(*index*, *\**, *drop=False*, *columns\_constructors=None*, *reorder\_for\_hierarchy=False*)[](#static_frame.FrameGO.set_columns_hierarchy "Link to this definition")
 :   Given an iterable of index labels, return a new `Frame` with those rows as an `IndexHierarchy` on the columns.
 
     Parameters:
@@ -3088,7 +3088,7 @@ FrameGO.set\_columns\_hierarchy(*index*, */*, *\**, *drop=False*, *columns\_cons
 
     ```
 
-FrameGO.set\_index(*column*, */*, *\**, *drop=False*, *index\_constructor=None*)[](#static_frame.FrameGO.set_index "Link to this definition")
+FrameGO.set\_index(*column*, *\**, *drop=False*, *index\_constructor=None*)[](#static_frame.FrameGO.set_index "Link to this definition")
 :   Return a new [`Frame`](frame-selector.md#Frame "Frame") produced by setting the given column as the index, optionally removing that column from the new [`Frame`](frame-selector.md#Frame "Frame").
 
     Parameters:
@@ -3120,7 +3120,7 @@ FrameGO.set\_index(*column*, */*, *\**, *drop=False*, *index\_constructor=None*)
 
     ```
 
-FrameGO.set\_index\_hierarchy(*columns*, */*, *\**, *drop=False*, *index\_constructors=None*, *reorder\_for\_hierarchy=False*)[](#static_frame.FrameGO.set_index_hierarchy "Link to this definition")
+FrameGO.set\_index\_hierarchy(*columns*, *\**, *drop=False*, *index\_constructors=None*, *reorder\_for\_hierarchy=False*)[](#static_frame.FrameGO.set_index_hierarchy "Link to this definition")
 :   Given an iterable of column labels, return a new `Frame` with those columns as an `IndexHierarchy` on the index.
 
     Parameters:
@@ -3243,7 +3243,7 @@ FrameGO.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[]
 
     ```
 
-FrameGO.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='mergesort'*, *key=None*)[](#static_frame.FrameGO.sort_values "Link to this definition")
+FrameGO.sort\_values(*label*, *\**, *ascending=True*, *axis=1*, *kind='mergesort'*, *key=None*)[](#static_frame.FrameGO.sort_values "Link to this definition")
 :   Return a new [`Frame`](frame-selector.md#Frame "Frame") ordered by the sorted values, where values are given by single column or iterable of columns.
 
     Parameters:
@@ -3286,7 +3286,7 @@ FrameGO.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='merg
 
     ```
 
-FrameGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.FrameGO.std "Link to this definition")
+FrameGO.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.FrameGO.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -3312,7 +3312,7 @@ FrameGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_fr
 
     ```
 
-FrameGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.FrameGO.sum "Link to this definition")
+FrameGO.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.FrameGO.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -3338,7 +3338,7 @@ FrameGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_f
 
     ```
 
-FrameGO.tail(*count=5*, */*)[](#static_frame.FrameGO.tail "Link to this definition")
+FrameGO.tail(*count=5*)[](#static_frame.FrameGO.tail "Link to this definition")
 :   Return a [`Frame`](frame-selector.md#Frame "Frame") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -3432,7 +3432,7 @@ FrameGO.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[](#stati
 
     ```
 
-FrameGO.unset\_columns(*names=()*, */*, *\**, *drop=False*, *index\_constructors=None*)[](#static_frame.FrameGO.unset_columns "Link to this definition")
+FrameGO.unset\_columns(*\**, *names=()*, *drop=False*, *index\_constructors=None*)[](#static_frame.FrameGO.unset_columns "Link to this definition")
 :   Return a new [`Frame`](frame-selector.md#Frame "Frame") where columns are added to the top of the data, and an [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") is used to populate new columns. This operation potentially forces a complete copy of all data.
 
     Parameters:
@@ -3492,7 +3492,7 @@ FrameGO.unset\_index(*\**, *names=()*, *drop=False*, *consolidate\_blocks=False*
 
     ```
 
-FrameGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.FrameGO.var "Link to this definition")
+FrameGO.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.FrameGO.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

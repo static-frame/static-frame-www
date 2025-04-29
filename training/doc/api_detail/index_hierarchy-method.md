@@ -252,7 +252,7 @@ IndexHierarchy.\_\_len\_\_()[[source]](../_modules/static_frame/core/index_hiera
 
     ```
 
-IndexHierarchy.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.all "Link to this definition")
+IndexHierarchy.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -268,11 +268,11 @@ IndexHierarchy.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
     False                             True   False
     <bool>                            <bool> <bool>
     >>> ih.all()
-    NotImplementedError('<function ufunc_all at 0x1082480e0> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function ufunc_all at 0x7f765f46eca0> for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchy.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.any "Link to this definition")
+IndexHierarchy.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -288,7 +288,7 @@ IndexHierarchy.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
     False                             True   False
     <bool>                            <bool> <bool>
     >>> ih.any()
-    NotImplementedError('<function ufunc_any at 0x108248180> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function ufunc_any at 0x7f765f46ed40> for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 
@@ -329,7 +329,7 @@ IndexHierarchy.astype(*dtype*, *\**, *consolidate\_blocks*)
         Parameters:
         :   **dtype** – A value suitable for specyfying a NumPy dtype, such as a Python type (float), NumPy array protocol strings (‘f8’), or a dtype instance.
 
-    InterfaceIndexHierarchyAsType.\_\_call\_\_(*dtype*, */*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceIndexHierarchyAsType.__call__)
+    InterfaceIndexHierarchyAsType.\_\_call\_\_(*dtype*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceIndexHierarchyAsType.__call__)
     :   Apply a single `dtype` to all columns.
 
     ```
@@ -369,7 +369,7 @@ IndexHierarchy.copy()[[source]](../_modules/static_frame/core/index_hierarchy.md
 
     ```
 
-IndexHierarchy.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHierarchy.cumprod "Link to this definition")
+IndexHierarchy.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexHierarchy.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -385,11 +385,11 @@ IndexHierarchy.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHi
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.cumprod()
-    NotImplementedError('<function cumprod at 0x1032e3ba0> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function cumprod at 0x7f769c690900> for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchy.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHierarchy.cumsum "Link to this definition")
+IndexHierarchy.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexHierarchy.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -405,7 +405,7 @@ IndexHierarchy.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHie
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.cumsum()
-    NotImplementedError('<function cumsum at 0x1032e3420> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function cumsum at 0x7f769c690180> for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 
@@ -480,7 +480,7 @@ IndexHierarchy.dropna(*\**, *condition=<function all>*)[[source]](../_modules/st
 
     ```
 
-IndexHierarchy.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.equals)[](#static_frame.IndexHierarchy.equals "Link to this definition")
+IndexHierarchy.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.equals)[](#static_frame.IndexHierarchy.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -508,7 +508,7 @@ IndexHierarchy.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype
 
     ```
 
-IndexHierarchy.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.fillfalsy)[](#static_frame.IndexHierarchy.fillfalsy "Link to this definition")
+IndexHierarchy.fillfalsy(*value*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.fillfalsy)[](#static_frame.IndexHierarchy.fillfalsy "Link to this definition")
 :   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after replacing falsy values with the supplied value.
 
     Parameters:
@@ -531,7 +531,7 @@ IndexHierarchy.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/i
 
     ```
 
-IndexHierarchy.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.fillna)[](#static_frame.IndexHierarchy.fillna "Link to this definition")
+IndexHierarchy.fillna(*value*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.fillna)[](#static_frame.IndexHierarchy.fillna "Link to this definition")
 :   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after replacing NA (NaN or None) with the supplied value.
 
     Parameters:
@@ -574,7 +574,7 @@ IndexHierarchy.flat()[[source]](../_modules/static_frame/core/index_hierarchy.md
 
     ```
 
-IndexHierarchy.head(*count=5*, */*)[](#static_frame.IndexHierarchy.head "Link to this definition")
+IndexHierarchy.head(*count=5*)[](#static_frame.IndexHierarchy.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -599,7 +599,7 @@ IndexHierarchy.head(*count=5*, */*)[](#static_frame.IndexHierarchy.head "Link
 
     ```
 
-IndexHierarchy.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.iloc_searchsorted)[](#static_frame.IndexHierarchy.iloc_searchsorted "Link to this definition")
+IndexHierarchy.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.iloc_searchsorted)[](#static_frame.IndexHierarchy.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -622,7 +622,7 @@ IndexHierarchy.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[sourc
 
     ```
 
-IndexHierarchy.index\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.index_at_depth)[](#static_frame.IndexHierarchy.index_at_depth "Link to this definition")
+IndexHierarchy.index\_at\_depth(*depth\_level=0*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.index_at_depth)[](#static_frame.IndexHierarchy.index_at_depth "Link to this definition")
 :   Return an index, or a tuple of indices for the `depth_level` specified.
 
     Parameters:
@@ -653,7 +653,7 @@ IndexHierarchy.index\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/sta
 
     ```
 
-IndexHierarchy.indexer\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.indexer_at_depth)[](#static_frame.IndexHierarchy.indexer_at_depth "Link to this definition")
+IndexHierarchy.indexer\_at\_depth(*depth\_level=0*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.indexer_at_depth)[](#static_frame.IndexHierarchy.indexer_at_depth "Link to this definition")
 :   Return the indexers for the `depth_level` specified.
     Array will 2D if multiple depths are selected.
 
@@ -712,7 +712,7 @@ IndexHierarchy.isfalsy()[](#static_frame.IndexHierarchy.isfalsy "Link to this
 
     ```
 
-IndexHierarchy.isin(*other*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.isin)[](#static_frame.IndexHierarchy.isin "Link to this definition")
+IndexHierarchy.isin(*other*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.isin)[](#static_frame.IndexHierarchy.isin "Link to this definition")
 :   Return a Boolean array showing True where one or more of the passed in iterable of labels is found in the index.
 
     ```
@@ -743,7 +743,7 @@ IndexHierarchy.isna()[](#static_frame.IndexHierarchy.isna "Link to this defin
 
     ```
 
-IndexHierarchy.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.label_widths_at_depth)[](#static_frame.IndexHierarchy.label_widths_at_depth "Link to this definition")
+IndexHierarchy.label\_widths\_at\_depth(*depth\_level=0*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.label_widths_at_depth)[](#static_frame.IndexHierarchy.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -767,7 +767,7 @@ IndexHierarchy.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_mod
 
     ```
 
-IndexHierarchy.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.level_add)[](#static_frame.IndexHierarchy.level_add "Link to this definition")
+IndexHierarchy.level\_add(*level*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.level_add)[](#static_frame.IndexHierarchy.level_add "Link to this definition")
 :   Return an IndexHierarchy with a new root (outer) level added.
 
     ```
@@ -787,7 +787,7 @@ IndexHierarchy.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source
 
     ```
 
-IndexHierarchy.level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.level_drop)[](#static_frame.IndexHierarchy.level_drop "Link to this definition")
+IndexHierarchy.level\_drop(*count=1*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.level_drop)[](#static_frame.IndexHierarchy.level_drop "Link to this definition")
 :   Return an IndexHierarchy with one or more leaf levels removed.
 
     Parameters:
@@ -810,7 +810,7 @@ IndexHierarchy.level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/co
 
     ```
 
-IndexHierarchy.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.loc_searchsorted)[](#static_frame.IndexHierarchy.loc_searchsorted "Link to this definition")
+IndexHierarchy.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.loc_searchsorted)[](#static_frame.IndexHierarchy.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -834,7 +834,7 @@ IndexHierarchy.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_
 
     ```
 
-IndexHierarchy.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.loc_to_iloc)[](#static_frame.IndexHierarchy.loc_to_iloc "Link to this definition")
+IndexHierarchy.loc\_to\_iloc(*key*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.loc_to_iloc)[](#static_frame.IndexHierarchy.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, an HLoc object, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -858,7 +858,7 @@ IndexHierarchy.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core
 
     ```
 
-IndexHierarchy.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.max "Link to this definition")
+IndexHierarchy.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -878,7 +878,7 @@ IndexHierarchy.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexHierarchy.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.mean "Link to this definition")
+IndexHierarchy.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -894,11 +894,11 @@ IndexHierarchy.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fram
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.mean()
-    NotImplementedError('<function mean at 0x1032e8180> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function mean at 0x7f769c690ea0> for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchy.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.median "Link to this definition")
+IndexHierarchy.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -914,11 +914,11 @@ IndexHierarchy.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fr
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.median()
-    NotImplementedError('<function median at 0x102abb4c0> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function median at 0x7f7673efb6a0> for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchy.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.min "Link to this definition")
+IndexHierarchy.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchy.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -962,7 +962,7 @@ IndexHierarchy.notna()[](#static_frame.IndexHierarchy.notna "Link to this def
 
     ```
 
-IndexHierarchy.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexHierarchy.prod "Link to this definition")
+IndexHierarchy.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexHierarchy.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -978,7 +978,7 @@ IndexHierarchy.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.prod()
-    NotImplementedError('<function prod at 0x1032e3a60> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function prod at 0x7f769c6907c0> for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 
@@ -1026,7 +1026,7 @@ IndexHierarchy.relabel(*mapper*)[[source]](../_modules/static_frame/core/index_h
 
     ```
 
-IndexHierarchy.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.relabel_at_depth)[](#static_frame.IndexHierarchy.relabel_at_depth "Link to this definition")
+IndexHierarchy.relabel\_at\_depth(*mapper*, *depth\_level=0*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.relabel_at_depth)[](#static_frame.IndexHierarchy.relabel_at_depth "Link to this definition")
 :   Return a new [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after applying mapper to a level or each individual level specified by depth\_level.
 
     mapper can be a callable, mapping, or iterable.
@@ -1070,7 +1070,7 @@ IndexHierarchy.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[[source
 
     ```
 
-IndexHierarchy.rename(*name*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.rename)[](#static_frame.IndexHierarchy.rename "Link to this definition")
+IndexHierarchy.rename(*name*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.rename)[](#static_frame.IndexHierarchy.rename "Link to this definition")
 :   Return a new IndexHierarchy with an updated name attribute.
 
     ```
@@ -1178,7 +1178,7 @@ IndexHierarchy.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[sou
 
     ```
 
-IndexHierarchy.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHierarchy.std "Link to this definition")
+IndexHierarchy.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHierarchy.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -1194,11 +1194,11 @@ IndexHierarchy.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#st
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.std()
-    NotImplementedError('functools.partial(<function std at 0x1032e7bb0>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('functools.partial(<function std at 0x7f769c695f70>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchy.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexHierarchy.sum "Link to this definition")
+IndexHierarchy.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexHierarchy.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -1214,11 +1214,11 @@ IndexHierarchy.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#s
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.sum()
-    NotImplementedError('<function sum at 0x1032e2d40> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function sum at 0x7f769c69fa60> for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchy.tail(*count=5*, */*)[](#static_frame.IndexHierarchy.tail "Link to this definition")
+IndexHierarchy.tail(*count=5*)[](#static_frame.IndexHierarchy.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1270,7 +1270,7 @@ IndexHierarchy.union(*\*others*)[[source]](../_modules/static_frame/core/index_h
 
     ```
 
-IndexHierarchy.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.unique)[](#static_frame.IndexHierarchy.unique "Link to this definition")
+IndexHierarchy.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.unique)[](#static_frame.IndexHierarchy.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1293,7 +1293,7 @@ IndexHierarchy.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*
 
     ```
 
-IndexHierarchy.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.values_at_depth)[](#static_frame.IndexHierarchy.values_at_depth "Link to this definition")
+IndexHierarchy.values\_at\_depth(*depth\_level=0*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.values_at_depth)[](#static_frame.IndexHierarchy.values_at_depth "Link to this definition")
 :   Return an NP array for the `depth_level` specified.
 
     Parameters:
@@ -1314,7 +1314,7 @@ IndexHierarchy.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/st
 
     ```
 
-IndexHierarchy.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHierarchy.var "Link to this definition")
+IndexHierarchy.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHierarchy.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:
@@ -1330,7 +1330,7 @@ IndexHierarchy.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#st
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.var()
-    NotImplementedError('functools.partial(<function var at 0x1032e7f30>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('functools.partial(<function var at 0x7f769c695db0>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
 
     ```
 

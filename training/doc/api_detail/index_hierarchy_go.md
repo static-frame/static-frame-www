@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexHierarchyGO](../api_overview/index_hierarchy_go.md#api-overview-indexhierarchygo)
 
-*class* IndexHierarchyGO(*indices*, */*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchyGO)[](#static_frame.IndexHierarchyGO "Link to this definition")
+*class* IndexHierarchyGO(*indices*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchyGO)[](#static_frame.IndexHierarchyGO "Link to this definition")
 :   A hierarchy of [`static_frame.Index`](index.md#static_frame.Index "static_frame.Index") objects that permits mutation only in the addition of new hierarchies or labels.
 
 * [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor): Alternative constructors for creating instances.

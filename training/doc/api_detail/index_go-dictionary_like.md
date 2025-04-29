@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexGO: Dictionary-Like](../api_overview/index_go-dictionary_like.md#api-overview-indexgo-dictionary-like)
 
-IndexGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexGO.__contains__ "Link to this definition")
+IndexGO.\_\_contains\_\_(*value*)[](#static_frame.IndexGO.__contains__ "Link to this definition")
 :   Return True if value in the labels.
 
     ```

@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexYearMonth: Dictionary-Like](../api_overview/index_year_month-dictionary_like.md#api-overview-indexyearmonth-dictionary-like)
 
-IndexYearMonth.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexYearMonth.__contains__ "Link to this definition")
+IndexYearMonth.\_\_contains\_\_(*value*)[](#static_frame.IndexYearMonth.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```

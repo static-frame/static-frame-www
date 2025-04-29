@@ -170,7 +170,7 @@ IndexHierarchyGO.interface[](#IndexHierarchyGO.interface "Link to this defini
     from_values_per_depth(values, *, ... IndexHierarchyGO Constructor          Construct an Inde...
     to_frame()                           IndexHierarchyGO Exporter             Return Frame vers...
     to_frame_go()                        IndexHierarchyGO Exporter             Return a FrameGO ...
-    to_html(config, *, style_config)     IndexHierarchyGO Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexHierarchyGO Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexHierarchyGO Exporter             Return a complete...
     to_pandas()                          IndexHierarchyGO Exporter             Return a Pandas M...
     to_tree()                            IndexHierarchyGO Exporter             Returns the tree ...
@@ -179,22 +179,22 @@ IndexHierarchyGO.interface[](#IndexHierarchyGO.interface "Link to this defini
     ...                                  ...              ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexHierarchyGO Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexHierarchyGO Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHierarchyGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexHierarchyGO Accessor Hashlib
     via_type_clinic.to_hint()            IndexHierarchyGO Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexHierarchyGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexHierarchyGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexHierarchyGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexHierarchyGO Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U16>           <<U27>               <<U83>
+    <<U90>                               <<U16>           <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexHierarchyGO.\_\_str\_\_()[](#static_frame.IndexHierarchyGO.__str__ "Link
 
     ```
 
-IndexHierarchyGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexHierarchyGO.display "Link to this definition")
+IndexHierarchyGO.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexHierarchyGO.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexHierarchyGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#s
 
     ```
 
-IndexHierarchyGO.display\_tall(*config=None*, */*)[](#static_frame.IndexHierarchyGO.display_tall "Link to this definition")
+IndexHierarchyGO.display\_tall(*config=None*)[](#static_frame.IndexHierarchyGO.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexHierarchyGO.display\_tall(*config=None*, */*)[](#static_frame.IndexHiera
 
     ```
 
-IndexHierarchyGO.display\_wide(*config=None*, */*)[](#static_frame.IndexHierarchyGO.display_wide "Link to this definition")
+IndexHierarchyGO.display\_wide(*config=None*)[](#static_frame.IndexHierarchyGO.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

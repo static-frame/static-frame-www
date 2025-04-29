@@ -144,7 +144,7 @@ API Detail
 
 [Overview: FrameHE: Operator Binary](../api_overview/frame_he-operator_binary.md#api-overview-framehe-operator-binary)
 
-FrameHE.\_\_add\_\_(*other*, */*)[](#static_frame.FrameHE.__add__ "Link to this definition")
+FrameHE.\_\_add\_\_(*other*)[](#static_frame.FrameHE.__add__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -185,7 +185,7 @@ FrameHE.\_\_add\_\_(*other*, */*)[](#static_frame.FrameHE.__add__ "Link to th
 
     ```
 
-FrameHE.\_\_and\_\_(*other*, */*)[](#static_frame.FrameHE.__and__ "Link to this definition")
+FrameHE.\_\_and\_\_(*other*)[](#static_frame.FrameHE.__and__ "Link to this definition")
 :   ```
     >>> f = sf.FrameHE.from_fields(((False, True, True), (True, True, False)), columns=('a', 'b'), index=('p', 'q', 'r'), name='x')
     >>> f
@@ -244,7 +244,7 @@ FrameHE.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/frame.md#Fra
 
     ```
 
-FrameHE.\_\_floordiv\_\_(*other*, */*)[](#static_frame.FrameHE.__floordiv__ "Link to this definition")
+FrameHE.\_\_floordiv\_\_(*other*)[](#static_frame.FrameHE.__floordiv__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -285,7 +285,7 @@ FrameHE.\_\_floordiv\_\_(*other*, */*)[](#static_frame.FrameHE.__floordiv__ "
 
     ```
 
-FrameHE.\_\_ge\_\_(*other*, */*)[](#static_frame.FrameHE.__ge__ "Link to this definition")
+FrameHE.\_\_ge\_\_(*other*)[](#static_frame.FrameHE.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -328,7 +328,7 @@ FrameHE.\_\_ge\_\_(*other*, */*)[](#static_frame.FrameHE.__ge__ "Link to this
 
     ```
 
-FrameHE.\_\_gt\_\_(*other*, */*)[](#static_frame.FrameHE.__gt__ "Link to this definition")
+FrameHE.\_\_gt\_\_(*other*)[](#static_frame.FrameHE.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -371,7 +371,7 @@ FrameHE.\_\_gt\_\_(*other*, */*)[](#static_frame.FrameHE.__gt__ "Link to this
 
     ```
 
-FrameHE.\_\_le\_\_(*other*, */*)[](#static_frame.FrameHE.__le__ "Link to this definition")
+FrameHE.\_\_le\_\_(*other*)[](#static_frame.FrameHE.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -414,7 +414,7 @@ FrameHE.\_\_le\_\_(*other*, */*)[](#static_frame.FrameHE.__le__ "Link to this
 
     ```
 
-FrameHE.\_\_lt\_\_(*other*, */*)[](#static_frame.FrameHE.__lt__ "Link to this definition")
+FrameHE.\_\_lt\_\_(*other*)[](#static_frame.FrameHE.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -457,7 +457,7 @@ FrameHE.\_\_lt\_\_(*other*, */*)[](#static_frame.FrameHE.__lt__ "Link to this
 
     ```
 
-FrameHE.\_\_matmul\_\_(*other*, */*)[](#static_frame.FrameHE.__matmul__ "Link to this definition")
+FrameHE.\_\_matmul\_\_(*other*)[](#static_frame.FrameHE.__matmul__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -490,7 +490,7 @@ FrameHE.\_\_matmul\_\_(*other*, */*)[](#static_frame.FrameHE.__matmul__ "Link
 
     ```
 
-FrameHE.\_\_mod\_\_(*other*, */*)[](#static_frame.FrameHE.__mod__ "Link to this definition")
+FrameHE.\_\_mod\_\_(*other*)[](#static_frame.FrameHE.__mod__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -531,7 +531,7 @@ FrameHE.\_\_mod\_\_(*other*, */*)[](#static_frame.FrameHE.__mod__ "Link to th
 
     ```
 
-FrameHE.\_\_mul\_\_(*other*, */*)[](#static_frame.FrameHE.__mul__ "Link to this definition")
+FrameHE.\_\_mul\_\_(*other*)[](#static_frame.FrameHE.__mul__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -601,7 +601,7 @@ FrameHE.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/frame.md#Fra
 
     ```
 
-FrameHE.\_\_or\_\_(*other*, */*)[](#static_frame.FrameHE.__or__ "Link to this definition")
+FrameHE.\_\_or\_\_(*other*)[](#static_frame.FrameHE.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -633,7 +633,7 @@ FrameHE.\_\_or\_\_(*other*, */*)[](#static_frame.FrameHE.__or__ "Link to this
 
     ```
 
-FrameHE.\_\_pow\_\_(*other*, */*)[](#static_frame.FrameHE.__pow__ "Link to this definition")
+FrameHE.\_\_pow\_\_(*other*)[](#static_frame.FrameHE.__pow__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -674,7 +674,7 @@ FrameHE.\_\_pow\_\_(*other*, */*)[](#static_frame.FrameHE.__pow__ "Link to th
 
     ```
 
-FrameHE.\_\_radd\_\_(*other*, */*)[](#static_frame.FrameHE.__radd__ "Link to this definition")
+FrameHE.\_\_radd\_\_(*other*)[](#static_frame.FrameHE.__radd__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -706,7 +706,7 @@ FrameHE.\_\_radd\_\_(*other*, */*)[](#static_frame.FrameHE.__radd__ "Link to 
 
     ```
 
-FrameHE.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.FrameHE.__rfloordiv__ "Link to this definition")
+FrameHE.\_\_rfloordiv\_\_(*other*)[](#static_frame.FrameHE.__rfloordiv__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -738,7 +738,7 @@ FrameHE.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.FrameHE.__rfloordiv__
 
     ```
 
-FrameHE.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.FrameHE.__rmatmul__ "Link to this definition")
+FrameHE.\_\_rmatmul\_\_(*other*)[](#static_frame.FrameHE.__rmatmul__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -771,7 +771,7 @@ FrameHE.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.FrameHE.__rmatmul__ "Li
 
     ```
 
-FrameHE.\_\_rmul\_\_(*other*, */*)[](#static_frame.FrameHE.__rmul__ "Link to this definition")
+FrameHE.\_\_rmul\_\_(*other*)[](#static_frame.FrameHE.__rmul__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -803,7 +803,7 @@ FrameHE.\_\_rmul\_\_(*other*, */*)[](#static_frame.FrameHE.__rmul__ "Link to 
 
     ```
 
-FrameHE.\_\_rshift\_\_(*other*, */*)[](#static_frame.FrameHE.__rshift__ "Link to this definition")
+FrameHE.\_\_rshift\_\_(*other*)[](#static_frame.FrameHE.__rshift__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -827,7 +827,7 @@ FrameHE.\_\_rshift\_\_(*other*, */*)[](#static_frame.FrameHE.__rshift__ "Link
 
     ```
 
-FrameHE.\_\_rsub\_\_(*other*, */*)[](#static_frame.FrameHE.__rsub__ "Link to this definition")
+FrameHE.\_\_rsub\_\_(*other*)[](#static_frame.FrameHE.__rsub__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -859,7 +859,7 @@ FrameHE.\_\_rsub\_\_(*other*, */*)[](#static_frame.FrameHE.__rsub__ "Link to 
 
     ```
 
-FrameHE.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.FrameHE.__rtruediv__ "Link to this definition")
+FrameHE.\_\_rtruediv\_\_(*other*)[](#static_frame.FrameHE.__rtruediv__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -891,7 +891,7 @@ FrameHE.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.FrameHE.__rtruediv__ "
 
     ```
 
-FrameHE.\_\_sub\_\_(*other*, */*)[](#static_frame.FrameHE.__sub__ "Link to this definition")
+FrameHE.\_\_sub\_\_(*other*)[](#static_frame.FrameHE.__sub__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -932,7 +932,7 @@ FrameHE.\_\_sub\_\_(*other*, */*)[](#static_frame.FrameHE.__sub__ "Link to th
 
     ```
 
-FrameHE.\_\_truediv\_\_(*other*, */*)[](#static_frame.FrameHE.__truediv__ "Link to this definition")
+FrameHE.\_\_truediv\_\_(*other*)[](#static_frame.FrameHE.__truediv__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -973,7 +973,7 @@ FrameHE.\_\_truediv\_\_(*other*, */*)[](#static_frame.FrameHE.__truediv__ "Li
 
     ```
 
-FrameHE.\_\_xor\_\_(*other*, */*)[](#static_frame.FrameHE.__xor__ "Link to this definition")
+FrameHE.\_\_xor\_\_(*other*)[](#static_frame.FrameHE.__xor__ "Link to this definition")
 :   ```
     >>> f = sf.FrameHE.from_fields(((False, True, True), (True, True, False)), columns=('a', 'b'), index=('p', 'q', 'r'), name='x')
     >>> f

@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexNanosecondGO: Constructor](../api_overview/index_nanosecond_go-constructor.md#api-overview-indexnanosecondgo-constructor)
 
-IndexNanosecondGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexNanosecondGO.__init__ "Link to this definition")
+IndexNanosecondGO.\_\_init\_\_(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexNanosecondGO.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -161,7 +161,7 @@ IndexNanosecondGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name
 
     ```
 
-*classmethod* IndexNanosecondGO.from\_labels(*labels*, */*, *\**, *name=None*)[](#static_frame.IndexNanosecondGO.from_labels "Link to this definition")
+*classmethod* IndexNanosecondGO.from\_labels(*labels*, *\**, *name=None*)[](#static_frame.IndexNanosecondGO.from_labels "Link to this definition")
 :   Construct an `Index` from an iterable of labels, where each label is a hashable. Provided for a compatible interface to `IndexHierarchy`.
 
     ```
@@ -174,7 +174,7 @@ IndexNanosecondGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name
 
     ```
 
-*classmethod* IndexNanosecondGO.from\_pandas(*value*, */*)[](#static_frame.IndexNanosecondGO.from_pandas "Link to this definition")
+*classmethod* IndexNanosecondGO.from\_pandas(*value*)[](#static_frame.IndexNanosecondGO.from_pandas "Link to this definition")
 :   Given a Pandas index, return the appropriate IndexBase derived class.
 
     ```

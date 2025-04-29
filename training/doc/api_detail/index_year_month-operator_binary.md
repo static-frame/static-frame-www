@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexYearMonth: Operator Binary](../api_overview/index_year_month-operator_binary.md#api-overview-indexyearmonth-operator-binary)
 
-IndexYearMonth.\_\_add\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__add__ "Link to this definition")
+IndexYearMonth.\_\_add\_\_(*other*)[](#static_frame.IndexYearMonth.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -158,7 +158,7 @@ IndexYearMonth.\_\_add\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__add
 
     ```
 
-IndexYearMonth.\_\_and\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__and__ "Link to this definition")
+IndexYearMonth.\_\_and\_\_(*other*)[](#static_frame.IndexYearMonth.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -174,7 +174,7 @@ IndexYearMonth.\_\_and\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__and
 
     ```
 
-IndexYearMonth.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__eq__ "Link to this definition")
+IndexYearMonth.\_\_eq\_\_(*other*)[](#static_frame.IndexYearMonth.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -190,7 +190,7 @@ IndexYearMonth.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__eq__
 
     ```
 
-IndexYearMonth.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__floordiv__ "Link to this definition")
+IndexYearMonth.\_\_floordiv\_\_(*other*)[](#static_frame.IndexYearMonth.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -204,7 +204,7 @@ IndexYearMonth.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexYearMonth.
 
     ```
 
-IndexYearMonth.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__ge__ "Link to this definition")
+IndexYearMonth.\_\_ge\_\_(*other*)[](#static_frame.IndexYearMonth.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -220,7 +220,7 @@ IndexYearMonth.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__ge__
 
     ```
 
-IndexYearMonth.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__gt__ "Link to this definition")
+IndexYearMonth.\_\_gt\_\_(*other*)[](#static_frame.IndexYearMonth.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -236,7 +236,7 @@ IndexYearMonth.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__gt__
 
     ```
 
-IndexYearMonth.\_\_le\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__le__ "Link to this definition")
+IndexYearMonth.\_\_le\_\_(*other*)[](#static_frame.IndexYearMonth.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -252,7 +252,7 @@ IndexYearMonth.\_\_le\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__le__
 
     ```
 
-IndexYearMonth.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__lt__ "Link to this definition")
+IndexYearMonth.\_\_lt\_\_(*other*)[](#static_frame.IndexYearMonth.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -268,7 +268,7 @@ IndexYearMonth.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__lt__
 
     ```
 
-IndexYearMonth.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__matmul__ "Link to this definition")
+IndexYearMonth.\_\_matmul\_\_(*other*)[](#static_frame.IndexYearMonth.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -282,7 +282,7 @@ IndexYearMonth.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__
 
     ```
 
-IndexYearMonth.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__mod__ "Link to this definition")
+IndexYearMonth.\_\_mod\_\_(*other*)[](#static_frame.IndexYearMonth.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -296,7 +296,7 @@ IndexYearMonth.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__mod
 
     ```
 
-IndexYearMonth.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__mul__ "Link to this definition")
+IndexYearMonth.\_\_mul\_\_(*other*)[](#static_frame.IndexYearMonth.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -310,7 +310,7 @@ IndexYearMonth.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__mul
 
     ```
 
-IndexYearMonth.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__ne__ "Link to this definition")
+IndexYearMonth.\_\_ne\_\_(*other*)[](#static_frame.IndexYearMonth.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -326,7 +326,7 @@ IndexYearMonth.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__ne__
 
     ```
 
-IndexYearMonth.\_\_or\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__or__ "Link to this definition")
+IndexYearMonth.\_\_or\_\_(*other*)[](#static_frame.IndexYearMonth.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -344,7 +344,7 @@ IndexYearMonth.\_\_or\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__or__
 
     ```
 
-IndexYearMonth.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__pow__ "Link to this definition")
+IndexYearMonth.\_\_pow\_\_(*other*)[](#static_frame.IndexYearMonth.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -358,7 +358,7 @@ IndexYearMonth.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__pow
 
     ```
 
-IndexYearMonth.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__radd__ "Link to this definition")
+IndexYearMonth.\_\_radd\_\_(*other*)[](#static_frame.IndexYearMonth.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -372,7 +372,7 @@ IndexYearMonth.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__ra
 
     ```
 
-IndexYearMonth.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__rfloordiv__ "Link to this definition")
+IndexYearMonth.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexYearMonth.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -386,7 +386,7 @@ IndexYearMonth.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexYearMonth
 
     ```
 
-IndexYearMonth.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__rmatmul__ "Link to this definition")
+IndexYearMonth.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexYearMonth.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -400,7 +400,7 @@ IndexYearMonth.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexYearMonth._
 
     ```
 
-IndexYearMonth.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__rmul__ "Link to this definition")
+IndexYearMonth.\_\_rmul\_\_(*other*)[](#static_frame.IndexYearMonth.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -414,7 +414,7 @@ IndexYearMonth.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__rm
 
     ```
 
-IndexYearMonth.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__rshift__ "Link to this definition")
+IndexYearMonth.\_\_rshift\_\_(*other*)[](#static_frame.IndexYearMonth.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -428,7 +428,7 @@ IndexYearMonth.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__
 
     ```
 
-IndexYearMonth.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__rsub__ "Link to this definition")
+IndexYearMonth.\_\_rsub\_\_(*other*)[](#static_frame.IndexYearMonth.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -442,7 +442,7 @@ IndexYearMonth.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__rs
 
     ```
 
-IndexYearMonth.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__rtruediv__ "Link to this definition")
+IndexYearMonth.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexYearMonth.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -456,7 +456,7 @@ IndexYearMonth.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexYearMonth.
 
     ```
 
-IndexYearMonth.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__sub__ "Link to this definition")
+IndexYearMonth.\_\_sub\_\_(*other*)[](#static_frame.IndexYearMonth.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -470,7 +470,7 @@ IndexYearMonth.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__sub
 
     ```
 
-IndexYearMonth.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__truediv__ "Link to this definition")
+IndexYearMonth.\_\_truediv\_\_(*other*)[](#static_frame.IndexYearMonth.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix
@@ -484,7 +484,7 @@ IndexYearMonth.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexYearMonth._
 
     ```
 
-IndexYearMonth.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexYearMonth.__xor__ "Link to this definition")
+IndexYearMonth.\_\_xor\_\_(*other*)[](#static_frame.IndexYearMonth.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
     >>> ix

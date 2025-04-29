@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexSecond: Operator Binary](../api_overview/index_second-operator_binary.md#api-overview-indexsecond-operator-binary)
 
-IndexSecond.\_\_add\_\_(*other*, */*)[](#static_frame.IndexSecond.__add__ "Link to this definition")
+IndexSecond.\_\_add\_\_(*other*)[](#static_frame.IndexSecond.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -158,7 +158,7 @@ IndexSecond.\_\_add\_\_(*other*, */*)[](#static_frame.IndexSecond.__add__ "Li
 
     ```
 
-IndexSecond.\_\_and\_\_(*other*, */*)[](#static_frame.IndexSecond.__and__ "Link to this definition")
+IndexSecond.\_\_and\_\_(*other*)[](#static_frame.IndexSecond.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -174,7 +174,7 @@ IndexSecond.\_\_and\_\_(*other*, */*)[](#static_frame.IndexSecond.__and__ "Li
 
     ```
 
-IndexSecond.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexSecond.__eq__ "Link to this definition")
+IndexSecond.\_\_eq\_\_(*other*)[](#static_frame.IndexSecond.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -190,7 +190,7 @@ IndexSecond.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexSecond.__eq__ "Link
 
     ```
 
-IndexSecond.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexSecond.__floordiv__ "Link to this definition")
+IndexSecond.\_\_floordiv\_\_(*other*)[](#static_frame.IndexSecond.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -204,7 +204,7 @@ IndexSecond.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexSecond.__floo
 
     ```
 
-IndexSecond.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexSecond.__ge__ "Link to this definition")
+IndexSecond.\_\_ge\_\_(*other*)[](#static_frame.IndexSecond.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -220,7 +220,7 @@ IndexSecond.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexSecond.__ge__ "Link
 
     ```
 
-IndexSecond.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexSecond.__gt__ "Link to this definition")
+IndexSecond.\_\_gt\_\_(*other*)[](#static_frame.IndexSecond.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -236,7 +236,7 @@ IndexSecond.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexSecond.__gt__ "Link
 
     ```
 
-IndexSecond.\_\_le\_\_(*other*, */*)[](#static_frame.IndexSecond.__le__ "Link to this definition")
+IndexSecond.\_\_le\_\_(*other*)[](#static_frame.IndexSecond.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -252,7 +252,7 @@ IndexSecond.\_\_le\_\_(*other*, */*)[](#static_frame.IndexSecond.__le__ "Link
 
     ```
 
-IndexSecond.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexSecond.__lt__ "Link to this definition")
+IndexSecond.\_\_lt\_\_(*other*)[](#static_frame.IndexSecond.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -268,7 +268,7 @@ IndexSecond.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexSecond.__lt__ "Link
 
     ```
 
-IndexSecond.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexSecond.__matmul__ "Link to this definition")
+IndexSecond.\_\_matmul\_\_(*other*)[](#static_frame.IndexSecond.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -282,7 +282,7 @@ IndexSecond.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexSecond.__matmul
 
     ```
 
-IndexSecond.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexSecond.__mod__ "Link to this definition")
+IndexSecond.\_\_mod\_\_(*other*)[](#static_frame.IndexSecond.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -296,7 +296,7 @@ IndexSecond.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexSecond.__mod__ "Li
 
     ```
 
-IndexSecond.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexSecond.__mul__ "Link to this definition")
+IndexSecond.\_\_mul\_\_(*other*)[](#static_frame.IndexSecond.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -310,7 +310,7 @@ IndexSecond.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexSecond.__mul__ "Li
 
     ```
 
-IndexSecond.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexSecond.__ne__ "Link to this definition")
+IndexSecond.\_\_ne\_\_(*other*)[](#static_frame.IndexSecond.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -326,7 +326,7 @@ IndexSecond.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexSecond.__ne__ "Link
 
     ```
 
-IndexSecond.\_\_or\_\_(*other*, */*)[](#static_frame.IndexSecond.__or__ "Link to this definition")
+IndexSecond.\_\_or\_\_(*other*)[](#static_frame.IndexSecond.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -344,7 +344,7 @@ IndexSecond.\_\_or\_\_(*other*, */*)[](#static_frame.IndexSecond.__or__ "Link
 
     ```
 
-IndexSecond.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexSecond.__pow__ "Link to this definition")
+IndexSecond.\_\_pow\_\_(*other*)[](#static_frame.IndexSecond.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -358,7 +358,7 @@ IndexSecond.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexSecond.__pow__ "Li
 
     ```
 
-IndexSecond.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexSecond.__radd__ "Link to this definition")
+IndexSecond.\_\_radd\_\_(*other*)[](#static_frame.IndexSecond.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -372,7 +372,7 @@ IndexSecond.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexSecond.__radd__ "
 
     ```
 
-IndexSecond.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexSecond.__rfloordiv__ "Link to this definition")
+IndexSecond.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexSecond.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -386,7 +386,7 @@ IndexSecond.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexSecond.__rfl
 
     ```
 
-IndexSecond.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexSecond.__rmatmul__ "Link to this definition")
+IndexSecond.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexSecond.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -400,7 +400,7 @@ IndexSecond.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexSecond.__rmatm
 
     ```
 
-IndexSecond.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexSecond.__rmul__ "Link to this definition")
+IndexSecond.\_\_rmul\_\_(*other*)[](#static_frame.IndexSecond.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -414,7 +414,7 @@ IndexSecond.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexSecond.__rmul__ "
 
     ```
 
-IndexSecond.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexSecond.__rshift__ "Link to this definition")
+IndexSecond.\_\_rshift\_\_(*other*)[](#static_frame.IndexSecond.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -428,7 +428,7 @@ IndexSecond.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexSecond.__rshift
 
     ```
 
-IndexSecond.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexSecond.__rsub__ "Link to this definition")
+IndexSecond.\_\_rsub\_\_(*other*)[](#static_frame.IndexSecond.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -442,7 +442,7 @@ IndexSecond.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexSecond.__rsub__ "
 
     ```
 
-IndexSecond.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexSecond.__rtruediv__ "Link to this definition")
+IndexSecond.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexSecond.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -456,7 +456,7 @@ IndexSecond.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexSecond.__rtru
 
     ```
 
-IndexSecond.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexSecond.__sub__ "Link to this definition")
+IndexSecond.\_\_sub\_\_(*other*)[](#static_frame.IndexSecond.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -470,7 +470,7 @@ IndexSecond.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexSecond.__sub__ "Li
 
     ```
 
-IndexSecond.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexSecond.__truediv__ "Link to this definition")
+IndexSecond.\_\_truediv\_\_(*other*)[](#static_frame.IndexSecond.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -484,7 +484,7 @@ IndexSecond.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexSecond.__trued
 
     ```
 
-IndexSecond.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexSecond.__xor__ "Link to this definition")
+IndexSecond.\_\_xor\_\_(*other*)[](#static_frame.IndexSecond.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexSecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix

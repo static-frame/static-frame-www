@@ -148,7 +148,7 @@ Batch.via\_T.via\_fill\_value(*fill\_value*)
 :   Batch.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceBatchTranspose.via\_fill\_value(*fill\_value*, */*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.via_fill_value)
+    InterfaceBatchTranspose.via\_fill\_value(*fill\_value*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceBatchTranspose.via_fill_value)
     :   Interface for using binary operators and methods with a pre-defined fill value.
 
     ```

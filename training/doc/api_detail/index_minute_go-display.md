@@ -162,7 +162,7 @@ IndexMinuteGO.interface[](#IndexMinuteGO.interface "Link to this definition")
     __init__(labels, *, loc_is_iloc, ... IndexMinuteGO Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexMinuteGO Constructor          Construct an Inde...
     from_pandas(value)                   IndexMinuteGO Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexMinuteGO Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexMinuteGO Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexMinuteGO Exporter             Return a complete...
     to_pandas()                          IndexMinuteGO Exporter             Return a Pandas I...
     to_series()                          IndexMinuteGO Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexMinuteGO.interface[](#IndexMinuteGO.interface "Link to this definition")
     ...                                  ...           ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexMinuteGO Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexMinuteGO Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMinuteGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexMinuteGO Accessor Hashlib
     via_type_clinic.to_hint()            IndexMinuteGO Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexMinuteGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexMinuteGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexMinuteGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexMinuteGO Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U13>        <<U27>               <<U83>
+    <<U90>                               <<U13>        <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexMinuteGO.\_\_str\_\_()[](#static_frame.IndexMinuteGO.__str__ "Link to th
 
     ```
 
-IndexMinuteGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexMinuteGO.display "Link to this definition")
+IndexMinuteGO.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexMinuteGO.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexMinuteGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#stat
 
     ```
 
-IndexMinuteGO.display\_tall(*config=None*, */*)[](#static_frame.IndexMinuteGO.display_tall "Link to this definition")
+IndexMinuteGO.display\_tall(*config=None*)[](#static_frame.IndexMinuteGO.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexMinuteGO.display\_tall(*config=None*, */*)[](#static_frame.IndexMinuteGO
 
     ```
 
-IndexMinuteGO.display\_wide(*config=None*, */*)[](#static_frame.IndexMinuteGO.display_wide "Link to this definition")
+IndexMinuteGO.display\_wide(*config=None*)[](#static_frame.IndexMinuteGO.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

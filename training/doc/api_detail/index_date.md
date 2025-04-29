@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexDate](../api_overview/index_date.md#api-overview-indexdate)
 
-*class* IndexDate(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexDate)[](#static_frame.IndexDate "Link to this definition")
+*class* IndexDate(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexDate)[](#static_frame.IndexDate "Link to this definition")
 :   A mapping of dates (NumPy `datetime64[D]`) to positions, immutable and of fixed size.
 
 * [Constructor](index_date-constructor.md#api-detail-indexdate-constructor): Alternative constructors for creating instances.

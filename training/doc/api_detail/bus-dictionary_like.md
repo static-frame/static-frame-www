@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Bus: Dictionary-Like](../api_overview/bus-dictionary_like.md#api-overview-bus-dictionary-like)
 
-Bus.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.__contains__)[](#static_frame.Bus.__contains__ "Link to this definition")
+Bus.\_\_contains\_\_(*value*)[[source]](../_modules/static_frame/core/bus.md#Bus.__contains__)[](#static_frame.Bus.__contains__ "Link to this definition")
 :   Inclusion of value in index labels.
 
     Returns:

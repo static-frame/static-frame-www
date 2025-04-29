@@ -252,7 +252,7 @@ IndexHierarchyGO.\_\_len\_\_()[](#static_frame.IndexHierarchyGO.__len__ "Link
 
     ```
 
-IndexHierarchyGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.all "Link to this definition")
+IndexHierarchyGO.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -268,11 +268,11 @@ IndexHierarchyGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fra
     False                               True   False
     <bool>                              <bool> <bool>
     >>> ih.all()
-    NotImplementedError('<function ufunc_all at 0x1082480e0> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function ufunc_all at 0x7f765f46eca0> for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchyGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.any "Link to this definition")
+IndexHierarchyGO.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -288,7 +288,7 @@ IndexHierarchyGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fra
     False                               True   False
     <bool>                              <bool> <bool>
     >>> ih.any()
-    NotImplementedError('<function ufunc_any at 0x108248180> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function ufunc_any at 0x7f765f46ed40> for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 
@@ -353,7 +353,7 @@ IndexHierarchyGO.astype(*dtype*, *\**, *consolidate\_blocks*)
         Parameters:
         :   **dtype** – A value suitable for specyfying a NumPy dtype, such as a Python type (float), NumPy array protocol strings (‘f8’), or a dtype instance.
 
-    InterfaceIndexHierarchyAsType.\_\_call\_\_(*dtype*, */*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceIndexHierarchyAsType.__call__)
+    InterfaceIndexHierarchyAsType.\_\_call\_\_(*dtype*, *\**, *consolidate\_blocks=False*)[[source]](../_modules/static_frame/core/node_selector.md#InterfaceIndexHierarchyAsType.__call__)
     :   Apply a single `dtype` to all columns.
 
     ```
@@ -393,7 +393,7 @@ IndexHierarchyGO.copy()[](#static_frame.IndexHierarchyGO.copy "Link to this d
 
     ```
 
-IndexHierarchyGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHierarchyGO.cumprod "Link to this definition")
+IndexHierarchyGO.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexHierarchyGO.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -409,11 +409,11 @@ IndexHierarchyGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.Index
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.cumprod()
-    NotImplementedError('<function cumprod at 0x1032e3ba0> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function cumprod at 0x7f769c690900> for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchyGO.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHierarchyGO.cumsum "Link to this definition")
+IndexHierarchyGO.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexHierarchyGO.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -429,7 +429,7 @@ IndexHierarchyGO.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexH
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.cumsum()
-    NotImplementedError('<function cumsum at 0x1032e3420> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function cumsum at 0x7f769c690180> for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 
@@ -504,7 +504,7 @@ IndexHierarchyGO.dropna(*\**, *condition=<function all>*)[](#static_frame.Ind
 
     ```
 
-IndexHierarchyGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexHierarchyGO.equals "Link to this definition")
+IndexHierarchyGO.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexHierarchyGO.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -565,7 +565,7 @@ IndexHierarchyGO.extend(*other*)[[source]](../_modules/static_frame/core/index_h
 
     ```
 
-IndexHierarchyGO.fillfalsy(*value*, */*)[](#static_frame.IndexHierarchyGO.fillfalsy "Link to this definition")
+IndexHierarchyGO.fillfalsy(*value*)[](#static_frame.IndexHierarchyGO.fillfalsy "Link to this definition")
 :   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after replacing falsy values with the supplied value.
 
     Parameters:
@@ -588,7 +588,7 @@ IndexHierarchyGO.fillfalsy(*value*, */*)[](#static_frame.IndexHierarchyGO.fil
 
     ```
 
-IndexHierarchyGO.fillna(*value*, */*)[](#static_frame.IndexHierarchyGO.fillna "Link to this definition")
+IndexHierarchyGO.fillna(*value*)[](#static_frame.IndexHierarchyGO.fillna "Link to this definition")
 :   Return an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after replacing NA (NaN or None) with the supplied value.
 
     Parameters:
@@ -631,7 +631,7 @@ IndexHierarchyGO.flat()[](#static_frame.IndexHierarchyGO.flat "Link to this d
 
     ```
 
-IndexHierarchyGO.head(*count=5*, */*)[](#static_frame.IndexHierarchyGO.head "Link to this definition")
+IndexHierarchyGO.head(*count=5*)[](#static_frame.IndexHierarchyGO.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -656,7 +656,7 @@ IndexHierarchyGO.head(*count=5*, */*)[](#static_frame.IndexHierarchyGO.head "
 
     ```
 
-IndexHierarchyGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexHierarchyGO.iloc_searchsorted "Link to this definition")
+IndexHierarchyGO.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexHierarchyGO.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -679,7 +679,7 @@ IndexHierarchyGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[]
 
     ```
 
-IndexHierarchyGO.index\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHierarchyGO.index_at_depth "Link to this definition")
+IndexHierarchyGO.index\_at\_depth(*depth\_level=0*)[](#static_frame.IndexHierarchyGO.index_at_depth "Link to this definition")
 :   Return an index, or a tuple of indices for the `depth_level` specified.
 
     Parameters:
@@ -710,7 +710,7 @@ IndexHierarchyGO.index\_at\_depth(*depth\_level=0*, */*)[](#static_frame.Inde
 
     ```
 
-IndexHierarchyGO.indexer\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHierarchyGO.indexer_at_depth "Link to this definition")
+IndexHierarchyGO.indexer\_at\_depth(*depth\_level=0*)[](#static_frame.IndexHierarchyGO.indexer_at_depth "Link to this definition")
 :   Return the indexers for the `depth_level` specified.
     Array will 2D if multiple depths are selected.
 
@@ -769,7 +769,7 @@ IndexHierarchyGO.isfalsy()[](#static_frame.IndexHierarchyGO.isfalsy "Link to 
 
     ```
 
-IndexHierarchyGO.isin(*other*, */*)[](#static_frame.IndexHierarchyGO.isin "Link to this definition")
+IndexHierarchyGO.isin(*other*)[](#static_frame.IndexHierarchyGO.isin "Link to this definition")
 :   Return a Boolean array showing True where one or more of the passed in iterable of labels is found in the index.
 
     ```
@@ -800,7 +800,7 @@ IndexHierarchyGO.isna()[](#static_frame.IndexHierarchyGO.isna "Link to this d
 
     ```
 
-IndexHierarchyGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHierarchyGO.label_widths_at_depth "Link to this definition")
+IndexHierarchyGO.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexHierarchyGO.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -824,7 +824,7 @@ IndexHierarchyGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_fr
 
     ```
 
-IndexHierarchyGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexHierarchyGO.level_add "Link to this definition")
+IndexHierarchyGO.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexHierarchyGO.level_add "Link to this definition")
 :   Return an IndexHierarchy with a new root (outer) level added.
 
     ```
@@ -844,7 +844,7 @@ IndexHierarchyGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](
 
     ```
 
-IndexHierarchyGO.level\_drop(*count=1*, */*)[](#static_frame.IndexHierarchyGO.level_drop "Link to this definition")
+IndexHierarchyGO.level\_drop(*count=1*)[](#static_frame.IndexHierarchyGO.level_drop "Link to this definition")
 :   Return an IndexHierarchy with one or more leaf levels removed.
 
     Parameters:
@@ -867,7 +867,7 @@ IndexHierarchyGO.level\_drop(*count=1*, */*)[](#static_frame.IndexHierarchyGO
 
     ```
 
-IndexHierarchyGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexHierarchyGO.loc_searchsorted "Link to this definition")
+IndexHierarchyGO.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexHierarchyGO.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -891,7 +891,7 @@ IndexHierarchyGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill
 
     ```
 
-IndexHierarchyGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexHierarchyGO.loc_to_iloc "Link to this definition")
+IndexHierarchyGO.loc\_to\_iloc(*key*)[](#static_frame.IndexHierarchyGO.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, an HLoc object, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -915,7 +915,7 @@ IndexHierarchyGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexHierarchyGO.l
 
     ```
 
-IndexHierarchyGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.max "Link to this definition")
+IndexHierarchyGO.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -935,7 +935,7 @@ IndexHierarchyGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fra
 
     ```
 
-IndexHierarchyGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.mean "Link to this definition")
+IndexHierarchyGO.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -951,11 +951,11 @@ IndexHierarchyGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fr
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.mean()
-    NotImplementedError('<function mean at 0x1032e8180> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function mean at 0x7f769c690ea0> for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchyGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.median "Link to this definition")
+IndexHierarchyGO.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -971,11 +971,11 @@ IndexHierarchyGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.median()
-    NotImplementedError('<function median at 0x102abb4c0> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function median at 0x7f7673efb6a0> for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchyGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.min "Link to this definition")
+IndexHierarchyGO.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHierarchyGO.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -1019,7 +1019,7 @@ IndexHierarchyGO.notna()[](#static_frame.IndexHierarchyGO.notna "Link to this
 
     ```
 
-IndexHierarchyGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexHierarchyGO.prod "Link to this definition")
+IndexHierarchyGO.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexHierarchyGO.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -1035,7 +1035,7 @@ IndexHierarchyGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[]
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.prod()
-    NotImplementedError('<function prod at 0x1032e3a60> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function prod at 0x7f769c6907c0> for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 
@@ -1083,7 +1083,7 @@ IndexHierarchyGO.relabel(*mapper*)[](#static_frame.IndexHierarchyGO.relabel "
 
     ```
 
-IndexHierarchyGO.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[](#static_frame.IndexHierarchyGO.relabel_at_depth "Link to this definition")
+IndexHierarchyGO.relabel\_at\_depth(*mapper*, *depth\_level=0*)[](#static_frame.IndexHierarchyGO.relabel_at_depth "Link to this definition")
 :   Return a new [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy") after applying mapper to a level or each individual level specified by depth\_level.
 
     mapper can be a callable, mapping, or iterable.
@@ -1127,7 +1127,7 @@ IndexHierarchyGO.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[](
 
     ```
 
-IndexHierarchyGO.rename(*name*, */*)[](#static_frame.IndexHierarchyGO.rename "Link to this definition")
+IndexHierarchyGO.rename(*name*)[](#static_frame.IndexHierarchyGO.rename "Link to this definition")
 :   Return a new IndexHierarchy with an updated name attribute.
 
     ```
@@ -1235,7 +1235,7 @@ IndexHierarchyGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[�
 
     ```
 
-IndexHierarchyGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHierarchyGO.std "Link to this definition")
+IndexHierarchyGO.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHierarchyGO.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -1251,11 +1251,11 @@ IndexHierarchyGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.std()
-    NotImplementedError('functools.partial(<function std at 0x1032e7bb0>, ddof=0) for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('functools.partial(<function std at 0x7f769c695f70>, ddof=0) for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchyGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexHierarchyGO.sum "Link to this definition")
+IndexHierarchyGO.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexHierarchyGO.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -1271,11 +1271,11 @@ IndexHierarchyGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.sum()
-    NotImplementedError('<function sum at 0x1032e2d40> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function sum at 0x7f769c69fa60> for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 
-IndexHierarchyGO.tail(*count=5*, */*)[](#static_frame.IndexHierarchyGO.tail "Link to this definition")
+IndexHierarchyGO.tail(*count=5*)[](#static_frame.IndexHierarchyGO.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1327,7 +1327,7 @@ IndexHierarchyGO.union(*\*others*)[](#static_frame.IndexHierarchyGO.union "Li
 
     ```
 
-IndexHierarchyGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexHierarchyGO.unique "Link to this definition")
+IndexHierarchyGO.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexHierarchyGO.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1350,7 +1350,7 @@ IndexHierarchyGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=Fals
 
     ```
 
-IndexHierarchyGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHierarchyGO.values_at_depth "Link to this definition")
+IndexHierarchyGO.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexHierarchyGO.values_at_depth "Link to this definition")
 :   Return an NP array for the `depth_level` specified.
 
     Parameters:
@@ -1371,7 +1371,7 @@ IndexHierarchyGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.Ind
 
     ```
 
-IndexHierarchyGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHierarchyGO.var "Link to this definition")
+IndexHierarchyGO.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHierarchyGO.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:
@@ -1387,7 +1387,7 @@ IndexHierarchyGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.var()
-    NotImplementedError('functools.partial(<function var at 0x1032e7f30>, ddof=0) for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('functools.partial(<function var at 0x7f769c695db0>, ddof=0) for IndexHierarchyGO is not defined; convert to `Frame`.')
 
     ```
 

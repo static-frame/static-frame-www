@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexMillisecondGO](../api_overview/index_millisecond_go.md#api-overview-indexmillisecondgo)
 
-*class* IndexMillisecondGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexMillisecondGO)[](#static_frame.IndexMillisecondGO "Link to this definition")
+*class* IndexMillisecondGO(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexMillisecondGO)[](#static_frame.IndexMillisecondGO "Link to this definition")
 
 * [Constructor](index_millisecond_go-constructor.md#api-detail-indexmillisecondgo-constructor): Alternative constructors for creating instances.
 * [Exporter](index_millisecond_go-exporter.md#api-detail-indexmillisecondgo-exporter): Methods for transforming, exporting, or serializing objects.

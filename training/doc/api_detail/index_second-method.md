@@ -246,7 +246,7 @@ IndexSecond.\_\_len\_\_()[](#static_frame.IndexSecond.__len__ "Link to this d
 
     ```
 
-IndexSecond.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.all "Link to this definition")
+IndexSecond.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -266,7 +266,7 @@ IndexSecond.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexSecond.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.any "Link to this definition")
+IndexSecond.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -286,7 +286,7 @@ IndexSecond.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexSecond.astype(*dtype*, */*)[](#static_frame.IndexSecond.astype "Link to this definition")
+IndexSecond.astype(*dtype*)[](#static_frame.IndexSecond.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -329,7 +329,7 @@ IndexSecond.copy()[](#static_frame.IndexSecond.copy "Link to this definition"
 
     ```
 
-IndexSecond.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexSecond.cumprod "Link to this definition")
+IndexSecond.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexSecond.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -349,7 +349,7 @@ IndexSecond.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexSecon
 
     ```
 
-IndexSecond.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexSecond.cumsum "Link to this definition")
+IndexSecond.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexSecond.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -434,7 +434,7 @@ IndexSecond.dropna()[](#static_frame.IndexSecond.dropna "Link to this definit
 
     ```
 
-IndexSecond.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexSecond.equals "Link to this definition")
+IndexSecond.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexSecond.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -463,7 +463,7 @@ IndexSecond.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fa
 
     ```
 
-IndexSecond.fillfalsy(*value*, */*)[](#static_frame.IndexSecond.fillfalsy "Link to this definition")
+IndexSecond.fillfalsy(*value*)[](#static_frame.IndexSecond.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -482,7 +482,7 @@ IndexSecond.fillfalsy(*value*, */*)[](#static_frame.IndexSecond.fillfalsy "Li
 
     ```
 
-IndexSecond.fillna(*value*, */*)[](#static_frame.IndexSecond.fillna "Link to this definition")
+IndexSecond.fillna(*value*)[](#static_frame.IndexSecond.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -505,7 +505,7 @@ IndexSecond.fillna(*value*, */*)[](#static_frame.IndexSecond.fillna "Link to 
 
     ```
 
-IndexSecond.head(*count=5*, */*)[](#static_frame.IndexSecond.head "Link to this definition")
+IndexSecond.head(*count=5*)[](#static_frame.IndexSecond.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -527,7 +527,7 @@ IndexSecond.head(*count=5*, */*)[](#static_frame.IndexSecond.head "Link to th
 
     ```
 
-IndexSecond.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexSecond.iloc_searchsorted "Link to this definition")
+IndexSecond.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexSecond.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -581,7 +581,7 @@ IndexSecond.isfalsy()[](#static_frame.IndexSecond.isfalsy "Link to this defin
 
     ```
 
-IndexSecond.isin(*other*, */*)[](#static_frame.IndexSecond.isin "Link to this definition")
+IndexSecond.isin(*other*)[](#static_frame.IndexSecond.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -607,7 +607,7 @@ IndexSecond.isna()[](#static_frame.IndexSecond.isna "Link to this definition"
 
     ```
 
-IndexSecond.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexSecond.label_widths_at_depth "Link to this definition")
+IndexSecond.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexSecond.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -626,7 +626,7 @@ IndexSecond.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.I
 
     ```
 
-IndexSecond.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexSecond.level_add "Link to this definition")
+IndexSecond.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexSecond.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -651,7 +651,7 @@ IndexSecond.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#stat
 
     ```
 
-IndexSecond.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexSecond.loc_searchsorted "Link to this definition")
+IndexSecond.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexSecond.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -672,7 +672,7 @@ IndexSecond.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_val
 
     ```
 
-IndexSecond.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexSecond.loc_to_iloc "Link to this definition")
+IndexSecond.loc\_to\_iloc(*key*)[](#static_frame.IndexSecond.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -695,7 +695,7 @@ IndexSecond.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexSecond.loc_to_iloc
 
     ```
 
-IndexSecond.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.max "Link to this definition")
+IndexSecond.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -715,7 +715,7 @@ IndexSecond.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexSecond.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.mean "Link to this definition")
+IndexSecond.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -735,7 +735,7 @@ IndexSecond.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.I
 
     ```
 
-IndexSecond.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.median "Link to this definition")
+IndexSecond.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -755,7 +755,7 @@ IndexSecond.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexSecond.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.min "Link to this definition")
+IndexSecond.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecond.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -795,7 +795,7 @@ IndexSecond.notna()[](#static_frame.IndexSecond.notna "Link to this definitio
 
     ```
 
-IndexSecond.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexSecond.prod "Link to this definition")
+IndexSecond.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexSecond.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -815,7 +815,7 @@ IndexSecond.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#sta
 
     ```
 
-IndexSecond.relabel(*mapper*, */*)[](#static_frame.IndexSecond.relabel "Link to this definition")
+IndexSecond.relabel(*mapper*)[](#static_frame.IndexSecond.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -835,7 +835,7 @@ IndexSecond.relabel(*mapper*, */*)[](#static_frame.IndexSecond.relabel "Link 
 
     ```
 
-IndexSecond.rename(*name*, */*)[](#static_frame.IndexSecond.rename "Link to this definition")
+IndexSecond.rename(*name*)[](#static_frame.IndexSecond.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -898,7 +898,7 @@ IndexSecond.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexSecond.
 
     ```
 
-IndexSecond.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexSecond.sort "Link to this definition")
+IndexSecond.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexSecond.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -929,7 +929,7 @@ IndexSecond.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#s
 
     ```
 
-IndexSecond.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexSecond.std "Link to this definition")
+IndexSecond.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexSecond.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -949,7 +949,7 @@ IndexSecond.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#stati
 
     ```
 
-IndexSecond.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexSecond.sum "Link to this definition")
+IndexSecond.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexSecond.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -969,7 +969,7 @@ IndexSecond.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#stat
 
     ```
 
-IndexSecond.tail(*count=5*, */*)[](#static_frame.IndexSecond.tail "Link to this definition")
+IndexSecond.tail(*count=5*)[](#static_frame.IndexSecond.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1021,7 +1021,7 @@ IndexSecond.union(*\*others*)[](#static_frame.IndexSecond.union "Link to this
 
     ```
 
-IndexSecond.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexSecond.unique "Link to this definition")
+IndexSecond.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexSecond.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1044,7 +1044,7 @@ IndexSecond.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[�
 
     ```
 
-IndexSecond.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexSecond.values_at_depth "Link to this definition")
+IndexSecond.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexSecond.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1060,7 +1060,7 @@ IndexSecond.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexSec
 
     ```
 
-IndexSecond.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexSecond.var "Link to this definition")
+IndexSecond.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexSecond.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

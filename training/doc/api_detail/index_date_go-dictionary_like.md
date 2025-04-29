@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexDateGO: Dictionary-Like](../api_overview/index_date_go-dictionary_like.md#api-overview-indexdatego-dictionary-like)
 
-IndexDateGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexDateGO.__contains__ "Link to this definition")
+IndexDateGO.\_\_contains\_\_(*value*)[](#static_frame.IndexDateGO.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```

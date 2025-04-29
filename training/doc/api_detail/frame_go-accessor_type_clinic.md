@@ -162,7 +162,7 @@ FrameGO.via\_type\_clinic.to\_hint
     1                q     3       False  1517-06-30
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> f.via_type_clinic.to_hint()
-    static_frame.core.frame.FrameGO[static_frame.core.index_hierarchy.IndexHierarchy[static_frame.core.index.Index[numpy.int64], static_frame.core.index.Index[numpy.str_]], static_frame.core.index.IndexGO[numpy.str_]]
+    TypeError("Too many arguments for <class 'static_frame.core.frame.FrameGO'>; actual 5, expected 2")
 
     ```
 
@@ -254,7 +254,7 @@ FrameGO.via\_type\_clinic.\_\_repr\_\_
     1                q     3       False  1517-06-30
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> f.via_type_clinic
-    FrameGO[IndexHierarchy[Index[int64], Index[str_]], IndexGO[str_]]
+    TypeError("Too many arguments for <class 'static_frame.core.frame.FrameGO'>; actual 5, expected 2")
 
     ```
 

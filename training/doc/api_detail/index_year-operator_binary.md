@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexYear: Operator Binary](../api_overview/index_year-operator_binary.md#api-overview-indexyear-operator-binary)
 
-IndexYear.\_\_add\_\_(*other*, */*)[](#static_frame.IndexYear.__add__ "Link to this definition")
+IndexYear.\_\_add\_\_(*other*)[](#static_frame.IndexYear.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -158,7 +158,7 @@ IndexYear.\_\_add\_\_(*other*, */*)[](#static_frame.IndexYear.__add__ "Link t
 
     ```
 
-IndexYear.\_\_and\_\_(*other*, */*)[](#static_frame.IndexYear.__and__ "Link to this definition")
+IndexYear.\_\_and\_\_(*other*)[](#static_frame.IndexYear.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -174,7 +174,7 @@ IndexYear.\_\_and\_\_(*other*, */*)[](#static_frame.IndexYear.__and__ "Link t
 
     ```
 
-IndexYear.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexYear.__eq__ "Link to this definition")
+IndexYear.\_\_eq\_\_(*other*)[](#static_frame.IndexYear.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -190,7 +190,7 @@ IndexYear.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexYear.__eq__ "Link to 
 
     ```
 
-IndexYear.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexYear.__floordiv__ "Link to this definition")
+IndexYear.\_\_floordiv\_\_(*other*)[](#static_frame.IndexYear.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -204,7 +204,7 @@ IndexYear.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexYear.__floordiv
 
     ```
 
-IndexYear.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexYear.__ge__ "Link to this definition")
+IndexYear.\_\_ge\_\_(*other*)[](#static_frame.IndexYear.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -220,7 +220,7 @@ IndexYear.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexYear.__ge__ "Link to 
 
     ```
 
-IndexYear.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexYear.__gt__ "Link to this definition")
+IndexYear.\_\_gt\_\_(*other*)[](#static_frame.IndexYear.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -236,7 +236,7 @@ IndexYear.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexYear.__gt__ "Link to 
 
     ```
 
-IndexYear.\_\_le\_\_(*other*, */*)[](#static_frame.IndexYear.__le__ "Link to this definition")
+IndexYear.\_\_le\_\_(*other*)[](#static_frame.IndexYear.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -252,7 +252,7 @@ IndexYear.\_\_le\_\_(*other*, */*)[](#static_frame.IndexYear.__le__ "Link to 
 
     ```
 
-IndexYear.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexYear.__lt__ "Link to this definition")
+IndexYear.\_\_lt\_\_(*other*)[](#static_frame.IndexYear.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -268,7 +268,7 @@ IndexYear.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexYear.__lt__ "Link to 
 
     ```
 
-IndexYear.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexYear.__matmul__ "Link to this definition")
+IndexYear.\_\_matmul\_\_(*other*)[](#static_frame.IndexYear.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -282,7 +282,7 @@ IndexYear.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexYear.__matmul__ "
 
     ```
 
-IndexYear.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexYear.__mod__ "Link to this definition")
+IndexYear.\_\_mod\_\_(*other*)[](#static_frame.IndexYear.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -296,7 +296,7 @@ IndexYear.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexYear.__mod__ "Link t
 
     ```
 
-IndexYear.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexYear.__mul__ "Link to this definition")
+IndexYear.\_\_mul\_\_(*other*)[](#static_frame.IndexYear.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -310,7 +310,7 @@ IndexYear.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexYear.__mul__ "Link t
 
     ```
 
-IndexYear.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexYear.__ne__ "Link to this definition")
+IndexYear.\_\_ne\_\_(*other*)[](#static_frame.IndexYear.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -326,7 +326,7 @@ IndexYear.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexYear.__ne__ "Link to 
 
     ```
 
-IndexYear.\_\_or\_\_(*other*, */*)[](#static_frame.IndexYear.__or__ "Link to this definition")
+IndexYear.\_\_or\_\_(*other*)[](#static_frame.IndexYear.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -344,7 +344,7 @@ IndexYear.\_\_or\_\_(*other*, */*)[](#static_frame.IndexYear.__or__ "Link to 
 
     ```
 
-IndexYear.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexYear.__pow__ "Link to this definition")
+IndexYear.\_\_pow\_\_(*other*)[](#static_frame.IndexYear.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -358,7 +358,7 @@ IndexYear.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexYear.__pow__ "Link t
 
     ```
 
-IndexYear.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexYear.__radd__ "Link to this definition")
+IndexYear.\_\_radd\_\_(*other*)[](#static_frame.IndexYear.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -372,7 +372,7 @@ IndexYear.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexYear.__radd__ "Link
 
     ```
 
-IndexYear.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexYear.__rfloordiv__ "Link to this definition")
+IndexYear.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexYear.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -386,7 +386,7 @@ IndexYear.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexYear.__rfloord
 
     ```
 
-IndexYear.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexYear.__rmatmul__ "Link to this definition")
+IndexYear.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexYear.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -400,7 +400,7 @@ IndexYear.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexYear.__rmatmul__
 
     ```
 
-IndexYear.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexYear.__rmul__ "Link to this definition")
+IndexYear.\_\_rmul\_\_(*other*)[](#static_frame.IndexYear.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -414,7 +414,7 @@ IndexYear.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexYear.__rmul__ "Link
 
     ```
 
-IndexYear.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexYear.__rshift__ "Link to this definition")
+IndexYear.\_\_rshift\_\_(*other*)[](#static_frame.IndexYear.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -428,7 +428,7 @@ IndexYear.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexYear.__rshift__ "
 
     ```
 
-IndexYear.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexYear.__rsub__ "Link to this definition")
+IndexYear.\_\_rsub\_\_(*other*)[](#static_frame.IndexYear.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -442,7 +442,7 @@ IndexYear.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexYear.__rsub__ "Link
 
     ```
 
-IndexYear.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexYear.__rtruediv__ "Link to this definition")
+IndexYear.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexYear.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -456,7 +456,7 @@ IndexYear.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexYear.__rtruediv
 
     ```
 
-IndexYear.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexYear.__sub__ "Link to this definition")
+IndexYear.\_\_sub\_\_(*other*)[](#static_frame.IndexYear.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -470,7 +470,7 @@ IndexYear.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexYear.__sub__ "Link t
 
     ```
 
-IndexYear.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexYear.__truediv__ "Link to this definition")
+IndexYear.\_\_truediv\_\_(*other*)[](#static_frame.IndexYear.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix
@@ -484,7 +484,7 @@ IndexYear.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexYear.__truediv__
 
     ```
 
-IndexYear.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexYear.__xor__ "Link to this definition")
+IndexYear.\_\_xor\_\_(*other*)[](#static_frame.IndexYear.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexYear(('1517', '1520', '1518'))
     >>> ix

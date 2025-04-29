@@ -156,7 +156,9 @@ Batch.interface[](#Batch.interface "Link to this definition")
     <Index>                              cls_name group                doc                  <<U18>
     <Index: signature>
     __init__(items, *, name, config, ... Batch    Constructor          Default construct...
+    from_duckdb(fp, *, config, max_wo... Batch    Constructor          Given a file path...
     from_frames(frames, *, name, conf... Batch    Constructor          Return a Batch fr...
+    from_hdf5(fp, *, config, max_work... Batch    Constructor          Given a file path...
     from_sqlite(fp, *, config, max_wo... Batch    Constructor          Given a file path...
     from_xlsx(fp, *, config, max_work... Batch    Constructor          Given a file path...
     from_zip_csv(fp, *, config, max_w... Batch    Constructor          Given a file path...
@@ -166,21 +168,19 @@ Batch.interface[](#Batch.interface "Link to this definition")
     from_zip_pickle(fp, *, config, ma... Batch    Constructor          Given a file path...
     from_zip_tsv(fp, *, config, max_w... Batch    Constructor          Given a file path...
     to_bus(*, index_constructor)         Batch    Exporter             Realize the Batch...
+    to_duckdb(fp, *, config)             Batch    Exporter             Write the complet...
     to_frame(*, axis, union, index, ...) Batch    Exporter             Consolidate store...
+    to_hdf5(fp, *, config)               Batch    Exporter             Write the complet...
     to_series(*, dtype, name, index_c... Batch    Exporter             Consolidate store...
-    to_sqlite(fp, *, config)             Batch    Exporter             Write the complet...
-    to_visidata()                        Batch    Exporter             Open an interacti...
-    to_xlsx(fp, *, config)               Batch    Exporter             Write the complet...
-    to_zip_csv(fp, *, config, compres... Batch    Exporter             Write the complet...
     ...                                  ...      ...                  ...
-    via_hashlib(*, include_name, incl... Batch    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Batch    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Batch    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Batch    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Batch    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Batch    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Batch    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Batch    Accessor Hashlib
+    via_hashlib(include_name, include... Batch    Accessor Hashlib
+    via_hashlib(include_name, include... Batch    Accessor Hashlib
+    via_hashlib(include_name, include... Batch    Accessor Hashlib
+    via_hashlib(include_name, include... Batch    Accessor Hashlib
+    via_hashlib(include_name, include... Batch    Accessor Hashlib
+    via_hashlib(include_name, include... Batch    Accessor Hashlib
+    via_hashlib(include_name, include... Batch    Accessor Hashlib
+    via_hashlib(include_name, include... Batch    Accessor Hashlib
     via_type_clinic.to_hint()            Batch    Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... Batch    Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... Batch    Accessor Type Clinic Given a hint (a t...
@@ -190,7 +190,7 @@ Batch.interface[](#Batch.interface "Link to this definition")
     reduce.from_map_func(func, *, fil... Batch    Accessor Reduce
     reduce.from_label_map(func_map, *... Batch    Accessor Reduce
     reduce.from_label_pair_map(func_m... Batch    Accessor Reduce
-    <<U93>                               <<U5>    <<U27>               <<U83>
+    <<U90>                               <<U5>    <<U27>               <<U83>
 
     ```
 
@@ -214,7 +214,7 @@ Batch.\_\_str\_\_()[](#static_frame.Batch.__str__ "Link to this definition")
 
     ```
 
-Batch.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.display)[](#static_frame.Batch.display "Link to this definition")
+Batch.display(*config=None*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.display)[](#static_frame.Batch.display "Link to this definition")
 :   Provide a [`Series`](series-selector.md#Series "Series")-style display of the [`Batch`](batch-selector.md#Batch "Batch"). Note that if the held iterator is a generator, this display will exhaust the generator.
 
     ```
@@ -231,7 +231,7 @@ Batch.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modu
 
     ```
 
-Batch.display\_tall(*config=None*, */*)[](#static_frame.Batch.display_tall "Link to this definition")
+Batch.display\_tall(*config=None*)[](#static_frame.Batch.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -248,7 +248,7 @@ Batch.display\_tall(*config=None*, */*)[](#static_frame.Batch.display_tall "L
 
     ```
 
-Batch.display\_wide(*config=None*, */*)[](#static_frame.Batch.display_wide "Link to this definition")
+Batch.display\_wide(*config=None*)[](#static_frame.Batch.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

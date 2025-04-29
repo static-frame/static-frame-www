@@ -148,7 +148,7 @@ Frame.via\_T.via\_fill\_value(*fill\_value*)
 :   Frame.via\_T
     :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
 
-    InterfaceTranspose.via\_fill\_value(*fill\_value*, */*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.via_fill_value)
+    InterfaceTranspose.via\_fill\_value(*fill\_value*)[[source]](../_modules/static_frame/core/node_transpose.md#InterfaceTranspose.via_fill_value)
     :   Interface for using binary operators and methods with a pre-defined fill value.
 
     ```

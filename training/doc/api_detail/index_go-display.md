@@ -163,7 +163,7 @@ IndexGO.interface[](#IndexGO.interface "Link to this definition")
     __init__(labels, *, loc_is_iloc, ... IndexGO  Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexGO  Constructor          Construct an Inde...
     from_pandas(value)                   IndexGO  Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexGO  Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexGO  Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexGO  Exporter             Return a complete...
     to_pandas()                          IndexGO  Exporter             Return a Pandas I...
     to_series()                          IndexGO  Exporter             Return a Series w...
@@ -180,22 +180,22 @@ IndexGO.interface[](#IndexGO.interface "Link to this definition")
     ...                                  ...      ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexGO  Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexGO  Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexGO  Accessor Hashlib
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib
+    via_hashlib(include_name, include... IndexGO  Accessor Hashlib
     via_type_clinic.to_hint()            IndexGO  Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexGO  Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexGO  Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexGO  Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexGO  Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U7>    <<U27>               <<U83>
+    <<U90>                               <<U7>    <<U27>               <<U83>
 
     ```
 
@@ -229,7 +229,7 @@ IndexGO.\_\_str\_\_()[](#static_frame.IndexGO.__str__ "Link to this definitio
 
     ```
 
-IndexGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexGO.display "Link to this definition")
+IndexGO.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexGO.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -252,7 +252,7 @@ IndexGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_fra
 
     ```
 
-IndexGO.display\_tall(*config=None*, */*)[](#static_frame.IndexGO.display_tall "Link to this definition")
+IndexGO.display\_tall(*config=None*)[](#static_frame.IndexGO.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -270,7 +270,7 @@ IndexGO.display\_tall(*config=None*, */*)[](#static_frame.IndexGO.display_tal
 
     ```
 
-IndexGO.display\_wide(*config=None*, */*)[](#static_frame.IndexGO.display_wide "Link to this definition")
+IndexGO.display\_wide(*config=None*)[](#static_frame.IndexGO.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

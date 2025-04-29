@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Index: Constructor](../api_overview/index-constructor.md#api-overview-index-constructor)
 
-Index.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.md#Index.__init__)[](#static_frame.Index.__init__ "Link to this definition")
+Index.\_\_init\_\_(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.md#Index.__init__)[](#static_frame.Index.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -165,7 +165,7 @@ Index.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object obj
 
     ```
 
-*classmethod* Index.from\_labels(*labels*, */*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index.md#Index.from_labels)[](#static_frame.Index.from_labels "Link to this definition")
+*classmethod* Index.from\_labels(*labels*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index.md#Index.from_labels)[](#static_frame.Index.from_labels "Link to this definition")
 :   Construct an `Index` from an iterable of labels, where each label is a hashable. Provided for a compatible interface to `IndexHierarchy`.
 
     ```
@@ -180,7 +180,7 @@ Index.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object obj
 
     ```
 
-*classmethod* Index.from\_pandas(*value*, */*)[](#static_frame.Index.from_pandas "Link to this definition")
+*classmethod* Index.from\_pandas(*value*)[](#static_frame.Index.from_pandas "Link to this definition")
 :   Given a Pandas index, return the appropriate IndexBase derived class.
 
     ```

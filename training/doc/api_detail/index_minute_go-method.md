@@ -246,7 +246,7 @@ IndexMinuteGO.\_\_len\_\_()[](#static_frame.IndexMinuteGO.__len__ "Link to th
 
     ```
 
-IndexMinuteGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.all "Link to this definition")
+IndexMinuteGO.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -266,7 +266,7 @@ IndexMinuteGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.
 
     ```
 
-IndexMinuteGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.any "Link to this definition")
+IndexMinuteGO.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -286,7 +286,7 @@ IndexMinuteGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.
 
     ```
 
-IndexMinuteGO.append(*value*, */*)[](#static_frame.IndexMinuteGO.append "Link to this definition")
+IndexMinuteGO.append(*value*)[](#static_frame.IndexMinuteGO.append "Link to this definition")
 :   Specialize for fixed-typed indices: convert value argument; do not need to resolve\_dtype with each addition; self.\_map is never None
 
     ```
@@ -308,7 +308,7 @@ IndexMinuteGO.append(*value*, */*)[](#static_frame.IndexMinuteGO.append "Link
 
     ```
 
-IndexMinuteGO.astype(*dtype*, */*)[](#static_frame.IndexMinuteGO.astype "Link to this definition")
+IndexMinuteGO.astype(*dtype*)[](#static_frame.IndexMinuteGO.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -351,7 +351,7 @@ IndexMinuteGO.copy()[](#static_frame.IndexMinuteGO.copy "Link to this definit
 
     ```
 
-IndexMinuteGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexMinuteGO.cumprod "Link to this definition")
+IndexMinuteGO.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexMinuteGO.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -371,7 +371,7 @@ IndexMinuteGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexMin
 
     ```
 
-IndexMinuteGO.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexMinuteGO.cumsum "Link to this definition")
+IndexMinuteGO.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexMinuteGO.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -456,7 +456,7 @@ IndexMinuteGO.dropna()[](#static_frame.IndexMinuteGO.dropna "Link to this def
 
     ```
 
-IndexMinuteGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexMinuteGO.equals "Link to this definition")
+IndexMinuteGO.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexMinuteGO.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -485,7 +485,7 @@ IndexMinuteGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=
 
     ```
 
-IndexMinuteGO.extend(*values*, */*)[](#static_frame.IndexMinuteGO.extend "Link to this definition")
+IndexMinuteGO.extend(*values*)[](#static_frame.IndexMinuteGO.extend "Link to this definition")
 :   Append multiple values
     :param values: can be a generator.
 
@@ -517,7 +517,7 @@ IndexMinuteGO.extend(*values*, */*)[](#static_frame.IndexMinuteGO.extend "Lin
 
     ```
 
-IndexMinuteGO.fillfalsy(*value*, */*)[](#static_frame.IndexMinuteGO.fillfalsy "Link to this definition")
+IndexMinuteGO.fillfalsy(*value*)[](#static_frame.IndexMinuteGO.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -536,7 +536,7 @@ IndexMinuteGO.fillfalsy(*value*, */*)[](#static_frame.IndexMinuteGO.fillfalsy
 
     ```
 
-IndexMinuteGO.fillna(*value*, */*)[](#static_frame.IndexMinuteGO.fillna "Link to this definition")
+IndexMinuteGO.fillna(*value*)[](#static_frame.IndexMinuteGO.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -559,7 +559,7 @@ IndexMinuteGO.fillna(*value*, */*)[](#static_frame.IndexMinuteGO.fillna "Link
 
     ```
 
-IndexMinuteGO.head(*count=5*, */*)[](#static_frame.IndexMinuteGO.head "Link to this definition")
+IndexMinuteGO.head(*count=5*)[](#static_frame.IndexMinuteGO.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -581,7 +581,7 @@ IndexMinuteGO.head(*count=5*, */*)[](#static_frame.IndexMinuteGO.head "Link t
 
     ```
 
-IndexMinuteGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexMinuteGO.iloc_searchsorted "Link to this definition")
+IndexMinuteGO.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexMinuteGO.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -635,7 +635,7 @@ IndexMinuteGO.isfalsy()[](#static_frame.IndexMinuteGO.isfalsy "Link to this d
 
     ```
 
-IndexMinuteGO.isin(*other*, */*)[](#static_frame.IndexMinuteGO.isin "Link to this definition")
+IndexMinuteGO.isin(*other*)[](#static_frame.IndexMinuteGO.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -661,7 +661,7 @@ IndexMinuteGO.isna()[](#static_frame.IndexMinuteGO.isna "Link to this definit
 
     ```
 
-IndexMinuteGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexMinuteGO.label_widths_at_depth "Link to this definition")
+IndexMinuteGO.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexMinuteGO.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -680,7 +680,7 @@ IndexMinuteGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame
 
     ```
 
-IndexMinuteGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexMinuteGO.level_add "Link to this definition")
+IndexMinuteGO.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexMinuteGO.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -705,7 +705,7 @@ IndexMinuteGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#st
 
     ```
 
-IndexMinuteGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexMinuteGO.loc_searchsorted "Link to this definition")
+IndexMinuteGO.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexMinuteGO.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -726,7 +726,7 @@ IndexMinuteGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_v
 
     ```
 
-IndexMinuteGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexMinuteGO.loc_to_iloc "Link to this definition")
+IndexMinuteGO.loc\_to\_iloc(*key*)[](#static_frame.IndexMinuteGO.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -749,7 +749,7 @@ IndexMinuteGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexMinuteGO.loc_to_
 
     ```
 
-IndexMinuteGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.max "Link to this definition")
+IndexMinuteGO.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -769,7 +769,7 @@ IndexMinuteGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.
 
     ```
 
-IndexMinuteGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.mean "Link to this definition")
+IndexMinuteGO.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -789,7 +789,7 @@ IndexMinuteGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexMinuteGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.median "Link to this definition")
+IndexMinuteGO.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -809,7 +809,7 @@ IndexMinuteGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fra
 
     ```
 
-IndexMinuteGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.min "Link to this definition")
+IndexMinuteGO.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinuteGO.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -849,7 +849,7 @@ IndexMinuteGO.notna()[](#static_frame.IndexMinuteGO.notna "Link to this defin
 
     ```
 
-IndexMinuteGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexMinuteGO.prod "Link to this definition")
+IndexMinuteGO.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexMinuteGO.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -869,7 +869,7 @@ IndexMinuteGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#s
 
     ```
 
-IndexMinuteGO.relabel(*mapper*, */*)[](#static_frame.IndexMinuteGO.relabel "Link to this definition")
+IndexMinuteGO.relabel(*mapper*)[](#static_frame.IndexMinuteGO.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -885,7 +885,7 @@ IndexMinuteGO.relabel(*mapper*, */*)[](#static_frame.IndexMinuteGO.relabel "L
 
     ```
 
-IndexMinuteGO.rename(*name*, */*)[](#static_frame.IndexMinuteGO.rename "Link to this definition")
+IndexMinuteGO.rename(*name*)[](#static_frame.IndexMinuteGO.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -948,7 +948,7 @@ IndexMinuteGO.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexMinut
 
     ```
 
-IndexMinuteGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexMinuteGO.sort "Link to this definition")
+IndexMinuteGO.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexMinuteGO.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -979,7 +979,7 @@ IndexMinuteGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](
 
     ```
 
-IndexMinuteGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMinuteGO.std "Link to this definition")
+IndexMinuteGO.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMinuteGO.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -999,7 +999,7 @@ IndexMinuteGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#sta
 
     ```
 
-IndexMinuteGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexMinuteGO.sum "Link to this definition")
+IndexMinuteGO.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexMinuteGO.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -1019,7 +1019,7 @@ IndexMinuteGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#st
 
     ```
 
-IndexMinuteGO.tail(*count=5*, */*)[](#static_frame.IndexMinuteGO.tail "Link to this definition")
+IndexMinuteGO.tail(*count=5*)[](#static_frame.IndexMinuteGO.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1071,7 +1071,7 @@ IndexMinuteGO.union(*\*others*)[](#static_frame.IndexMinuteGO.union "Link to 
 
     ```
 
-IndexMinuteGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexMinuteGO.unique "Link to this definition")
+IndexMinuteGO.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexMinuteGO.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1094,7 +1094,7 @@ IndexMinuteGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)
 
     ```
 
-IndexMinuteGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexMinuteGO.values_at_depth "Link to this definition")
+IndexMinuteGO.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexMinuteGO.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1110,7 +1110,7 @@ IndexMinuteGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexM
 
     ```
 
-IndexMinuteGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMinuteGO.var "Link to this definition")
+IndexMinuteGO.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMinuteGO.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

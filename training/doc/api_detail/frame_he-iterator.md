@@ -168,7 +168,7 @@ FrameHE.iter\_array(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_con
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -200,7 +200,7 @@ FrameHE.iter\_array(*\**, *axis).apply\_iter(func*)
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -229,7 +229,7 @@ FrameHE.iter\_array(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -258,7 +258,7 @@ FrameHE.iter\_array(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *inde
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -315,7 +315,7 @@ FrameHE.iter\_array\_items(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *ind
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -347,7 +347,7 @@ FrameHE.iter\_array\_items(*\**, *axis).apply\_iter(func*)
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -376,7 +376,7 @@ FrameHE.iter\_array\_items(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -405,7 +405,7 @@ FrameHE.iter\_array\_items(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -462,7 +462,7 @@ FrameHE.iter\_element(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_c
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateMapable.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -496,7 +496,7 @@ FrameHE.iter\_element(*\**, *axis).apply\_iter(func*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.apply\_iter(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -525,7 +525,7 @@ FrameHE.iter\_element(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -554,7 +554,7 @@ FrameHE.iter\_element(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *in
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateMapable.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -593,7 +593,7 @@ FrameHE.iter\_element(*\**, *axis).map\_all(mapping*, *\**, *dtype*, *name*, *in
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -627,7 +627,7 @@ FrameHE.iter\_element(*\**, *axis).map\_all\_iter(mapping*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -653,7 +653,7 @@ FrameHE.iter\_element(*\**, *axis).map\_all\_iter\_items(mapping*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -679,7 +679,7 @@ FrameHE.iter\_element(*\**, *axis).map\_any(mapping*, *\**, *dtype*, *name*, *in
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -713,7 +713,7 @@ FrameHE.iter\_element(*\**, *axis).map\_any\_iter(mapping*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -739,7 +739,7 @@ FrameHE.iter\_element(*\**, *axis).map\_any\_iter\_items(mapping*)
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -765,7 +765,7 @@ FrameHE.iter\_element(*\**, *axis).map\_fill(mapping*, *\**, *fill\_value*, *dty
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -800,7 +800,7 @@ FrameHE.iter\_element(*\**, *axis).map\_fill\_iter(mapping*, *\**, *fill\_value*
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -827,7 +827,7 @@ FrameHE.iter\_element(*\**, *axis).map\_fill\_iter\_items(mapping*, *\**, *fill\
 :   iter\_element
     :   Iterator of elements, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -874,7 +874,7 @@ FrameHE.iter\_element\_items(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *i
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateMapable.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -908,7 +908,7 @@ FrameHE.iter\_element\_items(*\**, *axis).apply\_iter(func*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.apply\_iter(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -937,7 +937,7 @@ FrameHE.iter\_element\_items(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -966,7 +966,7 @@ FrameHE.iter\_element\_items(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *nam
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateMapable.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -1006,7 +1006,7 @@ FrameHE.iter\_element\_items(*\**, *axis).map\_all(mapping*, *\**, *dtype*, *nam
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -1036,7 +1036,7 @@ FrameHE.iter\_element\_items(*\**, *axis).map\_all\_iter(mapping*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -1060,7 +1060,7 @@ FrameHE.iter\_element\_items(*\**, *axis).map\_all\_iter\_items(mapping*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1084,7 +1084,7 @@ FrameHE.iter\_element\_items(*\**, *axis).map\_any(mapping*, *\**, *dtype*, *nam
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -1114,7 +1114,7 @@ FrameHE.iter\_element\_items(*\**, *axis).map\_any\_iter(mapping*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -1138,7 +1138,7 @@ FrameHE.iter\_element\_items(*\**, *axis).map\_any\_iter\_items(mapping*)
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1162,7 +1162,7 @@ FrameHE.iter\_element\_items(*\**, *axis).map\_fill(mapping*, *\**, *fill\_value
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -1193,7 +1193,7 @@ FrameHE.iter\_element\_items(*\**, *axis).map\_fill\_iter(mapping*, *\**, *fill\
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -1218,7 +1218,7 @@ FrameHE.iter\_element\_items(*\**, *axis).map\_fill\_iter\_items(mapping*, *\**,
 :   iter\_element\_items
     :   Iterator of pairs of label, element, where labels are pairs of index, columns labels, ordered by row then column.
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1273,7 +1273,7 @@ FrameHE.iter\_group(*key*, *\**, *axis*, *drop).apply(func*, *\**, *dtype*, *nam
 :   iter\_group
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -1304,7 +1304,7 @@ FrameHE.iter\_group(*key*, *\**, *axis*, *drop).apply\_iter(func*)
 :   iter\_group
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -1333,7 +1333,7 @@ FrameHE.iter\_group(*key*, *\**, *axis*, *drop).apply\_iter\_items(func*)
 :   iter\_group
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1362,7 +1362,7 @@ FrameHE.iter\_group(*key*, *\**, *axis*, *drop).apply\_pool(func*, *\**, *dtype*
 :   iter\_group
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -1954,7 +1954,7 @@ FrameHE.iter\_group\_array(*key*, *\**, *axis*, *drop).apply(func*, *\**, *dtype
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -1985,7 +1985,7 @@ FrameHE.iter\_group\_array(*key*, *\**, *axis*, *drop).apply\_iter(func*)
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -2014,7 +2014,7 @@ FrameHE.iter\_group\_array(*key*, *\**, *axis*, *drop).apply\_iter\_items(func*)
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -2043,7 +2043,7 @@ FrameHE.iter\_group\_array(*key*, *\**, *axis*, *drop).apply\_pool(func*, *\**, 
 :   iter\_group\_array
     :   Iterator of `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -2571,7 +2571,7 @@ FrameHE.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).apply(func*, *\**,
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -2602,7 +2602,7 @@ FrameHE.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).apply\_iter(func*)
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -2631,7 +2631,7 @@ FrameHE.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).apply\_iter\_items
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -2660,7 +2660,7 @@ FrameHE.iter\_group\_array\_items(*key*, *\**, *axis*, *drop).apply\_pool(func*,
 :   iter\_group\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -3175,7 +3175,7 @@ FrameHE.iter\_group\_items(*key*, *\**, *axis*, *drop).apply(func*, *\**, *dtype
 :   iter\_group\_items
     :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -3206,7 +3206,7 @@ FrameHE.iter\_group\_items(*key*, *\**, *axis*, *drop).apply\_iter(func*)
 :   iter\_group\_items
     :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -3235,7 +3235,7 @@ FrameHE.iter\_group\_items(*key*, *\**, *axis*, *drop).apply\_iter\_items(func*)
 :   iter\_group\_items
     :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -3264,7 +3264,7 @@ FrameHE.iter\_group\_items(*key*, *\**, *axis*, *drop).apply\_pool(func*, *\**, 
 :   iter\_group\_items
     :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in one or more columns (axis=0) or rows (axis=1).
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -3843,7 +3843,7 @@ FrameHE.iter\_group\_labels(*depth\_level*, *\**, *axis).apply(func*, *\**, *dty
 :   iter\_group\_labels
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -3874,7 +3874,7 @@ FrameHE.iter\_group\_labels(*depth\_level*, *\**, *axis).apply\_iter(func*)
 :   iter\_group\_labels
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -3903,7 +3903,7 @@ FrameHE.iter\_group\_labels(*depth\_level*, *\**, *axis).apply\_iter\_items(func
 :   iter\_group\_labels
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -3932,7 +3932,7 @@ FrameHE.iter\_group\_labels(*depth\_level*, *\**, *axis).apply\_pool(func*, *\**
 :   iter\_group\_labels
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -3970,7 +3970,7 @@ FrameHE.iter\_group\_labels\_array(*depth\_level*, *\**, *axis).apply(func*, *\*
 :   iter\_group\_labels\_array
     :   Iterator of `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -4001,7 +4001,7 @@ FrameHE.iter\_group\_labels\_array(*depth\_level*, *\**, *axis).apply\_iter(func
 :   iter\_group\_labels\_array
     :   Iterator of `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -4030,7 +4030,7 @@ FrameHE.iter\_group\_labels\_array(*depth\_level*, *\**, *axis).apply\_iter\_ite
 :   iter\_group\_labels\_array
     :   Iterator of `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -4059,7 +4059,7 @@ FrameHE.iter\_group\_labels\_array(*depth\_level*, *\**, *axis).apply\_pool(func
 :   iter\_group\_labels\_array
     :   Iterator of `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -4097,7 +4097,7 @@ FrameHE.iter\_group\_labels\_array\_items(*depth\_level*, *\**, *axis).apply(fun
 :   iter\_group\_labels\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -4128,7 +4128,7 @@ FrameHE.iter\_group\_labels\_array\_items(*depth\_level*, *\**, *axis).apply\_it
 :   iter\_group\_labels\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -4157,7 +4157,7 @@ FrameHE.iter\_group\_labels\_array\_items(*depth\_level*, *\**, *axis).apply\_it
 :   iter\_group\_labels\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -4186,7 +4186,7 @@ FrameHE.iter\_group\_labels\_array\_items(*depth\_level*, *\**, *axis).apply\_po
 :   iter\_group\_labels\_array\_items
     :   Iterator of pairs of label, `np.ndarray` grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -4232,7 +4232,7 @@ FrameHE.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply(func*, *\*
 :   iter\_group\_labels\_items
     :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -4263,7 +4263,7 @@ FrameHE.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply\_iter(func
 :   iter\_group\_labels\_items
     :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -4292,7 +4292,7 @@ FrameHE.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply\_iter\_ite
 :   iter\_group\_labels\_items
     :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -4321,7 +4321,7 @@ FrameHE.iter\_group\_labels\_items(*depth\_level*, *\**, *axis).apply\_pool(func
 :   iter\_group\_labels\_items
     :   Iterator of pairs of label, [`Frame`](frame-selector.md#Frame "Frame") grouped by unique labels found in one or more index depths (axis=0) or columns depths (axis=1).
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -4367,7 +4367,7 @@ FrameHE.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply(func*, *\*
 :   iter\_group\_other
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -4398,7 +4398,7 @@ FrameHE.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply\_iter(func
 :   iter\_group\_other
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -4427,7 +4427,7 @@ FrameHE.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply\_iter\_ite
 :   iter\_group\_other
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -4456,7 +4456,7 @@ FrameHE.iter\_group\_other(*other*, *\**, *fill\_value*, *axis).apply\_pool(func
 :   iter\_group\_other
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -5059,7 +5059,7 @@ FrameHE.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply(fun
 :   iter\_group\_other\_array
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -5090,7 +5090,7 @@ FrameHE.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply\_it
 :   iter\_group\_other\_array
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -5119,7 +5119,7 @@ FrameHE.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply\_it
 :   iter\_group\_other\_array
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -5148,7 +5148,7 @@ FrameHE.iter\_group\_other\_array(*other*, *\**, *fill\_value*, *axis).apply\_po
 :   iter\_group\_other\_array
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -5661,7 +5661,7 @@ FrameHE.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).ap
 :   iter\_group\_other\_array\_items
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -5692,7 +5692,7 @@ FrameHE.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).ap
 :   iter\_group\_other\_array\_items
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -5721,7 +5721,7 @@ FrameHE.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).ap
 :   iter\_group\_other\_array\_items
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -5750,7 +5750,7 @@ FrameHE.iter\_group\_other\_array\_items(*other*, *\**, *fill\_value*, *axis).ap
 :   iter\_group\_other\_array\_items
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -6271,7 +6271,7 @@ FrameHE.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply(fun
 :   iter\_group\_other\_items
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -6302,7 +6302,7 @@ FrameHE.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply\_it
 :   iter\_group\_other\_items
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -6331,7 +6331,7 @@ FrameHE.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply\_it
 :   iter\_group\_other\_items
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -6360,7 +6360,7 @@ FrameHE.iter\_group\_other\_items(*other*, *\**, *fill\_value*, *axis).apply\_po
 :   iter\_group\_other\_items
     :   Iterator of [`Frame`](frame-selector.md#Frame "Frame") grouped by unique values found in a supplied container.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -6979,7 +6979,7 @@ FrameHE.iter\_series(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_co
 :   iter\_series
     :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -7011,7 +7011,7 @@ FrameHE.iter\_series(*\**, *axis).apply\_iter(func*)
 :   iter\_series
     :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -7040,7 +7040,7 @@ FrameHE.iter\_series(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_series
     :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7069,7 +7069,7 @@ FrameHE.iter\_series(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *ind
 :   iter\_series
     :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -7144,7 +7144,7 @@ FrameHE.iter\_series\_items(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *in
 :   iter\_series\_items
     :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -7176,7 +7176,7 @@ FrameHE.iter\_series\_items(*\**, *axis).apply\_iter(func*)
 :   iter\_series\_items
     :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -7205,7 +7205,7 @@ FrameHE.iter\_series\_items(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_series\_items
     :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7234,7 +7234,7 @@ FrameHE.iter\_series\_items(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name
 :   iter\_series\_items
     :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -7291,7 +7291,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).apply(func*, *\**, *dtype*, *nam
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateMapable.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -7323,7 +7323,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).apply\_iter(func*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.apply\_iter(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -7352,7 +7352,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).apply\_iter\_items(func*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7381,7 +7381,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).apply\_pool(func*, *\**, *dtype*
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateMapable.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -7397,7 +7397,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).map\_all(mapping*, *\**, *dtype*
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -7426,7 +7426,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -7450,7 +7450,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter\_items(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7474,7 +7474,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).map\_any(mapping*, *\**, *dtype*
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -7499,7 +7499,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -7523,7 +7523,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter\_items(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7547,7 +7547,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).map\_fill(mapping*, *\**, *fill\
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -7577,7 +7577,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, *\**, 
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -7602,7 +7602,7 @@ FrameHE.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapping*,
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7647,7 +7647,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).apply(func*, *\**, *dtype
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateMapable.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -7679,7 +7679,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter(func*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.apply\_iter(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -7699,7 +7699,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter\_items(func*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7719,7 +7719,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_pool(func*, *\**, 
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateMapable.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -7735,7 +7735,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all(mapping*, *\**, 
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -7764,7 +7764,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter(mapping*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -7788,7 +7788,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter\_items(map
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7812,7 +7812,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any(mapping*, *\**, 
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -7841,7 +7841,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter(mapping*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -7865,7 +7865,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter\_items(map
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -7889,7 +7889,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill(mapping*, *\**,
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -7919,7 +7919,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter(mapping*,
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -7944,7 +7944,7 @@ FrameHE.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter\_items(ma
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -8030,7 +8030,7 @@ FrameHE.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -8075,7 +8075,7 @@ FrameHE.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -8117,7 +8117,7 @@ FrameHE.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -8159,7 +8159,7 @@ FrameHE.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -9055,7 +9055,7 @@ FrameHE.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -9100,7 +9100,7 @@ FrameHE.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -9142,7 +9142,7 @@ FrameHE.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -9184,7 +9184,7 @@ FrameHE.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -9984,7 +9984,7 @@ FrameHE.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -10029,7 +10029,7 @@ FrameHE.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -10071,7 +10071,7 @@ FrameHE.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -10113,7 +10113,7 @@ FrameHE.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -10925,7 +10925,7 @@ FrameHE.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -10970,7 +10970,7 @@ FrameHE.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -11012,7 +11012,7 @@ FrameHE.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -11054,7 +11054,7 @@ FrameHE.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:

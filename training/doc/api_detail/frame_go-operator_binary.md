@@ -144,7 +144,7 @@ API Detail
 
 [Overview: FrameGO: Operator Binary](../api_overview/frame_go-operator_binary.md#api-overview-framego-operator-binary)
 
-FrameGO.\_\_add\_\_(*other*, */*)[](#static_frame.FrameGO.__add__ "Link to this definition")
+FrameGO.\_\_add\_\_(*other*)[](#static_frame.FrameGO.__add__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -185,7 +185,7 @@ FrameGO.\_\_add\_\_(*other*, */*)[](#static_frame.FrameGO.__add__ "Link to th
 
     ```
 
-FrameGO.\_\_and\_\_(*other*, */*)[](#static_frame.FrameGO.__and__ "Link to this definition")
+FrameGO.\_\_and\_\_(*other*)[](#static_frame.FrameGO.__and__ "Link to this definition")
 :   ```
     >>> f = sf.FrameGO.from_fields(((False, True, True), (True, True, False)), columns=('a', 'b'), index=('p', 'q', 'r'), name='x')
     >>> f
@@ -215,7 +215,7 @@ FrameGO.\_\_and\_\_(*other*, */*)[](#static_frame.FrameGO.__and__ "Link to th
 
     ```
 
-FrameGO.\_\_eq\_\_(*other*, */*)[](#static_frame.FrameGO.__eq__ "Link to this definition")
+FrameGO.\_\_eq\_\_(*other*)[](#static_frame.FrameGO.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -258,7 +258,7 @@ FrameGO.\_\_eq\_\_(*other*, */*)[](#static_frame.FrameGO.__eq__ "Link to this
 
     ```
 
-FrameGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.FrameGO.__floordiv__ "Link to this definition")
+FrameGO.\_\_floordiv\_\_(*other*)[](#static_frame.FrameGO.__floordiv__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -299,7 +299,7 @@ FrameGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.FrameGO.__floordiv__ "
 
     ```
 
-FrameGO.\_\_ge\_\_(*other*, */*)[](#static_frame.FrameGO.__ge__ "Link to this definition")
+FrameGO.\_\_ge\_\_(*other*)[](#static_frame.FrameGO.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -342,7 +342,7 @@ FrameGO.\_\_ge\_\_(*other*, */*)[](#static_frame.FrameGO.__ge__ "Link to this
 
     ```
 
-FrameGO.\_\_gt\_\_(*other*, */*)[](#static_frame.FrameGO.__gt__ "Link to this definition")
+FrameGO.\_\_gt\_\_(*other*)[](#static_frame.FrameGO.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -385,7 +385,7 @@ FrameGO.\_\_gt\_\_(*other*, */*)[](#static_frame.FrameGO.__gt__ "Link to this
 
     ```
 
-FrameGO.\_\_le\_\_(*other*, */*)[](#static_frame.FrameGO.__le__ "Link to this definition")
+FrameGO.\_\_le\_\_(*other*)[](#static_frame.FrameGO.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -428,7 +428,7 @@ FrameGO.\_\_le\_\_(*other*, */*)[](#static_frame.FrameGO.__le__ "Link to this
 
     ```
 
-FrameGO.\_\_lt\_\_(*other*, */*)[](#static_frame.FrameGO.__lt__ "Link to this definition")
+FrameGO.\_\_lt\_\_(*other*)[](#static_frame.FrameGO.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -471,7 +471,7 @@ FrameGO.\_\_lt\_\_(*other*, */*)[](#static_frame.FrameGO.__lt__ "Link to this
 
     ```
 
-FrameGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.FrameGO.__matmul__ "Link to this definition")
+FrameGO.\_\_matmul\_\_(*other*)[](#static_frame.FrameGO.__matmul__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -504,7 +504,7 @@ FrameGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.FrameGO.__matmul__ "Link
 
     ```
 
-FrameGO.\_\_mod\_\_(*other*, */*)[](#static_frame.FrameGO.__mod__ "Link to this definition")
+FrameGO.\_\_mod\_\_(*other*)[](#static_frame.FrameGO.__mod__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -545,7 +545,7 @@ FrameGO.\_\_mod\_\_(*other*, */*)[](#static_frame.FrameGO.__mod__ "Link to th
 
     ```
 
-FrameGO.\_\_mul\_\_(*other*, */*)[](#static_frame.FrameGO.__mul__ "Link to this definition")
+FrameGO.\_\_mul\_\_(*other*)[](#static_frame.FrameGO.__mul__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -586,7 +586,7 @@ FrameGO.\_\_mul\_\_(*other*, */*)[](#static_frame.FrameGO.__mul__ "Link to th
 
     ```
 
-FrameGO.\_\_ne\_\_(*other*, */*)[](#static_frame.FrameGO.__ne__ "Link to this definition")
+FrameGO.\_\_ne\_\_(*other*)[](#static_frame.FrameGO.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -629,7 +629,7 @@ FrameGO.\_\_ne\_\_(*other*, */*)[](#static_frame.FrameGO.__ne__ "Link to this
 
     ```
 
-FrameGO.\_\_or\_\_(*other*, */*)[](#static_frame.FrameGO.__or__ "Link to this definition")
+FrameGO.\_\_or\_\_(*other*)[](#static_frame.FrameGO.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -661,7 +661,7 @@ FrameGO.\_\_or\_\_(*other*, */*)[](#static_frame.FrameGO.__or__ "Link to this
 
     ```
 
-FrameGO.\_\_pow\_\_(*other*, */*)[](#static_frame.FrameGO.__pow__ "Link to this definition")
+FrameGO.\_\_pow\_\_(*other*)[](#static_frame.FrameGO.__pow__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -702,7 +702,7 @@ FrameGO.\_\_pow\_\_(*other*, */*)[](#static_frame.FrameGO.__pow__ "Link to th
 
     ```
 
-FrameGO.\_\_radd\_\_(*other*, */*)[](#static_frame.FrameGO.__radd__ "Link to this definition")
+FrameGO.\_\_radd\_\_(*other*)[](#static_frame.FrameGO.__radd__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -734,7 +734,7 @@ FrameGO.\_\_radd\_\_(*other*, */*)[](#static_frame.FrameGO.__radd__ "Link to 
 
     ```
 
-FrameGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.FrameGO.__rfloordiv__ "Link to this definition")
+FrameGO.\_\_rfloordiv\_\_(*other*)[](#static_frame.FrameGO.__rfloordiv__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -766,7 +766,7 @@ FrameGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.FrameGO.__rfloordiv__
 
     ```
 
-FrameGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.FrameGO.__rmatmul__ "Link to this definition")
+FrameGO.\_\_rmatmul\_\_(*other*)[](#static_frame.FrameGO.__rmatmul__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -799,7 +799,7 @@ FrameGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.FrameGO.__rmatmul__ "Li
 
     ```
 
-FrameGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.FrameGO.__rmul__ "Link to this definition")
+FrameGO.\_\_rmul\_\_(*other*)[](#static_frame.FrameGO.__rmul__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -831,7 +831,7 @@ FrameGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.FrameGO.__rmul__ "Link to 
 
     ```
 
-FrameGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.FrameGO.__rshift__ "Link to this definition")
+FrameGO.\_\_rshift\_\_(*other*)[](#static_frame.FrameGO.__rshift__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -855,7 +855,7 @@ FrameGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.FrameGO.__rshift__ "Link
 
     ```
 
-FrameGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.FrameGO.__rsub__ "Link to this definition")
+FrameGO.\_\_rsub\_\_(*other*)[](#static_frame.FrameGO.__rsub__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -887,7 +887,7 @@ FrameGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.FrameGO.__rsub__ "Link to 
 
     ```
 
-FrameGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.FrameGO.__rtruediv__ "Link to this definition")
+FrameGO.\_\_rtruediv\_\_(*other*)[](#static_frame.FrameGO.__rtruediv__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -919,7 +919,7 @@ FrameGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.FrameGO.__rtruediv__ "
 
     ```
 
-FrameGO.\_\_sub\_\_(*other*, */*)[](#static_frame.FrameGO.__sub__ "Link to this definition")
+FrameGO.\_\_sub\_\_(*other*)[](#static_frame.FrameGO.__sub__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -960,7 +960,7 @@ FrameGO.\_\_sub\_\_(*other*, */*)[](#static_frame.FrameGO.__sub__ "Link to th
 
     ```
 
-FrameGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.FrameGO.__truediv__ "Link to this definition")
+FrameGO.\_\_truediv\_\_(*other*)[](#static_frame.FrameGO.__truediv__ "Link to this definition")
 :   ```
     >>> f1 = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -1001,7 +1001,7 @@ FrameGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.FrameGO.__truediv__ "Li
 
     ```
 
-FrameGO.\_\_xor\_\_(*other*, */*)[](#static_frame.FrameGO.__xor__ "Link to this definition")
+FrameGO.\_\_xor\_\_(*other*)[](#static_frame.FrameGO.__xor__ "Link to this definition")
 :   ```
     >>> f = sf.FrameGO.from_fields(((False, True, True), (True, True, False)), columns=('a', 'b'), index=('p', 'q', 'r'), name='x')
     >>> f
