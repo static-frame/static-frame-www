@@ -1,0 +1,1001 @@
+[![Logo](../_static/sf-logo-web_icon-small.png)](../index.html)
+
+Quick Start
+
+* [static-frame](../readme.html)
+* [License](../license.html)
+
+Introduction
+
+* [About StaticFrame](../intro.html)
+* [Media](../intro.html#media)
+* [What is New in StaticFrame](../new.html)
+* [Contributing](../contributing.html)
+
+Articles
+
+* [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.html)
+* [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.html)
+* [Faster DataFrame Serialization](../articles/serialize.html)
+* [The Performance Advantage of No-Copy DataFrame Operations](../articles/no_copy.html)
+* [Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations](../articles/hash.html)
+* [Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames](../articles/uhoc.html)
+* [One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames](../articles/fill_value.html)
+* [Ten Reasons to Use StaticFrame Instead of Pandas](../articles/upgrade.html)
+* [Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame](../articles/aiii.html)
+
+API Overview
+
+* [Overview: Series](../api_overview/series.html)
+* [Overview: SeriesHE](../api_overview/series_he.html)
+* [Overview: Frame](../api_overview/frame.html)
+* [Overview: FrameGO](../api_overview/frame_go.html)
+* [Overview: FrameHE](../api_overview/frame_he.html)
+* [Overview: Bus](../api_overview/bus.html)
+* [Overview: Batch](../api_overview/batch.html)
+* [Overview: Yarn](../api_overview/yarn.html)
+* [Overview: Quilt](../api_overview/quilt.html)
+* [Overview: Index](../api_overview/index.html)
+* [Overview: IndexGO](../api_overview/index_go.html)
+* [Overview: IndexHierarchy](../api_overview/index_hierarchy.html)
+* [Overview: IndexHierarchyGO](../api_overview/index_hierarchy_go.html)
+* [Overview: IndexYear](../api_overview/index_year.html)
+* [Overview: IndexYearGO](../api_overview/index_year_go.html)
+* [Overview: IndexYearMonth](../api_overview/index_year_month.html)
+* [Overview: IndexYearMonthGO](../api_overview/index_year_month_go.html)
+* [Overview: IndexDate](../api_overview/index_date.html)
+* [Overview: IndexDateGO](../api_overview/index_date_go.html)
+* [Overview: IndexMinute](../api_overview/index_minute.html)
+* [Overview: IndexMinuteGO](../api_overview/index_minute_go.html)
+* [Overview: IndexHour](../api_overview/index_hour.html)
+* [Overview: IndexHourGO](../api_overview/index_hour_go.html)
+* [Overview: IndexSecond](../api_overview/index_second.html)
+* [Overview: IndexSecondGO](../api_overview/index_second_go.html)
+* [Overview: IndexMillisecond](../api_overview/index_millisecond.html)
+* [Overview: IndexMillisecondGO](../api_overview/index_millisecond_go.html)
+* [Overview: IndexMicrosecond](../api_overview/index_microsecond.html)
+* [Overview: IndexMicrosecondGO](../api_overview/index_microsecond_go.html)
+* [Overview: IndexNanosecond](../api_overview/index_nanosecond.html)
+* [Overview: IndexNanosecondGO](../api_overview/index_nanosecond_go.html)
+* [Overview: HLoc](../api_overview/hloc.html)
+* [Overview: ILoc](../api_overview/iloc.html)
+* [Overview: TypeClinic](../api_overview/type_clinic.html)
+* [Overview: CallGuard](../api_overview/call_guard.html)
+* [Overview: ClinicResult](../api_overview/clinic_result.html)
+* [Overview: Require](../api_overview/require.html)
+* [Overview: WWW](../api_overview/www.html)
+* [Overview: FillValueAuto](../api_overview/fill_value_auto.html)
+* [Overview: DisplayActive](../api_overview/display_active.html)
+* [Overview: DisplayConfig](../api_overview/display_config.html)
+* [Overview: StoreConfig](../api_overview/store_config.html)
+* [Overview: StoreFilter](../api_overview/store_filter.html)
+* [Overview: IndexAutoFactory](../api_overview/index_auto_factory.html)
+* [Overview: IndexDefaultConstructorFactory](../api_overview/index_default_constructor_factory.html)
+* [Overview: IndexAutoConstructorFactory](../api_overview/index_auto_constructor_factory.html)
+* [Overview: NPZ](../api_overview/npz.html)
+* [Overview: NPY](../api_overview/npy.html)
+* [Overview: MemoryDisplay](../api_overview/memory_display.html)
+* [Overview: Platform](../api_overview/platform.html)
+
+API Detail
+
+* [Detail: Series](series.html)
+* [Detail: SeriesHE](series_he.html)
+* [Detail: Frame](frame.html)
+* [Detail: FrameGO](frame_go.html)
+* [Detail: FrameHE](frame_he.html)
+* [Detail: Bus](bus.html)
+* [Detail: Batch](batch.html)
+* [Detail: Yarn](yarn.html)
+* [Detail: Quilt](quilt.html)
+* [Detail: Index](index.html)
+* [Detail: IndexGO](index_go.html)
+* [Detail: IndexHierarchy](index_hierarchy.html)
+* [Detail: IndexHierarchyGO](index_hierarchy_go.html)
+* [Detail: IndexYear](index_year.html)
+* [Detail: IndexYearGO](index_year_go.html)
+* [Detail: IndexYearMonth](index_year_month.html)
+* [Detail: IndexYearMonthGO](index_year_month_go.html)
+* [Detail: IndexDate](index_date.html)
+* [Detail: IndexDateGO](index_date_go.html)
+* [Detail: IndexMinute](index_minute.html)
+* [Detail: IndexMinuteGO](index_minute_go.html)
+* [Detail: IndexHour](index_hour.html)
+* [Detail: IndexHourGO](index_hour_go.html)
+* [Detail: IndexSecond](index_second.html)
+* [Detail: IndexSecondGO](index_second_go.html)
+* [Detail: IndexMillisecond](index_millisecond.html)
+* [Detail: IndexMillisecondGO](index_millisecond_go.html)
+* [Detail: IndexMicrosecond](index_microsecond.html)
+* [Detail: IndexMicrosecondGO](index_microsecond_go.html)
+* [Detail: IndexNanosecond](index_nanosecond.html)
+* [Detail: IndexNanosecondGO](index_nanosecond_go.html)
+* [Detail: HLoc](hloc.html)
+* [Detail: ILoc](iloc.html)
+* [Detail: TypeClinic](type_clinic.html)
+* [Detail: CallGuard](call_guard.html)
+* [Detail: ClinicResult](clinic_result.html)
+* [Detail: Require](require.html)
+* [Detail: WWW](www.html)
+* [Detail: FillValueAuto](fill_value_auto.html)
+* [Detail: DisplayActive](display_active.html)
+* [Detail: DisplayConfig](display_config.html)
+* [Detail: StoreConfig](store_config.html)
+* [Detail: StoreFilter](store_filter.html)
+* [Detail: IndexAutoFactory](index_auto_factory.html)
+* [Detail: IndexDefaultConstructorFactory](index_default_constructor_factory.html)
+* [Detail: IndexAutoConstructorFactory](index_auto_constructor_factory.html)
+* [Detail: NPZ](npz.html)
+* [Detail: NPY](npy.html)
+* [Detail: MemoryDisplay](memory_display.html)
+* [Detail: Platform](platform.html)
+
+[StaticFrame](../index.html)
+
+* Detail: FrameHE: Accessor Fill Value
+* [View page source](../_sources/api_detail/frame_he-accessor_fill_value.rst.txt)
+
+[Previous](frame_he-accessor_transpose.html "Detail: FrameHE: Accessor Transpose")
+[Next](frame_he-accessor_regular_expression.html "Detail: FrameHE: Accessor Regular Expression")
+
+---
+
+# Detail: FrameHE: Accessor Fill Value[](#detail-framehe-accessor-fill-value "Link to this heading")
+
+[Overview: FrameHE: Accessor Fill Value](../api_overview/frame_he-accessor_fill_value.html#api-overview-framehe-accessor-fill-value)
+
+FrameHE.via\_fill\_value(fill\_value).loc
+:   FrameHE.via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.loc
+    :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
+
+    ```
+    >>> f = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f.via_fill_value(-1).loc[['a', 'b', 'd']]
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    d            -1      -1
+    <<U1>        <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_getitem\_\_(key*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_getitem\_\_(*key*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__getitem__)
+    :   Label-based selection where labels not specified will define a new container containing those labels filled with the fill value.
+
+    ```
+    >>> f = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f.via_fill_value(-1)[['z', 'x']]
+    <FrameHE: y>
+    <Index>      z       x       <<U1>
+    <Index>
+    a            -1      3
+    b            -1      0
+    c            -1      20
+    <<U1>        <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(fill\_value).via\_T
+:   FrameHE.via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.via\_T
+    :   Interface for using binary operators with one-dimensional sequences, where the opperand is applied column-wise.
+
+    ```
+    >>> f = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> s = sf.Series((2, 8, 19), index=('b', 'c', 'd'))
+    >>> f.via_fill_value(-1).via_T * s
+    <FrameHE>
+    <Index>   x       y       <<U1>
+    <Index>
+    a         -3      -2
+    b         0       0
+    c         160     96
+    d         -19     -19
+    <<U1>     <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_add\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_add\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__add__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) + f2
+    <FrameHE>
+    <Index>   x       y       <<U1>
+    <Index>
+    a         3       2
+    b         2       3
+    c         24      26
+    <<U1>     <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_sub\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_sub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__sub__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) - f2
+    <FrameHE>
+    <Index>   x       y       <<U1>
+    <Index>
+    a         3       2
+    b         -2      -3
+    c         16      -2
+    <<U1>     <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_mul\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_mul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mul__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) * f2
+    <FrameHE>
+    <Index>   x       y       <<U1>
+    <Index>
+    a         0       0
+    b         0       0
+    c         80      168
+    <<U1>     <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_truediv\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_truediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__truediv__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) / f2
+    <FrameHE>
+    <Index>   x         y                  <<U1>
+    <Index>
+    a         inf       inf
+    b         0.0       0.0
+    c         5.0       0.8571428571428571
+    <<U1>     <float64> <float64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_floordiv\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_floordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__floordiv__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) // f2
+    <FrameHE>
+    <Index>   x       y       <<U1>
+    <Index>
+    a         0       0
+    b         0       0
+    c         5       0
+    <<U1>     <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_mod\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_mod\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__mod__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) % f2
+    <FrameHE>
+    <Index>   x       y       <<U1>
+    <Index>
+    a         0       0
+    b         0       0
+    c         0       12
+    <<U1>     <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_pow\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_pow\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__pow__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) ** f2
+    <FrameHE>
+    <Index>   x       y                <<U1>
+    <Index>
+    a         1       1
+    b         0       0
+    c         160000  1283918464548864
+    <<U1>     <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_lshift\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_lshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lshift__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            0       2
+    c            1       1
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) << f2
+    <FrameHE>
+    <Index>   x       y       <<U1>
+    <Index>
+    a         3       2
+    b         0       0
+    c         40      24
+    <<U1>     <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_rshift\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_rshift\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rshift__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((0, 1), (2, 1)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            0       2
+    c            1       1
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) >> f2
+    <FrameHE>
+    <Index>   x       y       <<U1>
+    <Index>
+    a         3       2
+    b         0       0
+    c         10      6
+    <<U1>     <int64> <int64>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_and\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_and\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__and__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((False, True, True), (True, False, True)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x      y      <<U1>
+    <Index>
+    a            False  True
+    b            True   False
+    c            True   True
+    <<U1>        <bool> <bool>
+    >>> f2 = sf.FrameHE.from_fields(((False, True), (True, True)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x      y      <<U1>
+    <Index>
+    b            False  True
+    c            True   True
+    <<U1>        <bool> <bool>
+    >>> f1.via_fill_value(False) & f2
+    <FrameHE>
+    <Index>   x      y      <<U1>
+    <Index>
+    a         False  False
+    b         False  False
+    c         True   True
+    <<U1>     <bool> <bool>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_xor\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_xor\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__xor__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((False, True, True), (True, False, True)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x      y      <<U1>
+    <Index>
+    a            False  True
+    b            True   False
+    c            True   True
+    <<U1>        <bool> <bool>
+    >>> f2 = sf.FrameHE.from_fields(((False, True), (True, True)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x      y      <<U1>
+    <Index>
+    b            False  True
+    c            True   True
+    <<U1>        <bool> <bool>
+    >>> f1.via_fill_value(False) ^ f2
+    <FrameHE>
+    <Index>   x      y      <<U1>
+    <Index>
+    a         False  True
+    b         True   True
+    c         False  False
+    <<U1>     <bool> <bool>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_or\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_or\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__or__)
+    :   Return self|value.
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((False, True, True), (True, False, True)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x      y      <<U1>
+    <Index>
+    a            False  True
+    b            True   False
+    c            True   True
+    <<U1>        <bool> <bool>
+    >>> f2 = sf.FrameHE.from_fields(((False, True), (True, True)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x      y      <<U1>
+    <Index>
+    b            False  True
+    c            True   True
+    <<U1>        <bool> <bool>
+    >>> f1.via_fill_value(False) | f2
+    <FrameHE>
+    <Index>   x      y      <<U1>
+    <Index>
+    a         False  True
+    b         True   True
+    c         True   True
+    <<U1>     <bool> <bool>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_lt\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_lt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__lt__)
+    :   Return self<value.
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) < f2
+    <FrameHE>
+    <Index>   x      y      <<U1>
+    <Index>
+    a         False  False
+    b         True   True
+    c         False  True
+    <<U1>     <bool> <bool>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_le\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_le\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__le__)
+    :   Return self<=value.
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) <= f2
+    <FrameHE>
+    <Index>   x      y      <<U1>
+    <Index>
+    a         False  False
+    b         True   True
+    c         False  True
+    <<U1>     <bool> <bool>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_eq\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__eq__)
+    :   Return self==value.
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) == f2
+    <FrameHE>
+    <Index>   x      y      <<U1>
+    <Index>
+    a         False  False
+    b         False  False
+    c         False  False
+    <<U1>     <bool> <bool>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_ne\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_ne\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ne__)
+    :   Return self!=value.
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) != f2
+    <FrameHE>
+    <Index>   x      y      <<U1>
+    <Index>
+    a         True   True
+    b         True   True
+    c         True   True
+    <<U1>     <bool> <bool>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_gt\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_gt\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__gt__)
+    :   Return self>value.
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) > f2
+    <FrameHE>
+    <Index>   x      y      <<U1>
+    <Index>
+    a         True   True
+    b         False  False
+    c         True   False
+    <<U1>     <bool> <bool>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_ge\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_ge\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__ge__)
+    :   Return self>=value.
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f1.via_fill_value(0) >= f2
+    <FrameHE>
+    <Index>   x      y      <<U1>
+    <Index>
+    a         True   True
+    b         False  False
+    c         True   False
+    <<U1>     <bool> <bool>
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_radd\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_radd\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__radd__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f2 + f1.via_fill_value(0)
+    RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_rsub\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_rsub\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rsub__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f2 - f1.via_fill_value(0)
+    RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_rmul\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_rmul\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rmul__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f2 * f1.via_fill_value(0)
+    RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_rtruediv\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_rtruediv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rtruediv__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f2 / f1.via_fill_value(0)
+    RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
+
+    ```
+
+FrameHE.via\_fill\_value(*fill\_value).\_\_rfloordiv\_\_(other*)
+:   via\_fill\_value *= <function Frame.via\_fill\_value>*
+
+    InterfaceFillValue.\_\_rfloordiv\_\_(*other*)[[source]](../_modules/static_frame/core/node_fill_value.html#InterfaceFillValue.__rfloordiv__)
+
+    ```
+    >>> f1 = sf.FrameHE.from_fields(((3, 0, 20), (2, 0, 12)), index=('a', 'b', 'c'), columns=('x', 'y'), name='y')
+    >>> f1
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    a            3       2
+    b            0       0
+    c            20      12
+    <<U1>        <int64> <int64>
+    >>> f2 = sf.FrameHE.from_fields(((2, 4), (3, 14)), index=('b', 'c'), columns=('x', 'y'), name='y')
+    >>> f2
+    <FrameHE: y>
+    <Index>      x       y       <<U1>
+    <Index>
+    b            2       3
+    c            4       14
+    <<U1>        <int64> <int64>
+    >>> f2 // f1.via_fill_value(0)
+    RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
+
+    ```
+
+[FrameHE](frame_he.html#api-detail-framehe): [Constructor](frame_he-constructor.html#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.html#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.html#api-detail-framehe-attribute) | [Method](frame_he-method.html#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.html#api-detail-framehe-dictionary-like) | [Display](frame_he-display.html#api-detail-framehe-display) | [Assignment](frame_he-assignment.html#api-detail-framehe-assignment) | [Selector](frame_he-selector.html#api-detail-framehe-selector) | [Iterator](frame_he-iterator.html#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.html#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.html#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.html#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.html#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.html#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.html#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.html#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.html#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.html#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.html#api-detail-framehe-accessor-reduce)
+
+[Previous](frame_he-accessor_transpose.html "Detail: FrameHE: Accessor Transpose")
+[Next](frame_he-accessor_regular_expression.html "Detail: FrameHE: Accessor Regular Expression")
+
+---
+
+© Copyright 2025, Christopher Ariza.
+Last updated on Apr 29, 2025.
+
+Built with [Sphinx](https://www.sphinx-doc.org/) using a
+[theme](https://github.com/readthedocs/sphinx_rtd_theme)
+provided by [Read the Docs](https://readthedocs.org).

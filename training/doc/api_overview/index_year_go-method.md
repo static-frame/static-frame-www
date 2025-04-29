@@ -1,0 +1,211 @@
+[![Logo](../_static/sf-logo-web_icon-small.png)](../index.html)
+
+Quick Start
+
+* [static-frame](../readme.html)
+* [License](../license.html)
+
+Introduction
+
+* [About StaticFrame](../intro.html)
+* [Media](../intro.html#media)
+* [What is New in StaticFrame](../new.html)
+* [Contributing](../contributing.html)
+
+Articles
+
+* [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.html)
+* [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.html)
+* [Faster DataFrame Serialization](../articles/serialize.html)
+* [The Performance Advantage of No-Copy DataFrame Operations](../articles/no_copy.html)
+* [Memoizing DataFrame Functions: Using Hashable DataFrames and Message Digests to Optimize Repeated Calculations](../articles/hash.html)
+* [Using Higher-Order Containers to Efficiently Process 7,163 (or More) DataFrames](../articles/uhoc.html)
+* [One Fill Value Is Not Enough: Preserving Columnar Types When Reindexing DataFrames](../articles/fill_value.html)
+* [Ten Reasons to Use StaticFrame Instead of Pandas](../articles/upgrade.html)
+* [Boring Indices & Where to Find Them: The Auto-Incremented Integer Index in StaticFrame](../articles/aiii.html)
+
+API Overview
+
+* [Overview: Series](series.html)
+* [Overview: SeriesHE](series_he.html)
+* [Overview: Frame](frame.html)
+* [Overview: FrameGO](frame_go.html)
+* [Overview: FrameHE](frame_he.html)
+* [Overview: Bus](bus.html)
+* [Overview: Batch](batch.html)
+* [Overview: Yarn](yarn.html)
+* [Overview: Quilt](quilt.html)
+* [Overview: Index](index.html)
+* [Overview: IndexGO](index_go.html)
+* [Overview: IndexHierarchy](index_hierarchy.html)
+* [Overview: IndexHierarchyGO](index_hierarchy_go.html)
+* [Overview: IndexYear](index_year.html)
+* [Overview: IndexYearGO](index_year_go.html)
+* [Overview: IndexYearMonth](index_year_month.html)
+* [Overview: IndexYearMonthGO](index_year_month_go.html)
+* [Overview: IndexDate](index_date.html)
+* [Overview: IndexDateGO](index_date_go.html)
+* [Overview: IndexMinute](index_minute.html)
+* [Overview: IndexMinuteGO](index_minute_go.html)
+* [Overview: IndexHour](index_hour.html)
+* [Overview: IndexHourGO](index_hour_go.html)
+* [Overview: IndexSecond](index_second.html)
+* [Overview: IndexSecondGO](index_second_go.html)
+* [Overview: IndexMillisecond](index_millisecond.html)
+* [Overview: IndexMillisecondGO](index_millisecond_go.html)
+* [Overview: IndexMicrosecond](index_microsecond.html)
+* [Overview: IndexMicrosecondGO](index_microsecond_go.html)
+* [Overview: IndexNanosecond](index_nanosecond.html)
+* [Overview: IndexNanosecondGO](index_nanosecond_go.html)
+* [Overview: HLoc](hloc.html)
+* [Overview: ILoc](iloc.html)
+* [Overview: TypeClinic](type_clinic.html)
+* [Overview: CallGuard](call_guard.html)
+* [Overview: ClinicResult](clinic_result.html)
+* [Overview: Require](require.html)
+* [Overview: WWW](www.html)
+* [Overview: FillValueAuto](fill_value_auto.html)
+* [Overview: DisplayActive](display_active.html)
+* [Overview: DisplayConfig](display_config.html)
+* [Overview: StoreConfig](store_config.html)
+* [Overview: StoreFilter](store_filter.html)
+* [Overview: IndexAutoFactory](index_auto_factory.html)
+* [Overview: IndexDefaultConstructorFactory](index_default_constructor_factory.html)
+* [Overview: IndexAutoConstructorFactory](index_auto_constructor_factory.html)
+* [Overview: NPZ](npz.html)
+* [Overview: NPY](npy.html)
+* [Overview: MemoryDisplay](memory_display.html)
+* [Overview: Platform](platform.html)
+
+API Detail
+
+* [Detail: Series](../api_detail/series.html)
+* [Detail: SeriesHE](../api_detail/series_he.html)
+* [Detail: Frame](../api_detail/frame.html)
+* [Detail: FrameGO](../api_detail/frame_go.html)
+* [Detail: FrameHE](../api_detail/frame_he.html)
+* [Detail: Bus](../api_detail/bus.html)
+* [Detail: Batch](../api_detail/batch.html)
+* [Detail: Yarn](../api_detail/yarn.html)
+* [Detail: Quilt](../api_detail/quilt.html)
+* [Detail: Index](../api_detail/index.html)
+* [Detail: IndexGO](../api_detail/index_go.html)
+* [Detail: IndexHierarchy](../api_detail/index_hierarchy.html)
+* [Detail: IndexHierarchyGO](../api_detail/index_hierarchy_go.html)
+* [Detail: IndexYear](../api_detail/index_year.html)
+* [Detail: IndexYearGO](../api_detail/index_year_go.html)
+* [Detail: IndexYearMonth](../api_detail/index_year_month.html)
+* [Detail: IndexYearMonthGO](../api_detail/index_year_month_go.html)
+* [Detail: IndexDate](../api_detail/index_date.html)
+* [Detail: IndexDateGO](../api_detail/index_date_go.html)
+* [Detail: IndexMinute](../api_detail/index_minute.html)
+* [Detail: IndexMinuteGO](../api_detail/index_minute_go.html)
+* [Detail: IndexHour](../api_detail/index_hour.html)
+* [Detail: IndexHourGO](../api_detail/index_hour_go.html)
+* [Detail: IndexSecond](../api_detail/index_second.html)
+* [Detail: IndexSecondGO](../api_detail/index_second_go.html)
+* [Detail: IndexMillisecond](../api_detail/index_millisecond.html)
+* [Detail: IndexMillisecondGO](../api_detail/index_millisecond_go.html)
+* [Detail: IndexMicrosecond](../api_detail/index_microsecond.html)
+* [Detail: IndexMicrosecondGO](../api_detail/index_microsecond_go.html)
+* [Detail: IndexNanosecond](../api_detail/index_nanosecond.html)
+* [Detail: IndexNanosecondGO](../api_detail/index_nanosecond_go.html)
+* [Detail: HLoc](../api_detail/hloc.html)
+* [Detail: ILoc](../api_detail/iloc.html)
+* [Detail: TypeClinic](../api_detail/type_clinic.html)
+* [Detail: CallGuard](../api_detail/call_guard.html)
+* [Detail: ClinicResult](../api_detail/clinic_result.html)
+* [Detail: Require](../api_detail/require.html)
+* [Detail: WWW](../api_detail/www.html)
+* [Detail: FillValueAuto](../api_detail/fill_value_auto.html)
+* [Detail: DisplayActive](../api_detail/display_active.html)
+* [Detail: DisplayConfig](../api_detail/display_config.html)
+* [Detail: StoreConfig](../api_detail/store_config.html)
+* [Detail: StoreFilter](../api_detail/store_filter.html)
+* [Detail: IndexAutoFactory](../api_detail/index_auto_factory.html)
+* [Detail: IndexDefaultConstructorFactory](../api_detail/index_default_constructor_factory.html)
+* [Detail: IndexAutoConstructorFactory](../api_detail/index_auto_constructor_factory.html)
+* [Detail: NPZ](../api_detail/npz.html)
+* [Detail: NPY](../api_detail/npy.html)
+* [Detail: MemoryDisplay](../api_detail/memory_display.html)
+* [Detail: Platform](../api_detail/platform.html)
+
+[StaticFrame](../index.html)
+
+* Overview: IndexYearGO: Method
+* [View page source](../_sources/api_overview/index_year_go-method.rst.txt)
+
+[Previous](index_year_go-attribute.html "Overview: IndexYearGO: Attribute")
+[Next](index_year_go-dictionary_like.html "Overview: IndexYearGO: Dictionary-Like")
+
+---
+
+# Overview: IndexYearGO: Method[](#overview-indexyeargo-method "Link to this heading")
+
+[Detail: IndexYearGO: Method](../api_detail/index_year_go-method.html#api-detail-indexyeargo-method)
+
+|  |  |  |
+| --- | --- | --- |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-array) | `IndexYearGO.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-array-ufunc) | `IndexYearGO.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-bool) | `IndexYearGO.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-copy) | `IndexYearGO.__copy__()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-deepcopy) | `IndexYearGO.__deepcopy__(memo)` |  |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-len) | `IndexYearGO.__len__()` |  |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-all) | `IndexYearGO.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-any) | `IndexYearGO.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-append) | `IndexYearGO.append(value)` | Specialize for fixed-typed indices: convert value argument; do not need to resol… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-astype) | `IndexYearGO.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
+| [Detail](../api_detail/index_year_go-method.html#id1) | `IndexYearGO.copy()` | Return shallow copy of this Index. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-cumprod) | `IndexYearGO.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-cumsum) | `IndexYearGO.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-difference) | `IndexYearGO.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-dropfalsy) | `IndexYearGO.dropfalsy()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-dropna) | `IndexYearGO.dropna()` | Return a new Index after removing values of NaN or None. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-equals) | `IndexYearGO.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` | Return a bool from comparison to any other object. Args: compare\_name: Include e… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-extend) | `IndexYearGO.extend(values)` | Append multiple values Args: values: can be a generator. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-fillfalsy) | `IndexYearGO.fillfalsy(value)` | Return an Index with replacing falsy values with the supplied value. Args: value… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-fillna) | `IndexYearGO.fillna(value)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-head) | `IndexYearGO.head(count)` | Return a Index consisting only of the top elements as specified by count. Args:… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-iloc-searchsorted) | `IndexYearGO.iloc_searchsorted(values, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-intersection) | `IndexYearGO.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-isfalsy) | `IndexYearGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-isin) | `IndexYearGO.isin(other)` | Return a Boolean array showing True where a label is found in other. If other is… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-isna) | `IndexYearGO.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-label-widths-at-depth) | `IndexYearGO.label_widths_at_depth(depth_level)` | A generator of pairs, where each pair is the label and the contiguous count of t… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-level-add) | `IndexYearGO.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-loc-searchsorted) | `IndexYearGO.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-loc-to-iloc) | `IndexYearGO.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-max) | `IndexYearGO.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-mean) | `IndexYearGO.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-median) | `IndexYearGO.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-min) | `IndexYearGO.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-notfalsy) | `IndexYearGO.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-notna) | `IndexYearGO.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-prod) | `IndexYearGO.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-relabel) | `IndexYearGO.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-rename) | `IndexYearGO.rename(name)` | Return a new Frame with an updated name attribute. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-roll) | `IndexYearGO.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-sample) | `IndexYearGO.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-sort) | `IndexYearGO.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-std) | `IndexYearGO.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-sum) | `IndexYearGO.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-tail) | `IndexYearGO.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-union) | `IndexYearGO.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-unique) | `IndexYearGO.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-values-at-depth) | `IndexYearGO.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
+| [Detail](../api_detail/index_year_go-method.html#api-sig-indexyeargo-var) | `IndexYearGO.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+
+[IndexYearGO](index_year_go.html#api-overview-indexyeargo): [Constructor](index_year_go-constructor.html#api-overview-indexyeargo-constructor) | [Exporter](index_year_go-exporter.html#api-overview-indexyeargo-exporter) | [Attribute](index_year_go-attribute.html#api-overview-indexyeargo-attribute) | [Method](#api-overview-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.html#api-overview-indexyeargo-dictionary-like) | [Display](index_year_go-display.html#api-overview-indexyeargo-display) | [Selector](index_year_go-selector.html#api-overview-indexyeargo-selector) | [Iterator](index_year_go-iterator.html#api-overview-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.html#api-overview-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.html#api-overview-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.html#api-overview-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.html#api-overview-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.html#api-overview-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.html#api-overview-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.html#api-overview-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.html#api-overview-indexyeargo-accessor-type-clinic)
+
+[Previous](index_year_go-attribute.html "Overview: IndexYearGO: Attribute")
+[Next](index_year_go-dictionary_like.html "Overview: IndexYearGO: Dictionary-Like")
+
+---
+
+© Copyright 2025, Christopher Ariza.
+Last updated on Apr 29, 2025.
+
+Built with [Sphinx](https://www.sphinx-doc.org/) using a
+[theme](https://github.com/readthedocs/sphinx_rtd_theme)
+provided by [Read the Docs](https://readthedocs.org).
