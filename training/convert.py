@@ -14,7 +14,6 @@ def convert_directory(input_dir: Path, output_dir: Path):
     input_dir = input_dir.resolve()
     output_dir = output_dir.resolve()
 
-    md = MarkItDown(enable_plugins=False) # Set to True to enable plugins
 
     # Clear output directory if it already exists
     # if output_dir.exists():
@@ -23,20 +22,21 @@ def convert_directory(input_dir: Path, output_dir: Path):
 
     for root, dirs, files in os.walk(input_dir):
         for file in files:
+            input_fp = Path(root) / file
             if file.endswith(".html"):
-                input_file_path = Path(root) / file
-
-                # Figure out relative path from input_dir
-                relative_path = input_file_path.relative_to(input_dir)
+                print(f"procesing: {input_fp}")
+                relative_path = input_fp.relative_to(input_dir)
 
                 # Change extension from .html -> .md
                 output_fp = output_dir / relative_path.with_suffix(".md")
                 output_fp.parent.mkdir(parents=True, exist_ok=True)
 
-                # Convert and write
-                result = md.convert(str(input_file_path))
-                import ipdb; ipdb.set_trace()
-                # output_fp.write_text(result.text_content, encoding="utf-8")
+                md = MarkItDown()
+                result = md.convert(str(input_fp))
+                output_fp.write_text(result.text_content, encoding="utf-8")
+                # import ipdb; ipdb.set_trace()
+            else:
+                print(f"skipping: {input_fp}")
 
 def main():
     parser = argparse.ArgumentParser(description="Convert Sphinx HTML directory to Markdown.")
