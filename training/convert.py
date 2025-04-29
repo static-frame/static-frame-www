@@ -1,10 +1,4 @@
 from markitdown import MarkItDown
-
-# result = md.convert("test.xlsx")
-# print(result.text_content)
-
-#
-
 import argparse
 import os
 from pathlib import Path
@@ -13,12 +7,11 @@ import shutil
 def convert_directory(input_dir: Path, output_dir: Path):
     input_dir = input_dir.resolve()
     output_dir = output_dir.resolve()
-
-
     # Clear output directory if it already exists
     # if output_dir.exists():
     #     shutil.rmtree(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
+    md = MarkItDown()
 
     for root, dirs, files in os.walk(input_dir):
         for file in files:
@@ -31,10 +24,8 @@ def convert_directory(input_dir: Path, output_dir: Path):
                 output_fp = output_dir / relative_path.with_suffix(".md")
                 output_fp.parent.mkdir(parents=True, exist_ok=True)
 
-                md = MarkItDown()
                 result = md.convert(str(input_fp))
                 output_fp.write_text(result.text_content, encoding="utf-8")
-                # import ipdb; ipdb.set_trace()
             else:
                 print(f"skipping: {input_fp}")
 
