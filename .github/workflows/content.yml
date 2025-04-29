@@ -82,7 +82,7 @@ jobs:
         run: |
           pip install -r training/requirements.txt
           export PYTHONPATH="${PYTHONPATH}:."
-          python3 training/convert.py -i ../static-frame/doc/build/html -o training/doc
+          python3 training/convert.py -i static-frame/doc/build/html -o training/doc
 
       - name: Build JSON files
         run: |
