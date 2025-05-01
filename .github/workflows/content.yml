@@ -78,11 +78,13 @@ jobs:
           python3 doc/build_doc.py
         working-directory: static-frame
 
-      - name: Convert HTML Docs to MD
+      - name: Convert HTML Docs, Fine Tuning Corpus to MD
         run: |
           pip install -r training/requirements.txt
           export PYTHONPATH="${PYTHONPATH}:."
           python3 training/convert.py -i static-frame/doc/build/html -o training/doc
+          python3 static-frame/doc/build_fine_tune.py --markdown training/fine_tune.md
+
 
       - name: Build JSON files
         run: |
