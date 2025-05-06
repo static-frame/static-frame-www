@@ -144,7 +144,7 @@ API Detail
 
 [Overview: SeriesHE: Dictionary-Like](../api_overview/series_he-dictionary_like.md#api-overview-serieshe-dictionary-like)
 
-SeriesHE.\_\_contains\_\_(*value*, */*)[](#static_frame.SeriesHE.__contains__ "Link to this definition")
+SeriesHE.\_\_contains\_\_(*value*)[](#static_frame.SeriesHE.__contains__ "Link to this definition")
 :   Inclusion of value in index labels.
 
     Returns:

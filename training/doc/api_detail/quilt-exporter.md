@@ -144,6 +144,28 @@ API Detail
 
 [Overview: Quilt: Exporter](../api_overview/quilt-exporter.md#api-overview-quilt-exporter)
 
+Quilt.to\_duckdb(*fp*, *\**, *config=None*)[](#static_frame.Quilt.to_duckdb "Link to this definition")
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
+
+    ```
+    >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
+    >>> q = sf.Quilt(b, retain_labels=True)
+    >>> q
+    <Quilt: j>
+    <Index: Aligned> a b <<U1>
+    <Index: Frames>
+    x                . .
+    v                . .
+    <<U1>
+    >>> q.to_duckdb('/tmp/q.db')
+
+    ```
+
 Quilt.to\_frame()[[source]](../_modules/static_frame/core/quilt.md#Quilt.to_frame)[](#static_frame.Quilt.to_frame "Link to this definition")
 :   Return a consolidated [`Frame`](frame-selector.md#Frame "Frame").
 
@@ -171,7 +193,29 @@ Quilt.to\_frame()[[source]](../_modules/static_frame/core/quilt.md#Quilt.to_fram
 
     ```
 
-Quilt.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Quilt.to_sqlite "Link to this definition")
+Quilt.to\_hdf5(*fp*, *\**, *config=None*)[](#static_frame.Quilt.to_hdf5 "Link to this definition")
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an HDF5 table.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
+
+    ```
+    >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
+    >>> q = sf.Quilt(b, retain_labels=True)
+    >>> q
+    <Quilt: j>
+    <Index: Aligned> a b <<U1>
+    <Index: Frames>
+    x                . .
+    v                . .
+    <<U1>
+    >>> q.to_hdf5('/tmp/q.h5')
+
+    ```
+
+Quilt.to\_sqlite(*fp*, *\**, *config=None*)[](#static_frame.Quilt.to_sqlite "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
 
     > Args:
@@ -196,7 +240,7 @@ Quilt.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Quilt.to_sql
 Quilt.to\_visidata()[](#static_frame.Quilt.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-Quilt.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Quilt.to_xlsx "Link to this definition")
+Quilt.to\_xlsx(*fp*, *\**, *config=None*)[](#static_frame.Quilt.to_xlsx "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a XLSX workbook.
 
     > Args:
@@ -218,7 +262,7 @@ Quilt.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Quilt.to_xlsx 
 
     ```
 
-Quilt.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_csv "Link to this definition")
+Quilt.to\_zip\_csv(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_csv "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of CSV files.
 
     > Args:
@@ -240,7 +284,7 @@ Quilt.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
 
     ```
 
-Quilt.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_npy "Link to this definition")
+Quilt.to\_zip\_npy(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_npy "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPY files.
 
     > Args:
@@ -262,7 +306,7 @@ Quilt.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
 
     ```
 
-Quilt.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_npz "Link to this definition")
+Quilt.to\_zip\_npz(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_npz "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPZ files.
 
     > Args:
@@ -284,7 +328,7 @@ Quilt.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static
 
     ```
 
-Quilt.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_parquet "Link to this definition")
+Quilt.to\_zip\_parquet(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_parquet "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of parquet files.
 
     > Args:
@@ -306,7 +350,7 @@ Quilt.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#st
 
     ```
 
-Quilt.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_pickle "Link to this definition")
+Quilt.to\_zip\_pickle(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_pickle "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of pickles.
 
     > Args:
@@ -328,7 +372,7 @@ Quilt.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#sta
 
     ```
 
-Quilt.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_tsv "Link to this definition")
+Quilt.to\_zip\_tsv(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Quilt.to_zip_tsv "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of TSV files.
 
     > Args:

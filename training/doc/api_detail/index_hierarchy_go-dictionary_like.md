@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexHierarchyGO: Dictionary-Like](../api_overview/index_hierarchy_go-dictionary_like.md#api-overview-indexhierarchygo-dictionary-like)
 
-IndexHierarchyGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexHierarchyGO.__contains__ "Link to this definition")
+IndexHierarchyGO.\_\_contains\_\_(*value*)[](#static_frame.IndexHierarchyGO.__contains__ "Link to this definition")
 :   Determine if a label value is contained in this Index.
 
     ```
@@ -156,7 +156,7 @@ IndexHierarchyGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexHierarch
     b                                   0       1620-11-21
     <<U1>                               <int64> <datetime64[D]>
     >>> ih.__contains__('a')
-    False
+    RuntimeError('Invalid key length for a; must be length 3.')
 
     ```
 

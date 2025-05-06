@@ -145,7 +145,7 @@ API Detail
 
 [Overview: Index](../api_overview/index.md#api-overview-index)
 
-*class* Index(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.md#Index)[](#static_frame.Index "Link to this definition")
+*class* Index(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.md#Index)[](#static_frame.Index "Link to this definition")
 :   A mapping of labels to positions, immutable and of fixed size. Used by default in [`Series`](series-selector.md#Series "Series") and as index and columns in [`Frame`](frame-selector.md#Frame "Frame"). Base class of all 1D indices.
 
 * [Constructor](index-constructor.md#api-detail-index-constructor): Alternative constructors for creating instances.

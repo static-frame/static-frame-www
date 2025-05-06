@@ -160,13 +160,13 @@ FrameGO.bloc[*key*]
     <<U1>        <int64> <int64> <int64>
     >>> f.bloc[f > 5]
     <Series>
-    <IndexHierarchy>
-    p                a     10
-    p                b     8
-    r                b     8
-    r                c     9
-    s                c     12
-    <<U1>            <<U1> <int64>
+    <Index>
+    (np.str_('p'), np.str_('a')) 10
+    (np.str_('p'), np.str_('b')) 8
+    (np.str_('r'), np.str_('b')) 8
+    (np.str_('r'), np.str_('c')) 9
+    (np.str_('s'), np.str_('c')) 12
+    <object>                     <int64>
 
     ```
 

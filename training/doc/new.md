@@ -10,7 +10,7 @@ Introduction
 * [About StaticFrame](intro.md)
 * [Media](intro.md#media)
 * What is New in StaticFrame
-  + [3.0.0](#id1)
+  + [2.18.1](#id1)
   + [2.18.0](#id2)
   + [2.17.0](#id3)
   + [2.16.1](#id4)
@@ -354,13 +354,9 @@ API Detail
 
 # What is New in StaticFrame[](#what-is-new-in-staticframe "Link to this heading")
 
-## 3.0.0[](#id1 "Link to this heading")
+## 2.18.1[](#id1 "Link to this heading")
 
-API change: All failed `iloc` lookups now return an `IndexError`; all failed `loc` lookups now return a `KeyError`.
-
-API change: NumPy `datetime64` units that cannot be represented in Python objects are retained as NumPy scalars in object arrays.
-
-API change: `Frame.bloc[]` selections now return a `Series` with an `IndexHierarchy`.
+Updated PyPI deployment to use Trusted Publisher.
 
 ## 2.18.0[](#id2 "Link to this heading")
 

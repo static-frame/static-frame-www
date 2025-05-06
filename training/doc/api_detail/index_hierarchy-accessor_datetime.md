@@ -561,11 +561,11 @@ IndexHierarchy.via\_dt.timetuple
 
     ```
 
-IndexHierarchy.via\_dt.isoformat(*\**, *sep*, *timespec*)
+IndexHierarchy.via\_dt.isoformat(*sep*, *timespec*)
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.isoformat)
+    InterfaceDatetime.isoformat(*sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.isoformat)
     :   Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
 
     ```
@@ -610,7 +610,7 @@ IndexHierarchy.via\_dt.strftime(*format*)
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strftime)
+    InterfaceDatetime.strftime(*format*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strftime)
     :   Return a string representing the date, controlled by an explicit `format` string.
 
     ```
@@ -631,7 +631,7 @@ IndexHierarchy.via\_dt.strptime(*format*)
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strptime)
+    InterfaceDatetime.strptime(*format*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strptime)
     :   Return a Python datetime object from parsing a string defined with `format`.
 
     ```
@@ -655,7 +655,7 @@ IndexHierarchy.via\_dt.strpdate(*format*)
 :   IndexHierarchy.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strpdate)
+    InterfaceDatetime.strpdate(*format*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceDatetime.strpdate)
     :   Return a Python date object from parsing a string defined with `format`.
 
     ```

@@ -152,13 +152,13 @@ API Detail
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-copy) | `IndexGO.__copy__()` | Return shallow copy of this Index. |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-deepcopy) | `IndexGO.__deepcopy__(memo)` |  |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-len) | `IndexGO.__len__()` |  |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-all) | `IndexGO.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-any) | `IndexGO.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-all) | `IndexGO.all(axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-any) | `IndexGO.any(axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-append) | `IndexGO.append(value)` | Append a value to this Index. Note: if the appended value not permitted by a spe… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-astype) | `IndexGO.astype(dtype)` | Return an Index with type determined by dtype argument. If a datetime64 dtype is… |
 | [Detail](../api_detail/index_go-method.md#id1) | `IndexGO.copy()` | Return shallow copy of this Index. |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-cumprod) | `IndexGO.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-cumsum) | `IndexGO.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-cumprod) | `IndexGO.cumprod(axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-cumsum) | `IndexGO.cumsum(axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-difference) | `IndexGO.difference(*others)` | Perform difference with another Index, container, or NumPy array. Retains order. |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-dropfalsy) | `IndexGO.dropfalsy()` | Return a new Index after removing values of NaN or None. |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-dropna) | `IndexGO.dropna()` | Return a new Index after removing values of NaN or None. |
@@ -176,25 +176,25 @@ API Detail
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-level-add) | `IndexGO.level_add(level, *, index_constructor)` | Return an IndexHierarchy with an added root level. Args: level: A hashable to us… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-loc-searchsorted) | `IndexGO.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-loc-to-iloc) | `IndexGO.loc_to_iloc(key)` | Given a label (loc) style key (either a label, a list of labels, a slice, or a B… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-max) | `IndexGO.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-mean) | `IndexGO.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-median) | `IndexGO.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-min) | `IndexGO.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-max) | `IndexGO.max(axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-mean) | `IndexGO.mean(axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-median) | `IndexGO.median(axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-min) | `IndexGO.min(axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-notfalsy) | `IndexGO.notfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-notna) | `IndexGO.notna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-prod) | `IndexGO.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-prod) | `IndexGO.prod(axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-relabel) | `IndexGO.relabel(mapper)` | Return a new Index with labels replaced by the callable or mapping; order will b… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-rename) | `IndexGO.rename(name)` | Return a new Frame with an updated name attribute. |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-roll) | `IndexGO.roll(shift)` | Return an Index with values rotated forward and wrapped around (with a postive s… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-sample) | `IndexGO.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-sort) | `IndexGO.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-std) | `IndexGO.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-sum) | `IndexGO.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-sort) | `IndexGO.sort(ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascending: If True, sort in asc… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-std) | `IndexGO.std(axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-sum) | `IndexGO.sum(axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-tail) | `IndexGO.tail(count)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-union) | `IndexGO.union(*others)` | Perform union with another Index, container, or NumPy array. Identical compariso… |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-unique) | `IndexGO.unique(depth_level, *, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-unique) | `IndexGO.unique(depth_level, order_by_occurrence)` | Return a NumPy array of unique values. Args: depth\_level: defaults to 0 for for… |
 | [Detail](../api_detail/index_go-method.md#api-sig-indexgo-values-at-depth) | `IndexGO.values_at_depth(depth_level)` | Return an NP array for the depth\_level specified. |
-| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-var) | `IndexGO.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/index_go-method.md#api-sig-indexgo-var) | `IndexGO.var(axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
 [IndexGO](index_go.md#api-overview-indexgo): [Constructor](index_go-constructor.md#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | [Method](#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 

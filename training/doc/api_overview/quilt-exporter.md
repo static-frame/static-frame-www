@@ -146,7 +146,9 @@ API Detail
 
 |  |  |  |
 | --- | --- | --- |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-duckdb) | `Quilt.to_duckdb(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
 | [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-frame) | `Quilt.to_frame()` | Return a consolidated Frame. |
+| [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-hdf5) | `Quilt.to_hdf5(fp, *, config)` | Write the complete Bus as an HDF5 table. Args: fp: A string file path or Path in… |
 | [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-sqlite) | `Quilt.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
 | [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-visidata) | `Quilt.to_visidata()` | Open an interactive VisiData session. |
 | [Detail](../api_detail/quilt-exporter.md#api-sig-quilt-to-xlsx) | `Quilt.to_xlsx(fp, *, config)` | Write the complete Bus as a XLSX workbook. Args: fp: A string file path or Path… |

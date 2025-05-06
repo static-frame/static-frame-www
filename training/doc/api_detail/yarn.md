@@ -145,7 +145,7 @@ API Detail
 
 [Overview: Yarn](../api_overview/yarn.md#api-overview-yarn)
 
-*class* Yarn(*series*, */*, *\**, *index=None*, *index\_constructor=None*, *deepcopy\_from\_bus=False*, *indexer=None*, *hierarchy=None*, *name=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn)[](#static_frame.Yarn "Link to this definition")
+*class* Yarn(*series*, *\**, *index=None*, *index\_constructor=None*, *deepcopy\_from\_bus=False*, *indexer=None*, *hierarchy=None*, *name=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn)[](#static_frame.Yarn "Link to this definition")
 :   A [`Series`](series-selector.md#Series "Series")-like container made of an ordered collection of [`Bus`](bus-selector.md#Bus "Bus"). [`Yarn`](yarn-selector.md#Yarn "Yarn") can be indexed independently of the contained [`Bus`](bus-selector.md#Bus "Bus"), permitting independent labels per contained [`Frame`](frame-selector.md#Frame "Frame").
 
 * [Constructor](yarn-constructor.md#api-detail-yarn-constructor): Alternative constructors for creating instances.

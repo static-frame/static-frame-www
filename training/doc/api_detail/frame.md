@@ -145,7 +145,7 @@ API Detail
 
 [Overview: Frame](../api_overview/frame.md#api-overview-frame)
 
-*class* Frame(*data=<object object>*, */*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame)[](#static_frame.Frame "Link to this definition")
+*class* Frame(*data=<object object>*, *\**, *index=None*, *columns=None*, *name=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_data=False*, *own\_index=False*, *own\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame)[](#static_frame.Frame "Link to this definition")
 :   A two-dimensional ordered, labelled collection, immutable and of fixed size.
 
 * [Constructor](frame-constructor.md#api-detail-frame-constructor): Alternative constructors for creating instances.

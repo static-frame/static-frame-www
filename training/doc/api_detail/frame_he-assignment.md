@@ -721,15 +721,8 @@ FrameHE.assign.bloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
     r            0       8       9
     s            0       0       12
     <<U1>        <int64> <int64> <int64>
-    >>> f.assign.bloc[f > 5].apply_element_items(lambda l, e: e * .01 if l[1] == 'c' else e)
-    <FrameHE: x>
-    <Index>      a         b         c         <<U1>
-    <Index>
-    p            10.0      8.0       1.0
-    q            -2.0      -3.0      0.0
-    r            0.0       8.0       0.09
-    s            0.0       0.0       0.12
-    <<U1>        <float64> <float64> <float64>
+    >>> f.assign.bloc[f > 5].apply_element_items(lambda e: e * .01 if l[1] == 'c' else e)
+    TypeError('<lambda>() takes 1 positional argument but 2 were given')
 
     ```
 

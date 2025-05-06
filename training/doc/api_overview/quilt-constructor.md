@@ -147,8 +147,10 @@ API Detail
 |  |  |  |
 | --- | --- | --- |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-init) | `Quilt.__init__(bus, *, axis, retain_labels, axis_hierarchy, axis_opposite, deepcopy_from_bus)` | Args: bus: Bus of Frame to be used for virtual concatenation. axis: Integer spec… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-duckdb) | `Quilt.from_duckdb(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to an DuckDB Quilt store, return a Quilt instance. Args: fp: A… |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-frame) | `Quilt.from_frame(frame, *, chunksize, retain_labels, axis, name, label_extractor, config, deepcopy_from_bus)` | Given a Frame, create a Quilt by partitioning it along the specified axis in uni… |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-frames) | `Quilt.from_frames(frames, *, axis, name, retain_labels, deepcopy_from_bus)` | Return a Quilt from an iterable of Frame; labels will be drawn from Frame.name. |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-hdf5) | `Quilt.from_hdf5(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to a HDF5 Quilt store, return a Quilt instance. Args: fp: A st… |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-items) | `Quilt.from_items(items, *, axis, name, retain_labels, deepcopy_from_bus)` | Given an iterable of pairs of label, Frame, create a Quilt. |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-sqlite) | `Quilt.from_sqlite(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to an SQLite Quilt store, return a Quilt instance. Args: fp: A… |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-xlsx) | `Quilt.from_xlsx(fp, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to an XLSX Quilt store, return a Quilt instance. Args: fp: A s… |

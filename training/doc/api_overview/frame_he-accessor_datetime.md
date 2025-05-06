@@ -164,7 +164,7 @@ API Detail
 | [Detail](../api_detail/frame_he-accessor_datetime.md#api-sig-framehe-via-dt-is-quarter-end) | `FrameHE.via_dt.is_quarter_end()` | Return Boolean indicators if the day is the quarter end. |
 | [Detail](../api_detail/frame_he-accessor_datetime.md#api-sig-framehe-via-dt-is-quarter-start) | `FrameHE.via_dt.is_quarter_start()` | Return Boolean indicators if the day is the quarter start. |
 | [Detail](../api_detail/frame_he-accessor_datetime.md#api-sig-framehe-via-dt-timetuple) | `FrameHE.via_dt.timetuple()` | Return a time.struct\_time such as returned by time.localtime(). |
-| [Detail](../api_detail/frame_he-accessor_datetime.md#api-sig-framehe-via-dt-isoformat) | `FrameHE.via_dt.isoformat(*, sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
+| [Detail](../api_detail/frame_he-accessor_datetime.md#api-sig-framehe-via-dt-isoformat) | `FrameHE.via_dt.isoformat(sep, timespec)` | Return a string representing the date in ISO 8601 format, YYYY-MM-DD. |
 | [Detail](../api_detail/frame_he-accessor_datetime.md#api-sig-framehe-via-dt-fromisoformat) | `FrameHE.via_dt.fromisoformat()` | Return a datetime.date object from an ISO 8601 format. |
 | [Detail](../api_detail/frame_he-accessor_datetime.md#api-sig-framehe-via-dt-strftime) | `FrameHE.via_dt.strftime(format)` | Return a string representing the date, controlled by an explicit format string. |
 | [Detail](../api_detail/frame_he-accessor_datetime.md#api-sig-framehe-via-dt-strptime) | `FrameHE.via_dt.strptime(format)` | Return a Python datetime object from parsing a string defined with format. |

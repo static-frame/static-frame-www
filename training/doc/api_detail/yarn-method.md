@@ -184,7 +184,7 @@ Yarn.\_\_len\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__len__)
 
     ```
 
-Yarn.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.equals)[](#static_frame.Yarn.equals "Link to this definition")
+Yarn.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.equals)[](#static_frame.Yarn.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Note: this will attempt to load and compare all Frame managed by the Bus.
@@ -222,7 +222,7 @@ Yarn.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *
 
     ```
 
-Yarn.head(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.head)[](#static_frame.Yarn.head "Link to this definition")
+Yarn.head(*count=5*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.head)[](#static_frame.Yarn.head "Link to this definition")
 :   Return a [`Yarn`](yarn-selector.md#Yarn "Yarn") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -255,8 +255,6 @@ Yarn.head(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.h
 Yarn.persist[*key*]
 :   persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
-
-    InterfacePersist.\_\_getitem\_\_ *= <function InterfacePersist.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/node_selector.md#InterfacePersist.__getitem__)
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -304,9 +302,6 @@ Yarn.persist.iloc[*key*]
 :   Yarn.persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
 
-    InterfacePersist.iloc
-    :   Integer-position based selection.
-
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b1.to_zip_npz('/tmp/b1.zip')
@@ -352,9 +347,6 @@ Yarn.persist.iloc[*key*]
 Yarn.persist.loc[*key*]
 :   Yarn.persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
-
-    InterfacePersist.loc
-    :   Label-based selection.
 
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
@@ -402,9 +394,6 @@ Yarn.persist
 :   persist
     :   Interface for selectively (or completely) pre-load Frame from a store to optimize subsequent single Frame extraction.
 
-    InterfacePersist.\_\_call\_\_()[[source]](../_modules/static_frame/core/node_selector.md#InterfacePersist.__call__)
-    :   Persist all Frame.
-
     ```
     >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b1.to_zip_npz('/tmp/b1.zip')
@@ -447,7 +436,7 @@ Yarn.persist
 
     ```
 
-Yarn.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.rehierarch)[](#static_frame.Yarn.rehierarch "Link to this definition")
+Yarn.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.rehierarch)[](#static_frame.Yarn.rehierarch "Link to this definition")
 :   Return a new [`Series`](series-selector.md#Series "Series") with new a hierarchy based on the supplied `depth_map`.
 
     ```
@@ -565,7 +554,7 @@ Yarn.relabel\_flat()[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabe
 
     ```
 
-Yarn.relabel\_level\_add(*level*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_level_add)[](#static_frame.Yarn.relabel_level_add "Link to this definition")
+Yarn.relabel\_level\_add(*level*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_level_add)[](#static_frame.Yarn.relabel_level_add "Link to this definition")
 :   Return a new [`Yarn`](yarn-selector.md#Yarn "Yarn"), adding a new root level to an existing `IndexHierarchy`, or creating an `IndexHierarchy` if one is not yet defined.
 
     Parameters:
@@ -594,7 +583,7 @@ Yarn.relabel\_level\_add(*level*, */*)[[source]](../_modules/static_frame/core/y
 
     ```
 
-Yarn.relabel\_level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_level_drop)[](#static_frame.Yarn.relabel_level_drop "Link to this definition")
+Yarn.relabel\_level\_drop(*count=1*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_level_drop)[](#static_frame.Yarn.relabel_level_drop "Link to this definition")
 :   Return a new [`Yarn`](yarn-selector.md#Yarn "Yarn"), dropping one or more levels from a either the root or the leaves of an `IndexHierarchy`. The resulting index must be unique.
 
     Parameters:
@@ -623,7 +612,7 @@ Yarn.relabel\_level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/cor
 
     ```
 
-Yarn.rename(*name*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.rename)[](#static_frame.Yarn.rename "Link to this definition")
+Yarn.rename(*name*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.rename)[](#static_frame.Yarn.rename "Link to this definition")
 :   Return a new [`Yarn`](yarn-selector.md#Yarn "Yarn") with an updated name attribute.
 
     Parameters:
@@ -652,7 +641,7 @@ Yarn.rename(*name*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.re
 
     ```
 
-Yarn.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.roll)[](#static_frame.Yarn.roll "Link to this definition")
+Yarn.roll(*shift*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.roll)[](#static_frame.Yarn.roll "Link to this definition")
 :   Return a Yarn with values rotated forward and wrapped around the index (with a positive shift) or backward and wrapped around the index (with a negative shift).
 
     Parameters:
@@ -691,7 +680,7 @@ Yarn.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/stat
 
     ```
 
-Yarn.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.shift)[](#static_frame.Yarn.shift "Link to this definition")
+Yarn.shift(*shift*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.shift)[](#static_frame.Yarn.shift "Link to this definition")
 :   Return a [`Yarn`](yarn-selector.md#Yarn "Yarn") with values shifted forward on the index (with a positive shift) or backward on the index (with a negative shift).
 
     Parameters:
@@ -783,7 +772,7 @@ Yarn.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](.
 
     ```
 
-Yarn.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.tail)[](#static_frame.Yarn.tail "Link to this definition")
+Yarn.tail(*count=5*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.tail)[](#static_frame.Yarn.tail "Link to this definition")
 :   Return a [`Yarn`](yarn-selector.md#Yarn "Yarn") consisting only of the bottom elements as specified by `count`.
     :   s
 

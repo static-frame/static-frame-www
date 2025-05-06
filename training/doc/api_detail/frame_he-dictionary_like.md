@@ -144,7 +144,7 @@ API Detail
 
 [Overview: FrameHE: Dictionary-Like](../api_overview/frame_he-dictionary_like.md#api-overview-framehe-dictionary-like)
 
-FrameHE.\_\_contains\_\_(*value*, */*)[](#static_frame.FrameHE.__contains__ "Link to this definition")
+FrameHE.\_\_contains\_\_(*value*)[](#static_frame.FrameHE.__contains__ "Link to this definition")
 :   Inclusion of value in column labels.
 
     ```

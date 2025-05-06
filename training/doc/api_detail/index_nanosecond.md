@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexNanosecond](../api_overview/index_nanosecond.md#api-overview-indexnanosecond)
 
-*class* IndexNanosecond(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexNanosecond)[](#static_frame.IndexNanosecond "Link to this definition")
+*class* IndexNanosecond(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexNanosecond)[](#static_frame.IndexNanosecond "Link to this definition")
 :   A mapping of nanoseconds (NumPy `datetime64[ns]`) to positions, immutable and of fixed size.
 
 * [Constructor](index_nanosecond-constructor.md#api-detail-indexnanosecond-constructor): Alternative constructors for creating instances.

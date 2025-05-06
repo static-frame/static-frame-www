@@ -144,7 +144,7 @@ API Detail
 
 [Overview: FrameGO: Dictionary-Like](../api_overview/frame_go-dictionary_like.md#api-overview-framego-dictionary-like)
 
-FrameGO.\_\_contains\_\_(*value*, */*)[](#static_frame.FrameGO.__contains__ "Link to this definition")
+FrameGO.\_\_contains\_\_(*value*)[](#static_frame.FrameGO.__contains__ "Link to this definition")
 :   Inclusion of value in column labels.
 
     ```

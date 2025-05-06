@@ -151,12 +151,11 @@ Batch.bloc[*key*]
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> bt.bloc[np.arange(6).reshape(3,2) >= 3].to_frame()
     <Frame>
-    <IndexHierarchy> q       r       r       <<U1>
-                     b       a       b       <<U1>
+    <Index> (np.str_('q'), np... (np.str_('r'), np... (np.str_('r'), np... <object>
     <Index>
-    i                3       4       5
-    j                43      44      45
-    <<U1>            <int64> <int64> <int64>
+    i       3                    4                    5
+    j       43                   44                   45
+    <<U1>   <int64>              <int64>              <int64>
 
     ```
 

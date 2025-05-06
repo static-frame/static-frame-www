@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexMillisecond: Exporter](../api_overview/index_millisecond-exporter.md#api-overview-indexmillisecond-exporter)
 
-IndexMillisecond.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexMillisecond.to_html "Link to this definition")
+IndexMillisecond.to\_html(*config=None*, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[](#static_frame.IndexMillisecond.to_html "Link to this definition")
 :   Return an HTML table representation of this [`Index`](index-selector.md#Index "Index") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
@@ -153,7 +153,7 @@ IndexMillisecond.to\_html(*config=None*, */*, *\**, *style\_config=<static\_fram
     Returns:
     :   `str`
 
-IndexMillisecond.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[](#static_frame.IndexMillisecond.to_html_datatables "Link to this definition")
+IndexMillisecond.to\_html\_datatables(*fp=None*, *\**, *show=True*, *config=None*)[](#static_frame.IndexMillisecond.to_html_datatables "Link to this definition")
 :   Return a complete HTML representation of this [`Index`](index-selector.md#Index "Index") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:

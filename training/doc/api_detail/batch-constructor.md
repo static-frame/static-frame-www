@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Batch: Constructor](../api_overview/batch-constructor.md#api-overview-batch-constructor)
 
-Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.__init__)[](#static_frame.Batch.__init__ "Link to this definition")
+Batch.\_\_init\_\_(*items*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.__init__)[](#static_frame.Batch.__init__ "Link to this definition")
 :   Default constructor of a [`Batch`](batch-selector.md#Batch "Batch").
 
     > Args:
@@ -172,7 +172,35 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_frames(*frames*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_frames)[](#static_frame.Batch.from_frames "Link to this definition")
+*classmethod* Batch.from\_duckdb(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_duckdb)[](#static_frame.Batch.from_duckdb "Link to this definition")
+:   Given a file path to an DuckDB [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
+    >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
+    >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
+
+    ```
+    >>> bt1 = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
+    >>> bt1.to_duckdb('/tmp/f.duckdb')
+    >>> bt2 = sf.Batch.from_duckdb('/tmp/f.duckdb', config=sf.StoreConfig(index_depth=1))
+    >>> bt2.to_frame()
+    <Frame>
+    <Index>                   a       b       <<U1>
+    <IndexHierarchy>
+    i                p        0       1
+    i                q        2       3
+    i                r        4       5
+    j                p        40      41
+    j                q        42      43
+    j                r        44      45
+    <<U1>            <object> <int64> <int64>
+
+    ```
+
+*classmethod* Batch.from\_frames(*frames*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_frames)[](#static_frame.Batch.from_frames "Link to this definition")
 :   Return a [`Batch`](batch-selector.md#Batch "Batch") from an iterable of [`Frame`](frame-selector.md#Frame "Frame"); labels will be drawn from [`Frame.name`](frame-attribute.md#static_frame.Frame.name "static_frame.Frame.name").
 
     ```
@@ -193,7 +221,35 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_sqlite(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_sqlite)[](#static_frame.Batch.from_sqlite "Link to this definition")
+*classmethod* Batch.from\_hdf5(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_hdf5)[](#static_frame.Batch.from_hdf5 "Link to this definition")
+:   Given a file path to a HDF5 [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
+    >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
+    >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
+
+    ```
+    >>> bt1 = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
+    >>> bt1.to_hdf5('/tmp/f.hdf5')
+    >>> bt2 = sf.Batch.from_hdf5('/tmp/f.hdf5', config=sf.StoreConfig(index_depth=1))
+    >>> bt2.to_frame()
+    <Frame>
+    <Index>                a       b       <<U1>
+    <IndexHierarchy>
+    i                p     0       1
+    i                q     2       3
+    i                r     4       5
+    j                p     40      41
+    j                q     42      43
+    j                r     44      45
+    <<U1>            <<U1> <int64> <int64>
+
+    ```
+
+*classmethod* Batch.from\_sqlite(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_sqlite)[](#static_frame.Batch.from_sqlite "Link to this definition")
 :   Given a file path to an SQLite [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
@@ -221,7 +277,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_xlsx(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_xlsx)[](#static_frame.Batch.from_xlsx "Link to this definition")
+*classmethod* Batch.from\_xlsx(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_xlsx)[](#static_frame.Batch.from_xlsx "Link to this definition")
 :   Given a file path to an XLSX [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
@@ -249,7 +305,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_csv(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_csv)[](#static_frame.Batch.from_zip_csv "Link to this definition")
+*classmethod* Batch.from\_zip\_csv(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_csv)[](#static_frame.Batch.from_zip_csv "Link to this definition")
 :   Given a file path to zipped CSV [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
@@ -277,7 +333,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_npy(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_npy)[](#static_frame.Batch.from_zip_npy "Link to this definition")
+*classmethod* Batch.from\_zip\_npy(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_npy)[](#static_frame.Batch.from_zip_npy "Link to this definition")
 :   Given a file path to zipped NPY [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
@@ -305,7 +361,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_npz(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_npz)[](#static_frame.Batch.from_zip_npz "Link to this definition")
+*classmethod* Batch.from\_zip\_npz(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_npz)[](#static_frame.Batch.from_zip_npz "Link to this definition")
 :   Given a file path to zipped NPZ [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
@@ -333,7 +389,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_parquet(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_parquet)[](#static_frame.Batch.from_zip_parquet "Link to this definition")
+*classmethod* Batch.from\_zip\_parquet(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_parquet)[](#static_frame.Batch.from_zip_parquet "Link to this definition")
 :   Given a file path to zipped parquet [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
@@ -361,7 +417,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_pickle(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_pickle)[](#static_frame.Batch.from_zip_pickle "Link to this definition")
+*classmethod* Batch.from\_zip\_pickle(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_pickle)[](#static_frame.Batch.from_zip_pickle "Link to this definition")
 :   Given a file path to zipped pickle [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:
@@ -389,7 +445,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     ```
 
-*classmethod* Batch.from\_zip\_tsv(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_tsv)[](#static_frame.Batch.from_zip_tsv "Link to this definition")
+*classmethod* Batch.from\_zip\_tsv(*fp*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_tsv)[](#static_frame.Batch.from_zip_tsv "Link to this definition")
 :   Given a file path to zipped TSV [`Batch`](batch-selector.md#Batch "Batch") store, return a [`Batch`](batch-selector.md#Batch "Batch") instance.
 
     > Args:

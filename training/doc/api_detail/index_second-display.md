@@ -162,7 +162,7 @@ IndexSecond.interface[](#IndexSecond.interface "Link to this definition")
     __init__(labels, *, loc_is_iloc, ... IndexSecond Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexSecond Constructor          Construct an Inde...
     from_pandas(value)                   IndexSecond Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexSecond Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexSecond Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexSecond Exporter             Return a complete...
     to_pandas()                          IndexSecond Exporter             Return a Pandas I...
     to_series()                          IndexSecond Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexSecond.interface[](#IndexSecond.interface "Link to this definition")
     ...                                  ...         ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexSecond Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexSecond Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexSecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexSecond Accessor Hashlib
     via_type_clinic.to_hint()            IndexSecond Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexSecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexSecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexSecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexSecond Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U11>      <<U27>               <<U83>
+    <<U90>                               <<U11>      <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexSecond.\_\_str\_\_()[](#static_frame.IndexSecond.__str__ "Link to this d
 
     ```
 
-IndexSecond.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexSecond.display "Link to this definition")
+IndexSecond.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexSecond.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexSecond.display(*config=None*, */*, *\**, *style\_config=None*)[](#static
 
     ```
 
-IndexSecond.display\_tall(*config=None*, */*)[](#static_frame.IndexSecond.display_tall "Link to this definition")
+IndexSecond.display\_tall(*config=None*)[](#static_frame.IndexSecond.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexSecond.display\_tall(*config=None*, */*)[](#static_frame.IndexSecond.dis
 
     ```
 
-IndexSecond.display\_wide(*config=None*, */*)[](#static_frame.IndexSecond.display_wide "Link to this definition")
+IndexSecond.display\_wide(*config=None*)[](#static_frame.IndexSecond.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

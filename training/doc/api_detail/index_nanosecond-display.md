@@ -162,7 +162,7 @@ IndexNanosecond.interface[](#IndexNanosecond.interface "Link to this definiti
     __init__(labels, *, loc_is_iloc, ... IndexNanosecond Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexNanosecond Constructor          Construct an Inde...
     from_pandas(value)                   IndexNanosecond Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexNanosecond Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexNanosecond Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexNanosecond Exporter             Return a complete...
     to_pandas()                          IndexNanosecond Exporter             Return a Pandas I...
     to_series()                          IndexNanosecond Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexNanosecond.interface[](#IndexNanosecond.interface "Link to this definiti
     ...                                  ...             ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexNanosecond Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexNanosecond Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexNanosecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexNanosecond Accessor Hashlib
     via_type_clinic.to_hint()            IndexNanosecond Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexNanosecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexNanosecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexNanosecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexNanosecond Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U15>          <<U27>               <<U83>
+    <<U90>                               <<U15>          <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexNanosecond.\_\_str\_\_()[](#static_frame.IndexNanosecond.__str__ "Link t
 
     ```
 
-IndexNanosecond.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexNanosecond.display "Link to this definition")
+IndexNanosecond.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexNanosecond.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexNanosecond.display(*config=None*, */*, *\**, *style\_config=None*)[](#st
 
     ```
 
-IndexNanosecond.display\_tall(*config=None*, */*)[](#static_frame.IndexNanosecond.display_tall "Link to this definition")
+IndexNanosecond.display\_tall(*config=None*)[](#static_frame.IndexNanosecond.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexNanosecond.display\_tall(*config=None*, */*)[](#static_frame.IndexNanose
 
     ```
 
-IndexNanosecond.display\_wide(*config=None*, */*)[](#static_frame.IndexNanosecond.display_wide "Link to this definition")
+IndexNanosecond.display\_wide(*config=None*)[](#static_frame.IndexNanosecond.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

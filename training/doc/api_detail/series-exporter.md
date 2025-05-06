@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Series: Exporter](../api_overview/series-exporter.md#api-overview-series-exporter)
 
-Series.to\_frame(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/series.md#Series.to_frame)[](#static_frame.Series.to_frame "Link to this definition")
+Series.to\_frame(*axis=1*, *\**, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/series.md#Series.to_frame)[](#static_frame.Series.to_frame "Link to this definition")
 :   Return a [`Frame`](frame-selector.md#Frame "Frame") view of this [`Series`](series-selector.md#Series "Series"). As underlying data is immutable, this is a no-copy operation.
 
     Parameters:
@@ -177,7 +177,7 @@ Series.to\_frame(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *colum
 
     ```
 
-Series.to\_frame\_go(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/series.md#Series.to_frame_go)[](#static_frame.Series.to_frame_go "Link to this definition")
+Series.to\_frame\_go(*axis=1*, *\**, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/series.md#Series.to_frame_go)[](#static_frame.Series.to_frame_go "Link to this definition")
 :   Return [`FrameGO`](frame_go-selector.md#FrameGO "FrameGO") view of this [`Series`](series-selector.md#Series "Series"). As underlying data is immutable, this is a no-copy operation.
 
     Parameters:
@@ -209,7 +209,7 @@ Series.to\_frame\_go(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *c
 
     ```
 
-Series.to\_frame\_he(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/series.md#Series.to_frame_he)[](#static_frame.Series.to_frame_he "Link to this definition")
+Series.to\_frame\_he(*axis=1*, *\**, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[[source]](../_modules/static_frame/core/series.md#Series.to_frame_he)[](#static_frame.Series.to_frame_he "Link to this definition")
 :   Return [`FrameHE`](frame_he-selector.md#FrameHE "FrameHE") view of this [`Series`](series-selector.md#Series "Series"). As underlying data is immutable, this is a no-copy operation.
 
     Parameters:
@@ -241,7 +241,7 @@ Series.to\_frame\_he(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *c
 
     ```
 
-Series.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[[source]](../_modules/static_frame/core/series.md#Series.to_html)[](#static_frame.Series.to_html "Link to this definition")
+Series.to\_html(*config=None*, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[[source]](../_modules/static_frame/core/series.md#Series.to_html)[](#static_frame.Series.to_html "Link to this definition")
 :   Return an HTML table representation of this [`Series`](series-selector.md#Series "Series") using standard TABLE, TR, and TD tags. This is not a complete HTML page.
 
     Parameters:
@@ -250,7 +250,7 @@ Series.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.sty
     Returns:
     :   `str`
 
-Series.to\_html\_datatables(*fp=None*, */*, *\**, *show=True*, *config=None*)[[source]](../_modules/static_frame/core/series.md#Series.to_html_datatables)[](#static_frame.Series.to_html_datatables "Link to this definition")
+Series.to\_html\_datatables(*fp=None*, *show=True*, *config=None*)[[source]](../_modules/static_frame/core/series.md#Series.to_html_datatables)[](#static_frame.Series.to_html_datatables "Link to this definition")
 :   Return a complete HTML representation of this [`Series`](series-selector.md#Series "Series") using the DataTables JS library for table naviagation and search. The page links to CDNs for JS resources, and thus will not fully render without an internet connection.
 
     Parameters:

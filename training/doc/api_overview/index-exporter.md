@@ -146,7 +146,7 @@ API Detail
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index-exporter.md#api-sig-index-to-html) | `Index.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
+| [Detail](../api_detail/index-exporter.md#api-sig-index-to-html) | `Index.to_html(config, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
 | [Detail](../api_detail/index-exporter.md#api-sig-index-to-html-datatables) | `Index.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
 | [Detail](../api_detail/index-exporter.md#api-sig-index-to-pandas) | `Index.to_pandas()` | Return a Pandas Index. |
 | [Detail](../api_detail/index-exporter.md#api-sig-index-to-series) | `Index.to_series()` | Return a Series with values from this Index’s labels. |

@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexYearMonth: Constructor](../api_overview/index_year_month-constructor.md#api-overview-indexyearmonth-constructor)
 
-IndexYearMonth.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexYearMonth.__init__ "Link to this definition")
+IndexYearMonth.\_\_init\_\_(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexYearMonth.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -173,7 +173,7 @@ IndexYearMonth.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<o
 
     ```
 
-*classmethod* IndexYearMonth.from\_labels(*labels*, */*, *\**, *name=None*)[](#static_frame.IndexYearMonth.from_labels "Link to this definition")
+*classmethod* IndexYearMonth.from\_labels(*labels*, *\**, *name=None*)[](#static_frame.IndexYearMonth.from_labels "Link to this definition")
 :   Construct an `Index` from an iterable of labels, where each label is a hashable. Provided for a compatible interface to `IndexHierarchy`.
 
     ```
@@ -186,7 +186,7 @@ IndexYearMonth.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<o
 
     ```
 
-*classmethod* IndexYearMonth.from\_pandas(*value*, */*)[](#static_frame.IndexYearMonth.from_pandas "Link to this definition")
+*classmethod* IndexYearMonth.from\_pandas(*value*)[](#static_frame.IndexYearMonth.from_pandas "Link to this definition")
 :   Given a Pandas index, return the appropriate IndexBase derived class.
 
     ```

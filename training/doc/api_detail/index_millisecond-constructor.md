@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexMillisecond: Constructor](../api_overview/index_millisecond-constructor.md#api-overview-indexmillisecond-constructor)
 
-IndexMillisecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexMillisecond.__init__ "Link to this definition")
+IndexMillisecond.\_\_init\_\_(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[](#static_frame.IndexMillisecond.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -161,7 +161,7 @@ IndexMillisecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=
 
     ```
 
-*classmethod* IndexMillisecond.from\_labels(*labels*, */*, *\**, *name=None*)[](#static_frame.IndexMillisecond.from_labels "Link to this definition")
+*classmethod* IndexMillisecond.from\_labels(*labels*, *\**, *name=None*)[](#static_frame.IndexMillisecond.from_labels "Link to this definition")
 :   Construct an `Index` from an iterable of labels, where each label is a hashable. Provided for a compatible interface to `IndexHierarchy`.
 
     ```
@@ -174,7 +174,7 @@ IndexMillisecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=
 
     ```
 
-*classmethod* IndexMillisecond.from\_pandas(*value*, */*)[](#static_frame.IndexMillisecond.from_pandas "Link to this definition")
+*classmethod* IndexMillisecond.from\_pandas(*value*)[](#static_frame.IndexMillisecond.from_pandas "Link to this definition")
 :   Given a Pandas index, return the appropriate IndexBase derived class.
 
     ```

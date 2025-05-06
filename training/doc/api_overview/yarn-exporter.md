@@ -146,6 +146,8 @@ API Detail
 
 |  |  |  |
 | --- | --- | --- |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-duckdb) | `Yarn.to_duckdb(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-hdf5) | `Yarn.to_hdf5(fp, *, config)` | Write the complete Bus as an HDF5 table. Args: fp: A string file path or Path in… |
 | [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-series) | `Yarn.to_series()` | Return a Series with the Frame contained in all contained Bus. |
 | [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-sqlite) | `Yarn.to_sqlite(fp, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
 | [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-visidata) | `Yarn.to_visidata()` | Open an interactive VisiData session. |

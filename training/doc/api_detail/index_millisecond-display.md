@@ -162,7 +162,7 @@ IndexMillisecond.interface[](#IndexMillisecond.interface "Link to this defini
     __init__(labels, *, loc_is_iloc, ... IndexMillisecond Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexMillisecond Constructor          Construct an Inde...
     from_pandas(value)                   IndexMillisecond Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexMillisecond Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexMillisecond Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexMillisecond Exporter             Return a complete...
     to_pandas()                          IndexMillisecond Exporter             Return a Pandas I...
     to_series()                          IndexMillisecond Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexMillisecond.interface[](#IndexMillisecond.interface "Link to this defini
     ...                                  ...              ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexMillisecond Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexMillisecond Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexMillisecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib
+    via_hashlib(include_name, include... IndexMillisecond Accessor Hashlib
     via_type_clinic.to_hint()            IndexMillisecond Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexMillisecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexMillisecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexMillisecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexMillisecond Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U16>           <<U27>               <<U83>
+    <<U90>                               <<U16>           <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexMillisecond.\_\_str\_\_()[](#static_frame.IndexMillisecond.__str__ "Link
 
     ```
 
-IndexMillisecond.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexMillisecond.display "Link to this definition")
+IndexMillisecond.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexMillisecond.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexMillisecond.display(*config=None*, */*, *\**, *style\_config=None*)[](#s
 
     ```
 
-IndexMillisecond.display\_tall(*config=None*, */*)[](#static_frame.IndexMillisecond.display_tall "Link to this definition")
+IndexMillisecond.display\_tall(*config=None*)[](#static_frame.IndexMillisecond.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexMillisecond.display\_tall(*config=None*, */*)[](#static_frame.IndexMilli
 
     ```
 
-IndexMillisecond.display\_wide(*config=None*, */*)[](#static_frame.IndexMillisecond.display_wide "Link to this definition")
+IndexMillisecond.display\_wide(*config=None*)[](#static_frame.IndexMillisecond.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

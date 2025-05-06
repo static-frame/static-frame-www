@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexSecondGO: Dictionary-Like](../api_overview/index_second_go-dictionary_like.md#api-overview-indexsecondgo-dictionary-like)
 
-IndexSecondGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexSecondGO.__contains__ "Link to this definition")
+IndexSecondGO.\_\_contains\_\_(*value*)[](#static_frame.IndexSecondGO.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```

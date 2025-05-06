@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Series: Operator Binary](../api_overview/series-operator_binary.md#api-overview-series-operator-binary)
 
-Series.\_\_add\_\_(*other*, */*)[](#static_frame.Series.__add__ "Link to this definition")
+Series.\_\_add\_\_(*other*)[](#static_frame.Series.__add__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -171,7 +171,7 @@ Series.\_\_add\_\_(*other*, */*)[](#static_frame.Series.__add__ "Link to this
 
     ```
 
-Series.\_\_and\_\_(*other*, */*)[](#static_frame.Series.__and__ "Link to this definition")
+Series.\_\_and\_\_(*other*)[](#static_frame.Series.__and__ "Link to this definition")
 :   ```
     >>> s = sf.Series((False, False, True), index=('a', 'b', 'c'))
     >>> s
@@ -198,7 +198,7 @@ Series.\_\_and\_\_(*other*, */*)[](#static_frame.Series.__and__ "Link to this
 
     ```
 
-Series.\_\_eq\_\_(*other*, */*)[](#static_frame.Series.__eq__ "Link to this definition")
+Series.\_\_eq\_\_(*other*)[](#static_frame.Series.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -227,7 +227,7 @@ Series.\_\_eq\_\_(*other*, */*)[](#static_frame.Series.__eq__ "Link to this d
 
     ```
 
-Series.\_\_floordiv\_\_(*other*, */*)[](#static_frame.Series.__floordiv__ "Link to this definition")
+Series.\_\_floordiv\_\_(*other*)[](#static_frame.Series.__floordiv__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -254,7 +254,7 @@ Series.\_\_floordiv\_\_(*other*, */*)[](#static_frame.Series.__floordiv__ "Li
 
     ```
 
-Series.\_\_ge\_\_(*other*, */*)[](#static_frame.Series.__ge__ "Link to this definition")
+Series.\_\_ge\_\_(*other*)[](#static_frame.Series.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -283,7 +283,7 @@ Series.\_\_ge\_\_(*other*, */*)[](#static_frame.Series.__ge__ "Link to this d
 
     ```
 
-Series.\_\_gt\_\_(*other*, */*)[](#static_frame.Series.__gt__ "Link to this definition")
+Series.\_\_gt\_\_(*other*)[](#static_frame.Series.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -312,7 +312,7 @@ Series.\_\_gt\_\_(*other*, */*)[](#static_frame.Series.__gt__ "Link to this d
 
     ```
 
-Series.\_\_le\_\_(*other*, */*)[](#static_frame.Series.__le__ "Link to this definition")
+Series.\_\_le\_\_(*other*)[](#static_frame.Series.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -341,7 +341,7 @@ Series.\_\_le\_\_(*other*, */*)[](#static_frame.Series.__le__ "Link to this d
 
     ```
 
-Series.\_\_lt\_\_(*other*, */*)[](#static_frame.Series.__lt__ "Link to this definition")
+Series.\_\_lt\_\_(*other*)[](#static_frame.Series.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -370,7 +370,7 @@ Series.\_\_lt\_\_(*other*, */*)[](#static_frame.Series.__lt__ "Link to this d
 
     ```
 
-Series.\_\_matmul\_\_(*other*, */*)[](#static_frame.Series.__matmul__ "Link to this definition")
+Series.\_\_matmul\_\_(*other*)[](#static_frame.Series.__matmul__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -385,7 +385,7 @@ Series.\_\_matmul\_\_(*other*, */*)[](#static_frame.Series.__matmul__ "Link t
 
     ```
 
-Series.\_\_mod\_\_(*other*, */*)[](#static_frame.Series.__mod__ "Link to this definition")
+Series.\_\_mod\_\_(*other*)[](#static_frame.Series.__mod__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -412,7 +412,7 @@ Series.\_\_mod\_\_(*other*, */*)[](#static_frame.Series.__mod__ "Link to this
 
     ```
 
-Series.\_\_mul\_\_(*other*, */*)[](#static_frame.Series.__mul__ "Link to this definition")
+Series.\_\_mul\_\_(*other*)[](#static_frame.Series.__mul__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -439,7 +439,7 @@ Series.\_\_mul\_\_(*other*, */*)[](#static_frame.Series.__mul__ "Link to this
 
     ```
 
-Series.\_\_ne\_\_(*other*, */*)[](#static_frame.Series.__ne__ "Link to this definition")
+Series.\_\_ne\_\_(*other*)[](#static_frame.Series.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -468,7 +468,7 @@ Series.\_\_ne\_\_(*other*, */*)[](#static_frame.Series.__ne__ "Link to this d
 
     ```
 
-Series.\_\_or\_\_(*other*, */*)[](#static_frame.Series.__or__ "Link to this definition")
+Series.\_\_or\_\_(*other*)[](#static_frame.Series.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -497,7 +497,7 @@ Series.\_\_or\_\_(*other*, */*)[](#static_frame.Series.__or__ "Link to this d
 
     ```
 
-Series.\_\_pow\_\_(*other*, */*)[](#static_frame.Series.__pow__ "Link to this definition")
+Series.\_\_pow\_\_(*other*)[](#static_frame.Series.__pow__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -524,7 +524,7 @@ Series.\_\_pow\_\_(*other*, */*)[](#static_frame.Series.__pow__ "Link to this
 
     ```
 
-Series.\_\_radd\_\_(*other*, */*)[](#static_frame.Series.__radd__ "Link to this definition")
+Series.\_\_radd\_\_(*other*)[](#static_frame.Series.__radd__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -544,7 +544,7 @@ Series.\_\_radd\_\_(*other*, */*)[](#static_frame.Series.__radd__ "Link to th
 
     ```
 
-Series.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.Series.__rfloordiv__ "Link to this definition")
+Series.\_\_rfloordiv\_\_(*other*)[](#static_frame.Series.__rfloordiv__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -564,7 +564,7 @@ Series.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.Series.__rfloordiv__ "
 
     ```
 
-Series.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.Series.__rmatmul__ "Link to this definition")
+Series.\_\_rmatmul\_\_(*other*)[](#static_frame.Series.__rmatmul__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -579,7 +579,7 @@ Series.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.Series.__rmatmul__ "Link
 
     ```
 
-Series.\_\_rmul\_\_(*other*, */*)[](#static_frame.Series.__rmul__ "Link to this definition")
+Series.\_\_rmul\_\_(*other*)[](#static_frame.Series.__rmul__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -599,7 +599,7 @@ Series.\_\_rmul\_\_(*other*, */*)[](#static_frame.Series.__rmul__ "Link to th
 
     ```
 
-Series.\_\_rshift\_\_(*other*, */*)[](#static_frame.Series.__rshift__ "Link to this definition")
+Series.\_\_rshift\_\_(*other*)[](#static_frame.Series.__rshift__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -619,7 +619,7 @@ Series.\_\_rshift\_\_(*other*, */*)[](#static_frame.Series.__rshift__ "Link t
 
     ```
 
-Series.\_\_rsub\_\_(*other*, */*)[](#static_frame.Series.__rsub__ "Link to this definition")
+Series.\_\_rsub\_\_(*other*)[](#static_frame.Series.__rsub__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -639,7 +639,7 @@ Series.\_\_rsub\_\_(*other*, */*)[](#static_frame.Series.__rsub__ "Link to th
 
     ```
 
-Series.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.Series.__rtruediv__ "Link to this definition")
+Series.\_\_rtruediv\_\_(*other*)[](#static_frame.Series.__rtruediv__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -659,7 +659,7 @@ Series.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.Series.__rtruediv__ "Li
 
     ```
 
-Series.\_\_sub\_\_(*other*, */*)[](#static_frame.Series.__sub__ "Link to this definition")
+Series.\_\_sub\_\_(*other*)[](#static_frame.Series.__sub__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -686,7 +686,7 @@ Series.\_\_sub\_\_(*other*, */*)[](#static_frame.Series.__sub__ "Link to this
 
     ```
 
-Series.\_\_truediv\_\_(*other*, */*)[](#static_frame.Series.__truediv__ "Link to this definition")
+Series.\_\_truediv\_\_(*other*)[](#static_frame.Series.__truediv__ "Link to this definition")
 :   ```
     >>> s = sf.Series((10, 2, 8), index=('a', 'b', 'c'))
     >>> s
@@ -713,7 +713,7 @@ Series.\_\_truediv\_\_(*other*, */*)[](#static_frame.Series.__truediv__ "Link
 
     ```
 
-Series.\_\_xor\_\_(*other*, */*)[](#static_frame.Series.__xor__ "Link to this definition")
+Series.\_\_xor\_\_(*other*)[](#static_frame.Series.__xor__ "Link to this definition")
 :   ```
     >>> s = sf.Series((False, False, True), index=('a', 'b', 'c'))
     >>> s

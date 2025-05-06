@@ -246,7 +246,7 @@ IndexDateGO.\_\_len\_\_()[](#static_frame.IndexDateGO.__len__ "Link to this d
 
     ```
 
-IndexDateGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.all "Link to this definition")
+IndexDateGO.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -266,7 +266,7 @@ IndexDateGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexDateGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.any "Link to this definition")
+IndexDateGO.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -286,7 +286,7 @@ IndexDateGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexDateGO.append(*value*, */*)[](#static_frame.IndexDateGO.append "Link to this definition")
+IndexDateGO.append(*value*)[](#static_frame.IndexDateGO.append "Link to this definition")
 :   Specialize for fixed-typed indices: convert value argument; do not need to resolve\_dtype with each addition; self.\_map is never None
 
     ```
@@ -308,7 +308,7 @@ IndexDateGO.append(*value*, */*)[](#static_frame.IndexDateGO.append "Link to 
 
     ```
 
-IndexDateGO.astype(*dtype*, */*)[](#static_frame.IndexDateGO.astype "Link to this definition")
+IndexDateGO.astype(*dtype*)[](#static_frame.IndexDateGO.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -351,7 +351,7 @@ IndexDateGO.copy()[](#static_frame.IndexDateGO.copy "Link to this definition"
 
     ```
 
-IndexDateGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexDateGO.cumprod "Link to this definition")
+IndexDateGO.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexDateGO.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -371,7 +371,7 @@ IndexDateGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexDateG
 
     ```
 
-IndexDateGO.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexDateGO.cumsum "Link to this definition")
+IndexDateGO.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexDateGO.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -456,7 +456,7 @@ IndexDateGO.dropna()[](#static_frame.IndexDateGO.dropna "Link to this definit
 
     ```
 
-IndexDateGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexDateGO.equals "Link to this definition")
+IndexDateGO.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexDateGO.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -485,7 +485,7 @@ IndexDateGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fa
 
     ```
 
-IndexDateGO.extend(*values*, */*)[](#static_frame.IndexDateGO.extend "Link to this definition")
+IndexDateGO.extend(*values*)[](#static_frame.IndexDateGO.extend "Link to this definition")
 :   Append multiple values
     :param values: can be a generator.
 
@@ -517,7 +517,7 @@ IndexDateGO.extend(*values*, */*)[](#static_frame.IndexDateGO.extend "Link to
 
     ```
 
-IndexDateGO.fillfalsy(*value*, */*)[](#static_frame.IndexDateGO.fillfalsy "Link to this definition")
+IndexDateGO.fillfalsy(*value*)[](#static_frame.IndexDateGO.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -536,7 +536,7 @@ IndexDateGO.fillfalsy(*value*, */*)[](#static_frame.IndexDateGO.fillfalsy "Li
 
     ```
 
-IndexDateGO.fillna(*value*, */*)[](#static_frame.IndexDateGO.fillna "Link to this definition")
+IndexDateGO.fillna(*value*)[](#static_frame.IndexDateGO.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -559,7 +559,7 @@ IndexDateGO.fillna(*value*, */*)[](#static_frame.IndexDateGO.fillna "Link to 
 
     ```
 
-IndexDateGO.head(*count=5*, */*)[](#static_frame.IndexDateGO.head "Link to this definition")
+IndexDateGO.head(*count=5*)[](#static_frame.IndexDateGO.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -581,7 +581,7 @@ IndexDateGO.head(*count=5*, */*)[](#static_frame.IndexDateGO.head "Link to th
 
     ```
 
-IndexDateGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexDateGO.iloc_searchsorted "Link to this definition")
+IndexDateGO.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexDateGO.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -635,7 +635,7 @@ IndexDateGO.isfalsy()[](#static_frame.IndexDateGO.isfalsy "Link to this defin
 
     ```
 
-IndexDateGO.isin(*other*, */*)[](#static_frame.IndexDateGO.isin "Link to this definition")
+IndexDateGO.isin(*other*)[](#static_frame.IndexDateGO.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -661,7 +661,7 @@ IndexDateGO.isna()[](#static_frame.IndexDateGO.isna "Link to this definition"
 
     ```
 
-IndexDateGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexDateGO.label_widths_at_depth "Link to this definition")
+IndexDateGO.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexDateGO.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -680,7 +680,7 @@ IndexDateGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.I
 
     ```
 
-IndexDateGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexDateGO.level_add "Link to this definition")
+IndexDateGO.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexDateGO.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -705,7 +705,7 @@ IndexDateGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#stat
 
     ```
 
-IndexDateGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexDateGO.loc_searchsorted "Link to this definition")
+IndexDateGO.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexDateGO.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -726,7 +726,7 @@ IndexDateGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_val
 
     ```
 
-IndexDateGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexDateGO.loc_to_iloc "Link to this definition")
+IndexDateGO.loc\_to\_iloc(*key*)[](#static_frame.IndexDateGO.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -749,7 +749,7 @@ IndexDateGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexDateGO.loc_to_iloc
 
     ```
 
-IndexDateGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.max "Link to this definition")
+IndexDateGO.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -769,7 +769,7 @@ IndexDateGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexDateGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.mean "Link to this definition")
+IndexDateGO.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -789,7 +789,7 @@ IndexDateGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.I
 
     ```
 
-IndexDateGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.median "Link to this definition")
+IndexDateGO.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -809,7 +809,7 @@ IndexDateGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexDateGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.min "Link to this definition")
+IndexDateGO.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexDateGO.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -849,7 +849,7 @@ IndexDateGO.notna()[](#static_frame.IndexDateGO.notna "Link to this definitio
 
     ```
 
-IndexDateGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexDateGO.prod "Link to this definition")
+IndexDateGO.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexDateGO.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -869,7 +869,7 @@ IndexDateGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#sta
 
     ```
 
-IndexDateGO.relabel(*mapper*, */*)[](#static_frame.IndexDateGO.relabel "Link to this definition")
+IndexDateGO.relabel(*mapper*)[](#static_frame.IndexDateGO.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -885,7 +885,7 @@ IndexDateGO.relabel(*mapper*, */*)[](#static_frame.IndexDateGO.relabel "Link 
 
     ```
 
-IndexDateGO.rename(*name*, */*)[](#static_frame.IndexDateGO.rename "Link to this definition")
+IndexDateGO.rename(*name*)[](#static_frame.IndexDateGO.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -948,7 +948,7 @@ IndexDateGO.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexDateGO.
 
     ```
 
-IndexDateGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexDateGO.sort "Link to this definition")
+IndexDateGO.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexDateGO.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -979,7 +979,7 @@ IndexDateGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#s
 
     ```
 
-IndexDateGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexDateGO.std "Link to this definition")
+IndexDateGO.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexDateGO.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -999,7 +999,7 @@ IndexDateGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#stati
 
     ```
 
-IndexDateGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexDateGO.sum "Link to this definition")
+IndexDateGO.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexDateGO.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -1019,7 +1019,7 @@ IndexDateGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#stat
 
     ```
 
-IndexDateGO.tail(*count=5*, */*)[](#static_frame.IndexDateGO.tail "Link to this definition")
+IndexDateGO.tail(*count=5*)[](#static_frame.IndexDateGO.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1071,7 +1071,7 @@ IndexDateGO.union(*\*others*)[](#static_frame.IndexDateGO.union "Link to this
 
     ```
 
-IndexDateGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexDateGO.unique "Link to this definition")
+IndexDateGO.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexDateGO.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1094,7 +1094,7 @@ IndexDateGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[�
 
     ```
 
-IndexDateGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexDateGO.values_at_depth "Link to this definition")
+IndexDateGO.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexDateGO.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1110,7 +1110,7 @@ IndexDateGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexDat
 
     ```
 
-IndexDateGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexDateGO.var "Link to this definition")
+IndexDateGO.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexDateGO.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

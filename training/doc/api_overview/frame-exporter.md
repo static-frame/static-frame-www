@@ -150,22 +150,25 @@ API Detail
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-clipboard) | `Frame.to_clipboard(*, delimiter, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quote_char, quote_double, escape_char, quoting, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. The de… |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-csv) | `Frame.to_csv(fp, *, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quoting, quote_char, quote_double, escape_char, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. The de… |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-delimited) | `Frame.to_delimited(fp, *, delimiter, include_index, include_index_name, include_columns, include_columns_name, encoding, line_terminator, quote_char, quote_double, escape_char, quoting, store_filter)` | Given a file path or file-like object, write the Frame as delimited text. A deli… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-duckdb) | `Frame.to_duckdb(fp, *, label, include_index, include_columns)` | Write the Frame as single-table DuckDB file. |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-frame) | `Frame.to_frame(*, name)` | Return Frame instance from this Frame. If this Frame is immutable the same insta… |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-frame-go) | `Frame.to_frame_go(*, name)` | Return a FrameGO instance from this Frame. |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-frame-he) | `Frame.to_frame_he(*, name)` | Return a FrameHE instance from this Frame. If this Frame is immutable the same i… |
-| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-html) | `Frame.to_html(config, *, style_config)` | Return an HTML table representation of this Frame using standard TABLE, TR, and… |
-| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-html-datatables) | `Frame.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Frame using the DataTables JS libr… |
-| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-columns) | `Frame.to_json_columns(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object keyed by c… |
-| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-index) | `Frame.to_json_index(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object keyed by i… |
-| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-records) | `Frame.to_json_records(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON array of row obje… |
-| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-split) | `Frame.to_json_split(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object with a key… |
-| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-typed) | `Frame.to_json_typed(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON object with a key… |
-| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-values) | `Frame.to_json_values(*, indent)` | Export a Frame as a JSON string constructed as follows: A JSON array of arrays o… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-hdf5) | `Frame.to_hdf5(fp, *, label, include_index, include_columns)` | Write the Frame as single-table SQLite file. |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-html) | `Frame.to_html(config, style_config)` | Return an HTML table representation of this Frame using standard TABLE, TR, and… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-html-datatables) | `Frame.to_html_datatables(fp, show, config)` | Return a complete HTML representation of this Frame using the DataTables JS libr… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-columns) | `Frame.to_json_columns(indent)` | Export a Frame as a JSON string constructed as follows: A JSON object keyed by c… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-index) | `Frame.to_json_index(indent)` | Export a Frame as a JSON string constructed as follows: A JSON object keyed by i… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-records) | `Frame.to_json_records(indent)` | Export a Frame as a JSON string constructed as follows: A JSON array of row obje… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-split) | `Frame.to_json_split(indent)` | Export a Frame as a JSON string constructed as follows: A JSON object with a key… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-typed) | `Frame.to_json_typed(indent)` | Export a Frame as a JSON string constructed as follows: A JSON object with a key… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-json-values) | `Frame.to_json_values(indent)` | Export a Frame as a JSON string constructed as follows: A JSON array of arrays o… |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-latex) | `Frame.to_latex(config)` | Display the Frame as a LaTeX formatted table. |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-markdown) | `Frame.to_markdown(config)` | Display the Frame as a Markdown formatted table. |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-msgpack) | `Frame.to_msgpack()` | Return msgpack bytes. |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-npy) | `Frame.to_npy(fp, *, include_index, include_columns, consolidate_blocks)` | Write a Frame as a directory of npy file. |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-npz) | `Frame.to_npz(fp, *, include_index, include_columns, consolidate_blocks)` | Write a Frame as an npz file. |
-| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-pairs) | `Frame.to_pairs(*, axis)` | Return a tuple of major axis key, minor axis key vlaue pairs, where major axis i… |
+| [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-pairs) | `Frame.to_pairs(axis)` | Return a tuple of major axis key, minor axis key vlaue pairs, where major axis i… |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-pandas) | `Frame.to_pandas()` | Return a Pandas DataFrame. |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-parquet) | `Frame.to_parquet(fp, *, include_index, include_index_name, include_columns, include_columns_name)` | Write an Arrow Parquet binary file. |
 | [Detail](../api_detail/frame-exporter.md#api-sig-frame-to-pickle) | `Frame.to_pickle(fp, *, protocol)` | Write a Frame as a Python pickle. The pickle module is not secure. Only unpickle… |

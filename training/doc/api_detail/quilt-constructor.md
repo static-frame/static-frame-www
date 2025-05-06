@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Quilt: Constructor](../api_overview/quilt-constructor.md#api-overview-quilt-constructor)
 
-Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarchy=None*, *axis\_opposite=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.__init__)[](#static_frame.Quilt.__init__ "Link to this definition")
+Quilt.\_\_init\_\_(*bus*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarchy=None*, *axis\_opposite=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.__init__)[](#static_frame.Quilt.__init__ "Link to this definition")
 :   Parameters:
     :   * **bus** – [`Bus`](bus-selector.md#Bus "Bus") of [`Frame`](frame-selector.md#Frame "Frame") to be used for virtual concatenation.
         * **axis** – Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
@@ -193,7 +193,44 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_frame(*frame*, */*, *\**, *chunksize*, *retain\_labels*, *axis=0*, *name=None*, *label\_extractor=None*, *config=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_frame)[](#static_frame.Quilt.from_frame "Link to this definition")
+*classmethod* Quilt.from\_duckdb(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_duckdb)[](#static_frame.Quilt.from_duckdb "Link to this definition")
+:   Given a file path to an DuckDB [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
+    >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
+    >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
+
+    ```
+    >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
+    >>> q1 = sf.Quilt(b, retain_labels=True)
+    >>> q1
+    <Quilt: j>
+    <Index: Aligned> a b <<U1>
+    <Index: Frames>
+    x                . .
+    v                . .
+    <<U1>
+    >>> q1.to_duckdb('/tmp/q.db')
+    >>> q2 = sf.Quilt.from_duckdb('/tmp/q.db', retain_labels=True, config=sf.StoreConfig(index_depth=1))
+    >>> q2.to_frame()
+    <Frame>
+    <Index>                   a       b       <<U1>
+    <IndexHierarchy>
+    v                p        40      41
+    v                q        42      43
+    v                r        44      45
+    x                p        0       1
+    x                q        2       3
+    x                r        4       5
+    <<U1>            <object> <int64> <int64>
+
+    ```
+
+*classmethod* Quilt.from\_frame(*frame*, *\**, *chunksize*, *retain\_labels*, *axis=0*, *name=None*, *label\_extractor=None*, *config=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_frame)[](#static_frame.Quilt.from_frame "Link to this definition")
 :   Given a [`Frame`](frame-selector.md#Frame "Frame"), create a [`Quilt`](quilt-selector.md#Quilt "Quilt") by partitioning it along the specified `axis` in units of `chunksize`, where `axis` 0 partitions vertically (retaining aligned columns) and 1 partions horizontally (retaining aligned index).
 
     Parameters:
@@ -221,7 +258,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_frames(*frames*, */*, *\**, *axis=0*, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_frames)[](#static_frame.Quilt.from_frames "Link to this definition")
+*classmethod* Quilt.from\_frames(*frames*, *\**, *axis=0*, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_frames)[](#static_frame.Quilt.from_frames "Link to this definition")
 :   Return a [`Quilt`](quilt-selector.md#Quilt "Quilt") from an iterable of [`Frame`](frame-selector.md#Frame "Frame"); labels will be drawn from [`Frame.name`](frame-attribute.md#static_frame.Frame.name "static_frame.Frame.name").
 
     ```
@@ -249,7 +286,50 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_items(*items*, */*, *\**, *axis=0*, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_items)[](#static_frame.Quilt.from_items "Link to this definition")
+*classmethod* Quilt.from\_hdf5(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_hdf5)[](#static_frame.Quilt.from_hdf5 "Link to this definition")
+:   Given a file path to a HDF5 [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
+    >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
+    >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
+
+    ```
+    >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), name='j')
+    >>> b
+    <Bus: j>
+    <Index>
+    x        Frame
+    v        Frame
+    <<U1>    <object>
+    >>> q1 = sf.Quilt(b, retain_labels=True)
+    >>> q1
+    <Quilt: j>
+    <Index: Aligned> a b <<U1>
+    <Index: Frames>
+    x                . .
+    v                . .
+    <<U1>
+    >>> q1.to_hdf5('/tmp/q.hdf5')
+    >>> q2 = sf.Quilt.from_hdf5('/tmp/q.hdf5', retain_labels=True, config=sf.StoreConfig(index_depth=1))
+    >>> q2.to_frame()
+    <Frame>
+    <Index>                a       b       <<U1>
+    <IndexHierarchy>
+    v                p     40      41
+    v                q     42      43
+    v                r     44      45
+    x                p     0       1
+    x                q     2       3
+    x                r     4       5
+    <<U1>            <<U1> <int64> <int64>
+
+    ```
+
+*classmethod* Quilt.from\_items(*items*, *\**, *axis=0*, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_items)[](#static_frame.Quilt.from_items "Link to this definition")
 :   Given an iterable of pairs of label, [`Frame`](frame-selector.md#Frame "Frame"), create a [`Quilt`](quilt-selector.md#Quilt "Quilt").
 
     ```
@@ -293,7 +373,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_sqlite(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_sqlite)[](#static_frame.Quilt.from_sqlite "Link to this definition")
+*classmethod* Quilt.from\_sqlite(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_sqlite)[](#static_frame.Quilt.from_sqlite "Link to this definition")
 :   Given a file path to an SQLite [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
 
     > Args:
@@ -330,7 +410,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_xlsx(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_xlsx)[](#static_frame.Quilt.from_xlsx "Link to this definition")
+*classmethod* Quilt.from\_xlsx(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_xlsx)[](#static_frame.Quilt.from_xlsx "Link to this definition")
 :   Given a file path to an XLSX [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
 
     > Args:
@@ -367,7 +447,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_zip\_csv(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_csv)[](#static_frame.Quilt.from_zip_csv "Link to this definition")
+*classmethod* Quilt.from\_zip\_csv(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_csv)[](#static_frame.Quilt.from_zip_csv "Link to this definition")
 :   Given a file path to zipped CSV [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
 
     > Args:
@@ -404,7 +484,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_zip\_npy(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_npy)[](#static_frame.Quilt.from_zip_npy "Link to this definition")
+*classmethod* Quilt.from\_zip\_npy(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_npy)[](#static_frame.Quilt.from_zip_npy "Link to this definition")
 :   Given a file path to zipped NPY [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
 
     > Args:
@@ -441,7 +521,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_zip\_npz(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_npz)[](#static_frame.Quilt.from_zip_npz "Link to this definition")
+*classmethod* Quilt.from\_zip\_npz(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_npz)[](#static_frame.Quilt.from_zip_npz "Link to this definition")
 :   Given a file path to zipped NPZ [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
 
     > Args:
@@ -478,7 +558,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_zip\_parquet(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_parquet)[](#static_frame.Quilt.from_zip_parquet "Link to this definition")
+*classmethod* Quilt.from\_zip\_parquet(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_parquet)[](#static_frame.Quilt.from_zip_parquet "Link to this definition")
 :   Given a file path to zipped parquet [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
 
     > Args:
@@ -515,7 +595,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_zip\_pickle(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_pickle)[](#static_frame.Quilt.from_zip_pickle "Link to this definition")
+*classmethod* Quilt.from\_zip\_pickle(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_pickle)[](#static_frame.Quilt.from_zip_pickle "Link to this definition")
 :   Given a file path to zipped pickle [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
 
     > Args:
@@ -552,7 +632,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     ```
 
-*classmethod* Quilt.from\_zip\_tsv(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_tsv)[](#static_frame.Quilt.from_zip_tsv "Link to this definition")
+*classmethod* Quilt.from\_zip\_tsv(*fp*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_tsv)[](#static_frame.Quilt.from_zip_tsv "Link to this definition")
 :   Given a file path to zipped TSV [`Quilt`](quilt-selector.md#Quilt "Quilt") store, return a [`Quilt`](quilt-selector.md#Quilt "Quilt") instance.
 
     > Args:

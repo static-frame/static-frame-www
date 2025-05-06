@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Series: Dictionary-Like](../api_overview/series-dictionary_like.md#api-overview-series-dictionary-like)
 
-Series.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/series.md#Series.__contains__)[](#static_frame.Series.__contains__ "Link to this definition")
+Series.\_\_contains\_\_(*value*)[[source]](../_modules/static_frame/core/series.md#Series.__contains__)[](#static_frame.Series.__contains__ "Link to this definition")
 :   Inclusion of value in index labels.
 
     Returns:

@@ -246,7 +246,7 @@ IndexSecondGO.\_\_len\_\_()[](#static_frame.IndexSecondGO.__len__ "Link to th
 
     ```
 
-IndexSecondGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.all "Link to this definition")
+IndexSecondGO.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -266,7 +266,7 @@ IndexSecondGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.
 
     ```
 
-IndexSecondGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.any "Link to this definition")
+IndexSecondGO.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -286,7 +286,7 @@ IndexSecondGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.
 
     ```
 
-IndexSecondGO.append(*value*, */*)[](#static_frame.IndexSecondGO.append "Link to this definition")
+IndexSecondGO.append(*value*)[](#static_frame.IndexSecondGO.append "Link to this definition")
 :   Specialize for fixed-typed indices: convert value argument; do not need to resolve\_dtype with each addition; self.\_map is never None
 
     ```
@@ -308,7 +308,7 @@ IndexSecondGO.append(*value*, */*)[](#static_frame.IndexSecondGO.append "Link
 
     ```
 
-IndexSecondGO.astype(*dtype*, */*)[](#static_frame.IndexSecondGO.astype "Link to this definition")
+IndexSecondGO.astype(*dtype*)[](#static_frame.IndexSecondGO.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -351,7 +351,7 @@ IndexSecondGO.copy()[](#static_frame.IndexSecondGO.copy "Link to this definit
 
     ```
 
-IndexSecondGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexSecondGO.cumprod "Link to this definition")
+IndexSecondGO.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexSecondGO.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -371,7 +371,7 @@ IndexSecondGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexSec
 
     ```
 
-IndexSecondGO.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexSecondGO.cumsum "Link to this definition")
+IndexSecondGO.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexSecondGO.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -456,7 +456,7 @@ IndexSecondGO.dropna()[](#static_frame.IndexSecondGO.dropna "Link to this def
 
     ```
 
-IndexSecondGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexSecondGO.equals "Link to this definition")
+IndexSecondGO.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexSecondGO.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -485,7 +485,7 @@ IndexSecondGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=
 
     ```
 
-IndexSecondGO.extend(*values*, */*)[](#static_frame.IndexSecondGO.extend "Link to this definition")
+IndexSecondGO.extend(*values*)[](#static_frame.IndexSecondGO.extend "Link to this definition")
 :   Append multiple values
     :param values: can be a generator.
 
@@ -517,7 +517,7 @@ IndexSecondGO.extend(*values*, */*)[](#static_frame.IndexSecondGO.extend "Lin
 
     ```
 
-IndexSecondGO.fillfalsy(*value*, */*)[](#static_frame.IndexSecondGO.fillfalsy "Link to this definition")
+IndexSecondGO.fillfalsy(*value*)[](#static_frame.IndexSecondGO.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -536,7 +536,7 @@ IndexSecondGO.fillfalsy(*value*, */*)[](#static_frame.IndexSecondGO.fillfalsy
 
     ```
 
-IndexSecondGO.fillna(*value*, */*)[](#static_frame.IndexSecondGO.fillna "Link to this definition")
+IndexSecondGO.fillna(*value*)[](#static_frame.IndexSecondGO.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -559,7 +559,7 @@ IndexSecondGO.fillna(*value*, */*)[](#static_frame.IndexSecondGO.fillna "Link
 
     ```
 
-IndexSecondGO.head(*count=5*, */*)[](#static_frame.IndexSecondGO.head "Link to this definition")
+IndexSecondGO.head(*count=5*)[](#static_frame.IndexSecondGO.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -581,7 +581,7 @@ IndexSecondGO.head(*count=5*, */*)[](#static_frame.IndexSecondGO.head "Link t
 
     ```
 
-IndexSecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexSecondGO.iloc_searchsorted "Link to this definition")
+IndexSecondGO.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexSecondGO.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -635,7 +635,7 @@ IndexSecondGO.isfalsy()[](#static_frame.IndexSecondGO.isfalsy "Link to this d
 
     ```
 
-IndexSecondGO.isin(*other*, */*)[](#static_frame.IndexSecondGO.isin "Link to this definition")
+IndexSecondGO.isin(*other*)[](#static_frame.IndexSecondGO.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -661,7 +661,7 @@ IndexSecondGO.isna()[](#static_frame.IndexSecondGO.isna "Link to this definit
 
     ```
 
-IndexSecondGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexSecondGO.label_widths_at_depth "Link to this definition")
+IndexSecondGO.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexSecondGO.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -680,7 +680,7 @@ IndexSecondGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame
 
     ```
 
-IndexSecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexSecondGO.level_add "Link to this definition")
+IndexSecondGO.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexSecondGO.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -705,7 +705,7 @@ IndexSecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#st
 
     ```
 
-IndexSecondGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexSecondGO.loc_searchsorted "Link to this definition")
+IndexSecondGO.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexSecondGO.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -726,7 +726,7 @@ IndexSecondGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_v
 
     ```
 
-IndexSecondGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexSecondGO.loc_to_iloc "Link to this definition")
+IndexSecondGO.loc\_to\_iloc(*key*)[](#static_frame.IndexSecondGO.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -749,7 +749,7 @@ IndexSecondGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexSecondGO.loc_to_
 
     ```
 
-IndexSecondGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.max "Link to this definition")
+IndexSecondGO.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -769,7 +769,7 @@ IndexSecondGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.
 
     ```
 
-IndexSecondGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.mean "Link to this definition")
+IndexSecondGO.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -789,7 +789,7 @@ IndexSecondGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexSecondGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.median "Link to this definition")
+IndexSecondGO.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -809,7 +809,7 @@ IndexSecondGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fra
 
     ```
 
-IndexSecondGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.min "Link to this definition")
+IndexSecondGO.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexSecondGO.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -849,7 +849,7 @@ IndexSecondGO.notna()[](#static_frame.IndexSecondGO.notna "Link to this defin
 
     ```
 
-IndexSecondGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexSecondGO.prod "Link to this definition")
+IndexSecondGO.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexSecondGO.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -869,7 +869,7 @@ IndexSecondGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#s
 
     ```
 
-IndexSecondGO.relabel(*mapper*, */*)[](#static_frame.IndexSecondGO.relabel "Link to this definition")
+IndexSecondGO.relabel(*mapper*)[](#static_frame.IndexSecondGO.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -889,7 +889,7 @@ IndexSecondGO.relabel(*mapper*, */*)[](#static_frame.IndexSecondGO.relabel "L
 
     ```
 
-IndexSecondGO.rename(*name*, */*)[](#static_frame.IndexSecondGO.rename "Link to this definition")
+IndexSecondGO.rename(*name*)[](#static_frame.IndexSecondGO.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -952,7 +952,7 @@ IndexSecondGO.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexSecon
 
     ```
 
-IndexSecondGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexSecondGO.sort "Link to this definition")
+IndexSecondGO.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexSecondGO.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -983,7 +983,7 @@ IndexSecondGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](
 
     ```
 
-IndexSecondGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexSecondGO.std "Link to this definition")
+IndexSecondGO.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexSecondGO.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -1003,7 +1003,7 @@ IndexSecondGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#sta
 
     ```
 
-IndexSecondGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexSecondGO.sum "Link to this definition")
+IndexSecondGO.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexSecondGO.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -1023,7 +1023,7 @@ IndexSecondGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#st
 
     ```
 
-IndexSecondGO.tail(*count=5*, */*)[](#static_frame.IndexSecondGO.tail "Link to this definition")
+IndexSecondGO.tail(*count=5*)[](#static_frame.IndexSecondGO.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1075,7 +1075,7 @@ IndexSecondGO.union(*\*others*)[](#static_frame.IndexSecondGO.union "Link to 
 
     ```
 
-IndexSecondGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexSecondGO.unique "Link to this definition")
+IndexSecondGO.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexSecondGO.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1098,7 +1098,7 @@ IndexSecondGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)
 
     ```
 
-IndexSecondGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexSecondGO.values_at_depth "Link to this definition")
+IndexSecondGO.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexSecondGO.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1114,7 +1114,7 @@ IndexSecondGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexS
 
     ```
 
-IndexSecondGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexSecondGO.var "Link to this definition")
+IndexSecondGO.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexSecondGO.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

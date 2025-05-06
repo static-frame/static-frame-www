@@ -150,28 +150,28 @@ API Detail
 | [Detail](../api_detail/batch-method.md#api-sig-batch-array-ufunc) | `Batch.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-bool) | `Batch.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-round) | `Batch.__round__(decimals)` | Return a Batch with contained Frame rounded to the given decimals. Negative deci… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-all) | `Batch.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-any) | `Batch.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-all) | `Batch.all(axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-any) | `Batch.any(axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-apply) | `Batch.apply(func)` | Apply a function to each Frame contained in this Frame, where a function is give… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-apply-except) | `Batch.apply_except(func, exception)` | Apply a function to each Frame contained in this Frame, where a function is give… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-apply-items) | `Batch.apply_items(func)` | Apply a function to each Frame contained in this Frame, where a function is give… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-apply-items-except) | `Batch.apply_items_except(func, *, exception)` | Apply a function to each Frame contained in this Frame, where a function is give… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-apply-items-except) | `Batch.apply_items_except(func, exception)` | Apply a function to each Frame contained in this Frame, where a function is give… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-astype) | `Batch.astype[key](dtypes, *, consolidate_blocks)` | Selector of columns by label. Args: key: A loc selector, either a label, a list… |
 | [Detail](../api_detail/batch-method.md#id1) | `Batch.astype(dtype)` | Apply a single dtype to all columns. |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-clip) | `Batch.clip(*, lower, upper, axis)` | Apply a clip operation to this Batch. Note that clip operations can be applied t… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-corr) | `Batch.corr(*, axis)` | Compute a correlation matrix. Args: axis: if 0, each row represents a variable,… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-count) | `Batch.count(*, skipna, skipfalsy, unique, axis)` | Apply count on contained Frames. |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-cov) | `Batch.cov(*, axis, ddof)` | Compute a covariance matrix. Args: axis: if 0, each row represents a variable, w… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-cumprod) | `Batch.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-cumsum) | `Batch.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-cumprod) | `Batch.cumprod(axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-cumsum) | `Batch.cumsum(axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-drop-duplicated) | `Batch.drop_duplicated(*, axis, exclude_first, exclude_last)` | Return a Batch with contained Frame with duplicated rows (axis 0) or columns (ax… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-dropfalsy) | `Batch.dropfalsy(*, axis, condition)` | Return a Batch with contained Frame after removing rows (axis 0) or columns (axi… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-dropna) | `Batch.dropna(*, axis, condition)` | Return a Batch with contained Frame after removing rows (axis 0) or columns (axi… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-dropfalsy) | `Batch.dropfalsy(axis, condition)` | Return a Batch with contained Frame after removing rows (axis 0) or columns (axi… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-dropna) | `Batch.dropna(axis, condition)` | Return a Batch with contained Frame after removing rows (axis 0) or columns (axi… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-duplicated) | `Batch.duplicated(*, axis, exclude_first, exclude_last)` | Return an axis-sized Boolean Series that shows True for all rows (axis 0) or col… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-equals) | `Batch.equals(other, *, compare_name, compare_dtype, compare_class, skipna)` |  |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-fillfalsy) | `Batch.fillfalsy(value)` | Return a new Batch with contained Frame after filling falsy values with the prov… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-fillfalsy-backward) | `Batch.fillfalsy_backward(limit, *, axis)` | Return a new Batch with contained Frame after filling backward falsy values with… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-fillfalsy-forward) | `Batch.fillfalsy_forward(limit, *, axis)` | Return a new Batch with contained Frame after filling forward falsy values with… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-fillfalsy-forward) | `Batch.fillfalsy_forward(limit, axis)` | Return a new Batch with contained Frame after filling forward falsy values with… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-fillfalsy-leading) | `Batch.fillfalsy_leading(value, *, axis)` | Return a new Batch with contained Frame after filling leading (and only leading)… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-fillfalsy-trailing) | `Batch.fillfalsy_trailing(value, *, axis)` | Return a new Batch with contained Frame after filling trailing (and only trailin… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-fillna) | `Batch.fillna(value)` | Return a new Batch with contained Frame after filling null (NaN or None) with th… |
@@ -187,13 +187,13 @@ API Detail
 | [Detail](../api_detail/batch-method.md#api-sig-batch-isna) | `Batch.isna()` | Return a Batch with contained, same-indexed Frame indicating True which values a… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-loc-max) | `Batch.loc_max(*, skipna, axis)` | Return the labels corresponding to the maximum values found. Args: skipna: if Tr… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-loc-min) | `Batch.loc_min(*, skipna, axis)` | Return the labels corresponding to the minimum value found. Args: skipna: if Tru… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-max) | `Batch.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-mean) | `Batch.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-median) | `Batch.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-min) | `Batch.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-max) | `Batch.max(axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-mean) | `Batch.mean(axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-median) | `Batch.median(axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-min) | `Batch.min(axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-notfalsy) | `Batch.notfalsy()` | Return a Batch with contained, same-indexed Frame indicating True which values a… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-notna) | `Batch.notna()` | Return a Batch with contained, same-indexed Frame indicating True which values a… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-prod) | `Batch.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-prod) | `Batch.prod(axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-rank-dense) | `Batch.rank_dense(*, axis, skipna, ascending, start, fill_value)` |  |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-rank-max) | `Batch.rank_max(*, axis, skipna, ascending, start, fill_value)` |  |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-rank-mean) | `Batch.rank_mean(*, axis, skipna, ascending, start, fill_value)` |  |
@@ -212,13 +212,13 @@ API Detail
 | [Detail](../api_detail/batch-method.md#api-sig-batch-sort-columns) | `Batch.sort_columns(*, ascending, kind)` | Return a new Batch with contained Frame ordered by the sorted columns. |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-sort-index) | `Batch.sort_index(*, ascending, kind)` | Return a new Batch with contained :obj;Frame ordered by the sorted index. |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-sort-values) | `Batch.sort_values(label, *, ascending, axis, kind)` | Return a new Batch with contained Frame ordered by the sorted values, where valu… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-std) | `Batch.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-sum) | `Batch.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-std) | `Batch.std(axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-sum) | `Batch.sum(axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-tail) | `Batch.tail(count)` | Return a Batch consisting only of the bottom elements as specified by count. Arg… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-transpose) | `Batch.transpose()` | Transpose. Return a Frame with index as columns and vice versa. |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-unique) | `Batch.unique(*, axis)` | Return a NumPy array of unqiue values. If the axis argument is provied, uniquene… |
 | [Detail](../api_detail/batch-method.md#api-sig-batch-unset-index) | `Batch.unset_index(*, names, consolidate_blocks, columns_constructors)` |  |
-| [Detail](../api_detail/batch-method.md#api-sig-batch-var) | `Batch.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/batch-method.md#api-sig-batch-var) | `Batch.var(axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
 [Batch](batch.md#api-overview-batch): [Constructor](batch-constructor.md#api-overview-batch-constructor) | [Exporter](batch-exporter.md#api-overview-batch-exporter) | [Attribute](batch-attribute.md#api-overview-batch-attribute) | [Method](#api-overview-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-overview-batch-dictionary-like) | [Display](batch-display.md#api-overview-batch-display) | [Selector](batch-selector.md#api-overview-batch-selector) | [Operator Binary](batch-operator_binary.md#api-overview-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-overview-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-overview-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-overview-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-overview-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-overview-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-overview-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-overview-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-overview-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-overview-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-overview-batch-accessor-reduce)
 

@@ -208,7 +208,7 @@ FillValueAuto.\_\_init\_\_(*b=<object object>*, *i=<object object>*, *u=<object 
 
     ```
     >>> sf.FillValueAuto.from_default()
-    <static_frame.core.fill_value_auto.FillValueAuto object at 0x11a17b6c0>
+    <static_frame.core.fill_value_auto.FillValueAuto object at 0x7f7640dd2440>
 
     ```
 

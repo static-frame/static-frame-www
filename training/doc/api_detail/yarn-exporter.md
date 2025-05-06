@@ -144,6 +144,54 @@ API Detail
 
 [Overview: Yarn: Exporter](../api_overview/yarn-exporter.md#api-overview-yarn-exporter)
 
+Yarn.to\_duckdb(*fp*, *\**, *config=None*)[](#static_frame.Yarn.to_duckdb "Link to this definition")
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
+
+    ```
+    >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
+    >>> b2 = sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')
+    >>> y = sf.Yarn.from_buses((b1, b2), retain_labels=False)
+    >>> y
+    <Yarn>
+    <Index>
+    x       Frame
+    y       Frame
+    v       Frame
+    w       Frame
+    <<U1>   <object>
+    >>> y.to_duckdb('/tmp/y.duckdb')
+
+    ```
+
+Yarn.to\_hdf5(*fp*, *\**, *config=None*)[](#static_frame.Yarn.to_hdf5 "Link to this definition")
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an HDF5 table.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
+
+    ```
+    >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
+    >>> b2 = sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')
+    >>> y = sf.Yarn.from_buses((b1, b2), retain_labels=False)
+    >>> y
+    <Yarn>
+    <Index>
+    x       Frame
+    y       Frame
+    v       Frame
+    w       Frame
+    <<U1>   <object>
+    >>> y.to_hdf5('/tmp/y.hdf5')
+
+    ```
+
 Yarn.to\_series()[[source]](../_modules/static_frame/core/yarn.md#Yarn.to_series)[](#static_frame.Yarn.to_series "Link to this definition")
 :   Return a [`Series`](series-selector.md#Series "Series") with the [`Frame`](frame-selector.md#Frame "Frame") contained in all contained [`Bus`](bus-selector.md#Bus "Bus").
 
@@ -170,7 +218,7 @@ Yarn.to\_series()[[source]](../_modules/static_frame/core/yarn.md#Yarn.to_series
 
     ```
 
-Yarn.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Yarn.to_sqlite "Link to this definition")
+Yarn.to\_sqlite(*fp*, *\**, *config=None*)[](#static_frame.Yarn.to_sqlite "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
 
     > Args:
@@ -197,7 +245,7 @@ Yarn.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Yarn.to_sqlit
 Yarn.to\_visidata()[](#static_frame.Yarn.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-Yarn.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Yarn.to_xlsx "Link to this definition")
+Yarn.to\_xlsx(*fp*, *\**, *config=None*)[](#static_frame.Yarn.to_xlsx "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a XLSX workbook.
 
     > Args:
@@ -221,7 +269,7 @@ Yarn.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Yarn.to_xlsx "L
 
     ```
 
-Yarn.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_csv "Link to this definition")
+Yarn.to\_zip\_csv(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_csv "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of CSV files.
 
     > Args:
@@ -245,7 +293,7 @@ Yarn.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_
 
     ```
 
-Yarn.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_npy "Link to this definition")
+Yarn.to\_zip\_npy(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_npy "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPY files.
 
     > Args:
@@ -269,7 +317,7 @@ Yarn.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_
 
     ```
 
-Yarn.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_npz "Link to this definition")
+Yarn.to\_zip\_npz(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_npz "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPZ files.
 
     > Args:
@@ -293,7 +341,7 @@ Yarn.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_
 
     ```
 
-Yarn.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_parquet "Link to this definition")
+Yarn.to\_zip\_parquet(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_parquet "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of parquet files.
 
     > Args:
@@ -317,7 +365,7 @@ Yarn.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#sta
 
     ```
 
-Yarn.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_pickle "Link to this definition")
+Yarn.to\_zip\_pickle(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_pickle "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of pickles.
 
     > Args:
@@ -341,7 +389,7 @@ Yarn.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#stat
 
     ```
 
-Yarn.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_tsv "Link to this definition")
+Yarn.to\_zip\_tsv(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Yarn.to_zip_tsv "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of TSV files.
 
     > Args:

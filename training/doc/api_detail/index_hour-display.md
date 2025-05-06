@@ -162,7 +162,7 @@ IndexHour.interface[](#IndexHour.interface "Link to this definition")
     __init__(labels, *, loc_is_iloc, ... IndexHour Constructor          Initializer. Args...
     from_labels(labels, *, name)         IndexHour Constructor          Construct an Inde...
     from_pandas(value)                   IndexHour Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     IndexHour Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexHour Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexHour Exporter             Return a complete...
     to_pandas()                          IndexHour Exporter             Return a Pandas I...
     to_series()                          IndexHour Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexHour.interface[](#IndexHour.interface "Link to this definition")
     ...                                  ...       ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexHour Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexHour Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexHour Accessor Hashlib
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib
+    via_hashlib(include_name, include... IndexHour Accessor Hashlib
     via_type_clinic.to_hint()            IndexHour Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexHour Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexHour Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexHour Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexHour Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U9>     <<U27>               <<U83>
+    <<U90>                               <<U9>     <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexHour.\_\_str\_\_()[](#static_frame.IndexHour.__str__ "Link to this defin
 
     ```
 
-IndexHour.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexHour.display "Link to this definition")
+IndexHour.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexHour.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexHour.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_f
 
     ```
 
-IndexHour.display\_tall(*config=None*, */*)[](#static_frame.IndexHour.display_tall "Link to this definition")
+IndexHour.display\_tall(*config=None*)[](#static_frame.IndexHour.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexHour.display\_tall(*config=None*, */*)[](#static_frame.IndexHour.display
 
     ```
 
-IndexHour.display\_wide(*config=None*, */*)[](#static_frame.IndexHour.display_wide "Link to this definition")
+IndexHour.display\_wide(*config=None*)[](#static_frame.IndexHour.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

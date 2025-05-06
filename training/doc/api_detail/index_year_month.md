@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexYearMonth](../api_overview/index_year_month.md#api-overview-indexyearmonth)
 
-*class* IndexYearMonth(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYearMonth)[](#static_frame.IndexYearMonth "Link to this definition")
+*class* IndexYearMonth(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYearMonth)[](#static_frame.IndexYearMonth "Link to this definition")
 :   A mapping of year months (NumPy `datetime64[M]`) to positions, immutable and of fixed size.
 
 * [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor): Alternative constructors for creating instances.

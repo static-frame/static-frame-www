@@ -256,7 +256,7 @@ Index.\_\_len\_\_()[[source]](../_modules/static_frame/core/index.md#Index.__len
 
     ```
 
-Index.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.all "Link to this definition")
+Index.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -277,7 +277,7 @@ Index.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.al
 
     ```
 
-Index.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.any "Link to this definition")
+Index.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -298,7 +298,7 @@ Index.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.an
 
     ```
 
-Index.astype(*dtype*, */*)[[source]](../_modules/static_frame/core/index.md#Index.astype)[](#static_frame.Index.astype "Link to this definition")
+Index.astype(*dtype*)[[source]](../_modules/static_frame/core/index.md#Index.astype)[](#static_frame.Index.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -341,7 +341,7 @@ Index.copy()[[source]](../_modules/static_frame/core/index.md#Index.copy)[](#
 
     ```
 
-Index.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.Index.cumprod "Link to this definition")
+Index.cumprod(*axis=0*, *skipna=True*)[](#static_frame.Index.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -361,7 +361,7 @@ Index.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.Index.cumprod "L
 
     ```
 
-Index.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.Index.cumsum "Link to this definition")
+Index.cumsum(*axis=0*, *skipna=True*)[](#static_frame.Index.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -452,7 +452,7 @@ Index.dropna()[[source]](../_modules/static_frame/core/index.md#Index.dropna)[�
 
     ```
 
-Index.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index.md#Index.equals)[](#static_frame.Index.equals "Link to this definition")
+Index.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index.md#Index.equals)[](#static_frame.Index.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -483,7 +483,7 @@ Index.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
 
     ```
 
-Index.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Index.fillfalsy)[](#static_frame.Index.fillfalsy "Link to this definition")
+Index.fillfalsy(*value*)[[source]](../_modules/static_frame/core/index.md#Index.fillfalsy)[](#static_frame.Index.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -508,7 +508,7 @@ Index.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index.md#I
 
     ```
 
-Index.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Index.fillna)[](#static_frame.Index.fillna "Link to this definition")
+Index.fillna(*value*)[[source]](../_modules/static_frame/core/index.md#Index.fillna)[](#static_frame.Index.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -533,7 +533,7 @@ Index.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Inde
 
     ```
 
-Index.head(*count=5*, */*)[](#static_frame.Index.head "Link to this definition")
+Index.head(*count=5*)[](#static_frame.Index.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -557,7 +557,7 @@ Index.head(*count=5*, */*)[](#static_frame.Index.head "Link to this definitio
 
     ```
 
-Index.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index.md#Index.iloc_searchsorted)[](#static_frame.Index.iloc_searchsorted "Link to this definition")
+Index.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index.md#Index.iloc_searchsorted)[](#static_frame.Index.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -619,7 +619,7 @@ Index.isfalsy()[](#static_frame.Index.isfalsy "Link to this definition")
 
     ```
 
-Index.isin(*other*, */*)[[source]](../_modules/static_frame/core/index.md#Index.isin)[](#static_frame.Index.isin "Link to this definition")
+Index.isin(*other*)[[source]](../_modules/static_frame/core/index.md#Index.isin)[](#static_frame.Index.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -647,7 +647,7 @@ Index.isna()[](#static_frame.Index.isna "Link to this definition")
 
     ```
 
-Index.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index.md#Index.label_widths_at_depth)[](#static_frame.Index.label_widths_at_depth "Link to this definition")
+Index.label\_widths\_at\_depth(*depth\_level=0*)[[source]](../_modules/static_frame/core/index.md#Index.label_widths_at_depth)[](#static_frame.Index.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -668,7 +668,7 @@ Index.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/stat
 
     ```
 
-Index.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index.md#Index.level_add)[](#static_frame.Index.level_add "Link to this definition")
+Index.level\_add(*level*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index.md#Index.level_add)[](#static_frame.Index.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -693,7 +693,7 @@ Index.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_mo
 
     ```
 
-Index.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index.md#Index.loc_searchsorted)[](#static_frame.Index.loc_searchsorted "Link to this definition")
+Index.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index.md#Index.loc_searchsorted)[](#static_frame.Index.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -716,7 +716,7 @@ Index.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan
 
     ```
 
-Index.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index.md#Index.loc_to_iloc)[](#static_frame.Index.loc_to_iloc "Link to this definition")
+Index.loc\_to\_iloc(*key*)[[source]](../_modules/static_frame/core/index.md#Index.loc_to_iloc)[](#static_frame.Index.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -741,7 +741,7 @@ Index.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index.md
 
     ```
 
-Index.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.max "Link to this definition")
+Index.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -761,7 +761,7 @@ Index.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.ma
 
     ```
 
-Index.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.mean "Link to this definition")
+Index.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -781,7 +781,7 @@ Index.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.m
 
     ```
 
-Index.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.median "Link to this definition")
+Index.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -801,7 +801,7 @@ Index.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index
 
     ```
 
-Index.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.min "Link to this definition")
+Index.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.Index.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -841,7 +841,7 @@ Index.notna()[](#static_frame.Index.notna "Link to this definition")
 
     ```
 
-Index.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.Index.prod "Link to this definition")
+Index.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.Index.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -861,7 +861,7 @@ Index.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_fr
 
     ```
 
-Index.relabel(*mapper*, */*)[[source]](../_modules/static_frame/core/index.md#Index.relabel)[](#static_frame.Index.relabel "Link to this definition")
+Index.relabel(*mapper*)[[source]](../_modules/static_frame/core/index.md#Index.relabel)[](#static_frame.Index.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -887,7 +887,7 @@ Index.relabel(*mapper*, */*)[[source]](../_modules/static_frame/core/index.md#In
 
     ```
 
-Index.rename(*name*, */*)[[source]](../_modules/static_frame/core/index.md#Index.rename)[](#static_frame.Index.rename "Link to this definition")
+Index.rename(*name*)[[source]](../_modules/static_frame/core/index.md#Index.rename)[](#static_frame.Index.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -960,7 +960,7 @@ Index.sample(*count=1*, *\**, *seed=None*)[](#static_frame.Index.sample "Link
 
     ```
 
-Index.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/index.md#Index.sort)[](#static_frame.Index.sort "Link to this definition")
+Index.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/index.md#Index.sort)[](#static_frame.Index.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -997,7 +997,7 @@ Index.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../
 
     ```
 
-Index.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.Index.std "Link to this definition")
+Index.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.Index.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -1017,7 +1017,7 @@ Index.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_fram
 
     ```
 
-Index.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.Index.sum "Link to this definition")
+Index.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.Index.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -1037,7 +1037,7 @@ Index.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_fra
 
     ```
 
-Index.tail(*count=5*, */*)[](#static_frame.Index.tail "Link to this definition")
+Index.tail(*count=5*)[](#static_frame.Index.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1094,7 +1094,7 @@ Index.union(*\*others*)[](#static_frame.Index.union "Link to this definition"
 
     ```
 
-Index.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index.md#Index.unique)[](#static_frame.Index.unique "Link to this definition")
+Index.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index.md#Index.unique)[](#static_frame.Index.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1118,7 +1118,7 @@ Index.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source
 
     ```
 
-Index.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index.md#Index.values_at_depth)[](#static_frame.Index.values_at_depth "Link to this definition")
+Index.values\_at\_depth(*depth\_level=0*)[[source]](../_modules/static_frame/core/index.md#Index.values_at_depth)[](#static_frame.Index.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1136,7 +1136,7 @@ Index.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_fram
 
     ```
 
-Index.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.Index.var "Link to this definition")
+Index.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.Index.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

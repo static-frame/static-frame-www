@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexGO: Operator Binary](../api_overview/index_go-operator_binary.md#api-overview-indexgo-operator-binary)
 
-IndexGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexGO.__add__ "Link to this definition")
+IndexGO.\_\_add\_\_(*other*)[](#static_frame.IndexGO.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -159,7 +159,7 @@ IndexGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexGO.__add__ "Link to th
 
     ```
 
-IndexGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexGO.__and__ "Link to this definition")
+IndexGO.\_\_and\_\_(*other*)[](#static_frame.IndexGO.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((False, True), name='x')
     >>> ix
@@ -174,7 +174,7 @@ IndexGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexGO.__and__ "Link to th
 
     ```
 
-IndexGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexGO.__eq__ "Link to this definition")
+IndexGO.\_\_eq\_\_(*other*)[](#static_frame.IndexGO.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -191,7 +191,7 @@ IndexGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexGO.__eq__ "Link to this
 
     ```
 
-IndexGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexGO.__floordiv__ "Link to this definition")
+IndexGO.\_\_floordiv\_\_(*other*)[](#static_frame.IndexGO.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -206,7 +206,7 @@ IndexGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexGO.__floordiv__ "
 
     ```
 
-IndexGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexGO.__ge__ "Link to this definition")
+IndexGO.\_\_ge\_\_(*other*)[](#static_frame.IndexGO.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -223,7 +223,7 @@ IndexGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexGO.__ge__ "Link to this
 
     ```
 
-IndexGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexGO.__gt__ "Link to this definition")
+IndexGO.\_\_gt\_\_(*other*)[](#static_frame.IndexGO.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -240,7 +240,7 @@ IndexGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexGO.__gt__ "Link to this
 
     ```
 
-IndexGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexGO.__le__ "Link to this definition")
+IndexGO.\_\_le\_\_(*other*)[](#static_frame.IndexGO.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -257,7 +257,7 @@ IndexGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexGO.__le__ "Link to this
 
     ```
 
-IndexGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexGO.__lt__ "Link to this definition")
+IndexGO.\_\_lt\_\_(*other*)[](#static_frame.IndexGO.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -274,7 +274,7 @@ IndexGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexGO.__lt__ "Link to this
 
     ```
 
-IndexGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexGO.__matmul__ "Link to this definition")
+IndexGO.\_\_matmul\_\_(*other*)[](#static_frame.IndexGO.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -289,7 +289,7 @@ IndexGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexGO.__matmul__ "Link
 
     ```
 
-IndexGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexGO.__mod__ "Link to this definition")
+IndexGO.\_\_mod\_\_(*other*)[](#static_frame.IndexGO.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -304,7 +304,7 @@ IndexGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexGO.__mod__ "Link to th
 
     ```
 
-IndexGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexGO.__mul__ "Link to this definition")
+IndexGO.\_\_mul\_\_(*other*)[](#static_frame.IndexGO.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -319,7 +319,7 @@ IndexGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexGO.__mul__ "Link to th
 
     ```
 
-IndexGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexGO.__ne__ "Link to this definition")
+IndexGO.\_\_ne\_\_(*other*)[](#static_frame.IndexGO.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -336,7 +336,7 @@ IndexGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexGO.__ne__ "Link to this
 
     ```
 
-IndexGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexGO.__or__ "Link to this definition")
+IndexGO.\_\_or\_\_(*other*)[](#static_frame.IndexGO.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -353,7 +353,7 @@ IndexGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexGO.__or__ "Link to this
 
     ```
 
-IndexGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexGO.__pow__ "Link to this definition")
+IndexGO.\_\_pow\_\_(*other*)[](#static_frame.IndexGO.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -368,7 +368,7 @@ IndexGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexGO.__pow__ "Link to th
 
     ```
 
-IndexGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexGO.__radd__ "Link to this definition")
+IndexGO.\_\_radd\_\_(*other*)[](#static_frame.IndexGO.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -383,7 +383,7 @@ IndexGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexGO.__radd__ "Link to 
 
     ```
 
-IndexGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexGO.__rfloordiv__ "Link to this definition")
+IndexGO.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexGO.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -398,7 +398,7 @@ IndexGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexGO.__rfloordiv__
 
     ```
 
-IndexGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexGO.__rmatmul__ "Link to this definition")
+IndexGO.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexGO.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -413,7 +413,7 @@ IndexGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexGO.__rmatmul__ "Li
 
     ```
 
-IndexGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexGO.__rmul__ "Link to this definition")
+IndexGO.\_\_rmul\_\_(*other*)[](#static_frame.IndexGO.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -428,7 +428,7 @@ IndexGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexGO.__rmul__ "Link to 
 
     ```
 
-IndexGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexGO.__rshift__ "Link to this definition")
+IndexGO.\_\_rshift\_\_(*other*)[](#static_frame.IndexGO.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -443,7 +443,7 @@ IndexGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexGO.__rshift__ "Link
 
     ```
 
-IndexGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexGO.__rsub__ "Link to this definition")
+IndexGO.\_\_rsub\_\_(*other*)[](#static_frame.IndexGO.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -458,7 +458,7 @@ IndexGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexGO.__rsub__ "Link to 
 
     ```
 
-IndexGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexGO.__rtruediv__ "Link to this definition")
+IndexGO.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexGO.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -473,7 +473,7 @@ IndexGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexGO.__rtruediv__ "
 
     ```
 
-IndexGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexGO.__sub__ "Link to this definition")
+IndexGO.\_\_sub\_\_(*other*)[](#static_frame.IndexGO.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -488,7 +488,7 @@ IndexGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexGO.__sub__ "Link to th
 
     ```
 
-IndexGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexGO.__truediv__ "Link to this definition")
+IndexGO.\_\_truediv\_\_(*other*)[](#static_frame.IndexGO.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((0, 1024, -2048, 4096))
     >>> ix
@@ -503,7 +503,7 @@ IndexGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexGO.__truediv__ "Li
 
     ```
 
-IndexGO.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexGO.__xor__ "Link to this definition")
+IndexGO.\_\_xor\_\_(*other*)[](#static_frame.IndexGO.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexGO((False, True), name='x')
     >>> ix

@@ -162,7 +162,7 @@ Quilt.\_\_bool\_\_()[](#static_frame.Quilt.__bool__ "Link to this definition"
 
     ```
 
-Quilt.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.equals)[](#static_frame.Quilt.equals "Link to this definition")
+Quilt.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.equals)[](#static_frame.Quilt.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Note: this will attempt to load and compare all Frame managed by the Bus stored within this Quilt.
@@ -197,7 +197,7 @@ Quilt.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
 
     ```
 
-Quilt.head(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.head)[](#static_frame.Quilt.head "Link to this definition")
+Quilt.head(*count=5*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.head)[](#static_frame.Quilt.head "Link to this definition")
 :   Return a [`Quilt`](quilt-selector.md#Quilt "Quilt") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -223,7 +223,7 @@ Quilt.head(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quil
 
     ```
 
-Quilt.rename(*name*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.rename)[](#static_frame.Quilt.rename "Link to this definition")
+Quilt.rename(*name*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.rename)[](#static_frame.Quilt.rename "Link to this definition")
 :   Return a new [`Quilt`](quilt-selector.md#Quilt "Quilt") with an updated name attribute.
 
     Parameters:
@@ -277,7 +277,7 @@ Quilt.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modu
 
     ```
 
-Quilt.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.tail)[](#static_frame.Quilt.tail "Link to this definition")
+Quilt.tail(*count=5*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.tail)[](#static_frame.Quilt.tail "Link to this definition")
 :   Return a [`Quilt`](quilt-selector.md#Quilt "Quilt") consisting only of the bottom elements as specified by `count`.
 
     Parameters:

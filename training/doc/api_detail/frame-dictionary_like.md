@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Frame: Dictionary-Like](../api_overview/frame-dictionary_like.md#api-overview-frame-dictionary-like)
 
-Frame.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.__contains__)[](#static_frame.Frame.__contains__ "Link to this definition")
+Frame.\_\_contains\_\_(*value*)[[source]](../_modules/static_frame/core/frame.md#Frame.__contains__)[](#static_frame.Frame.__contains__ "Link to this definition")
 :   Inclusion of value in column labels.
 
     ```

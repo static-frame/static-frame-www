@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Index: Operator Binary](../api_overview/index-operator_binary.md#api-overview-index-operator-binary)
 
-Index.\_\_add\_\_(*other*, */*)[](#static_frame.Index.__add__ "Link to this definition")
+Index.\_\_add\_\_(*other*)[](#static_frame.Index.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -159,7 +159,7 @@ Index.\_\_add\_\_(*other*, */*)[](#static_frame.Index.__add__ "Link to this d
 
     ```
 
-Index.\_\_and\_\_(*other*, */*)[](#static_frame.Index.__and__ "Link to this definition")
+Index.\_\_and\_\_(*other*)[](#static_frame.Index.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((False, True), name='x')
     >>> ix
@@ -174,7 +174,7 @@ Index.\_\_and\_\_(*other*, */*)[](#static_frame.Index.__and__ "Link to this d
 
     ```
 
-Index.\_\_eq\_\_(*other*, */*)[](#static_frame.Index.__eq__ "Link to this definition")
+Index.\_\_eq\_\_(*other*)[](#static_frame.Index.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -191,7 +191,7 @@ Index.\_\_eq\_\_(*other*, */*)[](#static_frame.Index.__eq__ "Link to this def
 
     ```
 
-Index.\_\_floordiv\_\_(*other*, */*)[](#static_frame.Index.__floordiv__ "Link to this definition")
+Index.\_\_floordiv\_\_(*other*)[](#static_frame.Index.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -206,7 +206,7 @@ Index.\_\_floordiv\_\_(*other*, */*)[](#static_frame.Index.__floordiv__ "Link
 
     ```
 
-Index.\_\_ge\_\_(*other*, */*)[](#static_frame.Index.__ge__ "Link to this definition")
+Index.\_\_ge\_\_(*other*)[](#static_frame.Index.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -223,7 +223,7 @@ Index.\_\_ge\_\_(*other*, */*)[](#static_frame.Index.__ge__ "Link to this def
 
     ```
 
-Index.\_\_gt\_\_(*other*, */*)[](#static_frame.Index.__gt__ "Link to this definition")
+Index.\_\_gt\_\_(*other*)[](#static_frame.Index.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -240,7 +240,7 @@ Index.\_\_gt\_\_(*other*, */*)[](#static_frame.Index.__gt__ "Link to this def
 
     ```
 
-Index.\_\_le\_\_(*other*, */*)[](#static_frame.Index.__le__ "Link to this definition")
+Index.\_\_le\_\_(*other*)[](#static_frame.Index.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -257,7 +257,7 @@ Index.\_\_le\_\_(*other*, */*)[](#static_frame.Index.__le__ "Link to this def
 
     ```
 
-Index.\_\_lt\_\_(*other*, */*)[](#static_frame.Index.__lt__ "Link to this definition")
+Index.\_\_lt\_\_(*other*)[](#static_frame.Index.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -274,7 +274,7 @@ Index.\_\_lt\_\_(*other*, */*)[](#static_frame.Index.__lt__ "Link to this def
 
     ```
 
-Index.\_\_matmul\_\_(*other*, */*)[](#static_frame.Index.__matmul__ "Link to this definition")
+Index.\_\_matmul\_\_(*other*)[](#static_frame.Index.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -289,7 +289,7 @@ Index.\_\_matmul\_\_(*other*, */*)[](#static_frame.Index.__matmul__ "Link to 
 
     ```
 
-Index.\_\_mod\_\_(*other*, */*)[](#static_frame.Index.__mod__ "Link to this definition")
+Index.\_\_mod\_\_(*other*)[](#static_frame.Index.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -304,7 +304,7 @@ Index.\_\_mod\_\_(*other*, */*)[](#static_frame.Index.__mod__ "Link to this d
 
     ```
 
-Index.\_\_mul\_\_(*other*, */*)[](#static_frame.Index.__mul__ "Link to this definition")
+Index.\_\_mul\_\_(*other*)[](#static_frame.Index.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -319,7 +319,7 @@ Index.\_\_mul\_\_(*other*, */*)[](#static_frame.Index.__mul__ "Link to this d
 
     ```
 
-Index.\_\_ne\_\_(*other*, */*)[](#static_frame.Index.__ne__ "Link to this definition")
+Index.\_\_ne\_\_(*other*)[](#static_frame.Index.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -336,7 +336,7 @@ Index.\_\_ne\_\_(*other*, */*)[](#static_frame.Index.__ne__ "Link to this def
 
     ```
 
-Index.\_\_or\_\_(*other*, */*)[](#static_frame.Index.__or__ "Link to this definition")
+Index.\_\_or\_\_(*other*)[](#static_frame.Index.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -353,7 +353,7 @@ Index.\_\_or\_\_(*other*, */*)[](#static_frame.Index.__or__ "Link to this def
 
     ```
 
-Index.\_\_pow\_\_(*other*, */*)[](#static_frame.Index.__pow__ "Link to this definition")
+Index.\_\_pow\_\_(*other*)[](#static_frame.Index.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -368,7 +368,7 @@ Index.\_\_pow\_\_(*other*, */*)[](#static_frame.Index.__pow__ "Link to this d
 
     ```
 
-Index.\_\_radd\_\_(*other*, */*)[](#static_frame.Index.__radd__ "Link to this definition")
+Index.\_\_radd\_\_(*other*)[](#static_frame.Index.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -383,7 +383,7 @@ Index.\_\_radd\_\_(*other*, */*)[](#static_frame.Index.__radd__ "Link to this
 
     ```
 
-Index.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.Index.__rfloordiv__ "Link to this definition")
+Index.\_\_rfloordiv\_\_(*other*)[](#static_frame.Index.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -398,7 +398,7 @@ Index.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.Index.__rfloordiv__ "Li
 
     ```
 
-Index.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.Index.__rmatmul__ "Link to this definition")
+Index.\_\_rmatmul\_\_(*other*)[](#static_frame.Index.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -413,7 +413,7 @@ Index.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.Index.__rmatmul__ "Link t
 
     ```
 
-Index.\_\_rmul\_\_(*other*, */*)[](#static_frame.Index.__rmul__ "Link to this definition")
+Index.\_\_rmul\_\_(*other*)[](#static_frame.Index.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -428,7 +428,7 @@ Index.\_\_rmul\_\_(*other*, */*)[](#static_frame.Index.__rmul__ "Link to this
 
     ```
 
-Index.\_\_rshift\_\_(*other*, */*)[](#static_frame.Index.__rshift__ "Link to this definition")
+Index.\_\_rshift\_\_(*other*)[](#static_frame.Index.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -443,7 +443,7 @@ Index.\_\_rshift\_\_(*other*, */*)[](#static_frame.Index.__rshift__ "Link to 
 
     ```
 
-Index.\_\_rsub\_\_(*other*, */*)[](#static_frame.Index.__rsub__ "Link to this definition")
+Index.\_\_rsub\_\_(*other*)[](#static_frame.Index.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -458,7 +458,7 @@ Index.\_\_rsub\_\_(*other*, */*)[](#static_frame.Index.__rsub__ "Link to this
 
     ```
 
-Index.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.Index.__rtruediv__ "Link to this definition")
+Index.\_\_rtruediv\_\_(*other*)[](#static_frame.Index.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -473,7 +473,7 @@ Index.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.Index.__rtruediv__ "Link
 
     ```
 
-Index.\_\_sub\_\_(*other*, */*)[](#static_frame.Index.__sub__ "Link to this definition")
+Index.\_\_sub\_\_(*other*)[](#static_frame.Index.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -488,7 +488,7 @@ Index.\_\_sub\_\_(*other*, */*)[](#static_frame.Index.__sub__ "Link to this d
 
     ```
 
-Index.\_\_truediv\_\_(*other*, */*)[](#static_frame.Index.__truediv__ "Link to this definition")
+Index.\_\_truediv\_\_(*other*)[](#static_frame.Index.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((0, 1024, -2048, 4096))
     >>> ix
@@ -503,7 +503,7 @@ Index.\_\_truediv\_\_(*other*, */*)[](#static_frame.Index.__truediv__ "Link t
 
     ```
 
-Index.\_\_xor\_\_(*other*, */*)[](#static_frame.Index.__xor__ "Link to this definition")
+Index.\_\_xor\_\_(*other*)[](#static_frame.Index.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.Index((False, True), name='x')
     >>> ix

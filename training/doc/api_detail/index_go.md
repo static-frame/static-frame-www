@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexGO](../api_overview/index_go.md#api-overview-indexgo)
 
-*class* IndexGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.md#IndexGO)[](#static_frame.IndexGO "Link to this definition")
+*class* IndexGO(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[[source]](../_modules/static_frame/core/index.md#IndexGO)[](#static_frame.IndexGO "Link to this definition")
 :   A mapping of labels to positions, immutable with grow-only size. Used as columns in [`FrameGO`](frame_go-selector.md#FrameGO "FrameGO").
 
 * [Constructor](index_go-constructor.md#api-detail-indexgo-constructor): Alternative constructors for creating instances.

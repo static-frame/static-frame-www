@@ -152,15 +152,15 @@ API Detail
 | [Detail](../api_detail/series-method.md#api-sig-series-deepcopy) | `Series.__deepcopy__(memo)` |  |
 | [Detail](../api_detail/series-method.md#api-sig-series-len) | `Series.__len__()` | Length of values. |
 | [Detail](../api_detail/series-method.md#api-sig-series-round) | `Series.__round__(decimals)` | Return a Series rounded to the given decimals. Negative decimals round to the le… |
-| [Detail](../api_detail/series-method.md#api-sig-series-all) | `Series.all(*, axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
-| [Detail](../api_detail/series-method.md#api-sig-series-any) | `Series.any(*, axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
+| [Detail](../api_detail/series-method.md#api-sig-series-all) | `Series.all(axis, skipna, out)` | Logical and over values along the specified axis. Args: axis: Axis, defaulting t… |
+| [Detail](../api_detail/series-method.md#api-sig-series-any) | `Series.any(axis, skipna, out)` | Logical or over values along the specified axis. Args: axis: Axis, defaulting to… |
 | [Detail](../api_detail/series-method.md#api-sig-series-astype) | `Series.astype(dtype)` | Return a Series with type determined by dtype argument. Note that for Series, th… |
 | [Detail](../api_detail/series-method.md#api-sig-series-clip) | `Series.clip(*, lower, upper)` | Apply a clip operation to this Series. Note that clip operations can be applied… |
 | [Detail](../api_detail/series-method.md#api-sig-series-corr) | `Series.corr(other)` | Return the index-aligned correlation to the supplied Series. Args: other: Series… |
 | [Detail](../api_detail/series-method.md#api-sig-series-count) | `Series.count(*, skipna, skipfalsy, unique, axis)` | Return the count of non-NA, non-falsy, and/or unique elements. Args: skipna: ski… |
 | [Detail](../api_detail/series-method.md#api-sig-series-cov) | `Series.cov(other, *, ddof)` | Return the index-aligned covariance to the supplied Series. Args: ddof: Delta de… |
-| [Detail](../api_detail/series-method.md#api-sig-series-cumprod) | `Series.cumprod(*, axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/series-method.md#api-sig-series-cumsum) | `Series.cumsum(*, axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
+| [Detail](../api_detail/series-method.md#api-sig-series-cumprod) | `Series.cumprod(axis, skipna)` | Return the cumulative product over the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/series-method.md#api-sig-series-cumsum) | `Series.cumsum(axis, skipna)` | Return the cumulative sum over the specified axis. Args: axis: Axis, defaulting… |
 | [Detail](../api_detail/series-method.md#api-sig-series-drop-duplicated) | `Series.drop_duplicated(*, exclude_first, exclude_last)` | Return a Series with duplicated values removed. Args: exclude\_first: Boolean to… |
 | [Detail](../api_detail/series-method.md#api-sig-series-dropfalsy) | `Series.dropfalsy()` | Return a new Series after removing values of falsy. |
 | [Detail](../api_detail/series-method.md#api-sig-series-dropna) | `Series.dropna()` | Return a new Series after removing values of NaN or None. |
@@ -196,13 +196,13 @@ API Detail
 | [Detail](../api_detail/series-method.md#api-sig-series-loc-notna-first) | `Series.loc_notna_first(*, fill_value)` | Return the label corresponding to the first not NA (None or nan) value found. Ar… |
 | [Detail](../api_detail/series-method.md#api-sig-series-loc-notna-last) | `Series.loc_notna_last(*, fill_value)` | Return the label corresponding to the last not NA (None or nan) value found. Arg… |
 | [Detail](../api_detail/series-method.md#api-sig-series-loc-searchsorted) | `Series.loc_searchsorted(values, *, side_left, fill_value)` | Given a sorted Series, return the loc (label) position(s) at which insertion in… |
-| [Detail](../api_detail/series-method.md#api-sig-series-max) | `Series.max(*, axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
-| [Detail](../api_detail/series-method.md#api-sig-series-mean) | `Series.mean(*, axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
-| [Detail](../api_detail/series-method.md#api-sig-series-median) | `Series.median(*, axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
-| [Detail](../api_detail/series-method.md#api-sig-series-min) | `Series.min(*, axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/series-method.md#api-sig-series-max) | `Series.max(axis, skipna, out)` | Return the maximum along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/series-method.md#api-sig-series-mean) | `Series.mean(axis, skipna, out)` | Return the mean along the specified axis. Args: axis: Axis, defaulting to axis 0… |
+| [Detail](../api_detail/series-method.md#api-sig-series-median) | `Series.median(axis, skipna, out)` | Return the median along the specified axis. Args: axis: Axis, defaulting to axis… |
+| [Detail](../api_detail/series-method.md#api-sig-series-min) | `Series.min(axis, skipna, out)` | Return the minimum along the specified axis. Args: axis: Axis, defaulting to axi… |
 | [Detail](../api_detail/series-method.md#api-sig-series-notfalsy) | `Series.notfalsy()` | Return a same-indexed, Boolean Series indicating which values are falsy. |
 | [Detail](../api_detail/series-method.md#api-sig-series-notna) | `Series.notna()` | Return a same-indexed, Boolean Series indicating which values are NaN or None. |
-| [Detail](../api_detail/series-method.md#api-sig-series-prod) | `Series.prod(*, axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
+| [Detail](../api_detail/series-method.md#api-sig-series-prod) | `Series.prod(axis, skipna, allna, out)` | Return the product along the specified axis. Args: axis: Axis, defaulting to axi… |
 | [Detail](../api_detail/series-method.md#api-sig-series-rank-dense) | `Series.rank_dense(*, skipna, ascending, start, fill_value)` | Rank values as compactly as possible, where ties get the same value, and ranks a… |
 | [Detail](../api_detail/series-method.md#api-sig-series-rank-max) | `Series.rank_max(*, skipna, ascending, start, fill_value)` | Rank values where tied values are assigned the maximum ordinal rank; ranks are p… |
 | [Detail](../api_detail/series-method.md#api-sig-series-rank-mean) | `Series.rank_mean(*, skipna, ascending, start, fill_value)` | Rank values where tied values are assigned the mean of the ordinal ranks; ranks… |
@@ -220,13 +220,13 @@ API Detail
 | [Detail](../api_detail/series-method.md#api-sig-series-shift) | `Series.shift(shift, *, fill_value)` | Return a Series with values shifted forward on the index (with a positive shift)… |
 | [Detail](../api_detail/series-method.md#api-sig-series-sort-index) | `Series.sort_index(*, ascending, kind, key)` | Return a new Series ordered by the sorted Index. Args: \* ascendings: Boolean, or… |
 | [Detail](../api_detail/series-method.md#api-sig-series-sort-values) | `Series.sort_values(*, ascending, kind, key)` | Return a new Series ordered by the sorted values. Args: \* ascending: If True, so… |
-| [Detail](../api_detail/series-method.md#api-sig-series-std) | `Series.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
-| [Detail](../api_detail/series-method.md#api-sig-series-sum) | `Series.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
+| [Detail](../api_detail/series-method.md#api-sig-series-std) | `Series.std(axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
+| [Detail](../api_detail/series-method.md#api-sig-series-sum) | `Series.sum(axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
 | [Detail](../api_detail/series-method.md#api-sig-series-tail) | `Series.tail(count)` | Return a Series consisting only of the bottom elements as specified by count. s… |
 | [Detail](../api_detail/series-method.md#api-sig-series-transpose) | `Series.transpose()` | Transpose. For a 1D immutable container, this returns a reference to self. Retur… |
 | [Detail](../api_detail/series-method.md#api-sig-series-unique) | `Series.unique()` | Return a NumPy array of unique values. Returns: numpy.ndarray |
 | [Detail](../api_detail/series-method.md#api-sig-series-unique-enumerated) | `Series.unique_enumerated(*, retain_order, func)` | Given a collection of values, return two NumPy arrays: the first provides index… |
-| [Detail](../api_detail/series-method.md#api-sig-series-var) | `Series.var(*, axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
+| [Detail](../api_detail/series-method.md#api-sig-series-var) | `Series.var(axis, skipna, ddof, out)` | Return the variance along the specified axis. Args: axis: Axis, defaulting to ax… |
 
 [Series](series.md#api-overview-series): [Constructor](series-constructor.md#api-overview-series-constructor) | [Exporter](series-exporter.md#api-overview-series-exporter) | [Attribute](series-attribute.md#api-overview-series-attribute) | [Method](#api-overview-series-method) | [Dictionary-Like](series-dictionary_like.md#api-overview-series-dictionary-like) | [Display](series-display.md#api-overview-series-display) | [Assignment](series-assignment.md#api-overview-series-assignment) | [Selector](series-selector.md#api-overview-series-selector) | [Iterator](series-iterator.md#api-overview-series-iterator) | [Operator Binary](series-operator_binary.md#api-overview-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-overview-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-overview-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-overview-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-overview-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-overview-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-overview-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-overview-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-overview-series-accessor-type-clinic) | Accessor Mapping
 

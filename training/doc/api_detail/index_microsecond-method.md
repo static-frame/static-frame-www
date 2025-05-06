@@ -247,7 +247,7 @@ IndexMicrosecond.\_\_len\_\_()[](#static_frame.IndexMicrosecond.__len__ "Link
 
     ```
 
-IndexMicrosecond.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.all "Link to this definition")
+IndexMicrosecond.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -267,7 +267,7 @@ IndexMicrosecond.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fra
 
     ```
 
-IndexMicrosecond.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.any "Link to this definition")
+IndexMicrosecond.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -287,7 +287,7 @@ IndexMicrosecond.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fra
 
     ```
 
-IndexMicrosecond.astype(*dtype*, */*)[](#static_frame.IndexMicrosecond.astype "Link to this definition")
+IndexMicrosecond.astype(*dtype*)[](#static_frame.IndexMicrosecond.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -330,7 +330,7 @@ IndexMicrosecond.copy()[](#static_frame.IndexMicrosecond.copy "Link to this d
 
     ```
 
-IndexMicrosecond.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexMicrosecond.cumprod "Link to this definition")
+IndexMicrosecond.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexMicrosecond.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -350,7 +350,7 @@ IndexMicrosecond.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.Index
 
     ```
 
-IndexMicrosecond.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexMicrosecond.cumsum "Link to this definition")
+IndexMicrosecond.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexMicrosecond.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -435,7 +435,7 @@ IndexMicrosecond.dropna()[](#static_frame.IndexMicrosecond.dropna "Link to th
 
     ```
 
-IndexMicrosecond.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexMicrosecond.equals "Link to this definition")
+IndexMicrosecond.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexMicrosecond.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -464,7 +464,7 @@ IndexMicrosecond.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dty
 
     ```
 
-IndexMicrosecond.fillfalsy(*value*, */*)[](#static_frame.IndexMicrosecond.fillfalsy "Link to this definition")
+IndexMicrosecond.fillfalsy(*value*)[](#static_frame.IndexMicrosecond.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -483,7 +483,7 @@ IndexMicrosecond.fillfalsy(*value*, */*)[](#static_frame.IndexMicrosecond.fil
 
     ```
 
-IndexMicrosecond.fillna(*value*, */*)[](#static_frame.IndexMicrosecond.fillna "Link to this definition")
+IndexMicrosecond.fillna(*value*)[](#static_frame.IndexMicrosecond.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -506,7 +506,7 @@ IndexMicrosecond.fillna(*value*, */*)[](#static_frame.IndexMicrosecond.fillna
 
     ```
 
-IndexMicrosecond.head(*count=5*, */*)[](#static_frame.IndexMicrosecond.head "Link to this definition")
+IndexMicrosecond.head(*count=5*)[](#static_frame.IndexMicrosecond.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -528,7 +528,7 @@ IndexMicrosecond.head(*count=5*, */*)[](#static_frame.IndexMicrosecond.head "
 
     ```
 
-IndexMicrosecond.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexMicrosecond.iloc_searchsorted "Link to this definition")
+IndexMicrosecond.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexMicrosecond.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -582,7 +582,7 @@ IndexMicrosecond.isfalsy()[](#static_frame.IndexMicrosecond.isfalsy "Link to 
 
     ```
 
-IndexMicrosecond.isin(*other*, */*)[](#static_frame.IndexMicrosecond.isin "Link to this definition")
+IndexMicrosecond.isin(*other*)[](#static_frame.IndexMicrosecond.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -608,7 +608,7 @@ IndexMicrosecond.isna()[](#static_frame.IndexMicrosecond.isna "Link to this d
 
     ```
 
-IndexMicrosecond.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexMicrosecond.label_widths_at_depth "Link to this definition")
+IndexMicrosecond.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexMicrosecond.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -627,7 +627,7 @@ IndexMicrosecond.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_fr
 
     ```
 
-IndexMicrosecond.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexMicrosecond.level_add "Link to this definition")
+IndexMicrosecond.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexMicrosecond.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -652,7 +652,7 @@ IndexMicrosecond.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](
 
     ```
 
-IndexMicrosecond.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexMicrosecond.loc_searchsorted "Link to this definition")
+IndexMicrosecond.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexMicrosecond.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -673,7 +673,7 @@ IndexMicrosecond.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill
 
     ```
 
-IndexMicrosecond.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexMicrosecond.loc_to_iloc "Link to this definition")
+IndexMicrosecond.loc\_to\_iloc(*key*)[](#static_frame.IndexMicrosecond.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -696,7 +696,7 @@ IndexMicrosecond.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexMicrosecond.l
 
     ```
 
-IndexMicrosecond.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.max "Link to this definition")
+IndexMicrosecond.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -716,7 +716,7 @@ IndexMicrosecond.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fra
 
     ```
 
-IndexMicrosecond.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.mean "Link to this definition")
+IndexMicrosecond.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -736,7 +736,7 @@ IndexMicrosecond.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fr
 
     ```
 
-IndexMicrosecond.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.median "Link to this definition")
+IndexMicrosecond.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -756,7 +756,7 @@ IndexMicrosecond.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_
 
     ```
 
-IndexMicrosecond.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.min "Link to this definition")
+IndexMicrosecond.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMicrosecond.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -796,7 +796,7 @@ IndexMicrosecond.notna()[](#static_frame.IndexMicrosecond.notna "Link to this
 
     ```
 
-IndexMicrosecond.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexMicrosecond.prod "Link to this definition")
+IndexMicrosecond.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexMicrosecond.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -816,7 +816,7 @@ IndexMicrosecond.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[]
 
     ```
 
-IndexMicrosecond.relabel(*mapper*, */*)[](#static_frame.IndexMicrosecond.relabel "Link to this definition")
+IndexMicrosecond.relabel(*mapper*)[](#static_frame.IndexMicrosecond.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -836,7 +836,7 @@ IndexMicrosecond.relabel(*mapper*, */*)[](#static_frame.IndexMicrosecond.rela
 
     ```
 
-IndexMicrosecond.rename(*name*, */*)[](#static_frame.IndexMicrosecond.rename "Link to this definition")
+IndexMicrosecond.rename(*name*)[](#static_frame.IndexMicrosecond.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -899,7 +899,7 @@ IndexMicrosecond.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexMi
 
     ```
 
-IndexMicrosecond.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexMicrosecond.sort "Link to this definition")
+IndexMicrosecond.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexMicrosecond.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -930,7 +930,7 @@ IndexMicrosecond.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[�
 
     ```
 
-IndexMicrosecond.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMicrosecond.std "Link to this definition")
+IndexMicrosecond.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMicrosecond.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -950,7 +950,7 @@ IndexMicrosecond.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#
 
     ```
 
-IndexMicrosecond.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexMicrosecond.sum "Link to this definition")
+IndexMicrosecond.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexMicrosecond.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -970,7 +970,7 @@ IndexMicrosecond.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](
 
     ```
 
-IndexMicrosecond.tail(*count=5*, */*)[](#static_frame.IndexMicrosecond.tail "Link to this definition")
+IndexMicrosecond.tail(*count=5*)[](#static_frame.IndexMicrosecond.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1022,7 +1022,7 @@ IndexMicrosecond.union(*\*others*)[](#static_frame.IndexMicrosecond.union "Li
 
     ```
 
-IndexMicrosecond.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexMicrosecond.unique "Link to this definition")
+IndexMicrosecond.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexMicrosecond.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1046,7 +1046,7 @@ IndexMicrosecond.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=Fals
 
     ```
 
-IndexMicrosecond.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexMicrosecond.values_at_depth "Link to this definition")
+IndexMicrosecond.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexMicrosecond.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1063,7 +1063,7 @@ IndexMicrosecond.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.Ind
 
     ```
 
-IndexMicrosecond.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMicrosecond.var "Link to this definition")
+IndexMicrosecond.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMicrosecond.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

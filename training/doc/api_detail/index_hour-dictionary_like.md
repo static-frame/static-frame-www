@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexHour: Dictionary-Like](../api_overview/index_hour-dictionary_like.md#api-overview-indexhour-dictionary-like)
 
-IndexHour.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexHour.__contains__ "Link to this definition")
+IndexHour.\_\_contains\_\_(*value*)[](#static_frame.IndexHour.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```

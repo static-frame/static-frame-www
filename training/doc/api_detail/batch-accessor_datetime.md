@@ -559,11 +559,11 @@ Batch.via\_dt.timetuple
 
     ```
 
-Batch.via\_dt.isoformat(*\**, *sep*, *timespec*)
+Batch.via\_dt.isoformat(*sep*, *timespec*)
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.isoformat(*\**, *sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.isoformat)
+    InterfaceBatchDatetime.isoformat(*sep='T'*, *timespec='auto'*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.isoformat)
     :   Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
 
     ```
@@ -609,7 +609,7 @@ Batch.via\_dt.strftime(*format*)
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.strftime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.strftime)
+    InterfaceBatchDatetime.strftime(*format*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.strftime)
     :   Return a string representing the date, controlled by an explicit `format` string.
 
     ```
@@ -632,7 +632,7 @@ Batch.via\_dt.strptime(*format*)
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.strptime(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.strptime)
+    InterfaceBatchDatetime.strptime(*format*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.strptime)
     :   Return a Python datetime object from parsing a string defined with `format`.
 
     ```
@@ -655,7 +655,7 @@ Batch.via\_dt.strpdate(*format*)
 :   Batch.via\_dt
     :   Interface for applying datetime properties and methods to elements in this container.
 
-    InterfaceBatchDatetime.strpdate(*format*, */*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.strpdate)
+    InterfaceBatchDatetime.strpdate(*format*)[[source]](../_modules/static_frame/core/node_dt.md#InterfaceBatchDatetime.strpdate)
     :   Return a Python date object from parsing a string defined with `format`.
 
     ```

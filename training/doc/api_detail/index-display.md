@@ -163,7 +163,7 @@ Index.interface[](#Index.interface "Link to this definition")
     __init__(labels, *, loc_is_iloc, ... Index    Constructor          Initializer. Args...
     from_labels(labels, *, name)         Index    Constructor          Construct an Inde...
     from_pandas(value)                   Index    Constructor          Given a Pandas in...
-    to_html(config, *, style_config)     Index    Exporter             Return an HTML ta...
+    to_html(config, style_config)        Index    Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... Index    Exporter             Return a complete...
     to_pandas()                          Index    Exporter             Return a Pandas I...
     to_series()                          Index    Exporter             Return a Series w...
@@ -180,22 +180,22 @@ Index.interface[](#Index.interface "Link to this definition")
     ...                                  ...      ...                  ...
     via_re(pattern, flags).sub(repl, ... Index    Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... Index    Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib
-    via_hashlib(*, include_name, incl... Index    Accessor Hashlib
+    via_hashlib(include_name, include... Index    Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... Index    Accessor Hashlib
+    via_hashlib(include_name, include... Index    Accessor Hashlib
+    via_hashlib(include_name, include... Index    Accessor Hashlib
+    via_hashlib(include_name, include... Index    Accessor Hashlib
+    via_hashlib(include_name, include... Index    Accessor Hashlib
+    via_hashlib(include_name, include... Index    Accessor Hashlib
+    via_hashlib(include_name, include... Index    Accessor Hashlib
+    via_hashlib(include_name, include... Index    Accessor Hashlib
+    via_hashlib(include_name, include... Index    Accessor Hashlib
     via_type_clinic.to_hint()            Index    Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... Index    Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... Index    Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... Index    Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           Index    Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U5>    <<U27>               <<U83>
+    <<U90>                               <<U5>    <<U27>               <<U83>
 
     ```
 
@@ -229,7 +229,7 @@ Index.\_\_str\_\_()[](#static_frame.Index.__str__ "Link to this definition")
 
     ```
 
-Index.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/index.md#Index.display)[](#static_frame.Index.display "Link to this definition")
+Index.display(*config=None*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/index.md#Index.display)[](#static_frame.Index.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -252,7 +252,7 @@ Index.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modu
 
     ```
 
-Index.display\_tall(*config=None*, */*)[](#static_frame.Index.display_tall "Link to this definition")
+Index.display\_tall(*config=None*)[](#static_frame.Index.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -270,7 +270,7 @@ Index.display\_tall(*config=None*, */*)[](#static_frame.Index.display_tall "L
 
     ```
 
-Index.display\_wide(*config=None*, */*)[](#static_frame.Index.display_wide "Link to this definition")
+Index.display\_wide(*config=None*)[](#static_frame.Index.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

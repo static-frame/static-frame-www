@@ -246,7 +246,7 @@ IndexYearMonth.\_\_len\_\_()[](#static_frame.IndexYearMonth.__len__ "Link to 
 
     ```
 
-IndexYearMonth.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.all "Link to this definition")
+IndexYearMonth.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -266,7 +266,7 @@ IndexYearMonth.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexYearMonth.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.any "Link to this definition")
+IndexYearMonth.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -286,7 +286,7 @@ IndexYearMonth.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexYearMonth.astype(*dtype*, */*)[](#static_frame.IndexYearMonth.astype "Link to this definition")
+IndexYearMonth.astype(*dtype*)[](#static_frame.IndexYearMonth.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -329,7 +329,7 @@ IndexYearMonth.copy()[](#static_frame.IndexYearMonth.copy "Link to this defin
 
     ```
 
-IndexYearMonth.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexYearMonth.cumprod "Link to this definition")
+IndexYearMonth.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexYearMonth.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -349,7 +349,7 @@ IndexYearMonth.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexYe
 
     ```
 
-IndexYearMonth.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexYearMonth.cumsum "Link to this definition")
+IndexYearMonth.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexYearMonth.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -434,7 +434,7 @@ IndexYearMonth.dropna()[](#static_frame.IndexYearMonth.dropna "Link to this d
 
     ```
 
-IndexYearMonth.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexYearMonth.equals "Link to this definition")
+IndexYearMonth.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexYearMonth.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -463,7 +463,7 @@ IndexYearMonth.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype
 
     ```
 
-IndexYearMonth.fillfalsy(*value*, */*)[](#static_frame.IndexYearMonth.fillfalsy "Link to this definition")
+IndexYearMonth.fillfalsy(*value*)[](#static_frame.IndexYearMonth.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -482,7 +482,7 @@ IndexYearMonth.fillfalsy(*value*, */*)[](#static_frame.IndexYearMonth.fillfal
 
     ```
 
-IndexYearMonth.fillna(*value*, */*)[](#static_frame.IndexYearMonth.fillna "Link to this definition")
+IndexYearMonth.fillna(*value*)[](#static_frame.IndexYearMonth.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -505,7 +505,7 @@ IndexYearMonth.fillna(*value*, */*)[](#static_frame.IndexYearMonth.fillna "Li
 
     ```
 
-IndexYearMonth.head(*count=5*, */*)[](#static_frame.IndexYearMonth.head "Link to this definition")
+IndexYearMonth.head(*count=5*)[](#static_frame.IndexYearMonth.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -527,7 +527,7 @@ IndexYearMonth.head(*count=5*, */*)[](#static_frame.IndexYearMonth.head "Link
 
     ```
 
-IndexYearMonth.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexYearMonth.iloc_searchsorted "Link to this definition")
+IndexYearMonth.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexYearMonth.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -581,7 +581,7 @@ IndexYearMonth.isfalsy()[](#static_frame.IndexYearMonth.isfalsy "Link to this
 
     ```
 
-IndexYearMonth.isin(*other*, */*)[](#static_frame.IndexYearMonth.isin "Link to this definition")
+IndexYearMonth.isin(*other*)[](#static_frame.IndexYearMonth.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -607,7 +607,7 @@ IndexYearMonth.isna()[](#static_frame.IndexYearMonth.isna "Link to this defin
 
     ```
 
-IndexYearMonth.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexYearMonth.label_widths_at_depth "Link to this definition")
+IndexYearMonth.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexYearMonth.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -626,7 +626,7 @@ IndexYearMonth.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_fram
 
     ```
 
-IndexYearMonth.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexYearMonth.level_add "Link to this definition")
+IndexYearMonth.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexYearMonth.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -651,7 +651,7 @@ IndexYearMonth.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#s
 
     ```
 
-IndexYearMonth.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexYearMonth.loc_searchsorted "Link to this definition")
+IndexYearMonth.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexYearMonth.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -672,7 +672,7 @@ IndexYearMonth.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_
 
     ```
 
-IndexYearMonth.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexYearMonth.loc_to_iloc "Link to this definition")
+IndexYearMonth.loc\_to\_iloc(*key*)[](#static_frame.IndexYearMonth.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -695,7 +695,7 @@ IndexYearMonth.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexYearMonth.loc_t
 
     ```
 
-IndexYearMonth.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.max "Link to this definition")
+IndexYearMonth.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -715,7 +715,7 @@ IndexYearMonth.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexYearMonth.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.mean "Link to this definition")
+IndexYearMonth.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -735,7 +735,7 @@ IndexYearMonth.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fram
 
     ```
 
-IndexYearMonth.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.median "Link to this definition")
+IndexYearMonth.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -755,7 +755,7 @@ IndexYearMonth.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_fr
 
     ```
 
-IndexYearMonth.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.min "Link to this definition")
+IndexYearMonth.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexYearMonth.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -795,7 +795,7 @@ IndexYearMonth.notna()[](#static_frame.IndexYearMonth.notna "Link to this def
 
     ```
 
-IndexYearMonth.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexYearMonth.prod "Link to this definition")
+IndexYearMonth.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexYearMonth.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -815,7 +815,7 @@ IndexYearMonth.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#
 
     ```
 
-IndexYearMonth.relabel(*mapper*, */*)[](#static_frame.IndexYearMonth.relabel "Link to this definition")
+IndexYearMonth.relabel(*mapper*)[](#static_frame.IndexYearMonth.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -831,7 +831,7 @@ IndexYearMonth.relabel(*mapper*, */*)[](#static_frame.IndexYearMonth.relabel 
 
     ```
 
-IndexYearMonth.rename(*name*, */*)[](#static_frame.IndexYearMonth.rename "Link to this definition")
+IndexYearMonth.rename(*name*)[](#static_frame.IndexYearMonth.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -894,7 +894,7 @@ IndexYearMonth.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexYear
 
     ```
 
-IndexYearMonth.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexYearMonth.sort "Link to this definition")
+IndexYearMonth.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexYearMonth.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -925,7 +925,7 @@ IndexYearMonth.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[]
 
     ```
 
-IndexYearMonth.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexYearMonth.std "Link to this definition")
+IndexYearMonth.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexYearMonth.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -945,7 +945,7 @@ IndexYearMonth.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#st
 
     ```
 
-IndexYearMonth.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexYearMonth.sum "Link to this definition")
+IndexYearMonth.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexYearMonth.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -965,7 +965,7 @@ IndexYearMonth.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#s
 
     ```
 
-IndexYearMonth.tail(*count=5*, */*)[](#static_frame.IndexYearMonth.tail "Link to this definition")
+IndexYearMonth.tail(*count=5*)[](#static_frame.IndexYearMonth.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1017,7 +1017,7 @@ IndexYearMonth.union(*\*others*)[](#static_frame.IndexYearMonth.union "Link t
 
     ```
 
-IndexYearMonth.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexYearMonth.unique "Link to this definition")
+IndexYearMonth.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexYearMonth.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1040,7 +1040,7 @@ IndexYearMonth.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*
 
     ```
 
-IndexYearMonth.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexYearMonth.values_at_depth "Link to this definition")
+IndexYearMonth.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexYearMonth.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1056,7 +1056,7 @@ IndexYearMonth.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.Index
 
     ```
 
-IndexYearMonth.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexYearMonth.var "Link to this definition")
+IndexYearMonth.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexYearMonth.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

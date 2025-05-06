@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexDateGO: Operator Binary](../api_overview/index_date_go-operator_binary.md#api-overview-indexdatego-operator-binary)
 
-IndexDateGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexDateGO.__add__ "Link to this definition")
+IndexDateGO.\_\_add\_\_(*other*)[](#static_frame.IndexDateGO.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -158,7 +158,7 @@ IndexDateGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexDateGO.__add__ "Li
 
     ```
 
-IndexDateGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexDateGO.__and__ "Link to this definition")
+IndexDateGO.\_\_and\_\_(*other*)[](#static_frame.IndexDateGO.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -174,7 +174,7 @@ IndexDateGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexDateGO.__and__ "Li
 
     ```
 
-IndexDateGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexDateGO.__eq__ "Link to this definition")
+IndexDateGO.\_\_eq\_\_(*other*)[](#static_frame.IndexDateGO.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -190,7 +190,7 @@ IndexDateGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexDateGO.__eq__ "Link
 
     ```
 
-IndexDateGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexDateGO.__floordiv__ "Link to this definition")
+IndexDateGO.\_\_floordiv\_\_(*other*)[](#static_frame.IndexDateGO.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -204,7 +204,7 @@ IndexDateGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexDateGO.__floo
 
     ```
 
-IndexDateGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexDateGO.__ge__ "Link to this definition")
+IndexDateGO.\_\_ge\_\_(*other*)[](#static_frame.IndexDateGO.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -220,7 +220,7 @@ IndexDateGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexDateGO.__ge__ "Link
 
     ```
 
-IndexDateGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexDateGO.__gt__ "Link to this definition")
+IndexDateGO.\_\_gt\_\_(*other*)[](#static_frame.IndexDateGO.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -236,7 +236,7 @@ IndexDateGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexDateGO.__gt__ "Link
 
     ```
 
-IndexDateGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexDateGO.__le__ "Link to this definition")
+IndexDateGO.\_\_le\_\_(*other*)[](#static_frame.IndexDateGO.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -252,7 +252,7 @@ IndexDateGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexDateGO.__le__ "Link
 
     ```
 
-IndexDateGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexDateGO.__lt__ "Link to this definition")
+IndexDateGO.\_\_lt\_\_(*other*)[](#static_frame.IndexDateGO.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -268,7 +268,7 @@ IndexDateGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexDateGO.__lt__ "Link
 
     ```
 
-IndexDateGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexDateGO.__matmul__ "Link to this definition")
+IndexDateGO.\_\_matmul\_\_(*other*)[](#static_frame.IndexDateGO.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -282,7 +282,7 @@ IndexDateGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexDateGO.__matmul
 
     ```
 
-IndexDateGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexDateGO.__mod__ "Link to this definition")
+IndexDateGO.\_\_mod\_\_(*other*)[](#static_frame.IndexDateGO.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -296,7 +296,7 @@ IndexDateGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexDateGO.__mod__ "Li
 
     ```
 
-IndexDateGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexDateGO.__mul__ "Link to this definition")
+IndexDateGO.\_\_mul\_\_(*other*)[](#static_frame.IndexDateGO.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -310,7 +310,7 @@ IndexDateGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexDateGO.__mul__ "Li
 
     ```
 
-IndexDateGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexDateGO.__ne__ "Link to this definition")
+IndexDateGO.\_\_ne\_\_(*other*)[](#static_frame.IndexDateGO.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -326,7 +326,7 @@ IndexDateGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexDateGO.__ne__ "Link
 
     ```
 
-IndexDateGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexDateGO.__or__ "Link to this definition")
+IndexDateGO.\_\_or\_\_(*other*)[](#static_frame.IndexDateGO.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -344,7 +344,7 @@ IndexDateGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexDateGO.__or__ "Link
 
     ```
 
-IndexDateGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexDateGO.__pow__ "Link to this definition")
+IndexDateGO.\_\_pow\_\_(*other*)[](#static_frame.IndexDateGO.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -358,7 +358,7 @@ IndexDateGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexDateGO.__pow__ "Li
 
     ```
 
-IndexDateGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexDateGO.__radd__ "Link to this definition")
+IndexDateGO.\_\_radd\_\_(*other*)[](#static_frame.IndexDateGO.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -372,7 +372,7 @@ IndexDateGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexDateGO.__radd__ "
 
     ```
 
-IndexDateGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rfloordiv__ "Link to this definition")
+IndexDateGO.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexDateGO.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -386,7 +386,7 @@ IndexDateGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rfl
 
     ```
 
-IndexDateGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rmatmul__ "Link to this definition")
+IndexDateGO.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexDateGO.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -400,7 +400,7 @@ IndexDateGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rmatm
 
     ```
 
-IndexDateGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rmul__ "Link to this definition")
+IndexDateGO.\_\_rmul\_\_(*other*)[](#static_frame.IndexDateGO.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -414,7 +414,7 @@ IndexDateGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rmul__ "
 
     ```
 
-IndexDateGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rshift__ "Link to this definition")
+IndexDateGO.\_\_rshift\_\_(*other*)[](#static_frame.IndexDateGO.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -428,7 +428,7 @@ IndexDateGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rshift
 
     ```
 
-IndexDateGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rsub__ "Link to this definition")
+IndexDateGO.\_\_rsub\_\_(*other*)[](#static_frame.IndexDateGO.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -442,7 +442,7 @@ IndexDateGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rsub__ "
 
     ```
 
-IndexDateGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rtruediv__ "Link to this definition")
+IndexDateGO.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexDateGO.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -456,7 +456,7 @@ IndexDateGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexDateGO.__rtru
 
     ```
 
-IndexDateGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexDateGO.__sub__ "Link to this definition")
+IndexDateGO.\_\_sub\_\_(*other*)[](#static_frame.IndexDateGO.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -470,7 +470,7 @@ IndexDateGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexDateGO.__sub__ "Li
 
     ```
 
-IndexDateGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexDateGO.__truediv__ "Link to this definition")
+IndexDateGO.\_\_truediv\_\_(*other*)[](#static_frame.IndexDateGO.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix
@@ -484,7 +484,7 @@ IndexDateGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexDateGO.__trued
 
     ```
 
-IndexDateGO.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexDateGO.__xor__ "Link to this definition")
+IndexDateGO.\_\_xor\_\_(*other*)[](#static_frame.IndexDateGO.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexDateGO(('1517-04-01', '1517-12', '1517-06-30'))
     >>> ix

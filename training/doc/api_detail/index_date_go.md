@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexDateGO](../api_overview/index_date_go.md#api-overview-indexdatego)
 
-*class* IndexDateGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexDateGO)[](#static_frame.IndexDateGO "Link to this definition")
+*class* IndexDateGO(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexDateGO)[](#static_frame.IndexDateGO "Link to this definition")
 
 * [Constructor](index_date_go-constructor.md#api-detail-indexdatego-constructor): Alternative constructors for creating instances.
 * [Exporter](index_date_go-exporter.md#api-detail-indexdatego-exporter): Methods for transforming, exporting, or serializing objects.

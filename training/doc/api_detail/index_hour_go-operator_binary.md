@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexHourGO: Operator Binary](../api_overview/index_hour_go-operator_binary.md#api-overview-indexhourgo-operator-binary)
 
-IndexHourGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexHourGO.__add__ "Link to this definition")
+IndexHourGO.\_\_add\_\_(*other*)[](#static_frame.IndexHourGO.__add__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -158,7 +158,7 @@ IndexHourGO.\_\_add\_\_(*other*, */*)[](#static_frame.IndexHourGO.__add__ "Li
 
     ```
 
-IndexHourGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexHourGO.__and__ "Link to this definition")
+IndexHourGO.\_\_and\_\_(*other*)[](#static_frame.IndexHourGO.__and__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -174,7 +174,7 @@ IndexHourGO.\_\_and\_\_(*other*, */*)[](#static_frame.IndexHourGO.__and__ "Li
 
     ```
 
-IndexHourGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexHourGO.__eq__ "Link to this definition")
+IndexHourGO.\_\_eq\_\_(*other*)[](#static_frame.IndexHourGO.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -190,7 +190,7 @@ IndexHourGO.\_\_eq\_\_(*other*, */*)[](#static_frame.IndexHourGO.__eq__ "Link
 
     ```
 
-IndexHourGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexHourGO.__floordiv__ "Link to this definition")
+IndexHourGO.\_\_floordiv\_\_(*other*)[](#static_frame.IndexHourGO.__floordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -204,7 +204,7 @@ IndexHourGO.\_\_floordiv\_\_(*other*, */*)[](#static_frame.IndexHourGO.__floo
 
     ```
 
-IndexHourGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexHourGO.__ge__ "Link to this definition")
+IndexHourGO.\_\_ge\_\_(*other*)[](#static_frame.IndexHourGO.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -220,7 +220,7 @@ IndexHourGO.\_\_ge\_\_(*other*, */*)[](#static_frame.IndexHourGO.__ge__ "Link
 
     ```
 
-IndexHourGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexHourGO.__gt__ "Link to this definition")
+IndexHourGO.\_\_gt\_\_(*other*)[](#static_frame.IndexHourGO.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -236,7 +236,7 @@ IndexHourGO.\_\_gt\_\_(*other*, */*)[](#static_frame.IndexHourGO.__gt__ "Link
 
     ```
 
-IndexHourGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexHourGO.__le__ "Link to this definition")
+IndexHourGO.\_\_le\_\_(*other*)[](#static_frame.IndexHourGO.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -252,7 +252,7 @@ IndexHourGO.\_\_le\_\_(*other*, */*)[](#static_frame.IndexHourGO.__le__ "Link
 
     ```
 
-IndexHourGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexHourGO.__lt__ "Link to this definition")
+IndexHourGO.\_\_lt\_\_(*other*)[](#static_frame.IndexHourGO.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -268,7 +268,7 @@ IndexHourGO.\_\_lt\_\_(*other*, */*)[](#static_frame.IndexHourGO.__lt__ "Link
 
     ```
 
-IndexHourGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexHourGO.__matmul__ "Link to this definition")
+IndexHourGO.\_\_matmul\_\_(*other*)[](#static_frame.IndexHourGO.__matmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -282,7 +282,7 @@ IndexHourGO.\_\_matmul\_\_(*other*, */*)[](#static_frame.IndexHourGO.__matmul
 
     ```
 
-IndexHourGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexHourGO.__mod__ "Link to this definition")
+IndexHourGO.\_\_mod\_\_(*other*)[](#static_frame.IndexHourGO.__mod__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -296,7 +296,7 @@ IndexHourGO.\_\_mod\_\_(*other*, */*)[](#static_frame.IndexHourGO.__mod__ "Li
 
     ```
 
-IndexHourGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexHourGO.__mul__ "Link to this definition")
+IndexHourGO.\_\_mul\_\_(*other*)[](#static_frame.IndexHourGO.__mul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -310,7 +310,7 @@ IndexHourGO.\_\_mul\_\_(*other*, */*)[](#static_frame.IndexHourGO.__mul__ "Li
 
     ```
 
-IndexHourGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexHourGO.__ne__ "Link to this definition")
+IndexHourGO.\_\_ne\_\_(*other*)[](#static_frame.IndexHourGO.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -326,7 +326,7 @@ IndexHourGO.\_\_ne\_\_(*other*, */*)[](#static_frame.IndexHourGO.__ne__ "Link
 
     ```
 
-IndexHourGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexHourGO.__or__ "Link to this definition")
+IndexHourGO.\_\_or\_\_(*other*)[](#static_frame.IndexHourGO.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -344,7 +344,7 @@ IndexHourGO.\_\_or\_\_(*other*, */*)[](#static_frame.IndexHourGO.__or__ "Link
 
     ```
 
-IndexHourGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexHourGO.__pow__ "Link to this definition")
+IndexHourGO.\_\_pow\_\_(*other*)[](#static_frame.IndexHourGO.__pow__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -358,7 +358,7 @@ IndexHourGO.\_\_pow\_\_(*other*, */*)[](#static_frame.IndexHourGO.__pow__ "Li
 
     ```
 
-IndexHourGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexHourGO.__radd__ "Link to this definition")
+IndexHourGO.\_\_radd\_\_(*other*)[](#static_frame.IndexHourGO.__radd__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -372,7 +372,7 @@ IndexHourGO.\_\_radd\_\_(*other*, */*)[](#static_frame.IndexHourGO.__radd__ "
 
     ```
 
-IndexHourGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rfloordiv__ "Link to this definition")
+IndexHourGO.\_\_rfloordiv\_\_(*other*)[](#static_frame.IndexHourGO.__rfloordiv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -386,7 +386,7 @@ IndexHourGO.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rfl
 
     ```
 
-IndexHourGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rmatmul__ "Link to this definition")
+IndexHourGO.\_\_rmatmul\_\_(*other*)[](#static_frame.IndexHourGO.__rmatmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -400,7 +400,7 @@ IndexHourGO.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rmatm
 
     ```
 
-IndexHourGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rmul__ "Link to this definition")
+IndexHourGO.\_\_rmul\_\_(*other*)[](#static_frame.IndexHourGO.__rmul__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -414,7 +414,7 @@ IndexHourGO.\_\_rmul\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rmul__ "
 
     ```
 
-IndexHourGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rshift__ "Link to this definition")
+IndexHourGO.\_\_rshift\_\_(*other*)[](#static_frame.IndexHourGO.__rshift__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -428,7 +428,7 @@ IndexHourGO.\_\_rshift\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rshift
 
     ```
 
-IndexHourGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rsub__ "Link to this definition")
+IndexHourGO.\_\_rsub\_\_(*other*)[](#static_frame.IndexHourGO.__rsub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -442,7 +442,7 @@ IndexHourGO.\_\_rsub\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rsub__ "
 
     ```
 
-IndexHourGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rtruediv__ "Link to this definition")
+IndexHourGO.\_\_rtruediv\_\_(*other*)[](#static_frame.IndexHourGO.__rtruediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -456,7 +456,7 @@ IndexHourGO.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.IndexHourGO.__rtru
 
     ```
 
-IndexHourGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexHourGO.__sub__ "Link to this definition")
+IndexHourGO.\_\_sub\_\_(*other*)[](#static_frame.IndexHourGO.__sub__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -470,7 +470,7 @@ IndexHourGO.\_\_sub\_\_(*other*, */*)[](#static_frame.IndexHourGO.__sub__ "Li
 
     ```
 
-IndexHourGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexHourGO.__truediv__ "Link to this definition")
+IndexHourGO.\_\_truediv\_\_(*other*)[](#static_frame.IndexHourGO.__truediv__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix
@@ -484,7 +484,7 @@ IndexHourGO.\_\_truediv\_\_(*other*, */*)[](#static_frame.IndexHourGO.__trued
 
     ```
 
-IndexHourGO.\_\_xor\_\_(*other*, */*)[](#static_frame.IndexHourGO.__xor__ "Link to this definition")
+IndexHourGO.\_\_xor\_\_(*other*)[](#static_frame.IndexHourGO.__xor__ "Link to this definition")
 :   ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix

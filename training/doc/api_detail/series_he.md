@@ -145,7 +145,7 @@ API Detail
 
 [Overview: SeriesHE](../api_overview/series_he.md#api-overview-serieshe)
 
-*class* SeriesHE(*values*, */*, *\**, *index=None*, *name=<object object>*, *dtype=None*, *index\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.md#SeriesHE)[](#static_frame.SeriesHE "Link to this definition")
+*class* SeriesHE(*values*, *\**, *index=None*, *name=<object object>*, *dtype=None*, *index\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.md#SeriesHE)[](#static_frame.SeriesHE "Link to this definition")
 :   A hash/equals subclass of [`Series`](series-selector.md#Series "Series"), permiting usage in a Python set, dictionary, or other contexts where a hashable container is needed. To support hashability, `__eq__` is implemented to return a Boolean rather than an Boolean [`Series`](series-selector.md#Series "Series").
 
 * [Constructor](series_he-constructor.md#api-detail-serieshe-constructor): Alternative constructors for creating instances.

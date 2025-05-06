@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexYearGO: Dictionary-Like](../api_overview/index_year_go-dictionary_like.md#api-overview-indexyeargo-dictionary-like)
 
-IndexYearGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexYearGO.__contains__ "Link to this definition")
+IndexYearGO.\_\_contains\_\_(*value*)[](#static_frame.IndexYearGO.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```

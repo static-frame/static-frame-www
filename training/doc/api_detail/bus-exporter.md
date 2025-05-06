@@ -144,6 +144,48 @@ API Detail
 
 [Overview: Bus: Exporter](../api_overview/bus-exporter.md#api-overview-bus-exporter)
 
+Bus.to\_duckdb(*fp*, *\**, *config=None*)[](#static_frame.Bus.to_duckdb "Link to this definition")
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
+
+    ```
+    >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y'), sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='k')
+    >>> b
+    <Bus: k>
+    <Index>
+    x        Frame
+    y        Frame
+    v        Frame
+    w        Frame
+    <<U1>    <object>
+    >>> b.to_duckdb('/tmp/b.duckdb')
+
+    ```
+
+Bus.to\_hdf5(*fp*, *\**, *config=None*)[](#static_frame.Bus.to_hdf5 "Link to this definition")
+:   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an HDF5 table.
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
+
+    ```
+    >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
+    >>> b
+    <Bus: i>
+    <Index>
+    x        Frame
+    y        Frame
+    <<U1>    <object>
+    >>> b.to_hdf5('/tmp/b.hdf5')
+
+    ```
+
 Bus.to\_series()[[source]](../_modules/static_frame/core/bus.md#Bus.to_series)[](#static_frame.Bus.to_series "Link to this definition")
 :   Return a [`Series`](series-selector.md#Series "Series") with the [`Frame`](frame-selector.md#Frame "Frame") contained in this [`Bus`](bus-selector.md#Bus "Bus"). If the [`Bus`](bus-selector.md#Bus "Bus") is associated with a `Store`, all [`Frame`](frame-selector.md#Frame "Frame") will be loaded into memory and the returned [`Bus`](bus-selector.md#Bus "Bus") will no longer be associated with the `Store`.
 
@@ -164,7 +206,7 @@ Bus.to\_series()[[source]](../_modules/static_frame/core/bus.md#Bus.to_series)[�
 
     ```
 
-Bus.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Bus.to_sqlite "Link to this definition")
+Bus.to\_sqlite(*fp*, *\**, *config=None*)[](#static_frame.Bus.to_sqlite "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as an SQLite database file.
 
     > Args:
@@ -187,7 +229,7 @@ Bus.to\_sqlite(*fp*, */*, *\**, *config=None*)[](#static_frame.Bus.to_sqlite 
 Bus.to\_visidata()[](#static_frame.Bus.to_visidata "Link to this definition")
 :   Open an interactive VisiData session.
 
-Bus.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Bus.to_xlsx "Link to this definition")
+Bus.to\_xlsx(*fp*, *\**, *config=None*)[](#static_frame.Bus.to_xlsx "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a XLSX workbook.
 
     > Args:
@@ -207,7 +249,7 @@ Bus.to\_xlsx(*fp*, */*, *\**, *config=None*)[](#static_frame.Bus.to_xlsx "Lin
 
     ```
 
-Bus.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_csv "Link to this definition")
+Bus.to\_zip\_csv(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_csv "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of CSV files.
 
     > Args:
@@ -227,7 +269,7 @@ Bus.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_f
 
     ```
 
-Bus.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_npy "Link to this definition")
+Bus.to\_zip\_npy(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_npy "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPY files.
 
     > Args:
@@ -247,7 +289,7 @@ Bus.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_f
 
     ```
 
-Bus.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_npz "Link to this definition")
+Bus.to\_zip\_npz(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_npz "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of NPZ files.
 
     > Args:
@@ -267,7 +309,7 @@ Bus.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_f
 
     ```
 
-Bus.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_parquet "Link to this definition")
+Bus.to\_zip\_parquet(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_parquet "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of parquet files.
 
     > Args:
@@ -287,7 +329,7 @@ Bus.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[](#stat
 
     ```
 
-Bus.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_pickle "Link to this definition")
+Bus.to\_zip\_pickle(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_pickle "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of pickles.
 
     > Args:
@@ -307,7 +349,7 @@ Bus.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[](#stati
 
     ```
 
-Bus.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_tsv "Link to this definition")
+Bus.to\_zip\_tsv(*fp*, *\**, *config=None*, *compression=8*)[](#static_frame.Bus.to_zip_tsv "Link to this definition")
 :   Write the complete [`Bus`](bus-selector.md#Bus "Bus") as a zipped archive of TSV files.
 
     > Args:

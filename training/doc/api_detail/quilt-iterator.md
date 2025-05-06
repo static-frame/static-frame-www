@@ -167,7 +167,7 @@ Quilt.iter\_array(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_const
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -201,7 +201,7 @@ Quilt.iter\_array(*\**, *axis).apply\_iter(func*)
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -229,7 +229,7 @@ Quilt.iter\_array(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -257,7 +257,7 @@ Quilt.iter\_array(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index\
 :   iter\_array
     :   Iterator of `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -315,7 +315,7 @@ Quilt.iter\_array\_items(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -349,7 +349,7 @@ Quilt.iter\_array\_items(*\**, *axis).apply\_iter(func*)
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -377,7 +377,7 @@ Quilt.iter\_array\_items(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -405,7 +405,7 @@ Quilt.iter\_array\_items(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, 
 :   iter\_array\_items
     :   Iterator of pairs of label, `np.array`, where arrays are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -487,7 +487,7 @@ Quilt.iter\_series(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *index\_cons
 :   iter\_series
     :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -521,7 +521,7 @@ Quilt.iter\_series(*\**, *axis).apply\_iter(func*)
 :   iter\_series
     :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -549,7 +549,7 @@ Quilt.iter\_series(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_series
     :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -577,7 +577,7 @@ Quilt.iter\_series(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*, *index
 :   iter\_series
     :   Iterator of [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -659,7 +659,7 @@ Quilt.iter\_series\_items(*\**, *axis).apply(func*, *\**, *dtype*, *name*, *inde
 :   iter\_series\_items
     :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -693,7 +693,7 @@ Quilt.iter\_series\_items(*\**, *axis).apply\_iter(func*)
 :   iter\_series\_items
     :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -721,7 +721,7 @@ Quilt.iter\_series\_items(*\**, *axis).apply\_iter\_items(func*)
 :   iter\_series\_items
     :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -749,7 +749,7 @@ Quilt.iter\_series\_items(*\**, *axis).apply\_pool(func*, *\**, *dtype*, *name*,
 :   iter\_series\_items
     :   Iterator of pairs of label, [`Series`](series-selector.md#Series "Series"), where [`Series`](series-selector.md#Series "Series") are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -807,7 +807,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).apply(func*, *\**, *dtype*, *name*
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateMapable.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -841,7 +841,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).apply\_iter(func*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.apply\_iter(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -869,7 +869,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).apply\_iter\_items(func*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -897,7 +897,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).apply\_pool(func*, *\**, *dtype*, 
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateMapable.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -913,7 +913,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_all(mapping*, *\**, *dtype*, 
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -943,7 +943,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -968,7 +968,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter\_items(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -993,7 +993,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_any(mapping*, *\**, *dtype*, 
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -1027,7 +1027,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -1052,7 +1052,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter\_items(mapping*)
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1077,7 +1077,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_fill(mapping*, *\**, *fill\_v
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -1112,7 +1112,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, *\**, *f
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -1138,7 +1138,7 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapping*, *
 :   iter\_tuple
     :   Iterator of `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1). An optional `constructor` callable can be used to provide a `NamedTuple` class (or any other constructor called with a single iterable) to be used to create each yielded axis value.
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1183,7 +1183,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply(func*, *\**, *dtype*,
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateMapable.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -1217,7 +1217,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter(func*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.apply\_iter(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -1245,7 +1245,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter\_items(func*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateMapable.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1273,7 +1273,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_pool(func*, *\**, *d
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateMapable.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -1289,7 +1289,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all(mapping*, *\**, *d
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_all(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
+    IterNodeDelegateMapable.map\_all(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. Returns a new container.
 
         Parameters:
@@ -1319,7 +1319,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter(mapping*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_all\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
+    IterNodeDelegateMapable.map\_all\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting values.
 
         Parameters:
@@ -1344,7 +1344,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter\_items(mappi
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
+    IterNodeDelegateMapable.map\_all\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_all_iter_items)
     :   Apply a mapping; for values not in the mapping, an Exception is raised. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1369,7 +1369,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any(mapping*, *\**, *d
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_any(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
+    IterNodeDelegateMapable.map\_any(*mapping*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any)
     :   Apply a mapping; for values not in the mapping, the value is returned. Returns a new container.
 
         Parameters:
@@ -1403,7 +1403,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter(mapping*)
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_any\_iter(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
+    IterNodeDelegateMapable.map\_any\_iter(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting values.
 
         Parameters:
@@ -1428,7 +1428,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter\_items(mappi
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
+    IterNodeDelegateMapable.map\_any\_iter\_items(*mapping*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_any_iter_items)
     :   Apply a mapping; for values not in the mapping, the value is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1453,7 +1453,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill(mapping*, *\**, *
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_fill(*mapping*, */*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
+    IterNodeDelegateMapable.map\_fill(*mapping*, *\**, *fill\_value=nan*, *dtype=None*, *name=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. Returns a new container.
 
         Parameters:
@@ -1488,7 +1488,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, *
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
+    IterNodeDelegateMapable.map\_fill\_iter(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting values.
 
         Parameters:
@@ -1514,7 +1514,7 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapp
 :   iter\_tuple\_items
     :   Iterator of pairs of label, `NamedTuple`, where tuples are drawn from columns (axis=0) or rows (axis=1)
 
-    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
+    IterNodeDelegateMapable.map\_fill\_iter\_items(*mapping*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegateMapable.map_fill_iter_items)
     :   Apply a mapping; for values not in the mapping, the `fill_value` is returned. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1600,7 +1600,7 @@ Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -1644,7 +1644,7 @@ Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -1685,7 +1685,7 @@ Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1726,7 +1726,7 @@ Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -1790,7 +1790,7 @@ Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -1834,7 +1834,7 @@ Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -1875,7 +1875,7 @@ Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1916,7 +1916,7 @@ Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -1980,7 +1980,7 @@ Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -2024,7 +2024,7 @@ Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -2065,7 +2065,7 @@ Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -2106,7 +2106,7 @@ Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -2182,7 +2182,7 @@ Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
+    IterNodeDelegate.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -2226,7 +2226,7 @@ Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_iter(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
+    IterNodeDelegate.apply\_iter(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -2267,7 +2267,7 @@ Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_iter\_items(*func*, */*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
+    IterNodeDelegate.apply\_iter\_items(*func*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_iter_items)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -2308,7 +2308,7 @@ Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
             * **start\_shift** – A shift to determine the first element where window collection begins.
             * **size\_increment** – A value to be added to `size` with each window after the first, so as to, in combination with setting `step` to 0, permit iterating over expanding windows.
 
-    IterNodeDelegate.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
+    IterNodeDelegate.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)[[source]](../_modules/static_frame/core/node_iter.md#IterNodeDelegate.apply_pool)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:

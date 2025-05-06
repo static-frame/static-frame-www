@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexMillisecondGO: Dictionary-Like](../api_overview/index_millisecond_go-dictionary_like.md#api-overview-indexmillisecondgo-dictionary-like)
 
-IndexMillisecondGO.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexMillisecondGO.__contains__ "Link to this definition")
+IndexMillisecondGO.\_\_contains\_\_(*value*)[](#static_frame.IndexMillisecondGO.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```

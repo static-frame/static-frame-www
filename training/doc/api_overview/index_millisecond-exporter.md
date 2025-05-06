@@ -146,7 +146,7 @@ API Detail
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond-exporter.md#api-sig-indexmillisecond-to-html) | `IndexMillisecond.to_html(config, *, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
+| [Detail](../api_detail/index_millisecond-exporter.md#api-sig-indexmillisecond-to-html) | `IndexMillisecond.to_html(config, style_config)` | Return an HTML table representation of this Index using standard TABLE, TR, and… |
 | [Detail](../api_detail/index_millisecond-exporter.md#api-sig-indexmillisecond-to-html-datatables) | `IndexMillisecond.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Index using the DataTables JS libr… |
 | [Detail](../api_detail/index_millisecond-exporter.md#api-sig-indexmillisecond-to-pandas) | `IndexMillisecond.to_pandas()` | Return a Pandas Index. |
 | [Detail](../api_detail/index_millisecond-exporter.md#api-sig-indexmillisecond-to-series) | `IndexMillisecond.to_series()` | Return a Series with values from this Index’s labels. |

@@ -246,7 +246,7 @@ IndexMinute.\_\_len\_\_()[](#static_frame.IndexMinute.__len__ "Link to this d
 
     ```
 
-IndexMinute.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.all "Link to this definition")
+IndexMinute.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -266,7 +266,7 @@ IndexMinute.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexMinute.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.any "Link to this definition")
+IndexMinute.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -286,7 +286,7 @@ IndexMinute.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexMinute.astype(*dtype*, */*)[](#static_frame.IndexMinute.astype "Link to this definition")
+IndexMinute.astype(*dtype*)[](#static_frame.IndexMinute.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -329,7 +329,7 @@ IndexMinute.copy()[](#static_frame.IndexMinute.copy "Link to this definition"
 
     ```
 
-IndexMinute.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexMinute.cumprod "Link to this definition")
+IndexMinute.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexMinute.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -349,7 +349,7 @@ IndexMinute.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexMinut
 
     ```
 
-IndexMinute.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexMinute.cumsum "Link to this definition")
+IndexMinute.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexMinute.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -434,7 +434,7 @@ IndexMinute.dropna()[](#static_frame.IndexMinute.dropna "Link to this definit
 
     ```
 
-IndexMinute.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexMinute.equals "Link to this definition")
+IndexMinute.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexMinute.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -463,7 +463,7 @@ IndexMinute.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fa
 
     ```
 
-IndexMinute.fillfalsy(*value*, */*)[](#static_frame.IndexMinute.fillfalsy "Link to this definition")
+IndexMinute.fillfalsy(*value*)[](#static_frame.IndexMinute.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -482,7 +482,7 @@ IndexMinute.fillfalsy(*value*, */*)[](#static_frame.IndexMinute.fillfalsy "Li
 
     ```
 
-IndexMinute.fillna(*value*, */*)[](#static_frame.IndexMinute.fillna "Link to this definition")
+IndexMinute.fillna(*value*)[](#static_frame.IndexMinute.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -505,7 +505,7 @@ IndexMinute.fillna(*value*, */*)[](#static_frame.IndexMinute.fillna "Link to 
 
     ```
 
-IndexMinute.head(*count=5*, */*)[](#static_frame.IndexMinute.head "Link to this definition")
+IndexMinute.head(*count=5*)[](#static_frame.IndexMinute.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -527,7 +527,7 @@ IndexMinute.head(*count=5*, */*)[](#static_frame.IndexMinute.head "Link to th
 
     ```
 
-IndexMinute.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexMinute.iloc_searchsorted "Link to this definition")
+IndexMinute.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexMinute.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -581,7 +581,7 @@ IndexMinute.isfalsy()[](#static_frame.IndexMinute.isfalsy "Link to this defin
 
     ```
 
-IndexMinute.isin(*other*, */*)[](#static_frame.IndexMinute.isin "Link to this definition")
+IndexMinute.isin(*other*)[](#static_frame.IndexMinute.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -607,7 +607,7 @@ IndexMinute.isna()[](#static_frame.IndexMinute.isna "Link to this definition"
 
     ```
 
-IndexMinute.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexMinute.label_widths_at_depth "Link to this definition")
+IndexMinute.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexMinute.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -626,7 +626,7 @@ IndexMinute.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.I
 
     ```
 
-IndexMinute.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexMinute.level_add "Link to this definition")
+IndexMinute.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexMinute.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -651,7 +651,7 @@ IndexMinute.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#stat
 
     ```
 
-IndexMinute.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexMinute.loc_searchsorted "Link to this definition")
+IndexMinute.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexMinute.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -672,7 +672,7 @@ IndexMinute.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_val
 
     ```
 
-IndexMinute.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexMinute.loc_to_iloc "Link to this definition")
+IndexMinute.loc\_to\_iloc(*key*)[](#static_frame.IndexMinute.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -695,7 +695,7 @@ IndexMinute.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexMinute.loc_to_iloc
 
     ```
 
-IndexMinute.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.max "Link to this definition")
+IndexMinute.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -715,7 +715,7 @@ IndexMinute.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexMinute.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.mean "Link to this definition")
+IndexMinute.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -735,7 +735,7 @@ IndexMinute.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.I
 
     ```
 
-IndexMinute.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.median "Link to this definition")
+IndexMinute.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -755,7 +755,7 @@ IndexMinute.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexMinute.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.min "Link to this definition")
+IndexMinute.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexMinute.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -795,7 +795,7 @@ IndexMinute.notna()[](#static_frame.IndexMinute.notna "Link to this definitio
 
     ```
 
-IndexMinute.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexMinute.prod "Link to this definition")
+IndexMinute.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexMinute.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -815,7 +815,7 @@ IndexMinute.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#sta
 
     ```
 
-IndexMinute.relabel(*mapper*, */*)[](#static_frame.IndexMinute.relabel "Link to this definition")
+IndexMinute.relabel(*mapper*)[](#static_frame.IndexMinute.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -831,7 +831,7 @@ IndexMinute.relabel(*mapper*, */*)[](#static_frame.IndexMinute.relabel "Link 
 
     ```
 
-IndexMinute.rename(*name*, */*)[](#static_frame.IndexMinute.rename "Link to this definition")
+IndexMinute.rename(*name*)[](#static_frame.IndexMinute.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -894,7 +894,7 @@ IndexMinute.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexMinute.
 
     ```
 
-IndexMinute.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexMinute.sort "Link to this definition")
+IndexMinute.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexMinute.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -925,7 +925,7 @@ IndexMinute.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#s
 
     ```
 
-IndexMinute.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMinute.std "Link to this definition")
+IndexMinute.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMinute.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -945,7 +945,7 @@ IndexMinute.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#stati
 
     ```
 
-IndexMinute.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexMinute.sum "Link to this definition")
+IndexMinute.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexMinute.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -965,7 +965,7 @@ IndexMinute.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#stat
 
     ```
 
-IndexMinute.tail(*count=5*, */*)[](#static_frame.IndexMinute.tail "Link to this definition")
+IndexMinute.tail(*count=5*)[](#static_frame.IndexMinute.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1017,7 +1017,7 @@ IndexMinute.union(*\*others*)[](#static_frame.IndexMinute.union "Link to this
 
     ```
 
-IndexMinute.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexMinute.unique "Link to this definition")
+IndexMinute.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexMinute.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1040,7 +1040,7 @@ IndexMinute.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[�
 
     ```
 
-IndexMinute.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexMinute.values_at_depth "Link to this definition")
+IndexMinute.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexMinute.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1056,7 +1056,7 @@ IndexMinute.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexMin
 
     ```
 
-IndexMinute.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMinute.var "Link to this definition")
+IndexMinute.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexMinute.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:

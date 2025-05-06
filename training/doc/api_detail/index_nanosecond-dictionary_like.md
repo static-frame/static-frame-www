@@ -144,7 +144,7 @@ API Detail
 
 [Overview: IndexNanosecond: Dictionary-Like](../api_overview/index_nanosecond-dictionary_like.md#api-overview-indexnanosecond-dictionary-like)
 
-IndexNanosecond.\_\_contains\_\_(*value*, */*)[](#static_frame.IndexNanosecond.__contains__ "Link to this definition")
+IndexNanosecond.\_\_contains\_\_(*value*)[](#static_frame.IndexNanosecond.__contains__ "Link to this definition")
 :   Return True if value in the labels. Will only return True for an exact match to the type of dates stored within.
 
     ```

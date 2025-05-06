@@ -165,7 +165,7 @@ IndexDateGO.interface[](#IndexDateGO.interface "Link to this definition")
     from_pandas(value)                   IndexDateGO Constructor          Given a Pandas in...
     from_year_month_range(start, stop... IndexDateGO Constructor          Get an IndexDate ...
     from_year_range(start, stop, step... IndexDateGO Constructor          Get an IndexDate ...
-    to_html(config, *, style_config)     IndexDateGO Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexDateGO Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexDateGO Exporter             Return a complete...
     to_pandas()                          IndexDateGO Exporter             Return a Pandas I...
     to_series()                          IndexDateGO Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexDateGO.interface[](#IndexDateGO.interface "Link to this definition")
     ...                                  ...         ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexDateGO Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexDateGO Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexDateGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib
+    via_hashlib(include_name, include... IndexDateGO Accessor Hashlib
     via_type_clinic.to_hint()            IndexDateGO Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexDateGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexDateGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexDateGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexDateGO Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U11>      <<U27>               <<U83>
+    <<U90>                               <<U11>      <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexDateGO.\_\_str\_\_()[](#static_frame.IndexDateGO.__str__ "Link to this d
 
     ```
 
-IndexDateGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexDateGO.display "Link to this definition")
+IndexDateGO.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexDateGO.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexDateGO.display(*config=None*, */*, *\**, *style\_config=None*)[](#static
 
     ```
 
-IndexDateGO.display\_tall(*config=None*, */*)[](#static_frame.IndexDateGO.display_tall "Link to this definition")
+IndexDateGO.display\_tall(*config=None*)[](#static_frame.IndexDateGO.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexDateGO.display\_tall(*config=None*, */*)[](#static_frame.IndexDateGO.dis
 
     ```
 
-IndexDateGO.display\_wide(*config=None*, */*)[](#static_frame.IndexDateGO.display_wide "Link to this definition")
+IndexDateGO.display\_wide(*config=None*)[](#static_frame.IndexDateGO.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

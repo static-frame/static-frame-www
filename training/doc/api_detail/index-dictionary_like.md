@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Index: Dictionary-Like](../api_overview/index-dictionary_like.md#api-overview-index-dictionary-like)
 
-Index.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Index.__contains__)[](#static_frame.Index.__contains__ "Link to this definition")
+Index.\_\_contains\_\_(*value*)[[source]](../_modules/static_frame/core/index.md#Index.__contains__)[](#static_frame.Index.__contains__ "Link to this definition")
 :   Return True if value in the labels.
 
     ```

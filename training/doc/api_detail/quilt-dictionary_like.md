@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Quilt: Dictionary-Like](../api_overview/quilt-dictionary_like.md#api-overview-quilt-dictionary-like)
 
-Quilt.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.__contains__)[](#static_frame.Quilt.__contains__ "Link to this definition")
+Quilt.\_\_contains\_\_(*value*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.__contains__)[](#static_frame.Quilt.__contains__ "Link to this definition")
 :   Inclusion of value in column labels.
 
     ```

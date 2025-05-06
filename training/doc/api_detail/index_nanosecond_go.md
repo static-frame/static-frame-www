@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexNanosecondGO](../api_overview/index_nanosecond_go.md#api-overview-indexnanosecondgo)
 
-*class* IndexNanosecondGO(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexNanosecondGO)[](#static_frame.IndexNanosecondGO "Link to this definition")
+*class* IndexNanosecondGO(*labels*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexNanosecondGO)[](#static_frame.IndexNanosecondGO "Link to this definition")
 
 * [Constructor](index_nanosecond_go-constructor.md#api-detail-indexnanosecondgo-constructor): Alternative constructors for creating instances.
 * [Exporter](index_nanosecond_go-exporter.md#api-detail-indexnanosecondgo-exporter): Methods for transforming, exporting, or serializing objects.

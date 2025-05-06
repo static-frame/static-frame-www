@@ -206,7 +206,7 @@ Quilt.inventory[](#static_frame.Quilt.inventory "Link to this definition")
     <Frame>
     <Index>  path       last_modified        size    <<U13>
     <Index>
-    None     /tmp/q.zip 2025-04-28T17:51:... 1.06 KB
+    None     /tmp/q.zip 2025-03-10T22:21:... 1.06 KB
     <object> <<U10>     <<U32>               <<U7>
 
     ```

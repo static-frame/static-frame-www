@@ -165,7 +165,7 @@ IndexYear.interface[](#IndexYear.interface "Link to this definition")
     from_pandas(value)                   IndexYear Constructor          Given a Pandas in...
     from_year_month_range(start, stop... IndexYear Constructor          Get an IndexYearM...
     from_year_range(start, stop, step... IndexYear Constructor          Get an IndexDate ...
-    to_html(config, *, style_config)     IndexYear Exporter             Return an HTML ta...
+    to_html(config, style_config)        IndexYear Exporter             Return an HTML ta...
     to_html_datatables(fp, *, show, c... IndexYear Exporter             Return a complete...
     to_pandas()                          IndexYear Exporter             Return a Pandas I...
     to_series()                          IndexYear Exporter             Return a Series w...
@@ -179,22 +179,22 @@ IndexYear.interface[](#IndexYear.interface "Link to this definition")
     ...                                  ...       ...                  ...
     via_re(pattern, flags).sub(repl, ... IndexYear Accessor Regular ... Return the string...
     via_re(pattern, flags).subn(repl,... IndexYear Accessor Regular ... Perform the same ...
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib     Return the byte s...
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib
-    via_hashlib(*, include_name, incl... IndexYear Accessor Hashlib
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib     Return the byte s...
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib
+    via_hashlib(include_name, include... IndexYear Accessor Hashlib
     via_type_clinic.to_hint()            IndexYear Accessor Type Clinic Return the type h...
     via_type_clinic.check(hint, *, fa... IndexYear Accessor Type Clinic Given a hint (a t...
     via_type_clinic.warn(hint, *, fai... IndexYear Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__call__(hint, *,... IndexYear Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexYear Accessor Type Clinic Return a compact ...
-    <<U93>                               <<U9>     <<U27>               <<U83>
+    <<U90>                               <<U9>     <<U27>               <<U83>
 
     ```
 
@@ -226,7 +226,7 @@ IndexYear.\_\_str\_\_()[](#static_frame.IndexYear.__str__ "Link to this defin
 
     ```
 
-IndexYear.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_frame.IndexYear.display "Link to this definition")
+IndexYear.display(*config=None*, *\**, *style\_config=None*)[](#static_frame.IndexYear.display "Link to this definition")
 :   Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -247,7 +247,7 @@ IndexYear.display(*config=None*, */*, *\**, *style\_config=None*)[](#static_f
 
     ```
 
-IndexYear.display\_tall(*config=None*, */*)[](#static_frame.IndexYear.display_tall "Link to this definition")
+IndexYear.display\_tall(*config=None*)[](#static_frame.IndexYear.display_tall "Link to this definition")
 :   Maximize vertical presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:
@@ -264,7 +264,7 @@ IndexYear.display\_tall(*config=None*, */*)[](#static_frame.IndexYear.display
 
     ```
 
-IndexYear.display\_wide(*config=None*, */*)[](#static_frame.IndexYear.display_wide "Link to this definition")
+IndexYear.display\_wide(*config=None*)[](#static_frame.IndexYear.display_wide "Link to this definition")
 :   Maximize horizontal presentation. Return a `static_frame.Display`, capable of providing a string representation.
 
     Parameters:

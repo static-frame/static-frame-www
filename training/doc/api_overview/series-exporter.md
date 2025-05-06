@@ -146,11 +146,11 @@ API Detail
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/series-exporter.md#api-sig-series-to-frame) | `Series.to_frame(*, axis, index, index_constructor, columns, columns_constructor, name)` | Return a Frame view of this Series. As underlying data is immutable, this is a n… |
-| [Detail](../api_detail/series-exporter.md#api-sig-series-to-frame-go) | `Series.to_frame_go(*, axis, index, index_constructor, columns, columns_constructor, name)` | Return FrameGO view of this Series. As underlying data is immutable, this is a n… |
-| [Detail](../api_detail/series-exporter.md#api-sig-series-to-frame-he) | `Series.to_frame_he(*, axis, index, index_constructor, columns, columns_constructor, name)` | Return FrameHE view of this Series. As underlying data is immutable, this is a n… |
-| [Detail](../api_detail/series-exporter.md#api-sig-series-to-html) | `Series.to_html(config, *, style_config)` | Return an HTML table representation of this Series using standard TABLE, TR, and… |
-| [Detail](../api_detail/series-exporter.md#api-sig-series-to-html-datatables) | `Series.to_html_datatables(fp, *, show, config)` | Return a complete HTML representation of this Series using the DataTables JS lib… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-frame) | `Series.to_frame(axis, *, index, index_constructor, columns, columns_constructor, name)` | Return a Frame view of this Series. As underlying data is immutable, this is a n… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-frame-go) | `Series.to_frame_go(axis, *, index, index_constructor, columns, columns_constructor, name)` | Return FrameGO view of this Series. As underlying data is immutable, this is a n… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-frame-he) | `Series.to_frame_he(axis, *, index, index_constructor, columns, columns_constructor, name)` | Return FrameHE view of this Series. As underlying data is immutable, this is a n… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-html) | `Series.to_html(config, style_config)` | Return an HTML table representation of this Series using standard TABLE, TR, and… |
+| [Detail](../api_detail/series-exporter.md#api-sig-series-to-html-datatables) | `Series.to_html_datatables(fp, show, config)` | Return a complete HTML representation of this Series using the DataTables JS lib… |
 | [Detail](../api_detail/series-exporter.md#api-sig-series-to-pairs) | `Series.to_pairs()` | Return a tuple of tuples, where each inner tuple is a pair of index label, value… |
 | [Detail](../api_detail/series-exporter.md#api-sig-series-to-pandas) | `Series.to_pandas()` | Return a Pandas Series. Returns: pandas.Series |
 | [Detail](../api_detail/series-exporter.md#api-sig-series-to-series-he) | `Series.to_series_he()` | Return a SeriesHE from this Series. |

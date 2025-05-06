@@ -145,7 +145,7 @@ API Detail
 
 [Overview: IndexHierarchy](../api_overview/index_hierarchy.md#api-overview-indexhierarchy)
 
-*class* IndexHierarchy(*indices*, */*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy)[](#static_frame.IndexHierarchy "Link to this definition")
+*class* IndexHierarchy(*indices*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy)[](#static_frame.IndexHierarchy "Link to this definition")
 :   A hierarchy of [`Index`](index-selector.md#Index "Index") objects.
 
 * [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor): Alternative constructors for creating instances.

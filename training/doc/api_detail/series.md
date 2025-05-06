@@ -145,7 +145,7 @@ API Detail
 
 [Overview: Series](../api_overview/series.md#api-overview-series)
 
-*class* Series(*values*, */*, *\**, *index=None*, *name=<object object>*, *dtype=None*, *index\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.md#Series)[](#static_frame.Series "Link to this definition")
+*class* Series(*values*, *\**, *index=None*, *name=<object object>*, *dtype=None*, *index\_constructor=None*, *own\_index=False*)[[source]](../_modules/static_frame/core/series.md#Series)[](#static_frame.Series "Link to this definition")
 :   A one-dimensional, ordered, labelled container, immutable and of fixed size.
 
 * [Constructor](series-constructor.md#api-detail-series-constructor): Alternative constructors for creating instances.

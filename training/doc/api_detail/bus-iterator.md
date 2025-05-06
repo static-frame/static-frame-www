@@ -191,7 +191,7 @@ Bus.iter\_element(*).apply(func*, *\**, *dtype*, *name*, *index\_constructor*, *
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -223,7 +223,7 @@ Bus.iter\_element(*).apply\_iter(func*)
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -251,7 +251,7 @@ Bus.iter\_element(*).apply\_iter\_items(func*)
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -279,7 +279,7 @@ Bus.iter\_element(*).apply\_pool(func*, *\**, *dtype*, *name*, *index\_construct
 :   iter\_element
     :   Iterator of elements.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -458,19 +458,8 @@ Bus.iter\_element(*).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**,
     v        Frame
     w        Frame
     <<U1>    <object>
-    >>> b.iter_element().reduce.from_func(lambda f: f.iloc[1:]).to_frame(index=sf.IndexAutoFactory)
-    <Frame>
-    <Index> a         b         c        d        <<U1>
-    <Index>
-    0       2.0       3.0       nan      nan
-    1       4.0       5.0       nan      nan
-    2       nan       nan       False    True
-    3       nan       nan       False    True
-    4       42.0      43.0      nan      nan
-    5       44.0      45.0      nan      nan
-    6       nan       nan       True     False
-    7       nan       nan       True     True
-    <int64> <float64> <float64> <object> <object>
+    >>> b.iter_element().reduce.from_func(lambda f: f.iloc[1:]).to_frame()
+    ErrorInitFrame('Index names after vertical concatenation are not unique; supply an index argument or IndexAutoFactory.')
 
     ```
 
@@ -953,7 +942,7 @@ Bus.iter\_element\_items(*).apply(func*, *\**, *dtype*, *name*, *index\_construc
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegateReducible.apply(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
+    IterNodeDelegateReducible.apply(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*)
     :   Apply a function to each value. Returns a new container.
 
         Parameters:
@@ -985,7 +974,7 @@ Bus.iter\_element\_items(*).apply\_iter(func*)
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegateReducible.apply\_iter(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter(*func*)
     :   Apply a function to each value. A generator of resulting values.
 
         Parameters:
@@ -1013,7 +1002,7 @@ Bus.iter\_element\_items(*).apply\_iter\_items(func*)
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegateReducible.apply\_iter\_items(*func*, */*)
+    IterNodeDelegateReducible.apply\_iter\_items(*func*)
     :   Apply a function to each value. A generator of resulting key, value pairs.
 
         Parameters:
@@ -1041,7 +1030,7 @@ Bus.iter\_element\_items(*).apply\_pool(func*, *\**, *dtype*, *name*, *index\_co
 :   iter\_element\_items
     :   Iterator of label, element pairs.
 
-    IterNodeDelegateReducible.apply\_pool(*func*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
+    IterNodeDelegateReducible.apply\_pool(*func*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*)
     :   Apply a function to each value. Employ parallel processing with either the ProcessPoolExecutor or ThreadPoolExecutor.
 
         Parameters:
@@ -1220,19 +1209,8 @@ Bus.iter\_element\_items(*).reduce.from\_func(func*, *\**, *fill\_value).to\_fra
     v        Frame
     w        Frame
     <<U1>    <object>
-    >>> b.iter_element_items().reduce.from_func(lambda l, f: f.iloc[1:]).to_frame(index=sf.IndexAutoFactory)
-    <Frame>
-    <Index> a         b         c        d        <<U1>
-    <Index>
-    0       2.0       3.0       nan      nan
-    1       4.0       5.0       nan      nan
-    2       nan       nan       False    True
-    3       nan       nan       False    True
-    4       42.0      43.0      nan      nan
-    5       44.0      45.0      nan      nan
-    6       nan       nan       True     False
-    7       nan       nan       True     True
-    <int64> <float64> <float64> <object> <object>
+    >>> b.iter_element_items().reduce.from_func(lambda l, f: f.iloc[1:]).to_frame()
+    ErrorInitFrame('Index names after vertical concatenation are not unique; supply an index argument or IndexAutoFactory.')
 
     ```
 
@@ -1252,7 +1230,7 @@ Bus.iter\_element\_items(*).reduce.from\_map\_func(func*, *\**, *fill\_value).ke
     v        Frame
     w        Frame
     <<U1>    <object>
-    >>> tuple(b.iter_element_items().reduce.from_map_func(lambda s: np.min(s)).keys())
+    >>> tuple(b.iter_element_items().reduce.from_map_func(lambda l, s: np.min(s)).keys())
     (np.str_('x'), np.str_('y'), np.str_('v'), np.str_('w'))
 
     ```
@@ -1273,7 +1251,7 @@ Bus.iter\_element\_items(*).reduce.from\_map\_func(func*, *\**, *fill\_value).\_
     v        Frame
     w        Frame
     <<U1>    <object>
-    >>> tuple(b.iter_element_items().reduce.from_map_func(lambda s: np.min(s)).__iter__())
+    >>> tuple(b.iter_element_items().reduce.from_map_func(lambda l, s: np.min(s)).__iter__())
     (np.str_('x'), np.str_('y'), np.str_('v'), np.str_('w'))
 
     ```
@@ -1294,24 +1272,8 @@ Bus.iter\_element\_items(*).reduce.from\_map\_func(func*, *\**, *fill\_value).it
     v        Frame
     w        Frame
     <<U1>    <object>
-    >>> tuple(b.iter_element_items().reduce.from_map_func(lambda s: np.min(s)).items())
-    ((np.str_('x'), <Series: x>
-    <Index>
-    a           0
-    b           1
-    <<U1>       <int64>), (np.str_('y'), <Series: y>
-    <Index>
-    c           False
-    d           True
-    <<U1>       <bool>), (np.str_('v'), <Series: v>
-    <Index>
-    a           40
-    b           41
-    <<U1>       <int64>), (np.str_('w'), <Series: w>
-    <Index>
-    c           False
-    d           False
-    <<U1>       <bool>))
+    >>> tuple(b.iter_element_items().reduce.from_map_func(lambda l, s: np.min(s)).items())
+    TypeError('ReduceDispatchUnaligned.from_map_func.<locals>.func_derived() takes 1 positional argument but 2 were given')
 
     ```
 
@@ -1331,24 +1293,8 @@ Bus.iter\_element\_items(*).reduce.from\_map\_func(func*, *\**, *fill\_value).va
     v        Frame
     w        Frame
     <<U1>    <object>
-    >>> tuple(b.iter_element_items().reduce.from_map_func(lambda s: np.min(s)).values())
-    (<Series: x>
-    <Index>
-    a           0
-    b           1
-    <<U1>       <int64>, <Series: y>
-    <Index>
-    c           False
-    d           True
-    <<U1>       <bool>, <Series: v>
-    <Index>
-    a           40
-    b           41
-    <<U1>       <int64>, <Series: w>
-    <Index>
-    c           False
-    d           False
-    <<U1>       <bool>)
+    >>> tuple(b.iter_element_items().reduce.from_map_func(lambda l, s: np.min(s)).values())
+    TypeError('ReduceDispatchUnaligned.from_map_func.<locals>.func_derived() takes 1 positional argument but 2 were given')
 
     ```
 
@@ -1368,15 +1314,8 @@ Bus.iter\_element\_items(*).reduce.from\_map\_func(func*, *\**, *fill\_value).to
     v        Frame
     w        Frame
     <<U1>    <object>
-    >>> b.iter_element_items().reduce.from_map_func(lambda s: np.min(s)).to_frame()
-    <Frame>
-    <Index> a         b         c        d        <<U1>
-    <Index>
-    x       0.0       1.0       nan      nan
-    y       nan       nan       False    True
-    v       40.0      41.0      nan      nan
-    w       nan       nan       False    False
-    <<U1>   <float64> <float64> <object> <object>
+    >>> b.iter_element_items().reduce.from_map_func(lambda l, s: np.min(s)).to_frame()
+    TypeError('ReduceDispatchUnaligned.from_map_func.<locals>.func_derived() takes 1 positional argument but 2 were given')
 
     ```
 

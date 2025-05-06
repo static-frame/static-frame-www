@@ -144,7 +144,7 @@ API Detail
 
 [Overview: Frame: Operator Binary](../api_overview/frame-operator_binary.md#api-overview-frame-operator-binary)
 
-Frame.\_\_add\_\_(*other*, */*)[](#static_frame.Frame.__add__ "Link to this definition")
+Frame.\_\_add\_\_(*other*)[](#static_frame.Frame.__add__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -185,7 +185,7 @@ Frame.\_\_add\_\_(*other*, */*)[](#static_frame.Frame.__add__ "Link to this d
 
     ```
 
-Frame.\_\_and\_\_(*other*, */*)[](#static_frame.Frame.__and__ "Link to this definition")
+Frame.\_\_and\_\_(*other*)[](#static_frame.Frame.__and__ "Link to this definition")
 :   ```
     >>> f = sf.Frame.from_fields(((False, True, True), (True, True, False)), columns=('a', 'b'), index=('p', 'q', 'r'), name='x')
     >>> f
@@ -215,7 +215,7 @@ Frame.\_\_and\_\_(*other*, */*)[](#static_frame.Frame.__and__ "Link to this d
 
     ```
 
-Frame.\_\_eq\_\_(*other*, */*)[](#static_frame.Frame.__eq__ "Link to this definition")
+Frame.\_\_eq\_\_(*other*)[](#static_frame.Frame.__eq__ "Link to this definition")
 :   Return self==value.
 
     ```
@@ -258,7 +258,7 @@ Frame.\_\_eq\_\_(*other*, */*)[](#static_frame.Frame.__eq__ "Link to this def
 
     ```
 
-Frame.\_\_floordiv\_\_(*other*, */*)[](#static_frame.Frame.__floordiv__ "Link to this definition")
+Frame.\_\_floordiv\_\_(*other*)[](#static_frame.Frame.__floordiv__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -299,7 +299,7 @@ Frame.\_\_floordiv\_\_(*other*, */*)[](#static_frame.Frame.__floordiv__ "Link
 
     ```
 
-Frame.\_\_ge\_\_(*other*, */*)[](#static_frame.Frame.__ge__ "Link to this definition")
+Frame.\_\_ge\_\_(*other*)[](#static_frame.Frame.__ge__ "Link to this definition")
 :   Return self>=value.
 
     ```
@@ -342,7 +342,7 @@ Frame.\_\_ge\_\_(*other*, */*)[](#static_frame.Frame.__ge__ "Link to this def
 
     ```
 
-Frame.\_\_gt\_\_(*other*, */*)[](#static_frame.Frame.__gt__ "Link to this definition")
+Frame.\_\_gt\_\_(*other*)[](#static_frame.Frame.__gt__ "Link to this definition")
 :   Return self>value.
 
     ```
@@ -385,7 +385,7 @@ Frame.\_\_gt\_\_(*other*, */*)[](#static_frame.Frame.__gt__ "Link to this def
 
     ```
 
-Frame.\_\_le\_\_(*other*, */*)[](#static_frame.Frame.__le__ "Link to this definition")
+Frame.\_\_le\_\_(*other*)[](#static_frame.Frame.__le__ "Link to this definition")
 :   Return self<=value.
 
     ```
@@ -428,7 +428,7 @@ Frame.\_\_le\_\_(*other*, */*)[](#static_frame.Frame.__le__ "Link to this def
 
     ```
 
-Frame.\_\_lt\_\_(*other*, */*)[](#static_frame.Frame.__lt__ "Link to this definition")
+Frame.\_\_lt\_\_(*other*)[](#static_frame.Frame.__lt__ "Link to this definition")
 :   Return self<value.
 
     ```
@@ -471,7 +471,7 @@ Frame.\_\_lt\_\_(*other*, */*)[](#static_frame.Frame.__lt__ "Link to this def
 
     ```
 
-Frame.\_\_matmul\_\_(*other*, */*)[](#static_frame.Frame.__matmul__ "Link to this definition")
+Frame.\_\_matmul\_\_(*other*)[](#static_frame.Frame.__matmul__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -504,7 +504,7 @@ Frame.\_\_matmul\_\_(*other*, */*)[](#static_frame.Frame.__matmul__ "Link to 
 
     ```
 
-Frame.\_\_mod\_\_(*other*, */*)[](#static_frame.Frame.__mod__ "Link to this definition")
+Frame.\_\_mod\_\_(*other*)[](#static_frame.Frame.__mod__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -545,7 +545,7 @@ Frame.\_\_mod\_\_(*other*, */*)[](#static_frame.Frame.__mod__ "Link to this d
 
     ```
 
-Frame.\_\_mul\_\_(*other*, */*)[](#static_frame.Frame.__mul__ "Link to this definition")
+Frame.\_\_mul\_\_(*other*)[](#static_frame.Frame.__mul__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -586,7 +586,7 @@ Frame.\_\_mul\_\_(*other*, */*)[](#static_frame.Frame.__mul__ "Link to this d
 
     ```
 
-Frame.\_\_ne\_\_(*other*, */*)[](#static_frame.Frame.__ne__ "Link to this definition")
+Frame.\_\_ne\_\_(*other*)[](#static_frame.Frame.__ne__ "Link to this definition")
 :   Return self!=value.
 
     ```
@@ -629,7 +629,7 @@ Frame.\_\_ne\_\_(*other*, */*)[](#static_frame.Frame.__ne__ "Link to this def
 
     ```
 
-Frame.\_\_or\_\_(*other*, */*)[](#static_frame.Frame.__or__ "Link to this definition")
+Frame.\_\_or\_\_(*other*)[](#static_frame.Frame.__or__ "Link to this definition")
 :   Return self|value.
 
     ```
@@ -661,7 +661,7 @@ Frame.\_\_or\_\_(*other*, */*)[](#static_frame.Frame.__or__ "Link to this def
 
     ```
 
-Frame.\_\_pow\_\_(*other*, */*)[](#static_frame.Frame.__pow__ "Link to this definition")
+Frame.\_\_pow\_\_(*other*)[](#static_frame.Frame.__pow__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -702,7 +702,7 @@ Frame.\_\_pow\_\_(*other*, */*)[](#static_frame.Frame.__pow__ "Link to this d
 
     ```
 
-Frame.\_\_radd\_\_(*other*, */*)[](#static_frame.Frame.__radd__ "Link to this definition")
+Frame.\_\_radd\_\_(*other*)[](#static_frame.Frame.__radd__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -734,7 +734,7 @@ Frame.\_\_radd\_\_(*other*, */*)[](#static_frame.Frame.__radd__ "Link to this
 
     ```
 
-Frame.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.Frame.__rfloordiv__ "Link to this definition")
+Frame.\_\_rfloordiv\_\_(*other*)[](#static_frame.Frame.__rfloordiv__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -766,7 +766,7 @@ Frame.\_\_rfloordiv\_\_(*other*, */*)[](#static_frame.Frame.__rfloordiv__ "Li
 
     ```
 
-Frame.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.Frame.__rmatmul__ "Link to this definition")
+Frame.\_\_rmatmul\_\_(*other*)[](#static_frame.Frame.__rmatmul__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((1, 2, 0, 0), (2, 1, 2, 0), (1, 0, 2, 1)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -799,7 +799,7 @@ Frame.\_\_rmatmul\_\_(*other*, */*)[](#static_frame.Frame.__rmatmul__ "Link t
 
     ```
 
-Frame.\_\_rmul\_\_(*other*, */*)[](#static_frame.Frame.__rmul__ "Link to this definition")
+Frame.\_\_rmul\_\_(*other*)[](#static_frame.Frame.__rmul__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -831,7 +831,7 @@ Frame.\_\_rmul\_\_(*other*, */*)[](#static_frame.Frame.__rmul__ "Link to this
 
     ```
 
-Frame.\_\_rshift\_\_(*other*, */*)[](#static_frame.Frame.__rshift__ "Link to this definition")
+Frame.\_\_rshift\_\_(*other*)[](#static_frame.Frame.__rshift__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -855,7 +855,7 @@ Frame.\_\_rshift\_\_(*other*, */*)[](#static_frame.Frame.__rshift__ "Link to 
 
     ```
 
-Frame.\_\_rsub\_\_(*other*, */*)[](#static_frame.Frame.__rsub__ "Link to this definition")
+Frame.\_\_rsub\_\_(*other*)[](#static_frame.Frame.__rsub__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -887,7 +887,7 @@ Frame.\_\_rsub\_\_(*other*, */*)[](#static_frame.Frame.__rsub__ "Link to this
 
     ```
 
-Frame.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.Frame.__rtruediv__ "Link to this definition")
+Frame.\_\_rtruediv\_\_(*other*)[](#static_frame.Frame.__rtruediv__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -919,7 +919,7 @@ Frame.\_\_rtruediv\_\_(*other*, */*)[](#static_frame.Frame.__rtruediv__ "Link
 
     ```
 
-Frame.\_\_sub\_\_(*other*, */*)[](#static_frame.Frame.__sub__ "Link to this definition")
+Frame.\_\_sub\_\_(*other*)[](#static_frame.Frame.__sub__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -960,7 +960,7 @@ Frame.\_\_sub\_\_(*other*, */*)[](#static_frame.Frame.__sub__ "Link to this d
 
     ```
 
-Frame.\_\_truediv\_\_(*other*, */*)[](#static_frame.Frame.__truediv__ "Link to this definition")
+Frame.\_\_truediv\_\_(*other*)[](#static_frame.Frame.__truediv__ "Link to this definition")
 :   ```
     >>> f1 = sf.Frame.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> f1
@@ -1001,7 +1001,7 @@ Frame.\_\_truediv\_\_(*other*, */*)[](#static_frame.Frame.__truediv__ "Link t
 
     ```
 
-Frame.\_\_xor\_\_(*other*, */*)[](#static_frame.Frame.__xor__ "Link to this definition")
+Frame.\_\_xor\_\_(*other*)[](#static_frame.Frame.__xor__ "Link to this definition")
 :   ```
     >>> f = sf.Frame.from_fields(((False, True, True), (True, True, False)), columns=('a', 'b'), index=('p', 'q', 'r'), name='x')
     >>> f

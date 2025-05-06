@@ -246,7 +246,7 @@ IndexHourGO.\_\_len\_\_()[](#static_frame.IndexHourGO.__len__ "Link to this d
 
     ```
 
-IndexHourGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.all "Link to this definition")
+IndexHourGO.all(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.all "Link to this definition")
 :   Logical `and` over values along the specified axis.
 
     Parameters:
@@ -266,7 +266,7 @@ IndexHourGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexHourGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.any "Link to this definition")
+IndexHourGO.any(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.any "Link to this definition")
 :   Logical `or` over values along the specified axis.
 
     Parameters:
@@ -286,7 +286,7 @@ IndexHourGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexHourGO.append(*value*, */*)[](#static_frame.IndexHourGO.append "Link to this definition")
+IndexHourGO.append(*value*)[](#static_frame.IndexHourGO.append "Link to this definition")
 :   Specialize for fixed-typed indices: convert value argument; do not need to resolve\_dtype with each addition; self.\_map is never None
 
     ```
@@ -308,7 +308,7 @@ IndexHourGO.append(*value*, */*)[](#static_frame.IndexHourGO.append "Link to 
 
     ```
 
-IndexHourGO.astype(*dtype*, */*)[](#static_frame.IndexHourGO.astype "Link to this definition")
+IndexHourGO.astype(*dtype*)[](#static_frame.IndexHourGO.astype "Link to this definition")
 :   Return an Index with type determined by dtype argument. If a datetime64 dtype is provided, the appropriate `Index` subclass will be returned. Note that for Index, this is a simple function, whereas for `IndexHierarchy`, this is an interface exposing both a callable and a getitem interface.
 
     Parameters:
@@ -351,7 +351,7 @@ IndexHourGO.copy()[](#static_frame.IndexHourGO.copy "Link to this definition"
 
     ```
 
-IndexHourGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHourGO.cumprod "Link to this definition")
+IndexHourGO.cumprod(*axis=0*, *skipna=True*)[](#static_frame.IndexHourGO.cumprod "Link to this definition")
 :   Return the cumulative product over the specified axis.
 
     Parameters:
@@ -371,7 +371,7 @@ IndexHourGO.cumprod(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHourG
 
     ```
 
-IndexHourGO.cumsum(*\**, *axis=0*, *skipna=True*)[](#static_frame.IndexHourGO.cumsum "Link to this definition")
+IndexHourGO.cumsum(*axis=0*, *skipna=True*)[](#static_frame.IndexHourGO.cumsum "Link to this definition")
 :   Return the cumulative sum over the specified axis.
 
     Parameters:
@@ -456,7 +456,7 @@ IndexHourGO.dropna()[](#static_frame.IndexHourGO.dropna "Link to this definit
 
     ```
 
-IndexHourGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexHourGO.equals "Link to this definition")
+IndexHourGO.equals(*other*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[](#static_frame.IndexHourGO.equals "Link to this definition")
 :   Return a `bool` from comparison to any other object.
 
     Parameters:
@@ -485,7 +485,7 @@ IndexHourGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fa
 
     ```
 
-IndexHourGO.extend(*values*, */*)[](#static_frame.IndexHourGO.extend "Link to this definition")
+IndexHourGO.extend(*values*)[](#static_frame.IndexHourGO.extend "Link to this definition")
 :   Append multiple values
     :param values: can be a generator.
 
@@ -517,7 +517,7 @@ IndexHourGO.extend(*values*, */*)[](#static_frame.IndexHourGO.extend "Link to
 
     ```
 
-IndexHourGO.fillfalsy(*value*, */*)[](#static_frame.IndexHourGO.fillfalsy "Link to this definition")
+IndexHourGO.fillfalsy(*value*)[](#static_frame.IndexHourGO.fillfalsy "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing falsy values with the supplied value.
 
     Parameters:
@@ -536,7 +536,7 @@ IndexHourGO.fillfalsy(*value*, */*)[](#static_frame.IndexHourGO.fillfalsy "Li
 
     ```
 
-IndexHourGO.fillna(*value*, */*)[](#static_frame.IndexHourGO.fillna "Link to this definition")
+IndexHourGO.fillna(*value*)[](#static_frame.IndexHourGO.fillna "Link to this definition")
 :   Return an [`Index`](index-selector.md#Index "Index") with replacing null (NaN or None) with the supplied value.
 
     Parameters:
@@ -559,7 +559,7 @@ IndexHourGO.fillna(*value*, */*)[](#static_frame.IndexHourGO.fillna "Link to 
 
     ```
 
-IndexHourGO.head(*count=5*, */*)[](#static_frame.IndexHourGO.head "Link to this definition")
+IndexHourGO.head(*count=5*)[](#static_frame.IndexHourGO.head "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the top elements as specified by `count`.
 
     Parameters:
@@ -581,7 +581,7 @@ IndexHourGO.head(*count=5*, */*)[](#static_frame.IndexHourGO.head "Link to th
 
     ```
 
-IndexHourGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[](#static_frame.IndexHourGO.iloc_searchsorted "Link to this definition")
+IndexHourGO.iloc\_searchsorted(*values*, *\**, *side\_left=True*)[](#static_frame.IndexHourGO.iloc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the iloc (integer) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -635,7 +635,7 @@ IndexHourGO.isfalsy()[](#static_frame.IndexHourGO.isfalsy "Link to this defin
 
     ```
 
-IndexHourGO.isin(*other*, */*)[](#static_frame.IndexHourGO.isin "Link to this definition")
+IndexHourGO.isin(*other*)[](#static_frame.IndexHourGO.isin "Link to this definition")
 :   Return a Boolean array showing True where a label is found in other. If other is a multidimensional array, it is flattened.
 
     ```
@@ -661,7 +661,7 @@ IndexHourGO.isna()[](#static_frame.IndexHourGO.isna "Link to this definition"
 
     ```
 
-IndexHourGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHourGO.label_widths_at_depth "Link to this definition")
+IndexHourGO.label\_widths\_at\_depth(*depth\_level=0*)[](#static_frame.IndexHourGO.label_widths_at_depth "Link to this definition")
 :   A generator of pairs, where each pair is the label and the contiguous count of that label found at the depth specified by `depth_level`.
 
     Parameters:
@@ -680,7 +680,7 @@ IndexHourGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[](#static_frame.I
 
     ```
 
-IndexHourGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#static_frame.IndexHourGO.level_add "Link to this definition")
+IndexHourGO.level\_add(*level*, *\**, *index\_constructor=None*)[](#static_frame.IndexHourGO.level_add "Link to this definition")
 :   Return an IndexHierarchy with an added root level.
 
     Parameters:
@@ -705,7 +705,7 @@ IndexHourGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[](#stat
 
     ```
 
-IndexHourGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexHourGO.loc_searchsorted "Link to this definition")
+IndexHourGO.loc\_searchsorted(*values*, *\**, *side\_left=True*, *fill\_value=nan*)[](#static_frame.IndexHourGO.loc_searchsorted "Link to this definition")
 :   Given a sorted [`Series`](series-selector.md#Series "Series"), return the loc (label) position(s) at which insertion in `values` would retain sort order.
 
     Parameters:
@@ -726,7 +726,7 @@ IndexHourGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_val
 
     ```
 
-IndexHourGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexHourGO.loc_to_iloc "Link to this definition")
+IndexHourGO.loc\_to\_iloc(*key*)[](#static_frame.IndexHourGO.loc_to_iloc "Link to this definition")
 :   Given a label (loc) style key (either a label, a list of labels, a slice, or a Boolean selection), return the index position (iloc) style key. Keys that are not found will raise a KeyError or a sf.LocInvalid error.
 
     Parameters:
@@ -749,7 +749,7 @@ IndexHourGO.loc\_to\_iloc(*key*, */*)[](#static_frame.IndexHourGO.loc_to_iloc
 
     ```
 
-IndexHourGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.max "Link to this definition")
+IndexHourGO.max(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.max "Link to this definition")
 :   Return the maximum along the specified axis.
 
     Parameters:
@@ -769,7 +769,7 @@ IndexHourGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.In
 
     ```
 
-IndexHourGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.mean "Link to this definition")
+IndexHourGO.mean(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.mean "Link to this definition")
 :   Return the mean along the specified axis.
 
     Parameters:
@@ -789,7 +789,7 @@ IndexHourGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.I
 
     ```
 
-IndexHourGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.median "Link to this definition")
+IndexHourGO.median(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.median "Link to this definition")
 :   Return the median along the specified axis.
 
     Parameters:
@@ -809,7 +809,7 @@ IndexHourGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame
 
     ```
 
-IndexHourGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.min "Link to this definition")
+IndexHourGO.min(*axis=0*, *skipna=True*, *out=None*)[](#static_frame.IndexHourGO.min "Link to this definition")
 :   Return the minimum along the specified axis.
 
     Parameters:
@@ -849,7 +849,7 @@ IndexHourGO.notna()[](#static_frame.IndexHourGO.notna "Link to this definitio
 
     ```
 
-IndexHourGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexHourGO.prod "Link to this definition")
+IndexHourGO.prod(*axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#static_frame.IndexHourGO.prod "Link to this definition")
 :   Return the product along the specified axis.
 
     Parameters:
@@ -869,7 +869,7 @@ IndexHourGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[](#sta
 
     ```
 
-IndexHourGO.relabel(*mapper*, */*)[](#static_frame.IndexHourGO.relabel "Link to this definition")
+IndexHourGO.relabel(*mapper*)[](#static_frame.IndexHourGO.relabel "Link to this definition")
 :   Return a new Index with labels replaced by the callable or mapping; order will be retained. If a mapping is used, the mapping need not map all origin keys.
 
     ```
@@ -889,7 +889,7 @@ IndexHourGO.relabel(*mapper*, */*)[](#static_frame.IndexHourGO.relabel "Link 
 
     ```
 
-IndexHourGO.rename(*name*, */*)[](#static_frame.IndexHourGO.rename "Link to this definition")
+IndexHourGO.rename(*name*)[](#static_frame.IndexHourGO.rename "Link to this definition")
 :   Return a new Frame with an updated name attribute.
 
     ```
@@ -952,7 +952,7 @@ IndexHourGO.sample(*count=1*, *\**, *seed=None*)[](#static_frame.IndexHourGO.
 
     ```
 
-IndexHourGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexHourGO.sort "Link to this definition")
+IndexHourGO.sort(*ascending=True*, *kind='mergesort'*, *key=None*)[](#static_frame.IndexHourGO.sort "Link to this definition")
 :   Return a new Index with the labels sorted.
 
     Parameters:
@@ -983,7 +983,7 @@ IndexHourGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[](#s
 
     ```
 
-IndexHourGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHourGO.std "Link to this definition")
+IndexHourGO.std(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHourGO.std "Link to this definition")
 :   Return the standard deviaton along the specified axis.
 
     Parameters:
@@ -1003,7 +1003,7 @@ IndexHourGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#stati
 
     ```
 
-IndexHourGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexHourGO.sum "Link to this definition")
+IndexHourGO.sum(*axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#static_frame.IndexHourGO.sum "Link to this definition")
 :   Sum values along the specified axis.
 
     Parameters:
@@ -1023,7 +1023,7 @@ IndexHourGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[](#stat
 
     ```
 
-IndexHourGO.tail(*count=5*, */*)[](#static_frame.IndexHourGO.tail "Link to this definition")
+IndexHourGO.tail(*count=5*)[](#static_frame.IndexHourGO.tail "Link to this definition")
 :   Return a [`Index`](index-selector.md#Index "Index") consisting only of the bottom elements as specified by `count`.
 
     Parameters:
@@ -1075,7 +1075,7 @@ IndexHourGO.union(*\*others*)[](#static_frame.IndexHourGO.union "Link to this
 
     ```
 
-IndexHourGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[](#static_frame.IndexHourGO.unique "Link to this definition")
+IndexHourGO.unique(*depth\_level=0*, *order\_by\_occurrence=False*)[](#static_frame.IndexHourGO.unique "Link to this definition")
 :   Return a NumPy array of unique values.
 
     Parameters:
@@ -1098,7 +1098,7 @@ IndexHourGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[�
 
     ```
 
-IndexHourGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHourGO.values_at_depth "Link to this definition")
+IndexHourGO.values\_at\_depth(*depth\_level=0*)[](#static_frame.IndexHourGO.values_at_depth "Link to this definition")
 :   Return an NP array for the depth\_level specified.
 
     ```
@@ -1114,7 +1114,7 @@ IndexHourGO.values\_at\_depth(*depth\_level=0*, */*)[](#static_frame.IndexHou
 
     ```
 
-IndexHourGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHourGO.var "Link to this definition")
+IndexHourGO.var(*axis=0*, *skipna=True*, *ddof=0*, *out=None*)[](#static_frame.IndexHourGO.var "Link to this definition")
 :   Return the variance along the specified axis.
 
     Parameters:
