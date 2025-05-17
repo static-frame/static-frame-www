@@ -50,7 +50,7 @@ jobs:
 
   update-site-content:
     name: Update Site Content
-    # needs: [check-for-update]
+    needs: [check-for-update]
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout static-frame-www
@@ -64,7 +64,7 @@ jobs:
         with:
           repository: 'static-frame/static-frame'
           path: 'static-frame' # this is inside the static-frame-www repo
-          # ref: ${{ needs.check-for-update.outputs.version-sf-pypi }}
+          ref: ${{ needs.check-for-update.outputs.version-sf-pypi }}
 
       - uses: actions/setup-python@v4
         with:
