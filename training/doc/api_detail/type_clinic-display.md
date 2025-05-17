@@ -192,7 +192,7 @@ TypeClinic.\_\_str\_\_()[](#static_frame.TypeClinic.__str__ "Link to this def
 ---
 
 © Copyright 2025, Christopher Ariza.
-Last updated on Apr 29, 2025.
+Last updated on May 17, 2025.
 
 Built with [Sphinx](https://www.sphinx-doc.org/) using a
 [theme](https://github.com/readthedocs/sphinx_rtd_theme)
