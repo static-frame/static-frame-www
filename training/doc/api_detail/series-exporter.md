@@ -337,7 +337,7 @@ Series.to\_visidata()[](#static_frame.Series.to_visidata "Link to this defini
 ---
 
 © Copyright 2025, Christopher Ariza.
-Last updated on Apr 29, 2025.
+Last updated on May 17, 2025.
 
 Built with [Sphinx](https://www.sphinx-doc.org/) using a
 [theme](https://github.com/readthedocs/sphinx_rtd_theme)
