@@ -356,11 +356,19 @@ API Detail
 
 ## 3.0.0[](#id1 "Link to this heading")
 
+API change: in interfaces with only one or two non-keyword arguments, those arguments are now positional-only arguments.
+
 API change: All failed `iloc` lookups now return an `IndexError`; all failed `loc` lookups now return a `KeyError`.
 
 API change: NumPy `datetime64` units that cannot be represented in Python objects are retained as NumPy scalars in object arrays.
 
 API change: `Frame.bloc[]` selections now return a `Series` with an `IndexHierarchy`.
+
+Set `arraykit` version to 1.0.8.
+
+`arraymap` is removed as a dependency; `arraykit` now provides `AutoMap` and `FrozenAutoMap`.
+
+`TypeClinic` now properly handles `tuple` shape type variables in NumPy arrays.
 
 ## 2.18.0[](#id2 "Link to this heading")
 
@@ -2352,7 +2360,7 @@ The following `DisplayFormats` have been created and implemented: `terminal`, `h
 ---
 
 © Copyright 2025, Christopher Ariza.
-Last updated on Apr 29, 2025.
+Last updated on May 17, 2025.
 
 Built with [Sphinx](https://www.sphinx-doc.org/) using a
 [theme](https://github.com/readthedocs/sphinx_rtd_theme)
