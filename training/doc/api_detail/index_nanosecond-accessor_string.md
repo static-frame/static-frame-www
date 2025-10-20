@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ IndexNanosecond.via\_str.\_\_getitem\_\_(*key*)
     <datetime64[ns]>
     >>> ix.via_str[-1]
     ['0' '0' '0']
-
     ```
 
 IndexNanosecond.via\_str.capitalize
@@ -2561,7 +2564,6 @@ IndexNanosecond.via\_str.capitalize
     >>> ix.via_str.capitalize()
     ['1789-05-05t00:00:00.000000000' '1789-12-31t00:00:00.000000000'
      '1799-11-09t00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.center(*width*, *fillchar*)
@@ -2582,7 +2584,6 @@ IndexNanosecond.via\_str.center(*width*, *fillchar*)
     >>> ix.via_str.center(8)
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.contains(*item*)
@@ -2602,7 +2603,6 @@ IndexNanosecond.via\_str.contains(*item*)
     <datetime64[ns]>
     >>> ix.via_str.contains('X')
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.count(*sub*, *start*, *end*)
@@ -2622,7 +2622,6 @@ IndexNanosecond.via\_str.count(*sub*, *start*, *end*)
     <datetime64[ns]>
     >>> ix.via_str.count('X')
     [0 0 0]
-
     ```
 
 IndexNanosecond.via\_str.decode(*encoding*, *errors*)
@@ -2643,7 +2642,6 @@ IndexNanosecond.via\_str.decode(*encoding*, *errors*)
     >>> ix.via_str.decode()
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.encode(*encoding*, *errors*)
@@ -2664,7 +2662,6 @@ IndexNanosecond.via\_str.encode(*encoding*, *errors*)
     >>> ix.via_str.encode()
     [b'1789-05-05T00:00:00.000000000' b'1789-12-31T00:00:00.000000000'
      b'1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.endswith(*suffix*, *start*, *end*)
@@ -2684,7 +2681,6 @@ IndexNanosecond.via\_str.endswith(*suffix*, *start*, *end*)
     <datetime64[ns]>
     >>> ix.via_str.endswith(' ')
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.find(*sub*, *start*, *end*)
@@ -2704,7 +2700,6 @@ IndexNanosecond.via\_str.find(*sub*, *start*, *end*)
     <datetime64[ns]>
     >>> ix.via_str.find('X')
     [-1 -1 -1]
-
     ```
 
 IndexNanosecond.via\_str.format(*format*)
@@ -2728,7 +2723,6 @@ IndexNanosecond.via\_str.format(*format*)
     >>> ix.via_str.format('{:-^10}')
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.index(*sub*, *start*, *end*)
@@ -2748,7 +2742,6 @@ IndexNanosecond.via\_str.index(*sub*, *start*, *end*)
     <datetime64[ns]>
     >>> ix.via_str.index('X')
     ValueError('substring not found')
-
     ```
 
 IndexNanosecond.via\_str.isalnum
@@ -2768,7 +2761,6 @@ IndexNanosecond.via\_str.isalnum
     <datetime64[ns]>
     >>> ix.via_str.isalnum()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.isalpha
@@ -2788,7 +2780,6 @@ IndexNanosecond.via\_str.isalpha
     <datetime64[ns]>
     >>> ix.via_str.isalpha()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.isdecimal
@@ -2808,7 +2799,6 @@ IndexNanosecond.via\_str.isdecimal
     <datetime64[ns]>
     >>> ix.via_str.isdecimal()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.isdigit
@@ -2828,7 +2818,6 @@ IndexNanosecond.via\_str.isdigit
     <datetime64[ns]>
     >>> ix.via_str.isdigit()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.islower
@@ -2848,7 +2837,6 @@ IndexNanosecond.via\_str.islower
     <datetime64[ns]>
     >>> ix.via_str.islower()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.isnumeric
@@ -2868,7 +2856,6 @@ IndexNanosecond.via\_str.isnumeric
     <datetime64[ns]>
     >>> ix.via_str.isnumeric()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.isspace
@@ -2888,7 +2875,6 @@ IndexNanosecond.via\_str.isspace
     <datetime64[ns]>
     >>> ix.via_str.isspace()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.istitle
@@ -2908,7 +2894,6 @@ IndexNanosecond.via\_str.istitle
     <datetime64[ns]>
     >>> ix.via_str.istitle()
     [ True  True  True]
-
     ```
 
 IndexNanosecond.via\_str.isupper
@@ -2928,7 +2913,6 @@ IndexNanosecond.via\_str.isupper
     <datetime64[ns]>
     >>> ix.via_str.isupper()
     [ True  True  True]
-
     ```
 
 IndexNanosecond.via\_str.ljust(*width*, *fillchar*)
@@ -2949,7 +2933,6 @@ IndexNanosecond.via\_str.ljust(*width*, *fillchar*)
     >>> ix.via_str.ljust(8)
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.len
@@ -2969,7 +2952,6 @@ IndexNanosecond.via\_str.len
     <datetime64[ns]>
     >>> ix.via_str.len()
     [29 29 29]
-
     ```
 
 IndexNanosecond.via\_str.lower
@@ -2990,7 +2972,6 @@ IndexNanosecond.via\_str.lower
     >>> ix.via_str.lower()
     ['1789-05-05t00:00:00.000000000' '1789-12-31t00:00:00.000000000'
      '1799-11-09t00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.lstrip(*chars*)
@@ -3011,7 +2992,6 @@ IndexNanosecond.via\_str.lstrip(*chars*)
     >>> ix.via_str.lstrip()
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.partition(*sep*)
@@ -3033,7 +3013,6 @@ IndexNanosecond.via\_str.partition(*sep*)
     [(np.str_('1789-05-05T00:00:00.000000000'), '', '')
      (np.str_('1789-12-31T00:00:00.000000000'), '', '')
      (np.str_('1799-11-09T00:00:00.000000000'), '', '')]
-
     ```
 
 IndexNanosecond.via\_str.replace(*old*, *new*, *count*)
@@ -3054,7 +3033,6 @@ IndexNanosecond.via\_str.replace(*old*, *new*, *count*)
     >>> ix.via_str.replace('X', '*')
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.rfind(*sub*, *start*, *end*)
@@ -3074,7 +3052,6 @@ IndexNanosecond.via\_str.rfind(*sub*, *start*, *end*)
     <datetime64[ns]>
     >>> ix.via_str.rfind('X')
     [-1 -1 -1]
-
     ```
 
 IndexNanosecond.via\_str.rindex(*sub*, *start*, *end*)
@@ -3094,7 +3071,6 @@ IndexNanosecond.via\_str.rindex(*sub*, *start*, *end*)
     <datetime64[ns]>
     >>> ix.via_str.rindex('X')
     ValueError('substring not found')
-
     ```
 
 IndexNanosecond.via\_str.rjust(*width*, *fillchar*)
@@ -3115,7 +3091,6 @@ IndexNanosecond.via\_str.rjust(*width*, *fillchar*)
     >>> ix.via_str.rjust(8)
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.rpartition(*sep*)
@@ -3137,7 +3112,6 @@ IndexNanosecond.via\_str.rpartition(*sep*)
     [('', '', np.str_('1789-05-05T00:00:00.000000000'))
      ('', '', np.str_('1789-12-31T00:00:00.000000000'))
      ('', '', np.str_('1799-11-09T00:00:00.000000000'))]
-
     ```
 
 IndexNanosecond.via\_str.rsplit(*sep*, *maxsplit*)
@@ -3158,7 +3132,6 @@ IndexNanosecond.via\_str.rsplit(*sep*, *maxsplit*)
     >>> ix.via_str.rsplit('X')
     [('1789-05-05T00:00:00.000000000',) ('1789-12-31T00:00:00.000000000',)
      ('1799-11-09T00:00:00.000000000',)]
-
     ```
 
 IndexNanosecond.via\_str.rstrip(*chars*)
@@ -3179,7 +3152,6 @@ IndexNanosecond.via\_str.rstrip(*chars*)
     >>> ix.via_str.rstrip()
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.split(*sep*, *maxsplit*)
@@ -3200,7 +3172,6 @@ IndexNanosecond.via\_str.split(*sep*, *maxsplit*)
     >>> ix.via_str.split('X')
     [('1789-05-05T00:00:00.000000000',) ('1789-12-31T00:00:00.000000000',)
      ('1799-11-09T00:00:00.000000000',)]
-
     ```
 
 IndexNanosecond.via\_str.startswith(*prefix*, *start*, *end*)
@@ -3220,7 +3191,6 @@ IndexNanosecond.via\_str.startswith(*prefix*, *start*, *end*)
     <datetime64[ns]>
     >>> ix.via_str.startswith('X')
     [False False False]
-
     ```
 
 IndexNanosecond.via\_str.strip(*chars*)
@@ -3241,7 +3211,6 @@ IndexNanosecond.via\_str.strip(*chars*)
     >>> ix.via_str.strip()
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.swapcase
@@ -3262,7 +3231,6 @@ IndexNanosecond.via\_str.swapcase
     >>> ix.via_str.swapcase()
     ['1789-05-05t00:00:00.000000000' '1789-12-31t00:00:00.000000000'
      '1799-11-09t00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.title
@@ -3283,7 +3251,6 @@ IndexNanosecond.via\_str.title
     >>> ix.via_str.title()
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.upper
@@ -3304,7 +3271,6 @@ IndexNanosecond.via\_str.upper
     >>> ix.via_str.upper()
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_str.zfill(*width*)
@@ -3325,7 +3291,6 @@ IndexNanosecond.via\_str.zfill(*width*)
     >>> ix.via_str.zfill(8)
     ['1789-05-05T00:00:00.000000000' '1789-12-31T00:00:00.000000000'
      '1799-11-09T00:00:00.000000000']
-
     ```
 
 [IndexNanosecond](index_nanosecond.md#api-detail-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-detail-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-detail-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-detail-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-detail-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-detail-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-detail-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-detail-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-detail-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-detail-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-detail-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-detail-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-detail-indexnanosecond-accessor-datetime) | [Accessor String](#api-detail-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-detail-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-detail-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-detail-indexnanosecond-accessor-type-clinic)

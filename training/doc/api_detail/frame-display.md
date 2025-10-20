@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2577,7 +2581,6 @@ Frame.interface[#](#Frame.interface "Link to this definition")
     reduce.from_label_pair_map(func_m... Frame    Accessor Reduce For Frame, reduce...
     reduce.from_label_pair_map(func_m... Frame    Accessor Reduce For Frame, reduce...
     <<U163>                              <<U5>    <<U27>          <<U83>
-
     ```
 
 Frame.\_\_repr\_\_()[#](#static_frame.Frame.__repr__ "Link to this definition")
@@ -2594,7 +2597,6 @@ Frame.\_\_repr\_\_()[#](#static_frame.Frame.__repr__ "Link to this definition")
     2          8       True   1517-12-31
     3          3       False  1517-06-30
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.\_\_str\_\_()[#](#static_frame.Frame.__str__ "Link to this definition")
@@ -2611,7 +2613,6 @@ Frame.\_\_str\_\_()[#](#static_frame.Frame.__str__ "Link to this definition")
     2          8       True   1517-12-31
     3          3       False  1517-06-30
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.display)[#](#static_frame.Frame.display "Link to this definition")
@@ -2637,7 +2638,6 @@ Frame.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modu
     1 2  True  1517-04-01
     2 8  True  1517-12-31
     3 3  False 1517-06-30
-
     ```
 
 Frame.display\_tall(*config=None*, */*)[#](#static_frame.Frame.display_tall "Link to this definition")
@@ -2657,7 +2657,6 @@ Frame.display\_tall(*config=None*, */*)[#](#static_frame.Frame.display_tall "Lin
     2          8       True   1517-12-31
     3          3       False  1517-06-30
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.display\_wide(*config=None*, */*)[#](#static_frame.Frame.display_wide "Link to this definition")
@@ -2677,7 +2676,6 @@ Frame.display\_wide(*config=None*, */*)[#](#static_frame.Frame.display_wide "Lin
     2          8       True   1517-12-31
     3          3       False  1517-06-30
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 [Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2538,13 +2542,12 @@ MemoryDisplay.\_\_init\_\_(*frame*)[[source]](../_modules/static_frame/core/memo
     3          3       False  1517-06-30
     <int64>    <int64> <bool> <datetime64[D]>
     >>> f.memory
-            L    Lu    LM   LMu   LMD  LMDu  R    Ru    RM   RMu   RMD  RMDu
-    Name    42   B     42   B     42   B     42   B     42   B     42   B
-    Index   236  B     252  B     124  B     8.34 KB    284  B     156  B
-    Columns 800  B     832  B     576  B     8.89 KB    856  B     600  B
-    Blocks  748  B     796  B     412  B     748  B     796  B     412  B
-    Total   1.82 KB    1.91 KB    1.16 KB    9.93 KB    1.97 KB    1.22 KB
-
+            L    Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
+    Name    42   B     42   B     42   B     42    B     42   B     42   B
+    Index   292  B     308  B     180  B     8.39  KB    340  B     212  B
+    Columns 856  B     888  B     632  B     8.95  KB    912  B     656  B
+    Blocks  748  B     796  B     412  B     748   B     796  B     412  B
+    Total   1.93 KB    2.02 KB    1.27 KB    10.04 KB    2.08 KB    1.33 KB
     ```
 
 *classmethod* MemoryDisplay.from\_any(*obj*, *label\_component\_pairs=()*)[[source]](../_modules/static_frame/core/memory_measure.md#MemoryDisplay.from_any)[#](#static_frame.MemoryDisplay.from_any "Link to this definition")
@@ -2563,8 +2566,7 @@ MemoryDisplay.\_\_init\_\_(*frame*)[[source]](../_modules/static_frame/core/memo
     <int64>    <int64> <bool> <datetime64[D]>
     >>> sf.MemoryDisplay.from_any(f.index)
           L   Lu    LM  LMu   LMD LMDu  R    Ru    RM  RMu   RMD RMDu
-    Total 236 B     252 B     124 B     8.34 KB    284 B     156 B
-
+    Total 292 B     308 B     180 B     8.39 KB    340 B     212 B
     ```
 
 [MemoryDisplay](memory_display.md#api-detail-memorydisplay): [Constructor](#api-detail-memorydisplay-constructor) | [Exporter](memory_display-exporter.md#api-detail-memorydisplay-exporter) | [Display](memory_display-display.md#api-detail-memorydisplay-display)

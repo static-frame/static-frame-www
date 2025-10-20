@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexMinuteGO: Constructor](../api_overview/index_minute_go-constructor.md#api-overview-indexminutego-constructor)
 
-IndexMinuteGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[#](#static_frame.IndexMinuteGO.__init__ "Link to this definition")
+IndexMinuteGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *sort\_status=SortStatus.UNKNOWN*)[#](#static_frame.IndexMinuteGO.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -2537,7 +2541,55 @@ IndexMinuteGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<ob
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
+    ```
 
+*classmethod* IndexMinuteGO.from\_difference(*\*others*)[#](#static_frame.IndexMinuteGO.from_difference "Link to this definition")
+:   Construct a new Index based on the difference with Index, containers, or NumPy arrays. Retains order.
+
+    ```
+    >>> ix1 = sf.IndexMinuteGO.from_labels(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix1
+    <IndexMinuteGO>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    >>> ix2 = sf.IndexMinuteGO.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexMinuteGO>
+    2022-04-01T00:00
+    2021-12-31T00:00
+    2018-06-30T00:00
+    <datetime64[m]>
+    >>> sf.IndexMinuteGO.from_difference(ix1, ix2)
+    <IndexMinuteGO>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    ```
+
+*classmethod* IndexMinuteGO.from\_intersection(*\*others*)[#](#static_frame.IndexMinuteGO.from_intersection "Link to this definition")
+:   Construct a new Index based on the intersection with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexMinuteGO.from_labels(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix1
+    <IndexMinuteGO>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    >>> ix2 = sf.IndexMinuteGO.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexMinuteGO>
+    2022-04-01T00:00
+    2021-12-31T00:00
+    2018-06-30T00:00
+    <datetime64[m]>
+    >>> sf.IndexMinuteGO.from_intersection(ix1, ix2)
+    <IndexMinuteGO>
+    <datetime64[m]>
     ```
 
 *classmethod* IndexMinuteGO.from\_labels(*labels*, */*, *\**, *name=None*)[#](#static_frame.IndexMinuteGO.from_labels "Link to this definition")
@@ -2550,7 +2602,6 @@ IndexMinuteGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<ob
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-
     ```
 
 *classmethod* IndexMinuteGO.from\_pandas(*value*, */*)[#](#static_frame.IndexMinuteGO.from_pandas "Link to this definition")
@@ -2564,7 +2615,35 @@ IndexMinuteGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<ob
     1517-12
     1517-06-30
     <object>
+    ```
 
+*classmethod* IndexMinuteGO.from\_union(*\*others*)[#](#static_frame.IndexMinuteGO.from_union "Link to this definition")
+:   Construct a new Index based on the union with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexMinuteGO.from_labels(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix1
+    <IndexMinuteGO>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    >>> ix2 = sf.IndexMinuteGO.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexMinuteGO>
+    2022-04-01T00:00
+    2021-12-31T00:00
+    2018-06-30T00:00
+    <datetime64[m]>
+    >>> sf.IndexMinuteGO.from_union(ix1, ix2)
+    <IndexMinuteGO>
+    1517-04-01T00:00
+    1517-06-30T00:00
+    1517-12-01T00:00
+    2018-06-30T00:00
+    2021-12-31T00:00
+    2022-04-01T00:00
+    <datetime64[m]>
     ```
 
 [IndexMinuteGO](index_minute_go.md#api-detail-indexminutego): [Constructor](#api-detail-indexminutego-constructor) | [Exporter](index_minute_go-exporter.md#api-detail-indexminutego-exporter) | [Attribute](index_minute_go-attribute.md#api-detail-indexminutego-attribute) | [Method](index_minute_go-method.md#api-detail-indexminutego-method) | [Dictionary-Like](index_minute_go-dictionary_like.md#api-detail-indexminutego-dictionary-like) | [Display](index_minute_go-display.md#api-detail-indexminutego-display) | [Selector](index_minute_go-selector.md#api-detail-indexminutego-selector) | [Iterator](index_minute_go-iterator.md#api-detail-indexminutego-iterator) | [Operator Binary](index_minute_go-operator_binary.md#api-detail-indexminutego-operator-binary) | [Operator Unary](index_minute_go-operator_unary.md#api-detail-indexminutego-operator-unary) | [Accessor Values](index_minute_go-accessor_values.md#api-detail-indexminutego-accessor-values) | [Accessor Datetime](index_minute_go-accessor_datetime.md#api-detail-indexminutego-accessor-datetime) | [Accessor String](index_minute_go-accessor_string.md#api-detail-indexminutego-accessor-string) | [Accessor Regular Expression](index_minute_go-accessor_regular_expression.md#api-detail-indexminutego-accessor-regular-expression) | [Accessor Hashlib](index_minute_go-accessor_hashlib.md#api-detail-indexminutego-accessor-hashlib) | [Accessor Type Clinic](index_minute_go-accessor_type_clinic.md#api-detail-indexminutego-accessor-type-clinic)
@@ -2579,8 +2658,11 @@ Detail: IndexMinuteGO: Exporter](index_minute_go-exporter.md "next page")
 On this page
 
 * [`IndexMinuteGO.__init__()`](#static_frame.IndexMinuteGO.__init__)
+* [`IndexMinuteGO.from_difference()`](#static_frame.IndexMinuteGO.from_difference)
+* [`IndexMinuteGO.from_intersection()`](#static_frame.IndexMinuteGO.from_intersection)
 * [`IndexMinuteGO.from_labels()`](#static_frame.IndexMinuteGO.from_labels)
 * [`IndexMinuteGO.from_pandas()`](#static_frame.IndexMinuteGO.from_pandas)
+* [`IndexMinuteGO.from_union()`](#static_frame.IndexMinuteGO.from_union)
 
 © Copyright 2025, Christopher Ariza.
 

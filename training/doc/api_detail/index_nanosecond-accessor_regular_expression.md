@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2543,7 +2547,6 @@ IndexNanosecond.via\_re(*pattern*, *flags*, */).search(pos*, *endpos*)
     <datetime64[ns]>
     >>> ix.via_re('[X123]').search()
     [ True  True  True]
-
     ```
 
 IndexNanosecond.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
@@ -2566,7 +2569,6 @@ IndexNanosecond.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
     <datetime64[ns]>
     >>> ix.via_re('[X123]').match()
     [ True  True  True]
-
     ```
 
 IndexNanosecond.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
@@ -2589,7 +2591,6 @@ IndexNanosecond.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
     <datetime64[ns]>
     >>> ix.via_re('123').fullmatch()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_re(*pattern*, *flags*, */).split(maxsplit*)
@@ -2613,7 +2614,6 @@ IndexNanosecond.via\_re(*pattern*, *flags*, */).split(maxsplit*)
     [('', '789-05-05T00:00:00.000000000')
      ('', '789-', '', '-', '', 'T00:00:00.000000000')
      ('', '799-', '', '-09T00:00:00.000000000')]
-
     ```
 
 IndexNanosecond.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
@@ -2636,7 +2636,6 @@ IndexNanosecond.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
     <datetime64[ns]>
     >>> ix.via_re('[X123]').findall()
     [('1',) ('1', '1', '2', '3', '1') ('1', '1', '1')]
-
     ```
 
 IndexNanosecond.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
@@ -2660,7 +2659,6 @@ IndexNanosecond.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
     >>> ix.via_re('[X123]').sub('==')
     ['==789-05-05T00:00:00.000000000' '==789-====-====T00:00:00.000000000'
      '==799-====-09T00:00:00.000000000']
-
     ```
 
 IndexNanosecond.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
@@ -2685,7 +2683,6 @@ IndexNanosecond.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
     [('==789-05-05T00:00:00.000000000', 1)
      ('==789-12-31T00:00:00.000000000', 1)
      ('==799-11-09T00:00:00.000000000', 1)]
-
     ```
 
 [IndexNanosecond](index_nanosecond.md#api-detail-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-detail-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-detail-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-detail-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-detail-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-detail-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-detail-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-detail-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-detail-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-detail-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-detail-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-detail-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-detail-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-detail-indexnanosecond-accessor-string) | [Accessor Regular Expression](#api-detail-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-detail-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-detail-indexnanosecond-accessor-type-clinic)

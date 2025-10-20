@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexMillisecondGO: Method](../api_overview/index_millisecond_go-method.md#api-overview-indexmillisecondgo-method)
 
-IndexMillisecondGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexMillisecondGO.__array__ "Link to this definition")
+IndexMillisecondGO.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexMillisecondGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2537,7 +2541,6 @@ IndexMillisecondGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexMillisecond
     >>> ix.__array__()
     ['1517-04-01T00:00:00.000' '1517-12-31T00:00:00.000'
      '1517-06-30T00:00:00.000']
-
     ```
 
 IndexMillisecondGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexMillisecondGO.__array_ufunc__ "Link to this definition")
@@ -2553,7 +2556,6 @@ IndexMillisecondGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs
     <datetime64[ms]>
     >>> np.array((0, 1, 0)) * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('int64'), dtype('<M8[ms]')))
-
     ```
 
 IndexMillisecondGO.\_\_bool\_\_()[#](#static_frame.IndexMillisecondGO.__bool__ "Link to this definition")
@@ -2569,7 +2571,6 @@ IndexMillisecondGO.\_\_bool\_\_()[#](#static_frame.IndexMillisecondGO.__bool__ "
     <datetime64[ms]>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexMillisecondGO.\_\_copy\_\_()[#](#static_frame.IndexMillisecondGO.__copy__ "Link to this definition")
@@ -2590,7 +2591,6 @@ IndexMillisecondGO.\_\_copy\_\_()[#](#static_frame.IndexMillisecondGO.__copy__ "
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexMillisecondGO.__deepcopy__ "Link to this definition")
@@ -2609,7 +2609,6 @@ IndexMillisecondGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexMillisecondGO.
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.\_\_len\_\_()[#](#static_frame.IndexMillisecondGO.__len__ "Link to this definition")
@@ -2623,7 +2622,6 @@ IndexMillisecondGO.\_\_len\_\_()[#](#static_frame.IndexMillisecondGO.__len__ "Li
     <datetime64[ms]>
     >>> len(ix)
     3
-
     ```
 
 IndexMillisecondGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMillisecondGO.all "Link to this definition")
@@ -2643,7 +2641,6 @@ IndexMillisecondGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fra
     <datetime64[ms]>
     >>> ix.all()
     True
-
     ```
 
 IndexMillisecondGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMillisecondGO.any "Link to this definition")
@@ -2663,7 +2660,6 @@ IndexMillisecondGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fra
     <datetime64[ms]>
     >>> ix.any()
     True
-
     ```
 
 IndexMillisecondGO.append(*value*, */*)[#](#static_frame.IndexMillisecondGO.append "Link to this definition")
@@ -2685,7 +2681,6 @@ IndexMillisecondGO.append(*value*, */*)[#](#static_frame.IndexMillisecondGO.appe
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.astype(*dtype*, */*)[#](#static_frame.IndexMillisecondGO.astype "Link to this definition")
@@ -2708,7 +2703,6 @@ IndexMillisecondGO.astype(*dtype*, */*)[#](#static_frame.IndexMillisecondGO.asty
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <<U42>
-
     ```
 
 IndexMillisecondGO.copy()[#](#static_frame.IndexMillisecondGO.copy "Link to this definition")
@@ -2728,7 +2722,6 @@ IndexMillisecondGO.copy()[#](#static_frame.IndexMillisecondGO.copy "Link to this
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexMillisecondGO.cumprod "Link to this definition")
@@ -2748,7 +2741,6 @@ IndexMillisecondGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Index
     <datetime64[ms]>
     >>> ix.cumprod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[ms]'), dtype('<M8[ms]')))
-
     ```
 
 IndexMillisecondGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexMillisecondGO.cumsum "Link to this definition")
@@ -2768,7 +2760,6 @@ IndexMillisecondGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexM
     <datetime64[ms]>
     >>> ix.cumsum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[ms]'), dtype('<M8[ms]')))
-
     ```
 
 IndexMillisecondGO.difference(*\*others*)[#](#static_frame.IndexMillisecondGO.difference "Link to this definition")
@@ -2782,12 +2773,12 @@ IndexMillisecondGO.difference(*\*others*)[#](#static_frame.IndexMillisecondGO.di
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexMillisecondGO>
     2022-04-01T00:00:00.000
     2021-12-31T00:00:00.000
-    2022-06-30T00:00:00.000
+    2018-06-30T00:00:00.000
     <datetime64[ms]>
     >>> ix1.difference(ix2)
     <IndexMillisecondGO>
@@ -2795,7 +2786,6 @@ IndexMillisecondGO.difference(*\*others*)[#](#static_frame.IndexMillisecondGO.di
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.dropfalsy()[#](#static_frame.IndexMillisecondGO.dropfalsy "Link to this definition")
@@ -2814,7 +2804,6 @@ IndexMillisecondGO.dropfalsy()[#](#static_frame.IndexMillisecondGO.dropfalsy "Li
     1620-09-16T00:00:00.000
     1620-11-21T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.dropna()[#](#static_frame.IndexMillisecondGO.dropna "Link to this definition")
@@ -2833,7 +2822,6 @@ IndexMillisecondGO.dropna()[#](#static_frame.IndexMillisecondGO.dropna "Link to 
     1620-09-16T00:00:00.000
     1620-11-21T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.IndexMillisecondGO.equals "Link to this definition")
@@ -2853,16 +2841,15 @@ IndexMillisecondGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_d
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexMillisecondGO>
     2022-04-01T00:00:00.000
     2021-12-31T00:00:00.000
-    2022-06-30T00:00:00.000
+    2018-06-30T00:00:00.000
     <datetime64[ms]>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 IndexMillisecondGO.extend(*values*, */*)[#](#static_frame.IndexMillisecondGO.extend "Link to this definition")
@@ -2877,12 +2864,12 @@ IndexMillisecondGO.extend(*values*, */*)[#](#static_frame.IndexMillisecondGO.ext
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexMillisecondGO>
     2022-04-01T00:00:00.000
     2021-12-31T00:00:00.000
-    2022-06-30T00:00:00.000
+    2018-06-30T00:00:00.000
     <datetime64[ms]>
     >>> ix1.extend(ix2)
     >>> ix1
@@ -2892,9 +2879,8 @@ IndexMillisecondGO.extend(*values*, */*)[#](#static_frame.IndexMillisecondGO.ext
     1517-06-30T00:00:00.000
     2022-04-01T00:00:00.000
     2021-12-31T00:00:00.000
-    2022-06-30T00:00:00.000
+    2018-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.fillfalsy(*value*, */*)[#](#static_frame.IndexMillisecondGO.fillfalsy "Link to this definition")
@@ -2913,7 +2899,6 @@ IndexMillisecondGO.fillfalsy(*value*, */*)[#](#static_frame.IndexMillisecondGO.f
     <datetime64[ms]>
     >>> ix.fillfalsy('A')
     ValueError('Error parsing datetime string "A" at position 0')
-
     ```
 
 IndexMillisecondGO.fillna(*value*, */*)[#](#static_frame.IndexMillisecondGO.fillna "Link to this definition")
@@ -2936,7 +2921,6 @@ IndexMillisecondGO.fillna(*value*, */*)[#](#static_frame.IndexMillisecondGO.fill
     1970-01-01T00:00:00.000
     1620-11-21T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.head(*count=5*, */*)[#](#static_frame.IndexMillisecondGO.head "Link to this definition")
@@ -2958,7 +2942,6 @@ IndexMillisecondGO.head(*count=5*, */*)[#](#static_frame.IndexMillisecondGO.head
     1517-04-01T00:00:00.000
     1517-12-31T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexMillisecondGO.iloc_searchsorted "Link to this definition")
@@ -2978,7 +2961,6 @@ IndexMillisecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#]
     <datetime64[ms]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexMillisecondGO.intersection(*\*others*)[#](#static_frame.IndexMillisecondGO.intersection "Link to this definition")
@@ -2992,17 +2974,35 @@ IndexMillisecondGO.intersection(*\*others*)[#](#static_frame.IndexMillisecondGO.
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexMillisecondGO>
     2022-04-01T00:00:00.000
     2021-12-31T00:00:00.000
-    2022-06-30T00:00:00.000
+    2018-06-30T00:00:00.000
     <datetime64[ms]>
     >>> ix1.intersection(ix2)
     <IndexMillisecondGO>
     <datetime64[ms]>
+    ```
 
+IndexMillisecondGO.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexMillisecondGO.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix
+    <IndexMillisecondGO>
+    2022-04-01T00:00:00.000
+    2021-12-31T00:00:00.000
+    2018-06-30T00:00:00.000
+    <datetime64[ms]>
+    >>> assert ix.is_sorted(ascending=False)
     ```
 
 IndexMillisecondGO.isfalsy()[#](#static_frame.IndexMillisecondGO.isfalsy "Link to this definition")
@@ -3012,7 +3012,6 @@ IndexMillisecondGO.isfalsy()[#](#static_frame.IndexMillisecondGO.isfalsy "Link t
     >>> ix = sf.IndexMillisecondGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isfalsy()
     [False  True False]
-
     ```
 
 IndexMillisecondGO.isin(*other*, */*)[#](#static_frame.IndexMillisecondGO.isin "Link to this definition")
@@ -3028,7 +3027,6 @@ IndexMillisecondGO.isin(*other*, */*)[#](#static_frame.IndexMillisecondGO.isin "
     <datetime64[ms]>
     >>> ix.isin(('1517-06-30',))
     [False False False]
-
     ```
 
 IndexMillisecondGO.isna()[#](#static_frame.IndexMillisecondGO.isna "Link to this definition")
@@ -3038,7 +3036,6 @@ IndexMillisecondGO.isna()[#](#static_frame.IndexMillisecondGO.isna "Link to this
     >>> ix = sf.IndexMillisecondGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isna()
     [False  True False]
-
     ```
 
 IndexMillisecondGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexMillisecondGO.label_widths_at_depth "Link to this definition")
@@ -3057,7 +3054,6 @@ IndexMillisecondGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_fr
     <datetime64[ms]>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.datetime64('1517-04-01T00:00:00.000'), 1), (np.datetime64('1517-12-31T00:00:00.000'), 1), (np.datetime64('1517-06-30T00:00:00.000'), 1))
-
     ```
 
 IndexMillisecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.IndexMillisecondGO.level_add "Link to this definition")
@@ -3082,7 +3078,6 @@ IndexMillisecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](
     A                  1517-12-31T00:00:...
     A                  1517-06-30T00:00:...
     <<U1>              <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.IndexMillisecondGO.loc_searchsorted "Link to this definition")
@@ -3103,7 +3098,6 @@ IndexMillisecondGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fi
     <datetime64[ms]>
     >>> ix.loc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexMillisecondGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexMillisecondGO.loc_to_iloc "Link to this definition")
@@ -3126,7 +3120,6 @@ IndexMillisecondGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexMillisecondGO
     [0 2]
     >>> ix.loc_to_iloc(slice('1517-12-31', None))
     slice(1, None, None)
-
     ```
 
 IndexMillisecondGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMillisecondGO.max "Link to this definition")
@@ -3146,7 +3139,6 @@ IndexMillisecondGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fra
     <datetime64[ms]>
     >>> ix.max()
     1517-12-31T00:00:00.000
-
     ```
 
 IndexMillisecondGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMillisecondGO.mean "Link to this definition")
@@ -3166,7 +3158,6 @@ IndexMillisecondGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fr
     <datetime64[ms]>
     >>> ix.mean()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[ms]'), dtype('<M8[ms]')))
-
     ```
 
 IndexMillisecondGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMillisecondGO.median "Link to this definition")
@@ -3186,7 +3177,6 @@ IndexMillisecondGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_
     <datetime64[ms]>
     >>> ix.median()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[ms]'), dtype('<M8[ms]')))
-
     ```
 
 IndexMillisecondGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMillisecondGO.min "Link to this definition")
@@ -3206,7 +3196,6 @@ IndexMillisecondGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fra
     <datetime64[ms]>
     >>> ix.min()
     1517-04-01T00:00:00.000
-
     ```
 
 IndexMillisecondGO.notfalsy()[#](#static_frame.IndexMillisecondGO.notfalsy "Link to this definition")
@@ -3216,7 +3205,6 @@ IndexMillisecondGO.notfalsy()[#](#static_frame.IndexMillisecondGO.notfalsy "Link
     >>> ix = sf.IndexMillisecondGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notfalsy()
     [ True False  True]
-
     ```
 
 IndexMillisecondGO.notna()[#](#static_frame.IndexMillisecondGO.notna "Link to this definition")
@@ -3226,7 +3214,6 @@ IndexMillisecondGO.notna()[#](#static_frame.IndexMillisecondGO.notna "Link to th
     >>> ix = sf.IndexMillisecondGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notna()
     [ True False  True]
-
     ```
 
 IndexMillisecondGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexMillisecondGO.prod "Link to this definition")
@@ -3246,7 +3233,6 @@ IndexMillisecondGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#]
     <datetime64[ms]>
     >>> ix.prod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[ms]'), dtype('<M8[ms]')))
-
     ```
 
 IndexMillisecondGO.relabel(*mapper*, */*)[#](#static_frame.IndexMillisecondGO.relabel "Link to this definition")
@@ -3266,7 +3252,6 @@ IndexMillisecondGO.relabel(*mapper*, */*)[#](#static_frame.IndexMillisecondGO.re
     1970-01-01T00:00:00.031
     1970-01-01T00:00:00.030
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.rename(*name*, */*)[#](#static_frame.IndexMillisecondGO.rename "Link to this definition")
@@ -3286,7 +3271,6 @@ IndexMillisecondGO.rename(*name*, */*)[#](#static_frame.IndexMillisecondGO.renam
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.roll(*shift*)[#](#static_frame.IndexMillisecondGO.roll "Link to this definition")
@@ -3306,7 +3290,6 @@ IndexMillisecondGO.roll(*shift*)[#](#static_frame.IndexMillisecondGO.roll "Link 
     1517-06-30T00:00:00.000
     1517-04-01T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexMillisecondGO.sample "Link to this definition")
@@ -3329,7 +3312,6 @@ IndexMillisecondGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexMi
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexMillisecondGO.sort "Link to this definition")
@@ -3360,7 +3342,6 @@ IndexMillisecondGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[
     1517-06-30T00:00:00.000
     1517-04-01T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexMillisecondGO.std "Link to this definition")
@@ -3380,7 +3361,6 @@ IndexMillisecondGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#
     <datetime64[ms]>
     >>> ix.std()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[ms]'), dtype('<M8[ms]')))
-
     ```
 
 IndexMillisecondGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexMillisecondGO.sum "Link to this definition")
@@ -3400,7 +3380,6 @@ IndexMillisecondGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](
     <datetime64[ms]>
     >>> ix.sum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[ms]'), dtype('<M8[ms]')))
-
     ```
 
 IndexMillisecondGO.tail(*count=5*, */*)[#](#static_frame.IndexMillisecondGO.tail "Link to this definition")
@@ -3422,7 +3401,6 @@ IndexMillisecondGO.tail(*count=5*, */*)[#](#static_frame.IndexMillisecondGO.tail
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.union(*\*others*)[#](#static_frame.IndexMillisecondGO.union "Link to this definition")
@@ -3436,23 +3414,22 @@ IndexMillisecondGO.union(*\*others*)[#](#static_frame.IndexMillisecondGO.union "
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexMillisecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexMillisecondGO>
     2022-04-01T00:00:00.000
     2021-12-31T00:00:00.000
-    2022-06-30T00:00:00.000
+    2018-06-30T00:00:00.000
     <datetime64[ms]>
     >>> ix1.union(ix2)
     <IndexMillisecondGO>
     1517-04-01T00:00:00.000
     1517-06-30T00:00:00.000
     1517-12-31T00:00:00.000
+    2018-06-30T00:00:00.000
     2021-12-31T00:00:00.000
     2022-04-01T00:00:00.000
-    2022-06-30T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#static_frame.IndexMillisecondGO.unique "Link to this definition")
@@ -3476,7 +3453,6 @@ IndexMillisecondGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=Fa
     >>> ix.unique()
     ['1620-09-16T00:00:00.000'                     'NaT'
      '1620-11-21T00:00:00.000']
-
     ```
 
 IndexMillisecondGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexMillisecondGO.values_at_depth "Link to this definition")
@@ -3493,7 +3469,6 @@ IndexMillisecondGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.Ind
     >>> ix.values_at_depth(0)
     ['1517-04-01T00:00:00.000' '1517-12-31T00:00:00.000'
      '1517-06-30T00:00:00.000']
-
     ```
 
 IndexMillisecondGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexMillisecondGO.var "Link to this definition")
@@ -3513,7 +3488,6 @@ IndexMillisecondGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#
     <datetime64[ms]>
     >>> ix.var()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[ms]'), dtype('<M8[ms]')))
-
     ```
 
 [IndexMillisecondGO](index_millisecond_go.md#api-detail-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.md#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-detail-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-detail-indexmillisecondgo-attribute) | [Method](#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-detail-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.md#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-detail-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-detail-indexmillisecondgo-accessor-type-clinic)
@@ -3550,6 +3524,7 @@ On this page
 * [`IndexMillisecondGO.head()`](#static_frame.IndexMillisecondGO.head)
 * [`IndexMillisecondGO.iloc_searchsorted()`](#static_frame.IndexMillisecondGO.iloc_searchsorted)
 * [`IndexMillisecondGO.intersection()`](#static_frame.IndexMillisecondGO.intersection)
+* [`IndexMillisecondGO.is_sorted()`](#static_frame.IndexMillisecondGO.is_sorted)
 * [`IndexMillisecondGO.isfalsy()`](#static_frame.IndexMillisecondGO.isfalsy)
 * [`IndexMillisecondGO.isin()`](#static_frame.IndexMillisecondGO.isin)
 * [`IndexMillisecondGO.isna()`](#static_frame.IndexMillisecondGO.isna)

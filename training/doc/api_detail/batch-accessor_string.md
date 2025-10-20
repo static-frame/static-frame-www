@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2547,7 +2551,6 @@ Batch.via\_str.\_\_getitem\_\_(*key*)
     j                r        8     3     nan
     j                s        3           nan
     <<U1>            <object> <<U1> <<U1> <object>
-
     ```
 
 Batch.via\_str.capitalize
@@ -2574,7 +2577,6 @@ Batch.via\_str.capitalize
     j                r        8      123   nan
     j                s        3       wx   nan
     <<U1>            <object> <<U21> <<U4> <object>
-
     ```
 
 Batch.via\_str.center(*width*, *fillchar*)
@@ -2601,7 +2603,6 @@ Batch.via\_str.center(*width*, *fillchar*)
     j                r           8       123    nan
     j                s           3        wX    nan
     <<U1>            <object> <<U8>    <<U8>    <object>
-
     ```
 
 Batch.via\_str.contains(*item*)
@@ -2628,7 +2629,6 @@ Batch.via\_str.contains(*item*)
     j                r        False  False  nan
     j                s        False  True   nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.count(*sub*, *start*, *end*)
@@ -2655,7 +2655,6 @@ Batch.via\_str.count(*sub*, *start*, *end*)
     j                r        0       0       nan
     j                s        0       1       nan
     <<U1>            <object> <int64> <int64> <float64>
-
     ```
 
 Batch.via\_str.decode(*encoding*, *errors*)
@@ -2682,7 +2681,6 @@ Batch.via\_str.decode(*encoding*, *errors*)
     j                r        8     123   nan
     j                s        3      wX   nan
     <<U1>            <object> <<U2> <<U4> <object>
-
     ```
 
 Batch.via\_str.encode(*encoding*, *errors*)
@@ -2709,7 +2707,6 @@ Batch.via\_str.encode(*encoding*, *errors*)
     j                r        b'8'  b'123'  nan
     j                s        b'3'  b' wX ' nan
     <<U1>            <object> <|S2> <|S4>   <object>
-
     ```
 
 Batch.via\_str.endswith(*suffix*, *start*, *end*)
@@ -2736,7 +2733,6 @@ Batch.via\_str.endswith(*suffix*, *start*, *end*)
     j                r        False  False  nan
     j                s        False  True   nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.find(*sub*, *start*, *end*)
@@ -2763,7 +2759,6 @@ Batch.via\_str.find(*sub*, *start*, *end*)
     j                r        -1      -1      nan
     j                s        -1      2       nan
     <<U1>            <object> <int64> <int64> <float64>
-
     ```
 
 Batch.via\_str.format(*format*)
@@ -2790,7 +2785,6 @@ Batch.via\_str.format(*format*)
     j                r        ----8----- ---123---- nan
     j                s        ----3----- --- wX --- nan
     <<U1>            <object> <<U10>     <<U10>     <object>
-
     ```
 
 Batch.via\_str.index(*sub*, *start*, *end*)
@@ -2806,7 +2800,6 @@ Batch.via\_str.index(*sub*, *start*, *end*)
     <Batch max_workers=None>
     >>> bt.via_str.index('X').to_frame()
     ValueError('substring not found')
-
     ```
 
 Batch.via\_str.isalnum
@@ -2833,7 +2826,6 @@ Batch.via\_str.isalnum
     j                r        True   True   nan
     j                s        True   False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.isalpha
@@ -2860,7 +2852,6 @@ Batch.via\_str.isalpha
     j                r        False  False  nan
     j                s        False  False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.isdecimal
@@ -2887,7 +2878,6 @@ Batch.via\_str.isdecimal
     j                r        True   True   nan
     j                s        True   False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.isdigit
@@ -2914,7 +2904,6 @@ Batch.via\_str.isdigit
     j                r        True   True   nan
     j                s        True   False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.islower
@@ -2941,7 +2930,6 @@ Batch.via\_str.islower
     j                r        False  False  nan
     j                s        False  False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.isnumeric
@@ -2968,7 +2956,6 @@ Batch.via\_str.isnumeric
     j                r        True   True   nan
     j                s        True   False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.isspace
@@ -2995,7 +2982,6 @@ Batch.via\_str.isspace
     j                r        False  False  nan
     j                s        False  False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.istitle
@@ -3022,7 +3008,6 @@ Batch.via\_str.istitle
     j                r        False  False  nan
     j                s        False  False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.isupper
@@ -3049,7 +3034,6 @@ Batch.via\_str.isupper
     j                r        False  False  nan
     j                s        False  False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.ljust(*width*, *fillchar*)
@@ -3076,7 +3060,6 @@ Batch.via\_str.ljust(*width*, *fillchar*)
     j                r        8        123      nan
     j                s        3         wX      nan
     <<U1>            <object> <<U8>    <<U8>    <object>
-
     ```
 
 Batch.via\_str.len
@@ -3103,7 +3086,6 @@ Batch.via\_str.len
     j                r        1       3       nan
     j                s        1       4       nan
     <<U1>            <object> <int64> <int64> <float64>
-
     ```
 
 Batch.via\_str.lower
@@ -3130,7 +3112,6 @@ Batch.via\_str.lower
     j                r        8      123   nan
     j                s        3       wx   nan
     <<U1>            <object> <<U21> <<U4> <object>
-
     ```
 
 Batch.via\_str.lstrip(*chars*)
@@ -3157,7 +3138,6 @@ Batch.via\_str.lstrip(*chars*)
     j                r        8      123   nan
     j                s        3      wX    nan
     <<U1>            <object> <<U21> <<U4> <object>
-
     ```
 
 Batch.via\_str.partition(*sep*)
@@ -3184,7 +3164,6 @@ Batch.via\_str.partition(*sep*)
     j                r        (np.str_('8'), ''... (np.str_('123'), ... nan
     j                s        (np.str_('3'), ''... (' w', 'X', ' ')     nan
     <<U1>            <object> <object>             <object>             <object>
-
     ```
 
 Batch.via\_str.replace(*old*, *new*, *count*)
@@ -3211,7 +3190,6 @@ Batch.via\_str.replace(*old*, *new*, *count*)
     j                r        8     123   nan
     j                s        3      w*   nan
     <<U1>            <object> <<U2> <<U4> <object>
-
     ```
 
 Batch.via\_str.rfind(*sub*, *start*, *end*)
@@ -3238,7 +3216,6 @@ Batch.via\_str.rfind(*sub*, *start*, *end*)
     j                r        -1      -1      nan
     j                s        -1      2       nan
     <<U1>            <object> <int64> <int64> <float64>
-
     ```
 
 Batch.via\_str.rindex(*sub*, *start*, *end*)
@@ -3254,7 +3231,6 @@ Batch.via\_str.rindex(*sub*, *start*, *end*)
     <Batch max_workers=None>
     >>> bt.via_str.rindex('X').to_frame()
     ValueError('substring not found')
-
     ```
 
 Batch.via\_str.rjust(*width*, *fillchar*)
@@ -3281,7 +3257,6 @@ Batch.via\_str.rjust(*width*, *fillchar*)
     j                r               8      123 nan
     j                s               3      wX  nan
     <<U1>            <object> <<U8>    <<U8>    <object>
-
     ```
 
 Batch.via\_str.rpartition(*sep*)
@@ -3308,7 +3283,6 @@ Batch.via\_str.rpartition(*sep*)
     j                r        ('', '', np.str_(... ('', '', np.str_(... nan
     j                s        ('', '', np.str_(... (' w', 'X', ' ')     nan
     <<U1>            <object> <object>             <object>             <object>
-
     ```
 
 Batch.via\_str.rsplit(*sep*, *maxsplit*)
@@ -3335,7 +3309,6 @@ Batch.via\_str.rsplit(*sep*, *maxsplit*)
     j                r        ('8',)   ('123',)    nan
     j                s        ('3',)   (' w', ' ') nan
     <<U1>            <object> <object> <object>    <object>
-
     ```
 
 Batch.via\_str.rstrip(*chars*)
@@ -3362,7 +3335,6 @@ Batch.via\_str.rstrip(*chars*)
     j                r        8      123   nan
     j                s        3       wX   nan
     <<U1>            <object> <<U21> <<U4> <object>
-
     ```
 
 Batch.via\_str.split(*sep*, *maxsplit*)
@@ -3389,7 +3361,6 @@ Batch.via\_str.split(*sep*, *maxsplit*)
     j                r        ('8',)   ('123',)    nan
     j                s        ('3',)   (' w', ' ') nan
     <<U1>            <object> <object> <object>    <object>
-
     ```
 
 Batch.via\_str.startswith(*prefix*, *start*, *end*)
@@ -3416,7 +3387,6 @@ Batch.via\_str.startswith(*prefix*, *start*, *end*)
     j                r        False  False  nan
     j                s        False  False  nan
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_str.strip(*chars*)
@@ -3443,7 +3413,6 @@ Batch.via\_str.strip(*chars*)
     j                r        8      123   nan
     j                s        3      wX    nan
     <<U1>            <object> <<U21> <<U4> <object>
-
     ```
 
 Batch.via\_str.swapcase
@@ -3470,7 +3439,6 @@ Batch.via\_str.swapcase
     j                r        8      123   nan
     j                s        3       Wx   nan
     <<U1>            <object> <<U21> <<U4> <object>
-
     ```
 
 Batch.via\_str.title
@@ -3497,7 +3465,6 @@ Batch.via\_str.title
     j                r        8      123   nan
     j                s        3       Wx   nan
     <<U1>            <object> <<U21> <<U4> <object>
-
     ```
 
 Batch.via\_str.upper
@@ -3524,7 +3491,6 @@ Batch.via\_str.upper
     j                r        8      123   nan
     j                s        3       WX   nan
     <<U1>            <object> <<U21> <<U4> <object>
-
     ```
 
 Batch.via\_str.zfill(*width*)
@@ -3551,7 +3517,6 @@ Batch.via\_str.zfill(*width*)
     j                r        00000008 00000123 nan
     j                s        00000003 0000 wX  nan
     <<U1>            <object> <<U8>    <<U8>    <object>
-
     ```
 
 [Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexGO: Method](../api_overview/index_go-method.md#api-overview-indexgo-method)
 
-IndexGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexGO.__array__ "Link to this definition")
+IndexGO.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2536,7 +2540,6 @@ IndexGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexGO.__array__ "Link to 
     <int64>
     >>> ix.__array__()
     [1024 2048 4096]
-
     ```
 
 IndexGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexGO.__array_ufunc__ "Link to this definition")
@@ -2552,7 +2555,6 @@ IndexGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#stat
     <int64>
     >>> np.array((0, 1, 0)) * ix
     [   0 2048    0]
-
     ```
 
 IndexGO.\_\_bool\_\_()[#](#static_frame.IndexGO.__bool__ "Link to this definition")
@@ -2568,7 +2570,6 @@ IndexGO.\_\_bool\_\_()[#](#static_frame.IndexGO.__bool__ "Link to this definitio
     <int64>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexGO.\_\_copy\_\_()[#](#static_frame.IndexGO.__copy__ "Link to this definition")
@@ -2593,7 +2594,6 @@ IndexGO.\_\_copy\_\_()[#](#static_frame.IndexGO.__copy__ "Link to this definitio
     d
     e
     <<U1>
-
     ```
 
 IndexGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexGO.__deepcopy__ "Link to this definition")
@@ -2616,7 +2616,6 @@ IndexGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexGO.__deepcopy__ "Link to 
     d
     e
     <<U1>
-
     ```
 
 IndexGO.\_\_len\_\_()[#](#static_frame.IndexGO.__len__ "Link to this definition")
@@ -2632,7 +2631,6 @@ IndexGO.\_\_len\_\_()[#](#static_frame.IndexGO.__len__ "Link to this definition"
     <<U1>
     >>> len(ix)
     5
-
     ```
 
 IndexGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.all "Link to this definition")
@@ -2653,7 +2651,6 @@ IndexGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.
     <int64>
     >>> ix.all()
     False
-
     ```
 
 IndexGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.any "Link to this definition")
@@ -2674,7 +2671,6 @@ IndexGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.
     <int64>
     >>> ix.any()
     True
-
     ```
 
 IndexGO.append(*value*, */*)[#](#static_frame.IndexGO.append "Link to this definition")
@@ -2700,7 +2696,6 @@ IndexGO.append(*value*, */*)[#](#static_frame.IndexGO.append "Link to this defin
     e
     f
     <<U1>
-
     ```
 
 IndexGO.astype(*dtype*, */*)[#](#static_frame.IndexGO.astype "Link to this definition")
@@ -2723,7 +2718,6 @@ IndexGO.astype(*dtype*, */*)[#](#static_frame.IndexGO.astype "Link to this defin
     2048.0
     4096.0
     <float64>
-
     ```
 
 IndexGO.copy()[#](#static_frame.IndexGO.copy "Link to this definition")
@@ -2743,7 +2737,6 @@ IndexGO.copy()[#](#static_frame.IndexGO.copy "Link to this definition")
     2048
     4096
     <int64>
-
     ```
 
 IndexGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexGO.cumprod "Link to this definition")
@@ -2763,7 +2756,6 @@ IndexGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexGO.cumprod 
     <int64>
     >>> ix.cumprod()
     [      1024    2097152 8589934592]
-
     ```
 
 IndexGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexGO.cumsum "Link to this definition")
@@ -2783,7 +2775,6 @@ IndexGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexGO.cumsum "L
     <int64>
     >>> ix.cumsum()
     [1024 3072 7168]
-
     ```
 
 IndexGO.difference(*\*others*)[#](#static_frame.IndexGO.difference "Link to this definition")
@@ -2812,7 +2803,6 @@ IndexGO.difference(*\*others*)[#](#static_frame.IndexGO.difference "Link to this
     a
     b
     <<U1>
-
     ```
 
 IndexGO.dropfalsy()[#](#static_frame.IndexGO.dropfalsy "Link to this definition")
@@ -2833,7 +2823,6 @@ IndexGO.dropfalsy()[#](#static_frame.IndexGO.dropfalsy "Link to this definition"
     c
     d
     <<U1>
-
     ```
 
 IndexGO.dropna()[#](#static_frame.IndexGO.dropna "Link to this definition")
@@ -2854,7 +2843,6 @@ IndexGO.dropna()[#](#static_frame.IndexGO.dropna "Link to this definition")
     1024
     True
     <object>
-
     ```
 
 IndexGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.IndexGO.equals "Link to this definition")
@@ -2885,7 +2873,6 @@ IndexGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*
     <int64>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 IndexGO.extend(*values*, */*)[#](#static_frame.IndexGO.extend "Link to this definition")
@@ -2917,7 +2904,6 @@ IndexGO.extend(*values*, */*)[#](#static_frame.IndexGO.extend "Link to this defi
     e
     f
     <<U1>
-
     ```
 
 IndexGO.fillfalsy(*value*, */*)[#](#static_frame.IndexGO.fillfalsy "Link to this definition")
@@ -2942,7 +2928,6 @@ IndexGO.fillfalsy(*value*, */*)[#](#static_frame.IndexGO.fillfalsy "Link to this
     c
     d
     <<U1>
-
     ```
 
 IndexGO.fillna(*value*, */*)[#](#static_frame.IndexGO.fillna "Link to this definition")
@@ -2967,7 +2952,6 @@ IndexGO.fillna(*value*, */*)[#](#static_frame.IndexGO.fillna "Link to this defin
     1024
     True
     <object>
-
     ```
 
 IndexGO.head(*count=5*, */*)[#](#static_frame.IndexGO.head "Link to this definition")
@@ -2991,7 +2975,6 @@ IndexGO.head(*count=5*, */*)[#](#static_frame.IndexGO.head "Link to this definit
     a
     b
     <<U1>
-
     ```
 
 IndexGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexGO.iloc_searchsorted "Link to this definition")
@@ -3013,7 +2996,6 @@ IndexGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_fr
     <<U1>
     >>> ix.iloc_searchsorted('c')
     2
-
     ```
 
 IndexGO.intersection(*\*others*)[#](#static_frame.IndexGO.intersection "Link to this definition")
@@ -3043,7 +3025,27 @@ IndexGO.intersection(*\*others*)[#](#static_frame.IndexGO.intersection "Link to 
     d
     e
     <<U1>
+    ```
 
+IndexGO.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexGO.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
+    >>> ix
+    <IndexGO: x>
+    a
+    b
+    c
+    d
+    e
+    <<U1>
+    >>> assert ix.is_sorted()
     ```
 
 IndexGO.isfalsy()[#](#static_frame.IndexGO.isfalsy "Link to this definition")
@@ -3053,7 +3055,6 @@ IndexGO.isfalsy()[#](#static_frame.IndexGO.isfalsy "Link to this definition")
     >>> ix = sf.IndexGO(('a', '', None, 0, np.nan, 'b'))
     >>> ix.isfalsy()
     [False  True  True  True  True False]
-
     ```
 
 IndexGO.isin(*other*, */*)[#](#static_frame.IndexGO.isin "Link to this definition")
@@ -3071,7 +3072,6 @@ IndexGO.isin(*other*, */*)[#](#static_frame.IndexGO.isin "Link to this definitio
     <<U1>
     >>> ix.isin(('a', 'e'))
     [ True False False False  True]
-
     ```
 
 IndexGO.isna()[#](#static_frame.IndexGO.isna "Link to this definition")
@@ -3081,7 +3081,6 @@ IndexGO.isna()[#](#static_frame.IndexGO.isna "Link to this definition")
     >>> ix = sf.IndexGO(('a', '', None, 0, np.nan, 'b'))
     >>> ix.isna()
     [False False  True False  True False]
-
     ```
 
 IndexGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexGO.label_widths_at_depth "Link to this definition")
@@ -3102,7 +3101,6 @@ IndexGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexGO
     <<U1>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.str_('a'), 1), (np.str_('b'), 1), (np.str_('c'), 1), (np.str_('d'), 1), (np.str_('e'), 1))
-
     ```
 
 IndexGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.IndexGO.level_add "Link to this definition")
@@ -3127,7 +3125,6 @@ IndexGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_fra
     A                     2048
     A                     4096
     <<U1>                 <int64>
-
     ```
 
 IndexGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.IndexGO.loc_searchsorted "Link to this definition")
@@ -3150,7 +3147,6 @@ IndexGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=n
     <<U1>
     >>> ix.loc_searchsorted('c')
     c
-
     ```
 
 IndexGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexGO.loc_to_iloc "Link to this definition")
@@ -3175,7 +3171,6 @@ IndexGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexGO.loc_to_iloc "Link to 
     [0 4]
     >>> ix.loc_to_iloc(slice('c', None))
     slice(2, None, None)
-
     ```
 
 IndexGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.max "Link to this definition")
@@ -3195,7 +3190,6 @@ IndexGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.
     <int64>
     >>> ix.max()
     4096
-
     ```
 
 IndexGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.mean "Link to this definition")
@@ -3215,7 +3209,6 @@ IndexGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO
     <int64>
     >>> ix.mean()
     2389.3333333333335
-
     ```
 
 IndexGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.median "Link to this definition")
@@ -3235,7 +3228,6 @@ IndexGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index
     <int64>
     >>> ix.median()
     2048.0
-
     ```
 
 IndexGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.min "Link to this definition")
@@ -3255,7 +3247,6 @@ IndexGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexGO.
     <int64>
     >>> ix.min()
     1024
-
     ```
 
 IndexGO.notfalsy()[#](#static_frame.IndexGO.notfalsy "Link to this definition")
@@ -3265,7 +3256,6 @@ IndexGO.notfalsy()[#](#static_frame.IndexGO.notfalsy "Link to this definition")
     >>> ix = sf.IndexGO(('a', '', None, 0, np.nan, 'b'))
     >>> ix.notfalsy()
     [ True False False False False  True]
-
     ```
 
 IndexGO.notna()[#](#static_frame.IndexGO.notna "Link to this definition")
@@ -3275,7 +3265,6 @@ IndexGO.notna()[#](#static_frame.IndexGO.notna "Link to this definition")
     >>> ix = sf.IndexGO(('a', '', None, 0, np.nan, 'b'))
     >>> ix.notna()
     [ True  True False  True False  True]
-
     ```
 
 IndexGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexGO.prod "Link to this definition")
@@ -3295,7 +3284,6 @@ IndexGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_fr
     <int64>
     >>> ix.prod()
     8589934592
-
     ```
 
 IndexGO.relabel(*mapper*, */*)[#](#static_frame.IndexGO.relabel "Link to this definition")
@@ -3321,7 +3309,6 @@ IndexGO.relabel(*mapper*, */*)[#](#static_frame.IndexGO.relabel "Link to this de
     b
     C
     <<U1>
-
     ```
 
 IndexGO.rename(*name*, */*)[#](#static_frame.IndexGO.rename "Link to this definition")
@@ -3345,7 +3332,6 @@ IndexGO.rename(*name*, */*)[#](#static_frame.IndexGO.rename "Link to this defini
     d
     e
     <<U1>
-
     ```
 
 IndexGO.roll(*shift*)[#](#static_frame.IndexGO.roll "Link to this definition")
@@ -3369,7 +3355,6 @@ IndexGO.roll(*shift*)[#](#static_frame.IndexGO.roll "Link to this definition")
     b
     c
     <<U1>
-
     ```
 
 IndexGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexGO.sample "Link to this definition")
@@ -3394,7 +3379,6 @@ IndexGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexGO.sample "Li
     a
     c
     <<U1>
-
     ```
 
 IndexGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexGO.sort "Link to this definition")
@@ -3431,7 +3415,6 @@ IndexGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_
     b
     a
     <<U1>
-
     ```
 
 IndexGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexGO.std "Link to this definition")
@@ -3451,7 +3434,6 @@ IndexGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_fram
     <int64>
     >>> ix.std()
     1277.1523880188386
-
     ```
 
 IndexGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexGO.sum "Link to this definition")
@@ -3471,7 +3453,6 @@ IndexGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_fra
     <int64>
     >>> ix.sum()
     7168
-
     ```
 
 IndexGO.tail(*count=5*, */*)[#](#static_frame.IndexGO.tail "Link to this definition")
@@ -3495,7 +3476,6 @@ IndexGO.tail(*count=5*, */*)[#](#static_frame.IndexGO.tail "Link to this definit
     d
     e
     <<U1>
-
     ```
 
 IndexGO.union(*\*others*)[#](#static_frame.IndexGO.union "Link to this definition")
@@ -3528,7 +3508,6 @@ IndexGO.union(*\*others*)[#](#static_frame.IndexGO.union "Link to this definitio
     e
     f
     <<U1>
-
     ```
 
 IndexGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#static_frame.IndexGO.unique "Link to this definition")
@@ -3552,7 +3531,6 @@ IndexGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#s
     <object>
     >>> ix.unique()
     [None 'A' 1024 True]
-
     ```
 
 IndexGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexGO.values_at_depth "Link to this definition")
@@ -3570,7 +3548,6 @@ IndexGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexGO.values
     <<U1>
     >>> ix.values_at_depth(0)
     ['a' 'b' 'c' 'd' 'e']
-
     ```
 
 IndexGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexGO.var "Link to this definition")
@@ -3590,7 +3567,6 @@ IndexGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_fram
     <int64>
     >>> ix.var()
     1631118.222222222
-
     ```
 
 [IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)
@@ -3627,6 +3603,7 @@ On this page
 * [`IndexGO.head()`](#static_frame.IndexGO.head)
 * [`IndexGO.iloc_searchsorted()`](#static_frame.IndexGO.iloc_searchsorted)
 * [`IndexGO.intersection()`](#static_frame.IndexGO.intersection)
+* [`IndexGO.is_sorted()`](#static_frame.IndexGO.is_sorted)
 * [`IndexGO.isfalsy()`](#static_frame.IndexGO.isfalsy)
 * [`IndexGO.isin()`](#static_frame.IndexGO.isin)
 * [`IndexGO.isna()`](#static_frame.IndexGO.isna)

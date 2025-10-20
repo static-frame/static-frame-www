@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2525,7 +2529,7 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-array) | `IndexHierarchy.__array__(dtype)` | Support the \_\_array\_\_ interface, returning an array of values. |
+| [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-array) | `IndexHierarchy.__array__(dtype, copy)` | Support the \_\_array\_\_ interface, returning an array of values. |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-array-ufunc) | `IndexHierarchy.__array_ufunc__(ufunc, method, *args, **kwargs)` | Support for NumPy elements or arrays on the left hand of binary operators. |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-bool) | `IndexHierarchy.__bool__()` | Raises ValueError to prohibit ambiguous use of truthy evaluation. |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-copy) | `IndexHierarchy.__copy__()` | Return a shallow copy of this IndexHierarchy. |
@@ -2550,6 +2554,7 @@ Search
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-index-at-depth) | `IndexHierarchy.index_at_depth(depth_level, /)` | Return an index, or a tuple of indices for the depth\_level specified. Args: dept… |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-indexer-at-depth) | `IndexHierarchy.indexer_at_depth(depth_level, /)` | Return the indexers for the depth\_level specified. Array will 2D if multiple dep… |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-intersection) | `IndexHierarchy.intersection(*others)` |  |
+| [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-is-sorted) | `IndexHierarchy.is_sorted(*, ascending, kind, key)` | Return True if this Index is sorted according to the specified parameters. Args:… |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-isfalsy) | `IndexHierarchy.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-isin) | `IndexHierarchy.isin(other, /)` | Return a Boolean array showing True where one or more of the passed in iterable… |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-isna) | `IndexHierarchy.isna()` | Return a same-shaped, Boolean ndarray indicating which values are NaN or None. |
@@ -2571,7 +2576,7 @@ Search
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-rename) | `IndexHierarchy.rename(name, /)` | Return a new IndexHierarchy with an updated name attribute. |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-roll) | `IndexHierarchy.roll(shift)` | Return an IndexHierarchy with values rotated forward and wrapped around (with a… |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-sample) | `IndexHierarchy.sample(count, *, seed)` | Randomly (optionally made deterministic with a fixed seed) extract items from th… |
-| [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-sort) | `IndexHierarchy.sort(*, ascending, kind, key)` | Return a new Index with the labels sorted. Args: ascendings: Boolean, or iterabl… |
+| [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-sort) | `IndexHierarchy.sort(*, ascending, kind, key)` | Return a new IndexHierarchy with the labels sorted. Args: ascendings: Boolean, o… |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-std) | `IndexHierarchy.std(*, axis, skipna, ddof, out)` | Return the standard deviaton along the specified axis. Args: axis: Axis, default… |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-sum) | `IndexHierarchy.sum(*, axis, skipna, allna, out)` | Sum values along the specified axis. Args: axis: Axis, defaulting to axis 0. ski… |
 | [Detail](../api_detail/index_hierarchy-method.md#api-sig-indexhierarchy-tail) | `IndexHierarchy.tail(count, /)` | Return a Index consisting only of the bottom elements as specified by count. Arg… |

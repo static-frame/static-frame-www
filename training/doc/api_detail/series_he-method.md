@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: SeriesHE: Method](../api_overview/series_he-method.md#api-overview-serieshe-method)
 
-SeriesHE.\_\_array\_\_(*dtype=None*)[#](#static_frame.SeriesHE.__array__ "Link to this definition")
+SeriesHE.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.SeriesHE.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2537,7 +2541,6 @@ SeriesHE.\_\_array\_\_(*dtype=None*)[#](#static_frame.SeriesHE.__array__ "Link t
     <<U1>      <int64>
     >>> s.__array__()
     [10  2  8]
-
     ```
 
 SeriesHE.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.SeriesHE.__array_ufunc__ "Link to this definition")
@@ -2559,7 +2562,6 @@ SeriesHE.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#sta
     b          2
     c          0
     <<U1>      <int64>
-
     ```
 
 SeriesHE.\_\_bool\_\_()[#](#static_frame.SeriesHE.__bool__ "Link to this definition")
@@ -2576,7 +2578,28 @@ SeriesHE.\_\_bool\_\_()[#](#static_frame.SeriesHE.__bool__ "Link to this definit
     <<U1>      <int64>
     >>> bool(s)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
+    ```
 
+SeriesHE.\_\_copy\_\_()[#](#static_frame.SeriesHE.__copy__ "Link to this definition")
+:   Return shallow copy of this Series.
+
+    ```
+    >>> import copy
+    >>> s = sf.SeriesHE((10.235, 2.124, 8.734), index=('a', 'b', 'c'))
+    >>> s
+    <SeriesHE>
+    <Index>
+    a          10.235
+    b          2.124
+    c          8.734
+    <<U1>      <float64>
+    >>> copy.copy(s)
+    <SeriesHE>
+    <Index>
+    a          10.235
+    b          2.124
+    c          8.734
+    <<U1>      <float64>
     ```
 
 SeriesHE.\_\_deepcopy\_\_(*memo*)[#](#static_frame.SeriesHE.__deepcopy__ "Link to this definition")
@@ -2597,7 +2620,6 @@ SeriesHE.\_\_deepcopy\_\_(*memo*)[#](#static_frame.SeriesHE.__deepcopy__ "Link t
     b          2
     c          8
     <<U1>      <int64>
-
     ```
 
 SeriesHE.\_\_len\_\_()[#](#static_frame.SeriesHE.__len__ "Link to this definition")
@@ -2614,7 +2636,6 @@ SeriesHE.\_\_len\_\_()[#](#static_frame.SeriesHE.__len__ "Link to this definitio
     <<U1>      <int64>
     >>> len(s)
     3
-
     ```
 
 SeriesHE.\_\_round\_\_(*decimals=0*, */*)[#](#static_frame.SeriesHE.__round__ "Link to this definition")
@@ -2642,7 +2663,6 @@ SeriesHE.\_\_round\_\_(*decimals=0*, */*)[#](#static_frame.SeriesHE.__round__ "L
     b          2.1
     c          8.7
     <<U1>      <float64>
-
     ```
 
 SeriesHE.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesHE.all "Link to this definition")
@@ -2663,7 +2683,6 @@ SeriesHE.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesH
     <<U1>      <bool>
     >>> s.all()
     False
-
     ```
 
 SeriesHE.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesHE.any "Link to this definition")
@@ -2684,7 +2703,6 @@ SeriesHE.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesH
     <<U1>      <bool>
     >>> s.any()
     True
-
     ```
 
 SeriesHE.astype(*dtype*, */*)[#](#static_frame.SeriesHE.astype "Link to this definition")
@@ -2712,7 +2730,6 @@ SeriesHE.astype(*dtype*, */*)[#](#static_frame.SeriesHE.astype "Link to this def
     b          1.0
     c          nan
     <<U1>      <float64>
-
     ```
 
 SeriesHE.clip(*\**, *lower=None*, *upper=None*)[#](#static_frame.SeriesHE.clip "Link to this definition")
@@ -2741,7 +2758,6 @@ SeriesHE.clip(*\**, *lower=None*, *upper=None*)[#](#static_frame.SeriesHE.clip "
     b          2.5
     c          8.734
     <<U1>      <float64>
-
     ```
 
 SeriesHE.corr(*other*, */*)[#](#static_frame.SeriesHE.corr "Link to this definition")
@@ -2769,7 +2785,6 @@ SeriesHE.corr(*other*, */*)[#](#static_frame.SeriesHE.corr "Link to this definit
     <<U1>      <int64>
     >>> s1.corr(s2)
     0.9977051066985492
-
     ```
 
 SeriesHE.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[#](#static_frame.SeriesHE.count "Link to this definition")
@@ -2794,7 +2809,6 @@ SeriesHE.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)
     3
     >>> s.count(unique=True)
     2
-
     ```
 
 SeriesHE.cov(*other*, */*, *\**, *ddof=1*)[#](#static_frame.SeriesHE.cov "Link to this definition")
@@ -2822,7 +2836,6 @@ SeriesHE.cov(*other*, */*, *\**, *ddof=1*)[#](#static_frame.SeriesHE.cov "Link t
     <<U1>      <int64>
     >>> s1.cov(s2)
     17.924999999999997
-
     ```
 
 SeriesHE.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.SeriesHE.cumprod "Link to this definition")
@@ -2848,7 +2861,6 @@ SeriesHE.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.SeriesHE.cumpro
     b          20
     c          160
     <<U1>      <int64>
-
     ```
 
 SeriesHE.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.SeriesHE.cumsum "Link to this definition")
@@ -2874,7 +2886,6 @@ SeriesHE.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.SeriesHE.cumsum 
     b          12
     c          20
     <<U1>      <int64>
-
     ```
 
 SeriesHE.drop\_duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[#](#static_frame.SeriesHE.drop_duplicated "Link to this definition")
@@ -2903,7 +2914,6 @@ SeriesHE.drop\_duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[#
     b          5
     c          None
     <<U1>      <object>
-
     ```
 
 SeriesHE.dropfalsy()[#](#static_frame.SeriesHE.dropfalsy "Link to this definition")
@@ -2926,7 +2936,6 @@ SeriesHE.dropfalsy()[#](#static_frame.SeriesHE.dropfalsy "Link to this definitio
     b          r
     d          s
     <<U1>      <<U1>
-
     ```
 
 SeriesHE.dropna()[#](#static_frame.SeriesHE.dropna "Link to this definition")
@@ -2949,7 +2958,6 @@ SeriesHE.dropna()[#](#static_frame.SeriesHE.dropna "Link to this definition")
     b          5
     d          8
     <<U1>      <object>
-
     ```
 
 SeriesHE.duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[#](#static_frame.SeriesHE.duplicated "Link to this definition")
@@ -2980,7 +2988,6 @@ SeriesHE.duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[#](#sta
     c          False
     d          True
     <<U1>      <bool>
-
     ```
 
 SeriesHE.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.SeriesHE.equals "Link to this definition")
@@ -3011,7 +3018,6 @@ SeriesHE.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False
     <<U1>      <int64>
     >>> s1.equals(s2)
     False
-
     ```
 
 SeriesHE.fillfalsy(*value*, */*)[#](#static_frame.SeriesHE.fillfalsy "Link to this definition")
@@ -3038,7 +3044,6 @@ SeriesHE.fillfalsy(*value*, */*)[#](#static_frame.SeriesHE.fillfalsy "Link to th
     c          missing
     d          s
     <<U1>      <<U7>
-
     ```
 
 SeriesHE.fillfalsy\_backward(*limit=0*, */*)[#](#static_frame.SeriesHE.fillfalsy_backward "Link to this definition")
@@ -3065,7 +3070,6 @@ SeriesHE.fillfalsy\_backward(*limit=0*, */*)[#](#static_frame.SeriesHE.fillfalsy
     c          r
     d          s
     <<U1>      <<U1>
-
     ```
 
 SeriesHE.fillfalsy\_forward(*limit=0*, */*)[#](#static_frame.SeriesHE.fillfalsy_forward "Link to this definition")
@@ -3092,7 +3096,6 @@ SeriesHE.fillfalsy\_forward(*limit=0*, */*)[#](#static_frame.SeriesHE.fillfalsy_
     c          q
     d          q
     <<U1>      <<U1>
-
     ```
 
 SeriesHE.fillfalsy\_leading(*value*, */*)[#](#static_frame.SeriesHE.fillfalsy_leading "Link to this definition")
@@ -3119,7 +3122,6 @@ SeriesHE.fillfalsy\_leading(*value*, */*)[#](#static_frame.SeriesHE.fillfalsy_le
     c          r
     d          s
     <<U1>      <<U7>
-
     ```
 
 SeriesHE.fillfalsy\_trailing(*value*, */*)[#](#static_frame.SeriesHE.fillfalsy_trailing "Link to this definition")
@@ -3146,7 +3148,6 @@ SeriesHE.fillfalsy\_trailing(*value*, */*)[#](#static_frame.SeriesHE.fillfalsy_t
     c          missing
     d          missing
     <<U1>      <<U7>
-
     ```
 
 SeriesHE.fillna(*value*, */*)[#](#static_frame.SeriesHE.fillna "Link to this definition")
@@ -3175,7 +3176,6 @@ SeriesHE.fillna(*value*, */*)[#](#static_frame.SeriesHE.fillna "Link to this def
     d          8.734
     e          0.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.fillna\_backward(*limit=0*, */*)[#](#static_frame.SeriesHE.fillna_backward "Link to this definition")
@@ -3204,7 +3204,6 @@ SeriesHE.fillna\_backward(*limit=0*, */*)[#](#static_frame.SeriesHE.fillna_backw
     d          2.124
     e          8.734
     <<U1>      <float64>
-
     ```
 
 SeriesHE.fillna\_forward(*limit=0*, */*)[#](#static_frame.SeriesHE.fillna_forward "Link to this definition")
@@ -3233,7 +3232,6 @@ SeriesHE.fillna\_forward(*limit=0*, */*)[#](#static_frame.SeriesHE.fillna_forwar
     d          8.734
     e          8.734
     <<U1>      <float64>
-
     ```
 
 SeriesHE.fillna\_leading(*value*, */*)[#](#static_frame.SeriesHE.fillna_leading "Link to this definition")
@@ -3262,7 +3260,6 @@ SeriesHE.fillna\_leading(*value*, */*)[#](#static_frame.SeriesHE.fillna_leading 
     d          2.124
     e          8.734
     <<U1>      <float64>
-
     ```
 
 SeriesHE.fillna\_trailing(*value*, */*)[#](#static_frame.SeriesHE.fillna_trailing "Link to this definition")
@@ -3291,7 +3288,6 @@ SeriesHE.fillna\_trailing(*value*, */*)[#](#static_frame.SeriesHE.fillna_trailin
     d          0.0
     e          0.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.head(*count=5*, */*)[#](#static_frame.SeriesHE.head "Link to this definition")
@@ -3320,7 +3316,6 @@ SeriesHE.head(*count=5*, */*)[#](#static_frame.SeriesHE.head "Link to this defin
     a          10.235
     b          2.124
     <<U1>      <float64>
-
     ```
 
 SeriesHE.iloc\_max(*\**, *skipna=True*)[#](#static_frame.SeriesHE.iloc_max "Link to this definition")
@@ -3345,7 +3340,6 @@ SeriesHE.iloc\_max(*\**, *skipna=True*)[#](#static_frame.SeriesHE.iloc_max "Link
     <<U1>      <float64>
     >>> s.iloc_max()
     0
-
     ```
 
 SeriesHE.iloc\_min(*\**, *skipna=True*)[#](#static_frame.SeriesHE.iloc_min "Link to this definition")
@@ -3370,7 +3364,6 @@ SeriesHE.iloc\_min(*\**, *skipna=True*)[#](#static_frame.SeriesHE.iloc_min "Link
     <<U1>      <float64>
     >>> s.iloc_min()
     1
-
     ```
 
 SeriesHE.iloc\_notfalsy\_first(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE.iloc_notfalsy_first "Link to this definition")
@@ -3395,7 +3388,6 @@ SeriesHE.iloc\_notfalsy\_first(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE
     <<U1>      <object>
     >>> s.iloc_notfalsy_first()
     2
-
     ```
 
 SeriesHE.iloc\_notfalsy\_last(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE.iloc_notfalsy_last "Link to this definition")
@@ -3420,7 +3412,6 @@ SeriesHE.iloc\_notfalsy\_last(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE.
     <<U1>      <object>
     >>> s.iloc_notfalsy_last()
     3
-
     ```
 
 SeriesHE.iloc\_notna\_first(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE.iloc_notna_first "Link to this definition")
@@ -3445,7 +3436,6 @@ SeriesHE.iloc\_notna\_first(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE.il
     <<U1>      <float64>
     >>> s.iloc_notna_first()
     1
-
     ```
 
 SeriesHE.iloc\_notna\_last(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE.iloc_notna_last "Link to this definition")
@@ -3470,7 +3460,6 @@ SeriesHE.iloc\_notna\_last(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE.ilo
     <<U1>      <float64>
     >>> s.iloc_notna_last()
     2
-
     ```
 
 SeriesHE.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.SeriesHE.iloc_searchsorted "Link to this definition")
@@ -3493,7 +3482,6 @@ SeriesHE.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_f
     <<U1>      <int64>
     >>> s.iloc_searchsorted(18)
     2
-
     ```
 
 SeriesHE.insert\_after(*key*, *container*, */*)[#](#static_frame.SeriesHE.insert_after "Link to this definition")
@@ -3519,7 +3507,6 @@ SeriesHE.insert\_after(*key*, *container*, */*)[#](#static_frame.SeriesHE.insert
     f          12
     c          8
     <<U1>      <int64>
-
     ```
 
 SeriesHE.insert\_before(*key*, *container*, */*)[#](#static_frame.SeriesHE.insert_before "Link to this definition")
@@ -3545,7 +3532,6 @@ SeriesHE.insert\_before(*key*, *container*, */*)[#](#static_frame.SeriesHE.inser
     b          2
     c          8
     <<U1>      <int64>
-
     ```
 
 SeriesHE.isfalsy()[#](#static_frame.SeriesHE.isfalsy "Link to this definition")
@@ -3571,7 +3557,6 @@ SeriesHE.isfalsy()[#](#static_frame.SeriesHE.isfalsy "Link to this definition")
     d          True
     e          True
     <<U1>      <bool>
-
     ```
 
 SeriesHE.isin(*other*, */*)[#](#static_frame.SeriesHE.isin "Link to this definition")
@@ -3591,7 +3576,6 @@ SeriesHE.isin(*other*, */*)[#](#static_frame.SeriesHE.isin "Link to this definit
     d          False
     e          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.isna()[#](#static_frame.SeriesHE.isna "Link to this definition")
@@ -3617,7 +3601,6 @@ SeriesHE.isna()[#](#static_frame.SeriesHE.isna "Link to this definition")
     d          False
     e          True
     <<U1>      <bool>
-
     ```
 
 SeriesHE.loc\_max(*\**, *skipna=True*)[#](#static_frame.SeriesHE.loc_max "Link to this definition")
@@ -3642,7 +3625,6 @@ SeriesHE.loc\_max(*\**, *skipna=True*)[#](#static_frame.SeriesHE.loc_max "Link t
     <<U1>      <float64>
     >>> s.loc_max()
     a
-
     ```
 
 SeriesHE.loc\_min(*\**, *skipna=True*)[#](#static_frame.SeriesHE.loc_min "Link to this definition")
@@ -3667,7 +3649,6 @@ SeriesHE.loc\_min(*\**, *skipna=True*)[#](#static_frame.SeriesHE.loc_min "Link t
     <<U1>      <float64>
     >>> s.loc_min()
     b
-
     ```
 
 SeriesHE.loc\_notfalsy\_first(*\**, *fill\_value=nan*)[#](#static_frame.SeriesHE.loc_notfalsy_first "Link to this definition")
@@ -3692,7 +3673,6 @@ SeriesHE.loc\_notfalsy\_first(*\**, *fill\_value=nan*)[#](#static_frame.SeriesHE
     <<U1>      <object>
     >>> s.loc_notfalsy_first()
     c
-
     ```
 
 SeriesHE.loc\_notfalsy\_last(*\**, *fill\_value=nan*)[#](#static_frame.SeriesHE.loc_notfalsy_last "Link to this definition")
@@ -3717,7 +3697,6 @@ SeriesHE.loc\_notfalsy\_last(*\**, *fill\_value=nan*)[#](#static_frame.SeriesHE.
     <<U1>      <object>
     >>> s.loc_notfalsy_last()
     d
-
     ```
 
 SeriesHE.loc\_notna\_first(*\**, *fill\_value=nan*)[#](#static_frame.SeriesHE.loc_notna_first "Link to this definition")
@@ -3742,7 +3721,6 @@ SeriesHE.loc\_notna\_first(*\**, *fill\_value=nan*)[#](#static_frame.SeriesHE.lo
     <<U1>      <float64>
     >>> s.loc_notna_first()
     b
-
     ```
 
 SeriesHE.loc\_notna\_last(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE.loc_notna_last "Link to this definition")
@@ -3767,7 +3745,6 @@ SeriesHE.loc\_notna\_last(*\**, *fill\_value=-1*)[#](#static_frame.SeriesHE.loc_
     <<U1>      <float64>
     >>> s.loc_notna_last()
     c
-
     ```
 
 SeriesHE.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.SeriesHE.loc_searchsorted "Link to this definition")
@@ -3791,7 +3768,6 @@ SeriesHE.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=
     <<U1>      <int64>
     >>> s.loc_searchsorted(18)
     c
-
     ```
 
 SeriesHE.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesHE.max "Link to this definition")
@@ -3812,7 +3788,6 @@ SeriesHE.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesH
     <<U1>      <int64>
     >>> s.max()
     10
-
     ```
 
 SeriesHE.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesHE.mean "Link to this definition")
@@ -3833,7 +3808,6 @@ SeriesHE.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series
     <<U1>      <int64>
     >>> s.mean()
     6.666666666666667
-
     ```
 
 SeriesHE.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesHE.median "Link to this definition")
@@ -3854,7 +3828,6 @@ SeriesHE.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Seri
     <<U1>      <int64>
     >>> s.median()
     8.0
-
     ```
 
 SeriesHE.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesHE.min "Link to this definition")
@@ -3875,7 +3848,6 @@ SeriesHE.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.SeriesH
     <<U1>      <int64>
     >>> s.min()
     2
-
     ```
 
 SeriesHE.notfalsy()[#](#static_frame.SeriesHE.notfalsy "Link to this definition")
@@ -3901,7 +3873,6 @@ SeriesHE.notfalsy()[#](#static_frame.SeriesHE.notfalsy "Link to this definition"
     d          False
     e          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.notna()[#](#static_frame.SeriesHE.notna "Link to this definition")
@@ -3927,7 +3898,6 @@ SeriesHE.notna()[#](#static_frame.SeriesHE.notna "Link to this definition")
     d          True
     e          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.SeriesHE.prod "Link to this definition")
@@ -3948,7 +3918,6 @@ SeriesHE.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_f
     <<U1>      <int64>
     >>> s.prod()
     160
-
     ```
 
 SeriesHE.rank\_dense(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[#](#static_frame.SeriesHE.rank_dense "Link to this definition")
@@ -3981,7 +3950,6 @@ SeriesHE.rank\_dense(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_va
     c          0
     d          2
     <<U1>      <int64>
-
     ```
 
 SeriesHE.rank\_max(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[#](#static_frame.SeriesHE.rank_max "Link to this definition")
@@ -4014,7 +3982,6 @@ SeriesHE.rank\_max(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_valu
     c          0
     d          3
     <<U1>      <int64>
-
     ```
 
 SeriesHE.rank\_mean(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[#](#static_frame.SeriesHE.rank_mean "Link to this definition")
@@ -4047,7 +4014,6 @@ SeriesHE.rank\_mean(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_val
     c          0.0
     d          2.5
     <<U1>      <float64>
-
     ```
 
 SeriesHE.rank\_min(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[#](#static_frame.SeriesHE.rank_min "Link to this definition")
@@ -4080,7 +4046,6 @@ SeriesHE.rank\_min(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_valu
     c          0
     d          2
     <<U1>      <int64>
-
     ```
 
 SeriesHE.rank\_ordinal(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[#](#static_frame.SeriesHE.rank_ordinal "Link to this definition")
@@ -4113,7 +4078,6 @@ SeriesHE.rank\_ordinal(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_
     c          0
     d          3
     <<U1>      <int64>
-
     ```
 
 SeriesHE.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[#](#static_frame.SeriesHE.rehierarch "Link to this definition")
@@ -4137,7 +4101,6 @@ SeriesHE.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[#](#sta
     b                1       2
     b                2       7
     <<U1>            <int64> <int64>
-
     ```
 
 SeriesHE.reindex(*index*, *\**, *fill\_value=nan*, *own\_index=False*, *check\_equals=True*)[#](#static_frame.SeriesHE.reindex "Link to this definition")
@@ -4167,7 +4130,6 @@ SeriesHE.reindex(*index*, *\**, *fill\_value=nan*, *own\_index=False*, *check\_e
     e          -1
     c          0
     <<U1>      <int64>
-
     ```
 
 SeriesHE.relabel(*index*, *\**, *index\_constructor=None*)[#](#static_frame.SeriesHE.relabel "Link to this definition")
@@ -4206,7 +4168,6 @@ SeriesHE.relabel(*index*, *\**, *index\_constructor=None*)[#](#static_frame.Seri
     +B+        2
     +C+        8
     <<U3>      <int64>
-
     ```
 
 SeriesHE.relabel\_flat()[#](#static_frame.SeriesHE.relabel_flat "Link to this definition")
@@ -4230,7 +4191,6 @@ SeriesHE.relabel\_flat()[#](#static_frame.SeriesHE.relabel_flat "Link to this de
     (np.int64(2), np.str_('a')) 8
     (np.int64(2), np.str_('b')) 7
     <object>                    <int64>
-
     ```
 
 SeriesHE.relabel\_level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.SeriesHE.relabel_level_add "Link to this definition")
@@ -4257,7 +4217,6 @@ SeriesHE.relabel\_level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#
     x                2       a     8
     x                2       b     7
     <<U1>            <int64> <<U1> <int64>
-
     ```
 
 SeriesHE.relabel\_level\_drop(*count=1*, */*)[#](#static_frame.SeriesHE.relabel_level_drop "Link to this definition")
@@ -4282,7 +4241,6 @@ SeriesHE.relabel\_level\_drop(*count=1*, */*)[#](#static_frame.SeriesHE.relabel_
     a          3
     b          2
     <<U1>      <int64>
-
     ```
 
 SeriesHE.rename(*name=<object object>*, */*, *\**, *index=<object object>*)[#](#static_frame.SeriesHE.rename "Link to this definition")
@@ -4304,7 +4262,6 @@ SeriesHE.rename(*name=<object object>*, */*, *\**, *index=<object object>*)[#](#
     b             2
     c             8
     <<U1>         <int64>
-
     ```
 
 SeriesHE.roll(*shift*, */*, *\**, *include\_index=False*)[#](#static_frame.SeriesHE.roll "Link to this definition")
@@ -4337,7 +4294,6 @@ SeriesHE.roll(*shift*, */*, *\**, *include\_index=False*)[#](#static_frame.Serie
     d          8
     e          19
     <<U1>      <int64>
-
     ```
 
 SeriesHE.sample(*count=1*, */*, *\**, *seed=None*)[#](#static_frame.SeriesHE.sample "Link to this definition")
@@ -4364,7 +4320,6 @@ SeriesHE.sample(*count=1*, */*, *\**, *seed=None*)[#](#static_frame.SeriesHE.sam
     a          10.235
     c          nan
     <<U1>      <float64>
-
     ```
 
 SeriesHE.shift(*shift*, */*, *\**, *fill\_value=nan*)[#](#static_frame.SeriesHE.shift "Link to this definition")
@@ -4397,7 +4352,6 @@ SeriesHE.shift(*shift*, */*, *\**, *fill\_value=nan*)[#](#static_frame.SeriesHE.
     d          8.0
     e          19.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.SeriesHE.sort_index "Link to this definition")
@@ -4438,7 +4392,6 @@ SeriesHE.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](
     b          5
     a          8
     <<U1>      <int64>
-
     ```
 
 SeriesHE.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.SeriesHE.sort_values "Link to this definition")
@@ -4479,7 +4432,6 @@ SeriesHE.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#]
     b          5
     c          0
     <<U1>      <int64>
-
     ```
 
 SeriesHE.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.SeriesHE.std "Link to this definition")
@@ -4500,7 +4452,6 @@ SeriesHE.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_fra
     <<U1>      <int64>
     >>> s.std()
     3.39934634239519
-
     ```
 
 SeriesHE.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.SeriesHE.sum "Link to this definition")
@@ -4521,7 +4472,6 @@ SeriesHE.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_fr
     <<U1>      <int64>
     >>> s.sum()
     20
-
     ```
 
 SeriesHE.tail(*count=5*, */*)[#](#static_frame.SeriesHE.tail "Link to this definition")
@@ -4551,7 +4501,6 @@ SeriesHE.tail(*count=5*, */*)[#](#static_frame.SeriesHE.tail "Link to this defin
     d          8.734
     e          nan
     <<U1>      <float64>
-
     ```
 
 SeriesHE.transpose()[#](#static_frame.SeriesHE.transpose "Link to this definition")
@@ -4576,7 +4525,6 @@ SeriesHE.transpose()[#](#static_frame.SeriesHE.transpose "Link to this definitio
     b          2
     c          8
     <<U1>      <int64>
-
     ```
 
 SeriesHE.unique()[#](#static_frame.SeriesHE.unique "Link to this definition")
@@ -4597,7 +4545,6 @@ SeriesHE.unique()[#](#static_frame.SeriesHE.unique "Link to this definition")
     <<U1>      <object>
     >>> s.unique()
     [8 5 None]
-
     ```
 
 SeriesHE.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[#](#static_frame.SeriesHE.unique_enumerated "Link to this definition")
@@ -4619,7 +4566,6 @@ SeriesHE.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[#](#static
     <<U1>      <object>
     >>> s.unique_enumerated()
     (array([0, 1, 2, 0]), array([8, 5, None], dtype=object))
-
     ```
 
 SeriesHE.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.SeriesHE.var "Link to this definition")
@@ -4640,7 +4586,6 @@ SeriesHE.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_fra
     <<U1>      <int64>
     >>> s.var()
     11.555555555555557
-
     ```
 
 [SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | [Accessor Mapping](series_he-accessor_mapping.md#api-detail-serieshe-accessor-mapping)
@@ -4657,6 +4602,7 @@ On this page
 * [`SeriesHE.__array__()`](#static_frame.SeriesHE.__array__)
 * [`SeriesHE.__array_ufunc__()`](#static_frame.SeriesHE.__array_ufunc__)
 * [`SeriesHE.__bool__()`](#static_frame.SeriesHE.__bool__)
+* [`SeriesHE.__copy__()`](#static_frame.SeriesHE.__copy__)
 * [`SeriesHE.__deepcopy__()`](#static_frame.SeriesHE.__deepcopy__)
 * [`SeriesHE.__len__()`](#static_frame.SeriesHE.__len__)
 * [`SeriesHE.__round__()`](#static_frame.SeriesHE.__round__)

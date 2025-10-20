@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ Bus.STATIC *= False*[#](#static_frame.Bus.STATIC "Link to this definition")
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b.STATIC
     False
-
     ```
 
 Bus.dtype[#](#static_frame.Bus.dtype "Link to this definition")
@@ -2541,7 +2544,6 @@ Bus.dtype[#](#static_frame.Bus.dtype "Link to this definition")
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b.dtype
     object
-
     ```
 
 Bus.dtypes[#](#static_frame.Bus.dtypes "Link to this definition")
@@ -2556,7 +2558,6 @@ Bus.dtypes[#](#static_frame.Bus.dtypes "Link to this definition")
     x       int64    int64    None     None
     y       None     None     bool     bool
     <<U1>   <object> <object> <object> <object>
-
     ```
 
 Bus.index[#](#static_frame.Bus.index "Link to this definition")
@@ -2572,7 +2573,6 @@ Bus.index[#](#static_frame.Bus.index "Link to this definition")
     x
     y
     <<U1>
-
     ```
 
 Bus.inventory[#](#static_frame.Bus.inventory "Link to this definition")
@@ -2586,9 +2586,8 @@ Bus.inventory[#](#static_frame.Bus.inventory "Link to this definition")
     <Frame>
     <Index>  path       last_modified        size  <<U13>
     <Index>
-    None     /tmp/b.zip 2025-05-30T14:54:... 965 B
+    None     /tmp/b.zip 2025-10-08T01:32:... 965 B
     <object> <<U10>     <<U32>               <<U5>
-
     ```
 
 Bus.memory[#](#static_frame.Bus.memory "Link to this definition")
@@ -2605,9 +2604,8 @@ Bus.memory[#](#static_frame.Bus.memory "Link to this definition")
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b.memory
-          L    Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
-    Total 5.72 KB    1.65 KB    1.15 KB    13.83 KB    1.67 KB    1.17 KB
-
+          L   Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
+    Total 5.8 KB    1.71 KB    1.21 KB    13.91 KB    1.72 KB    1.22 KB
     ```
 
 Bus.mloc[#](#static_frame.Bus.mloc "Link to this definition")
@@ -2623,7 +2621,6 @@ Bus.name[#](#static_frame.Bus.name "Link to this definition")
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b.name
     i
-
     ```
 
 Bus.nbytes[#](#static_frame.Bus.nbytes "Link to this definition")
@@ -2633,7 +2630,6 @@ Bus.nbytes[#](#static_frame.Bus.nbytes "Link to this definition")
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b.nbytes
     54
-
     ```
 
 Bus.ndim[#](#static_frame.Bus.ndim "Link to this definition")
@@ -2646,7 +2642,6 @@ Bus.ndim[#](#static_frame.Bus.ndim "Link to this definition")
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b.ndim
     1
-
     ```
 
 Bus.shape[#](#static_frame.Bus.shape "Link to this definition")
@@ -2659,7 +2654,6 @@ Bus.shape[#](#static_frame.Bus.shape "Link to this definition")
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b.shape
     (2,)
-
     ```
 
 Bus.shapes[#](#static_frame.Bus.shapes "Link to this definition")
@@ -2676,7 +2670,6 @@ Bus.shapes[#](#static_frame.Bus.shapes "Link to this definition")
     x               (3, 2)
     y               (3, 2)
     <<U1>           <object>
-
     ```
 
 Bus.size[#](#static_frame.Bus.size "Link to this definition")
@@ -2689,7 +2682,6 @@ Bus.size[#](#static_frame.Bus.size "Link to this definition")
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b.size
     2
-
     ```
 
 Bus.status[#](#static_frame.Bus.status "Link to this definition")
@@ -2706,7 +2698,6 @@ Bus.status[#](#static_frame.Bus.status "Link to this definition")
     x       False  nan       nan       None
     y       False  nan       nan       None
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 [Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
   + [Faster DataFrame Serialization](serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
 * [Faster DataFrame Serialization](serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2529,7 +2533,6 @@ All examples use StaticFrame 0.4.0 or later and import with the following conven
 
 ```
 >>> import static_frame as sf
-
 ```
 
 ## Reindexing & Relabeling[#](#reindexing-relabeling "Link to this heading")
@@ -2559,7 +2562,6 @@ t        0
 w        100
 x        200
 <<U1>    <int64>
-
 ```
 
 To handle the latter interpretation, alignment based on position, Pandas offers at least two approaches: the mutable `index` attribute can be directly assigned, or the `set_axis()` function can be used.
@@ -2575,7 +2577,6 @@ b        200
 c        300
 d        400
 <<U1>    <int64>
-
 ```
 
 ## Setting an Auto-Incremented Integer Index[#](#setting-an-auto-incremented-integer-index "Link to this heading")
@@ -2611,7 +2612,6 @@ For example, the `IndexAutoFactory` class can be given as the `index` argument t
 2        300
 3        400
 <int64>  <int64>
-
 ```
 
 The benefit of having a specific type, rather than using `None`, to signify application of an AIII is made more clear in the context of `Frame.relabel()`, where both a `columns` and `index` argument can be set independently. The example bellow demonstrates creating a `Frame`, setting an AIII on both axis, and setting an AIII on `columns` while doing relabeling on the `index`.
@@ -2641,7 +2641,6 @@ y       2       False
 a       1       True
 b       2       False
 <<U1>   <int64> <bool>
-
 ```
 
 ## Resetting an Index when Concatenating[#](#resetting-an-index-when-concatenating "Link to this heading")
@@ -2672,7 +2671,6 @@ f        200
 g        300
 h        400
 <<U1>    <int64>
-
 ```
 
 If an AIII is needed, the `IndexAutoFactory` type can be used with the same interface:
@@ -2690,7 +2688,6 @@ If an AIII is needed, the `IndexAutoFactory` type can be used with the same inte
 6        300
 7        400
 <int64>  <int64>
-
 ```
 
 The same approach is used with `Frame.from_concat()`, where both `columns` and `index` arguments are exposed. For example, two `Series` can be horizontally “stacked” along axis 1 to produce a new `Frame`. If the `Series.name` attributes are unique, they can be used to create the columns; otherwise, new columns can be supplied or an `IndexAutoFactory` value can be provided.
@@ -2706,7 +2703,6 @@ x       200     100.0
 y       300     150.0
 z       400     200.0
 <<U1>   <int64> <float64>
-
 ```
 
 Similarly, concatenating along axis 1 (horizontally stacking) the same `Frame` multiple times results in non-unique columns, which raises an `Exception` in StaticFrame. To avoid this, the `IndexAutoFactory` can be supplied.
@@ -2719,7 +2715,6 @@ Similarly, concatenating along axis 1 (horizontally stacking) the same `Frame` m
 x       1       True   1       True
 y       2       False  2       False
 <<U1>   <int64> <bool> <int64> <bool>
-
 ```
 
 ## Consistent Interfaces for More Maintainable Code[#](#consistent-interfaces-for-more-maintainable-code "Link to this heading")

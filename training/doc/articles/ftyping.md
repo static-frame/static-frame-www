@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
   + Type-Hinting DataFrames for Static Analysis and Runtime Validation
   + [Faster DataFrame Serialization](serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
 * Type-Hinting DataFrames for Static Analysis and Runtime Validation
 * [Faster DataFrame Serialization](serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2525,7 +2529,6 @@ Since the advent of type hints in Python 3.5, statically typing a DataFrame has 
 
 ```
 def process(f: DataFrame) -> Series: ...
-
 ```
 
 This is inadequate, as it ignores the types contained within the container. A DataFrame might have string column labels and three columns of integer, string, and floating-point values; these characteristics define the type. A function argument with such type hints provides developers, static analyzers, and runtime checkers with all the information needed to understand the expectations of the interface. [StaticFrame](https://github.com/static-frame/static-frame) 2 now permits this:
@@ -2541,7 +2544,6 @@ def process(f: Frame[   # type of the container
         np.str_,        # type of the second column
         np.float64,     # type of the third column
         ]) -> TSeriesAny: ...
-
 ```
 
 All core StaticFrame containers now support generic specifications. While statically checkable, a new decorator, `@CallGuard.check`, permits runtime validation of these type hints on function interfaces. Further, using `Annotated` generics, the new `Require` class defines a family of powerful runtime validators, permitting per-column or per-row data checks. Finally, each container exposes a new `via_type_clinic` interface to derive and validate type hints. Together, these tools offer a cohesive approach to type-hinting and validating DataFrames.
@@ -2581,7 +2583,6 @@ def process(f: Frame[
                         np.float64,     # type of the values
                         ],
                 ]: ...
-
 ```
 
 This function processes a signal table from an [Open Source Asset Pricing](https://www.openassetpricing.com) (OSAP) dataset (Firm Level Characteristics / Individual / Predictors). Each table has three columns: security identifier (labeled “permno”), year and month (labeled “yyyymm”), and the signal (with a name specific to the signal).
@@ -2606,7 +2607,6 @@ def process(f: Frame[
                         IndexYearMonth], # type of index depth 1
                 np.float64,              # type of the values
                 ]: ...
-
 ```
 
 Rich type hints provide a self-documenting interface that makes functionality explicit. Even better, these type hints can be used for static analysis with Pyright (now) and Mypy (pending full `TypeVarTuple` support). For example, calling this function with a `Frame` of two columns of `np.float64` will fail a static analysis type check or deliver a warning in an editor.
@@ -2632,7 +2632,6 @@ def process(f: Frame[
                 IndexHierarchy[Index[np.int_], IndexYearMonth],
                 np.float64,
                 ]: ...
-
 ```
 
 Now decorated with `@CallGuard.check`, if the function above is called with an unlabelled `Frame` of two columns of `np.float64`, a `ClinicError` exception will be raised, illustrating that, where three columns were expected, two were provided, and where string column labels were expected, integer labels were provided. (To issue warnings instead of raising exceptions, use the `@CallGuard.warn` decorator.)
@@ -2646,7 +2645,6 @@ In args of (f: Frame[Any, Index[str_], int64, str_, float64]) -> Series[IndexHie
 └── Frame[Any, Index[str_], int64, str_, float64]
     └── Index[str_]
         └── Expected str_, provided int64 invalid
-
 ```
 
 ## Runtime Data Validation[#](#runtime-data-validation "Link to this heading")
@@ -2682,7 +2680,6 @@ def process(f: Frame[
                 IndexHierarchy[Index[np.int_], IndexYearMonth],
                 np.float64,
                 ]: ...
-
 ```
 
 If the interface expects a small collection of OSAP signal tables, we can validate the third column with the `Require.LabelsMatch` validator. This validator can specify required labels, sets of labels (from which at least one must match), and regular expression patterns. If tables from only three files are expected (i.e., “Mom12m.csv”, “Mom6m.csv”, and “LRreversal.csv”), we can validate the labels of the third column by defining `Require.LabelsMatch` with a set:
@@ -2703,7 +2700,6 @@ def process(f: Frame[
                 IndexHierarchy[Index[np.int_], IndexYearMonth],
                 np.float64,
                 ]: ...
-
 ```
 
 Both `Require.LabelsOrder` and `Require.LabelsMatch` can associate functions with label specifiers to validate data values. If the validator is applied to column labels, a `Series` of column values will be provided to the function; if the validator is applied to index labels, a `Series` of row values will be provided to the function.
@@ -2737,7 +2733,6 @@ def process(f: Frame[
                 IndexHierarchy[Index[np.int_], IndexYearMonth],
                 np.float64,
                 ]: ...
-
 ```
 
 If a validation fails, `@CallGuard.check` will raise an exception. For example, if the above function is called with a `Frame` that has an unexpected third-column label, the following exception will be raised:
@@ -2749,7 +2744,6 @@ In args of (f: Frame[Any, Annotated[Index[str_], LabelsOrder(['permno', <lambda>
     └── Annotated[Index[str_], LabelsOrder(['permno', <lambda>], 'yyyymm', ...), LabelsMatch([{'Mom12m', 'LRreversal', 'Mom6m'}, <lambda>])]
         └── LabelsMatch([{'Mom12m', 'LRreversal', 'Mom6m'}, <lambda>])
             └── Expected label to match frozenset({'Mom12m', 'LRreversal', 'Mom6m'}), no provided match
-
 ```
 
 ## The Expressive Power of `TypeVarTuple`[#](#the-expressive-power-of-typevartuple "Link to this heading")
@@ -2761,7 +2755,6 @@ As shown above, `TypeVarTuple` permits specifying `Frame` with zero or more hete
 >>> from static_frame import Frame, Index
 >>> f1: sf.Frame[Any, Any, np.float64, np.float64]
 >>> f2: sf.Frame[Any, Any, np.bool_, np.float64, np.int8, np.int8, np.str_, np.datetime64]
-
 ```
 
 While this accommodates diverse DataFrames, type-hinting wide DataFrames, such as those with hundreds of columns, would be unwieldy. Python 3.11 introduces a new syntax to provide a variable range of types in `TypeVarTuple` generics: star expressions of `tuple` generic aliases. For example, to type-hint a `Frame` with a date index, string column labels, and any configuration of columnar types, we can star-unpack a `tuple` of zero or more `All`:
@@ -2770,7 +2763,6 @@ While this accommodates diverse DataFrames, type-hinting wide DataFrames, such a
 >>> from typing import Any
 >>> from static_frame import Frame, Index
 >>> f: sf.Frame[Index[np.datetime64], Index[np.str_], *tuple[All, ...]]
-
 ```
 
 The `tuple` star expression can go anywhere in a list of types, but there can be only one. For example, the type hint below defines a `Frame` that must start with Boolean and string columns but has a flexible specification for any number of subsequent `np.float64` columns.
@@ -2779,7 +2771,6 @@ The `tuple` star expression can go anywhere in a list of types, but there can be
 >>> from typing import Any
 >>> from static_frame import Frame
 >>> f: sf.Frame[Any, Any, np.bool_, np.str_, *tuple[np.float64, ...]]
-
 ```
 
 ## Utilities for Type Hinting[#](#utilities-for-type-hinting "Link to this heading")
@@ -2795,7 +2786,6 @@ First, utilities are provided to translate a container, such as a complete `Fram
 Frame[Index[int64], Index[str_], int64, str_, float64]
 >>> f.via_type_clinic.to_hint()
 static_frame.core.frame.Frame[static_frame.core.index.Index[numpy.int64], static_frame.core.index.Index[numpy.str_], numpy.int64, numpy.str_, numpy.float64]
-
 ```
 
 Second, utilities are provided for runtime-type-hint testing. The `via_type_clinic.check()` function permits validating the container against a provided type hint.
@@ -2806,14 +2796,12 @@ ClinicError:
 In Frame[Index[str_], Index[Any], Unpack[Tuple[Any, ...]]]
 └── Index[str_]
     └── Expected str_, provided int64 invalid
-
 ```
 
 To support gradual typing, StaticFrame defines several generic aliases configured with `Any` for every component type. For example, `TFrameAny` can be used for any `Frame`, and `TSeriesAny` for any `Series`. As expected, `TFrameAny` will validate the `Frame` created above.
 
 ```
 >>> f.via_type_clinic.check(sf.TFrameAny)
-
 ```
 
 ## Conclusion[#](#conclusion "Link to this heading")

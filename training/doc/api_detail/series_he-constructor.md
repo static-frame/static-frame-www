@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2542,7 +2546,6 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     b          2
     c          8
     <<U1>      <int64>
-
     ```
 
 *classmethod* SeriesHE.from\_concat(*containers*, */*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*)[#](#static_frame.SeriesHE.from_concat "Link to this definition")
@@ -2584,7 +2587,6 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     e          3
     f          12
     <<U1>      <int64>
-
     ```
 
 *classmethod* SeriesHE.from\_concat\_items(*items*, */*, *\**, *name=None*, *index\_constructor=None*)[#](#static_frame.SeriesHE.from_concat_items "Link to this definition")
@@ -2623,7 +2625,6 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     y                e     3
     y                f     12
     <<U1>            <<U1> <int64>
-
     ```
 
 *classmethod* SeriesHE.from\_delimited(*delimited*, */*, *\**, *delimiter*, *index=None*, *dtype=None*, *name=None*, *index\_constructor=None*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *own\_index=False*)[#](#static_frame.SeriesHE.from_delimited "Link to this definition")
@@ -2648,7 +2649,6 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     1          1517-04
     2          1620-12
     <int64>    <datetime64[M]>
-
     ```
 
 *classmethod* SeriesHE.from\_dict(*mapping*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[#](#static_frame.SeriesHE.from_dict "Link to this definition")
@@ -2669,7 +2669,6 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     b          2
     c          8
     <<U1>      <int64>
-
     ```
 
 *classmethod* SeriesHE.from\_element(*element*, */*, *\**, *index*, *dtype=None*, *name=None*, *index\_constructor=None*, *own\_index=False*)[#](#static_frame.SeriesHE.from_element "Link to this definition")
@@ -2686,7 +2685,6 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     b             -1
     c             -1
     <<U1>         <int64>
-
     ```
 
 *classmethod* SeriesHE.from\_items(*pairs*, */*, *\**, *dtype=None*, *name=None*, *index\_constructor=None*)[#](#static_frame.SeriesHE.from_items "Link to this definition")
@@ -2709,7 +2707,6 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     b             2
     c             8
     <<U1>         <int64>
-
     ```
 
 *classmethod* SeriesHE.from\_overlay(*containers*, */*, *\**, *index=None*, *union=True*, *name=None*, *func=<function isna\_array>*, *fill\_value=<object object>*)[#](#static_frame.SeriesHE.from_overlay "Link to this definition")
@@ -2749,7 +2746,6 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     c          8
     d          19
     <<U1>      <object>
-
     ```
 
 *classmethod* SeriesHE.from\_pandas(*value*, */*, *\**, *index=None*, *index\_constructor=None*, *name=<object object>*, *own\_data=False*)[#](#static_frame.SeriesHE.from_pandas "Link to this definition")
@@ -2774,7 +2770,6 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     b          2
     c          8
     <object>   <int64>
-
     ```
 
 [SeriesHE](series_he.md#api-detail-serieshe): [Constructor](#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | [Accessor Mapping](series_he-accessor_mapping.md#api-detail-serieshe-accessor-mapping)

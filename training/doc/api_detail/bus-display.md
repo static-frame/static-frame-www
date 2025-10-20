@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2574,7 +2578,6 @@ Bus.interface[#](#Bus.interface "Link to this definition")
     via_type_clinic.__call__(hint, /,... Bus      Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           Bus      Accessor Type Clinic Return a compact ...
     <<U124>                              <<U3>    <<U20>               <<U83>
-
     ```
 
 Bus.\_\_repr\_\_()[#](#static_frame.Bus.__repr__ "Link to this definition")
@@ -2588,7 +2591,6 @@ Bus.\_\_repr\_\_()[#](#static_frame.Bus.__repr__ "Link to this definition")
     x        Frame
     y        Frame
     <<U1>    <object>
-
     ```
 
 Bus.\_\_str\_\_()[#](#static_frame.Bus.__str__ "Link to this definition")
@@ -2602,7 +2604,6 @@ Bus.\_\_str\_\_()[#](#static_frame.Bus.__str__ "Link to this definition")
     x        Frame
     y        Frame
     <<U1>    <object>
-
     ```
 
 Bus.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.display)[#](#static_frame.Bus.display "Link to this definition")
@@ -2622,7 +2623,6 @@ Bus.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_module
     >>> b.display(sf.DisplayConfig(type_show=False))
     x Frame
     y Frame
-
     ```
 
 Bus.display\_tall(*config=None*, */*)[#](#static_frame.Bus.display_tall "Link to this definition")
@@ -2639,7 +2639,6 @@ Bus.display\_tall(*config=None*, */*)[#](#static_frame.Bus.display_tall "Link to
     x        Frame
     y        Frame
     <<U1>    <object>
-
     ```
 
 Bus.display\_wide(*config=None*, */*)[#](#static_frame.Bus.display_wide "Link to this definition")
@@ -2656,7 +2655,6 @@ Bus.display\_wide(*config=None*, */*)[#](#static_frame.Bus.display_wide "Link to
     x        Frame
     y        Frame
     <<U1>    <object>
-
     ```
 
 [Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)

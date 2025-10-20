@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ IndexMicrosecond.STATIC *= True*[#](#static_frame.IndexMicrosecond.STATIC "Link 
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.STATIC
     True
-
     ```
 
 IndexMicrosecond.depth *= 1*[#](#static_frame.IndexMicrosecond.depth "Link to this definition")
@@ -2536,7 +2539,6 @@ IndexMicrosecond.depth *= 1*[#](#static_frame.IndexMicrosecond.depth "Link to th
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.depth
     1
-
     ```
 
 IndexMicrosecond.dtype[#](#static_frame.IndexMicrosecond.dtype "Link to this definition")
@@ -2549,7 +2551,6 @@ IndexMicrosecond.dtype[#](#static_frame.IndexMicrosecond.dtype "Link to this def
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.dtype
     datetime64[us]
-
     ```
 
 IndexMicrosecond.index\_types[#](#static_frame.IndexMicrosecond.index_types "Link to this definition")
@@ -2565,7 +2566,6 @@ IndexMicrosecond.index\_types[#](#static_frame.IndexMicrosecond.index_types "Lin
     <Index>
     None     <IndexMicrosecond>
     <object> <object>
-
     ```
 
 IndexMicrosecond.memory[#](#static_frame.IndexMicrosecond.memory "Link to this definition")
@@ -2587,8 +2587,7 @@ IndexMicrosecond.memory[#](#static_frame.IndexMicrosecond.memory "Link to this d
     Map       472 B     472 B     472 B     472  B     472 B     472 B
     Labels    136 B     152 B     24  B     136  B     152 B     24  B
     Positions 112 B     128 B     0   B     8.22 KB    152 B     24  B
-    Total     844 B     876 B     620 B     8.93 KB    900 B     644 B
-
+    Total     900 B     932 B     676 B     8.99 KB    956 B     700 B
     ```
 
 IndexMicrosecond.mloc[#](#static_frame.IndexMicrosecond.mloc "Link to this definition")
@@ -2603,7 +2602,6 @@ IndexMicrosecond.name[#](#static_frame.IndexMicrosecond.name "Link to this defin
     ```
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.name
-
     ```
 
 IndexMicrosecond.names[#](#static_frame.IndexMicrosecond.names "Link to this definition")
@@ -2613,7 +2611,6 @@ IndexMicrosecond.names[#](#static_frame.IndexMicrosecond.names "Link to this def
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.names
     ('__index0__',)
-
     ```
 
 IndexMicrosecond.nbytes[#](#static_frame.IndexMicrosecond.nbytes "Link to this definition")
@@ -2626,7 +2623,6 @@ IndexMicrosecond.nbytes[#](#static_frame.IndexMicrosecond.nbytes "Link to this d
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.nbytes
     24
-
     ```
 
 IndexMicrosecond.ndim[#](#static_frame.IndexMicrosecond.ndim "Link to this definition")
@@ -2639,7 +2635,6 @@ IndexMicrosecond.ndim[#](#static_frame.IndexMicrosecond.ndim "Link to this defin
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.ndim
     1
-
     ```
 
 IndexMicrosecond.positions[#](#static_frame.IndexMicrosecond.positions "Link to this definition")
@@ -2649,7 +2644,6 @@ IndexMicrosecond.positions[#](#static_frame.IndexMicrosecond.positions "Link to 
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.positions
     [0 1 2]
-
     ```
 
 IndexMicrosecond.shape[#](#static_frame.IndexMicrosecond.shape "Link to this definition")
@@ -2662,7 +2656,6 @@ IndexMicrosecond.shape[#](#static_frame.IndexMicrosecond.shape "Link to this def
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.shape
     (3,)
-
     ```
 
 IndexMicrosecond.size[#](#static_frame.IndexMicrosecond.size "Link to this definition")
@@ -2675,7 +2668,6 @@ IndexMicrosecond.size[#](#static_frame.IndexMicrosecond.size "Link to this defin
     >>> ix = sf.IndexMicrosecond(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.size
     3
-
     ```
 
 [IndexMicrosecond](index_microsecond.md#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter) | [Attribute](#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-detail-indexmicrosecond-accessor-type-clinic)

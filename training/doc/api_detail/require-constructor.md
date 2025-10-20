@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2553,7 +2557,6 @@ Require.Apply(*func*, */*)[#](#Require.Apply "Link to this definition")
     <int64>
     >>> func2(ix2)
     ClinicError('\nIn args of (ix: Annotated[Index[int64], Apply(<lambda>)]) -> Any\n└── In arg ix\n    └── Annotated[Index[int64], Apply(<lambda>)]\n        └── Apply(<lambda>)\n            └── Index failed validation with <lambda>')
-
     ```
 
 Require.LabelsMatch(*\*labels*)[#](#Require.LabelsMatch "Link to this definition")
@@ -2589,7 +2592,6 @@ Require.LabelsMatch(*\*labels*)[#](#Require.LabelsMatch "Link to this definition
     <object>
     >>> func2(ix2)
     ClinicError("\nIn args of (ix: Annotated[Index[object_], LabelsMatch(True, None, {1024, 2048}, re.compile('^A'))]) -> Any\n└── In arg ix\n    └── Annotated[Index[object_], LabelsMatch(True, None, {1024, 2048}, re.compile('^A'))]\n        └── LabelsMatch(True, None, {1024, 2048}, re.compile('^A'))\n            └── Expected label to match re.compile('^A'), no provided match")
-
     ```
 
 Require.LabelsOrder(*\*labels*)[#](#Require.LabelsOrder "Link to this definition")
@@ -2622,7 +2624,6 @@ Require.LabelsOrder(*\*labels*)[#](#Require.LabelsOrder "Link to this definition
     <int64>
     >>> func2(ix2)
     ClinicError('\nIn args of (ix: Annotated[Index[int64], LabelsOrder(1024, ..., 4096)]) -> Any\n└── In arg ix\n    └── Annotated[Index[int64], LabelsOrder(1024, ..., 4096)]\n        └── LabelsOrder(1024, ..., 4096)\n            └── Expected 1024, provided np.int64(0)')
-
     ```
 
 Require.Len(*len*, */*)[#](#Require.Len "Link to this definition")
@@ -2656,7 +2657,6 @@ Require.Len(*len*, */*)[#](#Require.Len "Link to this definition")
     <int64>
     >>> func2(ix2)
     ClinicError('\nIn args of (ix: Annotated[Index[int64], Len(3)]) -> Any\n└── In arg ix\n    └── Annotated[Index[int64], Len(3)]\n        └── Len(3)\n            └── Expected length 3, provided length 4')
-
     ```
 
 Require.Name(*name*, */*)[#](#Require.Name "Link to this definition")
@@ -2690,7 +2690,6 @@ Require.Name(*name*, */*)[#](#Require.Name "Link to this definition")
     <int64>
     >>> func2(ix2)
     ClinicError("\nIn args of (ix: Annotated[Index[int64], Name(y)]) -> Any\n└── In arg ix\n    └── Annotated[Index[int64], Name(y)]\n        └── Name(y)\n            └── Expected name 'y', provided name None")
-
     ```
 
 Require.Shape(*\*shape*)[#](#Require.Shape "Link to this definition")
@@ -2726,7 +2725,6 @@ Require.Shape(*\*shape*)[#](#Require.Shape "Link to this definition")
     <<U1>      <int64> <int64>
     >>> func2(f2)
     ClinicError('\nIn args of (f: Annotated[Frame[Any, Any, Unpack[Tuple[Any, ...]]], Shape((3, 2))]) -> Any\n└── In arg f\n    └── Annotated[Frame[Any, Any, Unpack[Tuple[Any, ...]]], Shape((3, 2))]\n        └── Shape((3, 2))\n            └── Expected shape ((3, 2)), provided shape (2, 2)')
-
     ```
 
 [Require](require.md#api-detail-require): [Constructor](#api-detail-require-constructor)

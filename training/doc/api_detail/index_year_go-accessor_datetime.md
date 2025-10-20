@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2541,7 +2545,6 @@ IndexYearGO.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
     <datetime64[Y]>
     >>> ix.via_dt(fill_value=-1).year
     [1620   -1 1619]
-
     ```
 
 IndexYearGO.via\_dt.year
@@ -2561,7 +2564,6 @@ IndexYearGO.via\_dt.year
     <datetime64[Y]>
     >>> ix.via_dt.year
     [1517 1520 1518]
-
     ```
 
 IndexYearGO.via\_dt.year\_month
@@ -2581,7 +2583,6 @@ IndexYearGO.via\_dt.year\_month
     <datetime64[Y]>
     >>> ix.via_dt.year_month
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.year\_quarter
@@ -2601,7 +2602,6 @@ IndexYearGO.via\_dt.year\_quarter
     <datetime64[Y]>
     >>> ix.via_dt.year_quarter
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.month
@@ -2621,7 +2621,6 @@ IndexYearGO.via\_dt.month
     <datetime64[Y]>
     >>> ix.via_dt.month
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.day
@@ -2641,7 +2640,6 @@ IndexYearGO.via\_dt.day
     <datetime64[Y]>
     >>> ix.via_dt.day
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.hour
@@ -2661,7 +2659,6 @@ IndexYearGO.via\_dt.hour
     <datetime64[Y]>
     >>> ix.via_dt.hour
     [0 0 0]
-
     ```
 
 IndexYearGO.via\_dt.minute
@@ -2681,7 +2678,6 @@ IndexYearGO.via\_dt.minute
     <datetime64[Y]>
     >>> ix.via_dt.minute
     [0 0 0]
-
     ```
 
 IndexYearGO.via\_dt.second
@@ -2701,7 +2697,6 @@ IndexYearGO.via\_dt.second
     <datetime64[Y]>
     >>> ix.via_dt.second
     [0 0 0]
-
     ```
 
 IndexYearGO.via\_dt.weekday
@@ -2721,7 +2716,6 @@ IndexYearGO.via\_dt.weekday
     <datetime64[Y]>
     >>> ix.via_dt.weekday()
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.quarter
@@ -2741,7 +2735,6 @@ IndexYearGO.via\_dt.quarter
     <datetime64[Y]>
     >>> ix.via_dt.quarter()
     [1 1 1]
-
     ```
 
 IndexYearGO.via\_dt.is\_month\_end
@@ -2761,7 +2754,6 @@ IndexYearGO.via\_dt.is\_month\_end
     <datetime64[Y]>
     >>> ix.via_dt.is_month_end()
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.is\_month\_start
@@ -2781,7 +2773,6 @@ IndexYearGO.via\_dt.is\_month\_start
     <datetime64[Y]>
     >>> ix.via_dt.is_month_start()
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.is\_year\_end
@@ -2801,7 +2792,6 @@ IndexYearGO.via\_dt.is\_year\_end
     <datetime64[Y]>
     >>> ix.via_dt.is_year_end()
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.is\_year\_start
@@ -2821,7 +2811,6 @@ IndexYearGO.via\_dt.is\_year\_start
     <datetime64[Y]>
     >>> ix.via_dt.is_year_start()
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.is\_quarter\_end
@@ -2841,7 +2830,6 @@ IndexYearGO.via\_dt.is\_quarter\_end
     <datetime64[Y]>
     >>> ix.via_dt.is_quarter_end()
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.is\_quarter\_start
@@ -2861,7 +2849,6 @@ IndexYearGO.via\_dt.is\_quarter\_start
     <datetime64[Y]>
     >>> ix.via_dt.is_quarter_start()
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.timetuple
@@ -2881,7 +2868,6 @@ IndexYearGO.via\_dt.timetuple
     <datetime64[Y]>
     >>> ix.via_dt.timetuple()
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.isoformat(*\**, *sep*, *timespec*)
@@ -2901,7 +2887,6 @@ IndexYearGO.via\_dt.isoformat(*\**, *sep*, *timespec*)
     <datetime64[Y]>
     >>> ix.via_dt.isoformat()
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.fromisoformat
@@ -2921,7 +2906,6 @@ IndexYearGO.via\_dt.fromisoformat
     <datetime64[Y]>
     >>> ix.via_dt.fromisoformat()
     RuntimeError('invalid dtype (datetime64[Y]) for operation on string types')
-
     ```
 
 IndexYearGO.via\_dt.strftime(*format*, */*)
@@ -2941,7 +2925,6 @@ IndexYearGO.via\_dt.strftime(*format*, */*)
     <datetime64[Y]>
     >>> ix.via_dt.strftime("%A | %B")
     RuntimeError('invalid dtype (datetime64[Y]) for date operation')
-
     ```
 
 IndexYearGO.via\_dt.strptime(*format*, */*)
@@ -2961,7 +2944,6 @@ IndexYearGO.via\_dt.strptime(*format*, */*)
     <datetime64[Y]>
     >>> ix.via_dt.strptime("%m/%d/%Y")
     RuntimeError('invalid dtype (datetime64[Y]) for operation on string types')
-
     ```
 
 IndexYearGO.via\_dt.strpdate(*format*, */*)
@@ -2981,7 +2963,6 @@ IndexYearGO.via\_dt.strpdate(*format*, */*)
     <datetime64[Y]>
     >>> ix.via_dt.strpdate("%m/%d/%Y")
     RuntimeError('invalid dtype (datetime64[Y]) for operation on string types')
-
     ```
 
 [IndexYearGO](index_year_go.md#api-detail-indexyeargo): [Constructor](index_year_go-constructor.md#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-detail-indexyeargo-attribute) | [Method](index_year_go-method.md#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.md#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-detail-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-detail-indexyeargo-accessor-type-clinic)

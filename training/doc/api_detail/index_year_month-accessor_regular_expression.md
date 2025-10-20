@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2543,7 +2547,6 @@ IndexYearMonth.via\_re(*pattern*, *flags*, */).search(pos*, *endpos*)
     <datetime64[M]>
     >>> ix.via_re('[X123]').search()
     [ True  True  True]
-
     ```
 
 IndexYearMonth.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
@@ -2566,7 +2569,6 @@ IndexYearMonth.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
     <datetime64[M]>
     >>> ix.via_re('[X123]').match()
     [ True  True  True]
-
     ```
 
 IndexYearMonth.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
@@ -2589,7 +2591,6 @@ IndexYearMonth.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
     <datetime64[M]>
     >>> ix.via_re('123').fullmatch()
     [False False False]
-
     ```
 
 IndexYearMonth.via\_re(*pattern*, *flags*, */).split(maxsplit*)
@@ -2611,7 +2612,6 @@ IndexYearMonth.via\_re(*pattern*, *flags*, */).split(maxsplit*)
     <datetime64[M]>
     >>> ix.via_re('[X123]').split()
     [('', '5', '7-04') ('', '5', '7-', '', '') ('', '5', '7-06')]
-
     ```
 
 IndexYearMonth.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
@@ -2634,7 +2634,6 @@ IndexYearMonth.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
     <datetime64[M]>
     >>> ix.via_re('[X123]').findall()
     [('1', '1') ('1', '1', '1', '2') ('1', '1')]
-
     ```
 
 IndexYearMonth.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
@@ -2657,7 +2656,6 @@ IndexYearMonth.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
     <datetime64[M]>
     >>> ix.via_re('[X123]').sub('==')
     ['==5==7-04' '==5==7-====' '==5==7-06']
-
     ```
 
 IndexYearMonth.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
@@ -2680,7 +2678,6 @@ IndexYearMonth.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
     <datetime64[M]>
     >>> ix.via_re('[X123]').subn('==', 1)
     [('==517-04', 1) ('==517-12', 1) ('==517-06', 1)]
-
     ```
 
 [IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-detail-indexyearmonth-accessor-type-clinic)

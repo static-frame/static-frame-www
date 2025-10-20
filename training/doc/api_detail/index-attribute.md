@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ Index.STATIC *= True*[#](#static_frame.Index.STATIC "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.STATIC
     True
-
     ```
 
 Index.depth *= 1*[#](#static_frame.Index.depth "Link to this definition")
@@ -2536,7 +2539,6 @@ Index.depth *= 1*[#](#static_frame.Index.depth "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.depth
     1
-
     ```
 
 Index.dtype[#](#static_frame.Index.dtype "Link to this definition")
@@ -2549,7 +2551,6 @@ Index.dtype[#](#static_frame.Index.dtype "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.dtype
     <U1
-
     ```
 
 Index.index\_types[#](#static_frame.Index.index_types "Link to this definition")
@@ -2565,7 +2566,6 @@ Index.index\_types[#](#static_frame.Index.index_types "Link to this definition")
     <Index>
     x        <Index>
     <<U1>    <object>
-
     ```
 
 Index.memory[#](#static_frame.Index.memory "Link to this definition")
@@ -2582,13 +2582,12 @@ Index.memory[#](#static_frame.Index.memory "Link to this definition")
     ```
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.memory
-              L   Lu    LM  LMu   LMD LMDu  R    Ru    RM   RMu   RMD RMDu
-    Name      42  B     42  B     42  B     42   B     42   B     42  B
-    Map       520 B     520 B     520 B     520  B     520  B     520 B
-    Labels    132 B     148 B     20  B     132  B     148  B     20  B
-    Positions 112 B     128 B     0   B     8.22 KB    168  B     40  B
-    Total     930 B     962 B     706 B     9.02 KB    1002 B     746 B
-
+              L   Lu    LM   LMu   LMD LMDu  R    Ru    RM   RMu   RMD RMDu
+    Name      42  B     42   B     42  B     42   B     42   B     42  B
+    Map       520 B     520  B     520 B     520  B     520  B     520 B
+    Labels    132 B     148  B     20  B     132  B     148  B     20  B
+    Positions 112 B     128  B     0   B     8.22 KB    168  B     40  B
+    Total     986 B     1018 B     762 B     9.07 KB    1.03 KB    802 B
     ```
 
 Index.mloc[#](#static_frame.Index.mloc "Link to this definition")
@@ -2604,7 +2603,6 @@ Index.name[#](#static_frame.Index.name "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.name
     x
-
     ```
 
 Index.names[#](#static_frame.Index.names "Link to this definition")
@@ -2614,7 +2612,6 @@ Index.names[#](#static_frame.Index.names "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.names
     ('x',)
-
     ```
 
 Index.nbytes[#](#static_frame.Index.nbytes "Link to this definition")
@@ -2627,7 +2624,6 @@ Index.nbytes[#](#static_frame.Index.nbytes "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.nbytes
     20
-
     ```
 
 Index.ndim[#](#static_frame.Index.ndim "Link to this definition")
@@ -2640,7 +2636,6 @@ Index.ndim[#](#static_frame.Index.ndim "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.ndim
     1
-
     ```
 
 Index.positions[#](#static_frame.Index.positions "Link to this definition")
@@ -2650,7 +2645,6 @@ Index.positions[#](#static_frame.Index.positions "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.positions
     [0 1 2 3 4]
-
     ```
 
 Index.shape[#](#static_frame.Index.shape "Link to this definition")
@@ -2663,7 +2657,6 @@ Index.shape[#](#static_frame.Index.shape "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.shape
     (5,)
-
     ```
 
 Index.size[#](#static_frame.Index.size "Link to this definition")
@@ -2676,7 +2669,6 @@ Index.size[#](#static_frame.Index.size "Link to this definition")
     >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.size
     5
-
     ```
 
 [Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](#api-detail-index-attribute) | [Method](index-method.md#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)

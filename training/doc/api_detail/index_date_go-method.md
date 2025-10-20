@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexDateGO: Method](../api_overview/index_date_go-method.md#api-overview-indexdatego-method)
 
-IndexDateGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexDateGO.__array__ "Link to this definition")
+IndexDateGO.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexDateGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2536,7 +2540,6 @@ IndexDateGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexDateGO.__array__ "
     <datetime64[D]>
     >>> ix.__array__()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDateGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexDateGO.__array_ufunc__ "Link to this definition")
@@ -2552,7 +2555,6 @@ IndexDateGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#
     <datetime64[D]>
     >>> np.array((0, 1, 0)) * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('int64'), dtype('<M8[D]')))
-
     ```
 
 IndexDateGO.\_\_bool\_\_()[#](#static_frame.IndexDateGO.__bool__ "Link to this definition")
@@ -2568,7 +2570,6 @@ IndexDateGO.\_\_bool\_\_()[#](#static_frame.IndexDateGO.__bool__ "Link to this d
     <datetime64[D]>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexDateGO.\_\_copy\_\_()[#](#static_frame.IndexDateGO.__copy__ "Link to this definition")
@@ -2589,7 +2590,6 @@ IndexDateGO.\_\_copy\_\_()[#](#static_frame.IndexDateGO.__copy__ "Link to this d
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexDateGO.__deepcopy__ "Link to this definition")
@@ -2608,7 +2608,6 @@ IndexDateGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexDateGO.__deepcopy__ "
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.\_\_len\_\_()[#](#static_frame.IndexDateGO.__len__ "Link to this definition")
@@ -2622,7 +2621,6 @@ IndexDateGO.\_\_len\_\_()[#](#static_frame.IndexDateGO.__len__ "Link to this def
     <datetime64[D]>
     >>> len(ix)
     3
-
     ```
 
 IndexDateGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexDateGO.all "Link to this definition")
@@ -2642,7 +2640,6 @@ IndexDateGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[D]>
     >>> ix.all()
     True
-
     ```
 
 IndexDateGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexDateGO.any "Link to this definition")
@@ -2662,7 +2659,6 @@ IndexDateGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[D]>
     >>> ix.any()
     True
-
     ```
 
 IndexDateGO.append(*value*, */*)[#](#static_frame.IndexDateGO.append "Link to this definition")
@@ -2684,7 +2680,6 @@ IndexDateGO.append(*value*, */*)[#](#static_frame.IndexDateGO.append "Link to th
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.astype(*dtype*, */*)[#](#static_frame.IndexDateGO.astype "Link to this definition")
@@ -2707,7 +2702,6 @@ IndexDateGO.astype(*dtype*, */*)[#](#static_frame.IndexDateGO.astype "Link to th
     1517-12-01
     1517-06-30
     <<U28>
-
     ```
 
 IndexDateGO.copy()[#](#static_frame.IndexDateGO.copy "Link to this definition")
@@ -2727,7 +2721,6 @@ IndexDateGO.copy()[#](#static_frame.IndexDateGO.copy "Link to this definition")
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexDateGO.cumprod "Link to this definition")
@@ -2747,7 +2740,6 @@ IndexDateGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexDateGO.
     <datetime64[D]>
     >>> ix.cumprod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDateGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexDateGO.cumsum "Link to this definition")
@@ -2767,7 +2759,6 @@ IndexDateGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexDateGO.c
     <datetime64[D]>
     >>> ix.cumsum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDateGO.difference(*\*others*)[#](#static_frame.IndexDateGO.difference "Link to this definition")
@@ -2781,12 +2772,12 @@ IndexDateGO.difference(*\*others*)[#](#static_frame.IndexDateGO.difference "Link
     1517-12-01
     1517-06-30
     <datetime64[D]>
-    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexDateGO>
     2022-04-01
     2021-12-31
-    2022-06-30
+    2018-06-30
     <datetime64[D]>
     >>> ix1.difference(ix2)
     <IndexDateGO>
@@ -2794,7 +2785,6 @@ IndexDateGO.difference(*\*others*)[#](#static_frame.IndexDateGO.difference "Link
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.dropfalsy()[#](#static_frame.IndexDateGO.dropfalsy "Link to this definition")
@@ -2813,7 +2803,6 @@ IndexDateGO.dropfalsy()[#](#static_frame.IndexDateGO.dropfalsy "Link to this def
     1620-09-16
     1620-11-21
     <datetime64[D]>
-
     ```
 
 IndexDateGO.dropna()[#](#static_frame.IndexDateGO.dropna "Link to this definition")
@@ -2832,7 +2821,6 @@ IndexDateGO.dropna()[#](#static_frame.IndexDateGO.dropna "Link to this definitio
     1620-09-16
     1620-11-21
     <datetime64[D]>
-
     ```
 
 IndexDateGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.IndexDateGO.equals "Link to this definition")
@@ -2852,16 +2840,15 @@ IndexDateGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fa
     1517-12-01
     1517-06-30
     <datetime64[D]>
-    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexDateGO>
     2022-04-01
     2021-12-31
-    2022-06-30
+    2018-06-30
     <datetime64[D]>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 IndexDateGO.extend(*values*, */*)[#](#static_frame.IndexDateGO.extend "Link to this definition")
@@ -2876,12 +2863,12 @@ IndexDateGO.extend(*values*, */*)[#](#static_frame.IndexDateGO.extend "Link to t
     1517-12-01
     1517-06-30
     <datetime64[D]>
-    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexDateGO>
     2022-04-01
     2021-12-31
-    2022-06-30
+    2018-06-30
     <datetime64[D]>
     >>> ix1.extend(ix2)
     >>> ix1
@@ -2891,9 +2878,8 @@ IndexDateGO.extend(*values*, */*)[#](#static_frame.IndexDateGO.extend "Link to t
     1517-06-30
     2022-04-01
     2021-12-31
-    2022-06-30
+    2018-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.fillfalsy(*value*, */*)[#](#static_frame.IndexDateGO.fillfalsy "Link to this definition")
@@ -2912,7 +2898,6 @@ IndexDateGO.fillfalsy(*value*, */*)[#](#static_frame.IndexDateGO.fillfalsy "Link
     <datetime64[D]>
     >>> ix.fillfalsy('A')
     ValueError('Error parsing datetime string "A" at position 0')
-
     ```
 
 IndexDateGO.fillna(*value*, */*)[#](#static_frame.IndexDateGO.fillna "Link to this definition")
@@ -2935,7 +2920,6 @@ IndexDateGO.fillna(*value*, */*)[#](#static_frame.IndexDateGO.fillna "Link to th
     1970-01-01
     1620-11-21
     <datetime64[D]>
-
     ```
 
 IndexDateGO.head(*count=5*, */*)[#](#static_frame.IndexDateGO.head "Link to this definition")
@@ -2957,7 +2941,6 @@ IndexDateGO.head(*count=5*, */*)[#](#static_frame.IndexDateGO.head "Link to this
     1517-04-01
     1517-12-01
     <datetime64[D]>
-
     ```
 
 IndexDateGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexDateGO.iloc_searchsorted "Link to this definition")
@@ -2977,7 +2960,6 @@ IndexDateGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#stati
     <datetime64[D]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexDateGO.intersection(*\*others*)[#](#static_frame.IndexDateGO.intersection "Link to this definition")
@@ -2991,17 +2973,35 @@ IndexDateGO.intersection(*\*others*)[#](#static_frame.IndexDateGO.intersection "
     1517-12-01
     1517-06-30
     <datetime64[D]>
-    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexDateGO>
     2022-04-01
     2021-12-31
-    2022-06-30
+    2018-06-30
     <datetime64[D]>
     >>> ix1.intersection(ix2)
     <IndexDateGO>
     <datetime64[D]>
+    ```
 
+IndexDateGO.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexDateGO.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix
+    <IndexDateGO>
+    2022-04-01
+    2021-12-31
+    2018-06-30
+    <datetime64[D]>
+    >>> assert ix.is_sorted(ascending=False)
     ```
 
 IndexDateGO.isfalsy()[#](#static_frame.IndexDateGO.isfalsy "Link to this definition")
@@ -3011,7 +3011,6 @@ IndexDateGO.isfalsy()[#](#static_frame.IndexDateGO.isfalsy "Link to this definit
     >>> ix = sf.IndexDateGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isfalsy()
     [False  True False]
-
     ```
 
 IndexDateGO.isin(*other*, */*)[#](#static_frame.IndexDateGO.isin "Link to this definition")
@@ -3027,7 +3026,6 @@ IndexDateGO.isin(*other*, */*)[#](#static_frame.IndexDateGO.isin "Link to this d
     <datetime64[D]>
     >>> ix.isin(('1517-06-30',))
     [False False False]
-
     ```
 
 IndexDateGO.isna()[#](#static_frame.IndexDateGO.isna "Link to this definition")
@@ -3037,7 +3035,6 @@ IndexDateGO.isna()[#](#static_frame.IndexDateGO.isna "Link to this definition")
     >>> ix = sf.IndexDateGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isna()
     [False  True False]
-
     ```
 
 IndexDateGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexDateGO.label_widths_at_depth "Link to this definition")
@@ -3056,7 +3053,6 @@ IndexDateGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.Ind
     <datetime64[D]>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.datetime64('1517-04-01'), 1), (np.datetime64('1517-12-01'), 1), (np.datetime64('1517-06-30'), 1))
-
     ```
 
 IndexDateGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.IndexDateGO.level_add "Link to this definition")
@@ -3081,7 +3077,6 @@ IndexDateGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static
     A                  1517-12-01
     A                  1517-06-30
     <<U1>              <datetime64[D]>
-
     ```
 
 IndexDateGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.IndexDateGO.loc_searchsorted "Link to this definition")
@@ -3102,7 +3097,6 @@ IndexDateGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_val
     <datetime64[D]>
     >>> ix.loc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexDateGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexDateGO.loc_to_iloc "Link to this definition")
@@ -3125,7 +3119,6 @@ IndexDateGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexDateGO.loc_to_iloc "
     [0 2]
     >>> ix.loc_to_iloc(slice('1517-12', None))
     slice(1, None, None)
-
     ```
 
 IndexDateGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexDateGO.max "Link to this definition")
@@ -3145,7 +3138,6 @@ IndexDateGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[D]>
     >>> ix.max()
     1517-12-01
-
     ```
 
 IndexDateGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexDateGO.mean "Link to this definition")
@@ -3165,7 +3157,6 @@ IndexDateGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Ind
     <datetime64[D]>
     >>> ix.mean()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDateGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexDateGO.median "Link to this definition")
@@ -3185,7 +3176,6 @@ IndexDateGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <datetime64[D]>
     >>> ix.median()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDateGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexDateGO.min "Link to this definition")
@@ -3205,7 +3195,6 @@ IndexDateGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[D]>
     >>> ix.min()
     1517-04-01
-
     ```
 
 IndexDateGO.notfalsy()[#](#static_frame.IndexDateGO.notfalsy "Link to this definition")
@@ -3215,7 +3204,6 @@ IndexDateGO.notfalsy()[#](#static_frame.IndexDateGO.notfalsy "Link to this defin
     >>> ix = sf.IndexDateGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notfalsy()
     [ True False  True]
-
     ```
 
 IndexDateGO.notna()[#](#static_frame.IndexDateGO.notna "Link to this definition")
@@ -3225,7 +3213,6 @@ IndexDateGO.notna()[#](#static_frame.IndexDateGO.notna "Link to this definition"
     >>> ix = sf.IndexDateGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notna()
     [ True False  True]
-
     ```
 
 IndexDateGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexDateGO.prod "Link to this definition")
@@ -3245,7 +3232,6 @@ IndexDateGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#stati
     <datetime64[D]>
     >>> ix.prod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDateGO.relabel(*mapper*, */*)[#](#static_frame.IndexDateGO.relabel "Link to this definition")
@@ -3261,7 +3247,6 @@ IndexDateGO.relabel(*mapper*, */*)[#](#static_frame.IndexDateGO.relabel "Link to
     <datetime64[D]>
     >>> ix.relabel(lambda l: l.astype('<M8[ms]').astype(object).day)
     InvalidDatetime64Initializer('Attempting to create datetime64[D] from an integer, which is generally not desired as the result will be an offset from the epoch.')
-
     ```
 
 IndexDateGO.rename(*name*, */*)[#](#static_frame.IndexDateGO.rename "Link to this definition")
@@ -3281,7 +3266,6 @@ IndexDateGO.rename(*name*, */*)[#](#static_frame.IndexDateGO.rename "Link to thi
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.roll(*shift*)[#](#static_frame.IndexDateGO.roll "Link to this definition")
@@ -3301,7 +3285,6 @@ IndexDateGO.roll(*shift*)[#](#static_frame.IndexDateGO.roll "Link to this defini
     1517-06-30
     1517-04-01
     <datetime64[D]>
-
     ```
 
 IndexDateGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexDateGO.sample "Link to this definition")
@@ -3324,7 +3307,6 @@ IndexDateGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexDateGO.sa
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexDateGO.sort "Link to this definition")
@@ -3355,7 +3337,6 @@ IndexDateGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#sta
     1517-06-30
     1517-04-01
     <datetime64[D]>
-
     ```
 
 IndexDateGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexDateGO.std "Link to this definition")
@@ -3375,7 +3356,6 @@ IndexDateGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_
     <datetime64[D]>
     >>> ix.std()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDateGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexDateGO.sum "Link to this definition")
@@ -3395,7 +3375,6 @@ IndexDateGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static
     <datetime64[D]>
     >>> ix.sum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDateGO.tail(*count=5*, */*)[#](#static_frame.IndexDateGO.tail "Link to this definition")
@@ -3417,7 +3396,6 @@ IndexDateGO.tail(*count=5*, */*)[#](#static_frame.IndexDateGO.tail "Link to this
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.union(*\*others*)[#](#static_frame.IndexDateGO.union "Link to this definition")
@@ -3431,23 +3409,22 @@ IndexDateGO.union(*\*others*)[#](#static_frame.IndexDateGO.union "Link to this d
     1517-12-01
     1517-06-30
     <datetime64[D]>
-    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexDateGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexDateGO>
     2022-04-01
     2021-12-31
-    2022-06-30
+    2018-06-30
     <datetime64[D]>
     >>> ix1.union(ix2)
     <IndexDateGO>
     1517-04-01
     1517-06-30
     1517-12-01
+    2018-06-30
     2021-12-31
     2022-04-01
-    2022-06-30
     <datetime64[D]>
-
     ```
 
 IndexDateGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#static_frame.IndexDateGO.unique "Link to this definition")
@@ -3470,7 +3447,6 @@ IndexDateGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#
     <datetime64[D]>
     >>> ix.unique()
     ['1620-09-16'        'NaT' '1620-11-21']
-
     ```
 
 IndexDateGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexDateGO.values_at_depth "Link to this definition")
@@ -3486,7 +3462,6 @@ IndexDateGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexDateG
     <datetime64[D]>
     >>> ix.values_at_depth(0)
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDateGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexDateGO.var "Link to this definition")
@@ -3506,7 +3481,6 @@ IndexDateGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_
     <datetime64[D]>
     >>> ix.var()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 [IndexDateGO](index_date_go.md#api-detail-indexdatego): [Constructor](index_date_go-constructor.md#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-detail-indexdatego-attribute) | [Method](#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-detail-indexdatego-display) | [Selector](index_date_go-selector.md#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-detail-indexdatego-accessor-type-clinic)
@@ -3543,6 +3517,7 @@ On this page
 * [`IndexDateGO.head()`](#static_frame.IndexDateGO.head)
 * [`IndexDateGO.iloc_searchsorted()`](#static_frame.IndexDateGO.iloc_searchsorted)
 * [`IndexDateGO.intersection()`](#static_frame.IndexDateGO.intersection)
+* [`IndexDateGO.is_sorted()`](#static_frame.IndexDateGO.is_sorted)
 * [`IndexDateGO.isfalsy()`](#static_frame.IndexDateGO.isfalsy)
 * [`IndexDateGO.isin()`](#static_frame.IndexDateGO.isin)
 * [`IndexDateGO.isna()`](#static_frame.IndexDateGO.isna)

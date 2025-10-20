@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ IndexYearMonthGO.STATIC *= False*[#](#static_frame.IndexYearMonthGO.STATIC "Link
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.STATIC
     False
-
     ```
 
 IndexYearMonthGO.depth *= 1*[#](#static_frame.IndexYearMonthGO.depth "Link to this definition")
@@ -2536,7 +2539,6 @@ IndexYearMonthGO.depth *= 1*[#](#static_frame.IndexYearMonthGO.depth "Link to th
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.depth
     1
-
     ```
 
 IndexYearMonthGO.dtype[#](#static_frame.IndexYearMonthGO.dtype "Link to this definition")
@@ -2549,7 +2551,6 @@ IndexYearMonthGO.dtype[#](#static_frame.IndexYearMonthGO.dtype "Link to this def
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.dtype
     datetime64[M]
-
     ```
 
 IndexYearMonthGO.index\_types[#](#static_frame.IndexYearMonthGO.index_types "Link to this definition")
@@ -2565,7 +2566,6 @@ IndexYearMonthGO.index\_types[#](#static_frame.IndexYearMonthGO.index_types "Lin
     <Index>
     None     <IndexYearMonthGO>
     <object> <object>
-
     ```
 
 IndexYearMonthGO.memory[#](#static_frame.IndexYearMonthGO.memory "Link to this definition")
@@ -2582,13 +2582,12 @@ IndexYearMonthGO.memory[#](#static_frame.IndexYearMonthGO.memory "Link to this d
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.memory
-              L    Lu    LM  LMu   LMD LMDu  R    Ru    RM   RMu   RMD RMDu
-    Name      16   B     16  B     16  B     16   B     16   B     16  B
-    Map       472  B     472 B     472 B     472  B     472  B     472 B
-    Labels    136  B     152 B     24  B     136  B     152  B     24  B
-    Positions 112  B     128 B     0   B     8.22 KB    152  B     24  B
-    Total     1.16 KB    1.2 KB    968 B     9.27 KB    1.22 KB    992 B
-
+              L    Lu    LM   LMu   LMD LMDu  R    Ru    RM   RMu   RMD  RMDu
+    Name      16   B     16   B     16  B     16   B     16   B     16   B
+    Map       472  B     472  B     472 B     472  B     472  B     472  B
+    Labels    136  B     152  B     24  B     136  B     152  B     24   B
+    Positions 112  B     128  B     0   B     8.22 KB    152  B     24   B
+    Total     1.22 KB    1.25 KB    1.0 KB    9.33 KB    1.27 KB    1.02 KB
     ```
 
 IndexYearMonthGO.mloc[#](#static_frame.IndexYearMonthGO.mloc "Link to this definition")
@@ -2603,7 +2602,6 @@ IndexYearMonthGO.name[#](#static_frame.IndexYearMonthGO.name "Link to this defin
     ```
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.name
-
     ```
 
 IndexYearMonthGO.names[#](#static_frame.IndexYearMonthGO.names "Link to this definition")
@@ -2613,7 +2611,6 @@ IndexYearMonthGO.names[#](#static_frame.IndexYearMonthGO.names "Link to this def
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.names
     ('__index0__',)
-
     ```
 
 IndexYearMonthGO.nbytes[#](#static_frame.IndexYearMonthGO.nbytes "Link to this definition")
@@ -2626,7 +2623,6 @@ IndexYearMonthGO.nbytes[#](#static_frame.IndexYearMonthGO.nbytes "Link to this d
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.nbytes
     24
-
     ```
 
 IndexYearMonthGO.ndim[#](#static_frame.IndexYearMonthGO.ndim "Link to this definition")
@@ -2639,7 +2635,6 @@ IndexYearMonthGO.ndim[#](#static_frame.IndexYearMonthGO.ndim "Link to this defin
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.ndim
     1
-
     ```
 
 IndexYearMonthGO.positions[#](#static_frame.IndexYearMonthGO.positions "Link to this definition")
@@ -2649,7 +2644,6 @@ IndexYearMonthGO.positions[#](#static_frame.IndexYearMonthGO.positions "Link to 
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.positions
     [0 1 2]
-
     ```
 
 IndexYearMonthGO.shape[#](#static_frame.IndexYearMonthGO.shape "Link to this definition")
@@ -2662,7 +2656,6 @@ IndexYearMonthGO.shape[#](#static_frame.IndexYearMonthGO.shape "Link to this def
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.shape
     (3,)
-
     ```
 
 IndexYearMonthGO.size[#](#static_frame.IndexYearMonthGO.size "Link to this definition")
@@ -2675,7 +2668,6 @@ IndexYearMonthGO.size[#](#static_frame.IndexYearMonthGO.size "Link to this defin
     >>> ix = sf.IndexYearMonthGO(('1517-04', '1517-12', '1517-06'))
     >>> ix.size
     3
-
     ```
 
 [IndexYearMonthGO](index_year_month_go.md#api-detail-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-detail-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.md#api-detail-indexyearmonthgo-exporter) | [Attribute](#api-detail-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-detail-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-detail-indexyearmonthgo-dictionary-like) | [Display](index_year_month_go-display.md#api-detail-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.md#api-detail-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.md#api-detail-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-detail-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.md#api-detail-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-detail-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-detail-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.md#api-detail-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-detail-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.md#api-detail-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.md#api-detail-indexyearmonthgo-accessor-type-clinic)

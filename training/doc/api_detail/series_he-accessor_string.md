@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2548,7 +2552,6 @@ SeriesHE.via\_str.\_\_getitem\_\_(*key*)
     c          3
     d
     <<U1>      <<U1>
-
     ```
 
 SeriesHE.via\_str.capitalize
@@ -2576,7 +2579,6 @@ SeriesHE.via\_str.capitalize
     c          123
     d           wx
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.center(*width*, *fillchar*)
@@ -2604,7 +2606,6 @@ SeriesHE.via\_str.center(*width*, *fillchar*)
     c            123
     d             wX
     <<U1>      <<U8>
-
     ```
 
 SeriesHE.via\_str.contains(*item*)
@@ -2632,7 +2633,6 @@ SeriesHE.via\_str.contains(*item*)
     c          False
     d          True
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.count(*sub*, *start*, *end*)
@@ -2660,7 +2660,6 @@ SeriesHE.via\_str.count(*sub*, *start*, *end*)
     c          0
     d          1
     <<U1>      <int64>
-
     ```
 
 SeriesHE.via\_str.decode(*encoding*, *errors*)
@@ -2688,7 +2687,6 @@ SeriesHE.via\_str.decode(*encoding*, *errors*)
     c          123
     d           wX
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.encode(*encoding*, *errors*)
@@ -2716,7 +2714,6 @@ SeriesHE.via\_str.encode(*encoding*, *errors*)
     c          b'123'
     d          b' wX '
     <<U1>      <|S4>
-
     ```
 
 SeriesHE.via\_str.endswith(*suffix*, *start*, *end*)
@@ -2744,7 +2741,6 @@ SeriesHE.via\_str.endswith(*suffix*, *start*, *end*)
     c          False
     d          True
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.find(*sub*, *start*, *end*)
@@ -2772,7 +2768,6 @@ SeriesHE.via\_str.find(*sub*, *start*, *end*)
     c          -1
     d          2
     <<U1>      <int64>
-
     ```
 
 SeriesHE.via\_str.format(*format*)
@@ -2803,7 +2798,6 @@ SeriesHE.via\_str.format(*format*)
     c          ---123----
     d          --- wX ---
     <<U1>      <<U10>
-
     ```
 
 SeriesHE.via\_str.index(*sub*, *start*, *end*)
@@ -2825,7 +2819,6 @@ SeriesHE.via\_str.index(*sub*, *start*, *end*)
     <<U1>      <<U4>
     >>> s.via_str.index('X')
     ValueError('substring not found')
-
     ```
 
 SeriesHE.via\_str.isalnum
@@ -2853,7 +2846,6 @@ SeriesHE.via\_str.isalnum
     c          True
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.isalpha
@@ -2881,7 +2873,6 @@ SeriesHE.via\_str.isalpha
     c          False
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.isdecimal
@@ -2909,7 +2900,6 @@ SeriesHE.via\_str.isdecimal
     c          True
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.isdigit
@@ -2937,7 +2927,6 @@ SeriesHE.via\_str.isdigit
     c          True
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.islower
@@ -2965,7 +2954,6 @@ SeriesHE.via\_str.islower
     c          False
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.isnumeric
@@ -2993,7 +2981,6 @@ SeriesHE.via\_str.isnumeric
     c          True
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.isspace
@@ -3021,7 +3008,6 @@ SeriesHE.via\_str.isspace
     c          False
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.istitle
@@ -3049,7 +3035,6 @@ SeriesHE.via\_str.istitle
     c          False
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.isupper
@@ -3077,7 +3062,6 @@ SeriesHE.via\_str.isupper
     c          False
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.ljust(*width*, *fillchar*)
@@ -3105,7 +3089,6 @@ SeriesHE.via\_str.ljust(*width*, *fillchar*)
     c          123
     d           wX
     <<U1>      <<U8>
-
     ```
 
 SeriesHE.via\_str.len
@@ -3133,7 +3116,6 @@ SeriesHE.via\_str.len
     c          3
     d          4
     <<U1>      <int64>
-
     ```
 
 SeriesHE.via\_str.lower
@@ -3161,7 +3143,6 @@ SeriesHE.via\_str.lower
     c          123
     d           wx
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.lstrip(*chars*)
@@ -3189,7 +3170,6 @@ SeriesHE.via\_str.lstrip(*chars*)
     c          123
     d          wX
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.partition(*sep*)
@@ -3217,7 +3197,6 @@ SeriesHE.via\_str.partition(*sep*)
     c          (np.str_('123'), ...
     d          (' w', 'X', ' ')
     <<U1>      <object>
-
     ```
 
 SeriesHE.via\_str.replace(*old*, *new*, *count*)
@@ -3245,7 +3224,6 @@ SeriesHE.via\_str.replace(*old*, *new*, *count*)
     c          123
     d           w*
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.rfind(*sub*, *start*, *end*)
@@ -3273,7 +3251,6 @@ SeriesHE.via\_str.rfind(*sub*, *start*, *end*)
     c          -1
     d          2
     <<U1>      <int64>
-
     ```
 
 SeriesHE.via\_str.rindex(*sub*, *start*, *end*)
@@ -3295,7 +3272,6 @@ SeriesHE.via\_str.rindex(*sub*, *start*, *end*)
     <<U1>      <<U4>
     >>> s.via_str.rindex('X')
     ValueError('substring not found')
-
     ```
 
 SeriesHE.via\_str.rjust(*width*, *fillchar*)
@@ -3323,7 +3299,6 @@ SeriesHE.via\_str.rjust(*width*, *fillchar*)
     c               123
     d               wX
     <<U1>      <<U8>
-
     ```
 
 SeriesHE.via\_str.rpartition(*sep*)
@@ -3351,7 +3326,6 @@ SeriesHE.via\_str.rpartition(*sep*)
     c          ('', '', np.str_(...
     d          (' w', 'X', ' ')
     <<U1>      <object>
-
     ```
 
 SeriesHE.via\_str.rsplit(*sep*, *maxsplit*)
@@ -3379,7 +3353,6 @@ SeriesHE.via\_str.rsplit(*sep*, *maxsplit*)
     c          ('123',)
     d          (' w', ' ')
     <<U1>      <object>
-
     ```
 
 SeriesHE.via\_str.rstrip(*chars*)
@@ -3407,7 +3380,6 @@ SeriesHE.via\_str.rstrip(*chars*)
     c          123
     d           wX
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.split(*sep*, *maxsplit*)
@@ -3435,7 +3407,6 @@ SeriesHE.via\_str.split(*sep*, *maxsplit*)
     c          ('123',)
     d          (' w', ' ')
     <<U1>      <object>
-
     ```
 
 SeriesHE.via\_str.startswith(*prefix*, *start*, *end*)
@@ -3463,7 +3434,6 @@ SeriesHE.via\_str.startswith(*prefix*, *start*, *end*)
     c          False
     d          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.via\_str.strip(*chars*)
@@ -3491,7 +3461,6 @@ SeriesHE.via\_str.strip(*chars*)
     c          123
     d          wX
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.swapcase
@@ -3519,7 +3488,6 @@ SeriesHE.via\_str.swapcase
     c          123
     d           Wx
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.title
@@ -3547,7 +3515,6 @@ SeriesHE.via\_str.title
     c          123
     d           Wx
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.upper
@@ -3575,7 +3542,6 @@ SeriesHE.via\_str.upper
     c          123
     d           WX
     <<U1>      <<U4>
-
     ```
 
 SeriesHE.via\_str.zfill(*width*)
@@ -3603,7 +3569,6 @@ SeriesHE.via\_str.zfill(*width*)
     c          00000123
     d          0000 wX
     <<U1>      <<U8>
-
     ```
 
 [SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](series_he-operator_binary.md#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | [Accessor Mapping](series_he-accessor_mapping.md#api-detail-serieshe-accessor-mapping)

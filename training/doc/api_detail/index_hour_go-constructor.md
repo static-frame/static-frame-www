@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexHourGO: Constructor](../api_overview/index_hour_go-constructor.md#api-overview-indexhourgo-constructor)
 
-IndexHourGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[#](#static_frame.IndexHourGO.__init__ "Link to this definition")
+IndexHourGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *sort\_status=SortStatus.UNKNOWN*)[#](#static_frame.IndexHourGO.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -2537,7 +2541,55 @@ IndexHourGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
+    ```
 
+*classmethod* IndexHourGO.from\_difference(*\*others*)[#](#static_frame.IndexHourGO.from_difference "Link to this definition")
+:   Construct a new Index based on the difference with Index, containers, or NumPy arrays. Retains order.
+
+    ```
+    >>> ix1 = sf.IndexHourGO.from_labels(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix1
+    <IndexHourGO>
+    1517-04-01T00
+    1517-12-31T00
+    1517-06-30T00
+    <datetime64[h]>
+    >>> ix2 = sf.IndexHourGO.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexHourGO>
+    2022-04-01T00
+    2021-12-31T00
+    2018-06-30T00
+    <datetime64[h]>
+    >>> sf.IndexHourGO.from_difference(ix1, ix2)
+    <IndexHourGO>
+    1517-04-01T00
+    1517-12-31T00
+    1517-06-30T00
+    <datetime64[h]>
+    ```
+
+*classmethod* IndexHourGO.from\_intersection(*\*others*)[#](#static_frame.IndexHourGO.from_intersection "Link to this definition")
+:   Construct a new Index based on the intersection with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexHourGO.from_labels(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix1
+    <IndexHourGO>
+    1517-04-01T00
+    1517-12-31T00
+    1517-06-30T00
+    <datetime64[h]>
+    >>> ix2 = sf.IndexHourGO.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexHourGO>
+    2022-04-01T00
+    2021-12-31T00
+    2018-06-30T00
+    <datetime64[h]>
+    >>> sf.IndexHourGO.from_intersection(ix1, ix2)
+    <IndexHourGO>
+    <datetime64[h]>
     ```
 
 *classmethod* IndexHourGO.from\_labels(*labels*, */*, *\**, *name=None*)[#](#static_frame.IndexHourGO.from_labels "Link to this definition")
@@ -2550,7 +2602,6 @@ IndexHourGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-
     ```
 
 *classmethod* IndexHourGO.from\_pandas(*value*, */*)[#](#static_frame.IndexHourGO.from_pandas "Link to this definition")
@@ -2564,7 +2615,35 @@ IndexHourGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-31
     1517-06-30
     <object>
+    ```
 
+*classmethod* IndexHourGO.from\_union(*\*others*)[#](#static_frame.IndexHourGO.from_union "Link to this definition")
+:   Construct a new Index based on the union with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexHourGO.from_labels(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix1
+    <IndexHourGO>
+    1517-04-01T00
+    1517-12-31T00
+    1517-06-30T00
+    <datetime64[h]>
+    >>> ix2 = sf.IndexHourGO.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexHourGO>
+    2022-04-01T00
+    2021-12-31T00
+    2018-06-30T00
+    <datetime64[h]>
+    >>> sf.IndexHourGO.from_union(ix1, ix2)
+    <IndexHourGO>
+    1517-04-01T00
+    1517-06-30T00
+    1517-12-31T00
+    2018-06-30T00
+    2021-12-31T00
+    2022-04-01T00
+    <datetime64[h]>
     ```
 
 [IndexHourGO](index_hour_go.md#api-detail-indexhourgo): [Constructor](#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-detail-indexhourgo-accessor-type-clinic)
@@ -2579,8 +2658,11 @@ Detail: IndexHourGO: Exporter](index_hour_go-exporter.md "next page")
 On this page
 
 * [`IndexHourGO.__init__()`](#static_frame.IndexHourGO.__init__)
+* [`IndexHourGO.from_difference()`](#static_frame.IndexHourGO.from_difference)
+* [`IndexHourGO.from_intersection()`](#static_frame.IndexHourGO.from_intersection)
 * [`IndexHourGO.from_labels()`](#static_frame.IndexHourGO.from_labels)
 * [`IndexHourGO.from_pandas()`](#static_frame.IndexHourGO.from_pandas)
+* [`IndexHourGO.from_union()`](#static_frame.IndexHourGO.from_union)
 
 © Copyright 2025, Christopher Ariza.
 

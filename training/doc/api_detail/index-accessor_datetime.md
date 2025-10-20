@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2542,7 +2546,6 @@ Index.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
     <<U10>
     >>> ix.via_dt(fill_value=-1).day
     RuntimeError('invalid dtype (<U10) for date operation')
-
     ```
 
 Index.via\_dt.year
@@ -2562,7 +2565,6 @@ Index.via\_dt.year
     <object>
     >>> ix.via_dt.year
     [1517 1517]
-
     ```
 
 Index.via\_dt.year\_month
@@ -2582,7 +2584,6 @@ Index.via\_dt.year\_month
     <object>
     >>> ix.via_dt.year_month
     ['1517-01' '1517-04']
-
     ```
 
 Index.via\_dt.year\_quarter
@@ -2602,7 +2603,6 @@ Index.via\_dt.year\_quarter
     <object>
     >>> ix.via_dt.year_quarter
     ['1517-Q1' '1517-Q2']
-
     ```
 
 Index.via\_dt.month
@@ -2622,7 +2622,6 @@ Index.via\_dt.month
     <object>
     >>> ix.via_dt.month
     [1 4]
-
     ```
 
 Index.via\_dt.day
@@ -2642,7 +2641,6 @@ Index.via\_dt.day
     <object>
     >>> ix.via_dt.day
     [1 1]
-
     ```
 
 Index.via\_dt.hour
@@ -2662,7 +2660,6 @@ Index.via\_dt.hour
     <object>
     >>> ix.via_dt.hour
     [0 8]
-
     ```
 
 Index.via\_dt.minute
@@ -2682,7 +2679,6 @@ Index.via\_dt.minute
     <object>
     >>> ix.via_dt.minute
     [ 0 30]
-
     ```
 
 Index.via\_dt.second
@@ -2702,7 +2698,6 @@ Index.via\_dt.second
     <object>
     >>> ix.via_dt.second
     [ 0 59]
-
     ```
 
 Index.via\_dt.weekday
@@ -2722,7 +2717,6 @@ Index.via\_dt.weekday
     <object>
     >>> ix.via_dt.weekday()
     [0 6]
-
     ```
 
 Index.via\_dt.quarter
@@ -2742,7 +2736,6 @@ Index.via\_dt.quarter
     <object>
     >>> ix.via_dt.quarter()
     [1 2]
-
     ```
 
 Index.via\_dt.is\_month\_end
@@ -2762,7 +2755,6 @@ Index.via\_dt.is\_month\_end
     <object>
     >>> ix.via_dt.is_month_end()
     [False False]
-
     ```
 
 Index.via\_dt.is\_month\_start
@@ -2782,7 +2774,6 @@ Index.via\_dt.is\_month\_start
     <object>
     >>> ix.via_dt.is_month_start()
     [ True  True]
-
     ```
 
 Index.via\_dt.is\_year\_end
@@ -2802,7 +2793,6 @@ Index.via\_dt.is\_year\_end
     <object>
     >>> ix.via_dt.is_year_end()
     [False False]
-
     ```
 
 Index.via\_dt.is\_year\_start
@@ -2822,7 +2812,6 @@ Index.via\_dt.is\_year\_start
     <object>
     >>> ix.via_dt.is_year_start()
     [ True False]
-
     ```
 
 Index.via\_dt.is\_quarter\_end
@@ -2842,7 +2831,6 @@ Index.via\_dt.is\_quarter\_end
     <object>
     >>> ix.via_dt.is_quarter_end()
     [False False]
-
     ```
 
 Index.via\_dt.is\_quarter\_start
@@ -2862,7 +2850,6 @@ Index.via\_dt.is\_quarter\_start
     <object>
     >>> ix.via_dt.is_quarter_start()
     [ True  True]
-
     ```
 
 Index.via\_dt.timetuple
@@ -2883,7 +2870,6 @@ Index.via\_dt.timetuple
     >>> ix.via_dt.timetuple()
     [time.struct_time(tm_year=1517, tm_mon=1, tm_mday=1, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=0, tm_yday=1, tm_isdst=-1)
      time.struct_time(tm_year=1517, tm_mon=4, tm_mday=1, tm_hour=8, tm_min=30, tm_sec=59, tm_wday=6, tm_yday=91, tm_isdst=-1)]
-
     ```
 
 Index.via\_dt.isoformat(*\**, *sep*, *timespec*)
@@ -2903,7 +2889,6 @@ Index.via\_dt.isoformat(*\**, *sep*, *timespec*)
     <object>
     >>> ix.via_dt.isoformat()
     ['1517-01-01T00:00:00' '1517-04-01T08:30:59']
-
     ```
 
 Index.via\_dt.fromisoformat
@@ -2927,7 +2912,6 @@ Index.via\_dt.fromisoformat
     [datetime.date(1517, 1, 1) datetime.date(1517, 4, 1)
      datetime.date(1517, 12, 31) datetime.date(1517, 6, 30)
      datetime.date(1517, 10, 1)]
-
     ```
 
 Index.via\_dt.strftime(*format*, */*)
@@ -2947,7 +2931,6 @@ Index.via\_dt.strftime(*format*, */*)
     <object>
     >>> ix.via_dt.strftime("%A | %B")
     ['Monday | January' 'Sunday | April']
-
     ```
 
 Index.via\_dt.strptime(*format*, */*)
@@ -2968,7 +2951,6 @@ Index.via\_dt.strptime(*format*, */*)
     >>> ix.via_dt.strptime("%m/%d/%Y")
     [datetime.datetime(1517, 1, 1, 0, 0) datetime.datetime(1517, 4, 1, 0, 0)
      datetime.datetime(1517, 6, 30, 0, 0)]
-
     ```
 
 Index.via\_dt.strpdate(*format*, */*)
@@ -2989,7 +2971,6 @@ Index.via\_dt.strpdate(*format*, */*)
     >>> ix.via_dt.strpdate("%m/%d/%Y")
     [datetime.date(1517, 1, 1) datetime.date(1517, 4, 1)
      datetime.date(1517, 6, 30)]
-
     ```
 
 [Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](index-attribute.md#api-detail-index-attribute) | [Method](index-method.md#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)

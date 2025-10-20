@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexSecondGO: Method](../api_overview/index_second_go-method.md#api-overview-indexsecondgo-method)
 
-IndexSecondGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexSecondGO.__array__ "Link to this definition")
+IndexSecondGO.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexSecondGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2536,7 +2540,6 @@ IndexSecondGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexSecondGO.__array
     <datetime64[s]>
     >>> ix.__array__()
     ['1517-04-01T00:00:00' '1517-12-31T00:00:00' '1517-06-30T00:00:00']
-
     ```
 
 IndexSecondGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexSecondGO.__array_ufunc__ "Link to this definition")
@@ -2552,7 +2555,6 @@ IndexSecondGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#]
     <datetime64[s]>
     >>> np.array((0, 1, 0)) * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('int64'), dtype('<M8[s]')))
-
     ```
 
 IndexSecondGO.\_\_bool\_\_()[#](#static_frame.IndexSecondGO.__bool__ "Link to this definition")
@@ -2568,7 +2570,6 @@ IndexSecondGO.\_\_bool\_\_()[#](#static_frame.IndexSecondGO.__bool__ "Link to th
     <datetime64[s]>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexSecondGO.\_\_copy\_\_()[#](#static_frame.IndexSecondGO.__copy__ "Link to this definition")
@@ -2589,7 +2590,6 @@ IndexSecondGO.\_\_copy\_\_()[#](#static_frame.IndexSecondGO.__copy__ "Link to th
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexSecondGO.__deepcopy__ "Link to this definition")
@@ -2608,7 +2608,6 @@ IndexSecondGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexSecondGO.__deepcopy
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.\_\_len\_\_()[#](#static_frame.IndexSecondGO.__len__ "Link to this definition")
@@ -2622,7 +2621,6 @@ IndexSecondGO.\_\_len\_\_()[#](#static_frame.IndexSecondGO.__len__ "Link to this
     <datetime64[s]>
     >>> len(ix)
     3
-
     ```
 
 IndexSecondGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexSecondGO.all "Link to this definition")
@@ -2642,7 +2640,6 @@ IndexSecondGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.In
     <datetime64[s]>
     >>> ix.all()
     True
-
     ```
 
 IndexSecondGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexSecondGO.any "Link to this definition")
@@ -2662,7 +2659,6 @@ IndexSecondGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.In
     <datetime64[s]>
     >>> ix.any()
     True
-
     ```
 
 IndexSecondGO.append(*value*, */*)[#](#static_frame.IndexSecondGO.append "Link to this definition")
@@ -2684,7 +2680,6 @@ IndexSecondGO.append(*value*, */*)[#](#static_frame.IndexSecondGO.append "Link t
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.astype(*dtype*, */*)[#](#static_frame.IndexSecondGO.astype "Link to this definition")
@@ -2707,7 +2702,6 @@ IndexSecondGO.astype(*dtype*, */*)[#](#static_frame.IndexSecondGO.astype "Link t
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <<U38>
-
     ```
 
 IndexSecondGO.copy()[#](#static_frame.IndexSecondGO.copy "Link to this definition")
@@ -2727,7 +2721,6 @@ IndexSecondGO.copy()[#](#static_frame.IndexSecondGO.copy "Link to this definitio
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexSecondGO.cumprod "Link to this definition")
@@ -2747,7 +2740,6 @@ IndexSecondGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexSecon
     <datetime64[s]>
     >>> ix.cumprod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[s]'), dtype('<M8[s]')))
-
     ```
 
 IndexSecondGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexSecondGO.cumsum "Link to this definition")
@@ -2767,7 +2759,6 @@ IndexSecondGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexSecond
     <datetime64[s]>
     >>> ix.cumsum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[s]'), dtype('<M8[s]')))
-
     ```
 
 IndexSecondGO.difference(*\*others*)[#](#static_frame.IndexSecondGO.difference "Link to this definition")
@@ -2781,12 +2772,12 @@ IndexSecondGO.difference(*\*others*)[#](#static_frame.IndexSecondGO.difference "
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexSecondGO>
     2022-04-01T00:00:00
     2021-12-31T00:00:00
-    2022-06-30T00:00:00
+    2018-06-30T00:00:00
     <datetime64[s]>
     >>> ix1.difference(ix2)
     <IndexSecondGO>
@@ -2794,7 +2785,6 @@ IndexSecondGO.difference(*\*others*)[#](#static_frame.IndexSecondGO.difference "
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.dropfalsy()[#](#static_frame.IndexSecondGO.dropfalsy "Link to this definition")
@@ -2813,7 +2803,6 @@ IndexSecondGO.dropfalsy()[#](#static_frame.IndexSecondGO.dropfalsy "Link to this
     1620-09-16T00:00:00
     1620-11-21T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.dropna()[#](#static_frame.IndexSecondGO.dropna "Link to this definition")
@@ -2832,7 +2821,6 @@ IndexSecondGO.dropna()[#](#static_frame.IndexSecondGO.dropna "Link to this defin
     1620-09-16T00:00:00
     1620-11-21T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.IndexSecondGO.equals "Link to this definition")
@@ -2852,16 +2840,15 @@ IndexSecondGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexSecondGO>
     2022-04-01T00:00:00
     2021-12-31T00:00:00
-    2022-06-30T00:00:00
+    2018-06-30T00:00:00
     <datetime64[s]>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 IndexSecondGO.extend(*values*, */*)[#](#static_frame.IndexSecondGO.extend "Link to this definition")
@@ -2876,12 +2863,12 @@ IndexSecondGO.extend(*values*, */*)[#](#static_frame.IndexSecondGO.extend "Link 
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexSecondGO>
     2022-04-01T00:00:00
     2021-12-31T00:00:00
-    2022-06-30T00:00:00
+    2018-06-30T00:00:00
     <datetime64[s]>
     >>> ix1.extend(ix2)
     >>> ix1
@@ -2891,9 +2878,8 @@ IndexSecondGO.extend(*values*, */*)[#](#static_frame.IndexSecondGO.extend "Link 
     1517-06-30T00:00:00
     2022-04-01T00:00:00
     2021-12-31T00:00:00
-    2022-06-30T00:00:00
+    2018-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.fillfalsy(*value*, */*)[#](#static_frame.IndexSecondGO.fillfalsy "Link to this definition")
@@ -2912,7 +2898,6 @@ IndexSecondGO.fillfalsy(*value*, */*)[#](#static_frame.IndexSecondGO.fillfalsy "
     <datetime64[s]>
     >>> ix.fillfalsy('A')
     ValueError('Error parsing datetime string "A" at position 0')
-
     ```
 
 IndexSecondGO.fillna(*value*, */*)[#](#static_frame.IndexSecondGO.fillna "Link to this definition")
@@ -2935,7 +2920,6 @@ IndexSecondGO.fillna(*value*, */*)[#](#static_frame.IndexSecondGO.fillna "Link t
     1970-01-01T00:00:00
     1620-11-21T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.head(*count=5*, */*)[#](#static_frame.IndexSecondGO.head "Link to this definition")
@@ -2957,7 +2941,6 @@ IndexSecondGO.head(*count=5*, */*)[#](#static_frame.IndexSecondGO.head "Link to 
     1517-04-01T00:00:00
     1517-12-31T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexSecondGO.iloc_searchsorted "Link to this definition")
@@ -2977,7 +2960,6 @@ IndexSecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#sta
     <datetime64[s]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexSecondGO.intersection(*\*others*)[#](#static_frame.IndexSecondGO.intersection "Link to this definition")
@@ -2991,17 +2973,35 @@ IndexSecondGO.intersection(*\*others*)[#](#static_frame.IndexSecondGO.intersecti
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexSecondGO>
     2022-04-01T00:00:00
     2021-12-31T00:00:00
-    2022-06-30T00:00:00
+    2018-06-30T00:00:00
     <datetime64[s]>
     >>> ix1.intersection(ix2)
     <IndexSecondGO>
     <datetime64[s]>
+    ```
 
+IndexSecondGO.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexSecondGO.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix
+    <IndexSecondGO>
+    2022-04-01T00:00:00
+    2021-12-31T00:00:00
+    2018-06-30T00:00:00
+    <datetime64[s]>
+    >>> assert ix.is_sorted(ascending=False)
     ```
 
 IndexSecondGO.isfalsy()[#](#static_frame.IndexSecondGO.isfalsy "Link to this definition")
@@ -3011,7 +3011,6 @@ IndexSecondGO.isfalsy()[#](#static_frame.IndexSecondGO.isfalsy "Link to this def
     >>> ix = sf.IndexSecondGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isfalsy()
     [False  True False]
-
     ```
 
 IndexSecondGO.isin(*other*, */*)[#](#static_frame.IndexSecondGO.isin "Link to this definition")
@@ -3027,7 +3026,6 @@ IndexSecondGO.isin(*other*, */*)[#](#static_frame.IndexSecondGO.isin "Link to th
     <datetime64[s]>
     >>> ix.isin(('1517-06-30',))
     [False False False]
-
     ```
 
 IndexSecondGO.isna()[#](#static_frame.IndexSecondGO.isna "Link to this definition")
@@ -3037,7 +3035,6 @@ IndexSecondGO.isna()[#](#static_frame.IndexSecondGO.isna "Link to this definitio
     >>> ix = sf.IndexSecondGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isna()
     [False  True False]
-
     ```
 
 IndexSecondGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexSecondGO.label_widths_at_depth "Link to this definition")
@@ -3056,7 +3053,6 @@ IndexSecondGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.I
     <datetime64[s]>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.datetime64('1517-04-01T00:00:00'), 1), (np.datetime64('1517-12-31T00:00:00'), 1), (np.datetime64('1517-06-30T00:00:00'), 1))
-
     ```
 
 IndexSecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.IndexSecondGO.level_add "Link to this definition")
@@ -3081,7 +3077,6 @@ IndexSecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#stat
     A                  1517-12-31T00:00:00
     A                  1517-06-30T00:00:00
     <<U1>              <datetime64[s]>
-
     ```
 
 IndexSecondGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.IndexSecondGO.loc_searchsorted "Link to this definition")
@@ -3102,7 +3097,6 @@ IndexSecondGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_v
     <datetime64[s]>
     >>> ix.loc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexSecondGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexSecondGO.loc_to_iloc "Link to this definition")
@@ -3125,7 +3119,6 @@ IndexSecondGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexSecondGO.loc_to_il
     [0 2]
     >>> ix.loc_to_iloc(slice('1517-12-31', None))
     slice(1, None, None)
-
     ```
 
 IndexSecondGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexSecondGO.max "Link to this definition")
@@ -3145,7 +3138,6 @@ IndexSecondGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.In
     <datetime64[s]>
     >>> ix.max()
     1517-12-31T00:00:00
-
     ```
 
 IndexSecondGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexSecondGO.mean "Link to this definition")
@@ -3165,7 +3157,6 @@ IndexSecondGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <datetime64[s]>
     >>> ix.mean()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[s]'), dtype('<M8[s]')))
-
     ```
 
 IndexSecondGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexSecondGO.median "Link to this definition")
@@ -3185,7 +3176,6 @@ IndexSecondGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame
     <datetime64[s]>
     >>> ix.median()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[s]'), dtype('<M8[s]')))
-
     ```
 
 IndexSecondGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexSecondGO.min "Link to this definition")
@@ -3205,7 +3195,6 @@ IndexSecondGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.In
     <datetime64[s]>
     >>> ix.min()
     1517-04-01T00:00:00
-
     ```
 
 IndexSecondGO.notfalsy()[#](#static_frame.IndexSecondGO.notfalsy "Link to this definition")
@@ -3215,7 +3204,6 @@ IndexSecondGO.notfalsy()[#](#static_frame.IndexSecondGO.notfalsy "Link to this d
     >>> ix = sf.IndexSecondGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notfalsy()
     [ True False  True]
-
     ```
 
 IndexSecondGO.notna()[#](#static_frame.IndexSecondGO.notna "Link to this definition")
@@ -3225,7 +3213,6 @@ IndexSecondGO.notna()[#](#static_frame.IndexSecondGO.notna "Link to this definit
     >>> ix = sf.IndexSecondGO(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notna()
     [ True False  True]
-
     ```
 
 IndexSecondGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexSecondGO.prod "Link to this definition")
@@ -3245,7 +3232,6 @@ IndexSecondGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#sta
     <datetime64[s]>
     >>> ix.prod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[s]'), dtype('<M8[s]')))
-
     ```
 
 IndexSecondGO.relabel(*mapper*, */*)[#](#static_frame.IndexSecondGO.relabel "Link to this definition")
@@ -3265,7 +3251,6 @@ IndexSecondGO.relabel(*mapper*, */*)[#](#static_frame.IndexSecondGO.relabel "Lin
     1970-01-01T00:00:31
     1970-01-01T00:00:30
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.rename(*name*, */*)[#](#static_frame.IndexSecondGO.rename "Link to this definition")
@@ -3285,7 +3270,6 @@ IndexSecondGO.rename(*name*, */*)[#](#static_frame.IndexSecondGO.rename "Link to
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.roll(*shift*)[#](#static_frame.IndexSecondGO.roll "Link to this definition")
@@ -3305,7 +3289,6 @@ IndexSecondGO.roll(*shift*)[#](#static_frame.IndexSecondGO.roll "Link to this de
     1517-06-30T00:00:00
     1517-04-01T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexSecondGO.sample "Link to this definition")
@@ -3328,7 +3311,6 @@ IndexSecondGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexSecondG
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexSecondGO.sort "Link to this definition")
@@ -3359,7 +3341,6 @@ IndexSecondGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#s
     1517-06-30T00:00:00
     1517-04-01T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexSecondGO.std "Link to this definition")
@@ -3379,7 +3360,6 @@ IndexSecondGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#stati
     <datetime64[s]>
     >>> ix.std()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[s]'), dtype('<M8[s]')))
-
     ```
 
 IndexSecondGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexSecondGO.sum "Link to this definition")
@@ -3399,7 +3379,6 @@ IndexSecondGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#stat
     <datetime64[s]>
     >>> ix.sum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[s]'), dtype('<M8[s]')))
-
     ```
 
 IndexSecondGO.tail(*count=5*, */*)[#](#static_frame.IndexSecondGO.tail "Link to this definition")
@@ -3421,7 +3400,6 @@ IndexSecondGO.tail(*count=5*, */*)[#](#static_frame.IndexSecondGO.tail "Link to 
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.union(*\*others*)[#](#static_frame.IndexSecondGO.union "Link to this definition")
@@ -3435,23 +3413,22 @@ IndexSecondGO.union(*\*others*)[#](#static_frame.IndexSecondGO.union "Link to th
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexSecondGO(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexSecondGO>
     2022-04-01T00:00:00
     2021-12-31T00:00:00
-    2022-06-30T00:00:00
+    2018-06-30T00:00:00
     <datetime64[s]>
     >>> ix1.union(ix2)
     <IndexSecondGO>
     1517-04-01T00:00:00
     1517-06-30T00:00:00
     1517-12-31T00:00:00
+    2018-06-30T00:00:00
     2021-12-31T00:00:00
     2022-04-01T00:00:00
-    2022-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 IndexSecondGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#static_frame.IndexSecondGO.unique "Link to this definition")
@@ -3474,7 +3451,6 @@ IndexSecondGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)
     <datetime64[s]>
     >>> ix.unique()
     ['1620-09-16T00:00:00'                 'NaT' '1620-11-21T00:00:00']
-
     ```
 
 IndexSecondGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexSecondGO.values_at_depth "Link to this definition")
@@ -3490,7 +3466,6 @@ IndexSecondGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexSec
     <datetime64[s]>
     >>> ix.values_at_depth(0)
     ['1517-04-01T00:00:00' '1517-12-31T00:00:00' '1517-06-30T00:00:00']
-
     ```
 
 IndexSecondGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexSecondGO.var "Link to this definition")
@@ -3510,7 +3485,6 @@ IndexSecondGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#stati
     <datetime64[s]>
     >>> ix.var()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[s]'), dtype('<M8[s]')))
-
     ```
 
 [IndexSecondGO](index_second_go.md#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.md#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-detail-indexsecondgo-exporter) | [Attribute](index_second_go-attribute.md#api-detail-indexsecondgo-attribute) | [Method](#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-detail-indexsecondgo-accessor-type-clinic)
@@ -3547,6 +3521,7 @@ On this page
 * [`IndexSecondGO.head()`](#static_frame.IndexSecondGO.head)
 * [`IndexSecondGO.iloc_searchsorted()`](#static_frame.IndexSecondGO.iloc_searchsorted)
 * [`IndexSecondGO.intersection()`](#static_frame.IndexSecondGO.intersection)
+* [`IndexSecondGO.is_sorted()`](#static_frame.IndexSecondGO.is_sorted)
 * [`IndexSecondGO.isfalsy()`](#static_frame.IndexSecondGO.isfalsy)
 * [`IndexSecondGO.isin()`](#static_frame.IndexSecondGO.isin)
 * [`IndexSecondGO.isna()`](#static_frame.IndexSecondGO.isna)

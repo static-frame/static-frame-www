@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2544,7 +2548,6 @@ Batch.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
     j                q     12      12
     j                r     6       6
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_dt.year
@@ -2567,7 +2570,6 @@ Batch.via\_dt.year
     j                q     1620    1954
     j                r     1620    1976
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_dt.year\_month
@@ -2590,7 +2592,6 @@ Batch.via\_dt.year\_month
     j                q     1620-12 1954-12
     j                r     1620-06 1976-06
     <<U1>            <<U1> <<U7>   <<U7>
-
     ```
 
 Batch.via\_dt.year\_quarter
@@ -2613,7 +2614,6 @@ Batch.via\_dt.year\_quarter
     j                q     1620-Q4 1954-Q4
     j                r     1620-Q2 1976-Q2
     <<U1>            <<U1> <<U7>   <<U7>
-
     ```
 
 Batch.via\_dt.month
@@ -2636,7 +2636,6 @@ Batch.via\_dt.month
     j                q     12      12
     j                r     6       6
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_dt.day
@@ -2659,7 +2658,6 @@ Batch.via\_dt.day
     j                q     31      31
     j                r     30      30
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_dt.hour
@@ -2682,7 +2680,6 @@ Batch.via\_dt.hour
     j                q     0       0
     j                r     0       0
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_dt.minute
@@ -2705,7 +2702,6 @@ Batch.via\_dt.minute
     j                q     0       0
     j                r     0       0
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_dt.second
@@ -2728,7 +2724,6 @@ Batch.via\_dt.second
     j                q     0       0
     j                r     0       0
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_dt.weekday
@@ -2751,7 +2746,6 @@ Batch.via\_dt.weekday
     j                q     3       4
     j                r     1       2
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_dt.quarter
@@ -2774,7 +2768,6 @@ Batch.via\_dt.quarter
     j                q     4       4
     j                r     2       2
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_dt.is\_month\_end
@@ -2797,7 +2790,6 @@ Batch.via\_dt.is\_month\_end
     j                q     True   True
     j                r     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_dt.is\_month\_start
@@ -2820,7 +2812,6 @@ Batch.via\_dt.is\_month\_start
     j                q     False  False
     j                r     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_dt.is\_year\_end
@@ -2843,7 +2834,6 @@ Batch.via\_dt.is\_year\_end
     j                q     True   True
     j                r     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_dt.is\_year\_start
@@ -2866,7 +2856,6 @@ Batch.via\_dt.is\_year\_start
     j                q     False  False
     j                r     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_dt.is\_quarter\_end
@@ -2889,7 +2878,6 @@ Batch.via\_dt.is\_quarter\_end
     j                q     True   True
     j                r     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_dt.is\_quarter\_start
@@ -2912,7 +2900,6 @@ Batch.via\_dt.is\_quarter\_start
     j                q     False  False
     j                r     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_dt.timetuple
@@ -2935,7 +2922,6 @@ Batch.via\_dt.timetuple
     j                q     time.struct_time(... time.struct_time(...
     j                r     time.struct_time(... time.struct_time(...
     <<U1>            <<U1> <object>             <object>
-
     ```
 
 Batch.via\_dt.isoformat(*\**, *sep*, *timespec*)
@@ -2958,7 +2944,6 @@ Batch.via\_dt.isoformat(*\**, *sep*, *timespec*)
     j                q     1620-12-31 1954-12-31
     j                r     1620-06-30 1976-06-30
     <<U1>            <<U1> <<U10>     <<U10>
-
     ```
 
 Batch.via\_dt.fromisoformat
@@ -2981,7 +2966,6 @@ Batch.via\_dt.fromisoformat
     j                q     1620-12-31 1954-12-31
     j                r     1620-06-30 1976-06-30
     <<U1>            <<U1> <object>   <object>
-
     ```
 
 Batch.via\_dt.strftime(*format*, */*)
@@ -3004,7 +2988,6 @@ Batch.via\_dt.strftime(*format*, */*)
     j                q     Thursday | December Friday | December
     j                r     Tuesday | June      Wednesday | June
     <<U1>            <<U1> <<U19>              <<U17>
-
     ```
 
 Batch.via\_dt.strptime(*format*, */*)
@@ -3027,7 +3010,6 @@ Batch.via\_dt.strptime(*format*, */*)
     j                q     1620-12-31 00:00:00 1954-12-31 00:00:00
     j                r     1620-06-30 00:00:00 1976-06-30 00:00:00
     <<U1>            <<U1> <object>            <object>
-
     ```
 
 Batch.via\_dt.strpdate(*format*, */*)
@@ -3050,7 +3032,6 @@ Batch.via\_dt.strpdate(*format*, */*)
     j                q     1620-12-31 1954-12-31
     j                r     1620-06-30 1976-06-30
     <<U1>            <<U1> <object>   <object>
-
     ```
 
 [Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)

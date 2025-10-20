@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexDateGO: Constructor](../api_overview/index_date_go-constructor.md#api-overview-indexdatego-constructor)
 
-IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[#](#static_frame.IndexDateGO.__init__ "Link to this definition")
+IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *sort\_status=SortStatus.UNKNOWN*)[#](#static_frame.IndexDateGO.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -2537,7 +2541,6 @@ IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 *classmethod* IndexDateGO.from\_date\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[#](#static_frame.IndexDateGO.from_date_range "Link to this definition")
@@ -2551,7 +2554,55 @@ IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     2022-01-01
     2022-01-02
     <datetime64[D]>
+    ```
 
+*classmethod* IndexDateGO.from\_difference(*\*others*)[#](#static_frame.IndexDateGO.from_difference "Link to this definition")
+:   Construct a new Index based on the difference with Index, containers, or NumPy arrays. Retains order.
+
+    ```
+    >>> ix1 = sf.IndexDateGO.from_labels(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix1
+    <IndexDateGO>
+    1517-04-01
+    1517-12-01
+    1517-06-30
+    <datetime64[D]>
+    >>> ix2 = sf.IndexDateGO.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexDateGO>
+    2022-04-01
+    2021-12-31
+    2018-06-30
+    <datetime64[D]>
+    >>> sf.IndexDateGO.from_difference(ix1, ix2)
+    <IndexDateGO>
+    1517-04-01
+    1517-12-01
+    1517-06-30
+    <datetime64[D]>
+    ```
+
+*classmethod* IndexDateGO.from\_intersection(*\*others*)[#](#static_frame.IndexDateGO.from_intersection "Link to this definition")
+:   Construct a new Index based on the intersection with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexDateGO.from_labels(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix1
+    <IndexDateGO>
+    1517-04-01
+    1517-12-01
+    1517-06-30
+    <datetime64[D]>
+    >>> ix2 = sf.IndexDateGO.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexDateGO>
+    2022-04-01
+    2021-12-31
+    2018-06-30
+    <datetime64[D]>
+    >>> sf.IndexDateGO.from_intersection(ix1, ix2)
+    <IndexDateGO>
+    <datetime64[D]>
     ```
 
 *classmethod* IndexDateGO.from\_labels(*labels*, */*, *\**, *name=None*)[#](#static_frame.IndexDateGO.from_labels "Link to this definition")
@@ -2564,7 +2615,6 @@ IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-01
     1517-06-30
     <datetime64[D]>
-
     ```
 
 *classmethod* IndexDateGO.from\_pandas(*value*, */*)[#](#static_frame.IndexDateGO.from_pandas "Link to this definition")
@@ -2578,7 +2628,35 @@ IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12
     1517-06-30
     <object>
+    ```
 
+*classmethod* IndexDateGO.from\_union(*\*others*)[#](#static_frame.IndexDateGO.from_union "Link to this definition")
+:   Construct a new Index based on the union with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexDateGO.from_labels(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix1
+    <IndexDateGO>
+    1517-04-01
+    1517-12-01
+    1517-06-30
+    <datetime64[D]>
+    >>> ix2 = sf.IndexDateGO.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexDateGO>
+    2022-04-01
+    2021-12-31
+    2018-06-30
+    <datetime64[D]>
+    >>> sf.IndexDateGO.from_union(ix1, ix2)
+    <IndexDateGO>
+    1517-04-01
+    1517-06-30
+    1517-12-01
+    2018-06-30
+    2021-12-31
+    2022-04-01
+    <datetime64[D]>
     ```
 
 *classmethod* IndexDateGO.from\_year\_month\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[#](#static_frame.IndexDateGO.from_year_month_range "Link to this definition")
@@ -2623,7 +2701,6 @@ IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     2022-01-30
     2022-01-31
     <datetime64[D]>
-
     ```
 
 *classmethod* IndexDateGO.from\_year\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[#](#static_frame.IndexDateGO.from_year_range "Link to this definition")
@@ -2668,7 +2745,6 @@ IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     2022-12-30
     2022-12-31
     <datetime64[D]>
-
     ```
 
 [IndexDateGO](index_date_go.md#api-detail-indexdatego): [Constructor](#api-detail-indexdatego-constructor) | [Exporter](index_date_go-exporter.md#api-detail-indexdatego-exporter) | [Attribute](index_date_go-attribute.md#api-detail-indexdatego-attribute) | [Method](index_date_go-method.md#api-detail-indexdatego-method) | [Dictionary-Like](index_date_go-dictionary_like.md#api-detail-indexdatego-dictionary-like) | [Display](index_date_go-display.md#api-detail-indexdatego-display) | [Selector](index_date_go-selector.md#api-detail-indexdatego-selector) | [Iterator](index_date_go-iterator.md#api-detail-indexdatego-iterator) | [Operator Binary](index_date_go-operator_binary.md#api-detail-indexdatego-operator-binary) | [Operator Unary](index_date_go-operator_unary.md#api-detail-indexdatego-operator-unary) | [Accessor Values](index_date_go-accessor_values.md#api-detail-indexdatego-accessor-values) | [Accessor Datetime](index_date_go-accessor_datetime.md#api-detail-indexdatego-accessor-datetime) | [Accessor String](index_date_go-accessor_string.md#api-detail-indexdatego-accessor-string) | [Accessor Regular Expression](index_date_go-accessor_regular_expression.md#api-detail-indexdatego-accessor-regular-expression) | [Accessor Hashlib](index_date_go-accessor_hashlib.md#api-detail-indexdatego-accessor-hashlib) | [Accessor Type Clinic](index_date_go-accessor_type_clinic.md#api-detail-indexdatego-accessor-type-clinic)
@@ -2684,8 +2760,11 @@ On this page
 
 * [`IndexDateGO.__init__()`](#static_frame.IndexDateGO.__init__)
 * [`IndexDateGO.from_date_range()`](#static_frame.IndexDateGO.from_date_range)
+* [`IndexDateGO.from_difference()`](#static_frame.IndexDateGO.from_difference)
+* [`IndexDateGO.from_intersection()`](#static_frame.IndexDateGO.from_intersection)
 * [`IndexDateGO.from_labels()`](#static_frame.IndexDateGO.from_labels)
 * [`IndexDateGO.from_pandas()`](#static_frame.IndexDateGO.from_pandas)
+* [`IndexDateGO.from_union()`](#static_frame.IndexDateGO.from_union)
 * [`IndexDateGO.from_year_month_range()`](#static_frame.IndexDateGO.from_year_month_range)
 * [`IndexDateGO.from_year_range()`](#static_frame.IndexDateGO.from_year_range)
 

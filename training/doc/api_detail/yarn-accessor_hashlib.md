@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2542,7 +2546,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).to_bytes()
     b'YarnIndexHierarchyi\x00\x00\x00i\x00\x00\x00j\x00\x00\x00j\x00\x00\x00x\x00\x00\x00y\x00\x00\x00v\x00\x00\x00w\x00\x00\x00FrameIndexp\x00\x00\x00q\x00\x00\x00r\x00\x00\x00Indexa\x00\x00\x00b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00FrameIndexp\x00\x00\x00q\x00\x00\x00r\x00\x00\x00Indexc\x00\x00\x00d\x00\x00\x00\x00\x00\x00\x01\x01\x01FrameIndexp\x00\x00\x00q\x00\x00\x00r\x00\x00\x00Indexa\x00\x00\x00b\x00\x00\x00(\x00\x00\x00\x00\x00\x00\x00*\x00\x00\x00\x00\x00\x00\x00,\x00\x00\x00\x00\x00\x00\x00)\x00\x00\x00\x00\x00\x00\x00+\x00\x00\x00\x00\x00\x00\x00-\x00\x00\x00\x00\x00\x00\x00FrameIndexp\x00\x00\x00q\x00\x00\x00r\x00\x00\x00Indexc\x00\x00\x00d\x00\x00\x00\x00\x01\x01\x01\x00\x01'
-
     ```
 
 Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
@@ -2563,7 +2566,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).md5().hexdigest()
     dbd84f20d9fc3de36fa3956413a5352b
-
     ```
 
 Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
@@ -2584,7 +2586,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).sha256().hexdigest()
     b4d4605a723e1ab9e9333eb4a258292f3c89c4c8c02c148e6480c79e54184ad2
-
     ```
 
 Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
@@ -2605,7 +2606,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).sha512().hexdigest()
     d31e8f384689cadc1f14b18b7f3fd3eb91f1bb933b3826ad3cec4f43d0cc743985bd406a97cbf7f24b50f7d154c30bb0a400860a3ce3ba4a452be14ec8f2dac3
-
     ```
 
 Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
@@ -2626,7 +2626,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).sha3_256().hexdigest()
     4a2b94fae32e3aa223d7f55aab981380690b859d9835a5d463d927fc3b0e22d5
-
     ```
 
 Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
@@ -2647,7 +2646,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).sha3_512().hexdigest()
     6562658e9d2d6182205d6982c5b0ea005e5470b85e06071c0713b22390dd87d3a10c6d8a437615b4f3e431cc6162d6a9e44dce6568e564b6fad5fe597208b8eb
-
     ```
 
 Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
@@ -2668,7 +2666,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).shake_128().hexdigest(8)
     4b26ae91c224cf43
-
     ```
 
 Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
@@ -2689,7 +2686,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).shake_256().hexdigest(8)
     e1dd392f568d3e58
-
     ```
 
 Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2710,7 +2706,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\*
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).blake2b().hexdigest()
     fcfa23bb62037fb084fb0de6cd75c3b0223b580c0e777b265551874b38f99a222040f8e148d651e6319f1d35ad4a55d0839a4825175bc13a6ed38809b297d342
-
     ```
 
 Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2731,7 +2726,6 @@ Yarn.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\*
     <<U1>            <<U1> <object>
     >>> y.via_hashlib(include_name=False).blake2s().hexdigest()
     7109826fdf713998da43abfd837073c8447a2d4ff5958a136d85c6e39ec016eb
-
     ```
 
 [Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)

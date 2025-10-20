@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
   + [Faster DataFrame Serialization](serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
 * [Faster DataFrame Serialization](serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ For Python programmers using Pandas DataFrames as function arguments, there are 
 >>> cube(df)
 Traceback (most recent call last):
 TypeError: unhashable type: 'DataFrame'
-
 ```
 
 [StaticFrame](https://github.com/static-frame/static-frame) is an alternative DataFrame library that offers efficient solutions to this problem, both for in-memory and disk-based memoization.
@@ -2560,7 +2563,6 @@ In Python, the built-in `hash()` function converts hashable objects into an inte
 0
 >>> hash(False)
 0
-
 ```
 
 Python dictionaries use `hash()` to transform dictionary keys into storage positions in a low-level C array. Collisions are expected, and if found, are resolved with equality comparisons using `__eq__()`. Thus, for an arbitrary type to be hashable, it needs to implement both `__hash__()` and `__eq__()`.
@@ -2575,7 +2577,6 @@ Cryptographic hashing functions are unlike `hash()`: they are designed to avoid 
 '5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9'
 >>> hashlib.sha256(b'False').hexdigest()
 '60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe'
-
 ```
 
 ## In-Memory Memoization[#](#in-memory-memoization "Link to this heading")
@@ -2592,7 +2593,6 @@ The implementation of `FrameHE.__eq__()` simply delegates to `Frame.equals()`, a
 8397108298071051538
 >>> f == f * 2
 False
-
 ```
 
 With a `FrameHE` as an argument, the `cube()` function, decorated with `functools.lru_cache()`, can be used. If lacking a `FrameHE`, the `to_frame_he()` method can be used to efficiently create a `FrameHE` from other StaticFrame containers. As underlying NumPy array data is immutable and sharable among containers, this is a light-weight, no-copy operation. If coming from a Pandas DataFrame, `FrameHE.from_pandas()` can be used.
@@ -2604,7 +2604,6 @@ In the example below, `cube()` is called with the `FrameHE` created above. The I
 CPU times: user 8.24 ms, sys: 99 µs, total: 8.34 ms
 >>> %time cube(f)
 CPU times: user 5 µs, sys: 4 µs, total: 9 µs
-
 ```
 
 While helpful for in-memory memoization, `FrameHE` instances can also be members of sets, offering a novel approach to collecting unique containers.
@@ -2622,7 +2621,6 @@ StaticFrame offers `via_hashlib()` to meet this need, providing an efficient way
 ```
 >>> f.via_hashlib(include_name=False).sha256().hexdigest()
 'b931bd5662bb75949404f3735acf652cf177c5236e9d20342851417325dd026c'
-
 ```
 
 First, `via_hashlib()` is called with options to determine which container components should be included in the input bytes. As the default `name` attribute, `None`, is not byte encodable, it is excluded. Second, the hash function constructor `sha256()` is called, returning an instance loaded with the appropriate input bytes. Third, the `hexdigest()` method is called to return the message digest as a string. Alternative cryptographic hash function constructors, such as `sha3_256`, `shake_256`, and `blake2b` are available.
@@ -2632,7 +2630,6 @@ To create the input bytes, StaticFrame concatenates all underlying byte data (bo
 ```
 >>> len(f.via_hashlib(include_name=False).to_bytes())
 8016017
-
 ```
 
 StaticFrame’s built-in support for creating message digests is shown to be more efficient than two common approaches with Pandas. The first approach uses the Pandas utility function `pd.hash_pandas_object()` to derive per-column integer hashes. This routine uses a bespoke digest algorithm that makes no claim of cryptographic collision resistance. For comparison here, those per-column integer hashes are used as input to a `hashlib` message digest function. The second approach provides a JSON representation of the entire DataFrame as input to a `hashlib` message digest function. While this may be more collision resistant than `pd.hash_pandas_object()`, it is often slower. The following chart displays performance characteristics of these two approaches compared to `via_hashlib()`. Over a range of DataFrame shapes and type mixtures, `via_hashlib()` outperforms all except one.
@@ -2652,7 +2649,6 @@ Given a means to convert a DataFrame into a hash digest, a disk-based caching ro
 ...             func(arg).to_npz(fp)
 ...         return sf.Frame.from_npz(fp)
 ...     return wrapped
-
 ```
 
 To demonstrate this decorator, it can be applied to a function that iterates over windows of ten rows, sums the columns, and then concatenates the results into a single `Frame`.
@@ -2661,7 +2657,6 @@ To demonstrate this decorator, it can be applied to a function that iterates ove
 >>> @disk_cache
 ... def windowed_sum(v):
 ...     return sf.Frame.from_concat(v.iter_window_items(size=10).apply_iter(lambda l, f: f.sum().rename(l)))
-
 ```
 
 After first usage, performance is reduced to less than twenty percent of the original run time. While loading a disk-based cache is slower than retrieving an in-memory cache, the benefit of avoiding repeated calculations is gained without consuming memory and with the opportunity of persistent caches.
@@ -2671,7 +2666,6 @@ After first usage, performance is reduced to less than twenty percent of the ori
 CPU times: user 596 ms, sys: 15.6 ms, total: 612 ms
 >>> %time windowed_sum(f)
 CPU times: user 77.3 ms, sys: 24.4 ms, total: 102 ms
-
 ```
 
 The `via_hashlib()` interfaces can be used in other situations as a digital signature or checksum of all characteristics of a DataFrame.

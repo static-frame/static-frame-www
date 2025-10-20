@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
   + Faster DataFrame Serialization
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
 * Faster DataFrame Serialization
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2578,7 +2582,6 @@ Wall time: 165 ms
 >>> %time df2 = pd.read_parquet('/tmp/df.parquet')
 CPU times: user 2.55 s, sys: 1.2 s, total: 3.75 s
 Wall time: 866 ms
-
 ```
 
 Performance tests provided below extend this basic approach by using frame-fixtures for systematic variation of shape and type heterogeneity, and average results over ten iterations. While hardware configuration will affect performance, relative characteristics are retained across diverse machines and operating systems. For all interfaces the default parameters are used, except for disabling compression as needed. The code used to perform these tests is available at [GitHub](https://github.com/static-frame/static-frame/blob/master/doc/source/articles/serialize.py).
@@ -2641,7 +2644,6 @@ The components of that diagram map to components of a `Frame` string representat
 2012-03             y     9       1       8       True
 2012-04             x     3       6       2       True
 <datetime64[M]>     <<U1> <int64> <int64> <int64> <bool>
-
 ```
 
 The components of the string representation can be mapped to the DataFrame diagram by color:
@@ -2660,7 +2662,6 @@ Given a NPZ file named “frame.npz”, we can extract the binary data by readin
 >>> from zipfile import ZipFile
 >>> with ZipFile('/tmp/frame.npz') as zf: print(zf.open('__blocks_1__.npy').read())
 b'\x93NUMPY\x01\x006\x00{"descr":"|b1","fortran_order":True,"shape":(3,)}    \n\x00\x01\x01
-
 ```
 
 As NPY is well supported in NumPy, the `np.load()` function can be used to convert this file to a NumPy array. This means that underlying array data in a StaticFrame NPZ is easily extractable by alternative readers.
@@ -2668,7 +2669,6 @@ As NPY is well supported in NumPy, the `np.load()` function can be used to conve
 ```
 >>> with ZipFile('/tmp/frame.npz') as zf: print(repr(np.load(zf.open('__blocks_1__.npy'))))
 array([False,  True,  True])
-
 ```
 
 As a NPY file can encode any array, large two-dimensional arrays can be loaded from contiguous byte data, providing excellent performance in StaticFrame when multiple contiguous columns are represented by a single array.
@@ -2682,7 +2682,6 @@ Given the NPZ file for the `Frame` above, we can list its contents with `ZipFile
 ```
 >>> with ZipFile('/tmp/frame.npz') as zf: print(zf.namelist())
 ['__values_index_0__.npy', '__values_index_1__.npy', '__values_columns_0__.npy', '__values_columns_1__.npy', '__blocks_0__.npy', '__blocks_1__.npy', '__meta__.json']
-
 ```
 
 The illustration below maps these files to components of the DataFrame diagram.
@@ -2694,7 +2693,6 @@ StaticFrame extends the NPZ format to include metadata in a JSON file. This file
 ```
 >>> with ZipFile('/tmp/frame.npz') as zf: print(zf.open('__meta__.json').read())
 b'{"__names__": ["p", "r", "q"], "__types__": ["IndexHierarchy", "IndexHierarchy"], "__types_index__": ["IndexYearMonth", "Index"], "__types_columns__": ["Index", "Index"], "__depths__": [2, 2, 2]}'
-
 ```
 
 In the illustration below, components of the `__meta__.json` file are mapped to components of the DataFrame diagram.

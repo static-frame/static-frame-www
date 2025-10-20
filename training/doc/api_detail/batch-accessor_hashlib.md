@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2536,7 +2540,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).to_bytes()
     b'BusIndexi\x00\x00\x00j\x00\x00\x00FrameIndexp\x00\x00\x00q\x00\x00\x00r\x00\x00\x00Indexa\x00\x00\x00b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00FrameIndex\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00Indexa\x00\x00\x00b\x00\x00\x00c\x00\x00\x00\x00\x00\x00\x00\x00\x00$@\x00\x00\x00\x00\x00\x00\x00@\x00\x00\x00\x00\x00\x00\xf8\x7f\x00\x00\x00\x00\x00\x00\x00@q\x00\x00\x00r\x00\x00\x00s\x00\x00\x00 \x00\x00\x00X\x00\x00\x00Y\x00\x00\x00Z\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x001\x00\x00\x002\x00\x00\x003\x00\x00\x00\x00\x00\x00\x00\xb1y\xfd\xff\xff\xff\xff\xff\x0bz\xfd\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x80\x0bz\xfd\xff\xff\xff\xff\xff'
-
     ```
 
 Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
@@ -2551,7 +2554,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).md5().hexdigest()
     7ffd9d64534f2922387fb8269bef6c2d
-
     ```
 
 Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
@@ -2566,7 +2568,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).sha256().hexdigest()
     200ee75f3ff5757f261104c3d6d2f61e7099f197624d10bf3e1c345f680f0f79
-
     ```
 
 Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
@@ -2581,7 +2582,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).sha512().hexdigest()
     a51fcd0e400a660dc7564a288b3e55e8cc630709782f19bd6e0e15449e6168ea74f1e0c0380fd241bbbb276a269329a2c901774832a797e765d00332465aec54
-
     ```
 
 Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
@@ -2596,7 +2596,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).sha3_256().hexdigest()
     256f8e85282857b3a4cfbd6f58b1de4aceac8b904cd5e02c171704e84fe7dc35
-
     ```
 
 Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
@@ -2611,7 +2610,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).sha3_512().hexdigest()
     2a26bdf5a953fc106d2636e0d10fe61eccae71e24eb15191ea86a8789050e8e3dc4f50e6d938fe28a573b633a70c3be43a657b8b30de9509256c553aa8509f80
-
     ```
 
 Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
@@ -2626,7 +2624,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_12
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).shake_128().hexdigest(8)
     98266cfd62ebf881
-
     ```
 
 Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
@@ -2641,7 +2638,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_25
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).shake_256().hexdigest(8)
     0a27d5402daaa671
-
     ```
 
 Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2656,7 +2652,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).blake2b().hexdigest()
     bd38974d3c87f75d2c52915fabae71da18c6327e0f05b50a81ada90bf08a7be66012f28e9668c5564bd22cbd172a29cad87ad5afcb84fc5f9f3f0445a087ad0a
-
     ```
 
 Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2671,7 +2666,6 @@ Batch.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\
     <Batch max_workers=None>
     >>> bt.via_hashlib(include_name=False).blake2s().hexdigest()
     c198734c0be11949dba314a5bc83a6cbbb5d825b0fc6ce792ecca024d9e88bc1
-
     ```
 
 [Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)

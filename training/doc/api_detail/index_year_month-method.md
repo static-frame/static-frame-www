@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexYearMonth: Method](../api_overview/index_year_month-method.md#api-overview-indexyearmonth-method)
 
-IndexYearMonth.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexYearMonth.__array__ "Link to this definition")
+IndexYearMonth.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexYearMonth.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2536,7 +2540,6 @@ IndexYearMonth.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexYearMonth.__arr
     <datetime64[M]>
     >>> ix.__array__()
     ['1517-04' '1517-12' '1517-06']
-
     ```
 
 IndexYearMonth.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexYearMonth.__array_ufunc__ "Link to this definition")
@@ -2552,7 +2555,6 @@ IndexYearMonth.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#
     <datetime64[M]>
     >>> np.array((0, 1, 0)) * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('int64'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.\_\_bool\_\_()[#](#static_frame.IndexYearMonth.__bool__ "Link to this definition")
@@ -2568,7 +2570,6 @@ IndexYearMonth.\_\_bool\_\_()[#](#static_frame.IndexYearMonth.__bool__ "Link to 
     <datetime64[M]>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexYearMonth.\_\_copy\_\_()[#](#static_frame.IndexYearMonth.__copy__ "Link to this definition")
@@ -2589,7 +2590,6 @@ IndexYearMonth.\_\_copy\_\_()[#](#static_frame.IndexYearMonth.__copy__ "Link to 
     1517-12
     1517-06
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexYearMonth.__deepcopy__ "Link to this definition")
@@ -2608,7 +2608,6 @@ IndexYearMonth.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexYearMonth.__deepco
     1517-12
     1517-06
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.\_\_len\_\_()[#](#static_frame.IndexYearMonth.__len__ "Link to this definition")
@@ -2622,7 +2621,6 @@ IndexYearMonth.\_\_len\_\_()[#](#static_frame.IndexYearMonth.__len__ "Link to th
     <datetime64[M]>
     >>> len(ix)
     3
-
     ```
 
 IndexYearMonth.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearMonth.all "Link to this definition")
@@ -2642,7 +2640,6 @@ IndexYearMonth.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <datetime64[M]>
     >>> ix.all()
     True
-
     ```
 
 IndexYearMonth.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearMonth.any "Link to this definition")
@@ -2662,7 +2659,6 @@ IndexYearMonth.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <datetime64[M]>
     >>> ix.any()
     True
-
     ```
 
 IndexYearMonth.astype(*dtype*, */*)[#](#static_frame.IndexYearMonth.astype "Link to this definition")
@@ -2685,7 +2681,6 @@ IndexYearMonth.astype(*dtype*, */*)[#](#static_frame.IndexYearMonth.astype "Link
     1517-12
     1517-06
     <<U25>
-
     ```
 
 IndexYearMonth.copy()[#](#static_frame.IndexYearMonth.copy "Link to this definition")
@@ -2705,7 +2700,6 @@ IndexYearMonth.copy()[#](#static_frame.IndexYearMonth.copy "Link to this definit
     1517-12
     1517-06
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYearMonth.cumprod "Link to this definition")
@@ -2725,7 +2719,6 @@ IndexYearMonth.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYear
     <datetime64[M]>
     >>> ix.cumprod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYearMonth.cumsum "Link to this definition")
@@ -2745,7 +2738,6 @@ IndexYearMonth.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYearM
     <datetime64[M]>
     >>> ix.cumsum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.difference(*\*others*)[#](#static_frame.IndexYearMonth.difference "Link to this definition")
@@ -2759,12 +2751,12 @@ IndexYearMonth.difference(*\*others*)[#](#static_frame.IndexYearMonth.difference
     1517-12
     1517-06
     <datetime64[M]>
-    >>> ix2 = sf.IndexYearMonth(('2022-04', '2021-12', '2022-06'))
+    >>> ix2 = sf.IndexYearMonth(('2022-04', '2021-12', '2018-06'))
     >>> ix2
     <IndexYearMonth>
     2022-04
     2021-12
-    2022-06
+    2018-06
     <datetime64[M]>
     >>> ix1.difference(ix2)
     <IndexYearMonth>
@@ -2772,7 +2764,6 @@ IndexYearMonth.difference(*\*others*)[#](#static_frame.IndexYearMonth.difference
     1517-12
     1517-06
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.dropfalsy()[#](#static_frame.IndexYearMonth.dropfalsy "Link to this definition")
@@ -2791,7 +2782,6 @@ IndexYearMonth.dropfalsy()[#](#static_frame.IndexYearMonth.dropfalsy "Link to th
     1620-09
     1620-11
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.dropna()[#](#static_frame.IndexYearMonth.dropna "Link to this definition")
@@ -2810,7 +2800,6 @@ IndexYearMonth.dropna()[#](#static_frame.IndexYearMonth.dropna "Link to this def
     1620-09
     1620-11
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.IndexYearMonth.equals "Link to this definition")
@@ -2830,16 +2819,15 @@ IndexYearMonth.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype
     1517-12
     1517-06
     <datetime64[M]>
-    >>> ix2 = sf.IndexYearMonth(('2022-04', '2021-12', '2022-06'))
+    >>> ix2 = sf.IndexYearMonth(('2022-04', '2021-12', '2018-06'))
     >>> ix2
     <IndexYearMonth>
     2022-04
     2021-12
-    2022-06
+    2018-06
     <datetime64[M]>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 IndexYearMonth.fillfalsy(*value*, */*)[#](#static_frame.IndexYearMonth.fillfalsy "Link to this definition")
@@ -2858,7 +2846,6 @@ IndexYearMonth.fillfalsy(*value*, */*)[#](#static_frame.IndexYearMonth.fillfalsy
     <datetime64[M]>
     >>> ix.fillfalsy('A')
     ValueError('Error parsing datetime string "A" at position 0')
-
     ```
 
 IndexYearMonth.fillna(*value*, */*)[#](#static_frame.IndexYearMonth.fillna "Link to this definition")
@@ -2881,7 +2868,6 @@ IndexYearMonth.fillna(*value*, */*)[#](#static_frame.IndexYearMonth.fillna "Link
     1970-01
     1620-11
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.head(*count=5*, */*)[#](#static_frame.IndexYearMonth.head "Link to this definition")
@@ -2903,7 +2889,6 @@ IndexYearMonth.head(*count=5*, */*)[#](#static_frame.IndexYearMonth.head "Link t
     1517-04
     1517-12
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexYearMonth.iloc_searchsorted "Link to this definition")
@@ -2923,7 +2908,6 @@ IndexYearMonth.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#st
     <datetime64[M]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexYearMonth.intersection(*\*others*)[#](#static_frame.IndexYearMonth.intersection "Link to this definition")
@@ -2937,17 +2921,35 @@ IndexYearMonth.intersection(*\*others*)[#](#static_frame.IndexYearMonth.intersec
     1517-12
     1517-06
     <datetime64[M]>
-    >>> ix2 = sf.IndexYearMonth(('2022-04', '2021-12', '2022-06'))
+    >>> ix2 = sf.IndexYearMonth(('2022-04', '2021-12', '2018-06'))
     >>> ix2
     <IndexYearMonth>
     2022-04
     2021-12
-    2022-06
+    2018-06
     <datetime64[M]>
     >>> ix1.intersection(ix2)
     <IndexYearMonth>
     <datetime64[M]>
+    ```
 
+IndexYearMonth.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexYearMonth.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.IndexYearMonth(('2022-04', '2021-12', '2018-06'))
+    >>> ix
+    <IndexYearMonth>
+    2022-04
+    2021-12
+    2018-06
+    <datetime64[M]>
+    >>> assert ix.is_sorted(ascending=False)
     ```
 
 IndexYearMonth.isfalsy()[#](#static_frame.IndexYearMonth.isfalsy "Link to this definition")
@@ -2957,7 +2959,6 @@ IndexYearMonth.isfalsy()[#](#static_frame.IndexYearMonth.isfalsy "Link to this d
     >>> ix = sf.IndexYearMonth(('1620-09', 'NaT', '1620-11'))
     >>> ix.isfalsy()
     [False  True False]
-
     ```
 
 IndexYearMonth.isin(*other*, */*)[#](#static_frame.IndexYearMonth.isin "Link to this definition")
@@ -2973,7 +2974,6 @@ IndexYearMonth.isin(*other*, */*)[#](#static_frame.IndexYearMonth.isin "Link to 
     <datetime64[M]>
     >>> ix.isin(('1517-06',))
     [False False False]
-
     ```
 
 IndexYearMonth.isna()[#](#static_frame.IndexYearMonth.isna "Link to this definition")
@@ -2983,7 +2983,6 @@ IndexYearMonth.isna()[#](#static_frame.IndexYearMonth.isna "Link to this definit
     >>> ix = sf.IndexYearMonth(('1620-09', 'NaT', '1620-11'))
     >>> ix.isna()
     [False  True False]
-
     ```
 
 IndexYearMonth.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexYearMonth.label_widths_at_depth "Link to this definition")
@@ -3002,7 +3001,6 @@ IndexYearMonth.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.
     <datetime64[M]>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.datetime64('1517-04'), 1), (np.datetime64('1517-12'), 1), (np.datetime64('1517-06'), 1))
-
     ```
 
 IndexYearMonth.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.IndexYearMonth.level_add "Link to this definition")
@@ -3027,7 +3025,6 @@ IndexYearMonth.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#sta
     A                1517-12
     A                1517-06
     <<U1>            <datetime64[M]>
-
     ```
 
 IndexYearMonth.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.IndexYearMonth.loc_searchsorted "Link to this definition")
@@ -3048,7 +3045,6 @@ IndexYearMonth.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_
     <datetime64[M]>
     >>> ix.loc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexYearMonth.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexYearMonth.loc_to_iloc "Link to this definition")
@@ -3071,7 +3067,6 @@ IndexYearMonth.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexYearMonth.loc_to_
     [0 2]
     >>> ix.loc_to_iloc(slice('1517-12', None))
     slice(1, None, None)
-
     ```
 
 IndexYearMonth.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearMonth.max "Link to this definition")
@@ -3091,7 +3086,6 @@ IndexYearMonth.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <datetime64[M]>
     >>> ix.max()
     1517-12
-
     ```
 
 IndexYearMonth.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearMonth.mean "Link to this definition")
@@ -3111,7 +3105,6 @@ IndexYearMonth.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.
     <datetime64[M]>
     >>> ix.mean()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearMonth.median "Link to this definition")
@@ -3131,7 +3124,6 @@ IndexYearMonth.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fram
     <datetime64[M]>
     >>> ix.median()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearMonth.min "Link to this definition")
@@ -3151,7 +3143,6 @@ IndexYearMonth.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <datetime64[M]>
     >>> ix.min()
     1517-04
-
     ```
 
 IndexYearMonth.notfalsy()[#](#static_frame.IndexYearMonth.notfalsy "Link to this definition")
@@ -3161,7 +3152,6 @@ IndexYearMonth.notfalsy()[#](#static_frame.IndexYearMonth.notfalsy "Link to this
     >>> ix = sf.IndexYearMonth(('1620-09', 'NaT', '1620-11'))
     >>> ix.notfalsy()
     [ True False  True]
-
     ```
 
 IndexYearMonth.notna()[#](#static_frame.IndexYearMonth.notna "Link to this definition")
@@ -3171,7 +3161,6 @@ IndexYearMonth.notna()[#](#static_frame.IndexYearMonth.notna "Link to this defin
     >>> ix = sf.IndexYearMonth(('1620-09', 'NaT', '1620-11'))
     >>> ix.notna()
     [ True False  True]
-
     ```
 
 IndexYearMonth.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexYearMonth.prod "Link to this definition")
@@ -3191,7 +3180,6 @@ IndexYearMonth.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#st
     <datetime64[M]>
     >>> ix.prod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.relabel(*mapper*, */*)[#](#static_frame.IndexYearMonth.relabel "Link to this definition")
@@ -3207,7 +3195,6 @@ IndexYearMonth.relabel(*mapper*, */*)[#](#static_frame.IndexYearMonth.relabel "L
     <datetime64[M]>
     >>> ix.relabel(lambda l: l.astype('<M8[ms]').astype(object).day)
     InvalidDatetime64Initializer('Attempting to create datetime64[M] from an integer, which is generally not desired as the result will be an offset from the epoch.')
-
     ```
 
 IndexYearMonth.rename(*name*, */*)[#](#static_frame.IndexYearMonth.rename "Link to this definition")
@@ -3227,7 +3214,6 @@ IndexYearMonth.rename(*name*, */*)[#](#static_frame.IndexYearMonth.rename "Link 
     1517-12
     1517-06
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.roll(*shift*)[#](#static_frame.IndexYearMonth.roll "Link to this definition")
@@ -3247,7 +3233,6 @@ IndexYearMonth.roll(*shift*)[#](#static_frame.IndexYearMonth.roll "Link to this 
     1517-06
     1517-04
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexYearMonth.sample "Link to this definition")
@@ -3270,7 +3255,6 @@ IndexYearMonth.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexYearMo
     1517-12
     1517-06
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexYearMonth.sort "Link to this definition")
@@ -3301,7 +3285,6 @@ IndexYearMonth.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#
     1517-06
     1517-04
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexYearMonth.std "Link to this definition")
@@ -3321,7 +3304,6 @@ IndexYearMonth.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#stat
     <datetime64[M]>
     >>> ix.std()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexYearMonth.sum "Link to this definition")
@@ -3341,7 +3323,6 @@ IndexYearMonth.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#sta
     <datetime64[M]>
     >>> ix.sum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.tail(*count=5*, */*)[#](#static_frame.IndexYearMonth.tail "Link to this definition")
@@ -3363,7 +3344,6 @@ IndexYearMonth.tail(*count=5*, */*)[#](#static_frame.IndexYearMonth.tail "Link t
     1517-12
     1517-06
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.union(*\*others*)[#](#static_frame.IndexYearMonth.union "Link to this definition")
@@ -3377,23 +3357,22 @@ IndexYearMonth.union(*\*others*)[#](#static_frame.IndexYearMonth.union "Link to 
     1517-12
     1517-06
     <datetime64[M]>
-    >>> ix2 = sf.IndexYearMonth(('2022-04', '2021-12', '2022-06'))
+    >>> ix2 = sf.IndexYearMonth(('2022-04', '2021-12', '2018-06'))
     >>> ix2
     <IndexYearMonth>
     2022-04
     2021-12
-    2022-06
+    2018-06
     <datetime64[M]>
     >>> ix1.union(ix2)
     <IndexYearMonth>
     1517-04
     1517-06
     1517-12
+    2018-06
     2021-12
     2022-04
-    2022-06
     <datetime64[M]>
-
     ```
 
 IndexYearMonth.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#static_frame.IndexYearMonth.unique "Link to this definition")
@@ -3416,7 +3395,6 @@ IndexYearMonth.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*
     <datetime64[M]>
     >>> ix.unique()
     ['1620-09'     'NaT' '1620-11']
-
     ```
 
 IndexYearMonth.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexYearMonth.values_at_depth "Link to this definition")
@@ -3432,7 +3410,6 @@ IndexYearMonth.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexYe
     <datetime64[M]>
     >>> ix.values_at_depth(0)
     ['1517-04' '1517-12' '1517-06']
-
     ```
 
 IndexYearMonth.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexYearMonth.var "Link to this definition")
@@ -3452,7 +3429,6 @@ IndexYearMonth.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#stat
     <datetime64[M]>
     >>> ix.var()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 [IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-detail-indexyearmonth-attribute) | [Method](#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-detail-indexyearmonth-accessor-type-clinic)
@@ -3487,6 +3463,7 @@ On this page
 * [`IndexYearMonth.head()`](#static_frame.IndexYearMonth.head)
 * [`IndexYearMonth.iloc_searchsorted()`](#static_frame.IndexYearMonth.iloc_searchsorted)
 * [`IndexYearMonth.intersection()`](#static_frame.IndexYearMonth.intersection)
+* [`IndexYearMonth.is_sorted()`](#static_frame.IndexYearMonth.is_sorted)
 * [`IndexYearMonth.isfalsy()`](#static_frame.IndexYearMonth.isfalsy)
 * [`IndexYearMonth.isin()`](#static_frame.IndexYearMonth.isin)
 * [`IndexYearMonth.isna()`](#static_frame.IndexYearMonth.isna)

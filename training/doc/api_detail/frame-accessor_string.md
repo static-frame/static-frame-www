@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2550,7 +2554,6 @@ Frame.via\_str.\_\_getitem\_\_(*key*)
     r          8     3
     s          3
     <<U1>      <<U1> <<U1>
-
     ```
 
 Frame.via\_str.capitalize
@@ -2580,7 +2583,6 @@ Frame.via\_str.capitalize
     r          8      123
     s          3       wx
     <<U1>      <<U21> <<U4>
-
     ```
 
 Frame.via\_str.center(*width*, *fillchar*)
@@ -2610,7 +2612,6 @@ Frame.via\_str.center(*width*, *fillchar*)
     r             8       123
     s             3        wX
     <<U1>      <<U8>    <<U8>
-
     ```
 
 Frame.via\_str.contains(*item*)
@@ -2640,7 +2641,6 @@ Frame.via\_str.contains(*item*)
     r          False  False
     s          False  True
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.count(*sub*, *start*, *end*)
@@ -2670,7 +2670,6 @@ Frame.via\_str.count(*sub*, *start*, *end*)
     r          0       0
     s          0       1
     <<U1>      <int64> <int64>
-
     ```
 
 Frame.via\_str.decode(*encoding*, *errors*)
@@ -2700,7 +2699,6 @@ Frame.via\_str.decode(*encoding*, *errors*)
     r          8     123
     s          3      wX
     <<U1>      <<U2> <<U4>
-
     ```
 
 Frame.via\_str.encode(*encoding*, *errors*)
@@ -2730,7 +2728,6 @@ Frame.via\_str.encode(*encoding*, *errors*)
     r          b'8'  b'123'
     s          b'3'  b' wX '
     <<U1>      <|S2> <|S4>
-
     ```
 
 Frame.via\_str.endswith(*suffix*, *start*, *end*)
@@ -2760,7 +2757,6 @@ Frame.via\_str.endswith(*suffix*, *start*, *end*)
     r          False  False
     s          False  True
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.find(*sub*, *start*, *end*)
@@ -2790,7 +2786,6 @@ Frame.via\_str.find(*sub*, *start*, *end*)
     r          -1      -1
     s          -1      2
     <<U1>      <int64> <int64>
-
     ```
 
 Frame.via\_str.format(*format*)
@@ -2823,7 +2818,6 @@ Frame.via\_str.format(*format*)
     r          ----8----- ---123----
     s          ----3----- --- wX ---
     <<U1>      <<U10>     <<U10>
-
     ```
 
 Frame.via\_str.index(*sub*, *start*, *end*)
@@ -2846,7 +2840,6 @@ Frame.via\_str.index(*sub*, *start*, *end*)
     <<U1>      <int64> <<U4>
     >>> f.via_str.index('X')
     ValueError('substring not found')
-
     ```
 
 Frame.via\_str.isalnum
@@ -2876,7 +2869,6 @@ Frame.via\_str.isalnum
     r          True   True
     s          True   False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.isalpha
@@ -2906,7 +2898,6 @@ Frame.via\_str.isalpha
     r          False  False
     s          False  False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.isdecimal
@@ -2936,7 +2927,6 @@ Frame.via\_str.isdecimal
     r          True   True
     s          True   False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.isdigit
@@ -2966,7 +2956,6 @@ Frame.via\_str.isdigit
     r          True   True
     s          True   False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.islower
@@ -2996,7 +2985,6 @@ Frame.via\_str.islower
     r          False  False
     s          False  False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.isnumeric
@@ -3026,7 +3014,6 @@ Frame.via\_str.isnumeric
     r          True   True
     s          True   False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.isspace
@@ -3056,7 +3043,6 @@ Frame.via\_str.isspace
     r          False  False
     s          False  False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.istitle
@@ -3086,7 +3072,6 @@ Frame.via\_str.istitle
     r          False  False
     s          False  False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.isupper
@@ -3116,7 +3101,6 @@ Frame.via\_str.isupper
     r          False  False
     s          False  False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.ljust(*width*, *fillchar*)
@@ -3146,7 +3130,6 @@ Frame.via\_str.ljust(*width*, *fillchar*)
     r          8        123
     s          3         wX
     <<U1>      <<U8>    <<U8>
-
     ```
 
 Frame.via\_str.len
@@ -3176,7 +3159,6 @@ Frame.via\_str.len
     r          1       3
     s          1       4
     <<U1>      <int64> <int64>
-
     ```
 
 Frame.via\_str.lower
@@ -3206,7 +3188,6 @@ Frame.via\_str.lower
     r          8      123
     s          3       wx
     <<U1>      <<U21> <<U4>
-
     ```
 
 Frame.via\_str.lstrip(*chars*)
@@ -3236,7 +3217,6 @@ Frame.via\_str.lstrip(*chars*)
     r          8      123
     s          3      wX
     <<U1>      <<U21> <<U4>
-
     ```
 
 Frame.via\_str.partition(*sep*)
@@ -3266,7 +3246,6 @@ Frame.via\_str.partition(*sep*)
     r          (np.str_('8'), ''... (np.str_('123'), ...
     s          (np.str_('3'), ''... (' w', 'X', ' ')
     <<U1>      <object>             <object>
-
     ```
 
 Frame.via\_str.replace(*old*, *new*, *count*)
@@ -3296,7 +3275,6 @@ Frame.via\_str.replace(*old*, *new*, *count*)
     r          8     123
     s          3      w*
     <<U1>      <<U2> <<U4>
-
     ```
 
 Frame.via\_str.rfind(*sub*, *start*, *end*)
@@ -3326,7 +3304,6 @@ Frame.via\_str.rfind(*sub*, *start*, *end*)
     r          -1      -1
     s          -1      2
     <<U1>      <int64> <int64>
-
     ```
 
 Frame.via\_str.rindex(*sub*, *start*, *end*)
@@ -3349,7 +3326,6 @@ Frame.via\_str.rindex(*sub*, *start*, *end*)
     <<U1>      <int64> <<U4>
     >>> f.via_str.rindex('X')
     ValueError('substring not found')
-
     ```
 
 Frame.via\_str.rjust(*width*, *fillchar*)
@@ -3379,7 +3355,6 @@ Frame.via\_str.rjust(*width*, *fillchar*)
     r                 8      123
     s                 3      wX
     <<U1>      <<U8>    <<U8>
-
     ```
 
 Frame.via\_str.rpartition(*sep*)
@@ -3409,7 +3384,6 @@ Frame.via\_str.rpartition(*sep*)
     r          ('', '', np.str_(... ('', '', np.str_(...
     s          ('', '', np.str_(... (' w', 'X', ' ')
     <<U1>      <object>             <object>
-
     ```
 
 Frame.via\_str.rsplit(*sep*, *maxsplit*)
@@ -3439,7 +3413,6 @@ Frame.via\_str.rsplit(*sep*, *maxsplit*)
     r          ('8',)   ('123',)
     s          ('3',)   (' w', ' ')
     <<U1>      <object> <object>
-
     ```
 
 Frame.via\_str.rstrip(*chars*)
@@ -3469,7 +3442,6 @@ Frame.via\_str.rstrip(*chars*)
     r          8      123
     s          3       wX
     <<U1>      <<U21> <<U4>
-
     ```
 
 Frame.via\_str.split(*sep*, *maxsplit*)
@@ -3499,7 +3471,6 @@ Frame.via\_str.split(*sep*, *maxsplit*)
     r          ('8',)   ('123',)
     s          ('3',)   (' w', ' ')
     <<U1>      <object> <object>
-
     ```
 
 Frame.via\_str.startswith(*prefix*, *start*, *end*)
@@ -3529,7 +3500,6 @@ Frame.via\_str.startswith(*prefix*, *start*, *end*)
     r          False  False
     s          False  False
     <<U1>      <bool> <bool>
-
     ```
 
 Frame.via\_str.strip(*chars*)
@@ -3559,7 +3529,6 @@ Frame.via\_str.strip(*chars*)
     r          8      123
     s          3      wX
     <<U1>      <<U21> <<U4>
-
     ```
 
 Frame.via\_str.swapcase
@@ -3589,7 +3558,6 @@ Frame.via\_str.swapcase
     r          8      123
     s          3       Wx
     <<U1>      <<U21> <<U4>
-
     ```
 
 Frame.via\_str.title
@@ -3619,7 +3587,6 @@ Frame.via\_str.title
     r          8      123
     s          3       Wx
     <<U1>      <<U21> <<U4>
-
     ```
 
 Frame.via\_str.upper
@@ -3649,7 +3616,6 @@ Frame.via\_str.upper
     r          8      123
     s          3       WX
     <<U1>      <<U21> <<U4>
-
     ```
 
 Frame.via\_str.zfill(*width*)
@@ -3679,7 +3645,6 @@ Frame.via\_str.zfill(*width*)
     r          00000008 00000123
     s          00000003 0000 wX
     <<U1>      <<U8>    <<U8>
-
     ```
 
 [Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)

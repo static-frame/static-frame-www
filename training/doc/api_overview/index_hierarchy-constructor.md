@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2525,14 +2529,17 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-init) | `IndexHierarchy.__init__(indices, /, *, indexers, name, blocks, own_blocks)` | Initializer. Args: indices: list of Index objects indexers: a 2D indexer array n… |
+| [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-init) | `IndexHierarchy.__init__(indices, /, *, indexers, name, blocks, own_blocks, sort_status)` | Initializer. Args: indices: list of Index objects indexers: a 2D indexer array n… |
+| [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-difference) | `IndexHierarchy.from_difference(*others)` | Construct a new Index based on the difference with Index, containers, or NumPy a… |
 | [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-index-items) | `IndexHierarchy.from_index_items(items, /, *, index_constructor, name)` | Given an iterable of pairs of label, IndexBase, produce an IndexHierarchy where… |
+| [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-intersection) | `IndexHierarchy.from_intersection(*others)` | Construct a new Index based on the intersection with Index, containers, or NumPy… |
 | [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-labels) | `IndexHierarchy.from_labels(labels, /, *, name, reorder_for_hierarchy, index_constructors, depth_reference, continuation_token)` | Construct an IndexHierarchy from an iterable of labels, where each label is tupl… |
 | [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-labels-delimited) | `IndexHierarchy.from_labels_delimited(labels, /, *, delimiter, name, index_constructors)` | Construct an IndexHierarchy from an iterable of labels, where each label is stri… |
 | [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-names) | `IndexHierarchy.from_names(names, /)` | Construct a zero-length IndexHierarchy from an iterable of names, where the leng… |
 | [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-pandas) | `IndexHierarchy.from_pandas(value, /)` | Given a Pandas index, return the appropriate IndexBase derived class. |
 | [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-product) | `IndexHierarchy.from_product(*, name, index_constructors, *levels)` | Given groups of iterables, return an IndexHierarchy made of the product of a val… |
 | [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-tree) | `IndexHierarchy.from_tree(tree, /, *, name, index_constructors)` | Convert into a IndexHierarchy a dictionary defining keys to either iterables or… |
+| [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-union) | `IndexHierarchy.from_union(*others)` | Construct a new Index based on the union with Index, containers, or NumPy arrays… |
 | [Detail](../api_detail/index_hierarchy-constructor.md#api-sig-indexhierarchy-from-values-per-depth) | `IndexHierarchy.from_values_per_depth(values, /, *, name, depth_reference, index_constructors)` | Construct an IndexHierarchy from a 2D NumPy array, or a collection of 1D arrays… |
 
 [IndexHierarchy](index_hierarchy.md#api-overview-indexhierarchy): [Constructor](#api-overview-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-overview-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-overview-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-overview-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-overview-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-overview-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-overview-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-overview-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-overview-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-overview-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-overview-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-overview-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-overview-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-overview-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-overview-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-overview-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-overview-indexhierarchy-accessor-type-clinic)

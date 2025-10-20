@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2539,8 +2543,11 @@ IndexMillisecondGO.interface[#](#IndexMillisecondGO.interface "Link to this defi
     <Index>                              cls_name           group                doc                  <<U18>
     <Index: signature>
     __init__(labels, /, *, loc_is_ilo... IndexMillisecondGO Constructor          Initializer. Args...
+    from_difference(*others)             IndexMillisecondGO Constructor          Construct a new I...
+    from_intersection(*others)           IndexMillisecondGO Constructor          Construct a new I...
     from_labels(labels, /, *, name)      IndexMillisecondGO Constructor          Construct an Inde...
     from_pandas(value, /)                IndexMillisecondGO Constructor          Given a Pandas in...
+    from_union(*others)                  IndexMillisecondGO Constructor          Construct a new I...
     to_html(config, /, *, style_config)  IndexMillisecondGO Exporter             Return an HTML ta...
     to_html_datatables(fp, /, *, show... IndexMillisecondGO Exporter             Return a complete...
     to_pandas()                          IndexMillisecondGO Exporter             Return a Pandas I...
@@ -2552,9 +2559,6 @@ IndexMillisecondGO.interface[#](#IndexMillisecondGO.interface "Link to this defi
     index_types                          IndexMillisecondGO Attribute            Return a Series o...
     memory                               IndexMillisecondGO Attribute            Return a MemoryDi...
     mloc                                 IndexMillisecondGO Attribute            The memory locati...
-    name                                 IndexMillisecondGO Attribute            A hashable label ...
-    names                                IndexMillisecondGO Attribute            Provide a suitabl...
-    nbytes                               IndexMillisecondGO Attribute            Return the total ...
     ...                                  ...                ...                  ...
     via_re(pattern, flags, /).sub(rep... IndexMillisecondGO Accessor Regular ... Return the string...
     via_re(pattern, flags, /).subn(re... IndexMillisecondGO Accessor Regular ... Perform the same ...
@@ -2574,7 +2578,6 @@ IndexMillisecondGO.interface[#](#IndexMillisecondGO.interface "Link to this defi
     via_type_clinic.__call__(hint, /,... IndexMillisecondGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexMillisecondGO Accessor Type Clinic Return a compact ...
     <<U93>                               <<U18>             <<U27>               <<U83>
-
     ```
 
 IndexMillisecondGO.\_\_repr\_\_()[#](#static_frame.IndexMillisecondGO.__repr__ "Link to this definition")
@@ -2588,7 +2591,6 @@ IndexMillisecondGO.\_\_repr\_\_()[#](#static_frame.IndexMillisecondGO.__repr__ "
     NaT
     1620-11-21T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.\_\_str\_\_()[#](#static_frame.IndexMillisecondGO.__str__ "Link to this definition")
@@ -2602,7 +2604,6 @@ IndexMillisecondGO.\_\_str\_\_()[#](#static_frame.IndexMillisecondGO.__str__ "Li
     NaT
     1620-11-21T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.display(*config=None*, */*, *\**, *style\_config=None*)[#](#static_frame.IndexMillisecondGO.display "Link to this definition")
@@ -2623,7 +2624,6 @@ IndexMillisecondGO.display(*config=None*, */*, *\**, *style\_config=None*)[#](#s
     1620-09-16T00:00:00.000
     NaT
     1620-11-21T00:00:00.000
-
     ```
 
 IndexMillisecondGO.display\_tall(*config=None*, */*)[#](#static_frame.IndexMillisecondGO.display_tall "Link to this definition")
@@ -2640,7 +2640,6 @@ IndexMillisecondGO.display\_tall(*config=None*, */*)[#](#static_frame.IndexMilli
     NaT
     1620-11-21T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 IndexMillisecondGO.display\_wide(*config=None*, */*)[#](#static_frame.IndexMillisecondGO.display_wide "Link to this definition")
@@ -2657,7 +2656,6 @@ IndexMillisecondGO.display\_wide(*config=None*, */*)[#](#static_frame.IndexMilli
     NaT
     1620-11-21T00:00:00.000
     <datetime64[ms]>
-
     ```
 
 [IndexMillisecondGO](index_millisecond_go.md#api-detail-indexmillisecondgo): [Constructor](index_millisecond_go-constructor.md#api-detail-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-detail-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-detail-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.md#api-detail-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-detail-indexmillisecondgo-dictionary-like) | [Display](#api-detail-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-detail-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-detail-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-detail-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-detail-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-detail-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-detail-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-detail-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-detail-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-detail-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-detail-indexmillisecondgo-accessor-type-clinic)

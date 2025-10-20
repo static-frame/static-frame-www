@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2536,7 +2540,6 @@ IndexHierarchy.\_\_add\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__add__
     [[    8  1032    40]
      [    9 -2040    40]
      [    9  1032    40]]
-
     ```
 
 IndexHierarchy.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__and__ "Link to this definition")
@@ -2556,7 +2559,6 @@ IndexHierarchy.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__and__
     [[False  True  True]
      [False  True  True]
      [False  True False]]
-
     ```
 
 IndexHierarchy.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__eq__ "Link to this definition")
@@ -2574,7 +2576,6 @@ IndexHierarchy.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__eq__ "
     [[False False False]
      [False False False]
      [False False False]]
-
     ```
 
 IndexHierarchy.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__floordiv__ "Link to this definition")
@@ -2590,7 +2591,6 @@ IndexHierarchy.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__
     [[   0  128    4]
      [   0 -256    4]
      [   0  128    4]]
-
     ```
 
 IndexHierarchy.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__ge__ "Link to this definition")
@@ -2608,7 +2608,6 @@ IndexHierarchy.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__ge__ "
     [[False  True  True]
      [False False  True]
      [False  True  True]]
-
     ```
 
 IndexHierarchy.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__gt__ "Link to this definition")
@@ -2626,7 +2625,6 @@ IndexHierarchy.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__gt__ "
     [[False  True  True]
      [False False  True]
      [False  True  True]]
-
     ```
 
 IndexHierarchy.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__le__ "Link to this definition")
@@ -2644,7 +2642,6 @@ IndexHierarchy.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__le__ "
     [[ True False False]
      [ True  True False]
      [ True False False]]
-
     ```
 
 IndexHierarchy.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__lt__ "Link to this definition")
@@ -2662,7 +2659,6 @@ IndexHierarchy.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__lt__ "
     [[ True False False]
      [ True  True False]
      [ True False False]]
-
     ```
 
 IndexHierarchy.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__matmul__ "Link to this definition")
@@ -2676,7 +2672,6 @@ IndexHierarchy.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__ma
     <int64>                           <int64> <int64>
     >>> ih @ (3, 0, 4)
     [128 131 131]
-
     ```
 
 IndexHierarchy.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__mod__ "Link to this definition")
@@ -2692,7 +2687,6 @@ IndexHierarchy.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__mod__
     [[0 0 0]
      [1 0 0]
      [1 0 0]]
-
     ```
 
 IndexHierarchy.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__mul__ "Link to this definition")
@@ -2708,7 +2702,6 @@ IndexHierarchy.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__mul__
     [[     0   8192    256]
      [     8 -16384    256]
      [     8   8192    256]]
-
     ```
 
 IndexHierarchy.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__ne__ "Link to this definition")
@@ -2726,7 +2719,6 @@ IndexHierarchy.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__ne__ "
     [[ True  True  True]
      [ True  True  True]
      [ True  True  True]]
-
     ```
 
 IndexHierarchy.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__or__ "Link to this definition")
@@ -2748,7 +2740,6 @@ IndexHierarchy.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__or__ "
     [[False  True  True]
      [ True  True  True]
      [False  True  True]]
-
     ```
 
 IndexHierarchy.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__pow__ "Link to this definition")
@@ -2764,7 +2755,6 @@ IndexHierarchy.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__pow__
     [[            0             0 1099511627776]
      [            1             0 1099511627776]
      [            1             0 1099511627776]]
-
     ```
 
 IndexHierarchy.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__radd__ "Link to this definition")
@@ -2780,7 +2770,6 @@ IndexHierarchy.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__radd
     [[    8  1032    40]
      [    9 -2040    40]
      [    9  1032    40]]
-
     ```
 
 IndexHierarchy.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__rfloordiv__ "Link to this definition")
@@ -2796,7 +2785,6 @@ IndexHierarchy.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexHierarchy._
     [[ 0  0  0]
      [ 8 -1  0]
      [ 8  0  0]]
-
     ```
 
 IndexHierarchy.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__rmatmul__ "Link to this definition")
@@ -2810,7 +2798,6 @@ IndexHierarchy.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__r
     <int64>                           <int64> <int64>
     >>> ih @ (3, 0, 4)
     [128 131 131]
-
     ```
 
 IndexHierarchy.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__rmul__ "Link to this definition")
@@ -2826,7 +2813,6 @@ IndexHierarchy.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__rmul
     [[     0   8192    256]
      [     8 -16384    256]
      [     8   8192    256]]
-
     ```
 
 IndexHierarchy.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__rshift__ "Link to this definition")
@@ -2842,7 +2828,6 @@ IndexHierarchy.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__rs
     [[    0   512    16]
      [    0 -1024    16]
      [    0   512    16]]
-
     ```
 
 IndexHierarchy.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__rsub__ "Link to this definition")
@@ -2858,7 +2843,6 @@ IndexHierarchy.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__rsub
     [[    8 -1016   -24]
      [    7  2056   -24]
      [    7 -1016   -24]]
-
     ```
 
 IndexHierarchy.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__rtruediv__ "Link to this definition")
@@ -2874,7 +2858,6 @@ IndexHierarchy.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__
     [[         inf  7.81250e-03  2.50000e-01]
      [ 8.00000e+00 -3.90625e-03  2.50000e-01]
      [ 8.00000e+00  7.81250e-03  2.50000e-01]]
-
     ```
 
 IndexHierarchy.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__sub__ "Link to this definition")
@@ -2890,7 +2873,6 @@ IndexHierarchy.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__sub__
     [[   -8  1016    24]
      [   -7 -2056    24]
      [   -7  1016    24]]
-
     ```
 
 IndexHierarchy.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__truediv__ "Link to this definition")
@@ -2906,7 +2888,6 @@ IndexHierarchy.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__t
     [[ 0.00e+00  1.28e+02  4.00e+00]
      [ 1.25e-01 -2.56e+02  4.00e+00]
      [ 1.25e-01  1.28e+02  4.00e+00]]
-
     ```
 
 IndexHierarchy.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__xor__ "Link to this definition")
@@ -2926,7 +2907,6 @@ IndexHierarchy.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexHierarchy.__xor__
     [[False False False]
      [ True False False]
      [False False  True]]
-
     ```
 
 [IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)

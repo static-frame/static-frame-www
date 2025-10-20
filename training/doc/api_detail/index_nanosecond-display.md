@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2539,8 +2543,11 @@ IndexNanosecond.interface[#](#IndexNanosecond.interface "Link to this definition
     <Index>                              cls_name        group                doc                  <<U18>
     <Index: signature>
     __init__(labels, /, *, loc_is_ilo... IndexNanosecond Constructor          Initializer. Args...
+    from_difference(*others)             IndexNanosecond Constructor          Construct a new I...
+    from_intersection(*others)           IndexNanosecond Constructor          Construct a new I...
     from_labels(labels, /, *, name)      IndexNanosecond Constructor          Construct an Inde...
     from_pandas(value, /)                IndexNanosecond Constructor          Given a Pandas in...
+    from_union(*others)                  IndexNanosecond Constructor          Construct a new I...
     to_html(config, /, *, style_config)  IndexNanosecond Exporter             Return an HTML ta...
     to_html_datatables(fp, /, *, show... IndexNanosecond Exporter             Return a complete...
     to_pandas()                          IndexNanosecond Exporter             Return a Pandas I...
@@ -2552,9 +2559,6 @@ IndexNanosecond.interface[#](#IndexNanosecond.interface "Link to this definition
     index_types                          IndexNanosecond Attribute            Return a Series o...
     memory                               IndexNanosecond Attribute            Return a MemoryDi...
     mloc                                 IndexNanosecond Attribute            The memory locati...
-    name                                 IndexNanosecond Attribute            A hashable label ...
-    names                                IndexNanosecond Attribute            Provide a suitabl...
-    nbytes                               IndexNanosecond Attribute            Return the total ...
     ...                                  ...             ...                  ...
     via_re(pattern, flags, /).sub(rep... IndexNanosecond Accessor Regular ... Return the string...
     via_re(pattern, flags, /).subn(re... IndexNanosecond Accessor Regular ... Perform the same ...
@@ -2574,7 +2578,6 @@ IndexNanosecond.interface[#](#IndexNanosecond.interface "Link to this definition
     via_type_clinic.__call__(hint, /,... IndexNanosecond Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexNanosecond Accessor Type Clinic Return a compact ...
     <<U93>                               <<U15>          <<U27>               <<U83>
-
     ```
 
 IndexNanosecond.\_\_repr\_\_()[#](#static_frame.IndexNanosecond.__repr__ "Link to this definition")
@@ -2588,7 +2591,6 @@ IndexNanosecond.\_\_repr\_\_()[#](#static_frame.IndexNanosecond.__repr__ "Link t
     NaT
     1799-11-09T00:00:00.000000000
     <datetime64[ns]>
-
     ```
 
 IndexNanosecond.\_\_str\_\_()[#](#static_frame.IndexNanosecond.__str__ "Link to this definition")
@@ -2602,7 +2604,6 @@ IndexNanosecond.\_\_str\_\_()[#](#static_frame.IndexNanosecond.__str__ "Link to 
     NaT
     1799-11-09T00:00:00.000000000
     <datetime64[ns]>
-
     ```
 
 IndexNanosecond.display(*config=None*, */*, *\**, *style\_config=None*)[#](#static_frame.IndexNanosecond.display "Link to this definition")
@@ -2623,7 +2624,6 @@ IndexNanosecond.display(*config=None*, */*, *\**, *style\_config=None*)[#](#stat
     1789-05-05T00:00:00.000000000
     NaT
     1799-11-09T00:00:00.000000000
-
     ```
 
 IndexNanosecond.display\_tall(*config=None*, */*)[#](#static_frame.IndexNanosecond.display_tall "Link to this definition")
@@ -2640,7 +2640,6 @@ IndexNanosecond.display\_tall(*config=None*, */*)[#](#static_frame.IndexNanoseco
     NaT
     1799-11-09T00:00:00.000000000
     <datetime64[ns]>
-
     ```
 
 IndexNanosecond.display\_wide(*config=None*, */*)[#](#static_frame.IndexNanosecond.display_wide "Link to this definition")
@@ -2657,7 +2656,6 @@ IndexNanosecond.display\_wide(*config=None*, */*)[#](#static_frame.IndexNanoseco
     NaT
     1799-11-09T00:00:00.000000000
     <datetime64[ns]>
-
     ```
 
 [IndexNanosecond](index_nanosecond.md#api-detail-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-detail-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-detail-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-detail-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-detail-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-detail-indexnanosecond-dictionary-like) | [Display](#api-detail-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-detail-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-detail-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-detail-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-detail-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-detail-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-detail-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-detail-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-detail-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-detail-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-detail-indexnanosecond-accessor-type-clinic)

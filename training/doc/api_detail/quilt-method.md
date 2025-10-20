@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2538,7 +2542,6 @@ Quilt.\_\_bool\_\_()[#](#static_frame.Quilt.__bool__ "Link to this definition")
     <<U1>
     >>> bool(b)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 Quilt.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.equals)[#](#static_frame.Quilt.equals "Link to this definition")
@@ -2573,7 +2576,6 @@ Quilt.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
     <<U1>
     >>> q1.equals(q2)
     False
-
     ```
 
 Quilt.head(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.head)[#](#static_frame.Quilt.head "Link to this definition")
@@ -2599,7 +2601,6 @@ Quilt.head(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quil
     x                p     0       1
     x                q     2       3
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Quilt.rename(*name*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.rename)[#](#static_frame.Quilt.rename "Link to this definition")
@@ -2625,7 +2626,6 @@ Quilt.rename(*name*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt
     x                . .
     v                . .
     <<U1>
-
     ```
 
 Quilt.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.sample)[#](#static_frame.Quilt.sample "Link to this definition")
@@ -2653,7 +2653,6 @@ Quilt.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modu
     x                r     4       5
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Quilt.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.tail)[#](#static_frame.Quilt.tail "Link to this definition")
@@ -2679,7 +2678,6 @@ Quilt.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/quilt.md#Quil
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Quilt.unpersist()[[source]](../_modules/static_frame/core/quilt.md#Quilt.unpersist)[#](#static_frame.Quilt.unpersist "Link to this definition")
@@ -2723,7 +2721,6 @@ Quilt.unpersist()[[source]](../_modules/static_frame/core/quilt.md#Quilt.unpersi
     x       False  nan       nan       None
     v       False  nan       nan       None
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 [Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)

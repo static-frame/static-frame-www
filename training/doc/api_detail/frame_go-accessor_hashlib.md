@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2543,7 +2547,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_byt
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).to_bytes()
     b'FrameGOIndex\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00IndexGOa\x00\x00\x00b\x00\x00\x00c\x00\x00\x00\n\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00q\x00\x00\x00r\x00\x00\x00s\x00\x00\x00 \x00\x00\x00X\x00\x00\x00Y\x00\x00\x00Z\x00\x00\x00\x00\x00\x00\x001\x00\x00\x002\x00\x00\x003\x00\x00\x00\x00\x00\x00\x00 \x00\x00\x00w\x00\x00\x00X\x00\x00\x00 \x00\x00\x00\xb1y\xfd\xff\xff\xff\xff\xff\x0bz\xfd\xff\xff\xff\xff\xff\x1d{\xfd\xff\xff\xff\xff\xffez\xfd\xff\xff\xff\xff\xff'
-
     ```
 
 FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
@@ -2565,7 +2568,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).md5().hexdigest()
     5d776c2ad38ad4f14e2067789c350869
-
     ```
 
 FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
@@ -2587,7 +2589,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).sha256().hexdigest()
     e72692189222cc59ac71f1438698df520b02ef319a1d6f5be3cb6454c94a1a7f
-
     ```
 
 FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
@@ -2609,7 +2610,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).sha512().hexdigest()
     37369fc48eed2c55876307dc6860b0ebb546d799217b46b10b63c842818bde7698581686b876d89fbf718f3aa03aa580e0cae444b9b2a320ae51ddbcf74978de
-
     ```
 
 FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
@@ -2631,7 +2631,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_2
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).sha3_256().hexdigest()
     405e7c5661a178d789d681f154e9605df7ad7eb5a892897ba530ece310f8972f
-
     ```
 
 FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
@@ -2653,7 +2652,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_5
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).sha3_512().hexdigest()
     e77e5f634849cf0250d914dd174f695da4220f793d3d82406b4fd65ef8431a1f45fa022a8577e4388a18e854d25107f2a67f719aededf8dcb6f371db62ec8df0
-
     ```
 
 FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
@@ -2675,7 +2673,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).shake_128().hexdigest(8)
     86c6ca0df1414a35
-
     ```
 
 FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
@@ -2697,7 +2694,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).shake_256().hexdigest(8)
     0a2e9a5d9e6cd7ef
-
     ```
 
 FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2719,7 +2715,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).blake2b().hexdigest()
     d3630968e54744ba143e85391db35704e7ee7fa7031ee32b2796aa762dbe5a257dc5c5499f8939e5a41fc48dfc7e8a1105591155622a4ba9865916e0f8d41e2f
-
     ```
 
 FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2741,7 +2736,6 @@ FrameGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s
     <int64>      <int64> <<U4> <datetime64[D]>
     >>> f.via_hashlib(include_name=False).blake2s().hexdigest()
     cebca441ca9ae07200b8f35a02edf2f4d7b2da2270c6fac37e630894ef621a92
-
     ```
 
 [FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)

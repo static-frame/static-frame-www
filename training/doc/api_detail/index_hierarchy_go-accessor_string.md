@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2544,7 +2548,6 @@ IndexHierarchyGO.via\_str.\_\_getitem\_\_(*key*)
      ['Z' '7']
      ['3' '7']
      [' ' '1']]
-
     ```
 
 IndexHierarchyGO.via\_str.capitalize
@@ -2568,7 +2571,6 @@ IndexHierarchyGO.via\_str.capitalize
      ['Xyz' '12/31/1517']
      ['123' '6/30/1517']
      [' wx ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.center(*width*, *fillchar*)
@@ -2592,7 +2594,6 @@ IndexHierarchyGO.via\_str.center(*width*, *fillchar*)
      ['  XYZ   ' '12/31/1517']
      ['  123   ' '6/30/1517']
      ['   wX   ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.contains(*item*)
@@ -2616,7 +2617,6 @@ IndexHierarchyGO.via\_str.contains(*item*)
      [ True False]
      [False False]
      [ True False]]
-
     ```
 
 IndexHierarchyGO.via\_str.count(*sub*, *start*, *end*)
@@ -2640,7 +2640,6 @@ IndexHierarchyGO.via\_str.count(*sub*, *start*, *end*)
      [1 0]
      [0 0]
      [1 0]]
-
     ```
 
 IndexHierarchyGO.via\_str.decode(*encoding*, *errors*)
@@ -2664,7 +2663,6 @@ IndexHierarchyGO.via\_str.decode(*encoding*, *errors*)
      ['XYZ' '12/31/1517']
      ['123' '6/30/1517']
      [' wX ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.encode(*encoding*, *errors*)
@@ -2688,7 +2686,6 @@ IndexHierarchyGO.via\_str.encode(*encoding*, *errors*)
      [b'XYZ' b'12/31/1517']
      [b'123' b'6/30/1517']
      [b' wX ' b'12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.endswith(*suffix*, *start*, *end*)
@@ -2712,7 +2709,6 @@ IndexHierarchyGO.via\_str.endswith(*suffix*, *start*, *end*)
      [False False]
      [False False]
      [ True False]]
-
     ```
 
 IndexHierarchyGO.via\_str.find(*sub*, *start*, *end*)
@@ -2736,7 +2732,6 @@ IndexHierarchyGO.via\_str.find(*sub*, *start*, *end*)
      [ 0 -1]
      [-1 -1]
      [ 2 -1]]
-
     ```
 
 IndexHierarchyGO.via\_str.format(*format*)
@@ -2763,7 +2758,6 @@ IndexHierarchyGO.via\_str.format(*format*)
      ['---XYZ----' '12/31/1517']
      ['---123----' '6/30/1517-']
      ['--- wX ---' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.index(*sub*, *start*, *end*)
@@ -2784,7 +2778,6 @@ IndexHierarchyGO.via\_str.index(*sub*, *start*, *end*)
     <<U4>              <<U10>
     >>> ih.via_str.index('X')
     ValueError('substring not found')
-
     ```
 
 IndexHierarchyGO.via\_str.isalnum
@@ -2808,7 +2801,6 @@ IndexHierarchyGO.via\_str.isalnum
      [ True False]
      [ True False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.isalpha
@@ -2832,7 +2824,6 @@ IndexHierarchyGO.via\_str.isalpha
      [ True False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.isdecimal
@@ -2856,7 +2847,6 @@ IndexHierarchyGO.via\_str.isdecimal
      [False False]
      [ True False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.isdigit
@@ -2880,7 +2870,6 @@ IndexHierarchyGO.via\_str.isdigit
      [False False]
      [ True False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.islower
@@ -2904,7 +2893,6 @@ IndexHierarchyGO.via\_str.islower
      [False False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.isnumeric
@@ -2928,7 +2916,6 @@ IndexHierarchyGO.via\_str.isnumeric
      [False False]
      [ True False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.isspace
@@ -2952,7 +2939,6 @@ IndexHierarchyGO.via\_str.isspace
      [False False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.istitle
@@ -2976,7 +2962,6 @@ IndexHierarchyGO.via\_str.istitle
      [False False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.isupper
@@ -3000,7 +2985,6 @@ IndexHierarchyGO.via\_str.isupper
      [ True False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.ljust(*width*, *fillchar*)
@@ -3024,7 +3008,6 @@ IndexHierarchyGO.via\_str.ljust(*width*, *fillchar*)
      ['XYZ     ' '12/31/1517']
      ['123     ' '6/30/1517']
      [' wX     ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.len
@@ -3048,7 +3031,6 @@ IndexHierarchyGO.via\_str.len
      [ 3 10]
      [ 3  9]
      [ 4 10]]
-
     ```
 
 IndexHierarchyGO.via\_str.lower
@@ -3072,7 +3054,6 @@ IndexHierarchyGO.via\_str.lower
      ['xyz' '12/31/1517']
      ['123' '6/30/1517']
      [' wx ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.lstrip(*chars*)
@@ -3096,7 +3077,6 @@ IndexHierarchyGO.via\_str.lstrip(*chars*)
      ['XYZ' '12/31/1517']
      ['123' '6/30/1517']
      ['wX ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.partition(*sep*)
@@ -3120,7 +3100,6 @@ IndexHierarchyGO.via\_str.partition(*sep*)
      [('', 'X', 'YZ') (np.str_('12/31/1517'), '', '')]
      [(np.str_('123'), '', '') (np.str_('6/30/1517'), '', '')]
      [(' w', 'X', ' ') (np.str_('12/31/2021'), '', '')]]
-
     ```
 
 IndexHierarchyGO.via\_str.replace(*old*, *new*, *count*)
@@ -3144,7 +3123,6 @@ IndexHierarchyGO.via\_str.replace(*old*, *new*, *count*)
      ['*YZ' '12/31/1517']
      ['123' '6/30/1517']
      [' w* ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.rfind(*sub*, *start*, *end*)
@@ -3168,7 +3146,6 @@ IndexHierarchyGO.via\_str.rfind(*sub*, *start*, *end*)
      [ 0 -1]
      [-1 -1]
      [ 2 -1]]
-
     ```
 
 IndexHierarchyGO.via\_str.rindex(*sub*, *start*, *end*)
@@ -3189,7 +3166,6 @@ IndexHierarchyGO.via\_str.rindex(*sub*, *start*, *end*)
     <<U4>              <<U10>
     >>> ih.via_str.rindex('X')
     ValueError('substring not found')
-
     ```
 
 IndexHierarchyGO.via\_str.rjust(*width*, *fillchar*)
@@ -3213,7 +3189,6 @@ IndexHierarchyGO.via\_str.rjust(*width*, *fillchar*)
      ['     XYZ' '12/31/1517']
      ['     123' '6/30/1517']
      ['     wX ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.rpartition(*sep*)
@@ -3237,7 +3212,6 @@ IndexHierarchyGO.via\_str.rpartition(*sep*)
      [('', 'X', 'YZ') ('', '', np.str_('12/31/1517'))]
      [('', '', np.str_('123')) ('', '', np.str_('6/30/1517'))]
      [(' w', 'X', ' ') ('', '', np.str_('12/31/2021'))]]
-
     ```
 
 IndexHierarchyGO.via\_str.rsplit(*sep*, *maxsplit*)
@@ -3261,7 +3235,6 @@ IndexHierarchyGO.via\_str.rsplit(*sep*, *maxsplit*)
      [('', 'YZ') ('12/31/1517',)]
      [('123',) ('6/30/1517',)]
      [(' w', ' ') ('12/31/2021',)]]
-
     ```
 
 IndexHierarchyGO.via\_str.rstrip(*chars*)
@@ -3285,7 +3258,6 @@ IndexHierarchyGO.via\_str.rstrip(*chars*)
      ['XYZ' '12/31/1517']
      ['123' '6/30/1517']
      [' wX' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.split(*sep*, *maxsplit*)
@@ -3309,7 +3281,6 @@ IndexHierarchyGO.via\_str.split(*sep*, *maxsplit*)
      [('', 'YZ') ('12/31/1517',)]
      [('123',) ('6/30/1517',)]
      [(' w', ' ') ('12/31/2021',)]]
-
     ```
 
 IndexHierarchyGO.via\_str.startswith(*prefix*, *start*, *end*)
@@ -3333,7 +3304,6 @@ IndexHierarchyGO.via\_str.startswith(*prefix*, *start*, *end*)
      [ True False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_str.strip(*chars*)
@@ -3357,7 +3327,6 @@ IndexHierarchyGO.via\_str.strip(*chars*)
      ['XYZ' '12/31/1517']
      ['123' '6/30/1517']
      ['wX' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.swapcase
@@ -3381,7 +3350,6 @@ IndexHierarchyGO.via\_str.swapcase
      ['xyz' '12/31/1517']
      ['123' '6/30/1517']
      [' Wx ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.title
@@ -3405,7 +3373,6 @@ IndexHierarchyGO.via\_str.title
      ['Xyz' '12/31/1517']
      ['123' '6/30/1517']
      [' Wx ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.upper
@@ -3429,7 +3396,6 @@ IndexHierarchyGO.via\_str.upper
      ['XYZ' '12/31/1517']
      ['123' '6/30/1517']
      [' WX ' '12/31/2021']]
-
     ```
 
 IndexHierarchyGO.via\_str.zfill(*width*)
@@ -3453,7 +3419,6 @@ IndexHierarchyGO.via\_str.zfill(*width*)
      ['00000XYZ' '12/31/1517']
      ['00000123' '6/30/1517']
      ['0000 wX ' '12/31/2021']]
-
     ```
 
 [IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)

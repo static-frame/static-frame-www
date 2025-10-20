@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2547,7 +2551,6 @@ IndexHierarchyGO.via\_re(*pattern*, *flags*, */).search(pos*, *endpos*)
      [ True  True]
      [ True  True]
      [ True  True]]
-
     ```
 
 IndexHierarchyGO.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
@@ -2574,7 +2577,6 @@ IndexHierarchyGO.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
      [ True  True]
      [ True False]
      [False  True]]
-
     ```
 
 IndexHierarchyGO.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
@@ -2601,7 +2603,6 @@ IndexHierarchyGO.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
      [False False]
      [ True False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_re(*pattern*, *flags*, */).split(maxsplit*)
@@ -2627,7 +2628,6 @@ IndexHierarchyGO.via\_re(*pattern*, *flags*, */).split(maxsplit*)
      [('', 'YZ') ('', '', '/', '', '/', '5', '7')]
      [('', '', '', '') ('6/', '0/', '5', '7')]
      [(' w', ' ') ('', '', '/', '', '/', '0', '', '')]]
-
     ```
 
 IndexHierarchyGO.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
@@ -2654,7 +2654,6 @@ IndexHierarchyGO.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
      [('X',) ('1', '2', '3', '1', '1', '1')]
      [('1', '2', '3') ('3', '1', '1')]
      [('X',) ('1', '2', '3', '1', '2', '2', '1')]]
-
     ```
 
 IndexHierarchyGO.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
@@ -2681,7 +2680,6 @@ IndexHierarchyGO.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
      ['==YZ' '====/====/==5==7']
      ['======' '6/==0/==5==7']
      [' w== ' '====/====/==0====']]
-
     ```
 
 IndexHierarchyGO.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
@@ -2708,7 +2706,6 @@ IndexHierarchyGO.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
      [('==YZ', 1) ('==2/31/1517', 1)]
      [('==23', 1) ('6/==0/1517', 1)]
      [(' w== ', 1) ('==2/31/2021', 1)]]
-
     ```
 
 [IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)

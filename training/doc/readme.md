@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
+[![StaticFrame 3.4.0 documentation - Home](_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
 
 * static-frame
 * [License](license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](new.md)
 * [Contributing](contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](articles/ftyping.md)
   + [Faster DataFrame Serialization](articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](intro.md)
 * [What is New in StaticFrame](new.md)
 * [Contributing](contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](articles/ftyping.md)
 * [Faster DataFrame Serialization](articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](api_detail/index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ Search
 [![https://img.shields.io/readthedocs/static-frame.svg](https://img.shields.io/readthedocs/static-frame.svg)](https://static-frame.readthedocs.io/en/latest)
 [![https://img.shields.io/badge/hypothesis-tested-brightgreen.svg](https://img.shields.io/badge/hypothesis-tested-brightgreen.svg)](https://hypothesis.readthedocs.io)
 [![https://img.shields.io/pypi/status/static-frame.svg](https://img.shields.io/pypi/status/static-frame.svg)](https://pypi.org/project/static-frame)
-[![https://img.shields.io/badge/launch-binder-579ACA.svg?logo=data:image/png;base64,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](https://img.shields.io/badge/launch-binder-579ACA.svg?logo=data:image/png;base64,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)](https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb)
 
 # static-frame[#](#static-frame "Link to this heading")
 
@@ -2556,22 +2559,18 @@ Packages: <https://pypi.org/project/static-frame>
 
 API Search: <https://staticframe.dev>
 
-Jupyter Notebook Tutorial: [Launch Binder](https://mybinder.org/v2/gh/static-frame/static-frame-ftgu/default?urlpath=tree/index.ipynb)
-
 ## Installation via `pip`[#](#installation-via-pip "Link to this heading")
 
 Install StaticFrame with `pip`. Note that pre-built wheels are published for all supported Python versions and platforms (including Apple Silicon platforms):
 
 ```
 pip install static-frame
-
 ```
 
 To install optional dependencies for full support of input and output formats (such as XLSX and HDF5) via `pip`:
 
 ```
 pip install static-frame [extras]
-
 ```
 
 ## Installation via `conda`[#](#installation-via-conda "Link to this heading")
@@ -2580,7 +2579,6 @@ StaticFrame can be installed via `conda` with the `conda-forge` channel. Note th
 
 ```
 conda install -c conda-forge static-frame
-
 ```
 
 ## Installation via Pyodide[#](#installation-via-pyodide "Link to this heading")
@@ -2616,7 +2614,6 @@ We can download the data set from the UCI Machine Learning Repository and create
 ```
 >>> import static_frame as sf
 >>> data = sf.Frame.from_csv(sf.WWW.from_file('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'), columns_depth=0)
-
 ```
 
 Each record (or row) in this dataset describes observations of an iris flower, including its sepal and petal characteristics, as well as its species (of which there are three). To display just the first few rows, we can use the `head()` method. Notice that StaticFrame’s default display makes it very clear what type of `Frame`, `Index`, and NumPy datatypes are present:
@@ -2632,7 +2629,6 @@ Each record (or row) in this dataset describes observations of an iris flower, i
 3       4.6       3.1       1.5       0.2       Iris-setosa
 4       5.0       3.6       1.4       0.2       Iris-setosa
 <int64> <float64> <float64> <float64> <float64> <<U15>
-
 ```
 
 As the columns are unlabelled, let’s next add column labels. StaticFrame supports reindexing (conforming existing axis labels to new labels, potentially changing the size and ordering) and relabeling (simply applying new labels without regard to existing labels). As we can ignore the default column labels (auto-incremented integers), the `relabel()` method is used to provide new labels.
@@ -2651,7 +2647,6 @@ Note that while `relabel()` creates a new `Frame`, underlying NumPy data is not 
 3       4.6       3.1       1.5       0.2       Iris-setosa
 4       5.0       3.6       1.4       0.2       Iris-setosa
 <int64> <float64> <float64> <float64> <float64> <<U15>
-
 ```
 
 (Read more about no-copy operations [here](https://static-frame.readthedocs.io/en/latest/articles/no_copy.md).)
@@ -2672,7 +2667,6 @@ To divide the data into two groups, we create a `Series` of contiguous integers 
 4        4
 5        5
 <int64>  <int64>
-
 ```
 
 We will create another `Series` to select the test data. The `drop[]` interface can be used to create a new `Series` that excludes the training selections, leaving just the testing selections. As with many interfaces in StaticFrame (such as `astype` and `assign`), brackets can be used to do `loc[]` style selections:
@@ -2688,7 +2682,6 @@ We will create another `Series` to select the test data. The `drop[]` interface 
 21       21
 37       37
 <int64>  <int64>
-
 ```
 
 To select a subset of the data for training, the `sel_train` `Series` can be passed to `loc[]` to select just those rows:
@@ -2705,7 +2698,6 @@ To select a subset of the data for training, the `sel_train` `Series` can be pas
 4       5.0       3.6       1.4       0.2       Iris-setosa
 5       5.4       3.9       1.7       0.4       Iris-setosa
 <int64> <float64> <float64> <float64> <float64> <<U15>
-
 ```
 
 With our data divided into two randomly-selected, non-overlapping groups, we can proceed to implement the naive Bayes classifier. We will compute the `posterior` of the test data by multiplying the `prior` and the `likelihood`. With the `posterior`, we can determine which species the classifier has calculated is most likely. (More on naive Bayes classifiers can be found [here](https://en.wikipedia.org/wiki/Naive_Bayes_classifier).)
@@ -2725,7 +2717,6 @@ Iris-setosa     43
 Iris-versicolor 39
 Iris-virginica  38
 <<U15>          <int64>
-
 ```
 
 As with NumPy, StaticFrame containers can be used in expressions with binary operators. The `prior` can be derived by dividing `counts` by the size of the training data. This returns a `Series` of the percentage of records per species:
@@ -2739,7 +2730,6 @@ Iris-setosa     0.35833333333333334
 Iris-versicolor 0.325
 Iris-virginica  0.31666666666666665
 <<U15>          <float64>
-
 ```
 
 Having calculated the `prior`, we can calculate `likelihood` next. To calculate `likelihood`, we will call a probability distribution function (imported from SciPy) with the test data, once for each species, given the characteristics (mean and standard deviation) observed in the test data for that species.
@@ -2766,7 +2756,6 @@ Iris-setosa     0.3419700595003668 0.3477024733400345
 Iris-versicolor 0.508444214804487  0.33082728674826684
 Iris-virginica  0.6055516042229233 0.3513942965328924
 <<U15>          <float64>          <float64>
-
 ```
 
 For a unified display of these characteristics, we can build a hierarchical index on each `Frame` with `relabel_level_add()` (adding the “mu” or “sigma” labels), then vertically concatenate the tables. As StaticFrame always requires unique labels in indices, adding an additional label is required before concatenation. The built-in `round` function can be used for more tidy display:
@@ -2784,7 +2773,6 @@ sigma            Iris-setosa     0.34      0.35
 sigma            Iris-versicolor 0.51      0.33
 sigma            Iris-virginica  0.61      0.35
 <<U5>            <<U15>          <float64> <float64>
-
 ```
 
 We can now move on to processing the test data with the characteristics derived from the training data. To do that, we will extract our previously selected test records with `sel_test` into a new `Frame`, to which we can add our `posterior` predictions and final species classifications.
@@ -2805,7 +2793,6 @@ Passing two arguments to `loc[]`, we can select rows with the values from `sel_t
 21        5.1       3.7
 37        4.9       3.1
 <int64>   <float64> <float64>
-
 ```
 
 StaticFrame interfaces make extensive use of iterators and generators. As used below, the `Frame.from_fields()` constructor will create a `Frame` from any iterable (or generator) of column arrays.
@@ -2818,14 +2805,12 @@ The `likelihood_of_species()` function (defined below), for each index label in 
 ...     for label in mu.index:
 ...             pdf = norm.pdf(data_test.values, mu.loc[label], sigma.loc[label])
 ...             yield np.log(pdf).sum(axis=1)
-
 ```
 
 While the generator function above is easy to read, it is hard to copy and paste. If you are following along, using the one-line generator expression, below, will be easier. The two are equivalent:
 
 ```
 >>> likelihood_of_species = (np.log(norm.pdf(data_test.values, mu.loc[label], sigma.loc[label])).sum(axis=1) for label in mu.index)
-
 ```
 
 With this generator expression defined, we call the `from_fields` constructor to produce the `likelihood` table, providing column labels from `mu.index` and index labels from `data_test.index`. For each test record row we now have a likelihood per species:
@@ -2842,7 +2827,6 @@ With this generator expression defined, we call the `from_fields` constructor to
 21      -0.05       -5.29           -5.51
 37      -0.2        -2.56           -4.33
 <int64> <float64>   <float64>       <float64>
-
 ```
 
 We can calculate the `posterior` by multiplying `likelihood` by `prior`. Whenever performing binary operations on `Frame` and `Series`, indices will be aligned and, if necessary, reindexed before processing:
@@ -2859,7 +2843,6 @@ We can calculate the `posterior` by multiplying `likelihood` by `prior`. Wheneve
 21      -0.02       -1.72           -1.75
 37      -0.07       -0.83           -1.37
 <int64> <float64>   <float64>       <float64>
-
 ```
 
 We can now add columns to our `data_test` `FrameGO`. To determine our best prediction of species for each row of the test data, the column label (the species) of the maximum a posteriori estimate is selected with `loc_max()`:
@@ -2876,7 +2859,6 @@ We can now add columns to our `data_test` `FrameGO`. To determine our best predi
 21        5.1       3.7       Iris-setosa
 37        4.9       3.1       Iris-setosa
 <int64>   <float64> <float64> <<U15>
-
 ```
 
 We can add two additional columns to evaluate the effectivess of the classifier. First, we can add an “observed” column by adding the original “species” column from the original `data` `Frame`. In assigning a `Series` to a `Frame`, only values found in the intersection of the indices will be added as a column:
@@ -2893,7 +2875,6 @@ We can add two additional columns to evaluate the effectivess of the classifier.
 21        5.1       3.7       Iris-setosa Iris-setosa
 37        4.9       3.1       Iris-setosa Iris-setosa
 <int64>   <float64> <float64> <<U15>      <<U15>
-
 ```
 
 Having populated a column of predicted and observed values, we can compare the two to get a Boolean column indicating when the classifier calculated a correct predicton:
@@ -2910,7 +2891,6 @@ Having populated a column of predicted and observed values, we can compare the t
 144       6.7       3.3       Iris-virginica  Iris-virginica True
 149       5.9       3.0       Iris-versicolor Iris-virginica False
 <int64>   <float64> <float64> <<U15>          <<U15>         <bool>
-
 ```
 
 To find the percentage of correct classifications among the test data, we can sum the `correct` Boolean column and divide that by the size of the test data:
@@ -2918,7 +2898,6 @@ To find the percentage of correct classifications among the test data, we can su
 ```
 >>> data_test["correct"].sum() / len(data_test)
 0.7333333333333333
-
 ```
 
 This simple naive Bayes classifier can predict iris species correctly about 73% of the time.

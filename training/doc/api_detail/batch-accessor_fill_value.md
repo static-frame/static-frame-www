@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2542,7 +2546,6 @@ Batch.via\_fill\_value(fill\_value, /).loc
     j                b     0       2
     j                d     -1      -1
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_getitem\_\_(key*)
@@ -2562,7 +2565,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_getitem\_\_(key*)
     j                b     -1      0
     j                c     -1      1
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(fill\_value, /).via\_T
@@ -2585,7 +2587,6 @@ Batch.via\_fill\_value(fill\_value, /).via\_T
     j                c     8       8
     j                d     -19     -19
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_add\_\_(other*)
@@ -2607,7 +2608,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_add\_\_(other*)
     j                b     0       2
     j                c     21      13
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_sub\_\_(other*)
@@ -2629,7 +2629,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_sub\_\_(other*)
     j                b     0       2
     j                c     -19     -11
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_mul\_\_(other*)
@@ -2651,7 +2650,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_mul\_\_(other*)
     j                b     0       0
     j                c     20      12
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_truediv\_\_(other*)
@@ -2673,7 +2671,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_truediv\_\_(other*)
     j                b     nan       inf
     j                c     0.05      0.08333333333333333
     <<U1>            <<U1> <float64> <float64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_floordiv\_\_(other*)
@@ -2695,7 +2692,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_floordiv\_\_(other*)
     j                b     0       0
     j                c     0       0
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_mod\_\_(other*)
@@ -2717,7 +2713,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_mod\_\_(other*)
     j                b     0       0
     j                c     1       1
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_pow\_\_(other*)
@@ -2739,7 +2734,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_pow\_\_(other*)
     j                b     1             1
     j                c     1             1
     <<U1>            <<U1> <int64>       <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_lshift\_\_(other*)
@@ -2759,7 +2753,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_lshift\_\_(other*)
     j                b     0       8
     j                c     2       2
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_rshift\_\_(other*)
@@ -2779,7 +2772,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_rshift\_\_(other*)
     j                b     0       0
     j                c     0       0
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_and\_\_(other*)
@@ -2801,7 +2793,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_and\_\_(other*)
     j                q     False  False  False  False
     j                r     False  False  False  False
     <<U1>            <<U1> <bool> <bool> <bool> <bool>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_xor\_\_(other*)
@@ -2823,7 +2814,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_xor\_\_(other*)
     j                q     True   True   True   False
     j                r     True   False  True   True
     <<U1>            <<U1> <bool> <bool> <bool> <bool>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_or\_\_(other*)
@@ -2846,7 +2836,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_or\_\_(other*)
     j                q     True   True   True   False
     j                r     True   False  True   True
     <<U1>            <<U1> <bool> <bool> <bool> <bool>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_lt\_\_(other*)
@@ -2869,7 +2858,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_lt\_\_(other*)
     j                b     False  False
     j                c     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_le\_\_(other*)
@@ -2892,7 +2880,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_le\_\_(other*)
     j                b     True   False
     j                c     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_eq\_\_(other*)
@@ -2915,7 +2902,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_eq\_\_(other*)
     j                b     True   False
     j                c     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_ne\_\_(other*)
@@ -2938,7 +2924,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_ne\_\_(other*)
     j                b     False  True
     j                c     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_gt\_\_(other*)
@@ -2961,7 +2946,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_gt\_\_(other*)
     j                b     False  True
     j                c     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_ge\_\_(other*)
@@ -2984,7 +2968,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_ge\_\_(other*)
     j                b     True   True
     j                c     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_radd\_\_(other*)
@@ -3006,7 +2989,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_radd\_\_(other*)
     j                b     0       2
     j                c     21      13
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_rsub\_\_(other*)
@@ -3028,7 +3010,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_rsub\_\_(other*)
     j                b     0       -2
     j                c     19      11
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_rmul\_\_(other*)
@@ -3050,7 +3031,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_rmul\_\_(other*)
     j                b     0       0
     j                c     20      12
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_rtruediv\_\_(other*)
@@ -3072,7 +3052,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_rtruediv\_\_(other*)
     j                b     nan       0.0
     j                c     20.0      12.0
     <<U1>            <<U1> <float64> <float64>
-
     ```
 
 Batch.via\_fill\_value(*fill\_value*, */).\_\_rfloordiv\_\_(other*)
@@ -3094,7 +3073,6 @@ Batch.via\_fill\_value(*fill\_value*, */).\_\_rfloordiv\_\_(other*)
     j                b     0       0
     j                c     20      12
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 [Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)

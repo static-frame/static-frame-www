@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2541,7 +2545,6 @@ IndexNanosecond.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
     <datetime64[ns]>
     >>> ix.via_dt(fill_value=-1).year
     [1789   -1 1799]
-
     ```
 
 IndexNanosecond.via\_dt.year
@@ -2561,7 +2564,6 @@ IndexNanosecond.via\_dt.year
     <datetime64[ns]>
     >>> ix.via_dt.year
     [1789 1789 1799]
-
     ```
 
 IndexNanosecond.via\_dt.year\_month
@@ -2581,7 +2583,6 @@ IndexNanosecond.via\_dt.year\_month
     <datetime64[ns]>
     >>> ix.via_dt.year_month
     ['1789-05' '1789-12' '1799-11']
-
     ```
 
 IndexNanosecond.via\_dt.year\_quarter
@@ -2601,7 +2602,6 @@ IndexNanosecond.via\_dt.year\_quarter
     <datetime64[ns]>
     >>> ix.via_dt.year_quarter
     ['1789-Q2' '1789-Q4' '1799-Q4']
-
     ```
 
 IndexNanosecond.via\_dt.month
@@ -2621,7 +2621,6 @@ IndexNanosecond.via\_dt.month
     <datetime64[ns]>
     >>> ix.via_dt.month
     [ 5 12 11]
-
     ```
 
 IndexNanosecond.via\_dt.day
@@ -2641,7 +2640,6 @@ IndexNanosecond.via\_dt.day
     <datetime64[ns]>
     >>> ix.via_dt.day
     [ 5 31  9]
-
     ```
 
 IndexNanosecond.via\_dt.hour
@@ -2661,7 +2659,6 @@ IndexNanosecond.via\_dt.hour
     <datetime64[ns]>
     >>> ix.via_dt.hour
     [0 0 0]
-
     ```
 
 IndexNanosecond.via\_dt.minute
@@ -2681,7 +2678,6 @@ IndexNanosecond.via\_dt.minute
     <datetime64[ns]>
     >>> ix.via_dt.minute
     [0 0 0]
-
     ```
 
 IndexNanosecond.via\_dt.second
@@ -2701,7 +2697,6 @@ IndexNanosecond.via\_dt.second
     <datetime64[ns]>
     >>> ix.via_dt.second
     [0 0 0]
-
     ```
 
 IndexNanosecond.via\_dt.weekday
@@ -2721,7 +2716,6 @@ IndexNanosecond.via\_dt.weekday
     <datetime64[ns]>
     >>> ix.via_dt.weekday()
     [1 3 5]
-
     ```
 
 IndexNanosecond.via\_dt.quarter
@@ -2741,7 +2735,6 @@ IndexNanosecond.via\_dt.quarter
     <datetime64[ns]>
     >>> ix.via_dt.quarter()
     [2 4 4]
-
     ```
 
 IndexNanosecond.via\_dt.is\_month\_end
@@ -2761,7 +2754,6 @@ IndexNanosecond.via\_dt.is\_month\_end
     <datetime64[ns]>
     >>> ix.via_dt.is_month_end()
     [False  True False]
-
     ```
 
 IndexNanosecond.via\_dt.is\_month\_start
@@ -2781,7 +2773,6 @@ IndexNanosecond.via\_dt.is\_month\_start
     <datetime64[ns]>
     >>> ix.via_dt.is_month_start()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_dt.is\_year\_end
@@ -2801,7 +2792,6 @@ IndexNanosecond.via\_dt.is\_year\_end
     <datetime64[ns]>
     >>> ix.via_dt.is_year_end()
     [False  True False]
-
     ```
 
 IndexNanosecond.via\_dt.is\_year\_start
@@ -2821,7 +2811,6 @@ IndexNanosecond.via\_dt.is\_year\_start
     <datetime64[ns]>
     >>> ix.via_dt.is_year_start()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_dt.is\_quarter\_end
@@ -2841,7 +2830,6 @@ IndexNanosecond.via\_dt.is\_quarter\_end
     <datetime64[ns]>
     >>> ix.via_dt.is_quarter_end()
     [False  True False]
-
     ```
 
 IndexNanosecond.via\_dt.is\_quarter\_start
@@ -2861,7 +2849,6 @@ IndexNanosecond.via\_dt.is\_quarter\_start
     <datetime64[ns]>
     >>> ix.via_dt.is_quarter_start()
     [False False False]
-
     ```
 
 IndexNanosecond.via\_dt.timetuple
@@ -2881,7 +2868,6 @@ IndexNanosecond.via\_dt.timetuple
     <datetime64[ns]>
     >>> ix.via_dt.timetuple()
     RuntimeError('invalid dtype (datetime64[ns]) for date operation')
-
     ```
 
 IndexNanosecond.via\_dt.isoformat(*\**, *sep*, *timespec*)
@@ -2901,7 +2887,6 @@ IndexNanosecond.via\_dt.isoformat(*\**, *sep*, *timespec*)
     <datetime64[ns]>
     >>> ix.via_dt.isoformat()
     RuntimeError('invalid dtype (datetime64[ns]) for date operation')
-
     ```
 
 IndexNanosecond.via\_dt.fromisoformat
@@ -2921,7 +2906,6 @@ IndexNanosecond.via\_dt.fromisoformat
     <datetime64[ns]>
     >>> ix.via_dt.fromisoformat()
     RuntimeError('invalid dtype (datetime64[ns]) for operation on string types')
-
     ```
 
 IndexNanosecond.via\_dt.strftime(*format*, */*)
@@ -2941,7 +2925,6 @@ IndexNanosecond.via\_dt.strftime(*format*, */*)
     <datetime64[ns]>
     >>> ix.via_dt.strftime("%A | %B")
     RuntimeError('invalid dtype (datetime64[ns]) for date operation')
-
     ```
 
 IndexNanosecond.via\_dt.strptime(*format*, */*)
@@ -2961,7 +2944,6 @@ IndexNanosecond.via\_dt.strptime(*format*, */*)
     <datetime64[ns]>
     >>> ix.via_dt.strptime("%m/%d/%Y")
     RuntimeError('invalid dtype (datetime64[ns]) for operation on string types')
-
     ```
 
 IndexNanosecond.via\_dt.strpdate(*format*, */*)
@@ -2981,7 +2963,6 @@ IndexNanosecond.via\_dt.strpdate(*format*, */*)
     <datetime64[ns]>
     >>> ix.via_dt.strpdate("%m/%d/%Y")
     RuntimeError('invalid dtype (datetime64[ns]) for operation on string types')
-
     ```
 
 [IndexNanosecond](index_nanosecond.md#api-detail-indexnanosecond): [Constructor](index_nanosecond-constructor.md#api-detail-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-detail-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-detail-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-detail-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-detail-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-detail-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-detail-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-detail-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-detail-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-detail-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-detail-indexnanosecond-accessor-values) | [Accessor Datetime](#api-detail-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-detail-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-detail-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-detail-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-detail-indexnanosecond-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: Frame: Method](../api_overview/frame-method.md#api-overview-frame-method)
 
-Frame.\_\_array\_\_(*dtype=None*)[#](#static_frame.Frame.__array__ "Link to this definition")
+Frame.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.Frame.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2540,7 +2544,6 @@ Frame.\_\_array\_\_(*dtype=None*)[#](#static_frame.Frame.__array__ "Link to this
     [[0 1]
      [2 3]
      [4 5]]
-
     ```
 
 Frame.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.Frame.__array_ufunc__ "Link to this definition")
@@ -2564,7 +2567,6 @@ Frame.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static
     q       2       0
     r       4       0
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.\_\_bool\_\_()[#](#static_frame.Frame.__bool__ "Link to this definition")
@@ -2582,7 +2584,30 @@ Frame.\_\_bool\_\_()[#](#static_frame.Frame.__bool__ "Link to this definition")
     <<U1>      <int64> <int64>
     >>> bool(f)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
+    ```
 
+Frame.\_\_copy\_\_()[[source]](../_modules/static_frame/core/frame.md#Frame.__copy__)[#](#static_frame.Frame.__copy__ "Link to this definition")
+:   Return a shallow copy of this Frame
+
+    ```
+    >>> import copy
+    >>> f = sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')
+    >>> f
+    <Frame: y>
+    <Index>    c      d      <<U1>
+    <Index>
+    p          False  True
+    q          False  True
+    r          False  True
+    <<U1>      <bool> <bool>
+    >>> copy.copy(f)
+    <Frame: y>
+    <Index>    c      d      <<U1>
+    <Index>
+    p          False  True
+    q          False  True
+    r          False  True
+    <<U1>      <bool> <bool>
     ```
 
 Frame.\_\_dataframe\_\_(*nan\_as\_null=False*, *allow\_copy=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.__dataframe__)[#](#static_frame.Frame.__dataframe__ "Link to this definition")
@@ -2601,7 +2626,6 @@ Frame.\_\_dataframe\_\_(*nan\_as\_null=False*, *allow\_copy=True*)[[source]](../
     >>> dfi = f.__dataframe__()
     >>> tuple(dfi.get_columns())
     (<DFIColumn: shape=(3,) dtype=<i8>, <DFIColumn: shape=(3,) dtype=<i8>)
-
     ```
 
 Frame.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/frame.md#Frame.__deepcopy__)[#](#static_frame.Frame.__deepcopy__ "Link to this definition")
@@ -2624,7 +2648,6 @@ Frame.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/frame.md#
     q          2       3
     r          4       5
     <<U1>      <int64> <int64>
-
     ```
 
 Frame.\_\_len\_\_()[[source]](../_modules/static_frame/core/frame.md#Frame.__len__)[#](#static_frame.Frame.__len__ "Link to this definition")
@@ -2642,7 +2665,6 @@ Frame.\_\_len\_\_()[[source]](../_modules/static_frame/core/frame.md#Frame.__len
     <<U1>      <int64> <int64>
     >>> len(f)
     3
-
     ```
 
 Frame.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.__round__)[#](#static_frame.Frame.__round__ "Link to this definition")
@@ -2672,7 +2694,6 @@ Frame.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/f
     q          2.7       4.0
     r          5.3       6.7
     <<U1>      <float64> <float64>
-
     ```
 
 Frame.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.all "Link to this definition")
@@ -2698,7 +2719,6 @@ Frame.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.all 
     c        False
     d        True
     <<U1>    <bool>
-
     ```
 
 Frame.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.any "Link to this definition")
@@ -2724,7 +2744,6 @@ Frame.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.any 
     c        False
     d        True
     <<U1>    <bool>
-
     ```
 
 Frame.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
@@ -2760,7 +2779,6 @@ Frame.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
     2          8       True   1517-12-31
     3          3       False  1517-06-30
     <int64>    <int64> <bool> <object>
-
     ```
 
 Frame.astype(*dtype*, *\**, *consolidate\_blocks*)
@@ -2791,7 +2809,6 @@ Frame.astype(*dtype*, *\**, *consolidate\_blocks*)
     q          2.0       3.0
     r          4.0       5.0
     <<U1>      <float64> <float64>
-
     ```
 
 Frame.clip(*\**, *lower=None*, *upper=None*, *axis=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.clip)[#](#static_frame.Frame.clip "Link to this definition")
@@ -2820,7 +2837,6 @@ Frame.clip(*\**, *lower=None*, *upper=None*, *axis=None*)[[source]](../_modules/
     q          2       3
     r          4       4
     <<U1>      <int64> <int64>
-
     ```
 
 Frame.consolidate[*key*]
@@ -2863,7 +2879,6 @@ Frame.consolidate[*key*]
     1       d                    3                 bool     (4,)     1       True    True         True
     2       e                    4                 bool     (4,)     1       True    True         True
     <int64> <object>             <object>          <object> <object> <int64> <bool>  <bool>       <bool>
-
     ```
 
 Frame.consolidate
@@ -2902,7 +2917,6 @@ Frame.consolidate
     0       slice(np.str_('a'... slice(0, 3, None)    int64    (4, 3)   2       True    False        True
     1       slice(np.str_('d'... slice(3, None, None) bool     (4, 2)   2       True    False        True
     <int64> <object>             <object>             <object> <object> <int64> <bool>  <bool>       <bool>
-
     ```
 
 Frame.consolidate.status
@@ -2941,7 +2955,6 @@ Frame.consolidate.status
     0       slice(np.str_('a'... slice(0, 3, None)    int64    (4, 3)   2       True    False        True
     1       slice(np.str_('d'... slice(3, None, None) bool     (4, 2)   2       True    False        True
     <int64> <object>             <object>             <object> <object> <int64> <bool>  <bool>       <bool>
-
     ```
 
 Frame.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/frame.md#Frame.corr)[#](#static_frame.Frame.corr "Link to this definition")
@@ -2970,7 +2983,6 @@ Frame.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/frame.md#Fram
     c          0.9655810287305759 0.9923448088115435 0.9999999999999999 0.9934089501944108
     d          0.9340437381585037 0.9721343963077829 0.9934089501944108 1.0
     <<U1>      <float64>          <float64>          <float64>          <float64>
-
     ```
 
 Frame.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.count)[#](#static_frame.Frame.count "Link to this definition")
@@ -3002,7 +3014,6 @@ Frame.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[s
     a        3
     b        2
     <<U1>    <int64>
-
     ```
 
 Frame.cov(*\**, *axis=1*, *ddof=1*)[[source]](../_modules/static_frame/core/frame.md#Frame.cov)[#](#static_frame.Frame.cov "Link to this definition")
@@ -3032,7 +3043,6 @@ Frame.cov(*\**, *axis=1*, *ddof=1*)[[source]](../_modules/static_frame/core/fram
     c          112.0              166.66666666666666 229.33333333333331 300.0
     d          142.66666666666666 215.0              300.0              397.66666666666663
     <<U1>      <float64>          <float64>          <float64>          <float64>
-
     ```
 
 Frame.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Frame.cumprod "Link to this definition")
@@ -3060,7 +3070,6 @@ Frame.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Frame.cumprod "Lin
     q       0       3
     r       0       15
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Frame.cumsum "Link to this definition")
@@ -3088,7 +3097,6 @@ Frame.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Frame.cumsum "Link 
     q       2       4
     r       6       9
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.drop_duplicated)[#](#static_frame.Frame.drop_duplicated "Link to this definition")
@@ -3117,7 +3125,6 @@ Frame.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=Fa
     0          10.0      False    1517-01-01
     2          nan       None     NaT
     <int64>    <float64> <object> <datetime64[D]>
-
     ```
 
 Frame.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/frame.md#Frame.dropfalsy)[#](#static_frame.Frame.dropfalsy "Link to this definition")
@@ -3146,7 +3153,6 @@ Frame.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_module
     1          2       XYZ   1517-04-01
     3          2       123   1517-04-01
     <int64>    <int64> <<U4> <datetime64[D]>
-
     ```
 
 Frame.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/frame.md#Frame.dropna)[#](#static_frame.Frame.dropna "Link to this definition")
@@ -3175,7 +3181,6 @@ Frame.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/s
     1          2.0       True     1517-04-01
     3          2.0       True     1517-04-01
     <int64>    <float64> <object> <datetime64[D]>
-
     ```
 
 Frame.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.duplicated)[#](#static_frame.Frame.duplicated "Link to this definition")
@@ -3205,7 +3210,6 @@ Frame.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[
     2        False
     3        True
     <int64>  <bool>
-
     ```
 
 Frame.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.equals)[#](#static_frame.Frame.equals "Link to this definition")
@@ -3238,7 +3242,6 @@ Frame.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
     <<U1>      <float64>          <float64>
     >>> f1.equals(f2)
     False
-
     ```
 
 Frame.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy)[#](#static_frame.Frame.fillfalsy "Link to this definition")
@@ -3267,7 +3270,6 @@ Frame.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/frame.md#F
     2          1       abc   2022-01-10
     3          2       123   1517-04-01
     <int64>    <int64> <<U4> <datetime64[D]>
-
     ```
 
 Frame.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy_backward)[#](#static_frame.Frame.fillfalsy_backward "Link to this definition")
@@ -3297,7 +3299,6 @@ Frame.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/
     2          10      -3      1
     3          2       18      1
     <int64>    <int64> <int64> <int64>
-
     ```
 
 Frame.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy_forward)[#](#static_frame.Frame.fillfalsy_forward "Link to this definition")
@@ -3327,7 +3328,6 @@ Frame.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/s
     2          2       8       1
     3          2       8       1
     <int64>    <int64> <int64> <int64>
-
     ```
 
 Frame.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy_leading)[#](#static_frame.Frame.fillfalsy_leading "Link to this definition")
@@ -3357,7 +3357,6 @@ Frame.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/sta
     2          10      -3      -1
     3          2       18      1
     <int64>    <int64> <int64> <int64>
-
     ```
 
 Frame.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillfalsy_trailing)[#](#static_frame.Frame.fillfalsy_trailing "Link to this definition")
@@ -3387,7 +3386,6 @@ Frame.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/st
     2          -1      8       -1
     3          -1      -1      -1
     <int64>    <int64> <int64> <int64>
-
     ```
 
 Frame.fillna(*value*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna)[#](#static_frame.Frame.fillna "Link to this definition")
@@ -3416,7 +3414,6 @@ Frame.fillna(*value*, */*)[[source]](../_modules/static_frame/core/frame.md#Fram
     2          -1.0            -1
     3          2.0       123   1517-04-01
     <int64>    <float64> <<U4> <object>
-
     ```
 
 Frame.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna_backward)[#](#static_frame.Frame.fillna_backward "Link to this definition")
@@ -3446,7 +3443,6 @@ Frame.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/sta
     2          10.0      3.0       1.0
     3          2.0       8.0       1.0
     <int64>    <float64> <float64> <float64>
-
     ```
 
 Frame.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna_forward)[#](#static_frame.Frame.fillna_forward "Link to this definition")
@@ -3476,7 +3472,6 @@ Frame.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/stat
     2          2.0       8.0       1.0
     3          2.0       8.0       1.0
     <int64>    <float64> <float64> <float64>
-
     ```
 
 Frame.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna_leading)[#](#static_frame.Frame.fillna_leading "Link to this definition")
@@ -3506,7 +3501,6 @@ Frame.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static
     2          10.0      3.0       -1.0
     3          2.0       8.0       1.0
     <int64>    <float64> <float64> <float64>
-
     ```
 
 Frame.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.fillna_trailing)[#](#static_frame.Frame.fillna_trailing "Link to this definition")
@@ -3536,7 +3530,6 @@ Frame.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/stati
     2          -1.0      8.0       -1.0
     3          -1.0      -1.0      -1.0
     <int64>    <float64> <float64> <float64>
-
     ```
 
 Frame.head(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.head)[#](#static_frame.Frame.head "Link to this definition")
@@ -3563,7 +3556,6 @@ Frame.head(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.md#Fram
     0          10      False  1517-01-01
     1          2       True   1517-04-01
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_max)[#](#static_frame.Frame.iloc_max "Link to this definition")
@@ -3591,7 +3583,6 @@ Frame.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_fram
     b        0
     c        0
     <<U1>    <int64>
-
     ```
 
 Frame.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_min)[#](#static_frame.Frame.iloc_min "Link to this definition")
@@ -3619,7 +3610,6 @@ Frame.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_fram
     b        1
     c        0
     <<U1>    <int64>
-
     ```
 
 Frame.iloc\_notfalsy\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_notfalsy_first)[#](#static_frame.Frame.iloc_notfalsy_first "Link to this definition")
@@ -3655,7 +3645,6 @@ Frame.iloc\_notfalsy\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modu
     r        1
     s        2
     <<U1>    <int64>
-
     ```
 
 Frame.iloc\_notfalsy\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_notfalsy_last)[#](#static_frame.Frame.iloc_notfalsy_last "Link to this definition")
@@ -3691,7 +3680,6 @@ Frame.iloc\_notfalsy\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modul
     r        2
     s        2
     <<U1>    <int64>
-
     ```
 
 Frame.iloc\_notna\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_notna_first)[#](#static_frame.Frame.iloc_notna_first "Link to this definition")
@@ -3727,7 +3715,6 @@ Frame.iloc\_notna\_first(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules
     2        1
     3        -1
     <int64>  <int64>
-
     ```
 
 Frame.iloc\_notna\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.iloc_notna_last)[#](#static_frame.Frame.iloc_notna_last "Link to this definition")
@@ -3763,7 +3750,6 @@ Frame.iloc\_notna\_last(*\**, *fill\_value=-1*, *axis=0*)[[source]](../_modules/
     2        1
     3        -1
     <int64>  <int64>
-
     ```
 
 Frame.insert\_after(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.insert_after)[#](#static_frame.Frame.insert_after "Link to this definition")
@@ -3804,7 +3790,6 @@ Frame.insert\_after(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]](
     q          2       3       False  True
     r          4       5       False  True
     <<U1>      <int64> <int64> <bool> <bool>
-
     ```
 
 Frame.insert\_before(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.insert_before)[#](#static_frame.Frame.insert_before "Link to this definition")
@@ -3845,7 +3830,6 @@ Frame.insert\_before(*key*, *container*, */*, *\**, *fill\_value=nan*)[[source]]
     q          2       False  True   3
     r          4       False  True   5
     <<U1>      <int64> <bool> <bool> <int64>
-
     ```
 
 Frame.isfalsy()[[source]](../_modules/static_frame/core/frame.md#Frame.isfalsy)[#](#static_frame.Frame.isfalsy "Link to this definition")
@@ -3871,7 +3855,6 @@ Frame.isfalsy()[[source]](../_modules/static_frame/core/frame.md#Frame.isfalsy)[
     2       True   True   True
     3       False  False  False
     <int64> <bool> <bool> <bool>
-
     ```
 
 Frame.isin(*other*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.isin)[#](#static_frame.Frame.isin "Link to this definition")
@@ -3897,7 +3880,6 @@ Frame.isin(*other*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.
     2          True   True   True
     3          True   True   True
     <int64>    <bool> <bool> <bool>
-
     ```
 
 Frame.isna()[[source]](../_modules/static_frame/core/frame.md#Frame.isna)[#](#static_frame.Frame.isna "Link to this definition")
@@ -3923,7 +3905,6 @@ Frame.isna()[[source]](../_modules/static_frame/core/frame.md#Frame.isna)[#](#st
     2       True   False  True
     3       True   True   True
     <int64> <bool> <bool> <bool>
-
     ```
 
 Frame.join\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.join_inner)[#](#static_frame.Frame.join_inner "Link to this definition")
@@ -3971,7 +3952,6 @@ Frame.join\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
     2       10      3       0       7       8       0
     3       2       8       1       2       3       1
     <int64> <int64> <int64> <int64> <int64> <int64> <int64>
-
     ```
 
 Frame.join\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.join_left)[#](#static_frame.Frame.join_left "Link to this definition")
@@ -4019,7 +3999,6 @@ Frame.join\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=N
     2       10      3       0       7       8       0
     3       2       8       1       2       3       1
     <int64> <int64> <int64> <int64> <int64> <int64> <int64>
-
     ```
 
 Frame.join\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.join_outer)[#](#static_frame.Frame.join_outer "Link to this definition")
@@ -4067,7 +4046,6 @@ Frame.join\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
     2       10      3       0       7       8       0
     3       2       8       1       2       3       1
     <int64> <int64> <int64> <int64> <int64> <int64> <int64>
-
     ```
 
 Frame.join\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.join_right)[#](#static_frame.Frame.join_right "Link to this definition")
@@ -4115,7 +4093,6 @@ Frame.join\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
     2       11      0       0       7       8       0
     3       10      3       0       7       8       0
     <int64> <int64> <int64> <int64> <int64> <int64> <int64>
-
     ```
 
 Frame.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_max)[#](#static_frame.Frame.loc_max "Link to this definition")
@@ -4143,7 +4120,6 @@ Frame.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame
     b        0
     c        0
     <<U1>    <int64>
-
     ```
 
 Frame.loc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_min)[#](#static_frame.Frame.loc_min "Link to this definition")
@@ -4171,7 +4147,6 @@ Frame.loc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame
     b        1
     c        0
     <<U1>    <int64>
-
     ```
 
 Frame.loc\_notfalsy\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_notfalsy_first)[#](#static_frame.Frame.loc_notfalsy_first "Link to this definition")
@@ -4207,7 +4182,6 @@ Frame.loc\_notfalsy\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modu
     r        b
     s        c
     <<U1>    <<U1>
-
     ```
 
 Frame.loc\_notfalsy\_last(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_notfalsy_last)[#](#static_frame.Frame.loc_notfalsy_last "Link to this definition")
@@ -4243,7 +4217,6 @@ Frame.loc\_notfalsy\_last(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modul
     r        c
     s        c
     <<U1>    <<U1>
-
     ```
 
 Frame.loc\_notna\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_notna_first)[#](#static_frame.Frame.loc_notna_first "Link to this definition")
@@ -4279,7 +4252,6 @@ Frame.loc\_notna\_first(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules
     2        b
     3        nan
     <int64>  <object>
-
     ```
 
 Frame.loc\_notna\_last(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.loc_notna_last)[#](#static_frame.Frame.loc_notna_last "Link to this definition")
@@ -4315,7 +4287,6 @@ Frame.loc\_notna\_last(*\**, *fill\_value=nan*, *axis=0*)[[source]](../_modules/
     2        b
     3        nan
     <int64>  <object>
-
     ```
 
 Frame.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.max "Link to this definition")
@@ -4341,7 +4312,6 @@ Frame.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.max 
     a        4
     b        5
     <<U1>    <int64>
-
     ```
 
 Frame.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.mean "Link to this definition")
@@ -4367,7 +4337,6 @@ Frame.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.mea
     a        2.0
     b        3.0
     <<U1>    <float64>
-
     ```
 
 Frame.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.median "Link to this definition")
@@ -4393,7 +4362,6 @@ Frame.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.m
     a        2.0
     b        3.0
     <<U1>    <float64>
-
     ```
 
 Frame.merge\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.merge_inner)[#](#static_frame.Frame.merge_inner "Link to this definition")
@@ -4443,7 +4411,6 @@ Frame.merge\_inner(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns
     2       0       10      3       7       8
     3       1       2       8       2       3
     <int64> <int64> <int64> <int64> <int64> <int64>
-
     ```
 
 Frame.merge\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.merge_left)[#](#static_frame.Frame.merge_left "Link to this definition")
@@ -4493,7 +4460,6 @@ Frame.merge\_left(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=
     2       0       10      3       7       8
     3       1       2       8       2       3
     <int64> <int64> <int64> <int64> <int64> <int64>
-
     ```
 
 Frame.merge\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.merge_outer)[#](#static_frame.Frame.merge_outer "Link to this definition")
@@ -4543,7 +4509,6 @@ Frame.merge\_outer(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns
     2       0       10      3       7       8
     3       1       2       8       2       3
     <int64> <int64> <int64> <int64> <int64> <int64>
-
     ```
 
 Frame.merge\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns=None*, *right\_depth\_level=None*, *right\_columns=None*, *merge\_labels=None*, *left\_template='{}'*, *right\_template='{}'*, *fill\_value=nan*, *include\_index=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.merge_right)[#](#static_frame.Frame.merge_right "Link to this definition")
@@ -4593,7 +4558,6 @@ Frame.merge\_right(*other*, */*, *\**, *left\_depth\_level=None*, *left\_columns
     2       0       11      0       7       8
     3       0       10      3       7       8
     <int64> <int64> <int64> <int64> <int64> <int64>
-
     ```
 
 Frame.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.min "Link to this definition")
@@ -4619,7 +4583,6 @@ Frame.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Frame.min 
     a        0
     b        1
     <<U1>    <int64>
-
     ```
 
 Frame.notfalsy()[[source]](../_modules/static_frame/core/frame.md#Frame.notfalsy)[#](#static_frame.Frame.notfalsy "Link to this definition")
@@ -4645,7 +4608,6 @@ Frame.notfalsy()[[source]](../_modules/static_frame/core/frame.md#Frame.notfalsy
     2       False  False  False
     3       True   True   True
     <int64> <bool> <bool> <bool>
-
     ```
 
 Frame.notna()[[source]](../_modules/static_frame/core/frame.md#Frame.notna)[#](#static_frame.Frame.notna "Link to this definition")
@@ -4671,7 +4633,6 @@ Frame.notna()[[source]](../_modules/static_frame/core/frame.md#Frame.notna)[#](#
     2       False  True   False
     3       False  False  False
     <int64> <bool> <bool> <bool>
-
     ```
 
 Frame.pivot(*index\_fields*, *columns\_fields=()*, *data\_fields=()*, *\**, *func=<function nansum>*, *fill\_value=nan*, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.pivot)[#](#static_frame.Frame.pivot "Link to this definition")
@@ -4705,7 +4666,6 @@ Frame.pivot(*index\_fields*, *columns\_fields=()*, *data\_fields=()*, *\**, *fun
     3          10.0      nan
     8          nan       6.0
     <int64>    <float64> <float64>
-
     ```
 
 Frame.pivot\_stack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.pivot_stack)[#](#static_frame.Frame.pivot_stack "Link to this definition")
@@ -4742,7 +4702,6 @@ Frame.pivot\_stack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[[source]](..
     3                b     8
     3                c     1
     <int64>          <<U1> <int64>
-
     ```
 
 Frame.pivot\_unstack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.pivot_unstack)[#](#static_frame.Frame.pivot_unstack "Link to this definition")
@@ -4790,7 +4749,6 @@ Frame.pivot\_unstack(*depth\_level=-1*, */*, *\**, *fill\_value=nan*)[[source]](
     2                10      3       0
     3                2       8       1
     <int64>          <int64> <int64> <int64>
-
     ```
 
 Frame.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.Frame.prod "Link to this definition")
@@ -4816,7 +4774,6 @@ Frame.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_fram
     a        0
     b        15
     <<U1>    <int64>
-
     ```
 
 Frame.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_dense)[#](#static_frame.Frame.rank_dense "Link to this definition")
@@ -4852,7 +4809,6 @@ Frame.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *f
     2          2       1       0
     3          0       2       1
     <int64>    <int64> <int64> <int64>
-
     ```
 
 Frame.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_max)[#](#static_frame.Frame.rank_max "Link to this definition")
@@ -4888,7 +4844,6 @@ Frame.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
     2          2       1       1
     3          0       3       3
     <int64>    <int64> <int64> <int64>
-
     ```
 
 Frame.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_mean)[#](#static_frame.Frame.rank_mean "Link to this definition")
@@ -4924,7 +4879,6 @@ Frame.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fi
     2          2.0       1.0       0.5
     3          0.0       2.5       2.5
     <int64>    <float64> <float64> <float64>
-
     ```
 
 Frame.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_min)[#](#static_frame.Frame.rank_min "Link to this definition")
@@ -4960,7 +4914,6 @@ Frame.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
     2          2       1       0
     3          0       2       2
     <int64>    <int64> <int64> <int64>
-
     ```
 
 Frame.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.rank_ordinal)[#](#static_frame.Frame.rank_ordinal "Link to this definition")
@@ -4996,7 +4949,6 @@ Frame.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, 
     2          2       1       1
     3          0       3       3
     <int64>    <int64> <int64> <int64>
-
     ```
 
 Frame.rehierarch(*index=None*, *columns=None*, *\**, *index\_constructors=None*, *columns\_constructors=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.rehierarch)[#](#static_frame.Frame.rehierarch "Link to this definition")
@@ -5026,7 +4978,6 @@ Frame.rehierarch(*index=None*, *columns=None*, *\**, *index\_constructors=None*,
     q                0       2       True   1517-04-01
     q                1       3       False  1517-06-30
     <<U1>            <int64> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index=False*, *own\_columns=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/frame.md#Frame.reindex)[#](#static_frame.Frame.reindex "Link to this definition")
@@ -5060,7 +5011,6 @@ Frame.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index
     s          3        wX
     r          8       123
     <<U1>      <int64> <<U4>
-
     ```
 
 Frame.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel)[#](#static_frame.Frame.relabel "Link to this definition")
@@ -5100,7 +5050,6 @@ Frame.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *co
     +P+        10      False  1517-01-01
     +Q+        8       True   1517-04-01
     <<U3>      <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_flat)[#](#static_frame.Frame.relabel_flat "Link to this definition")
@@ -5130,7 +5079,6 @@ Frame.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static
     (np.int64(1), np.str_('p')) 8       True   1517-12-31
     (np.int64(1), np.str_('q')) 3       False  1517-06-30
     <object>                    <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_level_add)[#](#static_frame.Frame.relabel_level_add "Link to this definition")
@@ -5163,7 +5111,6 @@ Frame.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructo
     I                1       p     8       True   1517-12-31
     I                1       q     3       False  1517-06-30
     <<U1>            <int64> <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_level_drop)[#](#static_frame.Frame.relabel_level_drop "Link to this definition")
@@ -5191,7 +5138,6 @@ Frame.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_
     p          10      False  1517-01-01
     q          2       True   1517-04-01
     <<U1>      <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.relabel\_shift\_in(*key*, */*, *\**, *axis=0*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_shift_in)[#](#static_frame.Frame.relabel_shift_in "Link to this definition")
@@ -5221,7 +5167,6 @@ Frame.relabel\_shift\_in(*key*, */*, *\**, *axis=0*, *index\_constructors=None*)
     1                                    p     8       True   1517-12-31
     1                                    q     3       False  1517-06-30
     <int64>                              <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.relabel\_shift\_out(*depth\_level*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/frame.md#Frame.relabel_shift_out)[#](#static_frame.Frame.relabel_shift_out "Link to this definition")
@@ -5251,7 +5196,6 @@ Frame.relabel\_shift\_out(*depth\_level*, */*, *\**, *axis=0*)[[source]](../_mod
     2          p     1       8       True   1517-12-31
     3          q     1       3       False  1517-06-30
     <int64>    <<U1> <int64> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *columns=<object object>*)[[source]](../_modules/static_frame/core/frame.md#Frame.rename)[#](#static_frame.Frame.rename "Link to this definition")
@@ -5277,7 +5221,6 @@ Frame.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *column
     1                   p     8       True   1517-12-31
     1                   q     3       False  1517-06-30
     <int64>             <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_columns=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.roll)[#](#static_frame.Frame.roll "Link to this definition")
@@ -5307,7 +5250,6 @@ Frame.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_colum
     2          3       False  1517-06-30
     3          10      False  1517-01-01
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.sample)[#](#static_frame.Frame.sample "Link to this definition")
@@ -5336,7 +5278,6 @@ Frame.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modu
     2          True   1517-12-31
     3          False  1517-06-30
     <int64>    <bool> <datetime64[D]>
-
     ```
 
 Frame.set\_columns(*index*, */*, *\**, *drop=False*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.set_columns)[#](#static_frame.Frame.set_columns "Link to this definition")
@@ -5367,7 +5308,6 @@ Frame.set\_columns(*index*, */*, *\**, *drop=False*, *columns\_constructor=None*
     0                 q     2       True   1517-04-01
     1                 q     3       False  1517-06-30
     <int64>           <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.set\_columns\_hierarchy(*index*, */*, *\**, *drop=False*, *columns\_constructors=None*, *reorder\_for\_hierarchy=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.set_columns_hierarchy)[#](#static_frame.Frame.set_columns_hierarchy "Link to this definition")
@@ -5401,7 +5341,6 @@ Frame.set\_columns\_hierarchy(*index*, */*, *\**, *drop=False*, *columns\_constr
     0                                    p     10      False  1517-01-01
     0                                    q     2       True   1517-04-01
     <int64>                              <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.set\_index(*column*, */*, *\**, *drop=False*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.set_index)[#](#static_frame.Frame.set_index "Link to this definition")
@@ -5433,7 +5372,6 @@ Frame.set\_index(*column*, */*, *\**, *drop=False*, *index\_constructor=None*)[[
     1517-12-31      8       True
     1517-06-30      3       False
     <datetime64[D]> <int64> <bool>
-
     ```
 
 Frame.set\_index\_hierarchy(*columns*, */*, *\**, *drop=False*, *index\_constructors=None*, *reorder\_for\_hierarchy=False*)[[source]](../_modules/static_frame/core/frame.md#Frame.set_index_hierarchy)[#](#static_frame.Frame.set_index_hierarchy "Link to this definition")
@@ -5468,7 +5406,6 @@ Frame.set\_index\_hierarchy(*columns*, */*, *\**, *drop=False*, *index\_construc
     True                                 1517-12-31      8
     False                                1517-06-30      3
     <bool>                               <datetime64[D]> <int64>
-
     ```
 
 Frame.shift(*index=0*, *columns=0*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/frame.md#Frame.shift)[#](#static_frame.Frame.shift "Link to this definition")
@@ -5494,14 +5431,14 @@ Frame.shift(*index=0*, *columns=0*, *\**, *fill\_value=nan*)[[source]](../_modul
     2          0       False  NaT
     3          10      False  1517-01-01
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.sort_columns)[#](#static_frame.Frame.sort_columns "Link to this definition")
 :   Return a new [`Frame`](frame-selector.md#Frame "Frame") ordered by the sorted `columns`.
 
     Parameters:
-    :   * **ascendings** – Boolean, or iterable of Booleans; if `True`, the lowest ranks correspond to the lowest values; if an iterable, apply per column or row. The default is `True`.
+    :   * **\*** –
+        * **ascendings** – Boolean, or iterable of Booleans; if `True`, the lowest ranks correspond to the lowest values; if an iterable, apply per column or row. The default is `True`.
         * **kind** – Name of the sort algorithm as passed to NumPy.
         * **key** – A function that is used to pre-process the selected columns or rows and derive new values to sort by.
 
@@ -5525,14 +5462,14 @@ Frame.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[sou
     1                p     1517-12-31      True   8
     1                q     1517-06-30      False  3
     <int64>          <<U1> <datetime64[D]> <bool> <int64>
-
     ```
 
 Frame.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.sort_index)[#](#static_frame.Frame.sort_index "Link to this definition")
 :   Return a new [`Frame`](frame-selector.md#Frame "Frame") ordered by the sorted Index.
 
     Parameters:
-    :   * **ascendings** – Boolean, or iterable of Booleans; if `True`, the lowest ranks correspond to the lowest values; if an iterable, apply per column or row. The default is `True`.
+    :   * **\*** –
+        * **ascendings** – Boolean, or iterable of Booleans; if `True`, the lowest ranks correspond to the lowest values; if an iterable, apply per column or row. The default is `True`.
         * **kind** – Name of the sort algorithm as passed to NumPy.
         * **key** – A function that is used to pre-process the selected columns or rows and derive new values to sort by.
 
@@ -5556,7 +5493,6 @@ Frame.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[sourc
     0                q     2       True   1517-04-01
     0                p     10      False  1517-01-01
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.sort_values)[#](#static_frame.Frame.sort_values "Link to this definition")
@@ -5599,7 +5535,6 @@ Frame.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='merges
     1          2       True   1517-04-01
     0          10      False  1517-01-01
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.Frame.std "Link to this definition")
@@ -5625,7 +5560,6 @@ Frame.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.
     a        1.632993161855452
     b        1.632993161855452
     <<U1>    <float64>
-
     ```
 
 Frame.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.Frame.sum "Link to this definition")
@@ -5651,7 +5585,6 @@ Frame.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame
     a        6
     b        9
     <<U1>    <int64>
-
     ```
 
 Frame.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.md#Frame.tail)[#](#static_frame.Frame.tail "Link to this definition")
@@ -5678,7 +5611,6 @@ Frame.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/frame.md#Fram
     2          8       True   1517-12-31
     3          3       False  1517-06-30
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.transpose()[[source]](../_modules/static_frame/core/frame.md#Frame.transpose)[#](#static_frame.Frame.transpose "Link to this definition")
@@ -5701,7 +5633,6 @@ Frame.transpose()[[source]](../_modules/static_frame/core/frame.md#Frame.transpo
     a          0       2       4
     b          1       3       5
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.unique)[#](#static_frame.Frame.unique "Link to this definition")
@@ -5721,7 +5652,6 @@ Frame.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/frame.md
     >>> f.unique()
     [10.0 False datetime.date(1517, 1, 1) 2.0 True datetime.date(1517, 4, 1)
      nan None]
-
     ```
 
 Frame.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.unique_enumerated)[#](#static_frame.Frame.unique_enumerated "Link to this definition")
@@ -5745,7 +5675,6 @@ Frame.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[[source]](../
            [-1, -1, -1],
            [ 1,  3,  5]]), array([10.0, 2.0, False, True, datetime.date(1517, 1, 1),
            datetime.date(1517, 4, 1)], dtype=object))
-
     ```
 
 Frame.unset\_columns(*names=()*, */*, *\**, *drop=False*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.unset_columns)[#](#static_frame.Frame.unset_columns "Link to this definition")
@@ -5774,7 +5703,6 @@ Frame.unset\_columns(*names=()*, */*, *\**, *drop=False*, *index\_constructors=N
     q          2        3
     r          4        5
     <<U1>      <object> <object>
-
     ```
 
 Frame.unset\_index(*\**, *names=()*, *drop=False*, *consolidate\_blocks=False*, *columns\_constructors=None*)[[source]](../_modules/static_frame/core/frame.md#Frame.unset_index)[#](#static_frame.Frame.unset_index "Link to this definition")
@@ -5805,7 +5733,6 @@ Frame.unset\_index(*\**, *names=()*, *drop=False*, *consolidate\_blocks=False*, 
     2          1       p     8       True   1517-12-31
     3          1       q     3       False  1517-06-30
     <int64>    <int64> <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.Frame.var "Link to this definition")
@@ -5831,7 +5758,6 @@ Frame.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.
     a        2.6666666666666665
     b        2.6666666666666665
     <<U1>    <float64>
-
     ```
 
 [Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)
@@ -5848,6 +5774,7 @@ On this page
 * [`Frame.__array__()`](#static_frame.Frame.__array__)
 * [`Frame.__array_ufunc__()`](#static_frame.Frame.__array_ufunc__)
 * [`Frame.__bool__()`](#static_frame.Frame.__bool__)
+* [`Frame.__copy__()`](#static_frame.Frame.__copy__)
 * [`Frame.__dataframe__()`](#static_frame.Frame.__dataframe__)
 * [`Frame.__deepcopy__()`](#static_frame.Frame.__deepcopy__)
 * [`Frame.__len__()`](#static_frame.Frame.__len__)

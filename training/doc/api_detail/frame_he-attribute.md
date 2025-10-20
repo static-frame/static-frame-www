@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ FrameHE.STATIC *= True*[#](#static_frame.FrameHE.STATIC "Link to this definition
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f.STATIC
     True
-
     ```
 
 FrameHE.T[#](#static_frame.FrameHE.T "Link to this definition")
@@ -2544,7 +2547,6 @@ FrameHE.T[#](#static_frame.FrameHE.T "Link to this definition")
     b            False      True       True       False
     c            1517-01-01 1517-04-01 1517-12-31 1517-06-30
     <<U1>        <object>   <object>   <object>   <object>
-
     ```
 
 FrameHE.columns[#](#static_frame.FrameHE.columns "Link to this definition")
@@ -2558,7 +2560,6 @@ FrameHE.columns[#](#static_frame.FrameHE.columns "Link to this definition")
     b
     c
     <<U1>
-
     ```
 
 FrameHE.dtypes[#](#static_frame.FrameHE.dtypes "Link to this definition")
@@ -2576,7 +2577,6 @@ FrameHE.dtypes[#](#static_frame.FrameHE.dtypes "Link to this definition")
     b           bool
     c           datetime64[D]
     <<U1>       <object>
-
     ```
 
 FrameHE.index[#](#static_frame.FrameHE.index "Link to this definition")
@@ -2591,7 +2591,6 @@ FrameHE.index[#](#static_frame.FrameHE.index "Link to this definition")
     2
     3
     <int64>
-
     ```
 
 FrameHE.memory[#](#static_frame.FrameHE.memory "Link to this definition")
@@ -2608,13 +2607,12 @@ FrameHE.memory[#](#static_frame.FrameHE.memory "Link to this definition")
     ```
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f.memory
-            L    Lu    LM   LMu   LMD  LMDu  R    Ru    RM   RMu   RMD  RMDu
-    Name    42   B     42   B     42   B     42   B     42   B     42   B
-    Index   236  B     252  B     124  B     8.34 KB    284  B     156  B
-    Columns 800  B     832  B     576  B     8.89 KB    856  B     600  B
-    Blocks  748  B     796  B     412  B     748  B     796  B     412  B
-    Total   1.83 KB    1.92 KB    1.17 KB    9.94 KB    1.97 KB    1.22 KB
-
+            L    Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
+    Name    42   B     42   B     42   B     42    B     42   B     42   B
+    Index   292  B     308  B     180  B     8.39  KB    340  B     212  B
+    Columns 856  B     888  B     632  B     8.95  KB    912  B     656  B
+    Blocks  748  B     796  B     412  B     748   B     796  B     412  B
+    Total   1.94 KB    2.03 KB    1.28 KB    10.04 KB    2.08 KB    1.33 KB
     ```
 
 FrameHE.mloc[#](#static_frame.FrameHE.mloc "Link to this definition")
@@ -2630,7 +2628,6 @@ FrameHE.name[#](#static_frame.FrameHE.name "Link to this definition")
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f.name
     x
-
     ```
 
 FrameHE.nbytes[#](#static_frame.FrameHE.nbytes "Link to this definition")
@@ -2643,7 +2640,6 @@ FrameHE.nbytes[#](#static_frame.FrameHE.nbytes "Link to this definition")
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f.nbytes
     68
-
     ```
 
 FrameHE.ndim[#](#static_frame.FrameHE.ndim "Link to this definition")
@@ -2656,7 +2652,6 @@ FrameHE.ndim[#](#static_frame.FrameHE.ndim "Link to this definition")
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f.ndim
     2
-
     ```
 
 FrameHE.shape[#](#static_frame.FrameHE.shape "Link to this definition")
@@ -2669,7 +2664,6 @@ FrameHE.shape[#](#static_frame.FrameHE.shape "Link to this definition")
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f.shape
     (4, 3)
-
     ```
 
 FrameHE.size[#](#static_frame.FrameHE.size "Link to this definition")
@@ -2682,7 +2676,6 @@ FrameHE.size[#](#static_frame.FrameHE.size "Link to this definition")
     >>> f = sf.FrameHE.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
     >>> f.size
     12
-
     ```
 
 [FrameHE](frame_he.md#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.md#api-detail-framehe-exporter) | [Attribute](#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](frame_he-assignment.md#api-detail-framehe-assignment) | [Selector](frame_he-selector.md#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)

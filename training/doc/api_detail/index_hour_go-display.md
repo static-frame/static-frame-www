@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2539,8 +2543,11 @@ IndexHourGO.interface[#](#IndexHourGO.interface "Link to this definition")
     <Index>                              cls_name    group                doc                  <<U18>
     <Index: signature>
     __init__(labels, /, *, loc_is_ilo... IndexHourGO Constructor          Initializer. Args...
+    from_difference(*others)             IndexHourGO Constructor          Construct a new I...
+    from_intersection(*others)           IndexHourGO Constructor          Construct a new I...
     from_labels(labels, /, *, name)      IndexHourGO Constructor          Construct an Inde...
     from_pandas(value, /)                IndexHourGO Constructor          Given a Pandas in...
+    from_union(*others)                  IndexHourGO Constructor          Construct a new I...
     to_html(config, /, *, style_config)  IndexHourGO Exporter             Return an HTML ta...
     to_html_datatables(fp, /, *, show... IndexHourGO Exporter             Return a complete...
     to_pandas()                          IndexHourGO Exporter             Return a Pandas I...
@@ -2552,9 +2559,6 @@ IndexHourGO.interface[#](#IndexHourGO.interface "Link to this definition")
     index_types                          IndexHourGO Attribute            Return a Series o...
     memory                               IndexHourGO Attribute            Return a MemoryDi...
     mloc                                 IndexHourGO Attribute            The memory locati...
-    name                                 IndexHourGO Attribute            A hashable label ...
-    names                                IndexHourGO Attribute            Provide a suitabl...
-    nbytes                               IndexHourGO Attribute            Return the total ...
     ...                                  ...         ...                  ...
     via_re(pattern, flags, /).sub(rep... IndexHourGO Accessor Regular ... Return the string...
     via_re(pattern, flags, /).subn(re... IndexHourGO Accessor Regular ... Perform the same ...
@@ -2574,7 +2578,6 @@ IndexHourGO.interface[#](#IndexHourGO.interface "Link to this definition")
     via_type_clinic.__call__(hint, /,... IndexHourGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexHourGO Accessor Type Clinic Return a compact ...
     <<U93>                               <<U11>      <<U27>               <<U83>
-
     ```
 
 IndexHourGO.\_\_repr\_\_()[#](#static_frame.IndexHourGO.__repr__ "Link to this definition")
@@ -2588,7 +2591,6 @@ IndexHourGO.\_\_repr\_\_()[#](#static_frame.IndexHourGO.__repr__ "Link to this d
     NaT
     1620-11-21T00
     <datetime64[h]>
-
     ```
 
 IndexHourGO.\_\_str\_\_()[#](#static_frame.IndexHourGO.__str__ "Link to this definition")
@@ -2602,7 +2604,6 @@ IndexHourGO.\_\_str\_\_()[#](#static_frame.IndexHourGO.__str__ "Link to this def
     NaT
     1620-11-21T00
     <datetime64[h]>
-
     ```
 
 IndexHourGO.display(*config=None*, */*, *\**, *style\_config=None*)[#](#static_frame.IndexHourGO.display "Link to this definition")
@@ -2623,7 +2624,6 @@ IndexHourGO.display(*config=None*, */*, *\**, *style\_config=None*)[#](#static_f
     1620-09-16T00
     NaT
     1620-11-21T00
-
     ```
 
 IndexHourGO.display\_tall(*config=None*, */*)[#](#static_frame.IndexHourGO.display_tall "Link to this definition")
@@ -2640,7 +2640,6 @@ IndexHourGO.display\_tall(*config=None*, */*)[#](#static_frame.IndexHourGO.displ
     NaT
     1620-11-21T00
     <datetime64[h]>
-
     ```
 
 IndexHourGO.display\_wide(*config=None*, */*)[#](#static_frame.IndexHourGO.display_wide "Link to this definition")
@@ -2657,7 +2656,6 @@ IndexHourGO.display\_wide(*config=None*, */*)[#](#static_frame.IndexHourGO.displ
     NaT
     1620-11-21T00
     <datetime64[h]>
-
     ```
 
 [IndexHourGO](index_hour_go.md#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like) | [Display](#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-detail-indexhourgo-accessor-type-clinic)

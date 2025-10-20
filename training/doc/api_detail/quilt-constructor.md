@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2569,7 +2573,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     q                2       3       42      43
     r                4       5       44      45
     <<U1>            <int64> <int64> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_frame(*frame*, */*, *\**, *chunksize*, *retain\_labels*, *axis=0*, *name=None*, *label\_extractor=None*, *config=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_frame)[#](#static_frame.Quilt.from_frame "Link to this definition")
@@ -2597,7 +2600,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     2                2       8       True   1517-12-31
     2                3       3       False  1517-06-30
     <int64>          <int64> <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* Quilt.from\_frames(*frames*, */*, *\**, *axis=0*, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_frames)[#](#static_frame.Quilt.from_frames "Link to this definition")
@@ -2625,7 +2627,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_items(*items*, */*, *\**, *axis=0*, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_items)[#](#static_frame.Quilt.from_items "Link to this definition")
@@ -2669,7 +2670,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     B                q     42      43
     B                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_sqlite(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_sqlite)[#](#static_frame.Quilt.from_sqlite "Link to this definition")
@@ -2706,7 +2706,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_xlsx(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_xlsx)[#](#static_frame.Quilt.from_xlsx "Link to this definition")
@@ -2743,7 +2742,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_zip\_csv(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_csv)[#](#static_frame.Quilt.from_zip_csv "Link to this definition")
@@ -2780,7 +2778,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_zip\_npy(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_npy)[#](#static_frame.Quilt.from_zip_npy "Link to this definition")
@@ -2817,7 +2814,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_zip\_npz(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_npz)[#](#static_frame.Quilt.from_zip_npz "Link to this definition")
@@ -2854,7 +2850,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_zip\_parquet(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_parquet)[#](#static_frame.Quilt.from_zip_parquet "Link to this definition")
@@ -2891,7 +2886,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     v                q        42      43
     v                r        44      45
     <<U1>            <object> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_zip\_pickle(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_pickle)[#](#static_frame.Quilt.from_zip_pickle "Link to this definition")
@@ -2928,7 +2922,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Quilt.from\_zip\_tsv(*fp*, */*, *\**, *config=None*, *axis=0*, *retain\_labels*, *deepcopy\_from\_bus=False*, *max\_persist=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_zip_tsv)[#](#static_frame.Quilt.from_zip_tsv "Link to this definition")
@@ -2965,7 +2958,6 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 [Quilt](quilt.md#api-detail-quilt): [Constructor](#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)

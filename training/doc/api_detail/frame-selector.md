@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2546,7 +2550,6 @@ Frame.bloc[*key*]
     r                c     9
     s                c     12
     <<U1>            <<U1> <int64>
-
     ```
 
 Frame.drop[*key*]
@@ -2593,7 +2596,6 @@ Frame.drop[*key*]
     r          8
     s          0
     <<U1>      <int64>
-
     ```
 
 Frame.drop.iloc[*key*]
@@ -2634,7 +2636,6 @@ Frame.drop.iloc[*key*]
     q          -2      -3      0
     s          0       0       12
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.drop.loc[*key*]
@@ -2676,7 +2677,6 @@ Frame.drop.loc[*key*]
     q          -2      -3      0
     r          0       8       9
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.mask[*key*]
@@ -2723,7 +2723,6 @@ Frame.mask[*key*]
     r       True   False  True
     s       True   False  True
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Frame.mask.iloc[*key*]
@@ -2770,7 +2769,6 @@ Frame.mask.iloc[*key*]
     r       True   True   True
     s       False  False  False
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Frame.mask.loc[*key*]
@@ -2817,7 +2815,6 @@ Frame.mask.loc[*key*]
     r       False  False  False
     s       True   True   True
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Frame.masked\_array[*key*]
@@ -2852,7 +2849,6 @@ Frame.masked\_array[*key*]
      [-- -3 --]
      [-- 8 --]
      [-- 0 --]]
-
     ```
 
 Frame.masked\_array.iloc[*key*]
@@ -2887,7 +2883,6 @@ Frame.masked\_array.iloc[*key*]
      [-2 -3 0]
      [-- -- --]
      [0 0 12]]
-
     ```
 
 Frame.masked\_array.loc[*key*]
@@ -2922,7 +2917,6 @@ Frame.masked\_array.loc[*key*]
      [-2 -3 0]
      [0 8 9]
      [-- -- --]]
-
     ```
 
 Frame[*key*]()[#](#Frame "Link to this definition")
@@ -2965,7 +2959,6 @@ Frame[*key*]()[#](#Frame "Link to this definition")
     r          0       9
     s          0       12
     <<U1>      <int64> <int64>
-
     ```
 
 Frame.iloc[*key*]
@@ -3003,7 +2996,6 @@ Frame.iloc[*key*]
     p          10      8       1
     s          0       0       12
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.loc[*key*]
@@ -3041,7 +3033,6 @@ Frame.loc[*key*]
     p          10      8       1
     s          0       0       12
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 [Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)

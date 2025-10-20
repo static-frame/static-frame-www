@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ Yarn.\_\_bool\_\_()[#](#static_frame.Yarn.__bool__ "Link to this definition")
     <<U1>   <object>
     >>> bool(y)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 Yarn.\_\_copy\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__copy__)[#](#static_frame.Yarn.__copy__ "Link to this definition")
@@ -2559,7 +2562,6 @@ Yarn.\_\_copy\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__copy_
     v       Frame
     w       Frame
     <<U1>   <object>
-
     ```
 
 Yarn.\_\_len\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__len__)[#](#static_frame.Yarn.__len__ "Link to this definition")
@@ -2579,7 +2581,6 @@ Yarn.\_\_len\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__len__)
     <<U1>   <object>
     >>> len(y)
     4
-
     ```
 
 Yarn.copy()[[source]](../_modules/static_frame/core/yarn.md#Yarn.copy)[#](#static_frame.Yarn.copy "Link to this definition")
@@ -2605,7 +2606,6 @@ Yarn.copy()[[source]](../_modules/static_frame/core/yarn.md#Yarn.copy)[#](#stati
     v       Frame
     w       Frame
     <<U1>   <object>
-
     ```
 
 Yarn.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.equals)[#](#static_frame.Yarn.equals "Link to this definition")
@@ -2643,7 +2643,6 @@ Yarn.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *
     <<U1>   <object>
     >>> y1.equals(y2)
     True
-
     ```
 
 Yarn.head(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.head)[#](#static_frame.Yarn.head "Link to this definition")
@@ -2673,7 +2672,6 @@ Yarn.head(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.h
     x       Frame
     y       Frame
     <<U1>   <object>
-
     ```
 
 Yarn.persist[*key*]
@@ -2721,7 +2719,6 @@ Yarn.persist[*key*]
     v       False  nan       nan       None
     w       False  nan       nan       None
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Yarn.persist.iloc[*key*]
@@ -2770,7 +2767,6 @@ Yarn.persist.iloc[*key*]
     v       False  nan       nan       None
     w       True   6.0       6.0       (3, 2)
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Yarn.persist.loc[*key*]
@@ -2819,7 +2815,6 @@ Yarn.persist.loc[*key*]
     v       False  nan       nan       None
     w       False  nan       nan       None
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Yarn.persist
@@ -2868,7 +2863,6 @@ Yarn.persist
     v       True   6.0       48.0      (3, 2)
     w       True   6.0       6.0       (3, 2)
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Yarn.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.rehierarch)[#](#static_frame.Yarn.rehierarch "Link to this definition")
@@ -2894,7 +2888,6 @@ Yarn.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[[source]](.
     v                j     Frame
     w                j     Frame
     <<U1>            <<U1> <object>
-
     ```
 
 Yarn.reindex(*index*, *\**, *fill\_value=None*, *own\_index=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.reindex)[#](#static_frame.Yarn.reindex "Link to this definition")
@@ -2923,7 +2916,6 @@ Yarn.reindex(*index*, *\**, *fill\_value=None*, *own\_index=False*, *check\_equa
     x       Frame
     v       Frame
     <<U1>   <object>
-
     ```
 
 Yarn.relabel(*index*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel)[#](#static_frame.Yarn.relabel "Link to this definition")
@@ -2960,7 +2952,6 @@ Yarn.relabel(*index*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relab
     A                x     Frame
     j                w     Frame
     <<U1>            <<U1> <object>
-
     ```
 
 Yarn.relabel\_flat()[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_flat)[#](#static_frame.Yarn.relabel_flat "Link to this definition")
@@ -2986,7 +2977,6 @@ Yarn.relabel\_flat()[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabe
     (np.str_('j'), np.str_('v')) Frame
     (np.str_('j'), np.str_('w')) Frame
     <object>                     <object>
-
     ```
 
 Yarn.relabel\_level\_add(*level*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_level_add)[#](#static_frame.Yarn.relabel_level_add "Link to this definition")
@@ -3015,7 +3005,6 @@ Yarn.relabel\_level\_add(*level*, */*)[[source]](../_modules/static_frame/core/y
     A                j     v     Frame
     A                j     w     Frame
     <<U1>            <<U1> <<U1> <object>
-
     ```
 
 Yarn.relabel\_level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.relabel_level_drop)[#](#static_frame.Yarn.relabel_level_drop "Link to this definition")
@@ -3044,7 +3033,6 @@ Yarn.relabel\_level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/cor
     v       Frame
     w       Frame
     <<U1>   <object>
-
     ```
 
 Yarn.rename(*name*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.rename)[#](#static_frame.Yarn.rename "Link to this definition")
@@ -3073,7 +3061,6 @@ Yarn.rename(*name*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.re
     j                v     Frame
     j                w     Frame
     <<U1>            <<U1> <object>
-
     ```
 
 Yarn.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.roll)[#](#static_frame.Yarn.roll "Link to this definition")
@@ -3112,7 +3099,6 @@ Yarn.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/stat
     y       Frame
     v       Frame
     <<U1>   <object>
-
     ```
 
 Yarn.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.shift)[#](#static_frame.Yarn.shift "Link to this definition")
@@ -3137,7 +3123,6 @@ Yarn.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame
     <<U1>   <object>
     >>> y1.shift(1, fill_value=None)
     NotImplementedError('A `Yarn` cannot be shifted as newly created missing values cannot be filled without replacing stored `Bus`.')
-
     ```
 
 Yarn.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.sort_index)[#](#static_frame.Yarn.sort_index "Link to this definition")
@@ -3171,7 +3156,6 @@ Yarn.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source
     x       Frame
     y       Frame
     <<U1>   <object>
-
     ```
 
 Yarn.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.sort_values)[#](#static_frame.Yarn.sort_values "Link to this definition")
@@ -3204,7 +3188,6 @@ Yarn.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](.
     v       Frame
     w       Frame
     <<U1>   <object>
-
     ```
 
 Yarn.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.tail)[#](#static_frame.Yarn.tail "Link to this definition")
@@ -3235,7 +3218,6 @@ Yarn.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.t
     v       Frame
     w       Frame
     <<U1>   <object>
-
     ```
 
 Yarn.unpersist()[[source]](../_modules/static_frame/core/yarn.md#Yarn.unpersist)[#](#static_frame.Yarn.unpersist "Link to this definition")
@@ -3312,7 +3294,6 @@ Yarn.unpersist()[[source]](../_modules/static_frame/core/yarn.md#Yarn.unpersist)
     v       <FrameDeferred>
     w       <FrameDeferred>
     <<U1>   <object>
-
     ```
 
 [Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)

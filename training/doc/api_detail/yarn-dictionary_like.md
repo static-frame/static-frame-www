@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2541,7 +2545,6 @@ Yarn.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/yarn
     <<U1>            <<U1> <object>
     >>> y.__contains__('a')
     False
-
     ```
 
 Yarn.\_\_iter\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__iter__)[#](#static_frame.Yarn.__iter__ "Link to this definition")
@@ -2562,7 +2565,6 @@ Yarn.\_\_iter\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__iter_
     <<U1>            <<U1> <object>
     >>> tuple(y.__iter__())
     ((np.str_('i'), np.str_('x')), (np.str_('i'), np.str_('y')), (np.str_('j'), np.str_('v')), (np.str_('j'), np.str_('w')))
-
     ```
 
 Yarn.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__reversed__)[#](#static_frame.Yarn.__reversed__ "Link to this definition")
@@ -2583,7 +2585,6 @@ Yarn.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/yarn.md#Yarn.__r
     <<U1>            <<U1> <object>
     >>> tuple(y.__reversed__())
     ((np.str_('j'), np.str_('w')), (np.str_('j'), np.str_('v')), (np.str_('i'), np.str_('y')), (np.str_('i'), np.str_('x')))
-
     ```
 
 Yarn.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.get)[#](#static_frame.Yarn.get "Link to this definition")
@@ -2605,7 +2606,6 @@ Yarn.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/yarn.md#
     >>> y.get('a')
     >>> y.get('z', -1)
     -1
-
     ```
 
 Yarn.items()[[source]](../_modules/static_frame/core/yarn.md#Yarn.items)[#](#static_frame.Yarn.items "Link to this definition")
@@ -2647,7 +2647,6 @@ Yarn.items()[[source]](../_modules/static_frame/core/yarn.md#Yarn.items)[#](#sta
     q          True   False
     r          True   True
     <<U1>      <bool> <bool>))
-
     ```
 
 Yarn.keys()[[source]](../_modules/static_frame/core/yarn.md#Yarn.keys)[#](#static_frame.Yarn.keys "Link to this definition")
@@ -2673,7 +2672,6 @@ Yarn.keys()[[source]](../_modules/static_frame/core/yarn.md#Yarn.keys)[#](#stati
     j                v
     j                w
     <<U1>            <<U1>
-
     ```
 
 Yarn.values[#](#static_frame.Yarn.values "Link to this definition")
@@ -2716,7 +2714,6 @@ Yarn.values[#](#static_frame.Yarn.values "Link to this definition")
                                       q          True   False
                                       r          True   True
                                       <<U1>      <bool> <bool>      ]
-
     ```
 
 [Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ IndexSecondGO.STATIC *= False*[#](#static_frame.IndexSecondGO.STATIC "Link to th
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.STATIC
     False
-
     ```
 
 IndexSecondGO.depth *= 1*[#](#static_frame.IndexSecondGO.depth "Link to this definition")
@@ -2536,7 +2539,6 @@ IndexSecondGO.depth *= 1*[#](#static_frame.IndexSecondGO.depth "Link to this def
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.depth
     1
-
     ```
 
 IndexSecondGO.dtype[#](#static_frame.IndexSecondGO.dtype "Link to this definition")
@@ -2549,7 +2551,6 @@ IndexSecondGO.dtype[#](#static_frame.IndexSecondGO.dtype "Link to this definitio
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.dtype
     datetime64[s]
-
     ```
 
 IndexSecondGO.index\_types[#](#static_frame.IndexSecondGO.index_types "Link to this definition")
@@ -2565,7 +2566,6 @@ IndexSecondGO.index\_types[#](#static_frame.IndexSecondGO.index_types "Link to t
     <Index>
     None     <IndexSecondGO>
     <object> <object>
-
     ```
 
 IndexSecondGO.memory[#](#static_frame.IndexSecondGO.memory "Link to this definition")
@@ -2582,13 +2582,12 @@ IndexSecondGO.memory[#](#static_frame.IndexSecondGO.memory "Link to this definit
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.memory
-              L    Lu    LM   LMu   LMD  LMDu  R    Ru    RM   RMu   RMD  RMDu
-    Name      16   B     16   B     16   B     16   B     16   B     16   B
-    Map       472  B     472  B     472  B     472  B     472  B     472  B
-    Labels    136  B     152  B     24   B     136  B     152  B     24   B
-    Positions 112  B     128  B     0    B     8.22 KB    152  B     24   B
-    Total     1.21 KB    1.24 KB    1016 B     9.32 KB    1.27 KB    1.02 KB
-
+              L    Lu    LM  LMu   LMD  LMDu  R    Ru    RM   RMu   RMD  RMDu
+    Name      16   B     16  B     16   B     16   B     16   B     16   B
+    Map       472  B     472 B     472  B     472  B     472  B     472  B
+    Labels    136  B     152 B     24   B     136  B     152  B     24   B
+    Positions 112  B     128 B     0    B     8.22 KB    152  B     24   B
+    Total     1.27 KB    1.3 KB    1.05 KB    9.38 KB    1.32 KB    1.07 KB
     ```
 
 IndexSecondGO.mloc[#](#static_frame.IndexSecondGO.mloc "Link to this definition")
@@ -2603,7 +2602,6 @@ IndexSecondGO.name[#](#static_frame.IndexSecondGO.name "Link to this definition"
     ```
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.name
-
     ```
 
 IndexSecondGO.names[#](#static_frame.IndexSecondGO.names "Link to this definition")
@@ -2613,7 +2611,6 @@ IndexSecondGO.names[#](#static_frame.IndexSecondGO.names "Link to this definitio
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.names
     ('__index0__',)
-
     ```
 
 IndexSecondGO.nbytes[#](#static_frame.IndexSecondGO.nbytes "Link to this definition")
@@ -2626,7 +2623,6 @@ IndexSecondGO.nbytes[#](#static_frame.IndexSecondGO.nbytes "Link to this definit
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.nbytes
     24
-
     ```
 
 IndexSecondGO.ndim[#](#static_frame.IndexSecondGO.ndim "Link to this definition")
@@ -2639,7 +2635,6 @@ IndexSecondGO.ndim[#](#static_frame.IndexSecondGO.ndim "Link to this definition"
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.ndim
     1
-
     ```
 
 IndexSecondGO.positions[#](#static_frame.IndexSecondGO.positions "Link to this definition")
@@ -2649,7 +2644,6 @@ IndexSecondGO.positions[#](#static_frame.IndexSecondGO.positions "Link to this d
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.positions
     [0 1 2]
-
     ```
 
 IndexSecondGO.shape[#](#static_frame.IndexSecondGO.shape "Link to this definition")
@@ -2662,7 +2656,6 @@ IndexSecondGO.shape[#](#static_frame.IndexSecondGO.shape "Link to this definitio
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.shape
     (3,)
-
     ```
 
 IndexSecondGO.size[#](#static_frame.IndexSecondGO.size "Link to this definition")
@@ -2675,7 +2668,6 @@ IndexSecondGO.size[#](#static_frame.IndexSecondGO.size "Link to this definition"
     >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.size
     3
-
     ```
 
 [IndexSecondGO](index_second_go.md#api-detail-indexsecondgo): [Constructor](index_second_go-constructor.md#api-detail-indexsecondgo-constructor) | [Exporter](index_second_go-exporter.md#api-detail-indexsecondgo-exporter) | [Attribute](#api-detail-indexsecondgo-attribute) | [Method](index_second_go-method.md#api-detail-indexsecondgo-method) | [Dictionary-Like](index_second_go-dictionary_like.md#api-detail-indexsecondgo-dictionary-like) | [Display](index_second_go-display.md#api-detail-indexsecondgo-display) | [Selector](index_second_go-selector.md#api-detail-indexsecondgo-selector) | [Iterator](index_second_go-iterator.md#api-detail-indexsecondgo-iterator) | [Operator Binary](index_second_go-operator_binary.md#api-detail-indexsecondgo-operator-binary) | [Operator Unary](index_second_go-operator_unary.md#api-detail-indexsecondgo-operator-unary) | [Accessor Values](index_second_go-accessor_values.md#api-detail-indexsecondgo-accessor-values) | [Accessor Datetime](index_second_go-accessor_datetime.md#api-detail-indexsecondgo-accessor-datetime) | [Accessor String](index_second_go-accessor_string.md#api-detail-indexsecondgo-accessor-string) | [Accessor Regular Expression](index_second_go-accessor_regular_expression.md#api-detail-indexsecondgo-accessor-regular-expression) | [Accessor Hashlib](index_second_go-accessor_hashlib.md#api-detail-indexsecondgo-accessor-hashlib) | [Accessor Type Clinic](index_second_go-accessor_type_clinic.md#api-detail-indexsecondgo-accessor-type-clinic)

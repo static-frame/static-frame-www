@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2546,7 +2550,6 @@ FrameHE.to\_arrow(*\**, *include\_index=True*, *include\_index\_name=True*, *inc
     __index0__: [["p","q","r","s"]]
     a: [[10,2,8,3]]
     b: [["qrs ","XYZ","123"," wX "]]
-
     ```
 
 FrameHE.to\_clipboard(*\**, *delimiter='\t'*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[#](#static_frame.FrameHE.to_clipboard "Link to this definition")
@@ -2569,12 +2572,6 @@ FrameHE.to\_clipboard(*\**, *delimiter='\t'*, *include\_index=True*, *include\_i
         * **escape\_char** – A one-character string used by the writer to escape the delimiter if quoting is set to QUOTE\_NONE and the quotechar if quote\_double is False.
         * **quoting** – Controls when quotes should be generated. It can take on any of the QUOTE\_\* constants from the standard library csv module.
         * **store\_filter** – A [`StoreFilter`](store_filter.md#static_frame.StoreFilter "static_frame.StoreFilter") instance.
-
-    ```
-    >>> f1 = sf.FrameHE(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
-    >>> f1.to_clipboard()
-
-    ```
 
 FrameHE.to\_csv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[#](#static_frame.FrameHE.to_csv "Link to this definition")
 :   Given a file path or file-like object, write the [`Frame`](frame-selector.md#Frame "Frame") as delimited text. The delimiter is set to a comma.
@@ -2613,7 +2610,6 @@ FrameHE.to\_csv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=Tr
     p,0,1
     q,2,3
     r,4,5
-
     ```
 
 FrameHE.to\_delimited(*fp*, */*, *\**, *delimiter*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[#](#static_frame.FrameHE.to_delimited "Link to this definition")
@@ -2654,7 +2650,6 @@ FrameHE.to\_delimited(*fp*, */*, *\**, *delimiter*, *include\_index=True*, *incl
     p|0|1
     q|2|3
     r|4|5
-
     ```
 
 FrameHE.to\_frame(*\**, *name=<object object>*)[#](#static_frame.FrameHE.to_frame "Link to this definition")
@@ -2680,7 +2675,6 @@ FrameHE.to\_frame(*\**, *name=<object object>*)[#](#static_frame.FrameHE.to_fram
     r          8       123
     s          3        wX
     <<U1>      <int64> <<U4>
-
     ```
 
 FrameHE.to\_frame\_go(*\**, *name=<object object>*)[#](#static_frame.FrameHE.to_frame_go "Link to this definition")
@@ -2706,7 +2700,6 @@ FrameHE.to\_frame\_go(*\**, *name=<object object>*)[#](#static_frame.FrameHE.to_
     r            8       123
     s            3        wX
     <<U1>        <int64> <<U4>
-
     ```
 
 FrameHE.to\_frame\_he(*\**, *name=<object object>*)[#](#static_frame.FrameHE.to_frame_he "Link to this definition")
@@ -2732,7 +2725,6 @@ FrameHE.to\_frame\_he(*\**, *name=<object object>*)[#](#static_frame.FrameHE.to_
     r            8       123
     s            3        wX
     <<U1>        <int64> <<U4>
-
     ```
 
 FrameHE.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[#](#static_frame.FrameHE.to_html "Link to this definition")
@@ -2793,7 +2785,6 @@ FrameHE.to\_json\_columns(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_
             "3": "1517-06-30"
         }
     }
-
     ```
 
 FrameHE.to\_json\_index(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_index "Link to this definition")
@@ -2836,7 +2827,6 @@ FrameHE.to\_json\_index(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_in
             "c": "1517-06-30"
         }
     }
-
     ```
 
 FrameHE.to\_json\_records(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_records "Link to this definition")
@@ -2879,7 +2869,6 @@ FrameHE.to\_json\_records(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_
             "c": "1517-06-30"
         }
     ]
-
     ```
 
 FrameHE.to\_json\_split(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_split "Link to this definition")
@@ -2935,7 +2924,6 @@ FrameHE.to\_json\_split(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_sp
             ]
         ]
     }
-
     ```
 
 FrameHE.to\_json\_typed(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_typed "Link to this definition")
@@ -3011,7 +2999,6 @@ FrameHE.to\_json\_typed(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_ty
             ]
         }
     }
-
     ```
 
 FrameHE.to\_json\_values(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_values "Link to this definition")
@@ -3054,7 +3041,6 @@ FrameHE.to\_json\_values(*\**, *indent=None*)[#](#static_frame.FrameHE.to_json_v
             "1517-06-30"
         ]
     ]
-
     ```
 
 FrameHE.to\_latex(*config=None*, */*)[#](#static_frame.FrameHE.to_latex "Link to this definition")
@@ -3084,7 +3070,6 @@ FrameHE.to\_latex(*config=None*, */*)[#](#static_frame.FrameHE.to_latex "Link to
     s  & 3   &  wX  \\
     \hline\end{tabular}
     \end{table}
-
     ```
 
 FrameHE.to\_markdown(*config=None*, */*)[#](#static_frame.FrameHE.to_markdown "Link to this definition")
@@ -3108,7 +3093,6 @@ FrameHE.to\_markdown(*config=None*, */*)[#](#static_frame.FrameHE.to_markdown "L
     |q |2  |XYZ |
     |r |8  |123 |
     |s |3  | wX |
-
     ```
 
 FrameHE.to\_npy(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*, *consolidate\_blocks=False*)[#](#static_frame.FrameHE.to_npy "Link to this definition")
@@ -3137,7 +3121,6 @@ FrameHE.to\_npy(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*,
     <int64>    <int64> <bool> <datetime64[D]>
     >>> import shutil
     >>> shutil.rmtree('/tmp/f.npy')
-
     ```
 
 FrameHE.to\_npz(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*, *consolidate\_blocks=False*)[#](#static_frame.FrameHE.to_npz "Link to this definition")
@@ -3164,7 +3147,6 @@ FrameHE.to\_npz(*fp*, */*, *\**, *include\_index=True*, *include\_columns=True*,
     2          8       True   1517-12-31
     3          3       False  1517-06-30
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 FrameHE.to\_pairs(*\**, *axis=0*)[#](#static_frame.FrameHE.to_pairs "Link to this definition")
@@ -3183,7 +3165,6 @@ FrameHE.to\_pairs(*\**, *axis=0*)[#](#static_frame.FrameHE.to_pairs "Link to thi
     <<U1>        <int64> <<U4>
     >>> f.to_pairs()
     ((np.str_('a'), ((np.str_('p'), np.int64(10)), (np.str_('q'), np.int64(2)), (np.str_('r'), np.int64(8)), (np.str_('s'), np.int64(3)))), (np.str_('b'), ((np.str_('p'), np.str_('qrs ')), (np.str_('q'), np.str_('XYZ')), (np.str_('r'), np.str_('123')), (np.str_('s'), np.str_(' wX ')))))
-
     ```
 
 FrameHE.to\_pandas()[#](#static_frame.FrameHE.to_pandas "Link to this definition")
@@ -3206,7 +3187,6 @@ FrameHE.to\_pandas()[#](#static_frame.FrameHE.to_pandas "Link to this definition
     q   2   XYZ
     r   8   123
     s   3   wX
-
     ```
 
 FrameHE.to\_parquet(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*)[#](#static_frame.FrameHE.to_parquet "Link to this definition")
@@ -3223,7 +3203,6 @@ FrameHE.to\_parquet(*fp*, */*, *\**, *include\_index=True*, *include\_index\_nam
     r            4       5
     <<U1>        <int64> <int64>
     >>> f1.to_parquet('/tmp/f.parquet')
-
     ```
 
 FrameHE.to\_pickle(*fp*, */*, *\**, *protocol=None*)[#](#static_frame.FrameHE.to_pickle "Link to this definition")
@@ -3256,7 +3235,6 @@ FrameHE.to\_pickle(*fp*, */*, *\**, *protocol=None*)[#](#static_frame.FrameHE.to
     2          8       True   1517-12-31
     3          3       False  1517-06-30
     <int64>    <int64> <bool> <datetime64[D]>
-
     ```
 
 FrameHE.to\_rst(*config=None*, */*)[#](#static_frame.FrameHE.to_rst "Link to this definition")
@@ -3285,7 +3263,6 @@ FrameHE.to\_rst(*config=None*, */*)[#](#static_frame.FrameHE.to_rst "Link to thi
     +--+---+----+
     |s |3  | wX |
     +--+---+----+
-
     ```
 
 FrameHE.to\_series(*\**, *index\_constructor=<class 'static\_frame.core.index.Index'>*, *name=<object object>*)[#](#static_frame.FrameHE.to_series "Link to this definition")
@@ -3317,7 +3294,6 @@ FrameHE.to\_series(*\**, *index\_constructor=<class 'static\_frame.core.index.In
     (np.str_('s'), np.str_('a')) 3
     (np.str_('s'), np.str_('b'))  wX
     <object>                     <object>
-
     ```
 
 FrameHE.to\_sql(*connection*, */*, *\**, *label=<object object>*, *include\_index=True*, *schema=''*, *placeholder=''*, *dtype\_to\_type\_decl=None*)[#](#static_frame.FrameHE.to_sql "Link to this definition")
@@ -3346,7 +3322,6 @@ FrameHE.to\_sql(*connection*, */*, *\**, *label=<object object>*, *include\_inde
     2       8       1       1517-12-31
     3       3       0       1517-06-30
     <int64> <int64> <int64> <<U10>
-
     ```
 
 FrameHE.to\_sqlite(*fp*, */*, *\**, *label=<object object>*, *include\_index=True*, *include\_columns=True*)[#](#static_frame.FrameHE.to_sqlite "Link to this definition")
@@ -3373,7 +3348,6 @@ FrameHE.to\_sqlite(*fp*, */*, *\**, *label=<object object>*, *include\_index=Tru
     0       10      0       1517-01-01
     1       2       1       1517-04-01
     <int64> <int64> <int64> <<U10>
-
     ```
 
 FrameHE.to\_tsv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[#](#static_frame.FrameHE.to_tsv "Link to this definition")
@@ -3413,7 +3387,6 @@ FrameHE.to\_tsv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=Tr
     p	0	1
     q	2	3
     r	4	5
-
     ```
 
 FrameHE.to\_visidata()[#](#static_frame.FrameHE.to_visidata "Link to this definition")
@@ -3443,7 +3416,6 @@ FrameHE.to\_xarray()[#](#static_frame.FrameHE.to_xarray "Link to this definition
     Data variables:
         a           (__index0__) int64 32B 10 2 8 3
         b           (__index0__) <U4 64B 'qrs ' 'XYZ' '123' ' wX '
-
     ```
 
 FrameHE.to\_xlsx(*fp*, */*, *\**, *label=<object object>*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *merge\_hierarchical\_labels=True*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[#](#static_frame.FrameHE.to_xlsx "Link to this definition")
@@ -3460,7 +3432,6 @@ FrameHE.to\_xlsx(*fp*, */*, *\**, *label=<object object>*, *include\_index=True*
     r            4       5
     <<U1>        <int64> <int64>
     >>> f1.to_xlsx('/tmp/f.xlsx')
-
     ```
 
 [FrameHE](frame_he.md#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.md#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](frame_he-assignment.md#api-detail-framehe-assignment) | [Selector](frame_he-selector.md#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)

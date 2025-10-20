@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2535,7 +2539,6 @@ Index.\_\_add\_\_(*other*, */*)[#](#static_frame.Index.__add__ "Link to this def
     <int64>
     >>> ix + 8
     [    8  1032 -2040  4104]
-
     ```
 
 Index.\_\_and\_\_(*other*, */*)[#](#static_frame.Index.__and__ "Link to this definition")
@@ -2550,7 +2553,6 @@ Index.\_\_and\_\_(*other*, */*)[#](#static_frame.Index.__and__ "Link to this def
     [False  True]
     >>> ix & (False, True)
     [False  True]
-
     ```
 
 Index.\_\_eq\_\_(*other*, */*)[#](#static_frame.Index.__eq__ "Link to this definition")
@@ -2567,7 +2569,6 @@ Index.\_\_eq\_\_(*other*, */*)[#](#static_frame.Index.__eq__ "Link to this defin
     <int64>
     >>> ix == 8
     [False False False False]
-
     ```
 
 Index.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.Index.__floordiv__ "Link to this definition")
@@ -2582,7 +2583,6 @@ Index.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.Index.__floordiv__ "Link t
     <int64>
     >>> ix // 8
     [   0  128 -256  512]
-
     ```
 
 Index.\_\_ge\_\_(*other*, */*)[#](#static_frame.Index.__ge__ "Link to this definition")
@@ -2599,7 +2599,6 @@ Index.\_\_ge\_\_(*other*, */*)[#](#static_frame.Index.__ge__ "Link to this defin
     <int64>
     >>> ix >= 8
     [False  True False  True]
-
     ```
 
 Index.\_\_gt\_\_(*other*, */*)[#](#static_frame.Index.__gt__ "Link to this definition")
@@ -2616,7 +2615,6 @@ Index.\_\_gt\_\_(*other*, */*)[#](#static_frame.Index.__gt__ "Link to this defin
     <int64>
     >>> ix > 8
     [False  True False  True]
-
     ```
 
 Index.\_\_le\_\_(*other*, */*)[#](#static_frame.Index.__le__ "Link to this definition")
@@ -2633,7 +2631,6 @@ Index.\_\_le\_\_(*other*, */*)[#](#static_frame.Index.__le__ "Link to this defin
     <int64>
     >>> ix <= 8
     [ True False  True False]
-
     ```
 
 Index.\_\_lt\_\_(*other*, */*)[#](#static_frame.Index.__lt__ "Link to this definition")
@@ -2650,7 +2647,6 @@ Index.\_\_lt\_\_(*other*, */*)[#](#static_frame.Index.__lt__ "Link to this defin
     <int64>
     >>> ix < 8
     [ True False  True False]
-
     ```
 
 Index.\_\_matmul\_\_(*other*, */*)[#](#static_frame.Index.__matmul__ "Link to this definition")
@@ -2665,7 +2661,6 @@ Index.\_\_matmul\_\_(*other*, */*)[#](#static_frame.Index.__matmul__ "Link to th
     <int64>
     >>> ix @ (3, 0, 4, 0)
     -8192
-
     ```
 
 Index.\_\_mod\_\_(*other*, */*)[#](#static_frame.Index.__mod__ "Link to this definition")
@@ -2680,7 +2675,6 @@ Index.\_\_mod\_\_(*other*, */*)[#](#static_frame.Index.__mod__ "Link to this def
     <int64>
     >>> ix % 8
     [0 0 0 0]
-
     ```
 
 Index.\_\_mul\_\_(*other*, */*)[#](#static_frame.Index.__mul__ "Link to this definition")
@@ -2695,7 +2689,6 @@ Index.\_\_mul\_\_(*other*, */*)[#](#static_frame.Index.__mul__ "Link to this def
     <int64>
     >>> ix * 8
     [     0   8192 -16384  32768]
-
     ```
 
 Index.\_\_ne\_\_(*other*, */*)[#](#static_frame.Index.__ne__ "Link to this definition")
@@ -2712,7 +2705,6 @@ Index.\_\_ne\_\_(*other*, */*)[#](#static_frame.Index.__ne__ "Link to this defin
     <int64>
     >>> ix != 8
     [ True  True  True  True]
-
     ```
 
 Index.\_\_or\_\_(*other*, */*)[#](#static_frame.Index.__or__ "Link to this definition")
@@ -2729,7 +2721,6 @@ Index.\_\_or\_\_(*other*, */*)[#](#static_frame.Index.__or__ "Link to this defin
     [ True  True]
     >>> ix | (False, True)
     [False  True]
-
     ```
 
 Index.\_\_pow\_\_(*other*, */*)[#](#static_frame.Index.__pow__ "Link to this definition")
@@ -2744,7 +2735,6 @@ Index.\_\_pow\_\_(*other*, */*)[#](#static_frame.Index.__pow__ "Link to this def
     <int64>
     >>> ix ** 8
     [0 0 0 0]
-
     ```
 
 Index.\_\_radd\_\_(*other*, */*)[#](#static_frame.Index.__radd__ "Link to this definition")
@@ -2759,7 +2749,6 @@ Index.\_\_radd\_\_(*other*, */*)[#](#static_frame.Index.__radd__ "Link to this d
     <int64>
     >>> 8 + ix
     [    8  1032 -2040  4104]
-
     ```
 
 Index.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.Index.__rfloordiv__ "Link to this definition")
@@ -2774,7 +2763,6 @@ Index.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.Index.__rfloordiv__ "Link
     <int64>
     >>> 8 // ix
     [ 0  0 -1  0]
-
     ```
 
 Index.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.Index.__rmatmul__ "Link to this definition")
@@ -2789,7 +2777,6 @@ Index.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.Index.__rmatmul__ "Link to 
     <int64>
     >>> ix @ (3, 0, 4, 0)
     -8192
-
     ```
 
 Index.\_\_rmul\_\_(*other*, */*)[#](#static_frame.Index.__rmul__ "Link to this definition")
@@ -2804,7 +2791,6 @@ Index.\_\_rmul\_\_(*other*, */*)[#](#static_frame.Index.__rmul__ "Link to this d
     <int64>
     >>> 8 * ix
     [     0   8192 -16384  32768]
-
     ```
 
 Index.\_\_rshift\_\_(*other*, */*)[#](#static_frame.Index.__rshift__ "Link to this definition")
@@ -2819,7 +2805,6 @@ Index.\_\_rshift\_\_(*other*, */*)[#](#static_frame.Index.__rshift__ "Link to th
     <int64>
     >>> ix >> 1
     [    0   512 -1024  2048]
-
     ```
 
 Index.\_\_rsub\_\_(*other*, */*)[#](#static_frame.Index.__rsub__ "Link to this definition")
@@ -2834,7 +2819,6 @@ Index.\_\_rsub\_\_(*other*, */*)[#](#static_frame.Index.__rsub__ "Link to this d
     <int64>
     >>> 8 - ix
     [    8 -1016  2056 -4088]
-
     ```
 
 Index.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.Index.__rtruediv__ "Link to this definition")
@@ -2849,7 +2833,6 @@ Index.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.Index.__rtruediv__ "Link t
     <int64>
     >>> 8 / ix
     [        inf  0.0078125  -0.00390625  0.00195312]
-
     ```
 
 Index.\_\_sub\_\_(*other*, */*)[#](#static_frame.Index.__sub__ "Link to this definition")
@@ -2864,7 +2847,6 @@ Index.\_\_sub\_\_(*other*, */*)[#](#static_frame.Index.__sub__ "Link to this def
     <int64>
     >>> ix - 8
     [   -8  1016 -2056  4088]
-
     ```
 
 Index.\_\_truediv\_\_(*other*, */*)[#](#static_frame.Index.__truediv__ "Link to this definition")
@@ -2879,7 +2861,6 @@ Index.\_\_truediv\_\_(*other*, */*)[#](#static_frame.Index.__truediv__ "Link to 
     <int64>
     >>> ix / 8
     [   0.  128. -256.  512.]
-
     ```
 
 Index.\_\_xor\_\_(*other*, */*)[#](#static_frame.Index.__xor__ "Link to this definition")
@@ -2894,7 +2875,6 @@ Index.\_\_xor\_\_(*other*, */*)[#](#static_frame.Index.__xor__ "Link to this def
     [ True False]
     >>> ix ^ (False, True)
     [False False]
-
     ```
 
 [Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](index-attribute.md#api-detail-index-attribute) | [Method](index-method.md#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)

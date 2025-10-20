@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2540,8 +2544,11 @@ IndexYearMonthGO.interface[#](#IndexYearMonthGO.interface "Link to this definiti
     <Index: signature>
     __init__(labels, /, *, loc_is_ilo... IndexYearMonthGO Constructor          Initializer. Args...
     from_date_range(start, stop, step... IndexYearMonthGO Constructor          Get an IndexYearM...
+    from_difference(*others)             IndexYearMonthGO Constructor          Construct a new I...
+    from_intersection(*others)           IndexYearMonthGO Constructor          Construct a new I...
     from_labels(labels, /, *, name)      IndexYearMonthGO Constructor          Construct an Inde...
     from_pandas(value, /)                IndexYearMonthGO Constructor          Given a Pandas in...
+    from_union(*others)                  IndexYearMonthGO Constructor          Construct a new I...
     from_year_month_range(start, stop... IndexYearMonthGO Constructor          Get an IndexYearM...
     from_year_range(start, stop, step... IndexYearMonthGO Constructor          Get an IndexYearM...
     to_html(config, /, *, style_config)  IndexYearMonthGO Exporter             Return an HTML ta...
@@ -2552,9 +2559,6 @@ IndexYearMonthGO.interface[#](#IndexYearMonthGO.interface "Link to this definiti
     STATIC                               IndexYearMonthGO Attribute            Returns True when...
     depth                                IndexYearMonthGO Attribute            int([x]) -> integ...
     dtype                                IndexYearMonthGO Attribute            Return the dtype ...
-    index_types                          IndexYearMonthGO Attribute            Return a Series o...
-    memory                               IndexYearMonthGO Attribute            Return a MemoryDi...
-    mloc                                 IndexYearMonthGO Attribute            The memory locati...
     ...                                  ...              ...                  ...
     via_re(pattern, flags, /).sub(rep... IndexYearMonthGO Accessor Regular ... Return the string...
     via_re(pattern, flags, /).subn(re... IndexYearMonthGO Accessor Regular ... Perform the same ...
@@ -2574,7 +2578,6 @@ IndexYearMonthGO.interface[#](#IndexYearMonthGO.interface "Link to this definiti
     via_type_clinic.__call__(hint, /,... IndexYearMonthGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexYearMonthGO Accessor Type Clinic Return a compact ...
     <<U93>                               <<U16>           <<U27>               <<U83>
-
     ```
 
 IndexYearMonthGO.\_\_repr\_\_()[#](#static_frame.IndexYearMonthGO.__repr__ "Link to this definition")
@@ -2588,7 +2591,6 @@ IndexYearMonthGO.\_\_repr\_\_()[#](#static_frame.IndexYearMonthGO.__repr__ "Link
     NaT
     1620-11
     <datetime64[M]>
-
     ```
 
 IndexYearMonthGO.\_\_str\_\_()[#](#static_frame.IndexYearMonthGO.__str__ "Link to this definition")
@@ -2602,7 +2604,6 @@ IndexYearMonthGO.\_\_str\_\_()[#](#static_frame.IndexYearMonthGO.__str__ "Link t
     NaT
     1620-11
     <datetime64[M]>
-
     ```
 
 IndexYearMonthGO.display(*config=None*, */*, *\**, *style\_config=None*)[#](#static_frame.IndexYearMonthGO.display "Link to this definition")
@@ -2623,7 +2624,6 @@ IndexYearMonthGO.display(*config=None*, */*, *\**, *style\_config=None*)[#](#sta
     1620-09
     NaT
     1620-11
-
     ```
 
 IndexYearMonthGO.display\_tall(*config=None*, */*)[#](#static_frame.IndexYearMonthGO.display_tall "Link to this definition")
@@ -2640,7 +2640,6 @@ IndexYearMonthGO.display\_tall(*config=None*, */*)[#](#static_frame.IndexYearMon
     NaT
     1620-11
     <datetime64[M]>
-
     ```
 
 IndexYearMonthGO.display\_wide(*config=None*, */*)[#](#static_frame.IndexYearMonthGO.display_wide "Link to this definition")
@@ -2657,7 +2656,6 @@ IndexYearMonthGO.display\_wide(*config=None*, */*)[#](#static_frame.IndexYearMon
     NaT
     1620-11
     <datetime64[M]>
-
     ```
 
 [IndexYearMonthGO](index_year_month_go.md#api-detail-indexyearmonthgo): [Constructor](index_year_month_go-constructor.md#api-detail-indexyearmonthgo-constructor) | [Exporter](index_year_month_go-exporter.md#api-detail-indexyearmonthgo-exporter) | [Attribute](index_year_month_go-attribute.md#api-detail-indexyearmonthgo-attribute) | [Method](index_year_month_go-method.md#api-detail-indexyearmonthgo-method) | [Dictionary-Like](index_year_month_go-dictionary_like.md#api-detail-indexyearmonthgo-dictionary-like) | [Display](#api-detail-indexyearmonthgo-display) | [Selector](index_year_month_go-selector.md#api-detail-indexyearmonthgo-selector) | [Iterator](index_year_month_go-iterator.md#api-detail-indexyearmonthgo-iterator) | [Operator Binary](index_year_month_go-operator_binary.md#api-detail-indexyearmonthgo-operator-binary) | [Operator Unary](index_year_month_go-operator_unary.md#api-detail-indexyearmonthgo-operator-unary) | [Accessor Values](index_year_month_go-accessor_values.md#api-detail-indexyearmonthgo-accessor-values) | [Accessor Datetime](index_year_month_go-accessor_datetime.md#api-detail-indexyearmonthgo-accessor-datetime) | [Accessor String](index_year_month_go-accessor_string.md#api-detail-indexyearmonthgo-accessor-string) | [Accessor Regular Expression](index_year_month_go-accessor_regular_expression.md#api-detail-indexyearmonthgo-accessor-regular-expression) | [Accessor Hashlib](index_year_month_go-accessor_hashlib.md#api-detail-indexyearmonthgo-accessor-hashlib) | [Accessor Type Clinic](index_year_month_go-accessor_type_clinic.md#api-detail-indexyearmonthgo-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2527,75 +2531,64 @@ FillValueAuto.M[#](#static_frame.FillValueAuto.M "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().M
     NaT
-
     ```
 
 FillValueAuto.O[#](#static_frame.FillValueAuto.O "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().O
-
     ```
 
 FillValueAuto.S[#](#static_frame.FillValueAuto.S "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().S
     b''
-
     ```
 
 FillValueAuto.U[#](#static_frame.FillValueAuto.U "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().U
-
     ```
 
 FillValueAuto.V[#](#static_frame.FillValueAuto.V "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().V
     b'\x00'
-
     ```
 
 FillValueAuto.b[#](#static_frame.FillValueAuto.b "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().b
     False
-
     ```
 
 FillValueAuto.c[#](#static_frame.FillValueAuto.c "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().c
     (nan+nanj)
-
     ```
 
 FillValueAuto.f[#](#static_frame.FillValueAuto.f "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default()
-    <static_frame.core.fill_value_auto.FillValueAuto object at 0x7c7e251bb1c0>
-
+    <static_frame.core.fill_value_auto.FillValueAuto object at 0x11ab11b40>
     ```
 
 FillValueAuto.i[#](#static_frame.FillValueAuto.i "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().i
     0
-
     ```
 
 FillValueAuto.m[#](#static_frame.FillValueAuto.m "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().m
     NaT
-
     ```
 
 FillValueAuto.u[#](#static_frame.FillValueAuto.u "Link to this definition")
 :   ```
     >>> sf.FillValueAuto.from_default().u
     0
-
     ```
 
 [FillValueAuto](fill_value_auto.md#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-detail-fillvalueauto-constructor) | [Attribute](#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-detail-fillvalueauto-selector)

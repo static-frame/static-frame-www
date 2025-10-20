@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + Detail: IndexMinute: Accessor Datetime
@@ -2541,7 +2545,6 @@ IndexMinute.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
     <datetime64[m]>
     >>> ix.via_dt(fill_value=-1).year
     [1620   -1 1620]
-
     ```
 
 IndexMinute.via\_dt.year
@@ -2561,7 +2564,6 @@ IndexMinute.via\_dt.year
     <datetime64[m]>
     >>> ix.via_dt.year
     [1517 1517 1517]
-
     ```
 
 IndexMinute.via\_dt.year\_month
@@ -2581,7 +2583,6 @@ IndexMinute.via\_dt.year\_month
     <datetime64[m]>
     >>> ix.via_dt.year_month
     ['1517-04' '1517-12' '1517-06']
-
     ```
 
 IndexMinute.via\_dt.year\_quarter
@@ -2601,7 +2602,6 @@ IndexMinute.via\_dt.year\_quarter
     <datetime64[m]>
     >>> ix.via_dt.year_quarter
     ['1517-Q2' '1517-Q4' '1517-Q2']
-
     ```
 
 IndexMinute.via\_dt.month
@@ -2621,7 +2621,6 @@ IndexMinute.via\_dt.month
     <datetime64[m]>
     >>> ix.via_dt.month
     [ 4 12  6]
-
     ```
 
 IndexMinute.via\_dt.day
@@ -2641,7 +2640,6 @@ IndexMinute.via\_dt.day
     <datetime64[m]>
     >>> ix.via_dt.day
     [ 1  1 30]
-
     ```
 
 IndexMinute.via\_dt.hour
@@ -2661,7 +2659,6 @@ IndexMinute.via\_dt.hour
     <datetime64[m]>
     >>> ix.via_dt.hour
     [0 0 0]
-
     ```
 
 IndexMinute.via\_dt.minute
@@ -2681,7 +2678,6 @@ IndexMinute.via\_dt.minute
     <datetime64[m]>
     >>> ix.via_dt.minute
     [0 0 0]
-
     ```
 
 IndexMinute.via\_dt.second
@@ -2701,7 +2697,6 @@ IndexMinute.via\_dt.second
     <datetime64[m]>
     >>> ix.via_dt.second
     [0 0 0]
-
     ```
 
 IndexMinute.via\_dt.weekday
@@ -2721,7 +2716,6 @@ IndexMinute.via\_dt.weekday
     <datetime64[m]>
     >>> ix.via_dt.weekday()
     [6 5 5]
-
     ```
 
 IndexMinute.via\_dt.quarter
@@ -2741,7 +2735,6 @@ IndexMinute.via\_dt.quarter
     <datetime64[m]>
     >>> ix.via_dt.quarter()
     [2 4 2]
-
     ```
 
 IndexMinute.via\_dt.is\_month\_end
@@ -2761,7 +2754,6 @@ IndexMinute.via\_dt.is\_month\_end
     <datetime64[m]>
     >>> ix.via_dt.is_month_end()
     [False False  True]
-
     ```
 
 IndexMinute.via\_dt.is\_month\_start
@@ -2781,7 +2773,6 @@ IndexMinute.via\_dt.is\_month\_start
     <datetime64[m]>
     >>> ix.via_dt.is_month_start()
     [ True  True False]
-
     ```
 
 IndexMinute.via\_dt.is\_year\_end
@@ -2801,7 +2792,6 @@ IndexMinute.via\_dt.is\_year\_end
     <datetime64[m]>
     >>> ix.via_dt.is_year_end()
     [False False False]
-
     ```
 
 IndexMinute.via\_dt.is\_year\_start
@@ -2821,7 +2811,6 @@ IndexMinute.via\_dt.is\_year\_start
     <datetime64[m]>
     >>> ix.via_dt.is_year_start()
     [False False False]
-
     ```
 
 IndexMinute.via\_dt.is\_quarter\_end
@@ -2841,7 +2830,6 @@ IndexMinute.via\_dt.is\_quarter\_end
     <datetime64[m]>
     >>> ix.via_dt.is_quarter_end()
     [False False  True]
-
     ```
 
 IndexMinute.via\_dt.is\_quarter\_start
@@ -2861,7 +2849,6 @@ IndexMinute.via\_dt.is\_quarter\_start
     <datetime64[m]>
     >>> ix.via_dt.is_quarter_start()
     [ True False False]
-
     ```
 
 IndexMinute.via\_dt.timetuple
@@ -2883,7 +2870,6 @@ IndexMinute.via\_dt.timetuple
     [time.struct_time(tm_year=1517, tm_mon=4, tm_mday=1, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=6, tm_yday=91, tm_isdst=-1)
      time.struct_time(tm_year=1517, tm_mon=12, tm_mday=1, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=5, tm_yday=335, tm_isdst=-1)
      time.struct_time(tm_year=1517, tm_mon=6, tm_mday=30, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=5, tm_yday=181, tm_isdst=-1)]
-
     ```
 
 IndexMinute.via\_dt.isoformat(*\**, *sep*, *timespec*)
@@ -2903,7 +2889,6 @@ IndexMinute.via\_dt.isoformat(*\**, *sep*, *timespec*)
     <datetime64[m]>
     >>> ix.via_dt.isoformat()
     ['1517-04-01T00:00:00' '1517-12-01T00:00:00' '1517-06-30T00:00:00']
-
     ```
 
 IndexMinute.via\_dt.fromisoformat
@@ -2923,7 +2908,6 @@ IndexMinute.via\_dt.fromisoformat
     <datetime64[m]>
     >>> ix.via_dt.fromisoformat()
     RuntimeError('invalid dtype (datetime64[m]) for operation on string types')
-
     ```
 
 IndexMinute.via\_dt.strftime(*format*, */*)
@@ -2943,7 +2927,6 @@ IndexMinute.via\_dt.strftime(*format*, */*)
     <datetime64[m]>
     >>> ix.via_dt.strftime("%A | %B")
     ['Sunday | April' 'Saturday | December' 'Saturday | June']
-
     ```
 
 IndexMinute.via\_dt.strptime(*format*, */*)
@@ -2963,7 +2946,6 @@ IndexMinute.via\_dt.strptime(*format*, */*)
     <datetime64[m]>
     >>> ix.via_dt.strptime("%m/%d/%Y")
     RuntimeError('invalid dtype (datetime64[m]) for operation on string types')
-
     ```
 
 IndexMinute.via\_dt.strpdate(*format*, */*)
@@ -2983,7 +2965,6 @@ IndexMinute.via\_dt.strpdate(*format*, */*)
     <datetime64[m]>
     >>> ix.via_dt.strpdate("%m/%d/%Y")
     RuntimeError('invalid dtype (datetime64[m]) for operation on string types')
-
     ```
 
 [IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](index_minute-method.md#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.md#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-detail-indexminute-accessor-values) | [Accessor Datetime](#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-detail-indexminute-accessor-type-clinic)

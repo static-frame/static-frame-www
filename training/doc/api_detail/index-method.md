@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: Index: Method](../api_overview/index-method.md#api-overview-index-method)
 
-Index.\_\_array\_\_(*dtype=None*)[#](#static_frame.Index.__array__ "Link to this definition")
+Index.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.Index.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2536,7 +2540,6 @@ Index.\_\_array\_\_(*dtype=None*)[#](#static_frame.Index.__array__ "Link to this
     <int64>
     >>> ix.__array__()
     [1024 2048 4096]
-
     ```
 
 Index.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.Index.__array_ufunc__ "Link to this definition")
@@ -2552,7 +2555,6 @@ Index.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static
     <int64>
     >>> np.array((0, 1, 0)) * ix
     [   0 2048    0]
-
     ```
 
 Index.\_\_bool\_\_()[#](#static_frame.Index.__bool__ "Link to this definition")
@@ -2568,7 +2570,6 @@ Index.\_\_bool\_\_()[#](#static_frame.Index.__bool__ "Link to this definition")
     <int64>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 Index.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index.md#Index.__copy__)[#](#static_frame.Index.__copy__ "Link to this definition")
@@ -2593,7 +2594,6 @@ Index.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index.md#Index.__co
     d
     e
     <<U1>
-
     ```
 
 Index.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/index.md#Index.__deepcopy__)[#](#static_frame.Index.__deepcopy__ "Link to this definition")
@@ -2616,7 +2616,6 @@ Index.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/index.md#
     d
     e
     <<U1>
-
     ```
 
 Index.\_\_len\_\_()[[source]](../_modules/static_frame/core/index.md#Index.__len__)[#](#static_frame.Index.__len__ "Link to this definition")
@@ -2632,7 +2631,6 @@ Index.\_\_len\_\_()[[source]](../_modules/static_frame/core/index.md#Index.__len
     <<U1>
     >>> len(ix)
     5
-
     ```
 
 Index.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.all "Link to this definition")
@@ -2653,7 +2651,6 @@ Index.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.all 
     <int64>
     >>> ix.all()
     False
-
     ```
 
 Index.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.any "Link to this definition")
@@ -2674,7 +2671,6 @@ Index.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.any 
     <int64>
     >>> ix.any()
     True
-
     ```
 
 Index.astype(*dtype*, */*)[[source]](../_modules/static_frame/core/index.md#Index.astype)[#](#static_frame.Index.astype "Link to this definition")
@@ -2697,7 +2693,6 @@ Index.astype(*dtype*, */*)[[source]](../_modules/static_frame/core/index.md#Inde
     2048.0
     4096.0
     <float64>
-
     ```
 
 Index.copy()[[source]](../_modules/static_frame/core/index.md#Index.copy)[#](#static_frame.Index.copy "Link to this definition")
@@ -2717,7 +2712,6 @@ Index.copy()[[source]](../_modules/static_frame/core/index.md#Index.copy)[#](#st
     2048
     4096
     <int64>
-
     ```
 
 Index.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Index.cumprod "Link to this definition")
@@ -2737,7 +2731,6 @@ Index.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Index.cumprod "Lin
     <int64>
     >>> ix.cumprod()
     [      1024    2097152 8589934592]
-
     ```
 
 Index.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Index.cumsum "Link to this definition")
@@ -2757,7 +2750,6 @@ Index.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Index.cumsum "Link 
     <int64>
     >>> ix.cumsum()
     [1024 3072 7168]
-
     ```
 
 Index.difference(*\*others*)[#](#static_frame.Index.difference "Link to this definition")
@@ -2786,7 +2778,6 @@ Index.difference(*\*others*)[#](#static_frame.Index.difference "Link to this def
     a
     b
     <<U1>
-
     ```
 
 Index.dropfalsy()[[source]](../_modules/static_frame/core/index.md#Index.dropfalsy)[#](#static_frame.Index.dropfalsy "Link to this definition")
@@ -2807,7 +2798,6 @@ Index.dropfalsy()[[source]](../_modules/static_frame/core/index.md#Index.dropfal
     c
     d
     <<U1>
-
     ```
 
 Index.dropna()[[source]](../_modules/static_frame/core/index.md#Index.dropna)[#](#static_frame.Index.dropna "Link to this definition")
@@ -2828,7 +2818,6 @@ Index.dropna()[[source]](../_modules/static_frame/core/index.md#Index.dropna)[#]
     1024
     True
     <object>
-
     ```
 
 Index.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index.md#Index.equals)[#](#static_frame.Index.equals "Link to this definition")
@@ -2859,7 +2848,6 @@ Index.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
     <int64>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 Index.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Index.fillfalsy)[#](#static_frame.Index.fillfalsy "Link to this definition")
@@ -2884,7 +2872,6 @@ Index.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index.md#I
     c
     d
     <<U1>
-
     ```
 
 Index.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Index.fillna)[#](#static_frame.Index.fillna "Link to this definition")
@@ -2909,7 +2896,6 @@ Index.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index.md#Inde
     1024
     True
     <object>
-
     ```
 
 Index.head(*count=5*, */*)[#](#static_frame.Index.head "Link to this definition")
@@ -2933,7 +2919,6 @@ Index.head(*count=5*, */*)[#](#static_frame.Index.head "Link to this definition"
     a
     b
     <<U1>
-
     ```
 
 Index.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index.md#Index.iloc_searchsorted)[#](#static_frame.Index.iloc_searchsorted "Link to this definition")
@@ -2955,7 +2940,6 @@ Index.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_m
     <<U1>
     >>> ix.iloc_searchsorted('c')
     2
-
     ```
 
 Index.intersection(*\*others*)[#](#static_frame.Index.intersection "Link to this definition")
@@ -2985,7 +2969,27 @@ Index.intersection(*\*others*)[#](#static_frame.Index.intersection "Link to this
     d
     e
     <<U1>
+    ```
 
+Index.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.Index.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
+    >>> ix
+    <Index: x>
+    a
+    b
+    c
+    d
+    e
+    <<U1>
+    >>> assert ix.is_sorted()
     ```
 
 Index.isfalsy()[#](#static_frame.Index.isfalsy "Link to this definition")
@@ -2995,7 +2999,6 @@ Index.isfalsy()[#](#static_frame.Index.isfalsy "Link to this definition")
     >>> ix = sf.Index(('a', '', None, 0, np.nan, 'b'))
     >>> ix.isfalsy()
     [False  True  True  True  True False]
-
     ```
 
 Index.isin(*other*, */*)[[source]](../_modules/static_frame/core/index.md#Index.isin)[#](#static_frame.Index.isin "Link to this definition")
@@ -3013,7 +3016,6 @@ Index.isin(*other*, */*)[[source]](../_modules/static_frame/core/index.md#Index.
     <<U1>
     >>> ix.isin(('a', 'e'))
     [ True False False False  True]
-
     ```
 
 Index.isna()[#](#static_frame.Index.isna "Link to this definition")
@@ -3023,7 +3025,6 @@ Index.isna()[#](#static_frame.Index.isna "Link to this definition")
     >>> ix = sf.Index(('a', '', None, 0, np.nan, 'b'))
     >>> ix.isna()
     [False False  True False  True False]
-
     ```
 
 Index.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index.md#Index.label_widths_at_depth)[#](#static_frame.Index.label_widths_at_depth "Link to this definition")
@@ -3044,7 +3045,6 @@ Index.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/stat
     <<U1>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.str_('a'), 1), (np.str_('b'), 1), (np.str_('c'), 1), (np.str_('d'), 1), (np.str_('e'), 1))
-
     ```
 
 Index.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index.md#Index.level_add)[#](#static_frame.Index.level_add "Link to this definition")
@@ -3069,7 +3069,6 @@ Index.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_mo
     A                   2048
     A                   4096
     <<U1>               <int64>
-
     ```
 
 Index.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index.md#Index.loc_searchsorted)[#](#static_frame.Index.loc_searchsorted "Link to this definition")
@@ -3092,7 +3091,6 @@ Index.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan
     <<U1>
     >>> ix.loc_searchsorted('c')
     c
-
     ```
 
 Index.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index.md#Index.loc_to_iloc)[#](#static_frame.Index.loc_to_iloc "Link to this definition")
@@ -3117,7 +3115,6 @@ Index.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index.md
     [0 4]
     >>> ix.loc_to_iloc(slice('c', None))
     slice(2, None, None)
-
     ```
 
 Index.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.max "Link to this definition")
@@ -3137,7 +3134,6 @@ Index.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.max 
     <int64>
     >>> ix.max()
     4096
-
     ```
 
 Index.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.mean "Link to this definition")
@@ -3157,7 +3153,6 @@ Index.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.mea
     <int64>
     >>> ix.mean()
     2389.3333333333335
-
     ```
 
 Index.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.median "Link to this definition")
@@ -3177,7 +3172,6 @@ Index.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.m
     <int64>
     >>> ix.median()
     2048.0
-
     ```
 
 Index.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.min "Link to this definition")
@@ -3197,7 +3191,6 @@ Index.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index.min 
     <int64>
     >>> ix.min()
     1024
-
     ```
 
 Index.notfalsy()[#](#static_frame.Index.notfalsy "Link to this definition")
@@ -3207,7 +3200,6 @@ Index.notfalsy()[#](#static_frame.Index.notfalsy "Link to this definition")
     >>> ix = sf.Index(('a', '', None, 0, np.nan, 'b'))
     >>> ix.notfalsy()
     [ True False False False False  True]
-
     ```
 
 Index.notna()[#](#static_frame.Index.notna "Link to this definition")
@@ -3217,7 +3209,6 @@ Index.notna()[#](#static_frame.Index.notna "Link to this definition")
     >>> ix = sf.Index(('a', '', None, 0, np.nan, 'b'))
     >>> ix.notna()
     [ True  True False  True False  True]
-
     ```
 
 Index.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.Index.prod "Link to this definition")
@@ -3237,7 +3228,6 @@ Index.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_fram
     <int64>
     >>> ix.prod()
     8589934592
-
     ```
 
 Index.relabel(*mapper*, */*)[[source]](../_modules/static_frame/core/index.md#Index.relabel)[#](#static_frame.Index.relabel "Link to this definition")
@@ -3263,7 +3253,6 @@ Index.relabel(*mapper*, */*)[[source]](../_modules/static_frame/core/index.md#In
     b
     C
     <<U1>
-
     ```
 
 Index.rename(*name*, */*)[[source]](../_modules/static_frame/core/index.md#Index.rename)[#](#static_frame.Index.rename "Link to this definition")
@@ -3287,7 +3276,6 @@ Index.rename(*name*, */*)[[source]](../_modules/static_frame/core/index.md#Index
     d
     e
     <<U1>
-
     ```
 
 Index.roll(*shift*)[[source]](../_modules/static_frame/core/index.md#Index.roll)[#](#static_frame.Index.roll "Link to this definition")
@@ -3311,7 +3299,6 @@ Index.roll(*shift*)[[source]](../_modules/static_frame/core/index.md#Index.roll)
     b
     c
     <<U1>
-
     ```
 
 Index.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.Index.sample "Link to this definition")
@@ -3336,7 +3323,6 @@ Index.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.Index.sample "Link t
     a
     c
     <<U1>
-
     ```
 
 Index.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/index.md#Index.sort)[#](#static_frame.Index.sort "Link to this definition")
@@ -3373,7 +3359,6 @@ Index.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../
     b
     a
     <<U1>
-
     ```
 
 Index.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.Index.std "Link to this definition")
@@ -3393,7 +3378,6 @@ Index.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.
     <int64>
     >>> ix.std()
     1277.1523880188386
-
     ```
 
 Index.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.Index.sum "Link to this definition")
@@ -3413,7 +3397,6 @@ Index.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame
     <int64>
     >>> ix.sum()
     7168
-
     ```
 
 Index.tail(*count=5*, */*)[#](#static_frame.Index.tail "Link to this definition")
@@ -3437,7 +3420,6 @@ Index.tail(*count=5*, */*)[#](#static_frame.Index.tail "Link to this definition"
     d
     e
     <<U1>
-
     ```
 
 Index.union(*\*others*)[#](#static_frame.Index.union "Link to this definition")
@@ -3470,7 +3452,6 @@ Index.union(*\*others*)[#](#static_frame.Index.union "Link to this definition")
     e
     f
     <<U1>
-
     ```
 
 Index.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index.md#Index.unique)[#](#static_frame.Index.unique "Link to this definition")
@@ -3494,7 +3475,6 @@ Index.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source
     <object>
     >>> ix.unique()
     [None 'A' 1024 True]
-
     ```
 
 Index.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index.md#Index.values_at_depth)[#](#static_frame.Index.values_at_depth "Link to this definition")
@@ -3512,7 +3492,6 @@ Index.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_fram
     <<U1>
     >>> ix.values_at_depth(0)
     ['a' 'b' 'c' 'd' 'e']
-
     ```
 
 Index.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.Index.var "Link to this definition")
@@ -3532,7 +3511,6 @@ Index.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.
     <int64>
     >>> ix.var()
     1631118.222222222
-
     ```
 
 [Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](index-attribute.md#api-detail-index-attribute) | [Method](#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)
@@ -3567,6 +3545,7 @@ On this page
 * [`Index.head()`](#static_frame.Index.head)
 * [`Index.iloc_searchsorted()`](#static_frame.Index.iloc_searchsorted)
 * [`Index.intersection()`](#static_frame.Index.intersection)
+* [`Index.is_sorted()`](#static_frame.Index.is_sorted)
 * [`Index.isfalsy()`](#static_frame.Index.isfalsy)
 * [`Index.isin()`](#static_frame.Index.isin)
 * [`Index.isna()`](#static_frame.Index.isna)

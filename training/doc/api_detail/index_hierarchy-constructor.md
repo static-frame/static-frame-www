@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexHierarchy: Constructor](../api_overview/index_hierarchy-constructor.md#api-overview-indexhierarchy-constructor)
 
-IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__init__)[#](#static_frame.IndexHierarchy.__init__ "Link to this definition")
+IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=int64)*, *name=<object object>*, *blocks=None*, *own\_blocks=False*, *sort\_status=SortStatus.UNKNOWN*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__init__)[#](#static_frame.IndexHierarchy.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -2543,7 +2547,32 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
     b                1024
     b                2048
     <<U1>            <int64>
+    ```
 
+*classmethod* IndexHierarchy.from\_difference(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_difference)[#](#static_frame.IndexHierarchy.from_difference "Link to this definition")
+:   Construct a new Index based on the difference with Index, containers, or NumPy arrays. Retains order.
+
+    ```
+    >>> ih1 = sf.IndexHierarchy.from_labels((('a', 1024, True), ('a', 2048, True), ('a', 2048, False), ('b', 1024, True)), name='x')
+    >>> ih1
+    <IndexHierarchy: x>
+    a                   1024    True
+    a                   2048    True
+    a                   2048    False
+    b                   1024    True
+    <<U1>               <int64> <bool>
+    >>> ih2 = sf.IndexHierarchy.from_labels((('a', 1024, True), ('', 0, False), ('b', 1024, True)), name='x')
+    >>> ih2
+    <IndexHierarchy: x>
+    a                   1024    True
+                        0       False
+    b                   1024    True
+    <<U1>               <int64> <bool>
+    >>> sf.IndexHierarchy.from_difference(ih1, ih2)
+    <IndexHierarchy: x>
+    a                   2048    True
+    a                   2048    False
+    <<U1>               <int64> <bool>
     ```
 
 *classmethod* IndexHierarchy.from\_index\_items(*items*, */*, *\**, *index\_constructor=None*, *name=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_index_items)[#](#static_frame.IndexHierarchy.from_index_items "Link to this definition")
@@ -2603,7 +2632,32 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
     ih2              x     b
     ih2              x     c
     <<U3>            <<U1> <object>
+    ```
 
+*classmethod* IndexHierarchy.from\_intersection(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_intersection)[#](#static_frame.IndexHierarchy.from_intersection "Link to this definition")
+:   Construct a new Index based on the intersection with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ih1 = sf.IndexHierarchy.from_labels((('a', 1024, True), ('a', 2048, True), ('a', 2048, False), ('b', 1024, True)), name='x')
+    >>> ih1
+    <IndexHierarchy: x>
+    a                   1024    True
+    a                   2048    True
+    a                   2048    False
+    b                   1024    True
+    <<U1>               <int64> <bool>
+    >>> ih2 = sf.IndexHierarchy.from_labels((('a', 1024, True), ('', 0, False), ('b', 1024, True)), name='x')
+    >>> ih2
+    <IndexHierarchy: x>
+    a                   1024    True
+                        0       False
+    b                   1024    True
+    <<U1>               <int64> <bool>
+    >>> sf.IndexHierarchy.from_intersection(ih1, ih2)
+    <IndexHierarchy: x>
+    a                   1024    True
+    b                   1024    True
+    <<U1>               <int64> <bool>
     ```
 
 *classmethod* IndexHierarchy.from\_labels(*labels*, */*, *\**, *name=None*, *reorder\_for\_hierarchy=False*, *index\_constructors=None*, *depth\_reference=None*, *continuation\_token=<object object>*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_labels)[#](#static_frame.IndexHierarchy.from_labels "Link to this definition")
@@ -2629,7 +2683,6 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
     a                   2048    False
     b                   1024    True
     <<U1>               <int64> <bool>
-
     ```
 
 *classmethod* IndexHierarchy.from\_labels\_delimited(*labels*, */*, *\**, *delimiter=' '*, *name=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_labels_delimited)[#](#static_frame.IndexHierarchy.from_labels_delimited "Link to this definition")
@@ -2648,7 +2701,6 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
     b                1024    True
     b                2048    False
     <<U1>            <int64> <bool>
-
     ```
 
 *classmethod* IndexHierarchy.from\_names(*names*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_names)[#](#static_frame.IndexHierarchy.from_names "Link to this definition")
@@ -2661,7 +2713,6 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
     >>> sf.IndexHierarchy.from_names(('x', 'y', 'z'))
     <IndexHierarchy: ('x', 'y', 'z')>
     <float64>                         <float64> <float64>
-
     ```
 
 *classmethod* IndexHierarchy.from\_pandas(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_pandas)[#](#static_frame.IndexHierarchy.from_pandas "Link to this definition")
@@ -2676,7 +2727,6 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
     b                1024
     b                2048
     <object>         <int64>
-
     ```
 
 *classmethod* IndexHierarchy.from\_product(*\*levels*, *name=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_product)[#](#static_frame.IndexHierarchy.from_product "Link to this definition")
@@ -2698,7 +2748,6 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
     b                   1517-04-01
     b                   1620-11-21
     <<U1>               <datetime64[D]>
-
     ```
 
 *classmethod* IndexHierarchy.from\_tree(*tree*, */*, *\**, *name=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_tree)[#](#static_frame.IndexHierarchy.from_tree "Link to this definition")
@@ -2714,7 +2763,35 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
     a                1024    True
     a                2048    True
     <<U1>            <int64> <bool>
+    ```
 
+*classmethod* IndexHierarchy.from\_union(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_union)[#](#static_frame.IndexHierarchy.from_union "Link to this definition")
+:   Construct a new Index based on the union with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ih1 = sf.IndexHierarchy.from_labels((('a', 1024, True), ('a', 2048, True), ('a', 2048, False), ('b', 1024, True)), name='x')
+    >>> ih1
+    <IndexHierarchy: x>
+    a                   1024    True
+    a                   2048    True
+    a                   2048    False
+    b                   1024    True
+    <<U1>               <int64> <bool>
+    >>> ih2 = sf.IndexHierarchy.from_labels((('a', 1024, True), ('', 0, False), ('b', 1024, True)), name='x')
+    >>> ih2
+    <IndexHierarchy: x>
+    a                   1024    True
+                        0       False
+    b                   1024    True
+    <<U1>               <int64> <bool>
+    >>> sf.IndexHierarchy.from_union(ih1, ih2)
+    <IndexHierarchy: x>
+    a                   1024    True
+    b                   1024    True
+    a                   2048    True
+                        0       False
+    a                   2048    False
+    <<U1>               <int64> <bool>
     ```
 
 *classmethod* IndexHierarchy.from\_values\_per\_depth(*values*, */*, *\**, *name=None*, *depth\_reference=None*, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.from_values_per_depth)[#](#static_frame.IndexHierarchy.from_values_per_depth "Link to this definition")
@@ -2742,7 +2819,6 @@ IndexHierarchy.\_\_init\_\_(*indices*, */*, *\**, *indexers=array([]*, *dtype=in
     8                4
     10               5
     <int64>          <int64>
-
     ```
 
 [IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
@@ -2757,13 +2833,16 @@ Detail: IndexHierarchy: Exporter](index_hierarchy-exporter.md "next page")
 On this page
 
 * [`IndexHierarchy.__init__()`](#static_frame.IndexHierarchy.__init__)
+* [`IndexHierarchy.from_difference()`](#static_frame.IndexHierarchy.from_difference)
 * [`IndexHierarchy.from_index_items()`](#static_frame.IndexHierarchy.from_index_items)
+* [`IndexHierarchy.from_intersection()`](#static_frame.IndexHierarchy.from_intersection)
 * [`IndexHierarchy.from_labels()`](#static_frame.IndexHierarchy.from_labels)
 * [`IndexHierarchy.from_labels_delimited()`](#static_frame.IndexHierarchy.from_labels_delimited)
 * [`IndexHierarchy.from_names()`](#static_frame.IndexHierarchy.from_names)
 * [`IndexHierarchy.from_pandas()`](#static_frame.IndexHierarchy.from_pandas)
 * [`IndexHierarchy.from_product()`](#static_frame.IndexHierarchy.from_product)
 * [`IndexHierarchy.from_tree()`](#static_frame.IndexHierarchy.from_tree)
+* [`IndexHierarchy.from_union()`](#static_frame.IndexHierarchy.from_union)
 * [`IndexHierarchy.from_values_per_depth()`](#static_frame.IndexHierarchy.from_values_per_depth)
 
 © Copyright 2025, Christopher Ariza.

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2547,7 +2551,6 @@ Frame.via\_fill\_value(fill\_value, /).loc
     b          0       0
     d          -1      -1
     <<U1>      <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_getitem\_\_(key*)
@@ -2574,7 +2577,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_getitem\_\_(key*)
     b          -1      0
     c          -1      20
     <<U1>      <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(fill\_value, /).via\_T
@@ -2603,7 +2605,6 @@ Frame.via\_fill\_value(fill\_value, /).via\_T
     c       160     96
     d       -19     -19
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_add\_\_(other*)
@@ -2637,7 +2638,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_add\_\_(other*)
     b       2       3
     c       24      26
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_sub\_\_(other*)
@@ -2671,7 +2671,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_sub\_\_(other*)
     b       -2      -3
     c       16      -2
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_mul\_\_(other*)
@@ -2705,7 +2704,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_mul\_\_(other*)
     b       0       0
     c       80      168
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_truediv\_\_(other*)
@@ -2739,7 +2737,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_truediv\_\_(other*)
     b       0.0       0.0
     c       5.0       0.8571428571428571
     <<U1>   <float64> <float64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_floordiv\_\_(other*)
@@ -2773,7 +2770,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_floordiv\_\_(other*)
     b       0       0
     c       5       0
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_mod\_\_(other*)
@@ -2807,7 +2803,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_mod\_\_(other*)
     b       0       0
     c       0       12
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_pow\_\_(other*)
@@ -2841,7 +2836,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_pow\_\_(other*)
     b       0       0
     c       160000  1283918464548864
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_lshift\_\_(other*)
@@ -2875,7 +2869,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_lshift\_\_(other*)
     b       0       0
     c       40      24
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_rshift\_\_(other*)
@@ -2909,7 +2902,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_rshift\_\_(other*)
     b       0       0
     c       10      6
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_and\_\_(other*)
@@ -2943,7 +2935,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_and\_\_(other*)
     b       False  False
     c       True   True
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_xor\_\_(other*)
@@ -2977,7 +2968,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_xor\_\_(other*)
     b       True   True
     c       False  False
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_or\_\_(other*)
@@ -3012,7 +3002,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_or\_\_(other*)
     b       True   True
     c       True   True
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_lt\_\_(other*)
@@ -3047,7 +3036,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_lt\_\_(other*)
     b       True   True
     c       False  True
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_le\_\_(other*)
@@ -3082,7 +3070,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_le\_\_(other*)
     b       True   True
     c       False  True
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_eq\_\_(other*)
@@ -3117,7 +3104,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_eq\_\_(other*)
     b       False  False
     c       False  False
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_ne\_\_(other*)
@@ -3152,7 +3138,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_ne\_\_(other*)
     b       True   True
     c       True   True
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_gt\_\_(other*)
@@ -3187,7 +3172,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_gt\_\_(other*)
     b       False  False
     c       True   False
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_ge\_\_(other*)
@@ -3222,7 +3206,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_ge\_\_(other*)
     b       False  False
     c       True   False
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_radd\_\_(other*)
@@ -3250,7 +3233,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_radd\_\_(other*)
     <<U1>      <int64> <int64>
     >>> f2 + f1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_rsub\_\_(other*)
@@ -3278,7 +3260,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_rsub\_\_(other*)
     <<U1>      <int64> <int64>
     >>> f2 - f1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_rmul\_\_(other*)
@@ -3306,7 +3287,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_rmul\_\_(other*)
     <<U1>      <int64> <int64>
     >>> f2 * f1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_rtruediv\_\_(other*)
@@ -3334,7 +3314,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_rtruediv\_\_(other*)
     <<U1>      <int64> <int64>
     >>> f2 / f1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 Frame.via\_fill\_value(*fill\_value*, */).\_\_rfloordiv\_\_(other*)
@@ -3362,7 +3341,6 @@ Frame.via\_fill\_value(*fill\_value*, */).\_\_rfloordiv\_\_(other*)
     <<U1>      <int64> <int64>
     >>> f2 // f1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 [Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)

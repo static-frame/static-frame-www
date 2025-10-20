@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2541,7 +2545,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes
     <<U1>
     >>> q.via_hashlib(include_name=False).to_bytes()
     b'QuiltIndexHierarchy0\x00\x00\x000\x00\x00\x002\x00\x00\x002\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00Indexa\x00\x00\x00b\x00\x00\x00c\x00\x00\x00BusIndex0\x00\x00\x002\x00\x00\x00FrameIndex\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00Indexa\x00\x00\x00b\x00\x00\x00c\x00\x00\x00\n\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\xb1y\xfd\xff\xff\xff\xff\xff\x0bz\xfd\xff\xff\xff\xff\xffFrameIndex\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00Indexa\x00\x00\x00b\x00\x00\x00c\x00\x00\x00\x08\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x01\x00\x1d{\xfd\xff\xff\xff\xff\xffez\xfd\xff\xff\xff\xff\xff'
-
     ```
 
 Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
@@ -2561,7 +2564,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
     <<U1>
     >>> q.via_hashlib(include_name=False).md5().hexdigest()
     c0ca678d708cce27405db82d2bee4950
-
     ```
 
 Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
@@ -2581,7 +2583,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
     <<U1>
     >>> q.via_hashlib(include_name=False).sha256().hexdigest()
     9703241466374f7e66f5ec3ceb4857e097dfd8343d0f15d2b8ce80beb0f78711
-
     ```
 
 Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
@@ -2601,7 +2602,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
     <<U1>
     >>> q.via_hashlib(include_name=False).sha512().hexdigest()
     c31d8f54e37e88848421c510e265d237c444d5b88df37dd947ae7bdbac50cbdb8165ebd8134a0773fdd29cdb4dceb7dc133de3edb7097023f95d4bd09686060a
-
     ```
 
 Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
@@ -2621,7 +2621,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256
     <<U1>
     >>> q.via_hashlib(include_name=False).sha3_256().hexdigest()
     5be80b11568f6b745463b8e1a9a97c5456e8f0f15108987fbc4718ef442185f0
-
     ```
 
 Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
@@ -2641,7 +2640,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512
     <<U1>
     >>> q.via_hashlib(include_name=False).sha3_512().hexdigest()
     5260c8e4f33724812637a8d4007991ccc17f50b61be3312eed0b12524660161c01b0fcdf82c0ea405b6ce246f366f1705e99fe24afd3e9a38449631a0e29a264
-
     ```
 
 Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
@@ -2661,7 +2659,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_12
     <<U1>
     >>> q.via_hashlib(include_name=False).shake_128().hexdigest(8)
     61452ae38bc2c36b
-
     ```
 
 Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
@@ -2681,7 +2678,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_25
     <<U1>
     >>> q.via_hashlib(include_name=False).shake_256().hexdigest(8)
     84078ff61bbf0590
-
     ```
 
 Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2701,7 +2697,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\
     <<U1>
     >>> q.via_hashlib(include_name=False).blake2b().hexdigest()
     5d9831aefda53cb48c101b7fe4a3cb2370813748d9641c614048e6e82d99393dc8a762653dc7c7a947ea19d65753e8b097b7f1cd15db3daca0a1494b93342861
-
     ```
 
 Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2721,7 +2716,6 @@ Quilt.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\
     <<U1>
     >>> q.via_hashlib(include_name=False).blake2s().hexdigest()
     28bb86ca63168ca5b2d99b2f0a2acc9f6a403b9ecffc10bc386da6d38fc7814a
-
     ```
 
 [Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)

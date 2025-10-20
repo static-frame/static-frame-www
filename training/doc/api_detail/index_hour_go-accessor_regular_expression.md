@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2543,7 +2547,6 @@ IndexHourGO.via\_re(*pattern*, *flags*, */).search(pos*, *endpos*)
     <datetime64[h]>
     >>> ix.via_re('[X123]').search()
     [ True  True  True]
-
     ```
 
 IndexHourGO.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
@@ -2566,7 +2569,6 @@ IndexHourGO.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
     <datetime64[h]>
     >>> ix.via_re('[X123]').match()
     [ True  True  True]
-
     ```
 
 IndexHourGO.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
@@ -2589,7 +2591,6 @@ IndexHourGO.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
     <datetime64[h]>
     >>> ix.via_re('123').fullmatch()
     [False False False]
-
     ```
 
 IndexHourGO.via\_re(*pattern*, *flags*, */).split(maxsplit*)
@@ -2612,7 +2613,6 @@ IndexHourGO.via\_re(*pattern*, *flags*, */).split(maxsplit*)
     >>> ix.via_re('[X123]').split()
     [('', '5', '7-04-0', 'T00') ('', '5', '7-', '', '-', '', 'T00')
      ('', '5', '7-06-', '0T00')]
-
     ```
 
 IndexHourGO.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
@@ -2635,7 +2635,6 @@ IndexHourGO.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
     <datetime64[h]>
     >>> ix.via_re('[X123]').findall()
     [('1', '1', '1') ('1', '1', '1', '2', '3', '1') ('1', '1', '3')]
-
     ```
 
 IndexHourGO.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
@@ -2658,7 +2657,6 @@ IndexHourGO.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
     <datetime64[h]>
     >>> ix.via_re('[X123]').sub('==')
     ['==5==7-04-0==T00' '==5==7-====-====T00' '==5==7-06-==0T00']
-
     ```
 
 IndexHourGO.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
@@ -2681,7 +2679,6 @@ IndexHourGO.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
     <datetime64[h]>
     >>> ix.via_re('[X123]').subn('==', 1)
     [('==517-04-01T00', 1) ('==517-12-31T00', 1) ('==517-06-30T00', 1)]
-
     ```
 
 [IndexHourGO](index_hour_go.md#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter) | [Attribute](index_hour_go-attribute.md#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-detail-indexhourgo-accessor-type-clinic)

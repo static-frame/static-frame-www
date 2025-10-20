@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2536,7 +2540,6 @@ IndexMicrosecond.iter\_label(*depth\_level*, */*)
     <datetime64[us]>
     >>> tuple(ix.iter_label())
     (np.datetime64('1517-04-01T00:00:00.000000'), np.datetime64('1517-12-31T00:00:00.000000'), np.datetime64('1517-06-30T00:00:00.000000'))
-
     ```
 
 IndexMicrosecond.iter\_label(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2559,7 +2562,6 @@ IndexMicrosecond.iter\_label(*depth\_level*, */).apply(func*, */*, *\**, *dtype*
     <datetime64[us]>
     >>> ix.iter_label().apply(lambda l: l.astype('<M8[ms]').astype(object).year)
     [1517 1517 1517]
-
     ```
 
 IndexMicrosecond.iter\_label(*depth\_level*, */).apply\_iter(func*, */*)
@@ -2584,7 +2586,6 @@ IndexMicrosecond.iter\_label(*depth\_level*, */).apply\_iter(func*, */*)
     <datetime64[us]>
     >>> tuple(ix.iter_label().apply_iter(lambda l: l.astype('<M8[ms]').astype(object)))
     (datetime.datetime(1517, 4, 1, 0, 0), datetime.datetime(1517, 12, 31, 0, 0), datetime.datetime(1517, 6, 30, 0, 0))
-
     ```
 
 IndexMicrosecond.iter\_label(*depth\_level*, */).apply\_iter\_items(func*, */*)
@@ -2609,7 +2610,6 @@ IndexMicrosecond.iter\_label(*depth\_level*, */).apply\_iter\_items(func*, */*)
     <datetime64[us]>
     >>> tuple(ix.iter_label().apply_iter_items(lambda l: l.astype('<M8[ms]').astype(object)))
     ((np.int64(0), datetime.datetime(1517, 4, 1, 0, 0)), (np.int64(1), datetime.datetime(1517, 12, 31, 0, 0)), (np.int64(2), datetime.datetime(1517, 6, 30, 0, 0)))
-
     ```
 
 IndexMicrosecond.iter\_label(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2637,7 +2637,6 @@ IndexMicrosecond.iter\_label(*depth\_level*, */).apply\_pool(func*, */*, *\**, *
     <datetime64[us]>
     >>> ix.iter_label().apply_pool(lambda l: l.astype('<M8[ms]').astype(object).month, use_threads=True)
     [ 4 12  6]
-
     ```
 
 [IndexMicrosecond](index_microsecond.md#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-detail-indexmicrosecond-selector) | [Iterator](#api-detail-indexmicrosecond-iterator) | [Operator Binary](index_microsecond-operator_binary.md#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-detail-indexmicrosecond-accessor-type-clinic)

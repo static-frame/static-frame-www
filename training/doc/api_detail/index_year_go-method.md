@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexYearGO: Method](../api_overview/index_year_go-method.md#api-overview-indexyeargo-method)
 
-IndexYearGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexYearGO.__array__ "Link to this definition")
+IndexYearGO.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexYearGO.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2536,7 +2540,6 @@ IndexYearGO.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexYearGO.__array__ "
     <datetime64[Y]>
     >>> ix.__array__()
     ['1517' '1520' '1518']
-
     ```
 
 IndexYearGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexYearGO.__array_ufunc__ "Link to this definition")
@@ -2552,7 +2555,6 @@ IndexYearGO.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#
     <datetime64[Y]>
     >>> np.array((0, 1, 0)) * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('int64'), dtype('<M8[Y]')))
-
     ```
 
 IndexYearGO.\_\_bool\_\_()[#](#static_frame.IndexYearGO.__bool__ "Link to this definition")
@@ -2568,7 +2570,6 @@ IndexYearGO.\_\_bool\_\_()[#](#static_frame.IndexYearGO.__bool__ "Link to this d
     <datetime64[Y]>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexYearGO.\_\_copy\_\_()[#](#static_frame.IndexYearGO.__copy__ "Link to this definition")
@@ -2589,7 +2590,6 @@ IndexYearGO.\_\_copy\_\_()[#](#static_frame.IndexYearGO.__copy__ "Link to this d
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexYearGO.__deepcopy__ "Link to this definition")
@@ -2608,7 +2608,6 @@ IndexYearGO.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexYearGO.__deepcopy__ "
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.\_\_len\_\_()[#](#static_frame.IndexYearGO.__len__ "Link to this definition")
@@ -2622,7 +2621,6 @@ IndexYearGO.\_\_len\_\_()[#](#static_frame.IndexYearGO.__len__ "Link to this def
     <datetime64[Y]>
     >>> len(ix)
     3
-
     ```
 
 IndexYearGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearGO.all "Link to this definition")
@@ -2642,7 +2640,6 @@ IndexYearGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[Y]>
     >>> ix.all()
     True
-
     ```
 
 IndexYearGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearGO.any "Link to this definition")
@@ -2662,7 +2659,6 @@ IndexYearGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[Y]>
     >>> ix.any()
     True
-
     ```
 
 IndexYearGO.append(*value*, */*)[#](#static_frame.IndexYearGO.append "Link to this definition")
@@ -2684,7 +2680,6 @@ IndexYearGO.append(*value*, */*)[#](#static_frame.IndexYearGO.append "Link to th
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.astype(*dtype*, */*)[#](#static_frame.IndexYearGO.astype "Link to this definition")
@@ -2707,7 +2702,6 @@ IndexYearGO.astype(*dtype*, */*)[#](#static_frame.IndexYearGO.astype "Link to th
     1520
     1518
     <<U22>
-
     ```
 
 IndexYearGO.copy()[#](#static_frame.IndexYearGO.copy "Link to this definition")
@@ -2727,7 +2721,6 @@ IndexYearGO.copy()[#](#static_frame.IndexYearGO.copy "Link to this definition")
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYearGO.cumprod "Link to this definition")
@@ -2747,7 +2740,6 @@ IndexYearGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYearGO.
     <datetime64[Y]>
     >>> ix.cumprod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYearGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYearGO.cumsum "Link to this definition")
@@ -2767,7 +2759,6 @@ IndexYearGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYearGO.c
     <datetime64[Y]>
     >>> ix.cumsum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYearGO.difference(*\*others*)[#](#static_frame.IndexYearGO.difference "Link to this definition")
@@ -2794,7 +2785,6 @@ IndexYearGO.difference(*\*others*)[#](#static_frame.IndexYearGO.difference "Link
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.dropfalsy()[#](#static_frame.IndexYearGO.dropfalsy "Link to this definition")
@@ -2813,7 +2803,6 @@ IndexYearGO.dropfalsy()[#](#static_frame.IndexYearGO.dropfalsy "Link to this def
     1620
     1619
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.dropna()[#](#static_frame.IndexYearGO.dropna "Link to this definition")
@@ -2832,7 +2821,6 @@ IndexYearGO.dropna()[#](#static_frame.IndexYearGO.dropna "Link to this definitio
     1620
     1619
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.IndexYearGO.equals "Link to this definition")
@@ -2861,7 +2849,6 @@ IndexYearGO.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fa
     <datetime64[Y]>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 IndexYearGO.extend(*values*, */*)[#](#static_frame.IndexYearGO.extend "Link to this definition")
@@ -2893,7 +2880,6 @@ IndexYearGO.extend(*values*, */*)[#](#static_frame.IndexYearGO.extend "Link to t
     2021
     2018
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.fillfalsy(*value*, */*)[#](#static_frame.IndexYearGO.fillfalsy "Link to this definition")
@@ -2912,7 +2898,6 @@ IndexYearGO.fillfalsy(*value*, */*)[#](#static_frame.IndexYearGO.fillfalsy "Link
     <datetime64[Y]>
     >>> ix.fillfalsy('A')
     ValueError('Error parsing datetime string "A" at position 0')
-
     ```
 
 IndexYearGO.fillna(*value*, */*)[#](#static_frame.IndexYearGO.fillna "Link to this definition")
@@ -2935,7 +2920,6 @@ IndexYearGO.fillna(*value*, */*)[#](#static_frame.IndexYearGO.fillna "Link to th
     1970
     1619
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.head(*count=5*, */*)[#](#static_frame.IndexYearGO.head "Link to this definition")
@@ -2957,7 +2941,6 @@ IndexYearGO.head(*count=5*, */*)[#](#static_frame.IndexYearGO.head "Link to this
     1517
     1520
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexYearGO.iloc_searchsorted "Link to this definition")
@@ -2977,7 +2960,6 @@ IndexYearGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#stati
     <datetime64[Y]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexYearGO.intersection(*\*others*)[#](#static_frame.IndexYearGO.intersection "Link to this definition")
@@ -3001,7 +2983,25 @@ IndexYearGO.intersection(*\*others*)[#](#static_frame.IndexYearGO.intersection "
     >>> ix1.intersection(ix2)
     <IndexYearGO>
     <datetime64[Y]>
+    ```
 
+IndexYearGO.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexYearGO.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.IndexYearGO(('2022', '2021', '2018'))
+    >>> ix
+    <IndexYearGO>
+    2022
+    2021
+    2018
+    <datetime64[Y]>
+    >>> assert ix.is_sorted(ascending=False)
     ```
 
 IndexYearGO.isfalsy()[#](#static_frame.IndexYearGO.isfalsy "Link to this definition")
@@ -3011,7 +3011,6 @@ IndexYearGO.isfalsy()[#](#static_frame.IndexYearGO.isfalsy "Link to this definit
     >>> ix = sf.IndexYearGO(('1620', 'NaT', '1619'))
     >>> ix.isfalsy()
     [False  True False]
-
     ```
 
 IndexYearGO.isin(*other*, */*)[#](#static_frame.IndexYearGO.isin "Link to this definition")
@@ -3027,7 +3026,6 @@ IndexYearGO.isin(*other*, */*)[#](#static_frame.IndexYearGO.isin "Link to this d
     <datetime64[Y]>
     >>> ix.isin(('1518',))
     [False False False]
-
     ```
 
 IndexYearGO.isna()[#](#static_frame.IndexYearGO.isna "Link to this definition")
@@ -3037,7 +3035,6 @@ IndexYearGO.isna()[#](#static_frame.IndexYearGO.isna "Link to this definition")
     >>> ix = sf.IndexYearGO(('1620', 'NaT', '1619'))
     >>> ix.isna()
     [False  True False]
-
     ```
 
 IndexYearGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexYearGO.label_widths_at_depth "Link to this definition")
@@ -3056,7 +3053,6 @@ IndexYearGO.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.Ind
     <datetime64[Y]>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.datetime64('1517'), 1), (np.datetime64('1520'), 1), (np.datetime64('1518'), 1))
-
     ```
 
 IndexYearGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.IndexYearGO.level_add "Link to this definition")
@@ -3081,7 +3077,6 @@ IndexYearGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static
     A                  1520
     A                  1518
     <<U1>              <datetime64[Y]>
-
     ```
 
 IndexYearGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.IndexYearGO.loc_searchsorted "Link to this definition")
@@ -3102,7 +3097,6 @@ IndexYearGO.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_val
     <datetime64[Y]>
     >>> ix.loc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexYearGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexYearGO.loc_to_iloc "Link to this definition")
@@ -3125,7 +3119,6 @@ IndexYearGO.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexYearGO.loc_to_iloc "
     [0 2]
     >>> ix.loc_to_iloc(slice('1520', None))
     slice(1, None, None)
-
     ```
 
 IndexYearGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearGO.max "Link to this definition")
@@ -3145,7 +3138,6 @@ IndexYearGO.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[Y]>
     >>> ix.max()
     1520
-
     ```
 
 IndexYearGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearGO.mean "Link to this definition")
@@ -3165,7 +3157,6 @@ IndexYearGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Ind
     <datetime64[Y]>
     >>> ix.mean()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYearGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearGO.median "Link to this definition")
@@ -3185,7 +3176,6 @@ IndexYearGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <datetime64[Y]>
     >>> ix.median()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYearGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYearGO.min "Link to this definition")
@@ -3205,7 +3195,6 @@ IndexYearGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[Y]>
     >>> ix.min()
     1517
-
     ```
 
 IndexYearGO.notfalsy()[#](#static_frame.IndexYearGO.notfalsy "Link to this definition")
@@ -3215,7 +3204,6 @@ IndexYearGO.notfalsy()[#](#static_frame.IndexYearGO.notfalsy "Link to this defin
     >>> ix = sf.IndexYearGO(('1620', 'NaT', '1619'))
     >>> ix.notfalsy()
     [ True False  True]
-
     ```
 
 IndexYearGO.notna()[#](#static_frame.IndexYearGO.notna "Link to this definition")
@@ -3225,7 +3213,6 @@ IndexYearGO.notna()[#](#static_frame.IndexYearGO.notna "Link to this definition"
     >>> ix = sf.IndexYearGO(('1620', 'NaT', '1619'))
     >>> ix.notna()
     [ True False  True]
-
     ```
 
 IndexYearGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexYearGO.prod "Link to this definition")
@@ -3245,7 +3232,6 @@ IndexYearGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#stati
     <datetime64[Y]>
     >>> ix.prod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYearGO.relabel(*mapper*, */*)[#](#static_frame.IndexYearGO.relabel "Link to this definition")
@@ -3261,7 +3247,6 @@ IndexYearGO.relabel(*mapper*, */*)[#](#static_frame.IndexYearGO.relabel "Link to
     <datetime64[Y]>
     >>> ix.relabel(lambda l: l.astype('<M8[ms]').astype(object).day)
     ErrorInitIndexNonUnique('Labels have non-unique values. Examples from iterators not are available.')
-
     ```
 
 IndexYearGO.rename(*name*, */*)[#](#static_frame.IndexYearGO.rename "Link to this definition")
@@ -3281,7 +3266,6 @@ IndexYearGO.rename(*name*, */*)[#](#static_frame.IndexYearGO.rename "Link to thi
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.roll(*shift*)[#](#static_frame.IndexYearGO.roll "Link to this definition")
@@ -3301,7 +3285,6 @@ IndexYearGO.roll(*shift*)[#](#static_frame.IndexYearGO.roll "Link to this defini
     1518
     1517
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexYearGO.sample "Link to this definition")
@@ -3324,7 +3307,6 @@ IndexYearGO.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexYearGO.sa
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexYearGO.sort "Link to this definition")
@@ -3355,7 +3337,6 @@ IndexYearGO.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#sta
     1518
     1517
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexYearGO.std "Link to this definition")
@@ -3375,7 +3356,6 @@ IndexYearGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_
     <datetime64[Y]>
     >>> ix.std()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYearGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexYearGO.sum "Link to this definition")
@@ -3395,7 +3375,6 @@ IndexYearGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static
     <datetime64[Y]>
     >>> ix.sum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYearGO.tail(*count=5*, */*)[#](#static_frame.IndexYearGO.tail "Link to this definition")
@@ -3417,7 +3396,6 @@ IndexYearGO.tail(*count=5*, */*)[#](#static_frame.IndexYearGO.tail "Link to this
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.union(*\*others*)[#](#static_frame.IndexYearGO.union "Link to this definition")
@@ -3447,7 +3425,6 @@ IndexYearGO.union(*\*others*)[#](#static_frame.IndexYearGO.union "Link to this d
     2021
     2022
     <datetime64[Y]>
-
     ```
 
 IndexYearGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#static_frame.IndexYearGO.unique "Link to this definition")
@@ -3470,7 +3447,6 @@ IndexYearGO.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#
     <datetime64[Y]>
     >>> ix.unique()
     ['1620'  'NaT' '1619']
-
     ```
 
 IndexYearGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexYearGO.values_at_depth "Link to this definition")
@@ -3486,7 +3462,6 @@ IndexYearGO.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexYearG
     <datetime64[Y]>
     >>> ix.values_at_depth(0)
     ['1517' '1520' '1518']
-
     ```
 
 IndexYearGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexYearGO.var "Link to this definition")
@@ -3506,7 +3481,6 @@ IndexYearGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_
     <datetime64[Y]>
     >>> ix.var()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 [IndexYearGO](index_year_go.md#api-detail-indexyeargo): [Constructor](index_year_go-constructor.md#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-detail-indexyeargo-attribute) | [Method](#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.md#api-detail-indexyeargo-selector) | [Iterator](index_year_go-iterator.md#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-detail-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-detail-indexyeargo-accessor-type-clinic)
@@ -3543,6 +3517,7 @@ On this page
 * [`IndexYearGO.head()`](#static_frame.IndexYearGO.head)
 * [`IndexYearGO.iloc_searchsorted()`](#static_frame.IndexYearGO.iloc_searchsorted)
 * [`IndexYearGO.intersection()`](#static_frame.IndexYearGO.intersection)
+* [`IndexYearGO.is_sorted()`](#static_frame.IndexYearGO.is_sorted)
 * [`IndexYearGO.isfalsy()`](#static_frame.IndexYearGO.isfalsy)
 * [`IndexYearGO.isin()`](#static_frame.IndexYearGO.isin)
 * [`IndexYearGO.isna()`](#static_frame.IndexYearGO.isna)

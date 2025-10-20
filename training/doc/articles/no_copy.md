@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
   + [Faster DataFrame Serialization](serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
 * [Faster DataFrame Serialization](serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ For example, the difference between slicing an array of 100,000 integers (~0.1 �
 123 ns ± 0.565 ns per loop (mean ± std. dev. of 7 runs, 10000000 loops each)
 >>> %timeit data[:50_000].copy()
 13.1 µs ± 48.4 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
-
 ```
 
 We can illustrate how this works by examining two attributes of NumPy arrays. The `flags` attribute displays details of how the array’s memory is being referenced. The `base` attribute, if set, provides a handle to the array that actually holds the buffer this array references.
@@ -2551,7 +2554,6 @@ In the example below, we create an array, take a slice, and look at the `flags` 
 >>> a1 = np.arange(12)
 >>> a1
 array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
-
 ```
 
 ```
@@ -2564,13 +2566,11 @@ array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
   ALIGNED : True
   WRITEBACKIFCOPY : False
   UPDATEIFCOPY : False
-
 ```
 
 ```
 >>> id(a1), id(a2.base)
 (140506320732848, 140506320732848)
-
 ```
 
 These derived arrays are “views” of the original array. Views can only be taken under certain conditions: reshaping, transposing, or slicing.
@@ -2591,13 +2591,11 @@ array([[ 0,  1,  2,  3],
   ALIGNED : True
   WRITEBACKIFCOPY : False
   UPDATEIFCOPY : False
-
 ```
 
 ```
 >>> id(a3.base), id(a1)
 (140506320732848, 140506320732848)
-
 ```
 
 Both horizontal and vertical slices of this 2D array similarly result in arrays that simply reference the original array’s data. Again, `OWNDATA` is `False`, and the `base` of the slice is the original array.
@@ -2606,7 +2604,6 @@ Both horizontal and vertical slices of this 2D array similarly result in arrays 
 >>> a4 = a3[:, 2]
 >>> a4
 array([ 2,  6, 10])
-
 ```
 
 ```
@@ -2618,13 +2615,11 @@ array([ 2,  6, 10])
   ALIGNED : True
   WRITEBACKIFCOPY : False
   UPDATEIFCOPY : False
-
 ```
 
 ```
 >>> id(a1), id(a4.base)
 (140506320732848, 140506320732848)
-
 ```
 
 While creating light-weight views of shared memory buffers offers significant performance advantages, there is a risk: mutating any one of those arrays will mutate all of them. As shown below, the assignment of -1 into our most-derived array is reflected in every associated array.
@@ -2641,7 +2636,6 @@ array([[ 0,  1, -1,  3],
 array([ 0,  1, -1,  3,  4,  5])
 >>> a1
 array([ 0,  1, -1,  3,  4,  5,  6,  7,  8,  9, 10, 11])
-
 ```
 
 Side-effects like this should concern you. Passing around views of shared buffers to clients that can mutate those buffers can lead to serious flaws. There are two solutions to this problem.
@@ -2662,7 +2656,6 @@ A NumPy array can easily be made immutable by setting the `writeable` flag to `F
   ALIGNED : True
   WRITEBACKIFCOPY : False
   UPDATEIFCOPY : False
-
 ```
 
 ```
@@ -2670,7 +2663,6 @@ A NumPy array can easily be made immutable by setting the `writeable` flag to `F
 Traceback (most recent call last):
   File "<console>", line 1, in <module>
 ValueError: assignment destination is read-only
-
 ```
 
 The best performance is possible, with no risk of side-effects, by embracing immutable views of NumPy arrays.
@@ -2688,7 +2680,6 @@ To compare performance, we will use the [FrameFixtures](https://github.com/stati
 >>> import pandas as pd
 >>> sf.__version__, pd.__version__
 ('0.9.21', '1.5.1')
-
 ```
 
 ```
@@ -2697,7 +2688,6 @@ To compare performance, we will use the [FrameFixtures](https://github.com/stati
 >>> df1 = f1.to_pandas()
 >>> f2 = ff.parse('s(10_000,1000)|v(int,bool,bool,float)')
 >>> df2 = f2.to_pandas()
-
 ```
 
 A simple example of the advantage of a no-copy operation is renaming an axis. With Pandas, all underlying data is defensively copied. With StaticFrame, all underlying data is re-used; only lightweight outer containers have to be created. StaticFrame (~0.01 ms) is almost four orders of magnitude faster than Pandas (~100 ms).
@@ -2707,7 +2697,6 @@ A simple example of the advantage of a no-copy operation is renaming an axis. Wi
 35.8 µs ± 496 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
 >>> %timeit df1.rename_axis('foo')
 167 ms ± 4.72 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
-
 ```
 
 Given a DataFrame, it is often necessary to make a column into the index. When Pandas does this, it has to copy the column data to the index, as well as copy all the underlying data. StaticFrame can re-use a view of the column in the index, as well as re-use all of the underlying data. StaticFrame (~1 ms) is two orders of magnitude faster than Pandas (~100 ms).
@@ -2717,7 +2706,6 @@ Given a DataFrame, it is often necessary to make a column into the index. When P
 1.25 ms ± 23.7 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 >>> %timeit df1.set_index(0, drop=False)
 166 ms ± 3.52 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
-
 ```
 
 Extracting a subset of columns from a DataFrame is another common operation. For StaticFrame, this is a no-copy operation: the returned DataFrame simply holds views to the column data in the original DataFrame. StaticFrame (~10 µs) can do this an order of magnitude faster than Pandas (~100 µs).
@@ -2727,7 +2715,6 @@ Extracting a subset of columns from a DataFrame is another common operation. For
 25.4 µs ± 471 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
 >>> %timeit df1[[10, 50, 100, 500]]
 729 µs ± 4.14 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
-
 ```
 
 It is common to concatenate two or more DataFrames. If they have the same index, and we concatenate them horizontally, StaticFrame can re-use all the underlying data of the inputs, making this form of concatenation a no-copy operation. StaticFrame (~1 ms) can do this two orders of magnitude faster than Pandas (~100 ms).
@@ -2737,7 +2724,6 @@ It is common to concatenate two or more DataFrames. If they have the same index,
 1.16 ms ± 50.1 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
 >>> %timeit pd.concat((df1, df2), axis=1)
 102 ms ± 14.4 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
-
 ```
 
 ## Conclusion[#](#conclusion "Link to this heading")

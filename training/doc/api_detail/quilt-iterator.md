@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2539,7 +2543,6 @@ Quilt.iter\_array(*\**, *axis*)
     <<U1>
     >>> tuple(q.iter_array(axis=1))
     (array([0, 1]), array([2, 3]), array([4, 5]), array([40, 41]), array([42, 43]), array([44, 45]))
-
     ```
 
 Quilt.iter\_array(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2573,7 +2576,6 @@ Quilt.iter\_array(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_
     v                q     85
     v                r     89
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_array(*\**, *axis).apply\_iter(func*, */*)
@@ -2601,7 +2603,6 @@ Quilt.iter\_array(*\**, *axis).apply\_iter(func*, */*)
     <<U1>
     >>> tuple(q.iter_array(axis=1).apply_iter(lambda v: v.sum()))
     (np.int64(1), np.int64(5), np.int64(9), np.int64(81), np.int64(85), np.int64(89))
-
     ```
 
 Quilt.iter\_array(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -2629,7 +2630,6 @@ Quilt.iter\_array(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>
     >>> tuple(q.iter_array(axis=1).apply_iter_items(lambda v: v.sum()))
     (((np.str_('x'), np.str_('p')), np.int64(1)), ((np.str_('x'), np.str_('q')), np.int64(5)), ((np.str_('x'), np.str_('r')), np.int64(9)), ((np.str_('v'), np.str_('p')), np.int64(81)), ((np.str_('v'), np.str_('q')), np.int64(85)), ((np.str_('v'), np.str_('r')), np.int64(89)))
-
     ```
 
 Quilt.iter\_array(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2668,7 +2668,6 @@ Quilt.iter\_array(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *i
     v                q     85
     v                r     89
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_array\_items(*\**, *axis*)
@@ -2687,7 +2686,6 @@ Quilt.iter\_array\_items(*\**, *axis*)
     <<U1>
     >>> tuple(q.iter_array_items(axis=1))
     (((np.str_('x'), np.str_('p')), array([0, 1])), ((np.str_('x'), np.str_('q')), array([2, 3])), ((np.str_('x'), np.str_('r')), array([4, 5])), ((np.str_('v'), np.str_('p')), array([40, 41])), ((np.str_('v'), np.str_('q')), array([42, 43])), ((np.str_('v'), np.str_('r')), array([44, 45])))
-
     ```
 
 Quilt.iter\_array\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2721,7 +2719,6 @@ Quilt.iter\_array\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *
     v                q     85
     v                r     -1
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_array\_items(*\**, *axis).apply\_iter(func*, */*)
@@ -2749,7 +2746,6 @@ Quilt.iter\_array\_items(*\**, *axis).apply\_iter(func*, */*)
     <<U1>
     >>> tuple(q.iter_array_items(axis=1).apply_iter(lambda k, v: v.sum() if 'q' in k else -1))
     (-1, np.int64(5), -1, -1, np.int64(85), -1)
-
     ```
 
 Quilt.iter\_array\_items(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -2777,7 +2773,6 @@ Quilt.iter\_array\_items(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>
     >>> tuple(q.iter_array_items(axis=1).apply_iter_items(lambda k, v: v.sum() if 'q' in k else -1))
     (((np.str_('x'), np.str_('p')), -1), ((np.str_('x'), np.str_('q')), np.int64(5)), ((np.str_('x'), np.str_('r')), -1), ((np.str_('v'), np.str_('p')), -1), ((np.str_('v'), np.str_('q')), np.int64(85)), ((np.str_('v'), np.str_('r')), -1))
-
     ```
 
 Quilt.iter\_array\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2816,7 +2811,6 @@ Quilt.iter\_array\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *na
     v                q     85
     v                r     89
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_series(*\**, *axis*)
@@ -2859,7 +2853,6 @@ Quilt.iter\_series(*\**, *axis*)
     a                                    44
     b                                    45
     <<U1>                                <int64>)
-
     ```
 
 Quilt.iter\_series(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2893,7 +2886,6 @@ Quilt.iter\_series(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\
     v                q     85
     v                r     89
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_series(*\**, *axis).apply\_iter(func*, */*)
@@ -2921,7 +2913,6 @@ Quilt.iter\_series(*\**, *axis).apply\_iter(func*, */*)
     <<U1>
     >>> tuple(q.iter_series(axis=1).apply_iter(lambda v: v.sum()))
     (np.int64(1), np.int64(5), np.int64(9), np.int64(81), np.int64(85), np.int64(89))
-
     ```
 
 Quilt.iter\_series(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -2949,7 +2940,6 @@ Quilt.iter\_series(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>
     >>> tuple(q.iter_series(axis=1).apply_iter_items(lambda v: v.sum()))
     (((np.str_('x'), np.str_('p')), np.int64(1)), ((np.str_('x'), np.str_('q')), np.int64(5)), ((np.str_('x'), np.str_('r')), np.int64(9)), ((np.str_('v'), np.str_('p')), np.int64(81)), ((np.str_('v'), np.str_('q')), np.int64(85)), ((np.str_('v'), np.str_('r')), np.int64(89)))
-
     ```
 
 Quilt.iter\_series(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2988,7 +2978,6 @@ Quilt.iter\_series(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *
     v                q     85
     v                r     89
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_series\_items(*\**, *axis*)
@@ -3031,7 +3020,6 @@ Quilt.iter\_series\_items(*\**, *axis*)
     a                                    44
     b                                    45
     <<U1>                                <int64>))
-
     ```
 
 Quilt.iter\_series\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3065,7 +3053,6 @@ Quilt.iter\_series\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, 
     v                q     85
     v                r     -1
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_series\_items(*\**, *axis).apply\_iter(func*, */*)
@@ -3093,7 +3080,6 @@ Quilt.iter\_series\_items(*\**, *axis).apply\_iter(func*, */*)
     <<U1>
     >>> tuple(q.iter_series_items(axis=1).apply_iter(lambda k, v: v.sum() if 'q' in k else -1))
     (-1, np.int64(5), -1, -1, np.int64(85), -1)
-
     ```
 
 Quilt.iter\_series\_items(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -3121,7 +3107,6 @@ Quilt.iter\_series\_items(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>
     >>> tuple(q.iter_series_items(axis=1).apply_iter_items(lambda k, v: v.sum() if 'q' in k else -1))
     (((np.str_('x'), np.str_('p')), -1), ((np.str_('x'), np.str_('q')), np.int64(5)), ((np.str_('x'), np.str_('r')), -1), ((np.str_('v'), np.str_('p')), -1), ((np.str_('v'), np.str_('q')), np.int64(85)), ((np.str_('v'), np.str_('r')), -1))
-
     ```
 
 Quilt.iter\_series\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3160,7 +3145,6 @@ Quilt.iter\_series\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *n
     v                q     85
     v                r     89
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor*)
@@ -3179,7 +3163,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor*)
     <<U1>
     >>> tuple(q.iter_tuple(axis=1))
     (Axis(a=np.int64(0), b=np.int64(1)), Axis(a=np.int64(2), b=np.int64(3)), Axis(a=np.int64(4), b=np.int64(5)), Axis(a=np.int64(40), b=np.int64(41)), Axis(a=np.int64(42), b=np.int64(43)), Axis(a=np.int64(44), b=np.int64(45)))
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3213,7 +3196,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).apply(func*, */*, *\**, *dtype*, *
     v                q     85
     v                r     89
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).apply\_iter(func*, */*)
@@ -3241,7 +3223,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).apply\_iter(func*, */*)
     <<U1>
     >>> tuple(q.iter_tuple(axis=1).apply_iter(lambda v: v.a + v.b))
     (np.int64(1), np.int64(5), np.int64(9), np.int64(81), np.int64(85), np.int64(89))
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).apply\_iter\_items(func*, */*)
@@ -3269,7 +3250,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).apply\_iter\_items(func*, */*)
     <<U1>
     >>> tuple(q.iter_tuple(axis=1).apply_iter_items(lambda v: v.a + v.b))
     (((np.str_('x'), np.str_('p')), np.int64(1)), ((np.str_('x'), np.str_('q')), np.int64(5)), ((np.str_('x'), np.str_('r')), np.int64(9)), ((np.str_('v'), np.str_('p')), np.int64(81)), ((np.str_('v'), np.str_('q')), np.int64(85)), ((np.str_('v'), np.str_('r')), np.int64(89)))
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3315,7 +3295,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_all(mapping*, */*, *\**, *dty
     x                p     -1
     x                q     -2
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter(mapping*, */*)
@@ -3340,7 +3319,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter(mapping*, */*)
     <<U1>
     >>> tuple(q.iloc[:2].iter_tuple(axis=1).map_all_iter({(0, 1): -1, (2, 3): -2}))
     (-1, -2)
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter\_items(mapping*, */*)
@@ -3365,7 +3343,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter\_items(mapping*, */
     <<U1>
     >>> tuple(q.iloc[:2].iter_tuple(axis=1).map_all_iter_items({(0, 1): -1, (2, 3): -2}))
     (((np.str_('x'), np.str_('p')), -1), ((np.str_('x'), np.str_('q')), -2))
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_any(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -3399,7 +3376,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_any(mapping*, */*, *\**, *dty
     v                q     -2
     v                r     Axis(a=np.int64(4...
     <<U1>            <<U1> <object>
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter(mapping*, */*)
@@ -3424,7 +3400,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter(mapping*, */*)
     <<U1>
     >>> tuple(q.iter_tuple(axis=1).map_any_iter({(0, 1): -1, (42, 43): -2}))
     (-1, Axis(a=np.int64(2), b=np.int64(3)), Axis(a=np.int64(4), b=np.int64(5)), Axis(a=np.int64(40), b=np.int64(41)), -2, Axis(a=np.int64(44), b=np.int64(45)))
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter\_items(mapping*, */*)
@@ -3449,7 +3424,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter\_items(mapping*, */
     <<U1>
     >>> tuple(q.iter_tuple(axis=1).map_any_iter_items({(0, 1): -1, (42, 43): -2}))
     (((np.str_('x'), np.str_('p')), -1), ((np.str_('x'), np.str_('q')), Axis(a=np.int64(2), b=np.int64(3))), ((np.str_('x'), np.str_('r')), Axis(a=np.int64(4), b=np.int64(5))), ((np.str_('v'), np.str_('p')), Axis(a=np.int64(40), b=np.int64(41))), ((np.str_('v'), np.str_('q')), -2), ((np.str_('v'), np.str_('r')), Axis(a=np.int64(44), b=np.int64(45))))
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_fill(mapping*, */*, *\**, *fill\_value*, *dtype*, *name*, *index\_constructor*)
@@ -3484,7 +3458,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_fill(mapping*, */*, *\**, *fi
     v                q     -2.0
     v                r     nan
     <<U1>            <<U1> <float64>
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, */*, *\**, *fill\_value*)
@@ -3510,7 +3483,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, */*, *\*
     <<U1>
     >>> tuple(q.iter_tuple(axis=1).map_fill_iter({(0, 1): -1, (42, 43): -2}, fill_value=np.nan))
     (-1, nan, nan, nan, -2, nan)
-
     ```
 
 Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapping*, */*, *\**, *fill\_value*)
@@ -3536,7 +3508,6 @@ Quilt.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapping*, *
     <<U1>
     >>> tuple(q.iter_tuple(axis=1).map_fill_iter_items({(0, 1): -1, (42, 43): -2}, fill_value=np.nan))
     (((np.str_('x'), np.str_('p')), -1), ((np.str_('x'), np.str_('q')), nan), ((np.str_('x'), np.str_('r')), nan), ((np.str_('v'), np.str_('p')), nan), ((np.str_('v'), np.str_('q')), -2), ((np.str_('v'), np.str_('r')), nan))
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor*)
@@ -3555,7 +3526,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor*)
     <<U1>
     >>> tuple(q.iter_tuple_items(axis=1))
     (((np.str_('x'), np.str_('p')), Axis(a=np.int64(0), b=np.int64(1))), ((np.str_('x'), np.str_('q')), Axis(a=np.int64(2), b=np.int64(3))), ((np.str_('x'), np.str_('r')), Axis(a=np.int64(4), b=np.int64(5))), ((np.str_('v'), np.str_('p')), Axis(a=np.int64(40), b=np.int64(41))), ((np.str_('v'), np.str_('q')), Axis(a=np.int64(42), b=np.int64(43))), ((np.str_('v'), np.str_('r')), Axis(a=np.int64(44), b=np.int64(45))))
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3589,7 +3559,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply(func*, */*, *\**, *dt
     v                q     -1
     v                r     89
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter(func*, */*)
@@ -3617,7 +3586,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter(func*, */*)
     <<U1>
     >>> tuple(q.iter_tuple_items(axis=1).apply_iter(lambda k, v: v.a + v.b if 'r' in k else -1))
     (-1, -1, np.int64(9), -1, -1, np.int64(89))
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter\_items(func*, */*)
@@ -3645,7 +3613,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter\_items(func*, *
     <<U1>
     >>> tuple(q.iter_tuple_items(axis=1).apply_iter_items(lambda k, v: v.a + v.b if 'r' in k else -1))
     (((np.str_('x'), np.str_('p')), -1), ((np.str_('x'), np.str_('q')), -1), ((np.str_('x'), np.str_('r')), np.int64(9)), ((np.str_('v'), np.str_('p')), -1), ((np.str_('v'), np.str_('q')), -1), ((np.str_('v'), np.str_('r')), np.int64(89)))
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3691,7 +3658,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all(mapping*, */*, *\*
     x                p     -1
     x                q     -2
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter(mapping*, */*)
@@ -3716,7 +3682,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter(mapping*, */
     <<U1>
     >>> tuple(q.iloc[:2].iter_tuple_items(axis=1).map_all_iter({(('x', 'p'), (0, 1)): -1, (('x', 'q'), (2, 3)): -2}))
     (-1, -2)
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter\_items(mapping*, */*)
@@ -3741,7 +3706,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter\_items(mappi
     <<U1>
     >>> tuple(q.iloc[:2].iter_tuple_items(axis=1).map_all_iter_items({(('x', 'p'), (0, 1)): -1, (('x', 'q'), (2, 3)): -2}))
     (((np.str_('x'), np.str_('p')), -1), ((np.str_('x'), np.str_('q')), -2))
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -3775,7 +3739,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any(mapping*, */*, *\*
     v                q     Axis(a=np.int64(4...
     v                r     Axis(a=np.int64(4...
     <<U1>            <<U1> <object>
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter(mapping*, */*)
@@ -3800,7 +3763,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter(mapping*, */
     <<U1>
     >>> tuple(q.iter_tuple_items(axis=1).map_any_iter({(('x', 'p'), (0, 1)): -1, (('x', 'q'), (2, 3)): -2}))
     (-1, -2, Axis(a=np.int64(4), b=np.int64(5)), Axis(a=np.int64(40), b=np.int64(41)), Axis(a=np.int64(42), b=np.int64(43)), Axis(a=np.int64(44), b=np.int64(45)))
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter\_items(mapping*, */*)
@@ -3825,7 +3787,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter\_items(mappi
     <<U1>
     >>> tuple(q.iter_tuple_items(axis=1).map_any_iter_items({(('x', 'p'), (0, 1)): -1, (('x', 'q'), (2, 3)): -2}))
     (((np.str_('x'), np.str_('p')), -1), ((np.str_('x'), np.str_('q')), -2), ((np.str_('x'), np.str_('r')), Axis(a=np.int64(4), b=np.int64(5))), ((np.str_('v'), np.str_('p')), Axis(a=np.int64(40), b=np.int64(41))), ((np.str_('v'), np.str_('q')), Axis(a=np.int64(42), b=np.int64(43))), ((np.str_('v'), np.str_('r')), Axis(a=np.int64(44), b=np.int64(45))))
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill(mapping*, */*, *\**, *fill\_value*, *dtype*, *name*, *index\_constructor*)
@@ -3860,7 +3821,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill(mapping*, */*, *\
     v                q     nan
     v                r     nan
     <<U1>            <<U1> <float64>
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, */*, *\**, *fill\_value*)
@@ -3886,7 +3846,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, *
     <<U1>
     >>> tuple(q.iter_tuple_items(axis=1).map_fill_iter({(('x', 'p'), (0, 1)): -1, (('x', 'q'), (2, 3)): -2}, fill_value=np.nan))
     (-1, -2, nan, nan, nan, nan)
-
     ```
 
 Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapping*, */*, *\**, *fill\_value*)
@@ -3912,7 +3871,6 @@ Quilt.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapp
     <<U1>
     >>> tuple(q.iter_tuple_items(axis=1).map_fill_iter_items({(('x', 'p'), (0, 1)): -1, (('x', 'q'), (2, 3)): -2}, fill_value=np.nan))
     (((np.str_('x'), np.str_('p')), -1), ((np.str_('x'), np.str_('q')), -2), ((np.str_('x'), np.str_('r')), nan), ((np.str_('v'), np.str_('p')), nan), ((np.str_('v'), np.str_('q')), nan), ((np.str_('v'), np.str_('r')), nan))
-
     ```
 
 Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
@@ -3959,7 +3917,6 @@ Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>)
-
     ```
 
 Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4003,7 +3960,6 @@ Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
     v                p     41
     v                r     45
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -4044,7 +4000,6 @@ Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
     <<U1>
     >>> tuple(q.iter_window(size=2, step=2, axis=0).apply_iter(lambda f: f.max().max()))
     (np.int64(3), np.int64(41), np.int64(45))
-
     ```
 
 Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -4085,7 +4040,6 @@ Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*
     <<U1>
     >>> tuple(q.iter_window(size=2, step=2, axis=0).apply_iter_items(lambda f: f.max().max()))
     (((np.str_('x'), np.str_('q')), np.int64(3)), ((np.str_('v'), np.str_('p')), np.int64(41)), ((np.str_('v'), np.str_('r')), np.int64(45)))
-
     ```
 
 Quilt.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4149,7 +4103,6 @@ Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
            [2, 3]]), array([[ 4,  5],
            [40, 41]]), array([[42, 43],
            [44, 45]]))
-
     ```
 
 Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4193,7 +4146,6 @@ Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
     v                p     41
     v                r     45
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -4234,7 +4186,6 @@ Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
     <<U1>
     >>> tuple(q.iter_window_array(size=2, step=2, axis=0).apply_iter(lambda a: np.max(a)))
     (np.int64(3), np.int64(41), np.int64(45))
-
     ```
 
 Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -4275,7 +4226,6 @@ Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window
     <<U1>
     >>> tuple(q.iter_window_array(size=2, step=2, axis=0).apply_iter_items(lambda a: np.max(a)))
     (((np.str_('x'), np.str_('q')), np.int64(3)), ((np.str_('v'), np.str_('p')), np.int64(41)), ((np.str_('v'), np.str_('r')), np.int64(45)))
-
     ```
 
 Quilt.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4339,7 +4289,6 @@ Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
            [2, 3]])), ((np.str_('v'), np.str_('p')), array([[ 4,  5],
            [40, 41]])), ((np.str_('v'), np.str_('r')), array([[42, 43],
            [44, 45]])))
-
     ```
 
 Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4383,7 +4332,6 @@ Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
     v                p     41
     v                r     42
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -4424,7 +4372,6 @@ Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
     <<U1>
     >>> tuple(q.iter_window_array_items(size=2, step=2, axis=0).apply_iter(lambda k, v: np.max(v) if k == ('v', 'p') else np.min(v)))
     (np.int64(0), np.int64(41), np.int64(42))
-
     ```
 
 Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -4465,7 +4412,6 @@ Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, 
     <<U1>
     >>> tuple(q.iter_window_array_items(size=2, step=2, axis=0).apply_iter_items(lambda k, v: np.max(v) if k == ('v', 'p') else np.min(v)))
     (((np.str_('x'), np.str_('q')), np.int64(0)), ((np.str_('v'), np.str_('p')), np.int64(41)), ((np.str_('v'), np.str_('r')), np.int64(42)))
-
     ```
 
 Quilt.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4541,7 +4487,6 @@ Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>))
-
     ```
 
 Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4585,7 +4530,6 @@ Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
     v                p     41
     v                r     42
     <<U1>            <<U1> <int64>
-
     ```
 
 Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -4626,7 +4570,6 @@ Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
     <<U1>
     >>> tuple(q.iter_window_items(size=2, step=2, axis=0).apply_iter(lambda k, v: v.max().max() if k == ('v', 'p') else v.min().min()))
     (np.int64(0), np.int64(41), np.int64(42))
-
     ```
 
 Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -4667,7 +4610,6 @@ Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window
     <<U1>
     >>> tuple(q.iter_window_items(size=2, step=2, axis=0).apply_iter_items(lambda k, v: v.max().max() if k == ('v', 'p') else v.min().min()))
     (((np.str_('x'), np.str_('q')), np.int64(0)), ((np.str_('v'), np.str_('p')), np.int64(41)), ((np.str_('v'), np.str_('r')), np.int64(42)))
-
     ```
 
 Quilt.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)

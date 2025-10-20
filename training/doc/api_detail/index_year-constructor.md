@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexYear: Constructor](../api_overview/index_year-constructor.md#api-overview-indexyear-constructor)
 
-IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[#](#static_frame.IndexYear.__init__ "Link to this definition")
+IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *sort\_status=SortStatus.UNKNOWN*)[#](#static_frame.IndexYear.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -2537,7 +2541,6 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 *classmethod* IndexYear.from\_date\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear.from_date_range)[#](#static_frame.IndexYear.from_date_range "Link to this definition")
@@ -2549,7 +2552,55 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
     2021
     2022
     <datetime64[Y]>
+    ```
 
+*classmethod* IndexYear.from\_difference(*\*others*)[#](#static_frame.IndexYear.from_difference "Link to this definition")
+:   Construct a new Index based on the difference with Index, containers, or NumPy arrays. Retains order.
+
+    ```
+    >>> ix1 = sf.IndexYear.from_labels(('1517', '1520', '1518'))
+    >>> ix1
+    <IndexYear>
+    1517
+    1520
+    1518
+    <datetime64[Y]>
+    >>> ix2 = sf.IndexYear.from_labels(('2022', '2021', '2018'))
+    >>> ix2
+    <IndexYear>
+    2022
+    2021
+    2018
+    <datetime64[Y]>
+    >>> sf.IndexYear.from_difference(ix1, ix2)
+    <IndexYear>
+    1517
+    1520
+    1518
+    <datetime64[Y]>
+    ```
+
+*classmethod* IndexYear.from\_intersection(*\*others*)[#](#static_frame.IndexYear.from_intersection "Link to this definition")
+:   Construct a new Index based on the intersection with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexYear.from_labels(('1517', '1520', '1518'))
+    >>> ix1
+    <IndexYear>
+    1517
+    1520
+    1518
+    <datetime64[Y]>
+    >>> ix2 = sf.IndexYear.from_labels(('2022', '2021', '2018'))
+    >>> ix2
+    <IndexYear>
+    2022
+    2021
+    2018
+    <datetime64[Y]>
+    >>> sf.IndexYear.from_intersection(ix1, ix2)
+    <IndexYear>
+    <datetime64[Y]>
     ```
 
 *classmethod* IndexYear.from\_labels(*labels*, */*, *\**, *name=None*)[#](#static_frame.IndexYear.from_labels "Link to this definition")
@@ -2562,7 +2613,6 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 *classmethod* IndexYear.from\_pandas(*value*, */*)[#](#static_frame.IndexYear.from_pandas "Link to this definition")
@@ -2576,7 +2626,35 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
     1520
     1518
     <object>
+    ```
 
+*classmethod* IndexYear.from\_union(*\*others*)[#](#static_frame.IndexYear.from_union "Link to this definition")
+:   Construct a new Index based on the union with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexYear.from_labels(('1517', '1520', '1518'))
+    >>> ix1
+    <IndexYear>
+    1517
+    1520
+    1518
+    <datetime64[Y]>
+    >>> ix2 = sf.IndexYear.from_labels(('2022', '2021', '2018'))
+    >>> ix2
+    <IndexYear>
+    2022
+    2021
+    2018
+    <datetime64[Y]>
+    >>> sf.IndexYear.from_union(ix1, ix2)
+    <IndexYear>
+    1517
+    1518
+    1520
+    2018
+    2021
+    2022
+    <datetime64[Y]>
     ```
 
 *classmethod* IndexYear.from\_year\_month\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear.from_year_month_range)[#](#static_frame.IndexYear.from_year_month_range "Link to this definition")
@@ -2588,7 +2666,6 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
     2021
     2022
     <datetime64[Y]>
-
     ```
 
 *classmethod* IndexYear.from\_year\_range(*start*, *stop*, *step=1*, *\**, *name=None*)[[source]](../_modules/static_frame/core/index_datetime.md#IndexYear.from_year_range)[#](#static_frame.IndexYear.from_year_range "Link to this definition")
@@ -2600,7 +2677,6 @@ IndexYear.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object
     2021
     2022
     <datetime64[Y]>
-
     ```
 
 [IndexYear](index_year.md#api-detail-indexyear): [Constructor](#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.md#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.md#api-detail-indexyear-attribute) | [Method](index_year-method.md#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-detail-indexyear-dictionary-like) | [Display](index_year-display.md#api-detail-indexyear-display) | [Selector](index_year-selector.md#api-detail-indexyear-selector) | [Iterator](index_year-iterator.md#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-detail-indexyear-accessor-type-clinic)
@@ -2616,8 +2692,11 @@ On this page
 
 * [`IndexYear.__init__()`](#static_frame.IndexYear.__init__)
 * [`IndexYear.from_date_range()`](#static_frame.IndexYear.from_date_range)
+* [`IndexYear.from_difference()`](#static_frame.IndexYear.from_difference)
+* [`IndexYear.from_intersection()`](#static_frame.IndexYear.from_intersection)
 * [`IndexYear.from_labels()`](#static_frame.IndexYear.from_labels)
 * [`IndexYear.from_pandas()`](#static_frame.IndexYear.from_pandas)
+* [`IndexYear.from_union()`](#static_frame.IndexYear.from_union)
 * [`IndexYear.from_year_month_range()`](#static_frame.IndexYear.from_year_month_range)
 * [`IndexYear.from_year_range()`](#static_frame.IndexYear.from_year_range)
 

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2544,7 +2548,6 @@ Index.via\_re(*pattern*, *flags*, */).search(pos*, *endpos*)
     <<U4>
     >>> ix.via_re('[X123]').search()
     [False  True  True  True]
-
     ```
 
 Index.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
@@ -2568,7 +2571,6 @@ Index.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
     <<U4>
     >>> ix.via_re('[X123]').match()
     [False  True  True False]
-
     ```
 
 Index.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
@@ -2592,7 +2594,6 @@ Index.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
     <<U4>
     >>> ix.via_re('123').fullmatch()
     [False False  True False]
-
     ```
 
 Index.via\_re(*pattern*, *flags*, */).split(maxsplit*)
@@ -2615,7 +2616,6 @@ Index.via\_re(*pattern*, *flags*, */).split(maxsplit*)
     <<U4>
     >>> ix.via_re('[X123]').split()
     [('qrs ',) ('', 'YZ') ('', '', '', '') (' w', ' ')]
-
     ```
 
 Index.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
@@ -2639,7 +2639,6 @@ Index.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
     <<U4>
     >>> ix.via_re('[X123]').findall()
     [() ('X',) ('1', '2', '3') ('X',)]
-
     ```
 
 Index.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
@@ -2663,7 +2662,6 @@ Index.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
     <<U4>
     >>> ix.via_re('[X123]').sub('==')
     ['qrs ' '==YZ' '======' ' w== ']
-
     ```
 
 Index.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
@@ -2687,7 +2685,6 @@ Index.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
     <<U4>
     >>> ix.via_re('[X123]').subn('==', 1)
     [('qrs ', 0) ('==YZ', 1) ('==23', 1) (' w== ', 1)]
-
     ```
 
 [Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](index-attribute.md#api-detail-index-attribute) | [Method](index-method.md#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](index-accessor_string.md#api-detail-index-accessor-string) | [Accessor Regular Expression](#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)

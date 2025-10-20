@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2548,7 +2552,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Batch.from\_frames(*frames*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_frames)[#](#static_frame.Batch.from_frames "Link to this definition")
@@ -2569,7 +2572,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Batch.from\_sqlite(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_sqlite)[#](#static_frame.Batch.from_sqlite "Link to this definition")
@@ -2597,7 +2599,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Batch.from\_xlsx(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_xlsx)[#](#static_frame.Batch.from_xlsx "Link to this definition")
@@ -2625,7 +2626,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Batch.from\_zip\_csv(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_csv)[#](#static_frame.Batch.from_zip_csv "Link to this definition")
@@ -2653,7 +2653,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Batch.from\_zip\_npy(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_npy)[#](#static_frame.Batch.from_zip_npy "Link to this definition")
@@ -2681,7 +2680,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Batch.from\_zip\_npz(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_npz)[#](#static_frame.Batch.from_zip_npz "Link to this definition")
@@ -2709,7 +2707,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Batch.from\_zip\_parquet(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_parquet)[#](#static_frame.Batch.from_zip_parquet "Link to this definition")
@@ -2737,7 +2734,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     j                q        42      43
     j                r        44      45
     <<U1>            <object> <int64> <int64>
-
     ```
 
 *classmethod* Batch.from\_zip\_pickle(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_pickle)[#](#static_frame.Batch.from_zip_pickle "Link to this definition")
@@ -2765,7 +2761,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 *classmethod* Batch.from\_zip\_tsv(*fp*, */*, *\**, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_zip_tsv)[#](#static_frame.Batch.from_zip_tsv "Link to this definition")
@@ -2793,7 +2788,6 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 [Batch](batch.md#api-detail-batch): [Constructor](#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
