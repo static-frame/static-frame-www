@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2535,7 +2539,6 @@ IndexGO.\_\_add\_\_(*other*, */*)[#](#static_frame.IndexGO.__add__ "Link to this
     <int64>
     >>> ix + 8
     [    8  1032 -2040  4104]
-
     ```
 
 IndexGO.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexGO.__and__ "Link to this definition")
@@ -2550,7 +2553,6 @@ IndexGO.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexGO.__and__ "Link to this
     [False  True]
     >>> ix & (False, True)
     [False  True]
-
     ```
 
 IndexGO.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexGO.__eq__ "Link to this definition")
@@ -2567,7 +2569,6 @@ IndexGO.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexGO.__eq__ "Link to this d
     <int64>
     >>> ix == 8
     [False False False False]
-
     ```
 
 IndexGO.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexGO.__floordiv__ "Link to this definition")
@@ -2582,7 +2583,6 @@ IndexGO.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexGO.__floordiv__ "Li
     <int64>
     >>> ix // 8
     [   0  128 -256  512]
-
     ```
 
 IndexGO.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexGO.__ge__ "Link to this definition")
@@ -2599,7 +2599,6 @@ IndexGO.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexGO.__ge__ "Link to this d
     <int64>
     >>> ix >= 8
     [False  True False  True]
-
     ```
 
 IndexGO.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexGO.__gt__ "Link to this definition")
@@ -2616,7 +2615,6 @@ IndexGO.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexGO.__gt__ "Link to this d
     <int64>
     >>> ix > 8
     [False  True False  True]
-
     ```
 
 IndexGO.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexGO.__le__ "Link to this definition")
@@ -2633,7 +2631,6 @@ IndexGO.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexGO.__le__ "Link to this d
     <int64>
     >>> ix <= 8
     [ True False  True False]
-
     ```
 
 IndexGO.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexGO.__lt__ "Link to this definition")
@@ -2650,7 +2647,6 @@ IndexGO.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexGO.__lt__ "Link to this d
     <int64>
     >>> ix < 8
     [ True False  True False]
-
     ```
 
 IndexGO.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexGO.__matmul__ "Link to this definition")
@@ -2665,7 +2661,6 @@ IndexGO.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexGO.__matmul__ "Link t
     <int64>
     >>> ix @ (3, 0, 4, 0)
     -8192
-
     ```
 
 IndexGO.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexGO.__mod__ "Link to this definition")
@@ -2680,7 +2675,6 @@ IndexGO.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexGO.__mod__ "Link to this
     <int64>
     >>> ix % 8
     [0 0 0 0]
-
     ```
 
 IndexGO.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexGO.__mul__ "Link to this definition")
@@ -2695,7 +2689,6 @@ IndexGO.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexGO.__mul__ "Link to this
     <int64>
     >>> ix * 8
     [     0   8192 -16384  32768]
-
     ```
 
 IndexGO.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexGO.__ne__ "Link to this definition")
@@ -2712,7 +2705,6 @@ IndexGO.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexGO.__ne__ "Link to this d
     <int64>
     >>> ix != 8
     [ True  True  True  True]
-
     ```
 
 IndexGO.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexGO.__or__ "Link to this definition")
@@ -2729,7 +2721,6 @@ IndexGO.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexGO.__or__ "Link to this d
     [ True  True]
     >>> ix | (False, True)
     [False  True]
-
     ```
 
 IndexGO.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexGO.__pow__ "Link to this definition")
@@ -2744,7 +2735,6 @@ IndexGO.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexGO.__pow__ "Link to this
     <int64>
     >>> ix ** 8
     [0 0 0 0]
-
     ```
 
 IndexGO.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexGO.__radd__ "Link to this definition")
@@ -2759,7 +2749,6 @@ IndexGO.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexGO.__radd__ "Link to th
     <int64>
     >>> 8 + ix
     [    8  1032 -2040  4104]
-
     ```
 
 IndexGO.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexGO.__rfloordiv__ "Link to this definition")
@@ -2774,7 +2763,6 @@ IndexGO.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexGO.__rfloordiv__ "
     <int64>
     >>> 8 // ix
     [ 0  0 -1  0]
-
     ```
 
 IndexGO.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexGO.__rmatmul__ "Link to this definition")
@@ -2789,7 +2777,6 @@ IndexGO.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexGO.__rmatmul__ "Link
     <int64>
     >>> ix @ (3, 0, 4, 0)
     -8192
-
     ```
 
 IndexGO.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexGO.__rmul__ "Link to this definition")
@@ -2804,7 +2791,6 @@ IndexGO.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexGO.__rmul__ "Link to th
     <int64>
     >>> 8 * ix
     [     0   8192 -16384  32768]
-
     ```
 
 IndexGO.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexGO.__rshift__ "Link to this definition")
@@ -2819,7 +2805,6 @@ IndexGO.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexGO.__rshift__ "Link t
     <int64>
     >>> ix >> 1
     [    0   512 -1024  2048]
-
     ```
 
 IndexGO.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexGO.__rsub__ "Link to this definition")
@@ -2834,7 +2819,6 @@ IndexGO.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexGO.__rsub__ "Link to th
     <int64>
     >>> 8 - ix
     [    8 -1016  2056 -4088]
-
     ```
 
 IndexGO.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexGO.__rtruediv__ "Link to this definition")
@@ -2849,7 +2833,6 @@ IndexGO.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexGO.__rtruediv__ "Li
     <int64>
     >>> 8 / ix
     [        inf  0.0078125  -0.00390625  0.00195312]
-
     ```
 
 IndexGO.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexGO.__sub__ "Link to this definition")
@@ -2864,7 +2847,6 @@ IndexGO.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexGO.__sub__ "Link to this
     <int64>
     >>> ix - 8
     [   -8  1016 -2056  4088]
-
     ```
 
 IndexGO.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexGO.__truediv__ "Link to this definition")
@@ -2879,7 +2861,6 @@ IndexGO.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexGO.__truediv__ "Link
     <int64>
     >>> ix / 8
     [   0.  128. -256.  512.]
-
     ```
 
 IndexGO.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexGO.__xor__ "Link to this definition")
@@ -2894,7 +2875,6 @@ IndexGO.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexGO.__xor__ "Link to this
     [ True False]
     >>> ix ^ (False, True)
     [False False]
-
     ```
 
 [IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)

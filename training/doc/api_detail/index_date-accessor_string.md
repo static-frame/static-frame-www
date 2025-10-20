@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ IndexDate.via\_str.\_\_getitem\_\_(*key*)
     <datetime64[D]>
     >>> ix.via_str[-1]
     ['1' '1' '0']
-
     ```
 
 IndexDate.via\_str.capitalize
@@ -2560,7 +2563,6 @@ IndexDate.via\_str.capitalize
     <datetime64[D]>
     >>> ix.via_str.capitalize()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.center(*width*, *fillchar*)
@@ -2580,7 +2582,6 @@ IndexDate.via\_str.center(*width*, *fillchar*)
     <datetime64[D]>
     >>> ix.via_str.center(8)
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.contains(*item*)
@@ -2600,7 +2601,6 @@ IndexDate.via\_str.contains(*item*)
     <datetime64[D]>
     >>> ix.via_str.contains('X')
     [False False False]
-
     ```
 
 IndexDate.via\_str.count(*sub*, *start*, *end*)
@@ -2620,7 +2620,6 @@ IndexDate.via\_str.count(*sub*, *start*, *end*)
     <datetime64[D]>
     >>> ix.via_str.count('X')
     [0 0 0]
-
     ```
 
 IndexDate.via\_str.decode(*encoding*, *errors*)
@@ -2640,7 +2639,6 @@ IndexDate.via\_str.decode(*encoding*, *errors*)
     <|S28>
     >>> ix.via_str.decode()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.encode(*encoding*, *errors*)
@@ -2660,7 +2658,6 @@ IndexDate.via\_str.encode(*encoding*, *errors*)
     <datetime64[D]>
     >>> ix.via_str.encode()
     [b'1517-04-01' b'1517-12-01' b'1517-06-30']
-
     ```
 
 IndexDate.via\_str.endswith(*suffix*, *start*, *end*)
@@ -2680,7 +2677,6 @@ IndexDate.via\_str.endswith(*suffix*, *start*, *end*)
     <datetime64[D]>
     >>> ix.via_str.endswith(' ')
     [False False False]
-
     ```
 
 IndexDate.via\_str.find(*sub*, *start*, *end*)
@@ -2700,7 +2696,6 @@ IndexDate.via\_str.find(*sub*, *start*, *end*)
     <datetime64[D]>
     >>> ix.via_str.find('X')
     [-1 -1 -1]
-
     ```
 
 IndexDate.via\_str.format(*format*)
@@ -2723,7 +2718,6 @@ IndexDate.via\_str.format(*format*)
     <datetime64[D]>
     >>> ix.via_str.format('{:-^10}')
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.index(*sub*, *start*, *end*)
@@ -2743,7 +2737,6 @@ IndexDate.via\_str.index(*sub*, *start*, *end*)
     <datetime64[D]>
     >>> ix.via_str.index('X')
     ValueError('substring not found')
-
     ```
 
 IndexDate.via\_str.isalnum
@@ -2763,7 +2756,6 @@ IndexDate.via\_str.isalnum
     <datetime64[D]>
     >>> ix.via_str.isalnum()
     [False False False]
-
     ```
 
 IndexDate.via\_str.isalpha
@@ -2783,7 +2775,6 @@ IndexDate.via\_str.isalpha
     <datetime64[D]>
     >>> ix.via_str.isalpha()
     [False False False]
-
     ```
 
 IndexDate.via\_str.isdecimal
@@ -2803,7 +2794,6 @@ IndexDate.via\_str.isdecimal
     <datetime64[D]>
     >>> ix.via_str.isdecimal()
     [False False False]
-
     ```
 
 IndexDate.via\_str.isdigit
@@ -2823,7 +2813,6 @@ IndexDate.via\_str.isdigit
     <datetime64[D]>
     >>> ix.via_str.isdigit()
     [False False False]
-
     ```
 
 IndexDate.via\_str.islower
@@ -2843,7 +2832,6 @@ IndexDate.via\_str.islower
     <datetime64[D]>
     >>> ix.via_str.islower()
     [False False False]
-
     ```
 
 IndexDate.via\_str.isnumeric
@@ -2863,7 +2851,6 @@ IndexDate.via\_str.isnumeric
     <datetime64[D]>
     >>> ix.via_str.isnumeric()
     [False False False]
-
     ```
 
 IndexDate.via\_str.isspace
@@ -2883,7 +2870,6 @@ IndexDate.via\_str.isspace
     <datetime64[D]>
     >>> ix.via_str.isspace()
     [False False False]
-
     ```
 
 IndexDate.via\_str.istitle
@@ -2903,7 +2889,6 @@ IndexDate.via\_str.istitle
     <datetime64[D]>
     >>> ix.via_str.istitle()
     [False False False]
-
     ```
 
 IndexDate.via\_str.isupper
@@ -2923,7 +2908,6 @@ IndexDate.via\_str.isupper
     <datetime64[D]>
     >>> ix.via_str.isupper()
     [False False False]
-
     ```
 
 IndexDate.via\_str.ljust(*width*, *fillchar*)
@@ -2943,7 +2927,6 @@ IndexDate.via\_str.ljust(*width*, *fillchar*)
     <datetime64[D]>
     >>> ix.via_str.ljust(8)
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.len
@@ -2963,7 +2946,6 @@ IndexDate.via\_str.len
     <datetime64[D]>
     >>> ix.via_str.len()
     [10 10 10]
-
     ```
 
 IndexDate.via\_str.lower
@@ -2983,7 +2965,6 @@ IndexDate.via\_str.lower
     <datetime64[D]>
     >>> ix.via_str.lower()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.lstrip(*chars*)
@@ -3003,7 +2984,6 @@ IndexDate.via\_str.lstrip(*chars*)
     <datetime64[D]>
     >>> ix.via_str.lstrip()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.partition(*sep*)
@@ -3024,7 +3004,6 @@ IndexDate.via\_str.partition(*sep*)
     >>> ix.via_str.partition('X')
     [(np.str_('1517-04-01'), '', '') (np.str_('1517-12-01'), '', '')
      (np.str_('1517-06-30'), '', '')]
-
     ```
 
 IndexDate.via\_str.replace(*old*, *new*, *count*)
@@ -3044,7 +3023,6 @@ IndexDate.via\_str.replace(*old*, *new*, *count*)
     <datetime64[D]>
     >>> ix.via_str.replace('X', '*')
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.rfind(*sub*, *start*, *end*)
@@ -3064,7 +3042,6 @@ IndexDate.via\_str.rfind(*sub*, *start*, *end*)
     <datetime64[D]>
     >>> ix.via_str.rfind('X')
     [-1 -1 -1]
-
     ```
 
 IndexDate.via\_str.rindex(*sub*, *start*, *end*)
@@ -3084,7 +3061,6 @@ IndexDate.via\_str.rindex(*sub*, *start*, *end*)
     <datetime64[D]>
     >>> ix.via_str.rindex('X')
     ValueError('substring not found')
-
     ```
 
 IndexDate.via\_str.rjust(*width*, *fillchar*)
@@ -3104,7 +3080,6 @@ IndexDate.via\_str.rjust(*width*, *fillchar*)
     <datetime64[D]>
     >>> ix.via_str.rjust(8)
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.rpartition(*sep*)
@@ -3125,7 +3100,6 @@ IndexDate.via\_str.rpartition(*sep*)
     >>> ix.via_str.rpartition('X')
     [('', '', np.str_('1517-04-01')) ('', '', np.str_('1517-12-01'))
      ('', '', np.str_('1517-06-30'))]
-
     ```
 
 IndexDate.via\_str.rsplit(*sep*, *maxsplit*)
@@ -3145,7 +3119,6 @@ IndexDate.via\_str.rsplit(*sep*, *maxsplit*)
     <datetime64[D]>
     >>> ix.via_str.rsplit('X')
     [('1517-04-01',) ('1517-12-01',) ('1517-06-30',)]
-
     ```
 
 IndexDate.via\_str.rstrip(*chars*)
@@ -3165,7 +3138,6 @@ IndexDate.via\_str.rstrip(*chars*)
     <datetime64[D]>
     >>> ix.via_str.rstrip()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.split(*sep*, *maxsplit*)
@@ -3185,7 +3157,6 @@ IndexDate.via\_str.split(*sep*, *maxsplit*)
     <datetime64[D]>
     >>> ix.via_str.split('X')
     [('1517-04-01',) ('1517-12-01',) ('1517-06-30',)]
-
     ```
 
 IndexDate.via\_str.startswith(*prefix*, *start*, *end*)
@@ -3205,7 +3176,6 @@ IndexDate.via\_str.startswith(*prefix*, *start*, *end*)
     <datetime64[D]>
     >>> ix.via_str.startswith('X')
     [False False False]
-
     ```
 
 IndexDate.via\_str.strip(*chars*)
@@ -3225,7 +3195,6 @@ IndexDate.via\_str.strip(*chars*)
     <datetime64[D]>
     >>> ix.via_str.strip()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.swapcase
@@ -3245,7 +3214,6 @@ IndexDate.via\_str.swapcase
     <datetime64[D]>
     >>> ix.via_str.swapcase()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.title
@@ -3265,7 +3233,6 @@ IndexDate.via\_str.title
     <datetime64[D]>
     >>> ix.via_str.title()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.upper
@@ -3285,7 +3252,6 @@ IndexDate.via\_str.upper
     <datetime64[D]>
     >>> ix.via_str.upper()
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 IndexDate.via\_str.zfill(*width*)
@@ -3305,7 +3271,6 @@ IndexDate.via\_str.zfill(*width*)
     <datetime64[D]>
     >>> ix.via_str.zfill(8)
     ['1517-04-01' '1517-12-01' '1517-06-30']
-
     ```
 
 [IndexDate](index_date.md#api-detail-indexdate): [Constructor](index_date-constructor.md#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.md#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.md#api-detail-indexdate-attribute) | [Method](index_date-method.md#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-detail-indexdate-dictionary-like) | [Display](index_date-display.md#api-detail-indexdate-display) | [Selector](index_date-selector.md#api-detail-indexdate-selector) | [Iterator](index_date-iterator.md#api-detail-indexdate-iterator) | [Operator Binary](index_date-operator_binary.md#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-detail-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-detail-indexdate-accessor-datetime) | [Accessor String](#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-detail-indexdate-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ FrameGO.iter\_array(*\**, *axis*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_array())
     (array([10, -2,  0,  0]), array([ 8, -3,  8,  0]), array([ 1,  0,  9, 12]))
-
     ```
 
 FrameGO.iter\_array(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2572,7 +2575,6 @@ FrameGO.iter\_array(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index
     b        13
     c        22
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_array(*\**, *axis).apply\_iter(func*, */*)
@@ -2601,7 +2603,6 @@ FrameGO.iter\_array(*\**, *axis).apply\_iter(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_array().apply_iter(lambda v: v.sum()))
     (np.int64(8), np.int64(13), np.int64(22))
-
     ```
 
 FrameGO.iter\_array(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -2630,7 +2631,6 @@ FrameGO.iter\_array(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_array().apply_iter_items(lambda v: v.sum()))
     ((np.str_('a'), np.int64(8)), (np.str_('b'), np.int64(13)), (np.str_('c'), np.int64(22)))
-
     ```
 
 FrameGO.iter\_array(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2667,7 +2667,6 @@ FrameGO.iter\_array(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, 
     b        13
     c        22
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_array\_items(*\**, *axis*)
@@ -2687,7 +2686,6 @@ FrameGO.iter\_array\_items(*\**, *axis*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_array_items())
     ((np.str_('a'), array([10, -2,  0,  0])), (np.str_('b'), array([ 8, -3,  8,  0])), (np.str_('c'), array([ 1,  0,  9, 12])))
-
     ```
 
 FrameGO.iter\_array\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2719,7 +2717,6 @@ FrameGO.iter\_array\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*,
     b        -1
     c        22
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_array\_items(*\**, *axis).apply\_iter(func*, */*)
@@ -2748,7 +2745,6 @@ FrameGO.iter\_array\_items(*\**, *axis).apply\_iter(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_array_items().apply_iter(lambda k, v: v.sum() if k != 'b' else -1))
     (np.int64(8), -1, np.int64(22))
-
     ```
 
 FrameGO.iter\_array\_items(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -2777,7 +2773,6 @@ FrameGO.iter\_array\_items(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_array_items().apply_iter_items(lambda k, v: v.sum() if k != 'b' else -1))
     ((np.str_('a'), np.int64(8)), (np.str_('b'), -1), (np.str_('c'), np.int64(22)))
-
     ```
 
 FrameGO.iter\_array\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2814,7 +2809,6 @@ FrameGO.iter\_array\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *
     b        -1
     c        22
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_element(*\**, *axis*)
@@ -2834,7 +2828,6 @@ FrameGO.iter\_element(*\**, *axis*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element())
     (np.int64(10), np.int64(8), np.int64(1), np.int64(-2), np.int64(-3), np.int64(0), np.int64(0), np.int64(8), np.int64(9), np.int64(0), np.int64(0), np.int64(12))
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2868,7 +2861,6 @@ FrameGO.iter\_element(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *ind
     r         False  True   True
     s         False  False  True
     <<U1>     <bool> <bool> <bool>
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).apply\_iter(func*, */*)
@@ -2897,7 +2889,6 @@ FrameGO.iter\_element(*\**, *axis).apply\_iter(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element().apply_iter(lambda e: e > 10))
     (np.False_, np.False_, np.False_, np.False_, np.False_, np.False_, np.False_, np.False_, np.False_, np.False_, np.False_, np.True_)
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -2926,7 +2917,6 @@ FrameGO.iter\_element(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element().apply_iter_items(lambda e: e > 10))
     (((np.str_('p'), np.str_('a')), np.False_), ((np.str_('p'), np.str_('b')), np.False_), ((np.str_('p'), np.str_('c')), np.False_), ((np.str_('q'), np.str_('a')), np.False_), ((np.str_('q'), np.str_('b')), np.False_), ((np.str_('q'), np.str_('c')), np.False_), ((np.str_('r'), np.str_('a')), np.False_), ((np.str_('r'), np.str_('b')), np.False_), ((np.str_('r'), np.str_('c')), np.False_), ((np.str_('s'), np.str_('a')), np.False_), ((np.str_('s'), np.str_('b')), np.False_), ((np.str_('s'), np.str_('c')), np.True_))
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2965,7 +2955,6 @@ FrameGO.iter\_element(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*
     r         False  True   True
     s         False  False  True
     <<U1>     <bool> <bool> <bool>
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).map\_all(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -2999,7 +2988,6 @@ FrameGO.iter\_element(*\**, *axis).map\_all(mapping*, */*, *\**, *dtype*, *name*
     r         200     45      45
     s         200     200     -1
     <<U1>     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).map\_all\_iter(mapping*, */*)
@@ -3025,7 +3013,6 @@ FrameGO.iter\_element(*\**, *axis).map\_all\_iter(mapping*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element().map_all_iter({0: 200, 1: -1, 2: 45}))
     (-1, 45, -1, 45, -1, 200, 200, 45, 45, 200, 200, -1)
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).map\_all\_iter\_items(mapping*, */*)
@@ -3051,7 +3038,6 @@ FrameGO.iter\_element(*\**, *axis).map\_all\_iter\_items(mapping*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element().map_all_iter_items({0: 200, 1: -1, 2: 45}))
     (((np.str_('p'), np.str_('a')), -1), ((np.str_('p'), np.str_('b')), 45), ((np.str_('p'), np.str_('c')), -1), ((np.str_('q'), np.str_('a')), 45), ((np.str_('q'), np.str_('b')), -1), ((np.str_('q'), np.str_('c')), 200), ((np.str_('r'), np.str_('a')), 200), ((np.str_('r'), np.str_('b')), 45), ((np.str_('r'), np.str_('c')), 45), ((np.str_('s'), np.str_('a')), 200), ((np.str_('s'), np.str_('b')), 200), ((np.str_('s'), np.str_('c')), -1))
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).map\_any(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -3085,7 +3071,6 @@ FrameGO.iter\_element(*\**, *axis).map\_any(mapping*, */*, *\**, *dtype*, *name*
     r         0       45      45
     s         0       0       -1
     <<U1>     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).map\_any\_iter(mapping*, */*)
@@ -3111,7 +3096,6 @@ FrameGO.iter\_element(*\**, *axis).map\_any\_iter(mapping*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element().map_any_iter({1: -1, 2: 45}))
     (-1, 45, -1, 45, -1, np.int64(0), np.int64(0), 45, 45, np.int64(0), np.int64(0), -1)
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).map\_any\_iter\_items(mapping*, */*)
@@ -3137,7 +3121,6 @@ FrameGO.iter\_element(*\**, *axis).map\_any\_iter\_items(mapping*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element().map_any_iter_items({1: -1, 2: 45}))
     (((np.str_('p'), np.str_('a')), -1), ((np.str_('p'), np.str_('b')), 45), ((np.str_('p'), np.str_('c')), -1), ((np.str_('q'), np.str_('a')), 45), ((np.str_('q'), np.str_('b')), -1), ((np.str_('q'), np.str_('c')), np.int64(0)), ((np.str_('r'), np.str_('a')), np.int64(0)), ((np.str_('r'), np.str_('b')), 45), ((np.str_('r'), np.str_('c')), 45), ((np.str_('s'), np.str_('a')), np.int64(0)), ((np.str_('s'), np.str_('b')), np.int64(0)), ((np.str_('s'), np.str_('c')), -1))
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).map\_fill(mapping*, */*, *\**, *fill\_value*, *dtype*, *name*, *index\_constructor*)
@@ -3172,7 +3155,6 @@ FrameGO.iter\_element(*\**, *axis).map\_fill(mapping*, */*, *\**, *fill\_value*,
     r         nan       45.0      45.0
     s         nan       nan       -1.0
     <<U1>     <float64> <float64> <float64>
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).map\_fill\_iter(mapping*, */*, *\**, *fill\_value*)
@@ -3199,7 +3181,6 @@ FrameGO.iter\_element(*\**, *axis).map\_fill\_iter(mapping*, */*, *\**, *fill\_v
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element().map_fill_iter({1: -1, 2: 45}, fill_value=np.nan))
     (-1, 45, -1, 45, -1, nan, nan, 45, 45, nan, nan, -1)
-
     ```
 
 FrameGO.iter\_element(*\**, *axis).map\_fill\_iter\_items(mapping*, */*, *\**, *fill\_value*)
@@ -3226,7 +3207,6 @@ FrameGO.iter\_element(*\**, *axis).map\_fill\_iter\_items(mapping*, */*, *\**, *
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element().map_fill_iter_items({1: -1, 2: 45}, fill_value=np.nan))
     (((np.str_('p'), np.str_('a')), -1), ((np.str_('p'), np.str_('b')), 45), ((np.str_('p'), np.str_('c')), -1), ((np.str_('q'), np.str_('a')), 45), ((np.str_('q'), np.str_('b')), -1), ((np.str_('q'), np.str_('c')), nan), ((np.str_('r'), np.str_('a')), nan), ((np.str_('r'), np.str_('b')), 45), ((np.str_('r'), np.str_('c')), 45), ((np.str_('s'), np.str_('a')), nan), ((np.str_('s'), np.str_('b')), nan), ((np.str_('s'), np.str_('c')), -1))
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis*)
@@ -3246,7 +3226,6 @@ FrameGO.iter\_element\_items(*\**, *axis*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element_items())
     (((np.str_('p'), np.str_('a')), np.int64(10)), ((np.str_('p'), np.str_('b')), np.int64(8)), ((np.str_('p'), np.str_('c')), np.int64(1)), ((np.str_('q'), np.str_('a')), np.int64(-2)), ((np.str_('q'), np.str_('b')), np.int64(-3)), ((np.str_('q'), np.str_('c')), np.int64(0)), ((np.str_('r'), np.str_('a')), np.int64(0)), ((np.str_('r'), np.str_('b')), np.int64(8)), ((np.str_('r'), np.str_('c')), np.int64(9)), ((np.str_('s'), np.str_('a')), np.int64(0)), ((np.str_('s'), np.str_('b')), np.int64(0)), ((np.str_('s'), np.str_('c')), np.int64(12)))
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3280,7 +3259,6 @@ FrameGO.iter\_element\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name
     r         False  True     True
     s         False  False    False
     <<U1>     <bool> <object> <bool>
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).apply\_iter(func*, */*)
@@ -3309,7 +3287,6 @@ FrameGO.iter\_element\_items(*\**, *axis).apply\_iter(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element_items().apply_iter(lambda k, v: v > 1 if k != ('q', 'b') else 'x'))
     (np.False_, np.True_, np.False_, np.True_, 'x', np.False_, np.False_, np.True_, np.True_, np.False_, np.False_, np.False_)
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -3338,7 +3315,6 @@ FrameGO.iter\_element\_items(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_element_items().apply_iter_items(lambda k, v: v > 1 if k != ('q', 'b') else 'x'))
     (((np.str_('p'), np.str_('a')), np.False_), ((np.str_('p'), np.str_('b')), np.True_), ((np.str_('p'), np.str_('c')), np.False_), ((np.str_('q'), np.str_('a')), np.True_), ((np.str_('q'), np.str_('b')), 'x'), ((np.str_('q'), np.str_('c')), np.False_), ((np.str_('r'), np.str_('a')), np.False_), ((np.str_('r'), np.str_('b')), np.True_), ((np.str_('r'), np.str_('c')), np.True_), ((np.str_('s'), np.str_('a')), np.False_), ((np.str_('s'), np.str_('b')), np.False_), ((np.str_('s'), np.str_('c')), np.False_))
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3378,7 +3354,6 @@ FrameGO.iter\_element\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*,
     r         False  False  False
     s         False  False  False
     <<U1>     <bool> <bool> <bool>
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).map\_all(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -3408,7 +3383,6 @@ FrameGO.iter\_element\_items(*\**, *axis).map\_all(mapping*, */*, *\**, *dtype*,
     p         200     -1
     q         45      1
     <<U1>     <int64> <int64>
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).map\_all\_iter(mapping*, */*)
@@ -3432,7 +3406,6 @@ FrameGO.iter\_element\_items(*\**, *axis).map\_all\_iter(mapping*, */*)
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_element_items().map_all_iter({(('p', 'a'), 2): 200, (('p', 'b'), 3): -1, (('q', 'a'), 9): 45, (('q', 'b'), 8): 1}))
     (200, -1, 45, 1)
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).map\_all\_iter\_items(mapping*, */*)
@@ -3456,7 +3429,6 @@ FrameGO.iter\_element\_items(*\**, *axis).map\_all\_iter\_items(mapping*, */*)
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_element_items().map_all_iter_items({(('p', 'a'), 2): 200, (('p', 'b'), 3): -1, (('q', 'a'), 9): 45, (('q', 'b'), 8): 1}))
     (((np.str_('p'), np.str_('a')), 200), ((np.str_('p'), np.str_('b')), -1), ((np.str_('q'), np.str_('a')), 45), ((np.str_('q'), np.str_('b')), 1))
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).map\_any(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -3486,7 +3458,6 @@ FrameGO.iter\_element\_items(*\**, *axis).map\_any(mapping*, */*, *\**, *dtype*,
     p         200     3
     q         9       1
     <<U1>     <int64> <int64>
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).map\_any\_iter(mapping*, */*)
@@ -3510,7 +3481,6 @@ FrameGO.iter\_element\_items(*\**, *axis).map\_any\_iter(mapping*, */*)
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_element_items().map_any_iter({(('p', 'a'), 2): 200, (('q', 'b'), 8): 1}))
     (200, np.int64(3), np.int64(9), 1)
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).map\_any\_iter\_items(mapping*, */*)
@@ -3534,7 +3504,6 @@ FrameGO.iter\_element\_items(*\**, *axis).map\_any\_iter\_items(mapping*, */*)
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_element_items().map_any_iter_items({(('p', 'a'), 2): 200, (('q', 'b'), 8): 1}))
     (((np.str_('p'), np.str_('a')), 200), ((np.str_('p'), np.str_('b')), np.int64(3)), ((np.str_('q'), np.str_('a')), np.int64(9)), ((np.str_('q'), np.str_('b')), 1))
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).map\_fill(mapping*, */*, *\**, *fill\_value*, *dtype*, *name*, *index\_constructor*)
@@ -3565,7 +3534,6 @@ FrameGO.iter\_element\_items(*\**, *axis).map\_fill(mapping*, */*, *\**, *fill\_
     p         200     -1
     q         -1      1
     <<U1>     <int64> <int64>
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).map\_fill\_iter(mapping*, */*, *\**, *fill\_value*)
@@ -3590,7 +3558,6 @@ FrameGO.iter\_element\_items(*\**, *axis).map\_fill\_iter(mapping*, */*, *\**, *
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_element_items().map_fill_iter({(('p', 'a'), 2): 200, (('q', 'b'), 8): 1}, fill_value=-1))
     (200, -1, -1, 1)
-
     ```
 
 FrameGO.iter\_element\_items(*\**, *axis).map\_fill\_iter\_items(mapping*, */*, *\**, *fill\_value*)
@@ -3615,7 +3582,6 @@ FrameGO.iter\_element\_items(*\**, *axis).map\_fill\_iter\_items(mapping*, */*, 
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_element_items().map_fill_iter_items({(('p', 'a'), 2): 200, (('q', 'b'), 8): 1}, fill_value=-1))
     (((np.str_('p'), np.str_('a')), 200), ((np.str_('p'), np.str_('b')), -1), ((np.str_('q'), np.str_('a')), -1), ((np.str_('q'), np.str_('b')), 1))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop*)
@@ -3645,7 +3611,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop*)
     1         4       8       1
     3         2       8       1
     <int64>   <int64> <int64> <int64>)
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3676,7 +3641,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).apply(func*, */*, *\**, *dt
     0          3
     1          16
     <int64>    <int64>
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).apply\_iter(func*, */*)
@@ -3705,7 +3669,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).apply\_iter(func*, */*)
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').apply_iter(lambda f: f['b'].sum()))
     (np.int64(3), np.int64(16))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).apply\_iter\_items(func*, */*)
@@ -3734,7 +3697,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).apply\_iter\_items(func*, *
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').apply_iter_items(lambda f: f['b'].sum()))
     ((np.int64(0), np.int64(3)), (np.int64(1), np.int64(16)))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3771,7 +3733,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).apply\_pool(func*, */*, *\*
     0          3
     1          16
     <int64>    <int64>
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
@@ -3794,7 +3755,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_func(lambda f: f.iloc[1:]).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -3817,7 +3777,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_func(lambda f: f.iloc[1:]).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -3848,7 +3807,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
     <Index>
     3         2       8       1
     <int64>   <int64> <int64> <int64>))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -3879,7 +3837,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
     <Index>
     3         2       8       1
     <int64>   <int64> <int64> <int64>)
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -3907,7 +3864,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\
     2       10      3       0
     3       2       8       1
     <int64> <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -3929,7 +3885,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_map_func(np.min).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -3951,7 +3906,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_map_func(np.min).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -3973,7 +3927,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_map_func(np.min).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -3995,7 +3948,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_map_func(np.min).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -4017,7 +3969,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group('c').reduce.from_map_func(np.min).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -4039,7 +3990,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_label_map({'b': np.min, 'a': np.max}).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -4061,7 +4011,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_label_map({'b': np.min, 'a': np.max}).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -4083,7 +4032,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_label_map({'b': np.min, 'a': np.max}).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -4105,7 +4053,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_label_map({'b': np.min, 'a': np.max}).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -4127,7 +4074,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(fun
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group('c').reduce.from_label_map({'b': np.min, 'a': np.max}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -4149,7 +4095,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -4171,7 +4116,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group('c').reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -4201,7 +4145,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
     b-min       8
     b-max       8
     <<U5>       <int64>))
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -4231,7 +4174,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
     b-min       8
     b-max       8
     <<U5>       <int64>)
-
     ```
 
 FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -4258,7 +4200,6 @@ FrameGO.iter\_group(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_m
     0       0       3
     1       8       8
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop*)
@@ -4280,7 +4221,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop*)
     (array([[11,  0,  0],
            [10,  3,  0]]), array([[4, 8, 1],
            [2, 8, 1]]))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4311,7 +4251,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).apply(func*, */*, *\
     0          24
     1          24
     <int64>    <int64>
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).apply\_iter(func*, */*)
@@ -4340,7 +4279,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).apply\_iter(func*, *
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').apply_iter(lambda a: np.sum(a)))
     (np.int64(24), np.int64(24))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).apply\_iter\_items(func*, */*)
@@ -4369,7 +4307,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).apply\_iter\_items(f
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').apply_iter_items(lambda a: np.sum(a)))
     ((np.int64(0), np.int64(24)), (np.int64(1), np.int64(24)))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4406,7 +4343,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).apply\_pool(func*, *
     0          24
     1          24
     <int64>    <int64>
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).keys(*)
@@ -4429,7 +4365,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_func(lambda a: a.sum(axis=0)).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -4452,7 +4387,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_func(lambda a: a.sum(axis=0)).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -4475,7 +4409,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_func(lambda a: a.sum(axis=0)).items())
     ((np.int64(0), array([21,  3,  0])), (np.int64(1), array([ 6, 16,  2])))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -4498,7 +4431,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_func(lambda a: a.sum(axis=0)).values())
     (array([21,  3,  0]), array([ 6, 16,  2]))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -4530,7 +4462,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     4       16
     5       2
     <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -4552,7 +4483,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_map_func(np.min).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -4574,7 +4504,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_map_func(np.min).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -4596,7 +4525,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_map_func(np.min).items())
     ((np.int64(0), array([10,  0,  0])), (np.int64(1), array([2, 8, 1])))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -4618,7 +4546,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_map_func(np.min).values())
     (array([10,  0,  0]), array([2, 8, 1]))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -4640,7 +4567,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_array('c').reduce.from_map_func(np.min).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -4662,7 +4588,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_label_map({'b': np.min, 'a': np.max}).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -4684,7 +4609,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_label_map({'b': np.min, 'a': np.max}).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -4706,7 +4630,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_label_map({'b': np.min, 'a': np.max}).items())
     ((np.int64(0), array([ 0, 11])), (np.int64(1), array([8, 4])))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -4728,7 +4651,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_label_map({'b': np.min, 'a': np.max}).values())
     (array([ 0, 11]), array([8, 4]))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -4750,7 +4672,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_array('c').reduce.from_label_map({'b': np.min, 'a': np.max}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -4772,7 +4693,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -4794,7 +4714,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -4816,7 +4735,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).items())
     ((np.int64(0), array([0, 3])), (np.int64(1), array([8, 8])))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -4838,7 +4756,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array('c').reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).values())
     (array([0, 3]), array([8, 8]))
-
     ```
 
 FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -4865,7 +4782,6 @@ FrameGO.iter\_group\_array(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     0       0       3
     1       8       8
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop*)
@@ -4887,7 +4803,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop*)
     ((np.int64(0), array([[11,  0,  0],
            [10,  3,  0]])), (np.int64(1), array([[4, 8, 1],
            [2, 8, 1]])))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4918,7 +4833,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).apply(func*, 
     0          24
     1          (2, 3)
     <int64>    <object>
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).apply\_iter(func*, */*)
@@ -4947,7 +4861,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).apply\_iter(f
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').apply_iter(lambda k, v: np.sum(v) if k == 0 else v.shape))
     (np.int64(24), (2, 3))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).apply\_iter\_items(func*, */*)
@@ -4976,7 +4889,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).apply\_iter\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').apply_iter_items(lambda k, v: np.sum(v) if k == 0 else v.shape))
     ((np.int64(0), np.int64(24)), (np.int64(1), (2, 3)))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -5015,7 +4927,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_func(lambda l, a: a.sum(axis=0)).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -5038,7 +4949,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_func(lambda l, a: a.sum(axis=0)).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -5061,7 +4971,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_func(lambda l, a: a.sum(axis=0)).items())
     ((np.int64(0), array([21,  3,  0])), (np.int64(1), array([ 6, 16,  2])))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -5084,7 +4993,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_func(lambda l, a: a.sum(axis=0)).values())
     (array([21,  3,  0]), array([ 6, 16,  2]))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -5116,7 +5024,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     4       16
     5       2
     <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -5138,7 +5045,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_map_func(lambda l, a: np.min(a)).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -5160,7 +5066,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_map_func(lambda l, a: np.min(a)).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -5182,7 +5087,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_map_func(lambda l, a: np.min(a)).items())
     ((np.int64(0), array([10,  0,  0])), (np.int64(1), array([2, 8, 1])))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -5204,7 +5108,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_map_func(lambda l, a: np.min(a)).values())
     (array([10,  0,  0]), array([2, 8, 1]))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -5226,7 +5129,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_array_items('c').reduce.from_map_func(lambda l, a: np.min(a)).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -5248,7 +5150,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -5270,7 +5171,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -5292,7 +5192,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).items())
     ((np.int64(0), array([ 0, 11])), (np.int64(1), array([8, 4])))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -5314,7 +5213,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).values())
     (array([ 0, 11]), array([8, 4]))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -5336,7 +5234,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_array_items('c').reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -5358,7 +5255,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -5380,7 +5276,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -5402,7 +5297,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).items())
     ((np.int64(0), array([0, 3])), (np.int64(1), array([8, 8])))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -5424,7 +5318,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_array_items('c').reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).values())
     (array([0, 3]), array([8, 8]))
-
     ```
 
 FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -5451,7 +5344,6 @@ FrameGO.iter\_group\_array\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_
     0       0       3
     1       8       8
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop*)
@@ -5481,7 +5373,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop*)
     1         4       8       1
     3         2       8       1
     <int64>   <int64> <int64> <int64>))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -5512,7 +5403,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).apply(func*, */*, *\
     0          3
     1          (2, 3)
     <int64>    <object>
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).apply\_iter(func*, */*)
@@ -5541,7 +5431,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).apply\_iter(func*, *
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').apply_iter(lambda k, v: v['b'].sum() if k == 0 else v.shape))
     (np.int64(3), (2, 3))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).apply\_iter\_items(func*, */*)
@@ -5570,7 +5459,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).apply\_iter\_items(f
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').apply_iter_items(lambda k, v: v['b'].sum() if k == 0 else v.shape))
     ((np.int64(0), np.int64(3)), (np.int64(1), (2, 3)))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -5609,7 +5497,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_func(lambda l, f: f.iloc[1:]).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -5632,7 +5519,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_func(lambda l, f: f.iloc[1:]).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -5663,7 +5549,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     <Index>
     3         2       8       1
     <int64>   <int64> <int64> <int64>))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -5694,7 +5579,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     <Index>
     3         2       8       1
     <int64>   <int64> <int64> <int64>)
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -5722,7 +5606,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_func(fu
     2       10      3       0
     3       2       8       1
     <int64> <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -5744,7 +5627,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_map_func(lambda l, s: np.min(s)).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -5766,7 +5648,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_map_func(lambda l, s: np.min(s)).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -5788,7 +5669,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_map_func(lambda l, s: np.min(s)).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -5810,7 +5690,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_map_func(lambda l, s: np.min(s)).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -5832,7 +5711,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_map\_fu
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_items('c').reduce.from_map_func(lambda l, s: np.min(s)).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -5854,7 +5732,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -5876,7 +5753,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -5898,7 +5774,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -5920,7 +5795,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -5942,7 +5816,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_items('c').reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -5964,7 +5837,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_label_pair_map({('b', 'b-min'): lambda l, s: np.min(s), ('b', 'b-max'): lambda l, s: np.max(s)}).keys())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -5986,7 +5858,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_items('c').reduce.from_label_pair_map({('b', 'b-min'): lambda l, s: np.min(s), ('b', 'b-max'): lambda l, s: np.max(s)}).__iter__())
     (np.int64(0), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -6016,7 +5887,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     b-min       8
     b-max       8
     <<U5>       <int64>))
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -6046,7 +5916,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     b-min       8
     b-max       8
     <<U5>       <int64>)
-
     ```
 
 FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -6073,7 +5942,6 @@ FrameGO.iter\_group\_items(*key*, */*, *\**, *axis*, *drop).reduce.from\_label\_
     0       0       3
     1       8       8
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_labels(*depth\_level*, */*, *\**, *axis*)
@@ -6103,7 +5971,6 @@ FrameGO.iter\_group\_labels(*depth\_level*, */*, *\**, *axis*)
     0                q     2       True   1517-04-01
     1                q     3       False  1517-06-30
     <int64>          <<U1> <int64> <bool> <datetime64[D]>)
-
     ```
 
 FrameGO.iter\_group\_labels(*depth\_level*, */*, *\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -6134,7 +6001,6 @@ FrameGO.iter\_group\_labels(*depth\_level*, */*, *\**, *axis).apply(func*, */*, 
     p        1
     q        1
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_group\_labels(*depth\_level*, */*, *\**, *axis).apply\_iter(func*, */*)
@@ -6163,7 +6029,6 @@ FrameGO.iter\_group\_labels(*depth\_level*, */*, *\**, *axis).apply\_iter(func*,
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.iter_group_labels(1).apply_iter(lambda f: f['b'].sum()))
     (np.int64(1), np.int64(1))
-
     ```
 
 FrameGO.iter\_group\_labels(*depth\_level*, */*, *\**, *axis).apply\_iter\_items(func*, */*)
@@ -6192,7 +6057,6 @@ FrameGO.iter\_group\_labels(*depth\_level*, */*, *\**, *axis).apply\_iter\_items
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.iter_group_labels(1).apply_iter_items(lambda f: f['b'].sum()))
     ((np.str_('p'), np.int64(1)), (np.str_('q'), np.int64(1)))
-
     ```
 
 FrameGO.iter\_group\_labels(*depth\_level*, */*, *\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -6230,7 +6094,6 @@ FrameGO.iter\_group\_labels\_array(*depth\_level*, */*, *\**, *axis*)
     (array([[10, False, datetime.date(1517, 1, 1)],
            [8, True, datetime.date(1517, 12, 31)]], dtype=object), array([[2, True, datetime.date(1517, 4, 1)],
            [3, False, datetime.date(1517, 6, 30)]], dtype=object))
-
     ```
 
 FrameGO.iter\_group\_labels\_array(*depth\_level*, */*, *\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -6261,7 +6124,6 @@ FrameGO.iter\_group\_labels\_array(*depth\_level*, */*, *\**, *axis).apply(func*
     p        18
     q        5
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_group\_labels\_array(*depth\_level*, */*, *\**, *axis).apply\_iter(func*, */*)
@@ -6290,7 +6152,6 @@ FrameGO.iter\_group\_labels\_array(*depth\_level*, */*, *\**, *axis).apply\_iter
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.iter_group_labels_array(1).apply_iter(lambda a: np.sum(a[:, 0])))
     (18, 5)
-
     ```
 
 FrameGO.iter\_group\_labels\_array(*depth\_level*, */*, *\**, *axis).apply\_iter\_items(func*, */*)
@@ -6319,7 +6180,6 @@ FrameGO.iter\_group\_labels\_array(*depth\_level*, */*, *\**, *axis).apply\_iter
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.iter_group_labels_array(1).apply_iter_items(lambda a: np.sum(a[:, 0])))
     ((np.str_('p'), 18), (np.str_('q'), 5))
-
     ```
 
 FrameGO.iter\_group\_labels\_array(*depth\_level*, */*, *\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -6357,7 +6217,6 @@ FrameGO.iter\_group\_labels\_array\_items(*depth\_level*, */*, *\**, *axis*)
     ((np.str_('p'), array([[10, False, datetime.date(1517, 1, 1)],
            [8, True, datetime.date(1517, 12, 31)]], dtype=object)), (np.str_('q'), array([[2, True, datetime.date(1517, 4, 1)],
            [3, False, datetime.date(1517, 6, 30)]], dtype=object)))
-
     ```
 
 FrameGO.iter\_group\_labels\_array\_items(*depth\_level*, */*, *\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -6388,7 +6247,6 @@ FrameGO.iter\_group\_labels\_array\_items(*depth\_level*, */*, *\**, *axis).appl
     p        -1
     q        5
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_group\_labels\_array\_items(*depth\_level*, */*, *\**, *axis).apply\_iter(func*, */*)
@@ -6417,7 +6275,6 @@ FrameGO.iter\_group\_labels\_array\_items(*depth\_level*, */*, *\**, *axis).appl
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.iter_group_labels_array_items(1).apply_iter(lambda k, v: np.sum(v[:, 0]) if k != 'p' else -1))
     (-1, 5)
-
     ```
 
 FrameGO.iter\_group\_labels\_array\_items(*depth\_level*, */*, *\**, *axis).apply\_iter\_items(func*, */*)
@@ -6446,7 +6303,6 @@ FrameGO.iter\_group\_labels\_array\_items(*depth\_level*, */*, *\**, *axis).appl
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.iter_group_labels_array_items(1).apply_iter_items(lambda k, v: np.sum(v[:, 0]) if k != 'p' else -1))
     ((np.str_('p'), -1), (np.str_('q'), 5))
-
     ```
 
 FrameGO.iter\_group\_labels\_array\_items(*depth\_level*, */*, *\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -6492,7 +6348,6 @@ FrameGO.iter\_group\_labels\_items(*depth\_level*, */*, *\**, *axis*)
     0                q     2       True   1517-04-01
     1                q     3       False  1517-06-30
     <int64>          <<U1> <int64> <bool> <datetime64[D]>))
-
     ```
 
 FrameGO.iter\_group\_labels\_items(*depth\_level*, */*, *\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -6523,7 +6378,6 @@ FrameGO.iter\_group\_labels\_items(*depth\_level*, */*, *\**, *axis).apply(func*
     p        1
     q        -1
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_group\_labels\_items(*depth\_level*, */*, *\**, *axis).apply\_iter(func*, */*)
@@ -6552,7 +6406,6 @@ FrameGO.iter\_group\_labels\_items(*depth\_level*, */*, *\**, *axis).apply\_iter
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.iter_group_labels_items(1).apply_iter(lambda k, v: v['b'].sum() if k == 'p' else -1))
     (np.int64(1), -1)
-
     ```
 
 FrameGO.iter\_group\_labels\_items(*depth\_level*, */*, *\**, *axis).apply\_iter\_items(func*, */*)
@@ -6581,7 +6434,6 @@ FrameGO.iter\_group\_labels\_items(*depth\_level*, */*, *\**, *axis).apply\_iter
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.iter_group_labels_items(1).apply_iter_items(lambda k, v: v['b'].sum() if k == 'p' else -1))
     ((np.str_('p'), np.int64(1)), (np.str_('q'), -1))
-
     ```
 
 FrameGO.iter\_group\_labels\_items(*depth\_level*, */*, *\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -6627,7 +6479,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis*)
     1         4       8       1
     3         2       8       1
     <int64>   <int64> <int64> <int64>)
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -6658,7 +6509,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply(func*
     0        3
     1        16
     <int64>  <int64>
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter(func*, */*)
@@ -6687,7 +6537,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 2).apply_iter(lambda f: f['b'].sum()))
     (np.int64(3), np.int64(16))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*, */*)
@@ -6716,7 +6565,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 2).apply_iter_items(lambda f: f['b'].sum()))
     ((np.int64(0), np.int64(3)), (np.int64(1), np.int64(16)))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -6755,7 +6603,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_func(lambda f: f.iloc[1:]).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -6778,7 +6625,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_func(lambda f: f.iloc[1:]).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -6811,7 +6657,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <IndexGO> a       b       c       <<U1>
     <Index>
     <int64>   <int64> <int64> <int64>))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -6844,7 +6689,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <IndexGO> a       b       c       <<U1>
     <Index>
     <int64>   <int64> <int64> <int64>)
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -6871,7 +6715,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <Index>
     3       2       8       1
     <int64> <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -6893,7 +6736,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_map_func(np.min).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -6915,7 +6757,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_map_func(np.min).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -6937,7 +6778,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_map_func(np.min).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -6959,7 +6799,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_map_func(np.min).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -6981,7 +6820,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_other(np.arange(len(f)) % 3).reduce.from_map_func(np.min).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -7003,7 +6841,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -7025,7 +6862,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -7047,7 +6883,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -7069,7 +6904,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -7091,7 +6925,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_other(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -7113,7 +6946,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -7135,7 +6967,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -7169,7 +7000,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     b-min       3
     b-max       3
     <<U5>       <int64>))
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -7203,7 +7033,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     b-min       3
     b-max       3
     <<U5>       <int64>)
-
     ```
 
 FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -7231,7 +7060,6 @@ FrameGO.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).reduce.from
     1       8       8
     2       3       3
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis*)
@@ -7253,7 +7081,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis*)
     (array([[11,  0,  0],
            [10,  3,  0]]), array([[4, 8, 1],
            [2, 8, 1]]))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -7284,7 +7111,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).appl
     0        24
     1        24
     <int64>  <int64>
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter(func*, */*)
@@ -7313,7 +7139,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).appl
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 2).apply_iter(lambda a: np.sum(a)))
     (np.int64(24), np.int64(24))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*, */*)
@@ -7342,7 +7167,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).appl
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 2).apply_iter_items(lambda a: np.sum(a)))
     ((np.int64(0), np.int64(24)), (np.int64(1), np.int64(24)))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -7381,7 +7205,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_func(lambda a: a.sum(axis=0)).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -7404,7 +7227,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_func(lambda a: a.sum(axis=0)).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -7427,7 +7249,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_func(lambda a: a.sum(axis=0)).items())
     ((np.int64(0), array([13,  8,  1])), (np.int64(1), array([4, 8, 1])), (np.int64(2), array([10,  3,  0])))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -7450,7 +7271,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_func(lambda a: a.sum(axis=0)).values())
     (array([13,  8,  1]), array([4, 8, 1]), array([10,  3,  0]))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -7485,7 +7305,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     7       3
     8       0
     <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -7507,7 +7326,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_map_func(np.min).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -7529,7 +7347,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_map_func(np.min).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -7551,7 +7368,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_map_func(np.min).items())
     ((np.int64(0), array([2, 0, 0])), (np.int64(1), array([4, 8, 1])), (np.int64(2), array([10,  3,  0])))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -7573,7 +7389,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_map_func(np.min).values())
     (array([2, 0, 0]), array([4, 8, 1]), array([10,  3,  0]))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -7595,7 +7410,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_map_func(np.min).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -7617,7 +7431,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -7639,7 +7452,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -7661,7 +7473,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).items())
     ((np.int64(0), array([ 0, 11])), (np.int64(1), array([8, 4])), (np.int64(2), array([ 3, 10])))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -7683,7 +7494,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).values())
     (array([ 0, 11]), array([8, 4]), array([ 3, 10]))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -7705,7 +7515,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_label_map({'b': np.min, 'a': np.max}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -7727,7 +7536,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -7749,7 +7557,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -7771,7 +7578,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).items())
     ((np.int64(0), array([0, 8])), (np.int64(1), array([8, 8])), (np.int64(2), array([3, 3])))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -7793,7 +7599,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).values())
     (array([0, 8]), array([8, 8]), array([3, 3]))
-
     ```
 
 FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -7821,7 +7626,6 @@ FrameGO.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).redu
     1       8       8
     2       3       3
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis*)
@@ -7843,7 +7647,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     ((np.int64(0), array([[11,  0,  0],
            [10,  3,  0]])), (np.int64(1), array([[4, 8, 1],
            [2, 8, 1]])))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -7874,7 +7677,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     0        24
     1        (2, 3)
     <int64>  <object>
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter(func*, */*)
@@ -7903,7 +7705,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 2).apply_iter(lambda k, v: np.sum(v) if k == 0 else v.shape))
     (np.int64(24), (2, 3))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*, */*)
@@ -7932,7 +7733,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 2).apply_iter_items(lambda k, v: np.sum(v) if k == 0 else v.shape))
     ((np.int64(0), np.int64(24)), (np.int64(1), (2, 3)))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -7971,7 +7771,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_func(lambda l, a: a.sum(axis=0)).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -7994,7 +7793,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_func(lambda l, a: a.sum(axis=0)).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -8017,7 +7815,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_func(lambda l, a: a.sum(axis=0)).items())
     ((np.int64(0), array([13,  8,  1])), (np.int64(1), array([4, 8, 1])), (np.int64(2), array([10,  3,  0])))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -8040,7 +7837,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_func(lambda l, a: a.sum(axis=0)).values())
     (array([13,  8,  1]), array([4, 8, 1]), array([10,  3,  0]))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -8075,7 +7871,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     7       3
     8       0
     <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -8097,7 +7892,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, a: np.min(a)).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -8119,7 +7913,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, a: np.min(a)).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -8141,7 +7934,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, a: np.min(a)).items())
     ((np.int64(0), array([2, 0, 0])), (np.int64(1), array([4, 8, 1])), (np.int64(2), array([10,  3,  0])))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -8163,7 +7955,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, a: np.min(a)).values())
     (array([2, 0, 0]), array([4, 8, 1]), array([10,  3,  0]))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -8185,7 +7976,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, a: np.min(a)).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -8207,7 +7997,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -8229,7 +8018,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -8251,7 +8039,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).items())
     ((np.int64(0), array([ 0, 11])), (np.int64(1), array([8, 4])), (np.int64(2), array([ 3, 10])))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -8273,7 +8060,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).values())
     (array([ 0, 11]), array([8, 4]), array([ 3, 10]))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -8295,7 +8081,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -8317,7 +8102,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -8339,7 +8123,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -8361,7 +8144,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).items())
     ((np.int64(0), array([0, 8])), (np.int64(1), array([8, 8])), (np.int64(2), array([3, 3])))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -8383,7 +8165,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_array_items(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).values())
     (array([0, 8]), array([8, 8]), array([3, 3]))
-
     ```
 
 FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -8411,7 +8192,6 @@ FrameGO.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axi
     1       8       8
     2       3       3
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis*)
@@ -8441,7 +8221,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis*)
     1         4       8       1
     3         2       8       1
     <int64>   <int64> <int64> <int64>))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -8472,7 +8251,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).appl
     0        3
     1        (2, 3)
     <int64>  <object>
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter(func*, */*)
@@ -8501,7 +8279,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).appl
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 2).apply_iter(lambda k, v: v['b'].sum() if k == 0 else v.shape))
     (np.int64(3), (2, 3))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*, */*)
@@ -8530,7 +8307,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).appl
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 2).apply_iter_items(lambda k, v: v['b'].sum() if k == 0 else v.shape))
     ((np.int64(0), np.int64(3)), (np.int64(1), (2, 3)))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -8569,7 +8345,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_func(lambda l, f: f.iloc[1:]).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -8592,7 +8367,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_func(lambda l, f: f.iloc[1:]).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -8625,7 +8399,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <IndexGO> a       b       c       <<U1>
     <Index>
     <int64>   <int64> <int64> <int64>))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -8658,7 +8431,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <IndexGO> a       b       c       <<U1>
     <Index>
     <int64>   <int64> <int64> <int64>)
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -8685,7 +8457,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <Index>
     3       2       8       1
     <int64> <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -8707,7 +8478,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, s: np.min(s)).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -8729,7 +8499,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, s: np.min(s)).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -8751,7 +8520,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, s: np.min(s)).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -8773,7 +8541,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, s: np.min(s)).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -8795,7 +8562,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_map_func(lambda l, s: np.min(s)).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -8817,7 +8583,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -8839,7 +8604,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -8861,7 +8625,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -8883,7 +8646,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -8905,7 +8667,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -8927,7 +8688,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): lambda l, s: np.min(s), ('b', 'b-max'): lambda l, s: np.max(s)}).keys())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -8949,7 +8709,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_group_other_items(np.arange(len(f)) % 3).reduce.from_label_pair_map({('b', 'b-min'): lambda l, s: np.min(s), ('b', 'b-max'): lambda l, s: np.max(s)}).__iter__())
     (np.int64(0), np.int64(1), np.int64(2))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -8983,7 +8742,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     b-min       3
     b-max       3
     <<U5>       <int64>))
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -9017,7 +8775,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     b-min       3
     b-max       3
     <<U5>       <int64>)
-
     ```
 
 FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -9045,7 +8802,6 @@ FrameGO.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).redu
     1       8       8
     2       3       3
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_series(*\**, *axis*)
@@ -9083,7 +8839,6 @@ FrameGO.iter\_series(*\**, *axis*)
     r           9
     s           12
     <<U1>       <int64>)
-
     ```
 
 FrameGO.iter\_series(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -9115,7 +8870,6 @@ FrameGO.iter\_series(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *inde
     b        13
     c        22
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_series(*\**, *axis).apply\_iter(func*, */*)
@@ -9144,7 +8898,6 @@ FrameGO.iter\_series(*\**, *axis).apply\_iter(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_series().apply_iter(lambda v: v.sum()))
     (np.int64(8), np.int64(13), np.int64(22))
-
     ```
 
 FrameGO.iter\_series(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -9173,7 +8926,6 @@ FrameGO.iter\_series(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_series().apply_iter_items(lambda v: v.sum()))
     ((np.str_('a'), np.int64(8)), (np.str_('b'), np.int64(13)), (np.str_('c'), np.int64(22)))
-
     ```
 
 FrameGO.iter\_series(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -9210,7 +8962,6 @@ FrameGO.iter\_series(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*,
     b        13
     c        22
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_series\_items(*\**, *axis*)
@@ -9248,7 +8999,6 @@ FrameGO.iter\_series\_items(*\**, *axis*)
     r           9
     s           12
     <<U1>       <int64>))
-
     ```
 
 FrameGO.iter\_series\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -9280,7 +9030,6 @@ FrameGO.iter\_series\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*
     b        -1
     c        22
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_series\_items(*\**, *axis).apply\_iter(func*, */*)
@@ -9309,7 +9058,6 @@ FrameGO.iter\_series\_items(*\**, *axis).apply\_iter(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_series_items().apply_iter(lambda k, v: v.sum() if k != 'b' else -1))
     (np.int64(8), -1, np.int64(22))
-
     ```
 
 FrameGO.iter\_series\_items(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -9338,7 +9086,6 @@ FrameGO.iter\_series\_items(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_series_items().apply_iter_items(lambda k, v: v.sum() if k != 'b' else -1))
     ((np.str_('a'), np.int64(8)), (np.str_('b'), -1), (np.str_('c'), np.int64(22)))
-
     ```
 
 FrameGO.iter\_series\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -9375,7 +9122,6 @@ FrameGO.iter\_series\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, 
     b        -1
     c        22
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor*)
@@ -9395,7 +9141,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_tuple())
     (Axis(p=np.int64(10), q=np.int64(-2), r=np.int64(0), s=np.int64(0)), Axis(p=np.int64(8), q=np.int64(-3), r=np.int64(8), s=np.int64(0)), Axis(p=np.int64(1), q=np.int64(0), r=np.int64(9), s=np.int64(12)))
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -9427,7 +9172,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).apply(func*, */*, *\**, *dtype*,
     b        5
     c        1
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).apply\_iter(func*, */*)
@@ -9456,7 +9200,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).apply\_iter(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_tuple().apply_iter(lambda v: v.p + v.q))
     (np.int64(8), np.int64(5), np.int64(1))
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).apply\_iter\_items(func*, */*)
@@ -9485,7 +9228,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).apply\_iter\_items(func*, */*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_tuple().apply_iter_items(lambda v: v.p + v.q))
     ((np.str_('a'), np.int64(8)), (np.str_('b'), np.int64(5)), (np.str_('c'), np.int64(1)))
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -9530,7 +9272,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_all(mapping*, */*, *\**, *d
     a        -1
     b        -2
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter(mapping*, */*)
@@ -9554,7 +9295,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter(mapping*, */*)
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple().map_all_iter({(2, 9): -1, (3, 8): -2}))
     (-1, -2)
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter\_items(mapping*, */*)
@@ -9578,7 +9318,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_all\_iter\_items(mapping*, 
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple().map_all_iter_items({(2, 9): -1, (3, 8): -2}))
     ((np.str_('a'), -1), (np.str_('b'), -2))
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_any(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -9603,7 +9342,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_any(mapping*, */*, *\**, *d
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple().map_any({(2, 9): -1}))
     (np.str_('a'), np.str_('b'))
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter(mapping*, */*)
@@ -9627,7 +9365,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter(mapping*, */*)
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple().map_any_iter({(2, 9): -1}))
     (-1, Axis(p=np.int64(3), q=np.int64(8)))
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter\_items(mapping*, */*)
@@ -9651,7 +9388,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_any\_iter\_items(mapping*, 
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple().map_any_iter_items({(2, 9): -1}))
     ((np.str_('a'), -1), (np.str_('b'), Axis(p=np.int64(3), q=np.int64(8))))
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_fill(mapping*, */*, *\**, *fill\_value*, *dtype*, *name*, *index\_constructor*)
@@ -9681,7 +9417,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_fill(mapping*, */*, *\**, *
     a        -1.0
     b        nan
     <<U1>    <float64>
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, */*, *\**, *fill\_value*)
@@ -9706,7 +9441,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, */*, *
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple().map_fill_iter({(2, 9): -1}, fill_value=np.nan))
     (-1, nan)
-
     ```
 
 FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapping*, */*, *\**, *fill\_value*)
@@ -9731,7 +9465,6 @@ FrameGO.iter\_tuple(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapping*,
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple().map_fill_iter_items({(2, 9): -1}, fill_value=np.nan))
     ((np.str_('a'), -1), (np.str_('b'), nan))
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor*)
@@ -9751,7 +9484,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor*)
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_tuple_items())
     ((np.str_('a'), Axis(p=np.int64(10), q=np.int64(-2), r=np.int64(0), s=np.int64(0))), (np.str_('b'), Axis(p=np.int64(8), q=np.int64(-3), r=np.int64(8), s=np.int64(0))), (np.str_('c'), Axis(p=np.int64(1), q=np.int64(0), r=np.int64(9), s=np.int64(12))))
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -9783,7 +9515,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).apply(func*, */*, *\**, *
     b        5
     c        -1
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter(func*, */*)
@@ -9803,7 +9534,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter(func*, */*)
     >>> f = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> tuple(f.iter_tuple_items().apply_iter(lambda k, v: v.p + v.q if k == 'b' else -1))
     (-1, np.int64(5), -1)
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter\_items(func*, */*)
@@ -9823,7 +9553,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_iter\_items(func*,
     >>> f = sf.FrameGO.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')
     >>> tuple(f.iter_tuple_items().apply_iter_items(lambda k, v: v.p + v.q if k == 'b' else -1))
     ((np.str_('a'), -1), (np.str_('b'), np.int64(5)), (np.str_('c'), -1))
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -9868,7 +9597,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all(mapping*, */*, *
     a        -1
     b        -2
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter(mapping*, */*)
@@ -9892,7 +9620,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter(mapping*, 
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple_items().map_all_iter({('a', (2, 9)): -1, ('b', (3, 8)): -2}))
     (-1, -2)
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter\_items(mapping*, */*)
@@ -9916,7 +9643,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_all\_iter\_items(map
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple_items().map_all_iter_items({('a', (2, 9)): -1, ('b', (3, 8)): -2}))
     ((np.str_('a'), -1), (np.str_('b'), -2))
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -9945,7 +9671,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any(mapping*, */*, *
     a        -1
     b        Axis(p=np.int64(3...
     <<U1>    <object>
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter(mapping*, */*)
@@ -9969,7 +9694,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter(mapping*, 
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple_items().map_any_iter({('a', (2, 9)): -1}))
     (-1, Axis(p=np.int64(3), q=np.int64(8)))
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter\_items(mapping*, */*)
@@ -9993,7 +9717,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any\_iter\_items(map
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple_items().map_any_iter_items({('a', (2, 9)): -1}))
     ((np.str_('a'), -1), (np.str_('b'), Axis(p=np.int64(3), q=np.int64(8))))
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill(mapping*, */*, *\**, *fill\_value*, *dtype*, *name*, *index\_constructor*)
@@ -10023,7 +9746,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill(mapping*, */*, 
     a        -1.0
     b        nan
     <<U1>    <float64>
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter(mapping*, */*, *\**, *fill\_value*)
@@ -10048,7 +9770,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter(mapping*,
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple_items().map_fill_iter({('a', (2, 9)): -1}, fill_value=np.nan))
     (-1, nan)
-
     ```
 
 FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter\_items(mapping*, */*, *\**, *fill\_value*)
@@ -10073,7 +9794,6 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_fill\_iter\_items(ma
     <<U1>        <int64> <int64>
     >>> tuple(f.iter_tuple_items().map_fill_iter_items({('a', (2, 9)): -1}, fill_value=np.nan))
     ((np.str_('a'), -1), (np.str_('b'), nan))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
@@ -10121,7 +9841,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     r            0       8       9
     s            0       0       12
     <<U1>        <int64> <int64> <int64>)
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -10166,7 +9885,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     r        9
     s        12
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -10208,7 +9926,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).apply_iter(lambda f: f.max().max()))
     (np.int64(10), np.int64(9), np.int64(12))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -10250,7 +9967,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).apply_iter_items(lambda f: f.max().max()))
     ((np.str_('q'), np.int64(10)), (np.str_('r'), np.int64(9)), (np.str_('s'), np.int64(12)))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -10315,7 +10031,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_func(lambda f: f.iloc[1:]).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -10351,7 +10066,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_func(lambda f: f.iloc[1:]).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -10399,7 +10113,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <Index>
     3            2       8       1
     <int64>      <int64> <int64> <int64>))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -10447,7 +10160,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <Index>
     3            2       8       1
     <int64>      <int64> <int64> <int64>)
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -10489,7 +10201,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     2       10      3       0
     3       2       8       1
     <int64> <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -10524,7 +10235,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_map_func(np.min).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -10559,7 +10269,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_map_func(np.min).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -10594,7 +10303,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_map_func(np.min).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -10629,7 +10337,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_map_func(np.min).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -10664,7 +10371,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> f.iter_window(size=2, step=1).reduce.from_map_func(np.min).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -10699,7 +10405,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -10734,7 +10439,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -10769,7 +10473,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -10804,7 +10507,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -10839,7 +10541,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> f.iter_window(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -10874,7 +10575,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -10909,7 +10609,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -10956,7 +10655,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     b-min       3
     b-max       8
     <<U5>       <int64>))
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -11003,7 +10701,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     b-min       3
     b-max       8
     <<U5>       <int64>)
-
     ```
 
 FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -11044,7 +10741,6 @@ FrameGO.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_fun
     2       3       8
     3       3       8
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
@@ -11080,7 +10776,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
            [-2, -3,  0]]), array([[-2, -3,  0],
            [ 0,  8,  9]]), array([[ 0,  8,  9],
            [ 0,  0, 12]]))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -11125,7 +10820,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     r        9
     s        12
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -11167,7 +10861,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).apply_iter(lambda a: np.max(a)))
     (np.int64(10), np.int64(9), np.int64(12))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -11209,7 +10902,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).apply_iter_items(lambda a: np.max(a)))
     ((np.str_('q'), np.int64(10)), (np.str_('r'), np.int64(9)), (np.str_('s'), np.int64(12)))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -11274,7 +10966,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_func(lambda a: a.sum(axis=0)).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -11310,7 +11001,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_func(lambda a: a.sum(axis=0)).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -11346,7 +11036,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_func(lambda a: a.sum(axis=0)).items())
     ((np.int64(1), array([15,  8,  1])), (np.int64(2), array([14, 11,  1])), (np.int64(3), array([12, 11,  1])))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -11382,7 +11071,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_func(lambda a: a.sum(axis=0)).values())
     (array([15,  8,  1]), array([14, 11,  1]), array([12, 11,  1]))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -11430,7 +11118,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     7       11
     8       1
     <int64> <int64>
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -11465,7 +11152,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_map_func(np.min).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -11500,7 +11186,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_map_func(np.min).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -11535,7 +11220,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_map_func(np.min).items())
     ((np.int64(1), array([4, 0, 0])), (np.int64(2), array([4, 3, 0])), (np.int64(3), array([2, 3, 0])))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -11570,7 +11254,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_map_func(np.min).values())
     (array([4, 0, 0]), array([4, 3, 0]), array([2, 3, 0]))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -11605,7 +11288,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> f.iter_window_array(size=2, step=1).reduce.from_map_func(np.min).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -11640,7 +11322,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -11675,7 +11356,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -11710,7 +11390,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).items())
     ((np.int64(1), array([ 0, 11])), (np.int64(2), array([ 3, 10])), (np.int64(3), array([ 3, 10])))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -11745,7 +11424,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).values())
     (array([ 0, 11]), array([ 3, 10]), array([ 3, 10]))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -11780,7 +11458,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> f.iter_window_array(size=2, step=1).reduce.from_label_map({'b': np.min, 'a': np.max}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -11815,7 +11492,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -11850,7 +11526,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -11885,7 +11560,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).items())
     ((np.int64(1), array([0, 8])), (np.int64(2), array([3, 8])), (np.int64(3), array([3, 8])))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -11920,7 +11594,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).values())
     (array([0, 8]), array([3, 8]), array([3, 8]))
-
     ```
 
 FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -11961,7 +11634,6 @@ FrameGO.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     2       3       8
     3       3       8
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
@@ -11997,7 +11669,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
            [-2, -3,  0]])), (np.str_('r'), array([[-2, -3,  0],
            [ 0,  8,  9]])), (np.str_('s'), array([[ 0,  8,  9],
            [ 0,  0, 12]])))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -12042,7 +11713,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     r        9
     s        0
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -12084,7 +11754,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).apply_iter(lambda k, v: np.max(v) if k == 'r' else np.min(v)))
     (np.int64(-3), np.int64(9), np.int64(0))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -12126,7 +11795,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).apply_iter_items(lambda k, v: np.max(v) if k == 'r' else np.min(v)))
     ((np.str_('q'), np.int64(-3)), (np.str_('r'), np.int64(9)), (np.str_('s'), np.int64(0)))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -12191,7 +11859,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_func(lambda l, a: a.sum(axis=0)).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -12227,7 +11894,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_func(lambda l, a: a.sum(axis=0)).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -12263,7 +11929,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_func(lambda l, a: a.sum(axis=0)).items())
     ((np.int64(1), array([15,  8,  1])), (np.int64(2), array([14, 11,  1])), (np.int64(3), array([12, 11,  1])))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -12299,7 +11964,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_func(lambda l, a: a.sum(axis=0)).values())
     (array([15,  8,  1]), array([14, 11,  1]), array([12, 11,  1]))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -12347,7 +12011,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     7       11
     8       1
     <int64> <int64>
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -12382,7 +12045,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_map_func(lambda l, a: np.min(a)).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -12417,7 +12079,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_map_func(lambda l, a: np.min(a)).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -12452,7 +12113,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_map_func(lambda l, a: np.min(a)).items())
     ((np.int64(1), array([4, 0, 0])), (np.int64(2), array([4, 3, 0])), (np.int64(3), array([2, 3, 0])))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -12487,7 +12147,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_map_func(lambda l, a: np.min(a)).values())
     (array([4, 0, 0]), array([4, 3, 0]), array([2, 3, 0]))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -12522,7 +12181,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> f.iter_window_array_items(size=2, step=1).reduce.from_map_func(lambda l, a: np.min(a)).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -12557,7 +12215,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -12592,7 +12249,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -12627,7 +12283,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).items())
     ((np.int64(1), array([ 0, 11])), (np.int64(2), array([ 3, 10])), (np.int64(3), array([ 3, 10])))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -12662,7 +12317,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).values())
     (array([ 0, 11]), array([ 3, 10]), array([ 3, 10]))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -12697,7 +12351,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> f.iter_window_array_items(size=2, step=1).reduce.from_label_map({'b': lambda l, a: np.min(a), 'a': lambda l, a: np.max(a)}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -12732,7 +12385,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -12767,7 +12419,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -12802,7 +12453,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).items())
     ((np.int64(1), array([0, 8])), (np.int64(2), array([3, 8])), (np.int64(3), array([3, 8])))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -12837,7 +12487,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_array_items(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): lambda l, a: np.min(a), ('b', 'b-max'): lambda l, a: np.max(a)}).values())
     (array([0, 8]), array([3, 8]), array([3, 8]))
-
     ```
 
 FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -12878,7 +12527,6 @@ FrameGO.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*
     2       3       8
     3       3       8
     <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
@@ -12926,7 +12574,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     r            0       8       9
     s            0       0       12
     <<U1>        <int64> <int64> <int64>))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -12971,7 +12618,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     r        9
     s        0
     <<U1>    <int64>
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -13013,7 +12659,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).apply_iter(lambda k, v: v.max().max() if k == 'r' else v.min().min()))
     (np.int64(-3), np.int64(9), np.int64(0))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -13055,7 +12700,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <<U1>        <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).apply_iter_items(lambda k, v: v.max().max() if k == 'r' else v.min().min()))
     ((np.str_('q'), np.int64(-3)), (np.str_('r'), np.int64(9)), (np.str_('s'), np.int64(0)))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -13120,7 +12764,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_func(lambda l, f: f.iloc[1:]).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -13156,7 +12799,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_func(lambda l, f: f.iloc[1:]).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).items(*)
@@ -13204,7 +12846,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <Index>
     3            2       8       1
     <int64>      <int64> <int64> <int64>))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).values(*)
@@ -13252,7 +12893,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <Index>
     3            2       8       1
     <int64>      <int64> <int64> <int64>)
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -13294,7 +12934,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     2       10      3       0
     3       2       8       1
     <int64> <int64> <int64> <int64>
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).keys(*)
@@ -13329,7 +12968,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_map_func(lambda l, s: np.min(s)).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -13364,7 +13002,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_map_func(lambda l, s: np.min(s)).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).items(*)
@@ -13399,7 +13036,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_map_func(lambda l, s: np.min(s)).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).values(*)
@@ -13434,7 +13070,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_map_func(lambda l, s: np.min(s)).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_map\_func(func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -13469,7 +13104,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> f.iter_window_items(size=2, step=1).reduce.from_map_func(lambda l, s: np.min(s)).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -13504,7 +13138,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -13539,7 +13172,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -13574,7 +13206,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).items())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -13609,7 +13240,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).values())
     ErrorInitSeries('non-static index cannot be assigned to Series')
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -13644,7 +13274,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> f.iter_window_items(size=2, step=1).reduce.from_label_map({'b': lambda l, s: np.min(s), 'a': lambda l, s: np.max(s)}).to_frame()
     ErrorInitFrame('Supplied `columns_constructor` does not match required static attribute: True')
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).keys(*)
@@ -13679,7 +13308,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): lambda l, s: np.min(s), ('b', 'b-max'): lambda l, s: np.max(s)}).keys())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -13714,7 +13342,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     <int64>      <int64> <int64> <int64>
     >>> tuple(f.iter_window_items(size=2, step=1).reduce.from_label_pair_map({('b', 'b-min'): lambda l, s: np.min(s), ('b', 'b-max'): lambda l, s: np.max(s)}).__iter__())
     (np.int64(1), np.int64(2), np.int64(3))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).items(*)
@@ -13761,7 +13388,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     b-min       3
     b-max       8
     <<U5>       <int64>))
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).values(*)
@@ -13808,7 +13434,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     b-min       3
     b-max       8
     <<U5>       <int64>)
-
     ```
 
 FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).reduce.from\_label\_pair\_map(func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -13849,7 +13474,6 @@ FrameGO.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *wind
     2       3       8
     3       3       8
     <int64> <int64> <int64>
-
     ```
 
 [FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ IndexGO.STATIC *= False*[#](#static_frame.IndexGO.STATIC "Link to this definitio
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.STATIC
     False
-
     ```
 
 IndexGO.depth *= 1*[#](#static_frame.IndexGO.depth "Link to this definition")
@@ -2536,7 +2539,6 @@ IndexGO.depth *= 1*[#](#static_frame.IndexGO.depth "Link to this definition")
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.depth
     1
-
     ```
 
 IndexGO.dtype[#](#static_frame.IndexGO.dtype "Link to this definition")
@@ -2549,7 +2551,6 @@ IndexGO.dtype[#](#static_frame.IndexGO.dtype "Link to this definition")
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.dtype
     <U1
-
     ```
 
 IndexGO.index\_types[#](#static_frame.IndexGO.index_types "Link to this definition")
@@ -2565,7 +2566,6 @@ IndexGO.index\_types[#](#static_frame.IndexGO.index_types "Link to this definiti
     <Index>
     x        <IndexGO>
     <<U1>    <object>
-
     ```
 
 IndexGO.memory[#](#static_frame.IndexGO.memory "Link to this definition")
@@ -2582,13 +2582,12 @@ IndexGO.memory[#](#static_frame.IndexGO.memory "Link to this definition")
     ```
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.memory
-              L    Lu    LM   LMu   LMD  LMDu  R    Ru    RM   RMu   RMD RMDu
-    Name      42   B     42   B     42   B     42   B     42   B     42  B
-    Map       520  B     520  B     520  B     520  B     520  B     520 B
-    Labels    132  B     148  B     20   B     132  B     148  B     20  B
-    Positions 112  B     128  B     0    B     8.22 KB    168  B     40  B
-    Total     1.38 KB    1.41 KB    1.16 KB    9.48 KB    1.45 KB    1.2 KB
-
+              L    Lu    LM   LMu   LMD  LMDu  R    Ru    RM  RMu   RMD  RMDu
+    Name      42   B     42   B     42   B     42   B     42  B     42   B
+    Map       520  B     520  B     520  B     520  B     520 B     520  B
+    Labels    132  B     148  B     20   B     132  B     148 B     20   B
+    Positions 112  B     128  B     0    B     8.22 KB    168 B     40   B
+    Total     1.43 KB    1.46 KB    1.21 KB    9.54 KB    1.5 KB    1.25 KB
     ```
 
 IndexGO.mloc[#](#static_frame.IndexGO.mloc "Link to this definition")
@@ -2604,7 +2603,6 @@ IndexGO.name[#](#static_frame.IndexGO.name "Link to this definition")
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.name
     x
-
     ```
 
 IndexGO.names[#](#static_frame.IndexGO.names "Link to this definition")
@@ -2614,7 +2612,6 @@ IndexGO.names[#](#static_frame.IndexGO.names "Link to this definition")
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.names
     ('x',)
-
     ```
 
 IndexGO.nbytes[#](#static_frame.IndexGO.nbytes "Link to this definition")
@@ -2627,7 +2624,6 @@ IndexGO.nbytes[#](#static_frame.IndexGO.nbytes "Link to this definition")
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.nbytes
     20
-
     ```
 
 IndexGO.ndim[#](#static_frame.IndexGO.ndim "Link to this definition")
@@ -2640,7 +2636,6 @@ IndexGO.ndim[#](#static_frame.IndexGO.ndim "Link to this definition")
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.ndim
     1
-
     ```
 
 IndexGO.positions[#](#static_frame.IndexGO.positions "Link to this definition")
@@ -2650,7 +2645,6 @@ IndexGO.positions[#](#static_frame.IndexGO.positions "Link to this definition")
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.positions
     [0 1 2 3 4]
-
     ```
 
 IndexGO.shape[#](#static_frame.IndexGO.shape "Link to this definition")
@@ -2663,7 +2657,6 @@ IndexGO.shape[#](#static_frame.IndexGO.shape "Link to this definition")
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.shape
     (5,)
-
     ```
 
 IndexGO.size[#](#static_frame.IndexGO.size "Link to this definition")
@@ -2676,7 +2669,6 @@ IndexGO.size[#](#static_frame.IndexGO.size "Link to this definition")
     >>> ix = sf.IndexGO(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> ix.size
     5
-
     ```
 
 [IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).to_bytes()
     b'IndexMillisecond\x00\xf4}l\x01\xf3\xff\xff\x00l\x8c\xef\x06\xf3\xff\xff\x00L\xfa;\x03\xf3\xff\xff'
-
     ```
 
 IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
@@ -2559,7 +2562,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).md5().hexdigest()
     0f03542be0557170a170367d3970067f
-
     ```
 
 IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
@@ -2578,7 +2580,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).sha256().hexdigest()
     5eb138be10461476ecf3878818cf29bd545c046cf5c7387eff7b9b08a4284e4e
-
     ```
 
 IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
@@ -2597,7 +2598,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).sha512().hexdigest()
     c4e48ff824741afe8dfe0c96dc668037759f83ddd785af3cd239259c4dc902bbc0c698f139f36e5dce89b5e2c7c21e7fa64d821094ef7d23011956da86fd0c9c
-
     ```
 
 IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
@@ -2616,7 +2616,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).sha3_256().hexdigest()
     fb07ee6e9b372ed460cd4a5f9249163c6e10ac23ba043684b3605c96f67201c3
-
     ```
 
 IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
@@ -2635,7 +2634,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).sha3_512().hexdigest()
     228b960a62a4989f1c15fc8d5113f65fe197853869bf326c9894e306e444d2dacfb6f6726be378c5b148d48c86db06a154bf11f05ea3d9005356442abbcb4d34
-
     ```
 
 IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
@@ -2654,7 +2652,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).shake_128().hexdigest(8)
     8885cc3ee9a8bd27
-
     ```
 
 IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
@@ -2673,7 +2670,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).shake_256().hexdigest(8)
     cd46b09d5dd385f6
-
     ```
 
 IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2692,7 +2688,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).blake2b().hexdigest()
     120a8ca43ad30fb30450a0a69b5466c1830e8313f6a87eed5b426bad6208836be223d6029128e407ed02249e2028c587d22881cfbed5eb414818c038917ef4e6
-
     ```
 
 IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2711,7 +2706,6 @@ IndexMillisecond.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <datetime64[ms]>
     >>> ix.via_hashlib(include_name=False).blake2s().hexdigest()
     7dc9c7ecee5b6eb50d6f5ee093048f44531aca68be2481c174a2e40b59706c98
-
     ```
 
 [IndexMillisecond](index_millisecond.md#api-detail-indexmillisecond): [Constructor](index_millisecond-constructor.md#api-detail-indexmillisecond-constructor) | [Exporter](index_millisecond-exporter.md#api-detail-indexmillisecond-exporter) | [Attribute](index_millisecond-attribute.md#api-detail-indexmillisecond-attribute) | [Method](index_millisecond-method.md#api-detail-indexmillisecond-method) | [Dictionary-Like](index_millisecond-dictionary_like.md#api-detail-indexmillisecond-dictionary-like) | [Display](index_millisecond-display.md#api-detail-indexmillisecond-display) | [Selector](index_millisecond-selector.md#api-detail-indexmillisecond-selector) | [Iterator](index_millisecond-iterator.md#api-detail-indexmillisecond-iterator) | [Operator Binary](index_millisecond-operator_binary.md#api-detail-indexmillisecond-operator-binary) | [Operator Unary](index_millisecond-operator_unary.md#api-detail-indexmillisecond-operator-unary) | [Accessor Values](index_millisecond-accessor_values.md#api-detail-indexmillisecond-accessor-values) | [Accessor Datetime](index_millisecond-accessor_datetime.md#api-detail-indexmillisecond-accessor-datetime) | [Accessor String](index_millisecond-accessor_string.md#api-detail-indexmillisecond-accessor-string) | [Accessor Regular Expression](index_millisecond-accessor_regular_expression.md#api-detail-indexmillisecond-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexmillisecond-accessor-hashlib) | [Accessor Type Clinic](index_millisecond-accessor_type_clinic.md#api-detail-indexmillisecond-accessor-type-clinic)

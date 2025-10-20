@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2553,7 +2557,6 @@ SeriesHE.to\_frame(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *col
     b       2
     c       8
     <<U1>   <int64>
-
     ```
 
 SeriesHE.to\_frame\_go(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[#](#static_frame.SeriesHE.to_frame_go "Link to this definition")
@@ -2585,7 +2588,6 @@ SeriesHE.to\_frame\_go(*\**, *axis=1*, *index=None*, *index\_constructor=None*, 
     b         2
     c         8
     <<U1>     <int64>
-
     ```
 
 SeriesHE.to\_frame\_he(*\**, *axis=1*, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *name=<object object>*)[#](#static_frame.SeriesHE.to_frame_he "Link to this definition")
@@ -2617,7 +2619,6 @@ SeriesHE.to\_frame\_he(*\**, *axis=1*, *index=None*, *index\_constructor=None*, 
     b         2
     c         8
     <<U1>     <int64>
-
     ```
 
 SeriesHE.to\_html(*config=None*, */*, *\**, *style\_config=<static\_frame.core.style\_config.StyleConfig object>*)[#](#static_frame.SeriesHE.to_html "Link to this definition")
@@ -2657,7 +2658,6 @@ SeriesHE.to\_pairs()[#](#static_frame.SeriesHE.to_pairs "Link to this definition
     <<U1>      <int64>
     >>> s.to_pairs()
     ((np.str_('a'), np.int64(10)), (np.str_('b'), np.int64(2)), (np.str_('c'), np.int64(8)))
-
     ```
 
 SeriesHE.to\_pandas()[#](#static_frame.SeriesHE.to_pandas "Link to this definition")
@@ -2680,7 +2680,6 @@ SeriesHE.to\_pandas()[#](#static_frame.SeriesHE.to_pandas "Link to this definiti
     b     2
     c     8
     dtype: int64
-
     ```
 
 SeriesHE.to\_series()[[source]](../_modules/static_frame/core/series.md#SeriesHE.to_series)[#](#static_frame.SeriesHE.to_series "Link to this definition")
@@ -2702,7 +2701,6 @@ SeriesHE.to\_series()[[source]](../_modules/static_frame/core/series.md#SeriesHE
     b        2
     c        8
     <<U1>    <int64>
-
     ```
 
 SeriesHE.to\_series\_he()[#](#static_frame.SeriesHE.to_series_he "Link to this definition")
@@ -2724,7 +2722,6 @@ SeriesHE.to\_series\_he()[#](#static_frame.SeriesHE.to_series_he "Link to this d
     b          2
     c          8
     <<U1>      <int64>
-
     ```
 
 SeriesHE.to\_visidata()[#](#static_frame.SeriesHE.to_visidata "Link to this definition")

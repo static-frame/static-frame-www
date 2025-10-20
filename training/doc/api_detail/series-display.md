@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2575,7 +2579,6 @@ Series.interface[#](#Series.interface "Link to this definition")
     via_mapping.values()                 Series   Accessor Mapping
     via_mapping.items()                  Series   Accessor Mapping
     <<U100>                              <<U6>    <<U27>               <<U83>
-
     ```
 
 Series.\_\_repr\_\_()[#](#static_frame.Series.__repr__ "Link to this definition")
@@ -2590,7 +2593,6 @@ Series.\_\_repr\_\_()[#](#static_frame.Series.__repr__ "Link to this definition"
     b        2
     c        8
     <<U1>    <int64>
-
     ```
 
 Series.\_\_str\_\_()[#](#static_frame.Series.__str__ "Link to this definition")
@@ -2605,7 +2607,6 @@ Series.\_\_str\_\_()[#](#static_frame.Series.__str__ "Link to this definition")
     b        2
     c        8
     <<U1>    <int64>
-
     ```
 
 Series.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_modules/static_frame/core/series.md#Series.display)[#](#static_frame.Series.display "Link to this definition")
@@ -2627,7 +2628,6 @@ Series.display(*config=None*, */*, *\**, *style\_config=None*)[[source]](../_mod
     a 10
     b 2
     c 8
-
     ```
 
 Series.display\_tall(*config=None*, */*)[#](#static_frame.Series.display_tall "Link to this definition")
@@ -2645,7 +2645,6 @@ Series.display\_tall(*config=None*, */*)[#](#static_frame.Series.display_tall "L
     b        2
     c        8
     <<U1>    <int64>
-
     ```
 
 Series.display\_wide(*config=None*, */*)[#](#static_frame.Series.display_wide "Link to this definition")
@@ -2663,7 +2662,6 @@ Series.display\_wide(*config=None*, */*)[#](#static_frame.Series.display_wide "L
     b        2
     c        8
     <<U1>    <int64>
-
     ```
 
 [Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | [Accessor Mapping](series-accessor_mapping.md#api-detail-series-accessor-mapping)

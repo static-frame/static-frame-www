@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2543,7 +2547,6 @@ Frame.reduce.from\_func(*func*, *\**, *fill\_value).keys(*)
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.reduce.from_func(lambda f: f.iloc[1:]).keys())
     ('x',)
-
     ```
 
 Frame.reduce.from\_func(*func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -2566,7 +2569,6 @@ Frame.reduce.from\_func(*func*, *\**, *fill\_value).\_\_iter\_\_(*)
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.reduce.from_func(lambda f: f.iloc[1:]).__iter__())
     ('x',)
-
     ```
 
 Frame.reduce.from\_func(*func*, *\**, *fill\_value).items(*)
@@ -2595,7 +2597,6 @@ Frame.reduce.from\_func(*func*, *\**, *fill\_value).items(*)
     1                p     8       True   1517-12-31
     1                q     3       False  1517-06-30
     <int64>          <<U1> <int64> <bool> <datetime64[D]>),)
-
     ```
 
 Frame.reduce.from\_func(*func*, *\**, *fill\_value).values(*)
@@ -2624,7 +2625,6 @@ Frame.reduce.from\_func(*func*, *\**, *fill\_value).values(*)
     1                p     8       True   1517-12-31
     1                q     3       False  1517-06-30
     <int64>          <<U1> <int64> <bool> <datetime64[D]>,)
-
     ```
 
 Frame.reduce.from\_func(*func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -2653,7 +2653,6 @@ Frame.reduce.from\_func(*func*, *\**, *fill\_value).to\_frame(\**, *index*, *col
     1                p     8       True   1517-12-31
     1                q     3       False  1517-06-30
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).keys(*)
@@ -2676,7 +2675,6 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).keys(*)
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.reduce.from_map_func(np.min).keys())
     ('x',)
-
     ```
 
 Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -2699,7 +2697,6 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).\_\_iter\_\_(*)
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.reduce.from_map_func(np.min).__iter__())
     ('x',)
-
     ```
 
 Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).items(*)
@@ -2727,7 +2724,6 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).items(*)
     b           False
     c           1517-01-01
     <<U1>       <object>),)
-
     ```
 
 Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).values(*)
@@ -2755,7 +2751,6 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).values(*)
     b           False
     c           1517-01-01
     <<U1>       <object>,)
-
     ```
 
 Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -2782,7 +2777,6 @@ Frame.reduce.from\_map\_func(*func*, *\**, *fill\_value).to\_frame(\**, *index*,
     <Index>
     x       2       False  1517-01-01
     <<U1>   <int64> <bool> <datetime64[D]>
-
     ```
 
 Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).keys(*)
@@ -2808,7 +2802,6 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).keys(*)
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.reduce.from_label_map({'b': np.min, 'a': np.max}).keys())
     ('x',)
-
     ```
 
 Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -2834,7 +2827,6 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.reduce.from_label_map({'b': np.min, 'a': np.max}).__iter__())
     ('x',)
-
     ```
 
 Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).items(*)
@@ -2864,7 +2856,6 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).items(*)
     b           False
     a           10
     <<U1>       <object>),)
-
     ```
 
 Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).values(*)
@@ -2894,7 +2885,6 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).values(*)
     b           False
     a           10
     <<U1>       <object>,)
-
     ```
 
 Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -2924,7 +2914,6 @@ Frame.reduce.from\_label\_map(*func\_map*, *\**, *fill\_value).to\_frame(\**, *i
     <Index>
     x       False  10
     <<U1>   <bool> <int64>
-
     ```
 
 Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).keys(*)
@@ -2950,7 +2939,6 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).keys(*)
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).keys())
     ('x',)
-
     ```
 
 Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).\_\_iter\_\_(*)
@@ -2976,7 +2964,6 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).\_\_iter\_\
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> tuple(f.reduce.from_label_pair_map({('b', 'b-min'): np.min, ('b', 'b-max'): np.max}).__iter__())
     ('x',)
-
     ```
 
 Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).items(*)
@@ -3006,7 +2993,6 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).items(*)
     b-min       False
     b-max       True
     <<U5>       <bool>),)
-
     ```
 
 Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).values(*)
@@ -3036,7 +3022,6 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).values(*)
     b-min       False
     b-max       True
     <<U5>       <bool>,)
-
     ```
 
 Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).to\_frame(\**, *index*, *columns*, *index\_constructor*, *columns\_constructor*, *name*, *consolidate\_blocks*)
@@ -3066,7 +3051,6 @@ Frame.reduce.from\_label\_pair\_map(*func\_map*, *\**, *fill\_value).to\_frame(\
     <Index>
     x       False  True
     <<U1>   <bool> <bool>
-
     ```
 
 [Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](#api-detail-frame-accessor-reduce)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2549,7 +2553,6 @@ FrameHE.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
     q         -1      1954
     r         1620    -1
     <<U1>     <int64> <int64>
-
     ```
 
 FrameHE.via\_dt.year
@@ -2577,7 +2580,6 @@ FrameHE.via\_dt.year
     q         1517    2021
     r         1517    2022
     <<U1>     <int64> <int64>
-
     ```
 
 FrameHE.via\_dt.year\_month
@@ -2605,7 +2607,6 @@ FrameHE.via\_dt.year\_month
     q         1517-12 2021-12
     r         1517-06 2022-06
     <<U1>     <<U7>   <<U7>
-
     ```
 
 FrameHE.via\_dt.year\_quarter
@@ -2633,7 +2634,6 @@ FrameHE.via\_dt.year\_quarter
     q         1517-Q4 2021-Q4
     r         1517-Q2 2022-Q2
     <<U1>     <<U7>   <<U7>
-
     ```
 
 FrameHE.via\_dt.month
@@ -2661,7 +2661,6 @@ FrameHE.via\_dt.month
     q         12      12
     r         6       6
     <<U1>     <int64> <int64>
-
     ```
 
 FrameHE.via\_dt.day
@@ -2689,7 +2688,6 @@ FrameHE.via\_dt.day
     q         31      31
     r         30      30
     <<U1>     <int64> <int64>
-
     ```
 
 FrameHE.via\_dt.hour
@@ -2717,7 +2715,6 @@ FrameHE.via\_dt.hour
     q         0       0
     r         0       0
     <<U1>     <int64> <int64>
-
     ```
 
 FrameHE.via\_dt.minute
@@ -2745,7 +2742,6 @@ FrameHE.via\_dt.minute
     q         0       0
     r         0       0
     <<U1>     <int64> <int64>
-
     ```
 
 FrameHE.via\_dt.second
@@ -2773,7 +2769,6 @@ FrameHE.via\_dt.second
     q         0       0
     r         0       0
     <<U1>     <int64> <int64>
-
     ```
 
 FrameHE.via\_dt.weekday
@@ -2801,7 +2796,6 @@ FrameHE.via\_dt.weekday
     q         0       4
     r         5       3
     <<U1>     <int64> <int64>
-
     ```
 
 FrameHE.via\_dt.quarter
@@ -2829,7 +2823,6 @@ FrameHE.via\_dt.quarter
     q         4       4
     r         2       2
     <<U1>     <int64> <int64>
-
     ```
 
 FrameHE.via\_dt.is\_month\_end
@@ -2857,7 +2850,6 @@ FrameHE.via\_dt.is\_month\_end
     q         True   True
     r         True   True
     <<U1>     <bool> <bool>
-
     ```
 
 FrameHE.via\_dt.is\_month\_start
@@ -2885,7 +2877,6 @@ FrameHE.via\_dt.is\_month\_start
     q         False  False
     r         False  False
     <<U1>     <bool> <bool>
-
     ```
 
 FrameHE.via\_dt.is\_year\_end
@@ -2913,7 +2904,6 @@ FrameHE.via\_dt.is\_year\_end
     q         True   True
     r         False  False
     <<U1>     <bool> <bool>
-
     ```
 
 FrameHE.via\_dt.is\_year\_start
@@ -2941,7 +2931,6 @@ FrameHE.via\_dt.is\_year\_start
     q         False  False
     r         False  False
     <<U1>     <bool> <bool>
-
     ```
 
 FrameHE.via\_dt.is\_quarter\_end
@@ -2969,7 +2958,6 @@ FrameHE.via\_dt.is\_quarter\_end
     q         True   True
     r         True   True
     <<U1>     <bool> <bool>
-
     ```
 
 FrameHE.via\_dt.is\_quarter\_start
@@ -2997,7 +2985,6 @@ FrameHE.via\_dt.is\_quarter\_start
     q         False  False
     r         False  False
     <<U1>     <bool> <bool>
-
     ```
 
 FrameHE.via\_dt.timetuple
@@ -3025,7 +3012,6 @@ FrameHE.via\_dt.timetuple
     q         time.struct_time(... time.struct_time(...
     r         time.struct_time(... time.struct_time(...
     <<U1>     <object>             <object>
-
     ```
 
 FrameHE.via\_dt.isoformat(*\**, *sep*, *timespec*)
@@ -3053,7 +3039,6 @@ FrameHE.via\_dt.isoformat(*\**, *sep*, *timespec*)
     q         1517-12-31 2021-12-31
     r         1517-06-30 2022-06-30
     <<U1>     <<U10>     <<U10>
-
     ```
 
 FrameHE.via\_dt.fromisoformat
@@ -3081,7 +3066,6 @@ FrameHE.via\_dt.fromisoformat
     q         1517-12-31 2021-12-31
     r         1517-06-30 2022-06-30
     <<U1>     <object>   <object>
-
     ```
 
 FrameHE.via\_dt.strftime(*format*, */*)
@@ -3109,7 +3093,6 @@ FrameHE.via\_dt.strftime(*format*, */*)
     q         Monday | December Friday | December
     r         Saturday | June   Thursday | June
     <<U1>     <<U17>            <<U17>
-
     ```
 
 FrameHE.via\_dt.strptime(*format*, */*)
@@ -3137,7 +3120,6 @@ FrameHE.via\_dt.strptime(*format*, */*)
     q         1517-12-31 00:00:00 2021-12-31 00:00:00
     r         1517-06-30 00:00:00 2022-06-30 00:00:00
     <<U1>     <object>            <object>
-
     ```
 
 FrameHE.via\_dt.strpdate(*format*, */*)
@@ -3165,7 +3147,6 @@ FrameHE.via\_dt.strpdate(*format*, */*)
     q         1517-12-31 2021-12-31
     r         1517-06-30 2022-06-30
     <<U1>     <object>   <object>
-
     ```
 
 [FrameHE](frame_he.md#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.md#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.md#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](frame_he-assignment.md#api-detail-framehe-assignment) | [Selector](frame_he-selector.md#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](frame_he-accessor_type_clinic.md#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)

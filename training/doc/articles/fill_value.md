@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
   + [Faster DataFrame Serialization](serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
 * [Faster DataFrame Serialization](serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2535,13 +2539,11 @@ For example, given a DataFrame with three columns typed object, integer, and Boo
    x  y      z
 0  a  1   True
 1  b  2  False
-
 ```
 
 ```
 >>> df.dtypes.tolist()
 [dtype('O'), dtype('int64'), dtype('bool')]
-
 ```
 
 ```
@@ -2550,13 +2552,11 @@ For example, given a DataFrame with three columns typed object, integer, and Boo
 1    b  2.0  False
 0    a  1.0   True
 2  NaN  NaN    NaN
-
 ```
 
 ```
 >>> df.reindex((1, 0, 2)).dtypes.tolist()
 [dtype('O'), dtype('float64'), dtype('O')]
-
 ```
 
 Columnar type degradation is often detrimental. The pre-existing columnar type was probably appropriate for the data; having that type unnecessarily changed simply due to reindexing is often unexpected. Going from one C-level NumPy type to another, such as from int to float, might be tolerable. But when going from C-level NumPy types to arrays of Python objects (object dtypes), performance will be degraded. When reindexing with Pandas, there is no way to avoid this problem.
@@ -2570,7 +2570,6 @@ All examples use Pandas 1.4.3 and StaticFrame 0.9.6. Imports use the following c
 ```
 >>> import pandas as pd
 >>> import static_frame as sf
-
 ```
 
 We can reproduce Pandas behavior in StaticFrame by reindexing the same DataFrame with a single fill value, NaN. This results in the same columnar types as Pandas. Notice that StaticFrame, by default, displays the dtype for each column, making columnar type degradation easily apparent.
@@ -2584,7 +2583,6 @@ We can reproduce Pandas behavior in StaticFrame by reindexing the same DataFrame
 0       a     1       True
 1       b     2       False
 <int64> <<U1> <int64> <bool>
-
 ```
 
 ```
@@ -2596,7 +2594,6 @@ We can reproduce Pandas behavior in StaticFrame by reindexing the same DataFrame
 0       a        1.0       True
 2       nan      nan       nan
 <int64> <object> <float64> <object>
-
 ```
 
 One way to avoid type degradation in reindexing is to provide a fill value per column. With StaticFrame, fill values can be provide with a list, providing one value per column:
@@ -2610,7 +2607,6 @@ One way to avoid type degradation in reindexing is to provide a fill value per c
 0       a     1       True
 2             0       False
 <int64> <<U1> <int64> <bool>
-
 ```
 
 Alternatively, a dictionary can be used to provide a mapping of column label to fill value. If a label is not provided, the default (NaN) will be provided.
@@ -2624,7 +2620,6 @@ Alternatively, a dictionary can be used to provide a mapping of column label to 
 0       a     1.0       True
 2             nan       False
 <int64> <<U1> <float64> <bool>
-
 ```
 
 The previous examples all require an explicit value per column, providing maximum specificity. In many cases (and in particular for larger DataFrames), a more general way of specifying fill values is necessary.
@@ -2661,7 +2656,6 @@ Returning to the previous reindexing example, we see the convenience of using th
 0       a     1       True
 1       b     2       False
 <int64> <<U1> <int64> <bool>
-
 ```
 
 ```
@@ -2673,7 +2667,6 @@ Returning to the previous reindexing example, we see the convenience of using th
 0       a     1       True
 2             0       False
 <int64> <<U1> <int64> <bool>
-
 ```
 
 If we need to deviate from the supplied `FillValueAuto` defaults, an instance can be created, specifying fill values per dtype kind. The key-word arguments of the initializer are the single-character dtype kind labels.
@@ -2687,14 +2680,12 @@ If we need to deviate from the supplied `FillValueAuto` defaults, an instance ca
 0       a     1       True
 2       x     -1      None
 <int64> <<U1> <int64> <object>
-
 ```
 
 In StaticFrame, the same multitude of fill value types are accepted nearly everywhere fill values are needed. For example, in shifting data, fill values must be provided; but when shifting an entire DataFrame of heterogeneous types, one fill value is not enough. As shown below, the default `fill_value`, NaN, forces all columnar types to either object or float.
 
 ```
 >>> f = sf.Frame.from_records((('a', 1, True, 'p', 23.2), ('b', 2, False, 'q', 85.1), ('c', 3, True, 'r', 1.23)), columns=tuple('abcde'))
-
 ```
 
 ```
@@ -2706,7 +2697,6 @@ In StaticFrame, the same multitude of fill value types are accepted nearly every
 1       nan      nan       nan      nan      nan
 2       a        1.0       True     p        23.2
 <int64> <object> <float64> <object> <object> <float64>
-
 ```
 
 As before, using a `FillValueAuto` instance permits a general fill value specification that completely avoids columnar type degradation.
@@ -2720,7 +2710,6 @@ As before, using a `FillValueAuto` instance permits a general fill value specifi
 1             0       False        0.0
 2       a     1       True   p     23.2
 <int64> <<U1> <int64> <bool> <<U1> <float64>
-
 ```
 
 A fill value is also needed in many applications of binary operators. In general, binary operations on labelled data force operands to reindex to a union index, potentially introducing missing values. If the missing value is only NaN, the resulting columnar types might be recast.
@@ -2734,7 +2723,6 @@ When multiplying two DataFrames, each with a column of floats and a column of in
 ```
 >>> f1 = sf.Frame.from_records(((10.2, 20), (2.4, 4)), index=('a', 'b'))
 >>> f2 = sf.Frame.from_records(((3.4, 1), (8.2, 0)), index=('b', 'c'))
-
 ```
 
 ```
@@ -2746,7 +2734,6 @@ a       nan       nan
 b       8.16      4.0
 c       nan       nan
 <<U1>   <float64> <float64>
-
 ```
 
 By using `via_fill_value` and `FillValueAuto`, we can preserve columnar types, even when reindexing is required, and continue to use binary operators in expressions.
@@ -2760,7 +2747,6 @@ a       nan       0
 b       8.16      4
 c       nan       0
 <<U1>   <float64> <int64>
-
 ```
 
 Examples with just a few columns, as used above, do not fully demonstrate the power of `FillValueAuto`: when dealing with heterogeneously typed DataFrames of hundreds or thousands of columns, the generality of specification provides a concise and powerful tool.

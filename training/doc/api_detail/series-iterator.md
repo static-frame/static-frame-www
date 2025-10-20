@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ Series.iter\_element
     <<U1>    <int64>
     >>> tuple(s.iter_element())
     (np.int64(2), np.int64(8), np.int64(19), np.int64(34), np.int64(54))
-
     ```
 
 Series.iter\_element(*).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2574,7 +2577,6 @@ Series.iter\_element(*).apply(func*, */*, *\**, *dtype*, *name*, *index\_constru
     d        True
     e        True
     <<U1>    <bool>
-
     ```
 
 Series.iter\_element(*).apply\_iter(func*, */*)
@@ -2603,7 +2605,6 @@ Series.iter\_element(*).apply\_iter(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element().apply_iter(lambda e: e > 10))
     (np.False_, np.False_, np.True_, np.True_, np.True_)
-
     ```
 
 Series.iter\_element(*).apply\_iter\_items(func*, */*)
@@ -2632,7 +2633,6 @@ Series.iter\_element(*).apply\_iter\_items(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element().apply_iter_items(lambda e: e > 10))
     ((np.str_('a'), np.False_), (np.str_('b'), np.False_), (np.str_('c'), np.True_), (np.str_('d'), np.True_), (np.str_('e'), np.True_))
-
     ```
 
 Series.iter\_element(*).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2672,7 +2672,6 @@ Series.iter\_element(*).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_c
     d        True
     e        True
     <<U1>    <bool>
-
     ```
 
 Series.iter\_element(*).map\_all(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -2702,7 +2701,6 @@ Series.iter\_element(*).map\_all(mapping*, */*, *\**, *dtype*, *name*, *index\_c
     b        200
     c        45
     <<U1>    <int64>
-
     ```
 
 Series.iter\_element(*).map\_all\_iter(mapping*, */*)
@@ -2726,7 +2724,6 @@ Series.iter\_element(*).map\_all\_iter(mapping*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element().map_all_iter({2: 200, 10: -1, 8: 45}))
     (-1, 200, 45)
-
     ```
 
 Series.iter\_element(*).map\_all\_iter\_items(mapping*, */*)
@@ -2750,7 +2747,6 @@ Series.iter\_element(*).map\_all\_iter\_items(mapping*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element().map_all_iter_items({2: 200, 10: -1, 8: 45}))
     ((np.str_('a'), -1), (np.str_('b'), 200), (np.str_('c'), 45))
-
     ```
 
 Series.iter\_element(*).map\_any(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -2780,7 +2776,6 @@ Series.iter\_element(*).map\_any(mapping*, */*, *\**, *dtype*, *name*, *index\_c
     b        2
     c        45
     <<U1>    <int64>
-
     ```
 
 Series.iter\_element(*).map\_any\_iter(mapping*, */*)
@@ -2804,7 +2799,6 @@ Series.iter\_element(*).map\_any\_iter(mapping*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element().map_any_iter({10: -1, 8: 45}))
     (-1, np.int64(2), 45)
-
     ```
 
 Series.iter\_element(*).map\_any\_iter\_items(mapping*, */*)
@@ -2828,7 +2822,6 @@ Series.iter\_element(*).map\_any\_iter\_items(mapping*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element().map_any_iter_items({10: -1, 8: 45}))
     ((np.str_('a'), -1), (np.str_('b'), np.int64(2)), (np.str_('c'), 45))
-
     ```
 
 Series.iter\_element(*).map\_fill(mapping*, */*, *\**, *fill\_value*, *dtype*, *name*, *index\_constructor*)
@@ -2859,7 +2852,6 @@ Series.iter\_element(*).map\_fill(mapping*, */*, *\**, *fill\_value*, *dtype*, *
     b        nan
     c        45.0
     <<U1>    <float64>
-
     ```
 
 Series.iter\_element(*).map\_fill\_iter(mapping*, */*, *\**, *fill\_value*)
@@ -2884,7 +2876,6 @@ Series.iter\_element(*).map\_fill\_iter(mapping*, */*, *\**, *fill\_value*)
     <<U1>    <int64>
     >>> tuple(s.iter_element().map_fill_iter({10: -1, 8: 45}, fill_value=np.nan))
     (-1, nan, 45)
-
     ```
 
 Series.iter\_element(*).map\_fill\_iter\_items(mapping*, */*, *\**, *fill\_value*)
@@ -2909,7 +2900,6 @@ Series.iter\_element(*).map\_fill\_iter\_items(mapping*, */*, *\**, *fill\_value
     <<U1>    <int64>
     >>> tuple(s.iter_element().map_fill_iter_items({10: -1, 8: 45}, fill_value=np.nan))
     ((np.str_('a'), -1), (np.str_('b'), nan), (np.str_('c'), 45))
-
     ```
 
 Series.iter\_element\_items
@@ -2929,7 +2919,6 @@ Series.iter\_element\_items
     <<U1>    <int64>
     >>> tuple(s.iter_element_items())
     ((np.str_('a'), np.int64(2)), (np.str_('b'), np.int64(8)), (np.str_('c'), np.int64(19)), (np.str_('d'), np.int64(34)), (np.str_('e'), np.int64(54)))
-
     ```
 
 Series.iter\_element\_items(*).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2963,7 +2952,6 @@ Series.iter\_element\_items(*).apply(func*, */*, *\**, *dtype*, *name*, *index\_
     d        1
     e        1
     <<U1>    <int64>
-
     ```
 
 Series.iter\_element\_items(*).apply\_iter(func*, */*)
@@ -2992,7 +2980,6 @@ Series.iter\_element\_items(*).apply\_iter(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element_items().apply_iter(lambda l, e: e > 10 and l != 'e'))
     (np.False_, np.False_, True, True, False)
-
     ```
 
 Series.iter\_element\_items(*).apply\_iter\_items(func*, */*)
@@ -3021,7 +3008,6 @@ Series.iter\_element\_items(*).apply\_iter\_items(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element_items().apply_iter_items(lambda l, e: e > 10 and l != 'e'))
     ((np.str_('a'), np.False_), (np.str_('b'), np.False_), (np.str_('c'), True), (np.str_('d'), True), (np.str_('e'), False))
-
     ```
 
 Series.iter\_element\_items(*).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3061,7 +3047,6 @@ Series.iter\_element\_items(*).apply\_pool(func*, */*, *\**, *dtype*, *name*, *i
     d        True
     e        False
     <<U1>    <bool>
-
     ```
 
 Series.iter\_element\_items(*).map\_all(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -3091,7 +3076,6 @@ Series.iter\_element\_items(*).map\_all(mapping*, */*, *\**, *dtype*, *name*, *i
     b        200
     c        45
     <<U1>    <int64>
-
     ```
 
 Series.iter\_element\_items(*).map\_all\_iter(mapping*, */*)
@@ -3115,7 +3099,6 @@ Series.iter\_element\_items(*).map\_all\_iter(mapping*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element_items().map_all_iter({('b', 2): 200, ('a', 10): -1, ('c', 8): 45}))
     (-1, 200, 45)
-
     ```
 
 Series.iter\_element\_items(*).map\_all\_iter\_items(mapping*, */*)
@@ -3139,7 +3122,6 @@ Series.iter\_element\_items(*).map\_all\_iter\_items(mapping*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element_items().map_all_iter_items({('b', 2): 200, ('a', 10): -1, ('c', 8): 45}))
     ((np.str_('a'), -1), (np.str_('b'), 200), (np.str_('c'), 45))
-
     ```
 
 Series.iter\_element\_items(*).map\_any(mapping*, */*, *\**, *dtype*, *name*, *index\_constructor*)
@@ -3169,7 +3151,6 @@ Series.iter\_element\_items(*).map\_any(mapping*, */*, *\**, *dtype*, *name*, *i
     b        2
     c        45
     <<U1>    <int64>
-
     ```
 
 Series.iter\_element\_items(*).map\_any\_iter(mapping*, */*)
@@ -3193,7 +3174,6 @@ Series.iter\_element\_items(*).map\_any\_iter(mapping*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element_items().map_any_iter({('a', 10): -1, ('c', 8): 45}))
     (-1, np.int64(2), 45)
-
     ```
 
 Series.iter\_element\_items(*).map\_any\_iter\_items(mapping*, */*)
@@ -3217,7 +3197,6 @@ Series.iter\_element\_items(*).map\_any\_iter\_items(mapping*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_element_items().map_any_iter_items({('a', 10): -1, ('c', 8): 45}))
     ((np.str_('a'), -1), (np.str_('b'), np.int64(2)), (np.str_('c'), 45))
-
     ```
 
 Series.iter\_element\_items(*).map\_fill(mapping*, */*, *\**, *fill\_value*, *dtype*, *name*, *index\_constructor*)
@@ -3248,7 +3227,6 @@ Series.iter\_element\_items(*).map\_fill(mapping*, */*, *\**, *fill\_value*, *dt
     b        nan
     c        45.0
     <<U1>    <float64>
-
     ```
 
 Series.iter\_element\_items(*).map\_fill\_iter(mapping*, */*, *\**, *fill\_value*)
@@ -3273,7 +3251,6 @@ Series.iter\_element\_items(*).map\_fill\_iter(mapping*, */*, *\**, *fill\_value
     <<U1>    <int64>
     >>> tuple(s.iter_element_items().map_fill_iter({('a', 10): -1, ('c', 8): 45}, fill_value=np.nan))
     (-1, nan, 45)
-
     ```
 
 Series.iter\_element\_items(*).map\_fill\_iter\_items(mapping*, */*, *\**, *fill\_value*)
@@ -3298,7 +3275,6 @@ Series.iter\_element\_items(*).map\_fill\_iter\_items(mapping*, */*, *\**, *fill
     <<U1>    <int64>
     >>> tuple(s.iter_element_items().map_fill_iter_items({('a', 10): -1, ('c', 8): 45}, fill_value=np.nan))
     ((np.str_('a'), -1), (np.str_('b'), nan), (np.str_('c'), 45))
-
     ```
 
 Series.iter\_group(*\**, *axis*)
@@ -3329,7 +3305,6 @@ Series.iter\_group(*\**, *axis*)
     <Index>
     c        19
     <<U1>    <int64>)
-
     ```
 
 Series.iter\_group(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3361,7 +3336,6 @@ Series.iter\_group(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\
     8        16
     19       19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group(*\**, *axis).apply\_iter(func*, */*)
@@ -3390,7 +3364,6 @@ Series.iter\_group(*\**, *axis).apply\_iter(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group().apply_iter(lambda s: s.sum()))
     (np.int64(-4), np.int64(16), np.int64(19))
-
     ```
 
 Series.iter\_group(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -3419,7 +3392,6 @@ Series.iter\_group(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group().apply_iter_items(lambda s: s.sum()))
     ((np.int64(-2), np.int64(-4)), (np.int64(8), np.int64(16)), (np.int64(19), np.int64(19)))
-
     ```
 
 Series.iter\_group(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3457,7 +3429,6 @@ Series.iter\_group(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *
     8        16
     19       19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_array(*\**, *axis*)
@@ -3477,7 +3448,6 @@ Series.iter\_group\_array(*\**, *axis*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_array())
     (array([-2, -2]), array([8, 8]), array([19]))
-
     ```
 
 Series.iter\_group\_array(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3509,7 +3479,6 @@ Series.iter\_group\_array(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, 
     8        16
     19       19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_array(*\**, *axis).apply\_iter(func*, */*)
@@ -3538,7 +3507,6 @@ Series.iter\_group\_array(*\**, *axis).apply\_iter(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_array().apply_iter(lambda s: s.sum()))
     (np.int64(-4), np.int64(16), np.int64(19))
-
     ```
 
 Series.iter\_group\_array(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -3567,7 +3535,6 @@ Series.iter\_group\_array(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_array().apply_iter_items(lambda s: s.sum()))
     ((np.int64(-2), np.int64(-4)), (np.int64(8), np.int64(16)), (np.int64(19), np.int64(19)))
-
     ```
 
 Series.iter\_group\_array(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3605,7 +3572,6 @@ Series.iter\_group\_array(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *n
     8        16
     19       19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_array\_items(*\**, *axis*)
@@ -3624,7 +3590,6 @@ Series.iter\_group\_array\_items(*\**, *axis*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_array_items())
     ((np.int64(-2), array([-2, -2])), (np.int64(8), array([8, 8])), (np.int64(19), array([19])))
-
     ```
 
 Series.iter\_group\_array\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3655,7 +3620,6 @@ Series.iter\_group\_array\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *
     8        (2,)
     19       19
     <int64>  <object>
-
     ```
 
 Series.iter\_group\_array\_items(*\**, *axis).apply\_iter(func*, */*)
@@ -3683,7 +3647,6 @@ Series.iter\_group\_array\_items(*\**, *axis).apply\_iter(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_array_items().apply_iter(lambda l, s: s.sum() if l != 8 else -1))
     (np.int64(-4), -1, np.int64(19))
-
     ```
 
 Series.iter\_group\_array\_items(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -3711,7 +3674,6 @@ Series.iter\_group\_array\_items(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_array_items().apply_iter_items(lambda l, s: s.sum() if l != 8 else -1))
     ((np.int64(-2), np.int64(-4)), (np.int64(8), -1), (np.int64(19), np.int64(19)))
-
     ```
 
 Series.iter\_group\_array\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3748,7 +3710,6 @@ Series.iter\_group\_array\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dty
     8        16
     19       19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_items(*\**, *axis*)
@@ -3778,7 +3739,6 @@ Series.iter\_group\_items(*\**, *axis*)
     <Index>
     c        19
     <<U1>    <int64>))
-
     ```
 
 Series.iter\_group\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3809,7 +3769,6 @@ Series.iter\_group\_items(*\**, *axis).apply(func*, */*, *\**, *dtype*, *name*, 
     8        (2,)
     19       19
     <int64>  <object>
-
     ```
 
 Series.iter\_group\_items(*\**, *axis).apply\_iter(func*, */*)
@@ -3837,7 +3796,6 @@ Series.iter\_group\_items(*\**, *axis).apply\_iter(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_items().apply_iter(lambda l, s: s.sum() if l != 8 else -1))
     (np.int64(-4), -1, np.int64(19))
-
     ```
 
 Series.iter\_group\_items(*\**, *axis).apply\_iter\_items(func*, */*)
@@ -3865,7 +3823,6 @@ Series.iter\_group\_items(*\**, *axis).apply\_iter\_items(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_items().apply_iter_items(lambda l, s: s.sum() if l != 8 else -1))
     ((np.int64(-2), np.int64(-4)), (np.int64(8), -1), (np.int64(19), np.int64(19)))
-
     ```
 
 Series.iter\_group\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -3902,7 +3859,6 @@ Series.iter\_group\_items(*\**, *axis).apply\_pool(func*, */*, *\**, *dtype*, *n
     8        16
     19       19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_labels(*depth\_level*, */*)
@@ -3928,7 +3884,6 @@ Series.iter\_group\_labels(*depth\_level*, */*)
     <Index>
     c        8
     <<U1>    <int64>)
-
     ```
 
 Series.iter\_group\_labels(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -3961,7 +3916,6 @@ Series.iter\_group\_labels(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, 
     d        -2
     e        8
     <<U1>    <int64>
-
     ```
 
 Series.iter\_group\_labels(*depth\_level*, */).apply\_iter(func*, */*)
@@ -3989,7 +3943,6 @@ Series.iter\_group\_labels(*depth\_level*, */).apply\_iter(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels().apply_iter(lambda s: s.sum()))
     (np.int64(-2), np.int64(8), np.int64(19), np.int64(-2), np.int64(8))
-
     ```
 
 Series.iter\_group\_labels(*depth\_level*, */).apply\_iter\_items(func*, */*)
@@ -4017,7 +3970,6 @@ Series.iter\_group\_labels(*depth\_level*, */).apply\_iter\_items(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels().apply_iter_items(lambda s: s.sum()))
     ((np.str_('a'), np.int64(-2)), (np.str_('b'), np.int64(8)), (np.str_('c'), np.int64(19)), (np.str_('d'), np.int64(-2)), (np.str_('e'), np.int64(8)))
-
     ```
 
 Series.iter\_group\_labels(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4056,7 +4008,6 @@ Series.iter\_group\_labels(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dt
     d        -2
     e        8
     <<U1>    <int64>
-
     ```
 
 Series.iter\_group\_labels\_array(*depth\_level*, */*)
@@ -4073,7 +4024,6 @@ Series.iter\_group\_labels\_array(*depth\_level*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels_array())
     (array([10]), array([2]), array([8]))
-
     ```
 
 Series.iter\_group\_labels\_array(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4106,7 +4056,6 @@ Series.iter\_group\_labels\_array(*depth\_level*, */).apply(func*, */*, *\**, *d
     d        -2
     e        8
     <<U1>    <int64>
-
     ```
 
 Series.iter\_group\_labels\_array(*depth\_level*, */).apply\_iter(func*, */*)
@@ -4134,7 +4083,6 @@ Series.iter\_group\_labels\_array(*depth\_level*, */).apply\_iter(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels_array().apply_iter(lambda s: s.sum()))
     (np.int64(-2), np.int64(8), np.int64(19), np.int64(-2), np.int64(8))
-
     ```
 
 Series.iter\_group\_labels\_array(*depth\_level*, */).apply\_iter\_items(func*, */*)
@@ -4162,7 +4110,6 @@ Series.iter\_group\_labels\_array(*depth\_level*, */).apply\_iter\_items(func*, 
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels_array().apply_iter_items(lambda s: s.sum()))
     ((np.str_('a'), np.int64(-2)), (np.str_('b'), np.int64(8)), (np.str_('c'), np.int64(19)), (np.str_('d'), np.int64(-2)), (np.str_('e'), np.int64(8)))
-
     ```
 
 Series.iter\_group\_labels\_array(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4201,7 +4148,6 @@ Series.iter\_group\_labels\_array(*depth\_level*, */).apply\_pool(func*, */*, *\
     d        -2
     e        8
     <<U1>    <int64>
-
     ```
 
 Series.iter\_group\_labels\_array\_items(*depth\_level*, */*)
@@ -4218,7 +4164,6 @@ Series.iter\_group\_labels\_array\_items(*depth\_level*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels_array_items())
     ((np.str_('a'), array([10])), (np.str_('b'), array([2])), (np.str_('c'), array([8])))
-
     ```
 
 Series.iter\_group\_labels\_array\_items(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4251,7 +4196,6 @@ Series.iter\_group\_labels\_array\_items(*depth\_level*, */).apply(func*, */*, *
     d        -2
     e        8
     <<U1>    <int64>
-
     ```
 
 Series.iter\_group\_labels\_array\_items(*depth\_level*, */).apply\_iter(func*, */*)
@@ -4279,7 +4223,6 @@ Series.iter\_group\_labels\_array\_items(*depth\_level*, */).apply\_iter(func*, 
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels_array_items().apply_iter(lambda l, s: s.sum() if l != 8 else -1))
     (np.int64(-2), np.int64(8), np.int64(19), np.int64(-2), np.int64(8))
-
     ```
 
 Series.iter\_group\_labels\_array\_items(*depth\_level*, */).apply\_iter\_items(func*, */*)
@@ -4307,7 +4250,6 @@ Series.iter\_group\_labels\_array\_items(*depth\_level*, */).apply\_iter\_items(
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels_array_items().apply_iter_items(lambda l, s: s.sum() if l != 8 else -1))
     ((np.str_('a'), np.int64(-2)), (np.str_('b'), np.int64(8)), (np.str_('c'), np.int64(19)), (np.str_('d'), np.int64(-2)), (np.str_('e'), np.int64(8)))
-
     ```
 
 Series.iter\_group\_labels\_array\_items(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4346,7 +4288,6 @@ Series.iter\_group\_labels\_array\_items(*depth\_level*, */).apply\_pool(func*, 
     d        -2
     e        8
     <<U1>    <int64>
-
     ```
 
 Series.iter\_group\_labels\_items(*depth\_level*, */*)
@@ -4372,7 +4313,6 @@ Series.iter\_group\_labels\_items(*depth\_level*, */*)
     <Index>
     c        8
     <<U1>    <int64>))
-
     ```
 
 Series.iter\_group\_labels\_items(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4405,7 +4345,6 @@ Series.iter\_group\_labels\_items(*depth\_level*, */).apply(func*, */*, *\**, *d
     d        -2
     e        8
     <<U1>    <int64>
-
     ```
 
 Series.iter\_group\_labels\_items(*depth\_level*, */).apply\_iter(func*, */*)
@@ -4433,7 +4372,6 @@ Series.iter\_group\_labels\_items(*depth\_level*, */).apply\_iter(func*, */*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels_items().apply_iter(lambda l, s: s.sum() if l != 8 else -1))
     (np.int64(-2), np.int64(8), np.int64(19), np.int64(-2), np.int64(8))
-
     ```
 
 Series.iter\_group\_labels\_items(*depth\_level*, */).apply\_iter\_items(func*, */*)
@@ -4461,7 +4399,6 @@ Series.iter\_group\_labels\_items(*depth\_level*, */).apply\_iter\_items(func*, 
     <<U1>    <int64>
     >>> tuple(s.iter_group_labels_items().apply_iter_items(lambda l, s: s.sum() if l != 8 else -1))
     ((np.str_('a'), np.int64(-2)), (np.str_('b'), np.int64(8)), (np.str_('c'), np.int64(19)), (np.str_('d'), np.int64(-2)), (np.str_('e'), np.int64(8)))
-
     ```
 
 Series.iter\_group\_labels\_items(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4500,7 +4437,6 @@ Series.iter\_group\_labels\_items(*depth\_level*, */).apply\_pool(func*, */*, *\
     d        -2
     e        8
     <<U1>    <int64>
-
     ```
 
 Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis*)
@@ -4529,7 +4465,6 @@ Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis*)
     b        8
     d        -2
     <<U1>    <int64>)
-
     ```
 
 Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4561,7 +4496,6 @@ Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply(func*,
     1        16
     2        19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter(func*, */*)
@@ -4590,7 +4524,6 @@ Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter(
     <<U1>    <int64>
     >>> tuple(s.iter_group_other(np.arange(len(s)) % 3).apply_iter(lambda s: s.sum()))
     (np.int64(-4), np.int64(16), np.int64(19))
-
     ```
 
 Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*, */*)
@@ -4619,7 +4552,6 @@ Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter\
     <<U1>    <int64>
     >>> tuple(s.iter_group_other(np.arange(len(s)) % 3).apply_iter_items(lambda s: s.sum()))
     ((np.int64(0), np.int64(-4)), (np.int64(1), np.int64(16)), (np.int64(2), np.int64(19)))
-
     ```
 
 Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4657,7 +4589,6 @@ Series.iter\_group\_other(*other*, */*, *\**, *fill\_value*, *axis).apply\_pool(
     1        16
     2        19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis*)
@@ -4676,7 +4607,6 @@ Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis*)
     <<U1>    <int64>
     >>> tuple(s.iter_group_other_array(np.arange(len(s)) % 2))
     (array([-2, 19,  8]), array([ 8, -2]))
-
     ```
 
 Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4707,7 +4637,6 @@ Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply
     1        16
     2        19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter(func*, */*)
@@ -4735,7 +4664,6 @@ Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply
     <<U1>    <int64>
     >>> tuple(s.iter_group_other_array(np.arange(len(s)) % 3).apply_iter(lambda s: s.sum()))
     (np.int64(-4), np.int64(16), np.int64(19))
-
     ```
 
 Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*, */*)
@@ -4763,7 +4691,6 @@ Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply
     <<U1>    <int64>
     >>> tuple(s.iter_group_other_array(np.arange(len(s)) % 3).apply_iter_items(lambda s: s.sum()))
     ((np.int64(0), np.int64(-4)), (np.int64(1), np.int64(16)), (np.int64(2), np.int64(19)))
-
     ```
 
 Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4800,7 +4727,6 @@ Series.iter\_group\_other\_array(*other*, */*, *\**, *fill\_value*, *axis).apply
     1        16
     2        19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis*)
@@ -4819,7 +4745,6 @@ Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis
     <<U1>    <int64>
     >>> tuple(s.iter_group_other_array_items(np.arange(len(s)) % 2))
     ((np.int64(0), array([-2, 19,  8])), (np.int64(1), array([ 8, -2])))
-
     ```
 
 Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -4850,7 +4775,6 @@ Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis
     1        16
     2        19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter(func*, */*)
@@ -4878,7 +4802,6 @@ Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis
     <<U1>    <int64>
     >>> tuple(s.iter_group_other_array_items(np.arange(len(s)) % 3).apply_iter(lambda k, v: v.sum()))
     (np.int64(-4), np.int64(16), np.int64(19))
-
     ```
 
 Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*, */*)
@@ -4906,7 +4829,6 @@ Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis
     <<U1>    <int64>
     >>> tuple(s.iter_group_other_array_items(np.arange(len(s)) % 3).apply_iter_items(lambda k, v: v.sum()))
     ((np.int64(0), np.int64(-4)), (np.int64(1), np.int64(16)), (np.int64(2), np.int64(19)))
-
     ```
 
 Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -4943,7 +4865,6 @@ Series.iter\_group\_other\_array\_items(*other*, */*, *\**, *fill\_value*, *axis
     1        16
     2        19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis*)
@@ -4972,7 +4893,6 @@ Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis*)
     b        8
     d        -2
     <<U1>    <int64>))
-
     ```
 
 Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -5004,7 +4924,6 @@ Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply
     1        16
     2        19
     <int64>  <int64>
-
     ```
 
 Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter(func*, */*)
@@ -5033,7 +4952,6 @@ Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply
     <<U1>    <int64>
     >>> tuple(s.iter_group_other_items(np.arange(len(s)) % 3).apply_iter(lambda k, v: v.sum()))
     (np.int64(-4), np.int64(16), np.int64(19))
-
     ```
 
 Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_iter\_items(func*, */*)
@@ -5062,7 +4980,6 @@ Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply
     <<U1>    <int64>
     >>> tuple(s.iter_group_other_items(np.arange(len(s)) % 3).apply_iter_items(lambda k, v: v.sum()))
     ((np.int64(0), np.int64(-4)), (np.int64(1), np.int64(16)), (np.int64(2), np.int64(19)))
-
     ```
 
 Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -5100,7 +5017,6 @@ Series.iter\_group\_other\_items(*other*, */*, *\**, *fill\_value*, *axis).apply
     1        16
     2        19
     <int64>  <int64>
-
     ```
 
 Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
@@ -5125,7 +5041,6 @@ Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func
     d        34
     e        54
     <<U1>    <int64>)
-
     ```
 
 Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -5156,7 +5071,6 @@ Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func
     d        61
     e        107
     <<U1>    <int64>
-
     ```
 
 Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -5184,7 +5098,6 @@ Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func
     <<U1>    <int64>
     >>> tuple(s.iter_window(size=3, step=1).apply_iter(lambda s: s.sum()))
     (np.int64(29), np.int64(61), np.int64(107))
-
     ```
 
 Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -5212,7 +5125,6 @@ Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func
     <<U1>    <int64>
     >>> tuple(s.iter_window(size=3, step=1).apply_iter_items(lambda s: s.sum()))
     ((np.str_('c'), np.int64(29)), (np.str_('d'), np.int64(61)), (np.str_('e'), np.int64(107)))
-
     ```
 
 Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -5248,7 +5160,6 @@ Series.iter\_window(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func
     d        61
     e        107
     <<U1>    <int64>
-
     ```
 
 Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
@@ -5258,7 +5169,6 @@ Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     >>> s = sf.Series((2, 8, 19, 34, 54), index=('a', 'b', 'c', 'd', 'e'))
     >>> tuple(s.iter_window_array(size=3, step=1))
     (array([ 2,  8, 19]), array([ 8, 19, 34]), array([19, 34, 54]))
-
     ```
 
 Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -5289,7 +5199,6 @@ Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     d        61
     e        107
     <<U1>    <int64>
-
     ```
 
 Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -5317,7 +5226,6 @@ Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     <<U1>    <int64>
     >>> tuple(s.iter_window_array(size=3, step=1).apply_iter(lambda s: s.sum()))
     (np.int64(29), np.int64(61), np.int64(107))
-
     ```
 
 Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -5345,7 +5253,6 @@ Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     <<U1>    <int64>
     >>> tuple(s.iter_window_array(size=3, step=1).apply_iter_items(lambda s: s.sum()))
     ((np.str_('c'), np.int64(29)), (np.str_('d'), np.int64(61)), (np.str_('e'), np.int64(107)))
-
     ```
 
 Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -5381,7 +5288,6 @@ Series.iter\_window\_array(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     d        61
     e        107
     <<U1>    <int64>
-
     ```
 
 Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
@@ -5391,7 +5297,6 @@ Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*,
     >>> s = sf.Series((2, 8, 19, 34, 54), index=('a', 'b', 'c', 'd', 'e'))
     >>> tuple(s.iter_window_array_items(size=3, step=1))
     ((np.str_('c'), array([ 2,  8, 19])), (np.str_('d'), array([ 8, 19, 34])), (np.str_('e'), array([19, 34, 54])))
-
     ```
 
 Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -5422,7 +5327,6 @@ Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*,
     d        -1
     e        107
     <<U1>    <int64>
-
     ```
 
 Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -5450,7 +5354,6 @@ Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*,
     <<U1>    <int64>
     >>> tuple(s.iter_window_array_items(size=3, step=1).apply_iter(lambda l, s: s.sum() if l != 'd' else -1))
     (np.int64(29), -1, np.int64(107))
-
     ```
 
 Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -5478,7 +5381,6 @@ Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*,
     <<U1>    <int64>
     >>> tuple(s.iter_window_array_items(size=3, step=1).apply_iter_items(lambda l, s: s.sum() if l != 'd' else -1))
     ((np.str_('c'), np.int64(29)), (np.str_('d'), -1), (np.str_('e'), np.int64(107)))
-
     ```
 
 Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -5514,7 +5416,6 @@ Series.iter\_window\_array\_items(*\**, *size*, *axis*, *step*, *window\_sized*,
     d        61
     e        107
     <<U1>    <int64>
-
     ```
 
 Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment*)
@@ -5539,7 +5440,6 @@ Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     d        34
     e        54
     <<U1>    <int64>))
-
     ```
 
 Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -5570,7 +5470,6 @@ Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     d        -1
     e        107
     <<U1>    <int64>
-
     ```
 
 Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter(func*, */*)
@@ -5598,7 +5497,6 @@ Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     <<U1>    <int64>
     >>> tuple(s.iter_window_items(size=3, step=1).apply_iter(lambda l, s: s.sum() if l != 'd' else -1))
     (np.int64(29), -1, np.int64(107))
-
     ```
 
 Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_iter\_items(func*, */*)
@@ -5626,7 +5524,6 @@ Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     <<U1>    <int64>
     >>> tuple(s.iter_window_items(size=3, step=1).apply_iter_items(lambda l, s: s.sum() if l != 'd' else -1))
     ((np.str_('c'), np.int64(29)), (np.str_('d'), -1), (np.str_('e'), np.int64(107)))
-
     ```
 
 Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *window\_func*, *window\_valid*, *label\_shift*, *label\_missing\_skips*, *label\_missing\_raises*, *start\_shift*, *size\_increment).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -5662,7 +5559,6 @@ Series.iter\_window\_items(*\**, *size*, *axis*, *step*, *window\_sized*, *windo
     d        61
     e        107
     <<U1>    <int64>
-
     ```
 
 [Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | [Accessor Mapping](series-accessor_mapping.md#api-detail-series-accessor-mapping)

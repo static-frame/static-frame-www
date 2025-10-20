@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2536,7 +2540,6 @@ IndexYearGO.iter\_label(*depth\_level*, */*)
     <datetime64[Y]>
     >>> tuple(ix.iter_label())
     (np.datetime64('1517'), np.datetime64('1520'), np.datetime64('1518'))
-
     ```
 
 IndexYearGO.iter\_label(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2559,7 +2562,6 @@ IndexYearGO.iter\_label(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, *na
     <datetime64[Y]>
     >>> ix.iter_label().apply(lambda l: l.astype('<M8[ms]').astype(object).year)
     [1517 1520 1518]
-
     ```
 
 IndexYearGO.iter\_label(*depth\_level*, */).apply\_iter(func*, */*)
@@ -2584,7 +2586,6 @@ IndexYearGO.iter\_label(*depth\_level*, */).apply\_iter(func*, */*)
     <datetime64[Y]>
     >>> tuple(ix.iter_label().apply_iter(lambda l: l.astype('<M8[ms]').astype(object)))
     (datetime.datetime(1517, 1, 1, 0, 0), datetime.datetime(1520, 1, 1, 0, 0), datetime.datetime(1518, 1, 1, 0, 0))
-
     ```
 
 IndexYearGO.iter\_label(*depth\_level*, */).apply\_iter\_items(func*, */*)
@@ -2609,7 +2610,6 @@ IndexYearGO.iter\_label(*depth\_level*, */).apply\_iter\_items(func*, */*)
     <datetime64[Y]>
     >>> tuple(ix.iter_label().apply_iter_items(lambda l: l.astype('<M8[ms]').astype(object)))
     ((np.int64(0), datetime.datetime(1517, 1, 1, 0, 0)), (np.int64(1), datetime.datetime(1520, 1, 1, 0, 0)), (np.int64(2), datetime.datetime(1518, 1, 1, 0, 0)))
-
     ```
 
 IndexYearGO.iter\_label(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2637,7 +2637,6 @@ IndexYearGO.iter\_label(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dtype
     <datetime64[Y]>
     >>> ix.iter_label().apply_pool(lambda l: l.astype('<M8[ms]').astype(object).month, use_threads=True)
     [1 1 1]
-
     ```
 
 [IndexYearGO](index_year_go.md#api-detail-indexyeargo): [Constructor](index_year_go-constructor.md#api-detail-indexyeargo-constructor) | [Exporter](index_year_go-exporter.md#api-detail-indexyeargo-exporter) | [Attribute](index_year_go-attribute.md#api-detail-indexyeargo-attribute) | [Method](index_year_go-method.md#api-detail-indexyeargo-method) | [Dictionary-Like](index_year_go-dictionary_like.md#api-detail-indexyeargo-dictionary-like) | [Display](index_year_go-display.md#api-detail-indexyeargo-display) | [Selector](index_year_go-selector.md#api-detail-indexyeargo-selector) | [Iterator](#api-detail-indexyeargo-iterator) | [Operator Binary](index_year_go-operator_binary.md#api-detail-indexyeargo-operator-binary) | [Operator Unary](index_year_go-operator_unary.md#api-detail-indexyeargo-operator-unary) | [Accessor Values](index_year_go-accessor_values.md#api-detail-indexyeargo-accessor-values) | [Accessor Datetime](index_year_go-accessor_datetime.md#api-detail-indexyeargo-accessor-datetime) | [Accessor String](index_year_go-accessor_string.md#api-detail-indexyeargo-accessor-string) | [Accessor Regular Expression](index_year_go-accessor_regular_expression.md#api-detail-indexyeargo-accessor-regular-expression) | [Accessor Hashlib](index_year_go-accessor_hashlib.md#api-detail-indexyeargo-accessor-hashlib) | [Accessor Type Clinic](index_year_go-accessor_type_clinic.md#api-detail-indexyeargo-accessor-type-clinic)

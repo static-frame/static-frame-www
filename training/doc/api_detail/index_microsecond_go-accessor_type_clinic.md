@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2539,7 +2543,6 @@ IndexMicrosecondGO.via\_type\_clinic.to\_hint
     <datetime64[us]>
     >>> ix.via_type_clinic.to_hint()
     <class 'static_frame.core.index_datetime.IndexMicrosecondGO'>
-
     ```
 
 IndexMicrosecondGO.via\_type\_clinic.check(*hint*, */*, *\**, *fail\_fast*)
@@ -2561,7 +2564,6 @@ IndexMicrosecondGO.via\_type\_clinic.check(*hint*, */*, *\**, *fail\_fast*)
     <datetime64[us]>
     >>> ix.via_type_clinic.check(sf.Index[np.str_])
     ClinicError('\nIn Index[str_]\n└── Expected str_, provided datetime64 invalid')
-
     ```
 
 IndexMicrosecondGO.via\_type\_clinic.warn(*hint*, */*, *\**, *fail\_fast*, *category*)
@@ -2600,7 +2602,6 @@ IndexMicrosecondGO.via\_type\_clinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast
 
     In Index[str_]
     └── Expected str_, provided datetime64 invalid
-
     ```
 
 IndexMicrosecondGO.via\_type\_clinic.\_\_repr\_\_
@@ -2619,7 +2620,6 @@ IndexMicrosecondGO.via\_type\_clinic.\_\_repr\_\_
     <datetime64[us]>
     >>> ix.via_type_clinic
     IndexMicrosecondGO
-
     ```
 
 [IndexMicrosecondGO](index_microsecond_go.md#api-detail-indexmicrosecondgo): [Constructor](index_microsecond_go-constructor.md#api-detail-indexmicrosecondgo-constructor) | [Exporter](index_microsecond_go-exporter.md#api-detail-indexmicrosecondgo-exporter) | [Attribute](index_microsecond_go-attribute.md#api-detail-indexmicrosecondgo-attribute) | [Method](index_microsecond_go-method.md#api-detail-indexmicrosecondgo-method) | [Dictionary-Like](index_microsecond_go-dictionary_like.md#api-detail-indexmicrosecondgo-dictionary-like) | [Display](index_microsecond_go-display.md#api-detail-indexmicrosecondgo-display) | [Selector](index_microsecond_go-selector.md#api-detail-indexmicrosecondgo-selector) | [Iterator](index_microsecond_go-iterator.md#api-detail-indexmicrosecondgo-iterator) | [Operator Binary](index_microsecond_go-operator_binary.md#api-detail-indexmicrosecondgo-operator-binary) | [Operator Unary](index_microsecond_go-operator_unary.md#api-detail-indexmicrosecondgo-operator-unary) | [Accessor Values](index_microsecond_go-accessor_values.md#api-detail-indexmicrosecondgo-accessor-values) | [Accessor Datetime](index_microsecond_go-accessor_datetime.md#api-detail-indexmicrosecondgo-accessor-datetime) | [Accessor String](index_microsecond_go-accessor_string.md#api-detail-indexmicrosecondgo-accessor-string) | [Accessor Regular Expression](index_microsecond_go-accessor_regular_expression.md#api-detail-indexmicrosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_microsecond_go-accessor_hashlib.md#api-detail-indexmicrosecondgo-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexmicrosecondgo-accessor-type-clinic)

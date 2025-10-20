@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
   + Improving Code Quality with Array and DataFrame Type Hints
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
   + [Faster DataFrame Serialization](serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
 * Improving Code Quality with Array and DataFrame Type Hints
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
 * [Faster DataFrame Serialization](serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2537,14 +2541,12 @@ Without type annotations, a Python function signature gives no indication of the
 
 ```
 def process0(v, q): ... # no type information
-
 ```
 
 By adding type annotations, the signature informs readers of the expected types. With modern Python, user-defined and built-in classes can be used to specify types, with additional resources (such as `Any`, `Iterator`, `cast()`, and `Annotated`) found in the standard library `typing` module. For example, the interface below improves the one above by making expected types explicit:
 
 ```
 def process0(v: int, q: bool) -> list[float]: ...
-
 ```
 
 When used with a type checker like mypy, code that violates the specifications of the type annotations will raise an error during static analysis (shown as comments, below). For example, providing an integer when a Boolean is required is an error:
@@ -2553,7 +2555,6 @@ When used with a type checker like mypy, code that violates the specifications o
 x = process0(v=5, q=20)
 # tp.py: error: Argument "q" to "process0"
 # has incompatible type "int"; expected "bool"  [arg-type]
-
 ```
 
 Static analysis can only validate statically defined types. The full range of runtime inputs and outputs is often more diverse, suggesting some form of runtime validation. The best of both worlds is possible by reusing type annotations for runtime validation. While there are libraries that do this (e.g., `typeguard` and `beartype`), StaticFrame offers `CallGuard`, a tool specialized for comprehensive array and DataFrame type-annotation validation.
@@ -2573,7 +2574,6 @@ z = process0(v=5, q=20)
 # static_frame.core.type_clinic.ClinicError:
 # In args of (v: int, q: bool) -> list[float]
 # └── Expected bool, provided int invalid
-
 ```
 
 While type annotations must be valid Python, they are irrelevant at runtime and can be wrong: it is possible to have correctly verified types that do not reflect runtime reality. As shown above, reusing type annotations for runtime checks ensures annotations are valid.
@@ -2602,7 +2602,6 @@ def process1(
         ) -> TNDArrayFloat64:
     s: TNDArrayFloat64 = np.where(q, 0.5, 0.25)
     return v * s
-
 ```
 
 As before, when used with `mypy`, code that violates the type annotations will raise an error during static analysis. For example, providing an integer when a Boolean is required is an error:
@@ -2612,7 +2611,6 @@ v1: TNDArrayInt8 = np.arange(20, dtype=np.int8)
 x = process1(v1, v1)
 # tp.py: error: Argument 2 to "process1" has incompatible type
 # "ndarray[Any, dtype[floating[_64Bit]]]"; expected "ndarray[Any, dtype[bool_]]"  [arg-type]
-
 ```
 
 The interface requires 8-bit signed integers (np.int8); attempting to use a different sized integer is also an error:
@@ -2624,7 +2622,6 @@ q: TNDArrayBool = np.arange(20) % 3 == 0
 x = process1(v2, q)
 # tp.py: error: Argument 1 to "process1" has incompatible type
 # "ndarray[Any, dtype[signedinteger[_64Bit]]]"; expected "ndarray[Any, dtype[signedinteger[_8Bit]]]"  [arg-type]
-
 ```
 
 While some interfaces might benefit from such narrow numeric type specifications, broader specification is possible with NumPy’s generic types such as `np.integer[Any]`, `np.signedinteger[Any]`, `np.float[Any]`, etc. For example, we can define a new function that accepts any size signed integer. Static analysis now passes with both `TNDArrayInt8` and `TNDArrayInt64` arrays:
@@ -2640,7 +2637,6 @@ def process2(
 
 x = process2(v1, q) # no mypy error
 x = process2(v2, q) # no mypy error
-
 ```
 
 Just as shown above with elements, generically specified NumPy arrays can be validated at runtime if decorated with `CallGuard.check`:
@@ -2661,7 +2657,6 @@ x = process3(v3, q) # error
 # └── ndarray[Any, dtype[signedinteger[Any]]]
 #     └── dtype[signedinteger[Any]]
 #         └── Expected signedinteger, provided float64 invalid
-
 ```
 
 StaticFrame provides utilities to extend runtime validation beyond type checking. Using the `typing` module’s `Annotated` class (see [PEP 593](https://peps.python.org/pep-0593)), we can extend the type specification with one or more StaticFrame `Require` objects. For example, to validate that an array has a 1D shape of (24,), we can replace `TNDArrayIntAny` with `Annotated[TNDArrayIntAny, sf.Require.Shape(24)]`. To validate that a float array has no NaNs, we can replace `TNDArrayFloat64` with `Annotated[TNDArrayFloat64, sf.Require.Apply(lambda a: ~a.insna().any())]`.
@@ -2685,7 +2680,6 @@ x = process4(v1, q) # types pass, but Require.Shape fails
 # └── Annotated[ndarray[Any, dtype[int8]], Shape((24,))]
 #     └── Shape((24,))
 #         └── Expected shape ((24,)), provided shape (20,)
-
 ```
 
 ## DataFrame Type Annotations[#](#dataframe-type-annotations "Link to this heading")
@@ -2718,7 +2712,6 @@ columns=('a', 'b'), index=sf.IndexDate.from_date_range('2021-12-30', '2022-01-03
 >>> # get a string representation of the annotation
 >>> v4.via_type_clinic
 Frame[IndexDate, Index[str_], int64, float64]
-
 ```
 
 As shown with arrays, storing annotations as type aliases permits reuse and more concise function signatures. Below, a new function is defined with generic `Frame` and `Series` arguments fully annotated. A `cast` is required as not all operations can statically resolve their return type:
@@ -2732,7 +2725,6 @@ def process5(v: TFrameDateInts, q: TSeriesYMBool) -> TSeriesDFloat:
     t = v.index.iter_label().apply(lambda l: q[l.astype('datetime64[M]')]) # type: ignore
     s = np.where(t, 0.5, 0.25)
     return cast(TSeriesDFloat, (v.via_T * s).mean(axis=1))
-
 ```
 
 These more complex annotated interfaces can also be validated with `mypy`. Below, a `Frame` without the expected column value types is passed, causing `mypy` to error (shown as comments, below):
@@ -2749,7 +2741,6 @@ x = process5(v5, q)
 # tp.py: error: Argument 1 to "process5" has incompatible type
 # "Frame[IndexDate, Index[str_], signedinteger[_64Bit], floating[_64Bit]]"; expected
 # "Frame[IndexDate, Index[str_], signedinteger[_64Bit], signedinteger[_64Bit]]"  [arg-type]
-
 ```
 
 To use the same type hints for runtime validation, the `sf.CallGuard.check` decorator can be applied. Below, a `Frame` of three integer columns is provided where a `Frame` of two columns is expected:
@@ -2766,7 +2757,6 @@ x = process5(v6, q)
 # q: Series[IndexYearMonth, bool_]) -> Series[IndexDate, float64]
 # └── Frame[IndexDate, Index[str_], signedinteger[_64Bit], signedinteger[_64Bit]]
 #     └── Expected Frame has 2 dtype, provided Frame has 3 dtype
-
 ```
 
 It might not be practical to annotate every column of every `Frame`: it is common for interfaces to work with `Frame` of variable column sizes. `TypeVarTuple` supports this through the usage of unpack operator `*tuple[]` expressions (introduced in Python 3.11, back-ported with the `Unpack` annotation). For example, the function above could be defined to take any number of integer columns with that annotation `Frame[IndexDate, Index[np.str_], *tuple[np.int64, ...]]`, where `*tuple[np.int64, ...]]` means zero or more integer columns.
@@ -2784,7 +2774,6 @@ def process6(v: TFrameDateNums, q: TSeriesYMBool) -> TSeriesDFloat:
 
 x = process6(v5, q) # a Frame with integer, float columns passes
 x = process6(v6, q) # a Frame with three integer columns passes
-
 ```
 
 As with NumPy arrays, `Frame` annotations can wrap `Require` specifications in `Annotated` generics, permitting the definition of additional run-time validations.
@@ -2805,7 +2794,7 @@ Providing correct type annotations is an investment. Reusing those annotations f
 
 [previous
 
-Contributing](../contributing.md "previous page")
+Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md "previous page")
 [next
 
 Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md "next page")

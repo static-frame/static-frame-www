@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2542,7 +2546,6 @@ FrameHE.via\_type\_clinic.to\_hint
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> f.via_type_clinic.to_hint()
     static_frame.core.frame.FrameHE[static_frame.core.index_hierarchy.IndexHierarchy[static_frame.core.index.Index[numpy.int64], static_frame.core.index.Index[numpy.str_]], static_frame.core.index.Index[numpy.str_], numpy.int64, numpy.bool, numpy.datetime64]
-
     ```
 
 FrameHE.via\_type\_clinic.check(*hint*, */*, *\**, *fail\_fast*)
@@ -2567,7 +2570,6 @@ FrameHE.via\_type\_clinic.check(*hint*, */*, *\**, *fail\_fast*)
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> f.via_type_clinic.check(sf.Frame[sf.IndexHierarchy[sf.Index[np.int64], sf.Index[np.str_]], sf.Index[np.int64], np.int64, np.bool_, np.str_])
     ClinicError('\nIn Frame[IndexHierarchy[Index[int64], Index[str_]], Index[int64], int64, bool, str_]\n└── Expected str_, provided datetime64 invalid\nIn Frame[IndexHierarchy[Index[int64], Index[str_]], Index[int64], int64, bool, str_]\n└── Index[int64]\n    └── Expected int64, provided str_ invalid')
-
     ```
 
 FrameHE.via\_type\_clinic.warn(*hint*, */*, *\**, *fail\_fast*, *category*)
@@ -2612,7 +2614,6 @@ FrameHE.via\_type\_clinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast*)
     In Frame[IndexHierarchy[Index[int64], Index[str_]], Index[int64], int64, bool, str_]
     └── Index[int64]
         └── Expected int64, provided str_ invalid
-
     ```
 
 FrameHE.via\_type\_clinic.\_\_repr\_\_
@@ -2634,7 +2635,6 @@ FrameHE.via\_type\_clinic.\_\_repr\_\_
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> f.via_type_clinic
     FrameHE[IndexHierarchy[Index[int64], Index[str_]], Index[str_], int64, bool, datetime64]
-
     ```
 
 [FrameHE](frame_he.md#api-detail-framehe): [Constructor](frame_he-constructor.md#api-detail-framehe-constructor) | [Exporter](frame_he-exporter.md#api-detail-framehe-exporter) | [Attribute](frame_he-attribute.md#api-detail-framehe-attribute) | [Method](frame_he-method.md#api-detail-framehe-method) | [Dictionary-Like](frame_he-dictionary_like.md#api-detail-framehe-dictionary-like) | [Display](frame_he-display.md#api-detail-framehe-display) | [Assignment](frame_he-assignment.md#api-detail-framehe-assignment) | [Selector](frame_he-selector.md#api-detail-framehe-selector) | [Iterator](frame_he-iterator.md#api-detail-framehe-iterator) | [Operator Binary](frame_he-operator_binary.md#api-detail-framehe-operator-binary) | [Operator Unary](frame_he-operator_unary.md#api-detail-framehe-operator-unary) | [Accessor Values](frame_he-accessor_values.md#api-detail-framehe-accessor-values) | [Accessor Datetime](frame_he-accessor_datetime.md#api-detail-framehe-accessor-datetime) | [Accessor String](frame_he-accessor_string.md#api-detail-framehe-accessor-string) | [Accessor Transpose](frame_he-accessor_transpose.md#api-detail-framehe-accessor-transpose) | [Accessor Fill Value](frame_he-accessor_fill_value.md#api-detail-framehe-accessor-fill-value) | [Accessor Regular Expression](frame_he-accessor_regular_expression.md#api-detail-framehe-accessor-regular-expression) | [Accessor Hashlib](frame_he-accessor_hashlib.md#api-detail-framehe-accessor-hashlib) | [Accessor Type Clinic](#api-detail-framehe-accessor-type-clinic) | [Accessor Reduce](frame_he-accessor_reduce.md#api-detail-framehe-accessor-reduce)

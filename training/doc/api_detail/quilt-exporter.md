@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2547,7 +2551,6 @@ Quilt.to\_frame()[[source]](../_modules/static_frame/core/quilt.md#Quilt.to_fram
     v                q     42      43
     v                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Quilt.to\_sqlite(*fp*, */*, *\**, *config=None*)[#](#static_frame.Quilt.to_sqlite "Link to this definition")
@@ -2569,7 +2572,6 @@ Quilt.to\_sqlite(*fp*, */*, *\**, *config=None*)[#](#static_frame.Quilt.to_sqlit
     v                . .
     <<U1>
     >>> q.to_sqlite('/tmp/q.db')
-
     ```
 
 Quilt.to\_visidata()[#](#static_frame.Quilt.to_visidata "Link to this definition")
@@ -2594,7 +2596,6 @@ Quilt.to\_xlsx(*fp*, */*, *\**, *config=None*)[#](#static_frame.Quilt.to_xlsx "L
     v                . .
     <<U1>
     >>> q.to_xlsx('/tmp/q.xlsx')
-
     ```
 
 Quilt.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_frame.Quilt.to_zip_csv "Link to this definition")
@@ -2616,7 +2617,6 @@ Quilt.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_f
     v                . .
     <<U1>
     >>> q.to_zip_csv('/tmp/q.zip')
-
     ```
 
 Quilt.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_frame.Quilt.to_zip_npy "Link to this definition")
@@ -2638,7 +2638,6 @@ Quilt.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_f
     v                . .
     <<U1>
     >>> q.to_zip_npy('/tmp/q.zip')
-
     ```
 
 Quilt.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_frame.Quilt.to_zip_npz "Link to this definition")
@@ -2660,7 +2659,6 @@ Quilt.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_f
     v                . .
     <<U1>
     >>> q.to_zip_npz('/tmp/q.zip')
-
     ```
 
 Quilt.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_frame.Quilt.to_zip_parquet "Link to this definition")
@@ -2682,7 +2680,6 @@ Quilt.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#stat
     v                . .
     <<U1>
     >>> q.to_zip_parquet('/tmp/q.zip')
-
     ```
 
 Quilt.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_frame.Quilt.to_zip_pickle "Link to this definition")
@@ -2704,7 +2701,6 @@ Quilt.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#stati
     v                . .
     <<U1>
     >>> q.to_zip_pickle('/tmp/q.zip')
-
     ```
 
 Quilt.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_frame.Quilt.to_zip_tsv "Link to this definition")
@@ -2726,7 +2722,6 @@ Quilt.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_f
     v                . .
     <<U1>
     >>> q.to_zip_tsv('/tmp/q.zip')
-
     ```
 
 [Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)

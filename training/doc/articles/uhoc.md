@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
   + [Faster DataFrame Serialization](serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
 * [Faster DataFrame Serialization](serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2535,7 +2539,6 @@ While these containers are implemented in StaticFrame, the abstractions are usef
 
 ```
 >>> import static_frame as sf
-
 ```
 
 ## Container Overview[#](#container-overview "Link to this heading")
@@ -2556,7 +2559,6 @@ Two simple `Frames` can be used to demonstrate initializing a `Bus`. The `Bus.fr
 f1      Frame
 f2      Frame
 <<U2>   <object>
-
 ```
 
 The `Bus` can be thought of as a `Series` (or an ordered dictionary) of `Frames`, permitting access to a `Frame` given its label.
@@ -2569,7 +2571,6 @@ The `Bus` can be thought of as a `Series` (or an ordered dictionary) of `Frames`
 y           2       2
 z           2       2
 <<U1>       <int64> <int64>
-
 ```
 
 A key feature of the `Bus` is that, when reading from disk, `Frames` are loaded lazily: a `Frame` is loaded into memory only when accessed, and (with the `max_persist` argument) the `Bus` can be configured to only hold strong references to a limited number of `Frames`, eagerly unloading the least-recently used beyond that limit. This permits examining all `Frames` while limiting the total memory loaded by the `Bus`.
@@ -2594,7 +2595,6 @@ A `Batch` can be initialized with items from a `Bus`, or any iterator of pairs o
 f1      1.0       1.0
 f2      4.0       4.0
 <<U2>   <float64> <float64>
-
 ```
 
 In addition to `Frame` methods, the `Batch` supports usage of `Frame` selection interfaces and operators. Below, each `Frame` is taken to the second power, the “b” column is selected, and a new `Frame` (combining both selections) is returned:
@@ -2607,7 +2607,6 @@ In addition to `Frame` methods, the `Batch` supports usage of `Frame` selection 
 f1      0.25      0.25      nan       nan
 f2      nan       nan       4.0       4.0
 <<U2>   <float64> <float64> <float64> <float64>
-
 ```
 
 The `Batch` is related to the Pandas `DataFrameGroupBy` and `Rolling` objects, interfaces that, after configuring a group-by or rolling window iterable, expose function application on those groups or windows. The `Batch` generalizes this functionality, supporting those contexts as well as offering general-purpose processing of any iterator of labels and Frames.
@@ -2636,7 +2635,6 @@ x       0.5       0.5
 y       2.0       2.0
 z       2.0       2.0
 <<U1>   <float64> <float64>
-
 ```
 
 ```
@@ -2650,7 +2648,6 @@ f1               x     0.5       0.5
 f2               y     2.0       2.0
 f2               z     2.0       2.0
 <<U2>            <<U1> <float64> <float64>
-
 ```
 
 The `Quilt` can be thought of as a `Frame` built from many smaller `Frames`, aligned either vertically or horizontally. Importantly, this larger `Frame` is not eagerly concatenated; rather, `Frames` are accessed from a contained `Bus` as needed, providing a lazy concatenation of tables along an axis.
@@ -2668,7 +2665,6 @@ x        1.0
 y        4.0
 z        4.0
 <<U1>    <float64>
-
 ```
 
 ### Yarn[#](#yarn "Link to this heading")
@@ -2686,7 +2682,6 @@ a                f2    Frame
 b                f1    Frame
 b                f2    Frame
 <<U1>            <<U2> <object>
-
 ```
 
 ### Common & Distinguishing Characteristics[#](#common-distinguishing-characteristics "Link to this heading")
@@ -2729,7 +2724,6 @@ After opening the archive, we can read from the contained “Stocks” directory
 >>> fps = ((fn, os.path.join(d, fn)) for fn in os.listdir(d))
 >>> items = ((fn.replace('.us.txt', ''), sf.Frame.from_csv(fp, index_depth=1)) for fn, fp in fps if os.path.getsize(fp))
 >>> sf.Batch(items).to_zip_pickle('stocks.zip')
-
 ```
 
 As the `Bus` is lazy, initialization from this new zip archive loads zero `Frames` into memory. Fast access to the data is provided only when explicitly requested. Thus, while the `Bus.shape` attribute shows 7,163 contained `Frames`, the `status` attribute shows zero loaded `Frames`.
@@ -2740,7 +2734,6 @@ As the `Bus` is lazy, initialization from this new zip archive loads zero `Frame
 (7163,)
 >>> bus.status['loaded'].sum()
 0
-
 ```
 
 Accessing a single `Frame` loads only that one `Frame`.
@@ -2757,7 +2750,6 @@ Close
 Volume
 OpenInt
 <<U7>
-
 ```
 
 Extracting multiple `Frames` produces a new `Bus` that reads from the same store.
@@ -2772,7 +2764,6 @@ goog    Frame
 <<U9>   <object>
 >>> bus.status['loaded'].sum()
 4
-
 ```
 
 With a `Batch` we can perform operations on the `Frames` contained in the `Bus`, returning labeled results. The `Batch.apply()` method can be used with a `lambda` to multiply two columns (“Volume” and “Close”) of each `Frame`; we then extract the most recent two values with `iloc` and produce a composite `Frame`, the index derived from the original `Bus` labels:
@@ -2786,7 +2777,6 @@ aapl    5175673321.5       4389543386.98
 msft    1780638040.5600002 1626767764.8700001
 goog    1283539710.3       740903319.18
 <<U4>   <float64>          <float64>
-
 ```
 
 To make observations across the entire dataset, we can pass the `Bus` to a `Quilt`. Below, a null slice is used to force loading all `Frames` at once to optimize `Quilt` performance. The shape shows a `Quilt` of almost 15 million rows.
@@ -2795,7 +2785,6 @@ To make observations across the entire dataset, we can pass the `Bus` to a `Quil
 >>> quilt = sf.Quilt(bus[:], retain_labels=True)
 >>> quilt.shape
 (14887665, 6)
-
 ```
 
 Using the `Quilt` we can calculate the total volume of seven thousand securities on a single day without explicitly concatenating all `Frames`. The StaticFrame `HLoc` selector, used below, permits per-depth-level selection within a hierarchical index. Here we select all security records for 2017-11-10, across all tickers, and sum the volume.
@@ -2803,7 +2792,6 @@ Using the `Quilt` we can calculate the total volume of seven thousand securities
 ```
 >>> quilt.loc[sf.HLoc[:, '2017-11-10'], 'Volume'].sum()
 5520175355
-
 ```
 
 Similarly, the `iloc_max()` method can be used to find the ticker and date of the security with the highest volume across all securities. The ticker and date become the `name` attribute of the `Series` selected by `iloc_max()`.
@@ -2819,7 +2807,6 @@ Close                           7.6065
 Volume                          2423735131.0
 OpenInt                         0.0
 <<U7>                           <float64>
-
 ```
 
 ## Cross-Container Comparisons: Same Method, Different Selections[#](#cross-container-comparisons-same-method-different-selections "Link to this heading")
@@ -2837,7 +2824,6 @@ The `head(2)` method call on the `Bus` returns a new `Bus` consisting of the fir
 fljh    Frame
 bgt     Frame
 <<U9>   <object>
-
 ```
 
 As the `Batch` operates on each `Frame` in a `Bus`, calling `head(2)` extracts the top two rows from each `Frame` in the “Huge Stock Market Dataset.” Calling `to_frame()` concatenates these extractions into a new `Frame`, from which only two columns are then selected:
@@ -2885,7 +2871,6 @@ twow             2017-10-24 16.682    850
 gsjy             2016-03-07 25.238    14501
 gsjy             2016-03-08 25.158    12457
 <<U9>            <<U10>     <float64> <int64>
-
 ```
 
 Finally, the `Quilt` represents the contained `Frames` as if they were a single, contiguous `Frame`. Calling `head(2)` returns the first two rows of that virtual `Frame`, labelled with a hierarchical index whose outer label is the `Frame`’s label (i.e., the ticker).
@@ -2898,7 +2883,6 @@ Finally, the `Quilt` represents the contained `Frames` as if they were a single,
 fljh             2017-11-07 26.189    1300
 fljh             2017-11-08 26.3875   3600
 <<U4>            <<U10>     <float64> <int64>
-
 ```
 
 ## Cross-Container Comparisons: Same Selections, Different Methods[#](#cross-container-comparisons-same-selections-different-methods "Link to this heading")
@@ -2922,7 +2906,6 @@ Close        0.6201
 Open          6.413
 Close         6.3378
 <<U7>         <float64>
-
 ```
 
 The `Batch` offers a more compact interface to achieve this selection than possible with the `Bus`. Without writing a loop, the `Batch.apply_except()` method can select row and column values from within each contained `Frame` while ignoring any `KeyErrors` raised from `Frames` without the selected date. Calling `to_frame()` concatenates the results together with their `Frame` labels.
@@ -2935,7 +2918,6 @@ The `Batch` offers a more compact interface to achieve this selection than possi
 ge      0.6277    0.6201
 ibm     6.413     6.3378
 <<U3>   <float64> <float64>
-
 ```
 
 Finally, as a virtual concatenation of `Frames`, the `Quilt` permits selection as if from a single `Frame`. As shown below, a hierarchical selection on the inner label “1962-01-02” brings together any records for that date across all tickers.
@@ -2948,7 +2930,6 @@ Finally, as a virtual concatenation of `Frames`, the `Quilt` permits selection a
 ge               1962-01-02 0.6277    0.6201
 ibm              1962-01-02 6.413     6.3378
 <<U3>            <<U10>     <float64> <float64>
-
 ```
 
 ## Minimizing Memory Usage[#](#minimizing-memory-usage "Link to this heading")
@@ -2971,7 +2952,6 @@ By using the `max_persist` argument on `Bus` initialization, we can fix the maxi
 (916, 6)
 >>> bus.status['loaded'].sum()
 1
-
 ```
 
 With this configuration, a process could iterate through all 7,163 `Frames`, doing work on each `Frame`, but only incurring the memory overhead of a single `Frame`. While the same routine could be performed with a group-by on a single `Frame`, this approach explicitly favors minimizing memory usage over compute time. The example below demonstrates such an approach, finding the maximum span between close quotes per stock across all stocks.
@@ -2985,7 +2965,6 @@ With this configuration, a process could iterate through all 7,163 `Frames`, doi
 1437986239.4042
 >>> bus.status['loaded'].sum()
 1
-
 ```
 
 As a `Bus` can be provided as input to a `Batch`, `Quilt`, and `Yarn`, the entire family of containers can benefit from this approach to reducing memory overhead.

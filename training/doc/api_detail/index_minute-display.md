@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * Detail: IndexMinute: Display
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2539,8 +2543,11 @@ IndexMinute.interface[#](#IndexMinute.interface "Link to this definition")
     <Index>                              cls_name    group                doc                  <<U18>
     <Index: signature>
     __init__(labels, /, *, loc_is_ilo... IndexMinute Constructor          Initializer. Args...
+    from_difference(*others)             IndexMinute Constructor          Construct a new I...
+    from_intersection(*others)           IndexMinute Constructor          Construct a new I...
     from_labels(labels, /, *, name)      IndexMinute Constructor          Construct an Inde...
     from_pandas(value, /)                IndexMinute Constructor          Given a Pandas in...
+    from_union(*others)                  IndexMinute Constructor          Construct a new I...
     to_html(config, /, *, style_config)  IndexMinute Exporter             Return an HTML ta...
     to_html_datatables(fp, /, *, show... IndexMinute Exporter             Return a complete...
     to_pandas()                          IndexMinute Exporter             Return a Pandas I...
@@ -2552,9 +2559,6 @@ IndexMinute.interface[#](#IndexMinute.interface "Link to this definition")
     index_types                          IndexMinute Attribute            Return a Series o...
     memory                               IndexMinute Attribute            Return a MemoryDi...
     mloc                                 IndexMinute Attribute            The memory locati...
-    name                                 IndexMinute Attribute            A hashable label ...
-    names                                IndexMinute Attribute            Provide a suitabl...
-    nbytes                               IndexMinute Attribute            Return the total ...
     ...                                  ...         ...                  ...
     via_re(pattern, flags, /).sub(rep... IndexMinute Accessor Regular ... Return the string...
     via_re(pattern, flags, /).subn(re... IndexMinute Accessor Regular ... Perform the same ...
@@ -2574,7 +2578,6 @@ IndexMinute.interface[#](#IndexMinute.interface "Link to this definition")
     via_type_clinic.__call__(hint, /,... IndexMinute Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexMinute Accessor Type Clinic Return a compact ...
     <<U93>                               <<U11>      <<U27>               <<U83>
-
     ```
 
 IndexMinute.\_\_repr\_\_()[#](#static_frame.IndexMinute.__repr__ "Link to this definition")
@@ -2588,7 +2591,6 @@ IndexMinute.\_\_repr\_\_()[#](#static_frame.IndexMinute.__repr__ "Link to this d
     NaT
     1620-11-21T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.\_\_str\_\_()[#](#static_frame.IndexMinute.__str__ "Link to this definition")
@@ -2602,7 +2604,6 @@ IndexMinute.\_\_str\_\_()[#](#static_frame.IndexMinute.__str__ "Link to this def
     NaT
     1620-11-21T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.display(*config=None*, */*, *\**, *style\_config=None*)[#](#static_frame.IndexMinute.display "Link to this definition")
@@ -2623,7 +2624,6 @@ IndexMinute.display(*config=None*, */*, *\**, *style\_config=None*)[#](#static_f
     1620-09-16T00:00
     NaT
     1620-11-21T00:00
-
     ```
 
 IndexMinute.display\_tall(*config=None*, */*)[#](#static_frame.IndexMinute.display_tall "Link to this definition")
@@ -2640,7 +2640,6 @@ IndexMinute.display\_tall(*config=None*, */*)[#](#static_frame.IndexMinute.displ
     NaT
     1620-11-21T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.display\_wide(*config=None*, */*)[#](#static_frame.IndexMinute.display_wide "Link to this definition")
@@ -2657,7 +2656,6 @@ IndexMinute.display\_wide(*config=None*, */*)[#](#static_frame.IndexMinute.displ
     NaT
     1620-11-21T00:00
     <datetime64[m]>
-
     ```
 
 [IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](index_minute-method.md#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-detail-indexminute-accessor-type-clinic)

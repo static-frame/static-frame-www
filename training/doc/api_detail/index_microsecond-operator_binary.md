@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2535,7 +2539,6 @@ IndexMicrosecond.\_\_add\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__a
     >>> ix + 2
     ['1517-04-01T00:00:00.000002' '1517-12-31T00:00:00.000002'
      '1517-06-30T00:00:00.000002']
-
     ```
 
 IndexMicrosecond.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__and__ "Link to this definition")
@@ -2551,7 +2554,6 @@ IndexMicrosecond.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__a
     TypeError("ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix & (False, True)
     TypeError("ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexMicrosecond.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__eq__ "Link to this definition")
@@ -2567,7 +2569,6 @@ IndexMicrosecond.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__eq
     <datetime64[us]>
     >>> ix == '1517-06-30'
     [False False  True]
-
     ```
 
 IndexMicrosecond.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__floordiv__ "Link to this definition")
@@ -2581,7 +2582,6 @@ IndexMicrosecond.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexMicrosecon
     <datetime64[us]>
     >>> ix // '1517-06-30'
     UFuncTypeError(<ufunc 'floor_divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMicrosecond.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__ge__ "Link to this definition")
@@ -2597,7 +2597,6 @@ IndexMicrosecond.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__ge
     <datetime64[us]>
     >>> ix >= '1517-06-30'
     [False  True  True]
-
     ```
 
 IndexMicrosecond.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__gt__ "Link to this definition")
@@ -2613,7 +2612,6 @@ IndexMicrosecond.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__gt
     <datetime64[us]>
     >>> ix > '1517-06-30'
     [False  True False]
-
     ```
 
 IndexMicrosecond.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__le__ "Link to this definition")
@@ -2629,7 +2627,6 @@ IndexMicrosecond.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__le
     <datetime64[us]>
     >>> ix <= '1517-06-30'
     [ True False  True]
-
     ```
 
 IndexMicrosecond.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__lt__ "Link to this definition")
@@ -2645,7 +2642,6 @@ IndexMicrosecond.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__lt
     <datetime64[us]>
     >>> ix < '1517-06-30'
     [ True False False]
-
     ```
 
 IndexMicrosecond.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__matmul__ "Link to this definition")
@@ -2659,7 +2655,6 @@ IndexMicrosecond.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.
     <datetime64[us]>
     >>> ix @ (3, 0, 4, 0)
     NotImplementedError('matrix multiplication not supported')
-
     ```
 
 IndexMicrosecond.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__mod__ "Link to this definition")
@@ -2673,7 +2668,6 @@ IndexMicrosecond.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__m
     <datetime64[us]>
     >>> ix % '1517-06-30'
     UFuncTypeError(<ufunc 'remainder'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMicrosecond.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__mul__ "Link to this definition")
@@ -2687,7 +2681,6 @@ IndexMicrosecond.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__m
     <datetime64[us]>
     >>> ix * '1517-06-30'
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMicrosecond.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__ne__ "Link to this definition")
@@ -2703,7 +2696,6 @@ IndexMicrosecond.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__ne
     <datetime64[us]>
     >>> ix != '1517-06-30'
     [ True  True False]
-
     ```
 
 IndexMicrosecond.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__or__ "Link to this definition")
@@ -2721,7 +2713,6 @@ IndexMicrosecond.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__or
     TypeError("ufunc 'bitwise_or' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix | (False, True)
     TypeError("ufunc 'bitwise_or' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexMicrosecond.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__pow__ "Link to this definition")
@@ -2735,7 +2726,6 @@ IndexMicrosecond.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__p
     <datetime64[us]>
     >>> ix ** '1517-06-30'
     TypeError("ufunc 'power' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexMicrosecond.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__radd__ "Link to this definition")
@@ -2749,7 +2739,6 @@ IndexMicrosecond.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__
     <datetime64[us]>
     >>> '1517-06-30' + ix
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMicrosecond.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__rfloordiv__ "Link to this definition")
@@ -2763,7 +2752,6 @@ IndexMicrosecond.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexMicroseco
     <datetime64[us]>
     >>> '1517-06-30' // ix
     UFuncTypeError(<ufunc 'floor_divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMicrosecond.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__rmatmul__ "Link to this definition")
@@ -2777,7 +2765,6 @@ IndexMicrosecond.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond
     <datetime64[us]>
     >>> ix @ (3, 0, 4, 0)
     NotImplementedError('matrix multiplication not supported')
-
     ```
 
 IndexMicrosecond.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__rmul__ "Link to this definition")
@@ -2791,7 +2778,6 @@ IndexMicrosecond.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__
     <datetime64[us]>
     >>> '1517-06-30' * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMicrosecond.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__rshift__ "Link to this definition")
@@ -2805,7 +2791,6 @@ IndexMicrosecond.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.
     <datetime64[us]>
     >>> ix >> 1
     TypeError("ufunc 'right_shift' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexMicrosecond.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__rsub__ "Link to this definition")
@@ -2819,7 +2804,6 @@ IndexMicrosecond.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__
     <datetime64[us]>
     >>> '1517-06-30' - ix
     [  90 -184    0]
-
     ```
 
 IndexMicrosecond.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__rtruediv__ "Link to this definition")
@@ -2833,7 +2817,6 @@ IndexMicrosecond.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexMicrosecon
     <datetime64[us]>
     >>> '1517-06-30' / ix
     UFuncTypeError(<ufunc 'divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMicrosecond.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__sub__ "Link to this definition")
@@ -2848,7 +2831,6 @@ IndexMicrosecond.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__s
     >>> ix - 2
     ['1517-03-31T23:59:59.999998' '1517-12-30T23:59:59.999998'
      '1517-06-29T23:59:59.999998']
-
     ```
 
 IndexMicrosecond.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__truediv__ "Link to this definition")
@@ -2862,7 +2844,6 @@ IndexMicrosecond.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond
     <datetime64[us]>
     >>> ix / '1517-06-30'
     UFuncTypeError(<ufunc 'divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMicrosecond.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__xor__ "Link to this definition")
@@ -2878,7 +2859,6 @@ IndexMicrosecond.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexMicrosecond.__x
     TypeError("ufunc 'bitwise_xor' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix ^ (False, True)
     TypeError("ufunc 'bitwise_xor' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 [IndexMicrosecond](index_microsecond.md#api-detail-indexmicrosecond): [Constructor](index_microsecond-constructor.md#api-detail-indexmicrosecond-constructor) | [Exporter](index_microsecond-exporter.md#api-detail-indexmicrosecond-exporter) | [Attribute](index_microsecond-attribute.md#api-detail-indexmicrosecond-attribute) | [Method](index_microsecond-method.md#api-detail-indexmicrosecond-method) | [Dictionary-Like](index_microsecond-dictionary_like.md#api-detail-indexmicrosecond-dictionary-like) | [Display](index_microsecond-display.md#api-detail-indexmicrosecond-display) | [Selector](index_microsecond-selector.md#api-detail-indexmicrosecond-selector) | [Iterator](index_microsecond-iterator.md#api-detail-indexmicrosecond-iterator) | [Operator Binary](#api-detail-indexmicrosecond-operator-binary) | [Operator Unary](index_microsecond-operator_unary.md#api-detail-indexmicrosecond-operator-unary) | [Accessor Values](index_microsecond-accessor_values.md#api-detail-indexmicrosecond-accessor-values) | [Accessor Datetime](index_microsecond-accessor_datetime.md#api-detail-indexmicrosecond-accessor-datetime) | [Accessor String](index_microsecond-accessor_string.md#api-detail-indexmicrosecond-accessor-string) | [Accessor Regular Expression](index_microsecond-accessor_regular_expression.md#api-detail-indexmicrosecond-accessor-regular-expression) | [Accessor Hashlib](index_microsecond-accessor_hashlib.md#api-detail-indexmicrosecond-accessor-hashlib) | [Accessor Type Clinic](index_microsecond-accessor_type_clinic.md#api-detail-indexmicrosecond-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
   + [Faster DataFrame Serialization](serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](ftyping.md)
 * [Faster DataFrame Serialization](serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2536,7 +2540,6 @@ All examples use Pandas 1.0.3 and StaticFrame 0.6.20. Imports use the following 
 ```
 >>> import pandas as pd
 >>> import static_frame as sf
-
 ```
 
 ## No. 1: Consistent and Discoverable Interfaces[#](#no-1-consistent-and-discoverable-interfaces "Link to this heading")
@@ -2556,7 +2559,6 @@ For example, JSON data is loaded from a function on the `pd` namespace, while re
    name   mass
 0  muon  0.106
 1   tau  1.777
-
 ```
 
 Even though Pandas has specialized constructors, the default `pd.DataFrame` constructor accepts a staggering diversity of inputs, including many of the same inputs as `pd.DataFrame.from_records()`.
@@ -2566,7 +2568,6 @@ Even though Pandas has specialized constructors, the default `pd.DataFrame` cons
    name   mass
 0  muon  0.106
 1   tau  1.777
-
 ```
 
 For the user, there is little benefit to this diversity and redundancy. StaticFrame places all constructors on the class they construct, and as much as possible, narrowly focuses their functionality. As they are easier to maintain, explicit, specialized constructors are common in StaticFrame. For example, `sf.Frame.from_json_records()` and `sf.Frame.from_dict_records()`:
@@ -2586,7 +2587,6 @@ For the user, there is little benefit to this diversity and redundancy. StaticFr
 0       muon  0.106
 1       tau   1.777
 <int64> <<U4> <float64>
-
 ```
 
 Being explicit leads to lots of constructors. To help you find what you are looking for, StaticFrame containers expose an `interface` attribute that provides the entire public interface of the calling class or instance as a `sf.Frame`. We can filter this table to show only constructors by using a `sf.Frame.loc[]` selection.
@@ -2625,7 +2625,6 @@ from_structured_array(array, *, i... Frame    Constructor Convert a NumPy s...
 from_tsv(fp, *, index_depth, inde... Frame    Constructor Specialized versi...
 from_xlsx(fp, *, label, index_dep... Frame    Constructor Load Frame from t...
 <<U94>                               <<U5>    <<U18>      <<U83>
-
 ```
 
 ## No. 2: Consistent and Colorful Display[#](#no-2-consistent-and-colorful-display "Link to this heading")
@@ -2638,7 +2637,6 @@ Pandas displays its containers in diverse ways. For example, a `pd.Series` is sh
         symbol  mass
 charm        c   1.3
 strange      s   0.1
-
 ```
 
 ```
@@ -2646,13 +2644,11 @@ strange      s   0.1
 charm      1.3
 strange    0.1
 Name: mass, dtype: float64
-
 ```
 
 ```
 >>> df.index
 Index(['charm', 'strange'], dtype='object')
-
 ```
 
 StaticFrame offers a consistent, configurable display for all containers. The display of `sf.Series`, `sf.Frame`, `sf.Index`, and `sf.IndexHierarchy` all share a common implementation and design. A priority of that design is to always make explicit container classes and underlying array types.
@@ -2666,7 +2662,6 @@ StaticFrame offers a consistent, configurable display for all containers. The di
 charm   c      1.3
 strange s      0.1
 <<U7>   <<U1>  <float64>
-
 ```
 
 ```
@@ -2676,7 +2671,6 @@ strange s      0.1
 charm          1.3
 strange        0.1
 <<U7>          <float64>
-
 ```
 
 ```
@@ -2685,7 +2679,6 @@ strange        0.1
 symbol
 mass
 <<U6>
-
 ```
 
 As much time is spent visually exploring the contents of these containers, StaticFrame offers numerous display configuration options, all exposed through the `sf.DisplayConfig` class. For persistent changes, `sf.DisplayConfig` instances can be passed to `sf.DisplayActive.set()`; for one-off changes, `sf.DisplayConfig` instances can be passed to the container’s `display()` method.
@@ -2707,12 +2700,10 @@ For example, if we supply a 2D array to a `pd.DataFrame`, the original reference
        mass  charge
 muon  0.106    -1.0
 tau   1.777    -1.0
-
 ```
 
 ```
 >>> a1[0, 0] = np.nan # Mutating the original array.
-
 ```
 
 ```
@@ -2720,7 +2711,6 @@ tau   1.777    -1.0
        mass  charge
 muon    NaN    -1.0
 tau   1.777    -1.0
-
 ```
 
 Similarly, sometimes NumPy arrays exposed from the `values` attribute of a `pd.Series` or a `pd.DataFrame` can be mutated, changing the values within the `pd.DataFrame`.
@@ -2729,12 +2719,10 @@ Similarly, sometimes NumPy arrays exposed from the `values` attribute of a `pd.S
 >>> a2 = df['charge'].values
 >>> a2
 array([-1., -1.])
-
 ```
 
 ```
 >>> a2[1] = np.nan # Mutating the array from .values.
-
 ```
 
 ```
@@ -2742,7 +2730,6 @@ array([-1., -1.])
        mass  charge
 muon    NaN    -1.0
 tau   1.777     NaN
-
 ```
 
 With StaticFrame, there is no vulnerability of “behind the back” mutation: as StaticFrame manages immutable NumPy arrays, references are only held to immutable arrays. If a mutable array is given at initialization, an immutable copy will be made. Immutable arrays cannot be mutated from containers or from direct access to underlying arrays.
@@ -2750,12 +2737,10 @@ With StaticFrame, there is no vulnerability of “behind the back” mutation: a
 ```
 >>> a1 = np.array([[0.106, -1], [1.777, -1]])
 >>> f = sf.Frame(a1, index=('muon', 'tau'), columns=('mass', 'charge'))
-
 ```
 
 ```
 >>> a1[0, 0] = np.nan # Mutating the original array has no affect on the Frame
-
 ```
 
 ```
@@ -2766,7 +2751,6 @@ With StaticFrame, there is no vulnerability of “behind the back” mutation: a
 muon    0.106     -1.0
 tau     1.777     -1.0
 <<U4>   <float64> <float64>
-
 ```
 
 ```
@@ -2774,7 +2758,6 @@ tau     1.777     -1.0
 Traceback (most recent call last):
   File "<console>", line 1, in <module>
 ValueError: assignment destination is read-only
-
 ```
 
 While immutable data reduces opportunities for error, it also offers performance advantages. For example, when replacing column labels with `sf.Frame.relabel()`, underlying data is not copied. Instead, references to the same immutable arrays are shared between the old and new containers. Such “no-copy” operations are thus fast and light-weight. This is in contrast to what happens when doing the same thing in Pandas: the corresponding Pandas method, `df.DataFrame.rename()`, is forced to make a defensive copy of all underlying data.
@@ -2787,7 +2770,6 @@ While immutable data reduces opportunities for error, it also offers performance
 muon    0.106     -1.0
 tau     1.777     -1.0
 <<U4>   <float64> <float64>
-
 ```
 
 ## No. 4: Assignment is a Function[#](#no-4-assignment-is-a-function "Link to this heading")
@@ -2800,12 +2782,10 @@ While Pandas permits in-place assignment, sometimes such operations cannot provi
 tau    -1
 down   -1
 dtype: int64
-
 ```
 
 ```
 >>> s['down'] = -0.333 # Assigning a float.
-
 ```
 
 ```
@@ -2813,7 +2793,6 @@ dtype: int64
 tau    -1
 down    0
 dtype: int64
-
 ```
 
 With StaticFrame’s immutable data model, assignment is a function that returns a new container. This permits evaluating types to insure that the resultant array can completely contain the assigned value.
@@ -2826,7 +2805,6 @@ With StaticFrame’s immutable data model, assignment is a function that returns
 tau      -1
 down     -1
 <<U4>    <int64>
-
 ```
 
 ```
@@ -2836,7 +2814,6 @@ down     -1
 tau      -1.0
 down     -0.333
 <<U4>    <float64>
-
 ```
 
 StaticFrame uses a special `assign` interface for performing assignment function calls. On a `sf.Frame`, this interface exposes a `sf.Frame.assign.loc[]` interface that can be used to select the target of assignment. Following this selection, the value to be assigned is passed through a function call.
@@ -2850,7 +2827,6 @@ StaticFrame uses a special `assign` interface for performing assignment function
 charm   0.666     1.3
 strange -0.333    0.1
 <<U7>   <float64> <float64>
-
 ```
 
 ```
@@ -2861,7 +2837,6 @@ strange -0.333    0.1
 charm   2/3      1.3
 strange -0.333   0.1
 <<U7>   <object> <float64>
-
 ```
 
 ## No. 5: Iterators are for Iterating and Function Application[#](#no-5-iterators-are-for-iterating-and-function-application "Link to this heading")
@@ -2882,7 +2857,6 @@ muon    0.106     -1.0      lepton
 tau     1.777     -1.0      lepton
 charm   1.3       0.666     quark
 strange 0.1       -0.333    quark
-
 ```
 
 We can iterate over a columns values with `sf.Series.iter_element()`. We can use the same iterator to do function application by using the `apply()` method found on the object returned from `sf.Series.iter_element()`. The same interface is found on both `sf.Series` and `sf.Frame`.
@@ -2890,7 +2864,6 @@ We can iterate over a columns values with `sf.Series.iter_element()`. We can use
 ```
 >>> tuple(f['type'].iter_element())
 ('lepton', 'lepton', 'quark', 'quark')
-
 ```
 
 ```
@@ -2902,7 +2875,6 @@ tau      LEPTON
 charm    QUARK
 strange  QUARK
 <<U7>    <<U6>
-
 ```
 
 ```
@@ -2915,7 +2887,6 @@ tau     1.78e+00 -1.00e+00
 charm   1.30e+00 6.66e-01
 strange 1.00e-01 -3.33e-01
 <<U7>   <object> <object>
-
 ```
 
 For row or column iteration on a `sf.Frame`, a family of methods allows specifying the type of container to be used for the iterated rows or columns, i.e, with an array, with a `NamedTuple`, or with a `sf.Series` (`iter_array()`, `iter_tuple()`, `iter_series()`, respectively). These methods take an axis argument to determine whether iteration is by row or by column, and similarly expose an `apply()` method for function application. To apply a function to columns, we can do the following.
@@ -2927,7 +2898,6 @@ For row or column iteration on a `sf.Frame`, a family of methods allows specifyi
 mass     3.283
 charge   -1.667
 <<U6>    <float64>
-
 ```
 
 Applying a function to a row instead of a column simply requires changing the axis argument.
@@ -2941,7 +2911,6 @@ tau      False
 charm    True
 strange  False
 <<U7>    <bool>
-
 ```
 
 Group-by operations are just another form of iteration, with an identical interface for iteration and function application.
@@ -2953,7 +2922,6 @@ Group-by operations are just another form of iteration, with an identical interf
 lepton   0.9415
 quark    0.7000000000000001
 <<U6>    <float64>
-
 ```
 
 ## No. 6: Strict, Grow-Only Frames[#](#no-6-strict-grow-only-frames "Link to this heading")
@@ -2973,7 +2941,6 @@ muon      0.106     -1.0      lepton False
 tau       1.777     -1.0      lepton False
 charm     1.3       0.666     quark  True
 strange   0.1       -0.333    quark  False
-
 ```
 
 This limited form of mutation meets a practical need. Further, converting back and forth from a `sf.Frame` to a `sf.FrameGO` (using `Frame.to_frame_go()` and `FrameGO.to_frame()`) is a no-copy operation: underlying immutable arrays can be shared between the two containers.
@@ -2995,7 +2962,6 @@ DatetimeIndex(['1980-01-01', '1980-01-02', '1980-01-03', '1980-01-04',
 >>> pd.date_range('1980', '2262-04-12')
 Traceback (most recent call last):
 pandas._libs.tslibs.np_datetime.OutOfBoundsDatetime: Out of bounds nanosecond timestamp: 2262-04-12 00:00:00
-
 ```
 
 As indices are often used for date-time values far less granular than nanoseconds (such as dates, months, or years), StaticFrame offers the full range of NumPy typed `datetime64` indices. This permits exact date-time type specification, and avoids the limits of nanosecond-based units.
@@ -3011,7 +2977,6 @@ While not possible with Pandas, creating an index of years or dates extending to
 2999
 3000
 <datetime64[Y]>
-
 ```
 
 ```
@@ -3023,7 +2988,6 @@ While not possible with Pandas, creating an index of years or dates extending to
 3000-12-30
 3000-12-31
 <datetime64[D]>
-
 ```
 
 ## No. 8: Consistent Interfaces for Hierarchical Indices[#](#no-8-consistent-interfaces-for-hierarchical-indices "Link to this heading")
@@ -3036,7 +3000,6 @@ One way is by overloading `pd.DataFrame.loc[]`. When using Pandas’s hierarchic
 
 ```
 >>> df = pd.DataFrame.from_records([('muon', 0.106, -1.0, 'lepton'), ('tau', 1.777, -1.0, 'lepton'), ('charm', 1.3, 0.666, 'quark'), ('strange', 0.1, -0.333, 'quark')], columns=('name', 'mass', 'charge', 'type'))
-
 ```
 
 ```
@@ -3048,7 +3011,6 @@ lepton muon     0.106  -1.000
        tau      1.777  -1.000
 quark  charm    1.300   0.666
        strange  0.100  -0.333
-
 ```
 
 Similar to 2D arrays in NumPy, when two arguments are given to `pd.DataFrame.loc[]`, the first argument is a row selector, the second argument is a column selector.
@@ -3059,7 +3021,6 @@ name
 muon    0.106
 tau     1.777
 Name: mass, dtype: float64
-
 ```
 
 Yet, in violation of that expectation, sometimes Pandas will not use the second argument as a column selection, but instead as a row selection in an inner depth of the `pd.MultiIndex`.
@@ -3069,7 +3030,6 @@ Yet, in violation of that expectation, sometimes Pandas will not use the second 
 mass      1.777
 charge   -1.000
 Name: (lepton, tau), dtype: float64
-
 ```
 
 To handle this ambiguity, Pandas offers two alternatives. If a row and a column selection is required, the expected behavior can be restored by wrapping the hierarchical row selection within a `pd.IndexSlice[]` selection modifier. Or, if an inner-depth selection is desired without using a `pd.IndexSlice[]`, the `pd.DataFrame.xs()` method can be used.
@@ -3081,7 +3041,6 @@ To handle this ambiguity, Pandas offers two alternatives. If a row and a column 
          mass  charge
 type
 lepton  1.777    -1.0
-
 ```
 
 This inconsistency in the meaning of the positional arguments given to `pd.DataFrame.loc[]` is unnecessary and makes Pandas code harder to maintain: what is intended from the usage of `pd.DataFrame.loc[]` becomes ambiguous without a `pd.IndexSlice[]`. Further, providing multiple ways to solve this problem is also a shortcoming, as it is preferable to have one obvious way to do things in Python.
@@ -3090,7 +3049,6 @@ StaticFrame’s `sf.IndexHierarchy` offers more consistent behavior. We will cre
 
 ```
 >>> f = sf.Frame.from_records((('muon', 0.106, -1.0, 'lepton'), ('tau', 1.777, -1.0, 'lepton'), ('charm', 1.3, 0.666, 'quark'), ('strange', 0.1, -0.333, 'quark')), columns=('name', 'mass', 'charge', 'type'))
-
 ```
 
 ```
@@ -3104,7 +3062,6 @@ lepton                             tau     1.777     -1.0
 quark                              charm   1.3       0.666
 quark                              strange 0.1       -0.333
 <<U6>                              <<U7>   <float64> <float64>
-
 ```
 
 Unlike Pandas, StaticFrame is consistent in what positional `sf.Frame.loc[]` arguments mean: the first argument is always a row selector, the second argument is always a column selector. For selection within a `sf.IndexHierarchy`, the `sf.HLoc[]` selection modifier is required to specify selection at arbitrary depths within the hierarchy. There is one obvious way to select inner depths. This approach makes StaticFrame code easier to understand and maintain.
@@ -3117,7 +3074,6 @@ Unlike Pandas, StaticFrame is consistent in what positional `sf.Frame.loc[]` arg
 lepton                             muon  0.106     -1.0
 lepton                             tau   1.777     -1.0
 <<U6>                              <<U4> <float64> <float64>
-
 ```
 
 ```
@@ -3127,7 +3083,6 @@ lepton                             tau   1.777     -1.0
 lepton                             muon    0.106
 quark                              strange 0.1
 <<U6>                              <<U7>   <float64>
-
 ```
 
 ## No. 9: Indices are Always Unique[#](#no-9-indices-are-always-unique "Link to this heading")
@@ -3144,7 +3099,6 @@ charge
 -1.000      tau  1.777  lepton
  0.666    charm  1.300   quark
 -0.333  strange  0.100   quark
-
 ```
 
 ```
@@ -3153,7 +3107,6 @@ charge
 charge
 -1.0    muon  0.106  lepton
 -1.0     tau  1.777  lepton
-
 ```
 
 ```
@@ -3162,7 +3115,6 @@ name    charm
 mass      1.3
 type    quark
 Name: 0.666, dtype: object
-
 ```
 
 Pandas support of non-unique indices makes client code more complicated by having to handle selections that sometimes return a `pd.Series` and other times return a `pd.DataFrame`. Further, uniqueness of indices is often a simple and effective check of data coherency.
@@ -3173,7 +3125,6 @@ Some Pandas interfaces, such as `pd.concat()` and `pd.DataFrame.set_index()`, pr
 >>> df.set_index('type', verify_integrity=True)
 Traceback (most recent call last):
 ValueError: Index has duplicate keys: Index(['lepton', 'quark'], dtype='object', name='type')
-
 ```
 
 In StaticFrame, indices are always unique. Attempting to set a non-unique index will raise an exception. This constraint eliminates opportunities for mistakenly introducing duplicates in indices.
@@ -3192,7 +3143,6 @@ In StaticFrame, indices are always unique. Attempting to set a non-unique index 
 >>> f.set_index('type')
 Traceback (most recent call last):
 static_frame.core.exception.ErrorInitIndex: labels (4) have non-unique values (2)
-
 ```
 
 ## No. 10: There and Back Again to Pandas[#](#no-10-there-and-back-again-to-pandas "Link to this heading")
@@ -3207,7 +3157,6 @@ StaticFrame is designed to work in environments side-by-side with Pandas. Going 
 1      tau  1.777  -1.000  lepton
 2    charm  1.300   0.666   quark
 3  strange  0.100  -0.333   quark
-
 ```
 
 ```
@@ -3220,7 +3169,6 @@ StaticFrame is designed to work in environments side-by-side with Pandas. Going 
 2       charm    1.3       0.666     quark
 3       strange  0.1       -0.333    quark
 <int64> <object> <float64> <float64> <object>
-
 ```
 
 ## Conclusion[#](#conclusion "Link to this heading")

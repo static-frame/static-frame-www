@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
+[![StaticFrame 3.4.0 documentation - Home](_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
 
 * [static-frame](readme.md)
 * [License](license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](new.md)
 * Contributing
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](articles/ftyping.md)
   + [Faster DataFrame Serialization](articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](intro.md)
 * [What is New in StaticFrame](new.md)
 * Contributing
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](articles/ftyping.md)
 * [Faster DataFrame Serialization](articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](api_detail/index_minute-accessor_datetime.md)
@@ -2529,7 +2533,7 @@ If you have an idea for a new feature for which there is not already an issue, p
 
 ## Preparing an Environment[#](#preparing-an-environment "Link to this heading")
 
-StaticFrame is developed on Python 3.11.
+StaticFrame is developed on Python 3.13.
 
 To prepare a StaticFrame repository and environment, follow the following steps.
 
@@ -2537,17 +2541,15 @@ Clone the git repository (or your fork):
 
 ```
 git clone https://github.com/static-frame/static-frame.git
-
 ```
 
-Using Python 3.11, Create a virtual environment with StaticFrame’s development requirements:
+Using Python 3.13, Create a virtual environment with StaticFrame’s development requirements:
 
 ```
 cd static-frame
 python3 -m venv .env-sf
 source .env-sf/bin/activate
-pip install -r requirements-dev-3_11.txt
-
+pip install -r requirements-dev-3_13.txt
 ```
 
 ## Running Tests & Static Analysis[#](#running-tests-static-analysis "Link to this heading")
@@ -2560,14 +2562,12 @@ PyTest can be used to run StaticFrame tests. Alternatively, Invoke (installed vi
 
 ```
 invoke test
-
 ```
 
 When iterating on code, running fast unit tests is generally sufficient:
 
 ```
 invoke test -u
-
 ```
 
 To run MyPy and Pylint static analysis, use the following:
@@ -2575,7 +2575,6 @@ To run MyPy and Pylint static analysis, use the following:
 ```
 invoke mypy
 invoke lint
-
 ```
 
 All tests and static analysis are run via GitHub Actions on pull requests, and all tests and static analysis must pass for a PR to be accepted.
@@ -2605,7 +2604,7 @@ Thanks to former and current Research Affiliates staff who have contributed grea
 What is New in StaticFrame](new.md "previous page")
 [next
 
-Improving Code Quality with Array and DataFrame Type Hints](articles/guard.md "next page")
+Liberating Performance with Immutable DataFrames in Free-Threaded Python](articles/freethread.md "next page")
 
 On this page
 

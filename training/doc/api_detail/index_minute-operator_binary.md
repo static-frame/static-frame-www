@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* Detail: IndexMinute: Operator Binary
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + Detail: IndexMinute: Operator Binary
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2534,7 +2538,6 @@ IndexMinute.\_\_add\_\_(*other*, */*)[#](#static_frame.IndexMinute.__add__ "Link
     <datetime64[m]>
     >>> ix + 2
     ['1517-04-01T00:02' '1517-12-01T00:02' '1517-06-30T00:02']
-
     ```
 
 IndexMinute.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexMinute.__and__ "Link to this definition")
@@ -2550,7 +2553,6 @@ IndexMinute.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexMinute.__and__ "Link
     TypeError("ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix & (False, True)
     TypeError("ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexMinute.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexMinute.__eq__ "Link to this definition")
@@ -2566,7 +2568,6 @@ IndexMinute.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexMinute.__eq__ "Link t
     <datetime64[m]>
     >>> ix == '1517-06-30'
     [False False  True]
-
     ```
 
 IndexMinute.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexMinute.__floordiv__ "Link to this definition")
@@ -2580,7 +2581,6 @@ IndexMinute.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexMinute.__floord
     <datetime64[m]>
     >>> ix // '1517-06-30'
     UFuncTypeError(<ufunc 'floor_divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMinute.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexMinute.__ge__ "Link to this definition")
@@ -2596,7 +2596,6 @@ IndexMinute.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexMinute.__ge__ "Link t
     <datetime64[m]>
     >>> ix >= '1517-06-30'
     [False  True  True]
-
     ```
 
 IndexMinute.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexMinute.__gt__ "Link to this definition")
@@ -2612,7 +2611,6 @@ IndexMinute.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexMinute.__gt__ "Link t
     <datetime64[m]>
     >>> ix > '1517-06-30'
     [False  True False]
-
     ```
 
 IndexMinute.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexMinute.__le__ "Link to this definition")
@@ -2628,7 +2626,6 @@ IndexMinute.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexMinute.__le__ "Link t
     <datetime64[m]>
     >>> ix <= '1517-06-30'
     [ True False  True]
-
     ```
 
 IndexMinute.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexMinute.__lt__ "Link to this definition")
@@ -2644,7 +2641,6 @@ IndexMinute.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexMinute.__lt__ "Link t
     <datetime64[m]>
     >>> ix < '1517-06-30'
     [ True False False]
-
     ```
 
 IndexMinute.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexMinute.__matmul__ "Link to this definition")
@@ -2658,7 +2654,6 @@ IndexMinute.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexMinute.__matmul__
     <datetime64[m]>
     >>> ix @ (3, 0, 4, 0)
     NotImplementedError('matrix multiplication not supported')
-
     ```
 
 IndexMinute.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexMinute.__mod__ "Link to this definition")
@@ -2672,7 +2667,6 @@ IndexMinute.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexMinute.__mod__ "Link
     <datetime64[m]>
     >>> ix % '1517-06-30'
     UFuncTypeError(<ufunc 'remainder'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMinute.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexMinute.__mul__ "Link to this definition")
@@ -2686,7 +2680,6 @@ IndexMinute.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexMinute.__mul__ "Link
     <datetime64[m]>
     >>> ix * '1517-06-30'
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMinute.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexMinute.__ne__ "Link to this definition")
@@ -2702,7 +2695,6 @@ IndexMinute.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexMinute.__ne__ "Link t
     <datetime64[m]>
     >>> ix != '1517-06-30'
     [ True  True False]
-
     ```
 
 IndexMinute.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexMinute.__or__ "Link to this definition")
@@ -2720,7 +2712,6 @@ IndexMinute.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexMinute.__or__ "Link t
     TypeError("ufunc 'bitwise_or' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix | (False, True)
     TypeError("ufunc 'bitwise_or' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexMinute.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexMinute.__pow__ "Link to this definition")
@@ -2734,7 +2725,6 @@ IndexMinute.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexMinute.__pow__ "Link
     <datetime64[m]>
     >>> ix ** '1517-06-30'
     TypeError("ufunc 'power' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexMinute.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexMinute.__radd__ "Link to this definition")
@@ -2748,7 +2738,6 @@ IndexMinute.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexMinute.__radd__ "Li
     <datetime64[m]>
     >>> '1517-06-30' + ix
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMinute.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rfloordiv__ "Link to this definition")
@@ -2762,7 +2751,6 @@ IndexMinute.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rfloo
     <datetime64[m]>
     >>> '1517-06-30' // ix
     UFuncTypeError(<ufunc 'floor_divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMinute.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rmatmul__ "Link to this definition")
@@ -2776,7 +2764,6 @@ IndexMinute.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rmatmul
     <datetime64[m]>
     >>> ix @ (3, 0, 4, 0)
     NotImplementedError('matrix multiplication not supported')
-
     ```
 
 IndexMinute.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rmul__ "Link to this definition")
@@ -2790,7 +2777,6 @@ IndexMinute.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rmul__ "Li
     <datetime64[m]>
     >>> '1517-06-30' * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMinute.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rshift__ "Link to this definition")
@@ -2804,7 +2790,6 @@ IndexMinute.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rshift__
     <datetime64[m]>
     >>> ix >> 1
     TypeError("ufunc 'right_shift' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexMinute.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rsub__ "Link to this definition")
@@ -2818,7 +2803,6 @@ IndexMinute.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rsub__ "Li
     <datetime64[m]>
     >>> '1517-06-30' - ix
     [  90 -154    0]
-
     ```
 
 IndexMinute.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rtruediv__ "Link to this definition")
@@ -2832,7 +2816,6 @@ IndexMinute.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexMinute.__rtrued
     <datetime64[m]>
     >>> '1517-06-30' / ix
     UFuncTypeError(<ufunc 'divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMinute.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexMinute.__sub__ "Link to this definition")
@@ -2846,7 +2829,6 @@ IndexMinute.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexMinute.__sub__ "Link
     <datetime64[m]>
     >>> ix - 2
     ['1517-03-31T23:58' '1517-11-30T23:58' '1517-06-29T23:58']
-
     ```
 
 IndexMinute.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexMinute.__truediv__ "Link to this definition")
@@ -2860,7 +2842,6 @@ IndexMinute.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexMinute.__truediv
     <datetime64[m]>
     >>> ix / '1517-06-30'
     UFuncTypeError(<ufunc 'divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexMinute.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexMinute.__xor__ "Link to this definition")
@@ -2876,7 +2857,6 @@ IndexMinute.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexMinute.__xor__ "Link
     TypeError("ufunc 'bitwise_xor' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix ^ (False, True)
     TypeError("ufunc 'bitwise_xor' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 [IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](index_minute-method.md#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.md#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-detail-indexminute-accessor-type-clinic)

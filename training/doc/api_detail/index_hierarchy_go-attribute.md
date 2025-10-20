@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ IndexHierarchyGO.STATIC *= False*[#](#static_frame.IndexHierarchyGO.STATIC "Link
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.STATIC
     False
-
     ```
 
 IndexHierarchyGO.depth[#](#static_frame.IndexHierarchyGO.depth "Link to this definition")
@@ -2538,7 +2541,6 @@ IndexHierarchyGO.depth[#](#static_frame.IndexHierarchyGO.depth "Link to this def
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.depth
     3
-
     ```
 
 IndexHierarchyGO.dtypes[#](#static_frame.IndexHierarchyGO.dtypes "Link to this definition")
@@ -2556,7 +2558,6 @@ IndexHierarchyGO.dtypes[#](#static_frame.IndexHierarchyGO.dtypes "Link to this d
     y        int64
     z        datetime64[D]
     <<U1>    <object>
-
     ```
 
 IndexHierarchyGO.index\_types[#](#static_frame.IndexHierarchyGO.index_types "Link to this definition")
@@ -2574,7 +2575,6 @@ IndexHierarchyGO.index\_types[#](#static_frame.IndexHierarchyGO.index_types "Lin
     y        <IndexGO>
     z        <IndexDateGO>
     <<U1>    <object>
-
     ```
 
 IndexHierarchyGO.memory[#](#static_frame.IndexHierarchyGO.memory "Link to this definition")
@@ -2593,12 +2593,11 @@ IndexHierarchyGO.memory[#](#static_frame.IndexHierarchyGO.memory "Link to this d
     >>> ih.memory
              L    Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
     Name     190  B     190  B     190  B     190   B     190  B     190  B
-    Indices  3.3  KB    3.39 KB    2.64 KB    11.41 KB    3.46 KB    2.71 KB
+    Indices  3.37 KB    3.46 KB    2.71 KB    11.48 KB    3.53 KB    2.78 KB
     Indexers 200  B     200  B     72   B     200   B     200  B     72   B
     Blocks   740  B     788  B     404  B     740   B     788  B     404  B
     Values   16   B     16   B     16   B     16    B     16   B     16   B
-    Total    5.23 KB    5.38 KB    4.01 KB    13.33 KB    5.44 KB    4.07 KB
-
+    Total    5.3  KB    5.46 KB    4.08 KB    13.41 KB    5.52 KB    4.15 KB
     ```
 
 IndexHierarchyGO.mloc[#](#static_frame.IndexHierarchyGO.mloc "Link to this definition")
@@ -2614,7 +2613,6 @@ IndexHierarchyGO.name[#](#static_frame.IndexHierarchyGO.name "Link to this defin
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.name
     ('x', 'y', 'z')
-
     ```
 
 IndexHierarchyGO.names[#](#static_frame.IndexHierarchyGO.names "Link to this definition")
@@ -2624,7 +2622,6 @@ IndexHierarchyGO.names[#](#static_frame.IndexHierarchyGO.names "Link to this def
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.names
     ('x', 'y', 'z')
-
     ```
 
 IndexHierarchyGO.nbytes[#](#static_frame.IndexHierarchyGO.nbytes "Link to this definition")
@@ -2637,7 +2634,6 @@ IndexHierarchyGO.nbytes[#](#static_frame.IndexHierarchyGO.nbytes "Link to this d
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.nbytes
     741
-
     ```
 
 IndexHierarchyGO.ndim[#](#static_frame.IndexHierarchyGO.ndim "Link to this definition")
@@ -2650,7 +2646,6 @@ IndexHierarchyGO.ndim[#](#static_frame.IndexHierarchyGO.ndim "Link to this defin
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.ndim
     2
-
     ```
 
 IndexHierarchyGO.positions[#](#static_frame.IndexHierarchyGO.positions "Link to this definition")
@@ -2660,7 +2655,6 @@ IndexHierarchyGO.positions[#](#static_frame.IndexHierarchyGO.positions "Link to 
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.positions
     [0 1 2]
-
     ```
 
 IndexHierarchyGO.shape[#](#static_frame.IndexHierarchyGO.shape "Link to this definition")
@@ -2673,7 +2667,6 @@ IndexHierarchyGO.shape[#](#static_frame.IndexHierarchyGO.shape "Link to this def
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.shape
     (3, 3)
-
     ```
 
 IndexHierarchyGO.size[#](#static_frame.IndexHierarchyGO.size "Link to this definition")
@@ -2686,7 +2679,6 @@ IndexHierarchyGO.size[#](#static_frame.IndexHierarchyGO.size "Link to this defin
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.size
     9
-
     ```
 
 [IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)

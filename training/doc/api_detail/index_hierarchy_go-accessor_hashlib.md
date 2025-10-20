@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2541,7 +2545,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).to_bytes()
     b'IndexHierarchyGOq\x00\x00\x00r\x00\x00\x00s\x00\x00\x00 \x00\x00\x00X\x00\x00\x00Y\x00\x00\x00Z\x00\x00\x00\x00\x00\x00\x001\x00\x00\x002\x00\x00\x003\x00\x00\x00\x00\x00\x00\x00 \x00\x00\x00w\x00\x00\x00X\x00\x00\x00 \x00\x00\x004\x00\x00\x00/\x00\x00\x001\x00\x00\x00/\x00\x00\x001\x00\x00\x005\x00\x00\x001\x00\x00\x007\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x001\x00\x00\x002\x00\x00\x00/\x00\x00\x003\x00\x00\x001\x00\x00\x00/\x00\x00\x001\x00\x00\x005\x00\x00\x001\x00\x00\x007\x00\x00\x006\x00\x00\x00/\x00\x00\x003\x00\x00\x000\x00\x00\x00/\x00\x00\x001\x00\x00\x005\x00\x00\x001\x00\x00\x007\x00\x00\x00\x00\x00\x00\x001\x00\x00\x002\x00\x00\x00/\x00\x00\x003\x00\x00\x001\x00\x00\x00/\x00\x00\x002\x00\x00\x000\x00\x00\x002\x00\x00\x001\x00\x00\x00'
-
     ```
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
@@ -2561,7 +2564,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).md5().hexdigest()
     e4e20abad75da85a45b363cddc7c51d0
-
     ```
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
@@ -2581,7 +2583,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).sha256().hexdigest()
     c42f6d222a3dbae61b3ea80969c311ba869997b73fb3f6023e615567fd0a33b9
-
     ```
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
@@ -2601,7 +2602,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).sha512().hexdigest()
     ba3b13d827b3005a0c03b3fd05478009d09c18ebe84c1be4d5745c566d6af9c52ee8f4151992eb39b8fc64acb0160eb942827d5a980abcd5f7efdd975d7b4e75
-
     ```
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
@@ -2621,7 +2621,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).sha3_256().hexdigest()
     149201c31f5f0f4e308ee014a3255cb28a56b01b8620514edfdccebaba057c76
-
     ```
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
@@ -2641,7 +2640,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).sha3_512().hexdigest()
     120efcb630288be19e03a286f990ed20d4f3e124cf7d61a263e464a5d3faa9420c93f06b5d32ac49473d3c3c5d069a6c727f604b8a56cf1a34cd81b7e4226692
-
     ```
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
@@ -2661,7 +2659,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).shake_128().hexdigest(8)
     41ce9c0472bb2984
-
     ```
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
@@ -2681,7 +2678,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).shake_256().hexdigest(8)
     82a3ac86fbfacf2c
-
     ```
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2701,7 +2697,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).blake2b().hexdigest()
     9debec1361c7e9cde3af56498bbc2fd027617f41898738367b7a7d81d14f06d9909f28d459acc2ba4ee1ccc718700fe3291249012660611c0f8f9a6749752cd4
-
     ```
 
 IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2721,7 +2716,6 @@ IndexHierarchyGO.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding
     <<U4>              <<U10>
     >>> ih.via_hashlib(include_name=False).blake2s().hexdigest()
     4c66ea773e42a20b858a41ef1d954427a1b407c40a0f126dd3864b0e1f2cb8bc
-
     ```
 
 [IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)

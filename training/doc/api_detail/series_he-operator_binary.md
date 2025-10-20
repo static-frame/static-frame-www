@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2547,7 +2551,6 @@ SeriesHE.\_\_add\_\_(*other*, */*)[#](#static_frame.SeriesHE.__add__ "Link to th
     b          4.0
     c          16.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.\_\_and\_\_(*other*, */*)[#](#static_frame.SeriesHE.__and__ "Link to this definition")
@@ -2574,7 +2577,6 @@ SeriesHE.\_\_and\_\_(*other*, */*)[#](#static_frame.SeriesHE.__and__ "Link to th
     b          False
     c          True
     <<U1>      <bool>
-
     ```
 
 SeriesHE.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/series.md#SeriesHE.__eq__)[#](#static_frame.SeriesHE.__eq__ "Link to this definition")
@@ -2593,7 +2595,6 @@ SeriesHE.\_\_eq\_\_(*other*)[[source]](../_modules/static_frame/core/series.md#S
     False
     >>> s == s.reindex(('c', 'b'))
     False
-
     ```
 
 SeriesHE.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.SeriesHE.__floordiv__ "Link to this definition")
@@ -2620,7 +2621,6 @@ SeriesHE.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.SeriesHE.__floordiv__ "
     b          1.0
     c          1.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.\_\_ge\_\_(*other*, */*)[#](#static_frame.SeriesHE.__ge__ "Link to this definition")
@@ -2649,7 +2649,6 @@ SeriesHE.\_\_ge\_\_(*other*, */*)[#](#static_frame.SeriesHE.__ge__ "Link to this
     b          True
     c          True
     <<U1>      <bool>
-
     ```
 
 SeriesHE.\_\_gt\_\_(*other*, */*)[#](#static_frame.SeriesHE.__gt__ "Link to this definition")
@@ -2678,7 +2677,6 @@ SeriesHE.\_\_gt\_\_(*other*, */*)[#](#static_frame.SeriesHE.__gt__ "Link to this
     b          False
     c          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.\_\_le\_\_(*other*, */*)[#](#static_frame.SeriesHE.__le__ "Link to this definition")
@@ -2707,7 +2705,6 @@ SeriesHE.\_\_le\_\_(*other*, */*)[#](#static_frame.SeriesHE.__le__ "Link to this
     b          True
     c          True
     <<U1>      <bool>
-
     ```
 
 SeriesHE.\_\_lt\_\_(*other*, */*)[#](#static_frame.SeriesHE.__lt__ "Link to this definition")
@@ -2736,7 +2733,6 @@ SeriesHE.\_\_lt\_\_(*other*, */*)[#](#static_frame.SeriesHE.__lt__ "Link to this
     b          False
     c          False
     <<U1>      <bool>
-
     ```
 
 SeriesHE.\_\_matmul\_\_(*other*, */*)[#](#static_frame.SeriesHE.__matmul__ "Link to this definition")
@@ -2751,7 +2747,6 @@ SeriesHE.\_\_matmul\_\_(*other*, */*)[#](#static_frame.SeriesHE.__matmul__ "Link
     <<U1>      <int64>
     >>> s @ (3, 0, 4)
     62
-
     ```
 
 SeriesHE.\_\_mod\_\_(*other*, */*)[#](#static_frame.SeriesHE.__mod__ "Link to this definition")
@@ -2778,7 +2773,6 @@ SeriesHE.\_\_mod\_\_(*other*, */*)[#](#static_frame.SeriesHE.__mod__ "Link to th
     b          0.0
     c          0.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.\_\_mul\_\_(*other*, */*)[#](#static_frame.SeriesHE.__mul__ "Link to this definition")
@@ -2805,7 +2799,6 @@ SeriesHE.\_\_mul\_\_(*other*, */*)[#](#static_frame.SeriesHE.__mul__ "Link to th
     b          4.0
     c          64.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.\_\_ne\_\_(*other*, */*)[[source]](../_modules/static_frame/core/series.md#SeriesHE.__ne__)[#](#static_frame.SeriesHE.__ne__ "Link to this definition")
@@ -2824,7 +2817,6 @@ SeriesHE.\_\_ne\_\_(*other*, */*)[[source]](../_modules/static_frame/core/series
     True
     >>> s != s.reindex(('c', 'b'))
     True
-
     ```
 
 SeriesHE.\_\_or\_\_(*other*, */*)[#](#static_frame.SeriesHE.__or__ "Link to this definition")
@@ -2853,7 +2845,6 @@ SeriesHE.\_\_or\_\_(*other*, */*)[#](#static_frame.SeriesHE.__or__ "Link to this
     b          False
     c          True
     <<U1>      <bool>
-
     ```
 
 SeriesHE.\_\_pow\_\_(*other*, */*)[#](#static_frame.SeriesHE.__pow__ "Link to this definition")
@@ -2880,7 +2871,6 @@ SeriesHE.\_\_pow\_\_(*other*, */*)[#](#static_frame.SeriesHE.__pow__ "Link to th
     b          4.0
     c          16777216.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.\_\_radd\_\_(*other*, */*)[#](#static_frame.SeriesHE.__radd__ "Link to this definition")
@@ -2900,7 +2890,6 @@ SeriesHE.\_\_radd\_\_(*other*, */*)[#](#static_frame.SeriesHE.__radd__ "Link to 
     b          10
     c          16
     <<U1>      <int64>
-
     ```
 
 SeriesHE.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rfloordiv__ "Link to this definition")
@@ -2920,7 +2909,6 @@ SeriesHE.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rfloordiv__
     b          4
     c          1
     <<U1>      <int64>
-
     ```
 
 SeriesHE.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rmatmul__ "Link to this definition")
@@ -2935,7 +2923,6 @@ SeriesHE.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rmatmul__ "Li
     <<U1>      <int64>
     >>> s @ (3, 0, 4)
     62
-
     ```
 
 SeriesHE.\_\_rmul\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rmul__ "Link to this definition")
@@ -2955,7 +2942,6 @@ SeriesHE.\_\_rmul\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rmul__ "Link to 
     b          16
     c          64
     <<U1>      <int64>
-
     ```
 
 SeriesHE.\_\_rshift\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rshift__ "Link to this definition")
@@ -2975,7 +2961,6 @@ SeriesHE.\_\_rshift\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rshift__ "Link
     b          1
     c          4
     <<U1>      <int64>
-
     ```
 
 SeriesHE.\_\_rsub\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rsub__ "Link to this definition")
@@ -2995,7 +2980,6 @@ SeriesHE.\_\_rsub\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rsub__ "Link to 
     b          6
     c          0
     <<U1>      <int64>
-
     ```
 
 SeriesHE.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rtruediv__ "Link to this definition")
@@ -3015,7 +2999,6 @@ SeriesHE.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.SeriesHE.__rtruediv__ "
     b          4.0
     c          1.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.\_\_sub\_\_(*other*, */*)[#](#static_frame.SeriesHE.__sub__ "Link to this definition")
@@ -3042,7 +3025,6 @@ SeriesHE.\_\_sub\_\_(*other*, */*)[#](#static_frame.SeriesHE.__sub__ "Link to th
     b          0.0
     c          0.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.\_\_truediv\_\_(*other*, */*)[#](#static_frame.SeriesHE.__truediv__ "Link to this definition")
@@ -3069,7 +3051,6 @@ SeriesHE.\_\_truediv\_\_(*other*, */*)[#](#static_frame.SeriesHE.__truediv__ "Li
     b          1.0
     c          1.0
     <<U1>      <float64>
-
     ```
 
 SeriesHE.\_\_xor\_\_(*other*, */*)[#](#static_frame.SeriesHE.__xor__ "Link to this definition")
@@ -3096,7 +3077,6 @@ SeriesHE.\_\_xor\_\_(*other*, */*)[#](#static_frame.SeriesHE.__xor__ "Link to th
     b          False
     c          False
     <<U1>      <bool>
-
     ```
 
 [SeriesHE](series_he.md#api-detail-serieshe): [Constructor](series_he-constructor.md#api-detail-serieshe-constructor) | [Exporter](series_he-exporter.md#api-detail-serieshe-exporter) | [Attribute](series_he-attribute.md#api-detail-serieshe-attribute) | [Method](series_he-method.md#api-detail-serieshe-method) | [Dictionary-Like](series_he-dictionary_like.md#api-detail-serieshe-dictionary-like) | [Display](series_he-display.md#api-detail-serieshe-display) | [Assignment](series_he-assignment.md#api-detail-serieshe-assignment) | [Selector](series_he-selector.md#api-detail-serieshe-selector) | [Iterator](series_he-iterator.md#api-detail-serieshe-iterator) | [Operator Binary](#api-detail-serieshe-operator-binary) | [Operator Unary](series_he-operator_unary.md#api-detail-serieshe-operator-unary) | [Accessor Values](series_he-accessor_values.md#api-detail-serieshe-accessor-values) | [Accessor Datetime](series_he-accessor_datetime.md#api-detail-serieshe-accessor-datetime) | [Accessor String](series_he-accessor_string.md#api-detail-serieshe-accessor-string) | [Accessor Fill Value](series_he-accessor_fill_value.md#api-detail-serieshe-accessor-fill-value) | [Accessor Regular Expression](series_he-accessor_regular_expression.md#api-detail-serieshe-accessor-regular-expression) | [Accessor Hashlib](series_he-accessor_hashlib.md#api-detail-serieshe-accessor-hashlib) | [Accessor Type Clinic](series_he-accessor_type_clinic.md#api-detail-serieshe-accessor-type-clinic) | [Accessor Mapping](series_he-accessor_mapping.md#api-detail-serieshe-accessor-mapping)

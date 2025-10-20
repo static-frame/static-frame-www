@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexYear: Method](../api_overview/index_year-method.md#api-overview-indexyear-method)
 
-IndexYear.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexYear.__array__ "Link to this definition")
+IndexYear.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexYear.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2536,7 +2540,6 @@ IndexYear.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexYear.__array__ "Link
     <datetime64[Y]>
     >>> ix.__array__()
     ['1517' '1520' '1518']
-
     ```
 
 IndexYear.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexYear.__array_ufunc__ "Link to this definition")
@@ -2552,7 +2555,6 @@ IndexYear.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#st
     <datetime64[Y]>
     >>> np.array((0, 1, 0)) * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('int64'), dtype('<M8[Y]')))
-
     ```
 
 IndexYear.\_\_bool\_\_()[#](#static_frame.IndexYear.__bool__ "Link to this definition")
@@ -2568,7 +2570,6 @@ IndexYear.\_\_bool\_\_()[#](#static_frame.IndexYear.__bool__ "Link to this defin
     <datetime64[Y]>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexYear.\_\_copy\_\_()[#](#static_frame.IndexYear.__copy__ "Link to this definition")
@@ -2589,7 +2590,6 @@ IndexYear.\_\_copy\_\_()[#](#static_frame.IndexYear.__copy__ "Link to this defin
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYear.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexYear.__deepcopy__ "Link to this definition")
@@ -2608,7 +2608,6 @@ IndexYear.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexYear.__deepcopy__ "Link
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYear.\_\_len\_\_()[#](#static_frame.IndexYear.__len__ "Link to this definition")
@@ -2622,7 +2621,6 @@ IndexYear.\_\_len\_\_()[#](#static_frame.IndexYear.__len__ "Link to this definit
     <datetime64[Y]>
     >>> len(ix)
     3
-
     ```
 
 IndexYear.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYear.all "Link to this definition")
@@ -2642,7 +2640,6 @@ IndexYear.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexY
     <datetime64[Y]>
     >>> ix.all()
     True
-
     ```
 
 IndexYear.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYear.any "Link to this definition")
@@ -2662,7 +2659,6 @@ IndexYear.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexY
     <datetime64[Y]>
     >>> ix.any()
     True
-
     ```
 
 IndexYear.astype(*dtype*, */*)[#](#static_frame.IndexYear.astype "Link to this definition")
@@ -2685,7 +2681,6 @@ IndexYear.astype(*dtype*, */*)[#](#static_frame.IndexYear.astype "Link to this d
     1520
     1518
     <<U22>
-
     ```
 
 IndexYear.copy()[#](#static_frame.IndexYear.copy "Link to this definition")
@@ -2705,7 +2700,6 @@ IndexYear.copy()[#](#static_frame.IndexYear.copy "Link to this definition")
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYear.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYear.cumprod "Link to this definition")
@@ -2725,7 +2719,6 @@ IndexYear.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYear.cump
     <datetime64[Y]>
     >>> ix.cumprod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYear.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYear.cumsum "Link to this definition")
@@ -2745,7 +2738,6 @@ IndexYear.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexYear.cumsu
     <datetime64[Y]>
     >>> ix.cumsum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYear.difference(*\*others*)[#](#static_frame.IndexYear.difference "Link to this definition")
@@ -2772,7 +2764,6 @@ IndexYear.difference(*\*others*)[#](#static_frame.IndexYear.difference "Link to 
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYear.dropfalsy()[#](#static_frame.IndexYear.dropfalsy "Link to this definition")
@@ -2791,7 +2782,6 @@ IndexYear.dropfalsy()[#](#static_frame.IndexYear.dropfalsy "Link to this definit
     1620
     1619
     <datetime64[Y]>
-
     ```
 
 IndexYear.dropna()[#](#static_frame.IndexYear.dropna "Link to this definition")
@@ -2810,7 +2800,6 @@ IndexYear.dropna()[#](#static_frame.IndexYear.dropna "Link to this definition")
     1620
     1619
     <datetime64[Y]>
-
     ```
 
 IndexYear.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.IndexYear.equals "Link to this definition")
@@ -2839,7 +2828,6 @@ IndexYear.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fals
     <datetime64[Y]>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 IndexYear.fillfalsy(*value*, */*)[#](#static_frame.IndexYear.fillfalsy "Link to this definition")
@@ -2858,7 +2846,6 @@ IndexYear.fillfalsy(*value*, */*)[#](#static_frame.IndexYear.fillfalsy "Link to 
     <datetime64[Y]>
     >>> ix.fillfalsy('A')
     ValueError('Error parsing datetime string "A" at position 0')
-
     ```
 
 IndexYear.fillna(*value*, */*)[#](#static_frame.IndexYear.fillna "Link to this definition")
@@ -2881,7 +2868,6 @@ IndexYear.fillna(*value*, */*)[#](#static_frame.IndexYear.fillna "Link to this d
     1970
     1619
     <datetime64[Y]>
-
     ```
 
 IndexYear.head(*count=5*, */*)[#](#static_frame.IndexYear.head "Link to this definition")
@@ -2903,7 +2889,6 @@ IndexYear.head(*count=5*, */*)[#](#static_frame.IndexYear.head "Link to this def
     1517
     1520
     <datetime64[Y]>
-
     ```
 
 IndexYear.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexYear.iloc_searchsorted "Link to this definition")
@@ -2923,7 +2908,6 @@ IndexYear.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_
     <datetime64[Y]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexYear.intersection(*\*others*)[#](#static_frame.IndexYear.intersection "Link to this definition")
@@ -2947,7 +2931,25 @@ IndexYear.intersection(*\*others*)[#](#static_frame.IndexYear.intersection "Link
     >>> ix1.intersection(ix2)
     <IndexYear>
     <datetime64[Y]>
+    ```
 
+IndexYear.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexYear.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.IndexYear(('2022', '2021', '2018'))
+    >>> ix
+    <IndexYear>
+    2022
+    2021
+    2018
+    <datetime64[Y]>
+    >>> assert ix.is_sorted(ascending=False)
     ```
 
 IndexYear.isfalsy()[#](#static_frame.IndexYear.isfalsy "Link to this definition")
@@ -2957,7 +2959,6 @@ IndexYear.isfalsy()[#](#static_frame.IndexYear.isfalsy "Link to this definition"
     >>> ix = sf.IndexYear(('1620', 'NaT', '1619'))
     >>> ix.isfalsy()
     [False  True False]
-
     ```
 
 IndexYear.isin(*other*, */*)[#](#static_frame.IndexYear.isin "Link to this definition")
@@ -2973,7 +2974,6 @@ IndexYear.isin(*other*, */*)[#](#static_frame.IndexYear.isin "Link to this defin
     <datetime64[Y]>
     >>> ix.isin(('1518',))
     [False False False]
-
     ```
 
 IndexYear.isna()[#](#static_frame.IndexYear.isna "Link to this definition")
@@ -2983,7 +2983,6 @@ IndexYear.isna()[#](#static_frame.IndexYear.isna "Link to this definition")
     >>> ix = sf.IndexYear(('1620', 'NaT', '1619'))
     >>> ix.isna()
     [False  True False]
-
     ```
 
 IndexYear.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexYear.label_widths_at_depth "Link to this definition")
@@ -3002,7 +3001,6 @@ IndexYear.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.Index
     <datetime64[Y]>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.datetime64('1517'), 1), (np.datetime64('1520'), 1), (np.datetime64('1518'), 1))
-
     ```
 
 IndexYear.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.IndexYear.level_add "Link to this definition")
@@ -3027,7 +3025,6 @@ IndexYear.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_f
     A                1520
     A                1518
     <<U1>            <datetime64[Y]>
-
     ```
 
 IndexYear.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.IndexYear.loc_searchsorted "Link to this definition")
@@ -3048,7 +3045,6 @@ IndexYear.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value
     <datetime64[Y]>
     >>> ix.loc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexYear.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexYear.loc_to_iloc "Link to this definition")
@@ -3071,7 +3067,6 @@ IndexYear.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexYear.loc_to_iloc "Link
     [0 2]
     >>> ix.loc_to_iloc(slice('1520', None))
     slice(1, None, None)
-
     ```
 
 IndexYear.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYear.max "Link to this definition")
@@ -3091,7 +3086,6 @@ IndexYear.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexY
     <datetime64[Y]>
     >>> ix.max()
     1520
-
     ```
 
 IndexYear.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYear.mean "Link to this definition")
@@ -3111,7 +3105,6 @@ IndexYear.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index
     <datetime64[Y]>
     >>> ix.mean()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYear.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYear.median "Link to this definition")
@@ -3131,7 +3124,6 @@ IndexYear.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Ind
     <datetime64[Y]>
     >>> ix.median()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYear.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexYear.min "Link to this definition")
@@ -3151,7 +3143,6 @@ IndexYear.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexY
     <datetime64[Y]>
     >>> ix.min()
     1517
-
     ```
 
 IndexYear.notfalsy()[#](#static_frame.IndexYear.notfalsy "Link to this definition")
@@ -3161,7 +3152,6 @@ IndexYear.notfalsy()[#](#static_frame.IndexYear.notfalsy "Link to this definitio
     >>> ix = sf.IndexYear(('1620', 'NaT', '1619'))
     >>> ix.notfalsy()
     [ True False  True]
-
     ```
 
 IndexYear.notna()[#](#static_frame.IndexYear.notna "Link to this definition")
@@ -3171,7 +3161,6 @@ IndexYear.notna()[#](#static_frame.IndexYear.notna "Link to this definition")
     >>> ix = sf.IndexYear(('1620', 'NaT', '1619'))
     >>> ix.notna()
     [ True False  True]
-
     ```
 
 IndexYear.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexYear.prod "Link to this definition")
@@ -3191,7 +3180,6 @@ IndexYear.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_
     <datetime64[Y]>
     >>> ix.prod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYear.relabel(*mapper*, */*)[#](#static_frame.IndexYear.relabel "Link to this definition")
@@ -3207,7 +3195,6 @@ IndexYear.relabel(*mapper*, */*)[#](#static_frame.IndexYear.relabel "Link to thi
     <datetime64[Y]>
     >>> ix.relabel(lambda l: l.astype('<M8[ms]').astype(object).day)
     ErrorInitIndexNonUnique('Labels have non-unique values. Examples from iterators not are available.')
-
     ```
 
 IndexYear.rename(*name*, */*)[#](#static_frame.IndexYear.rename "Link to this definition")
@@ -3227,7 +3214,6 @@ IndexYear.rename(*name*, */*)[#](#static_frame.IndexYear.rename "Link to this de
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYear.roll(*shift*)[#](#static_frame.IndexYear.roll "Link to this definition")
@@ -3247,7 +3233,6 @@ IndexYear.roll(*shift*)[#](#static_frame.IndexYear.roll "Link to this definition
     1518
     1517
     <datetime64[Y]>
-
     ```
 
 IndexYear.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexYear.sample "Link to this definition")
@@ -3270,7 +3255,6 @@ IndexYear.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexYear.sample
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYear.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexYear.sort "Link to this definition")
@@ -3301,7 +3285,6 @@ IndexYear.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#stati
     1518
     1517
     <datetime64[Y]>
-
     ```
 
 IndexYear.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexYear.std "Link to this definition")
@@ -3321,7 +3304,6 @@ IndexYear.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_fr
     <datetime64[Y]>
     >>> ix.std()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYear.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexYear.sum "Link to this definition")
@@ -3341,7 +3323,6 @@ IndexYear.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_f
     <datetime64[Y]>
     >>> ix.sum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 IndexYear.tail(*count=5*, */*)[#](#static_frame.IndexYear.tail "Link to this definition")
@@ -3363,7 +3344,6 @@ IndexYear.tail(*count=5*, */*)[#](#static_frame.IndexYear.tail "Link to this def
     1520
     1518
     <datetime64[Y]>
-
     ```
 
 IndexYear.union(*\*others*)[#](#static_frame.IndexYear.union "Link to this definition")
@@ -3393,7 +3373,6 @@ IndexYear.union(*\*others*)[#](#static_frame.IndexYear.union "Link to this defin
     2021
     2022
     <datetime64[Y]>
-
     ```
 
 IndexYear.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#static_frame.IndexYear.unique "Link to this definition")
@@ -3416,7 +3395,6 @@ IndexYear.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](
     <datetime64[Y]>
     >>> ix.unique()
     ['1620'  'NaT' '1619']
-
     ```
 
 IndexYear.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexYear.values_at_depth "Link to this definition")
@@ -3432,7 +3410,6 @@ IndexYear.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexYear.va
     <datetime64[Y]>
     >>> ix.values_at_depth(0)
     ['1517' '1520' '1518']
-
     ```
 
 IndexYear.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexYear.var "Link to this definition")
@@ -3452,7 +3429,6 @@ IndexYear.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_fr
     <datetime64[Y]>
     >>> ix.var()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[Y]'), dtype('<M8[Y]')))
-
     ```
 
 [IndexYear](index_year.md#api-detail-indexyear): [Constructor](index_year-constructor.md#api-detail-indexyear-constructor) | [Exporter](index_year-exporter.md#api-detail-indexyear-exporter) | [Attribute](index_year-attribute.md#api-detail-indexyear-attribute) | [Method](#api-detail-indexyear-method) | [Dictionary-Like](index_year-dictionary_like.md#api-detail-indexyear-dictionary-like) | [Display](index_year-display.md#api-detail-indexyear-display) | [Selector](index_year-selector.md#api-detail-indexyear-selector) | [Iterator](index_year-iterator.md#api-detail-indexyear-iterator) | [Operator Binary](index_year-operator_binary.md#api-detail-indexyear-operator-binary) | [Operator Unary](index_year-operator_unary.md#api-detail-indexyear-operator-unary) | [Accessor Values](index_year-accessor_values.md#api-detail-indexyear-accessor-values) | [Accessor Datetime](index_year-accessor_datetime.md#api-detail-indexyear-accessor-datetime) | [Accessor String](index_year-accessor_string.md#api-detail-indexyear-accessor-string) | [Accessor Regular Expression](index_year-accessor_regular_expression.md#api-detail-indexyear-accessor-regular-expression) | [Accessor Hashlib](index_year-accessor_hashlib.md#api-detail-indexyear-accessor-hashlib) | [Accessor Type Clinic](index_year-accessor_type_clinic.md#api-detail-indexyear-accessor-type-clinic)
@@ -3487,6 +3463,7 @@ On this page
 * [`IndexYear.head()`](#static_frame.IndexYear.head)
 * [`IndexYear.iloc_searchsorted()`](#static_frame.IndexYear.iloc_searchsorted)
 * [`IndexYear.intersection()`](#static_frame.IndexYear.intersection)
+* [`IndexYear.is_sorted()`](#static_frame.IndexYear.is_sorted)
 * [`IndexYear.isfalsy()`](#static_frame.IndexYear.isfalsy)
 * [`IndexYear.isin()`](#static_frame.IndexYear.isin)
 * [`IndexYear.isna()`](#static_frame.IndexYear.isna)

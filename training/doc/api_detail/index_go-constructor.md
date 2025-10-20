@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexGO: Constructor](../api_overview/index_go-constructor.md#api-overview-indexgo-constructor)
 
-IndexGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*)[#](#static_frame.IndexGO.__init__ "Link to this definition")
+IndexGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *dtype=None*, *sort\_status=SortStatus.UNKNOWN*)[#](#static_frame.IndexGO.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -2541,7 +2545,33 @@ IndexGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object o
     d
     e
     <<U1>
+    ```
 
+*classmethod* IndexGO.from\_difference(*\*others*)[#](#static_frame.IndexGO.from_difference "Link to this definition")
+:   Construct a new Index based on the difference with Index, containers, or NumPy arrays. Retains order.
+
+    ```
+    >>> ix1 = sf.IndexGO.from_labels(('a', 'b', 'c', 'd', 'e'), name='x')
+    >>> ix2 = sf.IndexGO.from_labels(('c', 'd', 'e', 'f'), name='y')
+    >>> sf.IndexGO.from_difference(ix1, ix2)
+    <IndexGO>
+    a
+    b
+    <<U1>
+    ```
+
+*classmethod* IndexGO.from\_intersection(*\*others*)[#](#static_frame.IndexGO.from_intersection "Link to this definition")
+:   Construct a new Index based on the intersection with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexGO.from_labels(('a', 'b', 'c', 'd', 'e'), name='x')
+    >>> ix2 = sf.IndexGO.from_labels(('c', 'd', 'e', 'f'), name='y')
+    >>> sf.IndexGO.from_intersection(ix1, ix2)
+    <IndexGO>
+    c
+    d
+    e
+    <<U1>
     ```
 
 *classmethod* IndexGO.from\_labels(*labels*, */*, *\**, *name=None*)[#](#static_frame.IndexGO.from_labels "Link to this definition")
@@ -2556,7 +2586,6 @@ IndexGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object o
     d
     e
     <<U1>
-
     ```
 
 *classmethod* IndexGO.from\_pandas(*value*, */*)[#](#static_frame.IndexGO.from_pandas "Link to this definition")
@@ -2572,7 +2601,23 @@ IndexGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object o
     d
     e
     <object>
+    ```
 
+*classmethod* IndexGO.from\_union(*\*others*)[#](#static_frame.IndexGO.from_union "Link to this definition")
+:   Construct a new Index based on the union with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexGO.from_labels(('a', 'b', 'c', 'd', 'e'), name='x')
+    >>> ix2 = sf.IndexGO.from_labels(('c', 'd', 'e', 'f'), name='y')
+    >>> sf.IndexGO.from_union(ix1, ix2)
+    <IndexGO>
+    a
+    b
+    c
+    d
+    e
+    f
+    <<U1>
     ```
 
 [IndexGO](index_go.md#api-detail-indexgo): [Constructor](#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](index_go-iterator.md#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)
@@ -2587,8 +2632,11 @@ Detail: IndexGO: Exporter](index_go-exporter.md "next page")
 On this page
 
 * [`IndexGO.__init__()`](#static_frame.IndexGO.__init__)
+* [`IndexGO.from_difference()`](#static_frame.IndexGO.from_difference)
+* [`IndexGO.from_intersection()`](#static_frame.IndexGO.from_intersection)
 * [`IndexGO.from_labels()`](#static_frame.IndexGO.from_labels)
 * [`IndexGO.from_pandas()`](#static_frame.IndexGO.from_pandas)
+* [`IndexGO.from_union()`](#static_frame.IndexGO.from_union)
 
 © Copyright 2025, Christopher Ariza.
 

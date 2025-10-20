@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ Quilt.STATIC *= True*[#](#static_frame.Quilt.STATIC "Link to this definition")
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
     >>> q.STATIC
     True
-
     ```
 
 Quilt.bus[#](#static_frame.Quilt.bus "Link to this definition")
@@ -2542,7 +2545,6 @@ Quilt.bus[#](#static_frame.Quilt.bus "Link to this definition")
     0        Frame
     2        Frame
     <<U1>    <object>
-
     ```
 
 Quilt.columns[#](#static_frame.Quilt.columns "Link to this definition")
@@ -2556,7 +2558,6 @@ Quilt.columns[#](#static_frame.Quilt.columns "Link to this definition")
     b
     c
     <<U1>
-
     ```
 
 Quilt.index[#](#static_frame.Quilt.index "Link to this definition")
@@ -2571,7 +2572,6 @@ Quilt.index[#](#static_frame.Quilt.index "Link to this definition")
     2                2
     2                3
     <<U1>            <int64>
-
     ```
 
 Quilt.inventory[#](#static_frame.Quilt.inventory "Link to this definition")
@@ -2585,9 +2585,8 @@ Quilt.inventory[#](#static_frame.Quilt.inventory "Link to this definition")
     <Frame>
     <Index>  path       last_modified        size    <<U13>
     <Index>
-    None     /tmp/q.zip 2025-05-30T14:54:... 1.06 KB
+    None     /tmp/q.zip 2025-10-08T01:33:... 1.06 KB
     <object> <<U10>     <<U32>               <<U7>
-
     ```
 
 Quilt.memory[#](#static_frame.Quilt.memory "Link to this definition")
@@ -2604,9 +2603,8 @@ Quilt.memory[#](#static_frame.Quilt.memory "Link to this definition")
     ```
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
     >>> q.memory
-          L    Lu    LM   LMu   LMD LMDu  R     Ru    RM   RMu   RMD  RMDu
-    Total 8.94 KB    6.05 KB    4.3 KB    17.45 KB    6.13 KB    4.38 KB
-
+          L    Lu    LM   LMu   LMD  LMDu  R    Ru    RM   RMu   RMD  RMDu
+    Total 9.09 KB    6.13 KB    4.38 KB    17.6 KB    6.22 KB    4.47 KB
     ```
 
 Quilt.name[#](#static_frame.Quilt.name "Link to this definition")
@@ -2619,7 +2617,6 @@ Quilt.name[#](#static_frame.Quilt.name "Link to this definition")
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
     >>> q.name
     x
-
     ```
 
 Quilt.nbytes[#](#static_frame.Quilt.nbytes "Link to this definition")
@@ -2632,7 +2629,6 @@ Quilt.nbytes[#](#static_frame.Quilt.nbytes "Link to this definition")
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
     >>> q.nbytes
     68
-
     ```
 
 Quilt.ndim[#](#static_frame.Quilt.ndim "Link to this definition")
@@ -2645,7 +2641,6 @@ Quilt.ndim[#](#static_frame.Quilt.ndim "Link to this definition")
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
     >>> q.ndim
     2
-
     ```
 
 Quilt.shape[#](#static_frame.Quilt.shape "Link to this definition")
@@ -2658,7 +2653,6 @@ Quilt.shape[#](#static_frame.Quilt.shape "Link to this definition")
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
     >>> q.shape
     (4, 3)
-
     ```
 
 Quilt.size[#](#static_frame.Quilt.size "Link to this definition")
@@ -2671,7 +2665,6 @@ Quilt.size[#](#static_frame.Quilt.size "Link to this definition")
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
     >>> q.size
     12
-
     ```
 
 Quilt.status[#](#static_frame.Quilt.status "Link to this definition")
@@ -2688,7 +2681,6 @@ Quilt.status[#](#static_frame.Quilt.status "Link to this definition")
     0       False  nan       nan       None
     2       False  nan       nan       None
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 [Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](quilt-dictionary_like.md#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: Batch: Method](../api_overview/batch-method.md#api-overview-batch-method)
 
-Batch.\_\_array\_\_(*dtype=None*)[#](#static_frame.Batch.__array__ "Link to this definition")
+Batch.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.Batch.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2542,7 +2546,6 @@ Batch.\_\_array\_\_(*dtype=None*)[#](#static_frame.Batch.__array__ "Link to this
     q          42      43
     r          44      45
     <<U1>      <int64> <int64>)
-
     ```
 
 Batch.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.Batch.__array_ufunc__ "Link to this definition")
@@ -2561,7 +2564,6 @@ Batch.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static
     j                q     21.0      0.0
     j                r     22.0      0.0
     <<U1>            <<U1> <float64> <float64>
-
     ```
 
 Batch.\_\_bool\_\_()[#](#static_frame.Batch.__bool__ "Link to this definition")
@@ -2571,7 +2573,6 @@ Batch.\_\_bool\_\_()[#](#static_frame.Batch.__bool__ "Link to this definition")
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> bool(bt)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 Batch.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.__round__)[#](#static_frame.Batch.__round__ "Link to this definition")
@@ -2593,7 +2594,6 @@ Batch.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/b
     j                q     34.0      34.33
     j                r     34.67     35.0
     <<U1>            <<U1> <float64> <float64>
-
     ```
 
 Batch.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.all "Link to this definition")
@@ -2612,7 +2612,6 @@ Batch.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.all 
     i       False  True
     j       False  False
     <<U1>   <bool> <bool>
-
     ```
 
 Batch.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.any "Link to this definition")
@@ -2631,7 +2630,6 @@ Batch.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.any 
     i       False  True
     j       True   True
     <<U1>   <bool> <bool>
-
     ```
 
 Batch.apply(*func*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.apply)[#](#static_frame.Batch.apply "Link to this definition")
@@ -2650,7 +2648,6 @@ Batch.apply(*func*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.
     j                q     +     -
     j                r     +     +
     <<U1>            <<U1> <<U1> <<U1>
-
     ```
 
 Batch.apply\_except(*func*, *exception*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.apply_except)[#](#static_frame.Batch.apply_except "Link to this definition")
@@ -2666,7 +2663,6 @@ Batch.apply\_except(*func*, *exception*, */*)[[source]](../_modules/static_frame
     i                q     102     103
     i                r     104     105
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.apply\_items(*func*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.apply_items)[#](#static_frame.Batch.apply_items "Link to this definition")
@@ -2685,7 +2681,6 @@ Batch.apply\_items(*func*, */*)[[source]](../_modules/static_frame/core/batch.md
     j                q     4200.0    4300.0
     j                r     4400.0    4500.0
     <<U1>            <<U1> <float64> <float64>
-
     ```
 
 Batch.apply\_items\_except(*func*, */*, *\**, *exception*)[[source]](../_modules/static_frame/core/batch.md#Batch.apply_items_except)[#](#static_frame.Batch.apply_items_except "Link to this definition")
@@ -2701,7 +2696,6 @@ Batch.apply\_items\_except(*func*, */*, *\**, *exception*)[[source]](../_modules
     i                q     0.002     0.003
     i                r     0.004     0.005
     <<U1>            <<U1> <float64> <float64>
-
     ```
 
 Batch.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
@@ -2727,7 +2721,6 @@ Batch.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
     j                q     42     43
     j                r     44     45
     <<U1>            <<U1> <<U21> <int64>
-
     ```
 
 Batch.astype(*dtype*, */*)
@@ -2750,7 +2743,6 @@ Batch.astype(*dtype*, */*)
     j                q     42     43
     j                r     44     45
     <<U1>            <<U1> <<U21> <<U21>
-
     ```
 
 Batch.clip(*\**, *lower=None*, *upper=None*, *axis=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.clip)[#](#static_frame.Batch.clip "Link to this definition")
@@ -2774,7 +2766,6 @@ Batch.clip(*\**, *lower=None*, *upper=None*, *axis=None*)[[source]](../_modules/
     j                q     41      41
     j                r     41      41
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/batch.md#Batch.corr)[#](#static_frame.Batch.corr "Link to this definition")
@@ -2794,7 +2785,6 @@ Batch.corr(*\**, *axis=1*)[[source]](../_modules/static_frame/core/batch.md#Batc
     j                a     1.0       1.0
     j                b     1.0       1.0
     <<U1>            <<U1> <float64> <float64>
-
     ```
 
 Batch.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.count)[#](#static_frame.Batch.count "Link to this definition")
@@ -2816,7 +2806,6 @@ Batch.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[s
     i       3       3
     j       3       3
     <<U1>   <int64> <int64>
-
     ```
 
 Batch.cov(*\**, *axis=1*, *ddof=1*)[[source]](../_modules/static_frame/core/batch.md#Batch.cov)[#](#static_frame.Batch.cov "Link to this definition")
@@ -2837,7 +2826,6 @@ Batch.cov(*\**, *axis=1*, *ddof=1*)[[source]](../_modules/static_frame/core/batc
     j                a     0.4444444444444413  0.44444444444444364
     j                b     0.44444444444444364 0.44444444444444603
     <<U1>            <<U1> <float64>           <float64>
-
     ```
 
 Batch.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Batch.cumprod "Link to this definition")
@@ -2860,7 +2848,6 @@ Batch.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Batch.cumprod "Lin
     j                q     1133.3333333333335 1155.888888888889
     j                r     39288.88888888889  40456.11111111111
     <<U1>            <<U1> <float64>          <float64>
-
     ```
 
 Batch.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Batch.cumsum "Link to this definition")
@@ -2883,7 +2870,6 @@ Batch.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Batch.cumsum "Link 
     j                q     67.33333333333334  68.0
     j                r     102.0              103.0
     <<U1>            <<U1> <float64>          <float64>
-
     ```
 
 Batch.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/batch.md#Batch.drop_duplicated)[#](#static_frame.Batch.drop_duplicated "Link to this definition")
@@ -2904,7 +2890,6 @@ Batch.drop\_duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=Fa
     j                q     True   False
     j                r     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/batch.md#Batch.dropfalsy)[#](#static_frame.Batch.dropfalsy "Link to this definition")
@@ -2926,7 +2911,6 @@ Batch.dropfalsy(*\**, *axis=0*, *condition=<function all>*)[[source]](../_module
     j                1        2.0       XYZ      1517-04-01
     j                3        2.0       123      1517-04-01
     <<U1>            <object> <float64> <object> <object>
-
     ```
 
 Batch.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/static_frame/core/batch.md#Batch.dropna)[#](#static_frame.Batch.dropna "Link to this definition")
@@ -2949,7 +2933,6 @@ Batch.dropna(*\**, *axis=0*, *condition=<function all>*)[[source]](../_modules/s
     j                q     True   False
     j                r     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/batch.md#Batch.duplicated)[#](#static_frame.Batch.duplicated "Link to this definition")
@@ -2969,7 +2952,6 @@ Batch.duplicated(*\**, *axis=0*, *exclude\_first=False*, *exclude\_last=False*)[
     i       True   True   True
     j       False  False  False
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Batch.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.Batch.equals "Link to this definition")
@@ -2978,7 +2960,6 @@ Batch.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, 
     >>> bt2 = sf.Batch((('i', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v')), ('j', sf.Frame(np.arange(100, 106).reshape(3,2) / 3, index=('p', 'q', 'r'), columns=('a', 'b'), name='x'))))
     >>> bt1.equals(bt2)
     NotImplementedError()
-
     ```
 
 Batch.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy)[#](#static_frame.Batch.fillfalsy "Link to this definition")
@@ -2998,7 +2979,6 @@ Batch.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/batch.md#B
     j                2        -1.0               nan
     j                3        2.0       123      1517-04-01
     <<U1>            <object> <float64> <object> <object>
-
     ```
 
 Batch.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy_backward)[#](#static_frame.Batch.fillfalsy_backward "Link to this definition")
@@ -3023,7 +3003,6 @@ Batch.fillfalsy\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/
     j                2       10.0      3.0       1.0
     j                3       2.0       8.0       1.0
     <<U1>            <int64> <float64> <float64> <float64>
-
     ```
 
 Batch.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy_forward)[#](#static_frame.Batch.fillfalsy_forward "Link to this definition")
@@ -3048,7 +3027,6 @@ Batch.fillfalsy\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/s
     j                2       10.0      3.0       nan
     j                3       2.0       8.0       1.0
     <<U1>            <int64> <float64> <float64> <float64>
-
     ```
 
 Batch.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy_leading)[#](#static_frame.Batch.fillfalsy_leading "Link to this definition")
@@ -3073,7 +3051,6 @@ Batch.fillfalsy\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/sta
     j                2       10.0      3.0       -1.0
     j                3       2.0       8.0       1.0
     <<U1>            <int64> <float64> <float64> <float64>
-
     ```
 
 Batch.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillfalsy_trailing)[#](#static_frame.Batch.fillfalsy_trailing "Link to this definition")
@@ -3098,7 +3075,6 @@ Batch.fillfalsy\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/st
     j                2       10.0      3.0       nan
     j                3       2.0       8.0       1.0
     <<U1>            <int64> <float64> <float64> <float64>
-
     ```
 
 Batch.fillna(*value*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna)[#](#static_frame.Batch.fillna "Link to this definition")
@@ -3118,7 +3094,6 @@ Batch.fillna(*value*, */*)[[source]](../_modules/static_frame/core/batch.md#Batc
     j                2        -1.0               -1
     j                3        2.0       123      1517-04-01
     <<U1>            <object> <float64> <object> <object>
-
     ```
 
 Batch.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna_backward)[#](#static_frame.Batch.fillna_backward "Link to this definition")
@@ -3143,7 +3118,6 @@ Batch.fillna\_backward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/sta
     j                2       10.0      3.0       1.0
     j                3       2.0       8.0       1.0
     <<U1>            <int64> <float64> <float64> <float64>
-
     ```
 
 Batch.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna_forward)[#](#static_frame.Batch.fillna_forward "Link to this definition")
@@ -3168,7 +3142,6 @@ Batch.fillna\_forward(*limit=0*, */*, *\**, *axis=0*)[[source]](../_modules/stat
     j                2       10.0      3.0       nan
     j                3       2.0       8.0       1.0
     <<U1>            <int64> <float64> <float64> <float64>
-
     ```
 
 Batch.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna_leading)[#](#static_frame.Batch.fillna_leading "Link to this definition")
@@ -3193,7 +3166,6 @@ Batch.fillna\_leading(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static
     j                2       10.0      3.0       -1.0
     j                3       2.0       8.0       1.0
     <<U1>            <int64> <float64> <float64> <float64>
-
     ```
 
 Batch.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.fillna_trailing)[#](#static_frame.Batch.fillna_trailing "Link to this definition")
@@ -3218,7 +3190,6 @@ Batch.fillna\_trailing(*value*, */*, *\**, *axis=0*)[[source]](../_modules/stati
     j                2       10.0      3.0       nan
     j                3       2.0       8.0       1.0
     <<U1>            <int64> <float64> <float64> <float64>
-
     ```
 
 Batch.head(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.head)[#](#static_frame.Batch.head "Link to this definition")
@@ -3238,7 +3209,6 @@ Batch.head(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.md#Batc
     j                p     40      41
     j                q     42      43
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.iloc_max)[#](#static_frame.Batch.iloc_max "Link to this definition")
@@ -3257,7 +3227,6 @@ Batch.iloc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_fram
     i       0       0       0
     j       2       1       3
     <<U1>   <int64> <int64> <int64>
-
     ```
 
 Batch.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.iloc_min)[#](#static_frame.Batch.iloc_min "Link to this definition")
@@ -3276,7 +3245,6 @@ Batch.iloc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_fram
     i       1       1       0
     j       3       2       3
     <<U1>   <int64> <int64> <int64>
-
     ```
 
 Batch.isfalsy()[[source]](../_modules/static_frame/core/batch.md#Batch.isfalsy)[#](#static_frame.Batch.isfalsy "Link to this definition")
@@ -3296,7 +3264,6 @@ Batch.isfalsy()[[source]](../_modules/static_frame/core/batch.md#Batch.isfalsy)[
     j                2        True   True   True
     j                3        False  False  False
     <<U1>            <object> <bool> <bool> <bool>
-
     ```
 
 Batch.isin(*other*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.isin)[#](#static_frame.Batch.isin "Link to this definition")
@@ -3317,7 +3284,6 @@ Batch.isin(*other*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.
     j                2       True   True   False
     j                3       False  False  False
     <<U1>            <int64> <bool> <bool> <bool>
-
     ```
 
 Batch.isna()[[source]](../_modules/static_frame/core/batch.md#Batch.isna)[#](#static_frame.Batch.isna "Link to this definition")
@@ -3338,7 +3304,6 @@ Batch.isna()[[source]](../_modules/static_frame/core/batch.md#Batch.isna)[#](#st
     j                2       False  False  True
     j                3       False  False  False
     <<U1>            <int64> <bool> <bool> <bool>
-
     ```
 
 Batch.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.loc_max)[#](#static_frame.Batch.loc_max "Link to this definition")
@@ -3357,7 +3322,6 @@ Batch.loc\_max(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame
     i       0       0       0
     j       2       1       3
     <<U1>   <int64> <int64> <int64>
-
     ```
 
 Batch.loc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.loc_min)[#](#static_frame.Batch.loc_min "Link to this definition")
@@ -3376,7 +3340,6 @@ Batch.loc\_min(*\**, *skipna=True*, *axis=0*)[[source]](../_modules/static_frame
     i       1       1       0
     j       3       2       3
     <<U1>   <int64> <int64> <int64>
-
     ```
 
 Batch.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.max "Link to this definition")
@@ -3395,7 +3358,6 @@ Batch.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.max 
     i       4       5
     j       44      45
     <<U1>   <int64> <int64>
-
     ```
 
 Batch.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.mean "Link to this definition")
@@ -3414,7 +3376,6 @@ Batch.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.mea
     i       2.0       3.0
     j       42.0      43.0
     <<U1>   <float64> <float64>
-
     ```
 
 Batch.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.median "Link to this definition")
@@ -3433,7 +3394,6 @@ Batch.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.m
     i       2.0       3.0
     j       42.0      43.0
     <<U1>   <float64> <float64>
-
     ```
 
 Batch.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.min "Link to this definition")
@@ -3452,7 +3412,6 @@ Batch.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Batch.min 
     i       0       1
     j       40      41
     <<U1>   <int64> <int64>
-
     ```
 
 Batch.notfalsy()[[source]](../_modules/static_frame/core/batch.md#Batch.notfalsy)[#](#static_frame.Batch.notfalsy "Link to this definition")
@@ -3472,7 +3431,6 @@ Batch.notfalsy()[[source]](../_modules/static_frame/core/batch.md#Batch.notfalsy
     j                2        False  False  False
     j                3        True   True   True
     <<U1>            <object> <bool> <bool> <bool>
-
     ```
 
 Batch.notna()[[source]](../_modules/static_frame/core/batch.md#Batch.notna)[#](#static_frame.Batch.notna "Link to this definition")
@@ -3493,7 +3451,6 @@ Batch.notna()[[source]](../_modules/static_frame/core/batch.md#Batch.notna)[#](#
     j                2       True   True   False
     j                3       True   True   True
     <<U1>            <int64> <bool> <bool> <bool>
-
     ```
 
 Batch.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.Batch.prod "Link to this definition")
@@ -3512,7 +3469,6 @@ Batch.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_fram
     i       0       15
     j       73920   79335
     <<U1>   <int64> <int64>
-
     ```
 
 Batch.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_dense)[#](#static_frame.Batch.rank_dense "Link to this definition")
@@ -3531,7 +3487,6 @@ Batch.rank\_dense(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *f
     j                2       2       0       0
     j                3       1       1       1
     <<U1>            <int64> <int64> <int64> <int64>
-
     ```
 
 Batch.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_max)[#](#static_frame.Batch.rank_max "Link to this definition")
@@ -3550,7 +3505,6 @@ Batch.rank\_max(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
     j                2       3       0       2
     j                3       2       2       3
     <<U1>            <int64> <int64> <int64> <int64>
-
     ```
 
 Batch.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_mean)[#](#static_frame.Batch.rank_mean "Link to this definition")
@@ -3569,7 +3523,6 @@ Batch.rank\_mean(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fi
     j                2       3.0       0.0       1.0
     j                3       2.0       1.5       3.0
     <<U1>            <int64> <float64> <float64> <float64>
-
     ```
 
 Batch.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_min)[#](#static_frame.Batch.rank_min "Link to this definition")
@@ -3588,7 +3541,6 @@ Batch.rank\_min(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fil
     j                2       3       0       0
     j                3       2       1       3
     <<U1>            <int64> <int64> <int64> <int64>
-
     ```
 
 Batch.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.rank_ordinal)[#](#static_frame.Batch.rank_ordinal "Link to this definition")
@@ -3607,7 +3559,6 @@ Batch.rank\_ordinal(*\**, *axis=0*, *skipna=True*, *ascending=True*, *start=0*, 
     j                2       3       0       2
     j                3       2       2       3
     <<U1>            <int64> <int64> <int64> <int64>
-
     ```
 
 Batch.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index=False*, *own\_columns=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/batch.md#Batch.reindex)[#](#static_frame.Batch.reindex "Link to this definition")
@@ -3624,7 +3575,6 @@ Batch.reindex(*index=None*, *columns=None*, *\**, *fill\_value=nan*, *own\_index
     j                p     40      41
     j                a     0       0
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel)[#](#static_frame.Batch.relabel "Link to this definition")
@@ -3655,7 +3605,6 @@ Batch.relabel(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *co
     j                +2+   nan                None
     j                +3+   2.0       123      1517-04-01
     <<U1>            <<U3> <float64> <object> <object>
-
     ```
 
 Batch.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel_flat)[#](#static_frame.Batch.relabel_flat "Link to this definition")
@@ -3674,7 +3623,6 @@ Batch.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static
     j                (np.int64(1), np.... 19      False  2022-12-31
     j                (np.int64(1), np.... 87      False  2024-06-30
     <<U1>            <object>             <int64> <bool> <datetime64[D]>
-
     ```
 
 Batch.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructor=None*, *columns\_constructor=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel_level_add)[#](#static_frame.Batch.relabel_level_add "Link to this definition")
@@ -3694,7 +3642,6 @@ Batch.relabel\_level\_add(*index=None*, *columns=None*, *\**, *index\_constructo
     I                q     42      43
     I                r     44      45
     <<U1>            <<U1> <int64> <int64>)
-
     ```
 
 Batch.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel_level_drop)[#](#static_frame.Batch.relabel_level_drop "Link to this definition")
@@ -3709,7 +3656,6 @@ Batch.relabel\_level\_drop(*index=0*, *columns=0*)[[source]](../_modules/static_
     j                p     23      True   2022-01-01
     j                q     83      True   2023-04-01
     <<U1>            <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Batch.relabel\_shift\_in(*key*, */*, *\**, *axis=0*)[[source]](../_modules/static_frame/core/batch.md#Batch.relabel_shift_in)[#](#static_frame.Batch.relabel_shift_in "Link to this definition")
@@ -3731,7 +3677,6 @@ Batch.relabel\_shift\_in(*key*, */*, *\**, *axis=0*)[[source]](../_modules/stati
     1                                    p     19      False  2022-12-31
     1                                    q     87      False  2024-06-30
     <int64>                              <<U1> <int64> <bool> <datetime64[D]>)
-
     ```
 
 Batch.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *columns=<object object>*)[[source]](../_modules/static_frame/core/batch.md#Batch.rename)[#](#static_frame.Batch.rename "Link to this definition")
@@ -3745,7 +3690,6 @@ Batch.rename(*name=<object object>*, */*, *\**, *index=<object object>*, *column
     i       Frame
     j       Frame
     <<U1>   <object>
-
     ```
 
 Batch.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_columns=False*)[[source]](../_modules/static_frame/core/batch.md#Batch.roll)[#](#static_frame.Batch.roll "Link to this definition")
@@ -3768,7 +3712,6 @@ Batch.roll(*index=0*, *columns=0*, *\**, *include\_index=False*, *include\_colum
     j                p     40      41
     j                q     42      43
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.sample)[#](#static_frame.Batch.sample "Link to this definition")
@@ -3790,7 +3733,6 @@ Batch.sample(*index=None*, *columns=None*, *\**, *seed=None*)[[source]](../_modu
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.shift(*index=0*, *columns=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/batch.md#Batch.shift)[#](#static_frame.Batch.shift "Link to this definition")
@@ -3809,7 +3751,6 @@ Batch.shift(*index=0*, *columns=0*, *fill\_value=nan*)[[source]](../_modules/sta
     j                q     40      41
     j                r     42      43
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_modules/static_frame/core/batch.md#Batch.sort_columns)[#](#static_frame.Batch.sort_columns "Link to this definition")
@@ -3828,7 +3769,6 @@ Batch.sort\_columns(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_mo
     j                q     43      42
     j                r     45      44
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.sort\_index(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_modules/static_frame/core/batch.md#Batch.sort_index)[#](#static_frame.Batch.sort_index "Link to this definition")
@@ -3843,11 +3783,10 @@ Batch.sort\_index(*\**, *ascending=True*, *kind='mergesort'*)[[source]](../_modu
     i                r     4       5
     i                q     2       3
     i                p     0       1
-    j                r     44      45
+    j                p     44      45
     j                q     42      43
-    j                p     40      41
+    j                r     40      41
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='mergesort'*)[[source]](../_modules/static_frame/core/batch.md#Batch.sort_values)[#](#static_frame.Batch.sort_values "Link to this definition")
@@ -3869,7 +3808,6 @@ Batch.sort\_values(*label*, */*, *\**, *ascending=True*, *axis=1*, *kind='merges
     j                q     42      43
     j                p     40      41
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.Batch.std "Link to this definition")
@@ -3888,7 +3826,6 @@ Batch.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.
     i       1.632993161855452 1.632993161855452
     j       1.632993161855452 1.632993161855452
     <<U1>   <float64>         <float64>
-
     ```
 
 Batch.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.Batch.sum "Link to this definition")
@@ -3907,7 +3844,6 @@ Batch.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame
     i       6       9
     j       126     129
     <<U1>   <int64> <int64>
-
     ```
 
 Batch.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.md#Batch.tail)[#](#static_frame.Batch.tail "Link to this definition")
@@ -3927,7 +3863,6 @@ Batch.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/batch.md#Batc
     j                q     42      43
     j                r     44      45
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.transpose()[[source]](../_modules/static_frame/core/batch.md#Batch.transpose)[#](#static_frame.Batch.transpose "Link to this definition")
@@ -3944,7 +3879,6 @@ Batch.transpose()[[source]](../_modules/static_frame/core/batch.md#Batch.transpo
     j                a     40      42      44
     j                b     41      43      45
     <<U1>            <<U1> <int64> <int64> <int64>
-
     ```
 
 Batch.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.unique)[#](#static_frame.Batch.unique "Link to this definition")
@@ -3959,7 +3893,6 @@ Batch.unique(*\**, *axis=None*)[[source]](../_modules/static_frame/core/batch.md
     i       False  True
     j       False  True
     <<U1>   <bool> <bool>
-
     ```
 
 Batch.unset\_index(*\**, *names=()*, *consolidate\_blocks=False*, *columns\_constructors=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.unset_index)[#](#static_frame.Batch.unset_index "Link to this definition")
@@ -3978,7 +3911,6 @@ Batch.unset\_index(*\**, *names=()*, *consolidate\_blocks=False*, *columns\_cons
     j                2       1       p     19      False  2022-12-31
     j                3       1       q     87      False  2024-06-30
     <<U1>            <int64> <int64> <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 Batch.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.Batch.var "Link to this definition")
@@ -3997,7 +3929,6 @@ Batch.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.
     i       2.6666666666666665 2.6666666666666665
     j       2.6666666666666665 2.6666666666666665
     <<U1>   <float64>          <float64>
-
     ```
 
 [Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)

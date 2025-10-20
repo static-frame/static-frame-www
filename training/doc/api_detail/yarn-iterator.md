@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2565,7 +2569,6 @@ Yarn.iter\_element
     q          True   False
     r          True   True
     <<U1>      <bool> <bool>)
-
     ```
 
 Yarn.iter\_element(*).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2599,7 +2602,6 @@ Yarn.iter\_element(*).apply(func*, */*, *\**, *dtype*, *name*, *index\_construct
     v        (3, 2)
     w        (3, 2)
     <<U1>    <object>
-
     ```
 
 Yarn.iter\_element(*).apply\_iter(func*, */*)
@@ -2629,7 +2631,6 @@ Yarn.iter\_element(*).apply\_iter(func*, */*)
     <<U1>   <object>
     >>> tuple(y.iter_element().apply_iter(lambda f: f.nbytes))
     (48, 6, 48, 6)
-
     ```
 
 Yarn.iter\_element(*).apply\_iter\_items(func*, */*)
@@ -2659,7 +2660,6 @@ Yarn.iter\_element(*).apply\_iter\_items(func*, */*)
     <<U1>   <object>
     >>> tuple(y.iter_element().apply_iter_items(lambda f: f.nbytes))
     ((np.str_('x'), 48), (np.str_('y'), 6), (np.str_('v'), 48), (np.str_('w'), 6))
-
     ```
 
 Yarn.iter\_element(*).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2699,7 +2699,6 @@ Yarn.iter\_element(*).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_con
     v        255
     w        4
     <<U1>    <int64>
-
     ```
 
 Yarn.iter\_element\_items
@@ -2744,7 +2743,6 @@ Yarn.iter\_element\_items
     q          True   False
     r          True   True
     <<U1>      <bool> <bool>))
-
     ```
 
 Yarn.iter\_element\_items(*).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2778,7 +2776,6 @@ Yarn.iter\_element\_items(*).apply(func*, */*, *\**, *dtype*, *name*, *index\_co
     v        0
     w        6
     <<U1>    <int64>
-
     ```
 
 Yarn.iter\_element\_items(*).apply\_iter(func*, */*)
@@ -2808,7 +2805,6 @@ Yarn.iter\_element\_items(*).apply\_iter(func*, */*)
     <<U1>   <object>
     >>> tuple(y.iter_element_items().apply_iter(lambda l, f: f.shape if l != 'x' else 0))
     (0, (3, 2), (3, 2), (3, 2))
-
     ```
 
 Yarn.iter\_element\_items(*).apply\_iter\_items(func*, */*)
@@ -2838,7 +2834,6 @@ Yarn.iter\_element\_items(*).apply\_iter\_items(func*, */*)
     <<U1>   <object>
     >>> tuple(y.iter_element_items().apply_iter_items(lambda l, f: f.shape if l != 'x' else 0))
     ((np.str_('x'), 0), (np.str_('y'), (3, 2)), (np.str_('v'), (3, 2)), (np.str_('w'), (3, 2)))
-
     ```
 
 Yarn.iter\_element\_items(*).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2878,7 +2873,6 @@ Yarn.iter\_element\_items(*).apply\_pool(func*, */*, *\**, *dtype*, *name*, *ind
     v        -1
     w        4
     <<U1>    <int64>
-
     ```
 
 [Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)

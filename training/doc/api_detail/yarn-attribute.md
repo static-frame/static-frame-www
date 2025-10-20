@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ Yarn.STATIC *= True*[#](#static_frame.Yarn.STATIC "Link to this definition")
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
     >>> y.STATIC
     True
-
     ```
 
 Yarn.dtype[#](#static_frame.Yarn.dtype "Link to this definition")
@@ -2541,7 +2544,6 @@ Yarn.dtype[#](#static_frame.Yarn.dtype "Link to this definition")
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
     >>> y.dtype
     object
-
     ```
 
 Yarn.dtypes[#](#static_frame.Yarn.dtypes "Link to this definition")
@@ -2558,7 +2560,6 @@ Yarn.dtypes[#](#static_frame.Yarn.dtypes "Link to this definition")
     j                v     int64    int64    None     None
     j                w     None     None     bool     bool
     <<U1>            <<U1> <object> <object> <object> <object>
-
     ```
 
 Yarn.index[#](#static_frame.Yarn.index "Link to this definition")
@@ -2576,7 +2577,6 @@ Yarn.index[#](#static_frame.Yarn.index "Link to this definition")
     j                v
     j                w
     <<U1>            <<U1>
-
     ```
 
 Yarn.inventory[#](#static_frame.Yarn.inventory "Link to this definition")
@@ -2591,7 +2591,6 @@ Yarn.inventory[#](#static_frame.Yarn.inventory "Link to this definition")
     i
     j
     <<U1>   <<U1> <<U1>         <<U1>
-
     ```
 
 Yarn.memory[#](#static_frame.Yarn.memory "Link to this definition")
@@ -2608,9 +2607,8 @@ Yarn.memory[#](#static_frame.Yarn.memory "Link to this definition")
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
     >>> y.memory
-          L     Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD RMDu
-    Total 18.08 KB    7.33 KB    5.08 KB    26.19 KB    7.45 KB    5.2 KB
-
+          L     Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
+    Total 18.26 KB    7.42 KB    5.17 KB    26.37 KB    7.54 KB    5.29 KB
     ```
 
 Yarn.mloc[#](#static_frame.Yarn.mloc "Link to this definition")
@@ -2625,7 +2623,6 @@ Yarn.name[#](#static_frame.Yarn.name "Link to this definition")
     ```
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
     >>> y.name
-
     ```
 
 Yarn.nbytes[#](#static_frame.Yarn.nbytes "Link to this definition")
@@ -2635,7 +2632,6 @@ Yarn.nbytes[#](#static_frame.Yarn.nbytes "Link to this definition")
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
     >>> y.nbytes
     108
-
     ```
 
 Yarn.ndim[#](#static_frame.Yarn.ndim "Link to this definition")
@@ -2648,7 +2644,6 @@ Yarn.ndim[#](#static_frame.Yarn.ndim "Link to this definition")
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
     >>> y.ndim
     1
-
     ```
 
 Yarn.shape[#](#static_frame.Yarn.shape "Link to this definition")
@@ -2661,7 +2656,6 @@ Yarn.shape[#](#static_frame.Yarn.shape "Link to this definition")
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
     >>> y.shape
     (4,)
-
     ```
 
 Yarn.shapes[#](#static_frame.Yarn.shapes "Link to this definition")
@@ -2680,7 +2674,6 @@ Yarn.shapes[#](#static_frame.Yarn.shapes "Link to this definition")
     j                v     (3, 2)
     j                w     (3, 2)
     <<U1>            <<U1> <object>
-
     ```
 
 Yarn.size[#](#static_frame.Yarn.size "Link to this definition")
@@ -2693,7 +2686,6 @@ Yarn.size[#](#static_frame.Yarn.size "Link to this definition")
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
     >>> y.size
     4
-
     ```
 
 Yarn.status[#](#static_frame.Yarn.status "Link to this definition")
@@ -2710,7 +2702,6 @@ Yarn.status[#](#static_frame.Yarn.status "Link to this definition")
     j                v     True   6.0       48.0      (3, 2)
     j                w     True   6.0       6.0       (3, 2)
     <<U1>            <<U1> <bool> <float64> <float64> <object>
-
     ```
 
 [Yarn](yarn.md#api-detail-yarn): [Constructor](yarn-constructor.md#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)

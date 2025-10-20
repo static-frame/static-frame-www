@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2546,7 +2550,6 @@ Series.via\_fill\_value(fill\_value, /).loc
     d        0
     e        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_getitem\_\_(key*)
@@ -2572,7 +2575,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_getitem\_\_(key*)
     d        0
     e        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(fill\_value, /).via\_T
@@ -2592,7 +2594,6 @@ Series.via\_fill\_value(fill\_value, /).via\_T
     <<U1>    <int64>
     >>> s.via_fill_value().via_T
     NotImplementedError('via_T functionality only available on Frame')
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_add\_\_(other*)
@@ -2611,7 +2612,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_add\_\_(other*)
     c        16
     d        19
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_sub\_\_(other*)
@@ -2630,7 +2630,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_sub\_\_(other*)
     c        0
     d        -19
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_mul\_\_(other*)
@@ -2649,7 +2648,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_mul\_\_(other*)
     c        64
     d        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_truediv\_\_(other*)
@@ -2668,7 +2666,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_truediv\_\_(other*)
     c        1.0
     d        0.0
     <<U1>    <float64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_floordiv\_\_(other*)
@@ -2687,7 +2684,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_floordiv\_\_(other*)
     c        1
     d        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_mod\_\_(other*)
@@ -2706,7 +2702,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_mod\_\_(other*)
     c        0
     d        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_pow\_\_(other*)
@@ -2725,7 +2720,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_pow\_\_(other*)
     c        16777216
     d        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_lshift\_\_(other*)
@@ -2758,7 +2752,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_lshift\_\_(other*)
     c        2048
     d        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_rshift\_\_(other*)
@@ -2791,7 +2784,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_rshift\_\_(other*)
     c        0
     d        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_and\_\_(other*)
@@ -2824,7 +2816,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_and\_\_(other*)
     c        False
     d        False
     <<U1>    <bool>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_xor\_\_(other*)
@@ -2857,7 +2848,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_xor\_\_(other*)
     c        True
     d        True
     <<U1>    <bool>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_or\_\_(other*)
@@ -2891,7 +2881,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_or\_\_(other*)
     c        True
     d        True
     <<U1>    <bool>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_lt\_\_(other*)
@@ -2911,7 +2900,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_lt\_\_(other*)
     c        False
     d        True
     <<U1>    <bool>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_le\_\_(other*)
@@ -2931,7 +2919,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_le\_\_(other*)
     c        True
     d        True
     <<U1>    <bool>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_eq\_\_(other*)
@@ -2951,7 +2938,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_eq\_\_(other*)
     c        True
     d        False
     <<U1>    <bool>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_ne\_\_(other*)
@@ -2971,7 +2957,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_ne\_\_(other*)
     c        False
     d        True
     <<U1>    <bool>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_gt\_\_(other*)
@@ -2991,7 +2976,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_gt\_\_(other*)
     c        False
     d        False
     <<U1>    <bool>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_ge\_\_(other*)
@@ -3011,7 +2995,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_ge\_\_(other*)
     c        True
     d        False
     <<U1>    <bool>
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_radd\_\_(other*)
@@ -3024,7 +3007,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_radd\_\_(other*)
     >>> s2 = sf.Series((2, 8, 19), index=('b', 'c', 'd'))
     >>> s2 + s1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_rsub\_\_(other*)
@@ -3037,7 +3019,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_rsub\_\_(other*)
     >>> s2 = sf.Series((2, 8, 19), index=('b', 'c', 'd'))
     >>> s2 - s1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_rmul\_\_(other*)
@@ -3050,7 +3031,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_rmul\_\_(other*)
     >>> s2 = sf.Series((2, 8, 19), index=('b', 'c', 'd'))
     >>> s2 * s1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_rtruediv\_\_(other*)
@@ -3063,7 +3043,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_rtruediv\_\_(other*)
     >>> s2 = sf.Series((2, 8, 19), index=('b', 'c', 'd'))
     >>> s2 / s1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 Series.via\_fill\_value(*fill\_value*, */).\_\_rfloordiv\_\_(other*)
@@ -3076,7 +3055,6 @@ Series.via\_fill\_value(*fill\_value*, */).\_\_rfloordiv\_\_(other*)
     >>> s2 = sf.Series((2, 8, 19), index=('b', 'c', 'd'))
     >>> s2 // s1.via_fill_value(0)
     RuntimeError('via_fill_value interfaces can only be used on the left-hand side of binary expressions.')
-
     ```
 
 [Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | [Accessor Mapping](series-accessor_mapping.md#api-detail-series-accessor-mapping)

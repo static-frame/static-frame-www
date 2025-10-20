@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2538,7 +2542,6 @@ Quilt.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame/core/qui
     <<U1>
     >>> q.__contains__('a')
     True
-
     ```
 
 Quilt.\_\_iter\_\_()[[source]](../_modules/static_frame/core/quilt.md#Quilt.__iter__)[#](#static_frame.Quilt.__iter__ "Link to this definition")
@@ -2556,7 +2559,6 @@ Quilt.\_\_iter\_\_()[[source]](../_modules/static_frame/core/quilt.md#Quilt.__it
     <<U1>
     >>> tuple(q.__iter__())
     (np.str_('a'), np.str_('b'))
-
     ```
 
 Quilt.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.get)[#](#static_frame.Quilt.get "Link to this definition")
@@ -2584,7 +2586,6 @@ Quilt.get(*key*, *default=None*)[[source]](../_modules/static_frame/core/quilt.m
     <<U1>            <<U1> <int64>
     >>> q.get('z', -1)
     -1
-
     ```
 
 Quilt.items()[[source]](../_modules/static_frame/core/quilt.md#Quilt.items)[#](#static_frame.Quilt.items "Link to this definition")
@@ -2602,7 +2603,6 @@ Quilt.items()[[source]](../_modules/static_frame/core/quilt.md#Quilt.items)[#](#
     <<U1>
     >>> tuple(q.items())
     NotImplementedAxis('Iteration along this axis is too inefficient; create a consolidated Frame with Quilt.to_frame()')
-
     ```
 
 Quilt.keys()[[source]](../_modules/static_frame/core/quilt.md#Quilt.keys)[#](#static_frame.Quilt.keys "Link to this definition")
@@ -2620,7 +2620,6 @@ Quilt.keys()[[source]](../_modules/static_frame/core/quilt.md#Quilt.keys)[#](#st
     <<U1>
     >>> tuple(q.keys())
     (np.str_('a'), np.str_('b'))
-
     ```
 
 Quilt.values[#](#static_frame.Quilt.values "Link to this definition")
@@ -2643,7 +2642,6 @@ Quilt.values[#](#static_frame.Quilt.values "Link to this definition")
      [40 41]
      [42 43]
      [44 45]]
-
     ```
 
 [Quilt](quilt.md#api-detail-quilt): [Constructor](quilt-constructor.md#api-detail-quilt-constructor) | [Exporter](quilt-exporter.md#api-detail-quilt-exporter) | [Attribute](quilt-attribute.md#api-detail-quilt-attribute) | [Method](quilt-method.md#api-detail-quilt-method) | [Dictionary-Like](#api-detail-quilt-dictionary-like) | [Display](quilt-display.md#api-detail-quilt-display) | [Selector](quilt-selector.md#api-detail-quilt-selector) | [Iterator](quilt-iterator.md#api-detail-quilt-iterator) | [Accessor Hashlib](quilt-accessor_hashlib.md#api-detail-quilt-accessor-hashlib) | [Accessor Type Clinic](quilt-accessor_type_clinic.md#api-detail-quilt-accessor-type-clinic)

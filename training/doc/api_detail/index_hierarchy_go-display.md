@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2539,22 +2543,22 @@ IndexHierarchyGO.interface[#](#IndexHierarchyGO.interface "Link to this definiti
     <Index>                              cls_name         group                doc                  <<U18>
     <Index: signature>
     __init__(indices, /, *, indexers,... IndexHierarchyGO Constructor          Initializer. Args...
+    from_difference(*others)             IndexHierarchyGO Constructor          Construct a new I...
     from_index_items(items, /, *, ind... IndexHierarchyGO Constructor          Given an iterable...
+    from_intersection(*others)           IndexHierarchyGO Constructor          Construct a new I...
     from_labels(labels, /, *, name, r... IndexHierarchyGO Constructor          Construct an Inde...
     from_labels_delimited(labels, /, ... IndexHierarchyGO Constructor          Construct an Inde...
     from_names(names, /)                 IndexHierarchyGO Constructor          Construct a zero-...
     from_pandas(value, /)                IndexHierarchyGO Constructor          Given a Pandas in...
     from_product(*, name, index_const... IndexHierarchyGO Constructor          Given groups of i...
     from_tree(tree, /, *, name, index... IndexHierarchyGO Constructor          Convert into a In...
+    from_union(*others)                  IndexHierarchyGO Constructor          Construct a new I...
     from_values_per_depth(values, /, ... IndexHierarchyGO Constructor          Construct an Inde...
     to_frame()                           IndexHierarchyGO Exporter             Return Frame vers...
     to_frame_go()                        IndexHierarchyGO Exporter             Return a FrameGO ...
     to_html(config, /, *, style_config)  IndexHierarchyGO Exporter             Return an HTML ta...
     to_html_datatables(fp, /, *, show... IndexHierarchyGO Exporter             Return a complete...
     to_pandas()                          IndexHierarchyGO Exporter             Return a Pandas M...
-    to_tree()                            IndexHierarchyGO Exporter             Returns the tree ...
-    to_visidata()                        IndexHierarchyGO Exporter             Open an interacti...
-    STATIC                               IndexHierarchyGO Attribute            Returns True when...
     ...                                  ...              ...                  ...
     via_re(pattern, flags, /).sub(rep... IndexHierarchyGO Accessor Regular ... Return the string...
     via_re(pattern, flags, /).subn(re... IndexHierarchyGO Accessor Regular ... Perform the same ...
@@ -2574,7 +2578,6 @@ IndexHierarchyGO.interface[#](#IndexHierarchyGO.interface "Link to this definiti
     via_type_clinic.__call__(hint, /,... IndexHierarchyGO Accessor Type Clinic Given a hint (a t...
     via_type_clinic.__repr__()           IndexHierarchyGO Accessor Type Clinic Return a compact ...
     <<U93>                               <<U16>           <<U27>               <<U83>
-
     ```
 
 IndexHierarchyGO.\_\_repr\_\_()[#](#static_frame.IndexHierarchyGO.__repr__ "Link to this definition")
@@ -2588,7 +2591,6 @@ IndexHierarchyGO.\_\_repr\_\_()[#](#static_frame.IndexHierarchyGO.__repr__ "Link
     a                                   2048    1789-12-31
     b                                   0       1620-11-21
     <<U1>                               <int64> <datetime64[D]>
-
     ```
 
 IndexHierarchyGO.\_\_str\_\_()[#](#static_frame.IndexHierarchyGO.__str__ "Link to this definition")
@@ -2602,7 +2604,6 @@ IndexHierarchyGO.\_\_str\_\_()[#](#static_frame.IndexHierarchyGO.__str__ "Link t
     a                                   2048    1789-12-31
     b                                   0       1620-11-21
     <<U1>                               <int64> <datetime64[D]>
-
     ```
 
 IndexHierarchyGO.display(*config=None*, */*, *\**, *style\_config=None*)[#](#static_frame.IndexHierarchyGO.display "Link to this definition")
@@ -2623,7 +2624,6 @@ IndexHierarchyGO.display(*config=None*, */*, *\**, *style\_config=None*)[#](#sta
     a 1024 1517-04-01
     a 2048 1789-12-31
     b 0    1620-11-21
-
     ```
 
 IndexHierarchyGO.display\_tall(*config=None*, */*)[#](#static_frame.IndexHierarchyGO.display_tall "Link to this definition")
@@ -2640,7 +2640,6 @@ IndexHierarchyGO.display\_tall(*config=None*, */*)[#](#static_frame.IndexHierarc
     a                                   2048    1789-12-31
     b                                   0       1620-11-21
     <<U1>                               <int64> <datetime64[D]>
-
     ```
 
 IndexHierarchyGO.display\_wide(*config=None*, */*)[#](#static_frame.IndexHierarchyGO.display_wide "Link to this definition")
@@ -2657,7 +2656,6 @@ IndexHierarchyGO.display\_wide(*config=None*, */*)[#](#static_frame.IndexHierarc
     a                                   2048    1789-12-31
     b                                   0       1620-11-21
     <<U1>                               <int64> <datetime64[D]>
-
     ```
 
 [IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)

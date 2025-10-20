@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).to\_bytes(*
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).to_bytes()
     b'BusIndexx\x00\x00\x00y\x00\x00\x00FrameIndexp\x00\x00\x00q\x00\x00\x00r\x00\x00\x00Indexa\x00\x00\x00b\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00FrameIndexp\x00\x00\x00q\x00\x00\x00r\x00\x00\x00Indexc\x00\x00\x00d\x00\x00\x00\x00\x00\x00\x01\x01\x01'
-
     ```
 
 Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
@@ -2559,7 +2562,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).md5().hexdigest()
     9479fbfd2ed693d15de2ef08eb481d7e
-
     ```
 
 Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
@@ -2578,7 +2580,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).sha256().hexdigest()
     8bd3452b81d9b1238020227ff432a85da57611d1970b21c99815206837b70bef
-
     ```
 
 Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
@@ -2597,7 +2598,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).sha512().hexdigest()
     49522cf3627869f435b292ac0e0a59c2631a1062086db5a28f75e5788f3899517ae759f2f423d633203dbd2e0428108773225d38d33d17d9d2427ab48340e8d0
-
     ```
 
 Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
@@ -2616,7 +2616,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).sha3_256().hexdigest()
     1d4baec1e848d5ff2c59b13dea8ae35b4c58318f843e63b613c13833bc86292a
-
     ```
 
 Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
@@ -2635,7 +2634,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).sha3_512().hexdigest()
     7e2a68f333a32d7f4c1b9415045b139f8fc7ff0a2af54f601fdaa042908a97293bc117def78c217148f70c66ebf0159c902c7ece42cb0f386cec925fb7939523
-
     ```
 
 Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
@@ -2654,7 +2652,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).shake_128().hexdigest(8)
     426a8470515bf557
-
     ```
 
 Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
@@ -2673,7 +2670,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).shake_256().hexdigest(8)
     4e9bb60a28c99c04
-
     ```
 
 Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2692,7 +2688,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).blake2b().hexdigest()
     c68cc4d9227be6e3268f0ffbca58095fe0eb5bab64a86b95bc4238b6917d4958b6c043ec9583db268209284aab6c0434b37c284587ee120d9ead7594c1c286ba
-
     ```
 
 Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2711,7 +2706,6 @@ Bus.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**
     <<U1>    <object>
     >>> b.via_hashlib(include_name=False).blake2s().hexdigest()
     fa228e6f239bc0e8968286bdc1c82749dec3605e8e6e86a731e6c0e8a5e2a2ac
-
     ```
 
 [Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2539,7 +2543,6 @@ IndexYearMonth.via\_type\_clinic.to\_hint
     <datetime64[M]>
     >>> ix.via_type_clinic.to_hint()
     <class 'static_frame.core.index_datetime.IndexYearMonth'>
-
     ```
 
 IndexYearMonth.via\_type\_clinic.check(*hint*, */*, *\**, *fail\_fast*)
@@ -2561,7 +2564,6 @@ IndexYearMonth.via\_type\_clinic.check(*hint*, */*, *\**, *fail\_fast*)
     <datetime64[M]>
     >>> ix.via_type_clinic.check(sf.Index[np.str_])
     ClinicError('\nIn Index[str_]\n└── Expected str_, provided datetime64 invalid')
-
     ```
 
 IndexYearMonth.via\_type\_clinic.warn(*hint*, */*, *\**, *fail\_fast*, *category*)
@@ -2600,7 +2602,6 @@ IndexYearMonth.via\_type\_clinic.\_\_call\_\_(*hint*, */*, *\**, *fail\_fast*)
 
     In Index[str_]
     └── Expected str_, provided datetime64 invalid
-
     ```
 
 IndexYearMonth.via\_type\_clinic.\_\_repr\_\_
@@ -2619,7 +2620,6 @@ IndexYearMonth.via\_type\_clinic.\_\_repr\_\_
     <datetime64[M]>
     >>> ix.via_type_clinic
     IndexYearMonth
-
     ```
 
 [IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](#api-detail-indexyearmonth-accessor-type-clinic)

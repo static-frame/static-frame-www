@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2543,7 +2547,6 @@ IndexHierarchyGO.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
     [[ 4  4]
      [12 -1]
      [-1  6]]
-
     ```
 
 IndexHierarchyGO.via\_dt.year
@@ -2566,7 +2569,6 @@ IndexHierarchyGO.via\_dt.year
     [[1517 2022]
      [1517 2021]
      [1517 2022]]
-
     ```
 
 IndexHierarchyGO.via\_dt.year\_month
@@ -2589,7 +2591,6 @@ IndexHierarchyGO.via\_dt.year\_month
     [['1517-04' '2022-04']
      ['1517-12' '2021-12']
      ['1517-06' '2022-06']]
-
     ```
 
 IndexHierarchyGO.via\_dt.year\_quarter
@@ -2612,7 +2613,6 @@ IndexHierarchyGO.via\_dt.year\_quarter
     [['1517-Q2' '2022-Q2']
      ['1517-Q4' '2021-Q4']
      ['1517-Q2' '2022-Q2']]
-
     ```
 
 IndexHierarchyGO.via\_dt.month
@@ -2635,7 +2635,6 @@ IndexHierarchyGO.via\_dt.month
     [[ 4  4]
      [12 12]
      [ 6  6]]
-
     ```
 
 IndexHierarchyGO.via\_dt.day
@@ -2658,7 +2657,6 @@ IndexHierarchyGO.via\_dt.day
     [[ 1  1]
      [31 31]
      [30 30]]
-
     ```
 
 IndexHierarchyGO.via\_dt.hour
@@ -2681,7 +2679,6 @@ IndexHierarchyGO.via\_dt.hour
     [[0 0]
      [0 0]
      [0 0]]
-
     ```
 
 IndexHierarchyGO.via\_dt.minute
@@ -2704,7 +2701,6 @@ IndexHierarchyGO.via\_dt.minute
     [[0 0]
      [0 0]
      [0 0]]
-
     ```
 
 IndexHierarchyGO.via\_dt.second
@@ -2727,7 +2723,6 @@ IndexHierarchyGO.via\_dt.second
     [[0 0]
      [0 0]
      [0 0]]
-
     ```
 
 IndexHierarchyGO.via\_dt.weekday
@@ -2750,7 +2745,6 @@ IndexHierarchyGO.via\_dt.weekday
     [[6 4]
      [0 4]
      [5 3]]
-
     ```
 
 IndexHierarchyGO.via\_dt.quarter
@@ -2773,7 +2767,6 @@ IndexHierarchyGO.via\_dt.quarter
     [[2 2]
      [4 4]
      [2 2]]
-
     ```
 
 IndexHierarchyGO.via\_dt.is\_month\_end
@@ -2796,7 +2789,6 @@ IndexHierarchyGO.via\_dt.is\_month\_end
     [[False False]
      [ True  True]
      [ True  True]]
-
     ```
 
 IndexHierarchyGO.via\_dt.is\_month\_start
@@ -2819,7 +2811,6 @@ IndexHierarchyGO.via\_dt.is\_month\_start
     [[ True  True]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_dt.is\_year\_end
@@ -2842,7 +2833,6 @@ IndexHierarchyGO.via\_dt.is\_year\_end
     [[False False]
      [ True  True]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_dt.is\_year\_start
@@ -2865,7 +2855,6 @@ IndexHierarchyGO.via\_dt.is\_year\_start
     [[False False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_dt.is\_quarter\_end
@@ -2888,7 +2877,6 @@ IndexHierarchyGO.via\_dt.is\_quarter\_end
     [[False False]
      [ True  True]
      [ True  True]]
-
     ```
 
 IndexHierarchyGO.via\_dt.is\_quarter\_start
@@ -2911,7 +2899,6 @@ IndexHierarchyGO.via\_dt.is\_quarter\_start
     [[ True  True]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchyGO.via\_dt.timetuple
@@ -2937,7 +2924,6 @@ IndexHierarchyGO.via\_dt.timetuple
       time.struct_time(tm_year=2021, tm_mon=12, tm_mday=31, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=4, tm_yday=365, tm_isdst=-1)]
      [time.struct_time(tm_year=1517, tm_mon=6, tm_mday=30, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=5, tm_yday=181, tm_isdst=-1)
       time.struct_time(tm_year=2022, tm_mon=6, tm_mday=30, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=3, tm_yday=181, tm_isdst=-1)]]
-
     ```
 
 IndexHierarchyGO.via\_dt.isoformat(*\**, *sep*, *timespec*)
@@ -2960,7 +2946,6 @@ IndexHierarchyGO.via\_dt.isoformat(*\**, *sep*, *timespec*)
     [['1517-04-01' '2022-04-01']
      ['1517-12-31' '2021-12-31']
      ['1517-06-30' '2022-06-30']]
-
     ```
 
 IndexHierarchyGO.via\_dt.fromisoformat
@@ -2982,7 +2967,6 @@ IndexHierarchyGO.via\_dt.fromisoformat
     [[datetime.date(1517, 4, 1) datetime.date(2022, 4, 1)]
      [datetime.date(1517, 12, 31) datetime.date(2021, 12, 31)]
      [datetime.date(1517, 6, 30) datetime.date(2022, 6, 30)]]
-
     ```
 
 IndexHierarchyGO.via\_dt.strftime(*format*, */*)
@@ -3003,7 +2987,6 @@ IndexHierarchyGO.via\_dt.strftime(*format*, */*)
     >>> ih.via_dt.strftime("%A | %B")
     [['Monday | January' 'Friday | April']
      ['Sunday | April' 'Saturday | December']]
-
     ```
 
 IndexHierarchyGO.via\_dt.strptime(*format*, */*)
@@ -3027,7 +3010,6 @@ IndexHierarchyGO.via\_dt.strptime(*format*, */*)
       datetime.datetime(2021, 12, 31, 0, 0)]
      [datetime.datetime(1517, 6, 30, 0, 0)
       datetime.datetime(2022, 6, 30, 0, 0)]]
-
     ```
 
 IndexHierarchyGO.via\_dt.strpdate(*format*, */*)
@@ -3049,7 +3031,6 @@ IndexHierarchyGO.via\_dt.strpdate(*format*, */*)
     [[datetime.date(1517, 4, 1) datetime.date(2022, 4, 1)]
      [datetime.date(1517, 12, 31) datetime.date(2021, 12, 31)]
      [datetime.date(1517, 6, 30) datetime.date(2022, 6, 30)]]
-
     ```
 
 [IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)

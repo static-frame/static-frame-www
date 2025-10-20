@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2536,7 +2540,6 @@ IndexHierarchy.\_\_contains\_\_(*value*, */*)[[source]](../_modules/static_frame
     <<U1>                             <int64> <datetime64[D]>
     >>> ih.__contains__('a')
     False
-
     ```
 
 IndexHierarchy.\_\_iter\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__iter__)[#](#static_frame.IndexHierarchy.__iter__ "Link to this definition")
@@ -2552,7 +2555,6 @@ IndexHierarchy.\_\_iter\_\_()[[source]](../_modules/static_frame/core/index_hier
     <<U1>                             <int64> <datetime64[D]>
     >>> tuple(ih.__iter__())
     ((np.str_('a'), np.int64(1024), np.datetime64('1517-04-01')), (np.str_('a'), np.int64(2048), np.datetime64('1789-12-31')), (np.str_('b'), np.int64(0), np.datetime64('1620-11-21')))
-
     ```
 
 IndexHierarchy.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__reversed__)[#](#static_frame.IndexHierarchy.__reversed__ "Link to this definition")
@@ -2568,7 +2570,6 @@ IndexHierarchy.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/index_
     <<U1>                             <int64> <datetime64[D]>
     >>> tuple(ih.__reversed__())
     (('b', 0, datetime.date(1620, 11, 21)), ('a', 2048, datetime.date(1789, 12, 31)), ('a', 1024, datetime.date(1517, 4, 1)))
-
     ```
 
 IndexHierarchy.values[#](#static_frame.IndexHierarchy.values "Link to this definition")
@@ -2586,7 +2587,6 @@ IndexHierarchy.values[#](#static_frame.IndexHierarchy.values "Link to this defin
     ['a' 'a' 'b']
     >>> ih.values_at_depth(2)
     ['1517-04-01' '1789-12-31' '1620-11-21']
-
     ```
 
 [IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)

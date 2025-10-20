@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ IndexHourGO.STATIC *= False*[#](#static_frame.IndexHourGO.STATIC "Link to this d
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.STATIC
     False
-
     ```
 
 IndexHourGO.depth *= 1*[#](#static_frame.IndexHourGO.depth "Link to this definition")
@@ -2536,7 +2539,6 @@ IndexHourGO.depth *= 1*[#](#static_frame.IndexHourGO.depth "Link to this definit
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.depth
     1
-
     ```
 
 IndexHourGO.dtype[#](#static_frame.IndexHourGO.dtype "Link to this definition")
@@ -2549,7 +2551,6 @@ IndexHourGO.dtype[#](#static_frame.IndexHourGO.dtype "Link to this definition")
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.dtype
     datetime64[h]
-
     ```
 
 IndexHourGO.index\_types[#](#static_frame.IndexHourGO.index_types "Link to this definition")
@@ -2565,7 +2566,6 @@ IndexHourGO.index\_types[#](#static_frame.IndexHourGO.index_types "Link to this 
     <Index>
     None     <IndexHourGO>
     <object> <object>
-
     ```
 
 IndexHourGO.memory[#](#static_frame.IndexHourGO.memory "Link to this definition")
@@ -2582,13 +2582,12 @@ IndexHourGO.memory[#](#static_frame.IndexHourGO.memory "Link to this definition"
     ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.memory
-              L    Lu    LM   LMu   LMD  LMDu  R    Ru    RM   RMu   RMD  RMDu
-    Name      16   B     16   B     16   B     16   B     16   B     16   B
-    Map       472  B     472  B     472  B     472  B     472  B     472  B
-    Labels    136  B     152  B     24   B     136  B     152  B     24   B
-    Positions 112  B     128  B     0    B     8.22 KB    152  B     24   B
-    Total     1.21 KB    1.24 KB    1016 B     9.32 KB    1.27 KB    1.02 KB
-
+              L    Lu    LM  LMu   LMD  LMDu  R    Ru    RM   RMu   RMD  RMDu
+    Name      16   B     16  B     16   B     16   B     16   B     16   B
+    Map       472  B     472 B     472  B     472  B     472  B     472  B
+    Labels    136  B     152 B     24   B     136  B     152  B     24   B
+    Positions 112  B     128 B     0    B     8.22 KB    152  B     24   B
+    Total     1.27 KB    1.3 KB    1.05 KB    9.38 KB    1.32 KB    1.07 KB
     ```
 
 IndexHourGO.mloc[#](#static_frame.IndexHourGO.mloc "Link to this definition")
@@ -2603,7 +2602,6 @@ IndexHourGO.name[#](#static_frame.IndexHourGO.name "Link to this definition")
     ```
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.name
-
     ```
 
 IndexHourGO.names[#](#static_frame.IndexHourGO.names "Link to this definition")
@@ -2613,7 +2611,6 @@ IndexHourGO.names[#](#static_frame.IndexHourGO.names "Link to this definition")
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.names
     ('__index0__',)
-
     ```
 
 IndexHourGO.nbytes[#](#static_frame.IndexHourGO.nbytes "Link to this definition")
@@ -2626,7 +2623,6 @@ IndexHourGO.nbytes[#](#static_frame.IndexHourGO.nbytes "Link to this definition"
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.nbytes
     24
-
     ```
 
 IndexHourGO.ndim[#](#static_frame.IndexHourGO.ndim "Link to this definition")
@@ -2639,7 +2635,6 @@ IndexHourGO.ndim[#](#static_frame.IndexHourGO.ndim "Link to this definition")
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.ndim
     1
-
     ```
 
 IndexHourGO.positions[#](#static_frame.IndexHourGO.positions "Link to this definition")
@@ -2649,7 +2644,6 @@ IndexHourGO.positions[#](#static_frame.IndexHourGO.positions "Link to this defin
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.positions
     [0 1 2]
-
     ```
 
 IndexHourGO.shape[#](#static_frame.IndexHourGO.shape "Link to this definition")
@@ -2662,7 +2656,6 @@ IndexHourGO.shape[#](#static_frame.IndexHourGO.shape "Link to this definition")
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.shape
     (3,)
-
     ```
 
 IndexHourGO.size[#](#static_frame.IndexHourGO.size "Link to this definition")
@@ -2675,7 +2668,6 @@ IndexHourGO.size[#](#static_frame.IndexHourGO.size "Link to this definition")
     >>> ix = sf.IndexHourGO(('1517-04-01', '1517-12-31', '1517-06-30'))
     >>> ix.size
     3
-
     ```
 
 [IndexHourGO](index_hour_go.md#api-detail-indexhourgo): [Constructor](index_hour_go-constructor.md#api-detail-indexhourgo-constructor) | [Exporter](index_hour_go-exporter.md#api-detail-indexhourgo-exporter) | [Attribute](#api-detail-indexhourgo-attribute) | [Method](index_hour_go-method.md#api-detail-indexhourgo-method) | [Dictionary-Like](index_hour_go-dictionary_like.md#api-detail-indexhourgo-dictionary-like) | [Display](index_hour_go-display.md#api-detail-indexhourgo-display) | [Selector](index_hour_go-selector.md#api-detail-indexhourgo-selector) | [Iterator](index_hour_go-iterator.md#api-detail-indexhourgo-iterator) | [Operator Binary](index_hour_go-operator_binary.md#api-detail-indexhourgo-operator-binary) | [Operator Unary](index_hour_go-operator_unary.md#api-detail-indexhourgo-operator-unary) | [Accessor Values](index_hour_go-accessor_values.md#api-detail-indexhourgo-accessor-values) | [Accessor Datetime](index_hour_go-accessor_datetime.md#api-detail-indexhourgo-accessor-datetime) | [Accessor String](index_hour_go-accessor_string.md#api-detail-indexhourgo-accessor-string) | [Accessor Regular Expression](index_hour_go-accessor_regular_expression.md#api-detail-indexhourgo-accessor-regular-expression) | [Accessor Hashlib](index_hour_go-accessor_hashlib.md#api-detail-indexhourgo-accessor-hashlib) | [Accessor Type Clinic](index_hour_go-accessor_type_clinic.md#api-detail-indexhourgo-accessor-type-clinic)

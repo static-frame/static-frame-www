@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2540,7 +2544,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).to_bytes()
     b'IndexYearMonth\xc7\xea\xff\xff\xff\xff\xff\xff\xcf\xea\xff\xff\xff\xff\xff\xff\xc9\xea\xff\xff\xff\xff\xff\xff'
-
     ```
 
 IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).md5(*)
@@ -2559,7 +2562,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).md5().hexdigest()
     144f076132ec51d6a64b99b26434213c
-
     ```
 
 IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha256(*)
@@ -2578,7 +2580,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).sha256().hexdigest()
     c038bd32aff224e9eac81551d72cd1ba7aef62377476955fa8c99a287fcdd2ea
-
     ```
 
 IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha512(*)
@@ -2597,7 +2598,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).sha512().hexdigest()
     b9465ce164f6e8958c53cb1154a5cf18406f63527ea759c8284b6be0d3dd7454c6b79a750d5d4c10dfa9c90c62a020f4c10a35b98cfe0bb4fa4651b43b53253a
-
     ```
 
 IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_256(*)
@@ -2616,7 +2616,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).sha3_256().hexdigest()
     002aa66886119bff834127a0cc7efc2f7d55b55110c763cf6b8870d24d79d94c
-
     ```
 
 IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).sha3\_512(*)
@@ -2635,7 +2634,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).sha3_512().hexdigest()
     a0cc2c5a3d450a4348b288475eec702828a35454de24f376185c39584ef080eb3b8a4d89e67bc5b21431210a541ec25cf19c8fbbb07e09a39c1e41a4debb7a38
-
     ```
 
 IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_128(*)
@@ -2654,7 +2652,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).shake_128().hexdigest(8)
     141bdf2458b7b4cb
-
     ```
 
 IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).shake\_256(*)
@@ -2673,7 +2670,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).shake_256().hexdigest(8)
     9da1d87292f1edb1
-
     ```
 
 IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2b(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2692,7 +2688,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).blake2b().hexdigest()
     14ef80e958badc127ecddba0def948def29f3fd27665a959a0af80043d055a07e60391f49652fa846ecacd1f8dd32defba422d46930921a1a9da4cd3c3f1774f
-
     ```
 
 IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).blake2s(\**, *digest\_size*, *key*, *salt*, *person*, *fanout*, *depth*, *leaf\_size*, *node\_offset*, *node\_depth*, *inner\_size*, *last\_node*)
@@ -2711,7 +2706,6 @@ IndexYearMonth.via\_hashlib(*\**, *include\_name*, *include\_class*, *encoding).
     <datetime64[M]>
     >>> ix.via_hashlib(include_name=False).blake2s().hexdigest()
     68b00331b872c3ea67a6d57c6f93f4cf3329320bc3d694d860b40b1b20998415
-
     ```
 
 [IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](index_year_month-operator_binary.md#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-detail-indexyearmonth-accessor-type-clinic)

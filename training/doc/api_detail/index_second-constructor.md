@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexSecond: Constructor](../api_overview/index_second-constructor.md#api-overview-indexsecond-constructor)
 
-IndexSecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[#](#static_frame.IndexSecond.__init__ "Link to this definition")
+IndexSecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *sort\_status=SortStatus.UNKNOWN*)[#](#static_frame.IndexSecond.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -2537,7 +2541,55 @@ IndexSecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
+    ```
 
+*classmethod* IndexSecond.from\_difference(*\*others*)[#](#static_frame.IndexSecond.from_difference "Link to this definition")
+:   Construct a new Index based on the difference with Index, containers, or NumPy arrays. Retains order.
+
+    ```
+    >>> ix1 = sf.IndexSecond.from_labels(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix1
+    <IndexSecond>
+    1517-04-01T00:00:00
+    1517-12-31T00:00:00
+    1517-06-30T00:00:00
+    <datetime64[s]>
+    >>> ix2 = sf.IndexSecond.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexSecond>
+    2022-04-01T00:00:00
+    2021-12-31T00:00:00
+    2018-06-30T00:00:00
+    <datetime64[s]>
+    >>> sf.IndexSecond.from_difference(ix1, ix2)
+    <IndexSecond>
+    1517-04-01T00:00:00
+    1517-12-31T00:00:00
+    1517-06-30T00:00:00
+    <datetime64[s]>
+    ```
+
+*classmethod* IndexSecond.from\_intersection(*\*others*)[#](#static_frame.IndexSecond.from_intersection "Link to this definition")
+:   Construct a new Index based on the intersection with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexSecond.from_labels(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix1
+    <IndexSecond>
+    1517-04-01T00:00:00
+    1517-12-31T00:00:00
+    1517-06-30T00:00:00
+    <datetime64[s]>
+    >>> ix2 = sf.IndexSecond.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexSecond>
+    2022-04-01T00:00:00
+    2021-12-31T00:00:00
+    2018-06-30T00:00:00
+    <datetime64[s]>
+    >>> sf.IndexSecond.from_intersection(ix1, ix2)
+    <IndexSecond>
+    <datetime64[s]>
     ```
 
 *classmethod* IndexSecond.from\_labels(*labels*, */*, *\**, *name=None*)[#](#static_frame.IndexSecond.from_labels "Link to this definition")
@@ -2550,7 +2602,6 @@ IndexSecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-
     ```
 
 *classmethod* IndexSecond.from\_pandas(*value*, */*)[#](#static_frame.IndexSecond.from_pandas "Link to this definition")
@@ -2564,7 +2615,35 @@ IndexSecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-31
     1517-06-30
     <object>
+    ```
 
+*classmethod* IndexSecond.from\_union(*\*others*)[#](#static_frame.IndexSecond.from_union "Link to this definition")
+:   Construct a new Index based on the union with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexSecond.from_labels(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix1
+    <IndexSecond>
+    1517-04-01T00:00:00
+    1517-12-31T00:00:00
+    1517-06-30T00:00:00
+    <datetime64[s]>
+    >>> ix2 = sf.IndexSecond.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexSecond>
+    2022-04-01T00:00:00
+    2021-12-31T00:00:00
+    2018-06-30T00:00:00
+    <datetime64[s]>
+    >>> sf.IndexSecond.from_union(ix1, ix2)
+    <IndexSecond>
+    1517-04-01T00:00:00
+    1517-06-30T00:00:00
+    1517-12-31T00:00:00
+    2018-06-30T00:00:00
+    2021-12-31T00:00:00
+    2022-04-01T00:00:00
+    <datetime64[s]>
     ```
 
 [IndexSecond](index_second.md#api-detail-indexsecond): [Constructor](#api-detail-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-detail-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-detail-indexsecond-attribute) | [Method](index_second-method.md#api-detail-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-detail-indexsecond-dictionary-like) | [Display](index_second-display.md#api-detail-indexsecond-display) | [Selector](index_second-selector.md#api-detail-indexsecond-selector) | [Iterator](index_second-iterator.md#api-detail-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-detail-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-detail-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-detail-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-detail-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-detail-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-detail-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-detail-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-detail-indexsecond-accessor-type-clinic)
@@ -2579,8 +2658,11 @@ Detail: IndexSecond: Exporter](index_second-exporter.md "next page")
 On this page
 
 * [`IndexSecond.__init__()`](#static_frame.IndexSecond.__init__)
+* [`IndexSecond.from_difference()`](#static_frame.IndexSecond.from_difference)
+* [`IndexSecond.from_intersection()`](#static_frame.IndexSecond.from_intersection)
 * [`IndexSecond.from_labels()`](#static_frame.IndexSecond.from_labels)
 * [`IndexSecond.from_pandas()`](#static_frame.IndexSecond.from_pandas)
+* [`IndexSecond.from_union()`](#static_frame.IndexSecond.from_union)
 
 © Copyright 2025, Christopher Ariza.
 

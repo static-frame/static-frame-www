@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2536,7 +2540,6 @@ Bus.\_\_bool\_\_()[#](#static_frame.Bus.__bool__ "Link to this definition")
     <<U1>    <object>
     >>> bool(b)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 Bus.\_\_copy\_\_()[[source]](../_modules/static_frame/core/bus.md#Bus.__copy__)[#](#static_frame.Bus.__copy__ "Link to this definition")
@@ -2557,7 +2560,6 @@ Bus.\_\_copy\_\_()[[source]](../_modules/static_frame/core/bus.md#Bus.__copy__)[
     x        Frame
     y        Frame
     <<U1>    <object>
-
     ```
 
 Bus.\_\_len\_\_()[[source]](../_modules/static_frame/core/bus.md#Bus.__len__)[#](#static_frame.Bus.__len__ "Link to this definition")
@@ -2573,7 +2575,6 @@ Bus.\_\_len\_\_()[[source]](../_modules/static_frame/core/bus.md#Bus.__len__)[#]
     <<U1>    <object>
     >>> len(b)
     2
-
     ```
 
 Bus.copy()[[source]](../_modules/static_frame/core/bus.md#Bus.copy)[#](#static_frame.Bus.copy "Link to this definition")
@@ -2593,7 +2594,6 @@ Bus.copy()[[source]](../_modules/static_frame/core/bus.md#Bus.copy)[#](#static_f
     x        Frame
     y        Frame
     <<U1>    <object>
-
     ```
 
 Bus.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/bus.md#Bus.equals)[#](#static_frame.Bus.equals "Link to this definition")
@@ -2624,7 +2624,6 @@ Bus.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *c
     <<U1>    <object>
     >>> b1.equals(b2)
     False
-
     ```
 
 Bus.head(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.head)[#](#static_frame.Bus.head "Link to this definition")
@@ -2652,7 +2651,6 @@ Bus.head(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.head
     x        Frame
     y        Frame
     <<U1>    <object>
-
     ```
 
 Bus.persist[*key*]
@@ -2686,7 +2684,6 @@ Bus.persist[*key*]
     x       False  nan       nan       None
     y       True   6.0       6.0       (3, 2)
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Bus.persist.iloc[*key*]
@@ -2721,7 +2718,6 @@ Bus.persist.iloc[*key*]
     x       True   6.0       48.0      (3, 2)
     y       False  nan       nan       None
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Bus.persist.loc[*key*]
@@ -2756,7 +2752,6 @@ Bus.persist.loc[*key*]
     x       False  nan       nan       None
     y       True   6.0       6.0       (3, 2)
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Bus.persist
@@ -2791,7 +2786,6 @@ Bus.persist
     x       True   6.0       48.0      (3, 2)
     y       True   6.0       6.0       (3, 2)
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Bus.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.rehierarch)[#](#static_frame.Bus.rehierarch "Link to this definition")
@@ -2813,7 +2807,6 @@ Bus.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_mod
     4096             j     Frame
     2048             j     Frame
     <int64>          <<U1> <object>
-
     ```
 
 Bus.reindex(*index*, *\**, *fill\_value*, *own\_index=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/bus.md#Bus.reindex)[#](#static_frame.Bus.reindex "Link to this definition")
@@ -2840,7 +2833,6 @@ Bus.reindex(*index*, *\**, *fill\_value*, *own\_index=False*, *check\_equals=Tru
     y       True   6.0       6.0       (3, 2)
     z       True   0.0       0.0       (0, 0)
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Bus.relabel(*index*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.relabel)[#](#static_frame.Bus.relabel "Link to this definition")
@@ -2875,7 +2867,6 @@ Bus.relabel(*index*, *\**, *index\_constructor=None*)[[source]](../_modules/stat
     +X+      Frame
     +Y+      Frame
     <<U3>    <object>
-
     ```
 
 Bus.relabel\_flat()[[source]](../_modules/static_frame/core/bus.md#Bus.relabel_flat)[#](#static_frame.Bus.relabel_flat "Link to this definition")
@@ -2897,7 +2888,6 @@ Bus.relabel\_flat()[[source]](../_modules/static_frame/core/bus.md#Bus.relabel_f
     (np.str_('j'), np.int64(4096)) Frame
     (np.str_('j'), np.int64(2048)) Frame
     <object>                       <object>
-
     ```
 
 Bus.relabel\_level\_add(*level*)[[source]](../_modules/static_frame/core/bus.md#Bus.relabel_level_add)[#](#static_frame.Bus.relabel_level_add "Link to this definition")
@@ -2920,7 +2910,6 @@ Bus.relabel\_level\_add(*level*)[[source]](../_modules/static_frame/core/bus.md#
     2048             x     Frame
     2048             y     Frame
     <int64>          <<U1> <object>
-
     ```
 
 Bus.relabel\_level\_drop(*count=1*)[[source]](../_modules/static_frame/core/bus.md#Bus.relabel_level_drop)[#](#static_frame.Bus.relabel_level_drop "Link to this definition")
@@ -2945,7 +2934,6 @@ Bus.relabel\_level\_drop(*count=1*)[[source]](../_modules/static_frame/core/bus.
     4096    Frame
     2048    Frame
     <int64> <object>
-
     ```
 
 Bus.rename(*name*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.rename)[#](#static_frame.Bus.rename "Link to this definition")
@@ -2965,7 +2953,6 @@ Bus.rename(*name*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.renam
     x        Frame
     y        Frame
     <<U1>    <object>
-
     ```
 
 Bus.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.roll)[#](#static_frame.Bus.roll "Link to this definition")
@@ -2996,7 +2983,6 @@ Bus.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/stati
     v        Frame
     w        Frame
     <<U1>    <object>
-
     ```
 
 Bus.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/core/bus.md#Bus.shift)[#](#static_frame.Bus.shift "Link to this definition")
@@ -3028,7 +3014,6 @@ Bus.shift(*shift*, */*, *\**, *fill\_value*)[[source]](../_modules/static_frame/
     v       True   6.0       48.0      (3, 2)
     w       True   6.0       6.0       (3, 2)
     <<U1>   <bool> <float64> <float64> <object>
-
     ```
 
 Bus.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.sort_index)[#](#static_frame.Bus.sort_index "Link to this definition")
@@ -3069,7 +3054,6 @@ Bus.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]
     w        Frame
     v        Frame
     <<U1>    <object>
-
     ```
 
 Bus.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](../_modules/static_frame/core/bus.md#Bus.sort_values)[#](#static_frame.Bus.sort_values "Link to this definition")
@@ -3110,7 +3094,6 @@ Bus.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key*)[[source]](..
     w        Frame
     y        Frame
     <<U1>    <object>
-
     ```
 
 Bus.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.tail)[#](#static_frame.Bus.tail "Link to this definition")
@@ -3139,7 +3122,6 @@ Bus.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/bus.md#Bus.tail
     v        Frame
     w        Frame
     <<U1>    <object>
-
     ```
 
 Bus.unpersist()[[source]](../_modules/static_frame/core/bus.md#Bus.unpersist)[#](#static_frame.Bus.unpersist "Link to this definition")
@@ -3188,7 +3170,6 @@ Bus.unpersist()[[source]](../_modules/static_frame/core/bus.md#Bus.unpersist)[#]
     x       <FrameDeferred>
     y       <FrameDeferred>
     <<U1>   <object>
-
     ```
 
 [Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)

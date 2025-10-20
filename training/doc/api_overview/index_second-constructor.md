@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2525,9 +2529,12 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_second-constructor.md#api-sig-indexsecond-init) | `IndexSecond.__init__(labels, /, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_second-constructor.md#api-sig-indexsecond-init) | `IndexSecond.__init__(labels, /, *, loc_is_iloc, name, sort_status)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_second-constructor.md#api-sig-indexsecond-from-difference) | `IndexSecond.from_difference(*others)` | Construct a new Index based on the difference with Index, containers, or NumPy a… |
+| [Detail](../api_detail/index_second-constructor.md#api-sig-indexsecond-from-intersection) | `IndexSecond.from_intersection(*others)` | Construct a new Index based on the intersection with Index, containers, or NumPy… |
 | [Detail](../api_detail/index_second-constructor.md#api-sig-indexsecond-from-labels) | `IndexSecond.from_labels(labels, /, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
 | [Detail](../api_detail/index_second-constructor.md#api-sig-indexsecond-from-pandas) | `IndexSecond.from_pandas(value, /)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_second-constructor.md#api-sig-indexsecond-from-union) | `IndexSecond.from_union(*others)` | Construct a new Index based on the union with Index, containers, or NumPy arrays… |
 
 [IndexSecond](index_second.md#api-overview-indexsecond): [Constructor](#api-overview-indexsecond-constructor) | [Exporter](index_second-exporter.md#api-overview-indexsecond-exporter) | [Attribute](index_second-attribute.md#api-overview-indexsecond-attribute) | [Method](index_second-method.md#api-overview-indexsecond-method) | [Dictionary-Like](index_second-dictionary_like.md#api-overview-indexsecond-dictionary-like) | [Display](index_second-display.md#api-overview-indexsecond-display) | [Selector](index_second-selector.md#api-overview-indexsecond-selector) | [Iterator](index_second-iterator.md#api-overview-indexsecond-iterator) | [Operator Binary](index_second-operator_binary.md#api-overview-indexsecond-operator-binary) | [Operator Unary](index_second-operator_unary.md#api-overview-indexsecond-operator-unary) | [Accessor Values](index_second-accessor_values.md#api-overview-indexsecond-accessor-values) | [Accessor Datetime](index_second-accessor_datetime.md#api-overview-indexsecond-accessor-datetime) | [Accessor String](index_second-accessor_string.md#api-overview-indexsecond-accessor-string) | [Accessor Regular Expression](index_second-accessor_regular_expression.md#api-overview-indexsecond-accessor-regular-expression) | [Accessor Hashlib](index_second-accessor_hashlib.md#api-overview-indexsecond-accessor-hashlib) | [Accessor Type Clinic](index_second-accessor_type_clinic.md#api-overview-indexsecond-accessor-type-clinic)
 

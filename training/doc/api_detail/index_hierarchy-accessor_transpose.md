@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2532,7 +2536,6 @@ IndexHierarchy.via\_T.via\_fill\_value(*fill\_value*, */*)
 
     ```
     >>>
-
     ```
 
 IndexHierarchy.via\_T.\_\_add\_\_(*other*)
@@ -2555,7 +2558,6 @@ IndexHierarchy.via\_T.\_\_add\_\_(*other*)
      [2.000e+00       nan]
      [1.100e+01 2.049e+03]
      [      nan       nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_sub\_\_(*other*)
@@ -2578,7 +2580,6 @@ IndexHierarchy.via\_T.\_\_sub\_\_(*other*)
      [   0.   nan]
      [   9. 2047.]
      [  nan   nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_mul\_\_(*other*)
@@ -2601,7 +2602,6 @@ IndexHierarchy.via\_T.\_\_mul\_\_(*other*)
      [1.000e+00       nan]
      [1.000e+01 2.048e+03]
      [      nan       nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_truediv\_\_(*other*)
@@ -2624,7 +2624,6 @@ IndexHierarchy.via\_T.\_\_truediv\_\_(*other*)
      [1.000e+00       nan]
      [1.000e+01 2.048e+03]
      [      nan       nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_floordiv\_\_(*other*)
@@ -2647,7 +2646,6 @@ IndexHierarchy.via\_T.\_\_floordiv\_\_(*other*)
      [1.000e+00       nan]
      [1.000e+01 2.048e+03]
      [      nan       nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_mod\_\_(*other*)
@@ -2670,7 +2668,6 @@ IndexHierarchy.via\_T.\_\_mod\_\_(*other*)
      [ 0. nan]
      [ 0.  0.]
      [nan nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_pow\_\_(*other*)
@@ -2693,7 +2690,6 @@ IndexHierarchy.via\_T.\_\_pow\_\_(*other*)
      [1.000e+00       nan]
      [1.000e+01 2.048e+03]
      [      nan       nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_lshift\_\_(*other*)
@@ -2722,7 +2718,6 @@ IndexHierarchy.via\_T.\_\_lshift\_\_(*other*)
     <<U1>    <int64>
     >>> ih.via_T << (1, 2, 1, 2)
     TypeError("ufunc 'left_shift' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexHierarchy.via\_T.\_\_rshift\_\_(*other*)
@@ -2751,7 +2746,6 @@ IndexHierarchy.via\_T.\_\_rshift\_\_(*other*)
     <<U1>    <int64>
     >>> ih.via_T >> (1, 2, 1, 2)
     TypeError("ufunc 'right_shift' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexHierarchy.via\_T.\_\_and\_\_(*other*)
@@ -2772,7 +2766,6 @@ IndexHierarchy.via\_T.\_\_and\_\_(*other*)
     [[False  True  True]
      [False False False]
      [False  True False]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_xor\_\_(*other*)
@@ -2793,7 +2786,6 @@ IndexHierarchy.via\_T.\_\_xor\_\_(*other*)
     [[ True False False]
      [ True  True  True]
      [ True False  True]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_or\_\_(*other*)
@@ -2815,7 +2807,6 @@ IndexHierarchy.via\_T.\_\_or\_\_(*other*)
     [[ True  True  True]
      [ True  True  True]
      [ True  True  True]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_lt\_\_(*other*)
@@ -2839,7 +2830,6 @@ IndexHierarchy.via\_T.\_\_lt\_\_(*other*)
      [False False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_le\_\_(*other*)
@@ -2863,7 +2853,6 @@ IndexHierarchy.via\_T.\_\_le\_\_(*other*)
      [ True False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_eq\_\_(*other*)
@@ -2887,7 +2876,6 @@ IndexHierarchy.via\_T.\_\_eq\_\_(*other*)
      [ True False]
      [False False]
      [False False]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_ne\_\_(*other*)
@@ -2911,7 +2899,6 @@ IndexHierarchy.via\_T.\_\_ne\_\_(*other*)
      [False  True]
      [ True  True]
      [ True  True]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_gt\_\_(*other*)
@@ -2935,7 +2922,6 @@ IndexHierarchy.via\_T.\_\_gt\_\_(*other*)
      [False False]
      [ True  True]
      [False False]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_ge\_\_(*other*)
@@ -2959,7 +2945,6 @@ IndexHierarchy.via\_T.\_\_ge\_\_(*other*)
      [ True False]
      [ True  True]
      [False False]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_radd\_\_(*other*)
@@ -2982,7 +2967,6 @@ IndexHierarchy.via\_T.\_\_radd\_\_(*other*)
      [2.000e+00       nan]
      [1.100e+01 2.049e+03]
      [      nan       nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_rsub\_\_(*other*)
@@ -3005,7 +2989,6 @@ IndexHierarchy.via\_T.\_\_rsub\_\_(*other*)
      [   0.   nan]
      [   9. 2047.]
      [  nan   nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_rmul\_\_(*other*)
@@ -3028,7 +3011,6 @@ IndexHierarchy.via\_T.\_\_rmul\_\_(*other*)
      [1.000e+00       nan]
      [1.000e+01 2.048e+03]
      [      nan       nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_rtruediv\_\_(*other*)
@@ -3051,7 +3033,6 @@ IndexHierarchy.via\_T.\_\_rtruediv\_\_(*other*)
      [1.000e+00       nan]
      [1.000e+01 2.048e+03]
      [      nan       nan]]
-
     ```
 
 IndexHierarchy.via\_T.\_\_rfloordiv\_\_(*other*)
@@ -3074,7 +3055,6 @@ IndexHierarchy.via\_T.\_\_rfloordiv\_\_(*other*)
      [1.000e+00       nan]
      [1.000e+01 2.048e+03]
      [      nan       nan]]
-
     ```
 
 [IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](index_hierarchy-method.md#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexMinute: Method](../api_overview/index_minute-method.md#api-overview-indexminute-method)
 
-IndexMinute.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexMinute.__array__ "Link to this definition")
+IndexMinute.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexMinute.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2536,7 +2540,6 @@ IndexMinute.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexMinute.__array__ "
     <datetime64[m]>
     >>> ix.__array__()
     ['1517-04-01T00:00' '1517-12-01T00:00' '1517-06-30T00:00']
-
     ```
 
 IndexMinute.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexMinute.__array_ufunc__ "Link to this definition")
@@ -2552,7 +2555,6 @@ IndexMinute.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#
     <datetime64[m]>
     >>> np.array((0, 1, 0)) * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('int64'), dtype('<M8[m]')))
-
     ```
 
 IndexMinute.\_\_bool\_\_()[#](#static_frame.IndexMinute.__bool__ "Link to this definition")
@@ -2568,7 +2570,6 @@ IndexMinute.\_\_bool\_\_()[#](#static_frame.IndexMinute.__bool__ "Link to this d
     <datetime64[m]>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexMinute.\_\_copy\_\_()[#](#static_frame.IndexMinute.__copy__ "Link to this definition")
@@ -2589,7 +2590,6 @@ IndexMinute.\_\_copy\_\_()[#](#static_frame.IndexMinute.__copy__ "Link to this d
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexMinute.__deepcopy__ "Link to this definition")
@@ -2608,7 +2608,6 @@ IndexMinute.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexMinute.__deepcopy__ "
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.\_\_len\_\_()[#](#static_frame.IndexMinute.__len__ "Link to this definition")
@@ -2622,7 +2621,6 @@ IndexMinute.\_\_len\_\_()[#](#static_frame.IndexMinute.__len__ "Link to this def
     <datetime64[m]>
     >>> len(ix)
     3
-
     ```
 
 IndexMinute.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMinute.all "Link to this definition")
@@ -2642,7 +2640,6 @@ IndexMinute.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[m]>
     >>> ix.all()
     True
-
     ```
 
 IndexMinute.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMinute.any "Link to this definition")
@@ -2662,7 +2659,6 @@ IndexMinute.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[m]>
     >>> ix.any()
     True
-
     ```
 
 IndexMinute.astype(*dtype*, */*)[#](#static_frame.IndexMinute.astype "Link to this definition")
@@ -2685,7 +2681,6 @@ IndexMinute.astype(*dtype*, */*)[#](#static_frame.IndexMinute.astype "Link to th
     1517-12-01T00:00
     1517-06-30T00:00
     <<U35>
-
     ```
 
 IndexMinute.copy()[#](#static_frame.IndexMinute.copy "Link to this definition")
@@ -2705,7 +2700,6 @@ IndexMinute.copy()[#](#static_frame.IndexMinute.copy "Link to this definition")
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexMinute.cumprod "Link to this definition")
@@ -2725,7 +2719,6 @@ IndexMinute.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexMinute.
     <datetime64[m]>
     >>> ix.cumprod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[m]'), dtype('<M8[m]')))
-
     ```
 
 IndexMinute.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexMinute.cumsum "Link to this definition")
@@ -2745,7 +2738,6 @@ IndexMinute.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexMinute.c
     <datetime64[m]>
     >>> ix.cumsum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[m]'), dtype('<M8[m]')))
-
     ```
 
 IndexMinute.difference(*\*others*)[#](#static_frame.IndexMinute.difference "Link to this definition")
@@ -2759,12 +2751,12 @@ IndexMinute.difference(*\*others*)[#](#static_frame.IndexMinute.difference "Link
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-    >>> ix2 = sf.IndexMinute(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexMinute(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexMinute>
     2022-04-01T00:00
     2021-12-31T00:00
-    2022-06-30T00:00
+    2018-06-30T00:00
     <datetime64[m]>
     >>> ix1.difference(ix2)
     <IndexMinute>
@@ -2772,7 +2764,6 @@ IndexMinute.difference(*\*others*)[#](#static_frame.IndexMinute.difference "Link
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.dropfalsy()[#](#static_frame.IndexMinute.dropfalsy "Link to this definition")
@@ -2791,7 +2782,6 @@ IndexMinute.dropfalsy()[#](#static_frame.IndexMinute.dropfalsy "Link to this def
     1620-09-16T00:00
     1620-11-21T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.dropna()[#](#static_frame.IndexMinute.dropna "Link to this definition")
@@ -2810,7 +2800,6 @@ IndexMinute.dropna()[#](#static_frame.IndexMinute.dropna "Link to this definitio
     1620-09-16T00:00
     1620-11-21T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.IndexMinute.equals "Link to this definition")
@@ -2830,16 +2819,15 @@ IndexMinute.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fa
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-    >>> ix2 = sf.IndexMinute(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexMinute(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexMinute>
     2022-04-01T00:00
     2021-12-31T00:00
-    2022-06-30T00:00
+    2018-06-30T00:00
     <datetime64[m]>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 IndexMinute.fillfalsy(*value*, */*)[#](#static_frame.IndexMinute.fillfalsy "Link to this definition")
@@ -2858,7 +2846,6 @@ IndexMinute.fillfalsy(*value*, */*)[#](#static_frame.IndexMinute.fillfalsy "Link
     <datetime64[m]>
     >>> ix.fillfalsy('A')
     ValueError('Error parsing datetime string "A" at position 0')
-
     ```
 
 IndexMinute.fillna(*value*, */*)[#](#static_frame.IndexMinute.fillna "Link to this definition")
@@ -2881,7 +2868,6 @@ IndexMinute.fillna(*value*, */*)[#](#static_frame.IndexMinute.fillna "Link to th
     1970-01-01T00:00
     1620-11-21T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.head(*count=5*, */*)[#](#static_frame.IndexMinute.head "Link to this definition")
@@ -2903,7 +2889,6 @@ IndexMinute.head(*count=5*, */*)[#](#static_frame.IndexMinute.head "Link to this
     1517-04-01T00:00
     1517-12-01T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexMinute.iloc_searchsorted "Link to this definition")
@@ -2923,7 +2908,6 @@ IndexMinute.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#stati
     <datetime64[m]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexMinute.intersection(*\*others*)[#](#static_frame.IndexMinute.intersection "Link to this definition")
@@ -2937,17 +2921,35 @@ IndexMinute.intersection(*\*others*)[#](#static_frame.IndexMinute.intersection "
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-    >>> ix2 = sf.IndexMinute(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexMinute(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexMinute>
     2022-04-01T00:00
     2021-12-31T00:00
-    2022-06-30T00:00
+    2018-06-30T00:00
     <datetime64[m]>
     >>> ix1.intersection(ix2)
     <IndexMinute>
     <datetime64[m]>
+    ```
 
+IndexMinute.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexMinute.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.IndexMinute(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix
+    <IndexMinute>
+    2022-04-01T00:00
+    2021-12-31T00:00
+    2018-06-30T00:00
+    <datetime64[m]>
+    >>> assert ix.is_sorted(ascending=False)
     ```
 
 IndexMinute.isfalsy()[#](#static_frame.IndexMinute.isfalsy "Link to this definition")
@@ -2957,7 +2959,6 @@ IndexMinute.isfalsy()[#](#static_frame.IndexMinute.isfalsy "Link to this definit
     >>> ix = sf.IndexMinute(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isfalsy()
     [False  True False]
-
     ```
 
 IndexMinute.isin(*other*, */*)[#](#static_frame.IndexMinute.isin "Link to this definition")
@@ -2973,7 +2974,6 @@ IndexMinute.isin(*other*, */*)[#](#static_frame.IndexMinute.isin "Link to this d
     <datetime64[m]>
     >>> ix.isin(('1517-06-30',))
     [False False False]
-
     ```
 
 IndexMinute.isna()[#](#static_frame.IndexMinute.isna "Link to this definition")
@@ -2983,7 +2983,6 @@ IndexMinute.isna()[#](#static_frame.IndexMinute.isna "Link to this definition")
     >>> ix = sf.IndexMinute(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isna()
     [False  True False]
-
     ```
 
 IndexMinute.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexMinute.label_widths_at_depth "Link to this definition")
@@ -3002,7 +3001,6 @@ IndexMinute.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.Ind
     <datetime64[m]>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.datetime64('1517-04-01T00:00'), 1), (np.datetime64('1517-12-01T00:00'), 1), (np.datetime64('1517-06-30T00:00'), 1))
-
     ```
 
 IndexMinute.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.IndexMinute.level_add "Link to this definition")
@@ -3027,7 +3025,6 @@ IndexMinute.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static
     A                1517-12-01T00:00
     A                1517-06-30T00:00
     <<U1>            <datetime64[m]>
-
     ```
 
 IndexMinute.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.IndexMinute.loc_searchsorted "Link to this definition")
@@ -3048,7 +3045,6 @@ IndexMinute.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_val
     <datetime64[m]>
     >>> ix.loc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexMinute.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexMinute.loc_to_iloc "Link to this definition")
@@ -3071,7 +3067,6 @@ IndexMinute.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexMinute.loc_to_iloc "
     [0 2]
     >>> ix.loc_to_iloc(slice('1517-12', None))
     slice(1, None, None)
-
     ```
 
 IndexMinute.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMinute.max "Link to this definition")
@@ -3091,7 +3086,6 @@ IndexMinute.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[m]>
     >>> ix.max()
     1517-12-01T00:00
-
     ```
 
 IndexMinute.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMinute.mean "Link to this definition")
@@ -3111,7 +3105,6 @@ IndexMinute.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Ind
     <datetime64[m]>
     >>> ix.mean()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[m]'), dtype('<M8[m]')))
-
     ```
 
 IndexMinute.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMinute.median "Link to this definition")
@@ -3131,7 +3124,6 @@ IndexMinute.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <datetime64[m]>
     >>> ix.median()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[m]'), dtype('<M8[m]')))
-
     ```
 
 IndexMinute.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexMinute.min "Link to this definition")
@@ -3151,7 +3143,6 @@ IndexMinute.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Inde
     <datetime64[m]>
     >>> ix.min()
     1517-04-01T00:00
-
     ```
 
 IndexMinute.notfalsy()[#](#static_frame.IndexMinute.notfalsy "Link to this definition")
@@ -3161,7 +3152,6 @@ IndexMinute.notfalsy()[#](#static_frame.IndexMinute.notfalsy "Link to this defin
     >>> ix = sf.IndexMinute(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notfalsy()
     [ True False  True]
-
     ```
 
 IndexMinute.notna()[#](#static_frame.IndexMinute.notna "Link to this definition")
@@ -3171,7 +3161,6 @@ IndexMinute.notna()[#](#static_frame.IndexMinute.notna "Link to this definition"
     >>> ix = sf.IndexMinute(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notna()
     [ True False  True]
-
     ```
 
 IndexMinute.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexMinute.prod "Link to this definition")
@@ -3191,7 +3180,6 @@ IndexMinute.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#stati
     <datetime64[m]>
     >>> ix.prod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[m]'), dtype('<M8[m]')))
-
     ```
 
 IndexMinute.relabel(*mapper*, */*)[#](#static_frame.IndexMinute.relabel "Link to this definition")
@@ -3207,7 +3195,6 @@ IndexMinute.relabel(*mapper*, */*)[#](#static_frame.IndexMinute.relabel "Link to
     <datetime64[m]>
     >>> ix.relabel(lambda l: l.astype('<M8[ms]').astype(object).day)
     ErrorInitIndexNonUnique('Labels have non-unique values. Examples from iterators not are available.')
-
     ```
 
 IndexMinute.rename(*name*, */*)[#](#static_frame.IndexMinute.rename "Link to this definition")
@@ -3227,7 +3214,6 @@ IndexMinute.rename(*name*, */*)[#](#static_frame.IndexMinute.rename "Link to thi
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.roll(*shift*)[#](#static_frame.IndexMinute.roll "Link to this definition")
@@ -3247,7 +3233,6 @@ IndexMinute.roll(*shift*)[#](#static_frame.IndexMinute.roll "Link to this defini
     1517-06-30T00:00
     1517-04-01T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexMinute.sample "Link to this definition")
@@ -3270,7 +3255,6 @@ IndexMinute.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexMinute.sa
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexMinute.sort "Link to this definition")
@@ -3301,7 +3285,6 @@ IndexMinute.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#sta
     1517-06-30T00:00
     1517-04-01T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexMinute.std "Link to this definition")
@@ -3321,7 +3304,6 @@ IndexMinute.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_
     <datetime64[m]>
     >>> ix.std()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[m]'), dtype('<M8[m]')))
-
     ```
 
 IndexMinute.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexMinute.sum "Link to this definition")
@@ -3341,7 +3323,6 @@ IndexMinute.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static
     <datetime64[m]>
     >>> ix.sum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[m]'), dtype('<M8[m]')))
-
     ```
 
 IndexMinute.tail(*count=5*, */*)[#](#static_frame.IndexMinute.tail "Link to this definition")
@@ -3363,7 +3344,6 @@ IndexMinute.tail(*count=5*, */*)[#](#static_frame.IndexMinute.tail "Link to this
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.union(*\*others*)[#](#static_frame.IndexMinute.union "Link to this definition")
@@ -3377,23 +3357,22 @@ IndexMinute.union(*\*others*)[#](#static_frame.IndexMinute.union "Link to this d
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-    >>> ix2 = sf.IndexMinute(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexMinute(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexMinute>
     2022-04-01T00:00
     2021-12-31T00:00
-    2022-06-30T00:00
+    2018-06-30T00:00
     <datetime64[m]>
     >>> ix1.union(ix2)
     <IndexMinute>
     1517-04-01T00:00
     1517-06-30T00:00
     1517-12-01T00:00
+    2018-06-30T00:00
     2021-12-31T00:00
     2022-04-01T00:00
-    2022-06-30T00:00
     <datetime64[m]>
-
     ```
 
 IndexMinute.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#static_frame.IndexMinute.unique "Link to this definition")
@@ -3416,7 +3395,6 @@ IndexMinute.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#
     <datetime64[m]>
     >>> ix.unique()
     ['1620-09-16T00:00'              'NaT' '1620-11-21T00:00']
-
     ```
 
 IndexMinute.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexMinute.values_at_depth "Link to this definition")
@@ -3432,7 +3410,6 @@ IndexMinute.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexMinut
     <datetime64[m]>
     >>> ix.values_at_depth(0)
     ['1517-04-01T00:00' '1517-12-01T00:00' '1517-06-30T00:00']
-
     ```
 
 IndexMinute.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexMinute.var "Link to this definition")
@@ -3452,7 +3429,6 @@ IndexMinute.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_
     <datetime64[m]>
     >>> ix.var()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[m]'), dtype('<M8[m]')))
-
     ```
 
 [IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](index_minute-constructor.md#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.md#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-detail-indexminute-accessor-type-clinic)
@@ -3487,6 +3463,7 @@ On this page
 * [`IndexMinute.head()`](#static_frame.IndexMinute.head)
 * [`IndexMinute.iloc_searchsorted()`](#static_frame.IndexMinute.iloc_searchsorted)
 * [`IndexMinute.intersection()`](#static_frame.IndexMinute.intersection)
+* [`IndexMinute.is_sorted()`](#static_frame.IndexMinute.is_sorted)
 * [`IndexMinute.isfalsy()`](#static_frame.IndexMinute.isfalsy)
 * [`IndexMinute.isin()`](#static_frame.IndexMinute.isin)
 * [`IndexMinute.isna()`](#static_frame.IndexMinute.isna)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexHour: Method](../api_overview/index_hour-method.md#api-overview-indexhour-method)
 
-IndexHour.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexHour.__array__ "Link to this definition")
+IndexHour.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexHour.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2536,7 +2540,6 @@ IndexHour.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexHour.__array__ "Link
     <datetime64[h]>
     >>> ix.__array__()
     ['1517-04-01T00' '1517-12-31T00' '1517-06-30T00']
-
     ```
 
 IndexHour.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexHour.__array_ufunc__ "Link to this definition")
@@ -2552,7 +2555,6 @@ IndexHour.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#st
     <datetime64[h]>
     >>> np.array((0, 1, 0)) * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('int64'), dtype('<M8[h]')))
-
     ```
 
 IndexHour.\_\_bool\_\_()[#](#static_frame.IndexHour.__bool__ "Link to this definition")
@@ -2568,7 +2570,6 @@ IndexHour.\_\_bool\_\_()[#](#static_frame.IndexHour.__bool__ "Link to this defin
     <datetime64[h]>
     >>> bool(ix)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexHour.\_\_copy\_\_()[#](#static_frame.IndexHour.__copy__ "Link to this definition")
@@ -2589,7 +2590,6 @@ IndexHour.\_\_copy\_\_()[#](#static_frame.IndexHour.__copy__ "Link to this defin
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-
     ```
 
 IndexHour.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexHour.__deepcopy__ "Link to this definition")
@@ -2608,7 +2608,6 @@ IndexHour.\_\_deepcopy\_\_(*memo*)[#](#static_frame.IndexHour.__deepcopy__ "Link
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-
     ```
 
 IndexHour.\_\_len\_\_()[#](#static_frame.IndexHour.__len__ "Link to this definition")
@@ -2622,7 +2621,6 @@ IndexHour.\_\_len\_\_()[#](#static_frame.IndexHour.__len__ "Link to this definit
     <datetime64[h]>
     >>> len(ix)
     3
-
     ```
 
 IndexHour.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHour.all "Link to this definition")
@@ -2642,7 +2640,6 @@ IndexHour.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexH
     <datetime64[h]>
     >>> ix.all()
     True
-
     ```
 
 IndexHour.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHour.any "Link to this definition")
@@ -2662,7 +2659,6 @@ IndexHour.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexH
     <datetime64[h]>
     >>> ix.any()
     True
-
     ```
 
 IndexHour.astype(*dtype*, */*)[#](#static_frame.IndexHour.astype "Link to this definition")
@@ -2685,7 +2681,6 @@ IndexHour.astype(*dtype*, */*)[#](#static_frame.IndexHour.astype "Link to this d
     1517-12-31T00
     1517-06-30T00
     <<U32>
-
     ```
 
 IndexHour.copy()[#](#static_frame.IndexHour.copy "Link to this definition")
@@ -2705,7 +2700,6 @@ IndexHour.copy()[#](#static_frame.IndexHour.copy "Link to this definition")
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-
     ```
 
 IndexHour.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHour.cumprod "Link to this definition")
@@ -2725,7 +2719,6 @@ IndexHour.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHour.cump
     <datetime64[h]>
     >>> ix.cumprod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[h]'), dtype('<M8[h]')))
-
     ```
 
 IndexHour.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHour.cumsum "Link to this definition")
@@ -2745,7 +2738,6 @@ IndexHour.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHour.cumsu
     <datetime64[h]>
     >>> ix.cumsum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[h]'), dtype('<M8[h]')))
-
     ```
 
 IndexHour.difference(*\*others*)[#](#static_frame.IndexHour.difference "Link to this definition")
@@ -2759,12 +2751,12 @@ IndexHour.difference(*\*others*)[#](#static_frame.IndexHour.difference "Link to 
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-    >>> ix2 = sf.IndexHour(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexHour(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexHour>
     2022-04-01T00
     2021-12-31T00
-    2022-06-30T00
+    2018-06-30T00
     <datetime64[h]>
     >>> ix1.difference(ix2)
     <IndexHour>
@@ -2772,7 +2764,6 @@ IndexHour.difference(*\*others*)[#](#static_frame.IndexHour.difference "Link to 
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-
     ```
 
 IndexHour.dropfalsy()[#](#static_frame.IndexHour.dropfalsy "Link to this definition")
@@ -2791,7 +2782,6 @@ IndexHour.dropfalsy()[#](#static_frame.IndexHour.dropfalsy "Link to this definit
     1620-09-16T00
     1620-11-21T00
     <datetime64[h]>
-
     ```
 
 IndexHour.dropna()[#](#static_frame.IndexHour.dropna "Link to this definition")
@@ -2810,7 +2800,6 @@ IndexHour.dropna()[#](#static_frame.IndexHour.dropna "Link to this definition")
     1620-09-16T00
     1620-11-21T00
     <datetime64[h]>
-
     ```
 
 IndexHour.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[#](#static_frame.IndexHour.equals "Link to this definition")
@@ -2830,16 +2819,15 @@ IndexHour.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=Fals
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-    >>> ix2 = sf.IndexHour(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexHour(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexHour>
     2022-04-01T00
     2021-12-31T00
-    2022-06-30T00
+    2018-06-30T00
     <datetime64[h]>
     >>> ix1.equals(ix2)
     False
-
     ```
 
 IndexHour.fillfalsy(*value*, */*)[#](#static_frame.IndexHour.fillfalsy "Link to this definition")
@@ -2858,7 +2846,6 @@ IndexHour.fillfalsy(*value*, */*)[#](#static_frame.IndexHour.fillfalsy "Link to 
     <datetime64[h]>
     >>> ix.fillfalsy('A')
     ValueError('Error parsing datetime string "A" at position 0')
-
     ```
 
 IndexHour.fillna(*value*, */*)[#](#static_frame.IndexHour.fillna "Link to this definition")
@@ -2881,7 +2868,6 @@ IndexHour.fillna(*value*, */*)[#](#static_frame.IndexHour.fillna "Link to this d
     1970-01-01T00
     1620-11-21T00
     <datetime64[h]>
-
     ```
 
 IndexHour.head(*count=5*, */*)[#](#static_frame.IndexHour.head "Link to this definition")
@@ -2903,7 +2889,6 @@ IndexHour.head(*count=5*, */*)[#](#static_frame.IndexHour.head "Link to this def
     1517-04-01T00
     1517-12-31T00
     <datetime64[h]>
-
     ```
 
 IndexHour.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexHour.iloc_searchsorted "Link to this definition")
@@ -2923,7 +2908,6 @@ IndexHour.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_
     <datetime64[h]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexHour.intersection(*\*others*)[#](#static_frame.IndexHour.intersection "Link to this definition")
@@ -2937,17 +2921,35 @@ IndexHour.intersection(*\*others*)[#](#static_frame.IndexHour.intersection "Link
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-    >>> ix2 = sf.IndexHour(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexHour(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexHour>
     2022-04-01T00
     2021-12-31T00
-    2022-06-30T00
+    2018-06-30T00
     <datetime64[h]>
     >>> ix1.intersection(ix2)
     <IndexHour>
     <datetime64[h]>
+    ```
 
+IndexHour.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexHour.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ix = sf.IndexHour(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix
+    <IndexHour>
+    2022-04-01T00
+    2021-12-31T00
+    2018-06-30T00
+    <datetime64[h]>
+    >>> assert ix.is_sorted(ascending=False)
     ```
 
 IndexHour.isfalsy()[#](#static_frame.IndexHour.isfalsy "Link to this definition")
@@ -2957,7 +2959,6 @@ IndexHour.isfalsy()[#](#static_frame.IndexHour.isfalsy "Link to this definition"
     >>> ix = sf.IndexHour(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isfalsy()
     [False  True False]
-
     ```
 
 IndexHour.isin(*other*, */*)[#](#static_frame.IndexHour.isin "Link to this definition")
@@ -2973,7 +2974,6 @@ IndexHour.isin(*other*, */*)[#](#static_frame.IndexHour.isin "Link to this defin
     <datetime64[h]>
     >>> ix.isin(('1517-06-30',))
     [False False False]
-
     ```
 
 IndexHour.isna()[#](#static_frame.IndexHour.isna "Link to this definition")
@@ -2983,7 +2983,6 @@ IndexHour.isna()[#](#static_frame.IndexHour.isna "Link to this definition")
     >>> ix = sf.IndexHour(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.isna()
     [False  True False]
-
     ```
 
 IndexHour.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexHour.label_widths_at_depth "Link to this definition")
@@ -3002,7 +3001,6 @@ IndexHour.label\_widths\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.Index
     <datetime64[h]>
     >>> tuple(ix.label_widths_at_depth(0))
     ((np.datetime64('1517-04-01T00','h'), 1), (np.datetime64('1517-12-31T00','h'), 1), (np.datetime64('1517-06-30T00','h'), 1))
-
     ```
 
 IndexHour.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_frame.IndexHour.level_add "Link to this definition")
@@ -3027,7 +3025,6 @@ IndexHour.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#static_f
     A                1517-12-31T00
     A                1517-06-30T00
     <<U1>            <datetime64[h]>
-
     ```
 
 IndexHour.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[#](#static_frame.IndexHour.loc_searchsorted "Link to this definition")
@@ -3048,7 +3045,6 @@ IndexHour.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value
     <datetime64[h]>
     >>> ix.loc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
-
     ```
 
 IndexHour.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexHour.loc_to_iloc "Link to this definition")
@@ -3071,7 +3067,6 @@ IndexHour.loc\_to\_iloc(*key*, */*)[#](#static_frame.IndexHour.loc_to_iloc "Link
     [0 2]
     >>> ix.loc_to_iloc(slice('1517-12-31', None))
     slice(1, None, None)
-
     ```
 
 IndexHour.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHour.max "Link to this definition")
@@ -3091,7 +3086,6 @@ IndexHour.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexH
     <datetime64[h]>
     >>> ix.max()
     1517-12-31T00
-
     ```
 
 IndexHour.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHour.mean "Link to this definition")
@@ -3111,7 +3105,6 @@ IndexHour.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Index
     <datetime64[h]>
     >>> ix.mean()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[h]'), dtype('<M8[h]')))
-
     ```
 
 IndexHour.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHour.median "Link to this definition")
@@ -3131,7 +3124,6 @@ IndexHour.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Ind
     <datetime64[h]>
     >>> ix.median()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[h]'), dtype('<M8[h]')))
-
     ```
 
 IndexHour.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHour.min "Link to this definition")
@@ -3151,7 +3143,6 @@ IndexHour.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexH
     <datetime64[h]>
     >>> ix.min()
     1517-04-01T00
-
     ```
 
 IndexHour.notfalsy()[#](#static_frame.IndexHour.notfalsy "Link to this definition")
@@ -3161,7 +3152,6 @@ IndexHour.notfalsy()[#](#static_frame.IndexHour.notfalsy "Link to this definitio
     >>> ix = sf.IndexHour(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notfalsy()
     [ True False  True]
-
     ```
 
 IndexHour.notna()[#](#static_frame.IndexHour.notna "Link to this definition")
@@ -3171,7 +3161,6 @@ IndexHour.notna()[#](#static_frame.IndexHour.notna "Link to this definition")
     >>> ix = sf.IndexHour(('1620-09-16', 'NaT', '1620-11-21'))
     >>> ix.notna()
     [ True False  True]
-
     ```
 
 IndexHour.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexHour.prod "Link to this definition")
@@ -3191,7 +3180,6 @@ IndexHour.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_
     <datetime64[h]>
     >>> ix.prod()
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[h]'), dtype('<M8[h]')))
-
     ```
 
 IndexHour.relabel(*mapper*, */*)[#](#static_frame.IndexHour.relabel "Link to this definition")
@@ -3211,7 +3199,6 @@ IndexHour.relabel(*mapper*, */*)[#](#static_frame.IndexHour.relabel "Link to thi
     1970-01-02T07
     1970-01-02T06
     <datetime64[h]>
-
     ```
 
 IndexHour.rename(*name*, */*)[#](#static_frame.IndexHour.rename "Link to this definition")
@@ -3231,7 +3218,6 @@ IndexHour.rename(*name*, */*)[#](#static_frame.IndexHour.rename "Link to this de
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-
     ```
 
 IndexHour.roll(*shift*)[#](#static_frame.IndexHour.roll "Link to this definition")
@@ -3251,7 +3237,6 @@ IndexHour.roll(*shift*)[#](#static_frame.IndexHour.roll "Link to this definition
     1517-06-30T00
     1517-04-01T00
     <datetime64[h]>
-
     ```
 
 IndexHour.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexHour.sample "Link to this definition")
@@ -3274,7 +3259,6 @@ IndexHour.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexHour.sample
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-
     ```
 
 IndexHour.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexHour.sort "Link to this definition")
@@ -3305,7 +3289,6 @@ IndexHour.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#stati
     1517-06-30T00
     1517-04-01T00
     <datetime64[h]>
-
     ```
 
 IndexHour.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexHour.std "Link to this definition")
@@ -3325,7 +3308,6 @@ IndexHour.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_fr
     <datetime64[h]>
     >>> ix.std()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[h]'), dtype('<M8[h]')))
-
     ```
 
 IndexHour.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexHour.sum "Link to this definition")
@@ -3345,7 +3327,6 @@ IndexHour.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_f
     <datetime64[h]>
     >>> ix.sum()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[h]'), dtype('<M8[h]')))
-
     ```
 
 IndexHour.tail(*count=5*, */*)[#](#static_frame.IndexHour.tail "Link to this definition")
@@ -3367,7 +3348,6 @@ IndexHour.tail(*count=5*, */*)[#](#static_frame.IndexHour.tail "Link to this def
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-
     ```
 
 IndexHour.union(*\*others*)[#](#static_frame.IndexHour.union "Link to this definition")
@@ -3381,23 +3361,22 @@ IndexHour.union(*\*others*)[#](#static_frame.IndexHour.union "Link to this defin
     1517-12-31T00
     1517-06-30T00
     <datetime64[h]>
-    >>> ix2 = sf.IndexHour(('2022-04-01', '2021-12-31', '2022-06-30'))
+    >>> ix2 = sf.IndexHour(('2022-04-01', '2021-12-31', '2018-06-30'))
     >>> ix2
     <IndexHour>
     2022-04-01T00
     2021-12-31T00
-    2022-06-30T00
+    2018-06-30T00
     <datetime64[h]>
     >>> ix1.union(ix2)
     <IndexHour>
     1517-04-01T00
     1517-06-30T00
     1517-12-31T00
+    2018-06-30T00
     2021-12-31T00
     2022-04-01T00
-    2022-06-30T00
     <datetime64[h]>
-
     ```
 
 IndexHour.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](#static_frame.IndexHour.unique "Link to this definition")
@@ -3420,7 +3399,6 @@ IndexHour.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[#](
     <datetime64[h]>
     >>> ix.unique()
     ['1620-09-16T00'           'NaT' '1620-11-21T00']
-
     ```
 
 IndexHour.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexHour.values_at_depth "Link to this definition")
@@ -3436,7 +3414,6 @@ IndexHour.values\_at\_depth(*depth\_level=0*, */*)[#](#static_frame.IndexHour.va
     <datetime64[h]>
     >>> ix.values_at_depth(0)
     ['1517-04-01T00' '1517-12-31T00' '1517-06-30T00']
-
     ```
 
 IndexHour.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexHour.var "Link to this definition")
@@ -3456,7 +3433,6 @@ IndexHour.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_fr
     <datetime64[h]>
     >>> ix.var()
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[h]'), dtype('<M8[h]')))
-
     ```
 
 [IndexHour](index_hour.md#api-detail-indexhour): [Constructor](index_hour-constructor.md#api-detail-indexhour-constructor) | [Exporter](index_hour-exporter.md#api-detail-indexhour-exporter) | [Attribute](index_hour-attribute.md#api-detail-indexhour-attribute) | [Method](#api-detail-indexhour-method) | [Dictionary-Like](index_hour-dictionary_like.md#api-detail-indexhour-dictionary-like) | [Display](index_hour-display.md#api-detail-indexhour-display) | [Selector](index_hour-selector.md#api-detail-indexhour-selector) | [Iterator](index_hour-iterator.md#api-detail-indexhour-iterator) | [Operator Binary](index_hour-operator_binary.md#api-detail-indexhour-operator-binary) | [Operator Unary](index_hour-operator_unary.md#api-detail-indexhour-operator-unary) | [Accessor Values](index_hour-accessor_values.md#api-detail-indexhour-accessor-values) | [Accessor Datetime](index_hour-accessor_datetime.md#api-detail-indexhour-accessor-datetime) | [Accessor String](index_hour-accessor_string.md#api-detail-indexhour-accessor-string) | [Accessor Regular Expression](index_hour-accessor_regular_expression.md#api-detail-indexhour-accessor-regular-expression) | [Accessor Hashlib](index_hour-accessor_hashlib.md#api-detail-indexhour-accessor-hashlib) | [Accessor Type Clinic](index_hour-accessor_type_clinic.md#api-detail-indexhour-accessor-type-clinic)
@@ -3491,6 +3467,7 @@ On this page
 * [`IndexHour.head()`](#static_frame.IndexHour.head)
 * [`IndexHour.iloc_searchsorted()`](#static_frame.IndexHour.iloc_searchsorted)
 * [`IndexHour.intersection()`](#static_frame.IndexHour.intersection)
+* [`IndexHour.is_sorted()`](#static_frame.IndexHour.is_sorted)
 * [`IndexHour.isfalsy()`](#static_frame.IndexHour.isfalsy)
 * [`IndexHour.isin()`](#static_frame.IndexHour.isin)
 * [`IndexHour.isna()`](#static_frame.IndexHour.isna)

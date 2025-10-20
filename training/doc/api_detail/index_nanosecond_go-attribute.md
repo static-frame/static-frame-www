@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2528,7 +2532,6 @@ IndexNanosecondGO.STATIC *= False*[#](#static_frame.IndexNanosecondGO.STATIC "Li
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.STATIC
     False
-
     ```
 
 IndexNanosecondGO.depth *= 1*[#](#static_frame.IndexNanosecondGO.depth "Link to this definition")
@@ -2536,7 +2539,6 @@ IndexNanosecondGO.depth *= 1*[#](#static_frame.IndexNanosecondGO.depth "Link to 
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.depth
     1
-
     ```
 
 IndexNanosecondGO.dtype[#](#static_frame.IndexNanosecondGO.dtype "Link to this definition")
@@ -2549,7 +2551,6 @@ IndexNanosecondGO.dtype[#](#static_frame.IndexNanosecondGO.dtype "Link to this d
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.dtype
     datetime64[ns]
-
     ```
 
 IndexNanosecondGO.index\_types[#](#static_frame.IndexNanosecondGO.index_types "Link to this definition")
@@ -2565,7 +2566,6 @@ IndexNanosecondGO.index\_types[#](#static_frame.IndexNanosecondGO.index_types "L
     <Index>
     None     <IndexNanosecondGO>
     <object> <object>
-
     ```
 
 IndexNanosecondGO.memory[#](#static_frame.IndexNanosecondGO.memory "Link to this definition")
@@ -2582,13 +2582,12 @@ IndexNanosecondGO.memory[#](#static_frame.IndexNanosecondGO.memory "Link to this
     ```
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.memory
-              L    Lu    LM   LMu   LMD LMDu  R    Ru    RM   RMu   RMD  RMDu
-    Name      16   B     16   B     16  B     16   B     16   B     16   B
-    Map       472  B     472  B     472 B     472  B     472  B     472  B
-    Labels    136  B     152  B     24  B     136  B     152  B     24   B
-    Positions 112  B     128  B     0   B     8.22 KB    152  B     24   B
-    Total     1.18 KB    1.21 KB    980 B     9.29 KB    1.23 KB    1004 B
-
+              L    Lu    LM   LMu   LMD  LMDu  R    Ru    RM   RMu   RMD  RMDu
+    Name      16   B     16   B     16   B     16   B     16   B     16   B
+    Map       472  B     472  B     472  B     472  B     472  B     472  B
+    Labels    136  B     152  B     24   B     136  B     152  B     24   B
+    Positions 112  B     128  B     0    B     8.22 KB    152  B     24   B
+    Total     1.23 KB    1.26 KB    1.01 KB    9.34 KB    1.29 KB    1.04 KB
     ```
 
 IndexNanosecondGO.mloc[#](#static_frame.IndexNanosecondGO.mloc "Link to this definition")
@@ -2603,7 +2602,6 @@ IndexNanosecondGO.name[#](#static_frame.IndexNanosecondGO.name "Link to this def
     ```
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.name
-
     ```
 
 IndexNanosecondGO.names[#](#static_frame.IndexNanosecondGO.names "Link to this definition")
@@ -2613,7 +2611,6 @@ IndexNanosecondGO.names[#](#static_frame.IndexNanosecondGO.names "Link to this d
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.names
     ('__index0__',)
-
     ```
 
 IndexNanosecondGO.nbytes[#](#static_frame.IndexNanosecondGO.nbytes "Link to this definition")
@@ -2626,7 +2623,6 @@ IndexNanosecondGO.nbytes[#](#static_frame.IndexNanosecondGO.nbytes "Link to this
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.nbytes
     24
-
     ```
 
 IndexNanosecondGO.ndim[#](#static_frame.IndexNanosecondGO.ndim "Link to this definition")
@@ -2639,7 +2635,6 @@ IndexNanosecondGO.ndim[#](#static_frame.IndexNanosecondGO.ndim "Link to this def
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.ndim
     1
-
     ```
 
 IndexNanosecondGO.positions[#](#static_frame.IndexNanosecondGO.positions "Link to this definition")
@@ -2649,7 +2644,6 @@ IndexNanosecondGO.positions[#](#static_frame.IndexNanosecondGO.positions "Link t
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.positions
     [0 1 2]
-
     ```
 
 IndexNanosecondGO.shape[#](#static_frame.IndexNanosecondGO.shape "Link to this definition")
@@ -2662,7 +2656,6 @@ IndexNanosecondGO.shape[#](#static_frame.IndexNanosecondGO.shape "Link to this d
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.shape
     (3,)
-
     ```
 
 IndexNanosecondGO.size[#](#static_frame.IndexNanosecondGO.size "Link to this definition")
@@ -2675,7 +2668,6 @@ IndexNanosecondGO.size[#](#static_frame.IndexNanosecondGO.size "Link to this def
     >>> ix = sf.IndexNanosecondGO(('1789-05-05', '1789-12-31', '1799-11-09'))
     >>> ix.size
     3
-
     ```
 
 [IndexNanosecondGO](index_nanosecond_go.md#api-detail-indexnanosecondgo): [Constructor](index_nanosecond_go-constructor.md#api-detail-indexnanosecondgo-constructor) | [Exporter](index_nanosecond_go-exporter.md#api-detail-indexnanosecondgo-exporter) | [Attribute](#api-detail-indexnanosecondgo-attribute) | [Method](index_nanosecond_go-method.md#api-detail-indexnanosecondgo-method) | [Dictionary-Like](index_nanosecond_go-dictionary_like.md#api-detail-indexnanosecondgo-dictionary-like) | [Display](index_nanosecond_go-display.md#api-detail-indexnanosecondgo-display) | [Selector](index_nanosecond_go-selector.md#api-detail-indexnanosecondgo-selector) | [Iterator](index_nanosecond_go-iterator.md#api-detail-indexnanosecondgo-iterator) | [Operator Binary](index_nanosecond_go-operator_binary.md#api-detail-indexnanosecondgo-operator-binary) | [Operator Unary](index_nanosecond_go-operator_unary.md#api-detail-indexnanosecondgo-operator-unary) | [Accessor Values](index_nanosecond_go-accessor_values.md#api-detail-indexnanosecondgo-accessor-values) | [Accessor Datetime](index_nanosecond_go-accessor_datetime.md#api-detail-indexnanosecondgo-accessor-datetime) | [Accessor String](index_nanosecond_go-accessor_string.md#api-detail-indexnanosecondgo-accessor-string) | [Accessor Regular Expression](index_nanosecond_go-accessor_regular_expression.md#api-detail-indexnanosecondgo-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond_go-accessor_hashlib.md#api-detail-indexnanosecondgo-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond_go-accessor_type_clinic.md#api-detail-indexnanosecondgo-accessor-type-clinic)

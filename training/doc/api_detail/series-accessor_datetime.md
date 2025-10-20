@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2551,7 +2555,6 @@ Series.via\_dt.\_\_call\_\_(*\**, *fill\_value*)
     d        -1
     e        1517
     <<U1>    <int64>
-
     ```
 
 Series.via\_dt.year
@@ -2581,7 +2584,6 @@ Series.via\_dt.year
     d        1517
     e        1517
     <<U1>    <int64>
-
     ```
 
 Series.via\_dt.year\_month
@@ -2611,7 +2613,6 @@ Series.via\_dt.year\_month
     d        1517-06
     e        1517-10
     <<U1>    <<U7>
-
     ```
 
 Series.via\_dt.year\_quarter
@@ -2641,7 +2642,6 @@ Series.via\_dt.year\_quarter
     d        1517-Q2
     e        1517-Q4
     <<U1>    <<U7>
-
     ```
 
 Series.via\_dt.month
@@ -2671,7 +2671,6 @@ Series.via\_dt.month
     d        6
     e        10
     <<U1>    <int64>
-
     ```
 
 Series.via\_dt.day
@@ -2701,7 +2700,6 @@ Series.via\_dt.day
     d        30
     e        1
     <<U1>    <int64>
-
     ```
 
 Series.via\_dt.hour
@@ -2731,7 +2729,6 @@ Series.via\_dt.hour
     d        0
     e        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_dt.minute
@@ -2761,7 +2758,6 @@ Series.via\_dt.minute
     d        0
     e        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_dt.second
@@ -2791,7 +2787,6 @@ Series.via\_dt.second
     d        0
     e        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_dt.weekday
@@ -2821,7 +2816,6 @@ Series.via\_dt.weekday
     d        5
     e        0
     <<U1>    <int64>
-
     ```
 
 Series.via\_dt.quarter
@@ -2851,7 +2845,6 @@ Series.via\_dt.quarter
     d        2
     e        4
     <<U1>    <int64>
-
     ```
 
 Series.via\_dt.is\_month\_end
@@ -2881,7 +2874,6 @@ Series.via\_dt.is\_month\_end
     d        True
     e        False
     <<U1>    <bool>
-
     ```
 
 Series.via\_dt.is\_month\_start
@@ -2911,7 +2903,6 @@ Series.via\_dt.is\_month\_start
     d        False
     e        True
     <<U1>    <bool>
-
     ```
 
 Series.via\_dt.is\_year\_end
@@ -2941,7 +2932,6 @@ Series.via\_dt.is\_year\_end
     d        False
     e        False
     <<U1>    <bool>
-
     ```
 
 Series.via\_dt.is\_year\_start
@@ -2971,7 +2961,6 @@ Series.via\_dt.is\_year\_start
     d        False
     e        False
     <<U1>    <bool>
-
     ```
 
 Series.via\_dt.is\_quarter\_end
@@ -3001,7 +2990,6 @@ Series.via\_dt.is\_quarter\_end
     d        True
     e        False
     <<U1>    <bool>
-
     ```
 
 Series.via\_dt.is\_quarter\_start
@@ -3031,7 +3019,6 @@ Series.via\_dt.is\_quarter\_start
     d        False
     e        True
     <<U1>    <bool>
-
     ```
 
 Series.via\_dt.timetuple
@@ -3061,7 +3048,6 @@ Series.via\_dt.timetuple
     d        time.struct_time(...
     e        time.struct_time(...
     <<U1>    <object>
-
     ```
 
 Series.via\_dt.isoformat(*\**, *sep*, *timespec*)
@@ -3091,7 +3077,6 @@ Series.via\_dt.isoformat(*\**, *sep*, *timespec*)
     d        1517-06-30
     e        1517-10-01
     <<U1>    <<U10>
-
     ```
 
 Series.via\_dt.fromisoformat
@@ -3121,7 +3106,6 @@ Series.via\_dt.fromisoformat
     d        1517-06-30
     e        1517-10-01
     <<U1>    <object>
-
     ```
 
 Series.via\_dt.strftime(*format*, */*)
@@ -3151,7 +3135,6 @@ Series.via\_dt.strftime(*format*, */*)
     d        Saturday | June
     e        Monday | October
     <<U1>    <<U17>
-
     ```
 
 Series.via\_dt.strptime(*format*, */*)
@@ -3177,7 +3160,6 @@ Series.via\_dt.strptime(*format*, */*)
     b        1517-04-01 00:00:00
     c        1517-06-30 00:00:00
     <<U1>    <object>
-
     ```
 
 Series.via\_dt.strpdate(*format*, */*)
@@ -3203,7 +3185,6 @@ Series.via\_dt.strpdate(*format*, */*)
     b        1517-04-01
     c        1517-06-30
     <<U1>    <object>
-
     ```
 
 [Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](series-method.md#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | [Accessor Mapping](series-accessor_mapping.md#api-detail-series-accessor-mapping)

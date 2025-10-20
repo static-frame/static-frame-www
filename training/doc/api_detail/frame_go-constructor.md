@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2545,7 +2549,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     q            2       3
     r            4       5
     <<U1>        <int64> <int64>
-
     ```
 
 *classmethod* FrameGO.from\_arrow(*value*, */*, *\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_arrow "Link to this definition")
@@ -2590,7 +2593,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     q         2       3
     r         4       5
     <object>  <int64> <int64>
-
     ```
 
 *classmethod* FrameGO.from\_clipboard(*\**, *delimiter='\t'*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_clipboard "Link to this definition")
@@ -2598,28 +2600,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
 
     Returns:
     :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
-
-    ```
-    >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
-    >>> f1
-    <FrameGO: x>
-    <IndexGO>    a       b       <<U1>
-    <Index>
-    p            0       1
-    q            2       3
-    r            4       5
-    <<U1>        <int64> <int64>
-    >>> f1.to_clipboard()
-    >>> sf.FrameGO.from_clipboard(index_depth=1)
-    <FrameGO>
-    <IndexGO> a       b       <<U1>
-    <Index>
-    p         0       1
-    q         2       3
-    r         4       5
-    <<U1>     <int64> <int64>
-
-    ```
 
 *classmethod* FrameGO.from\_concat(*frames*, */*, *\**, *axis=0*, *union=True*, *index=None*, *columns=None*, *index\_constructor=None*, *columns\_constructor=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_concat "Link to this definition")
 :   Concatenate multiple [`Frame`](frame-selector.md#Frame "Frame") or [`Series`](series-selector.md#Series "Series") into a new [`Frame`](frame-selector.md#Frame "Frame"). If index or columns are provided and appropriately sized, the resulting [`Frame`](frame-selector.md#Frame "Frame") will use those indices. If the axis along concatenation (index for axis 0, columns for axis 1) is unique after concatenation, it will be preserved; otherwise, a new index or an [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") must be supplied.
@@ -2676,7 +2656,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     4         False    True
     5         False    True
     <int64>   <object> <object>
-
     ```
 
 *classmethod* FrameGO.from\_concat\_items(*items*, */*, *\**, *axis=0*, *union=True*, *name=None*, *fill\_value=nan*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_concat_items "Link to this definition")
@@ -2731,7 +2710,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     y                q     False    True
     y                r     False    True
     <<U1>            <<U1> <object> <object>
-
     ```
 
 *classmethod* FrameGO.from\_csv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_csv "Link to this definition")
@@ -2766,7 +2744,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     q         2       3
     r         4       5
     <<U1>     <int64> <int64>
-
     ```
 
 *classmethod* FrameGO.from\_delimited(*fp*, */*, *\**, *delimiter*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_delimited "Link to this definition")
@@ -2821,7 +2798,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     q         2       3
     r         4       5
     <<U1>     <int64> <int64>
-
     ```
 
 *classmethod* FrameGO.from\_dict(*mapping*, */*, *\**, *index=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_dict "Link to this definition")
@@ -2847,7 +2823,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2            8       1517-12-31
     3            3       1517-06-30
     <int64>      <int64> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_dict\_fields(*fields*, */*, *\**, *columns=None*, *dtypes=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*)[#](#static_frame.FrameGO.from_dict_fields "Link to this definition")
@@ -2873,7 +2848,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     b            False  1517-01-01
     c            True   1517-04-01
     <<U1>        <bool> <<U10>
-
     ```
 
 *classmethod* FrameGO.from\_dict\_records(*records*, */*, *\**, *index=None*, *dtypes=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*)[#](#static_frame.FrameGO.from_dict_records "Link to this definition")
@@ -2898,7 +2872,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     p            10      False  1517-01-01
     q            8       True   1517-04-01
     <<U1>        <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_dict\_records\_items(*items*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_dict_records_items "Link to this definition")
@@ -2921,7 +2894,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     p            10      False  1517-01-01
     q            8       True   1517-04-01
     <<U1>        <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_element(*element*, */*, *\**, *index*, *columns*, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[#](#static_frame.FrameGO.from_element "Link to this definition")
@@ -2936,7 +2908,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     q            0       0
     r            0       0
     <<U1>        <int64> <int64>
-
     ```
 
 *classmethod* FrameGO.from\_element\_items(*items*, */*, *\**, *index*, *columns*, *dtype=None*, *axis=None*, *name=None*, *fill\_value=<object object>*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[#](#static_frame.FrameGO.from_element_items "Link to this definition")
@@ -2959,7 +2930,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     a            -1      3
     b            10      1
     <<U1>        <int64> <int64>
-
     ```
 
 *classmethod* FrameGO.from\_elements(*elements*, */*, *\**, *index=None*, *columns=None*, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[#](#static_frame.FrameGO.from_elements "Link to this definition")
@@ -2975,7 +2945,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     r            8
     s            3
     <<U1>        <int64>
-
     ```
 
 *classmethod* FrameGO.from\_fields(*fields*, */*, *\**, *index=None*, *columns=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_fields "Link to this definition")
@@ -3002,7 +2971,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2            8       True   1517-12-31
     3            3       False  1517-06-30
     <int64>      <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_items(*pairs*, */*, *\**, *index=None*, *fill\_value=nan*, *dtypes=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_items "Link to this definition")
@@ -3031,7 +2999,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     r            8       123
     s            3        wX
     <<U1>        <int64> <<U4>
-
     ```
 
 *classmethod* FrameGO.from\_json\_columns(*json\_data*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[#](#static_frame.FrameGO.from_json_columns "Link to this definition")
@@ -3088,7 +3055,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2       8       True   1517-12-31
     3       3       False  1517-06-30
     <<U1>   <int64> <bool> <<U10>
-
     ```
 
 *classmethod* FrameGO.from\_json\_index(*json\_data*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[#](#static_frame.FrameGO.from_json_index "Link to this definition")
@@ -3147,7 +3113,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2       8       True   1517-12-31
     3       3       False  1517-06-30
     <<U1>   <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_json\_records(*json\_data*, */*, *\**, *index=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[#](#static_frame.FrameGO.from_json_records "Link to this definition")
@@ -3206,7 +3171,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2       8       True   1517-12-31
     3       3       False  1517-06-30
     <int64> <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_json\_split(*json\_data*, */*, *\**, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[#](#static_frame.FrameGO.from_json_split "Link to this definition")
@@ -3278,7 +3242,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2       8       True   1517-12-31
     3       3       False  1517-06-30
     <int64> <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_json\_typed(*json\_data*, */*, *\**, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_json_typed "Link to this definition")
@@ -3389,7 +3352,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     1                p     8       True   1517-12-31
     1                q     3       False  1517-06-30
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_json\_values(*json\_data*, */*, *\**, *index=None*, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*)[#](#static_frame.FrameGO.from_json_values "Link to this definition")
@@ -3448,7 +3410,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2       8       True   1517-12-31
     3       3       False  1517-06-30
     <int64> <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_npy(*fp*, */*)[#](#static_frame.FrameGO.from_npy "Link to this definition")
@@ -3480,7 +3441,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     <int64>      <int64> <bool> <datetime64[D]>
     >>> import shutil
     >>> shutil.rmtree('/tmp/f.npy')
-
     ```
 
 *classmethod* FrameGO.from\_npy\_mmap(*fp*, */*)[#](#static_frame.FrameGO.from_npy_mmap "Link to this definition")
@@ -3517,7 +3477,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     >>> closer() # close mmaps after usage
     >>> import shutil
     >>> shutil.rmtree('/tmp/f.npy')
-
     ```
 
 *classmethod* FrameGO.from\_npz(*fp*, */*)[#](#static_frame.FrameGO.from_npz "Link to this definition")
@@ -3544,7 +3503,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2            8       True   1517-12-31
     3            3       False  1517-06-30
     <int64>      <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_overlay(*containers*, */*, *\**, *index=None*, *columns=None*, *union=True*, *name=None*, *func=<function isna\_array>*, *fill\_value=<object object>*)[#](#static_frame.FrameGO.from_overlay "Link to this definition")
@@ -3586,7 +3544,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     r         8.0       123
     s         3.0        wX
     <<U1>     <float64> <object>
-
     ```
 
 *classmethod* FrameGO.from\_pandas(*value*, */*, *\**, *index=None*, *index\_constructor=None*, *columns=None*, *columns\_constructor=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*, *own\_data=False*)[#](#static_frame.FrameGO.from_pandas "Link to this definition")
@@ -3630,7 +3587,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     r            8       123
     s            3        wX
     <object>     <int64> <<U4>
-
     ```
 
 *classmethod* FrameGO.from\_parquet(*fp*, */*, *\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_select=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_parquet "Link to this definition")
@@ -3670,7 +3626,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     r         8       123
     s         3        wX
     <object>  <int64> <object>
-
     ```
 
 *classmethod* FrameGO.from\_pickle(*fp*, */*)[#](#static_frame.FrameGO.from_pickle "Link to this definition")
@@ -3702,7 +3657,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2            8       True   1517-12-31
     3            3       False  1517-06-30
     <int64>      <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_records(*records*, */*, *\**, *index=None*, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[#](#static_frame.FrameGO.from_records "Link to this definition")
@@ -3731,7 +3685,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     p            10      False  1517-01-01
     q            8       True   1517-04-01
     <<U1>        <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_records\_items(*items*, */*, *\**, *columns=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *index\_constructor=None*, *columns\_constructor=None*, *own\_columns=False*)[#](#static_frame.FrameGO.from_records_items "Link to this definition")
@@ -3755,7 +3708,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     p            10      False  1517-01-01
     q            8       True   1517-04-01
     <<U1>        <int64> <bool> <datetime64[D]>
-
     ```
 
 *classmethod* FrameGO.from\_series(*series*, */*, *\**, *name=None*, *columns\_constructor=None*)[#](#static_frame.FrameGO.from_series "Link to this definition")
@@ -3781,7 +3733,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     b         2
     c         8
     <<U1>     <int64>
-
     ```
 
 *classmethod* FrameGO.from\_sql(*query*, */*, *\**, *connection*, *index\_depth=0*, *index\_constructors=None*, *columns\_depth=1*, *columns\_select=None*, *columns\_constructors=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *parameters=()*)[#](#static_frame.FrameGO.from_sql "Link to this definition")
@@ -3821,7 +3772,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     0         10      0       1517-01-01
     1         2       1       1517-04-01
     <int64>   <int64> <int64> <<U10>
-
     ```
 
 *classmethod* FrameGO.from\_sqlite(*fp*, */*, *\**, *label*, *index\_depth=0*, *index\_constructors=None*, *columns\_depth=1*, *columns\_constructors=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_sqlite "Link to this definition")
@@ -3848,7 +3798,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     2            8       True   1517-12-31
     3            3       False  1517-06-30
     <int64>      <int64> <bool> <<U10>
-
     ```
 
 *classmethod* FrameGO.from\_structured\_array(*array*, */*, *\**, *index\_depth=0*, *index\_column\_first=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_constructors=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[#](#static_frame.FrameGO.from_structured_array "Link to this definition")
@@ -3876,7 +3825,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     0         False  8
     1         True   19
     <int64>   <bool> <int64>
-
     ```
 
 *classmethod* FrameGO.from\_tsv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_tsv "Link to this definition")
@@ -3911,7 +3859,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     q         2       3
     r         4       5
     <<U1>     <int64> <int64>
-
     ```
 
 *classmethod* FrameGO.from\_xlsx(*fp*, */*, *\**, *label=<object object>*, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*, *skip\_header=0*, *skip\_footer=0*, *trim\_nadir=False*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[#](#static_frame.FrameGO.from_xlsx "Link to this definition")
@@ -3939,7 +3886,6 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     q         2       3
     r         4       5
     <<U1>     <int64> <int64>
-
     ```
 
 [FrameGO](frame_go.md#api-detail-framego): [Constructor](#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)

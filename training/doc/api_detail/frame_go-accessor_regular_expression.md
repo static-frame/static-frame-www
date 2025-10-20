@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2553,7 +2557,6 @@ FrameGO.via\_re(*pattern*, *flags*, */).search(pos*, *endpos*)
     2            False  True   True
     3            True   True   True
     <int64>      <bool> <bool> <bool>
-
     ```
 
 FrameGO.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
@@ -2586,7 +2589,6 @@ FrameGO.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
     2            False  True   True
     3            True   False  True
     <int64>      <bool> <bool> <bool>
-
     ```
 
 FrameGO.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
@@ -2619,7 +2621,6 @@ FrameGO.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
     2            False  True   False
     3            False  False  False
     <int64>      <bool> <bool> <bool>
-
     ```
 
 FrameGO.via\_re(*pattern*, *flags*, */).split(maxsplit*)
@@ -2651,7 +2652,6 @@ FrameGO.via\_re(*pattern*, *flags*, */).split(maxsplit*)
     2            ('8',)    ('', '', '', '') ('', '5', '7-', '...
     3            ('', '')  (' w', ' ')      ('', '5', '7-06-'...
     <int64>      <object>  <object>         <object>
-
     ```
 
 FrameGO.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
@@ -2684,7 +2684,6 @@ FrameGO.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
     2            ()       ('1', '2', '3') ('1', '1', '1', '...
     3            ('3',)   ('X',)          ('1', '1', '3')
     <int64>      <object> <object>        <object>
-
     ```
 
 FrameGO.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
@@ -2717,7 +2716,6 @@ FrameGO.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
     2            8     ====== ==5==7-====-====
     3            ==     w==   ==5==7-06-==0
     <int64>      <<U3> <<U6>  <<U16>
-
     ```
 
 FrameGO.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
@@ -2750,7 +2748,6 @@ FrameGO.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
     2            ('8', 0)   ('==23', 1)  ('==517-12-31', 1)
     3            ('==', 1)  (' w== ', 1) ('==517-06-30', 1)
     <int64>      <object>   <object>     <object>
-
     ```
 
 [FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](frame_go-operator_unary.md#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)

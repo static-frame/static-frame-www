@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2557,7 +2561,6 @@ Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, 
     2020-03          Frame
     2020-04          Frame
     <datetime64[M]>  <object>
-
     ```
 
 *classmethod* Yarn.from\_buses(*buses*, */*, *\**, *name=None*, *retain\_labels*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.from_buses)[#](#static_frame.Yarn.from_buses "Link to this definition")
@@ -2594,7 +2597,6 @@ Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, 
     v       Frame
     w       Frame
     <<U1>   <object>
-
     ```
 
 *classmethod* Yarn.from\_concat(*containers*, */*, *\**, *index=None*, *name=<object object>*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.from_concat)[#](#static_frame.Yarn.from_concat "Link to this definition")
@@ -2660,7 +2662,6 @@ Yarn.\_\_init\_\_(*series*, */*, *\**, *index=None*, *index\_constructor=None*, 
     k                v     Frame
     k                w     Frame
     <<U1>            <<U1> <object>
-
     ```
 
 [Yarn](yarn.md#api-detail-yarn): [Constructor](#api-detail-yarn-constructor) | [Exporter](yarn-exporter.md#api-detail-yarn-exporter) | [Attribute](yarn-attribute.md#api-detail-yarn-attribute) | [Method](yarn-method.md#api-detail-yarn-method) | [Dictionary-Like](yarn-dictionary_like.md#api-detail-yarn-dictionary-like) | [Display](yarn-display.md#api-detail-yarn-display) | [Selector](yarn-selector.md#api-detail-yarn-selector) | [Iterator](yarn-iterator.md#api-detail-yarn-iterator) | [Accessor Hashlib](yarn-accessor_hashlib.md#api-detail-yarn-accessor-hashlib) | [Accessor Type Clinic](yarn-accessor_type_clinic.md#api-detail-yarn-accessor-type-clinic)

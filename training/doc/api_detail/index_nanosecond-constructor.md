@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexNanosecond: Constructor](../api_overview/index_nanosecond-constructor.md#api-overview-indexnanosecond-constructor)
 
-IndexNanosecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[#](#static_frame.IndexNanosecond.__init__ "Link to this definition")
+IndexNanosecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *sort\_status=SortStatus.UNKNOWN*)[#](#static_frame.IndexNanosecond.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -2537,7 +2541,55 @@ IndexNanosecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<
     1789-12-31T00:00:00.000000000
     1799-11-09T00:00:00.000000000
     <datetime64[ns]>
+    ```
 
+*classmethod* IndexNanosecond.from\_difference(*\*others*)[#](#static_frame.IndexNanosecond.from_difference "Link to this definition")
+:   Construct a new Index based on the difference with Index, containers, or NumPy arrays. Retains order.
+
+    ```
+    >>> ix1 = sf.IndexNanosecond.from_labels(('1789-05-05', '1789-12-31', '1799-11-09'))
+    >>> ix1
+    <IndexNanosecond>
+    1789-05-05T00:00:00.000000000
+    1789-12-31T00:00:00.000000000
+    1799-11-09T00:00:00.000000000
+    <datetime64[ns]>
+    >>> ix2 = sf.IndexNanosecond.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexNanosecond>
+    2022-04-01T00:00:00.000000000
+    2021-12-31T00:00:00.000000000
+    2018-06-30T00:00:00.000000000
+    <datetime64[ns]>
+    >>> sf.IndexNanosecond.from_difference(ix1, ix2)
+    <IndexNanosecond>
+    1789-05-05T00:00:00.000000000
+    1789-12-31T00:00:00.000000000
+    1799-11-09T00:00:00.000000000
+    <datetime64[ns]>
+    ```
+
+*classmethod* IndexNanosecond.from\_intersection(*\*others*)[#](#static_frame.IndexNanosecond.from_intersection "Link to this definition")
+:   Construct a new Index based on the intersection with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexNanosecond.from_labels(('1789-05-05', '1789-12-31', '1799-11-09'))
+    >>> ix1
+    <IndexNanosecond>
+    1789-05-05T00:00:00.000000000
+    1789-12-31T00:00:00.000000000
+    1799-11-09T00:00:00.000000000
+    <datetime64[ns]>
+    >>> ix2 = sf.IndexNanosecond.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexNanosecond>
+    2022-04-01T00:00:00.000000000
+    2021-12-31T00:00:00.000000000
+    2018-06-30T00:00:00.000000000
+    <datetime64[ns]>
+    >>> sf.IndexNanosecond.from_intersection(ix1, ix2)
+    <IndexNanosecond>
+    <datetime64[ns]>
     ```
 
 *classmethod* IndexNanosecond.from\_labels(*labels*, */*, *\**, *name=None*)[#](#static_frame.IndexNanosecond.from_labels "Link to this definition")
@@ -2550,7 +2602,6 @@ IndexNanosecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<
     1789-12-31T00:00:00.000000000
     1799-11-09T00:00:00.000000000
     <datetime64[ns]>
-
     ```
 
 *classmethod* IndexNanosecond.from\_pandas(*value*, */*)[#](#static_frame.IndexNanosecond.from_pandas "Link to this definition")
@@ -2564,7 +2615,35 @@ IndexNanosecond.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<
     1789-12-31
     1799-11-09
     <object>
+    ```
 
+*classmethod* IndexNanosecond.from\_union(*\*others*)[#](#static_frame.IndexNanosecond.from_union "Link to this definition")
+:   Construct a new Index based on the union with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexNanosecond.from_labels(('1789-05-05', '1789-12-31', '1799-11-09'))
+    >>> ix1
+    <IndexNanosecond>
+    1789-05-05T00:00:00.000000000
+    1789-12-31T00:00:00.000000000
+    1799-11-09T00:00:00.000000000
+    <datetime64[ns]>
+    >>> ix2 = sf.IndexNanosecond.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexNanosecond>
+    2022-04-01T00:00:00.000000000
+    2021-12-31T00:00:00.000000000
+    2018-06-30T00:00:00.000000000
+    <datetime64[ns]>
+    >>> sf.IndexNanosecond.from_union(ix1, ix2)
+    <IndexNanosecond>
+    1789-05-05T00:00:00.000000000
+    1789-12-31T00:00:00.000000000
+    1799-11-09T00:00:00.000000000
+    2018-06-30T00:00:00.000000000
+    2021-12-31T00:00:00.000000000
+    2022-04-01T00:00:00.000000000
+    <datetime64[ns]>
     ```
 
 [IndexNanosecond](index_nanosecond.md#api-detail-indexnanosecond): [Constructor](#api-detail-indexnanosecond-constructor) | [Exporter](index_nanosecond-exporter.md#api-detail-indexnanosecond-exporter) | [Attribute](index_nanosecond-attribute.md#api-detail-indexnanosecond-attribute) | [Method](index_nanosecond-method.md#api-detail-indexnanosecond-method) | [Dictionary-Like](index_nanosecond-dictionary_like.md#api-detail-indexnanosecond-dictionary-like) | [Display](index_nanosecond-display.md#api-detail-indexnanosecond-display) | [Selector](index_nanosecond-selector.md#api-detail-indexnanosecond-selector) | [Iterator](index_nanosecond-iterator.md#api-detail-indexnanosecond-iterator) | [Operator Binary](index_nanosecond-operator_binary.md#api-detail-indexnanosecond-operator-binary) | [Operator Unary](index_nanosecond-operator_unary.md#api-detail-indexnanosecond-operator-unary) | [Accessor Values](index_nanosecond-accessor_values.md#api-detail-indexnanosecond-accessor-values) | [Accessor Datetime](index_nanosecond-accessor_datetime.md#api-detail-indexnanosecond-accessor-datetime) | [Accessor String](index_nanosecond-accessor_string.md#api-detail-indexnanosecond-accessor-string) | [Accessor Regular Expression](index_nanosecond-accessor_regular_expression.md#api-detail-indexnanosecond-accessor-regular-expression) | [Accessor Hashlib](index_nanosecond-accessor_hashlib.md#api-detail-indexnanosecond-accessor-hashlib) | [Accessor Type Clinic](index_nanosecond-accessor_type_clinic.md#api-detail-indexnanosecond-accessor-type-clinic)
@@ -2579,8 +2658,11 @@ Detail: IndexNanosecond: Exporter](index_nanosecond-exporter.md "next page")
 On this page
 
 * [`IndexNanosecond.__init__()`](#static_frame.IndexNanosecond.__init__)
+* [`IndexNanosecond.from_difference()`](#static_frame.IndexNanosecond.from_difference)
+* [`IndexNanosecond.from_intersection()`](#static_frame.IndexNanosecond.from_intersection)
 * [`IndexNanosecond.from_labels()`](#static_frame.IndexNanosecond.from_labels)
 * [`IndexNanosecond.from_pandas()`](#static_frame.IndexNanosecond.from_pandas)
+* [`IndexNanosecond.from_union()`](#static_frame.IndexNanosecond.from_union)
 
 © Copyright 2025, Christopher Ariza.
 

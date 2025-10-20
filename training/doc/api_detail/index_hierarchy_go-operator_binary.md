@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2536,7 +2540,6 @@ IndexHierarchyGO.\_\_add\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__a
     [[    8  1032    40]
      [    9 -2040    40]
      [    9  1032    40]]
-
     ```
 
 IndexHierarchyGO.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__and__ "Link to this definition")
@@ -2556,7 +2559,6 @@ IndexHierarchyGO.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__a
     [[False  True  True]
      [False  True  True]
      [False  True False]]
-
     ```
 
 IndexHierarchyGO.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__eq__ "Link to this definition")
@@ -2574,7 +2576,6 @@ IndexHierarchyGO.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__eq
     [[False False False]
      [False False False]
      [False False False]]
-
     ```
 
 IndexHierarchyGO.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__floordiv__ "Link to this definition")
@@ -2590,7 +2591,6 @@ IndexHierarchyGO.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexHierarchyG
     [[   0  128    4]
      [   0 -256    4]
      [   0  128    4]]
-
     ```
 
 IndexHierarchyGO.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__ge__ "Link to this definition")
@@ -2608,7 +2608,6 @@ IndexHierarchyGO.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__ge
     [[False  True  True]
      [False False  True]
      [False  True  True]]
-
     ```
 
 IndexHierarchyGO.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__gt__ "Link to this definition")
@@ -2626,7 +2625,6 @@ IndexHierarchyGO.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__gt
     [[False  True  True]
      [False False  True]
      [False  True  True]]
-
     ```
 
 IndexHierarchyGO.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__le__ "Link to this definition")
@@ -2644,7 +2642,6 @@ IndexHierarchyGO.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__le
     [[ True False False]
      [ True  True False]
      [ True False False]]
-
     ```
 
 IndexHierarchyGO.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__lt__ "Link to this definition")
@@ -2662,7 +2659,6 @@ IndexHierarchyGO.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__lt
     [[ True False False]
      [ True  True False]
      [ True False False]]
-
     ```
 
 IndexHierarchyGO.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__matmul__ "Link to this definition")
@@ -2676,7 +2672,6 @@ IndexHierarchyGO.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.
     <int64>                             <int64> <int64>
     >>> ih @ (3, 0, 4)
     [128 131 131]
-
     ```
 
 IndexHierarchyGO.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__mod__ "Link to this definition")
@@ -2692,7 +2687,6 @@ IndexHierarchyGO.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__m
     [[0 0 0]
      [1 0 0]
      [1 0 0]]
-
     ```
 
 IndexHierarchyGO.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__mul__ "Link to this definition")
@@ -2708,7 +2702,6 @@ IndexHierarchyGO.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__m
     [[     0   8192    256]
      [     8 -16384    256]
      [     8   8192    256]]
-
     ```
 
 IndexHierarchyGO.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__ne__ "Link to this definition")
@@ -2726,7 +2719,6 @@ IndexHierarchyGO.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__ne
     [[ True  True  True]
      [ True  True  True]
      [ True  True  True]]
-
     ```
 
 IndexHierarchyGO.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__or__ "Link to this definition")
@@ -2748,7 +2740,6 @@ IndexHierarchyGO.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__or
     [[False  True  True]
      [ True  True  True]
      [False  True  True]]
-
     ```
 
 IndexHierarchyGO.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__pow__ "Link to this definition")
@@ -2764,7 +2755,6 @@ IndexHierarchyGO.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__p
     [[            0             0 1099511627776]
      [            1             0 1099511627776]
      [            1             0 1099511627776]]
-
     ```
 
 IndexHierarchyGO.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__radd__ "Link to this definition")
@@ -2780,7 +2770,6 @@ IndexHierarchyGO.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__
     [[    8  1032    40]
      [    9 -2040    40]
      [    9  1032    40]]
-
     ```
 
 IndexHierarchyGO.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__rfloordiv__ "Link to this definition")
@@ -2796,7 +2785,6 @@ IndexHierarchyGO.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexHierarchy
     [[ 0  0  0]
      [ 8 -1  0]
      [ 8  0  0]]
-
     ```
 
 IndexHierarchyGO.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__rmatmul__ "Link to this definition")
@@ -2810,7 +2798,6 @@ IndexHierarchyGO.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO
     <int64>                             <int64> <int64>
     >>> ih @ (3, 0, 4)
     [128 131 131]
-
     ```
 
 IndexHierarchyGO.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__rmul__ "Link to this definition")
@@ -2826,7 +2813,6 @@ IndexHierarchyGO.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__
     [[     0   8192    256]
      [     8 -16384    256]
      [     8   8192    256]]
-
     ```
 
 IndexHierarchyGO.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__rshift__ "Link to this definition")
@@ -2842,7 +2828,6 @@ IndexHierarchyGO.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.
     [[    0   512    16]
      [    0 -1024    16]
      [    0   512    16]]
-
     ```
 
 IndexHierarchyGO.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__rsub__ "Link to this definition")
@@ -2858,7 +2843,6 @@ IndexHierarchyGO.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__
     [[    8 -1016   -24]
      [    7  2056   -24]
      [    7 -1016   -24]]
-
     ```
 
 IndexHierarchyGO.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__rtruediv__ "Link to this definition")
@@ -2874,7 +2858,6 @@ IndexHierarchyGO.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexHierarchyG
     [[         inf  7.81250e-03  2.50000e-01]
      [ 8.00000e+00 -3.90625e-03  2.50000e-01]
      [ 8.00000e+00  7.81250e-03  2.50000e-01]]
-
     ```
 
 IndexHierarchyGO.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__sub__ "Link to this definition")
@@ -2890,7 +2873,6 @@ IndexHierarchyGO.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__s
     [[   -8  1016    24]
      [   -7 -2056    24]
      [   -7  1016    24]]
-
     ```
 
 IndexHierarchyGO.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__truediv__ "Link to this definition")
@@ -2906,7 +2888,6 @@ IndexHierarchyGO.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO
     [[ 0.00e+00  1.28e+02  4.00e+00]
      [ 1.25e-01 -2.56e+02  4.00e+00]
      [ 1.25e-01  1.28e+02  4.00e+00]]
-
     ```
 
 IndexHierarchyGO.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__xor__ "Link to this definition")
@@ -2926,7 +2907,6 @@ IndexHierarchyGO.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexHierarchyGO.__x
     [[False False False]
      [ True False False]
      [False False  True]]
-
     ```
 
 [IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](index_hierarchy_go-method.md#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)

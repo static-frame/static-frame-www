@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2525,10 +2529,13 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-init) | `IndexDate.__init__(labels, /, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-init) | `IndexDate.__init__(labels, /, *, loc_is_iloc, name, sort_status)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
 | [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-from-date-range) | `IndexDate.from_date_range(start, stop, step, *, name)` | Get an IndexDate instance over a range of dates, where start and stop is inclusi… |
+| [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-from-difference) | `IndexDate.from_difference(*others)` | Construct a new Index based on the difference with Index, containers, or NumPy a… |
+| [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-from-intersection) | `IndexDate.from_intersection(*others)` | Construct a new Index based on the intersection with Index, containers, or NumPy… |
 | [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-from-labels) | `IndexDate.from_labels(labels, /, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
 | [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-from-pandas) | `IndexDate.from_pandas(value, /)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-from-union) | `IndexDate.from_union(*others)` | Construct a new Index based on the union with Index, containers, or NumPy arrays… |
 | [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-from-year-month-range) | `IndexDate.from_year_month_range(start, stop, step, *, name)` | Get an IndexDate instance over a range of months, where start and end are inclus… |
 | [Detail](../api_detail/index_date-constructor.md#api-sig-indexdate-from-year-range) | `IndexDate.from_year_range(start, stop, step, *, name)` | Get an IndexDate instance over a range of years, where start and end are inclusi… |
 

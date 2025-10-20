@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2541,7 +2545,6 @@ Index.via\_str.\_\_getitem\_\_(*key*)
     <<U4>
     >>> ix.via_str[-1]
     [' ' 'Z' '3' ' ']
-
     ```
 
 Index.via\_str.capitalize
@@ -2562,7 +2565,6 @@ Index.via\_str.capitalize
     <<U4>
     >>> ix.via_str.capitalize()
     ['Qrs ' 'Xyz' '123' ' wx ']
-
     ```
 
 Index.via\_str.center(*width*, *fillchar*)
@@ -2583,7 +2585,6 @@ Index.via\_str.center(*width*, *fillchar*)
     <<U4>
     >>> ix.via_str.center(8)
     ['  qrs   ' '  XYZ   ' '  123   ' '   wX   ']
-
     ```
 
 Index.via\_str.contains(*item*)
@@ -2604,7 +2605,6 @@ Index.via\_str.contains(*item*)
     <<U4>
     >>> ix.via_str.contains('X')
     [False  True False  True]
-
     ```
 
 Index.via\_str.count(*sub*, *start*, *end*)
@@ -2625,7 +2625,6 @@ Index.via\_str.count(*sub*, *start*, *end*)
     <<U4>
     >>> ix.via_str.count('X')
     [0 1 0 1]
-
     ```
 
 Index.via\_str.decode(*encoding*, *errors*)
@@ -2646,7 +2645,6 @@ Index.via\_str.decode(*encoding*, *errors*)
     <|S4>
     >>> ix.via_str.decode()
     ['qrs ' 'XYZ' '123' ' wX ']
-
     ```
 
 Index.via\_str.encode(*encoding*, *errors*)
@@ -2667,7 +2665,6 @@ Index.via\_str.encode(*encoding*, *errors*)
     <<U4>
     >>> ix.via_str.encode()
     [b'qrs ' b'XYZ' b'123' b' wX ']
-
     ```
 
 Index.via\_str.endswith(*suffix*, *start*, *end*)
@@ -2688,7 +2685,6 @@ Index.via\_str.endswith(*suffix*, *start*, *end*)
     <<U4>
     >>> ix.via_str.endswith(' ')
     [ True False False  True]
-
     ```
 
 Index.via\_str.find(*sub*, *start*, *end*)
@@ -2709,7 +2705,6 @@ Index.via\_str.find(*sub*, *start*, *end*)
     <<U4>
     >>> ix.via_str.find('X')
     [-1  0 -1  2]
-
     ```
 
 Index.via\_str.format(*format*)
@@ -2733,7 +2728,6 @@ Index.via\_str.format(*format*)
     <<U4>
     >>> ix.via_str.format('{:-^10}')
     ['---qrs ---' '---XYZ----' '---123----' '--- wX ---']
-
     ```
 
 Index.via\_str.index(*sub*, *start*, *end*)
@@ -2754,7 +2748,6 @@ Index.via\_str.index(*sub*, *start*, *end*)
     <<U4>
     >>> ix.via_str.index('X')
     ValueError('substring not found')
-
     ```
 
 Index.via\_str.isalnum
@@ -2775,7 +2768,6 @@ Index.via\_str.isalnum
     <<U4>
     >>> ix.via_str.isalnum()
     [False  True  True False]
-
     ```
 
 Index.via\_str.isalpha
@@ -2796,7 +2788,6 @@ Index.via\_str.isalpha
     <<U4>
     >>> ix.via_str.isalpha()
     [False  True False False]
-
     ```
 
 Index.via\_str.isdecimal
@@ -2817,7 +2808,6 @@ Index.via\_str.isdecimal
     <<U4>
     >>> ix.via_str.isdecimal()
     [False False  True False]
-
     ```
 
 Index.via\_str.isdigit
@@ -2838,7 +2828,6 @@ Index.via\_str.isdigit
     <<U4>
     >>> ix.via_str.isdigit()
     [False False  True False]
-
     ```
 
 Index.via\_str.islower
@@ -2859,7 +2848,6 @@ Index.via\_str.islower
     <<U4>
     >>> ix.via_str.islower()
     [ True False False False]
-
     ```
 
 Index.via\_str.isnumeric
@@ -2880,7 +2868,6 @@ Index.via\_str.isnumeric
     <<U4>
     >>> ix.via_str.isnumeric()
     [False False  True False]
-
     ```
 
 Index.via\_str.isspace
@@ -2901,7 +2888,6 @@ Index.via\_str.isspace
     <<U4>
     >>> ix.via_str.isspace()
     [False False False False]
-
     ```
 
 Index.via\_str.istitle
@@ -2922,7 +2908,6 @@ Index.via\_str.istitle
     <<U4>
     >>> ix.via_str.istitle()
     [False False False False]
-
     ```
 
 Index.via\_str.isupper
@@ -2943,7 +2928,6 @@ Index.via\_str.isupper
     <<U4>
     >>> ix.via_str.isupper()
     [False  True False False]
-
     ```
 
 Index.via\_str.ljust(*width*, *fillchar*)
@@ -2964,7 +2948,6 @@ Index.via\_str.ljust(*width*, *fillchar*)
     <<U4>
     >>> ix.via_str.ljust(8)
     ['qrs     ' 'XYZ     ' '123     ' ' wX     ']
-
     ```
 
 Index.via\_str.len
@@ -2985,7 +2968,6 @@ Index.via\_str.len
     <<U4>
     >>> ix.via_str.len()
     [4 3 3 4]
-
     ```
 
 Index.via\_str.lower
@@ -3006,7 +2988,6 @@ Index.via\_str.lower
     <<U4>
     >>> ix.via_str.lower()
     ['qrs ' 'xyz' '123' ' wx ']
-
     ```
 
 Index.via\_str.lstrip(*chars*)
@@ -3027,7 +3008,6 @@ Index.via\_str.lstrip(*chars*)
     <<U4>
     >>> ix.via_str.lstrip()
     ['qrs ' 'XYZ' '123' 'wX ']
-
     ```
 
 Index.via\_str.partition(*sep*)
@@ -3049,7 +3029,6 @@ Index.via\_str.partition(*sep*)
     >>> ix.via_str.partition('X')
     [(np.str_('qrs '), '', '') ('', 'X', 'YZ') (np.str_('123'), '', '')
      (' w', 'X', ' ')]
-
     ```
 
 Index.via\_str.replace(*old*, *new*, *count*)
@@ -3070,7 +3049,6 @@ Index.via\_str.replace(*old*, *new*, *count*)
     <<U4>
     >>> ix.via_str.replace('X', '*')
     ['qrs ' '*YZ' '123' ' w* ']
-
     ```
 
 Index.via\_str.rfind(*sub*, *start*, *end*)
@@ -3091,7 +3069,6 @@ Index.via\_str.rfind(*sub*, *start*, *end*)
     <<U4>
     >>> ix.via_str.rfind('X')
     [-1  0 -1  2]
-
     ```
 
 Index.via\_str.rindex(*sub*, *start*, *end*)
@@ -3112,7 +3089,6 @@ Index.via\_str.rindex(*sub*, *start*, *end*)
     <<U4>
     >>> ix.via_str.rindex('X')
     ValueError('substring not found')
-
     ```
 
 Index.via\_str.rjust(*width*, *fillchar*)
@@ -3133,7 +3109,6 @@ Index.via\_str.rjust(*width*, *fillchar*)
     <<U4>
     >>> ix.via_str.rjust(8)
     ['    qrs ' '     XYZ' '     123' '     wX ']
-
     ```
 
 Index.via\_str.rpartition(*sep*)
@@ -3155,7 +3130,6 @@ Index.via\_str.rpartition(*sep*)
     >>> ix.via_str.rpartition('X')
     [('', '', np.str_('qrs ')) ('', 'X', 'YZ') ('', '', np.str_('123'))
      (' w', 'X', ' ')]
-
     ```
 
 Index.via\_str.rsplit(*sep*, *maxsplit*)
@@ -3176,7 +3150,6 @@ Index.via\_str.rsplit(*sep*, *maxsplit*)
     <<U4>
     >>> ix.via_str.rsplit('X')
     [('qrs ',) ('', 'YZ') ('123',) (' w', ' ')]
-
     ```
 
 Index.via\_str.rstrip(*chars*)
@@ -3197,7 +3170,6 @@ Index.via\_str.rstrip(*chars*)
     <<U4>
     >>> ix.via_str.rstrip()
     ['qrs' 'XYZ' '123' ' wX']
-
     ```
 
 Index.via\_str.split(*sep*, *maxsplit*)
@@ -3218,7 +3190,6 @@ Index.via\_str.split(*sep*, *maxsplit*)
     <<U4>
     >>> ix.via_str.split('X')
     [('qrs ',) ('', 'YZ') ('123',) (' w', ' ')]
-
     ```
 
 Index.via\_str.startswith(*prefix*, *start*, *end*)
@@ -3239,7 +3210,6 @@ Index.via\_str.startswith(*prefix*, *start*, *end*)
     <<U4>
     >>> ix.via_str.startswith('X')
     [False  True False False]
-
     ```
 
 Index.via\_str.strip(*chars*)
@@ -3260,7 +3230,6 @@ Index.via\_str.strip(*chars*)
     <<U4>
     >>> ix.via_str.strip()
     ['qrs' 'XYZ' '123' 'wX']
-
     ```
 
 Index.via\_str.swapcase
@@ -3281,7 +3250,6 @@ Index.via\_str.swapcase
     <<U4>
     >>> ix.via_str.swapcase()
     ['QRS ' 'xyz' '123' ' Wx ']
-
     ```
 
 Index.via\_str.title
@@ -3302,7 +3270,6 @@ Index.via\_str.title
     <<U4>
     >>> ix.via_str.title()
     ['Qrs ' 'Xyz' '123' ' Wx ']
-
     ```
 
 Index.via\_str.upper
@@ -3323,7 +3290,6 @@ Index.via\_str.upper
     <<U4>
     >>> ix.via_str.upper()
     ['QRS ' 'XYZ' '123' ' WX ']
-
     ```
 
 Index.via\_str.zfill(*width*)
@@ -3344,7 +3310,6 @@ Index.via\_str.zfill(*width*)
     <<U4>
     >>> ix.via_str.zfill(8)
     ['0000qrs ' '00000XYZ' '00000123' '0000 wX ']
-
     ```
 
 [Index](index.md#api-detail-index): [Constructor](index-constructor.md#api-detail-index-constructor) | [Exporter](index-exporter.md#api-detail-index-exporter) | [Attribute](index-attribute.md#api-detail-index-attribute) | [Method](index-method.md#api-detail-index-method) | [Dictionary-Like](index-dictionary_like.md#api-detail-index-dictionary-like) | [Display](index-display.md#api-detail-index-display) | [Selector](index-selector.md#api-detail-index-selector) | [Iterator](index-iterator.md#api-detail-index-iterator) | [Operator Binary](index-operator_binary.md#api-detail-index-operator-binary) | [Operator Unary](index-operator_unary.md#api-detail-index-operator-unary) | [Accessor Values](index-accessor_values.md#api-detail-index-accessor-values) | [Accessor Datetime](index-accessor_datetime.md#api-detail-index-accessor-datetime) | [Accessor String](#api-detail-index-accessor-string) | [Accessor Regular Expression](index-accessor_regular_expression.md#api-detail-index-accessor-regular-expression) | [Accessor Hashlib](index-accessor_hashlib.md#api-detail-index-accessor-hashlib) | [Accessor Type Clinic](index-accessor_type_clinic.md#api-detail-index-accessor-type-clinic)

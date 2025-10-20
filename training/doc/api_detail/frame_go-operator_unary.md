@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2544,7 +2548,6 @@ FrameGO.\_\_abs\_\_()[#](#static_frame.FrameGO.__abs__ "Link to this definition"
     r            0       8       9
     s            0       0       12
     <<U1>        <int64> <int64> <int64>
-
     ```
 
 FrameGO.\_\_invert\_\_()[#](#static_frame.FrameGO.__invert__ "Link to this definition")
@@ -2566,7 +2569,6 @@ FrameGO.\_\_invert\_\_()[#](#static_frame.FrameGO.__invert__ "Link to this defin
     q            False  False
     r            False  True
     <<U1>        <bool> <bool>
-
     ```
 
 FrameGO.\_\_neg\_\_()[#](#static_frame.FrameGO.__neg__ "Link to this definition")
@@ -2590,7 +2592,6 @@ FrameGO.\_\_neg\_\_()[#](#static_frame.FrameGO.__neg__ "Link to this definition"
     r            0       -8      -9
     s            0       0       -12
     <<U1>        <int64> <int64> <int64>
-
     ```
 
 FrameGO.\_\_pos\_\_()[#](#static_frame.FrameGO.__pos__ "Link to this definition")
@@ -2614,7 +2615,6 @@ FrameGO.\_\_pos\_\_()[#](#static_frame.FrameGO.__pos__ "Link to this definition"
     r            0       8       9
     s            0       0       12
     <<U1>        <int64> <int64> <int64>
-
     ```
 
 FrameGO.abs()[#](#static_frame.FrameGO.abs "Link to this definition")
@@ -2638,7 +2638,6 @@ FrameGO.abs()[#](#static_frame.FrameGO.abs "Link to this definition")
     r            0       8       9
     s            0       0       12
     <<U1>        <int64> <int64> <int64>
-
     ```
 
 [FrameGO](frame_go.md#api-detail-framego): [Constructor](frame_go-constructor.md#api-detail-framego-constructor) | [Exporter](frame_go-exporter.md#api-detail-framego-exporter) | [Attribute](frame_go-attribute.md#api-detail-framego-attribute) | [Method](frame_go-method.md#api-detail-framego-method) | [Dictionary-Like](frame_go-dictionary_like.md#api-detail-framego-dictionary-like) | [Display](frame_go-display.md#api-detail-framego-display) | [Assignment](frame_go-assignment.md#api-detail-framego-assignment) | [Selector](frame_go-selector.md#api-detail-framego-selector) | [Iterator](frame_go-iterator.md#api-detail-framego-iterator) | [Operator Binary](frame_go-operator_binary.md#api-detail-framego-operator-binary) | [Operator Unary](#api-detail-framego-operator-unary) | [Accessor Values](frame_go-accessor_values.md#api-detail-framego-accessor-values) | [Accessor Datetime](frame_go-accessor_datetime.md#api-detail-framego-accessor-datetime) | [Accessor String](frame_go-accessor_string.md#api-detail-framego-accessor-string) | [Accessor Transpose](frame_go-accessor_transpose.md#api-detail-framego-accessor-transpose) | [Accessor Fill Value](frame_go-accessor_fill_value.md#api-detail-framego-accessor-fill-value) | [Accessor Regular Expression](frame_go-accessor_regular_expression.md#api-detail-framego-accessor-regular-expression) | [Accessor Hashlib](frame_go-accessor_hashlib.md#api-detail-framego-accessor-hashlib) | [Accessor Type Clinic](frame_go-accessor_type_clinic.md#api-detail-framego-accessor-type-clinic) | [Accessor Reduce](frame_go-accessor_reduce.md#api-detail-framego-accessor-reduce)

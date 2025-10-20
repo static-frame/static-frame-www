@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2538,7 +2542,6 @@ IndexGO.iter\_label(*depth\_level*, */*)
     <<U1>
     >>> tuple(ix.iter_label())
     (np.str_('a'), np.str_('b'), np.str_('c'), np.str_('d'), np.str_('e'))
-
     ```
 
 IndexGO.iter\_label(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *columns\_constructor*)
@@ -2563,7 +2566,6 @@ IndexGO.iter\_label(*depth\_level*, */).apply(func*, */*, *\**, *dtype*, *name*,
     <<U1>
     >>> ix.iter_label().apply(lambda l: l if l == 'b' else l.upper())
     ['A' 'b' 'C' 'D' 'E']
-
     ```
 
 IndexGO.iter\_label(*depth\_level*, */).apply\_iter(func*, */*)
@@ -2590,7 +2592,6 @@ IndexGO.iter\_label(*depth\_level*, */).apply\_iter(func*, */*)
     <<U1>
     >>> tuple(ix.iter_label().apply_iter(lambda l: l if l == 'b' else l.upper()))
     ('A', np.str_('b'), 'C', 'D', 'E')
-
     ```
 
 IndexGO.iter\_label(*depth\_level*, */).apply\_iter\_items(func*, */*)
@@ -2617,7 +2618,6 @@ IndexGO.iter\_label(*depth\_level*, */).apply\_iter\_items(func*, */*)
     <<U1>
     >>> tuple(ix.iter_label().apply_iter_items(lambda l: l if l == 'b' else l.upper()))
     ((np.int64(0), 'A'), (np.int64(1), np.str_('b')), (np.int64(2), 'C'), (np.int64(3), 'D'), (np.int64(4), 'E'))
-
     ```
 
 IndexGO.iter\_label(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dtype*, *name*, *index\_constructor*, *max\_workers*, *chunksize*, *use\_threads*)
@@ -2647,7 +2647,6 @@ IndexGO.iter\_label(*depth\_level*, */).apply\_pool(func*, */*, *\**, *dtype*, *
     <<U1>
     >>> ix.iter_label().apply_pool(lambda l: l if l == 'b' else l.upper(), use_threads=True)
     ['A' 'b' 'C' 'D' 'E']
-
     ```
 
 [IndexGO](index_go.md#api-detail-indexgo): [Constructor](index_go-constructor.md#api-detail-indexgo-constructor) | [Exporter](index_go-exporter.md#api-detail-indexgo-exporter) | [Attribute](index_go-attribute.md#api-detail-indexgo-attribute) | [Method](index_go-method.md#api-detail-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-detail-indexgo-dictionary-like) | [Display](index_go-display.md#api-detail-indexgo-display) | [Selector](index_go-selector.md#api-detail-indexgo-selector) | [Iterator](#api-detail-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-detail-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-detail-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-detail-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-detail-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-detail-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-detail-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-detail-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-detail-indexgo-accessor-type-clinic)

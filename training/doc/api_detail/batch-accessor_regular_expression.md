@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2549,7 +2553,6 @@ Batch.via\_re(*pattern*, *flags*, */).search(pos*, *endpos*)
     j                2        False  False  False
     j                3        True   True   True
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
@@ -2578,7 +2581,6 @@ Batch.via\_re(*pattern*, *flags*, */).match(pos*, *endpos*)
     j                2        False  False  False
     j                3        True   True   True
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
@@ -2607,7 +2609,6 @@ Batch.via\_re(*pattern*, *flags*, */).fullmatch(pos*, *endpos*)
     j                2        False  False  False
     j                3        False  True   False
     <<U1>            <object> <bool> <bool> <object>
-
     ```
 
 Batch.via\_re(*pattern*, *flags*, */).split(maxsplit*)
@@ -2635,7 +2636,6 @@ Batch.via\_re(*pattern*, *flags*, */).split(maxsplit*)
     j                2        ('nan',)    ('',)            ('NaT',)
     j                3        ('', '.0')  ('', '', '', '') ('', '5', '7-04-0...
     <<U1>            <object> <object>    <object>         <object>
-
     ```
 
 Batch.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
@@ -2664,7 +2664,6 @@ Batch.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
     j                2        ()       ()              ()
     j                3        ('2',)   ('1', '2', '3') ('1', '1', '1')
     <<U1>            <object> <object> <object>        <object>
-
     ```
 
 Batch.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
@@ -2693,7 +2692,6 @@ Batch.via\_re(*pattern*, *flags*, */).sub(repl*, *count*)
     j                2        nan          NaT
     j                3        ==.0  ====== ==5==7-04-0==
     <<U1>            <object> <<U5> <<U6>  <object>
-
     ```
 
 Batch.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
@@ -2722,7 +2720,6 @@ Batch.via\_re(*pattern*, *flags*, */).subn(repl*, *count*)
     j                2        ('nan', 0)   ('', 0)     ('NaT', 0)
     j                3        ('==.0', 1)  ('==23', 1) ('==517-04-01', 1)
     <<U1>            <object> <object>     <object>    <object>
-
     ```
 
 [Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](batch-operator_binary.md#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)

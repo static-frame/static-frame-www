@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2534,7 +2538,6 @@ IndexDate.\_\_add\_\_(*other*, */*)[#](#static_frame.IndexDate.__add__ "Link to 
     <datetime64[D]>
     >>> ix + 2
     ['1517-04-03' '1517-12-03' '1517-07-02']
-
     ```
 
 IndexDate.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexDate.__and__ "Link to this definition")
@@ -2550,7 +2553,6 @@ IndexDate.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexDate.__and__ "Link to 
     TypeError("ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix & (False, True)
     TypeError("ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexDate.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexDate.__eq__ "Link to this definition")
@@ -2566,7 +2568,6 @@ IndexDate.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexDate.__eq__ "Link to th
     <datetime64[D]>
     >>> ix == '1517-06-30'
     [False False  True]
-
     ```
 
 IndexDate.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexDate.__floordiv__ "Link to this definition")
@@ -2580,7 +2581,6 @@ IndexDate.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexDate.__floordiv__
     <datetime64[D]>
     >>> ix // '1517-06-30'
     UFuncTypeError(<ufunc 'floor_divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDate.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexDate.__ge__ "Link to this definition")
@@ -2596,7 +2596,6 @@ IndexDate.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexDate.__ge__ "Link to th
     <datetime64[D]>
     >>> ix >= '1517-06-30'
     [False  True  True]
-
     ```
 
 IndexDate.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexDate.__gt__ "Link to this definition")
@@ -2612,7 +2611,6 @@ IndexDate.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexDate.__gt__ "Link to th
     <datetime64[D]>
     >>> ix > '1517-06-30'
     [False  True False]
-
     ```
 
 IndexDate.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexDate.__le__ "Link to this definition")
@@ -2628,7 +2626,6 @@ IndexDate.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexDate.__le__ "Link to th
     <datetime64[D]>
     >>> ix <= '1517-06-30'
     [ True False  True]
-
     ```
 
 IndexDate.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexDate.__lt__ "Link to this definition")
@@ -2644,7 +2641,6 @@ IndexDate.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexDate.__lt__ "Link to th
     <datetime64[D]>
     >>> ix < '1517-06-30'
     [ True False False]
-
     ```
 
 IndexDate.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexDate.__matmul__ "Link to this definition")
@@ -2658,7 +2654,6 @@ IndexDate.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexDate.__matmul__ "Li
     <datetime64[D]>
     >>> ix @ (3, 0, 4, 0)
     NotImplementedError('matrix multiplication not supported')
-
     ```
 
 IndexDate.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexDate.__mod__ "Link to this definition")
@@ -2672,7 +2667,6 @@ IndexDate.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexDate.__mod__ "Link to 
     <datetime64[D]>
     >>> ix % '1517-06-30'
     UFuncTypeError(<ufunc 'remainder'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDate.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexDate.__mul__ "Link to this definition")
@@ -2686,7 +2680,6 @@ IndexDate.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexDate.__mul__ "Link to 
     <datetime64[D]>
     >>> ix * '1517-06-30'
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDate.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexDate.__ne__ "Link to this definition")
@@ -2702,7 +2695,6 @@ IndexDate.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexDate.__ne__ "Link to th
     <datetime64[D]>
     >>> ix != '1517-06-30'
     [ True  True False]
-
     ```
 
 IndexDate.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexDate.__or__ "Link to this definition")
@@ -2720,7 +2712,6 @@ IndexDate.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexDate.__or__ "Link to th
     TypeError("ufunc 'bitwise_or' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix | (False, True)
     TypeError("ufunc 'bitwise_or' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexDate.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexDate.__pow__ "Link to this definition")
@@ -2734,7 +2725,6 @@ IndexDate.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexDate.__pow__ "Link to 
     <datetime64[D]>
     >>> ix ** '1517-06-30'
     TypeError("ufunc 'power' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexDate.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexDate.__radd__ "Link to this definition")
@@ -2748,7 +2738,6 @@ IndexDate.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexDate.__radd__ "Link t
     <datetime64[D]>
     >>> '1517-06-30' + ix
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDate.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexDate.__rfloordiv__ "Link to this definition")
@@ -2762,7 +2751,6 @@ IndexDate.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexDate.__rfloordiv
     <datetime64[D]>
     >>> '1517-06-30' // ix
     UFuncTypeError(<ufunc 'floor_divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDate.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexDate.__rmatmul__ "Link to this definition")
@@ -2776,7 +2764,6 @@ IndexDate.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexDate.__rmatmul__ "
     <datetime64[D]>
     >>> ix @ (3, 0, 4, 0)
     NotImplementedError('matrix multiplication not supported')
-
     ```
 
 IndexDate.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexDate.__rmul__ "Link to this definition")
@@ -2790,7 +2777,6 @@ IndexDate.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexDate.__rmul__ "Link t
     <datetime64[D]>
     >>> '1517-06-30' * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDate.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexDate.__rshift__ "Link to this definition")
@@ -2804,7 +2790,6 @@ IndexDate.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexDate.__rshift__ "Li
     <datetime64[D]>
     >>> ix >> 1
     TypeError("ufunc 'right_shift' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexDate.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexDate.__rsub__ "Link to this definition")
@@ -2818,7 +2803,6 @@ IndexDate.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexDate.__rsub__ "Link t
     <datetime64[D]>
     >>> '1517-06-30' - ix
     [  90 -154    0]
-
     ```
 
 IndexDate.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexDate.__rtruediv__ "Link to this definition")
@@ -2832,7 +2816,6 @@ IndexDate.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexDate.__rtruediv__
     <datetime64[D]>
     >>> '1517-06-30' / ix
     UFuncTypeError(<ufunc 'divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDate.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexDate.__sub__ "Link to this definition")
@@ -2846,7 +2829,6 @@ IndexDate.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexDate.__sub__ "Link to 
     <datetime64[D]>
     >>> ix - 2
     ['1517-03-30' '1517-11-29' '1517-06-28']
-
     ```
 
 IndexDate.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexDate.__truediv__ "Link to this definition")
@@ -2860,7 +2842,6 @@ IndexDate.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexDate.__truediv__ "
     <datetime64[D]>
     >>> ix / '1517-06-30'
     UFuncTypeError(<ufunc 'divide'>, (dtype('<M8[D]'), dtype('<M8[D]')))
-
     ```
 
 IndexDate.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexDate.__xor__ "Link to this definition")
@@ -2876,7 +2857,6 @@ IndexDate.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexDate.__xor__ "Link to 
     TypeError("ufunc 'bitwise_xor' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix ^ (False, True)
     TypeError("ufunc 'bitwise_xor' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 [IndexDate](index_date.md#api-detail-indexdate): [Constructor](index_date-constructor.md#api-detail-indexdate-constructor) | [Exporter](index_date-exporter.md#api-detail-indexdate-exporter) | [Attribute](index_date-attribute.md#api-detail-indexdate-attribute) | [Method](index_date-method.md#api-detail-indexdate-method) | [Dictionary-Like](index_date-dictionary_like.md#api-detail-indexdate-dictionary-like) | [Display](index_date-display.md#api-detail-indexdate-display) | [Selector](index_date-selector.md#api-detail-indexdate-selector) | [Iterator](index_date-iterator.md#api-detail-indexdate-iterator) | [Operator Binary](#api-detail-indexdate-operator-binary) | [Operator Unary](index_date-operator_unary.md#api-detail-indexdate-operator-unary) | [Accessor Values](index_date-accessor_values.md#api-detail-indexdate-accessor-values) | [Accessor Datetime](index_date-accessor_datetime.md#api-detail-indexdate-accessor-datetime) | [Accessor String](index_date-accessor_string.md#api-detail-indexdate-accessor-string) | [Accessor Regular Expression](index_date-accessor_regular_expression.md#api-detail-indexdate-accessor-regular-expression) | [Accessor Hashlib](index_date-accessor_hashlib.md#api-detail-indexdate-accessor-hashlib) | [Accessor Type Clinic](index_date-accessor_type_clinic.md#api-detail-indexdate-accessor-type-clinic)

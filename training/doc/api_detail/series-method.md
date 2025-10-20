@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: Series: Method](../api_overview/series-method.md#api-overview-series-method)
 
-Series.\_\_array\_\_(*dtype=None*)[#](#static_frame.Series.__array__ "Link to this definition")
+Series.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.Series.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2537,7 +2541,6 @@ Series.\_\_array\_\_(*dtype=None*)[#](#static_frame.Series.__array__ "Link to th
     <<U1>    <int64>
     >>> s.__array__()
     [10  2  8]
-
     ```
 
 Series.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.Series.__array_ufunc__ "Link to this definition")
@@ -2559,7 +2562,6 @@ Series.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#stati
     b        2
     c        0
     <<U1>    <int64>
-
     ```
 
 Series.\_\_bool\_\_()[#](#static_frame.Series.__bool__ "Link to this definition")
@@ -2576,7 +2578,28 @@ Series.\_\_bool\_\_()[#](#static_frame.Series.__bool__ "Link to this definition"
     <<U1>    <int64>
     >>> bool(s)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
+    ```
 
+Series.\_\_copy\_\_()[[source]](../_modules/static_frame/core/series.md#Series.__copy__)[#](#static_frame.Series.__copy__ "Link to this definition")
+:   Return shallow copy of this Series.
+
+    ```
+    >>> import copy
+    >>> s = sf.Series((10.235, 2.124, 8.734), index=('a', 'b', 'c'))
+    >>> s
+    <Series>
+    <Index>
+    a        10.235
+    b        2.124
+    c        8.734
+    <<U1>    <float64>
+    >>> copy.copy(s)
+    <Series>
+    <Index>
+    a        10.235
+    b        2.124
+    c        8.734
+    <<U1>    <float64>
     ```
 
 Series.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/series.md#Series.__deepcopy__)[#](#static_frame.Series.__deepcopy__ "Link to this definition")
@@ -2597,7 +2620,6 @@ Series.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/series.m
     b        2
     c        8
     <<U1>    <int64>
-
     ```
 
 Series.\_\_len\_\_()[[source]](../_modules/static_frame/core/series.md#Series.__len__)[#](#static_frame.Series.__len__ "Link to this definition")
@@ -2614,7 +2636,6 @@ Series.\_\_len\_\_()[[source]](../_modules/static_frame/core/series.md#Series.__
     <<U1>    <int64>
     >>> len(s)
     3
-
     ```
 
 Series.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/series.md#Series.__round__)[#](#static_frame.Series.__round__ "Link to this definition")
@@ -2642,7 +2663,6 @@ Series.\_\_round\_\_(*decimals=0*, */*)[[source]](../_modules/static_frame/core/
     b        2.1
     c        8.7
     <<U1>    <float64>
-
     ```
 
 Series.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.all "Link to this definition")
@@ -2663,7 +2683,6 @@ Series.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.al
     <<U1>    <bool>
     >>> s.all()
     False
-
     ```
 
 Series.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.any "Link to this definition")
@@ -2684,7 +2703,6 @@ Series.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.an
     <<U1>    <bool>
     >>> s.any()
     True
-
     ```
 
 Series.astype(*dtype*, */*)[[source]](../_modules/static_frame/core/series.md#Series.astype)[#](#static_frame.Series.astype "Link to this definition")
@@ -2712,7 +2730,6 @@ Series.astype(*dtype*, */*)[[source]](../_modules/static_frame/core/series.md#Se
     b        1.0
     c        nan
     <<U1>    <float64>
-
     ```
 
 Series.clip(*\**, *lower=None*, *upper=None*)[[source]](../_modules/static_frame/core/series.md#Series.clip)[#](#static_frame.Series.clip "Link to this definition")
@@ -2741,7 +2758,6 @@ Series.clip(*\**, *lower=None*, *upper=None*)[[source]](../_modules/static_frame
     b        2.5
     c        8.734
     <<U1>    <float64>
-
     ```
 
 Series.corr(*other*, */*)[[source]](../_modules/static_frame/core/series.md#Series.corr)[#](#static_frame.Series.corr "Link to this definition")
@@ -2769,7 +2785,6 @@ Series.corr(*other*, */*)[[source]](../_modules/static_frame/core/series.md#Seri
     <<U1>    <int64>
     >>> s1.corr(s2)
     0.9977051066985492
-
     ```
 
 Series.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[source]](../_modules/static_frame/core/series.md#Series.count)[#](#static_frame.Series.count "Link to this definition")
@@ -2794,7 +2809,6 @@ Series.count(*\**, *skipna=True*, *skipfalsy=False*, *unique=False*, *axis=0*)[[
     3
     >>> s.count(unique=True)
     2
-
     ```
 
 Series.cov(*other*, */*, *\**, *ddof=1*)[[source]](../_modules/static_frame/core/series.md#Series.cov)[#](#static_frame.Series.cov "Link to this definition")
@@ -2822,7 +2836,6 @@ Series.cov(*other*, */*, *\**, *ddof=1*)[[source]](../_modules/static_frame/core
     <<U1>    <int64>
     >>> s1.cov(s2)
     17.924999999999997
-
     ```
 
 Series.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Series.cumprod "Link to this definition")
@@ -2848,7 +2861,6 @@ Series.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Series.cumprod "L
     b        20
     c        160
     <<U1>    <int64>
-
     ```
 
 Series.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Series.cumsum "Link to this definition")
@@ -2874,7 +2886,6 @@ Series.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.Series.cumsum "Lin
     b        12
     c        20
     <<U1>    <int64>
-
     ```
 
 Series.drop\_duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/series.md#Series.drop_duplicated)[#](#static_frame.Series.drop_duplicated "Link to this definition")
@@ -2903,7 +2914,6 @@ Series.drop\_duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[[so
     b        5
     c        None
     <<U1>    <object>
-
     ```
 
 Series.dropfalsy()[[source]](../_modules/static_frame/core/series.md#Series.dropfalsy)[#](#static_frame.Series.dropfalsy "Link to this definition")
@@ -2926,7 +2936,6 @@ Series.dropfalsy()[[source]](../_modules/static_frame/core/series.md#Series.drop
     b        r
     d        s
     <<U1>    <<U1>
-
     ```
 
 Series.dropna()[[source]](../_modules/static_frame/core/series.md#Series.dropna)[#](#static_frame.Series.dropna "Link to this definition")
@@ -2949,7 +2958,6 @@ Series.dropna()[[source]](../_modules/static_frame/core/series.md#Series.dropna)
     b        5
     d        8
     <<U1>    <object>
-
     ```
 
 Series.duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[[source]](../_modules/static_frame/core/series.md#Series.duplicated)[#](#static_frame.Series.duplicated "Link to this definition")
@@ -2980,7 +2988,6 @@ Series.duplicated(*\**, *exclude\_first=False*, *exclude\_last=False*)[[source]]
     c        False
     d        True
     <<U1>    <bool>
-
     ```
 
 Series.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/series.md#Series.equals)[#](#static_frame.Series.equals "Link to this definition")
@@ -3011,7 +3018,6 @@ Series.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*,
     <<U1>    <int64>
     >>> s1.equals(s2)
     False
-
     ```
 
 Series.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillfalsy)[#](#static_frame.Series.fillfalsy "Link to this definition")
@@ -3038,7 +3044,6 @@ Series.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/series.md
     c        missing
     d        s
     <<U1>    <<U7>
-
     ```
 
 Series.fillfalsy\_backward(*limit=0*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillfalsy_backward)[#](#static_frame.Series.fillfalsy_backward "Link to this definition")
@@ -3065,7 +3070,6 @@ Series.fillfalsy\_backward(*limit=0*, */*)[[source]](../_modules/static_frame/co
     c        r
     d        s
     <<U1>    <<U1>
-
     ```
 
 Series.fillfalsy\_forward(*limit=0*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillfalsy_forward)[#](#static_frame.Series.fillfalsy_forward "Link to this definition")
@@ -3092,7 +3096,6 @@ Series.fillfalsy\_forward(*limit=0*, */*)[[source]](../_modules/static_frame/cor
     c        q
     d        q
     <<U1>    <<U1>
-
     ```
 
 Series.fillfalsy\_leading(*value*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillfalsy_leading)[#](#static_frame.Series.fillfalsy_leading "Link to this definition")
@@ -3119,7 +3122,6 @@ Series.fillfalsy\_leading(*value*, */*)[[source]](../_modules/static_frame/core/
     c        r
     d        s
     <<U1>    <<U7>
-
     ```
 
 Series.fillfalsy\_trailing(*value*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillfalsy_trailing)[#](#static_frame.Series.fillfalsy_trailing "Link to this definition")
@@ -3146,7 +3148,6 @@ Series.fillfalsy\_trailing(*value*, */*)[[source]](../_modules/static_frame/core
     c        missing
     d        missing
     <<U1>    <<U7>
-
     ```
 
 Series.fillna(*value*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillna)[#](#static_frame.Series.fillna "Link to this definition")
@@ -3175,7 +3176,6 @@ Series.fillna(*value*, */*)[[source]](../_modules/static_frame/core/series.md#Se
     d        8.734
     e        0.0
     <<U1>    <float64>
-
     ```
 
 Series.fillna\_backward(*limit=0*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillna_backward)[#](#static_frame.Series.fillna_backward "Link to this definition")
@@ -3204,7 +3204,6 @@ Series.fillna\_backward(*limit=0*, */*)[[source]](../_modules/static_frame/core/
     d        2.124
     e        8.734
     <<U1>    <float64>
-
     ```
 
 Series.fillna\_forward(*limit=0*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillna_forward)[#](#static_frame.Series.fillna_forward "Link to this definition")
@@ -3233,7 +3232,6 @@ Series.fillna\_forward(*limit=0*, */*)[[source]](../_modules/static_frame/core/s
     d        8.734
     e        8.734
     <<U1>    <float64>
-
     ```
 
 Series.fillna\_leading(*value*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillna_leading)[#](#static_frame.Series.fillna_leading "Link to this definition")
@@ -3262,7 +3260,6 @@ Series.fillna\_leading(*value*, */*)[[source]](../_modules/static_frame/core/ser
     d        2.124
     e        8.734
     <<U1>    <float64>
-
     ```
 
 Series.fillna\_trailing(*value*, */*)[[source]](../_modules/static_frame/core/series.md#Series.fillna_trailing)[#](#static_frame.Series.fillna_trailing "Link to this definition")
@@ -3291,7 +3288,6 @@ Series.fillna\_trailing(*value*, */*)[[source]](../_modules/static_frame/core/se
     d        0.0
     e        0.0
     <<U1>    <float64>
-
     ```
 
 Series.head(*count=5*, */*)[[source]](../_modules/static_frame/core/series.md#Series.head)[#](#static_frame.Series.head "Link to this definition")
@@ -3320,7 +3316,6 @@ Series.head(*count=5*, */*)[[source]](../_modules/static_frame/core/series.md#Se
     a        10.235
     b        2.124
     <<U1>    <float64>
-
     ```
 
 Series.iloc\_max(*\**, *skipna=True*)[[source]](../_modules/static_frame/core/series.md#Series.iloc_max)[#](#static_frame.Series.iloc_max "Link to this definition")
@@ -3345,7 +3340,6 @@ Series.iloc\_max(*\**, *skipna=True*)[[source]](../_modules/static_frame/core/se
     <<U1>    <float64>
     >>> s.iloc_max()
     0
-
     ```
 
 Series.iloc\_min(*\**, *skipna=True*)[[source]](../_modules/static_frame/core/series.md#Series.iloc_min)[#](#static_frame.Series.iloc_min "Link to this definition")
@@ -3370,7 +3364,6 @@ Series.iloc\_min(*\**, *skipna=True*)[[source]](../_modules/static_frame/core/se
     <<U1>    <float64>
     >>> s.iloc_min()
     1
-
     ```
 
 Series.iloc\_notfalsy\_first(*\**, *fill\_value=-1*)[[source]](../_modules/static_frame/core/series.md#Series.iloc_notfalsy_first)[#](#static_frame.Series.iloc_notfalsy_first "Link to this definition")
@@ -3395,7 +3388,6 @@ Series.iloc\_notfalsy\_first(*\**, *fill\_value=-1*)[[source]](../_modules/stati
     <<U1>    <object>
     >>> s.iloc_notfalsy_first()
     2
-
     ```
 
 Series.iloc\_notfalsy\_last(*\**, *fill\_value=-1*)[[source]](../_modules/static_frame/core/series.md#Series.iloc_notfalsy_last)[#](#static_frame.Series.iloc_notfalsy_last "Link to this definition")
@@ -3420,7 +3412,6 @@ Series.iloc\_notfalsy\_last(*\**, *fill\_value=-1*)[[source]](../_modules/static
     <<U1>    <object>
     >>> s.iloc_notfalsy_last()
     3
-
     ```
 
 Series.iloc\_notna\_first(*\**, *fill\_value=-1*)[[source]](../_modules/static_frame/core/series.md#Series.iloc_notna_first)[#](#static_frame.Series.iloc_notna_first "Link to this definition")
@@ -3445,7 +3436,6 @@ Series.iloc\_notna\_first(*\**, *fill\_value=-1*)[[source]](../_modules/static_f
     <<U1>    <float64>
     >>> s.iloc_notna_first()
     1
-
     ```
 
 Series.iloc\_notna\_last(*\**, *fill\_value=-1*)[[source]](../_modules/static_frame/core/series.md#Series.iloc_notna_last)[#](#static_frame.Series.iloc_notna_last "Link to this definition")
@@ -3470,7 +3460,6 @@ Series.iloc\_notna\_last(*\**, *fill\_value=-1*)[[source]](../_modules/static_fr
     <<U1>    <float64>
     >>> s.iloc_notna_last()
     2
-
     ```
 
 Series.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/series.md#Series.iloc_searchsorted)[#](#static_frame.Series.iloc_searchsorted "Link to this definition")
@@ -3493,7 +3482,6 @@ Series.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_
     <<U1>    <int64>
     >>> s.iloc_searchsorted(18)
     2
-
     ```
 
 Series.insert\_after(*key*, *container*, */*)[[source]](../_modules/static_frame/core/series.md#Series.insert_after)[#](#static_frame.Series.insert_after "Link to this definition")
@@ -3519,7 +3507,6 @@ Series.insert\_after(*key*, *container*, */*)[[source]](../_modules/static_frame
     f        12
     c        8
     <<U1>    <int64>
-
     ```
 
 Series.insert\_before(*key*, *container*, */*)[[source]](../_modules/static_frame/core/series.md#Series.insert_before)[#](#static_frame.Series.insert_before "Link to this definition")
@@ -3545,7 +3532,6 @@ Series.insert\_before(*key*, *container*, */*)[[source]](../_modules/static_fram
     b        2
     c        8
     <<U1>    <int64>
-
     ```
 
 Series.isfalsy()[[source]](../_modules/static_frame/core/series.md#Series.isfalsy)[#](#static_frame.Series.isfalsy "Link to this definition")
@@ -3571,7 +3557,6 @@ Series.isfalsy()[[source]](../_modules/static_frame/core/series.md#Series.isfals
     d        True
     e        True
     <<U1>    <bool>
-
     ```
 
 Series.isin(*other*, */*)[[source]](../_modules/static_frame/core/series.md#Series.isin)[#](#static_frame.Series.isin "Link to this definition")
@@ -3591,7 +3576,6 @@ Series.isin(*other*, */*)[[source]](../_modules/static_frame/core/series.md#Seri
     d        False
     e        False
     <<U1>    <bool>
-
     ```
 
 Series.isna()[[source]](../_modules/static_frame/core/series.md#Series.isna)[#](#static_frame.Series.isna "Link to this definition")
@@ -3617,7 +3601,6 @@ Series.isna()[[source]](../_modules/static_frame/core/series.md#Series.isna)[#](
     d        False
     e        True
     <<U1>    <bool>
-
     ```
 
 Series.loc\_max(*\**, *skipna=True*)[[source]](../_modules/static_frame/core/series.md#Series.loc_max)[#](#static_frame.Series.loc_max "Link to this definition")
@@ -3642,7 +3625,6 @@ Series.loc\_max(*\**, *skipna=True*)[[source]](../_modules/static_frame/core/ser
     <<U1>    <float64>
     >>> s.loc_max()
     a
-
     ```
 
 Series.loc\_min(*\**, *skipna=True*)[[source]](../_modules/static_frame/core/series.md#Series.loc_min)[#](#static_frame.Series.loc_min "Link to this definition")
@@ -3667,7 +3649,6 @@ Series.loc\_min(*\**, *skipna=True*)[[source]](../_modules/static_frame/core/ser
     <<U1>    <float64>
     >>> s.loc_min()
     b
-
     ```
 
 Series.loc\_notfalsy\_first(*\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.loc_notfalsy_first)[#](#static_frame.Series.loc_notfalsy_first "Link to this definition")
@@ -3692,7 +3673,6 @@ Series.loc\_notfalsy\_first(*\**, *fill\_value=nan*)[[source]](../_modules/stati
     <<U1>    <object>
     >>> s.loc_notfalsy_first()
     c
-
     ```
 
 Series.loc\_notfalsy\_last(*\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.loc_notfalsy_last)[#](#static_frame.Series.loc_notfalsy_last "Link to this definition")
@@ -3717,7 +3697,6 @@ Series.loc\_notfalsy\_last(*\**, *fill\_value=nan*)[[source]](../_modules/static
     <<U1>    <object>
     >>> s.loc_notfalsy_last()
     d
-
     ```
 
 Series.loc\_notna\_first(*\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.loc_notna_first)[#](#static_frame.Series.loc_notna_first "Link to this definition")
@@ -3742,7 +3721,6 @@ Series.loc\_notna\_first(*\**, *fill\_value=nan*)[[source]](../_modules/static_f
     <<U1>    <float64>
     >>> s.loc_notna_first()
     b
-
     ```
 
 Series.loc\_notna\_last(*\**, *fill\_value=-1*)[[source]](../_modules/static_frame/core/series.md#Series.loc_notna_last)[#](#static_frame.Series.loc_notna_last "Link to this definition")
@@ -3767,7 +3745,6 @@ Series.loc\_notna\_last(*\**, *fill\_value=-1*)[[source]](../_modules/static_fra
     <<U1>    <float64>
     >>> s.loc_notna_last()
     c
-
     ```
 
 Series.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.loc_searchsorted)[#](#static_frame.Series.loc_searchsorted "Link to this definition")
@@ -3791,7 +3768,6 @@ Series.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=na
     <<U1>    <int64>
     >>> s.loc_searchsorted(18)
     c
-
     ```
 
 Series.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.max "Link to this definition")
@@ -3812,7 +3788,6 @@ Series.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.ma
     <<U1>    <int64>
     >>> s.max()
     10
-
     ```
 
 Series.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.mean "Link to this definition")
@@ -3833,7 +3808,6 @@ Series.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.m
     <<U1>    <int64>
     >>> s.mean()
     6.666666666666667
-
     ```
 
 Series.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.median "Link to this definition")
@@ -3854,7 +3828,6 @@ Series.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series
     <<U1>    <int64>
     >>> s.median()
     8.0
-
     ```
 
 Series.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.min "Link to this definition")
@@ -3875,7 +3848,6 @@ Series.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.Series.mi
     <<U1>    <int64>
     >>> s.min()
     2
-
     ```
 
 Series.notfalsy()[[source]](../_modules/static_frame/core/series.md#Series.notfalsy)[#](#static_frame.Series.notfalsy "Link to this definition")
@@ -3901,7 +3873,6 @@ Series.notfalsy()[[source]](../_modules/static_frame/core/series.md#Series.notfa
     d        False
     e        False
     <<U1>    <bool>
-
     ```
 
 Series.notna()[[source]](../_modules/static_frame/core/series.md#Series.notna)[#](#static_frame.Series.notna "Link to this definition")
@@ -3927,7 +3898,6 @@ Series.notna()[[source]](../_modules/static_frame/core/series.md#Series.notna)[#
     d        True
     e        False
     <<U1>    <bool>
-
     ```
 
 Series.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.Series.prod "Link to this definition")
@@ -3948,7 +3918,6 @@ Series.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_fra
     <<U1>    <int64>
     >>> s.prod()
     160
-
     ```
 
 Series.rank\_dense(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.rank_dense)[#](#static_frame.Series.rank_dense "Link to this definition")
@@ -3981,7 +3950,6 @@ Series.rank\_dense(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_valu
     c        0
     d        2
     <<U1>    <int64>
-
     ```
 
 Series.rank\_max(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.rank_max)[#](#static_frame.Series.rank_max "Link to this definition")
@@ -4014,7 +3982,6 @@ Series.rank\_max(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=
     c        0
     d        3
     <<U1>    <int64>
-
     ```
 
 Series.rank\_mean(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.rank_mean)[#](#static_frame.Series.rank_mean "Link to this definition")
@@ -4047,7 +4014,6 @@ Series.rank\_mean(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value
     c        0.0
     d        2.5
     <<U1>    <float64>
-
     ```
 
 Series.rank\_min(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.rank_min)[#](#static_frame.Series.rank_min "Link to this definition")
@@ -4080,7 +4046,6 @@ Series.rank\_min(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=
     c        0
     d        2
     <<U1>    <int64>
-
     ```
 
 Series.rank\_ordinal(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.rank_ordinal)[#](#static_frame.Series.rank_ordinal "Link to this definition")
@@ -4113,7 +4078,6 @@ Series.rank\_ordinal(*\**, *skipna=True*, *ascending=True*, *start=0*, *fill\_va
     c        0
     d        3
     <<U1>    <int64>
-
     ```
 
 Series.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/series.md#Series.rehierarch)[#](#static_frame.Series.rehierarch "Link to this definition")
@@ -4137,7 +4101,6 @@ Series.rehierarch(*depth\_map*, */*, *\**, *index\_constructors=None*)[[source]]
     b                1       2
     b                2       7
     <<U1>            <int64> <int64>
-
     ```
 
 Series.reindex(*index*, *\**, *fill\_value=nan*, *own\_index=False*, *check\_equals=True*)[[source]](../_modules/static_frame/core/series.md#Series.reindex)[#](#static_frame.Series.reindex "Link to this definition")
@@ -4167,7 +4130,6 @@ Series.reindex(*index*, *\**, *fill\_value=nan*, *own\_index=False*, *check\_equ
     e        -1
     c        0
     <<U1>    <int64>
-
     ```
 
 Series.relabel(*index*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/series.md#Series.relabel)[#](#static_frame.Series.relabel "Link to this definition")
@@ -4206,7 +4168,6 @@ Series.relabel(*index*, *\**, *index\_constructor=None*)[[source]](../_modules/s
     +B+      2
     +C+      8
     <<U3>    <int64>
-
     ```
 
 Series.relabel\_flat()[[source]](../_modules/static_frame/core/series.md#Series.relabel_flat)[#](#static_frame.Series.relabel_flat "Link to this definition")
@@ -4230,7 +4191,6 @@ Series.relabel\_flat()[[source]](../_modules/static_frame/core/series.md#Series.
     (np.int64(2), np.str_('a')) 8
     (np.int64(2), np.str_('b')) 7
     <object>                    <int64>
-
     ```
 
 Series.relabel\_level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/series.md#Series.relabel_level_add)[#](#static_frame.Series.relabel_level_add "Link to this definition")
@@ -4257,7 +4217,6 @@ Series.relabel\_level\_add(*level*, */*, *\**, *index\_constructor=None*)[[sourc
     x                2       a     8
     x                2       b     7
     <<U1>            <int64> <<U1> <int64>
-
     ```
 
 Series.relabel\_level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/core/series.md#Series.relabel_level_drop)[#](#static_frame.Series.relabel_level_drop "Link to this definition")
@@ -4282,7 +4241,6 @@ Series.relabel\_level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/c
     a        3
     b        2
     <<U1>    <int64>
-
     ```
 
 Series.rename(*name=<object object>*, */*, *\**, *index=<object object>*)[[source]](../_modules/static_frame/core/series.md#Series.rename)[#](#static_frame.Series.rename "Link to this definition")
@@ -4304,7 +4262,6 @@ Series.rename(*name=<object object>*, */*, *\**, *index=<object object>*)[[sourc
     b           2
     c           8
     <<U1>       <int64>
-
     ```
 
 Series.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/static_frame/core/series.md#Series.roll)[#](#static_frame.Series.roll "Link to this definition")
@@ -4337,7 +4294,6 @@ Series.roll(*shift*, */*, *\**, *include\_index=False*)[[source]](../_modules/st
     d        8
     e        19
     <<U1>    <int64>
-
     ```
 
 Series.sample(*count=1*, */*, *\**, *seed=None*)[[source]](../_modules/static_frame/core/series.md#Series.sample)[#](#static_frame.Series.sample "Link to this definition")
@@ -4364,7 +4320,6 @@ Series.sample(*count=1*, */*, *\**, *seed=None*)[[source]](../_modules/static_fr
     a        10.235
     c        nan
     <<U1>    <float64>
-
     ```
 
 Series.shift(*shift*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static_frame/core/series.md#Series.shift)[#](#static_frame.Series.shift "Link to this definition")
@@ -4397,7 +4352,6 @@ Series.shift(*shift*, */*, *\**, *fill\_value=nan*)[[source]](../_modules/static
     d        8.0
     e        19.0
     <<U1>    <float64>
-
     ```
 
 Series.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/series.md#Series.sort_index)[#](#static_frame.Series.sort_index "Link to this definition")
@@ -4438,7 +4392,6 @@ Series.sort\_index(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[sour
     b        5
     a        8
     <<U1>    <int64>
-
     ```
 
 Series.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/series.md#Series.sort_values)[#](#static_frame.Series.sort_values "Link to this definition")
@@ -4479,7 +4432,6 @@ Series.sort\_values(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[sou
     b        5
     c        0
     <<U1>    <int64>
-
     ```
 
 Series.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.Series.std "Link to this definition")
@@ -4500,7 +4452,6 @@ Series.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame
     <<U1>    <int64>
     >>> s.std()
     3.39934634239519
-
     ```
 
 Series.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.Series.sum "Link to this definition")
@@ -4521,7 +4472,6 @@ Series.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_fram
     <<U1>    <int64>
     >>> s.sum()
     20
-
     ```
 
 Series.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/series.md#Series.tail)[#](#static_frame.Series.tail "Link to this definition")
@@ -4551,7 +4501,6 @@ Series.tail(*count=5*, */*)[[source]](../_modules/static_frame/core/series.md#Se
     d        8.734
     e        nan
     <<U1>    <float64>
-
     ```
 
 Series.transpose()[[source]](../_modules/static_frame/core/series.md#Series.transpose)[#](#static_frame.Series.transpose "Link to this definition")
@@ -4576,7 +4525,6 @@ Series.transpose()[[source]](../_modules/static_frame/core/series.md#Series.tran
     b        2
     c        8
     <<U1>    <int64>
-
     ```
 
 Series.unique()[[source]](../_modules/static_frame/core/series.md#Series.unique)[#](#static_frame.Series.unique "Link to this definition")
@@ -4597,7 +4545,6 @@ Series.unique()[[source]](../_modules/static_frame/core/series.md#Series.unique)
     <<U1>    <object>
     >>> s.unique()
     [8 5 None]
-
     ```
 
 Series.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[[source]](../_modules/static_frame/core/series.md#Series.unique_enumerated)[#](#static_frame.Series.unique_enumerated "Link to this definition")
@@ -4619,7 +4566,6 @@ Series.unique\_enumerated(*\**, *retain\_order=False*, *func=None*)[[source]](..
     <<U1>    <object>
     >>> s.unique_enumerated()
     (array([0, 1, 2, 0]), array([8, 5, None], dtype=object))
-
     ```
 
 Series.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.Series.var "Link to this definition")
@@ -4640,7 +4586,6 @@ Series.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame
     <<U1>    <int64>
     >>> s.var()
     11.555555555555557
-
     ```
 
 [Series](series.md#api-detail-series): [Constructor](series-constructor.md#api-detail-series-constructor) | [Exporter](series-exporter.md#api-detail-series-exporter) | [Attribute](series-attribute.md#api-detail-series-attribute) | [Method](#api-detail-series-method) | [Dictionary-Like](series-dictionary_like.md#api-detail-series-dictionary-like) | [Display](series-display.md#api-detail-series-display) | [Assignment](series-assignment.md#api-detail-series-assignment) | [Selector](series-selector.md#api-detail-series-selector) | [Iterator](series-iterator.md#api-detail-series-iterator) | [Operator Binary](series-operator_binary.md#api-detail-series-operator-binary) | [Operator Unary](series-operator_unary.md#api-detail-series-operator-unary) | [Accessor Values](series-accessor_values.md#api-detail-series-accessor-values) | [Accessor Datetime](series-accessor_datetime.md#api-detail-series-accessor-datetime) | [Accessor String](series-accessor_string.md#api-detail-series-accessor-string) | [Accessor Fill Value](series-accessor_fill_value.md#api-detail-series-accessor-fill-value) | [Accessor Regular Expression](series-accessor_regular_expression.md#api-detail-series-accessor-regular-expression) | [Accessor Hashlib](series-accessor_hashlib.md#api-detail-series-accessor-hashlib) | [Accessor Type Clinic](series-accessor_type_clinic.md#api-detail-series-accessor-type-clinic) | [Accessor Mapping](series-accessor_mapping.md#api-detail-series-accessor-mapping)
@@ -4657,6 +4602,7 @@ On this page
 * [`Series.__array__()`](#static_frame.Series.__array__)
 * [`Series.__array_ufunc__()`](#static_frame.Series.__array_ufunc__)
 * [`Series.__bool__()`](#static_frame.Series.__bool__)
+* [`Series.__copy__()`](#static_frame.Series.__copy__)
 * [`Series.__deepcopy__()`](#static_frame.Series.__deepcopy__)
 * [`Series.__len__()`](#static_frame.Series.__len__)
 * [`Series.__round__()`](#static_frame.Series.__round__)

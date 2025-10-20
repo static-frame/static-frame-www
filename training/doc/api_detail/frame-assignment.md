@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2563,7 +2567,6 @@ Frame.assign[*key*](*value*, *\**, *fill\_value*)
     r          -1      8       -1
     s          -1      0       -1
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.assign[key].apply(func, \*, fill\_value)
@@ -2597,7 +2600,6 @@ Frame.assign[key].apply(func, \*, fill\_value)
     r          0.0       8       9
     s          0.0       0       12
     <<U1>      <float64> <int64> <int64>
-
     ```
 
 Frame.assign[key].apply\_element(func, \*, dtype, fill\_value)
@@ -2631,7 +2633,6 @@ Frame.assign[key].apply\_element(func, \*, dtype, fill\_value)
     r          0.0       8       9
     s          0.0       0       12
     <<U1>      <float64> <int64> <int64>
-
     ```
 
 Frame.assign[key].apply\_element\_items(func, \*, dtype, fill\_value)
@@ -2665,7 +2666,6 @@ Frame.assign[key].apply\_element\_items(func, \*, dtype, fill\_value)
     r          0       8       9
     s          0       0       12
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.assign.iloc[*key*](*value*, *\**, *fill\_value*)
@@ -2717,7 +2717,6 @@ Frame.assign.iloc[*key*](*value*, *\**, *fill\_value*)
     r          0       8       9
     s          -1      -1      -1
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.assign.iloc[key].apply(func, \*, fill\_value)
@@ -2751,7 +2750,6 @@ Frame.assign.iloc[key].apply(func, \*, fill\_value)
     r          0.0       0.08      0.09
     s          0.0       0.0       0.12
     <<U1>      <float64> <float64> <float64>
-
     ```
 
 Frame.assign.iloc[key].apply\_element(func, \*, dtype, fill\_value)
@@ -2785,7 +2783,6 @@ Frame.assign.iloc[key].apply\_element(func, \*, dtype, fill\_value)
     r          0.0       8.0       9.0
     s          0.0       0.0       12.0
     <<U1>      <float64> <float64> <float64>
-
     ```
 
 Frame.assign.iloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
@@ -2819,7 +2816,6 @@ Frame.assign.iloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
     r          0.0       8       9
     s          0.0       0       12
     <<U1>      <float64> <int64> <int64>
-
     ```
 
 Frame.assign.loc[*key*](*value*, *\**, *fill\_value*)
@@ -2871,7 +2867,6 @@ Frame.assign.loc[*key*](*value*, *\**, *fill\_value*)
     r          0       8       9
     s          -1      -1      -1
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.assign.loc[key].apply(func, \*, fill\_value)
@@ -2905,7 +2900,6 @@ Frame.assign.loc[key].apply(func, \*, fill\_value)
     r          0.0       0.08      0.09
     s          0.0       0.0       0.12
     <<U1>      <float64> <float64> <float64>
-
     ```
 
 Frame.assign.loc[key].apply\_element(func, \*, dtype, fill\_value)
@@ -2939,7 +2933,6 @@ Frame.assign.loc[key].apply\_element(func, \*, dtype, fill\_value)
     r          0.0       0.08      0.09
     s          0.0       0.0       12.0
     <<U1>      <float64> <float64> <float64>
-
     ```
 
 Frame.assign.loc[key].apply\_element\_items(func, \*, dtype, fill\_value)
@@ -2973,7 +2966,6 @@ Frame.assign.loc[key].apply\_element\_items(func, \*, dtype, fill\_value)
     r          0       8       0.09
     s          0       0       0.12
     <<U1>      <int64> <int64> <float64>
-
     ```
 
 Frame.assign.bloc[*key*](*value*, *\**, *fill\_value*)
@@ -3007,7 +2999,6 @@ Frame.assign.bloc[*key*](*value*, *\**, *fill\_value*)
     r          0       -1      -1
     s          0       0       -1
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.assign.bloc[key].apply(func, \*, fill\_value)
@@ -3041,7 +3032,6 @@ Frame.assign.bloc[key].apply(func, \*, fill\_value)
     r          0.0       0.08      0.09
     s          0.0       0.0       0.12
     <<U1>      <float64> <float64> <float64>
-
     ```
 
 Frame.assign.bloc[key].apply\_element(func, \*, dtype, fill\_value)
@@ -3075,7 +3065,6 @@ Frame.assign.bloc[key].apply\_element(func, \*, dtype, fill\_value)
     r          0.0       0.08      9.0
     s          0.0       0.0       12.0
     <<U1>      <float64> <float64> <float64>
-
     ```
 
 Frame.assign.bloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
@@ -3109,7 +3098,6 @@ Frame.assign.bloc[key].apply\_element\_items(func, \*, dtype, fill\_value)
     r          0.0       8.0       0.09
     s          0.0       0.0       0.12
     <<U1>      <float64> <float64> <float64>
-
     ```
 
 [Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](frame-operator_binary.md#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)

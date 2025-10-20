@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexHierarchy: Method](../api_overview/index_hierarchy-method.md#api-overview-indexhierarchy-method)
 
-IndexHierarchy.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexHierarchy.__array__ "Link to this definition")
+IndexHierarchy.\_\_array\_\_(*dtype=None*, *copy=None*)[#](#static_frame.IndexHierarchy.__array__ "Link to this definition")
 :   Support the \_\_array\_\_ interface, returning an array of values.
 
     ```
@@ -2538,7 +2542,6 @@ IndexHierarchy.\_\_array\_\_(*dtype=None*)[#](#static_frame.IndexHierarchy.__arr
     [[    0  1024    32]
      [    1 -2048    32]
      [    1  1024    32]]
-
     ```
 
 IndexHierarchy.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#](#static_frame.IndexHierarchy.__array_ufunc__ "Link to this definition")
@@ -2556,7 +2559,6 @@ IndexHierarchy.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*)[#
     [[    0  1024     0]
      [    0 -2048     0]
      [    0  1024     0]]
-
     ```
 
 IndexHierarchy.\_\_bool\_\_()[#](#static_frame.IndexHierarchy.__bool__ "Link to this definition")
@@ -2572,7 +2574,6 @@ IndexHierarchy.\_\_bool\_\_()[#](#static_frame.IndexHierarchy.__bool__ "Link to 
     <int64>                           <int64> <int64>
     >>> bool(ih)
     ErrorNotTruthy('The truth value of a container is ambiguous. For a truthy indicator of non-empty status, use the `size` attribute.')
-
     ```
 
 IndexHierarchy.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__copy__)[#](#static_frame.IndexHierarchy.__copy__ "Link to this definition")
@@ -2593,7 +2594,6 @@ IndexHierarchy.\_\_copy\_\_()[[source]](../_modules/static_frame/core/index_hier
     1                                 -2048   32
     1                                 1024    32
     <int64>                           <int64> <int64>
-
     ```
 
 IndexHierarchy.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__deepcopy__)[#](#static_frame.IndexHierarchy.__deepcopy__ "Link to this definition")
@@ -2614,7 +2614,6 @@ IndexHierarchy.\_\_deepcopy\_\_(*memo*)[[source]](../_modules/static_frame/core/
     1                                 -2048   32
     1                                 1024    32
     <int64>                           <int64> <int64>
-
     ```
 
 IndexHierarchy.\_\_len\_\_()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.__len__)[#](#static_frame.IndexHierarchy.__len__ "Link to this definition")
@@ -2628,7 +2627,6 @@ IndexHierarchy.\_\_len\_\_()[[source]](../_modules/static_frame/core/index_hiera
     <int64>                           <int64> <int64>
     >>> len(ih)
     3
-
     ```
 
 IndexHierarchy.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchy.all "Link to this definition")
@@ -2647,8 +2645,7 @@ IndexHierarchy.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     False                             True   False
     <bool>                            <bool> <bool>
     >>> ih.all()
-    NotImplementedError('<function ufunc_all at 0x7c7e29b4ae80> for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('<function ufunc_all at 0x114ab9940> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchy.any "Link to this definition")
@@ -2667,8 +2664,7 @@ IndexHierarchy.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     False                             True   False
     <bool>                            <bool> <bool>
     >>> ih.any()
-    NotImplementedError('<function ufunc_any at 0x7c7e29b4af20> for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('<function ufunc_any at 0x114ab99e0> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
@@ -2698,7 +2694,6 @@ IndexHierarchy.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
     a                                 True   1789-12-31
     b                                 False  1620-11-21
     <<U1>                             <bool> <datetime64[D]>
-
     ```
 
 IndexHierarchy.astype(*dtype*, */*, *\**, *consolidate\_blocks*)
@@ -2725,7 +2720,6 @@ IndexHierarchy.astype(*dtype*, */*, *\**, *consolidate\_blocks*)
     True                              True  True
     False                             True  False
     <<U5>                             <<U5> <<U5>
-
     ```
 
 IndexHierarchy.copy()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.copy)[#](#static_frame.IndexHierarchy.copy "Link to this definition")
@@ -2745,7 +2739,6 @@ IndexHierarchy.copy()[[source]](../_modules/static_frame/core/index_hierarchy.md
     1                                 -2048   32
     1                                 1024    32
     <int64>                           <int64> <int64>
-
     ```
 
 IndexHierarchy.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHierarchy.cumprod "Link to this definition")
@@ -2764,8 +2757,7 @@ IndexHierarchy.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHier
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.cumprod()
-    NotImplementedError('<function cumprod at 0x7c7e702780e0> for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('<function cumprod at 0x102e27560> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHierarchy.cumsum "Link to this definition")
@@ -2784,8 +2776,7 @@ IndexHierarchy.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHiera
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.cumsum()
-    NotImplementedError('<function cumsum at 0x7c7e70287920> for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('<function cumsum at 0x102e26de0> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.difference(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.difference)[#](#static_frame.IndexHierarchy.difference "Link to this definition")
@@ -2810,7 +2801,6 @@ IndexHierarchy.difference(*\*others*)[[source]](../_modules/static_frame/core/in
     a                2048    False
     a                2048    True
     <<U1>            <int64> <bool>
-
     ```
 
 IndexHierarchy.dropfalsy(*\**, *condition=<function all>*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.dropfalsy)[#](#static_frame.IndexHierarchy.dropfalsy "Link to this definition")
@@ -2833,7 +2823,6 @@ IndexHierarchy.dropfalsy(*\**, *condition=<function all>*)[[source]](../_modules
     a                   1024    True
     b                   1024    True
     <<U1>               <int64> <bool>
-
     ```
 
 IndexHierarchy.dropna(*\**, *condition=<function all>*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.dropna)[#](#static_frame.IndexHierarchy.dropna "Link to this definition")
@@ -2856,7 +2845,6 @@ IndexHierarchy.dropna(*\**, *condition=<function all>*)[[source]](../_modules/st
     0.0                          1024.0
     1.0                          2048.0
     <float64>                    <float64>
-
     ```
 
 IndexHierarchy.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype=False*, *compare\_class=False*, *skipna=True*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.equals)[#](#static_frame.IndexHierarchy.equals "Link to this definition")
@@ -2884,7 +2872,6 @@ IndexHierarchy.equals(*other*, */*, *\**, *compare\_name=False*, *compare\_dtype
     <<U1>               <int64> <bool>
     >>> ih1.equals(ih2)
     False
-
     ```
 
 IndexHierarchy.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.fillfalsy)[#](#static_frame.IndexHierarchy.fillfalsy "Link to this definition")
@@ -2907,7 +2894,6 @@ IndexHierarchy.fillfalsy(*value*, */*)[[source]](../_modules/static_frame/core/i
     -1                  -1      -1
     b                   1024    True
     <object>            <int64> <object>
-
     ```
 
 IndexHierarchy.fillna(*value*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.fillna)[#](#static_frame.IndexHierarchy.fillna "Link to this definition")
@@ -2930,7 +2916,6 @@ IndexHierarchy.fillna(*value*, */*)[[source]](../_modules/static_frame/core/inde
     1.0                          2048.0
     0.0                          0.0
     <float64>                    <float64>
-
     ```
 
 IndexHierarchy.flat()[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.flat)[#](#static_frame.IndexHierarchy.flat "Link to this definition")
@@ -2950,7 +2935,6 @@ IndexHierarchy.flat()[[source]](../_modules/static_frame/core/index_hierarchy.md
     (np.str_('a'), np.int64(2048), np.datetime64('1789-12-31'))
     (np.str_('b'), np.int64(0), np.datetime64('1620-11-21'))
     <object>
-
     ```
 
 IndexHierarchy.head(*count=5*, */*)[#](#static_frame.IndexHierarchy.head "Link to this definition")
@@ -2975,7 +2959,6 @@ IndexHierarchy.head(*count=5*, */*)[#](#static_frame.IndexHierarchy.head "Link t
     a                   1517-04-01
     a                   1620-11-21
     <<U1>               <datetime64[D]>
-
     ```
 
 IndexHierarchy.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.iloc_searchsorted)[#](#static_frame.IndexHierarchy.iloc_searchsorted "Link to this definition")
@@ -2998,7 +2981,6 @@ IndexHierarchy.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[sourc
     <<U1>               <datetime64[D]>
     >>> ih.iloc_searchsorted(('b', np.datetime64('1620-11-21')))
     3
-
     ```
 
 IndexHierarchy.index\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.index_at_depth)[#](#static_frame.IndexHierarchy.index_at_depth "Link to this definition")
@@ -3029,7 +3011,6 @@ IndexHierarchy.index\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/sta
     a
     b
     <<U1>)
-
     ```
 
 IndexHierarchy.indexer\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.indexer_at_depth)[#](#static_frame.IndexHierarchy.indexer_at_depth "Link to this definition")
@@ -3052,7 +3033,6 @@ IndexHierarchy.indexer\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/s
     >>> ih.indexer_at_depth([2, 0])
     [[0 1 2]
      [0 0 1]]
-
     ```
 
 IndexHierarchy.intersection(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.intersection)[#](#static_frame.IndexHierarchy.intersection "Link to this definition")
@@ -3076,7 +3056,26 @@ IndexHierarchy.intersection(*\*others*)[[source]](../_modules/static_frame/core/
     <IndexHierarchy>
     a                1024    True
     <<U1>            <int64> <bool>
+    ```
 
+IndexHierarchy.is\_sorted(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[#](#static_frame.IndexHierarchy.is_sorted "Link to this definition")
+:   Return True if this Index is sorted according to the specified parameters.
+
+    Parameters:
+    :   * **{ascending}** –
+        * **{kind}** –
+        * **{key}** –
+
+    ```
+    >>> ih = sf.IndexHierarchy.from_labels((('a', 1024, True), ('a', 2048, True), ('a', 2048, False), ('b', 1024, True)), name='x')
+    >>> ih
+    <IndexHierarchy: x>
+    a                   1024    True
+    a                   2048    True
+    a                   2048    False
+    b                   1024    True
+    <<U1>               <int64> <bool>
+    >>> assert ih.is_sorted(key=lambda ih: ih.values[:,:-1])
     ```
 
 IndexHierarchy.isfalsy()[#](#static_frame.IndexHierarchy.isfalsy "Link to this definition")
@@ -3088,7 +3087,6 @@ IndexHierarchy.isfalsy()[#](#static_frame.IndexHierarchy.isfalsy "Link to this d
     [[False  True False]
      [ True False  True]
      [False  True  True]]
-
     ```
 
 IndexHierarchy.isin(*other*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.isin)[#](#static_frame.IndexHierarchy.isin "Link to this definition")
@@ -3107,7 +3105,6 @@ IndexHierarchy.isin(*other*, */*)[[source]](../_modules/static_frame/core/index_
     <<U1>               <datetime64[D]>
     >>> ih.isin((('c', np.datetime64('1517-04-01')), ('a', np.datetime64('1620-11-21'))))
     [False  True False False  True False]
-
     ```
 
 IndexHierarchy.isna()[#](#static_frame.IndexHierarchy.isna "Link to this definition")
@@ -3119,7 +3116,6 @@ IndexHierarchy.isna()[#](#static_frame.IndexHierarchy.isna "Link to this definit
     [[False  True False]
      [False False  True]
      [False False False]]
-
     ```
 
 IndexHierarchy.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.label_widths_at_depth)[#](#static_frame.IndexHierarchy.label_widths_at_depth "Link to this definition")
@@ -3143,7 +3139,6 @@ IndexHierarchy.label\_widths\_at\_depth(*depth\_level=0*, */*)[[source]](../_mod
     ((np.int64(1024), np.int64(1)), (np.int64(2048), np.int64(2)), (np.int64(1024), np.int64(1)))
     >>> tuple(ih.label_widths_at_depth(2))
     ((np.True_, np.int64(2)), (np.False_, np.int64(1)), (np.True_, np.int64(1)))
-
     ```
 
 IndexHierarchy.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.level_add)[#](#static_frame.IndexHierarchy.level_add "Link to this definition")
@@ -3163,7 +3158,6 @@ IndexHierarchy.level\_add(*level*, */*, *\**, *index\_constructor=None*)[[source
     A                            1.0       2048.0
     A                            nan       nan
     <<U1>                        <float64> <float64>
-
     ```
 
 IndexHierarchy.level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.level_drop)[#](#static_frame.IndexHierarchy.level_drop "Link to this definition")
@@ -3186,7 +3180,6 @@ IndexHierarchy.level\_drop(*count=1*, */*)[[source]](../_modules/static_frame/co
     2048                         1789-12-31
     0                            1620-11-21
     <int64>                      <datetime64[D]>
-
     ```
 
 IndexHierarchy.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_value=nan*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.loc_searchsorted)[#](#static_frame.IndexHierarchy.loc_searchsorted "Link to this definition")
@@ -3210,7 +3203,6 @@ IndexHierarchy.loc\_searchsorted(*values*, */*, *\**, *side\_left=True*, *fill\_
     <<U1>               <datetime64[D]>
     >>> ih.loc_searchsorted(('b', np.datetime64('1620-11-21')))
     (np.str_('b'), np.datetime64('1620-11-21'))
-
     ```
 
 IndexHierarchy.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.loc_to_iloc)[#](#static_frame.IndexHierarchy.loc_to_iloc "Link to this definition")
@@ -3234,7 +3226,6 @@ IndexHierarchy.loc\_to\_iloc(*key*, */*)[[source]](../_modules/static_frame/core
     [0, 3]
     >>> ih.loc_to_iloc(slice(('a', 2048, False), None))
     slice(2, None, None)
-
     ```
 
 IndexHierarchy.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchy.max "Link to this definition")
@@ -3254,7 +3245,6 @@ IndexHierarchy.max(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <int64>                           <int64> <int64>
     >>> ih.max()
     [   1 1024   32]
-
     ```
 
 IndexHierarchy.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchy.mean "Link to this definition")
@@ -3273,8 +3263,7 @@ IndexHierarchy.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.mean()
-    NotImplementedError('<function mean at 0x7c7e70278680> for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('<function mean at 0x102e27b00> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchy.median "Link to this definition")
@@ -3293,8 +3282,7 @@ IndexHierarchy.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fram
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.median()
-    NotImplementedError('<function median at 0x7c7e6db0bba0> for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('<function median at 0x1030b4a40> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchy.min "Link to this definition")
@@ -3314,7 +3302,6 @@ IndexHierarchy.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     <int64>                           <int64> <int64>
     >>> ih.min()
     [   0 1024   32]
-
     ```
 
 IndexHierarchy.notfalsy()[#](#static_frame.IndexHierarchy.notfalsy "Link to this definition")
@@ -3326,7 +3313,6 @@ IndexHierarchy.notfalsy()[#](#static_frame.IndexHierarchy.notfalsy "Link to this
     [[ True False  True]
      [False  True False]
      [ True False False]]
-
     ```
 
 IndexHierarchy.notna()[#](#static_frame.IndexHierarchy.notna "Link to this definition")
@@ -3338,7 +3324,6 @@ IndexHierarchy.notna()[#](#static_frame.IndexHierarchy.notna "Link to this defin
     [[ True False  True]
      [ True  True False]
      [ True  True  True]]
-
     ```
 
 IndexHierarchy.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#static_frame.IndexHierarchy.prod "Link to this definition")
@@ -3357,8 +3342,7 @@ IndexHierarchy.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#st
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.prod()
-    NotImplementedError('<function prod at 0x7c7e70287f60> for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('<function prod at 0x102e27420> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.rehierarch)[#](#static_frame.IndexHierarchy.rehierarch "Link to this definition")
@@ -3380,7 +3364,6 @@ IndexHierarchy.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[sourc
     True             a     2048
     False            a     2048
     <bool>           <<U1> <int64>
-
     ```
 
 IndexHierarchy.relabel(*mapper*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.relabel)[#](#static_frame.IndexHierarchy.relabel "Link to this definition")
@@ -3402,7 +3385,6 @@ IndexHierarchy.relabel(*mapper*)[[source]](../_modules/static_frame/core/index_h
     a                   2048    T
     a                   2048    F
     <<U1>               <int64> <<U1>
-
     ```
 
 IndexHierarchy.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.relabel_at_depth)[#](#static_frame.IndexHierarchy.relabel_at_depth "Link to this definition")
@@ -3417,7 +3399,6 @@ IndexHierarchy.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[[source
 
     ```
     >>> index.relabel_at_depth(mapper, depth_level=[0, 1, 2])
-
     ```
 
     is equivalent to:
@@ -3425,7 +3406,6 @@ IndexHierarchy.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[[source
     ```
     >>> for level in [0, 1, 2]:
     >>>     index = index.relabel_at_depth(mapper, depth_level=level)
-
     ```
 
     albeit more efficient.
@@ -3446,7 +3426,6 @@ IndexHierarchy.relabel\_at\_depth(*mapper*, */*, *\**, *depth\_level=0*)[[source
     a                   2     T
     a                   2     F
     <<U1>               <<U1> <<U1>
-
     ```
 
 IndexHierarchy.rename(*name*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.rename)[#](#static_frame.IndexHierarchy.rename "Link to this definition")
@@ -3468,7 +3447,6 @@ IndexHierarchy.rename(*name*, */*)[[source]](../_modules/static_frame/core/index
     a                   2048    False
     b                   1024    True
     <<U1>               <int64> <bool>
-
     ```
 
 IndexHierarchy.roll(*shift*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.roll)[#](#static_frame.IndexHierarchy.roll "Link to this definition")
@@ -3494,7 +3472,6 @@ IndexHierarchy.roll(*shift*)[[source]](../_modules/static_frame/core/index_hiera
     b                   1517-04-01
     b                   1620-11-21
     <<U1>               <datetime64[D]>
-
     ```
 
 IndexHierarchy.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexHierarchy.sample "Link to this definition")
@@ -3520,11 +3497,10 @@ IndexHierarchy.sample(*count=1*, *\**, *seed=None*)[#](#static_frame.IndexHierar
     b                   1517-04-01
     c                   1620-11-21
     <<U1>               <datetime64[D]>
-
     ```
 
 IndexHierarchy.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.sort)[#](#static_frame.IndexHierarchy.sort "Link to this definition")
-:   Return a new Index with the labels sorted.
+:   Return a new IndexHierarchy with the labels sorted.
 
     Parameters:
     :   * **ascendings** – Boolean, or iterable of Booleans; if `True`, the lowest ranks correspond to the lowest values; if an iterable, apply per column or row. The default is `True`.
@@ -3554,7 +3530,6 @@ IndexHierarchy.sort(*\**, *ascending=True*, *kind='mergesort'*, *key=None*)[[sou
     a                   2048    False
     a                   1024    True
     <<U1>               <int64> <bool>
-
     ```
 
 IndexHierarchy.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexHierarchy.std "Link to this definition")
@@ -3573,8 +3548,7 @@ IndexHierarchy.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#stat
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.std()
-    NotImplementedError('functools.partial(<function std at 0x7c7e7027f470>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('functools.partial(<function std at 0x102e1c2b0>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexHierarchy.sum "Link to this definition")
@@ -3593,8 +3567,7 @@ IndexHierarchy.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#sta
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.sum()
-    NotImplementedError('<function sum at 0x7c7e70287240> for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('<function sum at 0x102e26700> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.tail(*count=5*, */*)[#](#static_frame.IndexHierarchy.tail "Link to this definition")
@@ -3619,7 +3592,6 @@ IndexHierarchy.tail(*count=5*, */*)[#](#static_frame.IndexHierarchy.tail "Link t
     c                   1517-04-01
     c                   1620-11-21
     <<U1>               <datetime64[D]>
-
     ```
 
 IndexHierarchy.union(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.union)[#](#static_frame.IndexHierarchy.union "Link to this definition")
@@ -3646,7 +3618,6 @@ IndexHierarchy.union(*\*others*)[[source]](../_modules/static_frame/core/index_h
     b                1024    True
     a                2048    True
     <<U1>            <int64> <bool>
-
     ```
 
 IndexHierarchy.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.unique)[#](#static_frame.IndexHierarchy.unique "Link to this definition")
@@ -3669,7 +3640,6 @@ IndexHierarchy.unique(*depth\_level=0*, */*, *\**, *order\_by\_occurrence=False*
     <float64>                    <float64>
     >>> ih.unique()
     [ 0.  1. nan]
-
     ```
 
 IndexHierarchy.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.values_at_depth)[#](#static_frame.IndexHierarchy.values_at_depth "Link to this definition")
@@ -3690,7 +3660,6 @@ IndexHierarchy.values\_at\_depth(*depth\_level=0*, */*)[[source]](../_modules/st
     ['a' 'a' 'b']
     >>> ih.values_at_depth(2)
     ['1517-04-01' '1789-12-31' '1620-11-21']
-
     ```
 
 IndexHierarchy.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#static_frame.IndexHierarchy.var "Link to this definition")
@@ -3709,8 +3678,7 @@ IndexHierarchy.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#stat
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.var()
-    NotImplementedError('functools.partial(<function var at 0x7c7e7027f270>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
-
+    NotImplementedError('functools.partial(<function var at 0x102e1c0b0>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 [IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)
@@ -3747,6 +3715,7 @@ On this page
 * [`IndexHierarchy.index_at_depth()`](#static_frame.IndexHierarchy.index_at_depth)
 * [`IndexHierarchy.indexer_at_depth()`](#static_frame.IndexHierarchy.indexer_at_depth)
 * [`IndexHierarchy.intersection()`](#static_frame.IndexHierarchy.intersection)
+* [`IndexHierarchy.is_sorted()`](#static_frame.IndexHierarchy.is_sorted)
 * [`IndexHierarchy.isfalsy()`](#static_frame.IndexHierarchy.isfalsy)
 * [`IndexHierarchy.isin()`](#static_frame.IndexHierarchy.isin)
 * [`IndexHierarchy.isna()`](#static_frame.IndexHierarchy.isna)

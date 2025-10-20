@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2534,7 +2538,6 @@ IndexYearMonth.\_\_add\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__add__
     <datetime64[M]>
     >>> ix + 2
     ['1517-06' '1518-02' '1517-08']
-
     ```
 
 IndexYearMonth.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__and__ "Link to this definition")
@@ -2550,7 +2553,6 @@ IndexYearMonth.\_\_and\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__and__
     TypeError("ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix & (False, True)
     TypeError("ufunc 'bitwise_and' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexYearMonth.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__eq__ "Link to this definition")
@@ -2566,7 +2568,6 @@ IndexYearMonth.\_\_eq\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__eq__ "
     <datetime64[M]>
     >>> ix == '1517-06'
     [False False  True]
-
     ```
 
 IndexYearMonth.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__floordiv__ "Link to this definition")
@@ -2580,7 +2581,6 @@ IndexYearMonth.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__
     <datetime64[M]>
     >>> ix // '1517-06'
     UFuncTypeError(<ufunc 'floor_divide'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__ge__ "Link to this definition")
@@ -2596,7 +2596,6 @@ IndexYearMonth.\_\_ge\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__ge__ "
     <datetime64[M]>
     >>> ix >= '1517-06'
     [False  True  True]
-
     ```
 
 IndexYearMonth.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__gt__ "Link to this definition")
@@ -2612,7 +2611,6 @@ IndexYearMonth.\_\_gt\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__gt__ "
     <datetime64[M]>
     >>> ix > '1517-06'
     [False  True False]
-
     ```
 
 IndexYearMonth.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__le__ "Link to this definition")
@@ -2628,7 +2626,6 @@ IndexYearMonth.\_\_le\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__le__ "
     <datetime64[M]>
     >>> ix <= '1517-06'
     [ True False  True]
-
     ```
 
 IndexYearMonth.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__lt__ "Link to this definition")
@@ -2644,7 +2641,6 @@ IndexYearMonth.\_\_lt\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__lt__ "
     <datetime64[M]>
     >>> ix < '1517-06'
     [ True False False]
-
     ```
 
 IndexYearMonth.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__matmul__ "Link to this definition")
@@ -2658,7 +2654,6 @@ IndexYearMonth.\_\_matmul\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__ma
     <datetime64[M]>
     >>> ix @ (3, 0, 4, 0)
     NotImplementedError('matrix multiplication not supported')
-
     ```
 
 IndexYearMonth.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__mod__ "Link to this definition")
@@ -2672,7 +2667,6 @@ IndexYearMonth.\_\_mod\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__mod__
     <datetime64[M]>
     >>> ix % '1517-06'
     UFuncTypeError(<ufunc 'remainder'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__mul__ "Link to this definition")
@@ -2686,7 +2680,6 @@ IndexYearMonth.\_\_mul\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__mul__
     <datetime64[M]>
     >>> ix * '1517-06'
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__ne__ "Link to this definition")
@@ -2702,7 +2695,6 @@ IndexYearMonth.\_\_ne\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__ne__ "
     <datetime64[M]>
     >>> ix != '1517-06'
     [ True  True False]
-
     ```
 
 IndexYearMonth.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__or__ "Link to this definition")
@@ -2720,7 +2712,6 @@ IndexYearMonth.\_\_or\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__or__ "
     TypeError("ufunc 'bitwise_or' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix | (False, True)
     TypeError("ufunc 'bitwise_or' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexYearMonth.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__pow__ "Link to this definition")
@@ -2734,7 +2725,6 @@ IndexYearMonth.\_\_pow\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__pow__
     <datetime64[M]>
     >>> ix ** '1517-06'
     TypeError("ufunc 'power' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexYearMonth.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__radd__ "Link to this definition")
@@ -2748,7 +2738,6 @@ IndexYearMonth.\_\_radd\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__radd
     <datetime64[M]>
     >>> '1517-06' + ix
     UFuncTypeError(<ufunc 'add'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__rfloordiv__ "Link to this definition")
@@ -2762,7 +2751,6 @@ IndexYearMonth.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.IndexYearMonth._
     <datetime64[M]>
     >>> '1517-06' // ix
     UFuncTypeError(<ufunc 'floor_divide'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__rmatmul__ "Link to this definition")
@@ -2776,7 +2764,6 @@ IndexYearMonth.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__r
     <datetime64[M]>
     >>> ix @ (3, 0, 4, 0)
     NotImplementedError('matrix multiplication not supported')
-
     ```
 
 IndexYearMonth.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__rmul__ "Link to this definition")
@@ -2790,7 +2777,6 @@ IndexYearMonth.\_\_rmul\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__rmul
     <datetime64[M]>
     >>> '1517-06' * ix
     UFuncTypeError(<ufunc 'multiply'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__rshift__ "Link to this definition")
@@ -2804,7 +2790,6 @@ IndexYearMonth.\_\_rshift\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__rs
     <datetime64[M]>
     >>> ix >> 1
     TypeError("ufunc 'right_shift' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 IndexYearMonth.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__rsub__ "Link to this definition")
@@ -2818,7 +2803,6 @@ IndexYearMonth.\_\_rsub\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__rsub
     <datetime64[M]>
     >>> '1517-06' - ix
     [ 2 -6  0]
-
     ```
 
 IndexYearMonth.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__rtruediv__ "Link to this definition")
@@ -2832,7 +2816,6 @@ IndexYearMonth.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__
     <datetime64[M]>
     >>> '1517-06' / ix
     UFuncTypeError(<ufunc 'divide'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__sub__ "Link to this definition")
@@ -2846,7 +2829,6 @@ IndexYearMonth.\_\_sub\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__sub__
     <datetime64[M]>
     >>> ix - 2
     ['1517-02' '1517-10' '1517-04']
-
     ```
 
 IndexYearMonth.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__truediv__ "Link to this definition")
@@ -2860,7 +2842,6 @@ IndexYearMonth.\_\_truediv\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__t
     <datetime64[M]>
     >>> ix / '1517-06'
     UFuncTypeError(<ufunc 'divide'>, (dtype('<M8[M]'), dtype('<M8[M]')))
-
     ```
 
 IndexYearMonth.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__xor__ "Link to this definition")
@@ -2876,7 +2857,6 @@ IndexYearMonth.\_\_xor\_\_(*other*, */*)[#](#static_frame.IndexYearMonth.__xor__
     TypeError("ufunc 'bitwise_xor' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
     >>> ix ^ (False, True)
     TypeError("ufunc 'bitwise_xor' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''")
-
     ```
 
 [IndexYearMonth](index_year_month.md#api-detail-indexyearmonth): [Constructor](index_year_month-constructor.md#api-detail-indexyearmonth-constructor) | [Exporter](index_year_month-exporter.md#api-detail-indexyearmonth-exporter) | [Attribute](index_year_month-attribute.md#api-detail-indexyearmonth-attribute) | [Method](index_year_month-method.md#api-detail-indexyearmonth-method) | [Dictionary-Like](index_year_month-dictionary_like.md#api-detail-indexyearmonth-dictionary-like) | [Display](index_year_month-display.md#api-detail-indexyearmonth-display) | [Selector](index_year_month-selector.md#api-detail-indexyearmonth-selector) | [Iterator](index_year_month-iterator.md#api-detail-indexyearmonth-iterator) | [Operator Binary](#api-detail-indexyearmonth-operator-binary) | [Operator Unary](index_year_month-operator_unary.md#api-detail-indexyearmonth-operator-unary) | [Accessor Values](index_year_month-accessor_values.md#api-detail-indexyearmonth-accessor-values) | [Accessor Datetime](index_year_month-accessor_datetime.md#api-detail-indexyearmonth-accessor-datetime) | [Accessor String](index_year_month-accessor_string.md#api-detail-indexyearmonth-accessor-string) | [Accessor Regular Expression](index_year_month-accessor_regular_expression.md#api-detail-indexyearmonth-accessor-regular-expression) | [Accessor Hashlib](index_year_month-accessor_hashlib.md#api-detail-indexyearmonth-accessor-hashlib) | [Accessor Type Clinic](index_year_month-accessor_type_clinic.md#api-detail-indexyearmonth-accessor-type-clinic)

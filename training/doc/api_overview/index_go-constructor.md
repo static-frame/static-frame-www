@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2525,9 +2529,12 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-init) | `IndexGO.__init__(labels, /, *, loc_is_iloc, name, dtype)` | Initializer. Args: labels: An iterable of unique, hashable values, or another In… |
+| [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-init) | `IndexGO.__init__(labels, /, *, loc_is_iloc, name, dtype, sort_status)` | Initializer. Args: labels: An iterable of unique, hashable values, or another In… |
+| [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-from-difference) | `IndexGO.from_difference(*others)` | Construct a new Index based on the difference with Index, containers, or NumPy a… |
+| [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-from-intersection) | `IndexGO.from_intersection(*others)` | Construct a new Index based on the intersection with Index, containers, or NumPy… |
 | [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-from-labels) | `IndexGO.from_labels(labels, /, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
 | [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-from-pandas) | `IndexGO.from_pandas(value, /)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_go-constructor.md#api-sig-indexgo-from-union) | `IndexGO.from_union(*others)` | Construct a new Index based on the union with Index, containers, or NumPy arrays… |
 
 [IndexGO](index_go.md#api-overview-indexgo): [Constructor](#api-overview-indexgo-constructor) | [Exporter](index_go-exporter.md#api-overview-indexgo-exporter) | [Attribute](index_go-attribute.md#api-overview-indexgo-attribute) | [Method](index_go-method.md#api-overview-indexgo-method) | [Dictionary-Like](index_go-dictionary_like.md#api-overview-indexgo-dictionary-like) | [Display](index_go-display.md#api-overview-indexgo-display) | [Selector](index_go-selector.md#api-overview-indexgo-selector) | [Iterator](index_go-iterator.md#api-overview-indexgo-iterator) | [Operator Binary](index_go-operator_binary.md#api-overview-indexgo-operator-binary) | [Operator Unary](index_go-operator_unary.md#api-overview-indexgo-operator-unary) | [Accessor Values](index_go-accessor_values.md#api-overview-indexgo-accessor-values) | [Accessor Datetime](index_go-accessor_datetime.md#api-overview-indexgo-accessor-datetime) | [Accessor String](index_go-accessor_string.md#api-overview-indexgo-accessor-string) | [Accessor Regular Expression](index_go-accessor_regular_expression.md#api-overview-indexgo-accessor-regular-expression) | [Accessor Hashlib](index_go-accessor_hashlib.md#api-overview-indexgo-accessor-hashlib) | [Accessor Type Clinic](index_go-accessor_type_clinic.md#api-overview-indexgo-accessor-type-clinic)
 

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2561,7 +2565,6 @@ Frame.\_\_add\_\_(*other*, */*)[#](#static_frame.Frame.__add__ "Link to this def
     r       nan       nan       nan
     s       nan       nan       nan
     <<U1>   <float64> <float64> <float64>
-
     ```
 
 Frame.\_\_and\_\_(*other*, */*)[#](#static_frame.Frame.__and__ "Link to this definition")
@@ -2591,7 +2594,6 @@ Frame.\_\_and\_\_(*other*, */*)[#](#static_frame.Frame.__and__ "Link to this def
     q       True   False
     r       True   False
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.\_\_eq\_\_(*other*, */*)[#](#static_frame.Frame.__eq__ "Link to this definition")
@@ -2634,7 +2636,6 @@ Frame.\_\_eq\_\_(*other*, */*)[#](#static_frame.Frame.__eq__ "Link to this defin
     r       False  False  False
     s       False  False  False
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Frame.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.Frame.__floordiv__ "Link to this definition")
@@ -2675,7 +2676,6 @@ Frame.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.Frame.__floordiv__ "Link t
     r       nan       nan       nan
     s       nan       nan       nan
     <<U1>   <float64> <float64> <float64>
-
     ```
 
 Frame.\_\_ge\_\_(*other*, */*)[#](#static_frame.Frame.__ge__ "Link to this definition")
@@ -2718,7 +2718,6 @@ Frame.\_\_ge\_\_(*other*, */*)[#](#static_frame.Frame.__ge__ "Link to this defin
     r       False  False  False
     s       False  False  False
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Frame.\_\_gt\_\_(*other*, */*)[#](#static_frame.Frame.__gt__ "Link to this definition")
@@ -2761,7 +2760,6 @@ Frame.\_\_gt\_\_(*other*, */*)[#](#static_frame.Frame.__gt__ "Link to this defin
     r       False  False  False
     s       False  False  False
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Frame.\_\_le\_\_(*other*, */*)[#](#static_frame.Frame.__le__ "Link to this definition")
@@ -2804,7 +2802,6 @@ Frame.\_\_le\_\_(*other*, */*)[#](#static_frame.Frame.__le__ "Link to this defin
     r       False  False  False
     s       False  False  False
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Frame.\_\_lt\_\_(*other*, */*)[#](#static_frame.Frame.__lt__ "Link to this definition")
@@ -2847,7 +2844,6 @@ Frame.\_\_lt\_\_(*other*, */*)[#](#static_frame.Frame.__lt__ "Link to this defin
     r       False  False  False
     s       False  False  False
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Frame.\_\_matmul\_\_(*other*, */*)[#](#static_frame.Frame.__matmul__ "Link to this definition")
@@ -2880,7 +2876,6 @@ Frame.\_\_matmul\_\_(*other*, */*)[#](#static_frame.Frame.__matmul__ "Link to th
     r       40      24
     s       20      12
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.\_\_mod\_\_(*other*, */*)[#](#static_frame.Frame.__mod__ "Link to this definition")
@@ -2921,7 +2916,6 @@ Frame.\_\_mod\_\_(*other*, */*)[#](#static_frame.Frame.__mod__ "Link to this def
     r       nan       nan       nan
     s       nan       nan       nan
     <<U1>   <float64> <float64> <float64>
-
     ```
 
 Frame.\_\_mul\_\_(*other*, */*)[#](#static_frame.Frame.__mul__ "Link to this definition")
@@ -2962,7 +2956,6 @@ Frame.\_\_mul\_\_(*other*, */*)[#](#static_frame.Frame.__mul__ "Link to this def
     r       nan       nan       nan
     s       nan       nan       nan
     <<U1>   <float64> <float64> <float64>
-
     ```
 
 Frame.\_\_ne\_\_(*other*, */*)[#](#static_frame.Frame.__ne__ "Link to this definition")
@@ -3005,7 +2998,6 @@ Frame.\_\_ne\_\_(*other*, */*)[#](#static_frame.Frame.__ne__ "Link to this defin
     r       True   True   True
     s       True   True   True
     <<U1>   <bool> <bool> <bool>
-
     ```
 
 Frame.\_\_or\_\_(*other*, */*)[#](#static_frame.Frame.__or__ "Link to this definition")
@@ -3037,7 +3029,6 @@ Frame.\_\_or\_\_(*other*, */*)[#](#static_frame.Frame.__or__ "Link to this defin
     q       True   True
     r       True   False
     <<U1>   <bool> <bool>
-
     ```
 
 Frame.\_\_pow\_\_(*other*, */*)[#](#static_frame.Frame.__pow__ "Link to this definition")
@@ -3078,7 +3069,6 @@ Frame.\_\_pow\_\_(*other*, */*)[#](#static_frame.Frame.__pow__ "Link to this def
     r       nan       nan       nan
     s       nan       nan       nan
     <<U1>   <float64> <float64> <float64>
-
     ```
 
 Frame.\_\_radd\_\_(*other*, */*)[#](#static_frame.Frame.__radd__ "Link to this definition")
@@ -3110,7 +3100,6 @@ Frame.\_\_radd\_\_(*other*, */*)[#](#static_frame.Frame.__radd__ "Link to this d
     r          8       16      17
     s          8       8       20
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.Frame.__rfloordiv__ "Link to this definition")
@@ -3142,7 +3131,6 @@ Frame.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.Frame.__rfloordiv__ "Link
     r          0       1       0
     s          0       0       0
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.Frame.__rmatmul__ "Link to this definition")
@@ -3175,7 +3163,6 @@ Frame.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.Frame.__rmatmul__ "Link to 
     r       40      24
     s       20      12
     <<U1>   <int64> <int64>
-
     ```
 
 Frame.\_\_rmul\_\_(*other*, */*)[#](#static_frame.Frame.__rmul__ "Link to this definition")
@@ -3207,7 +3194,6 @@ Frame.\_\_rmul\_\_(*other*, */*)[#](#static_frame.Frame.__rmul__ "Link to this d
     r          0       64      72
     s          0       0       96
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.\_\_rshift\_\_(*other*, */*)[#](#static_frame.Frame.__rshift__ "Link to this definition")
@@ -3231,7 +3217,6 @@ Frame.\_\_rshift\_\_(*other*, */*)[#](#static_frame.Frame.__rshift__ "Link to th
     r          0       4       4
     s          0       0       6
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.\_\_rsub\_\_(*other*, */*)[#](#static_frame.Frame.__rsub__ "Link to this definition")
@@ -3263,7 +3248,6 @@ Frame.\_\_rsub\_\_(*other*, */*)[#](#static_frame.Frame.__rsub__ "Link to this d
     r          8       0       -1
     s          8       8       -4
     <<U1>      <int64> <int64> <int64>
-
     ```
 
 Frame.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.Frame.__rtruediv__ "Link to this definition")
@@ -3295,7 +3279,6 @@ Frame.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.Frame.__rtruediv__ "Link t
     r          inf       1.0                 0.8888888888888888
     s          inf       inf                 0.6666666666666666
     <<U1>      <float64> <float64>           <float64>
-
     ```
 
 Frame.\_\_sub\_\_(*other*, */*)[#](#static_frame.Frame.__sub__ "Link to this definition")
@@ -3336,7 +3319,6 @@ Frame.\_\_sub\_\_(*other*, */*)[#](#static_frame.Frame.__sub__ "Link to this def
     r       nan       nan       nan
     s       nan       nan       nan
     <<U1>   <float64> <float64> <float64>
-
     ```
 
 Frame.\_\_truediv\_\_(*other*, */*)[#](#static_frame.Frame.__truediv__ "Link to this definition")
@@ -3377,7 +3359,6 @@ Frame.\_\_truediv\_\_(*other*, */*)[#](#static_frame.Frame.__truediv__ "Link to 
     r       nan                 nan                nan
     s       nan                 nan                nan
     <<U1>   <float64>           <float64>          <float64>
-
     ```
 
 Frame.\_\_xor\_\_(*other*, */*)[#](#static_frame.Frame.__xor__ "Link to this definition")
@@ -3407,7 +3388,6 @@ Frame.\_\_xor\_\_(*other*, */*)[#](#static_frame.Frame.__xor__ "Link to this def
     q       False  True
     r       False  False
     <<U1>   <bool> <bool>
-
     ```
 
 [Frame](frame.md#api-detail-frame): [Constructor](frame-constructor.md#api-detail-frame-constructor) | [Exporter](frame-exporter.md#api-detail-frame-exporter) | [Attribute](frame-attribute.md#api-detail-frame-attribute) | [Method](frame-method.md#api-detail-frame-method) | [Dictionary-Like](frame-dictionary_like.md#api-detail-frame-dictionary-like) | [Display](frame-display.md#api-detail-frame-display) | [Assignment](frame-assignment.md#api-detail-frame-assignment) | [Selector](frame-selector.md#api-detail-frame-selector) | [Iterator](frame-iterator.md#api-detail-frame-iterator) | [Operator Binary](#api-detail-frame-operator-binary) | [Operator Unary](frame-operator_unary.md#api-detail-frame-operator-unary) | [Accessor Values](frame-accessor_values.md#api-detail-frame-accessor-values) | [Accessor Datetime](frame-accessor_datetime.md#api-detail-frame-accessor-datetime) | [Accessor String](frame-accessor_string.md#api-detail-frame-accessor-string) | [Accessor Transpose](frame-accessor_transpose.md#api-detail-frame-accessor-transpose) | [Accessor Fill Value](frame-accessor_fill_value.md#api-detail-frame-accessor-fill-value) | [Accessor Regular Expression](frame-accessor_regular_expression.md#api-detail-frame-accessor-regular-expression) | [Accessor Hashlib](frame-accessor_hashlib.md#api-detail-frame-accessor-hashlib) | [Accessor Type Clinic](frame-accessor_type_clinic.md#api-detail-frame-accessor-type-clinic) | [Accessor Reduce](frame-accessor_reduce.md#api-detail-frame-accessor-reduce)

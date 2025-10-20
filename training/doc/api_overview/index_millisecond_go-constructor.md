@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](../api_detail/index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](../api_detail/index_minute-display.md)
 * [Detail: IndexMinute: Selector](../api_detail/index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](../api_detail/index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](../api_detail/index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](../api_detail/index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](../api_detail/index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](../api_detail/index_minute-accessor_datetime.md)
@@ -2525,9 +2529,12 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/index_millisecond_go-constructor.md#api-sig-indexmillisecondgo-init) | `IndexMillisecondGO.__init__(labels, /, *, loc_is_iloc, name)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_millisecond_go-constructor.md#api-sig-indexmillisecondgo-init) | `IndexMillisecondGO.__init__(labels, /, *, loc_is_iloc, name, sort_status)` | Initializer. Args: labels: Iterable of hashable values to be used as the index l… |
+| [Detail](../api_detail/index_millisecond_go-constructor.md#api-sig-indexmillisecondgo-from-difference) | `IndexMillisecondGO.from_difference(*others)` | Construct a new Index based on the difference with Index, containers, or NumPy a… |
+| [Detail](../api_detail/index_millisecond_go-constructor.md#api-sig-indexmillisecondgo-from-intersection) | `IndexMillisecondGO.from_intersection(*others)` | Construct a new Index based on the intersection with Index, containers, or NumPy… |
 | [Detail](../api_detail/index_millisecond_go-constructor.md#api-sig-indexmillisecondgo-from-labels) | `IndexMillisecondGO.from_labels(labels, /, *, name)` | Construct an Index from an iterable of labels, where each label is a hashable. P… |
 | [Detail](../api_detail/index_millisecond_go-constructor.md#api-sig-indexmillisecondgo-from-pandas) | `IndexMillisecondGO.from_pandas(value, /)` | Given a Pandas index, return the appropriate IndexBase derived class. |
+| [Detail](../api_detail/index_millisecond_go-constructor.md#api-sig-indexmillisecondgo-from-union) | `IndexMillisecondGO.from_union(*others)` | Construct a new Index based on the union with Index, containers, or NumPy arrays… |
 
 [IndexMillisecondGO](index_millisecond_go.md#api-overview-indexmillisecondgo): [Constructor](#api-overview-indexmillisecondgo-constructor) | [Exporter](index_millisecond_go-exporter.md#api-overview-indexmillisecondgo-exporter) | [Attribute](index_millisecond_go-attribute.md#api-overview-indexmillisecondgo-attribute) | [Method](index_millisecond_go-method.md#api-overview-indexmillisecondgo-method) | [Dictionary-Like](index_millisecond_go-dictionary_like.md#api-overview-indexmillisecondgo-dictionary-like) | [Display](index_millisecond_go-display.md#api-overview-indexmillisecondgo-display) | [Selector](index_millisecond_go-selector.md#api-overview-indexmillisecondgo-selector) | [Iterator](index_millisecond_go-iterator.md#api-overview-indexmillisecondgo-iterator) | [Operator Binary](index_millisecond_go-operator_binary.md#api-overview-indexmillisecondgo-operator-binary) | [Operator Unary](index_millisecond_go-operator_unary.md#api-overview-indexmillisecondgo-operator-unary) | [Accessor Values](index_millisecond_go-accessor_values.md#api-overview-indexmillisecondgo-accessor-values) | [Accessor Datetime](index_millisecond_go-accessor_datetime.md#api-overview-indexmillisecondgo-accessor-datetime) | [Accessor String](index_millisecond_go-accessor_string.md#api-overview-indexmillisecondgo-accessor-string) | [Accessor Regular Expression](index_millisecond_go-accessor_regular_expression.md#api-overview-indexmillisecondgo-accessor-regular-expression) | [Accessor Hashlib](index_millisecond_go-accessor_hashlib.md#api-overview-indexmillisecondgo-accessor-hashlib) | [Accessor Type Clinic](index_millisecond_go-accessor_type_clinic.md#api-overview-indexmillisecondgo-accessor-type-clinic)
 

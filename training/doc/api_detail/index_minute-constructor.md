@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2523,7 +2527,7 @@ Search
 
 [Overview: IndexMinute: Constructor](../api_overview/index_minute-constructor.md#api-overview-indexminute-constructor)
 
-IndexMinute.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*)[#](#static_frame.IndexMinute.__init__ "Link to this definition")
+IndexMinute.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<object object>*, *sort\_status=SortStatus.UNKNOWN*)[#](#static_frame.IndexMinute.__init__ "Link to this definition")
 :   Initializer.
 
     Parameters:
@@ -2537,7 +2541,55 @@ IndexMinute.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
+    ```
 
+*classmethod* IndexMinute.from\_difference(*\*others*)[#](#static_frame.IndexMinute.from_difference "Link to this definition")
+:   Construct a new Index based on the difference with Index, containers, or NumPy arrays. Retains order.
+
+    ```
+    >>> ix1 = sf.IndexMinute.from_labels(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix1
+    <IndexMinute>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    >>> ix2 = sf.IndexMinute.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexMinute>
+    2022-04-01T00:00
+    2021-12-31T00:00
+    2018-06-30T00:00
+    <datetime64[m]>
+    >>> sf.IndexMinute.from_difference(ix1, ix2)
+    <IndexMinute>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    ```
+
+*classmethod* IndexMinute.from\_intersection(*\*others*)[#](#static_frame.IndexMinute.from_intersection "Link to this definition")
+:   Construct a new Index based on the intersection with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexMinute.from_labels(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix1
+    <IndexMinute>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    >>> ix2 = sf.IndexMinute.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexMinute>
+    2022-04-01T00:00
+    2021-12-31T00:00
+    2018-06-30T00:00
+    <datetime64[m]>
+    >>> sf.IndexMinute.from_intersection(ix1, ix2)
+    <IndexMinute>
+    <datetime64[m]>
     ```
 
 *classmethod* IndexMinute.from\_labels(*labels*, */*, *\**, *name=None*)[#](#static_frame.IndexMinute.from_labels "Link to this definition")
@@ -2550,7 +2602,6 @@ IndexMinute.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-
     ```
 
 *classmethod* IndexMinute.from\_pandas(*value*, */*)[#](#static_frame.IndexMinute.from_pandas "Link to this definition")
@@ -2564,7 +2615,35 @@ IndexMinute.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     1517-12
     1517-06-30
     <object>
+    ```
 
+*classmethod* IndexMinute.from\_union(*\*others*)[#](#static_frame.IndexMinute.from_union "Link to this definition")
+:   Construct a new Index based on the union with Index, containers, or NumPy arrays. Identical comparisons retain order.
+
+    ```
+    >>> ix1 = sf.IndexMinute.from_labels(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix1
+    <IndexMinute>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    >>> ix2 = sf.IndexMinute.from_labels(('2022-04-01', '2021-12-31', '2018-06-30'))
+    >>> ix2
+    <IndexMinute>
+    2022-04-01T00:00
+    2021-12-31T00:00
+    2018-06-30T00:00
+    <datetime64[m]>
+    >>> sf.IndexMinute.from_union(ix1, ix2)
+    <IndexMinute>
+    1517-04-01T00:00
+    1517-06-30T00:00
+    1517-12-01T00:00
+    2018-06-30T00:00
+    2021-12-31T00:00
+    2022-04-01T00:00
+    <datetime64[m]>
     ```
 
 [IndexMinute](index_minute.md#api-detail-indexminute): [Constructor](#api-detail-indexminute-constructor) | [Exporter](index_minute-exporter.md#api-detail-indexminute-exporter) | [Attribute](index_minute-attribute.md#api-detail-indexminute-attribute) | [Method](index_minute-method.md#api-detail-indexminute-method) | [Dictionary-Like](index_minute-dictionary_like.md#api-detail-indexminute-dictionary-like) | [Display](index_minute-display.md#api-detail-indexminute-display) | [Selector](index_minute-selector.md#api-detail-indexminute-selector) | [Iterator](index_minute-iterator.md#api-detail-indexminute-iterator) | [Operator Binary](index_minute-operator_binary.md#api-detail-indexminute-operator-binary) | [Operator Unary](index_minute-operator_unary.md#api-detail-indexminute-operator-unary) | [Accessor Values](index_minute-accessor_values.md#api-detail-indexminute-accessor-values) | [Accessor Datetime](index_minute-accessor_datetime.md#api-detail-indexminute-accessor-datetime) | [Accessor String](index_minute-accessor_string.md#api-detail-indexminute-accessor-string) | [Accessor Regular Expression](index_minute-accessor_regular_expression.md#api-detail-indexminute-accessor-regular-expression) | [Accessor Hashlib](index_minute-accessor_hashlib.md#api-detail-indexminute-accessor-hashlib) | [Accessor Type Clinic](index_minute-accessor_type_clinic.md#api-detail-indexminute-accessor-type-clinic)
@@ -2579,8 +2658,11 @@ Detail: IndexMinute: Exporter](index_minute-exporter.md "next page")
 On this page
 
 * [`IndexMinute.__init__()`](#static_frame.IndexMinute.__init__)
+* [`IndexMinute.from_difference()`](#static_frame.IndexMinute.from_difference)
+* [`IndexMinute.from_intersection()`](#static_frame.IndexMinute.from_intersection)
 * [`IndexMinute.from_labels()`](#static_frame.IndexMinute.from_labels)
 * [`IndexMinute.from_pandas()`](#static_frame.IndexMinute.from_pandas)
+* [`IndexMinute.from_union()`](#static_frame.IndexMinute.from_union)
 
 © Copyright 2025, Christopher Ariza.
 

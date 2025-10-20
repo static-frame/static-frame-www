@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.2.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -13,6 +13,8 @@ Back to top
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
 * More
+  + [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+  + [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
   + [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
   + [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
   + [Faster DataFrame Serialization](../articles/serialize.md)
@@ -1270,6 +1272,8 @@ Search
 * [About StaticFrame](../intro.md)
 * [What is New in StaticFrame](../new.md)
 * [Contributing](../contributing.md)
+* [Liberating Performance with Immutable DataFrames in Free-Threaded Python](../articles/freethread.md)
+* [Do More with NumPy Array Type Hints: Annotate & Validate Shape & Dtype](../articles/nptyping.md)
 * [Improving Code Quality with Array and DataFrame Type Hints](../articles/guard.md)
 * [Type-Hinting DataFrames for Static Analysis and Runtime Validation](../articles/ftyping.md)
 * [Faster DataFrame Serialization](../articles/serialize.md)
@@ -2262,9 +2266,9 @@ Search
 * [Detail: IndexMinute: Dictionary-Like](index_minute-dictionary_like.md)
 * [Detail: IndexMinute: Display](index_minute-display.md)
 * [Detail: IndexMinute: Selector](index_minute-selector.md)
-* [Detail: IndexMinute: Iterator](index_minute-iterator.md)
-* [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
 * More
+  + [Detail: IndexMinute: Iterator](index_minute-iterator.md)
+  + [Detail: IndexMinute: Operator Binary](index_minute-operator_binary.md)
   + [Detail: IndexMinute: Operator Unary](index_minute-operator_unary.md)
   + [Detail: IndexMinute: Accessor Values](index_minute-accessor_values.md)
   + [Detail: IndexMinute: Accessor Datetime](index_minute-accessor_datetime.md)
@@ -2537,7 +2541,6 @@ Batch.\_\_add\_\_(*other*, */*)[#](#static_frame.Batch.__add__ "Link to this def
     j                q     50      51
     j                r     52      53
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_and\_\_(*other*, */*)[#](#static_frame.Batch.__and__ "Link to this definition")
@@ -2554,7 +2557,6 @@ Batch.\_\_and\_\_(*other*, */*)[#](#static_frame.Batch.__and__ "Link to this def
     j                q     True   False
     j                r     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.\_\_eq\_\_(*other*, */*)[#](#static_frame.Batch.__eq__ "Link to this definition")
@@ -2573,7 +2575,6 @@ Batch.\_\_eq\_\_(*other*, */*)[#](#static_frame.Batch.__eq__ "Link to this defin
     j                q     False  False
     j                r     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.Batch.__floordiv__ "Link to this definition")
@@ -2590,7 +2591,6 @@ Batch.\_\_floordiv\_\_(*other*, */*)[#](#static_frame.Batch.__floordiv__ "Link t
     j                q     5       5
     j                r     5       5
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_ge\_\_(*other*, */*)[#](#static_frame.Batch.__ge__ "Link to this definition")
@@ -2609,7 +2609,6 @@ Batch.\_\_ge\_\_(*other*, */*)[#](#static_frame.Batch.__ge__ "Link to this defin
     j                q     True   True
     j                r     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.\_\_gt\_\_(*other*, */*)[#](#static_frame.Batch.__gt__ "Link to this definition")
@@ -2628,7 +2627,6 @@ Batch.\_\_gt\_\_(*other*, */*)[#](#static_frame.Batch.__gt__ "Link to this defin
     j                q     True   True
     j                r     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.\_\_le\_\_(*other*, */*)[#](#static_frame.Batch.__le__ "Link to this definition")
@@ -2647,7 +2645,6 @@ Batch.\_\_le\_\_(*other*, */*)[#](#static_frame.Batch.__le__ "Link to this defin
     j                q     False  False
     j                r     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.\_\_lt\_\_(*other*, */*)[#](#static_frame.Batch.__lt__ "Link to this definition")
@@ -2666,7 +2663,6 @@ Batch.\_\_lt\_\_(*other*, */*)[#](#static_frame.Batch.__lt__ "Link to this defin
     j                q     False  False
     j                r     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.\_\_matmul\_\_(*other*, */*)[#](#static_frame.Batch.__matmul__ "Link to this definition")
@@ -2679,7 +2675,6 @@ Batch.\_\_matmul\_\_(*other*, */*)[#](#static_frame.Batch.__matmul__ "Link to th
     i       0.5       3.5       6.5
     j       60.5      63.5      66.5
     <<U1>   <float64> <float64> <float64>
-
     ```
 
 Batch.\_\_mod\_\_(*other*, */*)[#](#static_frame.Batch.__mod__ "Link to this definition")
@@ -2696,7 +2691,6 @@ Batch.\_\_mod\_\_(*other*, */*)[#](#static_frame.Batch.__mod__ "Link to this def
     j                q     2       3
     j                r     4       5
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_mul\_\_(*other*, */*)[#](#static_frame.Batch.__mul__ "Link to this definition")
@@ -2713,7 +2707,6 @@ Batch.\_\_mul\_\_(*other*, */*)[#](#static_frame.Batch.__mul__ "Link to this def
     j                q     336     344
     j                r     352     360
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_ne\_\_(*other*, */*)[#](#static_frame.Batch.__ne__ "Link to this definition")
@@ -2732,7 +2725,6 @@ Batch.\_\_ne\_\_(*other*, */*)[#](#static_frame.Batch.__ne__ "Link to this defin
     j                q     True   True
     j                r     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.\_\_or\_\_(*other*, */*)[#](#static_frame.Batch.__or__ "Link to this definition")
@@ -2751,7 +2743,6 @@ Batch.\_\_or\_\_(*other*, */*)[#](#static_frame.Batch.__or__ "Link to this defin
     j                q     True   True
     j                r     True   True
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 Batch.\_\_pow\_\_(*other*, */*)[#](#static_frame.Batch.__pow__ "Link to this definition")
@@ -2768,7 +2759,6 @@ Batch.\_\_pow\_\_(*other*, */*)[#](#static_frame.Batch.__pow__ "Link to this def
     j                q     9682651996416  11688200277601
     j                r     14048223625216 16815125390625
     <<U1>            <<U1> <int64>        <int64>
-
     ```
 
 Batch.\_\_radd\_\_(*other*, */*)[#](#static_frame.Batch.__radd__ "Link to this definition")
@@ -2785,7 +2775,6 @@ Batch.\_\_radd\_\_(*other*, */*)[#](#static_frame.Batch.__radd__ "Link to this d
     j                q     50      51
     j                r     52      53
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.Batch.__rfloordiv__ "Link to this definition")
@@ -2802,7 +2791,6 @@ Batch.\_\_rfloordiv\_\_(*other*, */*)[#](#static_frame.Batch.__rfloordiv__ "Link
     j                q     0       0
     j                r     0       0
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.Batch.__rmatmul__ "Link to this definition")
@@ -2815,7 +2803,6 @@ Batch.\_\_rmatmul\_\_(*other*, */*)[#](#static_frame.Batch.__rmatmul__ "Link to 
     i       0.5       3.5       6.5
     j       60.5      63.5      66.5
     <<U1>   <float64> <float64> <float64>
-
     ```
 
 Batch.\_\_rmul\_\_(*other*, */*)[#](#static_frame.Batch.__rmul__ "Link to this definition")
@@ -2832,7 +2819,6 @@ Batch.\_\_rmul\_\_(*other*, */*)[#](#static_frame.Batch.__rmul__ "Link to this d
     j                q     336     344
     j                r     352     360
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_rshift\_\_(*other*, */*)[#](#static_frame.Batch.__rshift__ "Link to this definition")
@@ -2849,7 +2835,6 @@ Batch.\_\_rshift\_\_(*other*, */*)[#](#static_frame.Batch.__rshift__ "Link to th
     j                q     21      21
     j                r     22      22
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_rsub\_\_(*other*, */*)[#](#static_frame.Batch.__rsub__ "Link to this definition")
@@ -2866,7 +2851,6 @@ Batch.\_\_rsub\_\_(*other*, */*)[#](#static_frame.Batch.__rsub__ "Link to this d
     j                q     -34     -35
     j                r     -36     -37
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.Batch.__rtruediv__ "Link to this definition")
@@ -2883,7 +2867,6 @@ Batch.\_\_rtruediv\_\_(*other*, */*)[#](#static_frame.Batch.__rtruediv__ "Link t
     j                q     0.19047619047619047 0.18604651162790697
     j                r     0.18181818181818182 0.17777777777777778
     <<U1>            <<U1> <float64>           <float64>
-
     ```
 
 Batch.\_\_sub\_\_(*other*, */*)[#](#static_frame.Batch.__sub__ "Link to this definition")
@@ -2900,7 +2883,6 @@ Batch.\_\_sub\_\_(*other*, */*)[#](#static_frame.Batch.__sub__ "Link to this def
     j                q     34      35
     j                r     36      37
     <<U1>            <<U1> <int64> <int64>
-
     ```
 
 Batch.\_\_truediv\_\_(*other*, */*)[#](#static_frame.Batch.__truediv__ "Link to this definition")
@@ -2917,7 +2899,6 @@ Batch.\_\_truediv\_\_(*other*, */*)[#](#static_frame.Batch.__truediv__ "Link to 
     j                q     5.25      5.375
     j                r     5.5       5.625
     <<U1>            <<U1> <float64> <float64>
-
     ```
 
 Batch.\_\_xor\_\_(*other*, */*)[#](#static_frame.Batch.__xor__ "Link to this definition")
@@ -2934,7 +2915,6 @@ Batch.\_\_xor\_\_(*other*, */*)[#](#static_frame.Batch.__xor__ "Link to this def
     j                q     False  True
     j                r     False  False
     <<U1>            <<U1> <bool> <bool>
-
     ```
 
 [Batch](batch.md#api-detail-batch): [Constructor](batch-constructor.md#api-detail-batch-constructor) | [Exporter](batch-exporter.md#api-detail-batch-exporter) | [Attribute](batch-attribute.md#api-detail-batch-attribute) | [Method](batch-method.md#api-detail-batch-method) | [Dictionary-Like](batch-dictionary_like.md#api-detail-batch-dictionary-like) | [Display](batch-display.md#api-detail-batch-display) | [Selector](batch-selector.md#api-detail-batch-selector) | [Operator Binary](#api-detail-batch-operator-binary) | [Operator Unary](batch-operator_unary.md#api-detail-batch-operator-unary) | [Accessor Values](batch-accessor_values.md#api-detail-batch-accessor-values) | [Accessor Datetime](batch-accessor_datetime.md#api-detail-batch-accessor-datetime) | [Accessor String](batch-accessor_string.md#api-detail-batch-accessor-string) | [Accessor Transpose](batch-accessor_transpose.md#api-detail-batch-accessor-transpose) | [Accessor Fill Value](batch-accessor_fill_value.md#api-detail-batch-accessor-fill-value) | [Accessor Regular Expression](batch-accessor_regular_expression.md#api-detail-batch-accessor-regular-expression) | [Accessor Hashlib](batch-accessor_hashlib.md#api-detail-batch-accessor-hashlib) | [Accessor Type Clinic](batch-accessor_type_clinic.md#api-detail-batch-accessor-type-clinic) | [Accessor Reduce](batch-accessor_reduce.md#api-detail-batch-accessor-reduce)
