@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2547,7 +2547,7 @@ Index.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
     0.0
     -0.15853338004399595
     0.31305701279012343
-    -0.5946419876082147
+    -0.5946419876082146
     <float64>
     ```
 
@@ -2572,7 +2572,7 @@ Index.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*
     0.0
     -0.15853338004399595
     0.31305701279012343
-    -0.5946419876082147
+    -0.5946419876082146
     <float64>
     ```
 
@@ -2600,7 +2600,7 @@ Index.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*, *dt
     0.0
     -0.15853338004399595
     0.31305701279012343
-    -0.5946419876082147
+    -0.5946419876082146
     <float64>
     ```
 

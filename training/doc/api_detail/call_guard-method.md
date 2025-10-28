@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2534,7 +2534,7 @@ Search
     >>> def func1(ix: sf.Index[np.int64]): return len(ix)
     >>> func2 = sf.CallGuard.check(func1)
     >>> func2
-    <function func1 at 0x11a95efc0>
+    <function func1 at 0x706c0661ab90>
     >>> ix1 = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
     >>> func2(ix1)
     ClinicError('\nIn args of (ix: Index[int64]) -> Any\n└── In arg ix\n    └── Index[int64]\n        └── Expected int64, provided str_ invalid')

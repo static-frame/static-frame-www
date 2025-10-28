@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
+[![StaticFrame 3.5.0 documentation - Home](_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
 
 * [static-frame](readme.md)
 * [License](license.md)
@@ -2533,7 +2533,7 @@ If you have an idea for a new feature for which there is not already an issue, p
 
 ## Preparing an Environment[#](#preparing-an-environment "Link to this heading")
 
-StaticFrame is developed on Python 3.13.
+StaticFrame is developed on Python 3.14.
 
 To prepare a StaticFrame repository and environment, follow the following steps.
 
@@ -2543,13 +2543,13 @@ Clone the git repository (or your fork):
 git clone https://github.com/static-frame/static-frame.git
 ```
 
-Using Python 3.13, Create a virtual environment with StaticFrame’s development requirements:
+Using Python 3.14, Create a virtual environment with StaticFrame’s development requirements:
 
 ```
 cd static-frame
 python3 -m venv .env-sf
 source .env-sf/bin/activate
-pip install -r requirements-dev-3_13.txt
+pip install -r requirements-dev-3_14.txt
 ```
 
 ## Running Tests & Static Analysis[#](#running-tests-static-analysis "Link to this heading")

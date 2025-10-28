@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2724,7 +2724,7 @@ Require.Shape(*\*shape*)[#](#Require.Shape "Link to this definition")
     q          9       8
     <<U1>      <int64> <int64>
     >>> func2(f2)
-    ClinicError('\nIn args of (f: Annotated[Frame[Any, Any, Unpack[Tuple[Any, ...]]], Shape((3, 2))]) -> Any\n└── In arg f\n    └── Annotated[Frame[Any, Any, Unpack[Tuple[Any, ...]]], Shape((3, 2))]\n        └── Shape((3, 2))\n            └── Expected shape ((3, 2)), provided shape (2, 2)')
+    ClinicError('\nIn args of (f: Annotated[Frame[Any, Any, Unpack[tuple[Any, ...]]], Shape((3, 2))]) -> Any\n└── In arg f\n    └── Annotated[Frame[Any, Any, Unpack[tuple[Any, ...]]], Shape((3, 2))]\n        └── Shape((3, 2))\n            └── Expected shape ((3, 2)), provided shape (2, 2)')
     ```
 
 [Require](require.md#api-detail-require): [Constructor](#api-detail-require-constructor)

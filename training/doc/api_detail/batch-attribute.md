@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2557,8 +2557,8 @@ Batch.memory[#](#static_frame.Batch.memory "Link to this definition")
     ```
     >>> bt = sf.Batch((('i', sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')), ('j', sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'))))
     >>> bt.memory
-          L    Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD RMDu
-    Total 5.05 KB    5.17 KB    3.92 KB    13.16 KB    5.25 KB    4.0 KB
+          L    Lu    LM  LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
+    Total 5.07 KB    5.2 KB    3.95 KB    13.18 KB    5.27 KB    4.02 KB
     ```
 
 Batch.name[#](#static_frame.Batch.name "Link to this definition")

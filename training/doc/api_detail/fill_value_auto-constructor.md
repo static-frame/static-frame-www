@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2590,7 +2590,7 @@ FillValueAuto.\_\_init\_\_(*b=<object object>*, *i=<object object>*, *u=<object 
 
     ```
     >>> sf.FillValueAuto.from_default()
-    <static_frame.core.fill_value_auto.FillValueAuto object at 0x11ab11b40>
+    <static_frame.core.fill_value_auto.FillValueAuto object at 0x706c06676e40>
     ```
 
 [FillValueAuto](fill_value_auto.md#api-detail-fillvalueauto): [Constructor](#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-detail-fillvalueauto-attribute) | [Display](fill_value_auto-display.md#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-detail-fillvalueauto-selector)

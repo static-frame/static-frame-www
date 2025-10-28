@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2584,10 +2584,10 @@ Bus.inventory[#](#static_frame.Bus.inventory "Link to this definition")
     >>> b2 = sf.Bus.from_zip_npz("/tmp/b.zip")
     >>> b2.inventory
     <Frame>
-    <Index>  path       last_modified        size  <<U13>
+    <Index>  path       last_modified        size   <<U13>
     <Index>
-    None     /tmp/b.zip 2025-10-08T01:32:... 965 B
-    <object> <<U10>     <<U32>               <<U5>
+    None     /tmp/b.zip 2025-10-27T16:54:... 1.0 KB
+    <object> <<U10>     <<U32>               <<U6>
     ```
 
 Bus.memory[#](#static_frame.Bus.memory "Link to this definition")

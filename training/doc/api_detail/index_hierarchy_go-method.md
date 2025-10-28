@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2645,7 +2645,7 @@ IndexHierarchyGO.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame
     False                               True   False
     <bool>                              <bool> <bool>
     >>> ih.all()
-    NotImplementedError('<function ufunc_all at 0x114ab9940> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function ufunc_all at 0x706c5a769fe0> for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchyGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchyGO.any "Link to this definition")
@@ -2664,7 +2664,7 @@ IndexHierarchyGO.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame
     False                               True   False
     <bool>                              <bool> <bool>
     >>> ih.any()
-    NotImplementedError('<function ufunc_any at 0x114ab99e0> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function ufunc_any at 0x706c5a76a140> for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchyGO.append(*value*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchyGO.append)[#](#static_frame.IndexHierarchyGO.append "Link to this definition")
@@ -2780,7 +2780,7 @@ IndexHierarchyGO.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHi
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.cumprod()
-    NotImplementedError('<function cumprod at 0x102e27560> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function cumprod at 0x706ca210b270> for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchyGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHierarchyGO.cumsum "Link to this definition")
@@ -2799,7 +2799,7 @@ IndexHierarchyGO.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHie
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.cumsum()
-    NotImplementedError('<function cumsum at 0x102e26de0> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function cumsum at 0x706ca210aa30> for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchyGO.difference(*\*others*)[#](#static_frame.IndexHierarchyGO.difference "Link to this definition")
@@ -3318,7 +3318,7 @@ IndexHierarchyGO.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fram
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.mean()
-    NotImplementedError('<function mean at 0x102e27b00> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function mean at 0x706ca210b8a0> for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchyGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchyGO.median "Link to this definition")
@@ -3337,7 +3337,7 @@ IndexHierarchyGO.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fr
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.median()
-    NotImplementedError('<function median at 0x1030b4a40> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function median at 0x706ca19c07d0> for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchyGO.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchyGO.min "Link to this definition")
@@ -3397,7 +3397,7 @@ IndexHierarchyGO.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.prod()
-    NotImplementedError('<function prod at 0x102e27420> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function prod at 0x706ca210b110> for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchyGO.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[#](#static_frame.IndexHierarchyGO.rehierarch "Link to this definition")
@@ -3603,7 +3603,7 @@ IndexHierarchyGO.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#st
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.std()
-    NotImplementedError('functools.partial(<function std at 0x102e1c2b0>, ddof=0) for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('functools.partial(<function std at 0x706ca20fff70>, ddof=0) for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchyGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexHierarchyGO.sum "Link to this definition")
@@ -3622,7 +3622,7 @@ IndexHierarchyGO.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#s
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.sum()
-    NotImplementedError('<function sum at 0x102e26700> for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('<function sum at 0x706ca210a2a0> for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchyGO.tail(*count=5*, */*)[#](#static_frame.IndexHierarchyGO.tail "Link to this definition")
@@ -3733,7 +3733,7 @@ IndexHierarchyGO.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#st
     1                                   1024    32
     <int64>                             <int64> <int64>
     >>> ih.var()
-    NotImplementedError('functools.partial(<function var at 0x102e1c0b0>, ddof=0) for IndexHierarchyGO is not defined; convert to `Frame`.')
+    NotImplementedError('functools.partial(<function var at 0x706ca20ffdb0>, ddof=0) for IndexHierarchyGO is not defined; convert to `Frame`.')
     ```
 
 [IndexHierarchyGO](index_hierarchy_go.md#api-detail-indexhierarchygo): [Constructor](index_hierarchy_go-constructor.md#api-detail-indexhierarchygo-constructor) | [Exporter](index_hierarchy_go-exporter.md#api-detail-indexhierarchygo-exporter) | [Attribute](index_hierarchy_go-attribute.md#api-detail-indexhierarchygo-attribute) | [Method](#api-detail-indexhierarchygo-method) | [Dictionary-Like](index_hierarchy_go-dictionary_like.md#api-detail-indexhierarchygo-dictionary-like) | [Display](index_hierarchy_go-display.md#api-detail-indexhierarchygo-display) | [Selector](index_hierarchy_go-selector.md#api-detail-indexhierarchygo-selector) | [Iterator](index_hierarchy_go-iterator.md#api-detail-indexhierarchygo-iterator) | [Operator Binary](index_hierarchy_go-operator_binary.md#api-detail-indexhierarchygo-operator-binary) | [Operator Unary](index_hierarchy_go-operator_unary.md#api-detail-indexhierarchygo-operator-unary) | [Accessor Values](index_hierarchy_go-accessor_values.md#api-detail-indexhierarchygo-accessor-values) | [Accessor Datetime](index_hierarchy_go-accessor_datetime.md#api-detail-indexhierarchygo-accessor-datetime) | [Accessor String](index_hierarchy_go-accessor_string.md#api-detail-indexhierarchygo-accessor-string) | [Accessor Transpose](index_hierarchy_go-accessor_transpose.md#api-detail-indexhierarchygo-accessor-transpose) | [Accessor Regular Expression](index_hierarchy_go-accessor_regular_expression.md#api-detail-indexhierarchygo-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy_go-accessor_hashlib.md#api-detail-indexhierarchygo-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy_go-accessor_type_clinic.md#api-detail-indexhierarchygo-accessor-type-clinic)

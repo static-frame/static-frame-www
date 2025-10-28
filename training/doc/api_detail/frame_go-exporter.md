@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2573,6 +2573,11 @@ FrameGO.to\_clipboard(*\**, *delimiter='\t'*, *include\_index=True*, *include\_i
         * **quoting** – Controls when quotes should be generated. It can take on any of the QUOTE\_\* constants from the standard library csv module.
         * **store\_filter** – A [`StoreFilter`](store_filter.md#static_frame.StoreFilter "static_frame.StoreFilter") instance.
 
+    ```
+    >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
+    >>> f1.to_clipboard()
+    ```
+
 FrameGO.to\_csv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[#](#static_frame.FrameGO.to_csv "Link to this definition")
 :   Given a file path or file-like object, write the [`Frame`](frame-selector.md#Frame "Frame") as delimited text. The delimiter is set to a comma.
 
@@ -3322,6 +3327,7 @@ FrameGO.to\_sql(*connection*, */*, *\**, *label=<object object>*, *include\_inde
     2       8       1       1517-12-31
     3       3       0       1517-06-30
     <int64> <int64> <int64> <<U10>
+    >>> conn.close()
     ```
 
 FrameGO.to\_sqlite(*fp*, */*, *\**, *label=<object object>*, *include\_index=True*, *include\_columns=True*)[#](#static_frame.FrameGO.to_sqlite "Link to this definition")
@@ -3348,6 +3354,7 @@ FrameGO.to\_sqlite(*fp*, */*, *\**, *label=<object object>*, *include\_index=Tru
     0       10      0       1517-01-01
     1       2       1       1517-04-01
     <int64> <int64> <int64> <<U10>
+    >>> conn.close()
     ```
 
 FrameGO.to\_tsv(*fp*, */*, *\**, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *encoding=None*, *line\_terminator='\n'*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[#](#static_frame.FrameGO.to_tsv "Link to this definition")

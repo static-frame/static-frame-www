@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2920,7 +2920,7 @@ FrameHE.masked\_array.loc[*key*]
     ```
 
 FrameHE[*key*]()[#](#FrameHE "Link to this definition")
-:   FrameHE.\_\_getitem\_\_ *= <function Frame.\_\_getitem\_\_>*
+:   FrameHE.\_\_getitem\_\_ *= <function FrameHE.\_\_getitem\_\_>*[[source]](../_modules/static_frame/core/frame.md#FrameHE.__getitem__)
 
     ```
     >>> f = sf.FrameHE.from_fields(((10, -2, 0, 0), (8, -3, 8, 0), (1, 0, 9, 12)), index=('p', 'q', 'r', 's'), columns=('a', 'b', 'c'), name='x')

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2544,7 +2544,7 @@ Batch.via\_values.apply(*func*, *\*args*, *\*\*kwargs*)
     <IndexHierarchy>
     i                p     0.0                  0.8414709848078965
     i                q     0.9092974268256817   0.1411200080598672
-    i                r     -0.7568024953079283  -0.9589242746631385
+    i                r     -0.7568024953079282  -0.9589242746631385
     j                p     0.7451131604793488   -0.158622668804709
     j                q     -0.9165215479156338  -0.8317747426285983
     j                r     0.017701925105413577 0.8509035245341184
@@ -2568,7 +2568,7 @@ Batch.via\_values.\_\_array\_ufunc\_\_(*ufunc*, *method*, *\*args*, *\*\*kwargs*
     <IndexHierarchy>
     i                p     0.0                  0.8414709848078965
     i                q     0.9092974268256817   0.1411200080598672
-    i                r     -0.7568024953079283  -0.9589242746631385
+    i                r     -0.7568024953079282  -0.9589242746631385
     j                p     0.7451131604793488   -0.158622668804709
     j                q     -0.9165215479156338  -0.8317747426285983
     j                r     0.017701925105413577 0.8509035245341184
@@ -2595,7 +2595,7 @@ Batch.via\_values.\_\_call\_\_(*\**, *consolidate\_blocks*, *unify\_blocks*, *dt
     <IndexHierarchy>
     i                p     0.0                  0.8414709848078965
     i                q     0.9092974268256817   0.1411200080598672
-    i                r     -0.7568024953079283  -0.9589242746631385
+    i                r     -0.7568024953079282  -0.9589242746631385
     j                p     0.7451131604793488   -0.158622668804709
     j                q     -0.9165215479156338  -0.8317747426285983
     j                r     0.017701925105413577 0.8509035245341184
