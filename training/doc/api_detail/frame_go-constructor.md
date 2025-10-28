@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2601,6 +2601,27 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     Returns:
     :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
 
+    ```
+    >>> f1 = sf.FrameGO(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
+    >>> f1
+    <FrameGO: x>
+    <IndexGO>    a       b       <<U1>
+    <Index>
+    p            0       1
+    q            2       3
+    r            4       5
+    <<U1>        <int64> <int64>
+    >>> f1.to_clipboard()
+    >>> sf.FrameGO.from_clipboard(index_depth=1)
+    <FrameGO>
+    <IndexGO> a       b       <<U1>
+    <Index>
+    p         0       1
+    q         2       3
+    r         4       5
+    <<U1>     <int64> <int64>
+    ```
+
 *classmethod* FrameGO.from\_concat(*frames*, */*, *\**, *axis=0*, *union=True*, *index=None*, *columns=None*, *index\_constructor=None*, *columns\_constructor=None*, *name=None*, *fill\_value=nan*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_concat "Link to this definition")
 :   Concatenate multiple [`Frame`](frame-selector.md#Frame "Frame") or [`Series`](series-selector.md#Series "Series") into a new [`Frame`](frame-selector.md#Frame "Frame"). If index or columns are provided and appropriately sized, the resulting [`Frame`](frame-selector.md#Frame "Frame") will use those indices. If the axis along concatenation (index for axis 0, columns for axis 1) is unique after concatenation, it will be preserved; otherwise, a new index or an [`IndexAutoFactory`](index_auto_factory.md#static_frame.IndexAutoFactory "static_frame.IndexAutoFactory") must be supplied.
 
@@ -3772,6 +3793,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     0         10      0       1517-01-01
     1         2       1       1517-04-01
     <int64>   <int64> <int64> <<U10>
+    >>> conn.close()
     ```
 
 *classmethod* FrameGO.from\_sqlite(*fp*, */*, *\**, *label*, *index\_depth=0*, *index\_constructors=None*, *columns\_depth=1*, *columns\_constructors=None*, *dtypes=None*, *name=<object object>*, *consolidate\_blocks=False*)[#](#static_frame.FrameGO.from_sqlite "Link to this definition")

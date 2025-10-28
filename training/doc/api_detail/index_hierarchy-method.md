@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2645,7 +2645,7 @@ IndexHierarchy.all(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     False                             True   False
     <bool>                            <bool> <bool>
     >>> ih.all()
-    NotImplementedError('<function ufunc_all at 0x114ab9940> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function ufunc_all at 0x706c5a769fe0> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchy.any "Link to this definition")
@@ -2664,7 +2664,7 @@ IndexHierarchy.any(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.I
     False                             True   False
     <bool>                            <bool> <bool>
     >>> ih.any()
-    NotImplementedError('<function ufunc_any at 0x114ab99e0> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function ufunc_any at 0x706c5a76a140> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.astype[*key*](*dtypes*, *\**, *consolidate\_blocks*)
@@ -2757,7 +2757,7 @@ IndexHierarchy.cumprod(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHier
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.cumprod()
-    NotImplementedError('<function cumprod at 0x102e27560> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function cumprod at 0x706ca210b270> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHierarchy.cumsum "Link to this definition")
@@ -2776,7 +2776,7 @@ IndexHierarchy.cumsum(*\**, *axis=0*, *skipna=True*)[#](#static_frame.IndexHiera
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.cumsum()
-    NotImplementedError('<function cumsum at 0x102e26de0> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function cumsum at 0x706ca210aa30> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.difference(*\*others*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.difference)[#](#static_frame.IndexHierarchy.difference "Link to this definition")
@@ -3263,7 +3263,7 @@ IndexHierarchy.mean(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.mean()
-    NotImplementedError('<function mean at 0x102e27b00> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function mean at 0x706ca210b8a0> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchy.median "Link to this definition")
@@ -3282,7 +3282,7 @@ IndexHierarchy.median(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_fram
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.median()
-    NotImplementedError('<function median at 0x1030b4a40> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function median at 0x706ca19c07d0> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.min(*\**, *axis=0*, *skipna=True*, *out=None*)[#](#static_frame.IndexHierarchy.min "Link to this definition")
@@ -3342,7 +3342,7 @@ IndexHierarchy.prod(*\**, *axis=0*, *skipna=True*, *allna=1*, *out=None*)[#](#st
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.prod()
-    NotImplementedError('<function prod at 0x102e27420> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function prod at 0x706ca210b110> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.rehierarch(*depth\_map*, *\**, *index\_constructors=None*)[[source]](../_modules/static_frame/core/index_hierarchy.md#IndexHierarchy.rehierarch)[#](#static_frame.IndexHierarchy.rehierarch "Link to this definition")
@@ -3548,7 +3548,7 @@ IndexHierarchy.std(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#stat
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.std()
-    NotImplementedError('functools.partial(<function std at 0x102e1c2b0>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('functools.partial(<function std at 0x706ca20fff70>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#static_frame.IndexHierarchy.sum "Link to this definition")
@@ -3567,7 +3567,7 @@ IndexHierarchy.sum(*\**, *axis=0*, *skipna=True*, *allna=0*, *out=None*)[#](#sta
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.sum()
-    NotImplementedError('<function sum at 0x102e26700> for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('<function sum at 0x706ca210a2a0> for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 IndexHierarchy.tail(*count=5*, */*)[#](#static_frame.IndexHierarchy.tail "Link to this definition")
@@ -3678,7 +3678,7 @@ IndexHierarchy.var(*\**, *axis=0*, *skipna=True*, *ddof=0*, *out=None*)[#](#stat
     1                                 1024    32
     <int64>                           <int64> <int64>
     >>> ih.var()
-    NotImplementedError('functools.partial(<function var at 0x102e1c0b0>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
+    NotImplementedError('functools.partial(<function var at 0x706ca20ffdb0>, ddof=0) for IndexHierarchy is not defined; convert to `Frame`.')
     ```
 
 [IndexHierarchy](index_hierarchy.md#api-detail-indexhierarchy): [Constructor](index_hierarchy-constructor.md#api-detail-indexhierarchy-constructor) | [Exporter](index_hierarchy-exporter.md#api-detail-indexhierarchy-exporter) | [Attribute](index_hierarchy-attribute.md#api-detail-indexhierarchy-attribute) | [Method](#api-detail-indexhierarchy-method) | [Dictionary-Like](index_hierarchy-dictionary_like.md#api-detail-indexhierarchy-dictionary-like) | [Display](index_hierarchy-display.md#api-detail-indexhierarchy-display) | [Selector](index_hierarchy-selector.md#api-detail-indexhierarchy-selector) | [Iterator](index_hierarchy-iterator.md#api-detail-indexhierarchy-iterator) | [Operator Binary](index_hierarchy-operator_binary.md#api-detail-indexhierarchy-operator-binary) | [Operator Unary](index_hierarchy-operator_unary.md#api-detail-indexhierarchy-operator-unary) | [Accessor Values](index_hierarchy-accessor_values.md#api-detail-indexhierarchy-accessor-values) | [Accessor Datetime](index_hierarchy-accessor_datetime.md#api-detail-indexhierarchy-accessor-datetime) | [Accessor String](index_hierarchy-accessor_string.md#api-detail-indexhierarchy-accessor-string) | [Accessor Transpose](index_hierarchy-accessor_transpose.md#api-detail-indexhierarchy-accessor-transpose) | [Accessor Regular Expression](index_hierarchy-accessor_regular_expression.md#api-detail-indexhierarchy-accessor-regular-expression) | [Accessor Hashlib](index_hierarchy-accessor_hashlib.md#api-detail-indexhierarchy-accessor-hashlib) | [Accessor Type Clinic](index_hierarchy-accessor_type_clinic.md#api-detail-indexhierarchy-accessor-type-clinic)

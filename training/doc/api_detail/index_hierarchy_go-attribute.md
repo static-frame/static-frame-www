@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.4.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2592,12 +2592,12 @@ IndexHierarchyGO.memory[#](#static_frame.IndexHierarchyGO.memory "Link to this d
     >>> ih = sf.IndexHierarchyGO.from_labels((('a', 1024, '1517-04-01'), ('a', 2048, '1789-12-31'), ('b', 0, '1620-11-21')), index_constructors=(sf.Index, sf.Index, sf.IndexDate), name=('x', 'y', 'z'))
     >>> ih.memory
              L    Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
-    Name     190  B     190  B     190  B     190   B     190  B     190  B
+    Name     198  B     198  B     198  B     198   B     198  B     198  B
     Indices  3.37 KB    3.46 KB    2.71 KB    11.48 KB    3.53 KB    2.78 KB
     Indexers 200  B     200  B     72   B     200   B     200  B     72   B
     Blocks   740  B     788  B     404  B     740   B     788  B     404  B
     Values   16   B     16   B     16   B     16    B     16   B     16   B
-    Total    5.3  KB    5.46 KB    4.08 KB    13.41 KB    5.52 KB    4.15 KB
+    Total    5.31 KB    5.47 KB    4.09 KB    13.42 KB    5.53 KB    4.16 KB
     ```
 
 IndexHierarchyGO.mloc[#](#static_frame.IndexHierarchyGO.mloc "Link to this definition")
