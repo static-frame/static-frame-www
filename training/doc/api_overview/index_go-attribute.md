@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2533,7 +2533,7 @@ Search
 | [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-depth) | `IndexGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
 | [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-dtype) | `IndexGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
 | [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-index-types) | `IndexGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-memory) | `IndexGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-memory) | `IndexGO.memory` | A MemoryDisplay, providing the size in memory of this object. For compound conta… |
 | [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-mloc) | `IndexGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
 | [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-name) | `IndexGO.name` | A hashable label attached to this container. Returns: Hashable |
 | [Detail](../api_detail/index_go-attribute.md#api-sig-indexgo-names) | `IndexGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |

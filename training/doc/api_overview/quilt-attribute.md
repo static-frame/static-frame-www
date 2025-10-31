@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2534,7 +2534,7 @@ Search
 | [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-columns) | `Quilt.columns` | The IndexBase instance assigned for column labels. |
 | [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-index) | `Quilt.index` | The IndexBase instance assigned for row labels. |
 | [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-inventory) | `Quilt.inventory` | Return a Frame indicating file\_path, last-modified time, and size of underlying… |
-| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-memory) | `Quilt.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-memory) | `Quilt.memory` | A MemoryDisplay, providing the size in memory of this object. For compound conta… |
 | [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-name) | `Quilt.name` | A hashable label attached to this container. Returns: Hashable |
 | [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-nbytes) | `Quilt.nbytes` | Return the total bytes of the underlying NumPy arrays. Returns: int |
 | [Detail](../api_detail/quilt-attribute.md#api-sig-quilt-ndim) | `Quilt.ndim` | Return the number of dimensions, which for a Frame is always 2. Returns: int |

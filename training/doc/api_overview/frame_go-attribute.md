@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2534,7 +2534,7 @@ Search
 | [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-columns) | `FrameGO.columns` | The IndexBase instance assigned for column labels. |
 | [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-dtypes) | `FrameGO.dtypes` | Return a Series of dytpes for each realizable column. Returns: Series |
 | [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-index) | `FrameGO.index` | The IndexBase instance assigned for row labels. |
-| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-memory) | `FrameGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-memory) | `FrameGO.memory` | A MemoryDisplay, providing the size in memory of this object. For compound conta… |
 | [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-mloc) | `FrameGO.mloc` | The memory locations, represented as an array of integers, of the underlying Num… |
 | [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-name) | `FrameGO.name` | A hashable label attached to this container. Returns: Hashable |
 | [Detail](../api_detail/frame_go-attribute.md#api-sig-framego-nbytes) | `FrameGO.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |

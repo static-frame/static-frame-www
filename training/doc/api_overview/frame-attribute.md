@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2534,7 +2534,7 @@ Search
 | [Detail](../api_detail/frame-attribute.md#api-sig-frame-columns) | `Frame.columns` | The IndexBase instance assigned for column labels. |
 | [Detail](../api_detail/frame-attribute.md#api-sig-frame-dtypes) | `Frame.dtypes` | Return a Series of dytpes for each realizable column. Returns: Series |
 | [Detail](../api_detail/frame-attribute.md#api-sig-frame-index) | `Frame.index` | The IndexBase instance assigned for row labels. |
-| [Detail](../api_detail/frame-attribute.md#api-sig-frame-memory) | `Frame.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/frame-attribute.md#api-sig-frame-memory) | `Frame.memory` | A MemoryDisplay, providing the size in memory of this object. For compound conta… |
 | [Detail](../api_detail/frame-attribute.md#api-sig-frame-mloc) | `Frame.mloc` | The memory locations, represented as an array of integers, of the underlying Num… |
 | [Detail](../api_detail/frame-attribute.md#api-sig-frame-name) | `Frame.name` | A hashable label attached to this container. Returns: Hashable |
 | [Detail](../api_detail/frame-attribute.md#api-sig-frame-nbytes) | `Frame.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |

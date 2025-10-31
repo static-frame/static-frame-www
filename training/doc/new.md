@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
+[![StaticFrame 3.5.1 documentation - Home](_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
 
 * [static-frame](readme.md)
 * [License](license.md)
@@ -2525,7 +2525,13 @@ Search
 
 # What is New in StaticFrame[#](#what-is-new-in-staticframe "Link to this heading")
 
-## 3.5.0[#](#id1 "Link to this heading")
+## 3.5.1[#](#id1 "Link to this heading")
+
+Now `Frame.memory` and `Frame().memory` share the same, comprehensive doc string.
+
+`CalllGuard` and other `TypeClinic` interfaces now properly handle `*args` and `**kwargs` when typed with a single type.
+
+## 3.5.0[#](#id2 "Link to this heading")
 
 Added support for Python 3.14.
 
@@ -2535,7 +2541,7 @@ Continuous integration quality checks now run on Python 3.14.
 
 Now using `nox` instead of `invoke` for project tasks.
 
-## 3.4.0[#](#id2 "Link to this heading")
+## 3.4.0[#](#id3 "Link to this heading")
 
 Corrected an issue in zero-size `Frame.from_concat()` usage.
 
@@ -2543,7 +2549,7 @@ Added `from_union()`, `from_intersection()`, and `from_difference()` constructor
 
 Improved memory efficiency when reading from file-based data stores and not using multiprocessing.
 
-## 3.3.0[#](#id3 "Link to this heading")
+## 3.3.0[#](#id4 "Link to this heading")
 
 Optimizations to store and use sorted status on all indices.
 
@@ -2551,13 +2557,13 @@ Updated `mypy` to 1.17.0.
 
 Corrected issue with large `IndexHierarchy` that exceed 64-bit encoding representation.
 
-## 3.2.0[#](#id4 "Link to this heading")
+## 3.2.0[#](#id5 "Link to this heading")
 
 Set `arraykit` version to 1.1.0.
 
 Integrated `arraykit.astype_array()`, `arraykit.is_objectable()`, and `arraykit.is_objectable_dt64()`.
 
-## 3.1.0[#](#id5 "Link to this heading")
+## 3.1.0[#](#id6 "Link to this heading")
 
 `TypeClinic` and related tools now properly handle `Unpack` used within `tuple`.
 
@@ -2567,7 +2573,7 @@ Added `read_frame_filter` parameter to `StoreConfig`.
 
 Set `arraykit` version to 1.0.9.
 
-## 3.0.0[#](#id6 "Link to this heading")
+## 3.0.0[#](#id7 "Link to this heading")
 
 API change: in interfaces with only one or two non-keyword arguments, those arguments are now positional-only arguments.
 
@@ -2583,7 +2589,7 @@ Set `arraykit` version to 1.0.8.
 
 `TypeClinic` now properly handles `tuple` shape type variables in NumPy arrays.
 
-## 2.18.0[#](#id7 "Link to this heading")
+## 2.18.0[#](#id8 "Link to this heading")
 
 Improved `Frame.from_sql()` to, when possible, set columnar `dtypes` from the types returned with the cursor `description` attribute.
 
@@ -2597,7 +2603,7 @@ Continuous integration quality checks now run on Python 3.13; now using `ruff` 0
 
 Updated `mypy` to 1.15.0.
 
-## 2.17.0[#](#id8 "Link to this heading")
+## 2.17.0[#](#id9 "Link to this heading")
 
 Added `inventory` attribute to `Bus`, `Yarn`, and `Quilt`, exposing, if relevant, information about file-based data stores.
 
@@ -2605,11 +2611,11 @@ Normalized interfaces of exception subclasses to permit using `copy` and `deepco
 
 Corrected issue in `TypeBlocks` that, for a single row `Frame` and a single column selection, could result in an unexpected 2D array.
 
-## 2.16.1[#](#id9 "Link to this heading")
+## 2.16.1[#](#id10 "Link to this heading")
 
 Added `persist()`, `persist[]`, `persist.loc[]` and `persist.iloc[]` interfaces to `Bus` and `Yarn` to selectively pre-load `Frame` to improve performance when loading from a store.
 
-## 2.16.0[#](#id10 "Link to this heading")
+## 2.16.0[#](#id11 "Link to this heading")
 
 Improvements to `Bus` to make `max_persist` usage maximally lazy, i.e., referenced `Frame` are never loaded until extracted. Selections that produce a new `Bus` will no longer load `Frame`.
 
@@ -2627,13 +2633,13 @@ Improved error messages when attempting to use `__setitem__` on immutable contai
 
 Updated `mypy` to 1.13.0.
 
-## 2.15.1[#](#id11 "Link to this heading")
+## 2.15.1[#](#id12 "Link to this heading")
 
 Corrected issues in using `via_fill_value` with containers using `IndexHierarchy`.
 
 Corrected issue when extending a `FrameGO` with a column label type that is not compatible with the existing column `Index`.
 
-## 2.15.0[#](#id12 "Link to this heading")
+## 2.15.0[#](#id13 "Link to this heading")
 
 `Frame.unset_index()`, `Frame.unset_columns()` now have a `drop` parameter.
 
@@ -2645,17 +2651,17 @@ Set `arraymap` version to 0.4.0.
 
 Added support for Python 3.13.
 
-## 2.14.0[#](#id13 "Link to this heading")
+## 2.14.0[#](#id14 "Link to this heading")
 
 Added `Series.via_mapping` interface to provide a fully type-compliant `Mapping` subclass.
 
 Performance enhancements to `reindex` and related `IndexHierarchy` operations.
 
-## 2.13.2[#](#id14 "Link to this heading")
+## 2.13.2[#](#id15 "Link to this heading")
 
 Corrected `Series` and `Frame` assignment such assigned tuples are always treated as elements.
 
-## 2.13.1[#](#id15 "Link to this heading")
+## 2.13.1[#](#id16 "Link to this heading")
 
 Corrected issue when using `iloc_min`, `iloc_max`, `loc_min`, `loc_max` on containers with `IndexHierarchy`.
 
@@ -2663,13 +2669,13 @@ Corrected issue when reindexing a `Frame` when both axis introduce fill values.
 
 Improved `via_fill_value` interfaces to retain `index` and `columns` `name` attribues when defined.
 
-## 2.13.0[#](#id16 "Link to this heading")
+## 2.13.0[#](#id17 "Link to this heading")
 
 Added `Frame.merge_left()`, `Frame.merge_right()`, `Frame.merge_inner()`, and `Frame.merge_outer()`.
 
 Updated `arraykit` to 0.9.0.
 
-## 2.12.0[#](#id17 "Link to this heading")
+## 2.12.0[#](#id18 "Link to this heading")
 
 Added `via_dt.year_quarter`.
 
@@ -2679,7 +2685,7 @@ Updated `arraykit` to 0.8.3.
 
 Updated `mypy` to 1.11.1.
 
-## 2.11.0[#](#id18 "Link to this heading")
+## 2.11.0[#](#id19 "Link to this heading")
 
 Added `Frame.reduce` and `Batch.reduce`.
 
@@ -2689,19 +2695,19 @@ All `via_hashlib` interfaces will now raise if an object `dtype` is encountered.
 
 Improved identification of mappings by using `collections.abc.Mapping`.
 
-## 2.10.3[#](#id19 "Link to this heading")
+## 2.10.3[#](#id20 "Link to this heading")
 
 Corrected issue in package publishing.
 
-## 2.10.2[#](#id20 "Link to this heading")
+## 2.10.2[#](#id21 "Link to this heading")
 
 Corrected issue in `Frame.pivot` whereby, under some scenarios, `fill_value` is not applied.
 
-## 2.10.1[#](#id21 "Link to this heading")
+## 2.10.1[#](#id22 "Link to this heading")
 
 Updated `arraykit` to 0.8.2.
 
-## 2.10.0[#](#id22 "Link to this heading")
+## 2.10.0[#](#id23 "Link to this heading")
 
 Support for NumPy 2.
 
@@ -2711,7 +2717,7 @@ Updated `arraymap` to 0.3.0.
 
 Updated `frame-fixtures` to 1.1.0.
 
-## 2.9.0[#](#id23 "Link to this heading")
+## 2.9.0[#](#id24 "Link to this heading")
 
 Added preliminary support for DuckDB with `Frame.to_duckdb()`, `Frame.from_duckdb()`, `Bus.to_duckdb()`, `Bus.from_duckdb()`, `Quilt.to_duckdb()`, `Quilt.from_duckdb()`, `Batch.to_duckdb()`, `Batch.from_duckdb()` and `Yarn.to_duckdb()`.
 
@@ -2719,15 +2725,15 @@ Added `name` parameter to `Frame.from_xlsx()`, `Frame.from_sqlite()`, and `` Fra
 
 Optimized routines for column iteration and `Frame.transpose()`.
 
-## 2.8.2[#](#id24 "Link to this heading")
+## 2.8.2[#](#id25 "Link to this heading")
 
 Updated `arraykit` to 0.7.2. Integrated enhancements in all 2D array to tuple routines.
 
-## 2.8.1[#](#id25 "Link to this heading")
+## 2.8.1[#](#id26 "Link to this heading")
 
 Updated `arraykit` to 0.6.3.
 
-## 2.8.0[#](#id26 "Link to this heading")
+## 2.8.0[#](#id27 "Link to this heading")
 
 New implementation, improved performance, and corrected issues in `Frame.join_left()`, `Frame.join_right()`, `Frame.join_inner()`, and `Frame.join_outer()`.
 
@@ -2735,11 +2741,11 @@ Updated `arraykit` to 0.6.2.
 
 Updated `typing-extensions` to 4.12.0.
 
-## 2.7.0[#](#id27 "Link to this heading")
+## 2.7.0[#](#id28 "Link to this heading")
 
 `CalllGuard` and other `TypeClinic` interfaces now support run-time usage of `TypeVar`.
 
-## 2.6.0[#](#id28 "Link to this heading")
+## 2.6.0[#](#id29 "Link to this heading")
 
 Internal redesign of `Yarn` to permit arbitrary reording of `Frame` in contained `Bus`.
 
@@ -2747,15 +2753,15 @@ Added `reindex()`, `sort_index()`, `sort_values()`, `roll()`, and `shift()` meth
 
 Improved bytes representation used by `Yarn.via_hashlib` to exclude internal implementation configuration.
 
-## 2.5.2[#](#id29 "Link to this heading")
+## 2.5.2[#](#id30 "Link to this heading")
 
 Improvements to `Yarn` to always support unique labels after `retain_labels` application.
 
-## 2.5.1[#](#id30 "Link to this heading")
+## 2.5.1[#](#id31 "Link to this heading")
 
 Extended `TypeClinic` and `CallGuard` support for generic NumPy `generic`.
 
-## 2.5.0[#](#id31 "Link to this heading")
+## 2.5.0[#](#id32 "Link to this heading")
 
 Removed support for Python 3.8.
 
@@ -2767,11 +2773,11 @@ Removed support for pre 1.0 Pandas.
 
 Updated minimum versions of optional packages.
 
-## 2.4.0[#](#id32 "Link to this heading")
+## 2.4.0[#](#id33 "Link to this heading")
 
 Added `isna()`, `notna()`, `isfalsy()`, and `notfalsy()` methods to all `IndexBase` subclasses.
 
-## 2.3.0[#](#id33 "Link to this heading")
+## 2.3.0[#](#id34 "Link to this heading")
 
 All `prod()` and `sum()` methods now have an `allna` parameter to, when `fillna` is `True`, specify a value if all values are NA.
 
@@ -2781,15 +2787,15 @@ URLs given to the `WWW` interface now escape spaces in path components.
 
 Performance enhancements to low-level `TypeBlocks` routines.
 
-## 2.2.3[#](#id34 "Link to this heading")
+## 2.2.3[#](#id35 "Link to this heading")
 
 Corrected issue with `Bus` with `IndexHierarchy` and `max_persist` greater than one.
 
-## 2.2.2[#](#id35 "Link to this heading")
+## 2.2.2[#](#id36 "Link to this heading")
 
 Corrected handling of ZIP64 extensions in `zip_namelist`.
 
-## 2.2.1[#](#id36 "Link to this heading")
+## 2.2.1[#](#id37 "Link to this heading")
 
 Corrected issue with non-sequential `Bus` selections with `max_persist` greater than one, resulting in incorrectly sized generators.
 
@@ -2797,19 +2803,19 @@ Performance enhancements to `Bus` loading routines with `max_persist`.
 
 Corrected handling of ZIP64 extensions in `ZipFileRO`.
 
-## 2.2.0[#](#id37 "Link to this heading")
+## 2.2.0[#](#id38 "Link to this heading")
 
 Performance enhancements to reading NPZ files and ZIP NPZ archives.
 
-## 2.1.2[#](#id38 "Link to this heading")
+## 2.1.2[#](#id39 "Link to this heading")
 
 `ContainerBase` added to the public namespace.
 
-## 2.1.1[#](#id39 "Link to this heading")
+## 2.1.1[#](#id40 "Link to this heading")
 
 Updated release automation in CI.
 
-## 2.1.0[#](#id40 "Link to this heading")
+## 2.1.0[#](#id41 "Link to this heading")
 
 Added `TSeriesAny`, `TSeriesHEAny`, `TBusAny` generic aliases.
 
@@ -2821,11 +2827,11 @@ Set `arraymap` to 0.2.2, now with functional wheels for Mac OS `arm64` / Apple S
 
 Added support for Python 3.12.
 
-## 2.0.1[#](#id41 "Link to this heading")
+## 2.0.1[#](#id42 "Link to this heading")
 
 Corrected import in `setup.py`.
 
-## 2.0.0[#](#id42 "Link to this heading")
+## 2.0.0[#](#id43 "Link to this heading")
 
 Nearly all containers are now generic, permitting specification of component types for static analysis and runtime validation.
 
@@ -2839,27 +2845,27 @@ Added `via_type_clinic` interfaces to all containers, exposing a pre-configured 
 
 Now performing static-analysis with both MyPy (1.6.1) and Pyright (1.1.331).
 
-## 1.6.5[#](#id43 "Link to this heading")
+## 1.6.5[#](#id44 "Link to this heading")
 
 Implemented fall-back behavior for Parquet files written with `pyarrow` less than 1.0.
 
-## 1.6.4[#](#id44 "Link to this heading")
+## 1.6.4[#](#id45 "Link to this heading")
 
 Improvements to typing through usage of `overload` signature definitions.
 
 Set `arraykit` to 0.4.10.
 
-## 1.6.3[#](#id45 "Link to this heading")
+## 1.6.3[#](#id46 "Link to this heading")
 
 Added `label_missing_skips` to all `iter_window` and related interfaces.
 
-## 1.6.2[#](#id46 "Link to this heading")
+## 1.6.2[#](#id47 "Link to this heading")
 
 Added `label_missing_raises` to all `iter_window` and related interfaces.
 
 Set `typing-extensions` to greater than or equal to 4.7.1
 
-## 1.6.1[#](#id47 "Link to this heading")
+## 1.6.1[#](#id48 "Link to this heading")
 
 Corrected exception raised in `IndexHierarchy.level_drop()` when provided count is 0.
 
@@ -2869,11 +2875,11 @@ Updated `mypy` configuration for broader checks.
 
 Numerous typing improvements and enhancements.
 
-## 1.6.0[#](#id48 "Link to this heading")
+## 1.6.0[#](#id49 "Link to this heading")
 
 Comprehensive improvements and expansions to type hints using Python 3.11 and NumPy 1.25.
 
-## 1.5.0[#](#id49 "Link to this heading")
+## 1.5.0[#](#id50 "Link to this heading")
 
 Removed support for Python 3.7.
 
@@ -2885,23 +2891,23 @@ Usage of `from __future__ import annotations` in all modules.
 
 Normalized exceptions raised from invalid selections to raise `KeyError`.
 
-## 1.4.6[#](#id50 "Link to this heading")
+## 1.4.6[#](#id51 "Link to this heading")
 
 Set `arraykit` to 0.4.9.
 
-## 1.4.5[#](#id51 "Link to this heading")
+## 1.4.5[#](#id52 "Link to this heading")
 
 Imports of `ThreadPoolExecutor` and `ProcessPoolExecutor` are now deferred until used.
 
 Multiprocessing interfaces that use `ProcessPoolExecutor` now accept the `mp_context` parameter.
 
-## 1.4.4[#](#id52 "Link to this heading")
+## 1.4.4[#](#id53 "Link to this heading")
 
 Set `arraymap` to 0.1.9.
 
 Updated `TypeBlocks` to use `BlockIndex.iter_block()`.
 
-## 1.4.3[#](#id53 "Link to this heading")
+## 1.4.3[#](#id54 "Link to this heading")
 
 Integrated `arraykit.BlockIndex` in `TypeBlocks`, offering significant `Frame` performance improvements.
 
@@ -2913,7 +2919,7 @@ Corrected issue when using an `Index` as a selector in `via_fill_value().loc[]`.
 
 Added `ErrorInitColumns` to better indicated failures in column `Index` construction.
 
-## 1.4.2[#](#id54 "Link to this heading")
+## 1.4.2[#](#id55 "Link to this heading")
 
 Improved performance when assigning an `Index` with `FrameGO.__setitem__()`.
 
@@ -2923,15 +2929,15 @@ Set `arraymap` to 0.1.8.
 
 Removed deprecated JSON interfaces: `Frame.from_json()`, `Frame.from_json_url()`.
 
-## 1.4.1[#](#id55 "Link to this heading")
+## 1.4.1[#](#id56 "Link to this heading")
 
 Optimizations to reduce `TypeBlocks` size and initialization time.
 
-## 1.4.0[#](#id56 "Link to this heading")
+## 1.4.0[#](#id57 "Link to this heading")
 
 Replaces `automap` with `arraymap` 0.1.7, offering optimized `Index` performance.
 
-## 1.3.2[#](#id57 "Link to this heading")
+## 1.3.2[#](#id58 "Link to this heading")
 
 Corrected issue with `Frame.iter_element().apply()` whereby `columns.name` are not preserved.
 
@@ -2939,23 +2945,23 @@ Corrected issue when selecting a single row from a `Frame` that has object colum
 
 Set `arraykit` version to 0.3.4.
 
-## 1.3.1[#](#id58 "Link to this heading")
+## 1.3.1[#](#id59 "Link to this heading")
 
 Set `arraykit` version to 0.3.1.
 
-## 1.3.0[#](#id59 "Link to this heading")
+## 1.3.0[#](#id60 "Link to this heading")
 
 The `via_dt` interface now supports usage of a `fill_value` argument for handling missing values.
 
 Added `unique_enumerated()` method to `Series` and `Frame`.
 
-## 1.2.7[#](#id60 "Link to this heading")
+## 1.2.7[#](#id61 "Link to this heading")
 
 Set `arraykit` version to 0.3.0: replaced usage of `np.nonzero()` with `first_true_1d()` and `first_true_2d()`.
 
 Specifiers of dtypes given to `astype()` and related interfaces will now permit “object” to be used (in addition to `object`).
 
-## 1.2.6[#](#id61 "Link to this heading")
+## 1.2.6[#](#id62 "Link to this heading")
 
 Corrected issue when selecting `IndexHierarchy` labels that contain tuples.
 
@@ -2963,7 +2969,7 @@ Corrected issue when selecting `IndexHierarchy` labels that contain tuples.
 
 Better usage of `np.concatenate` in `TypeBlocks.transpose()` and `HierarchicalLocMap.build_offsets_and_overflow()`.
 
-## 1.2.5[#](#id62 "Link to this heading")
+## 1.2.5[#](#id63 "Link to this heading")
 
 Specifiers of dtypes given to `astype()` and related interfaces will now raise if NumPy will implicitly convert the argument to `object`.
 
@@ -2973,29 +2979,29 @@ Improvements to usage of `index_constructor` and `columns_constructor` arguments
 
 When using a `Batch` to write to an archive, non-unique labels will now raise a `StoreLabelNonUnique` exception.
 
-## 1.2.4[#](#id63 "Link to this heading")
+## 1.2.4[#](#id64 "Link to this heading")
 
 `IndexHierarchy.__setstate__` now properly sets indexers to be immutable.
 
 `Bus` with associated `Store` instances are now pickleable after removing `_weak_cache` in `Store.__getstate__()`.
 
-## 1.2.3[#](#id64 "Link to this heading")
+## 1.2.3[#](#id65 "Link to this heading")
 
 `Series.isna()`, `Series.dropna()`, and related functions now properly handle arrays that contain objects such as `Frame` or `np.ndarray` that raise for usage of `__bool__()`.
 
 Set `arraykit` version to 0.2.9: `isna_element` now identifies `pd.Timestamp('nat')` as a NA value, and invalid `datetime64` strings given to `Frame.from_delimited` and related interfaces now properly raise exceptions.
 
-## 1.2.2[#](#id65 "Link to this heading")
+## 1.2.2[#](#id66 "Link to this heading")
 
 Corrected issue in `IndexHierarchy.label_widths_at_depth()` which caused incorrect cell merging in XLSX output when `merge_hierarchical_labels` is True.
 
-## 1.2.1[#](#id66 "Link to this heading")
+## 1.2.1[#](#id67 "Link to this heading")
 
 Corrected issue in `Series.dropna()` whereby full drops would not retain the index class.
 
 Performance enhancement to `TypeBlocks.equals()` and related routines using `arrays_equal()`.
 
-## 1.2.0[#](#id67 "Link to this heading")
+## 1.2.0[#](#id68 "Link to this heading")
 
 Significant performance optimizations to `IndexHierarchy` set operations, as well as optimized pathways for determining `TypeBlocks` equality.
 
@@ -3007,13 +3013,13 @@ Corrected issue in `Frame.relabel_shift_out()` where `index_constructors` are no
 
 Extended `Frame.iter_tuple()` `constructor` argument to support `dataclass`-created classes.
 
-## 1.1.1[#](#id68 "Link to this heading")
+## 1.1.1[#](#id69 "Link to this heading")
 
 Corrected handling of 0-sized containers in `Frame.insert_before()` and `Frame.insert_after()`.
 
 Corrected issue with some `IndexHierarchy` formations when using slices in an `HLoc` with more than one depth selection.
 
-## 1.1.0[#](#id69 "Link to this heading")
+## 1.1.0[#](#id70 "Link to this heading")
 
 Added `Frame.consolidate` interface, including `Frame.consolidate[]` and `Frame.consolidate.status`.
 
@@ -3025,11 +3031,11 @@ Added `index_constructors` arguments to `IndexHierarchy.rehierarch()`, `Series.r
 
 Added `index_constructors`, `columns_constructors` arguments to `Frame.rehierarch()`.
 
-## 1.0.1[#](#id70 "Link to this heading")
+## 1.0.1[#](#id71 "Link to this heading")
 
 Parameters `dtypes`, `fill_value`, and `format` (given to `via_str.format`) now properly work with `defaultdict`, infinite iterators, and mappings indexed by position (when columns are not defined or created with `IndexAutoFactory`).
 
-## 1.0.0[#](#id71 "Link to this heading")
+## 1.0.0[#](#id72 "Link to this heading")
 
 API change: `IndexHierarchy` numerical and statistical methods, such as `sum()`, `var()`, `std()`, `cumprod()`, `cumsum()`, now raise `NotImplementedError`.
 
@@ -3041,7 +3047,7 @@ API change: `IndexDefaultFactory` renamed `IndexDefaultConstructorFactory`.
 
 Added `via_dt.year_month`.
 
-## 0.9.23[#](#id72 "Link to this heading")
+## 0.9.23[#](#id73 "Link to this heading")
 
 Added `via_hashlib` interface to all containers.
 
@@ -3051,7 +3057,7 @@ Added `Series.iter_group_other()`, `Series.iter_group_other_items()`, `Series.it
 
 Set `arraykit` version to 0.2.6.
 
-## 0.9.22[#](#id73 "Link to this heading")
+## 0.9.22[#](#id74 "Link to this heading")
 
 `IndexYear` now accepts selection by integers for years.
 
@@ -3061,7 +3067,7 @@ Added `Frame.loc_notna_first()`, `Frame.loc_notna_last()`, `Frame.loc_notfalsy_f
 
 Set `arraykit` version to 0.2.4.
 
-## 0.9.21[#](#id74 "Link to this heading")
+## 0.9.21[#](#id75 "Link to this heading")
 
 Set `arraykit` version to 0.2.3.
 
@@ -3071,7 +3077,7 @@ Improvements to delimited file parsing when `index_depth` is greater than zero a
 
 Corrected issue where Pandas `MutliIndex` are not converted to `IndexHierarchy` in `Frame.from_pandas()` or `Series.from_pandas()`.
 
-## 0.9.20[#](#id75 "Link to this heading")
+## 0.9.20[#](#id76 "Link to this heading")
 
 Added `via_str.format()` for applying Python formatting mini-language strings to elements.
 
@@ -3083,7 +3089,7 @@ Added `Frame.to_json_index()`, `Frame.to_json_columns`, `Frame.to_json_split()`,
 
 Added `axis` argument to `Series.count()` for compatibility with `Frame` interface.
 
-## 0.9.19[#](#id76 "Link to this heading")
+## 0.9.19[#](#id77 "Link to this heading")
 
 `Frame.from_delimited` now powered by `arraykit.delimited_to_arrays`, offering vastly improved performance for all delimited file reading.
 
@@ -3095,7 +3101,7 @@ Added `columns_select`, `skip_initial_space`, `quoting`, `quote_double`, `escape
 
 Corrected issue in converting to `IndexHierarchy` from Pandas `MultiIndex` when the `MultiIndex` is bloated.
 
-## 0.9.18[#](#id77 "Link to this heading")
+## 0.9.18[#](#id78 "Link to this heading")
 
 Improved layout of default `memory` display.
 
@@ -3103,7 +3109,7 @@ Corrected issue where a non matching `Series` assignment or reindex might use `f
 
 Certain invalid `Frame` selections now properly raise `KeyError`.
 
-## 0.9.17[#](#id78 "Link to this heading")
+## 0.9.17[#](#id79 "Link to this heading")
 
 Unified implementation of `IndexBase` set and concatenation operations.
 
@@ -3113,7 +3119,7 @@ Set `automap` version to 0.6.1.
 
 Extended `Batch.astype` interface to fully cover `Frame.astype` interface.
 
-## 0.9.16[#](#id79 "Link to this heading")
+## 0.9.16[#](#id80 "Link to this heading")
 
 Added `memory` property to display memory usage via `MemoryDisplay` interfaces.
 
@@ -3129,7 +3135,7 @@ Improved error reporting for invalid `IndexHierarchy`.
 
 `IndexHierarchy.from_index_items()` now supports items of `IndexHierarchy`.
 
-## 0.9.15[#](#id80 "Link to this heading")
+## 0.9.15[#](#id81 "Link to this heading")
 
 Added `__repr__()` for `HLoc`.
 
@@ -3147,7 +3153,7 @@ Implemented argument checking on all `IndexHierarchy` depth selection parameters
 
 Corrected return type of `via_str.contains()` to return Booleans.
 
-## 0.9.14[#](#id81 "Link to this heading")
+## 0.9.14[#](#id82 "Link to this heading")
 
 Added `Frame.corr()`, `Series.corr()`, and `Batch.corr()`.
 
@@ -3155,7 +3161,7 @@ Added `compression` argument to `StoreClientMixin` exporters that write ZIPs.
 
 Corrected issue with selection on zero-sized `IndexHierarchy`.
 
-## 0.9.13[#](#id82 "Link to this heading")
+## 0.9.13[#](#id83 "Link to this heading")
 
 Added `to_zip_npy()` and `from_zip_npy()` interfaces to `Bus`, `Batch`, `Yarn`, and `Quilt`.
 
@@ -3167,7 +3173,7 @@ Continuous integration quality checks now using pylint 2.15.0 and isort 5.10.1
 
 Minimum pyarrow set to 0.17.0
 
-## 0.9.12[#](#id83 "Link to this heading")
+## 0.9.12[#](#id84 "Link to this heading")
 
 `ErrorNPYEncode` exceptions raised during authoring NPZ files or NPY directories now remove those files or directories.
 
@@ -3175,7 +3181,7 @@ Minimum pyarrow set to 0.17.0
 
 Authoring NPYs to a pre-existing directory will now raise a `RuntimeError`.
 
-## 0.9.11[#](#id84 "Link to this heading")
+## 0.9.11[#](#id85 "Link to this heading")
 
 Supplying an `IndexDatetime` subclass as an `explicit_constructor` to an `IndexAutoFactory` now raises.
 
@@ -3183,11 +3189,11 @@ Corrected issue with `fillna` and `fillfalsy` functions when non-elemental fill 
 
 Updated `arraykit` to 0.1.13.
 
-## 0.9.10[#](#id85 "Link to this heading")
+## 0.9.10[#](#id86 "Link to this heading")
 
 Corrected single depth selection issue with `IndexHierarchy`.
 
-## 0.9.9[#](#id86 "Link to this heading")
+## 0.9.9[#](#id87 "Link to this heading")
 
 Updated `arraykit` to 0.1.12.
 
@@ -3199,7 +3205,7 @@ Corrected issue when `Frame.astype()` called with an empty `Frame`.
 
 Extended `via_values` property to take optional consolidation arguments via `__call__()` constructor; usage of `via_values` instance returns same-typed, same-sized container.
 
-## 0.9.8[#](#id87 "Link to this heading")
+## 0.9.8[#](#id88 "Link to this heading")
 
 Added `via_values` property to `Series`, `Index`, `Frame`, `IndexHierarchy` and `Batch`; permits applying functions to complete containers with `apply()` and supports usage as arguments in arbitrary NumPy functions with `__array_ufunc__()`.
 
@@ -3217,13 +3223,13 @@ Corrected issue in `ArchiveZIP` when `__del__` is called when no archive is set.
 
 API Documentation re-organized, now using procedurally generated code examples.
 
-## 0.9.7[#](#id88 "Link to this heading")
+## 0.9.7[#](#id89 "Link to this heading")
 
 Corrected issue in `Series.from_overlay()` that prematurely aborted processing all `Series`
 
 Normalized ordering of results from `Frame.bloc[]` selections.
 
-## 0.9.6[#](#id89 "Link to this heading")
+## 0.9.6[#](#id90 "Link to this heading")
 
 Corrected issue in `Quilt` creation when given a `Bus` with `Frame` with `datetime64` indices.
 
@@ -3233,13 +3239,13 @@ Improvements to consistency and performance of `loc_to_iloc`.
 
 Implemented `max` and `min` methods on `IndexHierarchy`; related statistical methods now raise.
 
-## 0.9.5[#](#id90 "Link to this heading")
+## 0.9.5[#](#id91 "Link to this heading")
 
 Updated AutoMap to 0.5.1
 
 Removed “performance” package from `setup.py`.
 
-## 0.9.4[#](#id91 "Link to this heading")
+## 0.9.4[#](#id92 "Link to this heading")
 
 Enhanced support for `fill_value` as a `FillValueAuto`, a mapping, or a sequence of fill values (per column) where appropriate.
 
@@ -3255,7 +3261,7 @@ Improved `Frame.iter_tuple` to not coerce types through arrays.
 
 Added `Frame.set_columns()`, `Frame.set_columns_hierarchy()`, and `Frame.unset_columns()`.
 
-## 0.9.3[#](#id92 "Link to this heading")
+## 0.9.3[#](#id93 "Link to this heading")
 
 Added `apply_element()` and `apply_element_items()` methods to `FrameAssign` and `SeriesAssign` interfaces.
 
@@ -3271,19 +3277,19 @@ Corrected issue and performance of `name` assignment when extracting `Series` fr
 
 Added `IndexAutoConstructorFactory` for automatic constructor selection based on NumPy dtype.
 
-## 0.9.2[#](#id93 "Link to this heading")
+## 0.9.2[#](#id94 "Link to this heading")
 
 Corrected more issues when calling `IndexHierarchy.loc[]` with another `IndexHierarchy`, or when calling `Frame.assign.apply` when that frame has `IndexHierarchy` columns.
 
 Corrected undesirable type coercion from happening in single-row selections from `IndexHierarchy`.
 
-## 0.9.1[#](#id94 "Link to this heading")
+## 0.9.1[#](#id95 "Link to this heading")
 
 Corrected issue when calling `IndexDatetime.loc[]` with an empty list.
 
 Corrected issue when calling `IndexHierarchy.loc[]` with another `IndexHierarchy`
 
-## 0.9.0[#](#id95 "Link to this heading")
+## 0.9.0[#](#id96 "Link to this heading")
 
 API change: `Bus` no longer accepts a `Series` on initialization; use `Bus.from_series()`.
 
@@ -3303,21 +3309,21 @@ Fixed issue when using `Frame.from_npz` with an NPZ created with a `FrameGO`.
 
 Fixed issue when supplying overspecified mappings to `Frame.astype`.
 
-## 0.8.38[#](#id96 "Link to this heading")
+## 0.8.38[#](#id97 "Link to this heading")
 
 Further improved handling of binary equality operators with `IndexDatetime` subclasses.
 
-## 0.8.37[#](#id97 "Link to this heading")
+## 0.8.37[#](#id98 "Link to this heading")
 
 Improved handling of binary equality operators with `IndexDatetime` subclasses.
 
-## 0.8.36[#](#id98 "Link to this heading")
+## 0.8.36[#](#id99 "Link to this heading")
 
 Extended interface of `Batch` to include all methods for handling missing values, as well as all `via_*` interfaces.
 
 Silenced all NumPy warnings where the issue raised in the warning is being explicitly handled in the code.
 
-## 0.8.35[#](#id99 "Link to this heading")
+## 0.8.35[#](#id100 "Link to this heading")
 
 Performance enhancements to `Frame.pivot()`, `Frame.iter_group()`, and `Frame.iter_group_items()`.
 
@@ -3327,7 +3333,7 @@ Extended `Series.from_overlay()` and `Frame.from_overlay()` to support `func` an
 
 Extended `via_fill_value()` interfaces to implement `__getitem__` and `loc` selection interfaces on `Series` and `Frame` for selections that potentially contain new labels filled with the fill value.
 
-## 0.8.34[#](#id100 "Link to this heading")
+## 0.8.34[#](#id101 "Link to this heading")
 
 Added `NPY` and `NPZ` interfaces for creating NPY and NPZ archvies from arrays and `Frame` components.
 
@@ -3355,11 +3361,11 @@ Improvement to `Index` initialization to raise `ErrorInitIndex` if given a singl
 
 Set operations on labels of different `datetime64` units now raise an `Exception`.
 
-## 0.8.33[#](#id101 "Link to this heading")
+## 0.8.33[#](#id102 "Link to this heading")
 
 Performance enhancements to `Frame.from_npy` and `Frame.from_npz`.
 
-## 0.8.32[#](#id102 "Link to this heading")
+## 0.8.32[#](#id103 "Link to this heading")
 
 Added `Frame.to_pickle()`, `Frame.from_pickle()`.
 
@@ -3367,19 +3373,19 @@ Added `index_constructor`, `columns_constructor` to `Frame.from_concat`.
 
 Fixed issue in `Frame.insert_after()`, `Frame.insert_before()`, `Series.insert_after()`, `Series.insert_before()` with negative `ILoc` labels.
 
-## 0.8.31[#](#id103 "Link to this heading")
+## 0.8.31[#](#id104 "Link to this heading")
 
 Added `Frame.from_npy_mmap`; removed `memory_map` option from `Frame.from_npy`.
 
-## 0.8.30[#](#id104 "Link to this heading")
+## 0.8.30[#](#id105 "Link to this heading")
 
 Performance enhancements to `Frame.from_npy` and `Frame.from_npz`.
 
-## 0.8.29[#](#id105 "Link to this heading")
+## 0.8.29[#](#id106 "Link to this heading")
 
 Added `consolidate_blocks` Boolean parameter to `Frame.to_npz()` and `Frame.to_npy`.
 
-## 0.8.28[#](#id106 "Link to this heading")
+## 0.8.28[#](#id107 "Link to this heading")
 
 Added `Frame.to_npy()`, `Frame.from_npy()` with a `memory_map` option.
 
@@ -3391,7 +3397,7 @@ Added `IndexHiearchy.relabel_at_depth()`.
 
 Added support for string slicing and selection with `Series.via_str[]` and `Frame.via_str[]`.
 
-## 0.8.27[#](#id107 "Link to this heading")
+## 0.8.27[#](#id108 "Link to this heading")
 
 Reimplemented `Frame.to_npz()`, `Frame.from_npz()`, removing support for object arrays (and pickles) and improving performance.
 
@@ -3409,29 +3415,29 @@ Fixed issue in `Frame.set_index()` where `column` is passed as `None`.
 
 Removed `TypeBlocks._block_slices`.
 
-## 0.8.26[#](#id108 "Link to this heading")
+## 0.8.26[#](#id109 "Link to this heading")
 
 `Frame.to_pandas()` now creates `pd.RangeIndex` for `IndexAutoFactory`-created indices.
 
 Performance enhancements to `Frame.from_concat()`.
 
-## 0.8.25[#](#id109 "Link to this heading")
+## 0.8.25[#](#id110 "Link to this heading")
 
 Corrected issue extracting containers stored in `Series`.
 
-## 0.8.24[#](#id110 "Link to this heading")
+## 0.8.24[#](#id111 "Link to this heading")
 
 Improved dtype resoltion on `Frame` methods that reduce dimensionality.
 
-## 0.8.23[#](#id111 "Link to this heading")
+## 0.8.23[#](#id112 "Link to this heading")
 
 Corrected issue where summing a `Frame` of Booleans along axis 0 resulted in Booleans instead of integers.
 
-## 0.8.22[#](#id112 "Link to this heading")
+## 0.8.22[#](#id113 "Link to this heading")
 
 Performance enhancements to `Frame.iter_group()` and `Frame.iter_group_items()`.
 
-## 0.8.21[#](#id113 "Link to this heading")
+## 0.8.21[#](#id114 "Link to this heading")
 
 Added `Frame.to_npz()`, `Frame.from_npz()`.
 
@@ -3447,7 +3453,7 @@ Fixed issue with `Frame.from_overlay` when called with `FrameGO`.
 
 Added `index_constructor` argument to `apply`, `apply_pool`, `map_any`, `map_fill`, `map_all`.
 
-## 0.8.20[#](#id114 "Link to this heading")
+## 0.8.20[#](#id115 "Link to this heading")
 
 Added `dtypes` parameter to `Frame.from_pandas()`.
 
@@ -3463,7 +3469,7 @@ Added `Quilt.sample()`.
 
 Performance enhancements to `Bus` loading routines when using `max_persist` by refactoring internal architecture of `Bus` to no longer hold a reference to a `Series` but instead use a mutable array.
 
-## 0.8.19[#](#id115 "Link to this heading")
+## 0.8.19[#](#id116 "Link to this heading")
 
 Optimization of `Bus.items()`, `Bus.values`, `Bus.iter_element()`, and `Bus.iter_element_items()` when `max_persist` is greater than one.
 
@@ -3487,7 +3493,7 @@ Fixed issue when using `iter_window_*` methods on two-dimensional containers whe
 
 Fixed issue when selecting rows from `Frame` with 0-length columns.
 
-## 0.8.18[#](#id116 "Link to this heading")
+## 0.8.18[#](#id117 "Link to this heading")
 
 Implementation of `Yarn()`, a container that presents numerous `Bus` as a uniform, 1D interface.
 
@@ -3499,7 +3505,7 @@ Improved handling of reindexing and lookups between datetime64 and date / dateti
 
 `Frame.equals()`, `Series.equals()`, `Index.equals()`, `IndexHiearchy.equals()` and all related routines now distinguish by `datetime64` unit in evaluating basic equality.
 
-## 0.8.17[#](#id117 "Link to this heading")
+## 0.8.17[#](#id118 "Link to this heading")
 
 Extended `Series.count()` and `Frame.count()` with `skipfalsy` and `unique` parameters.
 
@@ -3521,7 +3527,7 @@ Added `index_constructor`, `columns_constructor` arguments to `Frame.from_concat
 
 Introduced `IndexDefaultConstructorFactory` to permit specifying index `name` attributes with default index constructors.
 
-## 0.8.16[#](#id118 "Link to this heading")
+## 0.8.16[#](#id119 "Link to this heading")
 
 Added `Frame.to_series()`.
 
@@ -3531,7 +3537,7 @@ Added `Frame.to_series()`.
 
 `IndexAutoFactory` can now be instantiated with a `size` parameter to pre-set the size of an auto-index, such as when used to initialize a `FrameGO`.
 
-## 0.8.15[#](#id119 "Link to this heading")
+## 0.8.15[#](#id120 "Link to this heading")
 
 Added support for loading containers into specialized VisiData `Sheet` and `IndexSheet` subclasses; added `to_visidata()` exporter to all containers.
 
@@ -3545,7 +3551,7 @@ Fixed issue in `Series.from_element()` and `Frame.from_element()` that would bro
 
 Extended `Frame.unset_index()` to support unsetting `IndexHierarchy`.
 
-## 0.8.14[#](#id120 "Link to this heading")
+## 0.8.14[#](#id121 "Link to this heading")
 
 Added `index_continuation_token` and `columns_continuation_token` to `Frame.from_delimited()` and related methods.
 
@@ -3553,17 +3559,17 @@ Added `via_re()` interfaces to `Index`, `IndexHierarchy`, `Series`, `Frame`.
 
 Updated `arraykit` to 0.1.8
 
-## 0.8.13[#](#id121 "Link to this heading")
+## 0.8.13[#](#id122 "Link to this heading")
 
 Integration with `arraykit`; replacement of numerous utility methods with `arraykit` implementations.
 
 Added `via_fill_value()` interface to `Series` and `Frame`.
 
-## 0.8.12[#](#id122 "Link to this heading")
+## 0.8.12[#](#id123 "Link to this heading")
 
 Performance enhancements to `Quilt.iter_series().apply()`, `Quilt.iter_tuple().apply()`, `Quilt.iter_array().apply()`.
 
-## 0.8.11[#](#id123 "Link to this heading")
+## 0.8.11[#](#id124 "Link to this heading")
 
 Fixed issue when supplying `dtype` arguments to `apply` methods with string dtypes.
 
@@ -3573,7 +3579,7 @@ In group-by operations where the group key is a hashable, the returned `Index.na
 
 Performance enhancements to `Bus.iter_element().apply()` and Bus.iter\_element\_items().apply()`.
 
-## 0.8.10[#](#id124 "Link to this heading")
+## 0.8.10[#](#id125 "Link to this heading")
 
 Performance enhancements to `Index` initialization.
 
@@ -3581,7 +3587,7 @@ Performance enhancements to `Series.iter_element().apply()`, `Series.iter_elemen
 
 Performance enhancements to `Frame.iter_series().apply()`, `Frame.iter_tuple().apply()`, `Frame.iter_array().apply()`.
 
-## 0.8.9[#](#id125 "Link to this heading")
+## 0.8.9[#](#id126 "Link to this heading")
 
 Performance enhancements to `Series.dropna()`.
 
@@ -3589,13 +3595,13 @@ Performance enhancements to `Series.dropna()`.
 
 Fixed issue in `Frame.assign.loc[]` when using a Boolean array as a column selector.
 
-## 0.8.8[#](#id126 "Link to this heading")
+## 0.8.8[#](#id127 "Link to this heading")
 
 Added `Frame.cov()`, `Series.cov()`, and `Batch.cov()`.
 
 Performance enhancements to `loc` selections by element.
 
-## 0.8.7[#](#id127 "Link to this heading")
+## 0.8.7[#](#id128 "Link to this heading")
 
 Implemented support for multiprocessing Frame writing from `StoreZip` subclasses used by `Bus`, `Batch`, and `Quilt`.
 
@@ -3607,7 +3613,7 @@ Improved exceptions raised when attempting to write to a file at an invalid path
 
 Improved handling of reading files with columns but no data with `Frame.from_delimited`.
 
-## 0.8.6[#](#id128 "Link to this heading")
+## 0.8.6[#](#id129 "Link to this heading")
 
 `Frame.rename` now accepts optional arguments for `index` and `columns` renaming.
 
@@ -3621,7 +3627,7 @@ Extended `IndexHierarchy.level_drop` to perform corresponding drops on `name` wh
 
 Extended `Frame.set_index` to support creating a 1D index of tuples when more than one column is selected.
 
-## 0.8.5[#](#id129 "Link to this heading")
+## 0.8.5[#](#id130 "Link to this heading")
 
 `Frame.from_sql` now properly applies `dtypes` to columns used by `index_depth` selections.
 
@@ -3629,13 +3635,13 @@ Added `Index.unique` and `IndexHierarchy.unique`, both taking a `depth_level` sp
 
 Fixed issue with `Frame.bloc` selections that result in a zero-sized `Series`.
 
-## 0.8.4[#](#id130 "Link to this heading")
+## 0.8.4[#](#id131 "Link to this heading")
 
 Refined `Frame.bloc` selections to reduce type coercion.
 
 Improved `Frame.assign.bloc` when assigning with `Series` and `Frame`.
 
-## 0.8.3[#](#id131 "Link to this heading")
+## 0.8.3[#](#id132 "Link to this heading")
 
 Added `iloc_searchsorted()` and `loc_searchsorted()` to `Index`, `IndexDatetime`, and `IndexHierarchy`.
 
@@ -3647,13 +3653,13 @@ Improved handling for NumPy Boolean types stored in SQLite DBs via `StoreSQLite`
 
 Improved loc\_to\_iloc() methods to raise for missing keys in Index created where loc\_is\_iloc.
 
-## 0.8.2[#](#id132 "Link to this heading")
+## 0.8.2[#](#id133 "Link to this heading")
 
 Added `Series.iloc_searchsorted()` and `Series.loc_searchsorted()`.
 
 Interfaces of `Frame.to_delimited()`, `Frame.to_csv()`, `Frame.to_tsv()`, and `Frame.to_clipboard()` are extended with parameters for control of quoting and escaping delimiters and other characters. The standard library’s `csv` module is now used for writing.
 
-## 0.8.1[#](#id133 "Link to this heading")
+## 0.8.1[#](#id134 "Link to this heading")
 
 API change: `Frame.from_element_loc_items()` renamed `Frame.from_element_items`; `Frame.from_element_iloc_items` is removed.
 
@@ -3685,7 +3691,7 @@ Implemented `Bus.reindex()`, `Bus.relabel()`, `Bus.relabel_flat()`, `Bus.relabel
 
 Implemented `Bus.roll()`, `Bus.shift()`.
 
-## 0.8.0[#](#id134 "Link to this heading")
+## 0.8.0[#](#id135 "Link to this heading")
 
 API change: `Frame.sort_values()` now has a `label` positional argument that replaces the former `key` positional argument.
 
@@ -3701,7 +3707,7 @@ API change: `iter_array`, `iter_array_items`, `iter_series`, and `iter_series_it
 
 Added `key` argument for sort pre-processing to `Frame.sort_values()`.
 
-## 0.7.15[#](#id135 "Link to this heading")
+## 0.7.15[#](#id136 "Link to this heading")
 
 Added `key` argument for sort pre-processing to `Index.sort()`, `IndexHierarchy.sort()`, `Series.sort_index()`, `Series.sort_values()`, `Frame.sort_index()`, `Frame.sort_columns`
 
@@ -3719,7 +3725,7 @@ Added `index_name_depth_level`, `columns_name_depth_level` parameters to `Frame.
 
 Fixed issue where non-optimal dtype would be used for new columns added in reindexing.
 
-## 0.7.14[#](#id136 "Link to this heading")
+## 0.7.14[#](#id137 "Link to this heading")
 
 Added immutable, hashable containers `SeriesHE` and `FrameHE`.
 
@@ -3731,7 +3737,7 @@ Improved type-preservation and performance when assigning `Frame` into `Frame`.
 
 Added `Bus.from_items()` constructor.
 
-## 0.7.13[#](#id137 "Link to this heading")
+## 0.7.13[#](#id138 "Link to this heading")
 
 Improved handling for using `Frame.iter_group` on zero-sized `Frame`.
 
@@ -3739,7 +3745,7 @@ Improved handling for using `Frame.iter_group` on zero-sized `Frame`.
 
 Added `via_dt.strptime` and `via_dt.strpdate` for parsing strings to Python `date`, `datetime` objects, respectively.
 
-## 0.7.12[#](#id138 "Link to this heading")
+## 0.7.12[#](#id139 "Link to this heading")
 
 `Bus` indices are no longer required to be string typed.
 
@@ -3753,15 +3759,15 @@ Extended `via_str.startswith()` and `via_str.endswith()` functions to support pa
 
 Improved `IndexHierarchy.loc_to_iloc` to support Boolean array selections.
 
-## 0.7.11[#](#id139 "Link to this heading")
+## 0.7.11[#](#id140 "Link to this heading")
 
 Corrected issue in `Frame.iter_series` due to recent optimization.
 
-## 0.7.10[#](#id140 "Link to this heading")
+## 0.7.10[#](#id141 "Link to this heading")
 
 Improvements to `Quilt` extraction routines.
 
-## 0.7.9[#](#id141 "Link to this heading")
+## 0.7.9[#](#id142 "Link to this heading")
 
 Improved handling of invalid file paths given to constructors.
 
@@ -3771,7 +3777,7 @@ Implementation of `Quilt`, a container that presents the contents of a `Bus` as 
 
 Implemented `__deepcopy__()` on all containers.
 
-## 0.7.8[#](#id142 "Link to this heading")
+## 0.7.8[#](#id143 "Link to this heading")
 
 `Frame.iter_tuple_items()` now exposes a `constructor` argument to control creation of axis containers.
 
@@ -3783,7 +3789,7 @@ Added `Frame.sample`, `Series.sample`, `Index.sample`, `IndexHierarchy.sample`, 
 
 Added `Frame.via_T` and `IndexHierarchy.via_T` accessors for opposite axis binary operator application of 1D operands.
 
-## 0.7.7[#](#id143 "Link to this heading")
+## 0.7.7[#](#id144 "Link to this heading")
 
 `IndexHierarchy.iter_label` now defaults to iterating full depth labels.
 
@@ -3791,17 +3797,17 @@ Added `Frame.via_T` and `IndexHierarchy.via_T` accessors for opposite axis binar
 
 `Frame.iter_tuple()` now exposes a `constructor` argument to control creation of axis containers.
 
-## 0.7.6[#](#id144 "Link to this heading")
+## 0.7.6[#](#id145 "Link to this heading")
 
 Fixed issue in using `Frame.extend` with zero-length `Frame`.
 
-## 0.7.5[#](#id145 "Link to this heading")
+## 0.7.5[#](#id146 "Link to this heading")
 
 Implemented `Frame.isin` on `TypeBlocks`.
 
 Implemented `Frame.clip` on `TypeBlocks`.
 
-## 0.7.4[#](#id146 "Link to this heading")
+## 0.7.4[#](#id147 "Link to this heading")
 
 `Series.from_element` now works correctly with tuples
 
@@ -3811,7 +3817,7 @@ Implemented `Frame.clip` on `TypeBlocks`.
 
 `Frame.to_parquet`, `Frame.to_arrow` now convert `datetime64` units to nanosecond if not supported by PyArrow.
 
-## 0.7.3[#](#id147 "Link to this heading")
+## 0.7.3[#](#id148 "Link to this heading")
 
 `Bus` now exposes `max_persist` parameter to define the maximum number of loaded `Frame` retained by the `Bus`.
 
@@ -3831,15 +3837,15 @@ Improved type detection when performing operations on `Frame.iter_element` itera
 
 `Frame.roll()` `include_index`, `include_columns` is now key-word argument only.
 
-## 0.7.2[#](#id148 "Link to this heading")
+## 0.7.2[#](#id149 "Link to this heading")
 
 Extended application of binary equality operators to permit comparison with arrays of single elements.
 
-## 0.7.1[#](#id149 "Link to this heading")
+## 0.7.1[#](#id150 "Link to this heading")
 
 Refined application of binary equality operators to permit comparison with strings or elements that are not sequences.
 
-## 0.7.0[#](#id150 "Link to this heading")
+## 0.7.0[#](#id151 "Link to this heading")
 
 API change: `__bool__` of all containers now raises a ValueError.
 
@@ -3853,7 +3859,7 @@ API change: `Frame.from_xlsx`, as well as `StoreConfig` now set `trim_nadir` to 
 
 API change: `Series.relabel_add_level` to `Series.relabel_level_add`, `Series.relabel_drop_level` to `Series.relabel_level_drop`, `Frame.relabel_add_level` to `Frame.relabel_level_add`, `Frame.relabel_drop_level` to `Frame.relabel_level_drop`, `Index.add_level` to `Index.level_add`, `IndexHierarchy.add_level` to `IndexHierarchy.level_add`, `IndexHierarchy.drop_level` to `IndexHierarchy.level_drop`.
 
-## 0.6.38[#](#id151 "Link to this heading")
+## 0.6.38[#](#id152 "Link to this heading")
 
 `Frame.dtype` interface now takes `TDtypesSpecifier`, permitting setting `dtype` by mapping, iterable, or single value.
 
@@ -3865,11 +3871,11 @@ API change: `Series.relabel_add_level` to `Series.relabel_level_add`, `Series.re
 
 `Frame.from_parquet` now raises when `columns_select` names columns not found in the file.
 
-## 0.6.37[#](#id152 "Link to this heading")
+## 0.6.37[#](#id153 "Link to this heading")
 
 Fixed issue in implementation of `trim_nadir` when reading XLSX files.
 
-## 0.6.36[#](#id153 "Link to this heading")
+## 0.6.36[#](#id154 "Link to this heading")
 
 Fixed issue in `Frame.from_pandas` when the columns have mixed types including integers.
 
@@ -3877,7 +3883,7 @@ Improved `dtype` preservation in zero-sized `Series` extraction from `Frame`.
 
 Added `trim_nadir` parameter to `StoreConfig` and `Frame.from_xlsx`: permits removing all-None trailing rows and columns resulting from XLSX styles being applied to empty cells.
 
-## 0.6.35[#](#id154 "Link to this heading")
+## 0.6.35[#](#id155 "Link to this heading")
 
 Added a `name` parameter to `Series.from_pandas` and `Frame.from_pandas`.
 
@@ -3889,7 +3895,7 @@ Added `StoreClientMixin.to_zip_parquet` and `StoreClientMixin.from_zip_parquet`.
 
 Performance improvements to `Frame.to_pandas` when a `Frame` has unified `TypeBlocks`.
 
-## 0.6.34[#](#id155 "Link to this heading")
+## 0.6.34[#](#id156 "Link to this heading")
 
 Updated all delimited text output formats to include a final line termination.
 
@@ -3897,13 +3903,13 @@ Updated all delimited text output formats to include a final line termination.
 
 Improvements to union/intersection index formation in `Frame.from_overlay` and `Series.from_overlay`.
 
-## 0.6.33[#](#id156 "Link to this heading")
+## 0.6.33[#](#id157 "Link to this heading")
 
 Performance improvements to `Frame.pivot`.
 
 `Frame.from_xlsx` now exposes `skip_header` and `skip_footer` parameters.
 
-## 0.6.32[#](#id157 "Link to this heading")
+## 0.6.32[#](#id158 "Link to this heading")
 
 Added `Frame.from_overlay`, `Series.from_overlay` constructors.
 
@@ -3911,11 +3917,11 @@ Added support for `dataclass` as records in `Frame.from_records` and `Frame.from
 
 Additional delegated `Frame` methods added to `Batch`.
 
-## 0.6.31[#](#id158 "Link to this heading")
+## 0.6.31[#](#id159 "Link to this heading")
 
 Fixed issue when loading pickled containers where Boolean selection would not be properly identified.
 
-## 0.6.30[#](#id159 "Link to this heading")
+## 0.6.30[#](#id160 "Link to this heading")
 
 Added `via_dt.fromisoformat()` to all containers, supporting creation of date/datetime objects from ISO 8601 strings.
 
@@ -3931,7 +3937,7 @@ Exposed `store_filter` parameter in `Frame.from_xlsx`,``Frame.to\_xlsx``.
 
 Removed `format_index`, `format_columns` attributes from `StoreConfig`.
 
-## 0.6.29[#](#id160 "Link to this heading")
+## 0.6.29[#](#id161 "Link to this heading")
 
 Fixed issue in `Series.drop` when the `Series` has an `IndexHierarchy`.
 
@@ -3941,7 +3947,7 @@ Calling `Index.from_pandas`, `Series.from_pandas`, and `Frame.from_pandas` now r
 
 `StoreConfig` given to `Bus.to_xlsx`, `Bus.to_sqlite`, and `Bus.to_hdf5` are now properly used.
 
-## 0.6.28[#](#id161 "Link to this heading")
+## 0.6.28[#](#id162 "Link to this heading")
 
 Introduced the `Batch`, a lazy, parallel processor of groups of `Frame`.
 
@@ -3959,27 +3965,27 @@ Added index\_name\_depth\_level and columns\_name\_depth\_level to Frame.from\_d
 
 Added index\_name\_depth\_level, columns\_name\_depth\_level to `StoreConfig` and `Frame.from_xlsx` interfaces.
 
-## 0.6.27[#](#id162 "Link to this heading")
+## 0.6.27[#](#id163 "Link to this heading")
 
 Improved implementation of `Frame.pivot`.
 
-## 0.6.26[#](#id163 "Link to this heading")
+## 0.6.26[#](#id164 "Link to this heading")
 
 Removed class-level documentation injection, permitting better static analysis.
 
 Corrected issue in appending tuples to an empty `IndexGO`.
 
-## 0.6.25[#](#id164 "Link to this heading")
+## 0.6.25[#](#id165 "Link to this heading")
 
 Added `Frame.from_clipboard()` and `Frame.to_clipboard()`.
 
 Added `Frame.pivot_stack()` and `Frame.pivot_unstack()`.
 
-## 0.6.24[#](#id165 "Link to this heading")
+## 0.6.24[#](#id166 "Link to this heading")
 
 Fixed flaw in difference operations on `IndexDatetime` subclasses of equivalent indices.
 
-## 0.6.23[#](#id166 "Link to this heading")
+## 0.6.23[#](#id167 "Link to this heading")
 
 `Frame.from_parquet` and `Frame.from_arrow` now accept a `dtypes` argument.
 
@@ -3995,13 +4001,13 @@ Added `IndexHierarchy.from_names` constructor for creating zero-length `IndexHie
 
 Refinements to `IndexHierarchy` to support grow-only mutation from zero length.
 
-## 0.6.22[#](#id167 "Link to this heading")
+## 0.6.22[#](#id168 "Link to this heading")
 
 Fixed flaw in `IndexLevel` for handling of zero-length levels.
 
 Fixed flaw in `TypeBlocks.iloc` that caused an undesirable reference cycle.
 
-## 0.6.21[#](#id168 "Link to this heading")
+## 0.6.21[#](#id169 "Link to this heading")
 
 `IndexHierarchy` set operations will now delegate `Index` types when they are equivalent between operands at corresponding depth levels.
 
@@ -4009,19 +4015,19 @@ Fixed flaw in `TypeBlocks.iloc` that caused an undesirable reference cycle.
 
 Fixed issue when calling `relabel_add_level()` from a `FrameGO`.
 
-## 0.6.20[#](#id169 "Link to this heading")
+## 0.6.20[#](#id170 "Link to this heading")
 
 Extended functionality of `HLoc` selections in `IndexHierarchy` to properly handle selection lists, Boolean arrays, and nested `ILoc` selections.
 
 Corrected issue in `Frame.from_concat` whereby, when given inputs with `IndexHierarchy`, `IndexHierarchy` were not returned.
 
-## 0.6.19[#](#id170 "Link to this heading")
+## 0.6.19[#](#id171 "Link to this heading")
 
 Extended `name` propagation to applications of binary operators where an operand is a scalar.
 
 Binary operators now work with `Frame` and same-shaped NumPy arrays.
 
-## 0.6.18[#](#id171 "Link to this heading")
+## 0.6.18[#](#id172 "Link to this heading")
 
 Extended support for step arguments in `loc` interfaces.
 
@@ -4035,7 +4041,7 @@ Implemented `Series.insert_before`, `Series.insert_after`.
 
 Fixed issue where, when passing an array to `Frame.from_records`, the `name` parameter is not passed to the constructor.
 
-## 0.6.17[#](#id172 "Link to this heading")
+## 0.6.17[#](#id173 "Link to this heading")
 
 Implemented `equals()` methods on all containers.
 
@@ -4045,13 +4051,13 @@ Added proper handling of types multiple-inherited from `str` (or any other type)
 
 Implemented support for operator overloading of addition and multiplication on string dtypes.
 
-## 0.6.16[#](#id173 "Link to this heading")
+## 0.6.16[#](#id174 "Link to this heading")
 
 Implemented `via_str` and `via_dt` accesors on all `ContainerOperand`.
 
 When writing to XLSX, the shape of the `Frame` is validated to fit within the limits of XLSX sheets.
 
-## 0.6.15[#](#id174 "Link to this heading")
+## 0.6.15[#](#id175 "Link to this heading")
 
 Added support for `round()` on `Frame`.
 
@@ -4063,19 +4069,19 @@ Performance improvements to iterating tuples from `IndexHierarchy`.
 
 Performance improvements for `IndexHierarchy` transformations, including adding or dropping levels and rehierarch.
 
-## 0.6.14[#](#id175 "Link to this heading")
+## 0.6.14[#](#id176 "Link to this heading")
 
 Added explicit handling for binary operators applied to differently-sized `IndexHierarchy`.
 
-## 0.6.13[#](#id176 "Link to this heading")
+## 0.6.13[#](#id177 "Link to this heading")
 
 Refined behavior of `Frame.from_concat_items` when given tuples as labels; implemented support for tuples as labels in `IndexLevels.values_at_depth`.
 
-## 0.6.12[#](#id177 "Link to this heading")
+## 0.6.12[#](#id178 "Link to this heading")
 
 Refined behavior of `names` attribute on `IndexBase` to ensure that an appropriately sized iterable of labels is always returned.
 
-## 0.6.11[#](#id178 "Link to this heading")
+## 0.6.11[#](#id179 "Link to this heading")
 
 Added `IndexHour` and `IndexHourGO` indices.
 
@@ -4105,7 +4111,7 @@ Fixed flaw in `Frame` function application on iterators for some `Index` type co
 
 API documentation now shows full signatures for all functions.
 
-## 0.6.10[#](#id179 "Link to this heading")
+## 0.6.10[#](#id180 "Link to this heading")
 
 Improvements to `interface` display, including in inclusion of function arguments and new “Assignment” category; improvements to API documentation.
 
@@ -4115,7 +4121,7 @@ Fixed issue creating a `datetime64` `Index` from another `datetime64` `Index` wh
 
 Fixed an issue when passing an immutable `Index` as `columns` in `FrameGO.reindex`.
 
-## 0.6.9[#](#id180 "Link to this heading")
+## 0.6.9[#](#id181 "Link to this heading")
 
 `Series` default constructor now efficiently handles `Series` given as `values`.
 
@@ -4123,7 +4129,7 @@ Fixed an issue when passing an immutable `Index` as `columns` in `FrameGO.reinde
 
 `AutoMap` now serves as the core mapping structure for all `Index` object, offering better performance, immutability, and internal uniqueness checks.
 
-## 0.6.8[#](#id181 "Link to this heading")
+## 0.6.8[#](#id182 "Link to this heading")
 
 Fixed issue in using `relabel()` on columns in `FrameGO`.
 
@@ -4141,33 +4147,33 @@ Refined `Frame.from_arrow` usage of ChunkedArray, disabling `date_as_object`, en
 
 Added `STATIC` attribute to `ContainerBase` and all subclasses.
 
-## 0.6.7[#](#id182 "Link to this heading")
+## 0.6.7[#](#id183 "Link to this heading")
 
 Fixed issue in assigning a column to a `FrameGO` from a generator that raises an exception.
 
-## 0.6.6[#](#id183 "Link to this heading")
+## 0.6.6[#](#id184 "Link to this heading")
 
 Added `difference` method to all `Index` subclasses.
 
 Added `index_constructor` and `columns_constructor` parameters to `Frame.from_pandas`; `index_constructor` added to `Series.from_pandas`.
 
-## 0.6.5[#](#id184 "Link to this heading")
+## 0.6.5[#](#id185 "Link to this heading")
 
 Refined `IndexBase.from_pandas`.
 
-## 0.6.4[#](#id185 "Link to this heading")
+## 0.6.4[#](#id186 "Link to this heading")
 
 Fixed issue introduced into `Frame.iter_group` and `Frame.iter_group_items` when selecting a single column with an object dytpe.
 
 Fixed mapping lookups to use single-argument tuples in `map_any_iter_items` and `map_fill_iter_items` and related methods.
 
-## 0.6.3[#](#id186 "Link to this heading")
+## 0.6.3[#](#id187 "Link to this heading")
 
 Improvements to `any` and `all` methods on all containers when using `skipna=True` and NAs are presernt; now, a `TypeError` will now be raised when NAs are found and `skipna=False`.
 
 When converting from Pandas 1.0 extension dtypes, proper NumPy types are used if no `pd.NA` are present; if `pd.NA` are present, they are replaced with `np.nan` in the resulting object array.
 
-## 0.6.2[#](#id187 "Link to this heading")
+## 0.6.2[#](#id188 "Link to this heading")
 
 `Frame.sort_values` now accepts multiple labels given as any iterable.
 
@@ -4177,7 +4183,7 @@ Removed creation of internal mapping object for `IndexAutoFactory` indices, or w
 
 Improved induction of dtype for labels array stored in `Index`.
 
-## 0.6.1[#](#id188 "Link to this heading")
+## 0.6.1[#](#id189 "Link to this heading")
 
 The `bloc` and `assign.bloc` selectors on `Frame` now use `[]` instead of `()`, aligning the interface with other selectors.
 
@@ -4195,13 +4201,13 @@ Fixed issue in `Frame` display where, when at or one less than the count of `dis
 
 Zero-sized `Frame` now return zero-sized `Series` from selection where possible.
 
-## 0.6.0[#](#id189 "Link to this heading")
+## 0.6.0[#](#id190 "Link to this heading")
 
 Removed deprecated `Frame` and `Series` non-specialized constructor usage; removed support for providing mapping types to `apply`.
 
 Improved support for using tuples in `Frame.__getitem__` and `FrameGO.__setitem__` with `IndexHierarchy` and `Index` with tuple labels.
 
-## 0.5.13[#](#id190 "Link to this heading")
+## 0.5.13[#](#id191 "Link to this heading")
 
 Made `Frame.clip`, `Frame.duplicated`, `Frame.drop_duplicated` key-word argument only. Made `Series.clip`, `Series.duplicated`, `Series.drop_duplicated` key-word argument only.
 
@@ -4211,7 +4217,7 @@ Added `Index.head()`, `Index.tail()`, `IndexHierarchy.head()`, `IndexHierarchy.t
 
 `Frame.from_records` and related routines now do full type induction per column; all type induction on untyped iterables now examines all values.
 
-## 0.5.12[#](#id191 "Link to this heading")
+## 0.5.12[#](#id192 "Link to this heading")
 
 All `Index` subclasses now use `PositionsAllocator` to share immutable positions arrays, increasing `Index` performance.
 
@@ -4239,17 +4245,17 @@ Removed `keys()` and `items()` methods from `Index` and `IndexHierarch`; default
 
 Added to `IterNodeDelegate` the following methods for applying mapping types to iterators: `map_all`, `map_any`, and `map_fill`. Generator versions are also made available: `map_all_iter`, `map_all_iter_items`, `map_any_iter`, `map_any_iter_items`, `map_fill_iter`, `map_fill_iter_items`.
 
-## 0.5.11[#](#id192 "Link to this heading")
+## 0.5.11[#](#id193 "Link to this heading")
 
 Fixed issue in `Frame.assign` when assigning iterables into a single column.
 
-## 0.5.10[#](#id193 "Link to this heading")
+## 0.5.10[#](#id194 "Link to this heading")
 
 Improvements to `Frame.assign` to handle unordered column selectors and preserve columnar types not affected by assignment.
 
 Restored application of default column and index formattng in `StoreXLSX`.
 
-## 0.5.9[#](#id194 "Link to this heading")
+## 0.5.9[#](#id195 "Link to this heading")
 
 Fixed issue in `__slots__` usage of derived Containers.
 
@@ -4261,7 +4267,7 @@ Improved handling of reading XLSX files with trailing all-empty rows resulting f
 
 Improved HDF5 reading so as to reduce memory overhead.
 
-## 0.5.8[#](#id195 "Link to this heading")
+## 0.5.8[#](#id196 "Link to this heading")
 
 Fixed issue in `Frame.sort_values()` when `axis=0` and underlying block structure is homogenous.
 
@@ -4273,7 +4279,7 @@ Improved passing of index `names` in `IndexHierarchy.to_pandas`.
 
 Improved propagation of `name` in methods of `Index` and `IndexHierarchy`.
 
-## 0.5.7[#](#id196 "Link to this heading")
+## 0.5.7[#](#id197 "Link to this heading")
 
 `StoreFilter` added to the public namespace.
 
@@ -4283,13 +4289,13 @@ Improved handling of `ILoc` usage within `loc` calls.
 
 Improved input and output from/to XLSX.
 
-## 0.5.6[#](#id197 "Link to this heading")
+## 0.5.6[#](#id198 "Link to this heading")
 
 `Frame.from_concat`, `Series.from_concat` now accept empty iterables.
 
 `Frame.iter_group.apply` and related routines now handle producing a Series from a multi-column group selection.
 
-## 0.5.5[#](#id198 "Link to this heading")
+## 0.5.5[#](#id199 "Link to this heading")
 
 `Index` objects based on `datetime64` now accept Python `datetime.date` objects in `loc` expressions.
 
@@ -4297,11 +4303,11 @@ Fixed index formation when using `apply` on `Frame.iter_group` and `Frame.iter_g
 
 Fixed issue in a `Frame.to_frame_go()` not creating a fully decoupled `Index` for columns in the returned `Frame`.
 
-## 0.5.4[#](#id199 "Link to this heading")
+## 0.5.4[#](#id200 "Link to this heading")
 
 `Index` objects based on `datetime64` now return empty Series when a partial `loc` selection does not match any values found in the `Index`.
 
-## 0.5.3[#](#id200 "Link to this heading")
+## 0.5.3[#](#id201 "Link to this heading")
 
 `Frame.set_index_hiearchy` passes on `name` to returned `Frame`.
 
@@ -4309,13 +4315,13 @@ Fixed issue in a `Frame.to_frame_go()` not creating a fully decoupled `Index` fo
 
 Exposed `interface` attribute on `ContainerBase` subclasses.
 
-## 0.5.2[#](#id201 "Link to this heading")
+## 0.5.2[#](#id202 "Link to this heading")
 
 Refinements to `Series.isin()`, `Frame.isin()`, `Index.isin()`, and `IndexHierarchy.isin()` to better identify cases of unique elements.
 
 Added `IndexMinute` datetime index subclass.
 
-## 0.5.1[#](#id202 "Link to this heading")
+## 0.5.1[#](#id203 "Link to this heading")
 
 Implemented handling in `Frame.from_delimited` for column-only files.
 
@@ -4325,7 +4331,7 @@ Implemented handling in `Frame.from_delimited` for column-only files.
 
 `Frame.from_concat` now implements better type preservation in vertical concatenation of arrays.
 
-## 0.5.0[#](#id203 "Link to this heading")
+## 0.5.0[#](#id204 "Link to this heading")
 
 Introduced the `Bus`, a `Series`-like container of mulitple `Frame`, supporting lazily reading from and writing to XLSX, SQLite, and HDF5 data stores, as well as zipped pickles and delimited files.
 
@@ -4379,11 +4385,11 @@ Improved `Frame.to_pandas()` to preserve columnar types.
 
 Added `Frame.from_dict_records` and `Frame.from_dict_records_items`; when given records, the union of all keys is used to derive columns.
 
-## 0.4.3[#](#id204 "Link to this heading")
+## 0.4.3[#](#id205 "Link to this heading")
 
 Fixed issues in `FrameGO` setitem and using binary operators between `Frame` and `FrameGO`.
 
-## 0.4.2[#](#id205 "Link to this heading")
+## 0.4.2[#](#id206 "Link to this heading")
 
 Corrected flaw in axis 1 statistical operations with `Frame` constructed from mixed sized `TypeBlocks`.
 
@@ -4391,7 +4397,7 @@ Added `Series.loc_min`, `Series.loc_max`, `Series.iloc_min`, `Series.iloc_max`.
 
 Added `Frame.loc_min`, `Frame.loc_max`, `Frame.iloc_min`, `Frame.iloc_max`,
 
-## 0.4.1[#](#id206 "Link to this heading")
+## 0.4.1[#](#id207 "Link to this heading")
 
 `iter_element().apply` now properly preserves index and column types.
 
@@ -4411,7 +4417,7 @@ Improved dtype selection in `FrameGO` set item and related functions.
 
 Added `IndexHierarchy.dtypes` and `IndexHierarchy.index_types`, returning `Series` indexed by `name` when possible.
 
-## 0.4.0[#](#id207 "Link to this heading")
+## 0.4.0[#](#id208 "Link to this heading")
 
 Improved handling for special cases `Series` initialization, including initialization from iterables of lists.
 
@@ -4423,7 +4429,7 @@ The following `Series` and `Frame` methods are renamed: `reindex_flat`, `reindex
 
 Implemented `Frame.from_sql` constructor.
 
-## 0.3.9[#](#id208 "Link to this heading")
+## 0.3.9[#](#id209 "Link to this heading")
 
 `IndexAutoFactory` introduced to consolidate creation of auto-incremented integer indices, and provide a single token to force auto-incremented integer indices in other contexts where `index` arguments are taken.
 
@@ -4435,7 +4441,7 @@ Added new `DisplyaConfig` parameters to format floating-point values: `value_for
 
 Set default `value_format_float_scientific` and `value_format_complex_scientific` to avoid truncation of scientific notation in output displays.
 
-## 0.3.8[#](#id209 "Link to this heading")
+## 0.3.8[#](#id210 "Link to this heading")
 
 All duplicate-handling functions now support heterogenously typed object arrays with unsortable (but hashable) types.
 
@@ -4445,7 +4451,7 @@ Functions with the `skipna` argument now properly skip `None` in `Frames` with b
 
 `Frame.to_csv` now uses the argument name delimiter instead of sep, aligning with the usage in `Frame.from_csv`.
 
-## 0.3.7[#](#id210 "Link to this heading")
+## 0.3.7[#](#id211 "Link to this heading")
 
 Completed implementation of `Frame.fillna_forward`, `Frame.fillna_backward`, `Frame.fillna_leading`, `Frame.fillna_trailing`.
 
@@ -4463,7 +4469,7 @@ All containers now derive from `ContainerOperand`, simplyfying inheritance and `
 
 All construction from Python iterables now better handle array creation from diverse Python objects.
 
-## 0.3.6[#](#id211 "Link to this heading")
+## 0.3.6[#](#id212 "Link to this heading")
 
 `Frame.to_frame_go` now properly handles `IndexHierarchy` columns.
 
@@ -4477,7 +4483,7 @@ Improved creation of `IndexHierarchy` from other `IndexHierarchy` or `IndexHiera
 
 `Frame`, `Series`, `Index`, and `IndexHierarchy` all have improved implementations of `cumprod` and `cumsum` methods.
 
-## 0.3.5[#](#id212 "Link to this heading")
+## 0.3.5[#](#id213 "Link to this heading")
 
 Improved type handling of `datetime64` typed columns in `Frame`.
 
@@ -4497,13 +4503,13 @@ Fixed flaw in dropping columns from a `Frame` (via `Frame.set_index` or the `Fra
 
 Index objects based on `datetime64` now support selection with slices with `datetime64` units different than those used in the `Index`.
 
-## 0.3.4[#](#id213 "Link to this heading")
+## 0.3.4[#](#id214 "Link to this heading")
 
 Added `dtypes` argument to all relevant `Frame` constructors; `dtypes` can now be specified with a dictionary.
 
 Deprecated instantiating a `Frame` from `dict`; added `Frame.from_dict` for explicit `Frame` creation from a `dict`.
 
-## 0.3.3[#](#id214 "Link to this heading")
+## 0.3.3[#](#id215 "Link to this heading")
 
 Improvements to all `datetime64` based indicies: direct creation from labels now properly parses values into `datetime64`, and `loc`-style lookups now handle partial matches on lower-resolution datetimes. Added `IndexSecond` and `IndexMillisecond` Index classes.
 
@@ -4515,7 +4521,7 @@ Improvements to application of ellipsis when normalizing width in `Display` stri
 
 `Series.iloc`, when a non-mulitple selection is given, now returns a single element, not a `Series`.
 
-## 0.3.2[#](#id215 "Link to this heading")
+## 0.3.2[#](#id216 "Link to this heading")
 
 `IndexHierarchy.level_drop()` and related methods have been updated such that negative integers drop innermost levels, and postive integers drop outermost levels. This is an API breaking change.
 
@@ -4525,7 +4531,7 @@ Improved `loc` and `HLoc` usage on Series with `IndexHierarchy` to insure a Seri
 
 `IndexHierarchy.from_labels()` now returns proper error message for invalid tree forms.
 
-## 0.3.1[#](#id216 "Link to this heading")
+## 0.3.1[#](#id217 "Link to this heading")
 
 Implemented Series.iter\_group\_index(), Series.iter\_group\_index\_items(), Frame.iter\_group\_index(), Frame.iter\_group\_index\_items() for producing iterators (and targets of function application) based on groupings of the index; particularly useful for IndexHierarhcy.
 
@@ -4549,7 +4555,7 @@ The `Frame.from_records()` method has been extended to support explicitly passin
 
 The `Frame.from_concat()` constructor now handles hierarchical indices correctly.
 
-## 0.3.0[#](#id217 "Link to this heading")
+## 0.3.0[#](#id218 "Link to this heading")
 
 The `Index.keys()` method now returns the underlying KeysView from the Index’s dictionary.
 
@@ -4576,223 +4582,224 @@ Contributing](contributing.md "next page")
 
 On this page
 
-* [3.5.0](#id1)
-* [3.4.0](#id2)
-* [3.3.0](#id3)
-* [3.2.0](#id4)
-* [3.1.0](#id5)
-* [3.0.0](#id6)
-* [2.18.0](#id7)
-* [2.17.0](#id8)
-* [2.16.1](#id9)
-* [2.16.0](#id10)
-* [2.15.1](#id11)
-* [2.15.0](#id12)
-* [2.14.0](#id13)
-* [2.13.2](#id14)
-* [2.13.1](#id15)
-* [2.13.0](#id16)
-* [2.12.0](#id17)
-* [2.11.0](#id18)
-* [2.10.3](#id19)
-* [2.10.2](#id20)
-* [2.10.1](#id21)
-* [2.10.0](#id22)
-* [2.9.0](#id23)
-* [2.8.2](#id24)
-* [2.8.1](#id25)
-* [2.8.0](#id26)
-* [2.7.0](#id27)
-* [2.6.0](#id28)
-* [2.5.2](#id29)
-* [2.5.1](#id30)
-* [2.5.0](#id31)
-* [2.4.0](#id32)
-* [2.3.0](#id33)
-* [2.2.3](#id34)
-* [2.2.2](#id35)
-* [2.2.1](#id36)
-* [2.2.0](#id37)
-* [2.1.2](#id38)
-* [2.1.1](#id39)
-* [2.1.0](#id40)
-* [2.0.1](#id41)
-* [2.0.0](#id42)
-* [1.6.5](#id43)
-* [1.6.4](#id44)
-* [1.6.3](#id45)
-* [1.6.2](#id46)
-* [1.6.1](#id47)
-* [1.6.0](#id48)
-* [1.5.0](#id49)
-* [1.4.6](#id50)
-* [1.4.5](#id51)
-* [1.4.4](#id52)
-* [1.4.3](#id53)
-* [1.4.2](#id54)
-* [1.4.1](#id55)
-* [1.4.0](#id56)
-* [1.3.2](#id57)
-* [1.3.1](#id58)
-* [1.3.0](#id59)
-* [1.2.7](#id60)
-* [1.2.6](#id61)
-* [1.2.5](#id62)
-* [1.2.4](#id63)
-* [1.2.3](#id64)
-* [1.2.2](#id65)
-* [1.2.1](#id66)
-* [1.2.0](#id67)
-* [1.1.1](#id68)
-* [1.1.0](#id69)
-* [1.0.1](#id70)
-* [1.0.0](#id71)
-* [0.9.23](#id72)
-* [0.9.22](#id73)
-* [0.9.21](#id74)
-* [0.9.20](#id75)
-* [0.9.19](#id76)
-* [0.9.18](#id77)
-* [0.9.17](#id78)
-* [0.9.16](#id79)
-* [0.9.15](#id80)
-* [0.9.14](#id81)
-* [0.9.13](#id82)
-* [0.9.12](#id83)
-* [0.9.11](#id84)
-* [0.9.10](#id85)
-* [0.9.9](#id86)
-* [0.9.8](#id87)
-* [0.9.7](#id88)
-* [0.9.6](#id89)
-* [0.9.5](#id90)
-* [0.9.4](#id91)
-* [0.9.3](#id92)
-* [0.9.2](#id93)
-* [0.9.1](#id94)
-* [0.9.0](#id95)
-* [0.8.38](#id96)
-* [0.8.37](#id97)
-* [0.8.36](#id98)
-* [0.8.35](#id99)
-* [0.8.34](#id100)
-* [0.8.33](#id101)
-* [0.8.32](#id102)
-* [0.8.31](#id103)
-* [0.8.30](#id104)
-* [0.8.29](#id105)
-* [0.8.28](#id106)
-* [0.8.27](#id107)
-* [0.8.26](#id108)
-* [0.8.25](#id109)
-* [0.8.24](#id110)
-* [0.8.23](#id111)
-* [0.8.22](#id112)
-* [0.8.21](#id113)
-* [0.8.20](#id114)
-* [0.8.19](#id115)
-* [0.8.18](#id116)
-* [0.8.17](#id117)
-* [0.8.16](#id118)
-* [0.8.15](#id119)
-* [0.8.14](#id120)
-* [0.8.13](#id121)
-* [0.8.12](#id122)
-* [0.8.11](#id123)
-* [0.8.10](#id124)
-* [0.8.9](#id125)
-* [0.8.8](#id126)
-* [0.8.7](#id127)
-* [0.8.6](#id128)
-* [0.8.5](#id129)
-* [0.8.4](#id130)
-* [0.8.3](#id131)
-* [0.8.2](#id132)
-* [0.8.1](#id133)
-* [0.8.0](#id134)
-* [0.7.15](#id135)
-* [0.7.14](#id136)
-* [0.7.13](#id137)
-* [0.7.12](#id138)
-* [0.7.11](#id139)
-* [0.7.10](#id140)
-* [0.7.9](#id141)
-* [0.7.8](#id142)
-* [0.7.7](#id143)
-* [0.7.6](#id144)
-* [0.7.5](#id145)
-* [0.7.4](#id146)
-* [0.7.3](#id147)
-* [0.7.2](#id148)
-* [0.7.1](#id149)
-* [0.7.0](#id150)
-* [0.6.38](#id151)
-* [0.6.37](#id152)
-* [0.6.36](#id153)
-* [0.6.35](#id154)
-* [0.6.34](#id155)
-* [0.6.33](#id156)
-* [0.6.32](#id157)
-* [0.6.31](#id158)
-* [0.6.30](#id159)
-* [0.6.29](#id160)
-* [0.6.28](#id161)
-* [0.6.27](#id162)
-* [0.6.26](#id163)
-* [0.6.25](#id164)
-* [0.6.24](#id165)
-* [0.6.23](#id166)
-* [0.6.22](#id167)
-* [0.6.21](#id168)
-* [0.6.20](#id169)
-* [0.6.19](#id170)
-* [0.6.18](#id171)
-* [0.6.17](#id172)
-* [0.6.16](#id173)
-* [0.6.15](#id174)
-* [0.6.14](#id175)
-* [0.6.13](#id176)
-* [0.6.12](#id177)
-* [0.6.11](#id178)
-* [0.6.10](#id179)
-* [0.6.9](#id180)
-* [0.6.8](#id181)
-* [0.6.7](#id182)
-* [0.6.6](#id183)
-* [0.6.5](#id184)
-* [0.6.4](#id185)
-* [0.6.3](#id186)
-* [0.6.2](#id187)
-* [0.6.1](#id188)
-* [0.6.0](#id189)
-* [0.5.13](#id190)
-* [0.5.12](#id191)
-* [0.5.11](#id192)
-* [0.5.10](#id193)
-* [0.5.9](#id194)
-* [0.5.8](#id195)
-* [0.5.7](#id196)
-* [0.5.6](#id197)
-* [0.5.5](#id198)
-* [0.5.4](#id199)
-* [0.5.3](#id200)
-* [0.5.2](#id201)
-* [0.5.1](#id202)
-* [0.5.0](#id203)
-* [0.4.3](#id204)
-* [0.4.2](#id205)
-* [0.4.1](#id206)
-* [0.4.0](#id207)
-* [0.3.9](#id208)
-* [0.3.8](#id209)
-* [0.3.7](#id210)
-* [0.3.6](#id211)
-* [0.3.5](#id212)
-* [0.3.4](#id213)
-* [0.3.3](#id214)
-* [0.3.2](#id215)
-* [0.3.1](#id216)
-* [0.3.0](#id217)
+* [3.5.1](#id1)
+* [3.5.0](#id2)
+* [3.4.0](#id3)
+* [3.3.0](#id4)
+* [3.2.0](#id5)
+* [3.1.0](#id6)
+* [3.0.0](#id7)
+* [2.18.0](#id8)
+* [2.17.0](#id9)
+* [2.16.1](#id10)
+* [2.16.0](#id11)
+* [2.15.1](#id12)
+* [2.15.0](#id13)
+* [2.14.0](#id14)
+* [2.13.2](#id15)
+* [2.13.1](#id16)
+* [2.13.0](#id17)
+* [2.12.0](#id18)
+* [2.11.0](#id19)
+* [2.10.3](#id20)
+* [2.10.2](#id21)
+* [2.10.1](#id22)
+* [2.10.0](#id23)
+* [2.9.0](#id24)
+* [2.8.2](#id25)
+* [2.8.1](#id26)
+* [2.8.0](#id27)
+* [2.7.0](#id28)
+* [2.6.0](#id29)
+* [2.5.2](#id30)
+* [2.5.1](#id31)
+* [2.5.0](#id32)
+* [2.4.0](#id33)
+* [2.3.0](#id34)
+* [2.2.3](#id35)
+* [2.2.2](#id36)
+* [2.2.1](#id37)
+* [2.2.0](#id38)
+* [2.1.2](#id39)
+* [2.1.1](#id40)
+* [2.1.0](#id41)
+* [2.0.1](#id42)
+* [2.0.0](#id43)
+* [1.6.5](#id44)
+* [1.6.4](#id45)
+* [1.6.3](#id46)
+* [1.6.2](#id47)
+* [1.6.1](#id48)
+* [1.6.0](#id49)
+* [1.5.0](#id50)
+* [1.4.6](#id51)
+* [1.4.5](#id52)
+* [1.4.4](#id53)
+* [1.4.3](#id54)
+* [1.4.2](#id55)
+* [1.4.1](#id56)
+* [1.4.0](#id57)
+* [1.3.2](#id58)
+* [1.3.1](#id59)
+* [1.3.0](#id60)
+* [1.2.7](#id61)
+* [1.2.6](#id62)
+* [1.2.5](#id63)
+* [1.2.4](#id64)
+* [1.2.3](#id65)
+* [1.2.2](#id66)
+* [1.2.1](#id67)
+* [1.2.0](#id68)
+* [1.1.1](#id69)
+* [1.1.0](#id70)
+* [1.0.1](#id71)
+* [1.0.0](#id72)
+* [0.9.23](#id73)
+* [0.9.22](#id74)
+* [0.9.21](#id75)
+* [0.9.20](#id76)
+* [0.9.19](#id77)
+* [0.9.18](#id78)
+* [0.9.17](#id79)
+* [0.9.16](#id80)
+* [0.9.15](#id81)
+* [0.9.14](#id82)
+* [0.9.13](#id83)
+* [0.9.12](#id84)
+* [0.9.11](#id85)
+* [0.9.10](#id86)
+* [0.9.9](#id87)
+* [0.9.8](#id88)
+* [0.9.7](#id89)
+* [0.9.6](#id90)
+* [0.9.5](#id91)
+* [0.9.4](#id92)
+* [0.9.3](#id93)
+* [0.9.2](#id94)
+* [0.9.1](#id95)
+* [0.9.0](#id96)
+* [0.8.38](#id97)
+* [0.8.37](#id98)
+* [0.8.36](#id99)
+* [0.8.35](#id100)
+* [0.8.34](#id101)
+* [0.8.33](#id102)
+* [0.8.32](#id103)
+* [0.8.31](#id104)
+* [0.8.30](#id105)
+* [0.8.29](#id106)
+* [0.8.28](#id107)
+* [0.8.27](#id108)
+* [0.8.26](#id109)
+* [0.8.25](#id110)
+* [0.8.24](#id111)
+* [0.8.23](#id112)
+* [0.8.22](#id113)
+* [0.8.21](#id114)
+* [0.8.20](#id115)
+* [0.8.19](#id116)
+* [0.8.18](#id117)
+* [0.8.17](#id118)
+* [0.8.16](#id119)
+* [0.8.15](#id120)
+* [0.8.14](#id121)
+* [0.8.13](#id122)
+* [0.8.12](#id123)
+* [0.8.11](#id124)
+* [0.8.10](#id125)
+* [0.8.9](#id126)
+* [0.8.8](#id127)
+* [0.8.7](#id128)
+* [0.8.6](#id129)
+* [0.8.5](#id130)
+* [0.8.4](#id131)
+* [0.8.3](#id132)
+* [0.8.2](#id133)
+* [0.8.1](#id134)
+* [0.8.0](#id135)
+* [0.7.15](#id136)
+* [0.7.14](#id137)
+* [0.7.13](#id138)
+* [0.7.12](#id139)
+* [0.7.11](#id140)
+* [0.7.10](#id141)
+* [0.7.9](#id142)
+* [0.7.8](#id143)
+* [0.7.7](#id144)
+* [0.7.6](#id145)
+* [0.7.5](#id146)
+* [0.7.4](#id147)
+* [0.7.3](#id148)
+* [0.7.2](#id149)
+* [0.7.1](#id150)
+* [0.7.0](#id151)
+* [0.6.38](#id152)
+* [0.6.37](#id153)
+* [0.6.36](#id154)
+* [0.6.35](#id155)
+* [0.6.34](#id156)
+* [0.6.33](#id157)
+* [0.6.32](#id158)
+* [0.6.31](#id159)
+* [0.6.30](#id160)
+* [0.6.29](#id161)
+* [0.6.28](#id162)
+* [0.6.27](#id163)
+* [0.6.26](#id164)
+* [0.6.25](#id165)
+* [0.6.24](#id166)
+* [0.6.23](#id167)
+* [0.6.22](#id168)
+* [0.6.21](#id169)
+* [0.6.20](#id170)
+* [0.6.19](#id171)
+* [0.6.18](#id172)
+* [0.6.17](#id173)
+* [0.6.16](#id174)
+* [0.6.15](#id175)
+* [0.6.14](#id176)
+* [0.6.13](#id177)
+* [0.6.12](#id178)
+* [0.6.11](#id179)
+* [0.6.10](#id180)
+* [0.6.9](#id181)
+* [0.6.8](#id182)
+* [0.6.7](#id183)
+* [0.6.6](#id184)
+* [0.6.5](#id185)
+* [0.6.4](#id186)
+* [0.6.3](#id187)
+* [0.6.2](#id188)
+* [0.6.1](#id189)
+* [0.6.0](#id190)
+* [0.5.13](#id191)
+* [0.5.12](#id192)
+* [0.5.11](#id193)
+* [0.5.10](#id194)
+* [0.5.9](#id195)
+* [0.5.8](#id196)
+* [0.5.7](#id197)
+* [0.5.6](#id198)
+* [0.5.5](#id199)
+* [0.5.4](#id200)
+* [0.5.3](#id201)
+* [0.5.2](#id202)
+* [0.5.1](#id203)
+* [0.5.0](#id204)
+* [0.4.3](#id205)
+* [0.4.2](#id206)
+* [0.4.1](#id207)
+* [0.4.0](#id208)
+* [0.3.9](#id209)
+* [0.3.8](#id210)
+* [0.3.7](#id211)
+* [0.3.6](#id212)
+* [0.3.5](#id213)
+* [0.3.4](#id214)
+* [0.3.3](#id215)
+* [0.3.2](#id216)
+* [0.3.1](#id217)
+* [0.3.0](#id218)
 
 © Copyright 2025, Christopher Ariza.
 

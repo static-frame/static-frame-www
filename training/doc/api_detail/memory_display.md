@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2528,7 +2528,15 @@ Search
 [Overview: MemoryDisplay](../api_overview/memory_display.md#api-overview-memorydisplay)
 
 *class* MemoryDisplay(*frame*)[[source]](../_modules/static_frame/core/memory_measure.md#MemoryDisplay)[#](#static_frame.MemoryDisplay "Link to this definition")
-:   A simple container for capturing and displaying memory usage in bytes for StaticFrame containers.
+:   A [`MemoryDisplay`](#static_frame.MemoryDisplay "static_frame.MemoryDisplay"), providing the size in memory of this object. For compound containers, component sizes will also be provided. Size can be interpreted through six combinations of three configurations:
+
+    L: Local: memory ignoring referenced array data provided via views.
+    LM: Local Materialized: memory where arrays that are locally owned report their byte payload
+    LMD: Local Materialized Data: locally owned memory of arrays byte payloads, excluding all other components
+
+    R: Referenced: memory including referenced array data provided via views
+    RM: Referenced Materialized: memory where arrays that are locally owned or referenced report their byte payload
+    RMD: Referenced Materialized Data: localy owned and referenced array byte payloads, excluding all other components
 
 * [Constructor](memory_display-constructor.md#api-detail-memorydisplay-constructor): Alternative constructors for creating instances.
 * [Exporter](memory_display-exporter.md#api-detail-memorydisplay-exporter): Methods for transforming, exporting, or serializing objects.

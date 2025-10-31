@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2531,7 +2531,7 @@ Search
 | --- | --- | --- |
 | [Detail](../api_detail/batch-attribute.md#api-sig-batch-static) | `Batch.STATIC` | Returns True when the argument is true, False otherwise. The builtins True and F… |
 | [Detail](../api_detail/batch-attribute.md#api-sig-batch-t) | `Batch.T` | Transpose. Return a Frame with index as columns and vice versa. |
-| [Detail](../api_detail/batch-attribute.md#api-sig-batch-memory) | `Batch.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/batch-attribute.md#api-sig-batch-memory) | `Batch.memory` | A MemoryDisplay, providing the size in memory of this object. For compound conta… |
 | [Detail](../api_detail/batch-attribute.md#api-sig-batch-name) | `Batch.name` | A hashable label attached to this container. Returns: Hashable |
 | [Detail](../api_detail/batch-attribute.md#api-sig-batch-shapes) | `Batch.shapes` | A Series describing the shape of each iterated Frame. Returns: tp.Tuple[int] |
 | [Detail](../api_detail/batch-attribute.md#api-sig-batch-via-container) | `Batch.via_container` | Return a new Batch with all values wrapped in either a Frame or Series. |
