@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2533,7 +2533,7 @@ Search
 | [Detail](../api_detail/index_hierarchy_go-attribute.md#api-sig-indexhierarchygo-depth) | `IndexHierarchyGO.depth` | Return the depth of the index hierarchy. |
 | [Detail](../api_detail/index_hierarchy_go-attribute.md#api-sig-indexhierarchygo-dtypes) | `IndexHierarchyGO.dtypes` | Return a Series of dytpes for each index depth. Returns: Series |
 | [Detail](../api_detail/index_hierarchy_go-attribute.md#api-sig-indexhierarchygo-index-types) | `IndexHierarchyGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_hierarchy_go-attribute.md#api-sig-indexhierarchygo-memory) | `IndexHierarchyGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_hierarchy_go-attribute.md#api-sig-indexhierarchygo-memory) | `IndexHierarchyGO.memory` | A MemoryDisplay, providing the size in memory of this object. For compound conta… |
 | [Detail](../api_detail/index_hierarchy_go-attribute.md#api-sig-indexhierarchygo-mloc) | `IndexHierarchyGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
 | [Detail](../api_detail/index_hierarchy_go-attribute.md#api-sig-indexhierarchygo-name) | `IndexHierarchyGO.name` | A hashable label attached to this container. Returns: Hashable |
 | [Detail](../api_detail/index_hierarchy_go-attribute.md#api-sig-indexhierarchygo-names) | `IndexHierarchyGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |

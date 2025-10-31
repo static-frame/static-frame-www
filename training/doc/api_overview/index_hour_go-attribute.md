@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2533,7 +2533,7 @@ Search
 | [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-depth) | `IndexHourGO.depth` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
 | [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-dtype) | `IndexHourGO.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
 | [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-index-types) | `IndexHourGO.index_types` | Return a Series of Index classes for each index depth. Returns: Series |
-| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-memory) | `IndexHourGO.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-memory) | `IndexHourGO.memory` | A MemoryDisplay, providing the size in memory of this object. For compound conta… |
 | [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-mloc) | `IndexHourGO.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
 | [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-name) | `IndexHourGO.name` | A hashable label attached to this container. Returns: Hashable |
 | [Detail](../api_detail/index_hour_go-attribute.md#api-sig-indexhourgo-names) | `IndexHourGO.names` | Provide a suitable iterable of names for usage in output formats that require a… |

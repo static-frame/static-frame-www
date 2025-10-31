@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2533,7 +2533,7 @@ Search
 | [Detail](../api_detail/series_he-attribute.md#api-sig-serieshe-t) | `SeriesHE.T` | Transpose. For a 1D immutable container, this returns a reference to self. Retur… |
 | [Detail](../api_detail/series_he-attribute.md#api-sig-serieshe-dtype) | `SeriesHE.dtype` | Return the dtype of the underlying NumPy array. Returns: numpy.dtype |
 | [Detail](../api_detail/series_he-attribute.md#api-sig-serieshe-index) | `SeriesHE.index` | The index instance assigned to this container. Returns: Index |
-| [Detail](../api_detail/series_he-attribute.md#api-sig-serieshe-memory) | `SeriesHE.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/series_he-attribute.md#api-sig-serieshe-memory) | `SeriesHE.memory` | A MemoryDisplay, providing the size in memory of this object. For compound conta… |
 | [Detail](../api_detail/series_he-attribute.md#api-sig-serieshe-mloc) | `SeriesHE.mloc` | The memory location, represented as an integer, of the underlying NumPy array. |
 | [Detail](../api_detail/series_he-attribute.md#api-sig-serieshe-name) | `SeriesHE.name` | A hashable label attached to this container. Returns: Hashable |
 | [Detail](../api_detail/series_he-attribute.md#api-sig-serieshe-nbytes) | `SeriesHE.nbytes` | Return the total bytes of the underlying NumPy array. Returns: int |

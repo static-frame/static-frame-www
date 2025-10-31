@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.5.1 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2534,7 +2534,7 @@ Search
 | [Detail](../api_detail/bus-attribute.md#api-sig-bus-dtypes) | `Bus.dtypes` | Returns a Frame of dtype per column for all loaded Frames. |
 | [Detail](../api_detail/bus-attribute.md#api-sig-bus-index) | `Bus.index` | The index instance assigned to this container. Returns: Index |
 | [Detail](../api_detail/bus-attribute.md#api-sig-bus-inventory) | `Bus.inventory` | Return a Frame indicating file\_path, last-modified time, and size of underlying… |
-| [Detail](../api_detail/bus-attribute.md#api-sig-bus-memory) | `Bus.memory` | Return a MemoryDisplay, providing the size in memory of this object. For compoun… |
+| [Detail](../api_detail/bus-attribute.md#api-sig-bus-memory) | `Bus.memory` | A MemoryDisplay, providing the size in memory of this object. For compound conta… |
 | [Detail](../api_detail/bus-attribute.md#api-sig-bus-mloc) | `Bus.mloc` | Returns a Series showing a tuple of memory locations within each loaded Frame. |
 | [Detail](../api_detail/bus-attribute.md#api-sig-bus-name) | `Bus.name` | A hashable label attached to this container. Returns: Hashable |
 | [Detail](../api_detail/bus-attribute.md#api-sig-bus-nbytes) | `Bus.nbytes` | Total bytes of data currently loaded in the Bus. |
