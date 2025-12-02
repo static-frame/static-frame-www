@@ -2525,11 +2525,15 @@ Search
 
 # What is New in StaticFrame[#](#what-is-new-in-staticframe "Link to this heading")
 
+## dev[#](#dev "Link to this heading")
+
+Quality checks now check for `__slot__` correctness with `slotcheck`.
+
 ## 3.5.1[#](#id1 "Link to this heading")
 
 Now `Frame.memory` and `Frame().memory` share the same, comprehensive doc string.
 
-`CalllGuard` and other `TypeClinic` interfaces now properly handle `*args` and `**kwargs` when typed with a single type.
+`CallGuard` and other `TypeClinic` interfaces now properly handle `*args` and `**kwargs` when typed with a single type.
 
 ## 3.5.0[#](#id2 "Link to this heading")
 
@@ -2743,7 +2747,7 @@ Updated `typing-extensions` to 4.12.0.
 
 ## 2.7.0[#](#id28 "Link to this heading")
 
-`CalllGuard` and other `TypeClinic` interfaces now support run-time usage of `TypeVar`.
+`CallGuard` and other `TypeClinic` interfaces now support run-time usage of `TypeVar`.
 
 ## 2.6.0[#](#id29 "Link to this heading")
 
@@ -4582,6 +4586,7 @@ Contributing](contributing.md "next page")
 
 On this page
 
+* [dev](#dev)
 * [3.5.1](#id1)
 * [3.5.0](#id2)
 * [3.4.0](#id3)
