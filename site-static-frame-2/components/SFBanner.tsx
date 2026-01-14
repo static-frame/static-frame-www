@@ -14,7 +14,7 @@ export function SFBanner() {
             <div className="px-2 pt-1 h-20">
             <SFTitleSVG />
             </div>
-            <div>2.0</div>
+            <div className="text-zinc-200">2</div>
         </div>
     )
 }

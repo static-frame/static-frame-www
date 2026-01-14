@@ -27,7 +27,7 @@ export default function SearchPage({ params }: SearchPageProps) {
             <div className="h-6"></div>
             <div className={cnMaxWidthCentered}>
 
-                <div className="flex flex-wrap px-2 py-2 my-4 bg-black rounded-md">
+                <div className="flex flex-wrap px-2 py-2 my-4 bg-black rounded-sm">
                     <div className={cnCol1FlexCol}>
                       <div className={cnColFieldGradient}>
                         <SFBanner />
@@ -35,7 +35,7 @@ export default function SearchPage({ params }: SearchPageProps) {
                     </div>
                 </div>
 
-                <div className="flex flex-wrap px-2 pt-2 bg-black rounded-md">
+                <div className="flex flex-wrap px-2 pt-2 bg-black rounded-sm">
                     <div className={cnCol1FlexCol}>
                         <APISearch initialQuery={decodedQuery} />
                     </div>

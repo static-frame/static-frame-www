@@ -57,15 +57,15 @@ sigFullToSig.forEach((v, k) => {
 
 const versionAPI = metadataJSON.version
 
-const CNTextSmall = "text-base text-zinc-400 font-sans"
+const CNTextSmall = "text-base text-zinc-500 font-sans"
 
-const CNButtonCommon = "ml-1 my-1 p-2 w-8 rounded-md"; // my-2 permits buttons to wrap in narrow views
+const CNButtonCommon = "ml-1 my-1 p-2 w-8 rounded-sm"; // my-2 permits buttons to wrap in narrow views
 const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-600 to-zinc-700`;
 const CNButtonActive = `${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-600`;
 
-const CNButtonHover = "ml-1 my-1 p-2 bg-zinc-800 hover:bg-zinc-700 rounded-md text-base text-zinc-400 font-sans";
+const CNButtonHover = "ml-1 my-1 p-2 bg-zinc-800 hover:bg-zinc-700 rounded-sm text-base text-zinc-400 font-sans";
 
-const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-500 group-hover:opacity-80"
+const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-sm w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-500 group-hover:opacity-80"
 
 const sigsEmpty: string[] = [];
 
@@ -616,7 +616,7 @@ export default function Home() {
             <div className="h-6"></div>
             <div className={cnMaxWidthCentered}>
 
-                <div className="flex flex-wrap px-2 py-2 my-4 bg-black rounded-md">
+                <div className="flex flex-wrap px-2 py-2 my-4 bg-black rounded-sm">
                     <div className={cnCol1FlexCol}>
                       <div className={cnColFieldGradient}>
                         <SFBanner />
@@ -624,7 +624,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="flex flex-wrap px-2 pt-2 bg-black rounded-md">
+                <div className="flex flex-wrap px-2 pt-2 bg-black rounded-sm">
                     <div className={cnCol1FlexCol}>
                         <APISearch />
                     </div>

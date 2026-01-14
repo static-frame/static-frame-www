@@ -50,7 +50,7 @@ export default function SigPage({ params }: SigPageProps) {
             <div className="h-6"></div>
             <div className={cnMaxWidthCentered}>
 
-                <div className="flex flex-wrap px-2 py-2 my-4 bg-black rounded-md">
+                <div className="flex flex-wrap px-2 py-2 my-4 bg-black rounded-sm">
                     <div className={cnCol1FlexCol}>
                       <div className={cnColFieldGradient}>
                         <SFBanner />
@@ -58,25 +58,25 @@ export default function SigPage({ params }: SigPageProps) {
                     </div>
                 </div>
 
-                <div className="flex flex-wrap px-2 pt-2 bg-black rounded-md text-md">
+                <div className="flex flex-wrap px-2 pt-2 bg-black rounded-sm text-md">
                     <div className={cnCol1FlexCol}>
                         {sigExists ? (
                             <div className="space-y-4">
                                 {/* Signature */}
-                                <div className="px-2 py-3 bg-zinc-800 rounded-md">
+                                <div className="px-2 py-3 bg-zinc-800 rounded-sm">
                                     <SigLabel sigFull={sigFull} fallbackText={decodedSig} textClassName="text-md" />
                                 </div>
 
                                 {/* Documentation */}
                                 {doc && (
-                                    <div className="px-4 py-3 bg-zinc-800/80 rounded-md">
+                                    <div className="px-4 py-3 bg-zinc-800/80 rounded-sm">
                                         <div className="font-sans text-slate-400">{doc}</div>
                                     </div>
                                 )}
 
                                 {/* Example */}
                                 {example && (
-                                    <div className="px-4 py-3 bg-zinc-800/80 rounded-md ">
+                                    <div className="px-4 py-3 bg-zinc-800/80 rounded-sm ">
                                         <div className="overflow-x-auto">
                                             <CodeBlock code={example.join('\n')} />
                                         </div>
@@ -84,7 +84,7 @@ export default function SigPage({ params }: SigPageProps) {
                                 )}
 
                                 {/* Back to search link */}
-                                <div className="px-2 pt-4">
+                                <div className="px-2">
                                     <a
                                         href={`/search/${encodeURIComponent(decodedSig.split('.').pop() || decodedSig)}`}
                                         className="text-zinc-500 hover:text-zinc-400 font-sans"
@@ -94,7 +94,7 @@ export default function SigPage({ params }: SigPageProps) {
                                 </div>
                             </div>
                         ) : (
-                            <div className="px-4 py-4 text-center">
+                            <div className="px-4 text-center">
                                 <div className="text-zinc-400 font-sans">
                                     Signature not found: <span className="font-mono">{decodedSig}</span>
                                 </div>
