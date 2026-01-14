@@ -148,29 +148,58 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
     // Optional warning display
     const [warningMsg, setWarningMsg] = React.useState("");
 
-    // Separate state for immediate input responsiveness
-    const [inputValue, setInputValue] = React.useState(initialQuery || "");
+    // Ref for uncontrolled input - typing causes zero re-renders
+    const inputRef = React.useRef<HTMLInputElement>(null);
+    const debounceRef = React.useRef<NodeJS.Timeout | null>(null);
 
-    // Debounced value for search and URL update
-    const [debouncedValue, setDebouncedValue] = React.useState(initialQuery || "");
+    // Search query state - only updated after debounce
+    const [searchQuery, setSearchQuery] = React.useState((initialQuery || "").trim());
 
-    // Debounce input value changes
+    // Handle input changes with debouncing - no state updates during typing
+    const handleInputChange = React.useCallback(() => {
+        if (debounceRef.current) {
+            clearTimeout(debounceRef.current);
+        }
+        debounceRef.current = setTimeout(() => {
+            const value = (inputRef.current?.value || "").trim();
+            setSearchQuery(value);
+            if (value) {
+                window.history.replaceState(
+                    null,
+                    "StaticFrame API Search",
+                    `/search/${encodeURIComponent(value)}`);
+            }
+        }, 500);
+    }, []);
+
+    // Set initial value on mount
     React.useEffect(() => {
-        const timeoutId = setTimeout(() => {
-            setDebouncedValue(inputValue);
-        }, 300);
-        return () => clearTimeout(timeoutId);
-    }, [inputValue]);
+        if (inputRef.current && initialQuery) {
+            inputRef.current.value = initialQuery;
+        }
+    }, [initialQuery]);
 
-    // Update URL when debounced value changes
-    React.useEffect(() => {
-        if (debouncedValue) {
+    // Helper to update input value programmatically and trigger search
+    const setInputValue = React.useCallback((value: string) => {
+        const trimmed = value.trim();
+        if (inputRef.current) {
+            inputRef.current.value = trimmed;
+        }
+        setSearchQuery(trimmed);
+        if (trimmed) {
             window.history.replaceState(
                 null,
                 "StaticFrame API Search",
-                `/search/${encodeURIComponent(debouncedValue)}`);
+                `/search/${encodeURIComponent(trimmed)}`);
         }
-    }, [debouncedValue]);
+    }, []);
+
+    // Helper to clear input without triggering search (for filter buttons)
+    const clearInputOnly = React.useCallback(() => {
+        if (inputRef.current) {
+            inputRef.current.value = "";
+        }
+    }, []);
 
 
     //--------------------------------------------------------------------------
@@ -222,7 +251,7 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
                 }
             )
             setSigsDisplay(sigsFiltered);
-            setInputValue("");
+            clearInputOnly();
         }
 
         function onClickTagGroup() {
@@ -237,7 +266,7 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
                 }
             )
             setSigsDisplay(sigsFiltered);
-            setInputValue("");
+            clearInputOnly();
         }
 
         function onClickToggleDoc() {
@@ -529,10 +558,10 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
         return <div />
     }
     //--------------------------------------------------------------------------
-    // On debounced value changes, run the search
+    // On search query changes, run the search
     React.useEffect(() => {
-        searchSigs(debouncedValue);
-    }, [debouncedValue, searchSigs]);
+        searchSigs(searchQuery);
+    }, [searchQuery, searchSigs]);
 
     React.useEffect(() => {
         const timeOutId = setTimeout(() => setWarningMsg(""), 3000);
@@ -593,10 +622,11 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
         {/* NOTE: might make this a component, but trying to do so made text input unusable */}
         <div className="flex pr-2">
             <input type='text'
+                ref={inputRef}
                 aria-label="Search query"
                 aria-required="true"
-                value={inputValue}
-                onChange={e => setInputValue(e.currentTarget.value)}
+                defaultValue={initialQuery}
+                onChange={handleInputChange}
                 className="px-4 bg-zinc-800 w-full rounded-full text-base font-mono text-slate-200"
             />
             {buttonClear}
