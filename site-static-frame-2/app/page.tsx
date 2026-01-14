@@ -148,25 +148,29 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
     // Optional warning display
     const [warningMsg, setWarningMsg] = React.useState("");
 
-    // String used to store input from the user; asynchronously read from to conduct a search and populates sigsDisplay
+    // Separate state for immediate input responsiveness
+    const [inputValue, setInputValue] = React.useState(initialQuery || "");
 
-    interface Query {
-        target: string;
-        runSearch: boolean;
-    }
-    const [query, _setQuery] = React.useState<Query>({
-        target: initialQuery || "",
-        runSearch: !!initialQuery
-    });
+    // Debounced value for search and URL update
+    const [debouncedValue, setDebouncedValue] = React.useState(initialQuery || "");
 
-    // Wrap _setQuery to always set the search url
-    function setQuery(q: Query) {
-        window.history.replaceState(
-            null,
-            "StaticFrame API Search",
-            `/search/${encodeURIComponent(q.target)}`);
-        _setQuery(q);
-    }
+    // Debounce input value changes
+    React.useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setDebouncedValue(inputValue);
+        }, 300);
+        return () => clearTimeout(timeoutId);
+    }, [inputValue]);
+
+    // Update URL when debounced value changes
+    React.useEffect(() => {
+        if (debouncedValue) {
+            window.history.replaceState(
+                null,
+                "StaticFrame API Search",
+                `/search/${encodeURIComponent(debouncedValue)}`);
+        }
+    }, [debouncedValue]);
 
 
     //--------------------------------------------------------------------------
@@ -218,7 +222,7 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
                 }
             )
             setSigsDisplay(sigsFiltered);
-            setQuery({target: "", runSearch: false});
+            setInputValue("");
         }
 
         function onClickTagGroup() {
@@ -233,7 +237,7 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
                 }
             )
             setSigsDisplay(sigsFiltered);
-            setQuery({target: "", runSearch: false});
+            setInputValue("");
         }
 
         function onClickToggleDoc() {
@@ -341,12 +345,9 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
     // Given a target, filter all signatures and update the sigsDisplay state
     // On fullSigSearch, reSearch update, this is called, updating setSigsDisplay
     const searchSigs = React.useCallback(
-        ({target, runSearch}: Query) => {
-        if (!runSearch) {
-            return;
-        }
-        target = target.toLowerCase();
-        if (!target) {
+        (target: string) => {
+        const lowerTarget = target.toLowerCase();
+        if (!lowerTarget) {
             setSigsDisplay(sigsEmpty);
             return;
         }
@@ -355,7 +356,7 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
 
         if (fullSigSearch) {
             if (reSearch) {
-                const re = new RegExp(target);
+                const re = new RegExp(lowerTarget);
                 sigFullToSig.forEach((value, key) => {
                     if (re.test(key.toLowerCase())) {
                         sigsFiltered.push(value);
@@ -364,7 +365,7 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
             }
             else {
                 sigFullToSig.forEach((value, key) => {
-                    if (key.toLowerCase().indexOf(target) > -1) {
+                    if (key.toLowerCase().indexOf(lowerTarget) > -1) {
                         sigsFiltered.push(value);
                     }
                 });
@@ -372,14 +373,14 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
         }
         else {
             if (reSearch) {
-                const re = new RegExp(target);
+                const re = new RegExp(lowerTarget);
                 sigsFiltered = sigsInitial.filter((row) => {
                     return re.test(row.toLowerCase());
                 });
             }
             else {
                 sigsFiltered = sigsInitial.filter((row) => {
-                    return row.toLowerCase().indexOf(target) > -1;
+                    return row.toLowerCase().indexOf(lowerTarget) > -1;
                 });
             }
         }
@@ -400,12 +401,12 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
 
         const keys = Array.from(methodToSig.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
-        // NOTE: setting sigsFiltered is faster than just calling setQuery, which alone will work
+        // NOTE: setting sigsFiltered is faster than just calling setInputValue, which alone will work
         const sigsFiltered = methodToSig.get(key);
         if (sigsFiltered) {
             setSigsDisplay(sigsFiltered);
         }
-        setQuery({target:key, runSearch:false});
+        setInputValue(key);
     }
 
     function onClickExampleRandom() {
@@ -414,15 +415,15 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
 
         const keys = Array.from(sigToEx.keys());
         const key = keys[Math.floor(Math.random() * keys.length)];
-        // NOTE: setting sigsFiltered is faster than just calling setQuery, which alone will work
+        // NOTE: setting sigsFiltered is faster than just calling setInputValue, which alone will work
         setSigsDisplay([key]);
-        setQuery({target:key, runSearch:false});
+        setInputValue(key);
         exDisplay.set(key, true);
     }
 
     function onClickQueryClear() {
         setSigsDisplay(sigsEmpty); // always faster
-        setQuery({target:"", runSearch:false});
+        setInputValue("");
     }
 
     function onClickExampleShowAll() {
@@ -528,11 +529,10 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
         return <div />
     }
     //--------------------------------------------------------------------------
-    // On query updates, set a timeout before calling searchSigs. This means that any update to query will call searchSigs and update the display.
+    // On debounced value changes, run the search
     React.useEffect(() => {
-        const timeOutId = setTimeout(() => searchSigs(query), 800);
-        return () => clearTimeout(timeOutId);
-        }, [query, searchSigs]);
+        searchSigs(debouncedValue);
+    }, [debouncedValue, searchSigs]);
 
     React.useEffect(() => {
         const timeOutId = setTimeout(() => setWarningMsg(""), 3000);
@@ -595,8 +595,8 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
             <input type='text'
                 aria-label="Search query"
                 aria-required="true"
-                value={query.target}
-                onChange={e => setQuery({target: e.currentTarget.value, runSearch: true})}
+                value={inputValue}
+                onChange={e => setInputValue(e.currentTarget.value)}
                 className="px-4 bg-zinc-800 w-full rounded-full text-base font-mono text-slate-200"
             />
             {buttonClear}
