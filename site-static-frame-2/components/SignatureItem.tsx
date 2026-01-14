@@ -169,7 +169,7 @@ export function SignatureItem({
         return <div/>
     }
 
-    const cnRow = index % 2 ? 'px-2 py-1 bg-zinc-800 rounded-sm': 'px-2 py-1 bg-zinc-800/80 rounded-sm';
+    const cnRow = index % 2 ? 'px-2 py-1 bg-zinc-800/80 rounded-sm': 'px-2 py-1 bg-zinc-800/60 rounded-sm';
 
     return (
         <li className={cnRow} key={value}>

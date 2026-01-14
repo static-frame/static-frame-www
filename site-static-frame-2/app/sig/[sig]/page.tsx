@@ -61,22 +61,22 @@ export default function SigPage({ params }: SigPageProps) {
                 <div className="flex flex-wrap px-2 pt-2 bg-black rounded-sm text-md">
                     <div className={cnCol1FlexCol}>
                         {sigExists ? (
-                            <div className="space-y-4">
+                            <div className="space-y-2">
                                 {/* Signature */}
-                                <div className="px-2 py-3 bg-zinc-800 rounded-sm">
+                                <div className="px-2 py-2 bg-zinc-800 rounded-sm">
                                     <SigLabel sigFull={sigFull} fallbackText={decodedSig} textClassName="text-md" />
                                 </div>
 
                                 {/* Documentation */}
                                 {doc && (
-                                    <div className="px-4 py-3 bg-zinc-800/80 rounded-sm">
+                                    <div className="px-4 py-2 bg-zinc-800/80 rounded-sm">
                                         <div className="font-sans text-slate-400">{doc}</div>
                                     </div>
                                 )}
 
                                 {/* Example */}
                                 {example && (
-                                    <div className="px-4 py-3 bg-zinc-800/80 rounded-sm ">
+                                    <div className="px-4 py-2 bg-zinc-800/80 rounded-sm ">
                                         <div className="overflow-x-auto">
                                             <CodeBlock code={example.join('\n')} />
                                         </div>

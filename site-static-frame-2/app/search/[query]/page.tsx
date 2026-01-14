@@ -4,7 +4,7 @@ import { use } from 'react';
 import {SFBanner} from '../../../components/SFBanner';
 import {Header} from '../../../components/Header';
 import {Footer} from '../../../components/Footer';
-import { APISearch } from '../../page';
+import {APISearch} from '../../../components/APISearch';
 
 import {
     cnCol1FlexCol,
