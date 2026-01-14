@@ -6,17 +6,14 @@ import {SFBanner} from '../components/SFBanner';
 import {Header} from '../components/Header';
 import {Footer} from '../components/Footer';
 import {CodeBlock, SigLabel} from '../components/CodeBlock';
+import {SignatureItem} from '../components/SignatureItem';
 import {
-    IconProps,
     IconDocument,
     IconCode,
     IconClear,
     IconParameters,
     IconRE,
-    IconGroup,
-    IconClass,
     IconWarning,
-    IconLink,
 } from '../components/Icons';
 
 import {
@@ -27,6 +24,10 @@ import {
     cnCol1FlexCol,
     cnColFieldGradient,
     cnMaxWidthCentered,
+    CNButton,
+    CNButtonActive,
+    CNButtonHover,
+    renderIconButton,
   } from "../components/Common";
 
 
@@ -59,38 +60,7 @@ const versionAPI = metadataJSON.version
 
 const CNTextSmall = "text-base text-zinc-500 font-sans"
 
-const CNButtonCommon = "ml-1 my-1 p-2 w-8 rounded-sm"; // my-2 permits buttons to wrap in narrow views
-const CNButton =`${CNButtonCommon} bg-gradient-to-b from-zinc-600 to-zinc-700`;
-const CNButtonActive = `${CNButtonCommon} bg-gradient-to-b from-zinc-700 to-zinc-600`;
-
-const CNButtonHover = "ml-1 my-1 p-2 bg-zinc-800 hover:bg-zinc-700 rounded-sm text-base text-zinc-400 font-sans";
-
-const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-sm w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-500 group-hover:opacity-80"
-
 const sigsEmpty: string[] = [];
-
-//------------------------------------------------------------------------------
-
-function renderIconButton(
-    toolTip: string,
-    Icon: React.FC<IconProps>,
-    iconFill: string,
-    onClick: () => void,
-    className: () => string,
-) {
-    return (
-        <span className="group relative">
-            <button
-                aria-label={toolTip}
-                onClick={onClick}
-                className={className()}
-            >
-                <Icon fill={iconFill} />
-            </button>
-            <span className={CNToolTipLeft}>{toolTip}</span>
-        </span>
-    );
-}
 
 //------------------------------------------------------------------------------
 
@@ -171,155 +141,6 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
 
 
     //--------------------------------------------------------------------------
-
-    // Return an li element for each value. Called once for each row after filtering. `value` is the sig
-    function SignatureItem(value: string, index: number) {
-        const className = value.split(".")[0];
-        const groupName = sigToGroup.get(value);
-        const sigFull = sigToSigFull.get(value);
-
-        function onClickTagClass() {
-            setFullSigSearch(false);
-            setRESearch(false);
-            const sigsFiltered: string[] = [];
-            sigToGroup.forEach((_value, key) => {
-                if (key.split('.')[0] === className) {
-                        sigsFiltered.push(key);
-                    }
-                }
-            )
-            setSigsDisplay(sigsFiltered);
-            clearInputOnly();
-        }
-
-        function onClickTagGroup() {
-            setFullSigSearch(false);
-            setRESearch(false);
-            const sigsFiltered: string[] = [];
-            sigToGroup.forEach((value, key) => {
-                if (key.split('.')[0] === className &&
-                    value === groupName) {
-                        sigsFiltered.push(key);
-                    }
-                }
-            )
-            setSigsDisplay(sigsFiltered);
-            clearInputOnly();
-        }
-
-        function onClickToggleDoc() {
-            if (docDisplay.has(value)) {
-                docDisplay.set(value, !docDisplay.get(value));
-            }
-            else {
-                docDisplay.set(value, true);
-            }
-            setDocDisplay(new Map<string, boolean>(docDisplay));
-        }
-
-        function onClickToggleEx() {
-            if (exDisplay.has(value)) {
-                exDisplay.set(value, !exDisplay.get(value));
-            }
-            else {
-                exDisplay.set(value, true);
-            }
-            setExDisplay(new Map<string, boolean>(exDisplay));
-        }
-
-        const buttonClass = renderIconButton(
-            `Display all ${className} methods`,
-            IconClass,
-            colorSearchButton,
-            onClickTagClass,
-            () => CNButtonHover
-            )
-
-        const buttonGroup = renderIconButton(
-            `Display all ${className} ${groupName} methods`,
-            IconGroup,
-            colorSearchButton,
-            onClickTagGroup,
-            () => CNButtonHover
-            )
-
-        const buttonDoc = renderIconButton(
-            "Show documentation",
-            IconDocument,
-            colorAccentOrange,
-            onClickToggleDoc,
-            () => docDisplay.get(value) ? CNButtonActive : CNButton
-            )
-
-        const buttonEx = renderIconButton(
-            "Show example",
-            IconCode,
-            colorAccentOrange,
-            onClickToggleEx,
-            () => exDisplay.get(value) ? CNButtonActive : CNButton
-            )
-
-        const buttonLink = (
-            <span className="group relative">
-                <a
-                    href={`/sig/${encodeURIComponent(value)}`}
-                    aria-label="View signature details"
-                    className={`${CNButtonHover} inline-flex items-center justify-center`}
-                >
-                    <IconLink fill={colorSearchButton} />
-                </a>
-                <span className={CNToolTipLeft}>View signature details</span>
-            </span>
-        );
-
-        function DocIfActive() {
-            if (docDisplay.get(value)) {
-                const doc = sigToDoc.get(value);
-                if (doc) {
-                    return <div className="py-2 font-sans text-slate-400">{doc}</div>;
-                }
-            }
-            return <div/>
-        }
-
-        function ExIfActive() {
-            if (exDisplay.get(value)) {
-                const ex = sigToEx.get(value)?.join('\n');
-                if (ex) {
-                    return (
-                        <div className="overflow-x-auto">
-                        <CodeBlock code={ex}/>
-                        </div>
-                    );
-                }
-            }
-            return <div/>
-        }
-
-        const cnRow = index % 2 ? 'px-2 py-1 bg-zinc-800 rounded-sm': 'px-2 py-1 bg-zinc-800/80 rounded-sm';
-        // Return a single li for each row
-        // NOTE: nowrap here to keep 2 over 2 in button minimal width display
-        return (
-            <li className={cnRow} key={value}>
-                <div className="flex">
-                    <span className="w-4/6 my-1">
-                        <SigLabel sigFull={sigFull} />
-                    </span>
-                    <span className="w-2/6 text-right">
-                        {buttonLink}
-                        {buttonClass}
-                        {buttonGroup}
-                        {buttonDoc}
-                        {buttonEx}
-                    </span>
-                </div>
-                <div className="w-full">
-                    <DocIfActive />
-                    <ExIfActive />
-                </div>
-            </li>
-            )
-    }
 
     // Given a target, filter all signatures and update the sigsDisplay state
     // On fullSigSearch, reSearch update, this is called, updating setSigsDisplay
@@ -600,7 +421,25 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
         <div className="pb-2">
             {/* NOTE: space-y adds space between each li row entry */}
             <ul className="space-y-2 text-base font-mono text-slate-400">
-                {sigsDisplay.map(SignatureItem)}
+                {sigsDisplay.map((value, index) => (
+                    <SignatureItem
+                        key={value}
+                        value={value}
+                        index={index}
+                        sigToGroup={sigToGroup}
+                        sigToSigFull={sigToSigFull}
+                        sigToDoc={sigToDoc}
+                        sigToEx={sigToEx}
+                        docDisplay={docDisplay}
+                        exDisplay={exDisplay}
+                        setFullSigSearch={setFullSigSearch}
+                        setRESearch={setRESearch}
+                        setSigsDisplay={setSigsDisplay}
+                        setDocDisplay={setDocDisplay}
+                        setExDisplay={setExDisplay}
+                        clearInputOnly={clearInputOnly}
+                    />
+                ))}
             </ul>
         </div>
 
