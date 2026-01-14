@@ -126,7 +126,11 @@ function renderIconButton(
 
 //------------------------------------------------------------------------------
 
-function APISearch() {
+interface APISearchProps {
+    initialQuery?: string;
+}
+
+export function APISearch({ initialQuery }: APISearchProps = {}) {
     //--------------------------------------------------------------------------
     // application state
 
@@ -150,7 +154,10 @@ function APISearch() {
         target: string;
         runSearch: boolean;
     }
-    const [query, _setQuery] = React.useState<Query>({target: "", runSearch: false});
+    const [query, _setQuery] = React.useState<Query>({
+        target: initialQuery || "",
+        runSearch: !!initialQuery
+    });
 
     // Wrap _setQuery to always set the search url
     function setQuery(q: Query) {
