@@ -1,13 +1,11 @@
 'use client';
 
-import React, { ReactNode } from 'react';
-import Prism from "prismjs";
-import 'prismjs/components/prism-python.min.js'
-import 'prismjs/themes/prism-tomorrow.css'
+import React from 'react';
 
 import {SFBanner} from '../components/SFBanner';
 import {Header} from '../components/Header';
 import {Footer} from '../components/Footer';
+import {CodeBlock, SigLabel} from '../components/CodeBlock';
 import {
     IconProps,
     IconDocument,
@@ -18,6 +16,7 @@ import {
     IconGroup,
     IconClass,
     IconWarning,
+    IconLink,
 } from '../components/Icons';
 
 import {
@@ -69,39 +68,8 @@ const CNButtonHover = "ml-1 my-1 p-2 bg-zinc-800 hover:bg-zinc-700 rounded-md te
 const CNToolTipLeft = "pointer-events-none absolute opacity-0 bg-slate-600 rounded-md w-max p-2 -top-14 right-0 font-sans text-slate-100 text-right transition-opacity delay-500 group-hover:opacity-80"
 
 const sigsEmpty: string[] = [];
-const highlightColors = new Map<string, string>([
-    ['',  "text-slate-400"], // default text colors
-    [',', "text-slate-500"],
-    ['.', "text-slate-300"],
-    ['*', "text-indigo-400"],
-    ['/', "text-indigo-500"],
-    ['(', "text-slate-300"],
-    [')', "text-slate-300"],
-    ['[', "text-slate-300"],
-    [']', "text-slate-300"],
-])
 
 //------------------------------------------------------------------------------
-// general
-
-interface CodeBlockProps {
-    code: string;
-}
-
-// alternate approach that tries to limit scope of prism application
-function CodeBlock({ code }: CodeBlockProps) {
-    const ref = React.useRef<HTMLPreElement>(null);
-    React.useEffect(() => {
-        if (ref.current) {
-            Prism.highlightElement(ref.current);
-        }
-    }, []);
-    return (
-        <pre className="language-python" ref={ref}>
-            <code>{code}</code>
-        </pre>
-    );
-}
 
 function renderIconButton(
     toolTip: string,
@@ -208,37 +176,7 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
     function SignatureItem(value: string, index: number) {
         const className = value.split(".")[0];
         const groupName = sigToGroup.get(value);
-
-        function SigLabel() {
-            const sig = sigToSigFull.get(value);
-            const sigSpans: ReactNode[] = [];
-            const buffer: string[] = [];
-            let key = 0;
-
-            const bufToSpan = () => {
-                if (buffer.length) {
-                    sigSpans.push(<span className={highlightColors.get('')} key={key}>{buffer.join('')}</span>);
-                    buffer.length = 0;
-                    key++;
-                }
-            }
-            [...sig].forEach(e => {
-                if (highlightColors.has(e)) {
-                    bufToSpan();
-                    sigSpans.push(<span className={highlightColors.get(e)} key={key}>{e}</span>);
-                    key++;
-                }
-                else {
-                    buffer.push(e);
-                }
-            });
-            bufToSpan();
-            return (<span className="break-words">
-                <span className="font-mono font-bold">
-                {sigSpans}
-                </span>
-                </span>);
-        }
+        const sigFull = sigToSigFull.get(value);
 
         function onClickTagClass() {
             setFullSigSearch(false);
@@ -321,6 +259,19 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
             () => exDisplay.get(value) ? CNButtonActive : CNButton
             )
 
+        const buttonLink = (
+            <span className="group relative">
+                <a
+                    href={`/sig/${encodeURIComponent(value)}`}
+                    aria-label="View signature details"
+                    className={`${CNButtonHover} inline-flex items-center justify-center`}
+                >
+                    <IconLink fill={colorSearchButton} />
+                </a>
+                <span className={CNToolTipLeft}>View signature details</span>
+            </span>
+        );
+
         function DocIfActive() {
             if (docDisplay.get(value)) {
                 const doc = sigToDoc.get(value);
@@ -352,15 +303,14 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
             <li className={cnRow} key={value}>
                 <div className="flex">
                     <span className="w-4/6 my-1">
-                        <SigLabel />
+                        <SigLabel sigFull={sigFull} />
                     </span>
                     <span className="w-2/6 text-right">
+                        {buttonLink}
                         {buttonClass}
                         {buttonGroup}
-                        <span className="flex flex-nowrap float-right">
-                            {buttonDoc}
-                            {buttonEx}
-                        </span>
+                        {buttonDoc}
+                        {buttonEx}
                     </span>
                 </div>
                 <div className="w-full">
