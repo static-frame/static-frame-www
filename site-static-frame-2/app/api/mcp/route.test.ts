@@ -14,7 +14,7 @@ interface Tool {
 interface JSONRPCResponse {
   jsonrpc: "2.0";
   id: string | number;
-  result?: any;
+  result?: unknown;
   error?: {
     code: number;
     message: string;
