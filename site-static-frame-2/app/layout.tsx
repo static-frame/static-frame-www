@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "StaticFrame",
-  description: "StaticFrame: Immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface",
+  description:
+    "StaticFrame: Immutable and grow-only Pandas-like DataFrames with a more explicit and consistent interface",
 };
 
 export default function RootLayout({
