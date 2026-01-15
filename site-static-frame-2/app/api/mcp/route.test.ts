@@ -174,7 +174,6 @@ describe("MCP Search Tool", () => {
       expect(data.count).toBeGreaterThan(0);
       expect(data.signatures).toBeInstanceOf(Array);
 
-      // All results should start with "Frame."
       data.signatures.forEach((sig: string) => {
         expect(sig).toMatch(/^Frame\./);
       });
@@ -198,6 +197,8 @@ describe("MCP Search Tool", () => {
       const data = JSON.parse(response.result.content[0].text);
       expect(data).toHaveProperty("count");
       expect(data).toHaveProperty("signatures");
+      expect(data.count).toBeGreaterThan(100000);
+
     });
   });
 
