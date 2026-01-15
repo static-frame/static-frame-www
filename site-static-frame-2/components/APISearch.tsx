@@ -21,32 +21,19 @@ import {
     renderIconButton,
 } from './Common';
 
-import sigsInitial from '../sf-api/sigs.json';
-import sigToDocJSON from '../sf-api/sig_to_doc.json';
-import sigToExJSON from '../sf-api/sig_to_example.json';
-import sigToGroupJSON from '../sf-api/sig_to_group.json';
-import methodToSigJSON from '../sf-api/method_to_sig.json';
-import sigFullToSigJSON from '../sf-api/sig_full_to_sig.json';
-import metadataJSON from '../sf-api/metadata.json';
-
-const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
-const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
-const sigToGroup = new Map<string, string>(Object.entries(sigToGroupJSON))
-
-const methodToSig = new Map<string, string[]>(Object.entries(methodToSigJSON));
-const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
-
-// create reverse mapping
-const sigToSigFull = new Map();
-sigFullToSig.forEach((v, k) => {
-  sigToSigFull.set(v, k);
-});
-
-const versionAPI = metadataJSON.version
+import {
+    sigsInitial,
+    sigToDoc,
+    sigToEx,
+    sigToGroup,
+    methodToSig,
+    sigFullToSig,
+    sigToSigFull,
+    versionAPI,
+    sigsEmpty,
+} from '../lib/apiData';
 
 const CNTextSmall = "text-base text-zinc-500 font-sans"
-
-const sigsEmpty: string[] = [];
 
 interface APISearchProps {
     initialQuery?: string;

@@ -13,19 +13,11 @@ import {
     cnMaxWidthCentered,
 } from "../../../components/Common";
 
-import sigToDocJSON from '../../../sf-api/sig_to_doc.json';
-import sigToExJSON from '../../../sf-api/sig_to_example.json';
-import sigFullToSigJSON from '../../../sf-api/sig_full_to_sig.json';
-
-const sigToDoc = new Map<string, string>(Object.entries(sigToDocJSON));
-const sigToEx = new Map<string, string[]>(Object.entries(sigToExJSON));
-const sigFullToSig = new Map<string, string>(Object.entries(sigFullToSigJSON));
-
-// create reverse mapping
-const sigToSigFull = new Map<string, string>();
-sigFullToSig.forEach((v, k) => {
-  sigToSigFull.set(v, k);
-});
+import {
+    sigToDoc,
+    sigToEx,
+    sigToSigFull,
+} from '../../../lib/apiData';
 
 interface SigPageProps {
     params: Promise<{ sig: string }>;
