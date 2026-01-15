@@ -27,11 +27,12 @@ import {
     sigToEx,
     sigToGroup,
     methodToSig,
-    sigFullToSig,
     sigToSigFull,
     versionAPI,
     sigsEmpty,
 } from '../lib/apiData';
+
+import { searchSignatures } from '../lib/search';
 
 const CNTextSmall = "text-base text-zinc-500 font-sans"
 
@@ -117,45 +118,12 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
     // On fullSigSearch, reSearch update, this is called, updating setSigsDisplay
     const searchSigs = React.useCallback(
         (target: string) => {
-        const lowerTarget = target.toLowerCase();
-        if (!lowerTarget) {
+        if (!target.trim()) {
             setSigsDisplay(sigsEmpty);
             return;
         }
-        let sigsFiltered: string[] = [];
-        // NOTE: we always filter the entire list, not the subset of what was previously filtered
-
-        if (fullSigSearch) {
-            if (reSearch) {
-                const re = new RegExp(lowerTarget);
-                sigFullToSig.forEach((value, key) => {
-                    if (re.test(key.toLowerCase())) {
-                        sigsFiltered.push(value);
-                    }
-                });
-            }
-            else {
-                sigFullToSig.forEach((value, key) => {
-                    if (key.toLowerCase().indexOf(lowerTarget) > -1) {
-                        sigsFiltered.push(value);
-                    }
-                });
-            }
-        }
-        else {
-            if (reSearch) {
-                const re = new RegExp(lowerTarget);
-                sigsFiltered = sigsInitial.filter((row) => {
-                    return re.test(row.toLowerCase());
-                });
-            }
-            else {
-                sigsFiltered = sigsInitial.filter((row) => {
-                    return row.toLowerCase().indexOf(lowerTarget) > -1;
-                });
-            }
-        }
-        setSigsDisplay(sigsFiltered);
+        const result = searchSignatures(target, { fullSigSearch, reSearch });
+        setSigsDisplay(result.signatures);
     }, [reSearch, fullSigSearch]);
 
     function onClickFullSigSearch() {
