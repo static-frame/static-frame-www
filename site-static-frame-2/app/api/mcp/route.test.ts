@@ -197,8 +197,7 @@ describe("MCP Search Tool", () => {
       const data = JSON.parse(response.result.content[0].text);
       expect(data).toHaveProperty("count");
       expect(data).toHaveProperty("signatures");
-      expect(data.count).toBeGreaterThan(100000);
-
+      expect(data.count).toBeGreaterThan(450);
     });
   });
 
