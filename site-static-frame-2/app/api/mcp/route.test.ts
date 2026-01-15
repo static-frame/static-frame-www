@@ -198,6 +198,7 @@ describe("MCP Search Tool", () => {
       expect(data).toHaveProperty("count");
       expect(data).toHaveProperty("signatures");
       expect(data.count).toBeGreaterThan(450);
+
     });
   });
 
@@ -212,7 +213,6 @@ describe("MCP Search Tool", () => {
           arguments: {},
         },
       });
-
       // The MCP server should either return an error or handle gracefully
       // If it returns a result, the search should return no results
       if (response.error) {
@@ -234,7 +234,6 @@ describe("MCP Search Tool", () => {
           },
         },
       });
-
       const data = JSON.parse(response.result.content[0].text);
       expect(data.count).toBe(0);
       expect(data.signatures).toEqual([]);
@@ -260,9 +259,7 @@ describe("MCP Search Tool", () => {
       expect(response.result.content[0]).toHaveProperty("text");
       expect(response.result.content[0].type).toBe("text");
 
-      // Verify JSON is valid
       expect(() => JSON.parse(response.result.content[0].text)).not.toThrow();
-
       const data = JSON.parse(response.result.content[0].text);
       expect(data).toHaveProperty("count");
       expect(data).toHaveProperty("signatures");
