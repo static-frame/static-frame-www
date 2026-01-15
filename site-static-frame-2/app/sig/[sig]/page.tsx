@@ -7,6 +7,7 @@ import { SFBanner } from "../../../components/SFBanner";
 import { Header } from "../../../components/Header";
 import { Footer } from "../../../components/Footer";
 import { CodeBlock, SigLabel } from "../../../components/CodeBlock";
+import { IconArrowLeft } from "../../../components/Icons";
 
 import {
   cnCol1FlexCol,
@@ -70,9 +71,10 @@ export default function SigPage({ params }: SigPageProps) {
                   <div className="px-2">
                     <a
                       href={`/search/${encodeURIComponent(decodedSig.split(".").pop() || decodedSig)}`}
-                      className="text-zinc-500 hover:text-zinc-400 font-sans"
+                      className="text-zinc-500 hover:text-zinc-400 font-sans inline-flex items-center gap-1"
                     >
-                      ← Similar methods
+                      <IconArrowLeft fill="currentColor" />
+                      Similar methods
                     </a>
                   </div>
                 </div>
@@ -85,9 +87,10 @@ export default function SigPage({ params }: SigPageProps) {
                   <div className="">
                     <Link
                       href="/"
-                      className="text-zinc-500 hover:text-zinc-400 font-sans text-sm"
+                      className="text-zinc-500 hover:text-zinc-400 font-sans text-sm inline-flex items-center gap-1"
                     >
-                      ← Back to search
+                      <IconArrowLeft fill="currentColor" />
+                      Back to search
                     </Link>
                   </div>
                 </div>
