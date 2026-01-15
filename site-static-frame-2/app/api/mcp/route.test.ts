@@ -198,7 +198,6 @@ describe("MCP Search Tool", () => {
       expect(data).toHaveProperty("count");
       expect(data).toHaveProperty("signatures");
       expect(data.count).toBeGreaterThan(450);
-
     });
   });
 
