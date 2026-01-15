@@ -133,7 +133,7 @@ describe("MCP Search Tool", () => {
         params: {
           name: "search",
           arguments: {
-            query: "index",
+            query: "own_data",
             fullSigSearch: true,
           },
         },
@@ -142,6 +142,18 @@ describe("MCP Search Tool", () => {
       const data = JSON.parse(response.result.content[0].text);
       expect(data.count).toBeGreaterThan(0);
       expect(data.signatures).toBeInstanceOf(Array);
+      expect(data.signatures).toEqual([
+        "Series.from_pandas()",
+        "SeriesHE.from_pandas()",
+        "Frame.__init__()",
+        "Frame.from_pandas()",
+        "FrameGO.__init__()",
+        "FrameGO.from_pandas()",
+        "FrameHE.__init__()",
+        "FrameHE.from_pandas()",
+        "Bus.__init__()",
+        "Bus.from_series()",
+      ]);
     });
 
     it("should support regex search", async () => {

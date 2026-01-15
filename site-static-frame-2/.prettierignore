@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+# Build outputs
+.next
+out
+build
+
+# Data directory - don't format generated JSON files
+sf-api
+
+# Other
+.DS_Store
+*.log
