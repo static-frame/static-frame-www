@@ -15,11 +15,25 @@ interface Tool {
   inputSchema?: unknown;
 }
 
+// Result types for different MCP responses
+interface ToolsListResult {
+  tools: Tool[];
+}
+
+interface ContentItem {
+  type: "text";
+  text: string;
+}
+
+interface ToolCallResult {
+  content: ContentItem[];
+}
+
 // Helper type for JSON-RPC responses (which include result or error)
-interface JSONRPCResponse {
+interface JSONRPCResponse<T = unknown> {
   jsonrpc: "2.0";
   id: string | number;
-  result?: unknown;
+  result?: T;
   error?: {
     code: number;
     message: string;
@@ -32,17 +46,43 @@ describe("MCP Search Tool", () => {
   let clientTransport: InstanceType<typeof InMemoryTransport>;
   let serverTransport: InstanceType<typeof InMemoryTransport>;
 
-  async function sendMessage(
+  async function sendMessage<T = unknown>(
     message: JSONRPCMessage,
-  ): Promise<JSONRPCResponse> {
+  ): Promise<JSONRPCResponse<T>> {
     return new Promise((resolve) => {
       const originalHandler = clientTransport.onmessage;
       clientTransport.onmessage = (response: JSONRPCMessage) => {
         clientTransport.onmessage = originalHandler;
         // Cast to JSONRPCResponse since we know responses have result or error
-        resolve(response as JSONRPCResponse);
+        resolve(response as JSONRPCResponse<T>);
       };
       clientTransport.send(message);
+    });
+  }
+
+  // Counter for unique message IDs
+  let messageId = 0;
+
+  // Typed helper for tools/list
+  async function listTools(): Promise<JSONRPCResponse<ToolsListResult>> {
+    return sendMessage<ToolsListResult>({
+      jsonrpc: "2.0",
+      id: ++messageId,
+      method: "tools/list",
+      params: {},
+    });
+  }
+
+  // Typed helper for tools/call
+  async function callTool(
+    name: string,
+    args: Record<string, unknown>,
+  ): Promise<JSONRPCResponse<ToolCallResult>> {
+    return sendMessage<ToolCallResult>({
+      jsonrpc: "2.0",
+      id: ++messageId,
+      method: "tools/call",
+      params: { name, arguments: args },
     });
   }
 
@@ -61,22 +101,16 @@ describe("MCP Search Tool", () => {
 
   describe("Tool Registration", () => {
     it("should register the search tool", async () => {
-      // Request list of tools from the server
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 1,
-        method: "tools/list",
-        params: {},
-      });
+      const response = await listTools();
 
       expect(response.result).toBeDefined();
-      expect(response.result.tools).toBeInstanceOf(Array);
-      const searchTool = response.result.tools.find(
-        (tool: Tool) => tool.name === "search",
+      expect(response.result!.tools).toBeInstanceOf(Array);
+      const searchTool = response.result!.tools.find(
+        (tool) => tool.name === "search",
       );
 
       expect(searchTool).toBeDefined();
-      expect(searchTool.description).toBe(
+      expect(searchTool!.description).toBe(
         "Search StaticFrame API signatures by method name or pattern",
       );
     });
@@ -84,24 +118,12 @@ describe("MCP Search Tool", () => {
 
   describe("Search Functionality", () => {
     it("should search for a basic query", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 2,
-        method: "tools/call",
-        params: {
-          name: "search",
-          arguments: {
-            query: "Frame.from_dict",
-          },
-        },
-      });
+      const response = await callTool("search", { query: "Frame.from_dict" });
 
-      // TypeScript now knows response.result exists, so these checks
-      // are more about validating data structure than preventing undefined errors
-      expect(response.result.content).toBeInstanceOf(Array);
-      expect(response.result.content[0].type).toBe("text");
+      expect(response.result!.content).toBeInstanceOf(Array);
+      expect(response.result!.content[0].type).toBe("text");
 
-      const data = JSON.parse(response.result.content[0].text);
+      const data = JSON.parse(response.result!.content[0].text);
       expect(data).toHaveProperty("count");
       expect(data).toHaveProperty("signatures");
       expect(data.count).toBeGreaterThan(0);
@@ -115,38 +137,22 @@ describe("MCP Search Tool", () => {
     });
 
     it("should return empty results for non-existent query", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 3,
-        method: "tools/call",
-        params: {
-          name: "search",
-          arguments: {
-            query: "NonExistentMethod12345",
-          },
-        },
+      const response = await callTool("search", {
+        query: "NonExistentMethod12345",
       });
 
-      const data = JSON.parse(response.result.content[0].text);
+      const data = JSON.parse(response.result!.content[0].text);
       expect(data.count).toBe(0);
       expect(data.signatures).toEqual([]);
     });
 
     it("should support fullSigSearch parameter", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 4,
-        method: "tools/call",
-        params: {
-          name: "search",
-          arguments: {
-            query: "own_data",
-            fullSigSearch: true,
-          },
-        },
+      const response = await callTool("search", {
+        query: "own_data",
+        fullSigSearch: true,
       });
 
-      const data = JSON.parse(response.result.content[0].text);
+      const data = JSON.parse(response.result!.content[0].text);
       expect(data.count).toBeGreaterThan(0);
       expect(data.signatures).toBeInstanceOf(Array);
       expect(data.signatures).toEqual([
@@ -164,20 +170,12 @@ describe("MCP Search Tool", () => {
     });
 
     it("should support regex search", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 5,
-        method: "tools/call",
-        params: {
-          name: "search",
-          arguments: {
-            query: "^Frame\\.",
-            reSearch: true,
-          },
-        },
+      const response = await callTool("search", {
+        query: "^Frame\\.",
+        reSearch: true,
       });
 
-      const data = JSON.parse(response.result.content[0].text);
+      const data = JSON.parse(response.result!.content[0].text);
       expect(data.count).toBeGreaterThan(0);
       expect(data.signatures).toBeInstanceOf(Array);
 
@@ -187,21 +185,13 @@ describe("MCP Search Tool", () => {
     });
 
     it("should handle both fullSigSearch and reSearch together", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 6,
-        method: "tools/call",
-        params: {
-          name: "search",
-          arguments: {
-            query: "drop",
-            fullSigSearch: true,
-            reSearch: false,
-          },
-        },
+      const response = await callTool("search", {
+        query: "drop",
+        fullSigSearch: true,
+        reSearch: false,
       });
 
-      const data = JSON.parse(response.result.content[0].text);
+      const data = JSON.parse(response.result!.content[0].text);
       expect(data).toHaveProperty("count");
       expect(data).toHaveProperty("signatures");
       expect(data.count).toBeGreaterThan(450);
@@ -210,15 +200,7 @@ describe("MCP Search Tool", () => {
 
   describe("Input Validation", () => {
     it("should handle missing query parameter", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 7,
-        method: "tools/call",
-        params: {
-          name: "search",
-          arguments: {},
-        },
-      });
+      const response = await callTool("search", {});
       // The MCP server should either return an error or handle gracefully
       // If it returns a result, the search should return no results
       if (response.error) {
@@ -229,18 +211,8 @@ describe("MCP Search Tool", () => {
     });
 
     it("should handle empty query string", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 8,
-        method: "tools/call",
-        params: {
-          name: "search",
-          arguments: {
-            query: "",
-          },
-        },
-      });
-      const data = JSON.parse(response.result.content[0].text);
+      const response = await callTool("search", { query: "" });
+      const data = JSON.parse(response.result!.content[0].text);
       expect(data.count).toBe(0);
       expect(data.signatures).toEqual([]);
     });
@@ -248,25 +220,17 @@ describe("MCP Search Tool", () => {
 
   describe("Response Format", () => {
     it("should return properly formatted JSON response", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 9,
-        method: "tools/call",
-        params: {
-          name: "search",
-          arguments: {
-            query: "Frame",
-          },
-        },
-      });
+      const response = await callTool("search", { query: "Frame" });
 
-      expect(response.result.content).toBeInstanceOf(Array);
-      expect(response.result.content[0]).toHaveProperty("type");
-      expect(response.result.content[0]).toHaveProperty("text");
-      expect(response.result.content[0].type).toBe("text");
+      expect(response.result!.content).toBeInstanceOf(Array);
+      expect(response.result!.content[0]).toHaveProperty("type");
+      expect(response.result!.content[0]).toHaveProperty("text");
+      expect(response.result!.content[0].type).toBe("text");
 
-      expect(() => JSON.parse(response.result.content[0].text)).not.toThrow();
-      const data = JSON.parse(response.result.content[0].text);
+      expect(() =>
+        JSON.parse(response.result!.content[0].text),
+      ).not.toThrow();
+      const data = JSON.parse(response.result!.content[0].text);
       expect(data).toHaveProperty("count");
       expect(data).toHaveProperty("signatures");
       expect(typeof data.count).toBe("number");
@@ -276,79 +240,48 @@ describe("MCP Search Tool", () => {
 
   describe("Get Doc Tool", () => {
     it("should register the get_doc tool", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 10,
-        method: "tools/list",
-        params: {},
-      });
+      const response = await listTools();
 
-      const getDocTool = response.result.tools.find(
-        (tool: Tool) => tool.name === "get_doc",
+      const getDocTool = response.result!.tools.find(
+        (tool) => tool.name === "get_doc",
       );
       expect(getDocTool).toBeDefined();
-      expect(getDocTool.description).toBe(
+      expect(getDocTool!.description).toBe(
         "Get documentation for a StaticFrame API signature",
       );
     });
 
     it("should return documentation for a valid signature", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 11,
-        method: "tools/call",
-        params: {
-          name: "get_doc",
-          arguments: {
-            sig: "Frame.from_dict()",
-          },
-        },
-      });
+      const response = await callTool("get_doc", { sig: "Frame.from_dict()" });
 
-      expect(response.result.content).toBeInstanceOf(Array);
-      expect(response.result.content[0].type).toBe("text");
-      expect(response.result.content[0].text).toContain("dictionary");
-      expect(response.result.content[0].text).toEqual(
+      expect(response.result!.content).toBeInstanceOf(Array);
+      expect(response.result!.content[0].type).toBe("text");
+      expect(response.result!.content[0].text).toContain("dictionary");
+      expect(response.result!.content[0].text).toEqual(
         "Create a Frame from a dictionary (or any object that has an items() method) where keys are column labels and values are columns values (either sequence types or Series). Args: mapping: a dictionary or similar mapping interface. index: fill_value: dtypes: Optionally provide an iterable of dtypes, equal in length to the length of each row, or a mapping by column name (where overspecied labels is not an error). If a dtype is given as None, element-wise type determination will be used. name: A hashable object to label the container. index_constructor: columns_constructor: consolidate_blocks: Optionally consolidate adjacent same-typed columns into contiguous arrays.",
       );
     });
 
     it("should return not found message for invalid signature", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 12,
-        method: "tools/call",
-        params: {
-          name: "get_doc",
-          arguments: {
-            sig: "NonExistent.method()",
-          },
-        },
+      const response = await callTool("get_doc", {
+        sig: "NonExistent.method()",
       });
 
-      expect(response.result.content[0].text).toContain(
+      expect(response.result!.content[0].text).toContain(
         "No documentation found",
       );
-      expect(response.result.content[0].text).toContain("NonExistent.method()");
+      expect(response.result!.content[0].text).toContain(
+        "NonExistent.method()",
+      );
     });
 
     it("should handle signature without parentheses", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 13,
-        method: "tools/call",
-        params: {
-          name: "get_doc",
-          arguments: {
-            sig: "Frame.shape",
-          },
-        },
-      });
+      const response = await callTool("get_doc", { sig: "Frame.shape" });
 
-      expect(response.result.content).toBeInstanceOf(Array);
-      expect(response.result.content[0].type).toBe("text");
+      expect(response.result!.content).toBeInstanceOf(Array);
+      expect(response.result!.content[0].type).toBe("text");
       // Shape is a property, should have documentation
-      expect(response.result.content[0].text).toEqual(
+      expect(response.result!.content[0].text).toEqual(
         "Return a tuple describing the shape of the underlying NumPy array. Returns: tp.Tuple[int, int]",
       );
     });
@@ -356,73 +289,46 @@ describe("MCP Search Tool", () => {
 
   describe("Get Example Tool", () => {
     it("should register the get_example tool", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 14,
-        method: "tools/list",
-        params: {},
-      });
+      const response = await listTools();
 
-      const getExampleTool = response.result.tools.find(
-        (tool: Tool) => tool.name === "get_example",
+      const getExampleTool = response.result!.tools.find(
+        (tool) => tool.name === "get_example",
       );
       expect(getExampleTool).toBeDefined();
-      expect(getExampleTool.description).toBe(
+      expect(getExampleTool!.description).toBe(
         "Get code example for a StaticFrame API signature",
       );
     });
 
     it("should return example for a valid signature", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 15,
-        method: "tools/call",
-        params: {
-          name: "get_example",
-          arguments: {
-            sig: "Frame.from_dict()",
-          },
-        },
+      const response = await callTool("get_example", {
+        sig: "Frame.from_dict()",
       });
 
-      expect(response.result.content).toBeInstanceOf(Array);
-      expect(response.result.content[0].type).toBe("text");
+      expect(response.result!.content).toBeInstanceOf(Array);
+      expect(response.result!.content[0].type).toBe("text");
       // Example should contain Python code with sf.Frame.from_dict
-      expect(response.result.content[0].text).toContain("sf.Frame.from_dict");
-      expect(response.result.content[0].text).toContain(">>>");
+      expect(response.result!.content[0].text).toContain("sf.Frame.from_dict");
+      expect(response.result!.content[0].text).toContain(">>>");
     });
 
     it("should return not found message for signature without example", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 16,
-        method: "tools/call",
-        params: {
-          name: "get_example",
-          arguments: {
-            sig: "NonExistent.method()",
-          },
-        },
+      const response = await callTool("get_example", {
+        sig: "NonExistent.method()",
       });
 
-      expect(response.result.content[0].text).toContain("No example found");
-      expect(response.result.content[0].text).toContain("NonExistent.method()");
+      expect(response.result!.content[0].text).toContain("No example found");
+      expect(response.result!.content[0].text).toContain(
+        "NonExistent.method()",
+      );
     });
 
     it("should return multiline example output", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 17,
-        method: "tools/call",
-        params: {
-          name: "get_example",
-          arguments: {
-            sig: "Frame.from_dict()",
-          },
-        },
+      const response = await callTool("get_example", {
+        sig: "Frame.from_dict()",
       });
 
-      const text = response.result.content[0].text;
+      const text = response.result!.content[0].text;
       // Example output should contain multiple lines (Frame display)
       expect(text.split("\n").length).toBeGreaterThan(1);
       // Should contain Frame output indicators
@@ -430,21 +336,13 @@ describe("MCP Search Tool", () => {
     });
 
     it("should handle Series example", async () => {
-      const response = await sendMessage({
-        jsonrpc: "2.0",
-        id: 18,
-        method: "tools/call",
-        params: {
-          name: "get_example",
-          arguments: {
-            sig: "Series.from_dict()",
-          },
-        },
+      const response = await callTool("get_example", {
+        sig: "Series.from_dict()",
       });
 
-      expect(response.result.content).toBeInstanceOf(Array);
-      expect(response.result.content[0].type).toBe("text");
-      expect(response.result.content[0].text).toContain("sf.Series.from_dict");
+      expect(response.result!.content).toBeInstanceOf(Array);
+      expect(response.result!.content[0].type).toBe("text");
+      expect(response.result!.content[0].text).toContain("sf.Series.from_dict");
     });
   });
 });
