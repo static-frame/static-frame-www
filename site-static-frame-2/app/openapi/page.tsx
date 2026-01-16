@@ -68,8 +68,8 @@ export default function OpenAPIPage() {
               </span>
               <p className="text-base text-zinc-500 font-sans">
                 To integrate with ChatGPT Actions, use the schema URL above in
-                your GPT configuration. The API uses standard JSON request/response
-                format over HTTPS.
+                your GPT configuration. The API uses standard JSON
+                request/response format over HTTPS.
               </p>
             </div>
           </div>
