@@ -20,6 +20,12 @@ export function Header() {
             >
               MCP
             </NextLink>
+            <NextLink
+              href="/openapi"
+              className={`${cnHeaderButton} py-1 text-xs font-sans text-slate-400/60 hover:text-slate-300 transition-colors block`}
+            >
+              OpenAPI
+            </NextLink>
           </div>
           <div className="space-x-1 flex">
             <Link
