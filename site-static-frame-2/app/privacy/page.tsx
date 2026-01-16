@@ -31,9 +31,7 @@ export default function PrivacyPage() {
               </h1>
 
               <div className="space-y-4 font-sans text-slate-400 text-sm">
-                <p className="text-slate-300">
-                  Last updated: January 16, 2026
-                </p>
+                <p className="text-slate-300">Last updated: January 16, 2026</p>
 
                 <section>
                   <h2 className="text-lg font-sans text-slate-300 mb-2">
