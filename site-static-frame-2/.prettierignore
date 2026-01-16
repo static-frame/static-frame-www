@@ -9,6 +9,9 @@ build
 # Data directory - don't format generated JSON files
 sf-api
 
+# OpenAPI schema
+app/api/openapi/openapi.json
+
 # Other
 .DS_Store
 *.log

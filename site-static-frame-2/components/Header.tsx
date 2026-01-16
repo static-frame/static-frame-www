@@ -10,13 +10,13 @@ export function Header() {
           <div className="space-x-1 flex">
             <NextLink
               href="/"
-              className={`${cnHeaderButton} text-xs font-sans text-slate-400/60 hover:text-slate-300 transition-colors block`}
+              className={`${cnHeaderButton} py-1 text-xs font-sans text-slate-400/60 hover:text-slate-300 transition-colors block`}
             >
               Search
             </NextLink>
             <NextLink
               href="/mcp"
-              className={`${cnHeaderButton} text-xs font-sans text-slate-400/60 hover:text-slate-300 transition-colors block`}
+              className={`${cnHeaderButton} py-1 text-xs font-sans text-slate-400/60 hover:text-slate-300 transition-colors block`}
             >
               MCP
             </NextLink>

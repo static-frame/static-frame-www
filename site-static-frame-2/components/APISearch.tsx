@@ -335,18 +335,13 @@ export function APISearch({ initialQuery }: APISearchProps = {}) {
 
   return (
     <div className="space-y-2">
-      <div className="px-2">
-        <span className="text-2xl text-slate-400 text-bold">
-          StaticFrame API Search
-        </span>
-      </div>
-      <div className="px-2">
-        <p className={CNTextSmall}>
-          Search {sigsInitial.length.toLocaleString()} endpoints and view{" "}
-          {sigToEx.size.toLocaleString()} code examples of the {versionLink}{" "}
-          API.
-        </p>
-      </div>
+      <span className="text-2xl text-slate-400 text-bold">
+        StaticFrame API Search
+      </span>
+      <p className={CNTextSmall}>
+        Search {sigsInitial.length.toLocaleString()} endpoints and view{" "}
+        {sigToEx.size.toLocaleString()} code examples of the {versionLink} API.
+      </p>
       <div>
         <button
           onClick={onClickRandomMethod}

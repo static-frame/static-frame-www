@@ -1,0 +1,192 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "StaticFrame API",
+    "description": "Search and retrieve documentation for the StaticFrame Python library API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://static-frame.dev"
+    }
+  ],
+  "paths": {
+    "/api/openapi/search": {
+      "post": {
+        "summary": "Search API signatures",
+        "description": "Search StaticFrame API signatures by method name or pattern",
+        "operationId": "searchSignatures",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "The search query (method name, class name, or pattern)"
+                  },
+                  "fullSigSearch": {
+                    "type": "boolean",
+                    "description": "Include parameter names in search (default: false)",
+                    "default": false
+                  },
+                  "reSearch": {
+                    "type": "boolean",
+                    "description": "Use regular expression matching (default: false)",
+                    "default": false
+                  }
+                },
+                "required": ["query"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Search results",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "number",
+                      "description": "Number of matching signatures"
+                    },
+                    "signatures": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "List of matching API signatures"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/openapi/get_doc": {
+      "post": {
+        "summary": "Get documentation",
+        "description": "Get documentation for a StaticFrame API signature",
+        "operationId": "getDocumentation",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "sig": {
+                    "type": "string",
+                    "description": "The signature to get documentation for (e.g., 'Frame.from_dict()')"
+                  }
+                },
+                "required": ["sig"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Documentation text",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "signature": {
+                      "type": "string"
+                    },
+                    "documentation": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Documentation not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/openapi/get_example": {
+      "post": {
+        "summary": "Get code example",
+        "description": "Get code example for a StaticFrame API signature",
+        "operationId": "getExample",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "sig": {
+                    "type": "string",
+                    "description": "The signature to get example for (e.g., 'Frame.from_dict()')"
+                  }
+                },
+                "required": ["sig"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Code example",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "signature": {
+                      "type": "string"
+                    },
+                    "example": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Example not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

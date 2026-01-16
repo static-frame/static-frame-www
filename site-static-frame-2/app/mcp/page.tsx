@@ -31,7 +31,8 @@ export default function MCPPage() {
               <p className="text-base text-zinc-500 font-sans">
                 The StaticFrame Model Context Protocol (MCP) server provides AI
                 assistants with access to the StaticFrame API documentation,
-                enabling intelligent code completion and assistance. The MCP server is available at:
+                enabling intelligent code completion and assistance. The MCP
+                server is available at:
               </p>
 
               <div className="bg-zinc-900 p-2 my-2 rounded-sm overflow-x-auto">
@@ -39,7 +40,6 @@ export default function MCPPage() {
                   https://static-frame.dev/api/mcp
                 </code>
               </div>
-
 
               <span className="my-2 text-xl text-slate-400 text-bold">
                 Integration
@@ -50,7 +50,6 @@ export default function MCPPage() {
                 implements the Model Context Protocol specification and supports
                 standard JSON-RPC 2.0 requests over Server-Sent Events (SSE).
               </p>
-
 
               <span className="my-2 text-xl text-slate-400 text-bold">
                 Server Information
@@ -70,11 +69,10 @@ export default function MCPPage() {
                   JSON-RPC 2.0
                 </li>
               </ul>
-
             </div>
           </div>
 
-          <div className="px-2 pt-2 my-4 bg-black rounded-sm">
+          <div className="px-2 pt-2 mt-4 bg-black rounded-sm">
             <div className={cnCol1FlexCol}>
               <span className="mb-2 text-2xl text-slate-400 text-bold">
                 Available Tools
