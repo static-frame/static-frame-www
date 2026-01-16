@@ -89,7 +89,7 @@ jobs:
         run: |
           pip install -r requirements-dev-3_13.txt
           export PYTHONPATH="${PYTHONPATH}:."
-          python3 doc/build_json.py --write --output ../site-static-frame/src/sf-api
+          python3 doc/build_json.py --write --output ../site-static-frame-2/sf-api
         working-directory: static-frame
 
       - name: Remove static-frame
