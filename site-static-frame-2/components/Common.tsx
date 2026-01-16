@@ -14,7 +14,7 @@ export const cnCol1FlexCol = "w-full flex flex-col py-2 px-2 sm:w-1/1 lg:w-1/1";
 
 export const cnColFieldGradient =
   "px-4 py-2 rounded-sm shadow-md bg-gradient-to-b from-zinc-700 to-zinc-900";
-export const cnHeaderButton = "bg-zinc-800/50 rounded-sm px-6";
+export const cnHeaderButton = "bg-zinc-800/40 hover:bg-zinc-700/60 rounded-sm px-6 transition-colors";
 
 export const CNButtonCommon = "ml-1 my-1 p-2 w-8 rounded-sm";
 export const CNButton = `${CNButtonCommon} bg-gradient-to-b from-zinc-600 to-zinc-700`;
