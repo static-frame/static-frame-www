@@ -4,6 +4,7 @@ import type { JSONRPCMessage } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
 
 import { searchSignatures } from "../../../lib/search";
+import { sigToDoc, sigToEx } from "../../../lib/apiData";
 
 // Exported function to create a configured MCP server
 // This allows the same server configuration to be used in tests
@@ -69,13 +70,93 @@ export function registerSearchTool(server: McpServer) {
   );
 }
 
-// Create the MCP server instance
+// Exported function to register get_doc tool on an MCP server
+// Returns documentation for a given signature
+export function registerGetDocTool(server: McpServer) {
+  server.registerTool(
+    "get_doc",
+    {
+      description: "Get documentation for a StaticFrame API signature",
+      inputSchema: {
+        sig: z
+          .string()
+          .describe(
+            "The signature to get documentation for (e.g., 'Frame.from_dict()')",
+          ),
+      },
+    },
+    async ({ sig }: { sig: string }) => {
+      const doc = sigToDoc.get(sig);
+
+      if (!doc) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: `No documentation found for signature: ${sig}`,
+            },
+          ],
+        };
+      }
+
+      return {
+        content: [
+          {
+            type: "text" as const,
+            text: doc,
+          },
+        ],
+      };
+    },
+  );
+}
+
+// Exported function to register get_example tool on an MCP server
+// Returns code example for a given signature
+export function registerGetExampleTool(server: McpServer) {
+  server.registerTool(
+    "get_example",
+    {
+      description: "Get code example for a StaticFrame API signature",
+      inputSchema: {
+        sig: z
+          .string()
+          .describe(
+            "The signature to get example for (e.g., 'Frame.from_dict()')",
+          ),
+      },
+    },
+    async ({ sig }: { sig: string }) => {
+      const example = sigToEx.get(sig);
+
+      if (!example) {
+        return {
+          content: [
+            {
+              type: "text" as const,
+              text: `No example found for signature: ${sig}`,
+            },
+          ],
+        };
+      }
+
+      return {
+        content: [
+          {
+            type: "text" as const,
+            text: example.join("\n"),
+          },
+        ],
+      };
+    },
+  );
+}
+
 const server = createMcpServer();
-
-// Register the search tool
 registerSearchTool(server);
+registerGetDocTool(server);
+registerGetExampleTool(server);
 
-// Session management
 interface Session {
   clientTransport: InstanceType<typeof InMemoryTransport>;
   serverTransport: InstanceType<typeof InMemoryTransport>;
@@ -85,6 +166,7 @@ interface Session {
 
 const sessions = new Map<string, Session>();
 
+//--------------------------------------------------------------
 function sendSSE(session: Session, event: string, data: unknown) {
   if (session.controller) {
     const message = `event: ${event}\ndata: ${JSON.stringify(data)}\n\n`;
@@ -92,6 +174,7 @@ function sendSSE(session: Session, event: string, data: unknown) {
   }
 }
 
+//--------------------------------------------------------------
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const sessionId = url.searchParams.get("sessionId") || crypto.randomUUID();
