@@ -1,4 +1,5 @@
 import { describe, it, expect } from "vitest";
+import type { NextRequest } from "next/server";
 import { GET } from "./route";
 import { POST as searchPOST } from "./search/route";
 import { POST as getDocPOST } from "./get_doc/route";
@@ -22,7 +23,7 @@ describe("OpenAPI Endpoints", () => {
       const request = new Request("http://localhost/api/openapi/search", {
         method: "POST",
         body: JSON.stringify({ query: "Frame.from_dict" }),
-      });
+      }) as NextRequest;
       const response = await searchPOST(request);
       const data = await response.json();
 
@@ -36,7 +37,7 @@ describe("OpenAPI Endpoints", () => {
       const request = new Request("http://localhost/api/openapi/search", {
         method: "POST",
         body: JSON.stringify({ query: "NonExistentMethod12345" }),
-      });
+      }) as NextRequest;
       const response = await searchPOST(request);
       const data = await response.json();
 
@@ -51,7 +52,7 @@ describe("OpenAPI Endpoints", () => {
       const request = new Request("http://localhost/api/openapi/get_doc", {
         method: "POST",
         body: JSON.stringify({ sig: "Frame.from_dict()" }),
-      });
+      }) as NextRequest;
       const response = await getDocPOST(request);
       const data = await response.json();
 
@@ -64,7 +65,7 @@ describe("OpenAPI Endpoints", () => {
       const request = new Request("http://localhost/api/openapi/get_doc", {
         method: "POST",
         body: JSON.stringify({ sig: "NonExistent.method()" }),
-      });
+      }) as NextRequest;
       const response = await getDocPOST(request);
       const data = await response.json();
 
@@ -78,7 +79,7 @@ describe("OpenAPI Endpoints", () => {
       const request = new Request("http://localhost/api/openapi/get_example", {
         method: "POST",
         body: JSON.stringify({ sig: "Frame.from_dict()" }),
-      });
+      }) as NextRequest;
       const response = await getExamplePOST(request);
       const data = await response.json();
 
@@ -91,7 +92,7 @@ describe("OpenAPI Endpoints", () => {
       const request = new Request("http://localhost/api/openapi/get_example", {
         method: "POST",
         body: JSON.stringify({ sig: "NonExistent.method()" }),
-      });
+      }) as NextRequest;
       const response = await getExamplePOST(request);
       const data = await response.json();
 
