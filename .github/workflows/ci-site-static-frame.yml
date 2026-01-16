@@ -1,0 +1,43 @@
+name: Site Static Frame
+
+on:
+  pull_request:
+    paths:
+      - 'site-static-frame-2/**'
+  push:
+    paths:
+      - 'site-static-frame-2/**'
+
+defaults:
+  run:
+    working-directory: site-static-frame-2
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: site-static-frame-2/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint code
+        run: npm run lint
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Run tests
+        run: npm run test:run
+
+      - name: Build frontend
+        run: npm run build

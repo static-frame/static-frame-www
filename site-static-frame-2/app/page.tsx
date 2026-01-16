@@ -1,17 +1,36 @@
-import Image from "next/image";
+import { SFBanner } from "../components/SFBanner";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
+import { APISearch } from "../components/APISearch";
+import {
+  cnCol1FlexCol,
+  cnColFieldGradient,
+  cnMaxWidthCentered,
+} from "../components/Common";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div>
+      <Header />
+      <div className="h-screen overflow-x-auto">
+        <div className="h-6"></div>
+        <div className={cnMaxWidthCentered}>
+          <div className="flex flex-wrap px-2 py-2 my-4 bg-black rounded-sm">
+            <div className={cnCol1FlexCol}>
+              <div className={cnColFieldGradient}>
+                <SFBanner />
+              </div>
+            </div>
+          </div>
 
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
+          <div className="flex flex-wrap px-2 pt-2 bg-black rounded-sm">
+            <div className={cnCol1FlexCol}>
+              <APISearch />
+            </div>
+          </div>
+          <Footer />
         </div>
-
-      </main>
+      </div>
     </div>
   );
 }
