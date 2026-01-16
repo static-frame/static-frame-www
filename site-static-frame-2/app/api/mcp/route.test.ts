@@ -227,9 +227,7 @@ describe("MCP Search Tool", () => {
       expect(response.result!.content[0]).toHaveProperty("text");
       expect(response.result!.content[0].type).toBe("text");
 
-      expect(() =>
-        JSON.parse(response.result!.content[0].text),
-      ).not.toThrow();
+      expect(() => JSON.parse(response.result!.content[0].text)).not.toThrow();
       const data = JSON.parse(response.result!.content[0].text);
       expect(data).toHaveProperty("count");
       expect(data).toHaveProperty("signatures");
