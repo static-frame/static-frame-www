@@ -30,11 +30,12 @@ export default function OpenAPIPage() {
               </span>
               <p className="text-base text-zinc-500 font-sans">
                 REST API endpoints for searching and retrieving StaticFrame
-                documentation. Compatible with ChatGPT Actions and other OpenAPI
-                3.1 clients.
+                documentation. The schema is available at the base endpoint. Use
+                this URL to configure ChatGPT Actions or other OpenAPI clients.
+                The API uses standard JSON request/response format over HTTPS.
               </p>
 
-              <div className="bg-zinc-900 p-2 my-2 rounded-sm overflow-x-auto">
+              <div className="bg-zinc-900 p-2 mt-2 rounded-sm overflow-x-auto">
                 <a
                   href="/api/openapi"
                   target="_blank"
@@ -44,33 +45,6 @@ export default function OpenAPIPage() {
                   https://static-frame.dev/api/openapi
                 </a>
               </div>
-
-              <span className="my-2 text-xl text-slate-400 text-bold">
-                Schema
-              </span>
-              <p className="text-base text-zinc-500 font-sans">
-                The OpenAPI 3.1 schema is available at the base endpoint. Use
-                this URL to configure ChatGPT Actions or other API clients.
-              </p>
-              <div className="bg-zinc-900 p-2 my-2 rounded-sm overflow-x-auto">
-                <a
-                  href="/api/openapi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-slate-300 font-mono transition-colors"
-                >
-                  https://static-frame.dev/api/openapi
-                </a>
-              </div>
-
-              <span className="my-2 text-xl text-slate-400 text-bold">
-                Integration
-              </span>
-              <p className="text-base text-zinc-500 font-sans">
-                To integrate with ChatGPT Actions, use the schema URL above in
-                your GPT configuration. The API uses standard JSON
-                request/response format over HTTPS.
-              </p>
             </div>
           </div>
 
