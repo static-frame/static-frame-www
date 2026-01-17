@@ -8,22 +8,13 @@ export function Header() {
       <div className="max-w-5xl mx-auto pr-5 pl-5 flex-1">
         <div className="pt-2 space-x-1 flex justify-between">
           <div className="space-x-1 flex">
-            <NextLink
-              href="/"
-              className={`${cnHeaderButton}`}
-            >
+            <NextLink href="/" className={`${cnHeaderButton}`}>
               Search
             </NextLink>
-            <NextLink
-              href="/mcp"
-              className={`${cnHeaderButton}`}
-            >
+            <NextLink href="/mcp" className={`${cnHeaderButton}`}>
               MCP
             </NextLink>
-            <NextLink
-              href="/openapi"
-              className={`${cnHeaderButton}`}
-            >
+            <NextLink href="/openapi" className={`${cnHeaderButton}`}>
               OpenAPI
             </NextLink>
           </div>

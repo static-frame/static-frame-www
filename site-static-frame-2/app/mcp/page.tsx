@@ -42,16 +42,6 @@ export default function MCPPage() {
               </div>
 
               <span className="my-2 text-xl text-slate-400 text-bold">
-                Integration
-              </span>
-              <p className="text-base text-zinc-500 font-sans">
-                To integrate this MCP server with your AI assistant, configure
-                your MCP client to connect to the endpoint above. The server
-                implements the Model Context Protocol specification and supports
-                standard JSON-RPC 2.0 requests over Server-Sent Events (SSE).
-              </p>
-
-              <span className="my-2 text-xl text-slate-400 text-bold">
                 Server Information
               </span>
               <ul className="list-inside text-slate-300 space-y-0 font-sans">

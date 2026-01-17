@@ -1,7 +1,7 @@
 import { SFIconSVG } from "./IconSFInf";
 import { SFTitleSVG } from "./IconSFTitle";
 
-import { colorAccentOrange, versionSite } from "./Common";
+import { colorAccentOrange } from "./Common";
 
 export function SFBanner() {
   return (
@@ -17,7 +17,6 @@ export function SFBanner() {
       <div className="px-2 pt-1 h-20">
         <SFTitleSVG />
       </div>
-      <div className="text-zinc-400">{versionSite}</div>
     </div>
   );
 }
