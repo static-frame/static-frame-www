@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SFBanner } from "../../components/SFBanner";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
@@ -133,13 +134,13 @@ export default function PrivacyPage() {
                 </section>
 
                 <div className="pt-4 border-t border-zinc-800">
-                  <a
+                  <Link
                     href="/"
                     className="text-zinc-500 hover:text-zinc-400 font-sans text-sm inline-flex items-center gap-1 transition-colors"
                   >
                     <IconArrowLeft fill="currentColor" />
                     Back to search
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
