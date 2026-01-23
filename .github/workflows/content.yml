@@ -25,7 +25,7 @@ jobs:
           echo "version pypi: $VERSION_SF_PYPI"
           echo "version=v${VERSION_SF_PYPI}" >> $GITHUB_OUTPUT
 
-          export VERSION_SF_CURRENT=$(jq -r '.version' site-static-frame/src/sf-api/metadata.json)
+          export VERSION_SF_CURRENT=$(jq -r '.version' site-static-frame-2/sf-api/metadata.json)
           echo "version current: $VERSION_SF_CURRENT"
 
           if [ "$VERSION_SF_PYPI" == "$VERSION_SF_CURRENT" ]; then
@@ -89,7 +89,7 @@ jobs:
         run: |
           pip install -r requirements-dev-3_13.txt
           export PYTHONPATH="${PYTHONPATH}:."
-          python3 doc/build_json.py --write --output ../site-static-frame/src/sf-api
+          python3 doc/build_json.py --write --output ../site-static-frame-2/sf-api
         working-directory: static-frame
 
       - name: Remove static-frame
@@ -97,7 +97,7 @@ jobs:
 
       - name: Extract New Version
         run: |
-          export VERSION_SF_SOURCED=$(jq -r '.version' site-static-frame/src/sf-api/metadata.json)
+          export VERSION_SF_SOURCED=$(jq -r '.version' site-static-frame-2/sf-api/metadata.json)
           echo "VERSION_SF_SOURCED=$VERSION_SF_SOURCED" >> $GITHUB_ENV
           export NAME_BRANCH="content-update-${VERSION_SF_SOURCED}-${GITHUB_RUN_ID}"
           echo "NAME_BRANCH=$NAME_BRANCH" >> $GITHUB_ENV
