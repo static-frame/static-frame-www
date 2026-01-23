@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2527,7 +2527,7 @@ Search
 
 [Overview: DisplayConfig: Constructor](../api_overview/display_config-constructor.md#api-overview-displayconfig-constructor)
 
-DisplayConfig.\_\_init\_\_(*\**, *type\_show=True*, *type\_color=True*, *type\_color\_default=5263440*, *type\_color\_int=5263440*, *type\_color\_float=5263440*, *type\_color\_complex=5263440*, *type\_color\_bool=5263440*, *type\_color\_object=5263440*, *type\_color\_str=5263440*, *type\_color\_datetime=5263440*, *type\_color\_timedelta=5263440*, *type\_color\_index=7829367*, *type\_color\_series=7829367*, *type\_color\_frame=7829367*, *type\_color\_bus=7829367*, *type\_color\_quilt=7829367*, *type\_delimiter\_left='<'*, *type\_delimiter\_right='>'*, *value\_format\_float\_positional='{}'*, *value\_format\_float\_scientific='{:.8e}'*, *value\_format\_complex\_positional='{}'*, *value\_format\_complex\_scientific='{:.2e}'*, *cell\_placeholder='.'*, *display\_format=DisplayFormats.TERMINAL*, *display\_columns=12*, *display\_rows=36*, *include\_columns=True*, *include\_index=True*, *cell\_max\_width=20*, *cell\_max\_width\_leftmost=36*, *cell\_align\_left=True*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.__init__)[#](#static_frame.DisplayConfig.__init__ "Link to this definition")
+DisplayConfig.\_\_init\_\_(*\**, *type\_show=True*, *type\_color=True*, *type\_color\_default=5263440*, *type\_color\_int=5263440*, *type\_color\_float=5263440*, *type\_color\_complex=5263440*, *type\_color\_bool=5263440*, *type\_color\_object=5263440*, *type\_color\_str=5263440*, *type\_color\_datetime=5263440*, *type\_color\_timedelta=5263440*, *type\_color\_index=7829367*, *type\_color\_series=7829367*, *type\_color\_frame=7829367*, *type\_color\_bus=7829367*, *type\_color\_quilt=7829367*, *type\_delimiter\_left='<'*, *type\_delimiter\_right='>'*, *value\_format\_float\_positional='{}'*, *value\_format\_float\_scientific='{:.8e}'*, *value\_format\_complex\_positional='{}'*, *value\_format\_complex\_scientific='{:.2e}'*, *cell\_placeholder='.'*, *display\_format=DisplayFormats.TERMINAL*, *display\_columns=12*, *display\_rows=36*, *include\_columns=True*, *include\_index=True*, *cell\_max\_width=20*, *cell\_max\_width\_leftmost=36*, *cell\_align\_left=True*, *ellipsis='…'*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.__init__)[#](#static_frame.DisplayConfig.__init__ "Link to this definition")
 
 *classmethod* DisplayConfig.from\_default(*\*\*kwargs*)[[source]](../_modules/static_frame/core/display_config.md#DisplayConfig.from_default)[#](#static_frame.DisplayConfig.from_default "Link to this definition")
 
@@ -2551,7 +2551,7 @@ On this page
 * [`DisplayConfig.from_file()`](#static_frame.DisplayConfig.from_file)
 * [`DisplayConfig.from_json()`](#static_frame.DisplayConfig.from_json)
 
-© Copyright 2025, Christopher Ariza.
+© Copyright 2026, Christopher Ariza.
 
 Created using [Sphinx](https://www.sphinx-doc.org/) 7.2.6.
 

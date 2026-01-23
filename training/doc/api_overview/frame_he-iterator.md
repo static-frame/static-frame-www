@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2900,7 +2900,7 @@ Search
 | [Detail](../api_detail/frame_he-iterator.md#api-sig-framehe-iter-window-array-items-reduce-from-label-pair-map-items) | `FrameHE.iter_window_array_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).reduce.from_label_pair_map(func_map, *, fill_value).items()` |  |
 | [Detail](../api_detail/frame_he-iterator.md#api-sig-framehe-iter-window-array-items-reduce-from-label-pair-map-values) | `FrameHE.iter_window_array_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).reduce.from_label_pair_map(func_map, *, fill_value).values()` |  |
 | [Detail](../api_detail/frame_he-iterator.md#api-sig-framehe-iter-window-array-items-reduce-from-label-pair-map-to-frame) | `FrameHE.iter_window_array_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).reduce.from_label_pair_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
-| [Detail](../api_detail/frame_he-iterator.md#api-sig-framehe-iter-window-items) | `FrameHE.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment)` | Iterator of pairs of label, windowed values, where values are given as a Frame…. |
+| [Detail](../api_detail/frame_he-iterator.md#api-sig-framehe-iter-window-items) | `FrameHE.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment)` | Iterator of pairs of label, windowed values, where values are given as a Frame.… |
 | [Detail](../api_detail/frame_he-iterator.md#api-sig-framehe-iter-window-items-apply) | `FrameHE.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).apply(func, /, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
 | [Detail](../api_detail/frame_he-iterator.md#api-sig-framehe-iter-window-items-apply-iter) | `FrameHE.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).apply_iter(func, /)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
 | [Detail](../api_detail/frame_he-iterator.md#api-sig-framehe-iter-window-items-apply-iter-items) | `FrameHE.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).apply_iter_items(func, /)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
@@ -2935,7 +2935,7 @@ Overview: FrameHE: Selector](frame_he-selector.md "previous page")
 
 Overview: FrameHE: Operator Binary](frame_he-operator_binary.md "next page")
 
-© Copyright 2025, Christopher Ariza.
+© Copyright 2026, Christopher Ariza.
 
 Created using [Sphinx](https://www.sphinx-doc.org/) 7.2.6.
 

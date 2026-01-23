@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2541,6 +2541,8 @@ DisplayConfig.display\_format[#](#static_frame.DisplayConfig.display_format "Lin
 
 DisplayConfig.display\_rows[#](#static_frame.DisplayConfig.display_rows "Link to this definition")
 
+DisplayConfig.ellipsis[#](#static_frame.DisplayConfig.ellipsis "Link to this definition")
+
 DisplayConfig.include\_columns[#](#static_frame.DisplayConfig.include_columns "Link to this definition")
 
 DisplayConfig.include\_index[#](#static_frame.DisplayConfig.include_index "Link to this definition")
@@ -2607,6 +2609,7 @@ On this page
 * [`DisplayConfig.display_columns`](#static_frame.DisplayConfig.display_columns)
 * [`DisplayConfig.display_format`](#static_frame.DisplayConfig.display_format)
 * [`DisplayConfig.display_rows`](#static_frame.DisplayConfig.display_rows)
+* [`DisplayConfig.ellipsis`](#static_frame.DisplayConfig.ellipsis)
 * [`DisplayConfig.include_columns`](#static_frame.DisplayConfig.include_columns)
 * [`DisplayConfig.include_index`](#static_frame.DisplayConfig.include_index)
 * [`DisplayConfig.type_color`](#static_frame.DisplayConfig.type_color)
@@ -2632,7 +2635,7 @@ On this page
 * [`DisplayConfig.value_format_float_positional`](#static_frame.DisplayConfig.value_format_float_positional)
 * [`DisplayConfig.value_format_float_scientific`](#static_frame.DisplayConfig.value_format_float_scientific)
 
-© Copyright 2025, Christopher Ariza.
+© Copyright 2026, Christopher Ariza.
 
 Created using [Sphinx](https://www.sphinx-doc.org/) 7.2.6.
 

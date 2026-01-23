@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2529,7 +2529,7 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/display_config-constructor.md#api-sig-displayconfig-init) | `DisplayConfig.__init__(*, type_show, type_color, type_color_default, type_color_int, type_color_float, type_color_complex, type_color_bool, type_color_object, type_color_str, type_color_datetime, type_color_timedelta, type_color_index, type_color_series, type_color_frame, type_color_bus, type_color_quilt, type_delimiter_left, type_delimiter_right, value_format_float_positional, value_format_float_scientific, value_format_complex_positional, value_format_complex_scientific, cell_placeholder, display_format, display_columns, display_rows, include_columns, include_index, cell_max_width, cell_max_width_leftmost, cell_align_left)` |  |
+| [Detail](../api_detail/display_config-constructor.md#api-sig-displayconfig-init) | `DisplayConfig.__init__(*, type_show, type_color, type_color_default, type_color_int, type_color_float, type_color_complex, type_color_bool, type_color_object, type_color_str, type_color_datetime, type_color_timedelta, type_color_index, type_color_series, type_color_frame, type_color_bus, type_color_quilt, type_delimiter_left, type_delimiter_right, value_format_float_positional, value_format_float_scientific, value_format_complex_positional, value_format_complex_scientific, cell_placeholder, display_format, display_columns, display_rows, include_columns, include_index, cell_max_width, cell_max_width_leftmost, cell_align_left, ellipsis)` |  |
 | [Detail](../api_detail/display_config-constructor.md#api-sig-displayconfig-from-default) | `DisplayConfig.from_default(**kwargs)` |  |
 | [Detail](../api_detail/display_config-constructor.md#api-sig-displayconfig-from-file) | `DisplayConfig.from_file(fp)` |  |
 | [Detail](../api_detail/display_config-constructor.md#api-sig-displayconfig-from-json) | `DisplayConfig.from_json(json_str)` |  |
@@ -2543,7 +2543,7 @@ Overview: DisplayActive: Display](display_active-display.md "previous page")
 
 Overview: DisplayConfig: Exporter](display_config-exporter.md "next page")
 
-© Copyright 2025, Christopher Ariza.
+© Copyright 2026, Christopher Ariza.
 
 Created using [Sphinx](https://www.sphinx-doc.org/) 7.2.6.
 
