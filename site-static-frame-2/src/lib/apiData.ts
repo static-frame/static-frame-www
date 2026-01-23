@@ -1,13 +1,13 @@
 // Centralized API data loading and transformation
 // This module is evaluated once and cached, so all imports share the same data
 
-import sigsInitial from "../sf-api/sigs.json";
-import sigToDocJSON from "../sf-api/sig_to_doc.json";
-import sigToExJSON from "../sf-api/sig_to_example.json";
-import sigToGroupJSON from "../sf-api/sig_to_group.json";
-import methodToSigJSON from "../sf-api/method_to_sig.json";
-import sigFullToSigJSON from "../sf-api/sig_full_to_sig.json";
-import metadataJSON from "../sf-api/metadata.json";
+import sigsInitial from "../../sf-api/sigs.json";
+import sigToDocJSON from "../../sf-api/sig_to_doc.json";
+import sigToExJSON from "../../sf-api/sig_to_example.json";
+import sigToGroupJSON from "../../sf-api/sig_to_group.json";
+import methodToSigJSON from "../../sf-api/method_to_sig.json";
+import sigFullToSigJSON from "../../sf-api/sig_full_to_sig.json";
+import metadataJSON from "../../sf-api/metadata.json";
 
 // Export raw data
 export { sigsInitial };
