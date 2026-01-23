@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2533,7 +2533,7 @@ Search
 | [Detail](../api_detail/series_he-accessor_regular_expression.md#api-sig-serieshe-via-re-match) | `SeriesHE.via_re(pattern, flags, /).match(pos, endpos)` | If zero or more characters at the beginning of string match this regular express… |
 | [Detail](../api_detail/series_he-accessor_regular_expression.md#api-sig-serieshe-via-re-fullmatch) | `SeriesHE.via_re(pattern, flags, /).fullmatch(pos, endpos)` | If the whole string matches this regular expression, return True, else False. No… |
 | [Detail](../api_detail/series_he-accessor_regular_expression.md#api-sig-serieshe-via-re-split) | `SeriesHE.via_re(pattern, flags, /).split(maxsplit)` | Split string by the occurrences of pattern. If capturing parentheses are used in… |
-| [Detail](../api_detail/series_he-accessor_regular_expression.md#api-sig-serieshe-via-re-findall) | `SeriesHE.via_re(pattern, flags, /).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings…. |
+| [Detail](../api_detail/series_he-accessor_regular_expression.md#api-sig-serieshe-via-re-findall) | `SeriesHE.via_re(pattern, flags, /).findall(pos, endpos)` | Return all non-overlapping matches of pattern in string, as a tuple of strings.… |
 | [Detail](../api_detail/series_he-accessor_regular_expression.md#api-sig-serieshe-via-re-sub) | `SeriesHE.via_re(pattern, flags, /).sub(repl, count)` | Return the string obtained by replacing the leftmost non-overlapping occurrences… |
 | [Detail](../api_detail/series_he-accessor_regular_expression.md#api-sig-serieshe-via-re-subn) | `SeriesHE.via_re(pattern, flags, /).subn(repl, count)` | Perform the same operation as sub(), but return a tuple (new\_string, number\_of\_s… |
 
@@ -2546,7 +2546,7 @@ Overview: SeriesHE: Accessor Fill Value](series_he-accessor_fill_value.md "previ
 
 Overview: SeriesHE: Accessor Hashlib](series_he-accessor_hashlib.md "next page")
 
-© Copyright 2025, Christopher Ariza.
+© Copyright 2026, Christopher Ariza.
 
 Created using [Sphinx](https://www.sphinx-doc.org/) 7.2.6.
 

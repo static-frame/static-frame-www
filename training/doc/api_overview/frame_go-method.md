@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2542,7 +2542,7 @@ Search
 | [Detail](../api_detail/frame_go-method.md#api-sig-framego-astype) | `FrameGO.astype[key](dtypes, *, consolidate_blocks)` | Selector of columns by label. Args: key: A loc selector, either a label, a list… |
 | [Detail](../api_detail/frame_go-method.md#id1) | `FrameGO.astype(dtype, *, consolidate_blocks)` | Apply a single dtype to all columns. |
 | [Detail](../api_detail/frame_go-method.md#api-sig-framego-clip) | `FrameGO.clip(*, lower, upper, axis)` | Apply a clip operation to this Frame. Note that clip operations can be applied t… |
-| [Detail](../api_detail/frame_go-method.md#api-sig-framego-consolidate) | `FrameGO.consolidate[key]` | Return the full Frame, selecting with key a subset of columns for consolidation…. |
+| [Detail](../api_detail/frame_go-method.md#api-sig-framego-consolidate) | `FrameGO.consolidate[key]` | Return the full Frame, selecting with key a subset of columns for consolidation.… |
 | [Detail](../api_detail/frame_go-method.md#id2) | `FrameGO.consolidate()` | Apply consolidation to all columns. |
 | [Detail](../api_detail/frame_go-method.md#api-sig-framego-consolidate-status) | `FrameGO.consolidate.status` | Display consolidation status of this Frame. |
 | [Detail](../api_detail/frame_go-method.md#api-sig-framego-corr) | `FrameGO.corr(*, axis)` | Compute a correlation matrix. Args: axis: if 0, each row represents a variable,… |
@@ -2646,7 +2646,7 @@ Overview: FrameGO: Attribute](frame_go-attribute.md "previous page")
 
 Overview: FrameGO: Dictionary-Like](frame_go-dictionary_like.md "next page")
 
-© Copyright 2025, Christopher Ariza.
+© Copyright 2026, Christopher Ariza.
 
 Created using [Sphinx](https://www.sphinx-doc.org/) 7.2.6.
 
