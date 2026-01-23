@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2565,8 +2565,8 @@ Search
 | [Detail](../api_detail/series-method.md#api-sig-series-iloc-min) | `Series.iloc_min(*, skipna)` | Return the integer index corresponding to the minimum value found. Args: skipna:… |
 | [Detail](../api_detail/series-method.md#api-sig-series-iloc-notfalsy-first) | `Series.iloc_notfalsy_first(*, fill_value)` | Return the position corresponding to the first non-falsy (including nan) value f… |
 | [Detail](../api_detail/series-method.md#api-sig-series-iloc-notfalsy-last) | `Series.iloc_notfalsy_last(*, fill_value)` | Return the position corresponding to the last non-falsy (including nan) value fo… |
-| [Detail](../api_detail/series-method.md#api-sig-series-iloc-notna-first) | `Series.iloc_notna_first(*, fill_value)` | Return the position corresponding to the first not NA (None or nan) value found…. |
-| [Detail](../api_detail/series-method.md#api-sig-series-iloc-notna-last) | `Series.iloc_notna_last(*, fill_value)` | Return the position corresponding to the last not NA (None or nan) value found…. |
+| [Detail](../api_detail/series-method.md#api-sig-series-iloc-notna-first) | `Series.iloc_notna_first(*, fill_value)` | Return the position corresponding to the first not NA (None or nan) value found.… |
+| [Detail](../api_detail/series-method.md#api-sig-series-iloc-notna-last) | `Series.iloc_notna_last(*, fill_value)` | Return the position corresponding to the last not NA (None or nan) value found.… |
 | [Detail](../api_detail/series-method.md#api-sig-series-iloc-searchsorted) | `Series.iloc_searchsorted(values, /, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
 | [Detail](../api_detail/series-method.md#api-sig-series-insert-after) | `Series.insert_after(key, container, /)` | Create a new Series by inserting a Series at the position after the label specif… |
 | [Detail](../api_detail/series-method.md#api-sig-series-insert-before) | `Series.insert_before(key, container, /)` | Create a new Series by inserting a Series at the position before the label speci… |
@@ -2621,7 +2621,7 @@ Overview: Series: Attribute](series-attribute.md "previous page")
 
 Overview: Series: Dictionary-Like](series-dictionary_like.md "next page")
 
-© Copyright 2025, Christopher Ariza.
+© Copyright 2026, Christopher Ariza.
 
 Created using [Sphinx](https://www.sphinx-doc.org/) 7.2.6.
 

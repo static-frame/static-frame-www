@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.2 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2592,7 +2592,7 @@ Search
 | [Detail](../api_detail/quilt-iterator.md#api-sig-quilt-iter-window-array-items-apply-iter) | `Quilt.iter_window_array_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).apply_iter(func, /)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
 | [Detail](../api_detail/quilt-iterator.md#api-sig-quilt-iter-window-array-items-apply-iter-items) | `Quilt.iter_window_array_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).apply_iter_items(func, /)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
 | [Detail](../api_detail/quilt-iterator.md#api-sig-quilt-iter-window-array-items-apply-pool) | `Quilt.iter_window_array_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).apply_pool(func, /, *, dtype, name, index_constructor, max_workers, chunksize, use_threads)` | Apply a function to each value. Employ parallel processing with either the Proce… |
-| [Detail](../api_detail/quilt-iterator.md#api-sig-quilt-iter-window-items) | `Quilt.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment)` | Iterator of pairs of label, windowed values, where values are given as a Frame…. |
+| [Detail](../api_detail/quilt-iterator.md#api-sig-quilt-iter-window-items) | `Quilt.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment)` | Iterator of pairs of label, windowed values, where values are given as a Frame.… |
 | [Detail](../api_detail/quilt-iterator.md#api-sig-quilt-iter-window-items-apply) | `Quilt.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).apply(func, /, *, dtype, name, index_constructor, columns_constructor)` | Apply a function to each value. Returns a new container. Args: func: A function… |
 | [Detail](../api_detail/quilt-iterator.md#api-sig-quilt-iter-window-items-apply-iter) | `Quilt.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).apply_iter(func, /)` | Apply a function to each value. A generator of resulting values. Args: func: A f… |
 | [Detail](../api_detail/quilt-iterator.md#api-sig-quilt-iter-window-items-apply-iter-items) | `Quilt.iter_window_items(*, size, axis, step, window_sized, window_func, window_valid, label_shift, label_missing_skips, label_missing_raises, start_shift, size_increment).apply_iter_items(func, /)` | Apply a function to each value. A generator of resulting key, value pairs. Args:… |
@@ -2607,7 +2607,7 @@ Overview: Quilt: Selector](quilt-selector.md "previous page")
 
 Overview: Quilt: Accessor Hashlib](quilt-accessor_hashlib.md "next page")
 
-© Copyright 2025, Christopher Ariza.
+© Copyright 2026, Christopher Ariza.
 
 Created using [Sphinx](https://www.sphinx-doc.org/) 7.2.6.
 
