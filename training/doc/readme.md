@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.5.2 documentation - Home](_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.5.2 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
+[![StaticFrame 3.6.0 documentation - Home](_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.6.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
 
 * static-frame
 * [License](license.md)
@@ -2605,7 +2605,7 @@ For extended input and output, the following packages are required:
 
 ## Quick-Start Guide[#](#quick-start-guide "Link to this heading")
 
-To get startred quickly, let’s download the classic iris (flower) characteristics data set and build a simple naive Bayes classifier that can predict species from iris petal characteristics.
+To get started quickly, let’s download the classic iris (flower) characteristics data set and build a simple naive Bayes classifier that can predict species from iris petal characteristics.
 
 While StaticFrame’s API has over 7,500 endpoints, much will be familiar to users of Pandas or other DataFrame libraries. Rather than offering fewer interfaces with greater configurability, StaticFrame favors more numerous interfaces with more narrow parameters and functionality. This design leads to more maintainable code. (Read more about differences between Pandas and StaticFrame [here](https://static-frame.readthedocs.io/en/latest/articles/upgrade.md).)
 
@@ -2919,7 +2919,7 @@ On this page
 * [Dependencies](#dependencies)
 * [Quick-Start Guide](#quick-start-guide)
 
-© Copyright 2025, Christopher Ariza.
+© Copyright 2026, Christopher Ariza.
 
 Created using [Sphinx](https://www.sphinx-doc.org/) 7.2.6.
 
