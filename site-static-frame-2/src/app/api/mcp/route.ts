@@ -166,7 +166,7 @@ interface Session {
 
 const sessions = new Map<string, Session>();
 
-// Clean up old sessions (older than 1 hour)
+// Clean up sessions older than 1 hour
 function cleanupOldSessions() {
   const now = Date.now();
   const oneHour = 60 * 60 * 1000;
@@ -178,11 +178,6 @@ function cleanupOldSessions() {
       sessions.delete(id);
     }
   }
-}
-
-// Helper to check if a JSON-RPC message is a notification (no id field)
-function isNotification(message: JSONRPCMessage): boolean {
-  return !("id" in message);
 }
 
 // Helper to check if a JSON-RPC message is a request (has id and method)
@@ -210,7 +205,7 @@ export async function GET(request: Request) {
     );
   }
 
-  // With session ID: we don't currently support server-initiated message streams
+  // no support for server-initiated message streams
   // Per spec, return 405 Method Not Allowed
   return new Response(
     JSON.stringify({
@@ -257,7 +252,6 @@ export async function POST(request: Request) {
       const server = createMcpServer();
       const [clientTransport, serverTransport] =
         InMemoryTransport.createLinkedPair();
-
       await server.connect(serverTransport);
 
       session = {
@@ -305,7 +299,6 @@ export async function POST(request: Request) {
         await session.clientTransport.send(msg);
       }
 
-      // Clean up temp session
       if (session.id === "temp") {
         session.clientTransport.close();
         session.serverTransport.close();
@@ -341,7 +334,6 @@ export async function POST(request: Request) {
     // Wait for all responses
     await responsePromise;
 
-    // Clean up temp session
     if (session.id === "temp") {
       session.clientTransport.close();
       session.serverTransport.close();
