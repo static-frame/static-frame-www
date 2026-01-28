@@ -139,7 +139,7 @@ function registerGetExampleTool(server: McpServer) {
 }
 
 export function createMcpServer(): McpServer {
-  let server = new McpServer({
+  const server = new McpServer({
     name: "staticframe-api",
     version: "1.0.0",
   });
@@ -266,7 +266,6 @@ export async function POST(request: Request) {
 
   try {
     const message = (await request.json()) as JSONRPCMessage;
-    console.log("MCP POST request:", JSON.stringify(message));
 
     // HTTP transport mode (no sessionId) - stateless request/response
     if (!sessionId) {
@@ -277,8 +276,6 @@ export async function POST(request: Request) {
       const tempServer = createMcpServer();
       const [clientTransport, serverTransport] =
         InMemoryTransport.createLinkedPair();
-
-      // Connect server
       await tempServer.connect(serverTransport);
 
       // For notifications, just send and return success immediately
