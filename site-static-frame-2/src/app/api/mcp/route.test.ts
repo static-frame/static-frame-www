@@ -10,7 +10,6 @@ interface Tool {
   inputSchema?: unknown;
 }
 
-// Result types for different MCP responses
 interface ToolsListResult {
   tools: Tool[];
 }
@@ -83,12 +82,9 @@ describe("MCP Search Tool", () => {
 
   beforeAll(async () => {
     server = createMcpServer();
-    // registerSearchTool(server);
-    // registerGetDocTool(server);
-    // registerGetExampleTool(server);
-
     // linked transports for testing
     const [client, server_transport] = InMemoryTransport.createLinkedPair();
+    // assigning to variables declared above
     clientTransport = client;
     serverTransport = server_transport;
     await server.connect(serverTransport);

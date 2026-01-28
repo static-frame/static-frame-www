@@ -6,13 +6,14 @@ import { z } from "zod";
 import { searchSignatures } from "../../../lib/search";
 import { sigToDoc, sigToEx } from "../../../lib/apiData";
 
-export function registerSearchTool(server: McpServer) {
+function registerSearchTool(server: McpServer) {
   server.registerTool(
     "search",
     {
       description:
         "Search StaticFrame API signatures by method name or pattern",
       inputSchema: {
+        // value is a ZodString schema object
         query: z
           .string()
           .describe("The search query (method name, class name, or pattern)"),
@@ -50,7 +51,7 @@ export function registerSearchTool(server: McpServer) {
                 signatures: result.signatures,
               },
               null,
-              2,
+              2, // indentation
             ),
           },
         ],
@@ -59,9 +60,7 @@ export function registerSearchTool(server: McpServer) {
   );
 }
 
-// Exported function to register get_doc tool on an MCP server
-// Returns documentation for a given signature
-export function registerGetDocTool(server: McpServer) {
+function registerGetDocTool(server: McpServer) {
   server.registerTool(
     "get_doc",
     {
@@ -100,9 +99,7 @@ export function registerGetDocTool(server: McpServer) {
   );
 }
 
-// Exported function to register get_example tool on an MCP server
-// Returns code example for a given signature
-export function registerGetExampleTool(server: McpServer) {
+function registerGetExampleTool(server: McpServer) {
   server.registerTool(
     "get_example",
     {
@@ -162,6 +159,12 @@ interface Session {
 }
 
 const sessions = new Map<string, Session>();
+
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type",
+};
 
 //--------------------------------------------------------------
 function sendSSE(session: Session, event: string, data: unknown) {
@@ -225,6 +228,7 @@ export async function GET(request: Request) {
   // stream instance holds on to session instance created here; ReadableStream creates the controller
   return new Response(stream, {
     headers: {
+      ...corsHeaders,
       "Content-Type": "text/event-stream",
       "Cache-Control": "no-cache",
       Connection: "keep-alive",
@@ -232,31 +236,61 @@ export async function GET(request: Request) {
   });
 }
 
+export async function OPTIONS() {
+  return new Response(null, {
+    status: 204,
+    headers: corsHeaders,
+  });
+}
+
 export async function POST(request: Request) {
   const url = new URL(request.url);
   const sessionId = url.searchParams.get("sessionId");
 
-  if (!sessionId) {
-    return new Response(JSON.stringify({ error: "Missing sessionId" }), {
-      status: 400,
-      headers: { "Content-Type": "application/json" },
-    });
-  }
-
-  const session = sessions.get(sessionId);
-  if (!session) {
-    return new Response(JSON.stringify({ error: "Session not found" }), {
-      status: 404,
-      headers: { "Content-Type": "application/json" },
-    });
-  }
-
   try {
     const message = (await request.json()) as JSONRPCMessage;
+
+    // HTTP transport mode (no sessionId) - stateless request/response
+    if (!sessionId) {
+      // Create a temporary server connection for this request
+      const tempServer = createMcpServer();
+      const [clientTransport, serverTransport] =
+        InMemoryTransport.createLinkedPair();
+
+      // Connect server
+      await tempServer.connect(serverTransport);
+
+      // Send message and wait for response
+      const response = await new Promise<JSONRPCMessage>((resolve) => {
+        clientTransport.onmessage = (msg: JSONRPCMessage) => {
+          resolve(msg);
+        };
+        clientTransport.send(message);
+      });
+
+      // Clean up
+      clientTransport.close();
+      serverTransport.close();
+
+      // Return JSON-RPC response directly
+      return new Response(JSON.stringify(response), {
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // SSE transport mode (with sessionId) - session-based
+    const session = sessions.get(sessionId);
+    if (!session) {
+      return new Response(JSON.stringify({ error: "Session not found" }), {
+        status: 404,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
     // Send message to the server via the client transport
     await session.clientTransport.send(message);
     return new Response(JSON.stringify({ success: true }), {
-      headers: { "Content-Type": "application/json" },
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   } catch (error) {
     console.error("MCP POST error:", error);
@@ -264,7 +298,7 @@ export async function POST(request: Request) {
       JSON.stringify({ error: "Failed to process message" }),
       {
         status: 500,
-        headers: { "Content-Type": "application/json" },
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
       },
     );
   }
