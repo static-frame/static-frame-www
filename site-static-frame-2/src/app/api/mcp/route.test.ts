@@ -2,12 +2,7 @@ import { describe, it, expect, beforeAll } from "vitest";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import type { JSONRPCMessage } from "@modelcontextprotocol/sdk/types.js";
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import {
-  createMcpServer,
-  registerSearchTool,
-  registerGetDocTool,
-  registerGetExampleTool,
-} from "./route";
+import { createMcpServer } from "./route";
 
 interface Tool {
   name: string;
@@ -88,9 +83,9 @@ describe("MCP Search Tool", () => {
 
   beforeAll(async () => {
     server = createMcpServer();
-    registerSearchTool(server);
-    registerGetDocTool(server);
-    registerGetExampleTool(server);
+    // registerSearchTool(server);
+    // registerGetDocTool(server);
+    // registerGetExampleTool(server);
 
     // linked transports for testing
     const [client, server_transport] = InMemoryTransport.createLinkedPair();

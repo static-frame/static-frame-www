@@ -6,17 +6,6 @@ import { z } from "zod";
 import { searchSignatures } from "../../../lib/search";
 import { sigToDoc, sigToEx } from "../../../lib/apiData";
 
-// Exported function to create a configured MCP server
-// This allows the same server configuration to be used in tests
-export function createMcpServer(): McpServer {
-  return new McpServer({
-    name: "staticframe-api",
-    version: "1.0.0",
-  });
-}
-
-// Exported function to register tools on an MCP server
-// This allows the same registration logic to be used in tests
 export function registerSearchTool(server: McpServer) {
   server.registerTool(
     "search",
@@ -152,10 +141,18 @@ export function registerGetExampleTool(server: McpServer) {
   );
 }
 
+export function createMcpServer(): McpServer {
+  let server = new McpServer({
+    name: "staticframe-api",
+    version: "1.0.0",
+  });
+  registerSearchTool(server);
+  registerGetDocTool(server);
+  registerGetExampleTool(server);
+  return server;
+}
+
 const server = createMcpServer();
-registerSearchTool(server);
-registerGetDocTool(server);
-registerGetExampleTool(server);
 
 interface Session {
   clientTransport: InstanceType<typeof InMemoryTransport>;
