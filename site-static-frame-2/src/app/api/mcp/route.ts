@@ -176,8 +176,30 @@ function sendSSE(session: Session, event: string, data: unknown) {
 
 //--------------------------------------------------------------
 export async function GET(request: Request) {
+  console.log("MCP GET request received");
   const url = new URL(request.url);
-  const sessionId = url.searchParams.get("sessionId") || crypto.randomUUID();
+  const sessionId = url.searchParams.get("sessionId");
+  console.log("  sessionId:", sessionId);
+
+  // If no sessionId, return a simple health check response
+  if (!sessionId) {
+    console.log("  -> Returning health check response");
+    return new Response(
+      JSON.stringify({
+        name: "staticframe-api",
+        version: "1.0.0",
+        transport: "http",
+      }),
+      {
+        status: 200,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      },
+    );
+  }
+
+  console.log("  -> Starting SSE session");
+
+  // At this point, sessionId is guaranteed to be non-null (for SSE transport)
 
   // Create linked in-memory transports
   const [clientTransport, serverTransport] =
@@ -249,9 +271,13 @@ export async function POST(request: Request) {
 
   try {
     const message = (await request.json()) as JSONRPCMessage;
+    console.log("MCP POST request:", JSON.stringify(message));
 
     // HTTP transport mode (no sessionId) - stateless request/response
     if (!sessionId) {
+      // Check if this is a notification (no id field)
+      const isNotification = !("id" in message);
+
       // Create a temporary server connection for this request
       const tempServer = createMcpServer();
       const [clientTransport, serverTransport] =
@@ -260,7 +286,19 @@ export async function POST(request: Request) {
       // Connect server
       await tempServer.connect(serverTransport);
 
-      // Send message and wait for response
+      // For notifications, just send and return success immediately
+      if (isNotification) {
+        await clientTransport.send(message);
+        clientTransport.close();
+        serverTransport.close();
+
+        return new Response(JSON.stringify({ success: true }), {
+          status: 200,
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+
+      // For requests, send message and wait for response
       const response = await new Promise<JSONRPCMessage>((resolve) => {
         clientTransport.onmessage = (msg: JSONRPCMessage) => {
           resolve(msg);

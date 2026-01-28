@@ -15,8 +15,8 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 
 // Import from the lib directory
-import { searchSignatures } from "./src/lib/search.js";
-import { sigToDoc, sigToEx } from "./src/lib/apiData.js";
+import { searchSignatures } from "./src/lib/search";
+import { sigToDoc, sigToEx } from "./src/lib/apiData";
 
 // Create MCP server
 const server = new McpServer({
@@ -152,7 +152,14 @@ server.registerTool(
 );
 
 // Start the server with stdio transport
-const transport = new StdioServerTransport();
-await server.connect(transport);
+async function main() {
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
 
-console.error("StaticFrame MCP server running on stdio");
+  console.error("StaticFrame MCP server running on stdio");
+}
+
+main().catch((error) => {
+  console.error("Failed to start MCP server:", error);
+  process.exit(1);
+});
