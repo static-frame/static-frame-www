@@ -1,7 +1,7 @@
 import React from "react";
 import { IconProps } from "./Icons";
 
-export const versionSite = "2.0.1";
+export const versionSite = "2.0.2";
 
 export const colorIconShowAll = "#4ade80";
 export const colorIconHideAll = "#ef4444";
