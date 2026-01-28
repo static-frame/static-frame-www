@@ -151,6 +151,7 @@ export function createMcpServer(): McpServer {
 
 const server = createMcpServer();
 
+// Session interface and storage for SSE interfaces
 interface Session {
   clientTransport: InstanceType<typeof InMemoryTransport>;
   serverTransport: InstanceType<typeof InMemoryTransport>;
@@ -176,14 +177,11 @@ function sendSSE(session: Session, event: string, data: unknown) {
 
 //--------------------------------------------------------------
 export async function GET(request: Request) {
-  console.log("MCP GET request received");
   const url = new URL(request.url);
   const sessionId = url.searchParams.get("sessionId");
-  console.log("  sessionId:", sessionId);
 
   // If no sessionId, return a simple health check response
   if (!sessionId) {
-    console.log("  -> Returning health check response");
     return new Response(
       JSON.stringify({
         name: "staticframe-api",
@@ -197,10 +195,7 @@ export async function GET(request: Request) {
     );
   }
 
-  console.log("  -> Starting SSE session");
-
   // At this point, sessionId is guaranteed to be non-null (for SSE transport)
-
   // Create linked in-memory transports
   const [clientTransport, serverTransport] =
     InMemoryTransport.createLinkedPair();
