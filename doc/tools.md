@@ -64,6 +64,9 @@ https://github.com/CrowdStrike/falcon-mcp
 https://vibe.mobb.ai/
 https://github.com/safedep/vet/blob/main/docs/mcp.md
 https://github.com/snyk/studio-mcp
+https://github.com/gnlds/mcp-cve-intelligence-server-lite
+https://github.com/andrasfe/vulnicheck
+
 
 ### Open API
 
