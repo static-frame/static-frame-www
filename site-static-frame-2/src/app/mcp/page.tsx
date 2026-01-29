@@ -55,8 +55,7 @@ export default function MCPPage() {
                   <strong>Protocol:</strong> Model Context Protocol (MCP)
                 </li>
                 <li>
-                  <strong>Transport:</strong> Server-Sent Events (SSE) with
-                  JSON-RPC 2.0
+                  <strong>Transport:</strong> Streamable HTTP with JSON-RPC 2.0
                 </li>
               </ul>
             </div>

@@ -6,6 +6,13 @@ import { z } from "zod";
 import { searchSignatures } from "../../../lib/search";
 import { sigToDoc, sigToEx } from "../../../lib/apiData";
 
+// CORS headers for Streamable HTTP
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, POST, DELETE, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Mcp-Session-Id",
+};
+
 function registerSearchTool(server: McpServer) {
   server.registerTool(
     "search",
@@ -13,7 +20,6 @@ function registerSearchTool(server: McpServer) {
       description:
         "Search StaticFrame API signatures by method name or pattern",
       inputSchema: {
-        // value is a ZodString schema object
         query: z
           .string()
           .describe("The search query (method name, class name, or pattern)"),
@@ -51,7 +57,7 @@ function registerSearchTool(server: McpServer) {
                 signatures: result.signatures,
               },
               null,
-              2, // indentation
+              2,
             ),
           },
         ],
@@ -149,44 +155,48 @@ export function createMcpServer(): McpServer {
   return server;
 }
 
-const server = createMcpServer();
-
-// Session interface and storage for SSE interfaces
+// Session management for Streamable HTTP transport
 interface Session {
+  id: string;
+  server: McpServer;
   clientTransport: InstanceType<typeof InMemoryTransport>;
   serverTransport: InstanceType<typeof InMemoryTransport>;
-  controller: ReadableStreamDefaultController<Uint8Array> | null;
-  encoder: TextEncoder;
+  createdAt: number;
 }
 
 const sessions = new Map<string, Session>();
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
-};
+// Clean up sessions older than 1 hour
+function cleanupOldSessions() {
+  const now = Date.now();
+  const oneHour = 60 * 60 * 1000;
 
-//--------------------------------------------------------------
-function sendSSE(session: Session, event: string, data: unknown) {
-  if (session.controller) {
-    const message = `event: ${event}\ndata: ${JSON.stringify(data)}\n\n`;
-    session.controller.enqueue(session.encoder.encode(message));
+  for (const [id, session] of sessions.entries()) {
+    if (now - session.createdAt > oneHour) {
+      session.clientTransport.close();
+      session.serverTransport.close();
+      sessions.delete(id);
+    }
   }
 }
 
-//--------------------------------------------------------------
-export async function GET(request: Request) {
-  const url = new URL(request.url);
-  const sessionId = url.searchParams.get("sessionId");
+// Helper to check if a JSON-RPC message is a request (has id and method)
+function isRequest(message: JSONRPCMessage): boolean {
+  return "id" in message && "method" in message;
+}
 
-  // If no sessionId, return a simple health check response
+//--------------------------------------------------------------
+// GET - Health check (no session) or SSE stream (not currently supported)
+export async function GET(request: Request) {
+  const sessionId = request.headers.get("mcp-session-id");
+
+  // No session ID = health check
   if (!sessionId) {
     return new Response(
       JSON.stringify({
         name: "staticframe-api",
         version: "1.0.0",
-        transport: "http",
+        transport: "streamable-http",
       }),
       {
         status: 200,
@@ -195,64 +205,21 @@ export async function GET(request: Request) {
     );
   }
 
-  // At this point, sessionId is guaranteed to be non-null (for SSE transport)
-  // Create linked in-memory transports
-  const [clientTransport, serverTransport] =
-    InMemoryTransport.createLinkedPair();
-
-  const session: Session = {
-    clientTransport,
-    serverTransport,
-    controller: null,
-    encoder: new TextEncoder(),
-  };
-
-  sessions.set(sessionId, session);
-
-  // Create a readable stream for SSE
-  const stream = new ReadableStream({
-    start(controller) {
-      session.controller = controller;
-
-      // Send endpoint info
-      sendSSE(session, "endpoint", `/api/mcp?sessionId=${sessionId}`);
-
-      // Listen for responses from MCP server (comes via clientTransport)
-      clientTransport.onmessage = (message: JSONRPCMessage) => {
-        sendSSE(session, "message", message);
-      };
-
-      // Connect the server to its transport
-      server.connect(serverTransport).catch((error) => {
-        console.error("MCP server connection error:", error);
-        controller.close();
-      });
+  // no support for server-initiated message streams
+  // Per spec, return 405 Method Not Allowed
+  return new Response(
+    JSON.stringify({
+      error: "Server-initiated message streams not supported",
+    }),
+    {
+      status: 405,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
     },
-    cancel() {
-      sessions.delete(sessionId);
-      clientTransport.close();
-      serverTransport.close();
-    },
-  });
-
-  // Handle client disconnect via abort signal
-  request.signal.addEventListener("abort", () => {
-    sessions.delete(sessionId);
-    clientTransport.close();
-    serverTransport.close();
-  });
-
-  // stream instance holds on to session instance created here; ReadableStream creates the controller
-  return new Response(stream, {
-    headers: {
-      ...corsHeaders,
-      "Content-Type": "text/event-stream",
-      "Cache-Control": "no-cache",
-      Connection: "keep-alive",
-    },
-  });
+  );
 }
 
+//--------------------------------------------------------------
+// OPTIONS - CORS preflight
 export async function OPTIONS() {
   return new Response(null, {
     status: 204,
@@ -260,68 +227,131 @@ export async function OPTIONS() {
   });
 }
 
+//--------------------------------------------------------------
+// POST - Send messages to server (Streamable HTTP transport)
 export async function POST(request: Request) {
-  const url = new URL(request.url);
-  const sessionId = url.searchParams.get("sessionId");
+  cleanupOldSessions();
+
+  const sessionId = request.headers.get("mcp-session-id");
 
   try {
     const message = (await request.json()) as JSONRPCMessage;
+    const messages = Array.isArray(message) ? message : [message];
 
-    // HTTP transport mode (no sessionId) - stateless request/response
-    if (!sessionId) {
-      // Check if this is a notification (no id field)
-      const isNotification = !("id" in message);
+    // Check if this is an initialize request (creates new session)
+    const hasInitialize = messages.some(
+      (msg) => isRequest(msg) && msg.method === "initialize",
+    );
 
-      // Create a temporary server connection for this request
-      const tempServer = createMcpServer();
+    // Get or create session
+    let session: Session;
+
+    if (hasInitialize && !sessionId) {
+      // Create new session for initialize
+      const newSessionId = crypto.randomUUID();
+      const server = createMcpServer();
       const [clientTransport, serverTransport] =
         InMemoryTransport.createLinkedPair();
-      await tempServer.connect(serverTransport);
+      await server.connect(serverTransport);
 
-      // For notifications, just send and return success immediately
-      if (isNotification) {
-        await clientTransport.send(message);
-        clientTransport.close();
-        serverTransport.close();
-
-        return new Response(JSON.stringify({ success: true }), {
-          status: 200,
+      session = {
+        id: newSessionId,
+        server,
+        clientTransport,
+        serverTransport,
+        createdAt: Date.now(),
+      };
+      sessions.set(newSessionId, session);
+    } else if (sessionId) {
+      // Use existing session
+      const existingSession = sessions.get(sessionId);
+      if (!existingSession) {
+        return new Response(JSON.stringify({ error: "Session not found" }), {
+          status: 404,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         });
       }
+      session = existingSession;
+    } else {
+      // No session ID and not initialize = stateless mode (for backwards compat)
+      // Create temporary session
+      const server = createMcpServer();
+      const [clientTransport, serverTransport] =
+        InMemoryTransport.createLinkedPair();
 
-      // For requests, send message and wait for response
-      const response = await new Promise<JSONRPCMessage>((resolve) => {
-        clientTransport.onmessage = (msg: JSONRPCMessage) => {
-          resolve(msg);
-        };
-        clientTransport.send(message);
-      });
+      await server.connect(serverTransport);
 
-      // Clean up
-      clientTransport.close();
-      serverTransport.close();
+      session = {
+        id: "temp",
+        server,
+        clientTransport,
+        serverTransport,
+        createdAt: Date.now(),
+      };
+    }
 
-      // Return JSON-RPC response directly
-      return new Response(JSON.stringify(response), {
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
+    // Check if all messages are notifications or responses (no requests)
+    const hasRequests = messages.some(isRequest);
+
+    if (!hasRequests) {
+      // Only notifications/responses: send and return 202 Accepted per spec
+      for (const msg of messages) {
+        await session.clientTransport.send(msg);
+      }
+
+      if (session.id === "temp") {
+        session.clientTransport.close();
+        session.serverTransport.close();
+      }
+
+      return new Response(null, {
+        status: 202,
+        headers: corsHeaders,
       });
     }
 
-    // SSE transport mode (with sessionId) - session-based
-    const session = sessions.get(sessionId);
-    if (!session) {
-      return new Response(JSON.stringify({ error: "Session not found" }), {
-        status: 404,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
-    }
+    // Has requests: collect all responses
+    const responses: JSONRPCMessage[] = [];
+    let responseCount = 0;
+    const requestCount = messages.filter(isRequest).length;
 
-    // Send message to the server via the client transport
-    await session.clientTransport.send(message);
-    return new Response(JSON.stringify({ success: true }), {
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    // Set up response handler
+    const responsePromise = new Promise<void>((resolve) => {
+      session.clientTransport.onmessage = (msg: JSONRPCMessage) => {
+        responses.push(msg);
+        responseCount++;
+        if (responseCount >= requestCount) {
+          resolve();
+        }
+      };
     });
+
+    // Send all messages
+    for (const msg of messages) {
+      await session.clientTransport.send(msg);
+    }
+
+    // Wait for all responses
+    await responsePromise;
+
+    if (session.id === "temp") {
+      session.clientTransport.close();
+      session.serverTransport.close();
+    }
+
+    // Return single response or array
+    const responseBody = responses.length === 1 ? responses[0] : responses;
+
+    // Add session ID header if this was initialize
+    const headers: Record<string, string> = {
+      ...corsHeaders,
+      "Content-Type": "application/json",
+    };
+    if (hasInitialize && session.id !== "temp") {
+      headers["Mcp-Session-Id"] = session.id;
+    }
+
+    return new Response(JSON.stringify(responseBody), { headers });
   } catch (error) {
     console.error("MCP POST error:", error);
     return new Response(
@@ -332,4 +362,38 @@ export async function POST(request: Request) {
       },
     );
   }
+}
+
+//--------------------------------------------------------------
+// DELETE - Terminate session (Streamable HTTP transport)
+export async function DELETE(request: Request) {
+  const sessionId = request.headers.get("mcp-session-id");
+
+  if (!sessionId) {
+    return new Response(
+      JSON.stringify({ error: "Missing Mcp-Session-Id header" }),
+      {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      },
+    );
+  }
+
+  const session = sessions.get(sessionId);
+  if (!session) {
+    return new Response(JSON.stringify({ error: "Session not found" }), {
+      status: 404,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
+  }
+
+  // Clean up session
+  session.clientTransport.close();
+  session.serverTransport.close();
+  sessions.delete(sessionId);
+
+  return new Response(null, {
+    status: 204,
+    headers: corsHeaders,
+  });
 }
