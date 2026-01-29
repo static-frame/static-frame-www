@@ -49,19 +49,21 @@ Things it can do:
         https://modelcontextprotocol.io/specification/2025-06-18/server/prompts
 
 
-### SSE
+### MCP Examples:
 
-Real-time streaming, long-lived connections, standard http
+https://github.com/modelcontextprotocol/servers
 
-    GET /api/mcp (SSE connection)
-        Establishes server to client event stream
-        Generates and returns unique sesion ID
-        Client listens to SSE for events
-    POST /api/mcp
-        Provide session ID, requests parameters
-        Server routes messages to the correct session
 
-MCP moving to Streamable HTTP instead!
+#### MCP Cybersecurity Examples:
+
+https://github.com/boost-community/boost-mcp
+https://github.com/codacy/codacy-mcp-server
+https://github.com/safedep/vet/blob/main/docs/mcp.md
+https://github.com/Contrast-Security-OSS/mcp-contrast
+https://github.com/CrowdStrike/falcon-mcp
+https://vibe.mobb.ai/
+https://github.com/safedep/vet/blob/main/docs/mcp.md
+https://github.com/snyk/studio-mcp
 
 ### Open API
 
