@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2942,6 +2942,72 @@ Index.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[[source]](../_m
     2
     ```
 
+Index.insert\_after(*key*, *labels*, */*)[[source]](../_modules/static_frame/core/index.md#Index.insert_after)[#](#static_frame.Index.insert_after "Link to this definition")
+:   ```
+    >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
+    >>> ix
+    <Index: x>
+    a
+    b
+    c
+    d
+    e
+    <<U1>
+    >>> ix.insert_after('c', ('x', 'y'))
+    <Index: x>
+    a
+    b
+    c
+    x
+    y
+    d
+    e
+    <<U1>
+    >>> ix.insert_after(sf.ILoc[0], ('x', 'y'))
+    <Index: x>
+    a
+    x
+    y
+    b
+    c
+    d
+    e
+    <<U1>
+    ```
+
+Index.insert\_before(*key*, *labels*, */*)[[source]](../_modules/static_frame/core/index.md#Index.insert_before)[#](#static_frame.Index.insert_before "Link to this definition")
+:   ```
+    >>> ix = sf.Index(('a', 'b', 'c', 'd', 'e'), name='x')
+    >>> ix
+    <Index: x>
+    a
+    b
+    c
+    d
+    e
+    <<U1>
+    >>> ix.insert_before('c', ('x', 'y'))
+    <Index: x>
+    a
+    b
+    x
+    y
+    c
+    d
+    e
+    <<U1>
+    >>> ix.insert_before(sf.ILoc[0], ('x', 'y'))
+    <Index: x>
+    x
+    y
+    a
+    b
+    c
+    d
+    e
+    <<U1>
+    ```
+
 Index.intersection(*\*others*)[#](#static_frame.Index.intersection "Link to this definition")
 :   Perform intersection with one or many Index, container, or NumPy array. Identical comparisons retain order.
 
@@ -3544,6 +3610,8 @@ On this page
 * [`Index.fillna()`](#static_frame.Index.fillna)
 * [`Index.head()`](#static_frame.Index.head)
 * [`Index.iloc_searchsorted()`](#static_frame.Index.iloc_searchsorted)
+* [`Index.insert_after()`](#static_frame.Index.insert_after)
+* [`Index.insert_before()`](#static_frame.Index.insert_before)
 * [`Index.intersection()`](#static_frame.Index.intersection)
 * [`Index.is_sorted()`](#static_frame.Index.is_sorted)
 * [`Index.isfalsy()`](#static_frame.Index.isfalsy)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2631,10 +2631,10 @@ Batch.via\_re(*pattern*, *flags*, */).split(maxsplit*)
     i                p        ('0',)      ('', '')         nan
     i                q        ('', '')    ('', '')         nan
     i                r        ('4',)      ('5',)           nan
-    j                0        ('', '0.0') ('qrs ',)        ('', '5', '7-0', ...
-    j                1        ('', '.0')  ('', 'YZ')       ('', '5', '7-04-0...
+    j                0        ('', '0.0') ('qrs ',)        ('', '5', '7-0', '-…
+    j                1        ('', '.0')  ('', 'YZ')       ('', '5', '7-04-0',…
     j                2        ('nan',)    ('',)            ('NaT',)
-    j                3        ('', '.0')  ('', '', '', '') ('', '5', '7-04-0...
+    j                3        ('', '.0')  ('', '', '', '') ('', '5', '7-04-0',…
     <<U1>            <object> <object>    <object>         <object>
     ```
 

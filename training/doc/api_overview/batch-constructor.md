@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2529,8 +2529,8 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/batch-constructor.md#api-sig-batch-init) | `Batch.__init__(items, /, *, name, config, max_workers, chunksize, use_threads, mp_context)` | Default constructor of a Batch. Args: name: A hashable object to label the conta… |
-| [Detail](../api_detail/batch-constructor.md#api-sig-batch-from-frames) | `Batch.from_frames(frames, /, *, name, config, max_workers, chunksize, use_threads, mp_context)` | Return a Batch from an iterable of Frame; labels will be drawn from Frame.name. |
+| [Detail](../api_detail/batch-constructor.md#api-sig-batch-init) | `Batch.__init__(items, /, *, name, max_workers, chunksize, use_threads, mp_context)` | Default constructor of a Batch. Args: name: A hashable object to label the conta… |
+| [Detail](../api_detail/batch-constructor.md#api-sig-batch-from-frames) | `Batch.from_frames(frames, /, *, name, max_workers, chunksize, use_threads, mp_context)` | Return a Batch from an iterable of Frame; labels will be drawn from Frame.name. |
 | [Detail](../api_detail/batch-constructor.md#api-sig-batch-from-sqlite) | `Batch.from_sqlite(fp, /, *, config, max_workers, chunksize, use_threads, mp_context)` | Given a file path to an SQLite Batch store, return a Batch instance. Args: fp: A… |
 | [Detail](../api_detail/batch-constructor.md#api-sig-batch-from-xlsx) | `Batch.from_xlsx(fp, /, *, config, max_workers, chunksize, use_threads, mp_context)` | Given a file path to an XLSX Batch store, return a Batch instance. Args: fp: A s… |
 | [Detail](../api_detail/batch-constructor.md#api-sig-batch-from-zip-csv) | `Batch.from_zip_csv(fp, /, *, config, max_workers, chunksize, use_threads, mp_context)` | Given a file path to zipped CSV Batch store, return a Batch instance. Args: fp:… |

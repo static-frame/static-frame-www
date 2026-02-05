@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2647,10 +2647,10 @@ Frame.via\_re(*pattern*, *flags*, */).split(maxsplit*)
     <Frame: x>
     <Index>    a         b                c                    <<U1>
     <Index>
-    0          ('', '0') ('qrs ',)        ('', '5', '7-0', ...
-    1          ('', '')  ('', 'YZ')       ('', '5', '7-04-0...
-    2          ('8',)    ('', '', '', '') ('', '5', '7-', '...
-    3          ('', '')  (' w', ' ')      ('', '5', '7-06-'...
+    0          ('', '0') ('qrs ',)        ('', '5', '7-0', '-…
+    1          ('', '')  ('', 'YZ')       ('', '5', '7-04-0',…
+    2          ('8',)    ('', '', '', '') ('', '5', '7-', '',…
+    3          ('', '')  (' w', ' ')      ('', '5', '7-06-', …
     <int64>    <object>  <object>         <object>
     ```
 
@@ -2681,7 +2681,7 @@ Frame.via\_re(*pattern*, *flags*, */).findall(pos*, *endpos*)
     <Index>
     0          ('1',)   ()              ('1', '1', '1', '1')
     1          ('2',)   ('X',)          ('1', '1', '1')
-    2          ()       ('1', '2', '3') ('1', '1', '1', '...
+    2          ()       ('1', '2', '3') ('1', '1', '1', '2'…
     3          ('3',)   ('X',)          ('1', '1', '3')
     <int64>    <object> <object>        <object>
     ```

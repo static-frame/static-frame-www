@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
+[![StaticFrame 3.7.0 documentation - Home](_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](_static/sf-logo-web_icon-small.png)](index.md)
 
 * static-frame
 * [License](license.md)
@@ -2591,7 +2591,7 @@ Core StaticFrame requires the following:
 
 * Python>=3.10
 * numpy>=1.24.3 (numpy>=2 is supported)
-* arraykit==1.2.0
+* arraykit==1.2.1
 * typing-extensions>=4.12.0
 
 For extended input and output, the following packages are required:

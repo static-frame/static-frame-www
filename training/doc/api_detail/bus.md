@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2527,7 +2527,7 @@ Search
 
 [Overview: Bus](../api_overview/bus.md#api-overview-bus)
 
-*class* Bus(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=<object object>*, *store=None*, *config=None*, *max\_persist=None*, *own\_index=False*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.md#Bus)[#](#static_frame.Bus "Link to this definition")
+*class* Bus(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=<object object>*, *store=None*, *max\_persist=None*, *own\_index=False*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.md#Bus)[#](#static_frame.Bus "Link to this definition")
 :   A randomly-accessible container of [`Frame`](frame-selector.md#Frame "Frame"). When created from a multi-table storage format (such as a zip-pickle or XLSX), a Bus will lazily read in components as they are accessed. When combined with the `max_persist` parameter, a Bus will not hold on to more than `max_persist` references, permitting low-memory reading of collections of [`Frame`](frame-selector.md#Frame "Frame").
 
 * [Constructor](bus-constructor.md#api-detail-bus-constructor): Alternative constructors for creating instances.

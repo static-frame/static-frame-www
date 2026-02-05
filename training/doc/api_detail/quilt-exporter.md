@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2558,7 +2558,7 @@ Quilt.to\_sqlite(*fp*, */*, *\**, *config=None*)[#](#static_frame.Quilt.to_sqlit
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -2582,7 +2582,7 @@ Quilt.to\_xlsx(*fp*, */*, *\**, *config=None*)[#](#static_frame.Quilt.to_xlsx "L
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -2603,7 +2603,7 @@ Quilt.to\_zip\_csv(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_f
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -2624,7 +2624,7 @@ Quilt.to\_zip\_npy(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_f
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -2645,7 +2645,7 @@ Quilt.to\_zip\_npz(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_f
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -2666,7 +2666,7 @@ Quilt.to\_zip\_parquet(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#stat
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -2687,7 +2687,7 @@ Quilt.to\_zip\_pickle(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#stati
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```
@@ -2708,7 +2708,7 @@ Quilt.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_f
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     compression: Provide a zip compression setting using values from the Python `zipfile` module; `zipfile.ZIP_DEFLATED` is standard zlib compression; `zipfile.ZIP_STORED` disables compression and may give better performance at the cost of larger file sizes.
 
     ```

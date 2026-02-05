@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -9669,7 +9669,7 @@ FrameGO.iter\_tuple\_items(*\**, *axis*, *constructor).map\_any(mapping*, */*, *
     <Series>
     <Index>
     a        -1
-    b        Axis(p=np.int64(3...
+    b        Axis(p=np.int64(3),…
     <<U1>    <object>
     ```
 

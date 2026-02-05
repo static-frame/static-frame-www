@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2551,6 +2551,8 @@ Search
 | [Detail](../api_detail/index_hour_go-method.md#api-sig-indexhourgo-fillna) | `IndexHourGO.fillna(value, /)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
 | [Detail](../api_detail/index_hour_go-method.md#api-sig-indexhourgo-head) | `IndexHourGO.head(count, /)` | Return a Index consisting only of the top elements as specified by count. Args:… |
 | [Detail](../api_detail/index_hour_go-method.md#api-sig-indexhourgo-iloc-searchsorted) | `IndexHourGO.iloc_searchsorted(values, /, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index_hour_go-method.md#api-sig-indexhourgo-insert-after) | `IndexHourGO.insert_after(key, labels, /)` |  |
+| [Detail](../api_detail/index_hour_go-method.md#api-sig-indexhourgo-insert-before) | `IndexHourGO.insert_before(key, labels, /)` |  |
 | [Detail](../api_detail/index_hour_go-method.md#api-sig-indexhourgo-intersection) | `IndexHourGO.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
 | [Detail](../api_detail/index_hour_go-method.md#api-sig-indexhourgo-is-sorted) | `IndexHourGO.is_sorted(*, ascending, kind, key)` | Return True if this Index is sorted according to the specified parameters. Args:… |
 | [Detail](../api_detail/index_hour_go-method.md#api-sig-indexhourgo-isfalsy) | `IndexHourGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |

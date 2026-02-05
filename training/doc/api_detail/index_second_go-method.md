@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2936,11 +2936,8 @@ IndexSecondGO.head(*count=5*, */*)[#](#static_frame.IndexSecondGO.head "Link to 
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-    >>> ix.head(2)
-    <IndexSecondGO>
-    1517-04-01T00:00:00
-    1517-12-31T00:00:00
-    <datetime64[s]>
+    >>> ix.head("1517-12")
+    TypeError('slice indices must be integers or None or have an __index__ method')
     ```
 
 IndexSecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexSecondGO.iloc_searchsorted "Link to this definition")
@@ -2960,6 +2957,44 @@ IndexSecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#sta
     <datetime64[s]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
+    ```
+
+IndexSecondGO.insert\_after(*key*, *labels*, */*)[#](#static_frame.IndexSecondGO.insert_after "Link to this definition")
+:   ```
+    >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix
+    <IndexSecondGO>
+    1517-04-01T00:00:00
+    1517-12-31T00:00:00
+    1517-06-30T00:00:00
+    <datetime64[s]>
+    >>> ix.insert_after(sf.ILoc[0], ('1822', '1312'))
+    <IndexSecondGO>
+    1517-04-01T00:00:00
+    1822-01-01T00:00:00
+    1312-01-01T00:00:00
+    1517-12-31T00:00:00
+    1517-06-30T00:00:00
+    <datetime64[s]>
+    ```
+
+IndexSecondGO.insert\_before(*key*, *labels*, */*)[#](#static_frame.IndexSecondGO.insert_before "Link to this definition")
+:   ```
+    >>> ix = sf.IndexSecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix
+    <IndexSecondGO>
+    1517-04-01T00:00:00
+    1517-12-31T00:00:00
+    1517-06-30T00:00:00
+    <datetime64[s]>
+    >>> ix.insert_before(sf.ILoc[0], ('1822', '1312'))
+    <IndexSecondGO>
+    1822-01-01T00:00:00
+    1312-01-01T00:00:00
+    1517-04-01T00:00:00
+    1517-12-31T00:00:00
+    1517-06-30T00:00:00
+    <datetime64[s]>
     ```
 
 IndexSecondGO.intersection(*\*others*)[#](#static_frame.IndexSecondGO.intersection "Link to this definition")
@@ -3395,11 +3430,8 @@ IndexSecondGO.tail(*count=5*, */*)[#](#static_frame.IndexSecondGO.tail "Link to 
     1517-12-31T00:00:00
     1517-06-30T00:00:00
     <datetime64[s]>
-    >>> ix.tail(2)
-    <IndexSecondGO>
-    1517-12-31T00:00:00
-    1517-06-30T00:00:00
-    <datetime64[s]>
+    >>> ix.tail("1517-12")
+    TypeError("bad operand type for unary -: 'str'")
     ```
 
 IndexSecondGO.union(*\*others*)[#](#static_frame.IndexSecondGO.union "Link to this definition")
@@ -3520,6 +3552,8 @@ On this page
 * [`IndexSecondGO.fillna()`](#static_frame.IndexSecondGO.fillna)
 * [`IndexSecondGO.head()`](#static_frame.IndexSecondGO.head)
 * [`IndexSecondGO.iloc_searchsorted()`](#static_frame.IndexSecondGO.iloc_searchsorted)
+* [`IndexSecondGO.insert_after()`](#static_frame.IndexSecondGO.insert_after)
+* [`IndexSecondGO.insert_before()`](#static_frame.IndexSecondGO.insert_before)
 * [`IndexSecondGO.intersection()`](#static_frame.IndexSecondGO.intersection)
 * [`IndexSecondGO.is_sorted()`](#static_frame.IndexSecondGO.is_sorted)
 * [`IndexSecondGO.isfalsy()`](#static_frame.IndexSecondGO.isfalsy)

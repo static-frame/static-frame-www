@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2555,6 +2555,8 @@ Search
 | [Detail](../api_detail/index_hierarchy_go-method.md#api-sig-indexhierarchygo-iloc-searchsorted) | `IndexHierarchyGO.iloc_searchsorted(values, /, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
 | [Detail](../api_detail/index_hierarchy_go-method.md#api-sig-indexhierarchygo-index-at-depth) | `IndexHierarchyGO.index_at_depth(depth_level, /)` | Return an index, or a tuple of indices for the depth\_level specified. Args: dept… |
 | [Detail](../api_detail/index_hierarchy_go-method.md#api-sig-indexhierarchygo-indexer-at-depth) | `IndexHierarchyGO.indexer_at_depth(depth_level, /)` | Return the indexers for the depth\_level specified. Array will 2D if multiple dep… |
+| [Detail](../api_detail/index_hierarchy_go-method.md#api-sig-indexhierarchygo-insert-after) | `IndexHierarchyGO.insert_after(key, labels, /)` |  |
+| [Detail](../api_detail/index_hierarchy_go-method.md#api-sig-indexhierarchygo-insert-before) | `IndexHierarchyGO.insert_before(key, labels, /)` |  |
 | [Detail](../api_detail/index_hierarchy_go-method.md#api-sig-indexhierarchygo-intersection) | `IndexHierarchyGO.intersection(*others)` |  |
 | [Detail](../api_detail/index_hierarchy_go-method.md#api-sig-indexhierarchygo-is-sorted) | `IndexHierarchyGO.is_sorted(*, ascending, kind, key)` | Return True if this Index is sorted according to the specified parameters. Args:… |
 | [Detail](../api_detail/index_hierarchy_go-method.md#api-sig-indexhierarchygo-isfalsy) | `IndexHierarchyGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |
