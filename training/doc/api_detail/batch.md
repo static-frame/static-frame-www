@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2527,7 +2527,7 @@ Search
 
 [Overview: Batch](../api_overview/batch.md#api-overview-batch)
 
-*class* Batch(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch)[#](#static_frame.Batch "Link to this definition")
+*class* Batch(*items*, */*, *\**, *name=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch)[#](#static_frame.Batch "Link to this definition")
 :   A lazy, sequentially evaluated container of [`Frame`](frame-selector.md#Frame "Frame") that broadcasts operations on contained [`Frame`](frame-selector.md#Frame "Frame") by return new [`Batch`](batch-selector.md#Batch "Batch") instances. Full evaluation of operations only occurs when iterating or calling an exporter, such as `to_frame()` or `to_series()`.
 
 * [Constructor](batch-constructor.md#api-detail-batch-constructor): Alternative constructors for creating instances.

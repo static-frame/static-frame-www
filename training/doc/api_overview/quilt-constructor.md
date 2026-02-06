@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2530,7 +2530,7 @@ Search
 |  |  |  |
 | --- | --- | --- |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-init) | `Quilt.__init__(bus, /, *, axis, retain_labels, axis_hierarchy, axis_opposite, deepcopy_from_bus)` | Args: bus: Bus of Frame to be used for virtual concatenation. axis: Integer spec… |
-| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-frame) | `Quilt.from_frame(frame, /, *, chunksize, retain_labels, axis, name, label_extractor, config, deepcopy_from_bus)` | Given a Frame, create a Quilt by partitioning it along the specified axis in uni… |
+| [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-frame) | `Quilt.from_frame(frame, /, *, chunksize, retain_labels, axis, name, label_extractor, deepcopy_from_bus)` | Given a Frame, create a Quilt by partitioning it along the specified axis in uni… |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-frames) | `Quilt.from_frames(frames, /, *, axis, name, retain_labels, deepcopy_from_bus)` | Return a Quilt from an iterable of Frame; labels will be drawn from Frame.name. |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-items) | `Quilt.from_items(items, /, *, axis, name, retain_labels, deepcopy_from_bus)` | Given an iterable of pairs of label, Frame, create a Quilt. |
 | [Detail](../api_detail/quilt-constructor.md#api-sig-quilt-from-sqlite) | `Quilt.from_sqlite(fp, /, *, config, axis, retain_labels, deepcopy_from_bus, max_persist)` | Given a file path to an SQLite Quilt store, return a Quilt instance. Args: fp: A… |

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2576,9 +2576,9 @@ IndexMicrosecondGO.to\_series()[#](#static_frame.IndexMicrosecondGO.to_series "L
     >>> ix.to_series()
     <Series>
     <Index>
-    0        1517-04-01T00:00:...
-    1        1517-12-31T00:00:...
-    2        1517-06-30T00:00:...
+    0        1517-04-01T00:00:00…
+    1        1517-12-31T00:00:00…
+    2        1517-06-30T00:00:00…
     <int64>  <datetime64[us]>
     ```
 

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2575,7 +2575,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
     <<U1>            <int64> <int64> <int64> <int64>
     ```
 
-*classmethod* Quilt.from\_frame(*frame*, */*, *\**, *chunksize*, *retain\_labels*, *axis=0*, *name=None*, *label\_extractor=None*, *config=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_frame)[#](#static_frame.Quilt.from_frame "Link to this definition")
+*classmethod* Quilt.from\_frame(*frame*, */*, *\**, *chunksize*, *retain\_labels*, *axis=0*, *name=None*, *label\_extractor=None*, *deepcopy\_from\_bus=False*)[[source]](../_modules/static_frame/core/quilt.md#Quilt.from_frame)[#](#static_frame.Quilt.from_frame "Link to this definition")
 :   Given a [`Frame`](frame-selector.md#Frame "Frame"), create a [`Quilt`](quilt-selector.md#Quilt "Quilt") by partitioning it along the specified `axis` in units of `chunksize`, where `axis` 0 partitions vertically (retaining aligned columns) and 1 partions horizontally (retaining aligned index).
 
     Parameters:
@@ -2677,7 +2677,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
     >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
     >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").
@@ -2713,7 +2713,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
     >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
     >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").
@@ -2749,7 +2749,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
     >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
     >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").
@@ -2785,7 +2785,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
     >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
     >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").
@@ -2821,7 +2821,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
     >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
     >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").
@@ -2857,7 +2857,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
     >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
     >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").
@@ -2893,7 +2893,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
     >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
     >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").
@@ -2929,7 +2929,7 @@ Quilt.\_\_init\_\_(*bus*, */*, *\**, *axis=0*, *retain\_labels*, *axis\_hierarch
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     axis: Integer specifying axis of virtual concatenation, where 0 is vertically (stacking rows) and 1 is horizontally (extending columns).
     >     retain\_labels: Boolean to determine if, along the axis of virtual concatentation, if component [`Frame`](frame-selector.md#Frame "Frame") labels should be used to form the outer depth of an [`IndexHierarchy`](index_hierarchy-selector.md#IndexHierarchy "IndexHierarchy"). This is required to be `True` if component [`Frame`](frame-selector.md#Frame "Frame") labels are not globally unique along the axis of concatenation.
     >     deepcopy\_from\_bus: Boolean to determine if containers are deep-copied from the contained [`Bus`](bus-selector.md#Bus "Bus") during extraction. Set to `True` to avoid holding references from the [`Bus`](bus-selector.md#Bus "Bus").

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2586,7 +2586,7 @@ Bus.inventory[#](#static_frame.Bus.inventory "Link to this definition")
     <Frame>
     <Index>  path       last_modified        size   <<U13>
     <Index>
-    None     /tmp/b.zip 2025-10-27T16:54:... 1.0 KB
+    None     /tmp/b.zip 2026-02-02T19:46:56… 1.0 KB
     <object> <<U10>     <<U32>               <<U6>
     ```
 
@@ -2604,8 +2604,8 @@ Bus.memory[#](#static_frame.Bus.memory "Link to this definition")
     ```
     >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
     >>> b.memory
-          L   Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
-    Total 5.8 KB    1.71 KB    1.21 KB    13.91 KB    1.72 KB    1.22 KB
+          L    Lu    LM   LMu   LMD LMDu  R     Ru    RM   RMu   RMD RMDu
+    Total 5.37 KB    1.27 KB    793 B     13.48 KB    1.29 KB    809 B
     ```
 
 Bus.mloc[#](#static_frame.Bus.mloc "Link to this definition")

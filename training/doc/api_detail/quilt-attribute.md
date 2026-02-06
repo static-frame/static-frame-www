@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2585,7 +2585,7 @@ Quilt.inventory[#](#static_frame.Quilt.inventory "Link to this definition")
     <Frame>
     <Index>  path       last_modified        size    <<U13>
     <Index>
-    None     /tmp/q.zip 2025-10-27T16:54:... 1.12 KB
+    None     /tmp/q.zip 2026-02-02T19:46:57… 1.12 KB
     <object> <<U10>     <<U32>               <<U7>
     ```
 
@@ -2603,8 +2603,8 @@ Quilt.memory[#](#static_frame.Quilt.memory "Link to this definition")
     ```
     >>> q = sf.Quilt.from_frame(sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x'), retain_labels=True, chunksize=2, label_extractor=lambda x: str(x.iloc[0]))
     >>> q.memory
-          L    Lu    LM   LMu   LMD  LMDu  R    Ru    RM   RMu   RMD  RMDu
-    Total 9.09 KB    6.13 KB    4.38 KB    17.6 KB    6.22 KB    4.47 KB
+          L    Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
+    Total 8.71 KB    5.76 KB    4.01 KB    17.22 KB    5.84 KB    4.09 KB
     ```
 
 Quilt.name[#](#static_frame.Quilt.name "Link to this definition")

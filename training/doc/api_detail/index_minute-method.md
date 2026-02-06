@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2884,11 +2884,8 @@ IndexMinute.head(*count=5*, */*)[#](#static_frame.IndexMinute.head "Link to this
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-    >>> ix.head(2)
-    <IndexMinute>
-    1517-04-01T00:00
-    1517-12-01T00:00
-    <datetime64[m]>
+    >>> ix.head("1517-12")
+    TypeError('slice indices must be integers or None or have an __index__ method')
     ```
 
 IndexMinute.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexMinute.iloc_searchsorted "Link to this definition")
@@ -2908,6 +2905,44 @@ IndexMinute.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#stati
     <datetime64[m]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
+    ```
+
+IndexMinute.insert\_after(*key*, *labels*, */*)[#](#static_frame.IndexMinute.insert_after "Link to this definition")
+:   ```
+    >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix
+    <IndexMinute>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    >>> ix.insert_after(sf.ILoc[0], ('1822', '1312'))
+    <IndexMinute>
+    1517-04-01T00:00
+    1822-01-01T00:00
+    1312-01-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    ```
+
+IndexMinute.insert\_before(*key*, *labels*, */*)[#](#static_frame.IndexMinute.insert_before "Link to this definition")
+:   ```
+    >>> ix = sf.IndexMinute(('1517-04-01', '1517-12', '1517-06-30'))
+    >>> ix
+    <IndexMinute>
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
+    >>> ix.insert_before(sf.ILoc[0], ('1822', '1312'))
+    <IndexMinute>
+    1822-01-01T00:00
+    1312-01-01T00:00
+    1517-04-01T00:00
+    1517-12-01T00:00
+    1517-06-30T00:00
+    <datetime64[m]>
     ```
 
 IndexMinute.intersection(*\*others*)[#](#static_frame.IndexMinute.intersection "Link to this definition")
@@ -3339,11 +3374,8 @@ IndexMinute.tail(*count=5*, */*)[#](#static_frame.IndexMinute.tail "Link to this
     1517-12-01T00:00
     1517-06-30T00:00
     <datetime64[m]>
-    >>> ix.tail(2)
-    <IndexMinute>
-    1517-12-01T00:00
-    1517-06-30T00:00
-    <datetime64[m]>
+    >>> ix.tail("1517-12")
+    TypeError("bad operand type for unary -: 'str'")
     ```
 
 IndexMinute.union(*\*others*)[#](#static_frame.IndexMinute.union "Link to this definition")
@@ -3462,6 +3494,8 @@ On this page
 * [`IndexMinute.fillna()`](#static_frame.IndexMinute.fillna)
 * [`IndexMinute.head()`](#static_frame.IndexMinute.head)
 * [`IndexMinute.iloc_searchsorted()`](#static_frame.IndexMinute.iloc_searchsorted)
+* [`IndexMinute.insert_after()`](#static_frame.IndexMinute.insert_after)
+* [`IndexMinute.insert_before()`](#static_frame.IndexMinute.insert_before)
 * [`IndexMinute.intersection()`](#static_frame.IndexMinute.intersection)
 * [`IndexMinute.is_sorted()`](#static_frame.IndexMinute.is_sorted)
 * [`IndexMinute.isfalsy()`](#static_frame.IndexMinute.isfalsy)

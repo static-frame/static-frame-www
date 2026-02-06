@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2884,11 +2884,8 @@ IndexYearMonth.head(*count=5*, */*)[#](#static_frame.IndexYearMonth.head "Link t
     1517-12
     1517-06
     <datetime64[M]>
-    >>> ix.head(2)
-    <IndexYearMonth>
-    1517-04
-    1517-12
-    <datetime64[M]>
+    >>> ix.head("1517-12")
+    TypeError('slice indices must be integers or None or have an __index__ method')
     ```
 
 IndexYearMonth.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexYearMonth.iloc_searchsorted "Link to this definition")
@@ -2908,6 +2905,44 @@ IndexYearMonth.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#st
     <datetime64[M]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
+    ```
+
+IndexYearMonth.insert\_after(*key*, *labels*, */*)[#](#static_frame.IndexYearMonth.insert_after "Link to this definition")
+:   ```
+    >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
+    >>> ix
+    <IndexYearMonth>
+    1517-04
+    1517-12
+    1517-06
+    <datetime64[M]>
+    >>> ix.insert_after(sf.ILoc[0], ('1822', '1312'))
+    <IndexYearMonth>
+    1517-04
+    1822-01
+    1312-01
+    1517-12
+    1517-06
+    <datetime64[M]>
+    ```
+
+IndexYearMonth.insert\_before(*key*, *labels*, */*)[#](#static_frame.IndexYearMonth.insert_before "Link to this definition")
+:   ```
+    >>> ix = sf.IndexYearMonth(('1517-04', '1517-12', '1517-06'))
+    >>> ix
+    <IndexYearMonth>
+    1517-04
+    1517-12
+    1517-06
+    <datetime64[M]>
+    >>> ix.insert_before(sf.ILoc[0], ('1822', '1312'))
+    <IndexYearMonth>
+    1822-01
+    1312-01
+    1517-04
+    1517-12
+    1517-06
+    <datetime64[M]>
     ```
 
 IndexYearMonth.intersection(*\*others*)[#](#static_frame.IndexYearMonth.intersection "Link to this definition")
@@ -3339,11 +3374,8 @@ IndexYearMonth.tail(*count=5*, */*)[#](#static_frame.IndexYearMonth.tail "Link t
     1517-12
     1517-06
     <datetime64[M]>
-    >>> ix.tail(2)
-    <IndexYearMonth>
-    1517-12
-    1517-06
-    <datetime64[M]>
+    >>> ix.tail("1517-12")
+    TypeError("bad operand type for unary -: 'str'")
     ```
 
 IndexYearMonth.union(*\*others*)[#](#static_frame.IndexYearMonth.union "Link to this definition")
@@ -3462,6 +3494,8 @@ On this page
 * [`IndexYearMonth.fillna()`](#static_frame.IndexYearMonth.fillna)
 * [`IndexYearMonth.head()`](#static_frame.IndexYearMonth.head)
 * [`IndexYearMonth.iloc_searchsorted()`](#static_frame.IndexYearMonth.iloc_searchsorted)
+* [`IndexYearMonth.insert_after()`](#static_frame.IndexYearMonth.insert_after)
+* [`IndexYearMonth.insert_before()`](#static_frame.IndexYearMonth.insert_before)
 * [`IndexYearMonth.intersection()`](#static_frame.IndexYearMonth.intersection)
 * [`IndexYearMonth.is_sorted()`](#static_frame.IndexYearMonth.is_sorted)
 * [`IndexYearMonth.isfalsy()`](#static_frame.IndexYearMonth.isfalsy)

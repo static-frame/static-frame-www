@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2875,7 +2875,7 @@ Frame.consolidate[*key*]
     <Frame>
     <Index> loc                  iloc              dtype    shape    ndim    owndata f_contiguous c_contiguous <<U12>
     <Index>
-    0       slice(np.str_('a'... slice(0, 3, None) int64    (4, 3)   2       True    False        True
+    0       slice(np.str_('a'),… slice(0, 3, None) int64    (4, 3)   2       True    False        True
     1       d                    3                 bool     (4,)     1       True    True         True
     2       e                    4                 bool     (4,)     1       True    True         True
     <int64> <object>             <object>          <object> <object> <int64> <bool>  <bool>       <bool>
@@ -2914,8 +2914,8 @@ Frame.consolidate
     <Frame>
     <Index> loc                  iloc                 dtype    shape    ndim    owndata f_contiguous c_contiguous <<U12>
     <Index>
-    0       slice(np.str_('a'... slice(0, 3, None)    int64    (4, 3)   2       True    False        True
-    1       slice(np.str_('d'... slice(3, None, None) bool     (4, 2)   2       True    False        True
+    0       slice(np.str_('a'),… slice(0, 3, None)    int64    (4, 3)   2       True    False        True
+    1       slice(np.str_('d'),… slice(3, None, None) bool     (4, 2)   2       True    False        True
     <int64> <object>             <object>             <object> <object> <int64> <bool>  <bool>       <bool>
     ```
 
@@ -2952,8 +2952,8 @@ Frame.consolidate.status
     <Frame>
     <Index> loc                  iloc                 dtype    shape    ndim    owndata f_contiguous c_contiguous <<U12>
     <Index>
-    0       slice(np.str_('a'... slice(0, 3, None)    int64    (4, 3)   2       True    False        True
-    1       slice(np.str_('d'... slice(3, None, None) bool     (4, 2)   2       True    False        True
+    0       slice(np.str_('a'),… slice(0, 3, None)    int64    (4, 3)   2       True    False        True
+    1       slice(np.str_('d'),… slice(3, None, None) bool     (4, 2)   2       True    False        True
     <int64> <object>             <object>             <object> <object> <int64> <bool>  <bool>       <bool>
     ```
 
@@ -5161,7 +5161,7 @@ Frame.relabel\_shift\_in(*key*, */*, *\**, *axis=0*, *index\_constructors=None*)
     >>> f.relabel_shift_in('a')
     <Frame: x>
     <Index>                                            b      c               <<U1>
-    <IndexHierarchy: ('__index0__', '...
+    <IndexHierarchy: ('__index0__', '__…
     0                                    p     10      False  1517-01-01
     0                                    q     2       True   1517-04-01
     1                                    p     8       True   1517-12-31
@@ -5335,7 +5335,7 @@ Frame.set\_columns\_hierarchy(*index*, */*, *\**, *drop=False*, *columns\_constr
     <int64>          <<U1> <int64> <bool> <datetime64[D]>
     >>> f.set_columns_hierarchy([(1, 'p'), (1, 'q')], drop=True)
     <Frame: x>
-    <IndexHierarchy: ((np.int64(1), n...       8       True   1517-12-31      <object>
+    <IndexHierarchy: ((np.int64(1), np.…       8       True   1517-12-31      <object>
                                                3       False  1517-06-30      <object>
     <IndexHierarchy>
     0                                    p     10      False  1517-01-01
@@ -5400,7 +5400,7 @@ Frame.set\_index\_hierarchy(*columns*, */*, *\**, *drop=False*, *index\_construc
     >>> f.set_index_hierarchy(['b', 'c'], drop=True, index_constructors=(sf.Index, sf.IndexDate))
     <Frame: x>
     <Index>                                              a       <<U1>
-    <IndexHierarchy: (np.str_('b'), n...
+    <IndexHierarchy: (np.str_('b'), np.…
     False                                1517-01-01      10
     True                                 1517-04-01      2
     True                                 1517-12-31      8

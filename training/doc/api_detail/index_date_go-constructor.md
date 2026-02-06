@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2682,7 +2682,7 @@ IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     2021-12-15
     2021-12-16
     2021-12-17
-    ...
+    …
     2022-01-15
     2022-01-16
     2022-01-17
@@ -2726,7 +2726,7 @@ IndexDateGO.\_\_init\_\_(*labels*, */*, *\**, *loc\_is\_iloc=False*, *name=<obje
     2021-01-15
     2021-01-16
     2021-01-17
-    ...
+    …
     2022-12-15
     2022-12-16
     2022-12-17

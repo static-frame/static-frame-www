@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -3008,9 +3008,9 @@ FrameGO.via\_dt.timetuple
     <FrameGO>
     <IndexGO> a                    b                    <<U1>
     <Index>
-    p         time.struct_time(... time.struct_time(...
-    q         time.struct_time(... time.struct_time(...
-    r         time.struct_time(... time.struct_time(...
+    p         time.struct_time(tm… time.struct_time(tm…
+    q         time.struct_time(tm… time.struct_time(tm…
+    r         time.struct_time(tm… time.struct_time(tm…
     <<U1>     <object>             <object>
     ```
 

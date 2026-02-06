@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2551,6 +2551,8 @@ Search
 | [Detail](../api_detail/index_millisecond_go-method.md#api-sig-indexmillisecondgo-fillna) | `IndexMillisecondGO.fillna(value, /)` | Return an Index with replacing null (NaN or None) with the supplied value. Args:… |
 | [Detail](../api_detail/index_millisecond_go-method.md#api-sig-indexmillisecondgo-head) | `IndexMillisecondGO.head(count, /)` | Return a Index consisting only of the top elements as specified by count. Args:… |
 | [Detail](../api_detail/index_millisecond_go-method.md#api-sig-indexmillisecondgo-iloc-searchsorted) | `IndexMillisecondGO.iloc_searchsorted(values, /, *, side_left)` | Given a sorted Series, return the iloc (integer) position(s) at which insertion… |
+| [Detail](../api_detail/index_millisecond_go-method.md#api-sig-indexmillisecondgo-insert-after) | `IndexMillisecondGO.insert_after(key, labels, /)` |  |
+| [Detail](../api_detail/index_millisecond_go-method.md#api-sig-indexmillisecondgo-insert-before) | `IndexMillisecondGO.insert_before(key, labels, /)` |  |
 | [Detail](../api_detail/index_millisecond_go-method.md#api-sig-indexmillisecondgo-intersection) | `IndexMillisecondGO.intersection(*others)` | Perform intersection with one or many Index, container, or NumPy array. Identica… |
 | [Detail](../api_detail/index_millisecond_go-method.md#api-sig-indexmillisecondgo-is-sorted) | `IndexMillisecondGO.is_sorted(*, ascending, kind, key)` | Return True if this Index is sorted according to the specified parameters. Args:… |
 | [Detail](../api_detail/index_millisecond_go-method.md#api-sig-indexmillisecondgo-isfalsy) | `IndexMillisecondGO.isfalsy()` | Return a same-shaped, Boolean ndarray indicating which values are falsy. |

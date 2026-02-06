@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2937,11 +2937,8 @@ IndexMillisecondGO.head(*count=5*, */*)[#](#static_frame.IndexMillisecondGO.head
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-    >>> ix.head(2)
-    <IndexMillisecondGO>
-    1517-04-01T00:00:00.000
-    1517-12-31T00:00:00.000
-    <datetime64[ms]>
+    >>> ix.head("1517-12")
+    TypeError('slice indices must be integers or None or have an __index__ method')
     ```
 
 IndexMillisecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexMillisecondGO.iloc_searchsorted "Link to this definition")
@@ -2961,6 +2958,44 @@ IndexMillisecondGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#]
     <datetime64[ms]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
+    ```
+
+IndexMillisecondGO.insert\_after(*key*, *labels*, */*)[#](#static_frame.IndexMillisecondGO.insert_after "Link to this definition")
+:   ```
+    >>> ix = sf.IndexMillisecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix
+    <IndexMillisecondGO>
+    1517-04-01T00:00:00.000
+    1517-12-31T00:00:00.000
+    1517-06-30T00:00:00.000
+    <datetime64[ms]>
+    >>> ix.insert_after(sf.ILoc[0], ('1822', '1312'))
+    <IndexMillisecondGO>
+    1517-04-01T00:00:00.000
+    1822-01-01T00:00:00.000
+    1312-01-01T00:00:00.000
+    1517-12-31T00:00:00.000
+    1517-06-30T00:00:00.000
+    <datetime64[ms]>
+    ```
+
+IndexMillisecondGO.insert\_before(*key*, *labels*, */*)[#](#static_frame.IndexMillisecondGO.insert_before "Link to this definition")
+:   ```
+    >>> ix = sf.IndexMillisecondGO(('1517-04-01', '1517-12-31', '1517-06-30'))
+    >>> ix
+    <IndexMillisecondGO>
+    1517-04-01T00:00:00.000
+    1517-12-31T00:00:00.000
+    1517-06-30T00:00:00.000
+    <datetime64[ms]>
+    >>> ix.insert_before(sf.ILoc[0], ('1822', '1312'))
+    <IndexMillisecondGO>
+    1822-01-01T00:00:00.000
+    1312-01-01T00:00:00.000
+    1517-04-01T00:00:00.000
+    1517-12-31T00:00:00.000
+    1517-06-30T00:00:00.000
+    <datetime64[ms]>
     ```
 
 IndexMillisecondGO.intersection(*\*others*)[#](#static_frame.IndexMillisecondGO.intersection "Link to this definition")
@@ -3074,9 +3109,9 @@ IndexMillisecondGO.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](
     <datetime64[ms]>
     >>> ix.level_add('A')
     <IndexHierarchyGO>
-    A                  1517-04-01T00:00:...
-    A                  1517-12-31T00:00:...
-    A                  1517-06-30T00:00:...
+    A                  1517-04-01T00:00:00…
+    A                  1517-12-31T00:00:00…
+    A                  1517-06-30T00:00:00…
     <<U1>              <datetime64[ms]>
     ```
 
@@ -3396,11 +3431,8 @@ IndexMillisecondGO.tail(*count=5*, */*)[#](#static_frame.IndexMillisecondGO.tail
     1517-12-31T00:00:00.000
     1517-06-30T00:00:00.000
     <datetime64[ms]>
-    >>> ix.tail(2)
-    <IndexMillisecondGO>
-    1517-12-31T00:00:00.000
-    1517-06-30T00:00:00.000
-    <datetime64[ms]>
+    >>> ix.tail("1517-12")
+    TypeError("bad operand type for unary -: 'str'")
     ```
 
 IndexMillisecondGO.union(*\*others*)[#](#static_frame.IndexMillisecondGO.union "Link to this definition")
@@ -3523,6 +3555,8 @@ On this page
 * [`IndexMillisecondGO.fillna()`](#static_frame.IndexMillisecondGO.fillna)
 * [`IndexMillisecondGO.head()`](#static_frame.IndexMillisecondGO.head)
 * [`IndexMillisecondGO.iloc_searchsorted()`](#static_frame.IndexMillisecondGO.iloc_searchsorted)
+* [`IndexMillisecondGO.insert_after()`](#static_frame.IndexMillisecondGO.insert_after)
+* [`IndexMillisecondGO.insert_before()`](#static_frame.IndexMillisecondGO.insert_before)
 * [`IndexMillisecondGO.intersection()`](#static_frame.IndexMillisecondGO.intersection)
 * [`IndexMillisecondGO.is_sorted()`](#static_frame.IndexMillisecondGO.is_sorted)
 * [`IndexMillisecondGO.isfalsy()`](#static_frame.IndexMillisecondGO.isfalsy)

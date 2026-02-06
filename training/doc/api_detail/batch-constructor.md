@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2527,12 +2527,12 @@ Search
 
 [Overview: Batch: Constructor](../api_overview/batch-constructor.md#api-overview-batch-constructor)
 
-Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.__init__)[#](#static_frame.Batch.__init__ "Link to this definition")
+Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.__init__)[#](#static_frame.Batch.__init__ "Link to this definition")
 :   Default constructor of a [`Batch`](batch-selector.md#Batch "Batch").
 
     > Args:
     > :   name: A hashable object to label the container.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -2554,7 +2554,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
     <<U1>            <<U1> <int64> <int64>
     ```
 
-*classmethod* Batch.from\_frames(*frames*, */*, *\**, *name=None*, *config=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_frames)[#](#static_frame.Batch.from_frames "Link to this definition")
+*classmethod* Batch.from\_frames(*frames*, */*, *\**, *name=None*, *max\_workers=None*, *chunksize=1*, *use\_threads=False*, *mp\_context=None*)[[source]](../_modules/static_frame/core/batch.md#Batch.from_frames)[#](#static_frame.Batch.from_frames "Link to this definition")
 :   Return a [`Batch`](batch-selector.md#Batch "Batch") from an iterable of [`Frame`](frame-selector.md#Frame "Frame"); labels will be drawn from [`Frame.name`](frame-attribute.md#static_frame.Frame.name "static_frame.Frame.name").
 
     ```
@@ -2579,7 +2579,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -2606,7 +2606,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -2633,7 +2633,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -2660,7 +2660,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -2687,7 +2687,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -2714,7 +2714,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -2741,7 +2741,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.
@@ -2768,7 +2768,7 @@ Batch.\_\_init\_\_(*items*, */*, *\**, *name=None*, *config=None*, *max\_workers
 
     > Args:
     > :   fp: A string file path or `Path` instance.
-    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label ot [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
     >     max\_workers: Number of parallel executors, as passed to the Thread- or ProcessPoolExecutor; `None` defaults to the max number of machine processes.
     >     chunksize: Units of work per executor, as passed to the Thread- or ProcessPoolExecutor.
     >     use\_threads: Use the ThreadPoolExecutor instead of the ProcessPoolExecutor.

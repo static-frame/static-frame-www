@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2608,7 +2608,7 @@ Yarn.memory[#](#static_frame.Yarn.memory "Link to this definition")
     >>> y = sf.Yarn.from_buses((sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i'), sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')), retain_labels=True)
     >>> y.memory
           L     Lu    LM   LMu   LMD  LMDu  R     Ru    RM   RMu   RMD  RMDu
-    Total 18.26 KB    7.42 KB    5.17 KB    26.37 KB    7.54 KB    5.29 KB
+    Total 17.71 KB    7.42 KB    5.17 KB    25.81 KB    7.54 KB    5.29 KB
     ```
 
 Yarn.mloc[#](#static_frame.Yarn.mloc "Link to this definition")

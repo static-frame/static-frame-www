@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2884,11 +2884,8 @@ IndexYear.head(*count=5*, */*)[#](#static_frame.IndexYear.head "Link to this def
     1520
     1518
     <datetime64[Y]>
-    >>> ix.head(2)
-    <IndexYear>
-    1517
-    1520
-    <datetime64[Y]>
+    >>> ix.head("1517-12")
+    TypeError('slice indices must be integers or None or have an __index__ method')
     ```
 
 IndexYear.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexYear.iloc_searchsorted "Link to this definition")
@@ -2908,6 +2905,44 @@ IndexYear.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_
     <datetime64[Y]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
+    ```
+
+IndexYear.insert\_after(*key*, *labels*, */*)[#](#static_frame.IndexYear.insert_after "Link to this definition")
+:   ```
+    >>> ix = sf.IndexYear(('1517', '1520', '1518'))
+    >>> ix
+    <IndexYear>
+    1517
+    1520
+    1518
+    <datetime64[Y]>
+    >>> ix.insert_after(sf.ILoc[0], ('1822', '1312'))
+    <IndexYear>
+    1517
+    1822
+    1312
+    1520
+    1518
+    <datetime64[Y]>
+    ```
+
+IndexYear.insert\_before(*key*, *labels*, */*)[#](#static_frame.IndexYear.insert_before "Link to this definition")
+:   ```
+    >>> ix = sf.IndexYear(('1517', '1520', '1518'))
+    >>> ix
+    <IndexYear>
+    1517
+    1520
+    1518
+    <datetime64[Y]>
+    >>> ix.insert_before(sf.ILoc[0], ('1822', '1312'))
+    <IndexYear>
+    1822
+    1312
+    1517
+    1520
+    1518
+    <datetime64[Y]>
     ```
 
 IndexYear.intersection(*\*others*)[#](#static_frame.IndexYear.intersection "Link to this definition")
@@ -3339,11 +3374,8 @@ IndexYear.tail(*count=5*, */*)[#](#static_frame.IndexYear.tail "Link to this def
     1520
     1518
     <datetime64[Y]>
-    >>> ix.tail(2)
-    <IndexYear>
-    1520
-    1518
-    <datetime64[Y]>
+    >>> ix.tail("1517-12")
+    TypeError("bad operand type for unary -: 'str'")
     ```
 
 IndexYear.union(*\*others*)[#](#static_frame.IndexYear.union "Link to this definition")
@@ -3462,6 +3494,8 @@ On this page
 * [`IndexYear.fillna()`](#static_frame.IndexYear.fillna)
 * [`IndexYear.head()`](#static_frame.IndexYear.head)
 * [`IndexYear.iloc_searchsorted()`](#static_frame.IndexYear.iloc_searchsorted)
+* [`IndexYear.insert_after()`](#static_frame.IndexYear.insert_after)
+* [`IndexYear.insert_before()`](#static_frame.IndexYear.insert_before)
 * [`IndexYear.intersection()`](#static_frame.IndexYear.intersection)
 * [`IndexYear.is_sorted()`](#static_frame.IndexYear.is_sorted)
 * [`IndexYear.isfalsy()`](#static_frame.IndexYear.isfalsy)
