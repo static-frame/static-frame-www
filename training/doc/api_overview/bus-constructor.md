@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2529,12 +2529,12 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/bus-constructor.md#api-sig-bus-init) | `Bus.__init__(frames, /, *, index, index_constructor, name, store, config, max_persist, own_index, own_data)` | Default Bus constructor. {args} |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-init) | `Bus.__init__(frames, /, *, index, index_constructor, name, store, max_persist, own_index, own_data)` | Default Bus constructor. {args} |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-concat) | `Bus.from_concat(containers, /, *, index, name)` | Concatenate multiple Bus into a new Bus. All Bus will load all Frame into memory… |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-dict) | `Bus.from_dict(mapping, /, *, name, index_constructor)` | Bus construction from a mapping of labels and Frame. Args: mapping: a dictionary… |
-| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-frames) | `Bus.from_frames(frames, /, *, index_constructor, config, name)` | Return a Bus from an iterable of Frame; labels will be drawn from Frame.name. |
-| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-items) | `Bus.from_items(pairs, /, *, config, name, index_constructor)` | Return a Bus from an iterable of pairs of label, Frame. Returns: Bus |
-| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-series) | `Bus.from_series(series, /, *, store, config, max_persist, own_data)` | Create a Bus from a Series of Frame. |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-frames) | `Bus.from_frames(frames, /, *, index_constructor, name)` | Return a Bus from an iterable of Frame; labels will be drawn from Frame.name. |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-items) | `Bus.from_items(pairs, /, *, name, index_constructor)` | Return a Bus from an iterable of pairs of label, Frame. Returns: Bus |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-series) | `Bus.from_series(series, /, *, store, max_persist, own_data)` | Create a Bus from a Series of Frame. |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-sqlite) | `Bus.from_sqlite(fp, /, *, config, max_persist, index_constructor)` | Given a file path to an SQLite Bus store, return a Bus instance. Args: fp: A str… |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-xlsx) | `Bus.from_xlsx(fp, /, *, config, max_persist, index_constructor)` | Given a file path to an XLSX Bus store, return a Bus instance. Args: fp: A strin… |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-zip-csv) | `Bus.from_zip_csv(fp, /, *, config, max_persist, index_constructor)` | Given a file path to zipped CSV Bus store, return a Bus instance. Args: fp: A st… |

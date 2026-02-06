@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -3614,14 +3614,14 @@ Batch.relabel\_flat(*index=False*, *columns=False*)[[source]](../_modules/static
     <Frame>
     <Index>                               a       b      c               <<U1>
     <IndexHierarchy>
-    i                (np.int64(0), np.... 10      False  1517-01-01
-    i                (np.int64(0), np.... 2       True   1517-04-01
-    i                (np.int64(1), np.... 8       True   1517-12-31
-    i                (np.int64(1), np.... 3       False  1517-06-30
-    j                (np.int64(0), np.... 23      True   2022-01-01
-    j                (np.int64(0), np.... 83      True   2023-04-01
-    j                (np.int64(1), np.... 19      False  2022-12-31
-    j                (np.int64(1), np.... 87      False  2024-06-30
+    i                (np.int64(0), np.st… 10      False  1517-01-01
+    i                (np.int64(0), np.st… 2       True   1517-04-01
+    i                (np.int64(1), np.st… 8       True   1517-12-31
+    i                (np.int64(1), np.st… 3       False  1517-06-30
+    j                (np.int64(0), np.st… 23      True   2022-01-01
+    j                (np.int64(0), np.st… 83      True   2023-04-01
+    j                (np.int64(1), np.st… 19      False  2022-12-31
+    j                (np.int64(1), np.st… 87      False  2024-06-30
     <<U1>            <object>             <int64> <bool> <datetime64[D]>
     ```
 
@@ -3664,14 +3664,14 @@ Batch.relabel\_shift\_in(*key*, */*, *\**, *axis=0*)[[source]](../_modules/stati
     >>> tuple(bt.relabel_shift_in('a').values)
     (<Frame: x>
     <Index>                                            b      c               <<U1>
-    <IndexHierarchy: ('__index0__', '...
+    <IndexHierarchy: ('__index0__', '__…
     0                                    p     10      False  1517-01-01
     0                                    q     2       True   1517-04-01
     1                                    p     8       True   1517-12-31
     1                                    q     3       False  1517-06-30
     <int64>                              <<U1> <int64> <bool> <datetime64[D]>, <Frame: x>
     <Index>                                            b      c               <<U1>
-    <IndexHierarchy: ('__index0__', '...
+    <IndexHierarchy: ('__index0__', '__…
     0                                    p     23      True   2022-01-01
     0                                    q     83      True   2023-04-01
     1                                    p     19      False  2022-12-31

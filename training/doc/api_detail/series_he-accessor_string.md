@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -3192,9 +3192,9 @@ SeriesHE.via\_str.partition(*sep*)
     >>> s.via_str.partition('X')
     <SeriesHE>
     <Index>
-    a          (np.str_('qrs '),...
+    a          (np.str_('qrs '), '…
     b          ('', 'X', 'YZ')
-    c          (np.str_('123'), ...
+    c          (np.str_('123'), ''…
     d          (' w', 'X', ' ')
     <<U1>      <object>
     ```
@@ -3321,9 +3321,9 @@ SeriesHE.via\_str.rpartition(*sep*)
     >>> s.via_str.rpartition('X')
     <SeriesHE>
     <Index>
-    a          ('', '', np.str_(...
+    a          ('', '', np.str_('q…
     b          ('', 'X', 'YZ')
-    c          ('', '', np.str_(...
+    c          ('', '', np.str_('1…
     d          (' w', 'X', ' ')
     <<U1>      <object>
     ```

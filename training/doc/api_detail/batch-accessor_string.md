@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -3155,14 +3155,14 @@ Batch.via\_str.partition(*sep*)
     <Frame>
     <Index>                   a                    b                    c                    <<U1>
     <IndexHierarchy>
-    i                0        (np.str_('10'), '... (np.str_('qrs '),... (np.str_('1517-01...
-    i                1        (np.str_('2'), ''... ('', 'X', 'YZ')      (np.str_('1517-04...
-    i                2        (np.str_('8'), ''... (np.str_('123'), ... (np.str_('1517-12...
-    i                3        (np.str_('3'), ''... (' w', 'X', ' ')     (np.str_('1517-06...
-    j                p        (np.str_('10'), '... (np.str_('qrs '),... nan
-    j                q        (np.str_('2'), ''... ('', 'X', 'YZ')      nan
-    j                r        (np.str_('8'), ''... (np.str_('123'), ... nan
-    j                s        (np.str_('3'), ''... (' w', 'X', ' ')     nan
+    i                0        (np.str_('10'), '',… (np.str_('qrs '), '… (np.str_('1517-01-0…
+    i                1        (np.str_('2'), '', … ('', 'X', 'YZ')      (np.str_('1517-04-0…
+    i                2        (np.str_('8'), '', … (np.str_('123'), ''… (np.str_('1517-12-3…
+    i                3        (np.str_('3'), '', … (' w', 'X', ' ')     (np.str_('1517-06-3…
+    j                p        (np.str_('10'), '',… (np.str_('qrs '), '… nan
+    j                q        (np.str_('2'), '', … ('', 'X', 'YZ')      nan
+    j                r        (np.str_('8'), '', … (np.str_('123'), ''… nan
+    j                s        (np.str_('3'), '', … (' w', 'X', ' ')     nan
     <<U1>            <object> <object>             <object>             <object>
     ```
 
@@ -3274,14 +3274,14 @@ Batch.via\_str.rpartition(*sep*)
     <Frame>
     <Index>                   a                    b                    c                    <<U1>
     <IndexHierarchy>
-    i                0        ('', '', np.str_(... ('', '', np.str_(... ('', '', np.str_(...
-    i                1        ('', '', np.str_(... ('', 'X', 'YZ')      ('', '', np.str_(...
-    i                2        ('', '', np.str_(... ('', '', np.str_(... ('', '', np.str_(...
-    i                3        ('', '', np.str_(... (' w', 'X', ' ')     ('', '', np.str_(...
-    j                p        ('', '', np.str_(... ('', '', np.str_(... nan
-    j                q        ('', '', np.str_(... ('', 'X', 'YZ')      nan
-    j                r        ('', '', np.str_(... ('', '', np.str_(... nan
-    j                s        ('', '', np.str_(... (' w', 'X', ' ')     nan
+    i                0        ('', '', np.str_('1… ('', '', np.str_('q… ('', '', np.str_('1…
+    i                1        ('', '', np.str_('2… ('', 'X', 'YZ')      ('', '', np.str_('1…
+    i                2        ('', '', np.str_('8… ('', '', np.str_('1… ('', '', np.str_('1…
+    i                3        ('', '', np.str_('3… (' w', 'X', ' ')     ('', '', np.str_('1…
+    j                p        ('', '', np.str_('1… ('', '', np.str_('q… nan
+    j                q        ('', '', np.str_('2… ('', 'X', 'YZ')      nan
+    j                r        ('', '', np.str_('8… ('', '', np.str_('1… nan
+    j                s        ('', '', np.str_('3… (' w', 'X', ' ')     nan
     <<U1>            <object> <object>             <object>             <object>
     ```
 

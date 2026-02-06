@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2885,11 +2885,8 @@ IndexNanosecond.head(*count=5*, */*)[#](#static_frame.IndexNanosecond.head "Link
     1789-12-31T00:00:00.000000000
     1799-11-09T00:00:00.000000000
     <datetime64[ns]>
-    >>> ix.head(2)
-    <IndexNanosecond>
-    1789-05-05T00:00:00.000000000
-    1789-12-31T00:00:00.000000000
-    <datetime64[ns]>
+    >>> ix.head("1517-12")
+    TypeError('slice indices must be integers or None or have an __index__ method')
     ```
 
 IndexNanosecond.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexNanosecond.iloc_searchsorted "Link to this definition")
@@ -2909,6 +2906,44 @@ IndexNanosecond.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#s
     <datetime64[ns]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
+    ```
+
+IndexNanosecond.insert\_after(*key*, *labels*, */*)[#](#static_frame.IndexNanosecond.insert_after "Link to this definition")
+:   ```
+    >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
+    >>> ix
+    <IndexNanosecond>
+    1789-05-05T00:00:00.000000000
+    1789-12-31T00:00:00.000000000
+    1799-11-09T00:00:00.000000000
+    <datetime64[ns]>
+    >>> ix.insert_after(sf.ILoc[0], ('1822', '1312'))
+    <IndexNanosecond>
+    1789-05-05T00:00:00.000000000
+    1822-01-01T00:00:00.000000000
+    1896-07-20T23:34:33.709551616
+    1789-12-31T00:00:00.000000000
+    1799-11-09T00:00:00.000000000
+    <datetime64[ns]>
+    ```
+
+IndexNanosecond.insert\_before(*key*, *labels*, */*)[#](#static_frame.IndexNanosecond.insert_before "Link to this definition")
+:   ```
+    >>> ix = sf.IndexNanosecond(('1789-05-05', '1789-12-31', '1799-11-09'))
+    >>> ix
+    <IndexNanosecond>
+    1789-05-05T00:00:00.000000000
+    1789-12-31T00:00:00.000000000
+    1799-11-09T00:00:00.000000000
+    <datetime64[ns]>
+    >>> ix.insert_before(sf.ILoc[0], ('1822', '1312'))
+    <IndexNanosecond>
+    1822-01-01T00:00:00.000000000
+    1896-07-20T23:34:33.709551616
+    1789-05-05T00:00:00.000000000
+    1789-12-31T00:00:00.000000000
+    1799-11-09T00:00:00.000000000
+    <datetime64[ns]>
     ```
 
 IndexNanosecond.intersection(*\*others*)[#](#static_frame.IndexNanosecond.intersection "Link to this definition")
@@ -3022,9 +3057,9 @@ IndexNanosecond.level\_add(*level*, */*, *\**, *index\_constructor=None*)[#](#st
     <datetime64[ns]>
     >>> ix.level_add('A')
     <IndexHierarchy>
-    A                1789-05-05T00:00:...
-    A                1789-12-31T00:00:...
-    A                1799-11-09T00:00:...
+    A                1789-05-05T00:00:00…
+    A                1789-12-31T00:00:00…
+    A                1799-11-09T00:00:00…
     <<U1>            <datetime64[ns]>
     ```
 
@@ -3344,11 +3379,8 @@ IndexNanosecond.tail(*count=5*, */*)[#](#static_frame.IndexNanosecond.tail "Link
     1789-12-31T00:00:00.000000000
     1799-11-09T00:00:00.000000000
     <datetime64[ns]>
-    >>> ix.tail(2)
-    <IndexNanosecond>
-    1789-12-31T00:00:00.000000000
-    1799-11-09T00:00:00.000000000
-    <datetime64[ns]>
+    >>> ix.tail("1517-12")
+    TypeError("bad operand type for unary -: 'str'")
     ```
 
 IndexNanosecond.union(*\*others*)[#](#static_frame.IndexNanosecond.union "Link to this definition")
@@ -3469,6 +3501,8 @@ On this page
 * [`IndexNanosecond.fillna()`](#static_frame.IndexNanosecond.fillna)
 * [`IndexNanosecond.head()`](#static_frame.IndexNanosecond.head)
 * [`IndexNanosecond.iloc_searchsorted()`](#static_frame.IndexNanosecond.iloc_searchsorted)
+* [`IndexNanosecond.insert_after()`](#static_frame.IndexNanosecond.insert_after)
+* [`IndexNanosecond.insert_before()`](#static_frame.IndexNanosecond.insert_before)
 * [`IndexNanosecond.intersection()`](#static_frame.IndexNanosecond.intersection)
 * [`IndexNanosecond.is_sorted()`](#static_frame.IndexNanosecond.is_sorted)
 * [`IndexNanosecond.isfalsy()`](#static_frame.IndexNanosecond.isfalsy)

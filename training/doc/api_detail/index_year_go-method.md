@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2936,11 +2936,8 @@ IndexYearGO.head(*count=5*, */*)[#](#static_frame.IndexYearGO.head "Link to this
     1520
     1518
     <datetime64[Y]>
-    >>> ix.head(2)
-    <IndexYearGO>
-    1517
-    1520
-    <datetime64[Y]>
+    >>> ix.head("1517-12")
+    TypeError('slice indices must be integers or None or have an __index__ method')
     ```
 
 IndexYearGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#static_frame.IndexYearGO.iloc_searchsorted "Link to this definition")
@@ -2960,6 +2957,44 @@ IndexYearGO.iloc\_searchsorted(*values*, */*, *\**, *side\_left=True*)[#](#stati
     <datetime64[Y]>
     >>> ix.iloc_searchsorted('c')
     ValueError('Error parsing datetime string "c" at position 0')
+    ```
+
+IndexYearGO.insert\_after(*key*, *labels*, */*)[#](#static_frame.IndexYearGO.insert_after "Link to this definition")
+:   ```
+    >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
+    >>> ix
+    <IndexYearGO>
+    1517
+    1520
+    1518
+    <datetime64[Y]>
+    >>> ix.insert_after(sf.ILoc[0], ('1822', '1312'))
+    <IndexYearGO>
+    1517
+    1822
+    1312
+    1520
+    1518
+    <datetime64[Y]>
+    ```
+
+IndexYearGO.insert\_before(*key*, *labels*, */*)[#](#static_frame.IndexYearGO.insert_before "Link to this definition")
+:   ```
+    >>> ix = sf.IndexYearGO(('1517', '1520', '1518'))
+    >>> ix
+    <IndexYearGO>
+    1517
+    1520
+    1518
+    <datetime64[Y]>
+    >>> ix.insert_before(sf.ILoc[0], ('1822', '1312'))
+    <IndexYearGO>
+    1822
+    1312
+    1517
+    1520
+    1518
+    <datetime64[Y]>
     ```
 
 IndexYearGO.intersection(*\*others*)[#](#static_frame.IndexYearGO.intersection "Link to this definition")
@@ -3391,11 +3426,8 @@ IndexYearGO.tail(*count=5*, */*)[#](#static_frame.IndexYearGO.tail "Link to this
     1520
     1518
     <datetime64[Y]>
-    >>> ix.tail(2)
-    <IndexYearGO>
-    1520
-    1518
-    <datetime64[Y]>
+    >>> ix.tail("1517-12")
+    TypeError("bad operand type for unary -: 'str'")
     ```
 
 IndexYearGO.union(*\*others*)[#](#static_frame.IndexYearGO.union "Link to this definition")
@@ -3516,6 +3548,8 @@ On this page
 * [`IndexYearGO.fillna()`](#static_frame.IndexYearGO.fillna)
 * [`IndexYearGO.head()`](#static_frame.IndexYearGO.head)
 * [`IndexYearGO.iloc_searchsorted()`](#static_frame.IndexYearGO.iloc_searchsorted)
+* [`IndexYearGO.insert_after()`](#static_frame.IndexYearGO.insert_after)
+* [`IndexYearGO.insert_before()`](#static_frame.IndexYearGO.insert_before)
 * [`IndexYearGO.intersection()`](#static_frame.IndexYearGO.intersection)
 * [`IndexYearGO.is_sorted()`](#static_frame.IndexYearGO.is_sorted)
 * [`IndexYearGO.isfalsy()`](#static_frame.IndexYearGO.isfalsy)

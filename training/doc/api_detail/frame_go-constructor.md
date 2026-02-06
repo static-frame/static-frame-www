@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2595,7 +2595,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     <object>  <int64> <int64>
     ```
 
-*classmethod* FrameGO.from\_clipboard(*\**, *delimiter='\t'*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_clipboard "Link to this definition")
+*classmethod* FrameGO.from\_clipboard(*\**, *delimiter='\t'*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_clipboard "Link to this definition")
 :   Create a [`Frame`](frame-selector.md#Frame "Frame") from the contents of the clipboard (assuming a table is stored as delimited file).
 
     Returns:
@@ -2733,7 +2733,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     <<U1>            <<U1> <object> <object>
     ```
 
-*classmethod* FrameGO.from\_csv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_csv "Link to this definition")
+*classmethod* FrameGO.from\_csv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_csv "Link to this definition")
 :   Specialized version of [`Frame.from_delimited`](frame-constructor.md#static_frame.Frame.from_delimited "static_frame.Frame.from_delimited") for CSV files.
 
     Returns:
@@ -2767,7 +2767,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     <<U1>     <int64> <int64>
     ```
 
-*classmethod* FrameGO.from\_delimited(*fp*, */*, *\**, *delimiter*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_delimited "Link to this definition")
+*classmethod* FrameGO.from\_delimited(*fp*, */*, *\**, *delimiter*, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_delimited "Link to this definition")
 :   Create a [`Frame`](frame-selector.md#Frame "Frame") from a file path or a file-like object defining a delimited (CSV, TSV) data file.
 
     Parameters:
@@ -3849,7 +3849,7 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     <int64>   <bool> <int64>
     ```
 
-*classmethod* FrameGO.from\_tsv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quoting=0*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_tsv "Link to this definition")
+*classmethod* FrameGO.from\_tsv(*fp*, */*, *\**, *index\_depth=0*, *index\_column\_first=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *index\_continuation\_token=<object object>*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_continuation\_token=<object object>*, *columns\_select=None*, *skip\_header=0*, *skip\_footer=0*, *skip\_initial\_space=False*, *quote\_char='"'*, *quote\_double=True*, *escape\_char=None*, *quoting=0*, *thousands\_char=''*, *decimal\_char='.'*, *encoding=None*, *dtypes=None*, *name=None*, *consolidate\_blocks=False*, *store\_filter=None*)[#](#static_frame.FrameGO.from_tsv "Link to this definition")
 :   Specialized version of [`Frame.from_delimited`](frame-constructor.md#static_frame.Frame.from_delimited "static_frame.Frame.from_delimited") for TSV files.
 
     Returns:

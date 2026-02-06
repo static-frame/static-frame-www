@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.6.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -3241,10 +3241,10 @@ FrameHE.via\_str.partition(*sep*)
     <FrameHE: x>
     <Index>      a                    b                    <<U1>
     <Index>
-    p            (np.str_('10'), '... (np.str_('qrs '),...
-    q            (np.str_('2'), ''... ('', 'X', 'YZ')
-    r            (np.str_('8'), ''... (np.str_('123'), ...
-    s            (np.str_('3'), ''... (' w', 'X', ' ')
+    p            (np.str_('10'), '',… (np.str_('qrs '), '…
+    q            (np.str_('2'), '', … ('', 'X', 'YZ')
+    r            (np.str_('8'), '', … (np.str_('123'), ''…
+    s            (np.str_('3'), '', … (' w', 'X', ' ')
     <<U1>        <object>             <object>
     ```
 
@@ -3379,10 +3379,10 @@ FrameHE.via\_str.rpartition(*sep*)
     <FrameHE: x>
     <Index>      a                    b                    <<U1>
     <Index>
-    p            ('', '', np.str_(... ('', '', np.str_(...
-    q            ('', '', np.str_(... ('', 'X', 'YZ')
-    r            ('', '', np.str_(... ('', '', np.str_(...
-    s            ('', '', np.str_(... (' w', 'X', ' ')
+    p            ('', '', np.str_('1… ('', '', np.str_('q…
+    q            ('', '', np.str_('2… ('', 'X', 'YZ')
+    r            ('', '', np.str_('8… ('', '', np.str_('1…
+    s            ('', '', np.str_('3… (' w', 'X', ' ')
     <<U1>        <object>             <object>
     ```
 
