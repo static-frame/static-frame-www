@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2614,6 +2614,37 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
     <<U1>   <object>
     ```
 
+*classmethod* Bus.from\_manifest(*label\_to\_fp\_or\_fps*, */*, *\**, *max\_persist=None*, *index\_constructor=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_manifest)[#](#static_frame.Bus.from_manifest "Link to this definition")
+:   Load a Bus from arbitrary collections of [`](#id1)Frame`s stored on the file system as one of NPZ, pickle, or NPY directory. Initialization is possible from a mapping of label, file paths, or an iterable of file paths (where file names become labels).
+
+    > Args:
+    > :   fp: A string file path or `Path` instance.
+    >     config: A [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig"), or a mapping of label to [`StoreConfig`](store_config.md#static_frame.StoreConfig "static_frame.StoreConfig")
+    >     max\_persist: When loading [`Frame`](frame-selector.md#Frame "Frame") from a `Store`, optionally define the maximum number of [`Frame`](frame-selector.md#Frame "Frame") to remain in the [`Bus`](bus-selector.md#Bus "Bus"), regardless of the size of the [`Bus`](bus-selector.md#Bus "Bus"). If more than `max_persist` number of [`Frame`](frame-selector.md#Frame "Frame") are loaded, least-recently loaded [`Frame`](frame-selector.md#Frame "Frame") will be replaced by `FrameDeferred`. A `max_persist` of 1, for example, permits reading one [`Frame`](frame-selector.md#Frame "Frame") at a time without ever holding in memory more than 1 [`Frame`](frame-selector.md#Frame "Frame").
+
+    ```
+    >>> f1 = sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x')
+    >>> f2 = sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')
+    >>> f1.to_pickle('/tmp/f1.pickle')
+    >>> f2.to_npz('/tmp/f2.npz')
+    >>> b1 = sf.Bus.from_manifest(("/tmp/f1.pickle", "/tmp/f2.npz")).rename("b1")
+    >>> b1.inventory
+    <Frame>
+    <Index>      path           last_modified        size  <<U13>
+    <Index>
+    ('b1', 'f1') /tmp/f1.pickle 2026-03-10T21:10:32… 861 B
+    ('b1', 'f2') /tmp/f2.npz    2026-03-10T21:10:32… 844 B
+    <object>     <<U14>         <<U32>               <<U5>
+    >>> b2 = sf.Bus.from_manifest({"x": "/tmp/f1.pickle", "y": "/tmp/f2.npz"}).rename("b2")
+    >>> b2.inventory
+    <Frame>
+    <Index>     path           last_modified        size  <<U13>
+    <Index>
+    ('b2', 'x') /tmp/f1.pickle 2026-03-10T21:10:32… 861 B
+    ('b2', 'y') /tmp/f2.npz    2026-03-10T21:10:32… 844 B
+    <object>    <<U14>         <<U32>               <<U5>
+    ```
+
 *classmethod* Bus.from\_series(*series*, */*, *\**, *store=None*, *max\_persist=None*, *own\_data=False*)[[source]](../_modules/static_frame/core/bus.md#Bus.from_series)[#](#static_frame.Bus.from_series "Link to this definition")
 :   Create a [`Bus`](bus-selector.md#Bus "Bus") from a [`Series`](series-selector.md#Series "Series") of [`Frame`](frame-selector.md#Frame "Frame").
 
@@ -2845,6 +2876,7 @@ On this page
 * [`Bus.from_dict()`](#static_frame.Bus.from_dict)
 * [`Bus.from_frames()`](#static_frame.Bus.from_frames)
 * [`Bus.from_items()`](#static_frame.Bus.from_items)
+* [`Bus.from_manifest()`](#static_frame.Bus.from_manifest)
 * [`Bus.from_series()`](#static_frame.Bus.from_series)
 * [`Bus.from_sqlite()`](#static_frame.Bus.from_sqlite)
 * [`Bus.from_xlsx()`](#static_frame.Bus.from_xlsx)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2534,6 +2534,7 @@ Search
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-dict) | `Bus.from_dict(mapping, /, *, name, index_constructor)` | Bus construction from a mapping of labels and Frame. Args: mapping: a dictionary… |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-frames) | `Bus.from_frames(frames, /, *, index_constructor, name)` | Return a Bus from an iterable of Frame; labels will be drawn from Frame.name. |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-items) | `Bus.from_items(pairs, /, *, name, index_constructor)` | Return a Bus from an iterable of pairs of label, Frame. Returns: Bus |
+| [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-manifest) | `Bus.from_manifest(label_to_fp_or_fps, /, *, max_persist, index_constructor)` | Load a Bus from arbitrary collections of Frames stored on the file system as one… |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-series) | `Bus.from_series(series, /, *, store, max_persist, own_data)` | Create a Bus from a Series of Frame. |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-sqlite) | `Bus.from_sqlite(fp, /, *, config, max_persist, index_constructor)` | Given a file path to an SQLite Bus store, return a Bus instance. Args: fp: A str… |
 | [Detail](../api_detail/bus-constructor.md#api-sig-bus-from-xlsx) | `Bus.from_xlsx(fp, /, *, config, max_persist, index_constructor)` | Given a file path to an XLSX Bus store, return a Bus instance. Args: fp: A strin… |

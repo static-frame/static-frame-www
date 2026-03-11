@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2586,7 +2586,7 @@ Bus.inventory[#](#static_frame.Bus.inventory "Link to this definition")
     <Frame>
     <Index>  path       last_modified        size   <<U13>
     <Index>
-    None     /tmp/b.zip 2026-02-02T19:46:56… 1.0 KB
+    None     /tmp/b.zip 2026-03-10T21:10:32… 1.0 KB
     <object> <<U10>     <<U32>               <<U6>
     ```
 

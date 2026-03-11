@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2527,7 +2527,7 @@ Search
 
 [Overview: StoreConfig](../api_overview/store_config.md#api-overview-storeconfig)
 
-*class* StoreConfig(*\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_select=None*, *dtypes=None*, *consolidate\_blocks=False*, *skip\_header=0*, *skip\_footer=0*, *trim\_nadir=False*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *merge\_hierarchical\_labels=True*, *label\_encoder=None*, *label\_decoder=None*, *read\_frame\_filter=None*, *read\_max\_workers=None*, *read\_chunksize=1*, *write\_max\_workers=None*, *write\_chunksize=1*, *mp\_context=None*)[[source]](../_modules/static_frame/core/store_config.md#StoreConfig)[#](#static_frame.StoreConfig "Link to this definition")
+*class* StoreConfig(*\**, *index\_depth=0*, *index\_name\_depth\_level=None*, *index\_constructors=None*, *columns\_depth=1*, *columns\_name\_depth\_level=None*, *columns\_constructors=None*, *columns\_select=None*, *dtypes=None*, *consolidate\_blocks=False*, *skip\_header=0*, *skip\_footer=0*, *trim\_nadir=False*, *include\_index=True*, *include\_index\_name=True*, *include\_columns=True*, *include\_columns\_name=False*, *merge\_hierarchical\_labels=True*, *label\_encoder=None*, *label\_decoder=None*, *read\_frame\_filter=None*, *read\_max\_workers=None*, *read\_chunksize=1*, *write\_max\_workers=None*, *write\_chunksize=1*, *mp\_context=None*, *store\_filter=<static\_frame.core.store\_filter.StoreFilter object>*)[[source]](../_modules/static_frame/core/store_config.md#StoreConfig)[#](#static_frame.StoreConfig "Link to this definition")
 :   A read-only container of parameters used by `Store` subclasses for reading from and writing to multi-table storage formats.
 
 * [Constructor](store_config-constructor.md#api-detail-storeconfig-constructor): Alternative constructors for creating instances.

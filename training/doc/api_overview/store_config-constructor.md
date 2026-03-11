@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2529,7 +2529,7 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
-| [Detail](../api_detail/store_config-constructor.md#api-sig-storeconfig-init) | `StoreConfig.__init__(*, index_depth, index_name_depth_level, index_constructors, columns_depth, columns_name_depth_level, columns_constructors, columns_select, dtypes, consolidate_blocks, skip_header, skip_footer, trim_nadir, include_index, include_index_name, include_columns, include_columns_name, merge_hierarchical_labels, label_encoder, label_decoder, read_frame_filter, read_max_workers, read_chunksize, write_max_workers, write_chunksize, mp_context)` |  |
+| [Detail](../api_detail/store_config-constructor.md#api-sig-storeconfig-init) | `StoreConfig.__init__(*, index_depth, index_name_depth_level, index_constructors, columns_depth, columns_name_depth_level, columns_constructors, columns_select, dtypes, consolidate_blocks, skip_header, skip_footer, trim_nadir, include_index, include_index_name, include_columns, include_columns_name, merge_hierarchical_labels, label_encoder, label_decoder, read_frame_filter, read_max_workers, read_chunksize, write_max_workers, write_chunksize, mp_context, store_filter)` |  |
 | [Detail](../api_detail/store_config-constructor.md#api-sig-storeconfig-from-frame) | `StoreConfig.from_frame(frame)` | Derive a config from a Frame. |
 
 [StoreConfig](store_config.md#api-overview-storeconfig): [Constructor](#api-overview-storeconfig-constructor) | [Exporter](store_config-exporter.md#api-overview-storeconfig-exporter) | [Attribute](store_config-attribute.md#api-overview-storeconfig-attribute) | [Method](store_config-method.md#api-overview-storeconfig-method) | [Display](store_config-display.md#api-overview-storeconfig-display)
