@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2551,6 +2551,7 @@ Search
 | [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-read-max-workers) | `StoreConfig.read_max_workers` | The type of the None singleton. |
 | [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-skip-footer) | `StoreConfig.skip_footer` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
 | [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-skip-header) | `StoreConfig.skip_header` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
+| [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-store-filter) | `StoreConfig.store_filter` | Utility for defining and applying translation of values going to and from a data… |
 | [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-trim-nadir) | `StoreConfig.trim_nadir` | Returns True when the argument is true, False otherwise. The builtins True and F… |
 | [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-write-chunksize) | `StoreConfig.write_chunksize` | int([x]) -> integer int(x, base=10) -> integer Convert a number or string to an… |
 | [Detail](../api_detail/store_config-attribute.md#api-sig-storeconfig-write-max-workers) | `StoreConfig.write_max_workers` | The type of the None singleton. |

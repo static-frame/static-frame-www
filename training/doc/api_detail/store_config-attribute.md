@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.7.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2571,6 +2571,8 @@ StoreConfig.skip\_footer[#](#static_frame.StoreConfig.skip_footer "Link to this 
 
 StoreConfig.skip\_header[#](#static_frame.StoreConfig.skip_header "Link to this definition")
 
+StoreConfig.store\_filter[#](#static_frame.StoreConfig.store_filter "Link to this definition")
+
 StoreConfig.trim\_nadir[#](#static_frame.StoreConfig.trim_nadir "Link to this definition")
 
 StoreConfig.write\_chunksize[#](#static_frame.StoreConfig.write_chunksize "Link to this definition")
@@ -2610,6 +2612,7 @@ On this page
 * [`StoreConfig.read_max_workers`](#static_frame.StoreConfig.read_max_workers)
 * [`StoreConfig.skip_footer`](#static_frame.StoreConfig.skip_footer)
 * [`StoreConfig.skip_header`](#static_frame.StoreConfig.skip_header)
+* [`StoreConfig.store_filter`](#static_frame.StoreConfig.store_filter)
 * [`StoreConfig.trim_nadir`](#static_frame.StoreConfig.trim_nadir)
 * [`StoreConfig.write_chunksize`](#static_frame.StoreConfig.write_chunksize)
 * [`StoreConfig.write_max_workers`](#static_frame.StoreConfig.write_max_workers)
