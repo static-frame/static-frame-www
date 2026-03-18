@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2534,6 +2534,7 @@ Search
 | [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-concat-items) | `SeriesHE.from_concat_items(items, /, *, name, index_constructor)` | Produce a Series with a hierarchical index from an iterable of pairs of labels,… |
 | [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-delimited) | `SeriesHE.from_delimited(delimited, /, *, delimiter, index, dtype, name, index_constructor, skip_initial_space, quoting, quote_char, quote_double, escape_char, thousands_char, decimal_char, own_index)` | Series construction from a delimited string. Args: dtype: if None, dtype will be… |
 | [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-dict) | `SeriesHE.from_dict(mapping, /, *, dtype, name, index_constructor)` | Series construction from a dictionary, where the first pair value is the index a… |
+| [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-display) | `SeriesHE.from_display(display, /)` | Construct a Series from a string that was produced by repr(series) (i.e. the out… |
 | [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-element) | `SeriesHE.from_element(element, /, *, index, dtype, name, index_constructor, own_index)` | Create a Series from a single element. The size of the resultant container will… |
 | [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-items) | `SeriesHE.from_items(pairs, /, *, dtype, name, index_constructor)` | Series construction from an iterator or generator of pairs, where the first pair… |
 | [Detail](../api_detail/series_he-constructor.md#api-sig-serieshe-from-overlay) | `SeriesHE.from_overlay(containers, /, *, index, union, name, func, fill_value)` | Return a new Series made by overlaying containers, aligned values are filled wit… |

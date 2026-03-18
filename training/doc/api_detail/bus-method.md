@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -3172,7 +3172,7 @@ Bus.unpersist()[[source]](../_modules/static_frame/core/bus.md#Bus.unpersist)[#]
     <<U1>   <object>
     ```
 
-[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic) | Accessor Mapping
 
 [previous
 

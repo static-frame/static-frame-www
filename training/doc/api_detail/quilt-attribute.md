@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2585,7 +2585,7 @@ Quilt.inventory[#](#static_frame.Quilt.inventory "Link to this definition")
     <Frame>
     <Index>  path       last_modified        size    <<U13>
     <Index>
-    None     /tmp/q.zip 2026-03-10T21:10:33… 1.12 KB
+    None     /tmp/q.zip 2026-03-18T00:43:10… 1.12 KB
     <object> <<U10>     <<U32>               <<U7>
     ```
 

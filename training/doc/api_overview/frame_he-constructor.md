@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2540,6 +2540,7 @@ Search
 | [Detail](../api_detail/frame_he-constructor.md#api-sig-framehe-from-dict-fields) | `FrameHE.from_dict_fields(fields, /, *, columns, dtypes, name, fill_value, consolidate_blocks, index_constructor, columns_constructor, own_index)` | Frame constructor from an iterable of dictionaries, where each dictionary repres… |
 | [Detail](../api_detail/frame_he-constructor.md#api-sig-framehe-from-dict-records) | `FrameHE.from_dict_records(records, /, *, index, dtypes, name, fill_value, consolidate_blocks, index_constructor, columns_constructor, own_index)` | Frame constructor from an iterable of dictionaries, where each dictionary repres… |
 | [Detail](../api_detail/frame_he-constructor.md#api-sig-framehe-from-dict-records-items) | `FrameHE.from_dict_records_items(items, /, *, dtypes, name, consolidate_blocks)` | Frame constructor from iterable of pairs of index label, row, where row is a dic… |
+| [Detail](../api_detail/frame_he-constructor.md#api-sig-framehe-from-display) | `FrameHE.from_display(display, /)` | Construct a Frame from a string that was produced by repr(frame) (i.e. the outpu… |
 | [Detail](../api_detail/frame_he-constructor.md#api-sig-framehe-from-element) | `FrameHE.from_element(element, /, *, index, columns, dtype, name, index_constructor, columns_constructor, own_index, own_columns)` | Create a Frame from an element, i.e., a single value stored in a single cell. Bo… |
 | [Detail](../api_detail/frame_he-constructor.md#api-sig-framehe-from-element-items) | `FrameHE.from_element_items(items, /, *, index, columns, dtype, axis, name, fill_value, index_constructor, columns_constructor, own_index, own_columns)` | Create a Frame from an iterable of key, value, where key is a pair of row, colum… |
 | [Detail](../api_detail/frame_he-constructor.md#api-sig-framehe-from-elements) | `FrameHE.from_elements(elements, /, *, index, columns, dtype, name, index_constructor, columns_constructor, own_index, own_columns)` | Create a Frame from an iterable of elements, to be formed into a Frame with a si… |

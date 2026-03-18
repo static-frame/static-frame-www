@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2527,6 +2527,30 @@ Search
 
 [Overview: Yarn: Exporter](../api_overview/yarn-exporter.md#api-overview-yarn-exporter)
 
+Yarn.to\_manifest(*fp*, */*, *\**, *label\_encoder=None*)[[source]](../_modules/static_frame/core/yarn.md#Yarn.to_manifest)[#](#static_frame.Yarn.to_manifest "Link to this definition")
+:   Write each contained [`Frame`](frame-selector.md#Frame "Frame") as an NPY directory within the directory given by `fp`. Each [`Frame`](frame-selector.md#Frame "Frame") is stored as a subdirectory named by its label. Frames from each underlying [`Bus`](bus-selector.md#Bus "Bus") are extracted, with zip NPY and zip NPZ stores extracting directly without full [`Frame`](frame-selector.md#Frame "Frame") materialization.
+
+    Parameters:
+    :   * **fp** – directory path in which to write the manifest.
+        * **label\_encoder** – callable to convert non-string labels to strings for use as directory names. Required when labels are not strings.
+
+    ```
+    >>> b1 = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
+    >>> b2 = sf.Bus.from_frames((sf.Frame(np.arange(40, 46).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='v'), sf.Frame((np.arange(6).reshape(3,2) % 3).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='w')), name='j')
+    >>> y = sf.Yarn.from_buses((b1, b2), retain_labels=False)
+    >>> y
+    <Yarn>
+    <Index>
+    x       Frame
+    y       Frame
+    v       Frame
+    w       Frame
+    <<U1>   <object>
+    >>> y.to_manifest('/tmp/y_manifest')
+    >>> sorted(e.name for e in os.scandir('/tmp/y_manifest'))
+    ['v', 'w', 'x', 'y']
+    ```
+
 Yarn.to\_series()[[source]](../_modules/static_frame/core/yarn.md#Yarn.to_series)[#](#static_frame.Yarn.to_series "Link to this definition")
 :   Return a [`Series`](series-selector.md#Series "Series") with the [`Frame`](frame-selector.md#Frame "Frame") contained in all contained [`Bus`](bus-selector.md#Bus "Bus").
 
@@ -2750,6 +2774,7 @@ Detail: Yarn: Attribute](yarn-attribute.md "next page")
 
 On this page
 
+* [`Yarn.to_manifest()`](#static_frame.Yarn.to_manifest)
 * [`Yarn.to_series()`](#static_frame.Yarn.to_series)
 * [`Yarn.to_sqlite()`](#static_frame.Yarn.to_sqlite)
 * [`Yarn.to_visidata()`](#static_frame.Yarn.to_visidata)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2540,8 +2540,9 @@ Search
 * [Iterator](bus-iterator.md#api-detail-bus-iterator): Interfaces for iterating (and applying functions to) elements, axis, groups, or windows.
 * [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib): Interface exposing cryptographic hashing via hashlib interfaces.
 * [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic): Interface for providing a type hint from a container or validating a container against a type hint.
+* Accessor Mapping: Return a wrapper around Series data that fully implements the Python Mapping interface.
 
-[Bus](#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
+[Bus](#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic) | Accessor Mapping
 
 [previous
 

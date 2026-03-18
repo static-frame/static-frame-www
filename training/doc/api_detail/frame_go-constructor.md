@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2917,6 +2917,43 @@ FrameGO.\_\_init\_\_(*data=<object object>*, */*, *\**, *index=None*, *columns=N
     <<U1>        <int64> <bool> <datetime64[D]>
     ```
 
+*classmethod* FrameGO.from\_display(*display*, */*)[#](#static_frame.FrameGO.from_display "Link to this definition")
+:   Construct a [`Frame`](frame-selector.md#Frame "Frame") from a string that was produced by
+    `repr(frame)` (i.e. the output of [`Frame.display()`](frame-display.md#static_frame.Frame.display "static_frame.Frame.display")).
+
+    Both plain-text and ANSI-coloured terminal representations are
+    accepted. The dtype information embedded in the display output is
+    used to reconstruct the original column types.
+
+    Parameters:
+    :   **display** – the string representation of a [`Frame`](frame-selector.md#Frame "Frame").
+
+    Returns:
+    :   [`static_frame.Frame`](frame.md#static_frame.Frame "static_frame.Frame")
+
+    ```
+    >>> f1 = sf.Frame.from_fields(((10, 2, 8, 3), (False, True, True, False), ('1517-01-01', '1517-04-01', '1517-12-31', '1517-06-30')), columns=('a', 'b', 'c'), dtypes=dict(c=np.datetime64), name='x')
+    >>> f1
+    <Frame: x>
+    <Index>    a       b      c               <<U1>
+    <Index>
+    0          10      False  1517-01-01
+    1          2       True   1517-04-01
+    2          8       True   1517-12-31
+    3          3       False  1517-06-30
+    <int64>    <int64> <bool> <datetime64[D]>
+    >>> msg = repr(f1)
+    >>> sf.FrameGO.from_display(msg)
+    <FrameGO: x>
+    <IndexGO>    a       b      c               <<U1>
+    <Index>
+    0            10      False  1517-01-01
+    1            2       True   1517-04-01
+    2            8       True   1517-12-31
+    3            3       False  1517-06-30
+    <int64>      <int64> <bool> <datetime64[D]>
+    ```
+
 *classmethod* FrameGO.from\_element(*element*, */*, *\**, *index*, *columns*, *dtype=None*, *name=None*, *index\_constructor=None*, *columns\_constructor=None*, *own\_index=False*, *own\_columns=False*)[#](#static_frame.FrameGO.from_element "Link to this definition")
 :   Create a Frame from an element, i.e., a single value stored in a single cell. Both `index` and `columns` are required, and cannot be specified with `IndexAutoFactory`.
 
@@ -3932,6 +3969,7 @@ On this page
 * [`FrameGO.from_dict_fields()`](#static_frame.FrameGO.from_dict_fields)
 * [`FrameGO.from_dict_records()`](#static_frame.FrameGO.from_dict_records)
 * [`FrameGO.from_dict_records_items()`](#static_frame.FrameGO.from_dict_records_items)
+* [`FrameGO.from_display()`](#static_frame.FrameGO.from_display)
 * [`FrameGO.from_element()`](#static_frame.FrameGO.from_element)
 * [`FrameGO.from_element_items()`](#static_frame.FrameGO.from_element_items)
 * [`FrameGO.from_elements()`](#static_frame.FrameGO.from_elements)

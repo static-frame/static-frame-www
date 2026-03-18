@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2632,16 +2632,16 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
     <Frame>
     <Index>      path           last_modified        size  <<U13>
     <Index>
-    ('b1', 'f1') /tmp/f1.pickle 2026-03-10T21:10:32… 861 B
-    ('b1', 'f2') /tmp/f2.npz    2026-03-10T21:10:32… 844 B
+    ('b1', 'f1') /tmp/f1.pickle 2026-03-18T00:43:09… 861 B
+    ('b1', 'f2') /tmp/f2.npz    2026-03-18T00:43:09… 844 B
     <object>     <<U14>         <<U32>               <<U5>
     >>> b2 = sf.Bus.from_manifest({"x": "/tmp/f1.pickle", "y": "/tmp/f2.npz"}).rename("b2")
     >>> b2.inventory
     <Frame>
     <Index>     path           last_modified        size  <<U13>
     <Index>
-    ('b2', 'x') /tmp/f1.pickle 2026-03-10T21:10:32… 861 B
-    ('b2', 'y') /tmp/f2.npz    2026-03-10T21:10:32… 844 B
+    ('b2', 'x') /tmp/f1.pickle 2026-03-18T00:43:09… 861 B
+    ('b2', 'y') /tmp/f2.npz    2026-03-18T00:43:09… 844 B
     <object>    <<U14>         <<U32>               <<U5>
     ```
 
@@ -2860,7 +2860,7 @@ Bus.\_\_init\_\_(*frames*, */*, *\**, *index*, *index\_constructor=None*, *name=
     <<U1>   <object>
     ```
 
-[Bus](bus.md#api-detail-bus): [Constructor](#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic) | Accessor Mapping
 
 [previous
 
