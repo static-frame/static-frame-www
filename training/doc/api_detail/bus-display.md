@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2557,17 +2557,9 @@ Bus.interface[#](#Bus.interface "Link to this definition")
     from_zip_parquet(fp, /, *, config, … Bus      Constructor          Given a file path t…
     from_zip_pickle(fp, /, *, config, m… Bus      Constructor          Given a file path t…
     from_zip_tsv(fp, /, *, config, max_… Bus      Constructor          Given a file path t…
+    to_manifest(fp, /, *, label_encoder) Bus      Exporter             Write each containe…
     to_series()                          Bus      Exporter             Return a Series wit…
-    to_sqlite(fp, /, *, config)          Bus      Exporter             Write the complete …
     …                                    …        …                    …
-    iter_element_items().reduce.from_la… Bus      Iterator
-    iter_element_items().reduce.from_la… Bus      Iterator
-    via_hashlib(*, include_name, includ… Bus      Accessor Hashlib     Return the byte sig…
-    via_hashlib(*, include_name, includ… Bus      Accessor Hashlib
-    via_hashlib(*, include_name, includ… Bus      Accessor Hashlib
-    via_hashlib(*, include_name, includ… Bus      Accessor Hashlib
-    via_hashlib(*, include_name, includ… Bus      Accessor Hashlib
-    via_hashlib(*, include_name, includ… Bus      Accessor Hashlib
     via_hashlib(*, include_name, includ… Bus      Accessor Hashlib
     via_hashlib(*, include_name, includ… Bus      Accessor Hashlib
     via_hashlib(*, include_name, includ… Bus      Accessor Hashlib
@@ -2577,6 +2569,14 @@ Bus.interface[#](#Bus.interface "Link to this definition")
     via_type_clinic.warn(hint, /, *, fa… Bus      Accessor Type Clinic Given a hint (a typ…
     via_type_clinic.__call__(hint, /, *… Bus      Accessor Type Clinic Given a hint (a typ…
     via_type_clinic.__repr__()           Bus      Accessor Type Clinic Return a compact st…
+    via_mapping.__getitem__(key)         Bus      Accessor Mapping
+    via_mapping.__iter__()               Bus      Accessor Mapping
+    via_mapping.__len__()                Bus      Accessor Mapping
+    via_mapping.__contains__(key, /)     Bus      Accessor Mapping
+    via_mapping.__repr__()               Bus      Accessor Mapping
+    via_mapping.keys()                   Bus      Accessor Mapping
+    via_mapping.values()                 Bus      Accessor Mapping
+    via_mapping.items()                  Bus      Accessor Mapping
     <<U122>                              <<U3>    <<U20>               <<U81>
     ```
 
@@ -2657,7 +2657,7 @@ Bus.display\_wide(*config=None*, */*)[#](#static_frame.Bus.display_wide "Link to
     <<U1>    <object>
     ```
 
-[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](bus-exporter.md#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic) | Accessor Mapping
 
 [previous
 

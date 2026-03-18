@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2533,7 +2533,7 @@ FillValueAuto.\_\_repr\_\_()[#](#static_frame.FillValueAuto.__repr__ "Link to th
     ```
     >>> fva = sf.FillValueAuto.from_default()
     >>> repr(fva)
-    <static_frame.core.fill_value_auto.FillValueAuto object at 0x73dd3da8d0c0>
+    <static_frame.core.fill_value_auto.FillValueAuto object at 0x7c5cb4444940>
     ```
 
 FillValueAuto.\_\_str\_\_()[#](#static_frame.FillValueAuto.__str__ "Link to this definition")
@@ -2542,7 +2542,7 @@ FillValueAuto.\_\_str\_\_()[#](#static_frame.FillValueAuto.__str__ "Link to this
     ```
     >>> fva = sf.FillValueAuto.from_default()
     >>> str(fva)
-    <static_frame.core.fill_value_auto.FillValueAuto object at 0x73dd3da8ca40>
+    <static_frame.core.fill_value_auto.FillValueAuto object at 0x7c5cb4446340>
     ```
 
 [FillValueAuto](fill_value_auto.md#api-detail-fillvalueauto): [Constructor](fill_value_auto-constructor.md#api-detail-fillvalueauto-constructor) | [Attribute](fill_value_auto-attribute.md#api-detail-fillvalueauto-attribute) | [Display](#api-detail-fillvalueauto-display) | [Selector](fill_value_auto-selector.md#api-detail-fillvalueauto-selector)

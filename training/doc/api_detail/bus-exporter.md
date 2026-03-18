@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2527,6 +2527,26 @@ Search
 
 [Overview: Bus: Exporter](../api_overview/bus-exporter.md#api-overview-bus-exporter)
 
+Bus.to\_manifest(*fp*, */*, *\**, *label\_encoder=None*)[[source]](../_modules/static_frame/core/bus.md#Bus.to_manifest)[#](#static_frame.Bus.to_manifest "Link to this definition")
+:   Write each contained [`Frame`](frame-selector.md#Frame "Frame") as an NPY directory within the directory given by `fp`. Each [`Frame`](frame-selector.md#Frame "Frame") is stored as a subdirectory named by its label. When the [`Bus`](bus-selector.md#Bus "Bus") is backed by a zip NPY or zip NPZ store, arrays are extracted directly without full [`Frame`](frame-selector.md#Frame "Frame") materialization.
+
+    Parameters:
+    :   * **fp** – directory path in which to write the manifest.
+        * **label\_encoder** – callable to convert non-string labels to strings for use as directory names. Required when labels are not strings.
+
+    ```
+    >>> b = sf.Bus.from_frames((sf.Frame(np.arange(6).reshape(3,2), index=('p', 'q', 'r'), columns=('a', 'b'), name='x'), sf.Frame((np.arange(6).reshape(3,2) % 2).astype(bool), index=('p', 'q', 'r'), columns=('c', 'd'), name='y')), name='i')
+    >>> b
+    <Bus: i>
+    <Index>
+    x        Frame
+    y        Frame
+    <<U1>    <object>
+    >>> b.to_manifest('/tmp/b_manifest')
+    >>> sorted(e.name for e in os.scandir('/tmp/b_manifest'))
+    ['x', 'y']
+    ```
+
 Bus.to\_series()[[source]](../_modules/static_frame/core/bus.md#Bus.to_series)[#](#static_frame.Bus.to_series "Link to this definition")
 :   Return a [`Series`](series-selector.md#Series "Series") with the [`Frame`](frame-selector.md#Frame "Frame") contained in this [`Bus`](bus-selector.md#Bus "Bus"). If the [`Bus`](bus-selector.md#Bus "Bus") is associated with a `Store`, all [`Frame`](frame-selector.md#Frame "Frame") will be loaded into memory and the returned [`Bus`](bus-selector.md#Bus "Bus") will no longer be associated with the `Store`.
 
@@ -2701,7 +2721,7 @@ Bus.to\_zip\_tsv(*fp*, */*, *\**, *config=None*, *compression=8*)[#](#static_fra
     >>> b.to_zip_tsv('/tmp/b.zip')
     ```
 
-[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic)
+[Bus](bus.md#api-detail-bus): [Constructor](bus-constructor.md#api-detail-bus-constructor) | [Exporter](#api-detail-bus-exporter) | [Attribute](bus-attribute.md#api-detail-bus-attribute) | [Method](bus-method.md#api-detail-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-detail-bus-dictionary-like) | [Display](bus-display.md#api-detail-bus-display) | [Selector](bus-selector.md#api-detail-bus-selector) | [Iterator](bus-iterator.md#api-detail-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-detail-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-detail-bus-accessor-type-clinic) | Accessor Mapping
 
 [previous
 
@@ -2712,6 +2732,7 @@ Detail: Bus: Attribute](bus-attribute.md "next page")
 
 On this page
 
+* [`Bus.to_manifest()`](#static_frame.Bus.to_manifest)
 * [`Bus.to_series()`](#static_frame.Bus.to_series)
 * [`Bus.to_sqlite()`](#static_frame.Bus.to_sqlite)
 * [`Bus.to_visidata()`](#static_frame.Bus.to_visidata)

@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2671,6 +2671,41 @@ SeriesHE.\_\_init\_\_(*values*, */*, *\**, *index=None*, *name=<object object>*,
     <<U1>      <int64>
     ```
 
+*classmethod* SeriesHE.from\_display(*display*, */*)[#](#static_frame.SeriesHE.from_display "Link to this definition")
+:   Construct a [`Series`](series-selector.md#Series "Series") from a string that was produced by
+    `repr(series)` (i.e. the output of [`Series.display()`](series-display.md#static_frame.Series.display "static_frame.Series.display")).
+
+    Both plain-text and ANSI-coloured terminal representations are
+    accepted. The dtype information embedded in the display output is
+    used to reconstruct the original value type.
+
+    Parameters:
+    :   **display** – the string representation of a [`Series`](series-selector.md#Series "Series").
+
+    Returns:
+    :   [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series")
+
+    ```
+    >>> f1 = sf.Series((3, 2, 8, 7), index=sf.IndexHierarchy.from_product((1, 2), ('a', 'b')))
+    >>> f1
+    <Series>
+    <IndexHierarchy>
+    1                a     3
+    1                b     2
+    2                a     8
+    2                b     7
+    <int64>          <<U1> <int64>
+    >>> msg = repr(f1)
+    >>> sf.SeriesHE.from_display(msg)
+    <SeriesHE>
+    <IndexHierarchy>
+    1                a     3
+    1                b     2
+    2                a     8
+    2                b     7
+    <int64>          <<U1> <int64>
+    ```
+
 *classmethod* SeriesHE.from\_element(*element*, */*, *\**, *index*, *dtype=None*, *name=None*, *index\_constructor=None*, *own\_index=False*)[#](#static_frame.SeriesHE.from_element "Link to this definition")
 :   Create a [`static_frame.Series`](series.md#static_frame.Series "static_frame.Series") from a single element. The size of the resultant container will be determined by the `index` argument.
 
@@ -2788,6 +2823,7 @@ On this page
 * [`SeriesHE.from_concat_items()`](#static_frame.SeriesHE.from_concat_items)
 * [`SeriesHE.from_delimited()`](#static_frame.SeriesHE.from_delimited)
 * [`SeriesHE.from_dict()`](#static_frame.SeriesHE.from_dict)
+* [`SeriesHE.from_display()`](#static_frame.SeriesHE.from_display)
 * [`SeriesHE.from_element()`](#static_frame.SeriesHE.from_element)
 * [`SeriesHE.from_items()`](#static_frame.SeriesHE.from_items)
 * [`SeriesHE.from_overlay()`](#static_frame.SeriesHE.from_overlay)

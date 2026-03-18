@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2580,7 +2580,7 @@ Search
 | [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-pair-map-values) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).values()` |  |
 | [Detail](../api_detail/bus-iterator.md#api-sig-bus-iter-element-items-reduce-from-label-pair-map-to-frame) | `Bus.iter_element_items().reduce.from_label_pair_map(func_map, *, fill_value).to_frame(*, index, columns, index_constructor, columns_constructor, name, consolidate_blocks)` |  |
 
-[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic)
+[Bus](bus.md#api-overview-bus): [Constructor](bus-constructor.md#api-overview-bus-constructor) | [Exporter](bus-exporter.md#api-overview-bus-exporter) | [Attribute](bus-attribute.md#api-overview-bus-attribute) | [Method](bus-method.md#api-overview-bus-method) | [Dictionary-Like](bus-dictionary_like.md#api-overview-bus-dictionary-like) | [Display](bus-display.md#api-overview-bus-display) | [Selector](bus-selector.md#api-overview-bus-selector) | [Iterator](#api-overview-bus-iterator) | [Accessor Hashlib](bus-accessor_hashlib.md#api-overview-bus-accessor-hashlib) | [Accessor Type Clinic](bus-accessor_type_clinic.md#api-overview-bus-accessor-type-clinic) | Accessor Mapping
 
 [previous
 

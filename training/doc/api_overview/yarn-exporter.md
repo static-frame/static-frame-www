@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.8.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2529,6 +2529,7 @@ Search
 
 |  |  |  |
 | --- | --- | --- |
+| [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-manifest) | `Yarn.to_manifest(fp, /, *, label_encoder)` | Write each contained Frame as an NPY directory within the directory given by fp.… |
 | [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-series) | `Yarn.to_series()` | Return a Series with the Frame contained in all contained Bus. |
 | [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-sqlite) | `Yarn.to_sqlite(fp, /, *, config)` | Write the complete Bus as an SQLite database file. Args: fp: A string file path… |
 | [Detail](../api_detail/yarn-exporter.md#api-sig-yarn-to-visidata) | `Yarn.to_visidata()` | Open an interactive VisiData session. |
