@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.10.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.10.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2531,6 +2531,7 @@ Search
 | --- | --- | --- |
 | [Detail](../api_detail/series-accessor_mapping.md#api-sig-series-via-mapping-getitem) | `Series.via_mapping.__getitem__(key)` |  |
 | [Detail](../api_detail/series-accessor_mapping.md#api-sig-series-via-mapping-iter) | `Series.via_mapping.__iter__()` |  |
+| [Detail](../api_detail/series-accessor_mapping.md#api-sig-series-via-mapping-reversed) | `Series.via_mapping.__reversed__()` |  |
 | [Detail](../api_detail/series-accessor_mapping.md#api-sig-series-via-mapping-len) | `Series.via_mapping.__len__()` |  |
 | [Detail](../api_detail/series-accessor_mapping.md#api-sig-series-via-mapping-contains) | `Series.via_mapping.__contains__(key, /)` |  |
 | [Detail](../api_detail/series-accessor_mapping.md#api-sig-series-via-mapping-repr) | `Series.via_mapping.__repr__()` |  |
