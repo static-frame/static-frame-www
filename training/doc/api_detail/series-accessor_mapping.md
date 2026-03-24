@@ -4,8 +4,8 @@ Back to top
 
 `Ctrl`+`K`
 
-[![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
-![StaticFrame 3.9.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
+[![StaticFrame 3.10.0 documentation - Home](../_static/sf-logo-web_icon-small.png)
+![StaticFrame 3.10.0 documentation - Home](../_static/sf-logo-web_icon-small.png)](../index.md)
 
 * [static-frame](../readme.md)
 * [License](../license.md)
@@ -2550,6 +2550,13 @@ Series.via\_mapping.\_\_iter\_\_
     >>> tuple(s.via_mapping)
     (np.str_('a'), np.str_('b'), np.str_('c'))
     ```
+
+Series.via\_mapping.\_\_reversed\_\_
+:   Series.via\_mapping
+    :   Return a wrapper around Series data that fully implements the Python Mapping interface.
+
+    SeriesMapping.\_\_reversed\_\_()[[source]](../_modules/static_frame/core/series_mapping.md#SeriesMapping.__reversed__)
+    :   The type of the None singleton.
 
 Series.via\_mapping.\_\_len\_\_
 :   Series.via\_mapping
